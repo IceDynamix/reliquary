@@ -30,8 +30,8 @@ pub struct HeliobusSnsCommentScRsp {
     // message fields
     // @@protoc_insertion_point(field:HeliobusSnsCommentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:HeliobusSnsCommentScRsp.EIMCNIFMLBL)
-    pub EIMCNIFMLBL: ::protobuf::MessageField<super::GBJKKFHPFFN::GBJKKFHPFFN>,
+    // @@protoc_insertion_point(field:HeliobusSnsCommentScRsp.DDKHPAIGJAI)
+    pub DDKHPAIGJAI: ::protobuf::MessageField<super::GBJKKFHPFFN::GBJKKFHPFFN>,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsCommentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl HeliobusSnsCommentScRsp {
             |m: &mut HeliobusSnsCommentScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GBJKKFHPFFN::GBJKKFHPFFN>(
-            "EIMCNIFMLBL",
-            |m: &HeliobusSnsCommentScRsp| { &m.EIMCNIFMLBL },
-            |m: &mut HeliobusSnsCommentScRsp| { &mut m.EIMCNIFMLBL },
+            "DDKHPAIGJAI",
+            |m: &HeliobusSnsCommentScRsp| { &m.DDKHPAIGJAI },
+            |m: &mut HeliobusSnsCommentScRsp| { &mut m.DDKHPAIGJAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsCommentScRsp>(
             "HeliobusSnsCommentScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HeliobusSnsCommentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIMCNIFMLBL)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDKHPAIGJAI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for HeliobusSnsCommentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if let Some(v) = self.EIMCNIFMLBL.as_ref() {
+        if let Some(v) = self.DDKHPAIGJAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HeliobusSnsCommentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.EIMCNIFMLBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.DDKHPAIGJAI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for HeliobusSnsCommentScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.EIMCNIFMLBL.clear();
+        self.DDKHPAIGJAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsCommentScRsp {
         static instance: HeliobusSnsCommentScRsp = HeliobusSnsCommentScRsp {
             retcode: 0,
-            EIMCNIFMLBL: ::protobuf::MessageField::none(),
+            DDKHPAIGJAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsCommentScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dHeliobusSnsCommentScRsp.proto\x1a\x11GBJKKFHPFFN.proto\"c\n\x17Hel\
-    iobusSnsCommentScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bEIMCNIFMLBL\x18\t\x20\x01(\x0b2\x0c.GBJKKFHPFFNR\x0bEIMCNIFML\
-    BLb\x06proto3\
+    iobusSnsCommentScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bDDKHPAIGJAI\x18\x06\x20\x01(\x0b2\x0c.GBJKKFHPFFNR\x0bDDKHPAI\
+    GJAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AssistSimpleInfo {
     // message fields
-    // @@protoc_insertion_point(field:AssistSimpleInfo.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:AssistSimpleInfo.dressed_skin_id)
-    pub dressed_skin_id: u32,
     // @@protoc_insertion_point(field:AssistSimpleInfo.pos)
     pub pos: u32,
+    // @@protoc_insertion_point(field:AssistSimpleInfo.avatar_id)
+    pub avatar_id: u32,
     // @@protoc_insertion_point(field:AssistSimpleInfo.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:AssistSimpleInfo.dressed_skin_id)
+    pub dressed_skin_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AssistSimpleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl AssistSimpleInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &AssistSimpleInfo| { &m.avatar_id },
-            |m: &mut AssistSimpleInfo| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dressed_skin_id",
-            |m: &AssistSimpleInfo| { &m.dressed_skin_id },
-            |m: &mut AssistSimpleInfo| { &mut m.dressed_skin_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos",
             |m: &AssistSimpleInfo| { &m.pos },
             |m: &mut AssistSimpleInfo| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &AssistSimpleInfo| { &m.avatar_id },
+            |m: &mut AssistSimpleInfo| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &AssistSimpleInfo| { &m.level },
             |m: &mut AssistSimpleInfo| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dressed_skin_id",
+            |m: &AssistSimpleInfo| { &m.dressed_skin_id },
+            |m: &mut AssistSimpleInfo| { &mut m.dressed_skin_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AssistSimpleInfo>(
             "AssistSimpleInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AssistSimpleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.dressed_skin_id = is.read_uint32()?;
-                },
-                120 => {
+                24 => {
                     self.pos = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                64 => {
                     self.level = is.read_uint32()?;
+                },
+                72 => {
+                    self.dressed_skin_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for AssistSimpleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
-        }
-        if self.dressed_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.dressed_skin_id);
-        }
         if self.pos != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.pos);
+            my_size += ::protobuf::rt::uint32_size(3, self.pos);
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.dressed_skin_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.dressed_skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for AssistSimpleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
-        }
-        if self.dressed_skin_id != 0 {
-            os.write_uint32(6, self.dressed_skin_id)?;
-        }
         if self.pos != 0 {
-            os.write_uint32(15, self.pos)?;
+            os.write_uint32(3, self.pos)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(6, self.avatar_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(8, self.level)?;
+        }
+        if self.dressed_skin_id != 0 {
+            os.write_uint32(9, self.dressed_skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for AssistSimpleInfo {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.dressed_skin_id = 0;
         self.pos = 0;
+        self.avatar_id = 0;
         self.level = 0;
+        self.dressed_skin_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AssistSimpleInfo {
         static instance: AssistSimpleInfo = AssistSimpleInfo {
-            avatar_id: 0,
-            dressed_skin_id: 0,
             pos: 0,
+            avatar_id: 0,
             level: 0,
+            dressed_skin_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for AssistSimpleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16AssistSimpleInfo.proto\"\x7f\n\x10AssistSimpleInfo\x12\x1b\n\tavat\
-    ar_id\x18\x01\x20\x01(\rR\x08avatarId\x12&\n\x0fdressed_skin_id\x18\x06\
-    \x20\x01(\rR\rdressedSkinId\x12\x10\n\x03pos\x18\x0f\x20\x01(\rR\x03pos\
-    \x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x16AssistSimpleInfo.proto\"\x7f\n\x10AssistSimpleInfo\x12\x10\n\x03po\
+    s\x18\x03\x20\x01(\rR\x03pos\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\
+    \x08avatarId\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12&\n\x0fd\
+    ressed_skin_id\x18\t\x20\x01(\rR\rdressedSkinIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KFNJAKGEFLA {
     // message fields
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.EHBGHCGKFBH)
-    pub EHBGHCGKFBH: ::std::vec::Vec<super::GNEBBAEIKGJ::GNEBBAEIKGJ>,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.CDMPOGJJMJM)
-    pub CDMPOGJJMJM: u32,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.EDGJDDIEPAG)
-    pub EDGJDDIEPAG: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.BGAFCOBNLPM)
-    pub BGAFCOBNLPM: ::std::vec::Vec<super::LNOIKGKJHLK::LNOIKGKJHLK>,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.HLPODGBCLKA)
-    pub HLPODGBCLKA: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.OMKFKGIGFPP)
-    pub OMKFKGIGFPP: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
-    // @@protoc_insertion_point(field:KFNJAKGEFLA.DPBMLFFPOKH)
-    pub DPBMLFFPOKH: u32,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.GDGNGGCBICG)
+    pub GDGNGGCBICG: u32,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.OGIIEBBPBAD)
+    pub OGIIEBBPBAD: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.ELOJPIJCGHF)
+    pub ELOJPIJCGHF: ::std::vec::Vec<super::GNEBBAEIKGJ::GNEBBAEIKGJ>,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.AOEIFPMDPBJ)
+    pub AOEIFPMDPBJ: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.KGIGGGGJNCD)
+    pub KGIGGGGJNCD: u32,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.GBKBHKNNBIK)
+    pub GBKBHKNNBIK: ::std::vec::Vec<super::KHOCCHABNMN::KHOCCHABNMN>,
+    // @@protoc_insertion_point(field:KFNJAKGEFLA.bird_record_info_list)
+    pub bird_record_info_list: ::std::vec::Vec<super::LNOIKGKJHLK::LNOIKGKJHLK>,
     // special fields
     // @@protoc_insertion_point(special_field:KFNJAKGEFLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,40 +61,40 @@ impl KFNJAKGEFLA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDGNGGCBICG",
+            |m: &KFNJAKGEFLA| { &m.GDGNGGCBICG },
+            |m: &mut KFNJAKGEFLA| { &mut m.GDGNGGCBICG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EHBGHCGKFBH",
-            |m: &KFNJAKGEFLA| { &m.EHBGHCGKFBH },
-            |m: &mut KFNJAKGEFLA| { &mut m.EHBGHCGKFBH },
+            "OGIIEBBPBAD",
+            |m: &KFNJAKGEFLA| { &m.OGIIEBBPBAD },
+            |m: &mut KFNJAKGEFLA| { &mut m.OGIIEBBPBAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ELOJPIJCGHF",
+            |m: &KFNJAKGEFLA| { &m.ELOJPIJCGHF },
+            |m: &mut KFNJAKGEFLA| { &mut m.ELOJPIJCGHF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AOEIFPMDPBJ",
+            |m: &KFNJAKGEFLA| { &m.AOEIFPMDPBJ },
+            |m: &mut KFNJAKGEFLA| { &mut m.AOEIFPMDPBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDMPOGJJMJM",
-            |m: &KFNJAKGEFLA| { &m.CDMPOGJJMJM },
-            |m: &mut KFNJAKGEFLA| { &mut m.CDMPOGJJMJM },
+            "KGIGGGGJNCD",
+            |m: &KFNJAKGEFLA| { &m.KGIGGGGJNCD },
+            |m: &mut KFNJAKGEFLA| { &mut m.KGIGGGGJNCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EDGJDDIEPAG",
-            |m: &KFNJAKGEFLA| { &m.EDGJDDIEPAG },
-            |m: &mut KFNJAKGEFLA| { &mut m.EDGJDDIEPAG },
+            "GBKBHKNNBIK",
+            |m: &KFNJAKGEFLA| { &m.GBKBHKNNBIK },
+            |m: &mut KFNJAKGEFLA| { &mut m.GBKBHKNNBIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGAFCOBNLPM",
-            |m: &KFNJAKGEFLA| { &m.BGAFCOBNLPM },
-            |m: &mut KFNJAKGEFLA| { &mut m.BGAFCOBNLPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HLPODGBCLKA",
-            |m: &KFNJAKGEFLA| { &m.HLPODGBCLKA },
-            |m: &mut KFNJAKGEFLA| { &mut m.HLPODGBCLKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OMKFKGIGFPP",
-            |m: &KFNJAKGEFLA| { &m.OMKFKGIGFPP },
-            |m: &mut KFNJAKGEFLA| { &mut m.OMKFKGIGFPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPBMLFFPOKH",
-            |m: &KFNJAKGEFLA| { &m.DPBMLFFPOKH },
-            |m: &mut KFNJAKGEFLA| { &mut m.DPBMLFFPOKH },
+            "bird_record_info_list",
+            |m: &KFNJAKGEFLA| { &m.bird_record_info_list },
+            |m: &mut KFNJAKGEFLA| { &mut m.bird_record_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KFNJAKGEFLA>(
             "KFNJAKGEFLA",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for KFNJAKGEFLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.GDGNGGCBICG = is.read_uint32()?;
+                },
+                50 => {
+                    self.OGIIEBBPBAD.push(is.read_message()?);
+                },
                 66 => {
-                    self.EHBGHCGKFBH.push(is.read_message()?);
-                },
-                80 => {
-                    self.CDMPOGJJMJM = is.read_uint32()?;
-                },
-                90 => {
-                    self.EDGJDDIEPAG.push(is.read_message()?);
-                },
-                18 => {
-                    self.BGAFCOBNLPM.push(is.read_message()?);
+                    self.ELOJPIJCGHF.push(is.read_message()?);
                 },
                 74 => {
-                    self.HLPODGBCLKA.push(is.read_message()?);
+                    self.AOEIFPMDPBJ.push(is.read_message()?);
                 },
-                114 => {
-                    self.OMKFKGIGFPP.push(is.read_message()?);
+                88 => {
+                    self.KGIGGGGJNCD = is.read_uint32()?;
                 },
-                96 => {
-                    self.DPBMLFFPOKH = is.read_uint32()?;
+                106 => {
+                    self.GBKBHKNNBIK.push(is.read_message()?);
+                },
+                122 => {
+                    self.bird_record_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,59 +147,59 @@ impl ::protobuf::Message for KFNJAKGEFLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EHBGHCGKFBH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.CDMPOGJJMJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CDMPOGJJMJM);
+        if self.GDGNGGCBICG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GDGNGGCBICG);
         }
-        for value in &self.EDGJDDIEPAG {
+        for value in &self.OGIIEBBPBAD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.BGAFCOBNLPM {
+        for value in &self.ELOJPIJCGHF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HLPODGBCLKA {
+        for value in &self.AOEIFPMDPBJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.OMKFKGIGFPP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.DPBMLFFPOKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DPBMLFFPOKH);
+        if self.KGIGGGGJNCD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KGIGGGGJNCD);
         }
+        for value in &self.GBKBHKNNBIK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.bird_record_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EHBGHCGKFBH {
+        if self.GDGNGGCBICG != 0 {
+            os.write_uint32(3, self.GDGNGGCBICG)?;
+        }
+        for v in &self.OGIIEBBPBAD {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.ELOJPIJCGHF {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.CDMPOGJJMJM != 0 {
-            os.write_uint32(10, self.CDMPOGJJMJM)?;
-        }
-        for v in &self.EDGJDDIEPAG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        for v in &self.BGAFCOBNLPM {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.HLPODGBCLKA {
+        for v in &self.AOEIFPMDPBJ {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for v in &self.OMKFKGIGFPP {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.DPBMLFFPOKH != 0 {
-            os.write_uint32(12, self.DPBMLFFPOKH)?;
+        if self.KGIGGGGJNCD != 0 {
+            os.write_uint32(11, self.KGIGGGGJNCD)?;
         }
+        for v in &self.GBKBHKNNBIK {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        for v in &self.bird_record_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -217,25 +217,25 @@ impl ::protobuf::Message for KFNJAKGEFLA {
     }
 
     fn clear(&mut self) {
-        self.EHBGHCGKFBH.clear();
-        self.CDMPOGJJMJM = 0;
-        self.EDGJDDIEPAG.clear();
-        self.BGAFCOBNLPM.clear();
-        self.HLPODGBCLKA.clear();
-        self.OMKFKGIGFPP.clear();
-        self.DPBMLFFPOKH = 0;
+        self.GDGNGGCBICG = 0;
+        self.OGIIEBBPBAD.clear();
+        self.ELOJPIJCGHF.clear();
+        self.AOEIFPMDPBJ.clear();
+        self.KGIGGGGJNCD = 0;
+        self.GBKBHKNNBIK.clear();
+        self.bird_record_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KFNJAKGEFLA {
         static instance: KFNJAKGEFLA = KFNJAKGEFLA {
-            EHBGHCGKFBH: ::std::vec::Vec::new(),
-            CDMPOGJJMJM: 0,
-            EDGJDDIEPAG: ::std::vec::Vec::new(),
-            BGAFCOBNLPM: ::std::vec::Vec::new(),
-            HLPODGBCLKA: ::std::vec::Vec::new(),
-            OMKFKGIGFPP: ::std::vec::Vec::new(),
-            DPBMLFFPOKH: 0,
+            GDGNGGCBICG: 0,
+            OGIIEBBPBAD: ::std::vec::Vec::new(),
+            ELOJPIJCGHF: ::std::vec::Vec::new(),
+            AOEIFPMDPBJ: ::std::vec::Vec::new(),
+            KGIGGGGJNCD: 0,
+            GBKBHKNNBIK: ::std::vec::Vec::new(),
+            bird_record_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -261,14 +261,15 @@ impl ::protobuf::reflect::ProtobufValue for KFNJAKGEFLA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFNJAKGEFLA.proto\x1a\x11GNEBBAEIKGJ.proto\x1a\x11KHOCCHABNMN.prot\
-    o\x1a\x11LNOIKGKJHLK.proto\"\xc1\x02\n\x0bKFNJAKGEFLA\x12.\n\x0bEHBGHCGK\
-    FBH\x18\x08\x20\x03(\x0b2\x0c.GNEBBAEIKGJR\x0bEHBGHCGKFBH\x12\x20\n\x0bC\
-    DMPOGJJMJM\x18\n\x20\x01(\rR\x0bCDMPOGJJMJM\x12.\n\x0bEDGJDDIEPAG\x18\
-    \x0b\x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bEDGJDDIEPAG\x12.\n\x0bBGAFCOBNLPM\
-    \x18\x02\x20\x03(\x0b2\x0c.LNOIKGKJHLKR\x0bBGAFCOBNLPM\x12.\n\x0bHLPODGB\
-    CLKA\x18\t\x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bHLPODGBCLKA\x12.\n\x0bOMKFK\
-    GIGFPP\x18\x0e\x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bOMKFKGIGFPP\x12\x20\n\
-    \x0bDPBMLFFPOKH\x18\x0c\x20\x01(\rR\x0bDPBMLFFPOKHb\x06proto3\
+    o\x1a\x11LNOIKGKJHLK.proto\"\xd2\x02\n\x0bKFNJAKGEFLA\x12\x20\n\x0bGDGNG\
+    GCBICG\x18\x03\x20\x01(\rR\x0bGDGNGGCBICG\x12.\n\x0bOGIIEBBPBAD\x18\x06\
+    \x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bOGIIEBBPBAD\x12.\n\x0bELOJPIJCGHF\x18\
+    \x08\x20\x03(\x0b2\x0c.GNEBBAEIKGJR\x0bELOJPIJCGHF\x12.\n\x0bAOEIFPMDPBJ\
+    \x18\t\x20\x03(\x0b2\x0c.KHOCCHABNMNR\x0bAOEIFPMDPBJ\x12\x20\n\x0bKGIGGG\
+    GJNCD\x18\x0b\x20\x01(\rR\x0bKGIGGGGJNCD\x12.\n\x0bGBKBHKNNBIK\x18\r\x20\
+    \x03(\x0b2\x0c.KHOCCHABNMNR\x0bGBKBHKNNBIK\x12?\n\x15bird_record_info_li\
+    st\x18\x0f\x20\x03(\x0b2\x0c.LNOIKGKJHLKR\x12birdRecordInfoListb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

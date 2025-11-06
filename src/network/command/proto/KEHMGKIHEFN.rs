@@ -33,7 +33,7 @@ pub struct KEHMGKIHEFN {
     // @@protoc_insertion_point(field:KEHMGKIHEFN.player_info)
     pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // message oneof groups
-    pub NFGNBBJGANG: ::std::option::Option<kehmgkihefn::NFGNBBJGANG>,
+    pub NJEFMLLOBBJ: ::std::option::Option<kehmgkihefn::NJEFMLLOBBJ>,
     // special fields
     // @@protoc_insertion_point(special_field:KEHMGKIHEFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,88 +50,88 @@ impl KEHMGKIHEFN {
         ::std::default::Default::default()
     }
 
-    // .FCNOLLFGPCK GIEIDJEEPAC = 14;
+    // .RecommendLineupInfo GIEIDJEEPAC = 13;
 
-    pub fn GIEIDJEEPAC(&self) -> &super::FCNOLLFGPCK::FCNOLLFGPCK {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v)) => v,
-            _ => <super::FCNOLLFGPCK::FCNOLLFGPCK as ::protobuf::Message>::default_instance(),
+    pub fn GIEIDJEEPAC(&self) -> &super::RecommendLineupInfo::RecommendLineupInfo {
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(ref v)) => v,
+            _ => <super::RecommendLineupInfo::RecommendLineupInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_GIEIDJEEPAC(&mut self) {
-        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
     }
 
     pub fn has_GIEIDJEEPAC(&self) -> bool {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(..)) => true,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_GIEIDJEEPAC(&mut self, v: super::FCNOLLFGPCK::FCNOLLFGPCK) {
-        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(v))
+    pub fn set_GIEIDJEEPAC(&mut self, v: super::RecommendLineupInfo::RecommendLineupInfo) {
+        self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_GIEIDJEEPAC(&mut self) -> &mut super::FCNOLLFGPCK::FCNOLLFGPCK {
-        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(_)) = self.NFGNBBJGANG {
+    pub fn mut_GIEIDJEEPAC(&mut self) -> &mut super::RecommendLineupInfo::RecommendLineupInfo {
+        if let ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(_)) = self.NJEFMLLOBBJ {
         } else {
-            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(super::FCNOLLFGPCK::FCNOLLFGPCK::new()));
+            self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(super::RecommendLineupInfo::RecommendLineupInfo::new()));
         }
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref mut v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_GIEIDJEEPAC(&mut self) -> super::FCNOLLFGPCK::FCNOLLFGPCK {
+    pub fn take_GIEIDJEEPAC(&mut self) -> super::RecommendLineupInfo::RecommendLineupInfo {
         if self.has_GIEIDJEEPAC() {
-            match self.NFGNBBJGANG.take() {
-                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(v)) => v,
+            match self.NJEFMLLOBBJ.take() {
+                ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FCNOLLFGPCK::FCNOLLFGPCK::new()
+            super::RecommendLineupInfo::RecommendLineupInfo::new()
         }
     }
 
-    // .KAMCIOPBPGA ADDCJEJPFEF = 10;
+    // .KAMCIOPBPGA ADDCJEJPFEF = 3;
 
     pub fn ADDCJEJPFEF(&self) -> &super::KAMCIOPBPGA::KAMCIOPBPGA {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(ref v)) => v,
             _ => <super::KAMCIOPBPGA::KAMCIOPBPGA as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ADDCJEJPFEF(&mut self) {
-        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
     }
 
     pub fn has_ADDCJEJPFEF(&self) -> bool {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(..)) => true,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ADDCJEJPFEF(&mut self, v: super::KAMCIOPBPGA::KAMCIOPBPGA) {
-        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(v))
+        self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ADDCJEJPFEF(&mut self) -> &mut super::KAMCIOPBPGA::KAMCIOPBPGA {
-        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(_)) = self.NFGNBBJGANG {
+        if let ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(_)) = self.NJEFMLLOBBJ {
         } else {
-            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(super::KAMCIOPBPGA::KAMCIOPBPGA::new()));
+            self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(super::KAMCIOPBPGA::KAMCIOPBPGA::new()));
         }
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref mut v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -139,8 +139,8 @@ impl KEHMGKIHEFN {
     // Take field
     pub fn take_ADDCJEJPFEF(&mut self) -> super::KAMCIOPBPGA::KAMCIOPBPGA {
         if self.has_ADDCJEJPFEF() {
-            match self.NFGNBBJGANG.take() {
-                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(v)) => v,
+            match self.NJEFMLLOBBJ.take() {
+                ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -148,39 +148,39 @@ impl KEHMGKIHEFN {
         }
     }
 
-    // .DKHENLMAEBE PMHIBHNEPHI = 5;
+    // .DKHENLMAEBE PMHIBHNEPHI = 1;
 
     pub fn PMHIBHNEPHI(&self) -> &super::DKHENLMAEBE::DKHENLMAEBE {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(ref v)) => v,
             _ => <super::DKHENLMAEBE::DKHENLMAEBE as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_PMHIBHNEPHI(&mut self) {
-        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
     }
 
     pub fn has_PMHIBHNEPHI(&self) -> bool {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(..)) => true,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_PMHIBHNEPHI(&mut self, v: super::DKHENLMAEBE::DKHENLMAEBE) {
-        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(v))
+        self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_PMHIBHNEPHI(&mut self) -> &mut super::DKHENLMAEBE::DKHENLMAEBE {
-        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(_)) = self.NFGNBBJGANG {
+        if let ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(_)) = self.NJEFMLLOBBJ {
         } else {
-            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(super::DKHENLMAEBE::DKHENLMAEBE::new()));
+            self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(super::DKHENLMAEBE::DKHENLMAEBE::new()));
         }
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref mut v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -188,8 +188,8 @@ impl KEHMGKIHEFN {
     // Take field
     pub fn take_PMHIBHNEPHI(&mut self) -> super::DKHENLMAEBE::DKHENLMAEBE {
         if self.has_PMHIBHNEPHI() {
-            match self.NFGNBBJGANG.take() {
-                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(v)) => v,
+            match self.NJEFMLLOBBJ.take() {
+                ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -197,39 +197,39 @@ impl KEHMGKIHEFN {
         }
     }
 
-    // .IIGJFPMIGKF JILKKAJBLJK = 4;
+    // .IIGJFPMIGKF JILKKAJBLJK = 2;
 
     pub fn JILKKAJBLJK(&self) -> &super::IIGJFPMIGKF::IIGJFPMIGKF {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(ref v)) => v,
             _ => <super::IIGJFPMIGKF::IIGJFPMIGKF as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JILKKAJBLJK(&mut self) {
-        self.NFGNBBJGANG = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
     }
 
     pub fn has_JILKKAJBLJK(&self) -> bool {
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(..)) => true,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JILKKAJBLJK(&mut self, v: super::IIGJFPMIGKF::IIGJFPMIGKF) {
-        self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(v))
+        self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JILKKAJBLJK(&mut self) -> &mut super::IIGJFPMIGKF::IIGJFPMIGKF {
-        if let ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(_)) = self.NFGNBBJGANG {
+        if let ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(_)) = self.NJEFMLLOBBJ {
         } else {
-            self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(super::IIGJFPMIGKF::IIGJFPMIGKF::new()));
+            self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(super::IIGJFPMIGKF::IIGJFPMIGKF::new()));
         }
-        match self.NFGNBBJGANG {
-            ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref mut v)) => v,
+        match self.NJEFMLLOBBJ {
+            ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -237,8 +237,8 @@ impl KEHMGKIHEFN {
     // Take field
     pub fn take_JILKKAJBLJK(&mut self) -> super::IIGJFPMIGKF::IIGJFPMIGKF {
         if self.has_JILKKAJBLJK() {
-            match self.NFGNBBJGANG.take() {
-                ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(v)) => v,
+            match self.NJEFMLLOBBJ.take() {
+                ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -249,17 +249,7 @@ impl KEHMGKIHEFN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &KEHMGKIHEFN| { &m.remark_name },
-            |m: &mut KEHMGKIHEFN| { &mut m.remark_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_info",
-            |m: &KEHMGKIHEFN| { &m.player_info },
-            |m: &mut KEHMGKIHEFN| { &mut m.player_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FCNOLLFGPCK::FCNOLLFGPCK>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RecommendLineupInfo::RecommendLineupInfo>(
             "GIEIDJEEPAC",
             KEHMGKIHEFN::has_GIEIDJEEPAC,
             KEHMGKIHEFN::GIEIDJEEPAC,
@@ -287,7 +277,17 @@ impl KEHMGKIHEFN {
             KEHMGKIHEFN::mut_JILKKAJBLJK,
             KEHMGKIHEFN::set_JILKKAJBLJK,
         ));
-        oneofs.push(kehmgkihefn::NFGNBBJGANG::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &KEHMGKIHEFN| { &m.remark_name },
+            |m: &mut KEHMGKIHEFN| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_info",
+            |m: &KEHMGKIHEFN| { &m.player_info },
+            |m: &mut KEHMGKIHEFN| { &mut m.player_info },
+        ));
+        oneofs.push(kehmgkihefn::NJEFMLLOBBJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KEHMGKIHEFN>(
             "KEHMGKIHEFN",
             fields,
@@ -306,23 +306,23 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.remark_name = is.read_string()?;
+                106 => {
+                    self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(is.read_message()?));
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
+                26 => {
+                    self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(is.read_message()?));
                 },
-                114 => {
-                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(is.read_message()?));
+                10 => {
+                    self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(is.read_message()?));
                 },
-                82 => {
-                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(is.read_message()?));
-                },
-                42 => {
-                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(is.read_message()?));
+                18 => {
+                    self.NJEFMLLOBBJ = ::std::option::Option::Some(kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(is.read_message()?));
                 },
                 34 => {
-                    self.NFGNBBJGANG = ::std::option::Option::Some(kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(is.read_message()?));
+                    self.remark_name = is.read_string()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -337,27 +337,27 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.remark_name);
+            my_size += ::protobuf::rt::string_size(4, &self.remark_name);
         }
         if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
+        if let ::std::option::Option::Some(ref v) = self.NJEFMLLOBBJ {
             match v {
-                &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
+                &kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
+                &kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v) => {
+                &kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v) => {
+                &kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -370,24 +370,24 @@ impl ::protobuf::Message for KEHMGKIHEFN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.remark_name.is_empty() {
-            os.write_string(6, &self.remark_name)?;
+            os.write_string(4, &self.remark_name)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.NFGNBBJGANG {
+        if let ::std::option::Option::Some(ref v) = self.NJEFMLLOBBJ {
             match v {
-                &kehmgkihefn::NFGNBBJGANG::GIEIDJEEPAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &kehmgkihefn::NJEFMLLOBBJ::GIEIDJEEPAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &kehmgkihefn::NFGNBBJGANG::ADDCJEJPFEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                &kehmgkihefn::NJEFMLLOBBJ::ADDCJEJPFEF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &kehmgkihefn::NFGNBBJGANG::PMHIBHNEPHI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                &kehmgkihefn::NJEFMLLOBBJ::PMHIBHNEPHI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &kehmgkihefn::NFGNBBJGANG::JILKKAJBLJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &kehmgkihefn::NJEFMLLOBBJ::JILKKAJBLJK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -408,12 +408,12 @@ impl ::protobuf::Message for KEHMGKIHEFN {
     }
 
     fn clear(&mut self) {
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
+        self.NJEFMLLOBBJ = ::std::option::Option::None;
         self.remark_name.clear();
         self.player_info.clear();
-        self.NFGNBBJGANG = ::std::option::Option::None;
-        self.NFGNBBJGANG = ::std::option::Option::None;
-        self.NFGNBBJGANG = ::std::option::Option::None;
-        self.NFGNBBJGANG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -421,7 +421,7 @@ impl ::protobuf::Message for KEHMGKIHEFN {
         static instance: KEHMGKIHEFN = KEHMGKIHEFN {
             remark_name: ::std::string::String::new(),
             player_info: ::protobuf::MessageField::none(),
-            NFGNBBJGANG: ::std::option::Option::None,
+            NJEFMLLOBBJ: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -450,10 +450,10 @@ pub mod kehmgkihefn {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:KEHMGKIHEFN.NFGNBBJGANG)
-    pub enum NFGNBBJGANG {
+    // @@protoc_insertion_point(oneof:KEHMGKIHEFN.NJEFMLLOBBJ)
+    pub enum NJEFMLLOBBJ {
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.GIEIDJEEPAC)
-        GIEIDJEEPAC(super::super::FCNOLLFGPCK::FCNOLLFGPCK),
+        GIEIDJEEPAC(super::super::RecommendLineupInfo::RecommendLineupInfo),
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.ADDCJEJPFEF)
         ADDCJEJPFEF(super::super::KAMCIOPBPGA::KAMCIOPBPGA),
         // @@protoc_insertion_point(oneof_field:KEHMGKIHEFN.PMHIBHNEPHI)
@@ -462,34 +462,34 @@ pub mod kehmgkihefn {
         JILKKAJBLJK(super::super::IIGJFPMIGKF::IIGJFPMIGKF),
     }
 
-    impl ::protobuf::Oneof for NFGNBBJGANG {
+    impl ::protobuf::Oneof for NJEFMLLOBBJ {
     }
 
-    impl ::protobuf::OneofFull for NFGNBBJGANG {
+    impl ::protobuf::OneofFull for NJEFMLLOBBJ {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::KEHMGKIHEFN as ::protobuf::MessageFull>::descriptor().oneof_by_name("NFGNBBJGANG").unwrap()).clone()
+            descriptor.get(|| <super::KEHMGKIHEFN as ::protobuf::MessageFull>::descriptor().oneof_by_name("NJEFMLLOBBJ").unwrap()).clone()
         }
     }
 
-    impl NFGNBBJGANG {
+    impl NJEFMLLOBBJ {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NFGNBBJGANG>("NFGNBBJGANG")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NJEFMLLOBBJ>("NJEFMLLOBBJ")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KEHMGKIHEFN.proto\x1a\x11DKHENLMAEBE.proto\x1a\x11FCNOLLFGPCK.prot\
-    o\x1a\x11IIGJFPMIGKF.proto\x1a\x11KAMCIOPBPGA.proto\x1a\x16PlayerSimpleI\
-    nfo.proto\"\xb9\x02\n\x0bKEHMGKIHEFN\x12\x1f\n\x0bremark_name\x18\x06\
-    \x20\x01(\tR\nremarkName\x122\n\x0bplayer_info\x18\x0f\x20\x01(\x0b2\x11\
-    .PlayerSimpleInfoR\nplayerInfo\x120\n\x0bGIEIDJEEPAC\x18\x0e\x20\x01(\
-    \x0b2\x0c.FCNOLLFGPCKH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDCJEJPFEF\x18\n\x20\
-    \x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEF\x120\n\x0bPMHIBHNEPHI\x18\
-    \x05\x20\x01(\x0b2\x0c.DKHENLMAEBEH\0R\x0bPMHIBHNEPHI\x120\n\x0bJILKKAJB\
-    LJK\x18\x04\x20\x01(\x0b2\x0c.IIGJFPMIGKFH\0R\x0bJILKKAJBLJKB\r\n\x0bNFG\
-    NBBJGANGb\x06proto3\
+    \n\x11KEHMGKIHEFN.proto\x1a\x11DKHENLMAEBE.proto\x1a\x11IIGJFPMIGKF.prot\
+    o\x1a\x11KAMCIOPBPGA.proto\x1a\x16PlayerSimpleInfo.proto\x1a\x19Recommen\
+    dLineupInfo.proto\"\xc1\x02\n\x0bKEHMGKIHEFN\x128\n\x0bGIEIDJEEPAC\x18\r\
+    \x20\x01(\x0b2\x14.RecommendLineupInfoH\0R\x0bGIEIDJEEPAC\x120\n\x0bADDC\
+    JEJPFEF\x18\x03\x20\x01(\x0b2\x0c.KAMCIOPBPGAH\0R\x0bADDCJEJPFEF\x120\n\
+    \x0bPMHIBHNEPHI\x18\x01\x20\x01(\x0b2\x0c.DKHENLMAEBEH\0R\x0bPMHIBHNEPHI\
+    \x120\n\x0bJILKKAJBLJK\x18\x02\x20\x01(\x0b2\x0c.IIGJFPMIGKFH\0R\x0bJILK\
+    KAJBLJK\x12\x1f\n\x0bremark_name\x18\x04\x20\x01(\tR\nremarkName\x122\n\
+    \x0bplayer_info\x18\t\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfoB\r\
+    \n\x0bNJEFMLLOBBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -508,10 +508,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::DKHENLMAEBE::file_descriptor().clone());
-            deps.push(super::FCNOLLFGPCK::file_descriptor().clone());
             deps.push(super::IIGJFPMIGKF::file_descriptor().clone());
             deps.push(super::KAMCIOPBPGA::file_descriptor().clone());
             deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
+            deps.push(super::RecommendLineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KEHMGKIHEFN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

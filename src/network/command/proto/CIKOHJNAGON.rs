@@ -30,8 +30,8 @@ pub struct CIKOHJNAGON {
     // message fields
     // @@protoc_insertion_point(field:CIKOHJNAGON.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:CIKOHJNAGON.KCJBMKJLFBA)
-    pub KCJBMKJLFBA: ::protobuf::MessageField<super::AreaDynamicInfo::AreaDynamicInfo>,
+    // @@protoc_insertion_point(field:CIKOHJNAGON.FEMHEFEKOAG)
+    pub FEMHEFEKOAG: ::protobuf::MessageField<super::AreaDynamicInfo::AreaDynamicInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:CIKOHJNAGON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl CIKOHJNAGON {
             |m: &mut CIKOHJNAGON| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AreaDynamicInfo::AreaDynamicInfo>(
-            "KCJBMKJLFBA",
-            |m: &CIKOHJNAGON| { &m.KCJBMKJLFBA },
-            |m: &mut CIKOHJNAGON| { &mut m.KCJBMKJLFBA },
+            "FEMHEFEKOAG",
+            |m: &CIKOHJNAGON| { &m.FEMHEFEKOAG },
+            |m: &mut CIKOHJNAGON| { &mut m.FEMHEFEKOAG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIKOHJNAGON>(
             "CIKOHJNAGON",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.area_id = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KCJBMKJLFBA)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FEMHEFEKOAG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for CIKOHJNAGON {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
-        if let Some(v) = self.KCJBMKJLFBA.as_ref() {
+        if let Some(v) = self.FEMHEFEKOAG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for CIKOHJNAGON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(13, self.area_id)?;
+            os.write_uint32(4, self.area_id)?;
         }
-        if let Some(v) = self.KCJBMKJLFBA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.FEMHEFEKOAG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for CIKOHJNAGON {
 
     fn clear(&mut self) {
         self.area_id = 0;
-        self.KCJBMKJLFBA.clear();
+        self.FEMHEFEKOAG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIKOHJNAGON {
         static instance: CIKOHJNAGON = CIKOHJNAGON {
             area_id: 0,
-            KCJBMKJLFBA: ::protobuf::MessageField::none(),
+            FEMHEFEKOAG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CIKOHJNAGON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIKOHJNAGON.proto\x1a\x15AreaDynamicInfo.proto\"Z\n\x0bCIKOHJNAGON\
-    \x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06areaId\x122\n\x0bKCJBMKJLFBA\
-    \x18\x01\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bKCJBMKJLFBAb\x06proto3\
+    \x12\x17\n\x07area_id\x18\x04\x20\x01(\rR\x06areaId\x122\n\x0bFEMHEFEKOA\
+    G\x18\x0c\x20\x01(\x0b2\x10.AreaDynamicInfoR\x0bFEMHEFEKOAGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

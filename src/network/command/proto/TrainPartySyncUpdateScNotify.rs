@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySyncUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartySyncUpdateScNotify.FFLPKLLDHLM)
-    pub FFLPKLLDHLM: ::std::vec::Vec<super::PLKCMGDEDCK::PLKCMGDEDCK>,
+    // @@protoc_insertion_point(field:TrainPartySyncUpdateScNotify.CPJGEGCBNNG)
+    pub CPJGEGCBNNG: ::std::vec::Vec<super::PLKCMGDEDCK::PLKCMGDEDCK>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySyncUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartySyncUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFLPKLLDHLM",
-            |m: &TrainPartySyncUpdateScNotify| { &m.FFLPKLLDHLM },
-            |m: &mut TrainPartySyncUpdateScNotify| { &mut m.FFLPKLLDHLM },
+            "CPJGEGCBNNG",
+            |m: &TrainPartySyncUpdateScNotify| { &m.CPJGEGCBNNG },
+            |m: &mut TrainPartySyncUpdateScNotify| { &mut m.CPJGEGCBNNG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySyncUpdateScNotify>(
             "TrainPartySyncUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.FFLPKLLDHLM.push(is.read_message()?);
+                82 => {
+                    self.CPJGEGCBNNG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FFLPKLLDHLM {
+        for value in &self.CPJGEGCBNNG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FFLPKLLDHLM {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.CPJGEGCBNNG {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.FFLPKLLDHLM.clear();
+        self.CPJGEGCBNNG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySyncUpdateScNotify {
         static instance: TrainPartySyncUpdateScNotify = TrainPartySyncUpdateScNotify {
-            FFLPKLLDHLM: ::std::vec::Vec::new(),
+            CPJGEGCBNNG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySyncUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TrainPartySyncUpdateScNotify.proto\x1a\x11PLKCMGDEDCK.proto\"N\n\x1c\
-    TrainPartySyncUpdateScNotify\x12.\n\x0bFFLPKLLDHLM\x18\x0f\x20\x03(\x0b2\
-    \x0c.PLKCMGDEDCKR\x0bFFLPKLLDHLMb\x06proto3\
+    TrainPartySyncUpdateScNotify\x12.\n\x0bCPJGEGCBNNG\x18\n\x20\x03(\x0b2\
+    \x0c.PLKCMGDEDCKR\x0bCPJGEGCBNNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

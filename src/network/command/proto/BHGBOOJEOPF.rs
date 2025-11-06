@@ -30,12 +30,12 @@ pub struct BHGBOOJEOPF {
     // message fields
     // @@protoc_insertion_point(field:BHGBOOJEOPF.card_id)
     pub card_id: u32,
-    // @@protoc_insertion_point(field:BHGBOOJEOPF.display_value)
-    pub display_value: f64,
-    // @@protoc_insertion_point(field:BHGBOOJEOPF.PMFHMBCFCPE)
-    pub PMFHMBCFCPE: bool,
-    // @@protoc_insertion_point(field:BHGBOOJEOPF.switch_list)
-    pub switch_list: ::std::vec::Vec<f64>,
+    // @@protoc_insertion_point(field:BHGBOOJEOPF.param)
+    pub param: f64,
+    // @@protoc_insertion_point(field:BHGBOOJEOPF.CHEDKKMCLHO)
+    pub CHEDKKMCLHO: bool,
+    // @@protoc_insertion_point(field:BHGBOOJEOPF.param_list)
+    pub param_list: ::std::vec::Vec<f64>,
     // special fields
     // @@protoc_insertion_point(special_field:BHGBOOJEOPF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl BHGBOOJEOPF {
             |m: &mut BHGBOOJEOPF| { &mut m.card_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &BHGBOOJEOPF| { &m.display_value },
-            |m: &mut BHGBOOJEOPF| { &mut m.display_value },
+            "param",
+            |m: &BHGBOOJEOPF| { &m.param },
+            |m: &mut BHGBOOJEOPF| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMFHMBCFCPE",
-            |m: &BHGBOOJEOPF| { &m.PMFHMBCFCPE },
-            |m: &mut BHGBOOJEOPF| { &mut m.PMFHMBCFCPE },
+            "CHEDKKMCLHO",
+            |m: &BHGBOOJEOPF| { &m.CHEDKKMCLHO },
+            |m: &mut BHGBOOJEOPF| { &mut m.CHEDKKMCLHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &BHGBOOJEOPF| { &m.switch_list },
-            |m: &mut BHGBOOJEOPF| { &mut m.switch_list },
+            "param_list",
+            |m: &BHGBOOJEOPF| { &m.param_list },
+            |m: &mut BHGBOOJEOPF| { &mut m.param_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BHGBOOJEOPF>(
             "BHGBOOJEOPF",
@@ -97,16 +97,16 @@ impl ::protobuf::Message for BHGBOOJEOPF {
                     self.card_id = is.read_uint32()?;
                 },
                 17 => {
-                    self.display_value = is.read_double()?;
+                    self.param = is.read_double()?;
                 },
                 24 => {
-                    self.PMFHMBCFCPE = is.read_bool()?;
+                    self.CHEDKKMCLHO = is.read_bool()?;
                 },
                 34 => {
-                    is.read_repeated_packed_double_into(&mut self.switch_list)?;
+                    is.read_repeated_packed_double_into(&mut self.param_list)?;
                 },
                 33 => {
-                    self.switch_list.push(is.read_double()?);
+                    self.param_list.push(is.read_double()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BHGBOOJEOPF {
         if self.card_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.card_id);
         }
-        if self.display_value != 0. {
+        if self.param != 0. {
             my_size += 1 + 8;
         }
-        if self.PMFHMBCFCPE != false {
+        if self.CHEDKKMCLHO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_double_size(4, &self.switch_list);
+        my_size += ::protobuf::rt::vec_packed_double_size(4, &self.param_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -139,13 +139,13 @@ impl ::protobuf::Message for BHGBOOJEOPF {
         if self.card_id != 0 {
             os.write_uint32(1, self.card_id)?;
         }
-        if self.display_value != 0. {
-            os.write_double(2, self.display_value)?;
+        if self.param != 0. {
+            os.write_double(2, self.param)?;
         }
-        if self.PMFHMBCFCPE != false {
-            os.write_bool(3, self.PMFHMBCFCPE)?;
+        if self.CHEDKKMCLHO != false {
+            os.write_bool(3, self.CHEDKKMCLHO)?;
         }
-        os.write_repeated_packed_double(4, &self.switch_list)?;
+        os.write_repeated_packed_double(4, &self.param_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,18 +164,18 @@ impl ::protobuf::Message for BHGBOOJEOPF {
 
     fn clear(&mut self) {
         self.card_id = 0;
-        self.display_value = 0.;
-        self.PMFHMBCFCPE = false;
-        self.switch_list.clear();
+        self.param = 0.;
+        self.CHEDKKMCLHO = false;
+        self.param_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BHGBOOJEOPF {
         static instance: BHGBOOJEOPF = BHGBOOJEOPF {
             card_id: 0,
-            display_value: 0.,
-            PMFHMBCFCPE: false,
-            switch_list: ::std::vec::Vec::new(),
+            param: 0.,
+            CHEDKKMCLHO: false,
+            param_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for BHGBOOJEOPF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BHGBOOJEOPF.proto\"\x8e\x01\n\x0bBHGBOOJEOPF\x12\x17\n\x07card_id\
-    \x18\x01\x20\x01(\rR\x06cardId\x12#\n\rdisplay_value\x18\x02\x20\x01(\
-    \x01R\x0cdisplayValue\x12\x20\n\x0bPMFHMBCFCPE\x18\x03\x20\x01(\x08R\x0b\
-    PMFHMBCFCPE\x12\x1f\n\x0bswitch_list\x18\x04\x20\x03(\x01R\nswitchListb\
-    \x06proto3\
+    \n\x11BHGBOOJEOPF.proto\"}\n\x0bBHGBOOJEOPF\x12\x17\n\x07card_id\x18\x01\
+    \x20\x01(\rR\x06cardId\x12\x14\n\x05param\x18\x02\x20\x01(\x01R\x05param\
+    \x12\x20\n\x0bCHEDKKMCLHO\x18\x03\x20\x01(\x08R\x0bCHEDKKMCLHO\x12\x1d\n\
+    \nparam_list\x18\x04\x20\x03(\x01R\tparamListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

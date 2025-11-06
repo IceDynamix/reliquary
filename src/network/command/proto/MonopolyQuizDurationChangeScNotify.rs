@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyQuizDurationChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyQuizDurationChangeScNotify.LEADMNEIMDP)
-    pub LEADMNEIMDP: ::std::vec::Vec<super::OOCKALNFHNP::OOCKALNFHNP>,
+    // @@protoc_insertion_point(field:MonopolyQuizDurationChangeScNotify.LIFANHMGGIN)
+    pub LIFANHMGGIN: ::std::vec::Vec<super::OOCKALNFHNP::OOCKALNFHNP>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyQuizDurationChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyQuizDurationChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LEADMNEIMDP",
-            |m: &MonopolyQuizDurationChangeScNotify| { &m.LEADMNEIMDP },
-            |m: &mut MonopolyQuizDurationChangeScNotify| { &mut m.LEADMNEIMDP },
+            "LIFANHMGGIN",
+            |m: &MonopolyQuizDurationChangeScNotify| { &m.LIFANHMGGIN },
+            |m: &mut MonopolyQuizDurationChangeScNotify| { &mut m.LIFANHMGGIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyQuizDurationChangeScNotify>(
             "MonopolyQuizDurationChangeScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    self.LEADMNEIMDP.push(is.read_message()?);
+                    self.LIFANHMGGIN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LEADMNEIMDP {
+        for value in &self.LIFANHMGGIN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LEADMNEIMDP {
+        for v in &self.LIFANHMGGIN {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.LEADMNEIMDP.clear();
+        self.LIFANHMGGIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyQuizDurationChangeScNotify {
         static instance: MonopolyQuizDurationChangeScNotify = MonopolyQuizDurationChangeScNotify {
-            LEADMNEIMDP: ::std::vec::Vec::new(),
+            LIFANHMGGIN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyQuizDurationChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MonopolyQuizDurationChangeScNotify.proto\x1a\x11OOCKALNFHNP.proto\"T\
-    \n\"MonopolyQuizDurationChangeScNotify\x12.\n\x0bLEADMNEIMDP\x18\x03\x20\
-    \x03(\x0b2\x0c.OOCKALNFHNPR\x0bLEADMNEIMDPb\x06proto3\
+    \n\"MonopolyQuizDurationChangeScNotify\x12.\n\x0bLIFANHMGGIN\x18\x03\x20\
+    \x03(\x0b2\x0c.OOCKALNFHNPR\x0bLIFANHMGGINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

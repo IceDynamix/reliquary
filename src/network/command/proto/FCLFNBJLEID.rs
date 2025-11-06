@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FCLFNBJLEID {
     // message fields
-    // @@protoc_insertion_point(field:FCLFNBJLEID.is_taken_reward)
-    pub is_taken_reward: bool,
-    // @@protoc_insertion_point(field:FCLFNBJLEID.PDPCDOHLIHO)
-    pub PDPCDOHLIHO: u32,
+    // @@protoc_insertion_point(field:FCLFNBJLEID.ICMKMIDNGFM)
+    pub ICMKMIDNGFM: u32,
+    // @@protoc_insertion_point(field:FCLFNBJLEID.is_reward_taken)
+    pub is_reward_taken: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FCLFNBJLEID.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FCLFNBJLEID {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_taken_reward",
-            |m: &FCLFNBJLEID| { &m.is_taken_reward },
-            |m: &mut FCLFNBJLEID| { &mut m.is_taken_reward },
+            "ICMKMIDNGFM",
+            |m: &FCLFNBJLEID| { &m.ICMKMIDNGFM },
+            |m: &mut FCLFNBJLEID| { &mut m.ICMKMIDNGFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDPCDOHLIHO",
-            |m: &FCLFNBJLEID| { &m.PDPCDOHLIHO },
-            |m: &mut FCLFNBJLEID| { &mut m.PDPCDOHLIHO },
+            "is_reward_taken",
+            |m: &FCLFNBJLEID| { &m.is_reward_taken },
+            |m: &mut FCLFNBJLEID| { &mut m.is_reward_taken },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FCLFNBJLEID>(
             "FCLFNBJLEID",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FCLFNBJLEID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.is_taken_reward = is.read_bool()?;
+                40 => {
+                    self.ICMKMIDNGFM = is.read_uint32()?;
                 },
                 80 => {
-                    self.PDPCDOHLIHO = is.read_uint32()?;
+                    self.is_reward_taken = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FCLFNBJLEID {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_taken_reward != false {
-            my_size += 1 + 1;
+        if self.ICMKMIDNGFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ICMKMIDNGFM);
         }
-        if self.PDPCDOHLIHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PDPCDOHLIHO);
+        if self.is_reward_taken != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FCLFNBJLEID {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_taken_reward != false {
-            os.write_bool(8, self.is_taken_reward)?;
+        if self.ICMKMIDNGFM != 0 {
+            os.write_uint32(5, self.ICMKMIDNGFM)?;
         }
-        if self.PDPCDOHLIHO != 0 {
-            os.write_uint32(10, self.PDPCDOHLIHO)?;
+        if self.is_reward_taken != false {
+            os.write_bool(10, self.is_reward_taken)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FCLFNBJLEID {
     }
 
     fn clear(&mut self) {
-        self.is_taken_reward = false;
-        self.PDPCDOHLIHO = 0;
+        self.ICMKMIDNGFM = 0;
+        self.is_reward_taken = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FCLFNBJLEID {
         static instance: FCLFNBJLEID = FCLFNBJLEID {
-            is_taken_reward: false,
-            PDPCDOHLIHO: 0,
+            ICMKMIDNGFM: 0,
+            is_reward_taken: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FCLFNBJLEID {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FCLFNBJLEID.proto\"W\n\x0bFCLFNBJLEID\x12&\n\x0fis_taken_reward\
-    \x18\x08\x20\x01(\x08R\risTakenReward\x12\x20\n\x0bPDPCDOHLIHO\x18\n\x20\
-    \x01(\rR\x0bPDPCDOHLIHOb\x06proto3\
+    \n\x11FCLFNBJLEID.proto\"W\n\x0bFCLFNBJLEID\x12\x20\n\x0bICMKMIDNGFM\x18\
+    \x05\x20\x01(\rR\x0bICMKMIDNGFM\x12&\n\x0fis_reward_taken\x18\n\x20\x01(\
+    \x08R\risRewardTakenb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

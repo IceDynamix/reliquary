@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LIMLKCFGKFA {
     // message fields
-    // @@protoc_insertion_point(field:LIMLKCFGKFA.BCFAIIJFLFA)
-    pub BCFAIIJFLFA: bool,
+    // @@protoc_insertion_point(field:LIMLKCFGKFA.PMKEPOJENKF)
+    pub PMKEPOJENKF: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LIMLKCFGKFA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LIMLKCFGKFA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCFAIIJFLFA",
-            |m: &LIMLKCFGKFA| { &m.BCFAIIJFLFA },
-            |m: &mut LIMLKCFGKFA| { &mut m.BCFAIIJFLFA },
+            "PMKEPOJENKF",
+            |m: &LIMLKCFGKFA| { &m.PMKEPOJENKF },
+            |m: &mut LIMLKCFGKFA| { &mut m.PMKEPOJENKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LIMLKCFGKFA>(
             "LIMLKCFGKFA",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for LIMLKCFGKFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.BCFAIIJFLFA = is.read_bool()?;
+                48 => {
+                    self.PMKEPOJENKF = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for LIMLKCFGKFA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BCFAIIJFLFA != false {
+        if self.PMKEPOJENKF != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for LIMLKCFGKFA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BCFAIIJFLFA != false {
-            os.write_bool(3, self.BCFAIIJFLFA)?;
+        if self.PMKEPOJENKF != false {
+            os.write_bool(6, self.PMKEPOJENKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for LIMLKCFGKFA {
     }
 
     fn clear(&mut self) {
-        self.BCFAIIJFLFA = false;
+        self.PMKEPOJENKF = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LIMLKCFGKFA {
         static instance: LIMLKCFGKFA = LIMLKCFGKFA {
-            BCFAIIJFLFA: false,
+            PMKEPOJENKF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for LIMLKCFGKFA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LIMLKCFGKFA.proto\"/\n\x0bLIMLKCFGKFA\x12\x20\n\x0bBCFAIIJFLFA\x18\
-    \x03\x20\x01(\x08R\x0bBCFAIIJFLFAb\x06proto3\
+    \n\x11LIMLKCFGKFA.proto\"/\n\x0bLIMLKCFGKFA\x12\x20\n\x0bPMKEPOJENKF\x18\
+    \x06\x20\x01(\x08R\x0bPMKEPOJENKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

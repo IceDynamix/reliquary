@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetOfferedCardPieceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.HPJJDCJHHOA)
-    pub HPJJDCJHHOA: u64,
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.CABEHKOFLPG)
-    pub CABEHKOFLPG: bool,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.LLKBPOIPNPE)
+    pub LLKBPOIPNPE: bool,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.OADNJCAOBJI)
+    pub OADNJCAOBJI: u64,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetOfferedCardPieceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesGetOfferedCardPieceCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPJJDCJHHOA",
-            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.HPJJDCJHHOA },
-            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.HPJJDCJHHOA },
+            "LLKBPOIPNPE",
+            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.LLKBPOIPNPE },
+            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.LLKBPOIPNPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CABEHKOFLPG",
-            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.CABEHKOFLPG },
-            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.CABEHKOFLPG },
+            "OADNJCAOBJI",
+            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.OADNJCAOBJI },
+            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.OADNJCAOBJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetOfferedCardPieceCsReq>(
             "PlanetFesGetOfferedCardPieceCsReq",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.HPJJDCJHHOA = is.read_uint64()?;
+                    self.LLKBPOIPNPE = is.read_bool()?;
                 },
-                64 => {
-                    self.CABEHKOFLPG = is.read_bool()?;
+                80 => {
+                    self.OADNJCAOBJI = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HPJJDCJHHOA != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.HPJJDCJHHOA);
-        }
-        if self.CABEHKOFLPG != false {
+        if self.LLKBPOIPNPE != false {
             my_size += 1 + 1;
+        }
+        if self.OADNJCAOBJI != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.OADNJCAOBJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HPJJDCJHHOA != 0 {
-            os.write_uint64(3, self.HPJJDCJHHOA)?;
+        if self.LLKBPOIPNPE != false {
+            os.write_bool(3, self.LLKBPOIPNPE)?;
         }
-        if self.CABEHKOFLPG != false {
-            os.write_bool(8, self.CABEHKOFLPG)?;
+        if self.OADNJCAOBJI != 0 {
+            os.write_uint64(10, self.OADNJCAOBJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     }
 
     fn clear(&mut self) {
-        self.HPJJDCJHHOA = 0;
-        self.CABEHKOFLPG = false;
+        self.LLKBPOIPNPE = false;
+        self.OADNJCAOBJI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetOfferedCardPieceCsReq {
         static instance: PlanetFesGetOfferedCardPieceCsReq = PlanetFesGetOfferedCardPieceCsReq {
-            HPJJDCJHHOA: 0,
-            CABEHKOFLPG: false,
+            LLKBPOIPNPE: false,
+            OADNJCAOBJI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetOfferedCardPieceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'PlanetFesGetOfferedCardPieceCsReq.proto\"g\n!PlanetFesGetOfferedCardP\
-    ieceCsReq\x12\x20\n\x0bHPJJDCJHHOA\x18\x03\x20\x01(\x04R\x0bHPJJDCJHHOA\
-    \x12\x20\n\x0bCABEHKOFLPG\x18\x08\x20\x01(\x08R\x0bCABEHKOFLPGb\x06proto\
-    3\
+    ieceCsReq\x12\x20\n\x0bLLKBPOIPNPE\x18\x03\x20\x01(\x08R\x0bLLKBPOIPNPE\
+    \x12\x20\n\x0bOADNJCAOBJI\x18\n\x20\x01(\x04R\x0bOADNJCAOBJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

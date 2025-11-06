@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PACFHNEJADB {
     // message fields
-    // @@protoc_insertion_point(field:PACFHNEJADB.PBKOLNFGJDL)
-    pub PBKOLNFGJDL: u32,
-    // @@protoc_insertion_point(field:PACFHNEJADB.HNMGPIIILON)
-    pub HNMGPIIILON: bool,
+    // @@protoc_insertion_point(field:PACFHNEJADB.KMOMFJEMBCA)
+    pub KMOMFJEMBCA: bool,
+    // @@protoc_insertion_point(field:PACFHNEJADB.ANOOAEDKIAC)
+    pub ANOOAEDKIAC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PACFHNEJADB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PACFHNEJADB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBKOLNFGJDL",
-            |m: &PACFHNEJADB| { &m.PBKOLNFGJDL },
-            |m: &mut PACFHNEJADB| { &mut m.PBKOLNFGJDL },
+            "KMOMFJEMBCA",
+            |m: &PACFHNEJADB| { &m.KMOMFJEMBCA },
+            |m: &mut PACFHNEJADB| { &mut m.KMOMFJEMBCA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNMGPIIILON",
-            |m: &PACFHNEJADB| { &m.HNMGPIIILON },
-            |m: &mut PACFHNEJADB| { &mut m.HNMGPIIILON },
+            "ANOOAEDKIAC",
+            |m: &PACFHNEJADB| { &m.ANOOAEDKIAC },
+            |m: &mut PACFHNEJADB| { &mut m.ANOOAEDKIAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PACFHNEJADB>(
             "PACFHNEJADB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PACFHNEJADB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.PBKOLNFGJDL = is.read_uint32()?;
+                64 => {
+                    self.KMOMFJEMBCA = is.read_bool()?;
                 },
-                96 => {
-                    self.HNMGPIIILON = is.read_bool()?;
+                80 => {
+                    self.ANOOAEDKIAC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PACFHNEJADB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PBKOLNFGJDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PBKOLNFGJDL);
-        }
-        if self.HNMGPIIILON != false {
+        if self.KMOMFJEMBCA != false {
             my_size += 1 + 1;
+        }
+        if self.ANOOAEDKIAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ANOOAEDKIAC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PACFHNEJADB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PBKOLNFGJDL != 0 {
-            os.write_uint32(9, self.PBKOLNFGJDL)?;
+        if self.KMOMFJEMBCA != false {
+            os.write_bool(8, self.KMOMFJEMBCA)?;
         }
-        if self.HNMGPIIILON != false {
-            os.write_bool(12, self.HNMGPIIILON)?;
+        if self.ANOOAEDKIAC != 0 {
+            os.write_uint32(10, self.ANOOAEDKIAC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PACFHNEJADB {
     }
 
     fn clear(&mut self) {
-        self.PBKOLNFGJDL = 0;
-        self.HNMGPIIILON = false;
+        self.KMOMFJEMBCA = false;
+        self.ANOOAEDKIAC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PACFHNEJADB {
         static instance: PACFHNEJADB = PACFHNEJADB {
-            PBKOLNFGJDL: 0,
-            HNMGPIIILON: false,
+            KMOMFJEMBCA: false,
+            ANOOAEDKIAC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PACFHNEJADB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PACFHNEJADB.proto\"Q\n\x0bPACFHNEJADB\x12\x20\n\x0bPBKOLNFGJDL\x18\
-    \t\x20\x01(\rR\x0bPBKOLNFGJDL\x12\x20\n\x0bHNMGPIIILON\x18\x0c\x20\x01(\
-    \x08R\x0bHNMGPIIILONb\x06proto3\
+    \n\x11PACFHNEJADB.proto\"Q\n\x0bPACFHNEJADB\x12\x20\n\x0bKMOMFJEMBCA\x18\
+    \x08\x20\x01(\x08R\x0bKMOMFJEMBCA\x12\x20\n\x0bANOOAEDKIAC\x18\n\x20\x01\
+    (\rR\x0bANOOAEDKIACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PDICNBBKFNP {
     // message fields
-    // @@protoc_insertion_point(field:PDICNBBKFNP.KLGHECCBHCG)
-    pub KLGHECCBHCG: ::std::vec::Vec<super::CEENLALPDMK::CEENLALPDMK>,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.LCJNNDGKIDP)
-    pub LCJNNDGKIDP: ::std::vec::Vec<super::ECMMJLLHPMD::ECMMJLLHPMD>,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.COKDNPEEMAG)
-    pub COKDNPEEMAG: ::std::vec::Vec<super::IMGJIEBFGPF::IMGJIEBFGPF>,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.EODGCNAFIAC)
-    pub EODGCNAFIAC: u32,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.FJOCDKIFPPC)
-    pub FJOCDKIFPPC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.BENMFPMHIGB)
+    pub BENMFPMHIGB: ::std::vec::Vec<super::ECMMJLLHPMD::ECMMJLLHPMD>,
     // @@protoc_insertion_point(field:PDICNBBKFNP.rogue_season_info)
     pub rogue_season_info: ::std::vec::Vec<super::PDFHJMMDGAE::PDFHJMMDGAE>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.OHPGLELKKOB)
+    pub OHPGLELKKOB: ::std::vec::Vec<super::CEENLALPDMK::CEENLALPDMK>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.LFLHAKNDAIA)
+    pub LFLHAKNDAIA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PDICNBBKFNP.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:PDICNBBKFNP.LMELJCIFBDF)
-    pub LMELJCIFBDF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.JGLLMBGLPKG)
+    pub JGLLMBGLPKG: ::std::vec::Vec<super::IMGJIEBFGPF::IMGJIEBFGPF>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.GLKKHEHJAFD)
+    pub GLKKHEHJAFD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:PDICNBBKFNP.MMNBEBCILIF)
+    pub MMNBEBCILIF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PDICNBBKFNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,39 +66,24 @@ impl PDICNBBKFNP {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLGHECCBHCG",
-            |m: &PDICNBBKFNP| { &m.KLGHECCBHCG },
-            |m: &mut PDICNBBKFNP| { &mut m.KLGHECCBHCG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LCJNNDGKIDP",
-            |m: &PDICNBBKFNP| { &m.LCJNNDGKIDP },
-            |m: &mut PDICNBBKFNP| { &mut m.LCJNNDGKIDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "COKDNPEEMAG",
-            |m: &PDICNBBKFNP| { &m.COKDNPEEMAG },
-            |m: &mut PDICNBBKFNP| { &mut m.COKDNPEEMAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EODGCNAFIAC",
-            |m: &PDICNBBKFNP| { &m.EODGCNAFIAC },
-            |m: &mut PDICNBBKFNP| { &mut m.EODGCNAFIAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &PDICNBBKFNP| { &m.exp },
-            |m: &mut PDICNBBKFNP| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJOCDKIFPPC",
-            |m: &PDICNBBKFNP| { &m.FJOCDKIFPPC },
-            |m: &mut PDICNBBKFNP| { &mut m.FJOCDKIFPPC },
+            "BENMFPMHIGB",
+            |m: &PDICNBBKFNP| { &m.BENMFPMHIGB },
+            |m: &mut PDICNBBKFNP| { &mut m.BENMFPMHIGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_season_info",
             |m: &PDICNBBKFNP| { &m.rogue_season_info },
             |m: &mut PDICNBBKFNP| { &mut m.rogue_season_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OHPGLELKKOB",
+            |m: &PDICNBBKFNP| { &m.OHPGLELKKOB },
+            |m: &mut PDICNBBKFNP| { &mut m.OHPGLELKKOB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LFLHAKNDAIA",
+            |m: &PDICNBBKFNP| { &m.LFLHAKNDAIA },
+            |m: &mut PDICNBBKFNP| { &mut m.LFLHAKNDAIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
@@ -106,9 +91,24 @@ impl PDICNBBKFNP {
             |m: &mut PDICNBBKFNP| { &mut m.item_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LMELJCIFBDF",
-            |m: &PDICNBBKFNP| { &m.LMELJCIFBDF },
-            |m: &mut PDICNBBKFNP| { &mut m.LMELJCIFBDF },
+            "JGLLMBGLPKG",
+            |m: &PDICNBBKFNP| { &m.JGLLMBGLPKG },
+            |m: &mut PDICNBBKFNP| { &mut m.JGLLMBGLPKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GLKKHEHJAFD",
+            |m: &PDICNBBKFNP| { &m.GLKKHEHJAFD },
+            |m: &mut PDICNBBKFNP| { &mut m.GLKKHEHJAFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &PDICNBBKFNP| { &m.exp },
+            |m: &mut PDICNBBKFNP| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMNBEBCILIF",
+            |m: &PDICNBBKFNP| { &m.MMNBEBCILIF },
+            |m: &mut PDICNBBKFNP| { &mut m.MMNBEBCILIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PDICNBBKFNP>(
             "PDICNBBKFNP",
@@ -128,38 +128,38 @@ impl ::protobuf::Message for PDICNBBKFNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.KLGHECCBHCG.push(is.read_message()?);
+                10 => {
+                    self.BENMFPMHIGB.push(is.read_message()?);
                 },
-                74 => {
-                    self.LCJNNDGKIDP.push(is.read_message()?);
-                },
-                122 => {
-                    self.COKDNPEEMAG.push(is.read_message()?);
-                },
-                8 => {
-                    self.EODGCNAFIAC = is.read_uint32()?;
-                },
-                16 => {
-                    self.exp = is.read_uint32()?;
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJOCDKIFPPC)?;
-                },
-                24 => {
-                    self.FJOCDKIFPPC.push(is.read_uint32()?);
-                },
-                58 => {
+                18 => {
                     self.rogue_season_info.push(is.read_message()?);
                 },
-                48 => {
+                26 => {
+                    self.OHPGLELKKOB.push(is.read_message()?);
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LFLHAKNDAIA)?;
+                },
+                32 => {
+                    self.LFLHAKNDAIA.push(is.read_uint32()?);
+                },
+                40 => {
                     self.item_value = is.read_uint32()?;
                 },
+                50 => {
+                    self.JGLLMBGLPKG.push(is.read_message()?);
+                },
                 66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LMELJCIFBDF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.GLKKHEHJAFD)?;
                 },
                 64 => {
-                    self.LMELJCIFBDF.push(is.read_uint32()?);
+                    self.GLKKHEHJAFD.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.exp = is.read_uint32()?;
+                },
+                120 => {
+                    self.MMNBEBCILIF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -173,62 +173,62 @@ impl ::protobuf::Message for PDICNBBKFNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KLGHECCBHCG {
+        for value in &self.BENMFPMHIGB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.LCJNNDGKIDP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.COKDNPEEMAG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.EODGCNAFIAC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EODGCNAFIAC);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.exp);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FJOCDKIFPPC);
         for value in &self.rogue_season_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.OHPGLELKKOB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LFLHAKNDAIA);
         if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.item_value);
+            my_size += ::protobuf::rt::uint32_size(5, self.item_value);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.LMELJCIFBDF);
+        for value in &self.JGLLMBGLPKG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GLKKHEHJAFD);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.exp);
+        }
+        if self.MMNBEBCILIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MMNBEBCILIF);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KLGHECCBHCG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.BENMFPMHIGB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.LCJNNDGKIDP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        for v in &self.COKDNPEEMAG {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if self.EODGCNAFIAC != 0 {
-            os.write_uint32(1, self.EODGCNAFIAC)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(2, self.exp)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.FJOCDKIFPPC)?;
         for v in &self.rogue_season_info {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        for v in &self.OHPGLELKKOB {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        os.write_repeated_packed_uint32(4, &self.LFLHAKNDAIA)?;
         if self.item_value != 0 {
-            os.write_uint32(6, self.item_value)?;
+            os.write_uint32(5, self.item_value)?;
         }
-        os.write_repeated_packed_uint32(8, &self.LMELJCIFBDF)?;
+        for v in &self.JGLLMBGLPKG {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        os.write_repeated_packed_uint32(8, &self.GLKKHEHJAFD)?;
+        if self.exp != 0 {
+            os.write_uint32(14, self.exp)?;
+        }
+        if self.MMNBEBCILIF != 0 {
+            os.write_uint32(15, self.MMNBEBCILIF)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -246,29 +246,29 @@ impl ::protobuf::Message for PDICNBBKFNP {
     }
 
     fn clear(&mut self) {
-        self.KLGHECCBHCG.clear();
-        self.LCJNNDGKIDP.clear();
-        self.COKDNPEEMAG.clear();
-        self.EODGCNAFIAC = 0;
-        self.exp = 0;
-        self.FJOCDKIFPPC.clear();
+        self.BENMFPMHIGB.clear();
         self.rogue_season_info.clear();
+        self.OHPGLELKKOB.clear();
+        self.LFLHAKNDAIA.clear();
         self.item_value = 0;
-        self.LMELJCIFBDF.clear();
+        self.JGLLMBGLPKG.clear();
+        self.GLKKHEHJAFD.clear();
+        self.exp = 0;
+        self.MMNBEBCILIF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PDICNBBKFNP {
         static instance: PDICNBBKFNP = PDICNBBKFNP {
-            KLGHECCBHCG: ::std::vec::Vec::new(),
-            LCJNNDGKIDP: ::std::vec::Vec::new(),
-            COKDNPEEMAG: ::std::vec::Vec::new(),
-            EODGCNAFIAC: 0,
-            exp: 0,
-            FJOCDKIFPPC: ::std::vec::Vec::new(),
+            BENMFPMHIGB: ::std::vec::Vec::new(),
             rogue_season_info: ::std::vec::Vec::new(),
+            OHPGLELKKOB: ::std::vec::Vec::new(),
+            LFLHAKNDAIA: ::std::vec::Vec::new(),
             item_value: 0,
-            LMELJCIFBDF: ::std::vec::Vec::new(),
+            JGLLMBGLPKG: ::std::vec::Vec::new(),
+            GLKKHEHJAFD: ::std::vec::Vec::new(),
+            exp: 0,
+            MMNBEBCILIF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -295,15 +295,15 @@ impl ::protobuf::reflect::ProtobufValue for PDICNBBKFNP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PDICNBBKFNP.proto\x1a\x11CEENLALPDMK.proto\x1a\x11ECMMJLLHPMD.prot\
     o\x1a\x11IMGJIEBFGPF.proto\x1a\x11PDFHJMMDGAE.proto\"\xee\x02\n\x0bPDICN\
-    BBKFNP\x12.\n\x0bKLGHECCBHCG\x18\x0b\x20\x03(\x0b2\x0c.CEENLALPDMKR\x0bK\
-    LGHECCBHCG\x12.\n\x0bLCJNNDGKIDP\x18\t\x20\x03(\x0b2\x0c.ECMMJLLHPMDR\
-    \x0bLCJNNDGKIDP\x12.\n\x0bCOKDNPEEMAG\x18\x0f\x20\x03(\x0b2\x0c.IMGJIEBF\
-    GPFR\x0bCOKDNPEEMAG\x12\x20\n\x0bEODGCNAFIAC\x18\x01\x20\x01(\rR\x0bEODG\
-    CNAFIAC\x12\x10\n\x03exp\x18\x02\x20\x01(\rR\x03exp\x12\x20\n\x0bFJOCDKI\
-    FPPC\x18\x03\x20\x03(\rR\x0bFJOCDKIFPPC\x128\n\x11rogue_season_info\x18\
-    \x07\x20\x03(\x0b2\x0c.PDFHJMMDGAER\x0frogueSeasonInfo\x12\x1d\n\nitem_v\
-    alue\x18\x06\x20\x01(\rR\titemValue\x12\x20\n\x0bLMELJCIFBDF\x18\x08\x20\
-    \x03(\rR\x0bLMELJCIFBDFb\x06proto3\
+    BBKFNP\x12.\n\x0bBENMFPMHIGB\x18\x01\x20\x03(\x0b2\x0c.ECMMJLLHPMDR\x0bB\
+    ENMFPMHIGB\x128\n\x11rogue_season_info\x18\x02\x20\x03(\x0b2\x0c.PDFHJMM\
+    DGAER\x0frogueSeasonInfo\x12.\n\x0bOHPGLELKKOB\x18\x03\x20\x03(\x0b2\x0c\
+    .CEENLALPDMKR\x0bOHPGLELKKOB\x12\x20\n\x0bLFLHAKNDAIA\x18\x04\x20\x03(\r\
+    R\x0bLFLHAKNDAIA\x12\x1d\n\nitem_value\x18\x05\x20\x01(\rR\titemValue\
+    \x12.\n\x0bJGLLMBGLPKG\x18\x06\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0bJGLLMBG\
+    LPKG\x12\x20\n\x0bGLKKHEHJAFD\x18\x08\x20\x03(\rR\x0bGLKKHEHJAFD\x12\x10\
+    \n\x03exp\x18\x0e\x20\x01(\rR\x03exp\x12\x20\n\x0bMMNBEBCILIF\x18\x0f\
+    \x20\x01(\rR\x0bMMNBEBCILIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

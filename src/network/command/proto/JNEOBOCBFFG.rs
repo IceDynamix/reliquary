@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNEOBOCBFFG {
     // message fields
-    // @@protoc_insertion_point(field:JNEOBOCBFFG.timeline_info)
-    pub timeline_info: ::protobuf::MessageField<super::PropTimelineInfo::PropTimelineInfo>,
+    // @@protoc_insertion_point(field:JNEOBOCBFFG.timeline_Info)
+    pub timeline_Info: ::protobuf::MessageField<super::PropTimelineInfo::PropTimelineInfo>,
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<jneobocbffg::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<jneobocbffg::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:JNEOBOCBFFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,88 @@ impl JNEOBOCBFFG {
         ::std::default::Default::default()
     }
 
-    // .PropRogueInfo rogue_game_info = 12;
+    // .PropRogueGamleMachineInfo OIDCBKGGNDG = 5;
+
+    pub fn OIDCBKGGNDG(&self) -> &super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(ref v)) => v,
+            _ => <super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OIDCBKGGNDG(&mut self) {
+        self.IEICDGGELNE = ::std::option::Option::None;
+    }
+
+    pub fn has_OIDCBKGGNDG(&self) -> bool {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OIDCBKGGNDG(&mut self, v: super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OIDCBKGGNDG(&mut self) -> &mut super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(_)) = self.IEICDGGELNE {
+        } else {
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo::new()));
+        }
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OIDCBKGGNDG(&mut self) -> super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo {
+        if self.has_OIDCBKGGNDG() {
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo::new()
+        }
+    }
+
+    // .PropRogueInfo rogue_game_info = 13;
 
     pub fn rogue_game_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(ref v)) => v,
             _ => <super::PropRogueInfo::PropRogueInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_game_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_rogue_game_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_rogue_game_info(&mut self, v: super::PropRogueInfo::PropRogueInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_rogue_game_info(&mut self) -> &mut super::PropRogueInfo::PropRogueInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(super::PropRogueInfo::PropRogueInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(super::PropRogueInfo::PropRogueInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +137,8 @@ impl JNEOBOCBFFG {
     // Take field
     pub fn take_rogue_game_info(&mut self) -> super::PropRogueInfo::PropRogueInfo {
         if self.has_rogue_game_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,39 +146,88 @@ impl JNEOBOCBFFG {
         }
     }
 
-    // .PPLBHACNEGO rogue_aeon_info = 13;
+    // .PropRogueTournDoorInfo HAKIPLKCOKD = 9;
+
+    pub fn HAKIPLKCOKD(&self) -> &super::PropRogueTournDoorInfo::PropRogueTournDoorInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(ref v)) => v,
+            _ => <super::PropRogueTournDoorInfo::PropRogueTournDoorInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HAKIPLKCOKD(&mut self) {
+        self.IEICDGGELNE = ::std::option::Option::None;
+    }
+
+    pub fn has_HAKIPLKCOKD(&self) -> bool {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HAKIPLKCOKD(&mut self, v: super::PropRogueTournDoorInfo::PropRogueTournDoorInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HAKIPLKCOKD(&mut self) -> &mut super::PropRogueTournDoorInfo::PropRogueTournDoorInfo {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(_)) = self.IEICDGGELNE {
+        } else {
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(super::PropRogueTournDoorInfo::PropRogueTournDoorInfo::new()));
+        }
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HAKIPLKCOKD(&mut self) -> super::PropRogueTournDoorInfo::PropRogueTournDoorInfo {
+        if self.has_HAKIPLKCOKD() {
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PropRogueTournDoorInfo::PropRogueTournDoorInfo::new()
+        }
+    }
+
+    // .PPLBHACNEGO rogue_aeon_info = 1;
 
     pub fn rogue_aeon_info(&self) -> &super::PPLBHACNEGO::PPLBHACNEGO {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(ref v)) => v,
             _ => <super::PPLBHACNEGO::PPLBHACNEGO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_aeon_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_rogue_aeon_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_rogue_aeon_info(&mut self, v: super::PPLBHACNEGO::PPLBHACNEGO) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_rogue_aeon_info(&mut self) -> &mut super::PPLBHACNEGO::PPLBHACNEGO {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(super::PPLBHACNEGO::PPLBHACNEGO::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(super::PPLBHACNEGO::PPLBHACNEGO::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +235,8 @@ impl JNEOBOCBFFG {
     // Take field
     pub fn take_rogue_aeon_info(&mut self) -> super::PPLBHACNEGO::PPLBHACNEGO {
         if self.has_rogue_aeon_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -146,39 +244,39 @@ impl JNEOBOCBFFG {
         }
     }
 
-    // .PropChessRogueInfo JJFKKDKPCPO = 7;
+    // .PropChessRogueInfo JJFKKDKPCPO = 15;
 
     pub fn JJFKKDKPCPO(&self) -> &super::PropChessRogueInfo::PropChessRogueInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(ref v)) => v,
             _ => <super::PropChessRogueInfo::PropChessRogueInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JJFKKDKPCPO(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_JJFKKDKPCPO(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JJFKKDKPCPO(&mut self, v: super::PropChessRogueInfo::PropChessRogueInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JJFKKDKPCPO(&mut self) -> &mut super::PropChessRogueInfo::PropChessRogueInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(super::PropChessRogueInfo::PropChessRogueInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(super::PropChessRogueInfo::PropChessRogueInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -186,8 +284,8 @@ impl JNEOBOCBFFG {
     // Take field
     pub fn take_JJFKKDKPCPO(&mut self) -> super::PropChessRogueInfo::PropChessRogueInfo {
         if self.has_JJFKKDKPCPO() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -195,258 +293,162 @@ impl JNEOBOCBFFG {
         }
     }
 
-    // .RogueTournDoorInfo HAKIPLKCOKD = 14;
+    // .PropRogueTournWorkbenchInfo MABCFPOCLOL = 8;
 
-    pub fn HAKIPLKCOKD(&self) -> &super::RogueTournDoorInfo::RogueTournDoorInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(ref v)) => v,
-            _ => <super::RogueTournDoorInfo::RogueTournDoorInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_HAKIPLKCOKD(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
-    }
-
-    pub fn has_HAKIPLKCOKD(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HAKIPLKCOKD(&mut self, v: super::RogueTournDoorInfo::RogueTournDoorInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_HAKIPLKCOKD(&mut self) -> &mut super::RogueTournDoorInfo::RogueTournDoorInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(_)) = self.KFELKJLDKEH {
-        } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(super::RogueTournDoorInfo::RogueTournDoorInfo::new()));
-        }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_HAKIPLKCOKD(&mut self) -> super::RogueTournDoorInfo::RogueTournDoorInfo {
-        if self.has_HAKIPLKCOKD() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::RogueTournDoorInfo::RogueTournDoorInfo::new()
-        }
-    }
-
-    // .RogueTournWorkbenchInfo MABCFPOCLOL = 6;
-
-    pub fn MABCFPOCLOL(&self) -> &super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(ref v)) => v,
-            _ => <super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo as ::protobuf::Message>::default_instance(),
+    pub fn MABCFPOCLOL(&self) -> &super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(ref v)) => v,
+            _ => <super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_MABCFPOCLOL(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_MABCFPOCLOL(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MABCFPOCLOL(&mut self, v: super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(v))
+    pub fn set_MABCFPOCLOL(&mut self, v: super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MABCFPOCLOL(&mut self) -> &mut super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(_)) = self.KFELKJLDKEH {
+    pub fn mut_MABCFPOCLOL(&mut self) -> &mut super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MABCFPOCLOL(&mut self) -> super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo {
+    pub fn take_MABCFPOCLOL(&mut self) -> super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo {
         if self.has_MABCFPOCLOL() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo::new()
+            super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo::new()
         }
     }
 
-    // .RogueGambleMachineInfo OIDCBKGGNDG = 15;
+    // .PropRogueCurseChestInfo DDCKMELBCDJ = 10;
 
-    pub fn OIDCBKGGNDG(&self) -> &super::RogueGambleMachineInfo::RogueGambleMachineInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(ref v)) => v,
-            _ => <super::RogueGambleMachineInfo::RogueGambleMachineInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OIDCBKGGNDG(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
-    }
-
-    pub fn has_OIDCBKGGNDG(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OIDCBKGGNDG(&mut self, v: super::RogueGambleMachineInfo::RogueGambleMachineInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OIDCBKGGNDG(&mut self) -> &mut super::RogueGambleMachineInfo::RogueGambleMachineInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(_)) = self.KFELKJLDKEH {
-        } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(super::RogueGambleMachineInfo::RogueGambleMachineInfo::new()));
-        }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OIDCBKGGNDG(&mut self) -> super::RogueGambleMachineInfo::RogueGambleMachineInfo {
-        if self.has_OIDCBKGGNDG() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::RogueGambleMachineInfo::RogueGambleMachineInfo::new()
-        }
-    }
-
-    // .RogueCurseChestInfo DDCKMELBCDJ = 9;
-
-    pub fn DDCKMELBCDJ(&self) -> &super::RogueCurseChestInfo::RogueCurseChestInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(ref v)) => v,
-            _ => <super::RogueCurseChestInfo::RogueCurseChestInfo as ::protobuf::Message>::default_instance(),
+    pub fn DDCKMELBCDJ(&self) -> &super::PropRogueCurseChestInfo::PropRogueCurseChestInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(ref v)) => v,
+            _ => <super::PropRogueCurseChestInfo::PropRogueCurseChestInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_DDCKMELBCDJ(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_DDCKMELBCDJ(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DDCKMELBCDJ(&mut self, v: super::RogueCurseChestInfo::RogueCurseChestInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(v))
+    pub fn set_DDCKMELBCDJ(&mut self, v: super::PropRogueCurseChestInfo::PropRogueCurseChestInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DDCKMELBCDJ(&mut self) -> &mut super::RogueCurseChestInfo::RogueCurseChestInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(_)) = self.KFELKJLDKEH {
+    pub fn mut_DDCKMELBCDJ(&mut self) -> &mut super::PropRogueCurseChestInfo::PropRogueCurseChestInfo {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(super::RogueCurseChestInfo::RogueCurseChestInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(super::PropRogueCurseChestInfo::PropRogueCurseChestInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DDCKMELBCDJ(&mut self) -> super::RogueCurseChestInfo::RogueCurseChestInfo {
+    pub fn take_DDCKMELBCDJ(&mut self) -> super::PropRogueCurseChestInfo::PropRogueCurseChestInfo {
         if self.has_DDCKMELBCDJ() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueCurseChestInfo::RogueCurseChestInfo::new()
+            super::PropRogueCurseChestInfo::PropRogueCurseChestInfo::new()
         }
     }
 
-    // .RogueMagicDoorInfo OMEKFJEPFLE = 8;
+    // .PropRogueMagicDoorInfo OMEKFJEPFLE = 11;
 
-    pub fn OMEKFJEPFLE(&self) -> &super::RogueMagicDoorInfo::RogueMagicDoorInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(ref v)) => v,
-            _ => <super::RogueMagicDoorInfo::RogueMagicDoorInfo as ::protobuf::Message>::default_instance(),
+    pub fn OMEKFJEPFLE(&self) -> &super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(ref v)) => v,
+            _ => <super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_OMEKFJEPFLE(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_OMEKFJEPFLE(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OMEKFJEPFLE(&mut self, v: super::RogueMagicDoorInfo::RogueMagicDoorInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(v))
+    pub fn set_OMEKFJEPFLE(&mut self, v: super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_OMEKFJEPFLE(&mut self) -> &mut super::RogueMagicDoorInfo::RogueMagicDoorInfo {
-        if let ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(_)) = self.KFELKJLDKEH {
+    pub fn mut_OMEKFJEPFLE(&mut self) -> &mut super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo {
+        if let ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(super::RogueMagicDoorInfo::RogueMagicDoorInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_OMEKFJEPFLE(&mut self) -> super::RogueMagicDoorInfo::RogueMagicDoorInfo {
+    pub fn take_OMEKFJEPFLE(&mut self) -> super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo {
         if self.has_OMEKFJEPFLE() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueMagicDoorInfo::RogueMagicDoorInfo::new()
+            super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropTimelineInfo::PropTimelineInfo>(
-            "timeline_info",
-            |m: &JNEOBOCBFFG| { &m.timeline_info },
-            |m: &mut JNEOBOCBFFG| { &mut m.timeline_info },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo>(
+            "OIDCBKGGNDG",
+            JNEOBOCBFFG::has_OIDCBKGGNDG,
+            JNEOBOCBFFG::OIDCBKGGNDG,
+            JNEOBOCBFFG::mut_OIDCBKGGNDG,
+            JNEOBOCBFFG::set_OIDCBKGGNDG,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
             "rogue_game_info",
@@ -454,6 +456,13 @@ impl JNEOBOCBFFG {
             JNEOBOCBFFG::rogue_game_info,
             JNEOBOCBFFG::mut_rogue_game_info,
             JNEOBOCBFFG::set_rogue_game_info,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueTournDoorInfo::PropRogueTournDoorInfo>(
+            "HAKIPLKCOKD",
+            JNEOBOCBFFG::has_HAKIPLKCOKD,
+            JNEOBOCBFFG::HAKIPLKCOKD,
+            JNEOBOCBFFG::mut_HAKIPLKCOKD,
+            JNEOBOCBFFG::set_HAKIPLKCOKD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PPLBHACNEGO::PPLBHACNEGO>(
             "rogue_aeon_info",
@@ -469,42 +478,33 @@ impl JNEOBOCBFFG {
             JNEOBOCBFFG::mut_JJFKKDKPCPO,
             JNEOBOCBFFG::set_JJFKKDKPCPO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournDoorInfo::RogueTournDoorInfo>(
-            "HAKIPLKCOKD",
-            JNEOBOCBFFG::has_HAKIPLKCOKD,
-            JNEOBOCBFFG::HAKIPLKCOKD,
-            JNEOBOCBFFG::mut_HAKIPLKCOKD,
-            JNEOBOCBFFG::set_HAKIPLKCOKD,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo>(
             "MABCFPOCLOL",
             JNEOBOCBFFG::has_MABCFPOCLOL,
             JNEOBOCBFFG::MABCFPOCLOL,
             JNEOBOCBFFG::mut_MABCFPOCLOL,
             JNEOBOCBFFG::set_MABCFPOCLOL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueGambleMachineInfo::RogueGambleMachineInfo>(
-            "OIDCBKGGNDG",
-            JNEOBOCBFFG::has_OIDCBKGGNDG,
-            JNEOBOCBFFG::OIDCBKGGNDG,
-            JNEOBOCBFFG::mut_OIDCBKGGNDG,
-            JNEOBOCBFFG::set_OIDCBKGGNDG,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueCurseChestInfo::RogueCurseChestInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueCurseChestInfo::PropRogueCurseChestInfo>(
             "DDCKMELBCDJ",
             JNEOBOCBFFG::has_DDCKMELBCDJ,
             JNEOBOCBFFG::DDCKMELBCDJ,
             JNEOBOCBFFG::mut_DDCKMELBCDJ,
             JNEOBOCBFFG::set_DDCKMELBCDJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueMagicDoorInfo::RogueMagicDoorInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo>(
             "OMEKFJEPFLE",
             JNEOBOCBFFG::has_OMEKFJEPFLE,
             JNEOBOCBFFG::OMEKFJEPFLE,
             JNEOBOCBFFG::mut_OMEKFJEPFLE,
             JNEOBOCBFFG::set_OMEKFJEPFLE,
         ));
-        oneofs.push(jneobocbffg::KFELKJLDKEH::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropTimelineInfo::PropTimelineInfo>(
+            "timeline_Info",
+            |m: &JNEOBOCBFFG| { &m.timeline_Info },
+            |m: &mut JNEOBOCBFFG| { &mut m.timeline_Info },
+        ));
+        oneofs.push(jneobocbffg::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNEOBOCBFFG>(
             "JNEOBOCBFFG",
             fields,
@@ -523,32 +523,32 @@ impl ::protobuf::Message for JNEOBOCBFFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
-                },
-                98 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueGameInfo(is.read_message()?));
+                42 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(is.read_message()?));
                 },
                 106 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::RogueAeonInfo(is.read_message()?));
-                },
-                58 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(is.read_message()?));
-                },
-                114 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(is.read_message()?));
-                },
-                50 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(is.read_message()?));
-                },
-                122 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(is.read_message()?));
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueGameInfo(is.read_message()?));
                 },
                 74 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(is.read_message()?));
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(is.read_message()?));
+                },
+                10 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::RogueAeonInfo(is.read_message()?));
+                },
+                122 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(is.read_message()?));
                 },
                 66 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(is.read_message()?));
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::MABCFPOCLOL(is.read_message()?));
+                },
+                82 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(is.read_message()?));
+                },
+                90 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(is.read_message()?));
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_Info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -562,41 +562,41 @@ impl ::protobuf::Message for JNEOBOCBFFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.timeline_info.as_ref() {
+        if let Some(v) = self.timeline_Info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &jneobocbffg::KFELKJLDKEH::RogueGameInfo(ref v) => {
+                &jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::RogueAeonInfo(ref v) => {
+                &jneobocbffg::IEICDGGELNE::RogueGameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(ref v) => {
+                &jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(ref v) => {
+                &jneobocbffg::IEICDGGELNE::RogueAeonInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(ref v) => {
+                &jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(ref v) => {
+                &jneobocbffg::IEICDGGELNE::MABCFPOCLOL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(ref v) => {
+                &jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(ref v) => {
+                &jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -608,34 +608,34 @@ impl ::protobuf::Message for JNEOBOCBFFG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.timeline_Info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &jneobocbffg::KFELKJLDKEH::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                &jneobocbffg::IEICDGGELNE::OIDCBKGGNDG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
-                &jneobocbffg::KFELKJLDKEH::RogueAeonInfo(ref v) => {
+                &jneobocbffg::IEICDGGELNE::RogueGameInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &jneobocbffg::KFELKJLDKEH::JJFKKDKPCPO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &jneobocbffg::KFELKJLDKEH::HAKIPLKCOKD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-                },
-                &jneobocbffg::KFELKJLDKEH::MABCFPOCLOL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
-                &jneobocbffg::KFELKJLDKEH::OIDCBKGGNDG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &jneobocbffg::KFELKJLDKEH::DDCKMELBCDJ(ref v) => {
+                &jneobocbffg::IEICDGGELNE::HAKIPLKCOKD(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &jneobocbffg::KFELKJLDKEH::OMEKFJEPFLE(ref v) => {
+                &jneobocbffg::IEICDGGELNE::RogueAeonInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &jneobocbffg::IEICDGGELNE::JJFKKDKPCPO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &jneobocbffg::IEICDGGELNE::MABCFPOCLOL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &jneobocbffg::IEICDGGELNE::DDCKMELBCDJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &jneobocbffg::IEICDGGELNE::OMEKFJEPFLE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -656,22 +656,22 @@ impl ::protobuf::Message for JNEOBOCBFFG {
     }
 
     fn clear(&mut self) {
-        self.timeline_info.clear();
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.timeline_Info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNEOBOCBFFG {
         static instance: JNEOBOCBFFG = JNEOBOCBFFG {
-            timeline_info: ::protobuf::MessageField::none(),
-            KFELKJLDKEH: ::std::option::Option::None,
+            timeline_Info: ::protobuf::MessageField::none(),
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -700,60 +700,61 @@ pub mod jneobocbffg {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:JNEOBOCBFFG.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:JNEOBOCBFFG.IEICDGGELNE)
+    pub enum IEICDGGELNE {
+        // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.OIDCBKGGNDG)
+        OIDCBKGGNDG(super::super::PropRogueGamleMachineInfo::PropRogueGamleMachineInfo),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.rogue_game_info)
         RogueGameInfo(super::super::PropRogueInfo::PropRogueInfo),
+        // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.HAKIPLKCOKD)
+        HAKIPLKCOKD(super::super::PropRogueTournDoorInfo::PropRogueTournDoorInfo),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.rogue_aeon_info)
         RogueAeonInfo(super::super::PPLBHACNEGO::PPLBHACNEGO),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.JJFKKDKPCPO)
         JJFKKDKPCPO(super::super::PropChessRogueInfo::PropChessRogueInfo),
-        // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.HAKIPLKCOKD)
-        HAKIPLKCOKD(super::super::RogueTournDoorInfo::RogueTournDoorInfo),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.MABCFPOCLOL)
-        MABCFPOCLOL(super::super::RogueTournWorkbenchInfo::RogueTournWorkbenchInfo),
-        // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.OIDCBKGGNDG)
-        OIDCBKGGNDG(super::super::RogueGambleMachineInfo::RogueGambleMachineInfo),
+        MABCFPOCLOL(super::super::PropRogueTournWorkbenchInfo::PropRogueTournWorkbenchInfo),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.DDCKMELBCDJ)
-        DDCKMELBCDJ(super::super::RogueCurseChestInfo::RogueCurseChestInfo),
+        DDCKMELBCDJ(super::super::PropRogueCurseChestInfo::PropRogueCurseChestInfo),
         // @@protoc_insertion_point(oneof_field:JNEOBOCBFFG.OMEKFJEPFLE)
-        OMEKFJEPFLE(super::super::RogueMagicDoorInfo::RogueMagicDoorInfo),
+        OMEKFJEPFLE(super::super::PropRogueMagicDoorInfo::PropRogueMagicDoorInfo),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::JNEOBOCBFFG as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::JNEOBOCBFFG as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JNEOBOCBFFG.proto\x1a\x11PPLBHACNEGO.proto\x1a\x18PropChessRogueIn\
-    fo.proto\x1a\x13PropRogueInfo.proto\x1a\x16PropTimelineInfo.proto\x1a\
-    \x19RogueCurseChestInfo.proto\x1a\x1cRogueGambleMachineInfo.proto\x1a\
-    \x18RogueMagicDoorInfo.proto\x1a\x18RogueTournDoorInfo.proto\x1a\x1dRogu\
-    eTournWorkbenchInfo.proto\"\xa6\x04\n\x0bJNEOBOCBFFG\x126\n\rtimeline_in\
-    fo\x18\x0b\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimelineInfo\x128\n\
-    \x0frogue_game_info\x18\x0c\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\rrogueGa\
-    meInfo\x126\n\x0frogue_aeon_info\x18\r\x20\x01(\x0b2\x0c.PPLBHACNEGOH\0R\
-    \rrogueAeonInfo\x127\n\x0bJJFKKDKPCPO\x18\x07\x20\x01(\x0b2\x13.PropChes\
-    sRogueInfoH\0R\x0bJJFKKDKPCPO\x127\n\x0bHAKIPLKCOKD\x18\x0e\x20\x01(\x0b\
-    2\x13.RogueTournDoorInfoH\0R\x0bHAKIPLKCOKD\x12<\n\x0bMABCFPOCLOL\x18\
-    \x06\x20\x01(\x0b2\x18.RogueTournWorkbenchInfoH\0R\x0bMABCFPOCLOL\x12;\n\
-    \x0bOIDCBKGGNDG\x18\x0f\x20\x01(\x0b2\x17.RogueGambleMachineInfoH\0R\x0b\
-    OIDCBKGGNDG\x128\n\x0bDDCKMELBCDJ\x18\t\x20\x01(\x0b2\x14.RogueCurseChes\
-    tInfoH\0R\x0bDDCKMELBCDJ\x127\n\x0bOMEKFJEPFLE\x18\x08\x20\x01(\x0b2\x13\
-    .RogueMagicDoorInfoH\0R\x0bOMEKFJEPFLEB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    fo.proto\x1a\x1dPropRogueCurseChestInfo.proto\x1a\x1fPropRogueGamleMachi\
+    neInfo.proto\x1a\x13PropRogueInfo.proto\x1a\x1cPropRogueMagicDoorInfo.pr\
+    oto\x1a\x1cPropRogueTournDoorInfo.proto\x1a!PropRogueTournWorkbenchInfo.\
+    proto\x1a\x16PropTimelineInfo.proto\"\xb9\x04\n\x0bJNEOBOCBFFG\x12>\n\
+    \x0bOIDCBKGGNDG\x18\x05\x20\x01(\x0b2\x1a.PropRogueGamleMachineInfoH\0R\
+    \x0bOIDCBKGGNDG\x128\n\x0frogue_game_info\x18\r\x20\x01(\x0b2\x0e.PropRo\
+    gueInfoH\0R\rrogueGameInfo\x12;\n\x0bHAKIPLKCOKD\x18\t\x20\x01(\x0b2\x17\
+    .PropRogueTournDoorInfoH\0R\x0bHAKIPLKCOKD\x126\n\x0frogue_aeon_info\x18\
+    \x01\x20\x01(\x0b2\x0c.PPLBHACNEGOH\0R\rrogueAeonInfo\x127\n\x0bJJFKKDKP\
+    CPO\x18\x0f\x20\x01(\x0b2\x13.PropChessRogueInfoH\0R\x0bJJFKKDKPCPO\x12@\
+    \n\x0bMABCFPOCLOL\x18\x08\x20\x01(\x0b2\x1c.PropRogueTournWorkbenchInfoH\
+    \0R\x0bMABCFPOCLOL\x12<\n\x0bDDCKMELBCDJ\x18\n\x20\x01(\x0b2\x18.PropRog\
+    ueCurseChestInfoH\0R\x0bDDCKMELBCDJ\x12;\n\x0bOMEKFJEPFLE\x18\x0b\x20\
+    \x01(\x0b2\x17.PropRogueMagicDoorInfoH\0R\x0bOMEKFJEPFLE\x126\n\rtimelin\
+    e_Info\x18\x02\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimelineInfoB\r\n\
+    \x0bIEICDGGELNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -773,13 +774,13 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(9);
             deps.push(super::PPLBHACNEGO::file_descriptor().clone());
             deps.push(super::PropChessRogueInfo::file_descriptor().clone());
+            deps.push(super::PropRogueCurseChestInfo::file_descriptor().clone());
+            deps.push(super::PropRogueGamleMachineInfo::file_descriptor().clone());
             deps.push(super::PropRogueInfo::file_descriptor().clone());
+            deps.push(super::PropRogueMagicDoorInfo::file_descriptor().clone());
+            deps.push(super::PropRogueTournDoorInfo::file_descriptor().clone());
+            deps.push(super::PropRogueTournWorkbenchInfo::file_descriptor().clone());
             deps.push(super::PropTimelineInfo::file_descriptor().clone());
-            deps.push(super::RogueCurseChestInfo::file_descriptor().clone());
-            deps.push(super::RogueGambleMachineInfo::file_descriptor().clone());
-            deps.push(super::RogueMagicDoorInfo::file_descriptor().clone());
-            deps.push(super::RogueTournDoorInfo::file_descriptor().clone());
-            deps.push(super::RogueTournWorkbenchInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JNEOBOCBFFG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,10 +30,10 @@ pub struct GetChapterScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetChapterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChapterScRsp.HOEAHBIFKCI)
-    pub HOEAHBIFKCI: u32,
-    // @@protoc_insertion_point(field:GetChapterScRsp.IELPICLBBJI)
-    pub IELPICLBBJI: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
+    // @@protoc_insertion_point(field:GetChapterScRsp.chapter_list)
+    pub chapter_list: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
+    // @@protoc_insertion_point(field:GetChapterScRsp.cur_waypoint_id)
+    pub cur_waypoint_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChapterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetChapterScRsp {
             |m: &GetChapterScRsp| { &m.retcode },
             |m: &mut GetChapterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOEAHBIFKCI",
-            |m: &GetChapterScRsp| { &m.HOEAHBIFKCI },
-            |m: &mut GetChapterScRsp| { &mut m.HOEAHBIFKCI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IELPICLBBJI",
-            |m: &GetChapterScRsp| { &m.IELPICLBBJI },
-            |m: &mut GetChapterScRsp| { &mut m.IELPICLBBJI },
+            "chapter_list",
+            |m: &GetChapterScRsp| { &m.chapter_list },
+            |m: &mut GetChapterScRsp| { &mut m.chapter_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_waypoint_id",
+            |m: &GetChapterScRsp| { &m.cur_waypoint_id },
+            |m: &mut GetChapterScRsp| { &mut m.cur_waypoint_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChapterScRsp>(
             "GetChapterScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.HOEAHBIFKCI = is.read_uint32()?;
+                58 => {
+                    self.chapter_list.push(is.read_message()?);
                 },
-                122 => {
-                    self.IELPICLBBJI.push(is.read_message()?);
+                96 => {
+                    self.cur_waypoint_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.HOEAHBIFKCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HOEAHBIFKCI);
-        }
-        for value in &self.IELPICLBBJI {
+        for value in &self.chapter_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.cur_waypoint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_waypoint_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetChapterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.HOEAHBIFKCI != 0 {
-            os.write_uint32(4, self.HOEAHBIFKCI)?;
-        }
-        for v in &self.IELPICLBBJI {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.chapter_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.cur_waypoint_id != 0 {
+            os.write_uint32(12, self.cur_waypoint_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetChapterScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HOEAHBIFKCI = 0;
-        self.IELPICLBBJI.clear();
+        self.chapter_list.clear();
+        self.cur_waypoint_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChapterScRsp {
         static instance: GetChapterScRsp = GetChapterScRsp {
             retcode: 0,
-            HOEAHBIFKCI: 0,
-            IELPICLBBJI: ::std::vec::Vec::new(),
+            chapter_list: ::std::vec::Vec::new(),
+            cur_waypoint_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GetChapterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetChapterScRsp.proto\x1a\x12ChapterBrief.proto\"~\n\x0fGetChapter\
-    ScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bH\
-    OEAHBIFKCI\x18\x04\x20\x01(\rR\x0bHOEAHBIFKCI\x12/\n\x0bIELPICLBBJI\x18\
-    \x0f\x20\x03(\x0b2\r.ChapterBriefR\x0bIELPICLBBJIb\x06proto3\
+    \n\x15GetChapterScRsp.proto\x1a\x12ChapterBrief.proto\"\x85\x01\n\x0fGet\
+    ChapterScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x120\n\
+    \x0cchapter_list\x18\x07\x20\x03(\x0b2\r.ChapterBriefR\x0bchapterList\
+    \x12&\n\x0fcur_waypoint_id\x18\x0c\x20\x01(\rR\rcurWaypointIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

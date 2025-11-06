@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DailyRefreshNotify {
     // message fields
-    // @@protoc_insertion_point(field:DailyRefreshNotify.GMFEBDAFDPJ)
-    pub GMFEBDAFDPJ: u32,
+    // @@protoc_insertion_point(field:DailyRefreshNotify.cur_day)
+    pub cur_day: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DailyRefreshNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DailyRefreshNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMFEBDAFDPJ",
-            |m: &DailyRefreshNotify| { &m.GMFEBDAFDPJ },
-            |m: &mut DailyRefreshNotify| { &mut m.GMFEBDAFDPJ },
+            "cur_day",
+            |m: &DailyRefreshNotify| { &m.cur_day },
+            |m: &mut DailyRefreshNotify| { &mut m.cur_day },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DailyRefreshNotify>(
             "DailyRefreshNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DailyRefreshNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.GMFEBDAFDPJ = is.read_uint32()?;
+                88 => {
+                    self.cur_day = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for DailyRefreshNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GMFEBDAFDPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GMFEBDAFDPJ);
+        if self.cur_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_day);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for DailyRefreshNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GMFEBDAFDPJ != 0 {
-            os.write_uint32(14, self.GMFEBDAFDPJ)?;
+        if self.cur_day != 0 {
+            os.write_uint32(11, self.cur_day)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for DailyRefreshNotify {
     }
 
     fn clear(&mut self) {
-        self.GMFEBDAFDPJ = 0;
+        self.cur_day = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DailyRefreshNotify {
         static instance: DailyRefreshNotify = DailyRefreshNotify {
-            GMFEBDAFDPJ: 0,
+            cur_day: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for DailyRefreshNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18DailyRefreshNotify.proto\"6\n\x12DailyRefreshNotify\x12\x20\n\x0bG\
-    MFEBDAFDPJ\x18\x0e\x20\x01(\rR\x0bGMFEBDAFDPJb\x06proto3\
+    \n\x18DailyRefreshNotify.proto\"-\n\x12DailyRefreshNotify\x12\x17\n\x07c\
+    ur_day\x18\x0b\x20\x01(\rR\x06curDayb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

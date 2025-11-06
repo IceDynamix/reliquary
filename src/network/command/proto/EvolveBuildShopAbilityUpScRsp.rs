@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityUpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.NECILJOJGAN)
-    pub NECILJOJGAN: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityUpScRsp.FFJKLGNLCFJ)
+    pub FFJKLGNLCFJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityUpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl EvolveBuildShopAbilityUpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NECILJOJGAN",
-            |m: &EvolveBuildShopAbilityUpScRsp| { &m.NECILJOJGAN },
-            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.NECILJOJGAN },
+            "retcode",
+            |m: &EvolveBuildShopAbilityUpScRsp| { &m.retcode },
+            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -64,9 +64,9 @@ impl EvolveBuildShopAbilityUpScRsp {
             |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EvolveBuildShopAbilityUpScRsp| { &m.retcode },
-            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.retcode },
+            "FFJKLGNLCFJ",
+            |m: &EvolveBuildShopAbilityUpScRsp| { &m.FFJKLGNLCFJ },
+            |m: &mut EvolveBuildShopAbilityUpScRsp| { &mut m.FFJKLGNLCFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityUpScRsp>(
             "EvolveBuildShopAbilityUpScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.NECILJOJGAN = is.read_uint32()?;
-                },
-                104 => {
-                    self.level = is.read_uint32()?;
-                },
                 32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.FFJKLGNLCFJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NECILJOJGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NECILJOJGAN);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        }
+        if self.FFJKLGNLCFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FFJKLGNLCFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NECILJOJGAN != 0 {
-            os.write_uint32(10, self.NECILJOJGAN)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(13, self.level)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(4, self.retcode)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
+        }
+        if self.FFJKLGNLCFJ != 0 {
+            os.write_uint32(14, self.FFJKLGNLCFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EvolveBuildShopAbilityUpScRsp {
     }
 
     fn clear(&mut self) {
-        self.NECILJOJGAN = 0;
-        self.level = 0;
         self.retcode = 0;
+        self.level = 0;
+        self.FFJKLGNLCFJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityUpScRsp {
         static instance: EvolveBuildShopAbilityUpScRsp = EvolveBuildShopAbilityUpScRsp {
-            NECILJOJGAN: 0,
-            level: 0,
             retcode: 0,
+            level: 0,
+            FFJKLGNLCFJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityUpScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#EvolveBuildShopAbilityUpScRsp.proto\"q\n\x1dEvolveBuildShopAbilityUpS\
-    cRsp\x12\x20\n\x0bNECILJOJGAN\x18\n\x20\x01(\rR\x0bNECILJOJGAN\x12\x14\n\
-    \x05level\x18\r\x20\x01(\rR\x05level\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x14\n\x05le\
+    vel\x18\t\x20\x01(\rR\x05level\x12\x20\n\x0bFFJKLGNLCFJ\x18\x0e\x20\x01(\
+    \rR\x0bFFJKLGNLCFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

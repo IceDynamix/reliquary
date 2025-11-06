@@ -32,8 +32,8 @@ pub struct PBPMLIFEPCB {
     pub num: u32,
     // @@protoc_insertion_point(field:PBPMLIFEPCB.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:PBPMLIFEPCB.JPIBMBBKGND)
-    pub JPIBMBBKGND: u32,
+    // @@protoc_insertion_point(field:PBPMLIFEPCB.MLOMFKAGMGK)
+    pub MLOMFKAGMGK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PBPMLIFEPCB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl PBPMLIFEPCB {
             |m: &mut PBPMLIFEPCB| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPIBMBBKGND",
-            |m: &PBPMLIFEPCB| { &m.JPIBMBBKGND },
-            |m: &mut PBPMLIFEPCB| { &mut m.JPIBMBBKGND },
+            "MLOMFKAGMGK",
+            |m: &PBPMLIFEPCB| { &m.MLOMFKAGMGK },
+            |m: &mut PBPMLIFEPCB| { &mut m.MLOMFKAGMGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PBPMLIFEPCB>(
             "PBPMLIFEPCB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PBPMLIFEPCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.num = is.read_uint32()?;
                 },
-                8 => {
+                24 => {
                     self.item_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.JPIBMBBKGND = is.read_uint32()?;
+                88 => {
+                    self.MLOMFKAGMGK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for PBPMLIFEPCB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.num);
+            my_size += ::protobuf::rt::uint32_size(2, self.num);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.item_id);
         }
-        if self.JPIBMBBKGND != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JPIBMBBKGND);
+        if self.MLOMFKAGMGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.MLOMFKAGMGK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PBPMLIFEPCB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(3, self.num)?;
+            os.write_uint32(2, self.num)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(1, self.item_id)?;
+            os.write_uint32(3, self.item_id)?;
         }
-        if self.JPIBMBBKGND != 0 {
-            os.write_uint32(8, self.JPIBMBBKGND)?;
+        if self.MLOMFKAGMGK != 0 {
+            os.write_uint32(11, self.MLOMFKAGMGK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for PBPMLIFEPCB {
     fn clear(&mut self) {
         self.num = 0;
         self.item_id = 0;
-        self.JPIBMBBKGND = 0;
+        self.MLOMFKAGMGK = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for PBPMLIFEPCB {
         static instance: PBPMLIFEPCB = PBPMLIFEPCB {
             num: 0,
             item_id: 0,
-            JPIBMBBKGND: 0,
+            MLOMFKAGMGK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PBPMLIFEPCB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PBPMLIFEPCB.proto\"Z\n\x0bPBPMLIFEPCB\x12\x10\n\x03num\x18\x03\x20\
-    \x01(\rR\x03num\x12\x17\n\x07item_id\x18\x01\x20\x01(\rR\x06itemId\x12\
-    \x20\n\x0bJPIBMBBKGND\x18\x08\x20\x01(\rR\x0bJPIBMBBKGNDb\x06proto3\
+    \n\x11PBPMLIFEPCB.proto\"Z\n\x0bPBPMLIFEPCB\x12\x10\n\x03num\x18\x02\x20\
+    \x01(\rR\x03num\x12\x17\n\x07item_id\x18\x03\x20\x01(\rR\x06itemId\x12\
+    \x20\n\x0bMLOMFKAGMGK\x18\x0b\x20\x01(\rR\x0bMLOMFKAGMGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

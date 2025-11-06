@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIDFFLEEALL {
     // message fields
-    // @@protoc_insertion_point(field:OIDFFLEEALL.KEJNIMGHOIG)
-    pub KEJNIMGHOIG: u32,
-    // @@protoc_insertion_point(field:OIDFFLEEALL.IMFCIMKMJPL)
-    pub IMFCIMKMJPL: u32,
-    // @@protoc_insertion_point(field:OIDFFLEEALL.IHELAJNMMBF)
-    pub IHELAJNMMBF: u32,
+    // @@protoc_insertion_point(field:OIDFFLEEALL.EHALDNIAPIK)
+    pub EHALDNIAPIK: u32,
+    // @@protoc_insertion_point(field:OIDFFLEEALL.COGLBNOCEEN)
+    pub COGLBNOCEEN: u32,
+    // @@protoc_insertion_point(field:OIDFFLEEALL.JGCKLGBKFLA)
+    pub JGCKLGBKFLA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OIDFFLEEALL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl OIDFFLEEALL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEJNIMGHOIG",
-            |m: &OIDFFLEEALL| { &m.KEJNIMGHOIG },
-            |m: &mut OIDFFLEEALL| { &mut m.KEJNIMGHOIG },
+            "EHALDNIAPIK",
+            |m: &OIDFFLEEALL| { &m.EHALDNIAPIK },
+            |m: &mut OIDFFLEEALL| { &mut m.EHALDNIAPIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMFCIMKMJPL",
-            |m: &OIDFFLEEALL| { &m.IMFCIMKMJPL },
-            |m: &mut OIDFFLEEALL| { &mut m.IMFCIMKMJPL },
+            "COGLBNOCEEN",
+            |m: &OIDFFLEEALL| { &m.COGLBNOCEEN },
+            |m: &mut OIDFFLEEALL| { &mut m.COGLBNOCEEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHELAJNMMBF",
-            |m: &OIDFFLEEALL| { &m.IHELAJNMMBF },
-            |m: &mut OIDFFLEEALL| { &mut m.IHELAJNMMBF },
+            "JGCKLGBKFLA",
+            |m: &OIDFFLEEALL| { &m.JGCKLGBKFLA },
+            |m: &mut OIDFFLEEALL| { &mut m.JGCKLGBKFLA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIDFFLEEALL>(
             "OIDFFLEEALL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OIDFFLEEALL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                56 => {
+                    self.EHALDNIAPIK = is.read_uint32()?;
+                },
                 64 => {
-                    self.KEJNIMGHOIG = is.read_uint32()?;
+                    self.COGLBNOCEEN = is.read_uint32()?;
                 },
-                112 => {
-                    self.IMFCIMKMJPL = is.read_uint32()?;
-                },
-                96 => {
-                    self.IHELAJNMMBF = is.read_uint32()?;
+                88 => {
+                    self.JGCKLGBKFLA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OIDFFLEEALL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KEJNIMGHOIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KEJNIMGHOIG);
+        if self.EHALDNIAPIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EHALDNIAPIK);
         }
-        if self.IMFCIMKMJPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IMFCIMKMJPL);
+        if self.COGLBNOCEEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.COGLBNOCEEN);
         }
-        if self.IHELAJNMMBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IHELAJNMMBF);
+        if self.JGCKLGBKFLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JGCKLGBKFLA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OIDFFLEEALL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KEJNIMGHOIG != 0 {
-            os.write_uint32(8, self.KEJNIMGHOIG)?;
+        if self.EHALDNIAPIK != 0 {
+            os.write_uint32(7, self.EHALDNIAPIK)?;
         }
-        if self.IMFCIMKMJPL != 0 {
-            os.write_uint32(14, self.IMFCIMKMJPL)?;
+        if self.COGLBNOCEEN != 0 {
+            os.write_uint32(8, self.COGLBNOCEEN)?;
         }
-        if self.IHELAJNMMBF != 0 {
-            os.write_uint32(12, self.IHELAJNMMBF)?;
+        if self.JGCKLGBKFLA != 0 {
+            os.write_uint32(11, self.JGCKLGBKFLA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for OIDFFLEEALL {
     }
 
     fn clear(&mut self) {
-        self.KEJNIMGHOIG = 0;
-        self.IMFCIMKMJPL = 0;
-        self.IHELAJNMMBF = 0;
+        self.EHALDNIAPIK = 0;
+        self.COGLBNOCEEN = 0;
+        self.JGCKLGBKFLA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIDFFLEEALL {
         static instance: OIDFFLEEALL = OIDFFLEEALL {
-            KEJNIMGHOIG: 0,
-            IMFCIMKMJPL: 0,
-            IHELAJNMMBF: 0,
+            EHALDNIAPIK: 0,
+            COGLBNOCEEN: 0,
+            JGCKLGBKFLA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for OIDFFLEEALL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OIDFFLEEALL.proto\"s\n\x0bOIDFFLEEALL\x12\x20\n\x0bKEJNIMGHOIG\x18\
-    \x08\x20\x01(\rR\x0bKEJNIMGHOIG\x12\x20\n\x0bIMFCIMKMJPL\x18\x0e\x20\x01\
-    (\rR\x0bIMFCIMKMJPL\x12\x20\n\x0bIHELAJNMMBF\x18\x0c\x20\x01(\rR\x0bIHEL\
-    AJNMMBFb\x06proto3\
+    \n\x11OIDFFLEEALL.proto\"s\n\x0bOIDFFLEEALL\x12\x20\n\x0bEHALDNIAPIK\x18\
+    \x07\x20\x01(\rR\x0bEHALDNIAPIK\x12\x20\n\x0bCOGLBNOCEEN\x18\x08\x20\x01\
+    (\rR\x0bCOGLBNOCEEN\x12\x20\n\x0bJGCKLGBKFLA\x18\x0b\x20\x01(\rR\x0bJGCK\
+    LGBKFLAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

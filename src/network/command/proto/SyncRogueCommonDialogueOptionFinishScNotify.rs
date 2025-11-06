@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonDialogueOptionFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.event_unique_id)
-    pub event_unique_id: u32,
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.option_id)
-    pub option_id: u32,
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.DGNCFMDPPBF)
-    pub DGNCFMDPPBF: ::protobuf::MessageField<super::RogueCommonDialogueOptionInfo::RogueCommonDialogueOptionInfo>,
     // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.dialogue_data)
     pub dialogue_data: ::protobuf::MessageField<super::RogueCommonDialogueDataInfo::RogueCommonDialogueDataInfo>,
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.option_id)
+    pub option_id: u32,
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.DMBNJPJHONM)
+    pub DMBNJPJHONM: ::protobuf::MessageField<super::RogueCommonDialogueOptionInfo::RogueCommonDialogueOptionInfo>,
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueOptionFinishScNotify.event_unique_id)
+    pub event_unique_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonDialogueOptionFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_unique_id",
-            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.event_unique_id },
-            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.event_unique_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonDialogueDataInfo::RogueCommonDialogueDataInfo>(
+            "dialogue_data",
+            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.dialogue_data },
+            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.dialogue_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "option_id",
@@ -66,14 +66,14 @@ impl SyncRogueCommonDialogueOptionFinishScNotify {
             |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.option_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonDialogueOptionInfo::RogueCommonDialogueOptionInfo>(
-            "DGNCFMDPPBF",
-            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.DGNCFMDPPBF },
-            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.DGNCFMDPPBF },
+            "DMBNJPJHONM",
+            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.DMBNJPJHONM },
+            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.DMBNJPJHONM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonDialogueDataInfo::RogueCommonDialogueDataInfo>(
-            "dialogue_data",
-            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.dialogue_data },
-            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.dialogue_data },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_unique_id",
+            |m: &SyncRogueCommonDialogueOptionFinishScNotify| { &m.event_unique_id },
+            |m: &mut SyncRogueCommonDialogueOptionFinishScNotify| { &mut m.event_unique_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonDialogueOptionFinishScNotify>(
             "SyncRogueCommonDialogueOptionFinishScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.event_unique_id = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dialogue_data)?;
                 },
-                72 => {
+                32 => {
                     self.option_id = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DGNCFMDPPBF)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMBNJPJHONM)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dialogue_data)?;
+                72 => {
+                    self.event_unique_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.event_unique_id);
-        }
-        if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.option_id);
-        }
-        if let Some(v) = self.DGNCFMDPPBF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.dialogue_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.option_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.option_id);
+        }
+        if let Some(v) = self.DMBNJPJHONM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.event_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.event_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.event_unique_id != 0 {
-            os.write_uint32(6, self.event_unique_id)?;
+        if let Some(v) = self.dialogue_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.option_id != 0 {
-            os.write_uint32(9, self.option_id)?;
+            os.write_uint32(4, self.option_id)?;
         }
-        if let Some(v) = self.DGNCFMDPPBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.DMBNJPJHONM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.dialogue_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.event_unique_id != 0 {
+            os.write_uint32(9, self.event_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.event_unique_id = 0;
-        self.option_id = 0;
-        self.DGNCFMDPPBF.clear();
         self.dialogue_data.clear();
+        self.option_id = 0;
+        self.DMBNJPJHONM.clear();
+        self.event_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonDialogueOptionFinishScNotify {
         static instance: SyncRogueCommonDialogueOptionFinishScNotify = SyncRogueCommonDialogueOptionFinishScNotify {
-            event_unique_id: 0,
-            option_id: 0,
-            DGNCFMDPPBF: ::protobuf::MessageField::none(),
             dialogue_data: ::protobuf::MessageField::none(),
+            option_id: 0,
+            DMBNJPJHONM: ::protobuf::MessageField::none(),
+            event_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueOptionFinishS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1SyncRogueCommonDialogueOptionFinishScNotify.proto\x1a!RogueCommonDial\
     ogueDataInfo.proto\x1a#RogueCommonDialogueOptionInfo.proto\"\xf7\x01\n+S\
-    yncRogueCommonDialogueOptionFinishScNotify\x12&\n\x0fevent_unique_id\x18\
-    \x06\x20\x01(\rR\reventUniqueId\x12\x1b\n\toption_id\x18\t\x20\x01(\rR\
-    \x08optionId\x12@\n\x0bDGNCFMDPPBF\x18\x05\x20\x01(\x0b2\x1e.RogueCommon\
-    DialogueOptionInfoR\x0bDGNCFMDPPBF\x12A\n\rdialogue_data\x18\x02\x20\x01\
-    (\x0b2\x1c.RogueCommonDialogueDataInfoR\x0cdialogueDatab\x06proto3\
+    yncRogueCommonDialogueOptionFinishScNotify\x12A\n\rdialogue_data\x18\x01\
+    \x20\x01(\x0b2\x1c.RogueCommonDialogueDataInfoR\x0cdialogueData\x12\x1b\
+    \n\toption_id\x18\x04\x20\x01(\rR\x08optionId\x12@\n\x0bDMBNJPJHONM\x18\
+    \x08\x20\x01(\x0b2\x1e.RogueCommonDialogueOptionInfoR\x0bDMBNJPJHONM\x12\
+    &\n\x0fevent_unique_id\x18\t\x20\x01(\rR\reventUniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

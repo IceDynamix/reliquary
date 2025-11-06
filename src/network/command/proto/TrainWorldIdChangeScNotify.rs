@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainWorldIdChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainWorldIdChangeScNotify.NPEBNEKDLEN)
-    pub NPEBNEKDLEN: u32,
+    // @@protoc_insertion_point(field:TrainWorldIdChangeScNotify.world_id)
+    pub world_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainWorldIdChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainWorldIdChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPEBNEKDLEN",
-            |m: &TrainWorldIdChangeScNotify| { &m.NPEBNEKDLEN },
-            |m: &mut TrainWorldIdChangeScNotify| { &mut m.NPEBNEKDLEN },
+            "world_id",
+            |m: &TrainWorldIdChangeScNotify| { &m.world_id },
+            |m: &mut TrainWorldIdChangeScNotify| { &mut m.world_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainWorldIdChangeScNotify>(
             "TrainWorldIdChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainWorldIdChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NPEBNEKDLEN = is.read_uint32()?;
+                48 => {
+                    self.world_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TrainWorldIdChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPEBNEKDLEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NPEBNEKDLEN);
+        if self.world_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.world_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TrainWorldIdChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPEBNEKDLEN != 0 {
-            os.write_uint32(2, self.NPEBNEKDLEN)?;
+        if self.world_id != 0 {
+            os.write_uint32(6, self.world_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TrainWorldIdChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.NPEBNEKDLEN = 0;
+        self.world_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainWorldIdChangeScNotify {
         static instance: TrainWorldIdChangeScNotify = TrainWorldIdChangeScNotify {
-            NPEBNEKDLEN: 0,
+            world_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainWorldIdChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20TrainWorldIdChangeScNotify.proto\">\n\x1aTrainWorldIdChangeScNotif\
-    y\x12\x20\n\x0bNPEBNEKDLEN\x18\x02\x20\x01(\rR\x0bNPEBNEKDLENb\x06proto3\
+    \n\x20TrainWorldIdChangeScNotify.proto\"7\n\x1aTrainWorldIdChangeScNotif\
+    y\x12\x19\n\x08world_id\x18\x06\x20\x01(\rR\x07worldIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

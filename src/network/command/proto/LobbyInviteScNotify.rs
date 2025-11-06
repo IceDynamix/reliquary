@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyInviteScNotify {
     // message fields
+    // @@protoc_insertion_point(field:LobbyInviteScNotify.MEILIIFGDNE)
+    pub MEILIIFGDNE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:LobbyInviteScNotify.room_id)
     pub room_id: u32,
     // @@protoc_insertion_point(field:LobbyInviteScNotify.sender_id)
     pub sender_id: u32,
-    // @@protoc_insertion_point(field:LobbyInviteScNotify.NBDLPGBIDLC)
-    pub NBDLPGBIDLC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyInviteScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl LobbyInviteScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MEILIIFGDNE",
+            |m: &LobbyInviteScNotify| { &m.MEILIIFGDNE },
+            |m: &mut LobbyInviteScNotify| { &mut m.MEILIIFGDNE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &LobbyInviteScNotify| { &m.room_id },
             |m: &mut LobbyInviteScNotify| { &mut m.room_id },
@@ -62,11 +67,6 @@ impl LobbyInviteScNotify {
             "sender_id",
             |m: &LobbyInviteScNotify| { &m.sender_id },
             |m: &mut LobbyInviteScNotify| { &mut m.sender_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBDLPGBIDLC",
-            |m: &LobbyInviteScNotify| { &m.NBDLPGBIDLC },
-            |m: &mut LobbyInviteScNotify| { &mut m.NBDLPGBIDLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyInviteScNotify>(
             "LobbyInviteScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
+                    self.MEILIIFGDNE = is.read_enum_or_unknown()?;
+                },
+                56 => {
                     self.room_id = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.sender_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.NBDLPGBIDLC = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MEILIIFGDNE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.MEILIIFGDNE.value());
+        }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
         }
         if self.sender_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.sender_id);
-        }
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.NBDLPGBIDLC.value());
+            my_size += ::protobuf::rt::uint32_size(13, self.sender_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.MEILIIFGDNE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MEILIIFGDNE))?;
+        }
         if self.room_id != 0 {
-            os.write_uint32(13, self.room_id)?;
+            os.write_uint32(7, self.room_id)?;
         }
         if self.sender_id != 0 {
-            os.write_uint32(14, self.sender_id)?;
-        }
-        if self.NBDLPGBIDLC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NBDLPGBIDLC))?;
+            os.write_uint32(13, self.sender_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LobbyInviteScNotify {
     }
 
     fn clear(&mut self) {
+        self.MEILIIFGDNE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.room_id = 0;
         self.sender_id = 0;
-        self.NBDLPGBIDLC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyInviteScNotify {
         static instance: LobbyInviteScNotify = LobbyInviteScNotify {
+            MEILIIFGDNE: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
             sender_id: 0,
-            NBDLPGBIDLC: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyInviteScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19LobbyInviteScNotify.proto\x1a\x13FightGameMode.proto\"}\n\x13Lobby\
-    InviteScNotify\x12\x17\n\x07room_id\x18\r\x20\x01(\rR\x06roomId\x12\x1b\
-    \n\tsender_id\x18\x0e\x20\x01(\rR\x08senderId\x120\n\x0bNBDLPGBIDLC\x18\
-    \x05\x20\x01(\x0e2\x0e.FightGameModeR\x0bNBDLPGBIDLCb\x06proto3\
+    InviteScNotify\x120\n\x0bMEILIIFGDNE\x18\x02\x20\x01(\x0e2\x0e.FightGame\
+    ModeR\x0bMEILIIFGDNE\x12\x17\n\x07room_id\x18\x07\x20\x01(\rR\x06roomId\
+    \x12\x1b\n\tsender_id\x18\r\x20\x01(\rR\x08senderIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

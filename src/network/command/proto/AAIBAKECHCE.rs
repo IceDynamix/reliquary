@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AAIBAKECHCE {
     // message fields
-    // @@protoc_insertion_point(field:AAIBAKECHCE.PAGCAMAGFLB)
-    pub PAGCAMAGFLB: u32,
+    // @@protoc_insertion_point(field:AAIBAKECHCE.LGHJNFPDIDD)
+    pub LGHJNFPDIDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AAIBAKECHCE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl AAIBAKECHCE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAGCAMAGFLB",
-            |m: &AAIBAKECHCE| { &m.PAGCAMAGFLB },
-            |m: &mut AAIBAKECHCE| { &mut m.PAGCAMAGFLB },
+            "LGHJNFPDIDD",
+            |m: &AAIBAKECHCE| { &m.LGHJNFPDIDD },
+            |m: &mut AAIBAKECHCE| { &mut m.LGHJNFPDIDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AAIBAKECHCE>(
             "AAIBAKECHCE",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for AAIBAKECHCE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 56 => {
-                    self.PAGCAMAGFLB = is.read_uint32()?;
+                    self.LGHJNFPDIDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for AAIBAKECHCE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PAGCAMAGFLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PAGCAMAGFLB);
+        if self.LGHJNFPDIDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LGHJNFPDIDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for AAIBAKECHCE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PAGCAMAGFLB != 0 {
-            os.write_uint32(7, self.PAGCAMAGFLB)?;
+        if self.LGHJNFPDIDD != 0 {
+            os.write_uint32(7, self.LGHJNFPDIDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for AAIBAKECHCE {
     }
 
     fn clear(&mut self) {
-        self.PAGCAMAGFLB = 0;
+        self.LGHJNFPDIDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AAIBAKECHCE {
         static instance: AAIBAKECHCE = AAIBAKECHCE {
-            PAGCAMAGFLB: 0,
+            LGHJNFPDIDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for AAIBAKECHCE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AAIBAKECHCE.proto\"/\n\x0bAAIBAKECHCE\x12\x20\n\x0bPAGCAMAGFLB\x18\
-    \x07\x20\x01(\rR\x0bPAGCAMAGFLBb\x06proto3\
+    \n\x11AAIBAKECHCE.proto\"/\n\x0bAAIBAKECHCE\x12\x20\n\x0bLGHJNFPDIDD\x18\
+    \x07\x20\x01(\rR\x0bLGHJNFPDIDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

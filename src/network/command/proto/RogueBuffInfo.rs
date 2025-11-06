@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueBuffInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueBuffInfo.maze_buff_list)
-    pub maze_buff_list: ::std::vec::Vec<super::RogueBuff::RogueBuff>,
+    // @@protoc_insertion_point(field:RogueBuffInfo.buff_id)
+    pub buff_id: u32,
+    // @@protoc_insertion_point(field:RogueBuffInfo.ANADGHPFPBH)
+    pub ANADGHPFPBH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl RogueBuffInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_buff_list",
-            |m: &RogueBuffInfo| { &m.maze_buff_list },
-            |m: &mut RogueBuffInfo| { &mut m.maze_buff_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_id",
+            |m: &RogueBuffInfo| { &m.buff_id },
+            |m: &mut RogueBuffInfo| { &mut m.buff_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANADGHPFPBH",
+            |m: &RogueBuffInfo| { &m.ANADGHPFPBH },
+            |m: &mut RogueBuffInfo| { &mut m.ANADGHPFPBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueBuffInfo>(
             "RogueBuffInfo",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for RogueBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.maze_buff_list.push(is.read_message()?);
+                80 => {
+                    self.buff_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.ANADGHPFPBH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,19 +97,24 @@ impl ::protobuf::Message for RogueBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.maze_buff_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.buff_id);
+        }
+        if self.ANADGHPFPBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ANADGHPFPBH);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.maze_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
+        if self.buff_id != 0 {
+            os.write_uint32(10, self.buff_id)?;
+        }
+        if self.ANADGHPFPBH != 0 {
+            os.write_uint32(15, self.ANADGHPFPBH)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -117,13 +132,15 @@ impl ::protobuf::Message for RogueBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.maze_buff_list.clear();
+        self.buff_id = 0;
+        self.ANADGHPFPBH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueBuffInfo {
         static instance: RogueBuffInfo = RogueBuffInfo {
-            maze_buff_list: ::std::vec::Vec::new(),
+            buff_id: 0,
+            ANADGHPFPBH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueBuffInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RogueBuffInfo.proto\x1a\x0fRogueBuff.proto\"A\n\rRogueBuffInfo\x12\
-    0\n\x0emaze_buff_list\x18\x06\x20\x03(\x0b2\n.RogueBuffR\x0cmazeBuffList\
-    b\x06proto3\
+    \n\x13RogueBuffInfo.proto\"J\n\rRogueBuffInfo\x12\x17\n\x07buff_id\x18\n\
+    \x20\x01(\rR\x06buffId\x12\x20\n\x0bANADGHPFPBH\x18\x0f\x20\x01(\rR\x0bA\
+    NADGHPFPBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,8 +184,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueBuff::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueBuffInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

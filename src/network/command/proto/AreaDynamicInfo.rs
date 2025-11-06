@@ -79,7 +79,7 @@ impl ::protobuf::Message for AreaDynamicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
                     self.dice_slot_id = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AreaDynamicInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.dice_slot_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.dice_slot_id);
         }
         if self.diy_dynamic_id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.diy_dynamic_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AreaDynamicInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dice_slot_id != 0 {
-            os.write_uint32(11, self.dice_slot_id)?;
+            os.write_uint32(3, self.dice_slot_id)?;
         }
         if self.diy_dynamic_id != 0 {
             os.write_uint32(12, self.diy_dynamic_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AreaDynamicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15AreaDynamicInfo.proto\"Y\n\x0fAreaDynamicInfo\x12\x20\n\x0cdice_sl\
-    ot_id\x18\x0b\x20\x01(\rR\ndiceSlotId\x12$\n\x0ediy_dynamic_id\x18\x0c\
+    ot_id\x18\x03\x20\x01(\rR\ndiceSlotId\x12$\n\x0ediy_dynamic_id\x18\x0c\
     \x20\x01(\rR\x0cdiyDynamicIdb\x06proto3\
 ";
 

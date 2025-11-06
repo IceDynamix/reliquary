@@ -34,8 +34,8 @@ pub struct BattleRogueMagicScepter {
     pub rogue_magic_unit_info_list: ::std::vec::Vec<super::BattleRogueMagicUnit::BattleRogueMagicUnit>,
     // @@protoc_insertion_point(field:BattleRogueMagicScepter.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:BattleRogueMagicScepter.EEPOJGNFLPA)
-    pub EEPOJGNFLPA: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:BattleRogueMagicScepter.DNKJCENOIJO)
+    pub DNKJCENOIJO: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleRogueMagicScepter.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl BattleRogueMagicScepter {
             |m: &mut BattleRogueMagicScepter| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "EEPOJGNFLPA",
-            |m: &BattleRogueMagicScepter| { &m.EEPOJGNFLPA },
-            |m: &mut BattleRogueMagicScepter| { &mut m.EEPOJGNFLPA },
+            "DNKJCENOIJO",
+            |m: &BattleRogueMagicScepter| { &m.DNKJCENOIJO },
+            |m: &mut BattleRogueMagicScepter| { &mut m.DNKJCENOIJO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleRogueMagicScepter>(
             "BattleRogueMagicScepter",
@@ -115,7 +115,7 @@ impl ::protobuf::Message for BattleRogueMagicScepter {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.EEPOJGNFLPA.insert(key, value);
+                    self.DNKJCENOIJO.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,7 +139,7 @@ impl ::protobuf::Message for BattleRogueMagicScepter {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
-        for (k, v) in &self.EEPOJGNFLPA {
+        for (k, v) in &self.DNKJCENOIJO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -160,7 +160,7 @@ impl ::protobuf::Message for BattleRogueMagicScepter {
         if self.level != 0 {
             os.write_uint32(3, self.level)?;
         }
-        for (k, v) in &self.EEPOJGNFLPA {
+        for (k, v) in &self.DNKJCENOIJO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -189,7 +189,7 @@ impl ::protobuf::Message for BattleRogueMagicScepter {
         self.scepter_id = 0;
         self.rogue_magic_unit_info_list.clear();
         self.level = 0;
-        self.EEPOJGNFLPA.clear();
+        self.DNKJCENOIJO.clear();
         self.special_fields.clear();
     }
 
@@ -221,9 +221,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \xae\x02\n\x17BattleRogueMagicScepter\x12\x1d\n\nscepter_id\x18\x01\x20\
     \x01(\rR\tscepterId\x12Q\n\x1arogue_magic_unit_info_list\x18\x02\x20\x03\
     (\x0b2\x15.BattleRogueMagicUnitR\x16rogueMagicUnitInfoList\x12\x14\n\x05\
-    level\x18\x03\x20\x01(\rR\x05level\x12K\n\x0bEEPOJGNFLPA\x18\x04\x20\x03\
-    (\x0b2).BattleRogueMagicScepter.EEPOJGNFLPAEntryR\x0bEEPOJGNFLPA\x1a>\n\
-    \x10EEPOJGNFLPAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
+    level\x18\x03\x20\x01(\rR\x05level\x12K\n\x0bDNKJCENOIJO\x18\x04\x20\x03\
+    (\x0b2).BattleRogueMagicScepter.DNKJCENOIJOEntryR\x0bDNKJCENOIJO\x1a>\n\
+    \x10DNKJCENOIJOEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
     \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

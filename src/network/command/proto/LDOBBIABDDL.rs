@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LDOBBIABDDL {
     // message fields
-    // @@protoc_insertion_point(field:LDOBBIABDDL.GEDDIBIKMMP)
-    pub GEDDIBIKMMP: u32,
-    // @@protoc_insertion_point(field:LDOBBIABDDL.KGGDJHJLENL)
-    pub KGGDJHJLENL: f64,
+    // @@protoc_insertion_point(field:LDOBBIABDDL.AOBDJECLHJB)
+    pub AOBDJECLHJB: u32,
+    // @@protoc_insertion_point(field:LDOBBIABDDL.FFJKNFCKJLK)
+    pub FFJKNFCKJLK: f64,
     // special fields
     // @@protoc_insertion_point(special_field:LDOBBIABDDL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LDOBBIABDDL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GEDDIBIKMMP",
-            |m: &LDOBBIABDDL| { &m.GEDDIBIKMMP },
-            |m: &mut LDOBBIABDDL| { &mut m.GEDDIBIKMMP },
+            "AOBDJECLHJB",
+            |m: &LDOBBIABDDL| { &m.AOBDJECLHJB },
+            |m: &mut LDOBBIABDDL| { &mut m.AOBDJECLHJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGGDJHJLENL",
-            |m: &LDOBBIABDDL| { &m.KGGDJHJLENL },
-            |m: &mut LDOBBIABDDL| { &mut m.KGGDJHJLENL },
+            "FFJKNFCKJLK",
+            |m: &LDOBBIABDDL| { &m.FFJKNFCKJLK },
+            |m: &mut LDOBBIABDDL| { &mut m.FFJKNFCKJLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LDOBBIABDDL>(
             "LDOBBIABDDL",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for LDOBBIABDDL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.GEDDIBIKMMP = is.read_uint32()?;
+                    self.AOBDJECLHJB = is.read_uint32()?;
                 },
                 17 => {
-                    self.KGGDJHJLENL = is.read_double()?;
+                    self.FFJKNFCKJLK = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for LDOBBIABDDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GEDDIBIKMMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GEDDIBIKMMP);
+        if self.AOBDJECLHJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AOBDJECLHJB);
         }
-        if self.KGGDJHJLENL != 0. {
+        if self.FFJKNFCKJLK != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LDOBBIABDDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GEDDIBIKMMP != 0 {
-            os.write_uint32(1, self.GEDDIBIKMMP)?;
+        if self.AOBDJECLHJB != 0 {
+            os.write_uint32(1, self.AOBDJECLHJB)?;
         }
-        if self.KGGDJHJLENL != 0. {
-            os.write_double(2, self.KGGDJHJLENL)?;
+        if self.FFJKNFCKJLK != 0. {
+            os.write_double(2, self.FFJKNFCKJLK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for LDOBBIABDDL {
     }
 
     fn clear(&mut self) {
-        self.GEDDIBIKMMP = 0;
-        self.KGGDJHJLENL = 0.;
+        self.AOBDJECLHJB = 0;
+        self.FFJKNFCKJLK = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LDOBBIABDDL {
         static instance: LDOBBIABDDL = LDOBBIABDDL {
-            GEDDIBIKMMP: 0,
-            KGGDJHJLENL: 0.,
+            AOBDJECLHJB: 0,
+            FFJKNFCKJLK: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LDOBBIABDDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LDOBBIABDDL.proto\"Q\n\x0bLDOBBIABDDL\x12\x20\n\x0bGEDDIBIKMMP\x18\
-    \x01\x20\x01(\rR\x0bGEDDIBIKMMP\x12\x20\n\x0bKGGDJHJLENL\x18\x02\x20\x01\
-    (\x01R\x0bKGGDJHJLENLb\x06proto3\
+    \n\x11LDOBBIABDDL.proto\"Q\n\x0bLDOBBIABDDL\x12\x20\n\x0bAOBDJECLHJB\x18\
+    \x01\x20\x01(\rR\x0bAOBDJECLHJB\x12\x20\n\x0bFFJKNFCKJLK\x18\x02\x20\x01\
+    (\x01R\x0bFFJKNFCKJLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

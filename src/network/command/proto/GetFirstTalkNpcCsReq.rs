@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFirstTalkNpcCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFirstTalkNpcCsReq.npc_id_list)
-    pub npc_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFirstTalkNpcCsReq.series_id_list)
+    pub series_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFirstTalkNpcCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetFirstTalkNpcCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "npc_id_list",
-            |m: &GetFirstTalkNpcCsReq| { &m.npc_id_list },
-            |m: &mut GetFirstTalkNpcCsReq| { &mut m.npc_id_list },
+            "series_id_list",
+            |m: &GetFirstTalkNpcCsReq| { &m.series_id_list },
+            |m: &mut GetFirstTalkNpcCsReq| { &mut m.series_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFirstTalkNpcCsReq>(
             "GetFirstTalkNpcCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.npc_id_list)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.series_id_list)?;
                 },
-                88 => {
-                    self.npc_id_list.push(is.read_uint32()?);
+                104 => {
+                    self.series_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.npc_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.series_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.npc_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.series_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for GetFirstTalkNpcCsReq {
     }
 
     fn clear(&mut self) {
-        self.npc_id_list.clear();
+        self.series_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFirstTalkNpcCsReq {
         static instance: GetFirstTalkNpcCsReq = GetFirstTalkNpcCsReq {
-            npc_id_list: ::std::vec::Vec::new(),
+            series_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFirstTalkNpcCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetFirstTalkNpcCsReq.proto\"6\n\x14GetFirstTalkNpcCsReq\x12\x1e\n\
-    \x0bnpc_id_list\x18\x0b\x20\x03(\rR\tnpcIdListb\x06proto3\
+    \n\x1aGetFirstTalkNpcCsReq.proto\"<\n\x14GetFirstTalkNpcCsReq\x12$\n\x0e\
+    series_id_list\x18\r\x20\x03(\rR\x0cseriesIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

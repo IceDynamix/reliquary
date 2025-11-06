@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGetRegionProgressScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.DPJKOJGCJLP)
-    pub DPJKOJGCJLP: u32,
-    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.EIMGBKNLGNF)
-    pub EIMGBKNLGNF: u32,
+    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.KCJGBNNLHAA)
+    pub KCJGBNNLHAA: u32,
+    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.JEGFILNPLEB)
+    pub JEGFILNPLEB: u32,
     // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MonopolyGetRegionProgressScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPJKOJGCJLP",
-            |m: &MonopolyGetRegionProgressScRsp| { &m.DPJKOJGCJLP },
-            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.DPJKOJGCJLP },
+            "KCJGBNNLHAA",
+            |m: &MonopolyGetRegionProgressScRsp| { &m.KCJGBNNLHAA },
+            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.KCJGBNNLHAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIMGBKNLGNF",
-            |m: &MonopolyGetRegionProgressScRsp| { &m.EIMGBKNLGNF },
-            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.EIMGBKNLGNF },
+            "JEGFILNPLEB",
+            |m: &MonopolyGetRegionProgressScRsp| { &m.JEGFILNPLEB },
+            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.JEGFILNPLEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.DPJKOJGCJLP = is.read_uint32()?;
+                48 => {
+                    self.KCJGBNNLHAA = is.read_uint32()?;
                 },
-                56 => {
-                    self.EIMGBKNLGNF = is.read_uint32()?;
+                80 => {
+                    self.JEGFILNPLEB = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPJKOJGCJLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DPJKOJGCJLP);
+        if self.KCJGBNNLHAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KCJGBNNLHAA);
         }
-        if self.EIMGBKNLGNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EIMGBKNLGNF);
+        if self.JEGFILNPLEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JEGFILNPLEB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPJKOJGCJLP != 0 {
-            os.write_uint32(5, self.DPJKOJGCJLP)?;
+        if self.KCJGBNNLHAA != 0 {
+            os.write_uint32(6, self.KCJGBNNLHAA)?;
         }
-        if self.EIMGBKNLGNF != 0 {
-            os.write_uint32(7, self.EIMGBKNLGNF)?;
+        if self.JEGFILNPLEB != 0 {
+            os.write_uint32(10, self.JEGFILNPLEB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     }
 
     fn clear(&mut self) {
-        self.DPJKOJGCJLP = 0;
-        self.EIMGBKNLGNF = 0;
+        self.KCJGBNNLHAA = 0;
+        self.JEGFILNPLEB = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGetRegionProgressScRsp {
         static instance: MonopolyGetRegionProgressScRsp = MonopolyGetRegionProgressScRsp {
-            DPJKOJGCJLP: 0,
-            EIMGBKNLGNF: 0,
+            KCJGBNNLHAA: 0,
+            JEGFILNPLEB: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGetRegionProgressScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$MonopolyGetRegionProgressScRsp.proto\"~\n\x1eMonopolyGetRegionProgres\
-    sScRsp\x12\x20\n\x0bDPJKOJGCJLP\x18\x05\x20\x01(\rR\x0bDPJKOJGCJLP\x12\
-    \x20\n\x0bEIMGBKNLGNF\x18\x07\x20\x01(\rR\x0bEIMGBKNLGNF\x12\x18\n\x07re\
-    tcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    sScRsp\x12\x20\n\x0bKCJGBNNLHAA\x18\x06\x20\x01(\rR\x0bKCJGBNNLHAA\x12\
+    \x20\n\x0bJEGFILNPLEB\x18\n\x20\x01(\rR\x0bJEGFILNPLEB\x12\x18\n\x07retc\
+    ode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

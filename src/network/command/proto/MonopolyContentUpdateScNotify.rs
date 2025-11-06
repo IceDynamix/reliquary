@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyContentUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyContentUpdateScNotify.FHNPAGIHINF)
-    pub FHNPAGIHINF: ::protobuf::MessageField<super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>,
+    // @@protoc_insertion_point(field:MonopolyContentUpdateScNotify.DLKGDAEIOHP)
+    pub DLKGDAEIOHP: ::protobuf::MessageField<super::BLMJNFFPMCN_MonopolyContent::MonopolyContent>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyContentUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl MonopolyContentUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLMJNFFPMCN_LBENAAHCPEO::LBENAAHCPEO>(
-            "FHNPAGIHINF",
-            |m: &MonopolyContentUpdateScNotify| { &m.FHNPAGIHINF },
-            |m: &mut MonopolyContentUpdateScNotify| { &mut m.FHNPAGIHINF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLMJNFFPMCN_MonopolyContent::MonopolyContent>(
+            "DLKGDAEIOHP",
+            |m: &MonopolyContentUpdateScNotify| { &m.DLKGDAEIOHP },
+            |m: &mut MonopolyContentUpdateScNotify| { &mut m.DLKGDAEIOHP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyContentUpdateScNotify>(
             "MonopolyContentUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHNPAGIHINF)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLKGDAEIOHP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FHNPAGIHINF.as_ref() {
+        if let Some(v) = self.DLKGDAEIOHP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FHNPAGIHINF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.DLKGDAEIOHP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyContentUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.FHNPAGIHINF.clear();
+        self.DLKGDAEIOHP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyContentUpdateScNotify {
         static instance: MonopolyContentUpdateScNotify = MonopolyContentUpdateScNotify {
-            FHNPAGIHINF: ::protobuf::MessageField::none(),
+            DLKGDAEIOHP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyContentUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#MonopolyContentUpdateScNotify.proto\x1a\x1dBLMJNFFPMCN_LBENAAHCPEO.pr\
-    oto\"O\n\x1dMonopolyContentUpdateScNotify\x12.\n\x0bFHNPAGIHINF\x18\x0e\
-    \x20\x01(\x0b2\x0c.LBENAAHCPEOR\x0bFHNPAGIHINFb\x06proto3\
+    \n#MonopolyContentUpdateScNotify.proto\x1a!BLMJNFFPMCN_MonopolyContent.p\
+    roto\"S\n\x1dMonopolyContentUpdateScNotify\x122\n\x0bDLKGDAEIOHP\x18\x04\
+    \x20\x01(\x0b2\x10.MonopolyContentR\x0bDLKGDAEIOHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BLMJNFFPMCN_LBENAAHCPEO::file_descriptor().clone());
+            deps.push(super::BLMJNFFPMCN_MonopolyContent::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyContentUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

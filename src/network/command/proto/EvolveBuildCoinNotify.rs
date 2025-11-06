@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildCoinNotify {
     // message fields
+    // @@protoc_insertion_point(field:EvolveBuildCoinNotify.CMMOFODEEFN)
+    pub CMMOFODEEFN: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // @@protoc_insertion_point(field:EvolveBuildCoinNotify.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:EvolveBuildCoinNotify.MDCJFOAFDJK)
-    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildCoinNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EvolveBuildCoinNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMMOFODEEFN",
+            |m: &EvolveBuildCoinNotify| { &m.CMMOFODEEFN },
+            |m: &mut EvolveBuildCoinNotify| { &mut m.CMMOFODEEFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &EvolveBuildCoinNotify| { &m.item_value },
             |m: &mut EvolveBuildCoinNotify| { &mut m.item_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDCJFOAFDJK",
-            |m: &EvolveBuildCoinNotify| { &m.MDCJFOAFDJK },
-            |m: &mut EvolveBuildCoinNotify| { &mut m.MDCJFOAFDJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildCoinNotify>(
             "EvolveBuildCoinNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.item_value = is.read_uint32()?;
+                32 => {
+                    self.CMMOFODEEFN = is.read_enum_or_unknown()?;
                 },
-                80 => {
-                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
+                96 => {
+                    self.item_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_value);
+        if self.CMMOFODEEFN != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.CMMOFODEEFN.value());
         }
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.MDCJFOAFDJK.value());
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.item_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_value != 0 {
-            os.write_uint32(9, self.item_value)?;
+        if self.CMMOFODEEFN != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.CMMOFODEEFN))?;
         }
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+        if self.item_value != 0 {
+            os.write_uint32(12, self.item_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EvolveBuildCoinNotify {
     }
 
     fn clear(&mut self) {
+        self.CMMOFODEEFN = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.item_value = 0;
-        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildCoinNotify {
         static instance: EvolveBuildCoinNotify = EvolveBuildCoinNotify {
+            CMMOFODEEFN: ::protobuf::EnumOrUnknown::from_i32(0),
             item_value: 0,
-            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildCoinNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEvolveBuildCoinNotify.proto\x1a\x11KLNIPNJCNMJ.proto\"f\n\x15Evolv\
-    eBuildCoinNotify\x12\x1d\n\nitem_value\x18\t\x20\x01(\rR\titemValue\x12.\
-    \n\x0bMDCJFOAFDJK\x18\n\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\x0bMDCJFOAFDJKb\
-    \x06proto3\
+    eBuildCoinNotify\x12.\n\x0bCMMOFODEEFN\x18\x04\x20\x01(\x0e2\x0c.KLNIPNJ\
+    CNMJR\x0bCMMOFODEEFN\x12\x1d\n\nitem_value\x18\x0c\x20\x01(\rR\titemValu\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

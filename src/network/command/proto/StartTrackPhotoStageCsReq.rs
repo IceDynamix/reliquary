@@ -30,8 +30,8 @@ pub struct StartTrackPhotoStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.stage_id)
     pub stage_id: u32,
-    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.DJFCMLIPDAB)
-    pub DJFCMLIPDAB: bool,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageCsReq.BFKFDKBOCJG)
+    pub BFKFDKBOCJG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:StartTrackPhotoStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl StartTrackPhotoStageCsReq {
             |m: &mut StartTrackPhotoStageCsReq| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFCMLIPDAB",
-            |m: &StartTrackPhotoStageCsReq| { &m.DJFCMLIPDAB },
-            |m: &mut StartTrackPhotoStageCsReq| { &mut m.DJFCMLIPDAB },
+            "BFKFDKBOCJG",
+            |m: &StartTrackPhotoStageCsReq| { &m.BFKFDKBOCJG },
+            |m: &mut StartTrackPhotoStageCsReq| { &mut m.BFKFDKBOCJG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartTrackPhotoStageCsReq>(
             "StartTrackPhotoStageCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.DJFCMLIPDAB = is.read_bool()?;
+                96 => {
+                    self.BFKFDKBOCJG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.stage_id);
         }
-        if self.DJFCMLIPDAB != false {
+        if self.BFKFDKBOCJG != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stage_id != 0 {
-            os.write_uint32(5, self.stage_id)?;
+            os.write_uint32(8, self.stage_id)?;
         }
-        if self.DJFCMLIPDAB != false {
-            os.write_bool(15, self.DJFCMLIPDAB)?;
+        if self.BFKFDKBOCJG != false {
+            os.write_bool(12, self.BFKFDKBOCJG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for StartTrackPhotoStageCsReq {
 
     fn clear(&mut self) {
         self.stage_id = 0;
-        self.DJFCMLIPDAB = false;
+        self.BFKFDKBOCJG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTrackPhotoStageCsReq {
         static instance: StartTrackPhotoStageCsReq = StartTrackPhotoStageCsReq {
             stage_id: 0,
-            DJFCMLIPDAB: false,
+            BFKFDKBOCJG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartTrackPhotoStageCsReq.proto\"X\n\x19StartTrackPhotoStageCsReq\
-    \x12\x19\n\x08stage_id\x18\x05\x20\x01(\rR\x07stageId\x12\x20\n\x0bDJFCM\
-    LIPDAB\x18\x0f\x20\x01(\x08R\x0bDJFCMLIPDABb\x06proto3\
+    \x12\x19\n\x08stage_id\x18\x08\x20\x01(\rR\x07stageId\x12\x20\n\x0bBFKFD\
+    KBOCJG\x18\x0c\x20\x01(\x08R\x0bBFKFDKBOCJGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

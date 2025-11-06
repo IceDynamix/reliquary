@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNNFPFKCABE {
     // message fields
-    // @@protoc_insertion_point(field:KNNFPFKCABE.DHJHIBCDNBA)
-    pub DHJHIBCDNBA: u32,
-    // @@protoc_insertion_point(field:KNNFPFKCABE.CFIPHFHOJFP)
-    pub CFIPHFHOJFP: u32,
     // @@protoc_insertion_point(field:KNNFPFKCABE.avatar_id_list)
     pub avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KNNFPFKCABE.BOPNMDHHOPJ)
+    pub BOPNMDHHOPJ: u32,
+    // @@protoc_insertion_point(field:KNNFPFKCABE.OGFDHEIJKJB)
+    pub OGFDHEIJKJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KNNFPFKCABE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl KNNFPFKCABE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHJHIBCDNBA",
-            |m: &KNNFPFKCABE| { &m.DHJHIBCDNBA },
-            |m: &mut KNNFPFKCABE| { &mut m.DHJHIBCDNBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFIPHFHOJFP",
-            |m: &KNNFPFKCABE| { &m.CFIPHFHOJFP },
-            |m: &mut KNNFPFKCABE| { &mut m.CFIPHFHOJFP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_id_list",
             |m: &KNNFPFKCABE| { &m.avatar_id_list },
             |m: &mut KNNFPFKCABE| { &mut m.avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BOPNMDHHOPJ",
+            |m: &KNNFPFKCABE| { &m.BOPNMDHHOPJ },
+            |m: &mut KNNFPFKCABE| { &mut m.BOPNMDHHOPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OGFDHEIJKJB",
+            |m: &KNNFPFKCABE| { &m.OGFDHEIJKJB },
+            |m: &mut KNNFPFKCABE| { &mut m.OGFDHEIJKJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNNFPFKCABE>(
             "KNNFPFKCABE",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for KNNFPFKCABE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DHJHIBCDNBA = is.read_uint32()?;
-                },
-                120 => {
-                    self.CFIPHFHOJFP = is.read_uint32()?;
-                },
-                42 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                40 => {
+                8 => {
                     self.avatar_id_list.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.BOPNMDHHOPJ = is.read_uint32()?;
+                },
+                72 => {
+                    self.OGFDHEIJKJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for KNNFPFKCABE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHJHIBCDNBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DHJHIBCDNBA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.avatar_id_list);
+        if self.BOPNMDHHOPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BOPNMDHHOPJ);
         }
-        if self.CFIPHFHOJFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CFIPHFHOJFP);
+        if self.OGFDHEIJKJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OGFDHEIJKJB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHJHIBCDNBA != 0 {
-            os.write_uint32(4, self.DHJHIBCDNBA)?;
+        os.write_repeated_packed_uint32(1, &self.avatar_id_list)?;
+        if self.BOPNMDHHOPJ != 0 {
+            os.write_uint32(3, self.BOPNMDHHOPJ)?;
         }
-        if self.CFIPHFHOJFP != 0 {
-            os.write_uint32(15, self.CFIPHFHOJFP)?;
+        if self.OGFDHEIJKJB != 0 {
+            os.write_uint32(9, self.OGFDHEIJKJB)?;
         }
-        os.write_repeated_packed_uint32(5, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for KNNFPFKCABE {
     }
 
     fn clear(&mut self) {
-        self.DHJHIBCDNBA = 0;
-        self.CFIPHFHOJFP = 0;
         self.avatar_id_list.clear();
+        self.BOPNMDHHOPJ = 0;
+        self.OGFDHEIJKJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNNFPFKCABE {
         static instance: KNNFPFKCABE = KNNFPFKCABE {
-            DHJHIBCDNBA: 0,
-            CFIPHFHOJFP: 0,
             avatar_id_list: ::std::vec::Vec::new(),
+            BOPNMDHHOPJ: 0,
+            OGFDHEIJKJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for KNNFPFKCABE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNNFPFKCABE.proto\"w\n\x0bKNNFPFKCABE\x12\x20\n\x0bDHJHIBCDNBA\x18\
-    \x04\x20\x01(\rR\x0bDHJHIBCDNBA\x12\x20\n\x0bCFIPHFHOJFP\x18\x0f\x20\x01\
-    (\rR\x0bCFIPHFHOJFP\x12$\n\x0eavatar_id_list\x18\x05\x20\x03(\rR\x0cavat\
-    arIdListb\x06proto3\
+    \n\x11KNNFPFKCABE.proto\"w\n\x0bKNNFPFKCABE\x12$\n\x0eavatar_id_list\x18\
+    \x01\x20\x03(\rR\x0cavatarIdList\x12\x20\n\x0bBOPNMDHHOPJ\x18\x03\x20\
+    \x01(\rR\x0bBOPNMDHHOPJ\x12\x20\n\x0bOGFDHEIJKJB\x18\t\x20\x01(\rR\x0bOG\
+    FDHEIJKJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

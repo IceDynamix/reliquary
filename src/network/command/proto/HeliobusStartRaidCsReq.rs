@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusStartRaidCsReq {
     // message fields
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.raid_id)
+    pub raid_id: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.LHGOLODOODK)
+    pub LHGOLODOODK: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.skill_id)
     pub skill_id: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.prop_entity_id)
     pub prop_entity_id: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.is_save)
     pub is_save: bool,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.ENLKNPIBLIO)
-    pub ENLKNPIBLIO: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.raid_id)
-    pub raid_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusStartRaidCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,24 @@ impl HeliobusStartRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "raid_id",
+            |m: &HeliobusStartRaidCsReq| { &m.raid_id },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.raid_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHGOLODOODK",
+            |m: &HeliobusStartRaidCsReq| { &m.LHGOLODOODK },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.LHGOLODOODK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &HeliobusStartRaidCsReq| { &m.skill_id },
             |m: &mut HeliobusStartRaidCsReq| { &mut m.skill_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &HeliobusStartRaidCsReq| { &m.avatar_list },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "prop_entity_id",
@@ -73,21 +88,6 @@ impl HeliobusStartRaidCsReq {
             "is_save",
             |m: &HeliobusStartRaidCsReq| { &m.is_save },
             |m: &mut HeliobusStartRaidCsReq| { &mut m.is_save },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENLKNPIBLIO",
-            |m: &HeliobusStartRaidCsReq| { &m.ENLKNPIBLIO },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.ENLKNPIBLIO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &HeliobusStartRaidCsReq| { &m.avatar_list },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "raid_id",
-            |m: &HeliobusStartRaidCsReq| { &m.raid_id },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.raid_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusStartRaidCsReq>(
             "HeliobusStartRaidCsReq",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.skill_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.prop_entity_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.is_save = is.read_bool()?;
-                },
-                112 => {
-                    self.ENLKNPIBLIO = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
-                },
-                48 => {
-                    self.avatar_list.push(is.read_uint32()?);
-                },
                 56 => {
                     self.raid_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.LHGOLODOODK = is.read_uint32()?;
+                },
+                88 => {
+                    self.skill_id = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
+                },
+                104 => {
+                    self.avatar_list.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.prop_entity_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.is_save = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.skill_id);
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.raid_id);
         }
+        if self.LHGOLODOODK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LHGOLODOODK);
+        }
+        if self.skill_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.skill_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.avatar_list);
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.prop_entity_id);
         }
         if self.is_save != false {
             my_size += 1 + 1;
-        }
-        if self.ENLKNPIBLIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ENLKNPIBLIO);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.avatar_list);
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.raid_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.skill_id != 0 {
-            os.write_uint32(4, self.skill_id)?;
-        }
-        if self.prop_entity_id != 0 {
-            os.write_uint32(1, self.prop_entity_id)?;
-        }
-        if self.is_save != false {
-            os.write_bool(2, self.is_save)?;
-        }
-        if self.ENLKNPIBLIO != 0 {
-            os.write_uint32(14, self.ENLKNPIBLIO)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.avatar_list)?;
         if self.raid_id != 0 {
             os.write_uint32(7, self.raid_id)?;
+        }
+        if self.LHGOLODOODK != 0 {
+            os.write_uint32(8, self.LHGOLODOODK)?;
+        }
+        if self.skill_id != 0 {
+            os.write_uint32(11, self.skill_id)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.avatar_list)?;
+        if self.prop_entity_id != 0 {
+            os.write_uint32(14, self.prop_entity_id)?;
+        }
+        if self.is_save != false {
+            os.write_bool(15, self.is_save)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn clear(&mut self) {
+        self.raid_id = 0;
+        self.LHGOLODOODK = 0;
         self.skill_id = 0;
+        self.avatar_list.clear();
         self.prop_entity_id = 0;
         self.is_save = false;
-        self.ENLKNPIBLIO = 0;
-        self.avatar_list.clear();
-        self.raid_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusStartRaidCsReq {
         static instance: HeliobusStartRaidCsReq = HeliobusStartRaidCsReq {
+            raid_id: 0,
+            LHGOLODOODK: 0,
             skill_id: 0,
+            avatar_list: ::std::vec::Vec::new(),
             prop_entity_id: 0,
             is_save: false,
-            ENLKNPIBLIO: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            raid_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusStartRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cHeliobusStartRaidCsReq.proto\"\xce\x01\n\x16HeliobusStartRaidCsReq\
-    \x12\x19\n\x08skill_id\x18\x04\x20\x01(\rR\x07skillId\x12$\n\x0eprop_ent\
-    ity_id\x18\x01\x20\x01(\rR\x0cpropEntityId\x12\x17\n\x07is_save\x18\x02\
-    \x20\x01(\x08R\x06isSave\x12\x20\n\x0bENLKNPIBLIO\x18\x0e\x20\x01(\rR\
-    \x0bENLKNPIBLIO\x12\x1f\n\x0bavatar_list\x18\x06\x20\x03(\rR\navatarList\
-    \x12\x17\n\x07raid_id\x18\x07\x20\x01(\rR\x06raidIdb\x06proto3\
+    \x12\x17\n\x07raid_id\x18\x07\x20\x01(\rR\x06raidId\x12\x20\n\x0bLHGOLOD\
+    OODK\x18\x08\x20\x01(\rR\x0bLHGOLODOODK\x12\x19\n\x08skill_id\x18\x0b\
+    \x20\x01(\rR\x07skillId\x12\x1f\n\x0bavatar_list\x18\r\x20\x03(\rR\navat\
+    arList\x12$\n\x0eprop_entity_id\x18\x0e\x20\x01(\rR\x0cpropEntityId\x12\
+    \x17\n\x07is_save\x18\x0f\x20\x01(\x08R\x06isSaveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

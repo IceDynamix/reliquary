@@ -32,8 +32,8 @@ pub struct FinishEmotionDialoguePerformanceCsReq {
     pub dialogue_id: u32,
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.script_id)
     pub script_id: u32,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.FIHNCOABELA)
-    pub FIHNCOABELA: u32,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceCsReq.ELOJPKNFLHM)
+    pub ELOJPKNFLHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishEmotionDialoguePerformanceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl FinishEmotionDialoguePerformanceCsReq {
             |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.script_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIHNCOABELA",
-            |m: &FinishEmotionDialoguePerformanceCsReq| { &m.FIHNCOABELA },
-            |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.FIHNCOABELA },
+            "ELOJPKNFLHM",
+            |m: &FinishEmotionDialoguePerformanceCsReq| { &m.ELOJPKNFLHM },
+            |m: &mut FinishEmotionDialoguePerformanceCsReq| { &mut m.ELOJPKNFLHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishEmotionDialoguePerformanceCsReq>(
             "FinishEmotionDialoguePerformanceCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.dialogue_id = is.read_uint32()?;
                 },
-                40 => {
+                48 => {
                     self.script_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.FIHNCOABELA = is.read_uint32()?;
+                72 => {
+                    self.ELOJPKNFLHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dialogue_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.dialogue_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.dialogue_id);
         }
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.script_id);
         }
-        if self.FIHNCOABELA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FIHNCOABELA);
+        if self.ELOJPKNFLHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ELOJPKNFLHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dialogue_id != 0 {
-            os.write_uint32(11, self.dialogue_id)?;
+            os.write_uint32(5, self.dialogue_id)?;
         }
         if self.script_id != 0 {
-            os.write_uint32(5, self.script_id)?;
+            os.write_uint32(6, self.script_id)?;
         }
-        if self.FIHNCOABELA != 0 {
-            os.write_uint32(6, self.FIHNCOABELA)?;
+        if self.ELOJPKNFLHM != 0 {
+            os.write_uint32(9, self.ELOJPKNFLHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
     fn clear(&mut self) {
         self.dialogue_id = 0;
         self.script_id = 0;
-        self.FIHNCOABELA = 0;
+        self.ELOJPKNFLHM = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceCsReq {
         static instance: FinishEmotionDialoguePerformanceCsReq = FinishEmotionDialoguePerformanceCsReq {
             dialogue_id: 0,
             script_id: 0,
-            FIHNCOABELA: 0,
+            ELOJPKNFLHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishEmotionDialoguePerformanceCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+FinishEmotionDialoguePerformanceCsReq.proto\"\x87\x01\n%FinishEmotion\
-    DialoguePerformanceCsReq\x12\x1f\n\x0bdialogue_id\x18\x0b\x20\x01(\rR\nd\
-    ialogueId\x12\x1b\n\tscript_id\x18\x05\x20\x01(\rR\x08scriptId\x12\x20\n\
-    \x0bFIHNCOABELA\x18\x06\x20\x01(\rR\x0bFIHNCOABELAb\x06proto3\
+    DialoguePerformanceCsReq\x12\x1f\n\x0bdialogue_id\x18\x05\x20\x01(\rR\nd\
+    ialogueId\x12\x1b\n\tscript_id\x18\x06\x20\x01(\rR\x08scriptId\x12\x20\n\
+    \x0bELOJPKNFLHM\x18\t\x20\x01(\rR\x0bELOJPKNFLHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

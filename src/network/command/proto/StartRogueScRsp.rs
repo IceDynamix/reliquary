@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRogueScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartRogueScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.rotate_info)
-    pub rotate_info: ::protobuf::MessageField<super::RogueMapRotateInfo::RogueMapRotateInfo>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.map_rotation_data)
+    pub map_rotation_data: ::protobuf::MessageField<super::MapRotationData::MapRotationData>,
     // @@protoc_insertion_point(field:StartRogueScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartRogueScRsp.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:StartRogueScRsp.rogue_game_info)
     pub rogue_game_info: ::protobuf::MessageField<super::RogueInfo::RogueInfo>,
     // special fields
@@ -57,25 +57,25 @@ impl StartRogueScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &StartRogueScRsp| { &m.scene },
-            |m: &mut StartRogueScRsp| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MapRotationData::MapRotationData>(
+            "map_rotation_data",
+            |m: &StartRogueScRsp| { &m.map_rotation_data },
+            |m: &mut StartRogueScRsp| { &mut m.map_rotation_data },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMapRotateInfo::RogueMapRotateInfo>(
-            "rotate_info",
-            |m: &StartRogueScRsp| { &m.rotate_info },
-            |m: &mut StartRogueScRsp| { &mut m.rotate_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartRogueScRsp| { &m.retcode },
+            |m: &mut StartRogueScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &StartRogueScRsp| { &m.lineup },
             |m: &mut StartRogueScRsp| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartRogueScRsp| { &m.retcode },
-            |m: &mut StartRogueScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &StartRogueScRsp| { &m.scene },
+            |m: &mut StartRogueScRsp| { &mut m.scene },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueInfo::RogueInfo>(
             "rogue_game_info",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_rotation_data)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotate_info)?;
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                106 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_game_info)?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.map_rotation_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rotate_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if let Some(v) = self.scene.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.rogue_game_info.as_ref() {
             let len = v.compute_size();
@@ -152,20 +152,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.map_rotation_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.rotate_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.rogue_game_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,20 +184,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     }
 
     fn clear(&mut self) {
-        self.scene.clear();
-        self.rotate_info.clear();
-        self.lineup.clear();
+        self.map_rotation_data.clear();
         self.retcode = 0;
+        self.lineup.clear();
+        self.scene.clear();
         self.rogue_game_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRogueScRsp {
         static instance: StartRogueScRsp = StartRogueScRsp {
-            scene: ::protobuf::MessageField::none(),
-            rotate_info: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
+            map_rotation_data: ::protobuf::MessageField::none(),
             retcode: 0,
+            lineup: ::protobuf::MessageField::none(),
+            scene: ::protobuf::MessageField::none(),
             rogue_game_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15StartRogueScRsp.proto\x1a\x10LineupInfo.proto\x1a\x0fRogueInfo.pro\
-    to\x1a\x18RogueMapRotateInfo.proto\x1a\x0fSceneInfo.proto\"\xdc\x01\n\
-    \x0fStartRogueScRsp\x12\x20\n\x05scene\x18\x0c\x20\x01(\x0b2\n.SceneInfo\
-    R\x05scene\x124\n\x0brotate_info\x18\x08\x20\x01(\x0b2\x13.RogueMapRotat\
-    eInfoR\nrotateInfo\x12#\n\x06lineup\x18\x06\x20\x01(\x0b2\x0b.LineupInfo\
-    R\x06lineup\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x122\n\
-    \x0frogue_game_info\x18\r\x20\x01(\x0b2\n.RogueInfoR\rrogueGameInfob\x06\
-    proto3\
+    \n\x15StartRogueScRsp.proto\x1a\x10LineupInfo.proto\x1a\x15MapRotationDa\
+    ta.proto\x1a\x0fRogueInfo.proto\x1a\x0fSceneInfo.proto\"\xe4\x01\n\x0fSt\
+    artRogueScRsp\x12<\n\x11map_rotation_data\x18\x02\x20\x01(\x0b2\x10.MapR\
+    otationDataR\x0fmapRotationData\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
+    \x07retcode\x12#\n\x06lineup\x18\x06\x20\x01(\x0b2\x0b.LineupInfoR\x06li\
+    neup\x12\x20\n\x05scene\x18\x07\x20\x01(\x0b2\n.SceneInfoR\x05scene\x122\
+    \n\x0frogue_game_info\x18\x0c\x20\x01(\x0b2\n.RogueInfoR\rrogueGameInfob\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -249,8 +249,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::LineupInfo::file_descriptor().clone());
+            deps.push(super::MapRotationData::file_descriptor().clone());
             deps.push(super::RogueInfo::file_descriptor().clone());
-            deps.push(super::RogueMapRotateInfo::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRogueScRsp::generated_message_descriptor_data());

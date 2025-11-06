@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MIABDMJEBEF {
     // message fields
-    // @@protoc_insertion_point(field:MIABDMJEBEF.OCNMCFGGFLA)
-    pub OCNMCFGGFLA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MIABDMJEBEF.GEPFPBOHPJG)
-    pub GEPFPBOHPJG: ::std::vec::Vec<super::IEPMCENJNGE::IEPMCENJNGE>,
+    // @@protoc_insertion_point(field:MIABDMJEBEF.GNAPADAPLIE)
+    pub GNAPADAPLIE: ::std::vec::Vec<super::IEPMCENJNGE::IEPMCENJNGE>,
+    // @@protoc_insertion_point(field:MIABDMJEBEF.BJGLNBBLDGJ)
+    pub BJGLNBBLDGJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MIABDMJEBEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MIABDMJEBEF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OCNMCFGGFLA",
-            |m: &MIABDMJEBEF| { &m.OCNMCFGGFLA },
-            |m: &mut MIABDMJEBEF| { &mut m.OCNMCFGGFLA },
+            "GNAPADAPLIE",
+            |m: &MIABDMJEBEF| { &m.GNAPADAPLIE },
+            |m: &mut MIABDMJEBEF| { &mut m.GNAPADAPLIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GEPFPBOHPJG",
-            |m: &MIABDMJEBEF| { &m.GEPFPBOHPJG },
-            |m: &mut MIABDMJEBEF| { &mut m.GEPFPBOHPJG },
+            "BJGLNBBLDGJ",
+            |m: &MIABDMJEBEF| { &m.BJGLNBBLDGJ },
+            |m: &mut MIABDMJEBEF| { &mut m.BJGLNBBLDGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIABDMJEBEF>(
             "MIABDMJEBEF",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for MIABDMJEBEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OCNMCFGGFLA)?;
+                66 => {
+                    self.GNAPADAPLIE.push(is.read_message()?);
                 },
-                72 => {
-                    self.OCNMCFGGFLA.push(is.read_uint32()?);
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BJGLNBBLDGJ)?;
                 },
-                10 => {
-                    self.GEPFPBOHPJG.push(is.read_message()?);
+                88 => {
+                    self.BJGLNBBLDGJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for MIABDMJEBEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OCNMCFGGFLA);
-        for value in &self.GEPFPBOHPJG {
+        for value in &self.GNAPADAPLIE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.BJGLNBBLDGJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.OCNMCFGGFLA)?;
-        for v in &self.GEPFPBOHPJG {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.GNAPADAPLIE {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        os.write_repeated_packed_uint32(11, &self.BJGLNBBLDGJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MIABDMJEBEF {
     }
 
     fn clear(&mut self) {
-        self.OCNMCFGGFLA.clear();
-        self.GEPFPBOHPJG.clear();
+        self.GNAPADAPLIE.clear();
+        self.BJGLNBBLDGJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIABDMJEBEF {
         static instance: MIABDMJEBEF = MIABDMJEBEF {
-            OCNMCFGGFLA: ::std::vec::Vec::new(),
-            GEPFPBOHPJG: ::std::vec::Vec::new(),
+            GNAPADAPLIE: ::std::vec::Vec::new(),
+            BJGLNBBLDGJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MIABDMJEBEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MIABDMJEBEF.proto\x1a\x11IEPMCENJNGE.proto\"_\n\x0bMIABDMJEBEF\x12\
-    \x20\n\x0bOCNMCFGGFLA\x18\t\x20\x03(\rR\x0bOCNMCFGGFLA\x12.\n\x0bGEPFPBO\
-    HPJG\x18\x01\x20\x03(\x0b2\x0c.IEPMCENJNGER\x0bGEPFPBOHPJGb\x06proto3\
+    .\n\x0bGNAPADAPLIE\x18\x08\x20\x03(\x0b2\x0c.IEPMCENJNGER\x0bGNAPADAPLIE\
+    \x12\x20\n\x0bBJGLNBBLDGJ\x18\x0b\x20\x03(\rR\x0bBJGLNBBLDGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

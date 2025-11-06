@@ -30,8 +30,8 @@ pub struct BuyNpcStuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:BuyNpcStuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:BuyNpcStuffScRsp.BDJCGCDJOEO)
-    pub BDJCGCDJOEO: u32,
+    // @@protoc_insertion_point(field:BuyNpcStuffScRsp.FNAHNKOAOAP)
+    pub FNAHNKOAOAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyNpcStuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl BuyNpcStuffScRsp {
             |m: &mut BuyNpcStuffScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDJCGCDJOEO",
-            |m: &BuyNpcStuffScRsp| { &m.BDJCGCDJOEO },
-            |m: &mut BuyNpcStuffScRsp| { &mut m.BDJCGCDJOEO },
+            "FNAHNKOAOAP",
+            |m: &BuyNpcStuffScRsp| { &m.FNAHNKOAOAP },
+            |m: &mut BuyNpcStuffScRsp| { &mut m.FNAHNKOAOAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyNpcStuffScRsp>(
             "BuyNpcStuffScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for BuyNpcStuffScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.BDJCGCDJOEO = is.read_uint32()?;
+                96 => {
+                    self.FNAHNKOAOAP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for BuyNpcStuffScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BDJCGCDJOEO);
+        if self.FNAHNKOAOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FNAHNKOAOAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for BuyNpcStuffScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(5, self.BDJCGCDJOEO)?;
+        if self.FNAHNKOAOAP != 0 {
+            os.write_uint32(12, self.FNAHNKOAOAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for BuyNpcStuffScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BDJCGCDJOEO = 0;
+        self.FNAHNKOAOAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyNpcStuffScRsp {
         static instance: BuyNpcStuffScRsp = BuyNpcStuffScRsp {
             retcode: 0,
-            BDJCGCDJOEO: 0,
+            FNAHNKOAOAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyNpcStuffScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16BuyNpcStuffScRsp.proto\"N\n\x10BuyNpcStuffScRsp\x12\x18\n\x07retco\
-    de\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bBDJCGCDJOEO\x18\x05\x20\x01\
-    (\rR\x0bBDJCGCDJOEOb\x06proto3\
+    de\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bFNAHNKOAOAP\x18\x0c\x20\x01\
+    (\rR\x0bFNAHNKOAOAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

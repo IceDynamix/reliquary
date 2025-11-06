@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KLAAHJHNLCJ {
     // message fields
-    // @@protoc_insertion_point(field:KLAAHJHNLCJ.CDIAJKEJDHA)
-    pub CDIAJKEJDHA: bool,
-    // @@protoc_insertion_point(field:KLAAHJHNLCJ.BHPCNNFOKEE)
-    pub BHPCNNFOKEE: u32,
     // @@protoc_insertion_point(field:KLAAHJHNLCJ.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:KLAAHJHNLCJ.MOPCKFCJNDN)
+    pub MOPCKFCJNDN: bool,
+    // @@protoc_insertion_point(field:KLAAHJHNLCJ.ELCOBOEFJPI)
+    pub ELCOBOEFJPI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KLAAHJHNLCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl KLAAHJHNLCJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDIAJKEJDHA",
-            |m: &KLAAHJHNLCJ| { &m.CDIAJKEJDHA },
-            |m: &mut KLAAHJHNLCJ| { &mut m.CDIAJKEJDHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHPCNNFOKEE",
-            |m: &KLAAHJHNLCJ| { &m.BHPCNNFOKEE },
-            |m: &mut KLAAHJHNLCJ| { &mut m.BHPCNNFOKEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &KLAAHJHNLCJ| { &m.progress },
             |m: &mut KLAAHJHNLCJ| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MOPCKFCJNDN",
+            |m: &KLAAHJHNLCJ| { &m.MOPCKFCJNDN },
+            |m: &mut KLAAHJHNLCJ| { &mut m.MOPCKFCJNDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELCOBOEFJPI",
+            |m: &KLAAHJHNLCJ| { &m.ELCOBOEFJPI },
+            |m: &mut KLAAHJHNLCJ| { &mut m.ELCOBOEFJPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KLAAHJHNLCJ>(
             "KLAAHJHNLCJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.CDIAJKEJDHA = is.read_bool()?;
-                },
-                24 => {
-                    self.BHPCNNFOKEE = is.read_uint32()?;
-                },
-                16 => {
+                48 => {
                     self.progress = is.read_uint32()?;
+                },
+                88 => {
+                    self.MOPCKFCJNDN = is.read_bool()?;
+                },
+                112 => {
+                    self.ELCOBOEFJPI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CDIAJKEJDHA != false {
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.progress);
+        }
+        if self.MOPCKFCJNDN != false {
             my_size += 1 + 1;
         }
-        if self.BHPCNNFOKEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BHPCNNFOKEE);
-        }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+        if self.ELCOBOEFJPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ELCOBOEFJPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CDIAJKEJDHA != false {
-            os.write_bool(13, self.CDIAJKEJDHA)?;
-        }
-        if self.BHPCNNFOKEE != 0 {
-            os.write_uint32(3, self.BHPCNNFOKEE)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(2, self.progress)?;
+            os.write_uint32(6, self.progress)?;
+        }
+        if self.MOPCKFCJNDN != false {
+            os.write_bool(11, self.MOPCKFCJNDN)?;
+        }
+        if self.ELCOBOEFJPI != 0 {
+            os.write_uint32(14, self.ELCOBOEFJPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KLAAHJHNLCJ {
     }
 
     fn clear(&mut self) {
-        self.CDIAJKEJDHA = false;
-        self.BHPCNNFOKEE = 0;
         self.progress = 0;
+        self.MOPCKFCJNDN = false;
+        self.ELCOBOEFJPI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KLAAHJHNLCJ {
         static instance: KLAAHJHNLCJ = KLAAHJHNLCJ {
-            CDIAJKEJDHA: false,
-            BHPCNNFOKEE: 0,
             progress: 0,
+            MOPCKFCJNDN: false,
+            ELCOBOEFJPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KLAAHJHNLCJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KLAAHJHNLCJ.proto\"m\n\x0bKLAAHJHNLCJ\x12\x20\n\x0bCDIAJKEJDHA\x18\
-    \r\x20\x01(\x08R\x0bCDIAJKEJDHA\x12\x20\n\x0bBHPCNNFOKEE\x18\x03\x20\x01\
-    (\rR\x0bBHPCNNFOKEE\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progres\
-    sb\x06proto3\
+    \n\x11KLAAHJHNLCJ.proto\"m\n\x0bKLAAHJHNLCJ\x12\x1a\n\x08progress\x18\
+    \x06\x20\x01(\rR\x08progress\x12\x20\n\x0bMOPCKFCJNDN\x18\x0b\x20\x01(\
+    \x08R\x0bMOPCKFCJNDN\x12\x20\n\x0bELCOBOEFJPI\x18\x0e\x20\x01(\rR\x0bELC\
+    OBOEFJPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

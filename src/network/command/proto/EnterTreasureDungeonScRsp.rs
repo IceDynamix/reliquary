@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterTreasureDungeonScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterTreasureDungeonScRsp.DLEJPJJCELJ)
-    pub DLEJPJJCELJ: ::protobuf::MessageField<super::KLCKNKLPONM::KLCKNKLPONM>,
+    // @@protoc_insertion_point(field:EnterTreasureDungeonScRsp.DEOMLGBHJPJ)
+    pub DEOMLGBHJPJ: ::protobuf::MessageField<super::KLCKNKLPONM::KLCKNKLPONM>,
     // @@protoc_insertion_point(field:EnterTreasureDungeonScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl EnterTreasureDungeonScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLCKNKLPONM::KLCKNKLPONM>(
-            "DLEJPJJCELJ",
-            |m: &EnterTreasureDungeonScRsp| { &m.DLEJPJJCELJ },
-            |m: &mut EnterTreasureDungeonScRsp| { &mut m.DLEJPJJCELJ },
+            "DEOMLGBHJPJ",
+            |m: &EnterTreasureDungeonScRsp| { &m.DEOMLGBHJPJ },
+            |m: &mut EnterTreasureDungeonScRsp| { &mut m.DEOMLGBHJPJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLEJPJJCELJ)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DEOMLGBHJPJ)?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLEJPJJCELJ.as_ref() {
+        if let Some(v) = self.DEOMLGBHJPJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLEJPJJCELJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.DEOMLGBHJPJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EnterTreasureDungeonScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLEJPJJCELJ.clear();
+        self.DEOMLGBHJPJ.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterTreasureDungeonScRsp {
         static instance: EnterTreasureDungeonScRsp = EnterTreasureDungeonScRsp {
-            DLEJPJJCELJ: ::protobuf::MessageField::none(),
+            DEOMLGBHJPJ: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterTreasureDungeonScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fEnterTreasureDungeonScRsp.proto\x1a\x11KLCKNKLPONM.proto\"e\n\x19E\
-    nterTreasureDungeonScRsp\x12.\n\x0bDLEJPJJCELJ\x18\x04\x20\x01(\x0b2\x0c\
-    .KLCKNKLPONMR\x0bDLEJPJJCELJ\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
+    nterTreasureDungeonScRsp\x12.\n\x0bDEOMLGBHJPJ\x18\x03\x20\x01(\x0b2\x0c\
+    .KLCKNKLPONMR\x0bDEOMLGBHJPJ\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

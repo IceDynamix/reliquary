@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIFDFLDEOKC {
     // message fields
-    // @@protoc_insertion_point(field:CIFDFLDEOKC.PJGBFKNJPNO)
-    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::GHHDMEMLKPO::GHHDMEMLKPO>,
+    // @@protoc_insertion_point(field:CIFDFLDEOKC.BNFIKOCFKNA)
+    pub BNFIKOCFKNA: ::protobuf::EnumOrUnknown<super::GHHDMEMLKPO::GHHDMEMLKPO>,
     // special fields
     // @@protoc_insertion_point(special_field:CIFDFLDEOKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CIFDFLDEOKC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJGBFKNJPNO",
-            |m: &CIFDFLDEOKC| { &m.PJGBFKNJPNO },
-            |m: &mut CIFDFLDEOKC| { &mut m.PJGBFKNJPNO },
+            "BNFIKOCFKNA",
+            |m: &CIFDFLDEOKC| { &m.BNFIKOCFKNA },
+            |m: &mut CIFDFLDEOKC| { &mut m.BNFIKOCFKNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIFDFLDEOKC>(
             "CIFDFLDEOKC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
+                120 => {
+                    self.BNFIKOCFKNA = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.PJGBFKNJPNO.value());
+        if self.BNFIKOCFKNA != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.BNFIKOCFKNA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+        if self.BNFIKOCFKNA != ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.BNFIKOCFKNA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for CIFDFLDEOKC {
     }
 
     fn clear(&mut self) {
-        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE);
+        self.BNFIKOCFKNA = ::protobuf::EnumOrUnknown::new(super::GHHDMEMLKPO::GHHDMEMLKPO::FATE_LEVEL_STATUS_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIFDFLDEOKC {
         static instance: CIFDFLDEOKC = CIFDFLDEOKC {
-            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
+            BNFIKOCFKNA: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for CIFDFLDEOKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIFDFLDEOKC.proto\x1a\x11GHHDMEMLKPO.proto\"=\n\x0bCIFDFLDEOKC\x12\
-    .\n\x0bPJGBFKNJPNO\x18\x0b\x20\x01(\x0e2\x0c.GHHDMEMLKPOR\x0bPJGBFKNJPNO\
+    .\n\x0bBNFIKOCFKNA\x18\x0f\x20\x01(\x0e2\x0c.GHHDMEMLKPOR\x0bBNFIKOCFKNA\
     b\x06proto3\
 ";
 

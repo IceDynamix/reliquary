@@ -39,6 +39,8 @@ pub enum FightGameMode {
     FIGHT_GAME_MODE_MATCH3_ROYALE = 4,
     // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MARBLE_MAINSUB)
     FIGHT_GAME_MODE_MARBLE_MAINSUB = 5,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_CAKE_RACE)
+    FIGHT_GAME_MODE_CAKE_RACE = 6,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -56,6 +58,7 @@ impl ::protobuf::Enum for FightGameMode {
             3 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO),
             4 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE),
             5 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB),
+            6 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_CAKE_RACE),
             _ => ::std::option::Option::None
         }
     }
@@ -68,6 +71,7 @@ impl ::protobuf::Enum for FightGameMode {
             "FIGHT_GAME_MODE_MATCH3_SOLO" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO),
             "FIGHT_GAME_MODE_MATCH3_ROYALE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE),
             "FIGHT_GAME_MODE_MARBLE_MAINSUB" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB),
+            "FIGHT_GAME_MODE_CAKE_RACE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_CAKE_RACE),
             _ => ::std::option::Option::None
         }
     }
@@ -79,6 +83,7 @@ impl ::protobuf::Enum for FightGameMode {
         FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO,
         FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE,
         FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB,
+        FightGameMode::FIGHT_GAME_MODE_CAKE_RACE,
     ];
 }
 
@@ -107,11 +112,12 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*\xc9\x01\n\rFightGameMode\x12\x18\n\x14FIGHT_G\
+    \n\x13FightGameMode.proto*\xe8\x01\n\rFightGameMode\x12\x18\n\x14FIGHT_G\
     AME_MODE_NONE\x10\0\x12\x1a\n\x16FIGHT_GAME_MODE_MATCH3\x10\x01\x12\x1a\
     \n\x16FIGHT_GAME_MODE_MARBLE\x10\x02\x12\x1f\n\x1bFIGHT_GAME_MODE_MATCH3\
     _SOLO\x10\x03\x12!\n\x1dFIGHT_GAME_MODE_MATCH3_ROYALE\x10\x04\x12\"\n\
-    \x1eFIGHT_GAME_MODE_MARBLE_MAINSUB\x10\x05b\x06proto3\
+    \x1eFIGHT_GAME_MODE_MARBLE_MAINSUB\x10\x05\x12\x1d\n\x19FIGHT_GAME_MODE_\
+    CAKE_RACE\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

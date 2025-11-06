@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordBattleRecordScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.battle_record_list)
-    pub battle_record_list: ::std::vec::Vec<super::AHKANKEPADJ::AHKANKEPADJ>,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.PKCPJJNOALN)
-    pub PKCPJJNOALN: ::protobuf::MessageField<super::PunkLordMonsterKey::PunkLordMonsterKey>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.monster_key)
+    pub monster_key: ::protobuf::MessageField<super::PunkLordMonsterKey::PunkLordMonsterKey>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.battle_replay_list)
+    pub battle_replay_list: ::std::vec::Vec<super::CEMEDOEHBGE::CEMEDOEHBGE>,
     // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.OKOBGJHJJOA)
-    pub OKOBGJHJJOA: ::std::vec::Vec<super::CEMEDOEHBGE::CEMEDOEHBGE>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.battle_record_list)
+    pub battle_record_list: ::std::vec::Vec<super::AHKANKEPADJ::AHKANKEPADJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPunkLordBattleRecordScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl GetPunkLordBattleRecordScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_record_list",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.battle_record_list },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.battle_record_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterKey::PunkLordMonsterKey>(
-            "PKCPJJNOALN",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.PKCPJJNOALN },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.PKCPJJNOALN },
+            "monster_key",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.monster_key },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.monster_key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_replay_list",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.battle_replay_list },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.battle_replay_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -71,9 +71,9 @@ impl GetPunkLordBattleRecordScRsp {
             |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OKOBGJHJJOA",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.OKOBGJHJJOA },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.OKOBGJHJJOA },
+            "battle_record_list",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.battle_record_list },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.battle_record_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPunkLordBattleRecordScRsp>(
             "GetPunkLordBattleRecordScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.battle_record_list.push(is.read_message()?);
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_key)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKCPJJNOALN)?;
+                34 => {
+                    self.battle_replay_list.push(is.read_message()?);
                 },
-                80 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    self.OKOBGJHJJOA.push(is.read_message()?);
+                66 => {
+                    self.battle_record_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.battle_record_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.PKCPJJNOALN.as_ref() {
+        if let Some(v) = self.monster_key.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.battle_replay_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        for value in &self.OKOBGJHJJOA {
+        for value in &self.battle_record_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.battle_record_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.monster_key.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        for v in &self.battle_replay_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if let Some(v) = self.PKCPJJNOALN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        for v in &self.OKOBGJHJJOA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.battle_record_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn clear(&mut self) {
-        self.battle_record_list.clear();
-        self.PKCPJJNOALN.clear();
+        self.monster_key.clear();
+        self.battle_replay_list.clear();
         self.retcode = 0;
-        self.OKOBGJHJJOA.clear();
+        self.battle_record_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordBattleRecordScRsp {
         static instance: GetPunkLordBattleRecordScRsp = GetPunkLordBattleRecordScRsp {
-            battle_record_list: ::std::vec::Vec::new(),
-            PKCPJJNOALN: ::protobuf::MessageField::none(),
+            monster_key: ::protobuf::MessageField::none(),
+            battle_replay_list: ::std::vec::Vec::new(),
             retcode: 0,
-            OKOBGJHJJOA: ::std::vec::Vec::new(),
+            battle_record_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,12 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordBattleRecordScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetPunkLordBattleRecordScRsp.proto\x1a\x11AHKANKEPADJ.proto\x1a\x11C\
-    EMEDOEHBGE.proto\x1a\x18PunkLordMonsterKey.proto\"\xdb\x01\n\x1cGetPunkL\
-    ordBattleRecordScRsp\x12:\n\x12battle_record_list\x18\x05\x20\x03(\x0b2\
-    \x0c.AHKANKEPADJR\x10battleRecordList\x125\n\x0bPKCPJJNOALN\x18\x07\x20\
-    \x01(\x0b2\x13.PunkLordMonsterKeyR\x0bPKCPJJNOALN\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bOKOBGJHJJOA\x18\x01\x20\x03(\x0b\
-    2\x0c.CEMEDOEHBGER\x0bOKOBGJHJJOAb\x06proto3\
+    EMEDOEHBGE.proto\x1a\x18PunkLordMonsterKey.proto\"\xe6\x01\n\x1cGetPunkL\
+    ordBattleRecordScRsp\x124\n\x0bmonster_key\x18\x02\x20\x01(\x0b2\x13.Pun\
+    kLordMonsterKeyR\nmonsterKey\x12:\n\x12battle_replay_list\x18\x04\x20\
+    \x03(\x0b2\x0c.CEMEDOEHBGER\x10battleReplayList\x12\x18\n\x07retcode\x18\
+    \x07\x20\x01(\rR\x07retcode\x12:\n\x12battle_record_list\x18\x08\x20\x03\
+    (\x0b2\x0c.AHKANKEPADJR\x10battleRecordListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

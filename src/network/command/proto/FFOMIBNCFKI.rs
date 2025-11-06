@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFOMIBNCFKI {
     // message fields
-    // @@protoc_insertion_point(field:FFOMIBNCFKI.ANCPCPCLJED)
-    pub ANCPCPCLJED: ::protobuf::MessageField<super::HDCKCHPDMMI::HDCKCHPDMMI>,
+    // @@protoc_insertion_point(field:FFOMIBNCFKI.dice_placement)
+    pub dice_placement: ::protobuf::MessageField<super::CardDice::CardDice>,
     // special fields
     // @@protoc_insertion_point(special_field:FFOMIBNCFKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl FFOMIBNCFKI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HDCKCHPDMMI::HDCKCHPDMMI>(
-            "ANCPCPCLJED",
-            |m: &FFOMIBNCFKI| { &m.ANCPCPCLJED },
-            |m: &mut FFOMIBNCFKI| { &mut m.ANCPCPCLJED },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CardDice::CardDice>(
+            "dice_placement",
+            |m: &FFOMIBNCFKI| { &m.dice_placement },
+            |m: &mut FFOMIBNCFKI| { &mut m.dice_placement },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFOMIBNCFKI>(
             "FFOMIBNCFKI",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FFOMIBNCFKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANCPCPCLJED)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dice_placement)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FFOMIBNCFKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ANCPCPCLJED.as_ref() {
+        if let Some(v) = self.dice_placement.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FFOMIBNCFKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ANCPCPCLJED.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.dice_placement.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FFOMIBNCFKI {
     }
 
     fn clear(&mut self) {
-        self.ANCPCPCLJED.clear();
+        self.dice_placement.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFOMIBNCFKI {
         static instance: FFOMIBNCFKI = FFOMIBNCFKI {
-            ANCPCPCLJED: ::protobuf::MessageField::none(),
+            dice_placement: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FFOMIBNCFKI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FFOMIBNCFKI.proto\x1a\x11HDCKCHPDMMI.proto\"=\n\x0bFFOMIBNCFKI\x12\
-    .\n\x0bANCPCPCLJED\x18\x0e\x20\x01(\x0b2\x0c.HDCKCHPDMMIR\x0bANCPCPCLJED\
-    b\x06proto3\
+    \n\x11FFOMIBNCFKI.proto\x1a\x0eCardDice.proto\"?\n\x0bFFOMIBNCFKI\x120\n\
+    \x0edice_placement\x18\t\x20\x01(\x0b2\t.CardDiceR\rdicePlacementb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HDCKCHPDMMI::file_descriptor().clone());
+            deps.push(super::CardDice::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FFOMIBNCFKI::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

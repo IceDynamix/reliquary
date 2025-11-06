@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyActionResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyActionResultScNotify.PFNOKNCDPGE)
-    pub PFNOKNCDPGE: ::std::vec::Vec<super::MonopolyActionResult::MonopolyActionResult>,
+    // @@protoc_insertion_point(field:MonopolyActionResultScNotify.GAHIJBNEEAN)
+    pub GAHIJBNEEAN: ::std::vec::Vec<super::MonopolyActionResult::MonopolyActionResult>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyActionResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PFNOKNCDPGE",
-            |m: &MonopolyActionResultScNotify| { &m.PFNOKNCDPGE },
-            |m: &mut MonopolyActionResultScNotify| { &mut m.PFNOKNCDPGE },
+            "GAHIJBNEEAN",
+            |m: &MonopolyActionResultScNotify| { &m.GAHIJBNEEAN },
+            |m: &mut MonopolyActionResultScNotify| { &mut m.GAHIJBNEEAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyActionResultScNotify>(
             "MonopolyActionResultScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.PFNOKNCDPGE.push(is.read_message()?);
+                90 => {
+                    self.GAHIJBNEEAN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PFNOKNCDPGE {
+        for value in &self.GAHIJBNEEAN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PFNOKNCDPGE {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.GAHIJBNEEAN {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyActionResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.PFNOKNCDPGE.clear();
+        self.GAHIJBNEEAN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyActionResultScNotify {
         static instance: MonopolyActionResultScNotify = MonopolyActionResultScNotify {
-            PFNOKNCDPGE: ::std::vec::Vec::new(),
+            GAHIJBNEEAN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyActionResultScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MonopolyActionResultScNotify.proto\x1a\x1aMonopolyActionResult.proto\
-    \"W\n\x1cMonopolyActionResultScNotify\x127\n\x0bPFNOKNCDPGE\x18\x03\x20\
-    \x03(\x0b2\x15.MonopolyActionResultR\x0bPFNOKNCDPGEb\x06proto3\
+    \"W\n\x1cMonopolyActionResultScNotify\x127\n\x0bGAHIJBNEEAN\x18\x0b\x20\
+    \x03(\x0b2\x15.MonopolyActionResultR\x0bGAHIJBNEEANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct ArchiveWolfBroGameScRsp {
     // message fields
     // @@protoc_insertion_point(field:ArchiveWolfBroGameScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ArchiveWolfBroGameScRsp.DNPLIHJGJIH)
-    pub DNPLIHJGJIH: ::protobuf::MessageField<super::HEHPIOGGIEG::HEHPIOGGIEG>,
+    // @@protoc_insertion_point(field:ArchiveWolfBroGameScRsp.JCBOFPPMIGE)
+    pub JCBOFPPMIGE: ::protobuf::MessageField<super::HEHPIOGGIEG::HEHPIOGGIEG>,
     // special fields
     // @@protoc_insertion_point(special_field:ArchiveWolfBroGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ArchiveWolfBroGameScRsp {
             |m: &mut ArchiveWolfBroGameScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEHPIOGGIEG::HEHPIOGGIEG>(
-            "DNPLIHJGJIH",
-            |m: &ArchiveWolfBroGameScRsp| { &m.DNPLIHJGJIH },
-            |m: &mut ArchiveWolfBroGameScRsp| { &mut m.DNPLIHJGJIH },
+            "JCBOFPPMIGE",
+            |m: &ArchiveWolfBroGameScRsp| { &m.JCBOFPPMIGE },
+            |m: &mut ArchiveWolfBroGameScRsp| { &mut m.JCBOFPPMIGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ArchiveWolfBroGameScRsp>(
             "ArchiveWolfBroGameScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ArchiveWolfBroGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNPLIHJGJIH)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCBOFPPMIGE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for ArchiveWolfBroGameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if let Some(v) = self.DNPLIHJGJIH.as_ref() {
+        if let Some(v) = self.JCBOFPPMIGE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ArchiveWolfBroGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if let Some(v) = self.DNPLIHJGJIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.JCBOFPPMIGE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ArchiveWolfBroGameScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DNPLIHJGJIH.clear();
+        self.JCBOFPPMIGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ArchiveWolfBroGameScRsp {
         static instance: ArchiveWolfBroGameScRsp = ArchiveWolfBroGameScRsp {
             retcode: 0,
-            DNPLIHJGJIH: ::protobuf::MessageField::none(),
+            JCBOFPPMIGE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ArchiveWolfBroGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dArchiveWolfBroGameScRsp.proto\x1a\x11HEHPIOGGIEG.proto\"c\n\x17Arc\
-    hiveWolfBroGameScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bDNPLIHJGJIH\x18\x02\x20\x01(\x0b2\x0c.HEHPIOGGIEGR\x0bDNPLIHJ\
-    GJIHb\x06proto3\
+    hiveWolfBroGameScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bJCBOFPPMIGE\x18\x0e\x20\x01(\x0b2\x0c.HEHPIOGGIEGR\x0bJCBOFPP\
+    MIGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

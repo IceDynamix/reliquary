@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAJOFMFCJEM {
     // message fields
-    // @@protoc_insertion_point(field:FAJOFMFCJEM.GAKBPIPLDIO)
-    pub GAKBPIPLDIO: ::protobuf::MessageField<super::COIEIHNKCDK::COIEIHNKCDK>,
+    // @@protoc_insertion_point(field:FAJOFMFCJEM.NLFHIMLACAH)
+    pub NLFHIMLACAH: ::protobuf::MessageField<super::COIEIHNKCDK::COIEIHNKCDK>,
     // special fields
     // @@protoc_insertion_point(special_field:FAJOFMFCJEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FAJOFMFCJEM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::COIEIHNKCDK::COIEIHNKCDK>(
-            "GAKBPIPLDIO",
-            |m: &FAJOFMFCJEM| { &m.GAKBPIPLDIO },
-            |m: &mut FAJOFMFCJEM| { &mut m.GAKBPIPLDIO },
+            "NLFHIMLACAH",
+            |m: &FAJOFMFCJEM| { &m.NLFHIMLACAH },
+            |m: &mut FAJOFMFCJEM| { &mut m.NLFHIMLACAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FAJOFMFCJEM>(
             "FAJOFMFCJEM",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for FAJOFMFCJEM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAKBPIPLDIO)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLFHIMLACAH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FAJOFMFCJEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GAKBPIPLDIO.as_ref() {
+        if let Some(v) = self.NLFHIMLACAH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FAJOFMFCJEM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GAKBPIPLDIO.as_ref() {
+        if let Some(v) = self.NLFHIMLACAH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FAJOFMFCJEM {
     }
 
     fn clear(&mut self) {
-        self.GAKBPIPLDIO.clear();
+        self.NLFHIMLACAH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FAJOFMFCJEM {
         static instance: FAJOFMFCJEM = FAJOFMFCJEM {
-            GAKBPIPLDIO: ::protobuf::MessageField::none(),
+            NLFHIMLACAH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for FAJOFMFCJEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FAJOFMFCJEM.proto\x1a\x11COIEIHNKCDK.proto\"=\n\x0bFAJOFMFCJEM\x12\
-    .\n\x0bGAKBPIPLDIO\x18\x0b\x20\x01(\x0b2\x0c.COIEIHNKCDKR\x0bGAKBPIPLDIO\
+    .\n\x0bNLFHIMLACAH\x18\x0b\x20\x01(\x0b2\x0c.COIEIHNKCDKR\x0bNLFHIMLACAH\
     b\x06proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueNousMainStoryScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueNousMainStoryScNotify.IDGIAHOPGAJ)
-    pub IDGIAHOPGAJ: ::std::vec::Vec<super::GBEEJNBEBEP::GBEEJNBEBEP>,
+    // @@protoc_insertion_point(field:SyncChessRogueNousMainStoryScNotify.AFGOGMKLPHD)
+    pub AFGOGMKLPHD: ::std::vec::Vec<super::GBEEJNBEBEP::GBEEJNBEBEP>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueNousMainStoryScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncChessRogueNousMainStoryScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IDGIAHOPGAJ",
-            |m: &SyncChessRogueNousMainStoryScNotify| { &m.IDGIAHOPGAJ },
-            |m: &mut SyncChessRogueNousMainStoryScNotify| { &mut m.IDGIAHOPGAJ },
+            "AFGOGMKLPHD",
+            |m: &SyncChessRogueNousMainStoryScNotify| { &m.AFGOGMKLPHD },
+            |m: &mut SyncChessRogueNousMainStoryScNotify| { &mut m.AFGOGMKLPHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueNousMainStoryScNotify>(
             "SyncChessRogueNousMainStoryScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.IDGIAHOPGAJ.push(is.read_message()?);
+                122 => {
+                    self.AFGOGMKLPHD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IDGIAHOPGAJ {
+        for value in &self.AFGOGMKLPHD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IDGIAHOPGAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.AFGOGMKLPHD {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncChessRogueNousMainStoryScNotify {
     }
 
     fn clear(&mut self) {
-        self.IDGIAHOPGAJ.clear();
+        self.AFGOGMKLPHD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueNousMainStoryScNotify {
         static instance: SyncChessRogueNousMainStoryScNotify = SyncChessRogueNousMainStoryScNotify {
-            IDGIAHOPGAJ: ::std::vec::Vec::new(),
+            AFGOGMKLPHD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousMainStoryScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SyncChessRogueNousMainStoryScNotify.proto\x1a\x11GBEEJNBEBEP.proto\"U\
-    \n#SyncChessRogueNousMainStoryScNotify\x12.\n\x0bIDGIAHOPGAJ\x18\n\x20\
-    \x03(\x0b2\x0c.GBEEJNBEBEPR\x0bIDGIAHOPGAJb\x06proto3\
+    \n#SyncChessRogueNousMainStoryScNotify\x12.\n\x0bAFGOGMKLPHD\x18\x0f\x20\
+    \x03(\x0b2\x0c.GBEEJNBEBEPR\x0bAFGOGMKLPHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AvatarPathChangedNotify {
     // message fields
-    // @@protoc_insertion_point(field:AvatarPathChangedNotify.cur_multi_path_avatar_type)
-    pub cur_multi_path_avatar_type: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // @@protoc_insertion_point(field:AvatarPathChangedNotify.base_avatar_id)
     pub base_avatar_id: u32,
+    // @@protoc_insertion_point(field:AvatarPathChangedNotify.multi_path_avatar_type)
+    pub multi_path_avatar_type: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarPathChangedNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AvatarPathChangedNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_multi_path_avatar_type",
-            |m: &AvatarPathChangedNotify| { &m.cur_multi_path_avatar_type },
-            |m: &mut AvatarPathChangedNotify| { &mut m.cur_multi_path_avatar_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "base_avatar_id",
             |m: &AvatarPathChangedNotify| { &m.base_avatar_id },
             |m: &mut AvatarPathChangedNotify| { &mut m.base_avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "multi_path_avatar_type",
+            |m: &AvatarPathChangedNotify| { &m.multi_path_avatar_type },
+            |m: &mut AvatarPathChangedNotify| { &mut m.multi_path_avatar_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarPathChangedNotify>(
             "AvatarPathChangedNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.cur_multi_path_avatar_type = is.read_enum_or_unknown()?;
-                },
-                56 => {
+                80 => {
                     self.base_avatar_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.multi_path_avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(3, self.cur_multi_path_avatar_type.value());
-        }
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.base_avatar_id);
+        }
+        if self.multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(12, self.multi_path_avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.cur_multi_path_avatar_type))?;
-        }
         if self.base_avatar_id != 0 {
-            os.write_uint32(7, self.base_avatar_id)?;
+            os.write_uint32(10, self.base_avatar_id)?;
+        }
+        if self.multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.multi_path_avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     }
 
     fn clear(&mut self) {
-        self.cur_multi_path_avatar_type = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.base_avatar_id = 0;
+        self.multi_path_avatar_type = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarPathChangedNotify {
         static instance: AvatarPathChangedNotify = AvatarPathChangedNotify {
-            cur_multi_path_avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             base_avatar_id: 0,
+            multi_path_avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarPathChangedNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAvatarPathChangedNotify.proto\x1a\x19MultiPathAvatarType.proto\"\
-    \x91\x01\n\x17AvatarPathChangedNotify\x12P\n\x1acur_multi_path_avatar_ty\
-    pe\x18\x03\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x16curMultiPathAvatarT\
-    ype\x12$\n\x0ebase_avatar_id\x18\x07\x20\x01(\rR\x0cbaseAvatarIdb\x06pro\
-    to3\
+    \x8a\x01\n\x17AvatarPathChangedNotify\x12$\n\x0ebase_avatar_id\x18\n\x20\
+    \x01(\rR\x0cbaseAvatarId\x12I\n\x16multi_path_avatar_type\x18\x0c\x20\
+    \x01(\x0e2\x14.MultiPathAvatarTypeR\x13multiPathAvatarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

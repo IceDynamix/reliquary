@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHMAIANENPO {
     // message fields
-    // @@protoc_insertion_point(field:FHMAIANENPO.select_hint_id)
-    pub select_hint_id: u32,
-    // @@protoc_insertion_point(field:FHMAIANENPO.LALDACMCHFI)
-    pub LALDACMCHFI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FHMAIANENPO.EEBEIIMHFPB)
+    pub EEBEIIMHFPB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FHMAIANENPO.reforge_hint_id)
+    pub reforge_hint_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHMAIANENPO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FHMAIANENPO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_hint_id",
-            |m: &FHMAIANENPO| { &m.select_hint_id },
-            |m: &mut FHMAIANENPO| { &mut m.select_hint_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LALDACMCHFI",
-            |m: &FHMAIANENPO| { &m.LALDACMCHFI },
-            |m: &mut FHMAIANENPO| { &mut m.LALDACMCHFI },
+            "EEBEIIMHFPB",
+            |m: &FHMAIANENPO| { &m.EEBEIIMHFPB },
+            |m: &mut FHMAIANENPO| { &mut m.EEBEIIMHFPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reforge_hint_id",
+            |m: &FHMAIANENPO| { &m.reforge_hint_id },
+            |m: &mut FHMAIANENPO| { &mut m.reforge_hint_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHMAIANENPO>(
             "FHMAIANENPO",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for FHMAIANENPO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.select_hint_id = is.read_uint32()?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EEBEIIMHFPB)?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LALDACMCHFI)?;
+                48 => {
+                    self.EEBEIIMHFPB.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.LALDACMCHFI.push(is.read_uint32()?);
+                96 => {
+                    self.reforge_hint_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for FHMAIANENPO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.select_hint_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.EEBEIIMHFPB);
+        if self.reforge_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.reforge_hint_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LALDACMCHFI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.select_hint_id != 0 {
-            os.write_uint32(7, self.select_hint_id)?;
+        os.write_repeated_packed_uint32(6, &self.EEBEIIMHFPB)?;
+        if self.reforge_hint_id != 0 {
+            os.write_uint32(12, self.reforge_hint_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.LALDACMCHFI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for FHMAIANENPO {
     }
 
     fn clear(&mut self) {
-        self.select_hint_id = 0;
-        self.LALDACMCHFI.clear();
+        self.EEBEIIMHFPB.clear();
+        self.reforge_hint_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHMAIANENPO {
         static instance: FHMAIANENPO = FHMAIANENPO {
-            select_hint_id: 0,
-            LALDACMCHFI: ::std::vec::Vec::new(),
+            EEBEIIMHFPB: ::std::vec::Vec::new(),
+            reforge_hint_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for FHMAIANENPO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHMAIANENPO.proto\"U\n\x0bFHMAIANENPO\x12$\n\x0eselect_hint_id\x18\
-    \x07\x20\x01(\rR\x0cselectHintId\x12\x20\n\x0bLALDACMCHFI\x18\n\x20\x03(\
-    \rR\x0bLALDACMCHFIb\x06proto3\
+    \n\x11FHMAIANENPO.proto\"W\n\x0bFHMAIANENPO\x12\x20\n\x0bEEBEIIMHFPB\x18\
+    \x06\x20\x03(\rR\x0bEEBEIIMHFPB\x12&\n\x0freforge_hint_id\x18\x0c\x20\
+    \x01(\rR\rreforgeHintIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

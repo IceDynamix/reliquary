@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesFriendRankingInfoChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesFriendRankingInfoChangeScNotify.CNHEKLKBMHH)
-    pub CNHEKLKBMHH: ::std::vec::Vec<super::EIKAIIDAEPP::EIKAIIDAEPP>,
+    // @@protoc_insertion_point(field:PlanetFesFriendRankingInfoChangeScNotify.PGDBGOAKILB)
+    pub PGDBGOAKILB: ::std::vec::Vec<super::PlanetFesRankDataInfo::PlanetFesRankDataInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesFriendRankingInfoChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesFriendRankingInfoChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CNHEKLKBMHH",
-            |m: &PlanetFesFriendRankingInfoChangeScNotify| { &m.CNHEKLKBMHH },
-            |m: &mut PlanetFesFriendRankingInfoChangeScNotify| { &mut m.CNHEKLKBMHH },
+            "PGDBGOAKILB",
+            |m: &PlanetFesFriendRankingInfoChangeScNotify| { &m.PGDBGOAKILB },
+            |m: &mut PlanetFesFriendRankingInfoChangeScNotify| { &mut m.PGDBGOAKILB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesFriendRankingInfoChangeScNotify>(
             "PlanetFesFriendRankingInfoChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesFriendRankingInfoChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.CNHEKLKBMHH.push(is.read_message()?);
+                114 => {
+                    self.PGDBGOAKILB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlanetFesFriendRankingInfoChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CNHEKLKBMHH {
+        for value in &self.PGDBGOAKILB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlanetFesFriendRankingInfoChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CNHEKLKBMHH {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.PGDBGOAKILB {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlanetFesFriendRankingInfoChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.CNHEKLKBMHH.clear();
+        self.PGDBGOAKILB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesFriendRankingInfoChangeScNotify {
         static instance: PlanetFesFriendRankingInfoChangeScNotify = PlanetFesFriendRankingInfoChangeScNotify {
-            CNHEKLKBMHH: ::std::vec::Vec::new(),
+            PGDBGOAKILB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesFriendRankingInfoChangeScNo
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n.PlanetFesFriendRankingInfoChangeScNotify.proto\x1a\x11EIKAIIDAEPP.pro\
-    to\"Z\n(PlanetFesFriendRankingInfoChangeScNotify\x12.\n\x0bCNHEKLKBMHH\
-    \x18\x08\x20\x03(\x0b2\x0c.EIKAIIDAEPPR\x0bCNHEKLKBMHHb\x06proto3\
+    \n.PlanetFesFriendRankingInfoChangeScNotify.proto\x1a\x1bPlanetFesRankDa\
+    taInfo.proto\"d\n(PlanetFesFriendRankingInfoChangeScNotify\x128\n\x0bPGD\
+    BGOAKILB\x18\x0e\x20\x03(\x0b2\x16.PlanetFesRankDataInfoR\x0bPGDBGOAKILB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EIKAIIDAEPP::file_descriptor().clone());
+            deps.push(super::PlanetFesRankDataInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesFriendRankingInfoChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

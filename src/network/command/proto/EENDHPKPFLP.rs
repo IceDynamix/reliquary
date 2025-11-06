@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EENDHPKPFLP {
     // message fields
-    // @@protoc_insertion_point(field:EENDHPKPFLP.MEBJCLENPIO)
-    pub MEBJCLENPIO: ::std::vec::Vec<super::RogueModifier::RogueModifier>,
+    // @@protoc_insertion_point(field:EENDHPKPFLP.NBLNCLDCPIG)
+    pub NBLNCLDCPIG: ::std::vec::Vec<super::RogueModifier::RogueModifier>,
     // special fields
     // @@protoc_insertion_point(special_field:EENDHPKPFLP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EENDHPKPFLP {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MEBJCLENPIO",
-            |m: &EENDHPKPFLP| { &m.MEBJCLENPIO },
-            |m: &mut EENDHPKPFLP| { &mut m.MEBJCLENPIO },
+            "NBLNCLDCPIG",
+            |m: &EENDHPKPFLP| { &m.NBLNCLDCPIG },
+            |m: &mut EENDHPKPFLP| { &mut m.NBLNCLDCPIG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EENDHPKPFLP>(
             "EENDHPKPFLP",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for EENDHPKPFLP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.MEBJCLENPIO.push(is.read_message()?);
+                42 => {
+                    self.NBLNCLDCPIG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for EENDHPKPFLP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MEBJCLENPIO {
+        for value in &self.NBLNCLDCPIG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EENDHPKPFLP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MEBJCLENPIO {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.NBLNCLDCPIG {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EENDHPKPFLP {
     }
 
     fn clear(&mut self) {
-        self.MEBJCLENPIO.clear();
+        self.NBLNCLDCPIG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EENDHPKPFLP {
         static instance: EENDHPKPFLP = EENDHPKPFLP {
-            MEBJCLENPIO: ::std::vec::Vec::new(),
+            NBLNCLDCPIG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for EENDHPKPFLP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EENDHPKPFLP.proto\x1a\x13RogueModifier.proto\"?\n\x0bEENDHPKPFLP\
-    \x120\n\x0bMEBJCLENPIO\x18\x02\x20\x03(\x0b2\x0e.RogueModifierR\x0bMEBJC\
-    LENPIOb\x06proto3\
+    \x120\n\x0bNBLNCLDCPIG\x18\x05\x20\x03(\x0b2\x0e.RogueModifierR\x0bNBLNC\
+    LDCPIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

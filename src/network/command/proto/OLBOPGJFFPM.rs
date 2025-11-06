@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OLBOPGJFFPM {
     // message fields
-    // @@protoc_insertion_point(field:OLBOPGJFFPM.challenge_peak_perfect_clear)
-    pub challenge_peak_perfect_clear: bool,
-    // @@protoc_insertion_point(field:OLBOPGJFFPM.KJKBKEGIGHK)
-    pub KJKBKEGIGHK: ::protobuf::MessageField<super::DHNFBGENLIG::DHNFBGENLIG>,
+    // @@protoc_insertion_point(field:OLBOPGJFFPM.IKACHLCLLCL)
+    pub IKACHLCLLCL: ::protobuf::MessageField<super::DHNFBGENLIG::DHNFBGENLIG>,
+    // @@protoc_insertion_point(field:OLBOPGJFFPM.is_finished)
+    pub is_finished: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OLBOPGJFFPM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OLBOPGJFFPM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_perfect_clear",
-            |m: &OLBOPGJFFPM| { &m.challenge_peak_perfect_clear },
-            |m: &mut OLBOPGJFFPM| { &mut m.challenge_peak_perfect_clear },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DHNFBGENLIG::DHNFBGENLIG>(
-            "KJKBKEGIGHK",
-            |m: &OLBOPGJFFPM| { &m.KJKBKEGIGHK },
-            |m: &mut OLBOPGJFFPM| { &mut m.KJKBKEGIGHK },
+            "IKACHLCLLCL",
+            |m: &OLBOPGJFFPM| { &m.IKACHLCLLCL },
+            |m: &mut OLBOPGJFFPM| { &mut m.IKACHLCLLCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_finished",
+            |m: &OLBOPGJFFPM| { &m.is_finished },
+            |m: &mut OLBOPGJFFPM| { &mut m.is_finished },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OLBOPGJFFPM>(
             "OLBOPGJFFPM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OLBOPGJFFPM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.challenge_peak_perfect_clear = is.read_bool()?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKACHLCLLCL)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJKBKEGIGHK)?;
+                80 => {
+                    self.is_finished = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OLBOPGJFFPM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.challenge_peak_perfect_clear != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.KJKBKEGIGHK.as_ref() {
+        if let Some(v) = self.IKACHLCLLCL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.is_finished != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OLBOPGJFFPM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.challenge_peak_perfect_clear != false {
-            os.write_bool(5, self.challenge_peak_perfect_clear)?;
+        if let Some(v) = self.IKACHLCLLCL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.KJKBKEGIGHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.is_finished != false {
+            os.write_bool(10, self.is_finished)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OLBOPGJFFPM {
     }
 
     fn clear(&mut self) {
-        self.challenge_peak_perfect_clear = false;
-        self.KJKBKEGIGHK.clear();
+        self.IKACHLCLLCL.clear();
+        self.is_finished = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OLBOPGJFFPM {
         static instance: OLBOPGJFFPM = OLBOPGJFFPM {
-            challenge_peak_perfect_clear: false,
-            KJKBKEGIGHK: ::protobuf::MessageField::none(),
+            IKACHLCLLCL: ::protobuf::MessageField::none(),
+            is_finished: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OLBOPGJFFPM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OLBOPGJFFPM.proto\x1a\x11DHNFBGENLIG.proto\"~\n\x0bOLBOPGJFFPM\x12\
-    ?\n\x1cchallenge_peak_perfect_clear\x18\x05\x20\x01(\x08R\x19challengePe\
-    akPerfectClear\x12.\n\x0bKJKBKEGIGHK\x18\x04\x20\x01(\x0b2\x0c.DHNFBGENL\
-    IGR\x0bKJKBKEGIGHKb\x06proto3\
+    \n\x11OLBOPGJFFPM.proto\x1a\x11DHNFBGENLIG.proto\"^\n\x0bOLBOPGJFFPM\x12\
+    .\n\x0bIKACHLCLLCL\x18\x06\x20\x01(\x0b2\x0c.DHNFBGENLIGR\x0bIKACHLCLLCL\
+    \x12\x1f\n\x0bis_finished\x18\n\x20\x01(\x08R\nisFinishedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

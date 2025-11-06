@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KAKEBEHFEIO {
     // message fields
-    // @@protoc_insertion_point(field:KAKEBEHFEIO.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:KAKEBEHFEIO.state)
-    pub state: ::protobuf::EnumOrUnknown<super::NPPNFPPENMC::NPPNFPPENMC>,
-    // @@protoc_insertion_point(field:KAKEBEHFEIO.LDNBEIDJBHI)
-    pub LDNBEIDJBHI: u32,
+    pub state: ::protobuf::EnumOrUnknown<super::Match3PlayerState::Match3PlayerState>,
+    // @@protoc_insertion_point(field:KAKEBEHFEIO.HGPACIGJPFA)
+    pub HGPACIGJPFA: u32,
+    // @@protoc_insertion_point(field:KAKEBEHFEIO.score)
+    pub score: u32,
     // @@protoc_insertion_point(field:KAKEBEHFEIO.rank)
     pub rank: u32,
     // special fields
@@ -56,19 +56,19 @@ impl KAKEBEHFEIO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &KAKEBEHFEIO| { &m.score_id },
-            |m: &mut KAKEBEHFEIO| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &KAKEBEHFEIO| { &m.state },
             |m: &mut KAKEBEHFEIO| { &mut m.state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNBEIDJBHI",
-            |m: &KAKEBEHFEIO| { &m.LDNBEIDJBHI },
-            |m: &mut KAKEBEHFEIO| { &mut m.LDNBEIDJBHI },
+            "HGPACIGJPFA",
+            |m: &KAKEBEHFEIO| { &m.HGPACIGJPFA },
+            |m: &mut KAKEBEHFEIO| { &mut m.HGPACIGJPFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score",
+            |m: &KAKEBEHFEIO| { &m.score },
+            |m: &mut KAKEBEHFEIO| { &mut m.score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KAKEBEHFEIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.score_id = is.read_uint32()?;
-                },
                 16 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.LDNBEIDJBHI = is.read_uint32()?;
-                },
                 32 => {
+                    self.HGPACIGJPFA = is.read_uint32()?;
+                },
+                48 => {
+                    self.score = is.read_uint32()?;
+                },
+                56 => {
                     self.rank = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for KAKEBEHFEIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
-        }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
+        if self.state != ::protobuf::EnumOrUnknown::new(super::Match3PlayerState::Match3PlayerState::MATCH3_PLAYER_STATE_ALIVE) {
             my_size += ::protobuf::rt::int32_size(2, self.state.value());
         }
-        if self.LDNBEIDJBHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LDNBEIDJBHI);
+        if self.HGPACIGJPFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HGPACIGJPFA);
+        }
+        if self.score != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.score);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.rank);
+            my_size += ::protobuf::rt::uint32_size(7, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for KAKEBEHFEIO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(5, self.score_id)?;
-        }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE) {
+        if self.state != ::protobuf::EnumOrUnknown::new(super::Match3PlayerState::Match3PlayerState::MATCH3_PLAYER_STATE_ALIVE) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
-        if self.LDNBEIDJBHI != 0 {
-            os.write_uint32(13, self.LDNBEIDJBHI)?;
+        if self.HGPACIGJPFA != 0 {
+            os.write_uint32(4, self.HGPACIGJPFA)?;
+        }
+        if self.score != 0 {
+            os.write_uint32(6, self.score)?;
         }
         if self.rank != 0 {
-            os.write_uint32(4, self.rank)?;
+            os.write_uint32(7, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for KAKEBEHFEIO {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
-        self.state = ::protobuf::EnumOrUnknown::new(super::NPPNFPPENMC::NPPNFPPENMC::MATCH3_PLAYER_STATE_ALIVE);
-        self.LDNBEIDJBHI = 0;
+        self.state = ::protobuf::EnumOrUnknown::new(super::Match3PlayerState::Match3PlayerState::MATCH3_PLAYER_STATE_ALIVE);
+        self.HGPACIGJPFA = 0;
+        self.score = 0;
         self.rank = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAKEBEHFEIO {
         static instance: KAKEBEHFEIO = KAKEBEHFEIO {
-            score_id: 0,
             state: ::protobuf::EnumOrUnknown::from_i32(0),
-            LDNBEIDJBHI: 0,
+            HGPACIGJPFA: 0,
+            score: 0,
             rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for KAKEBEHFEIO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KAKEBEHFEIO.proto\x1a\x11NPPNFPPENMC.proto\"\x82\x01\n\x0bKAKEBEHF\
-    EIO\x12\x19\n\x08score_id\x18\x05\x20\x01(\rR\x07scoreId\x12\"\n\x05stat\
-    e\x18\x02\x20\x01(\x0e2\x0c.NPPNFPPENMCR\x05state\x12\x20\n\x0bLDNBEIDJB\
-    HI\x18\r\x20\x01(\rR\x0bLDNBEIDJBHI\x12\x12\n\x04rank\x18\x04\x20\x01(\r\
-    R\x04rankb\x06proto3\
+    \n\x11KAKEBEHFEIO.proto\x1a\x17Match3PlayerState.proto\"\x83\x01\n\x0bKA\
+    KEBEHFEIO\x12(\n\x05state\x18\x02\x20\x01(\x0e2\x12.Match3PlayerStateR\
+    \x05state\x12\x20\n\x0bHGPACIGJPFA\x18\x04\x20\x01(\rR\x0bHGPACIGJPFA\
+    \x12\x14\n\x05score\x18\x06\x20\x01(\rR\x05score\x12\x12\n\x04rank\x18\
+    \x07\x20\x01(\rR\x04rankb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -223,7 +223,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NPPNFPPENMC::file_descriptor().clone());
+            deps.push(super::Match3PlayerState::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KAKEBEHFEIO::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

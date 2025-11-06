@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkHandleWaitOperationCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.AHIDJBJGGPP)
-    pub AHIDJBJGGPP: u32,
     // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.script_id)
     pub script_id: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationCsReq.HGHBLEAKMMJ)
+    pub HGHBLEAKMMJ: u32,
     // message oneof groups
-    pub DEJMPMFHIOC: ::std::option::Option<clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC>,
+    pub NOMEMJFHDIB: ::std::option::Option<clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB>,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkHandleWaitOperationCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,137 +50,39 @@ impl ClockParkHandleWaitOperationCsReq {
         ::std::default::Default::default()
     }
 
-    // .OBNONMHMECK JFBCKCLPAKO = 11;
-
-    pub fn JFBCKCLPAKO(&self) -> &super::OBNONMHMECK::OBNONMHMECK {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(ref v)) => v,
-            _ => <super::OBNONMHMECK::OBNONMHMECK as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_JFBCKCLPAKO(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-    }
-
-    pub fn has_JFBCKCLPAKO(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_JFBCKCLPAKO(&mut self, v: super::OBNONMHMECK::OBNONMHMECK) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_JFBCKCLPAKO(&mut self) -> &mut super::OBNONMHMECK::OBNONMHMECK {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(_)) = self.DEJMPMFHIOC {
-        } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(super::OBNONMHMECK::OBNONMHMECK::new()));
-        }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_JFBCKCLPAKO(&mut self) -> super::OBNONMHMECK::OBNONMHMECK {
-        if self.has_JFBCKCLPAKO() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::OBNONMHMECK::OBNONMHMECK::new()
-        }
-    }
-
-    // .FFOMIBNCFKI IPIKFLCEFLA = 1;
-
-    pub fn IPIKFLCEFLA(&self) -> &super::FFOMIBNCFKI::FFOMIBNCFKI {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(ref v)) => v,
-            _ => <super::FFOMIBNCFKI::FFOMIBNCFKI as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_IPIKFLCEFLA(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-    }
-
-    pub fn has_IPIKFLCEFLA(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IPIKFLCEFLA(&mut self, v: super::FFOMIBNCFKI::FFOMIBNCFKI) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_IPIKFLCEFLA(&mut self) -> &mut super::FFOMIBNCFKI::FFOMIBNCFKI {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(_)) = self.DEJMPMFHIOC {
-        } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(super::FFOMIBNCFKI::FFOMIBNCFKI::new()));
-        }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_IPIKFLCEFLA(&mut self) -> super::FFOMIBNCFKI::FFOMIBNCFKI {
-        if self.has_IPIKFLCEFLA() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::FFOMIBNCFKI::FFOMIBNCFKI::new()
-        }
-    }
-
-    // .AJEHAMDABNA MEGNBBFILNL = 9;
+    // .AJEHAMDABNA MEGNBBFILNL = 7;
 
     pub fn MEGNBBFILNL(&self) -> &super::AJEHAMDABNA::AJEHAMDABNA {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(ref v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(ref v)) => v,
             _ => <super::AJEHAMDABNA::AJEHAMDABNA as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_MEGNBBFILNL(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
     }
 
     pub fn has_MEGNBBFILNL(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(..)) => true,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_MEGNBBFILNL(&mut self, v: super::AJEHAMDABNA::AJEHAMDABNA) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(v))
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_MEGNBBFILNL(&mut self) -> &mut super::AJEHAMDABNA::AJEHAMDABNA {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(_)) = self.DEJMPMFHIOC {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(_)) = self.NOMEMJFHDIB {
         } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(super::AJEHAMDABNA::AJEHAMDABNA::new()));
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(super::AJEHAMDABNA::AJEHAMDABNA::new()));
         }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(ref mut v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -188,8 +90,8 @@ impl ClockParkHandleWaitOperationCsReq {
     // Take field
     pub fn take_MEGNBBFILNL(&mut self) -> super::AJEHAMDABNA::AJEHAMDABNA {
         if self.has_MEGNBBFILNL() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(v)) => v,
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -197,186 +99,137 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // .AMGHDCABJMJ ABKKDHAPCHN = 13;
+    // .OBNONMHMECK JFBCKCLPAKO = 15;
 
-    pub fn ABKKDHAPCHN(&self) -> &super::AMGHDCABJMJ::AMGHDCABJMJ {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(ref v)) => v,
-            _ => <super::AMGHDCABJMJ::AMGHDCABJMJ as ::protobuf::Message>::default_instance(),
+    pub fn JFBCKCLPAKO(&self) -> &super::OBNONMHMECK::OBNONMHMECK {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(ref v)) => v,
+            _ => <super::OBNONMHMECK::OBNONMHMECK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_ABKKDHAPCHN(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+    pub fn clear_JFBCKCLPAKO(&mut self) {
+        self.NOMEMJFHDIB = ::std::option::Option::None;
     }
 
-    pub fn has_ABKKDHAPCHN(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(..)) => true,
+    pub fn has_JFBCKCLPAKO(&self) -> bool {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_ABKKDHAPCHN(&mut self, v: super::AMGHDCABJMJ::AMGHDCABJMJ) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(v))
+    pub fn set_JFBCKCLPAKO(&mut self, v: super::OBNONMHMECK::OBNONMHMECK) {
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_ABKKDHAPCHN(&mut self) -> &mut super::AMGHDCABJMJ::AMGHDCABJMJ {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(_)) = self.DEJMPMFHIOC {
+    pub fn mut_JFBCKCLPAKO(&mut self) -> &mut super::OBNONMHMECK::OBNONMHMECK {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(_)) = self.NOMEMJFHDIB {
         } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(super::AMGHDCABJMJ::AMGHDCABJMJ::new()));
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(super::OBNONMHMECK::OBNONMHMECK::new()));
         }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(ref mut v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_ABKKDHAPCHN(&mut self) -> super::AMGHDCABJMJ::AMGHDCABJMJ {
-        if self.has_ABKKDHAPCHN() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(v)) => v,
+    pub fn take_JFBCKCLPAKO(&mut self) -> super::OBNONMHMECK::OBNONMHMECK {
+        if self.has_JFBCKCLPAKO() {
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AMGHDCABJMJ::AMGHDCABJMJ::new()
+            super::OBNONMHMECK::OBNONMHMECK::new()
         }
     }
 
-    // .INNNICFOLII LIHJMEINGIK = 14;
+    // .FFOMIBNCFKI IPIKFLCEFLA = 11;
 
-    pub fn LIHJMEINGIK(&self) -> &super::INNNICFOLII::INNNICFOLII {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(ref v)) => v,
-            _ => <super::INNNICFOLII::INNNICFOLII as ::protobuf::Message>::default_instance(),
+    pub fn IPIKFLCEFLA(&self) -> &super::FFOMIBNCFKI::FFOMIBNCFKI {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(ref v)) => v,
+            _ => <super::FFOMIBNCFKI::FFOMIBNCFKI as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LIHJMEINGIK(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+    pub fn clear_IPIKFLCEFLA(&mut self) {
+        self.NOMEMJFHDIB = ::std::option::Option::None;
     }
 
-    pub fn has_LIHJMEINGIK(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(..)) => true,
+    pub fn has_IPIKFLCEFLA(&self) -> bool {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LIHJMEINGIK(&mut self, v: super::INNNICFOLII::INNNICFOLII) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(v))
+    pub fn set_IPIKFLCEFLA(&mut self, v: super::FFOMIBNCFKI::FFOMIBNCFKI) {
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LIHJMEINGIK(&mut self) -> &mut super::INNNICFOLII::INNNICFOLII {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(_)) = self.DEJMPMFHIOC {
+    pub fn mut_IPIKFLCEFLA(&mut self) -> &mut super::FFOMIBNCFKI::FFOMIBNCFKI {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(_)) = self.NOMEMJFHDIB {
         } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(super::INNNICFOLII::INNNICFOLII::new()));
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(super::FFOMIBNCFKI::FFOMIBNCFKI::new()));
         }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(ref mut v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LIHJMEINGIK(&mut self) -> super::INNNICFOLII::INNNICFOLII {
-        if self.has_LIHJMEINGIK() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(v)) => v,
+    pub fn take_IPIKFLCEFLA(&mut self) -> super::FFOMIBNCFKI::FFOMIBNCFKI {
+        if self.has_IPIKFLCEFLA() {
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::INNNICFOLII::INNNICFOLII::new()
+            super::FFOMIBNCFKI::FFOMIBNCFKI::new()
         }
     }
 
-    // .CEOONFLONDJ LMGGLCNCDHF = 15;
-
-    pub fn LMGGLCNCDHF(&self) -> &super::CEOONFLONDJ::CEOONFLONDJ {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(ref v)) => v,
-            _ => <super::CEOONFLONDJ::CEOONFLONDJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LMGGLCNCDHF(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-    }
-
-    pub fn has_LMGGLCNCDHF(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LMGGLCNCDHF(&mut self, v: super::CEOONFLONDJ::CEOONFLONDJ) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LMGGLCNCDHF(&mut self) -> &mut super::CEOONFLONDJ::CEOONFLONDJ {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(_)) = self.DEJMPMFHIOC {
-        } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(super::CEOONFLONDJ::CEOONFLONDJ::new()));
-        }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LMGGLCNCDHF(&mut self) -> super::CEOONFLONDJ::CEOONFLONDJ {
-        if self.has_LMGGLCNCDHF() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CEOONFLONDJ::CEOONFLONDJ::new()
-        }
-    }
-
-    // .HELNOIHMDHA FNGFOAEPFJN = 8;
+    // .HELNOIHMDHA FNGFOAEPFJN = 4;
 
     pub fn FNGFOAEPFJN(&self) -> &super::HELNOIHMDHA::HELNOIHMDHA {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(ref v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(ref v)) => v,
             _ => <super::HELNOIHMDHA::HELNOIHMDHA as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FNGFOAEPFJN(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
     }
 
     pub fn has_FNGFOAEPFJN(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(..)) => true,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FNGFOAEPFJN(&mut self, v: super::HELNOIHMDHA::HELNOIHMDHA) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(v))
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FNGFOAEPFJN(&mut self) -> &mut super::HELNOIHMDHA::HELNOIHMDHA {
-        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(_)) = self.DEJMPMFHIOC {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(_)) = self.NOMEMJFHDIB {
         } else {
-            self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(super::HELNOIHMDHA::HELNOIHMDHA::new()));
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(super::HELNOIHMDHA::HELNOIHMDHA::new()));
         }
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(ref mut v)) => v,
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -384,8 +237,8 @@ impl ClockParkHandleWaitOperationCsReq {
     // Take field
     pub fn take_FNGFOAEPFJN(&mut self) -> super::HELNOIHMDHA::HELNOIHMDHA {
         if self.has_FNGFOAEPFJN() {
-            match self.DEJMPMFHIOC.take() {
-                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(v)) => v,
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -393,43 +246,162 @@ impl ClockParkHandleWaitOperationCsReq {
         }
     }
 
-    // uint32 OBPFBLNBFKI = 3;
+    // .AMGHDCABJMJ ABKKDHAPCHN = 12;
 
-    pub fn OBPFBLNBFKI(&self) -> u32 {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v)) => v,
-            _ => 0,
+    pub fn ABKKDHAPCHN(&self) -> &super::AMGHDCABJMJ::AMGHDCABJMJ {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(ref v)) => v,
+            _ => <super::AMGHDCABJMJ::AMGHDCABJMJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_OBPFBLNBFKI(&mut self) {
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+    pub fn clear_ABKKDHAPCHN(&mut self) {
+        self.NOMEMJFHDIB = ::std::option::Option::None;
     }
 
-    pub fn has_OBPFBLNBFKI(&self) -> bool {
-        match self.DEJMPMFHIOC {
-            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(..)) => true,
+    pub fn has_ABKKDHAPCHN(&self) -> bool {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OBPFBLNBFKI(&mut self, v: u32) {
-        self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v))
+    pub fn set_ABKKDHAPCHN(&mut self, v: super::AMGHDCABJMJ::AMGHDCABJMJ) {
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ABKKDHAPCHN(&mut self) -> &mut super::AMGHDCABJMJ::AMGHDCABJMJ {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(_)) = self.NOMEMJFHDIB {
+        } else {
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(super::AMGHDCABJMJ::AMGHDCABJMJ::new()));
+        }
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ABKKDHAPCHN(&mut self) -> super::AMGHDCABJMJ::AMGHDCABJMJ {
+        if self.has_ABKKDHAPCHN() {
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AMGHDCABJMJ::AMGHDCABJMJ::new()
+        }
+    }
+
+    // .INNNICFOLII LIHJMEINGIK = 2;
+
+    pub fn LIHJMEINGIK(&self) -> &super::INNNICFOLII::INNNICFOLII {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(ref v)) => v,
+            _ => <super::INNNICFOLII::INNNICFOLII as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LIHJMEINGIK(&mut self) {
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+    }
+
+    pub fn has_LIHJMEINGIK(&self) -> bool {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LIHJMEINGIK(&mut self, v: super::INNNICFOLII::INNNICFOLII) {
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LIHJMEINGIK(&mut self) -> &mut super::INNNICFOLII::INNNICFOLII {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(_)) = self.NOMEMJFHDIB {
+        } else {
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(super::INNNICFOLII::INNNICFOLII::new()));
+        }
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LIHJMEINGIK(&mut self) -> super::INNNICFOLII::INNNICFOLII {
+        if self.has_LIHJMEINGIK() {
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::INNNICFOLII::INNNICFOLII::new()
+        }
+    }
+
+    // .CEOONFLONDJ LMGGLCNCDHF = 14;
+
+    pub fn LMGGLCNCDHF(&self) -> &super::CEOONFLONDJ::CEOONFLONDJ {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(ref v)) => v,
+            _ => <super::CEOONFLONDJ::CEOONFLONDJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LMGGLCNCDHF(&mut self) {
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+    }
+
+    pub fn has_LMGGLCNCDHF(&self) -> bool {
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LMGGLCNCDHF(&mut self, v: super::CEOONFLONDJ::CEOONFLONDJ) {
+        self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LMGGLCNCDHF(&mut self) -> &mut super::CEOONFLONDJ::CEOONFLONDJ {
+        if let ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(_)) = self.NOMEMJFHDIB {
+        } else {
+            self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(super::CEOONFLONDJ::CEOONFLONDJ::new()));
+        }
+        match self.NOMEMJFHDIB {
+            ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LMGGLCNCDHF(&mut self) -> super::CEOONFLONDJ::CEOONFLONDJ {
+        if self.has_LMGGLCNCDHF() {
+            match self.NOMEMJFHDIB.take() {
+                ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CEOONFLONDJ::CEOONFLONDJ::new()
+        }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHIDJBJGGPP",
-            |m: &ClockParkHandleWaitOperationCsReq| { &m.AHIDJBJGGPP },
-            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.AHIDJBJGGPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "script_id",
-            |m: &ClockParkHandleWaitOperationCsReq| { &m.script_id },
-            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.script_id },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AJEHAMDABNA::AJEHAMDABNA>(
+            "MEGNBBFILNL",
+            ClockParkHandleWaitOperationCsReq::has_MEGNBBFILNL,
+            ClockParkHandleWaitOperationCsReq::MEGNBBFILNL,
+            ClockParkHandleWaitOperationCsReq::mut_MEGNBBFILNL,
+            ClockParkHandleWaitOperationCsReq::set_MEGNBBFILNL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OBNONMHMECK::OBNONMHMECK>(
             "JFBCKCLPAKO",
@@ -445,12 +417,12 @@ impl ClockParkHandleWaitOperationCsReq {
             ClockParkHandleWaitOperationCsReq::mut_IPIKFLCEFLA,
             ClockParkHandleWaitOperationCsReq::set_IPIKFLCEFLA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AJEHAMDABNA::AJEHAMDABNA>(
-            "MEGNBBFILNL",
-            ClockParkHandleWaitOperationCsReq::has_MEGNBBFILNL,
-            ClockParkHandleWaitOperationCsReq::MEGNBBFILNL,
-            ClockParkHandleWaitOperationCsReq::mut_MEGNBBFILNL,
-            ClockParkHandleWaitOperationCsReq::set_MEGNBBFILNL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HELNOIHMDHA::HELNOIHMDHA>(
+            "FNGFOAEPFJN",
+            ClockParkHandleWaitOperationCsReq::has_FNGFOAEPFJN,
+            ClockParkHandleWaitOperationCsReq::FNGFOAEPFJN,
+            ClockParkHandleWaitOperationCsReq::mut_FNGFOAEPFJN,
+            ClockParkHandleWaitOperationCsReq::set_FNGFOAEPFJN,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AMGHDCABJMJ::AMGHDCABJMJ>(
             "ABKKDHAPCHN",
@@ -473,20 +445,17 @@ impl ClockParkHandleWaitOperationCsReq {
             ClockParkHandleWaitOperationCsReq::mut_LMGGLCNCDHF,
             ClockParkHandleWaitOperationCsReq::set_LMGGLCNCDHF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HELNOIHMDHA::HELNOIHMDHA>(
-            "FNGFOAEPFJN",
-            ClockParkHandleWaitOperationCsReq::has_FNGFOAEPFJN,
-            ClockParkHandleWaitOperationCsReq::FNGFOAEPFJN,
-            ClockParkHandleWaitOperationCsReq::mut_FNGFOAEPFJN,
-            ClockParkHandleWaitOperationCsReq::set_FNGFOAEPFJN,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "script_id",
+            |m: &ClockParkHandleWaitOperationCsReq| { &m.script_id },
+            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.script_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "OBPFBLNBFKI",
-            ClockParkHandleWaitOperationCsReq::has_OBPFBLNBFKI,
-            ClockParkHandleWaitOperationCsReq::OBPFBLNBFKI,
-            ClockParkHandleWaitOperationCsReq::set_OBPFBLNBFKI,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGHBLEAKMMJ",
+            |m: &ClockParkHandleWaitOperationCsReq| { &m.HGHBLEAKMMJ },
+            |m: &mut ClockParkHandleWaitOperationCsReq| { &mut m.HGHBLEAKMMJ },
         ));
-        oneofs.push(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::generated_oneof_descriptor_data());
+        oneofs.push(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkHandleWaitOperationCsReq>(
             "ClockParkHandleWaitOperationCsReq",
             fields,
@@ -505,35 +474,32 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.AHIDJBJGGPP = is.read_uint32()?;
-                },
-                80 => {
-                    self.script_id = is.read_uint32()?;
-                },
-                90 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(is.read_message()?));
-                },
-                10 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(is.read_message()?));
-                },
-                74 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(is.read_message()?));
-                },
-                106 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(is.read_message()?));
-                },
-                114 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(is.read_message()?));
+                58 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(is.read_message()?));
                 },
                 122 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(is.read_message()?));
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(is.read_message()?));
                 },
-                66 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(is.read_message()?));
+                90 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(is.read_message()?));
+                },
+                34 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(is.read_message()?));
+                },
+                98 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(is.read_message()?));
+                },
+                18 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(is.read_message()?));
+                },
+                114 => {
+                    self.NOMEMJFHDIB = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(is.read_message()?));
                 },
                 24 => {
-                    self.DEJMPMFHIOC = ::std::option::Option::Some(clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(is.read_uint32()?));
+                    self.script_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.HGHBLEAKMMJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -547,44 +513,41 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AHIDJBJGGPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AHIDJBJGGPP);
-        }
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.script_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.DEJMPMFHIOC {
+        if self.HGHBLEAKMMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.HGHBLEAKMMJ);
+        }
+        if let ::std::option::Option::Some(ref v) = self.NOMEMJFHDIB {
             match v {
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(3, v);
                 },
             };
         }
@@ -594,37 +557,34 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AHIDJBJGGPP != 0 {
-            os.write_uint32(4, self.AHIDJBJGGPP)?;
-        }
         if self.script_id != 0 {
-            os.write_uint32(10, self.script_id)?;
+            os.write_uint32(3, self.script_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.DEJMPMFHIOC {
+        if self.HGHBLEAKMMJ != 0 {
+            os.write_uint32(13, self.HGHBLEAKMMJ)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.NOMEMJFHDIB {
             match v {
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::JFBCKCLPAKO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::MEGNBBFILNL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::IPIKFLCEFLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::MEGNBBFILNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::ABKKDHAPCHN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LIHJMEINGIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-                },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::LMGGLCNCDHF(ref v) => {
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::JFBCKCLPAKO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::FNGFOAEPFJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::IPIKFLCEFLA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
-                &clock_park_handle_wait_operation_cs_req::DEJMPMFHIOC::OBPFBLNBFKI(v) => {
-                    os.write_uint32(3, v)?;
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::FNGFOAEPFJN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::ABKKDHAPCHN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LIHJMEINGIK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
+                &clock_park_handle_wait_operation_cs_req::NOMEMJFHDIB::LMGGLCNCDHF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -645,24 +605,23 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationCsReq {
     }
 
     fn clear(&mut self) {
-        self.AHIDJBJGGPP = 0;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
+        self.NOMEMJFHDIB = ::std::option::Option::None;
         self.script_id = 0;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
-        self.DEJMPMFHIOC = ::std::option::Option::None;
+        self.HGHBLEAKMMJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkHandleWaitOperationCsReq {
         static instance: ClockParkHandleWaitOperationCsReq = ClockParkHandleWaitOperationCsReq {
-            AHIDJBJGGPP: 0,
             script_id: 0,
-            DEJMPMFHIOC: ::std::option::Option::None,
+            HGHBLEAKMMJ: 0,
+            NOMEMJFHDIB: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -691,39 +650,37 @@ pub mod clock_park_handle_wait_operation_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ClockParkHandleWaitOperationCsReq.DEJMPMFHIOC)
-    pub enum DEJMPMFHIOC {
+    // @@protoc_insertion_point(oneof:ClockParkHandleWaitOperationCsReq.NOMEMJFHDIB)
+    pub enum NOMEMJFHDIB {
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.MEGNBBFILNL)
+        MEGNBBFILNL(super::super::AJEHAMDABNA::AJEHAMDABNA),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.JFBCKCLPAKO)
         JFBCKCLPAKO(super::super::OBNONMHMECK::OBNONMHMECK),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.IPIKFLCEFLA)
         IPIKFLCEFLA(super::super::FFOMIBNCFKI::FFOMIBNCFKI),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.MEGNBBFILNL)
-        MEGNBBFILNL(super::super::AJEHAMDABNA::AJEHAMDABNA),
+        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.FNGFOAEPFJN)
+        FNGFOAEPFJN(super::super::HELNOIHMDHA::HELNOIHMDHA),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.ABKKDHAPCHN)
         ABKKDHAPCHN(super::super::AMGHDCABJMJ::AMGHDCABJMJ),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.LIHJMEINGIK)
         LIHJMEINGIK(super::super::INNNICFOLII::INNNICFOLII),
         // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.LMGGLCNCDHF)
         LMGGLCNCDHF(super::super::CEOONFLONDJ::CEOONFLONDJ),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.FNGFOAEPFJN)
-        FNGFOAEPFJN(super::super::HELNOIHMDHA::HELNOIHMDHA),
-        // @@protoc_insertion_point(oneof_field:ClockParkHandleWaitOperationCsReq.OBPFBLNBFKI)
-        OBPFBLNBFKI(u32),
     }
 
-    impl ::protobuf::Oneof for DEJMPMFHIOC {
+    impl ::protobuf::Oneof for NOMEMJFHDIB {
     }
 
-    impl ::protobuf::OneofFull for DEJMPMFHIOC {
+    impl ::protobuf::OneofFull for NOMEMJFHDIB {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ClockParkHandleWaitOperationCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DEJMPMFHIOC").unwrap()).clone()
+            descriptor.get(|| <super::ClockParkHandleWaitOperationCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("NOMEMJFHDIB").unwrap()).clone()
         }
     }
 
-    impl DEJMPMFHIOC {
+    impl NOMEMJFHDIB {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DEJMPMFHIOC>("DEJMPMFHIOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NOMEMJFHDIB>("NOMEMJFHDIB")
         }
     }
 }
@@ -732,18 +689,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n'ClockParkHandleWaitOperationCsReq.proto\x1a\x11AJEHAMDABNA.proto\x1a\
     \x11AMGHDCABJMJ.proto\x1a\x11CEOONFLONDJ.proto\x1a\x11FFOMIBNCFKI.proto\
     \x1a\x11HELNOIHMDHA.proto\x1a\x11INNNICFOLII.proto\x1a\x11OBNONMHMECK.pr\
-    oto\"\xf3\x03\n!ClockParkHandleWaitOperationCsReq\x12\x20\n\x0bAHIDJBJGG\
-    PP\x18\x04\x20\x01(\rR\x0bAHIDJBJGGPP\x12\x1b\n\tscript_id\x18\n\x20\x01\
-    (\rR\x08scriptId\x120\n\x0bJFBCKCLPAKO\x18\x0b\x20\x01(\x0b2\x0c.OBNONMH\
-    MECKH\0R\x0bJFBCKCLPAKO\x120\n\x0bIPIKFLCEFLA\x18\x01\x20\x01(\x0b2\x0c.\
-    FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\x120\n\x0bMEGNBBFILNL\x18\t\x20\x01(\x0b2\
-    \x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bABKKDHAPCHN\x18\r\x20\x01(\
-    \x0b2\x0c.AMGHDCABJMJH\0R\x0bABKKDHAPCHN\x120\n\x0bLIHJMEINGIK\x18\x0e\
-    \x20\x01(\x0b2\x0c.INNNICFOLIIH\0R\x0bLIHJMEINGIK\x120\n\x0bLMGGLCNCDHF\
-    \x18\x0f\x20\x01(\x0b2\x0c.CEOONFLONDJH\0R\x0bLMGGLCNCDHF\x120\n\x0bFNGF\
-    OAEPFJN\x18\x08\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGFOAEPFJN\x12\"\n\
-    \x0bOBPFBLNBFKI\x18\x03\x20\x01(\rH\0R\x0bOBPFBLNBFKIB\r\n\x0bDEJMPMFHIO\
-    Cb\x06proto3\
+    oto\"\xcf\x03\n!ClockParkHandleWaitOperationCsReq\x120\n\x0bMEGNBBFILNL\
+    \x18\x07\x20\x01(\x0b2\x0c.AJEHAMDABNAH\0R\x0bMEGNBBFILNL\x120\n\x0bJFBC\
+    KCLPAKO\x18\x0f\x20\x01(\x0b2\x0c.OBNONMHMECKH\0R\x0bJFBCKCLPAKO\x120\n\
+    \x0bIPIKFLCEFLA\x18\x0b\x20\x01(\x0b2\x0c.FFOMIBNCFKIH\0R\x0bIPIKFLCEFLA\
+    \x120\n\x0bFNGFOAEPFJN\x18\x04\x20\x01(\x0b2\x0c.HELNOIHMDHAH\0R\x0bFNGF\
+    OAEPFJN\x120\n\x0bABKKDHAPCHN\x18\x0c\x20\x01(\x0b2\x0c.AMGHDCABJMJH\0R\
+    \x0bABKKDHAPCHN\x120\n\x0bLIHJMEINGIK\x18\x02\x20\x01(\x0b2\x0c.INNNICFO\
+    LIIH\0R\x0bLIHJMEINGIK\x120\n\x0bLMGGLCNCDHF\x18\x0e\x20\x01(\x0b2\x0c.C\
+    EOONFLONDJH\0R\x0bLMGGLCNCDHF\x12\x1b\n\tscript_id\x18\x03\x20\x01(\rR\
+    \x08scriptId\x12\x20\n\x0bHGHBLEAKMMJ\x18\r\x20\x01(\rR\x0bHGHBLEAKMMJB\
+    \r\n\x0bNOMEMJFHDIBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

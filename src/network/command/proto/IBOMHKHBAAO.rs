@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IBOMHKHBAAO {
     // message fields
-    // @@protoc_insertion_point(field:IBOMHKHBAAO.NFEOLNAOGDK)
-    pub NFEOLNAOGDK: ::std::vec::Vec<super::IDBEOMMCKIK::IDBEOMMCKIK>,
+    // @@protoc_insertion_point(field:IBOMHKHBAAO.ENLOMNMGEHC)
+    pub ENLOMNMGEHC: ::std::vec::Vec<super::IDBEOMMCKIK::IDBEOMMCKIK>,
     // special fields
     // @@protoc_insertion_point(special_field:IBOMHKHBAAO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl IBOMHKHBAAO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFEOLNAOGDK",
-            |m: &IBOMHKHBAAO| { &m.NFEOLNAOGDK },
-            |m: &mut IBOMHKHBAAO| { &mut m.NFEOLNAOGDK },
+            "ENLOMNMGEHC",
+            |m: &IBOMHKHBAAO| { &m.ENLOMNMGEHC },
+            |m: &mut IBOMHKHBAAO| { &mut m.ENLOMNMGEHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBOMHKHBAAO>(
             "IBOMHKHBAAO",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for IBOMHKHBAAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.NFEOLNAOGDK.push(is.read_message()?);
+                106 => {
+                    self.ENLOMNMGEHC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for IBOMHKHBAAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NFEOLNAOGDK {
+        for value in &self.ENLOMNMGEHC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for IBOMHKHBAAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NFEOLNAOGDK {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.ENLOMNMGEHC {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for IBOMHKHBAAO {
     }
 
     fn clear(&mut self) {
-        self.NFEOLNAOGDK.clear();
+        self.ENLOMNMGEHC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IBOMHKHBAAO {
         static instance: IBOMHKHBAAO = IBOMHKHBAAO {
-            NFEOLNAOGDK: ::std::vec::Vec::new(),
+            ENLOMNMGEHC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for IBOMHKHBAAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBOMHKHBAAO.proto\x1a\x11IDBEOMMCKIK.proto\"=\n\x0bIBOMHKHBAAO\x12\
-    .\n\x0bNFEOLNAOGDK\x18\x0e\x20\x03(\x0b2\x0c.IDBEOMMCKIKR\x0bNFEOLNAOGDK\
-    b\x06proto3\
+    .\n\x0bENLOMNMGEHC\x18\r\x20\x03(\x0b2\x0c.IDBEOMMCKIKR\x0bENLOMNMGEHCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

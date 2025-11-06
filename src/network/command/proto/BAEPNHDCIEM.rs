@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BAEPNHDCIEM {
     // message fields
-    // @@protoc_insertion_point(field:BAEPNHDCIEM.IJFIHGCKNHG)
-    pub IJFIHGCKNHG: u32,
-    // @@protoc_insertion_point(field:BAEPNHDCIEM.switch_list)
-    pub switch_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BAEPNHDCIEM.BKFDKODEOBI)
+    pub BKFDKODEOBI: u32,
+    // @@protoc_insertion_point(field:BAEPNHDCIEM.param_list)
+    pub param_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BAEPNHDCIEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BAEPNHDCIEM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJFIHGCKNHG",
-            |m: &BAEPNHDCIEM| { &m.IJFIHGCKNHG },
-            |m: &mut BAEPNHDCIEM| { &mut m.IJFIHGCKNHG },
+            "BKFDKODEOBI",
+            |m: &BAEPNHDCIEM| { &m.BKFDKODEOBI },
+            |m: &mut BAEPNHDCIEM| { &mut m.BKFDKODEOBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &BAEPNHDCIEM| { &m.switch_list },
-            |m: &mut BAEPNHDCIEM| { &mut m.switch_list },
+            "param_list",
+            |m: &BAEPNHDCIEM| { &m.param_list },
+            |m: &mut BAEPNHDCIEM| { &mut m.param_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAEPNHDCIEM>(
             "BAEPNHDCIEM",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for BAEPNHDCIEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IJFIHGCKNHG = is.read_uint32()?;
+                32 => {
+                    self.BKFDKODEOBI = is.read_uint32()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.switch_list)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.param_list)?;
                 },
-                120 => {
-                    self.switch_list.push(is.read_uint32()?);
+                56 => {
+                    self.param_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BAEPNHDCIEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IJFIHGCKNHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IJFIHGCKNHG);
+        if self.BKFDKODEOBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BKFDKODEOBI);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.switch_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.param_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IJFIHGCKNHG != 0 {
-            os.write_uint32(9, self.IJFIHGCKNHG)?;
+        if self.BKFDKODEOBI != 0 {
+            os.write_uint32(4, self.BKFDKODEOBI)?;
         }
-        os.write_repeated_packed_uint32(15, &self.switch_list)?;
+        os.write_repeated_packed_uint32(7, &self.param_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for BAEPNHDCIEM {
     }
 
     fn clear(&mut self) {
-        self.IJFIHGCKNHG = 0;
-        self.switch_list.clear();
+        self.BKFDKODEOBI = 0;
+        self.param_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAEPNHDCIEM {
         static instance: BAEPNHDCIEM = BAEPNHDCIEM {
-            IJFIHGCKNHG: 0,
-            switch_list: ::std::vec::Vec::new(),
+            BKFDKODEOBI: 0,
+            param_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for BAEPNHDCIEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAEPNHDCIEM.proto\"P\n\x0bBAEPNHDCIEM\x12\x20\n\x0bIJFIHGCKNHG\x18\
-    \t\x20\x01(\rR\x0bIJFIHGCKNHG\x12\x1f\n\x0bswitch_list\x18\x0f\x20\x03(\
-    \rR\nswitchListb\x06proto3\
+    \n\x11BAEPNHDCIEM.proto\"N\n\x0bBAEPNHDCIEM\x12\x20\n\x0bBKFDKODEOBI\x18\
+    \x04\x20\x01(\rR\x0bBKFDKODEOBI\x12\x1d\n\nparam_list\x18\x07\x20\x03(\r\
+    R\tparamListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

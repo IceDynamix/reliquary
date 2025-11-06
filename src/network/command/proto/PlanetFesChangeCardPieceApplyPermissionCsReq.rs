@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesChangeCardPieceApplyPermissionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesChangeCardPieceApplyPermissionCsReq.HLKPNECAMBL)
-    pub HLKPNECAMBL: u32,
+    // @@protoc_insertion_point(field:PlanetFesChangeCardPieceApplyPermissionCsReq.ECMMFNDEBKG)
+    pub ECMMFNDEBKG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesChangeCardPieceApplyPermissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesChangeCardPieceApplyPermissionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLKPNECAMBL",
-            |m: &PlanetFesChangeCardPieceApplyPermissionCsReq| { &m.HLKPNECAMBL },
-            |m: &mut PlanetFesChangeCardPieceApplyPermissionCsReq| { &mut m.HLKPNECAMBL },
+            "ECMMFNDEBKG",
+            |m: &PlanetFesChangeCardPieceApplyPermissionCsReq| { &m.ECMMFNDEBKG },
+            |m: &mut PlanetFesChangeCardPieceApplyPermissionCsReq| { &mut m.ECMMFNDEBKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesChangeCardPieceApplyPermissionCsReq>(
             "PlanetFesChangeCardPieceApplyPermissionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.HLKPNECAMBL = is.read_uint32()?;
+                88 => {
+                    self.ECMMFNDEBKG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLKPNECAMBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HLKPNECAMBL);
+        if self.ECMMFNDEBKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ECMMFNDEBKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLKPNECAMBL != 0 {
-            os.write_uint32(2, self.HLKPNECAMBL)?;
+        if self.ECMMFNDEBKG != 0 {
+            os.write_uint32(11, self.ECMMFNDEBKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionCsReq {
     }
 
     fn clear(&mut self) {
-        self.HLKPNECAMBL = 0;
+        self.ECMMFNDEBKG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesChangeCardPieceApplyPermissionCsReq {
         static instance: PlanetFesChangeCardPieceApplyPermissionCsReq = PlanetFesChangeCardPieceApplyPermissionCsReq {
-            HLKPNECAMBL: 0,
+            ECMMFNDEBKG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesChangeCardPieceApplyPermiss
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n2PlanetFesChangeCardPieceApplyPermissionCsReq.proto\"P\n,PlanetFesChan\
-    geCardPieceApplyPermissionCsReq\x12\x20\n\x0bHLKPNECAMBL\x18\x02\x20\x01\
-    (\rR\x0bHLKPNECAMBLb\x06proto3\
+    geCardPieceApplyPermissionCsReq\x12\x20\n\x0bECMMFNDEBKG\x18\x0b\x20\x01\
+    (\rR\x0bECMMFNDEBKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

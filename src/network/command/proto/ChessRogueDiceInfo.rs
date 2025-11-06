@@ -28,40 +28,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueDiceInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.game_branch_id)
-    pub game_branch_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.cheat_times)
-    pub cheat_times: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.cur_surface_id)
-    pub cur_surface_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.NGDEDLKNGFG)
-    pub NGDEDLKNGFG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.game_dice_branch_id)
-    pub game_dice_branch_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.JFIPIIFPMMB)
-    pub JFIPIIFPMMB: i32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.dice_status)
-    pub dice_status: ::protobuf::EnumOrUnknown<super::ChessRogueDiceStatus::ChessRogueDiceStatus>,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.PAGPBLAFNEH)
-    pub PAGPBLAFNEH: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.display_id)
-    pub display_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.cur_surface_slot_id)
-    pub cur_surface_slot_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.FNEIDJIMJPH)
-    pub FNEIDJIMJPH: bool,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.reroll_times)
-    pub reroll_times: u32,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.dice)
-    pub dice: ::protobuf::MessageField<super::ChessRogueDice::ChessRogueDice>,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.can_reroll_dice)
-    pub can_reroll_dice: bool,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.EDPHLDEGJLM)
-    pub EDPHLDEGJLM: ::protobuf::MessageField<super::EENDHPKPFLP::EENDHPKPFLP>,
-    // @@protoc_insertion_point(field:ChessRogueDiceInfo.rogue_modifider)
-    pub rogue_modifider: ::protobuf::MessageField<super::RogueModifier::RogueModifier>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.CDFOCPKAKLN)
+    pub CDFOCPKAKLN: u32,
     // @@protoc_insertion_point(field:ChessRogueDiceInfo.dice_type)
     pub dice_type: ::protobuf::EnumOrUnknown<super::ChessRogueDiceType::ChessRogueDiceType>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.FHDBFHELFLG)
+    pub FHDBFHELFLG: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.FLPBMIOMEFC)
+    pub FLPBMIOMEFC: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.JFKJFIKMJDP)
+    pub JFKJFIKMJDP: bool,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.OEKHJKAPLCJ)
+    pub OEKHJKAPLCJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.JOMFACDHGHL)
+    pub JOMFACDHGHL: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.DBHHMJKJCPA)
+    pub DBHHMJKJCPA: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.cur_dice_status)
+    pub cur_dice_status: ::protobuf::EnumOrUnknown<super::ChessRogueDiceStatus::ChessRogueDiceStatus>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.IMBIALJALCM)
+    pub IMBIALJALCM: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.NBJAPGDHMHG)
+    pub NBJAPGDHMHG: u32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.NKEIOEJHJGB)
+    pub NKEIOEJHJGB: ::protobuf::MessageField<super::EENDHPKPFLP::EENDHPKPFLP>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.rogue_modifider)
+    pub rogue_modifider: ::protobuf::MessageField<super::RogueModifier::RogueModifier>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.GIHGNPIPLPF)
+    pub GIHGNPIPLPF: bool,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.passive_accumulate_value)
+    pub passive_accumulate_value: i32,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.PPEJEBKAGDC)
+    pub PPEJEBKAGDC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueDiceInfo.dice)
+    pub dice: ::protobuf::MessageField<super::ChessRogueDice::ChessRogueDice>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueDiceInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -82,79 +82,64 @@ impl ChessRogueDiceInfo {
         let mut fields = ::std::vec::Vec::with_capacity(17);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_branch_id",
-            |m: &ChessRogueDiceInfo| { &m.game_branch_id },
-            |m: &mut ChessRogueDiceInfo| { &mut m.game_branch_id },
+            "CDFOCPKAKLN",
+            |m: &ChessRogueDiceInfo| { &m.CDFOCPKAKLN },
+            |m: &mut ChessRogueDiceInfo| { &mut m.CDFOCPKAKLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cheat_times",
-            |m: &ChessRogueDiceInfo| { &m.cheat_times },
-            |m: &mut ChessRogueDiceInfo| { &mut m.cheat_times },
+            "dice_type",
+            |m: &ChessRogueDiceInfo| { &m.dice_type },
+            |m: &mut ChessRogueDiceInfo| { &mut m.dice_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_surface_id",
-            |m: &ChessRogueDiceInfo| { &m.cur_surface_id },
-            |m: &mut ChessRogueDiceInfo| { &mut m.cur_surface_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGDEDLKNGFG",
-            |m: &ChessRogueDiceInfo| { &m.NGDEDLKNGFG },
-            |m: &mut ChessRogueDiceInfo| { &mut m.NGDEDLKNGFG },
+            "FHDBFHELFLG",
+            |m: &ChessRogueDiceInfo| { &m.FHDBFHELFLG },
+            |m: &mut ChessRogueDiceInfo| { &mut m.FHDBFHELFLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_dice_branch_id",
-            |m: &ChessRogueDiceInfo| { &m.game_dice_branch_id },
-            |m: &mut ChessRogueDiceInfo| { &mut m.game_dice_branch_id },
+            "FLPBMIOMEFC",
+            |m: &ChessRogueDiceInfo| { &m.FLPBMIOMEFC },
+            |m: &mut ChessRogueDiceInfo| { &mut m.FLPBMIOMEFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFIPIIFPMMB",
-            |m: &ChessRogueDiceInfo| { &m.JFIPIIFPMMB },
-            |m: &mut ChessRogueDiceInfo| { &mut m.JFIPIIFPMMB },
+            "JFKJFIKMJDP",
+            |m: &ChessRogueDiceInfo| { &m.JFKJFIKMJDP },
+            |m: &mut ChessRogueDiceInfo| { &mut m.JFKJFIKMJDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dice_status",
-            |m: &ChessRogueDiceInfo| { &m.dice_status },
-            |m: &mut ChessRogueDiceInfo| { &mut m.dice_status },
+            "OEKHJKAPLCJ",
+            |m: &ChessRogueDiceInfo| { &m.OEKHJKAPLCJ },
+            |m: &mut ChessRogueDiceInfo| { &mut m.OEKHJKAPLCJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAGPBLAFNEH",
-            |m: &ChessRogueDiceInfo| { &m.PAGPBLAFNEH },
-            |m: &mut ChessRogueDiceInfo| { &mut m.PAGPBLAFNEH },
+            "JOMFACDHGHL",
+            |m: &ChessRogueDiceInfo| { &m.JOMFACDHGHL },
+            |m: &mut ChessRogueDiceInfo| { &mut m.JOMFACDHGHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_id",
-            |m: &ChessRogueDiceInfo| { &m.display_id },
-            |m: &mut ChessRogueDiceInfo| { &mut m.display_id },
+            "DBHHMJKJCPA",
+            |m: &ChessRogueDiceInfo| { &m.DBHHMJKJCPA },
+            |m: &mut ChessRogueDiceInfo| { &mut m.DBHHMJKJCPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_surface_slot_id",
-            |m: &ChessRogueDiceInfo| { &m.cur_surface_slot_id },
-            |m: &mut ChessRogueDiceInfo| { &mut m.cur_surface_slot_id },
+            "cur_dice_status",
+            |m: &ChessRogueDiceInfo| { &m.cur_dice_status },
+            |m: &mut ChessRogueDiceInfo| { &mut m.cur_dice_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNEIDJIMJPH",
-            |m: &ChessRogueDiceInfo| { &m.FNEIDJIMJPH },
-            |m: &mut ChessRogueDiceInfo| { &mut m.FNEIDJIMJPH },
+            "IMBIALJALCM",
+            |m: &ChessRogueDiceInfo| { &m.IMBIALJALCM },
+            |m: &mut ChessRogueDiceInfo| { &mut m.IMBIALJALCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reroll_times",
-            |m: &ChessRogueDiceInfo| { &m.reroll_times },
-            |m: &mut ChessRogueDiceInfo| { &mut m.reroll_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDice::ChessRogueDice>(
-            "dice",
-            |m: &ChessRogueDiceInfo| { &m.dice },
-            |m: &mut ChessRogueDiceInfo| { &mut m.dice },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "can_reroll_dice",
-            |m: &ChessRogueDiceInfo| { &m.can_reroll_dice },
-            |m: &mut ChessRogueDiceInfo| { &mut m.can_reroll_dice },
+            "NBJAPGDHMHG",
+            |m: &ChessRogueDiceInfo| { &m.NBJAPGDHMHG },
+            |m: &mut ChessRogueDiceInfo| { &mut m.NBJAPGDHMHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EENDHPKPFLP::EENDHPKPFLP>(
-            "EDPHLDEGJLM",
-            |m: &ChessRogueDiceInfo| { &m.EDPHLDEGJLM },
-            |m: &mut ChessRogueDiceInfo| { &mut m.EDPHLDEGJLM },
+            "NKEIOEJHJGB",
+            |m: &ChessRogueDiceInfo| { &m.NKEIOEJHJGB },
+            |m: &mut ChessRogueDiceInfo| { &mut m.NKEIOEJHJGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModifier::RogueModifier>(
             "rogue_modifider",
@@ -162,9 +147,24 @@ impl ChessRogueDiceInfo {
             |m: &mut ChessRogueDiceInfo| { &mut m.rogue_modifider },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dice_type",
-            |m: &ChessRogueDiceInfo| { &m.dice_type },
-            |m: &mut ChessRogueDiceInfo| { &mut m.dice_type },
+            "GIHGNPIPLPF",
+            |m: &ChessRogueDiceInfo| { &m.GIHGNPIPLPF },
+            |m: &mut ChessRogueDiceInfo| { &mut m.GIHGNPIPLPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "passive_accumulate_value",
+            |m: &ChessRogueDiceInfo| { &m.passive_accumulate_value },
+            |m: &mut ChessRogueDiceInfo| { &mut m.passive_accumulate_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPEJEBKAGDC",
+            |m: &ChessRogueDiceInfo| { &m.PPEJEBKAGDC },
+            |m: &mut ChessRogueDiceInfo| { &mut m.PPEJEBKAGDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDice::ChessRogueDice>(
+            "dice",
+            |m: &ChessRogueDiceInfo| { &m.dice },
+            |m: &mut ChessRogueDiceInfo| { &mut m.dice },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueDiceInfo>(
             "ChessRogueDiceInfo",
@@ -184,59 +184,59 @@ impl ::protobuf::Message for ChessRogueDiceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.game_branch_id = is.read_uint32()?;
+                8 => {
+                    self.CDFOCPKAKLN = is.read_uint32()?;
                 },
-                48 => {
-                    self.cheat_times = is.read_uint32()?;
+                16 => {
+                    self.dice_type = is.read_enum_or_unknown()?;
                 },
                 24 => {
-                    self.cur_surface_id = is.read_uint32()?;
-                },
-                5746 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NGDEDLKNGFG)?;
-                },
-                5744 => {
-                    self.NGDEDLKNGFG.push(is.read_uint32()?);
-                },
-                32 => {
-                    self.game_dice_branch_id = is.read_uint32()?;
-                },
-                616 => {
-                    self.JFIPIIFPMMB = is.read_int32()?;
-                },
-                64 => {
-                    self.dice_status = is.read_enum_or_unknown()?;
-                },
-                88 => {
-                    self.PAGPBLAFNEH = is.read_uint32()?;
-                },
-                80 => {
-                    self.display_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.cur_surface_slot_id = is.read_uint32()?;
-                },
-                3288 => {
-                    self.FNEIDJIMJPH = is.read_bool()?;
+                    self.FHDBFHELFLG = is.read_uint32()?;
                 },
                 40 => {
-                    self.reroll_times = is.read_uint32()?;
+                    self.FLPBMIOMEFC = is.read_uint32()?;
                 },
-                9610 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dice)?;
+                48 => {
+                    self.JFKJFIKMJDP = is.read_bool()?;
                 },
-                104 => {
-                    self.can_reroll_dice = is.read_bool()?;
+                56 => {
+                    self.OEKHJKAPLCJ = is.read_uint32()?;
                 },
-                15426 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDPHLDEGJLM)?;
+                64 => {
+                    self.JOMFACDHGHL = is.read_uint32()?;
                 },
-                3826 => {
+                72 => {
+                    self.DBHHMJKJCPA = is.read_uint32()?;
+                },
+                88 => {
+                    self.cur_dice_status = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.IMBIALJALCM = is.read_uint32()?;
+                },
+                112 => {
+                    self.NBJAPGDHMHG = is.read_uint32()?;
+                },
+                978 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NKEIOEJHJGB)?;
+                },
+                1482 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_modifider)?;
                 },
-                120 => {
-                    self.dice_type = is.read_enum_or_unknown()?;
+                4200 => {
+                    self.GIHGNPIPLPF = is.read_bool()?;
+                },
+                6976 => {
+                    self.passive_accumulate_value = is.read_int32()?;
+                },
+                8194 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PPEJEBKAGDC)?;
+                },
+                8192 => {
+                    self.PPEJEBKAGDC.push(is.read_uint32()?);
+                },
+                14426 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dice)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -250,48 +250,40 @@ impl ::protobuf::Message for ChessRogueDiceInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.game_branch_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.game_branch_id);
+        if self.CDFOCPKAKLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CDFOCPKAKLN);
         }
-        if self.cheat_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.cheat_times);
+        if self.dice_type != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceType::ChessRogueDiceType::CHESS_ROGUE_DICE_FIXED) {
+            my_size += ::protobuf::rt::int32_size(2, self.dice_type.value());
         }
-        if self.cur_surface_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_surface_id);
+        if self.FHDBFHELFLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FHDBFHELFLG);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(718, &self.NGDEDLKNGFG);
-        if self.game_dice_branch_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.game_dice_branch_id);
+        if self.FLPBMIOMEFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FLPBMIOMEFC);
         }
-        if self.JFIPIIFPMMB != 0 {
-            my_size += ::protobuf::rt::int32_size(77, self.JFIPIIFPMMB);
-        }
-        if self.dice_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE) {
-            my_size += ::protobuf::rt::int32_size(8, self.dice_status.value());
-        }
-        if self.PAGPBLAFNEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PAGPBLAFNEH);
-        }
-        if self.display_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.display_id);
-        }
-        if self.cur_surface_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_surface_slot_id);
-        }
-        if self.FNEIDJIMJPH != false {
-            my_size += 2 + 1;
-        }
-        if self.reroll_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.reroll_times);
-        }
-        if let Some(v) = self.dice.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.can_reroll_dice != false {
+        if self.JFKJFIKMJDP != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.EDPHLDEGJLM.as_ref() {
+        if self.OEKHJKAPLCJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.OEKHJKAPLCJ);
+        }
+        if self.JOMFACDHGHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JOMFACDHGHL);
+        }
+        if self.DBHHMJKJCPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DBHHMJKJCPA);
+        }
+        if self.cur_dice_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE) {
+            my_size += ::protobuf::rt::int32_size(11, self.cur_dice_status.value());
+        }
+        if self.IMBIALJALCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.IMBIALJALCM);
+        }
+        if self.NBJAPGDHMHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NBJAPGDHMHG);
+        }
+        if let Some(v) = self.NKEIOEJHJGB.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -299,8 +291,16 @@ impl ::protobuf::Message for ChessRogueDiceInfo {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.dice_type != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceType::ChessRogueDiceType::CHESS_ROGUE_DICE_FIXED) {
-            my_size += ::protobuf::rt::int32_size(15, self.dice_type.value());
+        if self.GIHGNPIPLPF != false {
+            my_size += 2 + 1;
+        }
+        if self.passive_accumulate_value != 0 {
+            my_size += ::protobuf::rt::int32_size(872, self.passive_accumulate_value);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1024, &self.PPEJEBKAGDC);
+        if let Some(v) = self.dice.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -308,54 +308,54 @@ impl ::protobuf::Message for ChessRogueDiceInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.game_branch_id != 0 {
-            os.write_uint32(9, self.game_branch_id)?;
-        }
-        if self.cheat_times != 0 {
-            os.write_uint32(6, self.cheat_times)?;
-        }
-        if self.cur_surface_id != 0 {
-            os.write_uint32(3, self.cur_surface_id)?;
-        }
-        os.write_repeated_packed_uint32(718, &self.NGDEDLKNGFG)?;
-        if self.game_dice_branch_id != 0 {
-            os.write_uint32(4, self.game_dice_branch_id)?;
-        }
-        if self.JFIPIIFPMMB != 0 {
-            os.write_int32(77, self.JFIPIIFPMMB)?;
-        }
-        if self.dice_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.dice_status))?;
-        }
-        if self.PAGPBLAFNEH != 0 {
-            os.write_uint32(11, self.PAGPBLAFNEH)?;
-        }
-        if self.display_id != 0 {
-            os.write_uint32(10, self.display_id)?;
-        }
-        if self.cur_surface_slot_id != 0 {
-            os.write_uint32(12, self.cur_surface_slot_id)?;
-        }
-        if self.FNEIDJIMJPH != false {
-            os.write_bool(411, self.FNEIDJIMJPH)?;
-        }
-        if self.reroll_times != 0 {
-            os.write_uint32(5, self.reroll_times)?;
-        }
-        if let Some(v) = self.dice.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1201, v, os)?;
-        }
-        if self.can_reroll_dice != false {
-            os.write_bool(13, self.can_reroll_dice)?;
-        }
-        if let Some(v) = self.EDPHLDEGJLM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1928, v, os)?;
-        }
-        if let Some(v) = self.rogue_modifider.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(478, v, os)?;
+        if self.CDFOCPKAKLN != 0 {
+            os.write_uint32(1, self.CDFOCPKAKLN)?;
         }
         if self.dice_type != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceType::ChessRogueDiceType::CHESS_ROGUE_DICE_FIXED) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.dice_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.dice_type))?;
+        }
+        if self.FHDBFHELFLG != 0 {
+            os.write_uint32(3, self.FHDBFHELFLG)?;
+        }
+        if self.FLPBMIOMEFC != 0 {
+            os.write_uint32(5, self.FLPBMIOMEFC)?;
+        }
+        if self.JFKJFIKMJDP != false {
+            os.write_bool(6, self.JFKJFIKMJDP)?;
+        }
+        if self.OEKHJKAPLCJ != 0 {
+            os.write_uint32(7, self.OEKHJKAPLCJ)?;
+        }
+        if self.JOMFACDHGHL != 0 {
+            os.write_uint32(8, self.JOMFACDHGHL)?;
+        }
+        if self.DBHHMJKJCPA != 0 {
+            os.write_uint32(9, self.DBHHMJKJCPA)?;
+        }
+        if self.cur_dice_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.cur_dice_status))?;
+        }
+        if self.IMBIALJALCM != 0 {
+            os.write_uint32(12, self.IMBIALJALCM)?;
+        }
+        if self.NBJAPGDHMHG != 0 {
+            os.write_uint32(14, self.NBJAPGDHMHG)?;
+        }
+        if let Some(v) = self.NKEIOEJHJGB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(122, v, os)?;
+        }
+        if let Some(v) = self.rogue_modifider.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(185, v, os)?;
+        }
+        if self.GIHGNPIPLPF != false {
+            os.write_bool(525, self.GIHGNPIPLPF)?;
+        }
+        if self.passive_accumulate_value != 0 {
+            os.write_int32(872, self.passive_accumulate_value)?;
+        }
+        os.write_repeated_packed_uint32(1024, &self.PPEJEBKAGDC)?;
+        if let Some(v) = self.dice.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1803, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -374,45 +374,45 @@ impl ::protobuf::Message for ChessRogueDiceInfo {
     }
 
     fn clear(&mut self) {
-        self.game_branch_id = 0;
-        self.cheat_times = 0;
-        self.cur_surface_id = 0;
-        self.NGDEDLKNGFG.clear();
-        self.game_dice_branch_id = 0;
-        self.JFIPIIFPMMB = 0;
-        self.dice_status = ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE);
-        self.PAGPBLAFNEH = 0;
-        self.display_id = 0;
-        self.cur_surface_slot_id = 0;
-        self.FNEIDJIMJPH = false;
-        self.reroll_times = 0;
-        self.dice.clear();
-        self.can_reroll_dice = false;
-        self.EDPHLDEGJLM.clear();
-        self.rogue_modifider.clear();
+        self.CDFOCPKAKLN = 0;
         self.dice_type = ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceType::ChessRogueDiceType::CHESS_ROGUE_DICE_FIXED);
+        self.FHDBFHELFLG = 0;
+        self.FLPBMIOMEFC = 0;
+        self.JFKJFIKMJDP = false;
+        self.OEKHJKAPLCJ = 0;
+        self.JOMFACDHGHL = 0;
+        self.DBHHMJKJCPA = 0;
+        self.cur_dice_status = ::protobuf::EnumOrUnknown::new(super::ChessRogueDiceStatus::ChessRogueDiceStatus::CHESS_ROGUE_DICE_IDLE);
+        self.IMBIALJALCM = 0;
+        self.NBJAPGDHMHG = 0;
+        self.NKEIOEJHJGB.clear();
+        self.rogue_modifider.clear();
+        self.GIHGNPIPLPF = false;
+        self.passive_accumulate_value = 0;
+        self.PPEJEBKAGDC.clear();
+        self.dice.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueDiceInfo {
         static instance: ChessRogueDiceInfo = ChessRogueDiceInfo {
-            game_branch_id: 0,
-            cheat_times: 0,
-            cur_surface_id: 0,
-            NGDEDLKNGFG: ::std::vec::Vec::new(),
-            game_dice_branch_id: 0,
-            JFIPIIFPMMB: 0,
-            dice_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            PAGPBLAFNEH: 0,
-            display_id: 0,
-            cur_surface_slot_id: 0,
-            FNEIDJIMJPH: false,
-            reroll_times: 0,
-            dice: ::protobuf::MessageField::none(),
-            can_reroll_dice: false,
-            EDPHLDEGJLM: ::protobuf::MessageField::none(),
-            rogue_modifider: ::protobuf::MessageField::none(),
+            CDFOCPKAKLN: 0,
             dice_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            FHDBFHELFLG: 0,
+            FLPBMIOMEFC: 0,
+            JFKJFIKMJDP: false,
+            OEKHJKAPLCJ: 0,
+            JOMFACDHGHL: 0,
+            DBHHMJKJCPA: 0,
+            cur_dice_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            IMBIALJALCM: 0,
+            NBJAPGDHMHG: 0,
+            NKEIOEJHJGB: ::protobuf::MessageField::none(),
+            rogue_modifider: ::protobuf::MessageField::none(),
+            GIHGNPIPLPF: false,
+            passive_accumulate_value: 0,
+            PPEJEBKAGDC: ::std::vec::Vec::new(),
+            dice: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -439,23 +439,24 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueDiceInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChessRogueDiceInfo.proto\x1a\x14ChessRogueDice.proto\x1a\x1aChessR\
     ogueDiceStatus.proto\x1a\x18ChessRogueDiceType.proto\x1a\x11EENDHPKPFLP.\
-    proto\x1a\x13RogueModifier.proto\"\xce\x05\n\x12ChessRogueDiceInfo\x12$\
-    \n\x0egame_branch_id\x18\t\x20\x01(\rR\x0cgameBranchId\x12\x1f\n\x0bchea\
-    t_times\x18\x06\x20\x01(\rR\ncheatTimes\x12$\n\x0ecur_surface_id\x18\x03\
-    \x20\x01(\rR\x0ccurSurfaceId\x12!\n\x0bNGDEDLKNGFG\x18\xce\x05\x20\x03(\
-    \rR\x0bNGDEDLKNGFG\x12-\n\x13game_dice_branch_id\x18\x04\x20\x01(\rR\x10\
-    gameDiceBranchId\x12\x20\n\x0bJFIPIIFPMMB\x18M\x20\x01(\x05R\x0bJFIPIIFP\
-    MMB\x126\n\x0bdice_status\x18\x08\x20\x01(\x0e2\x15.ChessRogueDiceStatus\
-    R\ndiceStatus\x12\x20\n\x0bPAGPBLAFNEH\x18\x0b\x20\x01(\rR\x0bPAGPBLAFNE\
-    H\x12\x1d\n\ndisplay_id\x18\n\x20\x01(\rR\tdisplayId\x12-\n\x13cur_surfa\
-    ce_slot_id\x18\x0c\x20\x01(\rR\x10curSurfaceSlotId\x12!\n\x0bFNEIDJIMJPH\
-    \x18\x9b\x03\x20\x01(\x08R\x0bFNEIDJIMJPH\x12!\n\x0creroll_times\x18\x05\
-    \x20\x01(\rR\x0brerollTimes\x12$\n\x04dice\x18\xb1\t\x20\x01(\x0b2\x0f.C\
-    hessRogueDiceR\x04dice\x12&\n\x0fcan_reroll_dice\x18\r\x20\x01(\x08R\rca\
-    nRerollDice\x12/\n\x0bEDPHLDEGJLM\x18\x88\x0f\x20\x01(\x0b2\x0c.EENDHPKP\
-    FLPR\x0bEDPHLDEGJLM\x128\n\x0frogue_modifider\x18\xde\x03\x20\x01(\x0b2\
-    \x0e.RogueModifierR\x0erogueModifider\x120\n\tdice_type\x18\x0f\x20\x01(\
-    \x0e2\x13.ChessRogueDiceTypeR\x08diceTypeb\x06proto3\
+    proto\x1a\x13RogueModifier.proto\"\xc8\x05\n\x12ChessRogueDiceInfo\x12\
+    \x20\n\x0bCDFOCPKAKLN\x18\x01\x20\x01(\rR\x0bCDFOCPKAKLN\x120\n\tdice_ty\
+    pe\x18\x02\x20\x01(\x0e2\x13.ChessRogueDiceTypeR\x08diceType\x12\x20\n\
+    \x0bFHDBFHELFLG\x18\x03\x20\x01(\rR\x0bFHDBFHELFLG\x12\x20\n\x0bFLPBMIOM\
+    EFC\x18\x05\x20\x01(\rR\x0bFLPBMIOMEFC\x12\x20\n\x0bJFKJFIKMJDP\x18\x06\
+    \x20\x01(\x08R\x0bJFKJFIKMJDP\x12\x20\n\x0bOEKHJKAPLCJ\x18\x07\x20\x01(\
+    \rR\x0bOEKHJKAPLCJ\x12\x20\n\x0bJOMFACDHGHL\x18\x08\x20\x01(\rR\x0bJOMFA\
+    CDHGHL\x12\x20\n\x0bDBHHMJKJCPA\x18\t\x20\x01(\rR\x0bDBHHMJKJCPA\x12=\n\
+    \x0fcur_dice_status\x18\x0b\x20\x01(\x0e2\x15.ChessRogueDiceStatusR\rcur\
+    DiceStatus\x12\x20\n\x0bIMBIALJALCM\x18\x0c\x20\x01(\rR\x0bIMBIALJALCM\
+    \x12\x20\n\x0bNBJAPGDHMHG\x18\x0e\x20\x01(\rR\x0bNBJAPGDHMHG\x12.\n\x0bN\
+    KEIOEJHJGB\x18z\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bNKEIOEJHJGB\x128\n\x0f\
+    rogue_modifider\x18\xb9\x01\x20\x01(\x0b2\x0e.RogueModifierR\x0erogueMod\
+    ifider\x12!\n\x0bGIHGNPIPLPF\x18\x8d\x04\x20\x01(\x08R\x0bGIHGNPIPLPF\
+    \x129\n\x18passive_accumulate_value\x18\xe8\x06\x20\x01(\x05R\x16passive\
+    AccumulateValue\x12!\n\x0bPPEJEBKAGDC\x18\x80\x08\x20\x03(\rR\x0bPPEJEBK\
+    AGDC\x12$\n\x04dice\x18\x8b\x0e\x20\x01(\x0b2\x0f.ChessRogueDiceR\x04dic\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

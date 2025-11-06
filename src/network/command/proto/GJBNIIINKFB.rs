@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GJBNIIINKFB {
     // message fields
-    // @@protoc_insertion_point(field:GJBNIIINKFB.CCKHKBNMAPN)
-    pub CCKHKBNMAPN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GJBNIIINKFB.BILEGELKMCB)
-    pub BILEGELKMCB: u32,
-    // @@protoc_insertion_point(field:GJBNIIINKFB.MCEGAIBNMGB)
-    pub MCEGAIBNMGB: u32,
+    // @@protoc_insertion_point(field:GJBNIIINKFB.IAOHKKMAFNH)
+    pub IAOHKKMAFNH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GJBNIIINKFB.AHMJEIJLDNP)
+    pub AHMJEIJLDNP: u32,
+    // @@protoc_insertion_point(field:GJBNIIINKFB.JCNOBPEDFDL)
+    pub JCNOBPEDFDL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GJBNIIINKFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GJBNIIINKFB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CCKHKBNMAPN",
-            |m: &GJBNIIINKFB| { &m.CCKHKBNMAPN },
-            |m: &mut GJBNIIINKFB| { &mut m.CCKHKBNMAPN },
+            "IAOHKKMAFNH",
+            |m: &GJBNIIINKFB| { &m.IAOHKKMAFNH },
+            |m: &mut GJBNIIINKFB| { &mut m.IAOHKKMAFNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILEGELKMCB",
-            |m: &GJBNIIINKFB| { &m.BILEGELKMCB },
-            |m: &mut GJBNIIINKFB| { &mut m.BILEGELKMCB },
+            "AHMJEIJLDNP",
+            |m: &GJBNIIINKFB| { &m.AHMJEIJLDNP },
+            |m: &mut GJBNIIINKFB| { &mut m.AHMJEIJLDNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MCEGAIBNMGB",
-            |m: &GJBNIIINKFB| { &m.MCEGAIBNMGB },
-            |m: &mut GJBNIIINKFB| { &mut m.MCEGAIBNMGB },
+            "JCNOBPEDFDL",
+            |m: &GJBNIIINKFB| { &m.JCNOBPEDFDL },
+            |m: &mut GJBNIIINKFB| { &mut m.JCNOBPEDFDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GJBNIIINKFB>(
             "GJBNIIINKFB",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for GJBNIIINKFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CCKHKBNMAPN)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IAOHKKMAFNH)?;
                 },
-                88 => {
-                    self.CCKHKBNMAPN.push(is.read_uint32()?);
+                56 => {
+                    self.IAOHKKMAFNH.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.BILEGELKMCB = is.read_uint32()?;
+                80 => {
+                    self.AHMJEIJLDNP = is.read_uint32()?;
                 },
-                32 => {
-                    self.MCEGAIBNMGB = is.read_uint32()?;
+                96 => {
+                    self.JCNOBPEDFDL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for GJBNIIINKFB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CCKHKBNMAPN);
-        if self.BILEGELKMCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BILEGELKMCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.IAOHKKMAFNH);
+        if self.AHMJEIJLDNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AHMJEIJLDNP);
         }
-        if self.MCEGAIBNMGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MCEGAIBNMGB);
+        if self.JCNOBPEDFDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JCNOBPEDFDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for GJBNIIINKFB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.CCKHKBNMAPN)?;
-        if self.BILEGELKMCB != 0 {
-            os.write_uint32(14, self.BILEGELKMCB)?;
+        os.write_repeated_packed_uint32(7, &self.IAOHKKMAFNH)?;
+        if self.AHMJEIJLDNP != 0 {
+            os.write_uint32(10, self.AHMJEIJLDNP)?;
         }
-        if self.MCEGAIBNMGB != 0 {
-            os.write_uint32(4, self.MCEGAIBNMGB)?;
+        if self.JCNOBPEDFDL != 0 {
+            os.write_uint32(12, self.JCNOBPEDFDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for GJBNIIINKFB {
     }
 
     fn clear(&mut self) {
-        self.CCKHKBNMAPN.clear();
-        self.BILEGELKMCB = 0;
-        self.MCEGAIBNMGB = 0;
+        self.IAOHKKMAFNH.clear();
+        self.AHMJEIJLDNP = 0;
+        self.JCNOBPEDFDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GJBNIIINKFB {
         static instance: GJBNIIINKFB = GJBNIIINKFB {
-            CCKHKBNMAPN: ::std::vec::Vec::new(),
-            BILEGELKMCB: 0,
-            MCEGAIBNMGB: 0,
+            IAOHKKMAFNH: ::std::vec::Vec::new(),
+            AHMJEIJLDNP: 0,
+            JCNOBPEDFDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for GJBNIIINKFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJBNIIINKFB.proto\"s\n\x0bGJBNIIINKFB\x12\x20\n\x0bCCKHKBNMAPN\x18\
-    \x0b\x20\x03(\rR\x0bCCKHKBNMAPN\x12\x20\n\x0bBILEGELKMCB\x18\x0e\x20\x01\
-    (\rR\x0bBILEGELKMCB\x12\x20\n\x0bMCEGAIBNMGB\x18\x04\x20\x01(\rR\x0bMCEG\
-    AIBNMGBb\x06proto3\
+    \n\x11GJBNIIINKFB.proto\"s\n\x0bGJBNIIINKFB\x12\x20\n\x0bIAOHKKMAFNH\x18\
+    \x07\x20\x03(\rR\x0bIAOHKKMAFNH\x12\x20\n\x0bAHMJEIJLDNP\x18\n\x20\x01(\
+    \rR\x0bAHMJEIJLDNP\x12\x20\n\x0bJCNOBPEDFDL\x18\x0c\x20\x01(\rR\x0bJCNOB\
+    PEDFDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

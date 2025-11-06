@@ -30,10 +30,10 @@ pub struct HPIOFDCGMEJ {
     // message fields
     // @@protoc_insertion_point(field:HPIOFDCGMEJ.type)
     pub type_: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
-    // @@protoc_insertion_point(field:HPIOFDCGMEJ.NJCJDNHPCJN)
-    pub NJCJDNHPCJN: ::std::vec::Vec<super::FeatureSwitchParam::FeatureSwitchParam>,
-    // @@protoc_insertion_point(field:HPIOFDCGMEJ.OAFMLJMDJFO)
-    pub OAFMLJMDJFO: bool,
+    // @@protoc_insertion_point(field:HPIOFDCGMEJ.LMDCJBLDCHF)
+    pub LMDCJBLDCHF: ::std::vec::Vec<super::FeatureSwitchParam::FeatureSwitchParam>,
+    // @@protoc_insertion_point(field:HPIOFDCGMEJ.BPINOMNNFAO)
+    pub BPINOMNNFAO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HPIOFDCGMEJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl HPIOFDCGMEJ {
             |m: &mut HPIOFDCGMEJ| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJCJDNHPCJN",
-            |m: &HPIOFDCGMEJ| { &m.NJCJDNHPCJN },
-            |m: &mut HPIOFDCGMEJ| { &mut m.NJCJDNHPCJN },
+            "LMDCJBLDCHF",
+            |m: &HPIOFDCGMEJ| { &m.LMDCJBLDCHF },
+            |m: &mut HPIOFDCGMEJ| { &mut m.LMDCJBLDCHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAFMLJMDJFO",
-            |m: &HPIOFDCGMEJ| { &m.OAFMLJMDJFO },
-            |m: &mut HPIOFDCGMEJ| { &mut m.OAFMLJMDJFO },
+            "BPINOMNNFAO",
+            |m: &HPIOFDCGMEJ| { &m.BPINOMNNFAO },
+            |m: &mut HPIOFDCGMEJ| { &mut m.BPINOMNNFAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPIOFDCGMEJ>(
             "HPIOFDCGMEJ",
@@ -90,10 +90,10 @@ impl ::protobuf::Message for HPIOFDCGMEJ {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 18 => {
-                    self.NJCJDNHPCJN.push(is.read_message()?);
+                    self.LMDCJBLDCHF.push(is.read_message()?);
                 },
                 24 => {
-                    self.OAFMLJMDJFO = is.read_bool()?;
+                    self.BPINOMNNFAO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HPIOFDCGMEJ {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
             my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
-        for value in &self.NJCJDNHPCJN {
+        for value in &self.LMDCJBLDCHF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OAFMLJMDJFO != false {
+        if self.BPINOMNNFAO != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -126,11 +126,11 @@ impl ::protobuf::Message for HPIOFDCGMEJ {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        for v in &self.NJCJDNHPCJN {
+        for v in &self.LMDCJBLDCHF {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.OAFMLJMDJFO != false {
-            os.write_bool(3, self.OAFMLJMDJFO)?;
+        if self.BPINOMNNFAO != false {
+            os.write_bool(3, self.BPINOMNNFAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for HPIOFDCGMEJ {
 
     fn clear(&mut self) {
         self.type_ = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE);
-        self.NJCJDNHPCJN.clear();
-        self.OAFMLJMDJFO = false;
+        self.LMDCJBLDCHF.clear();
+        self.BPINOMNNFAO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HPIOFDCGMEJ {
         static instance: HPIOFDCGMEJ = HPIOFDCGMEJ {
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            NJCJDNHPCJN: ::std::vec::Vec::new(),
-            OAFMLJMDJFO: false,
+            LMDCJBLDCHF: ::std::vec::Vec::new(),
+            BPINOMNNFAO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for HPIOFDCGMEJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HPIOFDCGMEJ.proto\x1a\x18FeatureSwitchParam.proto\x1a\x17FeatureSw\
     itchType.proto\"\x8e\x01\n\x0bHPIOFDCGMEJ\x12&\n\x04type\x18\x01\x20\x01\
-    (\x0e2\x12.FeatureSwitchTypeR\x04type\x125\n\x0bNJCJDNHPCJN\x18\x02\x20\
-    \x03(\x0b2\x13.FeatureSwitchParamR\x0bNJCJDNHPCJN\x12\x20\n\x0bOAFMLJMDJ\
-    FO\x18\x03\x20\x01(\x08R\x0bOAFMLJMDJFOb\x06proto3\
+    (\x0e2\x12.FeatureSwitchTypeR\x04type\x125\n\x0bLMDCJBLDCHF\x18\x02\x20\
+    \x03(\x0b2\x13.FeatureSwitchParamR\x0bLMDCJBLDCHF\x12\x20\n\x0bBPINOMNNF\
+    AO\x18\x03\x20\x01(\x08R\x0bBPINOMNNFAOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

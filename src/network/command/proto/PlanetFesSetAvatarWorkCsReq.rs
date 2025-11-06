@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesSetAvatarWorkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesSetAvatarWorkCsReq.KNGPOFHNFAJ)
-    pub KNGPOFHNFAJ: ::std::vec::Vec<super::PFBFIMJFEGI::PFBFIMJFEGI>,
+    // @@protoc_insertion_point(field:PlanetFesSetAvatarWorkCsReq.HAHMJDCPJGL)
+    pub HAHMJDCPJGL: ::std::vec::Vec<super::PFBFIMJFEGI::PFBFIMJFEGI>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesSetAvatarWorkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesSetAvatarWorkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KNGPOFHNFAJ",
-            |m: &PlanetFesSetAvatarWorkCsReq| { &m.KNGPOFHNFAJ },
-            |m: &mut PlanetFesSetAvatarWorkCsReq| { &mut m.KNGPOFHNFAJ },
+            "HAHMJDCPJGL",
+            |m: &PlanetFesSetAvatarWorkCsReq| { &m.HAHMJDCPJGL },
+            |m: &mut PlanetFesSetAvatarWorkCsReq| { &mut m.HAHMJDCPJGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesSetAvatarWorkCsReq>(
             "PlanetFesSetAvatarWorkCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesSetAvatarWorkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.KNGPOFHNFAJ.push(is.read_message()?);
+                74 => {
+                    self.HAHMJDCPJGL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlanetFesSetAvatarWorkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KNGPOFHNFAJ {
+        for value in &self.HAHMJDCPJGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlanetFesSetAvatarWorkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KNGPOFHNFAJ {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.HAHMJDCPJGL {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlanetFesSetAvatarWorkCsReq {
     }
 
     fn clear(&mut self) {
-        self.KNGPOFHNFAJ.clear();
+        self.HAHMJDCPJGL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesSetAvatarWorkCsReq {
         static instance: PlanetFesSetAvatarWorkCsReq = PlanetFesSetAvatarWorkCsReq {
-            KNGPOFHNFAJ: ::std::vec::Vec::new(),
+            HAHMJDCPJGL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSetAvatarWorkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesSetAvatarWorkCsReq.proto\x1a\x11PFBFIMJFEGI.proto\"M\n\x1bPl\
-    anetFesSetAvatarWorkCsReq\x12.\n\x0bKNGPOFHNFAJ\x18\x0b\x20\x03(\x0b2\
-    \x0c.PFBFIMJFEGIR\x0bKNGPOFHNFAJb\x06proto3\
+    anetFesSetAvatarWorkCsReq\x12.\n\x0bHAHMJDCPJGL\x18\t\x20\x03(\x0b2\x0c.\
+    PFBFIMJFEGIR\x0bHAHMJDCPJGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

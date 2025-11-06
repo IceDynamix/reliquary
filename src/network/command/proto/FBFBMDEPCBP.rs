@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FBFBMDEPCBP {
     // message fields
-    // @@protoc_insertion_point(field:FBFBMDEPCBP.FMLLHLKOJLJ)
-    pub FMLLHLKOJLJ: ::std::vec::Vec<super::OIEGKNHNIAN::OIEGKNHNIAN>,
+    // @@protoc_insertion_point(field:FBFBMDEPCBP.DFOOLAEFFMB)
+    pub DFOOLAEFFMB: ::std::vec::Vec<super::OIEGKNHNIAN::OIEGKNHNIAN>,
     // special fields
     // @@protoc_insertion_point(special_field:FBFBMDEPCBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FBFBMDEPCBP {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMLLHLKOJLJ",
-            |m: &FBFBMDEPCBP| { &m.FMLLHLKOJLJ },
-            |m: &mut FBFBMDEPCBP| { &mut m.FMLLHLKOJLJ },
+            "DFOOLAEFFMB",
+            |m: &FBFBMDEPCBP| { &m.DFOOLAEFFMB },
+            |m: &mut FBFBMDEPCBP| { &mut m.DFOOLAEFFMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FBFBMDEPCBP>(
             "FBFBMDEPCBP",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FBFBMDEPCBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.FMLLHLKOJLJ.push(is.read_message()?);
+                66 => {
+                    self.DFOOLAEFFMB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FBFBMDEPCBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FMLLHLKOJLJ {
+        for value in &self.DFOOLAEFFMB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FBFBMDEPCBP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FMLLHLKOJLJ {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.DFOOLAEFFMB {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FBFBMDEPCBP {
     }
 
     fn clear(&mut self) {
-        self.FMLLHLKOJLJ.clear();
+        self.DFOOLAEFFMB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FBFBMDEPCBP {
         static instance: FBFBMDEPCBP = FBFBMDEPCBP {
-            FMLLHLKOJLJ: ::std::vec::Vec::new(),
+            DFOOLAEFFMB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FBFBMDEPCBP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBFBMDEPCBP.proto\x1a\x11OIEGKNHNIAN.proto\"=\n\x0bFBFBMDEPCBP\x12\
-    .\n\x0bFMLLHLKOJLJ\x18\n\x20\x03(\x0b2\x0c.OIEGKNHNIANR\x0bFMLLHLKOJLJb\
-    \x06proto3\
+    .\n\x0bDFOOLAEFFMB\x18\x08\x20\x03(\x0b2\x0c.OIEGKNHNIANR\x0bDFOOLAEFFMB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

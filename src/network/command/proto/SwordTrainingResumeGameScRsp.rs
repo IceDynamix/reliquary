@@ -30,8 +30,8 @@ pub struct SwordTrainingResumeGameScRsp {
     // message fields
     // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.GAJBFPCPIGM)
-    pub GAJBFPCPIGM: ::protobuf::MessageField<super::ALEFDNLLKLB::ALEFDNLLKLB>,
+    // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.EMOGOHMDINB)
+    pub EMOGOHMDINB: ::protobuf::MessageField<super::ALEFDNLLKLB::ALEFDNLLKLB>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingResumeGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SwordTrainingResumeGameScRsp {
             |m: &mut SwordTrainingResumeGameScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ALEFDNLLKLB::ALEFDNLLKLB>(
-            "GAJBFPCPIGM",
-            |m: &SwordTrainingResumeGameScRsp| { &m.GAJBFPCPIGM },
-            |m: &mut SwordTrainingResumeGameScRsp| { &mut m.GAJBFPCPIGM },
+            "EMOGOHMDINB",
+            |m: &SwordTrainingResumeGameScRsp| { &m.EMOGOHMDINB },
+            |m: &mut SwordTrainingResumeGameScRsp| { &mut m.EMOGOHMDINB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingResumeGameScRsp>(
             "SwordTrainingResumeGameScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJBFPCPIGM)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMOGOHMDINB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.GAJBFPCPIGM.as_ref() {
+        if let Some(v) = self.EMOGOHMDINB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.GAJBFPCPIGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.EMOGOHMDINB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GAJBFPCPIGM.clear();
+        self.EMOGOHMDINB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingResumeGameScRsp {
         static instance: SwordTrainingResumeGameScRsp = SwordTrainingResumeGameScRsp {
             retcode: 0,
-            GAJBFPCPIGM: ::protobuf::MessageField::none(),
+            EMOGOHMDINB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingResumeGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingResumeGameScRsp.proto\x1a\x11ALEFDNLLKLB.proto\"h\n\x1c\
-    SwordTrainingResumeGameScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07r\
-    etcode\x12.\n\x0bGAJBFPCPIGM\x18\x08\x20\x01(\x0b2\x0c.ALEFDNLLKLBR\x0bG\
-    AJBFPCPIGMb\x06proto3\
+    SwordTrainingResumeGameScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bEMOGOHMDINB\x18\x0f\x20\x01(\x0b2\x0c.ALEFDNLLKLBR\
+    \x0bEMOGOHMDINBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

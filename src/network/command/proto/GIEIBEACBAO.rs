@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIEIBEACBAO {
     // message fields
-    // @@protoc_insertion_point(field:GIEIBEACBAO.GCCJDHKHMNK)
-    pub GCCJDHKHMNK: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:GIEIBEACBAO.FPBNIPMHANH)
-    pub FPBNIPMHANH: u32,
-    // @@protoc_insertion_point(field:GIEIBEACBAO.AAGIANCIEEG)
-    pub AAGIANCIEEG: u32,
-    // @@protoc_insertion_point(field:GIEIBEACBAO.ELPFOMLCOBM)
-    pub ELPFOMLCOBM: u32,
+    // @@protoc_insertion_point(field:GIEIBEACBAO.HMHICFIAFEI)
+    pub HMHICFIAFEI: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GIEIBEACBAO.LEOOBHKHLED)
+    pub LEOOBHKHLED: u32,
+    // @@protoc_insertion_point(field:GIEIBEACBAO.OMPLGMLNGHG)
+    pub OMPLGMLNGHG: u32,
+    // @@protoc_insertion_point(field:GIEIBEACBAO.OKNCFFLJAPF)
+    pub OKNCFFLJAPF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GIEIBEACBAO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GIEIBEACBAO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "GCCJDHKHMNK",
-            |m: &GIEIBEACBAO| { &m.GCCJDHKHMNK },
-            |m: &mut GIEIBEACBAO| { &mut m.GCCJDHKHMNK },
+            "HMHICFIAFEI",
+            |m: &GIEIBEACBAO| { &m.HMHICFIAFEI },
+            |m: &mut GIEIBEACBAO| { &mut m.HMHICFIAFEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPBNIPMHANH",
-            |m: &GIEIBEACBAO| { &m.FPBNIPMHANH },
-            |m: &mut GIEIBEACBAO| { &mut m.FPBNIPMHANH },
+            "LEOOBHKHLED",
+            |m: &GIEIBEACBAO| { &m.LEOOBHKHLED },
+            |m: &mut GIEIBEACBAO| { &mut m.LEOOBHKHLED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAGIANCIEEG",
-            |m: &GIEIBEACBAO| { &m.AAGIANCIEEG },
-            |m: &mut GIEIBEACBAO| { &mut m.AAGIANCIEEG },
+            "OMPLGMLNGHG",
+            |m: &GIEIBEACBAO| { &m.OMPLGMLNGHG },
+            |m: &mut GIEIBEACBAO| { &mut m.OMPLGMLNGHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELPFOMLCOBM",
-            |m: &GIEIBEACBAO| { &m.ELPFOMLCOBM },
-            |m: &mut GIEIBEACBAO| { &mut m.ELPFOMLCOBM },
+            "OKNCFFLJAPF",
+            |m: &GIEIBEACBAO| { &m.OKNCFFLJAPF },
+            |m: &mut GIEIBEACBAO| { &mut m.OKNCFFLJAPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIEIBEACBAO>(
             "GIEIBEACBAO",
@@ -106,16 +106,16 @@ impl ::protobuf::Message for GIEIBEACBAO {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.GCCJDHKHMNK.insert(key, value);
+                    self.HMHICFIAFEI.insert(key, value);
                 },
                 16 => {
-                    self.FPBNIPMHANH = is.read_uint32()?;
+                    self.LEOOBHKHLED = is.read_uint32()?;
                 },
                 24 => {
-                    self.AAGIANCIEEG = is.read_uint32()?;
+                    self.OMPLGMLNGHG = is.read_uint32()?;
                 },
                 32 => {
-                    self.ELPFOMLCOBM = is.read_uint32()?;
+                    self.OKNCFFLJAPF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,20 +129,20 @@ impl ::protobuf::Message for GIEIBEACBAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.GCCJDHKHMNK {
+        for (k, v) in &self.HMHICFIAFEI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.FPBNIPMHANH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FPBNIPMHANH);
+        if self.LEOOBHKHLED != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LEOOBHKHLED);
         }
-        if self.AAGIANCIEEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AAGIANCIEEG);
+        if self.OMPLGMLNGHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OMPLGMLNGHG);
         }
-        if self.ELPFOMLCOBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELPFOMLCOBM);
+        if self.OKNCFFLJAPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.OKNCFFLJAPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,7 +150,7 @@ impl ::protobuf::Message for GIEIBEACBAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.GCCJDHKHMNK {
+        for (k, v) in &self.HMHICFIAFEI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -159,14 +159,14 @@ impl ::protobuf::Message for GIEIBEACBAO {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.FPBNIPMHANH != 0 {
-            os.write_uint32(2, self.FPBNIPMHANH)?;
+        if self.LEOOBHKHLED != 0 {
+            os.write_uint32(2, self.LEOOBHKHLED)?;
         }
-        if self.AAGIANCIEEG != 0 {
-            os.write_uint32(3, self.AAGIANCIEEG)?;
+        if self.OMPLGMLNGHG != 0 {
+            os.write_uint32(3, self.OMPLGMLNGHG)?;
         }
-        if self.ELPFOMLCOBM != 0 {
-            os.write_uint32(4, self.ELPFOMLCOBM)?;
+        if self.OKNCFFLJAPF != 0 {
+            os.write_uint32(4, self.OKNCFFLJAPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::Message for GIEIBEACBAO {
     }
 
     fn clear(&mut self) {
-        self.GCCJDHKHMNK.clear();
-        self.FPBNIPMHANH = 0;
-        self.AAGIANCIEEG = 0;
-        self.ELPFOMLCOBM = 0;
+        self.HMHICFIAFEI.clear();
+        self.LEOOBHKHLED = 0;
+        self.OMPLGMLNGHG = 0;
+        self.OKNCFFLJAPF = 0;
         self.special_fields.clear();
     }
 
@@ -216,11 +216,11 @@ impl ::protobuf::reflect::ProtobufValue for GIEIBEACBAO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GIEIBEACBAO.proto\"\xf4\x01\n\x0bGIEIBEACBAO\x12?\n\x0bGCCJDHKHMNK\
-    \x18\x01\x20\x03(\x0b2\x1d.GIEIBEACBAO.GCCJDHKHMNKEntryR\x0bGCCJDHKHMNK\
-    \x12\x20\n\x0bFPBNIPMHANH\x18\x02\x20\x01(\rR\x0bFPBNIPMHANH\x12\x20\n\
-    \x0bAAGIANCIEEG\x18\x03\x20\x01(\rR\x0bAAGIANCIEEG\x12\x20\n\x0bELPFOMLC\
-    OBM\x18\x04\x20\x01(\rR\x0bELPFOMLCOBM\x1a>\n\x10GCCJDHKHMNKEntry\x12\
+    \n\x11GIEIBEACBAO.proto\"\xf4\x01\n\x0bGIEIBEACBAO\x12?\n\x0bHMHICFIAFEI\
+    \x18\x01\x20\x03(\x0b2\x1d.GIEIBEACBAO.HMHICFIAFEIEntryR\x0bHMHICFIAFEI\
+    \x12\x20\n\x0bLEOOBHKHLED\x18\x02\x20\x01(\rR\x0bLEOOBHKHLED\x12\x20\n\
+    \x0bOMPLGMLNGHG\x18\x03\x20\x01(\rR\x0bOMPLGMLNGHG\x12\x20\n\x0bOKNCFFLJ\
+    APF\x18\x04\x20\x01(\rR\x0bOKNCFFLJAPF\x1a>\n\x10HMHICFIAFEIEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

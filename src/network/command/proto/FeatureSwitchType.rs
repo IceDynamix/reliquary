@@ -187,6 +187,16 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_HIPPLEN_EFFECT = 80,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_REPLAY_PERFORMANCE)
     FEATURE_SWITCH_REPLAY_PERFORMANCE = 81,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GRID_FIGHT_REF)
+    FEATURE_SWITCH_GRID_FIGHT_REF = 82,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_RELIC_BOX)
+    FEATURE_SWITCH_RELIC_BOX = 83,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY)
+    FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY = 84,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT)
+    FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT = 85,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF)
+    FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF = 86,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -278,6 +288,11 @@ impl ::protobuf::Enum for FeatureSwitchType {
             79 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_HIPPLEN),
             80 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_HIPPLEN_EFFECT),
             81 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_REPLAY_PERFORMANCE),
+            82 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_REF),
+            83 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_BOX),
+            84 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY),
+            85 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT),
+            86 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF),
             _ => ::std::option::Option::None
         }
     }
@@ -364,6 +379,11 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_HIPPLEN" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_HIPPLEN),
             "FEATURE_SWITCH_HIPPLEN_EFFECT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_HIPPLEN_EFFECT),
             "FEATURE_SWITCH_REPLAY_PERFORMANCE" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_REPLAY_PERFORMANCE),
+            "FEATURE_SWITCH_GRID_FIGHT_REF" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_REF),
+            "FEATURE_SWITCH_RELIC_BOX" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_RELIC_BOX),
+            "FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY),
+            "FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT),
+            "FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF),
             _ => ::std::option::Option::None
         }
     }
@@ -449,6 +469,11 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_HIPPLEN,
         FeatureSwitchType::FEATURE_SWITCH_HIPPLEN_EFFECT,
         FeatureSwitchType::FEATURE_SWITCH_REPLAY_PERFORMANCE,
+        FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_REF,
+        FeatureSwitchType::FEATURE_SWITCH_RELIC_BOX,
+        FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY,
+        FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT,
+        FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF,
     ];
 }
 
@@ -540,6 +565,11 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_HIPPLEN => 77,
             FeatureSwitchType::FEATURE_SWITCH_HIPPLEN_EFFECT => 78,
             FeatureSwitchType::FEATURE_SWITCH_REPLAY_PERFORMANCE => 79,
+            FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_REF => 80,
+            FeatureSwitchType::FEATURE_SWITCH_RELIC_BOX => 81,
+            FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY => 82,
+            FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT => 83,
+            FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF => 84,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -558,7 +588,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xb8\x16\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\x82\x18\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -611,7 +641,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     EATURE_SWITCH_FATE_AVATAR_HANDBOOK\x10L\x12!\n\x1dFEATURE_SWITCH_ELF_RES\
     TAURANT\x10M\x12'\n#FEATURE_SWITCH_BATTLE_TIMEOUT_LEGAL\x10N\x12\x1a\n\
     \x16FEATURE_SWITCH_HIPPLEN\x10O\x12!\n\x1dFEATURE_SWITCH_HIPPLEN_EFFECT\
-    \x10P\x12%\n!FEATURE_SWITCH_REPLAY_PERFORMANCE\x10Qb\x06proto3\
+    \x10P\x12%\n!FEATURE_SWITCH_REPLAY_PERFORMANCE\x10Q\x12!\n\x1dFEATURE_SW\
+    ITCH_GRID_FIGHT_REF\x10R\x12\x1c\n\x18FEATURE_SWITCH_RELIC_BOX\x10S\x12-\
+    \n)FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY\x10T\x12)\n%FEATURE_SWITCH_\
+    GRID_FIGHT_BAN_AUGMENT\x10U\x12-\n)FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_\
+    BUFF\x10Vb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

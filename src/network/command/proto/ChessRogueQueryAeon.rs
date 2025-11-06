@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueQueryAeon {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueQueryAeon.HGELHGDEMGM)
+    pub HGELHGDEMGM: u32,
     // @@protoc_insertion_point(field:ChessRogueQueryAeon.aeon_id)
     pub aeon_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueQueryAeon.MAMHOJMFJOF)
-    pub MAMHOJMFJOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQueryAeon.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChessRogueQueryAeon {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGELHGDEMGM",
+            |m: &ChessRogueQueryAeon| { &m.HGELHGDEMGM },
+            |m: &mut ChessRogueQueryAeon| { &mut m.HGELHGDEMGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "aeon_id",
             |m: &ChessRogueQueryAeon| { &m.aeon_id },
             |m: &mut ChessRogueQueryAeon| { &mut m.aeon_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MAMHOJMFJOF",
-            |m: &ChessRogueQueryAeon| { &m.MAMHOJMFJOF },
-            |m: &mut ChessRogueQueryAeon| { &mut m.MAMHOJMFJOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQueryAeon>(
             "ChessRogueQueryAeon",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.aeon_id = is.read_uint32()?;
+                24 => {
+                    self.HGELHGDEMGM = is.read_uint32()?;
                 },
-                32 => {
-                    self.MAMHOJMFJOF = is.read_uint32()?;
+                120 => {
+                    self.aeon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.aeon_id);
+        if self.HGELHGDEMGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HGELHGDEMGM);
         }
-        if self.MAMHOJMFJOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MAMHOJMFJOF);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.aeon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.aeon_id != 0 {
-            os.write_uint32(7, self.aeon_id)?;
+        if self.HGELHGDEMGM != 0 {
+            os.write_uint32(3, self.HGELHGDEMGM)?;
         }
-        if self.MAMHOJMFJOF != 0 {
-            os.write_uint32(4, self.MAMHOJMFJOF)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(15, self.aeon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChessRogueQueryAeon {
     }
 
     fn clear(&mut self) {
+        self.HGELHGDEMGM = 0;
         self.aeon_id = 0;
-        self.MAMHOJMFJOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueQueryAeon {
         static instance: ChessRogueQueryAeon = ChessRogueQueryAeon {
+            HGELHGDEMGM: 0,
             aeon_id: 0,
-            MAMHOJMFJOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryAeon {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ChessRogueQueryAeon.proto\"P\n\x13ChessRogueQueryAeon\x12\x17\n\
-    \x07aeon_id\x18\x07\x20\x01(\rR\x06aeonId\x12\x20\n\x0bMAMHOJMFJOF\x18\
-    \x04\x20\x01(\rR\x0bMAMHOJMFJOFb\x06proto3\
+    \n\x19ChessRogueQueryAeon.proto\"P\n\x13ChessRogueQueryAeon\x12\x20\n\
+    \x0bHGELHGDEMGM\x18\x03\x20\x01(\rR\x0bHGELHGDEMGM\x12\x17\n\x07aeon_id\
+    \x18\x0f\x20\x01(\rR\x06aeonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

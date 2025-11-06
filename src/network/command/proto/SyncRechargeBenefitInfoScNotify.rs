@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRechargeBenefitInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRechargeBenefitInfoScNotify.AMEFPPFCFJI)
-    pub AMEFPPFCFJI: ::protobuf::MessageField<super::JMHOJKKGNIF::JMHOJKKGNIF>,
+    // @@protoc_insertion_point(field:SyncRechargeBenefitInfoScNotify.IKCAOHDNFIL)
+    pub IKCAOHDNFIL: ::protobuf::MessageField<super::JMHOJKKGNIF::JMHOJKKGNIF>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRechargeBenefitInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRechargeBenefitInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMHOJKKGNIF::JMHOJKKGNIF>(
-            "AMEFPPFCFJI",
-            |m: &SyncRechargeBenefitInfoScNotify| { &m.AMEFPPFCFJI },
-            |m: &mut SyncRechargeBenefitInfoScNotify| { &mut m.AMEFPPFCFJI },
+            "IKCAOHDNFIL",
+            |m: &SyncRechargeBenefitInfoScNotify| { &m.IKCAOHDNFIL },
+            |m: &mut SyncRechargeBenefitInfoScNotify| { &mut m.IKCAOHDNFIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRechargeBenefitInfoScNotify>(
             "SyncRechargeBenefitInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRechargeBenefitInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMEFPPFCFJI)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKCAOHDNFIL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRechargeBenefitInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AMEFPPFCFJI.as_ref() {
+        if let Some(v) = self.IKCAOHDNFIL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRechargeBenefitInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AMEFPPFCFJI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.IKCAOHDNFIL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRechargeBenefitInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.AMEFPPFCFJI.clear();
+        self.IKCAOHDNFIL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRechargeBenefitInfoScNotify {
         static instance: SyncRechargeBenefitInfoScNotify = SyncRechargeBenefitInfoScNotify {
-            AMEFPPFCFJI: ::protobuf::MessageField::none(),
+            IKCAOHDNFIL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRechargeBenefitInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%SyncRechargeBenefitInfoScNotify.proto\x1a\x11JMHOJKKGNIF.proto\"Q\n\
-    \x1fSyncRechargeBenefitInfoScNotify\x12.\n\x0bAMEFPPFCFJI\x18\x07\x20\
-    \x01(\x0b2\x0c.JMHOJKKGNIFR\x0bAMEFPPFCFJIb\x06proto3\
+    \x1fSyncRechargeBenefitInfoScNotify\x12.\n\x0bIKCAOHDNFIL\x18\x06\x20\
+    \x01(\x0b2\x0c.JMHOJKKGNIFR\x0bIKCAOHDNFILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

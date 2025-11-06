@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.is_explore_win = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_explore_win != false {
-            os.write_bool(12, self.is_explore_win)?;
+            os.write_bool(8, self.is_explore_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueExploreWinScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SyncRogueExploreWinScNotify.proto\"C\n\x1bSyncRogueExploreWinScNotify\
-    \x12$\n\x0eis_explore_win\x18\x0c\x20\x01(\x08R\x0cisExploreWinb\x06prot\
+    \x12$\n\x0eis_explore_win\x18\x08\x20\x01(\x08R\x0cisExploreWinb\x06prot\
     o3\
 ";
 

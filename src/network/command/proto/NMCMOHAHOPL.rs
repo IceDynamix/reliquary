@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMCMOHAHOPL {
     // message fields
-    // @@protoc_insertion_point(field:NMCMOHAHOPL.PCCDMDFNJPD)
-    pub PCCDMDFNJPD: ::std::vec::Vec<super::HANHNLNEICM::HANHNLNEICM>,
-    // @@protoc_insertion_point(field:NMCMOHAHOPL.HKPBEFFLFEO)
-    pub HKPBEFFLFEO: u32,
-    // @@protoc_insertion_point(field:NMCMOHAHOPL.DFNKMIJEBLD)
-    pub DFNKMIJEBLD: u32,
+    // @@protoc_insertion_point(field:NMCMOHAHOPL.HIDCFNBPGDC)
+    pub HIDCFNBPGDC: ::std::vec::Vec<super::BattleAvatarServantInfo::BattleAvatarServantInfo>,
+    // @@protoc_insertion_point(field:NMCMOHAHOPL.DDGCLLJABKL)
+    pub DDGCLLJABKL: u32,
+    // @@protoc_insertion_point(field:NMCMOHAHOPL.OHEDOCCHCEE)
+    pub OHEDOCCHCEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NMCMOHAHOPL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl NMCMOHAHOPL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PCCDMDFNJPD",
-            |m: &NMCMOHAHOPL| { &m.PCCDMDFNJPD },
-            |m: &mut NMCMOHAHOPL| { &mut m.PCCDMDFNJPD },
+            "HIDCFNBPGDC",
+            |m: &NMCMOHAHOPL| { &m.HIDCFNBPGDC },
+            |m: &mut NMCMOHAHOPL| { &mut m.HIDCFNBPGDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKPBEFFLFEO",
-            |m: &NMCMOHAHOPL| { &m.HKPBEFFLFEO },
-            |m: &mut NMCMOHAHOPL| { &mut m.HKPBEFFLFEO },
+            "DDGCLLJABKL",
+            |m: &NMCMOHAHOPL| { &m.DDGCLLJABKL },
+            |m: &mut NMCMOHAHOPL| { &mut m.DDGCLLJABKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DFNKMIJEBLD",
-            |m: &NMCMOHAHOPL| { &m.DFNKMIJEBLD },
-            |m: &mut NMCMOHAHOPL| { &mut m.DFNKMIJEBLD },
+            "OHEDOCCHCEE",
+            |m: &NMCMOHAHOPL| { &m.OHEDOCCHCEE },
+            |m: &mut NMCMOHAHOPL| { &mut m.OHEDOCCHCEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMCMOHAHOPL>(
             "NMCMOHAHOPL",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for NMCMOHAHOPL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.PCCDMDFNJPD.push(is.read_message()?);
+                    self.HIDCFNBPGDC.push(is.read_message()?);
                 },
                 16 => {
-                    self.HKPBEFFLFEO = is.read_uint32()?;
+                    self.DDGCLLJABKL = is.read_uint32()?;
                 },
                 24 => {
-                    self.DFNKMIJEBLD = is.read_uint32()?;
+                    self.OHEDOCCHCEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for NMCMOHAHOPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PCCDMDFNJPD {
+        for value in &self.HIDCFNBPGDC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HKPBEFFLFEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HKPBEFFLFEO);
+        if self.DDGCLLJABKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DDGCLLJABKL);
         }
-        if self.DFNKMIJEBLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DFNKMIJEBLD);
+        if self.OHEDOCCHCEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OHEDOCCHCEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for NMCMOHAHOPL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PCCDMDFNJPD {
+        for v in &self.HIDCFNBPGDC {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.HKPBEFFLFEO != 0 {
-            os.write_uint32(2, self.HKPBEFFLFEO)?;
+        if self.DDGCLLJABKL != 0 {
+            os.write_uint32(2, self.DDGCLLJABKL)?;
         }
-        if self.DFNKMIJEBLD != 0 {
-            os.write_uint32(3, self.DFNKMIJEBLD)?;
+        if self.OHEDOCCHCEE != 0 {
+            os.write_uint32(3, self.OHEDOCCHCEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for NMCMOHAHOPL {
     }
 
     fn clear(&mut self) {
-        self.PCCDMDFNJPD.clear();
-        self.HKPBEFFLFEO = 0;
-        self.DFNKMIJEBLD = 0;
+        self.HIDCFNBPGDC.clear();
+        self.DDGCLLJABKL = 0;
+        self.OHEDOCCHCEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMCMOHAHOPL {
         static instance: NMCMOHAHOPL = NMCMOHAHOPL {
-            PCCDMDFNJPD: ::std::vec::Vec::new(),
-            HKPBEFFLFEO: 0,
-            DFNKMIJEBLD: 0,
+            HIDCFNBPGDC: ::std::vec::Vec::new(),
+            DDGCLLJABKL: 0,
+            OHEDOCCHCEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for NMCMOHAHOPL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMCMOHAHOPL.proto\x1a\x11HANHNLNEICM.proto\"\x81\x01\n\x0bNMCMOHAH\
-    OPL\x12.\n\x0bPCCDMDFNJPD\x18\x01\x20\x03(\x0b2\x0c.HANHNLNEICMR\x0bPCCD\
-    MDFNJPD\x12\x20\n\x0bHKPBEFFLFEO\x18\x02\x20\x01(\rR\x0bHKPBEFFLFEO\x12\
-    \x20\n\x0bDFNKMIJEBLD\x18\x03\x20\x01(\rR\x0bDFNKMIJEBLDb\x06proto3\
+    \n\x11NMCMOHAHOPL.proto\x1a\x1dBattleAvatarServantInfo.proto\"\x8d\x01\n\
+    \x0bNMCMOHAHOPL\x12:\n\x0bHIDCFNBPGDC\x18\x01\x20\x03(\x0b2\x18.BattleAv\
+    atarServantInfoR\x0bHIDCFNBPGDC\x12\x20\n\x0bDDGCLLJABKL\x18\x02\x20\x01\
+    (\rR\x0bDDGCLLJABKL\x12\x20\n\x0bOHEDOCCHCEE\x18\x03\x20\x01(\rR\x0bOHED\
+    OCCHCEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HANHNLNEICM::file_descriptor().clone());
+            deps.push(super::BattleAvatarServantInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NMCMOHAHOPL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

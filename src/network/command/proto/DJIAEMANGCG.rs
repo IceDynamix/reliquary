@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DJIAEMANGCG {
     // message fields
-    // @@protoc_insertion_point(field:DJIAEMANGCG.transfer_item_list)
-    pub transfer_item_list: ::std::vec::Vec<super::OHDHPCLIJNH::OHDHPCLIJNH>,
     // @@protoc_insertion_point(field:DJIAEMANGCG.item_list)
     pub item_list: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
+    // @@protoc_insertion_point(field:DJIAEMANGCG.transfer_item_list)
+    pub transfer_item_list: ::std::vec::Vec<super::OHDHPCLIJNH::OHDHPCLIJNH>,
     // special fields
     // @@protoc_insertion_point(special_field:DJIAEMANGCG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DJIAEMANGCG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "transfer_item_list",
-            |m: &DJIAEMANGCG| { &m.transfer_item_list },
-            |m: &mut DJIAEMANGCG| { &mut m.transfer_item_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "item_list",
             |m: &DJIAEMANGCG| { &m.item_list },
             |m: &mut DJIAEMANGCG| { &mut m.item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "transfer_item_list",
+            |m: &DJIAEMANGCG| { &m.transfer_item_list },
+            |m: &mut DJIAEMANGCG| { &mut m.transfer_item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DJIAEMANGCG>(
             "DJIAEMANGCG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DJIAEMANGCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.transfer_item_list.push(is.read_message()?);
-                },
-                106 => {
+                26 => {
                     self.item_list.push(is.read_message()?);
+                },
+                42 => {
+                    self.transfer_item_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DJIAEMANGCG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.transfer_item_list {
+        for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.item_list {
+        for value in &self.transfer_item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for DJIAEMANGCG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.transfer_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        for v in &self.transfer_item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for DJIAEMANGCG {
     }
 
     fn clear(&mut self) {
-        self.transfer_item_list.clear();
         self.item_list.clear();
+        self.transfer_item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DJIAEMANGCG {
         static instance: DJIAEMANGCG = DJIAEMANGCG {
-            transfer_item_list: ::std::vec::Vec::new(),
             item_list: ::std::vec::Vec::new(),
+            transfer_item_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for DJIAEMANGCG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJIAEMANGCG.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11OHDHPCLIJNH.prot\
-    o\"t\n\x0bDJIAEMANGCG\x12:\n\x12transfer_item_list\x18\x0f\x20\x03(\x0b2\
-    \x0c.OHDHPCLIJNHR\x10transferItemList\x12)\n\titem_list\x18\r\x20\x03(\
-    \x0b2\x0c.CEODDCEIDDLR\x08itemListb\x06proto3\
+    o\"t\n\x0bDJIAEMANGCG\x12)\n\titem_list\x18\x03\x20\x03(\x0b2\x0c.CEODDC\
+    EIDDLR\x08itemList\x12:\n\x12transfer_item_list\x18\x05\x20\x03(\x0b2\
+    \x0c.OHDHPCLIJNHR\x10transferItemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

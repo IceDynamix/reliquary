@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetArchiveRepositoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.LNEJMJBFLLH)
-    pub LNEJMJBFLLH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.HKDOCLOPKOH)
-    pub HKDOCLOPKOH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.IKLPOEDNEDL)
+    pub IKLPOEDNEDL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournGetArchiveRepositoryScRsp.JMPPFDJIEKJ)
+    pub JMPPFDJIEKJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetArchiveRepositoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueTournGetArchiveRepositoryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LNEJMJBFLLH",
-            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.LNEJMJBFLLH },
-            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.LNEJMJBFLLH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HKDOCLOPKOH",
-            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.HKDOCLOPKOH },
-            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.HKDOCLOPKOH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetArchiveRepositoryScRsp| { &m.retcode },
             |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IKLPOEDNEDL",
+            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.IKLPOEDNEDL },
+            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.IKLPOEDNEDL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JMPPFDJIEKJ",
+            |m: &RogueTournGetArchiveRepositoryScRsp| { &m.JMPPFDJIEKJ },
+            |m: &mut RogueTournGetArchiveRepositoryScRsp| { &mut m.JMPPFDJIEKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetArchiveRepositoryScRsp>(
             "RogueTournGetArchiveRepositoryScRsp",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LNEJMJBFLLH)?;
-                },
-                32 => {
-                    self.LNEJMJBFLLH.push(is.read_uint32()?);
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HKDOCLOPKOH)?;
-                },
-                80 => {
-                    self.HKDOCLOPKOH.push(is.read_uint32()?);
-                },
-                16 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IKLPOEDNEDL)?;
+                },
+                72 => {
+                    self.IKLPOEDNEDL.push(is.read_uint32()?);
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JMPPFDJIEKJ)?;
+                },
+                112 => {
+                    self.JMPPFDJIEKJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LNEJMJBFLLH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HKDOCLOPKOH);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IKLPOEDNEDL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.JMPPFDJIEKJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.LNEJMJBFLLH)?;
-        os.write_repeated_packed_uint32(10, &self.HKDOCLOPKOH)?;
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(9, &self.IKLPOEDNEDL)?;
+        os.write_repeated_packed_uint32(14, &self.JMPPFDJIEKJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,17 +146,17 @@ impl ::protobuf::Message for RogueTournGetArchiveRepositoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.LNEJMJBFLLH.clear();
-        self.HKDOCLOPKOH.clear();
         self.retcode = 0;
+        self.IKLPOEDNEDL.clear();
+        self.JMPPFDJIEKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetArchiveRepositoryScRsp {
         static instance: RogueTournGetArchiveRepositoryScRsp = RogueTournGetArchiveRepositoryScRsp {
-            LNEJMJBFLLH: ::std::vec::Vec::new(),
-            HKDOCLOPKOH: ::std::vec::Vec::new(),
             retcode: 0,
+            IKLPOEDNEDL: ::std::vec::Vec::new(),
+            JMPPFDJIEKJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetArchiveRepositoryScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)RogueTournGetArchiveRepositoryScRsp.proto\"\x83\x01\n#RogueTournGetAr\
-    chiveRepositoryScRsp\x12\x20\n\x0bLNEJMJBFLLH\x18\x04\x20\x03(\rR\x0bLNE\
-    JMJBFLLH\x12\x20\n\x0bHKDOCLOPKOH\x18\n\x20\x03(\rR\x0bHKDOCLOPKOH\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    chiveRepositoryScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bIKLPOEDNEDL\x18\t\x20\x03(\rR\x0bIKLPOEDNEDL\x12\x20\n\x0b\
+    JMPPFDJIEKJ\x18\x0e\x20\x03(\rR\x0bJMPPFDJIEKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

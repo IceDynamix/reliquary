@@ -28,28 +28,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueCell {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueCell.room_id)
-    pub room_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueCell.pos_x)
-    pub pos_x: u32,
-    // @@protoc_insertion_point(field:ChessRogueCell.is_unlocked)
-    pub is_unlocked: bool,
-    // @@protoc_insertion_point(field:ChessRogueCell.unlock)
-    pub unlock: bool,
-    // @@protoc_insertion_point(field:ChessRogueCell.pos_y)
-    pub pos_y: u32,
-    // @@protoc_insertion_point(field:ChessRogueCell.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::CellAdvanceInfo::CellAdvanceInfo>,
-    // @@protoc_insertion_point(field:ChessRogueCell.mark_type)
-    pub mark_type: u32,
     // @@protoc_insertion_point(field:ChessRogueCell.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ChessRogueCell.HFHCFABIIFC)
+    pub HFHCFABIIFC: bool,
+    // @@protoc_insertion_point(field:ChessRogueCell.JDBJPGIMNEA)
+    pub JDBJPGIMNEA: u32,
+    // @@protoc_insertion_point(field:ChessRogueCell.MFEMFBKGDAO)
+    pub MFEMFBKGDAO: u32,
+    // @@protoc_insertion_point(field:ChessRogueCell.room_id)
+    pub room_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueCell.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::PIHKDOKDIKF::PIHKDOKDIKF>,
     // @@protoc_insertion_point(field:ChessRogueCell.cell_status)
     pub cell_status: ::protobuf::EnumOrUnknown<super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus>,
     // @@protoc_insertion_point(field:ChessRogueCell.block_type)
     pub block_type: u32,
+    // @@protoc_insertion_point(field:ChessRogueCell.GODKMNKOKNC)
+    pub GODKMNKOKNC: u32,
     // @@protoc_insertion_point(field:ChessRogueCell.special_type)
     pub special_type: ::protobuf::EnumOrUnknown<super::ChessRogueCellSpecialType::ChessRogueCellSpecialType>,
+    // @@protoc_insertion_point(field:ChessRogueCell.PCAIMLBLECB)
+    pub PCAIMLBLECB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueCell.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,44 +70,34 @@ impl ChessRogueCell {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &ChessRogueCell| { &m.id },
+            |m: &mut ChessRogueCell| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HFHCFABIIFC",
+            |m: &ChessRogueCell| { &m.HFHCFABIIFC },
+            |m: &mut ChessRogueCell| { &mut m.HFHCFABIIFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDBJPGIMNEA",
+            |m: &ChessRogueCell| { &m.JDBJPGIMNEA },
+            |m: &mut ChessRogueCell| { &mut m.JDBJPGIMNEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFEMFBKGDAO",
+            |m: &ChessRogueCell| { &m.MFEMFBKGDAO },
+            |m: &mut ChessRogueCell| { &mut m.MFEMFBKGDAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &ChessRogueCell| { &m.room_id },
             |m: &mut ChessRogueCell| { &mut m.room_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_x",
-            |m: &ChessRogueCell| { &m.pos_x },
-            |m: &mut ChessRogueCell| { &mut m.pos_x },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlocked",
-            |m: &ChessRogueCell| { &m.is_unlocked },
-            |m: &mut ChessRogueCell| { &mut m.is_unlocked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock",
-            |m: &ChessRogueCell| { &m.unlock },
-            |m: &mut ChessRogueCell| { &mut m.unlock },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_y",
-            |m: &ChessRogueCell| { &m.pos_y },
-            |m: &mut ChessRogueCell| { &mut m.pos_y },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CellAdvanceInfo::CellAdvanceInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PIHKDOKDIKF::PIHKDOKDIKF>(
             "stage_info",
             |m: &ChessRogueCell| { &m.stage_info },
             |m: &mut ChessRogueCell| { &mut m.stage_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "mark_type",
-            |m: &ChessRogueCell| { &m.mark_type },
-            |m: &mut ChessRogueCell| { &mut m.mark_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &ChessRogueCell| { &m.id },
-            |m: &mut ChessRogueCell| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cell_status",
@@ -120,9 +110,19 @@ impl ChessRogueCell {
             |m: &mut ChessRogueCell| { &mut m.block_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GODKMNKOKNC",
+            |m: &ChessRogueCell| { &m.GODKMNKOKNC },
+            |m: &mut ChessRogueCell| { &mut m.GODKMNKOKNC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "special_type",
             |m: &ChessRogueCell| { &m.special_type },
             |m: &mut ChessRogueCell| { &mut m.special_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCAIMLBLECB",
+            |m: &ChessRogueCell| { &m.PCAIMLBLECB },
+            |m: &mut ChessRogueCell| { &mut m.PCAIMLBLECB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueCell>(
             "ChessRogueCell",
@@ -142,38 +142,38 @@ impl ::protobuf::Message for ChessRogueCell {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.room_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.pos_x = is.read_uint32()?;
-                },
-                48 => {
-                    self.is_unlocked = is.read_bool()?;
-                },
-                104 => {
-                    self.unlock = is.read_bool()?;
-                },
-                56 => {
-                    self.pos_y = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
-                112 => {
-                    self.mark_type = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.id = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
+                    self.HFHCFABIIFC = is.read_bool()?;
+                },
+                24 => {
+                    self.JDBJPGIMNEA = is.read_uint32()?;
+                },
+                40 => {
+                    self.MFEMFBKGDAO = is.read_uint32()?;
+                },
+                48 => {
+                    self.room_id = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                80 => {
                     self.cell_status = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                88 => {
                     self.block_type = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
+                    self.GODKMNKOKNC = is.read_uint32()?;
+                },
+                112 => {
                     self.special_type = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.PCAIMLBLECB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -187,39 +187,39 @@ impl ::protobuf::Message for ChessRogueCell {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
+        }
+        if self.HFHCFABIIFC != false {
+            my_size += 1 + 1;
+        }
+        if self.JDBJPGIMNEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JDBJPGIMNEA);
+        }
+        if self.MFEMFBKGDAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MFEMFBKGDAO);
+        }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.room_id);
-        }
-        if self.pos_x != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.pos_x);
-        }
-        if self.is_unlocked != false {
-            my_size += 1 + 1;
-        }
-        if self.unlock != false {
-            my_size += 1 + 1;
-        }
-        if self.pos_y != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.pos_y);
+            my_size += ::protobuf::rt::uint32_size(6, self.room_id);
         }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.mark_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.mark_type);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
-        }
         if self.cell_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
-            my_size += ::protobuf::rt::int32_size(11, self.cell_status.value());
+            my_size += ::protobuf::rt::int32_size(10, self.cell_status.value());
         }
         if self.block_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.block_type);
+            my_size += ::protobuf::rt::uint32_size(11, self.block_type);
+        }
+        if self.GODKMNKOKNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GODKMNKOKNC);
         }
         if self.special_type != ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::CHESS_ROGUE_CELL_SPECIAL_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.special_type.value());
+            my_size += ::protobuf::rt::int32_size(14, self.special_type.value());
+        }
+        if self.PCAIMLBLECB != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -227,38 +227,38 @@ impl ::protobuf::Message for ChessRogueCell {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.id != 0 {
+            os.write_uint32(1, self.id)?;
+        }
+        if self.HFHCFABIIFC != false {
+            os.write_bool(2, self.HFHCFABIIFC)?;
+        }
+        if self.JDBJPGIMNEA != 0 {
+            os.write_uint32(3, self.JDBJPGIMNEA)?;
+        }
+        if self.MFEMFBKGDAO != 0 {
+            os.write_uint32(5, self.MFEMFBKGDAO)?;
+        }
         if self.room_id != 0 {
-            os.write_uint32(2, self.room_id)?;
-        }
-        if self.pos_x != 0 {
-            os.write_uint32(8, self.pos_x)?;
-        }
-        if self.is_unlocked != false {
-            os.write_bool(6, self.is_unlocked)?;
-        }
-        if self.unlock != false {
-            os.write_bool(13, self.unlock)?;
-        }
-        if self.pos_y != 0 {
-            os.write_uint32(7, self.pos_y)?;
+            os.write_uint32(6, self.room_id)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.mark_type != 0 {
-            os.write_uint32(14, self.mark_type)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.cell_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.cell_status))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.cell_status))?;
         }
         if self.block_type != 0 {
-            os.write_uint32(1, self.block_type)?;
+            os.write_uint32(11, self.block_type)?;
+        }
+        if self.GODKMNKOKNC != 0 {
+            os.write_uint32(12, self.GODKMNKOKNC)?;
         }
         if self.special_type != ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::CHESS_ROGUE_CELL_SPECIAL_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.special_type))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.special_type))?;
+        }
+        if self.PCAIMLBLECB != false {
+            os.write_bool(15, self.PCAIMLBLECB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -277,33 +277,33 @@ impl ::protobuf::Message for ChessRogueCell {
     }
 
     fn clear(&mut self) {
-        self.room_id = 0;
-        self.pos_x = 0;
-        self.is_unlocked = false;
-        self.unlock = false;
-        self.pos_y = 0;
-        self.stage_info.clear();
-        self.mark_type = 0;
         self.id = 0;
+        self.HFHCFABIIFC = false;
+        self.JDBJPGIMNEA = 0;
+        self.MFEMFBKGDAO = 0;
+        self.room_id = 0;
+        self.stage_info.clear();
         self.cell_status = ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE);
         self.block_type = 0;
+        self.GODKMNKOKNC = 0;
         self.special_type = ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::CHESS_ROGUE_CELL_SPECIAL_TYPE_NONE);
+        self.PCAIMLBLECB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueCell {
         static instance: ChessRogueCell = ChessRogueCell {
-            room_id: 0,
-            pos_x: 0,
-            is_unlocked: false,
-            unlock: false,
-            pos_y: 0,
-            stage_info: ::protobuf::MessageField::none(),
-            mark_type: 0,
             id: 0,
+            HFHCFABIIFC: false,
+            JDBJPGIMNEA: 0,
+            MFEMFBKGDAO: 0,
+            room_id: 0,
+            stage_info: ::protobuf::MessageField::none(),
             cell_status: ::protobuf::EnumOrUnknown::from_i32(0),
             block_type: 0,
+            GODKMNKOKNC: 0,
             special_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            PCAIMLBLECB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -328,18 +328,19 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueCell {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14ChessRogueCell.proto\x1a\x15CellAdvanceInfo.proto\x1a\x1fChessRogu\
-    eBoardCellStatus.proto\x1a\x1fChessRogueCellSpecialType.proto\"\x85\x03\
-    \n\x0eChessRogueCell\x12\x17\n\x07room_id\x18\x02\x20\x01(\rR\x06roomId\
-    \x12\x13\n\x05pos_x\x18\x08\x20\x01(\rR\x04posX\x12\x1f\n\x0bis_unlocked\
-    \x18\x06\x20\x01(\x08R\nisUnlocked\x12\x16\n\x06unlock\x18\r\x20\x01(\
-    \x08R\x06unlock\x12\x13\n\x05pos_y\x18\x07\x20\x01(\rR\x04posY\x12/\n\ns\
-    tage_info\x18\n\x20\x01(\x0b2\x10.CellAdvanceInfoR\tstageInfo\x12\x1b\n\
-    \tmark_type\x18\x0e\x20\x01(\rR\x08markType\x12\x0e\n\x02id\x18\x05\x20\
-    \x01(\rR\x02id\x12;\n\x0bcell_status\x18\x0b\x20\x01(\x0e2\x1a.ChessRogu\
-    eBoardCellStatusR\ncellStatus\x12\x1d\n\nblock_type\x18\x01\x20\x01(\rR\
-    \tblockType\x12=\n\x0cspecial_type\x18\x04\x20\x01(\x0e2\x1a.ChessRogueC\
-    ellSpecialTypeR\x0bspecialTypeb\x06proto3\
+    \n\x14ChessRogueCell.proto\x1a\x1fChessRogueBoardCellStatus.proto\x1a\
+    \x1fChessRogueCellSpecialType.proto\x1a\x11PIHKDOKDIKF.proto\"\xab\x03\n\
+    \x0eChessRogueCell\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\x12\x20\n\
+    \x0bHFHCFABIIFC\x18\x02\x20\x01(\x08R\x0bHFHCFABIIFC\x12\x20\n\x0bJDBJPG\
+    IMNEA\x18\x03\x20\x01(\rR\x0bJDBJPGIMNEA\x12\x20\n\x0bMFEMFBKGDAO\x18\
+    \x05\x20\x01(\rR\x0bMFEMFBKGDAO\x12\x17\n\x07room_id\x18\x06\x20\x01(\rR\
+    \x06roomId\x12+\n\nstage_info\x18\x07\x20\x01(\x0b2\x0c.PIHKDOKDIKFR\tst\
+    ageInfo\x12;\n\x0bcell_status\x18\n\x20\x01(\x0e2\x1a.ChessRogueBoardCel\
+    lStatusR\ncellStatus\x12\x1d\n\nblock_type\x18\x0b\x20\x01(\rR\tblockTyp\
+    e\x12\x20\n\x0bGODKMNKOKNC\x18\x0c\x20\x01(\rR\x0bGODKMNKOKNC\x12=\n\x0c\
+    special_type\x18\x0e\x20\x01(\x0e2\x1a.ChessRogueCellSpecialTypeR\x0bspe\
+    cialType\x12\x20\n\x0bPCAIMLBLECB\x18\x0f\x20\x01(\x08R\x0bPCAIMLBLECBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -357,9 +358,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::CellAdvanceInfo::file_descriptor().clone());
             deps.push(super::ChessRogueBoardCellStatus::file_descriptor().clone());
             deps.push(super::ChessRogueCellSpecialType::file_descriptor().clone());
+            deps.push(super::PIHKDOKDIKF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueCell::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

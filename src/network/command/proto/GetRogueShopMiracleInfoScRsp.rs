@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopMiracleInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.IHJHCCFMIFD)
-    pub IHJHCCFMIFD: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.AEFHKANBFNC)
-    pub AEFHKANBFNC: i32,
+    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.COHACKHGBNH)
+    pub COHACKHGBNH: i32,
+    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::RogueMiracleShopInfo::RogueMiracleShopInfo>,
+    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.CNKCMJPPJIG)
+    pub CNKCMJPPJIG: i32,
+    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.OPGLCPCMNDE)
+    pub OPGLCPCMNDE: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.game_miracle_info)
-    pub game_miracle_info: ::protobuf::MessageField<super::NNJOLKJLPJG::NNJOLKJLPJG>,
-    // @@protoc_insertion_point(field:GetRogueShopMiracleInfoScRsp.EFOJOCFGIDJ)
-    pub EFOJOCFGIDJ: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopMiracleInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl GetRogueShopMiracleInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "IHJHCCFMIFD",
-            |m: &GetRogueShopMiracleInfoScRsp| { &m.IHJHCCFMIFD },
-            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.IHJHCCFMIFD },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "COHACKHGBNH",
+            |m: &GetRogueShopMiracleInfoScRsp| { &m.COHACKHGBNH },
+            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.COHACKHGBNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMiracleShopInfo::RogueMiracleShopInfo>(
+            "miracle_info",
+            |m: &GetRogueShopMiracleInfoScRsp| { &m.miracle_info },
+            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.miracle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEFHKANBFNC",
-            |m: &GetRogueShopMiracleInfoScRsp| { &m.AEFHKANBFNC },
-            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.AEFHKANBFNC },
+            "CNKCMJPPJIG",
+            |m: &GetRogueShopMiracleInfoScRsp| { &m.CNKCMJPPJIG },
+            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.CNKCMJPPJIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "OPGLCPCMNDE",
+            |m: &GetRogueShopMiracleInfoScRsp| { &m.OPGLCPCMNDE },
+            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.OPGLCPCMNDE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRogueShopMiracleInfoScRsp| { &m.retcode },
             |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNJOLKJLPJG::NNJOLKJLPJG>(
-            "game_miracle_info",
-            |m: &GetRogueShopMiracleInfoScRsp| { &m.game_miracle_info },
-            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.game_miracle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFOJOCFGIDJ",
-            |m: &GetRogueShopMiracleInfoScRsp| { &m.EFOJOCFGIDJ },
-            |m: &mut GetRogueShopMiracleInfoScRsp| { &mut m.EFOJOCFGIDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopMiracleInfoScRsp>(
             "GetRogueShopMiracleInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHJHCCFMIFD)?;
+                24 => {
+                    self.COHACKHGBNH = is.read_int32()?;
                 },
-                16 => {
-                    self.AEFHKANBFNC = is.read_int32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
-                56 => {
+                88 => {
+                    self.CNKCMJPPJIG = is.read_int32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPGLCPCMNDE)?;
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
-                },
-                64 => {
-                    self.EFOJOCFGIDJ = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IHJHCCFMIFD.as_ref() {
+        if self.COHACKHGBNH != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.COHACKHGBNH);
+        }
+        if let Some(v) = self.miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.AEFHKANBFNC != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.AEFHKANBFNC);
+        if self.CNKCMJPPJIG != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.CNKCMJPPJIG);
+        }
+        if let Some(v) = self.OPGLCPCMNDE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        if let Some(v) = self.game_miracle_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.EFOJOCFGIDJ != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.EFOJOCFGIDJ);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IHJHCCFMIFD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.COHACKHGBNH != 0 {
+            os.write_int32(3, self.COHACKHGBNH)?;
         }
-        if self.AEFHKANBFNC != 0 {
-            os.write_int32(2, self.AEFHKANBFNC)?;
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.CNKCMJPPJIG != 0 {
+            os.write_int32(11, self.CNKCMJPPJIG)?;
+        }
+        if let Some(v) = self.OPGLCPCMNDE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.EFOJOCFGIDJ != 0 {
-            os.write_int32(8, self.EFOJOCFGIDJ)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GetRogueShopMiracleInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.IHJHCCFMIFD.clear();
-        self.AEFHKANBFNC = 0;
+        self.COHACKHGBNH = 0;
+        self.miracle_info.clear();
+        self.CNKCMJPPJIG = 0;
+        self.OPGLCPCMNDE.clear();
         self.retcode = 0;
-        self.game_miracle_info.clear();
-        self.EFOJOCFGIDJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopMiracleInfoScRsp {
         static instance: GetRogueShopMiracleInfoScRsp = GetRogueShopMiracleInfoScRsp {
-            IHJHCCFMIFD: ::protobuf::MessageField::none(),
-            AEFHKANBFNC: 0,
+            COHACKHGBNH: 0,
+            miracle_info: ::protobuf::MessageField::none(),
+            CNKCMJPPJIG: 0,
+            OPGLCPCMNDE: ::protobuf::MessageField::none(),
             retcode: 0,
-            game_miracle_info: ::protobuf::MessageField::none(),
-            EFOJOCFGIDJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopMiracleInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueShopMiracleInfoScRsp.proto\x1a\x12ItemCostData.proto\x1a\x11\
-    NNJOLKJLPJG.proto\"\xe7\x01\n\x1cGetRogueShopMiracleInfoScRsp\x12/\n\x0b\
-    IHJHCCFMIFD\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x0bIHJHCCFMIFD\x12\x20\
-    \n\x0bAEFHKANBFNC\x18\x02\x20\x01(\x05R\x0bAEFHKANBFNC\x12\x18\n\x07retc\
-    ode\x18\x07\x20\x01(\rR\x07retcode\x128\n\x11game_miracle_info\x18\x05\
-    \x20\x01(\x0b2\x0c.NNJOLKJLPJGR\x0fgameMiracleInfo\x12\x20\n\x0bEFOJOCFG\
-    IDJ\x18\x08\x20\x01(\x05R\x0bEFOJOCFGIDJb\x06proto3\
+    \n\"GetRogueShopMiracleInfoScRsp.proto\x1a\x12ItemCostData.proto\x1a\x1a\
+    RogueMiracleShopInfo.proto\"\xe7\x01\n\x1cGetRogueShopMiracleInfoScRsp\
+    \x12\x20\n\x0bCOHACKHGBNH\x18\x03\x20\x01(\x05R\x0bCOHACKHGBNH\x128\n\
+    \x0cmiracle_info\x18\x07\x20\x01(\x0b2\x15.RogueMiracleShopInfoR\x0bmira\
+    cleInfo\x12\x20\n\x0bCNKCMJPPJIG\x18\x0b\x20\x01(\x05R\x0bCNKCMJPPJIG\
+    \x12/\n\x0bOPGLCPCMNDE\x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x0bOPGLCPCM\
+    NDE\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,7 +246,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemCostData::file_descriptor().clone());
-            deps.push(super::NNJOLKJLPJG::file_descriptor().clone());
+            deps.push(super::RogueMiracleShopInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueShopMiracleInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

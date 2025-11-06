@@ -40,70 +40,72 @@ pub struct BattleStatistics {
     pub total_delay_cumulate: f64,
     // @@protoc_insertion_point(field:BattleStatistics.cost_time)
     pub cost_time: f64,
-    // @@protoc_insertion_point(field:BattleStatistics.battle_avatar_list)
-    pub battle_avatar_list: ::std::vec::Vec<super::AvatarBattleInfo::AvatarBattleInfo>,
-    // @@protoc_insertion_point(field:BattleStatistics.monster_list)
-    pub monster_list: ::std::vec::Vec<super::MonsterBattleInfo::MonsterBattleInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.avatar_battle_list)
+    pub avatar_battle_list: ::std::vec::Vec<super::AvatarBattleInfo::AvatarBattleInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.monster_battle_list)
+    pub monster_battle_list: ::std::vec::Vec<super::MonsterBattleInfo::MonsterBattleInfo>,
     // @@protoc_insertion_point(field:BattleStatistics.round_cnt)
     pub round_cnt: u32,
-    // @@protoc_insertion_point(field:BattleStatistics.cocoon_dead_wave)
-    pub cocoon_dead_wave: u32,
+    // @@protoc_insertion_point(field:BattleStatistics.clean_wave)
+    pub clean_wave: u32,
     // @@protoc_insertion_point(field:BattleStatistics.avatar_battle_turns)
     pub avatar_battle_turns: u32,
     // @@protoc_insertion_point(field:BattleStatistics.monster_battle_turns)
     pub monster_battle_turns: u32,
     // @@protoc_insertion_point(field:BattleStatistics.custom_values)
     pub custom_values: ::std::collections::HashMap<::std::string::String, f32>,
-    // @@protoc_insertion_point(field:BattleStatistics.score)
-    pub score: u32,
-    // @@protoc_insertion_point(field:BattleStatistics.IJOLOFBJINB)
-    pub IJOLOFBJINB: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.challenge_score)
+    pub challenge_score: u32,
+    // @@protoc_insertion_point(field:BattleStatistics.battle_event_battle_list)
+    pub battle_event_battle_list: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
     // @@protoc_insertion_point(field:BattleStatistics.end_reason)
     pub end_reason: ::protobuf::EnumOrUnknown<super::BattleEndReason::BattleEndReason>,
-    // @@protoc_insertion_point(field:BattleStatistics.GLOJPNLNHJH)
-    pub GLOJPNLNHJH: ::std::vec::Vec<super::IBFFAJOHKMO::IBFFAJOHKMO>,
-    // @@protoc_insertion_point(field:BattleStatistics.IICCEFCGPAK)
-    pub IICCEFCGPAK: ::std::vec::Vec<i32>,
-    // @@protoc_insertion_point(field:BattleStatistics.LDGAANONMBK)
-    pub LDGAANONMBK: ::std::vec::Vec<super::IIIPHJIMNID::IIIPHJIMNID>,
-    // @@protoc_insertion_point(field:BattleStatistics.ADBHGKPNIKP)
-    pub ADBHGKPNIKP: ::std::vec::Vec<super::MMNDJAMEBML::MMNDJAMEBML>,
-    // @@protoc_insertion_point(field:BattleStatistics.ECEFBCNOFKB)
-    pub ECEFBCNOFKB: ::std::vec::Vec<super::GMKEPCOMHPN::GMKEPCOMHPN>,
+    // @@protoc_insertion_point(field:BattleStatistics.avatar_death_info)
+    pub avatar_death_info: ::std::vec::Vec<super::AvatarDeathInfo::AvatarDeathInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.avatar_bp_chain)
+    pub avatar_bp_chain: ::std::vec::Vec<i32>,
+    // @@protoc_insertion_point(field:BattleStatistics.monster_phase_change_list)
+    pub monster_phase_change_list: ::std::vec::Vec<super::MonsterPhaseChangeInfo::MonsterPhaseChangeInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.statistic_event_list)
+    pub statistic_event_list: ::std::vec::Vec<super::StatisticEvent::StatisticEvent>,
+    // @@protoc_insertion_point(field:BattleStatistics.aether_divide_spirit_property_list)
+    pub aether_divide_spirit_property_list: ::std::vec::Vec<super::AetherDivideSpiritPropertyInfo::AetherDivideSpiritPropertyInfo>,
     // @@protoc_insertion_point(field:BattleStatistics.battle_target_info)
     pub battle_target_info: ::std::collections::HashMap<u32, super::BattleTargetList::BattleTargetList>,
-    // @@protoc_insertion_point(field:BattleStatistics.NAJLKHFLLPG)
-    pub NAJLKHFLLPG: ::std::vec::Vec<super::EAGOCAHFGAF::EAGOCAHFGAF>,
-    // @@protoc_insertion_point(field:BattleStatistics.JPGIFCHJDLK)
-    pub JPGIFCHJDLK: ::protobuf::MessageField<super::INKFCPKBGPH::INKFCPKBGPH>,
-    // @@protoc_insertion_point(field:BattleStatistics.MNPHNJKGPKL)
-    pub MNPHNJKGPKL: ::protobuf::MessageField<super::CHDONIGOKNM::CHDONIGOKNM>,
-    // @@protoc_insertion_point(field:BattleStatistics.LEDDODAMMNO)
-    pub LEDDODAMMNO: bool,
-    // @@protoc_insertion_point(field:BattleStatistics.ENBJCPKGCOL)
-    pub ENBJCPKGCOL: ::std::vec::Vec<super::JFFNDOBBNFB::JFFNDOBBNFB>,
-    // @@protoc_insertion_point(field:BattleStatistics.NGOKNFDMHMF)
-    pub NGOKNFDMHMF: ::std::vec::Vec<super::EKBAGMOMECL::EKBAGMOMECL>,
-    // @@protoc_insertion_point(field:BattleStatistics.DKOEADNAMCJ)
-    pub DKOEADNAMCJ: u32,
-    // @@protoc_insertion_point(field:BattleStatistics.IDCGPAKJFMD)
-    pub IDCGPAKJFMD: ::protobuf::MessageField<super::AIGKNHFANGA::AIGKNHFANGA>,
-    // @@protoc_insertion_point(field:BattleStatistics.BILLJJBFIOL)
-    pub BILLJJBFIOL: ::protobuf::MessageField<super::BAAGNOHEHMA::BAAGNOHEHMA>,
-    // @@protoc_insertion_point(field:BattleStatistics.HMPGMILJAPB)
-    pub HMPGMILJAPB: ::protobuf::MessageField<super::BDMGOEJBFGL::BDMGOEJBFGL>,
-    // @@protoc_insertion_point(field:BattleStatistics.NOCIGFLLIFG)
-    pub NOCIGFLLIFG: ::protobuf::MessageField<super::NMCMOHAHOPL::NMCMOHAHOPL>,
-    // @@protoc_insertion_point(field:BattleStatistics.JNJIIMJBOJP)
-    pub JNJIIMJBOJP: ::protobuf::MessageField<super::DEMLPCNDJJP::DEMLPCNDJJP>,
-    // @@protoc_insertion_point(field:BattleStatistics.KKPKALJMAMF)
-    pub KKPKALJMAMF: u32,
-    // @@protoc_insertion_point(field:BattleStatistics.OKGCIPAHMEI)
-    pub OKGCIPAHMEI: ::std::vec::Vec<super::PEDJNPJKOCK::PEDJNPJKOCK>,
-    // @@protoc_insertion_point(field:BattleStatistics.BAPOHBLOLCC)
-    pub BAPOHBLOLCC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BattleStatistics.LDMJDILBDFO)
-    pub LDMJDILBDFO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleStatistics.action_bar_event_list)
+    pub action_bar_event_list: ::std::vec::Vec<super::ActionBarEventInfo::ActionBarEventInfo>,
+    // @@protoc_insertion_point(field:BattleStatistics.evolve_build_battle_list)
+    pub evolve_build_battle_list: ::protobuf::MessageField<super::INKFCPKBGPH::INKFCPKBGPH>,
+    // @@protoc_insertion_point(field:BattleStatistics.fever_time_stat)
+    pub fever_time_stat: ::protobuf::MessageField<super::FeverTimeStat::FeverTimeStat>,
+    // @@protoc_insertion_point(field:BattleStatistics.EGHEGEFABLA)
+    pub EGHEGEFABLA: bool,
+    // @@protoc_insertion_point(field:BattleStatistics.wave_stt_list)
+    pub wave_stt_list: ::std::vec::Vec<super::WaveStt::WaveStt>,
+    // @@protoc_insertion_point(field:BattleStatistics.KNPPEEPBHPI)
+    pub KNPPEEPBHPI: ::std::vec::Vec<super::EKBAGMOMECL::EKBAGMOMECL>,
+    // @@protoc_insertion_point(field:BattleStatistics.HBDCOLJOCLA)
+    pub HBDCOLJOCLA: u32,
+    // @@protoc_insertion_point(field:BattleStatistics.rogue_stt)
+    pub rogue_stt: ::protobuf::MessageField<super::RogueStt::RogueStt>,
+    // @@protoc_insertion_point(field:BattleStatistics.activity_stt)
+    pub activity_stt: ::protobuf::MessageField<super::ActivityStt::ActivityStt>,
+    // @@protoc_insertion_point(field:BattleStatistics.challenge_fever_time_stat)
+    pub challenge_fever_time_stat: ::protobuf::MessageField<super::ChallengeFeverTimeStat::ChallengeFeverTimeStat>,
+    // @@protoc_insertion_point(field:BattleStatistics.BKGJHEPMKJL)
+    pub BKGJHEPMKJL: ::protobuf::MessageField<super::NMCMOHAHOPL::NMCMOHAHOPL>,
+    // @@protoc_insertion_point(field:BattleStatistics.CJJIMBJDJLD)
+    pub CJJIMBJDJLD: ::protobuf::MessageField<super::DEMLPCNDJJP::DEMLPCNDJJP>,
+    // @@protoc_insertion_point(field:BattleStatistics.NPGJKAOFHLF)
+    pub NPGJKAOFHLF: u32,
+    // @@protoc_insertion_point(field:BattleStatistics.HKGJCKMPKAP)
+    pub HKGJCKMPKAP: ::std::vec::Vec<super::PEDJNPJKOCK::PEDJNPJKOCK>,
+    // @@protoc_insertion_point(field:BattleStatistics.JKPNEJGPCMB)
+    pub JKPNEJGPCMB: ::protobuf::MessageField<super::LGEKFEKKLFH::LGEKFEKKLFH>,
+    // @@protoc_insertion_point(field:BattleStatistics.FCDNGLBAHGI)
+    pub FCDNGLBAHGI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleStatistics.CMLICNFJEIJ)
+    pub CMLICNFJEIJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleStatistics.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -121,7 +123,7 @@ impl BattleStatistics {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(38);
+        let mut fields = ::std::vec::Vec::with_capacity(39);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_battle_turns",
@@ -154,14 +156,14 @@ impl BattleStatistics {
             |m: &mut BattleStatistics| { &mut m.cost_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_avatar_list",
-            |m: &BattleStatistics| { &m.battle_avatar_list },
-            |m: &mut BattleStatistics| { &mut m.battle_avatar_list },
+            "avatar_battle_list",
+            |m: &BattleStatistics| { &m.avatar_battle_list },
+            |m: &mut BattleStatistics| { &mut m.avatar_battle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "monster_list",
-            |m: &BattleStatistics| { &m.monster_list },
-            |m: &mut BattleStatistics| { &mut m.monster_list },
+            "monster_battle_list",
+            |m: &BattleStatistics| { &m.monster_battle_list },
+            |m: &mut BattleStatistics| { &mut m.monster_battle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "round_cnt",
@@ -169,9 +171,9 @@ impl BattleStatistics {
             |m: &mut BattleStatistics| { &mut m.round_cnt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cocoon_dead_wave",
-            |m: &BattleStatistics| { &m.cocoon_dead_wave },
-            |m: &mut BattleStatistics| { &mut m.cocoon_dead_wave },
+            "clean_wave",
+            |m: &BattleStatistics| { &m.clean_wave },
+            |m: &mut BattleStatistics| { &mut m.clean_wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_battle_turns",
@@ -189,14 +191,14 @@ impl BattleStatistics {
             |m: &mut BattleStatistics| { &mut m.custom_values },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &BattleStatistics| { &m.score },
-            |m: &mut BattleStatistics| { &mut m.score },
+            "challenge_score",
+            |m: &BattleStatistics| { &m.challenge_score },
+            |m: &mut BattleStatistics| { &mut m.challenge_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IJOLOFBJINB",
-            |m: &BattleStatistics| { &m.IJOLOFBJINB },
-            |m: &mut BattleStatistics| { &mut m.IJOLOFBJINB },
+            "battle_event_battle_list",
+            |m: &BattleStatistics| { &m.battle_event_battle_list },
+            |m: &mut BattleStatistics| { &mut m.battle_event_battle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_reason",
@@ -204,29 +206,29 @@ impl BattleStatistics {
             |m: &mut BattleStatistics| { &mut m.end_reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GLOJPNLNHJH",
-            |m: &BattleStatistics| { &m.GLOJPNLNHJH },
-            |m: &mut BattleStatistics| { &mut m.GLOJPNLNHJH },
+            "avatar_death_info",
+            |m: &BattleStatistics| { &m.avatar_death_info },
+            |m: &mut BattleStatistics| { &mut m.avatar_death_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IICCEFCGPAK",
-            |m: &BattleStatistics| { &m.IICCEFCGPAK },
-            |m: &mut BattleStatistics| { &mut m.IICCEFCGPAK },
+            "avatar_bp_chain",
+            |m: &BattleStatistics| { &m.avatar_bp_chain },
+            |m: &mut BattleStatistics| { &mut m.avatar_bp_chain },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LDGAANONMBK",
-            |m: &BattleStatistics| { &m.LDGAANONMBK },
-            |m: &mut BattleStatistics| { &mut m.LDGAANONMBK },
+            "monster_phase_change_list",
+            |m: &BattleStatistics| { &m.monster_phase_change_list },
+            |m: &mut BattleStatistics| { &mut m.monster_phase_change_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ADBHGKPNIKP",
-            |m: &BattleStatistics| { &m.ADBHGKPNIKP },
-            |m: &mut BattleStatistics| { &mut m.ADBHGKPNIKP },
+            "statistic_event_list",
+            |m: &BattleStatistics| { &m.statistic_event_list },
+            |m: &mut BattleStatistics| { &mut m.statistic_event_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ECEFBCNOFKB",
-            |m: &BattleStatistics| { &m.ECEFBCNOFKB },
-            |m: &mut BattleStatistics| { &mut m.ECEFBCNOFKB },
+            "aether_divide_spirit_property_list",
+            |m: &BattleStatistics| { &m.aether_divide_spirit_property_list },
+            |m: &mut BattleStatistics| { &mut m.aether_divide_spirit_property_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "battle_target_info",
@@ -234,84 +236,89 @@ impl BattleStatistics {
             |m: &mut BattleStatistics| { &mut m.battle_target_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NAJLKHFLLPG",
-            |m: &BattleStatistics| { &m.NAJLKHFLLPG },
-            |m: &mut BattleStatistics| { &mut m.NAJLKHFLLPG },
+            "action_bar_event_list",
+            |m: &BattleStatistics| { &m.action_bar_event_list },
+            |m: &mut BattleStatistics| { &mut m.action_bar_event_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::INKFCPKBGPH::INKFCPKBGPH>(
-            "JPGIFCHJDLK",
-            |m: &BattleStatistics| { &m.JPGIFCHJDLK },
-            |m: &mut BattleStatistics| { &mut m.JPGIFCHJDLK },
+            "evolve_build_battle_list",
+            |m: &BattleStatistics| { &m.evolve_build_battle_list },
+            |m: &mut BattleStatistics| { &mut m.evolve_build_battle_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHDONIGOKNM::CHDONIGOKNM>(
-            "MNPHNJKGPKL",
-            |m: &BattleStatistics| { &m.MNPHNJKGPKL },
-            |m: &mut BattleStatistics| { &mut m.MNPHNJKGPKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LEDDODAMMNO",
-            |m: &BattleStatistics| { &m.LEDDODAMMNO },
-            |m: &mut BattleStatistics| { &mut m.LEDDODAMMNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ENBJCPKGCOL",
-            |m: &BattleStatistics| { &m.ENBJCPKGCOL },
-            |m: &mut BattleStatistics| { &mut m.ENBJCPKGCOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGOKNFDMHMF",
-            |m: &BattleStatistics| { &m.NGOKNFDMHMF },
-            |m: &mut BattleStatistics| { &mut m.NGOKNFDMHMF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FeverTimeStat::FeverTimeStat>(
+            "fever_time_stat",
+            |m: &BattleStatistics| { &m.fever_time_stat },
+            |m: &mut BattleStatistics| { &mut m.fever_time_stat },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKOEADNAMCJ",
-            |m: &BattleStatistics| { &m.DKOEADNAMCJ },
-            |m: &mut BattleStatistics| { &mut m.DKOEADNAMCJ },
+            "EGHEGEFABLA",
+            |m: &BattleStatistics| { &m.EGHEGEFABLA },
+            |m: &mut BattleStatistics| { &mut m.EGHEGEFABLA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AIGKNHFANGA::AIGKNHFANGA>(
-            "IDCGPAKJFMD",
-            |m: &BattleStatistics| { &m.IDCGPAKJFMD },
-            |m: &mut BattleStatistics| { &mut m.IDCGPAKJFMD },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "wave_stt_list",
+            |m: &BattleStatistics| { &m.wave_stt_list },
+            |m: &mut BattleStatistics| { &mut m.wave_stt_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BAAGNOHEHMA::BAAGNOHEHMA>(
-            "BILLJJBFIOL",
-            |m: &BattleStatistics| { &m.BILLJJBFIOL },
-            |m: &mut BattleStatistics| { &mut m.BILLJJBFIOL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KNPPEEPBHPI",
+            |m: &BattleStatistics| { &m.KNPPEEPBHPI },
+            |m: &mut BattleStatistics| { &mut m.KNPPEEPBHPI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDMGOEJBFGL::BDMGOEJBFGL>(
-            "HMPGMILJAPB",
-            |m: &BattleStatistics| { &m.HMPGMILJAPB },
-            |m: &mut BattleStatistics| { &mut m.HMPGMILJAPB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBDCOLJOCLA",
+            |m: &BattleStatistics| { &m.HBDCOLJOCLA },
+            |m: &mut BattleStatistics| { &mut m.HBDCOLJOCLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueStt::RogueStt>(
+            "rogue_stt",
+            |m: &BattleStatistics| { &m.rogue_stt },
+            |m: &mut BattleStatistics| { &mut m.rogue_stt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ActivityStt::ActivityStt>(
+            "activity_stt",
+            |m: &BattleStatistics| { &m.activity_stt },
+            |m: &mut BattleStatistics| { &mut m.activity_stt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeFeverTimeStat::ChallengeFeverTimeStat>(
+            "challenge_fever_time_stat",
+            |m: &BattleStatistics| { &m.challenge_fever_time_stat },
+            |m: &mut BattleStatistics| { &mut m.challenge_fever_time_stat },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NMCMOHAHOPL::NMCMOHAHOPL>(
-            "NOCIGFLLIFG",
-            |m: &BattleStatistics| { &m.NOCIGFLLIFG },
-            |m: &mut BattleStatistics| { &mut m.NOCIGFLLIFG },
+            "BKGJHEPMKJL",
+            |m: &BattleStatistics| { &m.BKGJHEPMKJL },
+            |m: &mut BattleStatistics| { &mut m.BKGJHEPMKJL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DEMLPCNDJJP::DEMLPCNDJJP>(
-            "JNJIIMJBOJP",
-            |m: &BattleStatistics| { &m.JNJIIMJBOJP },
-            |m: &mut BattleStatistics| { &mut m.JNJIIMJBOJP },
+            "CJJIMBJDJLD",
+            |m: &BattleStatistics| { &m.CJJIMBJDJLD },
+            |m: &mut BattleStatistics| { &mut m.CJJIMBJDJLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKPKALJMAMF",
-            |m: &BattleStatistics| { &m.KKPKALJMAMF },
-            |m: &mut BattleStatistics| { &mut m.KKPKALJMAMF },
+            "NPGJKAOFHLF",
+            |m: &BattleStatistics| { &m.NPGJKAOFHLF },
+            |m: &mut BattleStatistics| { &mut m.NPGJKAOFHLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OKGCIPAHMEI",
-            |m: &BattleStatistics| { &m.OKGCIPAHMEI },
-            |m: &mut BattleStatistics| { &mut m.OKGCIPAHMEI },
+            "HKGJCKMPKAP",
+            |m: &BattleStatistics| { &m.HKGJCKMPKAP },
+            |m: &mut BattleStatistics| { &mut m.HKGJCKMPKAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGEKFEKKLFH::LGEKFEKKLFH>(
+            "JKPNEJGPCMB",
+            |m: &BattleStatistics| { &m.JKPNEJGPCMB },
+            |m: &mut BattleStatistics| { &mut m.JKPNEJGPCMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAPOHBLOLCC",
-            |m: &BattleStatistics| { &m.BAPOHBLOLCC },
-            |m: &mut BattleStatistics| { &mut m.BAPOHBLOLCC },
+            "FCDNGLBAHGI",
+            |m: &BattleStatistics| { &m.FCDNGLBAHGI },
+            |m: &mut BattleStatistics| { &mut m.FCDNGLBAHGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LDMJDILBDFO",
-            |m: &BattleStatistics| { &m.LDMJDILBDFO },
-            |m: &mut BattleStatistics| { &mut m.LDMJDILBDFO },
+            "CMLICNFJEIJ",
+            |m: &BattleStatistics| { &m.CMLICNFJEIJ },
+            |m: &mut BattleStatistics| { &mut m.CMLICNFJEIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleStatistics>(
             "BattleStatistics",
@@ -353,16 +360,16 @@ impl ::protobuf::Message for BattleStatistics {
                     self.cost_time = is.read_double()?;
                 },
                 58 => {
-                    self.battle_avatar_list.push(is.read_message()?);
+                    self.avatar_battle_list.push(is.read_message()?);
                 },
                 66 => {
-                    self.monster_list.push(is.read_message()?);
+                    self.monster_battle_list.push(is.read_message()?);
                 },
                 72 => {
                     self.round_cnt = is.read_uint32()?;
                 },
                 80 => {
-                    self.cocoon_dead_wave = is.read_uint32()?;
+                    self.clean_wave = is.read_uint32()?;
                 },
                 88 => {
                     self.avatar_battle_turns = is.read_uint32()?;
@@ -386,31 +393,31 @@ impl ::protobuf::Message for BattleStatistics {
                     self.custom_values.insert(key, value);
                 },
                 112 => {
-                    self.score = is.read_uint32()?;
+                    self.challenge_score = is.read_uint32()?;
                 },
                 130 => {
-                    self.IJOLOFBJINB.push(is.read_message()?);
+                    self.battle_event_battle_list.push(is.read_message()?);
                 },
                 152 => {
                     self.end_reason = is.read_enum_or_unknown()?;
                 },
                 170 => {
-                    self.GLOJPNLNHJH.push(is.read_message()?);
+                    self.avatar_death_info.push(is.read_message()?);
                 },
                 178 => {
-                    is.read_repeated_packed_int32_into(&mut self.IICCEFCGPAK)?;
+                    is.read_repeated_packed_int32_into(&mut self.avatar_bp_chain)?;
                 },
                 176 => {
-                    self.IICCEFCGPAK.push(is.read_int32()?);
+                    self.avatar_bp_chain.push(is.read_int32()?);
                 },
                 186 => {
-                    self.LDGAANONMBK.push(is.read_message()?);
+                    self.monster_phase_change_list.push(is.read_message()?);
                 },
                 210 => {
-                    self.ADBHGKPNIKP.push(is.read_message()?);
+                    self.statistic_event_list.push(is.read_message()?);
                 },
                 218 => {
-                    self.ECEFBCNOFKB.push(is.read_message()?);
+                    self.aether_divide_spirit_property_list.push(is.read_message()?);
                 },
                 226 => {
                     let len = is.read_raw_varint32()?;
@@ -428,58 +435,61 @@ impl ::protobuf::Message for BattleStatistics {
                     self.battle_target_info.insert(key, value);
                 },
                 234 => {
-                    self.NAJLKHFLLPG.push(is.read_message()?);
+                    self.action_bar_event_list.push(is.read_message()?);
                 },
                 242 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPGIFCHJDLK)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.evolve_build_battle_list)?;
                 },
                 250 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MNPHNJKGPKL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.fever_time_stat)?;
                 },
                 256 => {
-                    self.LEDDODAMMNO = is.read_bool()?;
+                    self.EGHEGEFABLA = is.read_bool()?;
                 },
                 266 => {
-                    self.ENBJCPKGCOL.push(is.read_message()?);
+                    self.wave_stt_list.push(is.read_message()?);
                 },
                 274 => {
-                    self.NGOKNFDMHMF.push(is.read_message()?);
+                    self.KNPPEEPBHPI.push(is.read_message()?);
                 },
                 280 => {
-                    self.DKOEADNAMCJ = is.read_uint32()?;
+                    self.HBDCOLJOCLA = is.read_uint32()?;
                 },
                 290 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCGPAKJFMD)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_stt)?;
                 },
                 298 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BILLJJBFIOL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.activity_stt)?;
                 },
                 306 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HMPGMILJAPB)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge_fever_time_stat)?;
                 },
                 314 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOCIGFLLIFG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BKGJHEPMKJL)?;
                 },
                 322 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNJIIMJBOJP)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CJJIMBJDJLD)?;
                 },
                 328 => {
-                    self.KKPKALJMAMF = is.read_uint32()?;
+                    self.NPGJKAOFHLF = is.read_uint32()?;
                 },
                 338 => {
-                    self.OKGCIPAHMEI.push(is.read_message()?);
+                    self.HKGJCKMPKAP.push(is.read_message()?);
+                },
+                346 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JKPNEJGPCMB)?;
                 },
                 354 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BAPOHBLOLCC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.FCDNGLBAHGI)?;
                 },
                 352 => {
-                    self.BAPOHBLOLCC.push(is.read_uint32()?);
+                    self.FCDNGLBAHGI.push(is.read_uint32()?);
                 },
                 362 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LDMJDILBDFO)?;
+                    is.read_repeated_packed_uint32_into(&mut self.CMLICNFJEIJ)?;
                 },
                 360 => {
-                    self.LDMJDILBDFO.push(is.read_uint32()?);
+                    self.CMLICNFJEIJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -509,19 +519,19 @@ impl ::protobuf::Message for BattleStatistics {
         if self.cost_time != 0. {
             my_size += 1 + 8;
         }
-        for value in &self.battle_avatar_list {
+        for value in &self.avatar_battle_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.monster_list {
+        for value in &self.monster_battle_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.round_cnt != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.round_cnt);
         }
-        if self.cocoon_dead_wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cocoon_dead_wave);
+        if self.clean_wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.clean_wave);
         }
         if self.avatar_battle_turns != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.avatar_battle_turns);
@@ -535,30 +545,30 @@ impl ::protobuf::Message for BattleStatistics {
             entry_size += 1 + 4;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.score);
+        if self.challenge_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.challenge_score);
         }
-        for value in &self.IJOLOFBJINB {
+        for value in &self.battle_event_battle_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.end_reason != ::protobuf::EnumOrUnknown::new(super::BattleEndReason::BattleEndReason::BATTLE_END_REASON_NONE) {
             my_size += ::protobuf::rt::int32_size(19, self.end_reason.value());
         }
-        for value in &self.GLOJPNLNHJH {
+        for value in &self.avatar_death_info {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_int32_size(22, &self.IICCEFCGPAK);
-        for value in &self.LDGAANONMBK {
+        my_size += ::protobuf::rt::vec_packed_int32_size(22, &self.avatar_bp_chain);
+        for value in &self.monster_phase_change_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.ADBHGKPNIKP {
+        for value in &self.statistic_event_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.ECEFBCNOFKB {
+        for value in &self.aether_divide_spirit_property_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -569,61 +579,65 @@ impl ::protobuf::Message for BattleStatistics {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.NAJLKHFLLPG {
+        for value in &self.action_bar_event_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.JPGIFCHJDLK.as_ref() {
+        if let Some(v) = self.evolve_build_battle_list.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.MNPHNJKGPKL.as_ref() {
+        if let Some(v) = self.fever_time_stat.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LEDDODAMMNO != false {
+        if self.EGHEGEFABLA != false {
             my_size += 2 + 1;
         }
-        for value in &self.ENBJCPKGCOL {
+        for value in &self.wave_stt_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NGOKNFDMHMF {
+        for value in &self.KNPPEEPBHPI {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DKOEADNAMCJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(35, self.DKOEADNAMCJ);
+        if self.HBDCOLJOCLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(35, self.HBDCOLJOCLA);
         }
-        if let Some(v) = self.IDCGPAKJFMD.as_ref() {
+        if let Some(v) = self.rogue_stt.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BILLJJBFIOL.as_ref() {
+        if let Some(v) = self.activity_stt.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.HMPGMILJAPB.as_ref() {
+        if let Some(v) = self.challenge_fever_time_stat.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.NOCIGFLLIFG.as_ref() {
+        if let Some(v) = self.BKGJHEPMKJL.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.JNJIIMJBOJP.as_ref() {
+        if let Some(v) = self.CJJIMBJDJLD.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KKPKALJMAMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(41, self.KKPKALJMAMF);
+        if self.NPGJKAOFHLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(41, self.NPGJKAOFHLF);
         }
-        for value in &self.OKGCIPAHMEI {
+        for value in &self.HKGJCKMPKAP {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(44, &self.BAPOHBLOLCC);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(45, &self.LDMJDILBDFO);
+        if let Some(v) = self.JKPNEJGPCMB.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(44, &self.FCDNGLBAHGI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(45, &self.CMLICNFJEIJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -646,17 +660,17 @@ impl ::protobuf::Message for BattleStatistics {
         if self.cost_time != 0. {
             os.write_double(6, self.cost_time)?;
         }
-        for v in &self.battle_avatar_list {
+        for v in &self.avatar_battle_list {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.monster_list {
+        for v in &self.monster_battle_list {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.round_cnt != 0 {
             os.write_uint32(9, self.round_cnt)?;
         }
-        if self.cocoon_dead_wave != 0 {
-            os.write_uint32(10, self.cocoon_dead_wave)?;
+        if self.clean_wave != 0 {
+            os.write_uint32(10, self.clean_wave)?;
         }
         if self.avatar_battle_turns != 0 {
             os.write_uint32(11, self.avatar_battle_turns)?;
@@ -673,26 +687,26 @@ impl ::protobuf::Message for BattleStatistics {
             os.write_string(1, &k)?;
             os.write_float(2, *v)?;
         };
-        if self.score != 0 {
-            os.write_uint32(14, self.score)?;
+        if self.challenge_score != 0 {
+            os.write_uint32(14, self.challenge_score)?;
         }
-        for v in &self.IJOLOFBJINB {
+        for v in &self.battle_event_battle_list {
             ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
         };
         if self.end_reason != ::protobuf::EnumOrUnknown::new(super::BattleEndReason::BattleEndReason::BATTLE_END_REASON_NONE) {
             os.write_enum(19, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
         }
-        for v in &self.GLOJPNLNHJH {
+        for v in &self.avatar_death_info {
             ::protobuf::rt::write_message_field_with_cached_size(21, v, os)?;
         };
-        os.write_repeated_packed_int32(22, &self.IICCEFCGPAK)?;
-        for v in &self.LDGAANONMBK {
+        os.write_repeated_packed_int32(22, &self.avatar_bp_chain)?;
+        for v in &self.monster_phase_change_list {
             ::protobuf::rt::write_message_field_with_cached_size(23, v, os)?;
         };
-        for v in &self.ADBHGKPNIKP {
+        for v in &self.statistic_event_list {
             ::protobuf::rt::write_message_field_with_cached_size(26, v, os)?;
         };
-        for v in &self.ECEFBCNOFKB {
+        for v in &self.aether_divide_spirit_property_list {
             ::protobuf::rt::write_message_field_with_cached_size(27, v, os)?;
         };
         for (k, v) in &self.battle_target_info {
@@ -705,50 +719,53 @@ impl ::protobuf::Message for BattleStatistics {
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        for v in &self.NAJLKHFLLPG {
+        for v in &self.action_bar_event_list {
             ::protobuf::rt::write_message_field_with_cached_size(29, v, os)?;
         };
-        if let Some(v) = self.JPGIFCHJDLK.as_ref() {
+        if let Some(v) = self.evolve_build_battle_list.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(30, v, os)?;
         }
-        if let Some(v) = self.MNPHNJKGPKL.as_ref() {
+        if let Some(v) = self.fever_time_stat.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(31, v, os)?;
         }
-        if self.LEDDODAMMNO != false {
-            os.write_bool(32, self.LEDDODAMMNO)?;
+        if self.EGHEGEFABLA != false {
+            os.write_bool(32, self.EGHEGEFABLA)?;
         }
-        for v in &self.ENBJCPKGCOL {
+        for v in &self.wave_stt_list {
             ::protobuf::rt::write_message_field_with_cached_size(33, v, os)?;
         };
-        for v in &self.NGOKNFDMHMF {
+        for v in &self.KNPPEEPBHPI {
             ::protobuf::rt::write_message_field_with_cached_size(34, v, os)?;
         };
-        if self.DKOEADNAMCJ != 0 {
-            os.write_uint32(35, self.DKOEADNAMCJ)?;
+        if self.HBDCOLJOCLA != 0 {
+            os.write_uint32(35, self.HBDCOLJOCLA)?;
         }
-        if let Some(v) = self.IDCGPAKJFMD.as_ref() {
+        if let Some(v) = self.rogue_stt.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(36, v, os)?;
         }
-        if let Some(v) = self.BILLJJBFIOL.as_ref() {
+        if let Some(v) = self.activity_stt.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(37, v, os)?;
         }
-        if let Some(v) = self.HMPGMILJAPB.as_ref() {
+        if let Some(v) = self.challenge_fever_time_stat.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(38, v, os)?;
         }
-        if let Some(v) = self.NOCIGFLLIFG.as_ref() {
+        if let Some(v) = self.BKGJHEPMKJL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(39, v, os)?;
         }
-        if let Some(v) = self.JNJIIMJBOJP.as_ref() {
+        if let Some(v) = self.CJJIMBJDJLD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(40, v, os)?;
         }
-        if self.KKPKALJMAMF != 0 {
-            os.write_uint32(41, self.KKPKALJMAMF)?;
+        if self.NPGJKAOFHLF != 0 {
+            os.write_uint32(41, self.NPGJKAOFHLF)?;
         }
-        for v in &self.OKGCIPAHMEI {
+        for v in &self.HKGJCKMPKAP {
             ::protobuf::rt::write_message_field_with_cached_size(42, v, os)?;
         };
-        os.write_repeated_packed_uint32(44, &self.BAPOHBLOLCC)?;
-        os.write_repeated_packed_uint32(45, &self.LDMJDILBDFO)?;
+        if let Some(v) = self.JKPNEJGPCMB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(43, v, os)?;
+        }
+        os.write_repeated_packed_uint32(44, &self.FCDNGLBAHGI)?;
+        os.write_repeated_packed_uint32(45, &self.CMLICNFJEIJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -772,38 +789,39 @@ impl ::protobuf::Message for BattleStatistics {
         self.ultra_cnt = 0;
         self.total_delay_cumulate = 0.;
         self.cost_time = 0.;
-        self.battle_avatar_list.clear();
-        self.monster_list.clear();
+        self.avatar_battle_list.clear();
+        self.monster_battle_list.clear();
         self.round_cnt = 0;
-        self.cocoon_dead_wave = 0;
+        self.clean_wave = 0;
         self.avatar_battle_turns = 0;
         self.monster_battle_turns = 0;
         self.custom_values.clear();
-        self.score = 0;
-        self.IJOLOFBJINB.clear();
+        self.challenge_score = 0;
+        self.battle_event_battle_list.clear();
         self.end_reason = ::protobuf::EnumOrUnknown::new(super::BattleEndReason::BattleEndReason::BATTLE_END_REASON_NONE);
-        self.GLOJPNLNHJH.clear();
-        self.IICCEFCGPAK.clear();
-        self.LDGAANONMBK.clear();
-        self.ADBHGKPNIKP.clear();
-        self.ECEFBCNOFKB.clear();
+        self.avatar_death_info.clear();
+        self.avatar_bp_chain.clear();
+        self.monster_phase_change_list.clear();
+        self.statistic_event_list.clear();
+        self.aether_divide_spirit_property_list.clear();
         self.battle_target_info.clear();
-        self.NAJLKHFLLPG.clear();
-        self.JPGIFCHJDLK.clear();
-        self.MNPHNJKGPKL.clear();
-        self.LEDDODAMMNO = false;
-        self.ENBJCPKGCOL.clear();
-        self.NGOKNFDMHMF.clear();
-        self.DKOEADNAMCJ = 0;
-        self.IDCGPAKJFMD.clear();
-        self.BILLJJBFIOL.clear();
-        self.HMPGMILJAPB.clear();
-        self.NOCIGFLLIFG.clear();
-        self.JNJIIMJBOJP.clear();
-        self.KKPKALJMAMF = 0;
-        self.OKGCIPAHMEI.clear();
-        self.BAPOHBLOLCC.clear();
-        self.LDMJDILBDFO.clear();
+        self.action_bar_event_list.clear();
+        self.evolve_build_battle_list.clear();
+        self.fever_time_stat.clear();
+        self.EGHEGEFABLA = false;
+        self.wave_stt_list.clear();
+        self.KNPPEEPBHPI.clear();
+        self.HBDCOLJOCLA = 0;
+        self.rogue_stt.clear();
+        self.activity_stt.clear();
+        self.challenge_fever_time_stat.clear();
+        self.BKGJHEPMKJL.clear();
+        self.CJJIMBJDJLD.clear();
+        self.NPGJKAOFHLF = 0;
+        self.HKGJCKMPKAP.clear();
+        self.JKPNEJGPCMB.clear();
+        self.FCDNGLBAHGI.clear();
+        self.CMLICNFJEIJ.clear();
         self.special_fields.clear();
     }
 
@@ -831,57 +849,62 @@ impl ::protobuf::reflect::ProtobufValue for BattleStatistics {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BattleStatistics.proto\x1a\x11AIGKNHFANGA.proto\x1a\x16AvatarBattl\
-    eInfo.proto\x1a\x11BAAGNOHEHMA.proto\x1a\x11BDMGOEJBFGL.proto\x1a\x15Bat\
-    tleEndReason.proto\x1a\x1bBattleEventBattleInfo.proto\x1a\x16BattleTarge\
-    tList.proto\x1a\x11CHDONIGOKNM.proto\x1a\x11DEMLPCNDJJP.proto\x1a\x11EAG\
-    OCAHFGAF.proto\x1a\x11EKBAGMOMECL.proto\x1a\x11GMKEPCOMHPN.proto\x1a\x11\
-    IBFFAJOHKMO.proto\x1a\x11IIIPHJIMNID.proto\x1a\x11INKFCPKBGPH.proto\x1a\
-    \x11JFFNDOBBNFB.proto\x1a\x11MMNDJAMEBML.proto\x1a\x17MonsterBattleInfo.\
-    proto\x1a\x11NMCMOHAHOPL.proto\x1a\x11PEDJNPJKOCK.proto\"\xf4\x0e\n\x10B\
-    attleStatistics\x12,\n\x12total_battle_turns\x18\x01\x20\x01(\rR\x10tota\
-    lBattleTurns\x12(\n\x10total_auto_turns\x18\x02\x20\x01(\rR\x0etotalAuto\
-    Turns\x12$\n\x0eavatar_id_list\x18\x03\x20\x03(\rR\x0cavatarIdList\x12\
-    \x1b\n\tultra_cnt\x18\x04\x20\x01(\rR\x08ultraCnt\x120\n\x14total_delay_\
-    cumulate\x18\x05\x20\x01(\x01R\x12totalDelayCumulate\x12\x1b\n\tcost_tim\
-    e\x18\x06\x20\x01(\x01R\x08costTime\x12?\n\x12battle_avatar_list\x18\x07\
-    \x20\x03(\x0b2\x11.AvatarBattleInfoR\x10battleAvatarList\x125\n\x0cmonst\
-    er_list\x18\x08\x20\x03(\x0b2\x12.MonsterBattleInfoR\x0bmonsterList\x12\
-    \x1b\n\tround_cnt\x18\t\x20\x01(\rR\x08roundCnt\x12(\n\x10cocoon_dead_wa\
-    ve\x18\n\x20\x01(\rR\x0ecocoonDeadWave\x12.\n\x13avatar_battle_turns\x18\
-    \x0b\x20\x01(\rR\x11avatarBattleTurns\x120\n\x14monster_battle_turns\x18\
-    \x0c\x20\x01(\rR\x12monsterBattleTurns\x12H\n\rcustom_values\x18\r\x20\
-    \x03(\x0b2#.BattleStatistics.CustomValuesEntryR\x0ccustomValues\x12\x14\
-    \n\x05score\x18\x0e\x20\x01(\rR\x05score\x128\n\x0bIJOLOFBJINB\x18\x10\
-    \x20\x03(\x0b2\x16.BattleEventBattleInfoR\x0bIJOLOFBJINB\x12/\n\nend_rea\
-    son\x18\x13\x20\x01(\x0e2\x10.BattleEndReasonR\tendReason\x12.\n\x0bGLOJ\
-    PNLNHJH\x18\x15\x20\x03(\x0b2\x0c.IBFFAJOHKMOR\x0bGLOJPNLNHJH\x12\x20\n\
-    \x0bIICCEFCGPAK\x18\x16\x20\x03(\x05R\x0bIICCEFCGPAK\x12.\n\x0bLDGAANONM\
-    BK\x18\x17\x20\x03(\x0b2\x0c.IIIPHJIMNIDR\x0bLDGAANONMBK\x12.\n\x0bADBHG\
-    KPNIKP\x18\x1a\x20\x03(\x0b2\x0c.MMNDJAMEBMLR\x0bADBHGKPNIKP\x12.\n\x0bE\
-    CEFBCNOFKB\x18\x1b\x20\x03(\x0b2\x0c.GMKEPCOMHPNR\x0bECEFBCNOFKB\x12U\n\
-    \x12battle_target_info\x18\x1c\x20\x03(\x0b2'.BattleStatistics.BattleTar\
-    getInfoEntryR\x10battleTargetInfo\x12.\n\x0bNAJLKHFLLPG\x18\x1d\x20\x03(\
-    \x0b2\x0c.EAGOCAHFGAFR\x0bNAJLKHFLLPG\x12.\n\x0bJPGIFCHJDLK\x18\x1e\x20\
-    \x01(\x0b2\x0c.INKFCPKBGPHR\x0bJPGIFCHJDLK\x12.\n\x0bMNPHNJKGPKL\x18\x1f\
-    \x20\x01(\x0b2\x0c.CHDONIGOKNMR\x0bMNPHNJKGPKL\x12\x20\n\x0bLEDDODAMMNO\
-    \x18\x20\x20\x01(\x08R\x0bLEDDODAMMNO\x12.\n\x0bENBJCPKGCOL\x18!\x20\x03\
-    (\x0b2\x0c.JFFNDOBBNFBR\x0bENBJCPKGCOL\x12.\n\x0bNGOKNFDMHMF\x18\"\x20\
-    \x03(\x0b2\x0c.EKBAGMOMECLR\x0bNGOKNFDMHMF\x12\x20\n\x0bDKOEADNAMCJ\x18#\
-    \x20\x01(\rR\x0bDKOEADNAMCJ\x12.\n\x0bIDCGPAKJFMD\x18$\x20\x01(\x0b2\x0c\
-    .AIGKNHFANGAR\x0bIDCGPAKJFMD\x12.\n\x0bBILLJJBFIOL\x18%\x20\x01(\x0b2\
-    \x0c.BAAGNOHEHMAR\x0bBILLJJBFIOL\x12.\n\x0bHMPGMILJAPB\x18&\x20\x01(\x0b\
-    2\x0c.BDMGOEJBFGLR\x0bHMPGMILJAPB\x12.\n\x0bNOCIGFLLIFG\x18'\x20\x01(\
-    \x0b2\x0c.NMCMOHAHOPLR\x0bNOCIGFLLIFG\x12.\n\x0bJNJIIMJBOJP\x18(\x20\x01\
-    (\x0b2\x0c.DEMLPCNDJJPR\x0bJNJIIMJBOJP\x12\x20\n\x0bKKPKALJMAMF\x18)\x20\
-    \x01(\rR\x0bKKPKALJMAMF\x12.\n\x0bOKGCIPAHMEI\x18*\x20\x03(\x0b2\x0c.PED\
-    JNPJKOCKR\x0bOKGCIPAHMEI\x12\x20\n\x0bBAPOHBLOLCC\x18,\x20\x03(\rR\x0bBA\
-    POHBLOLCC\x12\x20\n\x0bLDMJDILBDFO\x18-\x20\x03(\rR\x0bLDMJDILBDFO\x1a?\
-    \n\x11CustomValuesEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\
-    \x14\n\x05value\x18\x02\x20\x01(\x02R\x05value:\x028\x01\x1aV\n\x15Battl\
-    eTargetInfoEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12'\n\x05v\
-    alue\x18\x02\x20\x01(\x0b2\x11.BattleTargetListR\x05value:\x028\x01b\x06\
-    proto3\
+    \n\x16BattleStatistics.proto\x1a\x18ActionBarEventInfo.proto\x1a\x11Acti\
+    vityStt.proto\x1a$AetherDivideSpiritPropertyInfo.proto\x1a\x16AvatarBatt\
+    leInfo.proto\x1a\x15AvatarDeathInfo.proto\x1a\x15BattleEndReason.proto\
+    \x1a\x1bBattleEventBattleInfo.proto\x1a\x16BattleTargetList.proto\x1a\
+    \x1cChallengeFeverTimeStat.proto\x1a\x11DEMLPCNDJJP.proto\x1a\x11EKBAGMO\
+    MECL.proto\x1a\x13FeverTimeStat.proto\x1a\x11INKFCPKBGPH.proto\x1a\x11LG\
+    EKFEKKLFH.proto\x1a\x17MonsterBattleInfo.proto\x1a\x1cMonsterPhaseChange\
+    Info.proto\x1a\x11NMCMOHAHOPL.proto\x1a\x11PEDJNPJKOCK.proto\x1a\x0eRogu\
+    eStt.proto\x1a\x14StatisticEvent.proto\x1a\rWaveStt.proto\"\xaa\x11\n\
+    \x10BattleStatistics\x12,\n\x12total_battle_turns\x18\x01\x20\x01(\rR\
+    \x10totalBattleTurns\x12(\n\x10total_auto_turns\x18\x02\x20\x01(\rR\x0et\
+    otalAutoTurns\x12$\n\x0eavatar_id_list\x18\x03\x20\x03(\rR\x0cavatarIdLi\
+    st\x12\x1b\n\tultra_cnt\x18\x04\x20\x01(\rR\x08ultraCnt\x120\n\x14total_\
+    delay_cumulate\x18\x05\x20\x01(\x01R\x12totalDelayCumulate\x12\x1b\n\tco\
+    st_time\x18\x06\x20\x01(\x01R\x08costTime\x12?\n\x12avatar_battle_list\
+    \x18\x07\x20\x03(\x0b2\x11.AvatarBattleInfoR\x10avatarBattleList\x12B\n\
+    \x13monster_battle_list\x18\x08\x20\x03(\x0b2\x12.MonsterBattleInfoR\x11\
+    monsterBattleList\x12\x1b\n\tround_cnt\x18\t\x20\x01(\rR\x08roundCnt\x12\
+    \x1d\n\nclean_wave\x18\n\x20\x01(\rR\tcleanWave\x12.\n\x13avatar_battle_\
+    turns\x18\x0b\x20\x01(\rR\x11avatarBattleTurns\x120\n\x14monster_battle_\
+    turns\x18\x0c\x20\x01(\rR\x12monsterBattleTurns\x12H\n\rcustom_values\
+    \x18\r\x20\x03(\x0b2#.BattleStatistics.CustomValuesEntryR\x0ccustomValue\
+    s\x12'\n\x0fchallenge_score\x18\x0e\x20\x01(\rR\x0echallengeScore\x12O\n\
+    \x18battle_event_battle_list\x18\x10\x20\x03(\x0b2\x16.BattleEventBattle\
+    InfoR\x15battleEventBattleList\x12/\n\nend_reason\x18\x13\x20\x01(\x0e2\
+    \x10.BattleEndReasonR\tendReason\x12<\n\x11avatar_death_info\x18\x15\x20\
+    \x03(\x0b2\x10.AvatarDeathInfoR\x0favatarDeathInfo\x12&\n\x0favatar_bp_c\
+    hain\x18\x16\x20\x03(\x05R\ravatarBpChain\x12R\n\x19monster_phase_change\
+    _list\x18\x17\x20\x03(\x0b2\x17.MonsterPhaseChangeInfoR\x16monsterPhaseC\
+    hangeList\x12A\n\x14statistic_event_list\x18\x1a\x20\x03(\x0b2\x0f.Stati\
+    sticEventR\x12statisticEventList\x12k\n\"aether_divide_spirit_property_l\
+    ist\x18\x1b\x20\x03(\x0b2\x1f.AetherDivideSpiritPropertyInfoR\x1eaetherD\
+    ivideSpiritPropertyList\x12U\n\x12battle_target_info\x18\x1c\x20\x03(\
+    \x0b2'.BattleStatistics.BattleTargetInfoEntryR\x10battleTargetInfo\x12F\
+    \n\x15action_bar_event_list\x18\x1d\x20\x03(\x0b2\x13.ActionBarEventInfo\
+    R\x12actionBarEventList\x12E\n\x18evolve_build_battle_list\x18\x1e\x20\
+    \x01(\x0b2\x0c.INKFCPKBGPHR\x15evolveBuildBattleList\x126\n\x0ffever_tim\
+    e_stat\x18\x1f\x20\x01(\x0b2\x0e.FeverTimeStatR\rfeverTimeStat\x12\x20\n\
+    \x0bEGHEGEFABLA\x18\x20\x20\x01(\x08R\x0bEGHEGEFABLA\x12,\n\rwave_stt_li\
+    st\x18!\x20\x03(\x0b2\x08.WaveSttR\x0bwaveSttList\x12.\n\x0bKNPPEEPBHPI\
+    \x18\"\x20\x03(\x0b2\x0c.EKBAGMOMECLR\x0bKNPPEEPBHPI\x12\x20\n\x0bHBDCOL\
+    JOCLA\x18#\x20\x01(\rR\x0bHBDCOLJOCLA\x12&\n\trogue_stt\x18$\x20\x01(\
+    \x0b2\t.RogueSttR\x08rogueStt\x12/\n\x0cactivity_stt\x18%\x20\x01(\x0b2\
+    \x0c.ActivitySttR\x0bactivityStt\x12R\n\x19challenge_fever_time_stat\x18\
+    &\x20\x01(\x0b2\x17.ChallengeFeverTimeStatR\x16challengeFeverTimeStat\
+    \x12.\n\x0bBKGJHEPMKJL\x18'\x20\x01(\x0b2\x0c.NMCMOHAHOPLR\x0bBKGJHEPMKJ\
+    L\x12.\n\x0bCJJIMBJDJLD\x18(\x20\x01(\x0b2\x0c.DEMLPCNDJJPR\x0bCJJIMBJDJ\
+    LD\x12\x20\n\x0bNPGJKAOFHLF\x18)\x20\x01(\rR\x0bNPGJKAOFHLF\x12.\n\x0bHK\
+    GJCKMPKAP\x18*\x20\x03(\x0b2\x0c.PEDJNPJKOCKR\x0bHKGJCKMPKAP\x12.\n\x0bJ\
+    KPNEJGPCMB\x18+\x20\x01(\x0b2\x0c.LGEKFEKKLFHR\x0bJKPNEJGPCMB\x12\x20\n\
+    \x0bFCDNGLBAHGI\x18,\x20\x03(\rR\x0bFCDNGLBAHGI\x12\x20\n\x0bCMLICNFJEIJ\
+    \x18-\x20\x03(\rR\x0bCMLICNFJEIJ\x1a?\n\x11CustomValuesEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
+    \x02R\x05value:\x028\x01\x1aV\n\x15BattleTargetInfoEntry\x12\x10\n\x03ke\
+    y\x18\x01\x20\x01(\rR\x03key\x12'\n\x05value\x18\x02\x20\x01(\x0b2\x11.B\
+    attleTargetListR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -898,27 +921,28 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(20);
-            deps.push(super::AIGKNHFANGA::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(21);
+            deps.push(super::ActionBarEventInfo::file_descriptor().clone());
+            deps.push(super::ActivityStt::file_descriptor().clone());
+            deps.push(super::AetherDivideSpiritPropertyInfo::file_descriptor().clone());
             deps.push(super::AvatarBattleInfo::file_descriptor().clone());
-            deps.push(super::BAAGNOHEHMA::file_descriptor().clone());
-            deps.push(super::BDMGOEJBFGL::file_descriptor().clone());
+            deps.push(super::AvatarDeathInfo::file_descriptor().clone());
             deps.push(super::BattleEndReason::file_descriptor().clone());
             deps.push(super::BattleEventBattleInfo::file_descriptor().clone());
             deps.push(super::BattleTargetList::file_descriptor().clone());
-            deps.push(super::CHDONIGOKNM::file_descriptor().clone());
+            deps.push(super::ChallengeFeverTimeStat::file_descriptor().clone());
             deps.push(super::DEMLPCNDJJP::file_descriptor().clone());
-            deps.push(super::EAGOCAHFGAF::file_descriptor().clone());
             deps.push(super::EKBAGMOMECL::file_descriptor().clone());
-            deps.push(super::GMKEPCOMHPN::file_descriptor().clone());
-            deps.push(super::IBFFAJOHKMO::file_descriptor().clone());
-            deps.push(super::IIIPHJIMNID::file_descriptor().clone());
+            deps.push(super::FeverTimeStat::file_descriptor().clone());
             deps.push(super::INKFCPKBGPH::file_descriptor().clone());
-            deps.push(super::JFFNDOBBNFB::file_descriptor().clone());
-            deps.push(super::MMNDJAMEBML::file_descriptor().clone());
+            deps.push(super::LGEKFEKKLFH::file_descriptor().clone());
             deps.push(super::MonsterBattleInfo::file_descriptor().clone());
+            deps.push(super::MonsterPhaseChangeInfo::file_descriptor().clone());
             deps.push(super::NMCMOHAHOPL::file_descriptor().clone());
             deps.push(super::PEDJNPJKOCK::file_descriptor().clone());
+            deps.push(super::RogueStt::file_descriptor().clone());
+            deps.push(super::StatisticEvent::file_descriptor().clone());
+            deps.push(super::WaveStt::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleStatistics::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

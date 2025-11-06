@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterTreasureDungeonCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.NLMDEMOHBOO)
-    pub NLMDEMOHBOO: u32,
+    // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.NENOHEPGLIJ)
+    pub NENOHEPGLIJ: u32,
     // @@protoc_insertion_point(field:EnterTreasureDungeonCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::JACKEJLKJNA::JACKEJLKJNA>,
+    pub avatar_list: ::std::vec::Vec<super::TreasureDungeonActivityAvatar::TreasureDungeonActivityAvatar>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterTreasureDungeonCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,9 +52,9 @@ impl EnterTreasureDungeonCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLMDEMOHBOO",
-            |m: &EnterTreasureDungeonCsReq| { &m.NLMDEMOHBOO },
-            |m: &mut EnterTreasureDungeonCsReq| { &mut m.NLMDEMOHBOO },
+            "NENOHEPGLIJ",
+            |m: &EnterTreasureDungeonCsReq| { &m.NENOHEPGLIJ },
+            |m: &mut EnterTreasureDungeonCsReq| { &mut m.NENOHEPGLIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.NLMDEMOHBOO = is.read_uint32()?;
+                16 => {
+                    self.NENOHEPGLIJ = is.read_uint32()?;
                 },
-                18 => {
+                58 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NLMDEMOHBOO);
+        if self.NENOHEPGLIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NENOHEPGLIJ);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(3, self.NLMDEMOHBOO)?;
+        if self.NENOHEPGLIJ != 0 {
+            os.write_uint32(2, self.NENOHEPGLIJ)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EnterTreasureDungeonCsReq {
     }
 
     fn clear(&mut self) {
-        self.NLMDEMOHBOO = 0;
+        self.NENOHEPGLIJ = 0;
         self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterTreasureDungeonCsReq {
         static instance: EnterTreasureDungeonCsReq = EnterTreasureDungeonCsReq {
-            NLMDEMOHBOO: 0,
+            NENOHEPGLIJ: 0,
             avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterTreasureDungeonCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fEnterTreasureDungeonCsReq.proto\x1a\x11JACKEJLKJNA.proto\"l\n\x19E\
-    nterTreasureDungeonCsReq\x12\x20\n\x0bNLMDEMOHBOO\x18\x03\x20\x01(\rR\
-    \x0bNLMDEMOHBOO\x12-\n\x0bavatar_list\x18\x02\x20\x03(\x0b2\x0c.JACKEJLK\
-    JNAR\navatarListb\x06proto3\
+    \n\x1fEnterTreasureDungeonCsReq.proto\x1a#TreasureDungeonActivityAvatar.\
+    proto\"~\n\x19EnterTreasureDungeonCsReq\x12\x20\n\x0bNENOHEPGLIJ\x18\x02\
+    \x20\x01(\rR\x0bNENOHEPGLIJ\x12?\n\x0bavatar_list\x18\x07\x20\x03(\x0b2\
+    \x1e.TreasureDungeonActivityAvatarR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JACKEJLKJNA::file_descriptor().clone());
+            deps.push(super::TreasureDungeonActivityAvatar::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterTreasureDungeonCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

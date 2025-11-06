@@ -79,10 +79,10 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.option_id = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.confirm = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HHPIAFBHJCF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.option_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.option_id);
         }
         if self.confirm != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HHPIAFBHJCF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.option_id != 0 {
-            os.write_uint32(5, self.option_id)?;
+            os.write_uint32(3, self.option_id)?;
         }
         if self.confirm != false {
-            os.write_bool(11, self.confirm)?;
+            os.write_bool(9, self.confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HHPIAFBHJCF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HHPIAFBHJCF.proto\"D\n\x0bHHPIAFBHJCF\x12\x1b\n\toption_id\x18\x05\
-    \x20\x01(\rR\x08optionId\x12\x18\n\x07confirm\x18\x0b\x20\x01(\x08R\x07c\
-    onfirmb\x06proto3\
+    \n\x11HHPIAFBHJCF.proto\"D\n\x0bHHPIAFBHJCF\x12\x1b\n\toption_id\x18\x03\
+    \x20\x01(\rR\x08optionId\x12\x18\n\x07confirm\x18\t\x20\x01(\x08R\x07con\
+    firmb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

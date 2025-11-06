@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyBpLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyBpLevelCsReq.LDNJEACFBJE)
-    pub LDNJEACFBJE: u32,
+    // @@protoc_insertion_point(field:BuyBpLevelCsReq.target_level)
+    pub target_level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyBpLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BuyBpLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNJEACFBJE",
-            |m: &BuyBpLevelCsReq| { &m.LDNJEACFBJE },
-            |m: &mut BuyBpLevelCsReq| { &mut m.LDNJEACFBJE },
+            "target_level",
+            |m: &BuyBpLevelCsReq| { &m.target_level },
+            |m: &mut BuyBpLevelCsReq| { &mut m.target_level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyBpLevelCsReq>(
             "BuyBpLevelCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.LDNJEACFBJE = is.read_uint32()?;
+                    self.target_level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDNJEACFBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LDNJEACFBJE);
+        if self.target_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.target_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDNJEACFBJE != 0 {
-            os.write_uint32(1, self.LDNJEACFBJE)?;
+        if self.target_level != 0 {
+            os.write_uint32(1, self.target_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.LDNJEACFBJE = 0;
+        self.target_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyBpLevelCsReq {
         static instance: BuyBpLevelCsReq = BuyBpLevelCsReq {
-            LDNJEACFBJE: 0,
+            target_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyBpLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15BuyBpLevelCsReq.proto\"3\n\x0fBuyBpLevelCsReq\x12\x20\n\x0bLDNJEAC\
-    FBJE\x18\x01\x20\x01(\rR\x0bLDNJEACFBJEb\x06proto3\
+    \n\x15BuyBpLevelCsReq.proto\"4\n\x0fBuyBpLevelCsReq\x12!\n\x0ctarget_lev\
+    el\x18\x01\x20\x01(\rR\x0btargetLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

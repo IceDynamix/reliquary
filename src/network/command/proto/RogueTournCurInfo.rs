@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournCurInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournCurInfo.IKOBKINKHCF)
-    pub IKOBKINKHCF: ::protobuf::MessageField<super::RogueTournCurAreaInfo::RogueTournCurAreaInfo>,
+    // @@protoc_insertion_point(field:RogueTournCurInfo.AECDGOACAAF)
+    pub AECDGOACAAF: ::protobuf::MessageField<super::RogueTournCurAreaInfo::RogueTournCurAreaInfo>,
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<rogue_tourn_cur_info::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<rogue_tourn_cur_info::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournCurInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl RogueTournCurInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueTournCurGameInfo rogue_tourn_cur_game_info = 726;
+    // .RogueTournCurGameInfo rogue_tourn_cur_game_info = 396;
 
     pub fn rogue_tourn_cur_game_info(&self) -> &super::RogueTournCurGameInfo::RogueTournCurGameInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(ref v)) => v,
             _ => <super::RogueTournCurGameInfo::RogueTournCurGameInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_tourn_cur_game_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_rogue_tourn_cur_game_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_rogue_tourn_cur_game_info(&mut self, v: super::RogueTournCurGameInfo::RogueTournCurGameInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_rogue_tourn_cur_game_info(&mut self) -> &mut super::RogueTournCurGameInfo::RogueTournCurGameInfo {
-        if let ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(super::RogueTournCurGameInfo::RogueTournCurGameInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(super::RogueTournCurGameInfo::RogueTournCurGameInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl RogueTournCurInfo {
     // Take field
     pub fn take_rogue_tourn_cur_game_info(&mut self) -> super::RogueTournCurGameInfo::RogueTournCurGameInfo {
         if self.has_rogue_tourn_cur_game_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -100,11 +100,6 @@ impl RogueTournCurInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurAreaInfo::RogueTournCurAreaInfo>(
-            "IKOBKINKHCF",
-            |m: &RogueTournCurInfo| { &m.IKOBKINKHCF },
-            |m: &mut RogueTournCurInfo| { &mut m.IKOBKINKHCF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournCurGameInfo::RogueTournCurGameInfo>(
             "rogue_tourn_cur_game_info",
             RogueTournCurInfo::has_rogue_tourn_cur_game_info,
@@ -112,7 +107,12 @@ impl RogueTournCurInfo {
             RogueTournCurInfo::mut_rogue_tourn_cur_game_info,
             RogueTournCurInfo::set_rogue_tourn_cur_game_info,
         ));
-        oneofs.push(rogue_tourn_cur_info::KFELKJLDKEH::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurAreaInfo::RogueTournCurAreaInfo>(
+            "AECDGOACAAF",
+            |m: &RogueTournCurInfo| { &m.AECDGOACAAF },
+            |m: &mut RogueTournCurInfo| { &mut m.AECDGOACAAF },
+        ));
+        oneofs.push(rogue_tourn_cur_info::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournCurInfo>(
             "RogueTournCurInfo",
             fields,
@@ -131,11 +131,11 @@ impl ::protobuf::Message for RogueTournCurInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKOBKINKHCF)?;
+                3170 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(is.read_message()?));
                 },
-                5810 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(is.read_message()?));
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AECDGOACAAF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -149,13 +149,13 @@ impl ::protobuf::Message for RogueTournCurInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IKOBKINKHCF.as_ref() {
+        if let Some(v) = self.AECDGOACAAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(ref v) => {
+                &rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -167,13 +167,13 @@ impl ::protobuf::Message for RogueTournCurInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IKOBKINKHCF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.AECDGOACAAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_tourn_cur_info::KFELKJLDKEH::RogueTournCurGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(726, v, os)?;
+                &rogue_tourn_cur_info::IEICDGGELNE::RogueTournCurGameInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(396, v, os)?;
                 },
             };
         }
@@ -194,15 +194,15 @@ impl ::protobuf::Message for RogueTournCurInfo {
     }
 
     fn clear(&mut self) {
-        self.IKOBKINKHCF.clear();
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.AECDGOACAAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournCurInfo {
         static instance: RogueTournCurInfo = RogueTournCurInfo {
-            IKOBKINKHCF: ::protobuf::MessageField::none(),
-            KFELKJLDKEH: ::std::option::Option::None,
+            AECDGOACAAF: ::protobuf::MessageField::none(),
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -231,35 +231,35 @@ pub mod rogue_tourn_cur_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueTournCurInfo.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:RogueTournCurInfo.IEICDGGELNE)
+    pub enum IEICDGGELNE {
         // @@protoc_insertion_point(oneof_field:RogueTournCurInfo.rogue_tourn_cur_game_info)
         RogueTournCurGameInfo(super::super::RogueTournCurGameInfo::RogueTournCurGameInfo),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueTournCurInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::RogueTournCurInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RogueTournCurInfo.proto\x1a\x1bRogueTournCurAreaInfo.proto\x1a\x1b\
-    RogueTournCurGameInfo.proto\"\xb1\x01\n\x11RogueTournCurInfo\x128\n\x0bI\
-    KOBKINKHCF\x18\x06\x20\x01(\x0b2\x16.RogueTournCurAreaInfoR\x0bIKOBKINKH\
-    CF\x12S\n\x19rogue_tourn_cur_game_info\x18\xd6\x05\x20\x01(\x0b2\x16.Rog\
-    ueTournCurGameInfoH\0R\x15rogueTournCurGameInfoB\r\n\x0bKFELKJLDKEHb\x06\
+    RogueTournCurGameInfo.proto\"\xb1\x01\n\x11RogueTournCurInfo\x12S\n\x19r\
+    ogue_tourn_cur_game_info\x18\x8c\x03\x20\x01(\x0b2\x16.RogueTournCurGame\
+    InfoH\0R\x15rogueTournCurGameInfo\x128\n\x0bAECDGOACAAF\x18\x0f\x20\x01(\
+    \x0b2\x16.RogueTournCurAreaInfoR\x0bAECDGOACAAFB\r\n\x0bIEICDGGELNEb\x06\
     proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAKGEEHGPOH {
     // message fields
-    // @@protoc_insertion_point(field:MAKGEEHGPOH.GMMOPDHDFCI)
-    pub GMMOPDHDFCI: ::std::vec::Vec<super::NFKDAAGBMPJ::NFKDAAGBMPJ>,
+    // @@protoc_insertion_point(field:MAKGEEHGPOH.OPABBLMGLNN)
+    pub OPABBLMGLNN: ::std::vec::Vec<super::NFKDAAGBMPJ::NFKDAAGBMPJ>,
     // special fields
     // @@protoc_insertion_point(special_field:MAKGEEHGPOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MAKGEEHGPOH {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMMOPDHDFCI",
-            |m: &MAKGEEHGPOH| { &m.GMMOPDHDFCI },
-            |m: &mut MAKGEEHGPOH| { &mut m.GMMOPDHDFCI },
+            "OPABBLMGLNN",
+            |m: &MAKGEEHGPOH| { &m.OPABBLMGLNN },
+            |m: &mut MAKGEEHGPOH| { &mut m.OPABBLMGLNN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAKGEEHGPOH>(
             "MAKGEEHGPOH",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MAKGEEHGPOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.GMMOPDHDFCI.push(is.read_message()?);
+                42 => {
+                    self.OPABBLMGLNN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MAKGEEHGPOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GMMOPDHDFCI {
+        for value in &self.OPABBLMGLNN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MAKGEEHGPOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GMMOPDHDFCI {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.OPABBLMGLNN {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MAKGEEHGPOH {
     }
 
     fn clear(&mut self) {
-        self.GMMOPDHDFCI.clear();
+        self.OPABBLMGLNN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAKGEEHGPOH {
         static instance: MAKGEEHGPOH = MAKGEEHGPOH {
-            GMMOPDHDFCI: ::std::vec::Vec::new(),
+            OPABBLMGLNN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MAKGEEHGPOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAKGEEHGPOH.proto\x1a\x11NFKDAAGBMPJ.proto\"=\n\x0bMAKGEEHGPOH\x12\
-    .\n\x0bGMMOPDHDFCI\x18\x0c\x20\x03(\x0b2\x0c.NFKDAAGBMPJR\x0bGMMOPDHDFCI\
+    .\n\x0bOPABBLMGLNN\x18\x05\x20\x03(\x0b2\x0c.NFKDAAGBMPJR\x0bOPABBLMGLNN\
     b\x06proto3\
 ";
 

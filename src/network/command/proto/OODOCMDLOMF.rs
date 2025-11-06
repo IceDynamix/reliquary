@@ -34,18 +34,20 @@ pub struct OODOCMDLOMF {
     pub level: u32,
     // @@protoc_insertion_point(field:OODOCMDLOMF.nickname)
     pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:OODOCMDLOMF.GFIDNAANAFH)
-    pub GFIDNAANAFH: u32,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.icon)
+    pub icon: u32,
     // @@protoc_insertion_point(field:OODOCMDLOMF.platform)
     pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:OODOCMDLOMF.AKCEJFCFBAN)
-    pub AKCEJFCFBAN: ::std::string::String,
-    // @@protoc_insertion_point(field:OODOCMDLOMF.BJELLAPOGJN)
-    pub BJELLAPOGJN: ::std::string::String,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.DBAMJGMEEGN)
+    pub DBAMJGMEEGN: ::std::string::String,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.HPDCKAJLBEA)
+    pub HPDCKAJLBEA: ::std::string::String,
     // @@protoc_insertion_point(field:OODOCMDLOMF.version)
     pub version: u64,
-    // @@protoc_insertion_point(field:OODOCMDLOMF.COCONGACIFJ)
-    pub COCONGACIFJ: bool,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.DDINPOFAOFG)
+    pub DDINPOFAOFG: bool,
+    // @@protoc_insertion_point(field:OODOCMDLOMF.JPJELHEGFAI)
+    pub JPJELHEGFAI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OODOCMDLOMF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,7 +65,7 @@ impl OODOCMDLOMF {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -81,9 +83,9 @@ impl OODOCMDLOMF {
             |m: &mut OODOCMDLOMF| { &mut m.nickname },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFIDNAANAFH",
-            |m: &OODOCMDLOMF| { &m.GFIDNAANAFH },
-            |m: &mut OODOCMDLOMF| { &mut m.GFIDNAANAFH },
+            "icon",
+            |m: &OODOCMDLOMF| { &m.icon },
+            |m: &mut OODOCMDLOMF| { &mut m.icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "platform",
@@ -91,14 +93,14 @@ impl OODOCMDLOMF {
             |m: &mut OODOCMDLOMF| { &mut m.platform },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKCEJFCFBAN",
-            |m: &OODOCMDLOMF| { &m.AKCEJFCFBAN },
-            |m: &mut OODOCMDLOMF| { &mut m.AKCEJFCFBAN },
+            "DBAMJGMEEGN",
+            |m: &OODOCMDLOMF| { &m.DBAMJGMEEGN },
+            |m: &mut OODOCMDLOMF| { &mut m.DBAMJGMEEGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJELLAPOGJN",
-            |m: &OODOCMDLOMF| { &m.BJELLAPOGJN },
-            |m: &mut OODOCMDLOMF| { &mut m.BJELLAPOGJN },
+            "HPDCKAJLBEA",
+            |m: &OODOCMDLOMF| { &m.HPDCKAJLBEA },
+            |m: &mut OODOCMDLOMF| { &mut m.HPDCKAJLBEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "version",
@@ -106,9 +108,14 @@ impl OODOCMDLOMF {
             |m: &mut OODOCMDLOMF| { &mut m.version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COCONGACIFJ",
-            |m: &OODOCMDLOMF| { &m.COCONGACIFJ },
-            |m: &mut OODOCMDLOMF| { &mut m.COCONGACIFJ },
+            "DDINPOFAOFG",
+            |m: &OODOCMDLOMF| { &m.DDINPOFAOFG },
+            |m: &mut OODOCMDLOMF| { &mut m.DDINPOFAOFG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPJELHEGFAI",
+            |m: &OODOCMDLOMF| { &m.JPJELHEGFAI },
+            |m: &mut OODOCMDLOMF| { &mut m.JPJELHEGFAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OODOCMDLOMF>(
             "OODOCMDLOMF",
@@ -138,22 +145,25 @@ impl ::protobuf::Message for OODOCMDLOMF {
                     self.nickname = is.read_string()?;
                 },
                 32 => {
-                    self.GFIDNAANAFH = is.read_uint32()?;
+                    self.icon = is.read_uint32()?;
                 },
                 40 => {
                     self.platform = is.read_enum_or_unknown()?;
                 },
                 50 => {
-                    self.AKCEJFCFBAN = is.read_string()?;
+                    self.DBAMJGMEEGN = is.read_string()?;
                 },
                 58 => {
-                    self.BJELLAPOGJN = is.read_string()?;
+                    self.HPDCKAJLBEA = is.read_string()?;
                 },
                 64 => {
                     self.version = is.read_uint64()?;
                 },
                 72 => {
-                    self.COCONGACIFJ = is.read_bool()?;
+                    self.DDINPOFAOFG = is.read_bool()?;
+                },
+                80 => {
+                    self.JPJELHEGFAI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -176,23 +186,26 @@ impl ::protobuf::Message for OODOCMDLOMF {
         if !self.nickname.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.nickname);
         }
-        if self.GFIDNAANAFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GFIDNAANAFH);
+        if self.icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.icon);
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
             my_size += ::protobuf::rt::int32_size(5, self.platform.value());
         }
-        if !self.AKCEJFCFBAN.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.AKCEJFCFBAN);
+        if !self.DBAMJGMEEGN.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.DBAMJGMEEGN);
         }
-        if !self.BJELLAPOGJN.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.BJELLAPOGJN);
+        if !self.HPDCKAJLBEA.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.HPDCKAJLBEA);
         }
         if self.version != 0 {
             my_size += ::protobuf::rt::uint64_size(8, self.version);
         }
-        if self.COCONGACIFJ != false {
+        if self.DDINPOFAOFG != false {
             my_size += 1 + 1;
+        }
+        if self.JPJELHEGFAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.JPJELHEGFAI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -209,23 +222,26 @@ impl ::protobuf::Message for OODOCMDLOMF {
         if !self.nickname.is_empty() {
             os.write_string(3, &self.nickname)?;
         }
-        if self.GFIDNAANAFH != 0 {
-            os.write_uint32(4, self.GFIDNAANAFH)?;
+        if self.icon != 0 {
+            os.write_uint32(4, self.icon)?;
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
             os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.platform))?;
         }
-        if !self.AKCEJFCFBAN.is_empty() {
-            os.write_string(6, &self.AKCEJFCFBAN)?;
+        if !self.DBAMJGMEEGN.is_empty() {
+            os.write_string(6, &self.DBAMJGMEEGN)?;
         }
-        if !self.BJELLAPOGJN.is_empty() {
-            os.write_string(7, &self.BJELLAPOGJN)?;
+        if !self.HPDCKAJLBEA.is_empty() {
+            os.write_string(7, &self.HPDCKAJLBEA)?;
         }
         if self.version != 0 {
             os.write_uint64(8, self.version)?;
         }
-        if self.COCONGACIFJ != false {
-            os.write_bool(9, self.COCONGACIFJ)?;
+        if self.DDINPOFAOFG != false {
+            os.write_bool(9, self.DDINPOFAOFG)?;
+        }
+        if self.JPJELHEGFAI != 0 {
+            os.write_uint32(10, self.JPJELHEGFAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -247,12 +263,13 @@ impl ::protobuf::Message for OODOCMDLOMF {
         self.uid = 0;
         self.level = 0;
         self.nickname.clear();
-        self.GFIDNAANAFH = 0;
+        self.icon = 0;
         self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.AKCEJFCFBAN.clear();
-        self.BJELLAPOGJN.clear();
+        self.DBAMJGMEEGN.clear();
+        self.HPDCKAJLBEA.clear();
         self.version = 0;
-        self.COCONGACIFJ = false;
+        self.DDINPOFAOFG = false;
+        self.JPJELHEGFAI = 0;
         self.special_fields.clear();
     }
 
@@ -261,12 +278,13 @@ impl ::protobuf::Message for OODOCMDLOMF {
             uid: 0,
             level: 0,
             nickname: ::std::string::String::new(),
-            GFIDNAANAFH: 0,
+            icon: 0,
             platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            AKCEJFCFBAN: ::std::string::String::new(),
-            BJELLAPOGJN: ::std::string::String::new(),
+            DBAMJGMEEGN: ::std::string::String::new(),
+            HPDCKAJLBEA: ::std::string::String::new(),
             version: 0,
-            COCONGACIFJ: false,
+            DDINPOFAOFG: false,
+            JPJELHEGFAI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -291,15 +309,15 @@ impl ::protobuf::reflect::ProtobufValue for OODOCMDLOMF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OODOCMDLOMF.proto\x1a\x12PlatformType.proto\"\x9e\x02\n\x0bOODOCMD\
+    \n\x11OODOCMDLOMF.proto\x1a\x12PlatformType.proto\"\xb2\x02\n\x0bOODOCMD\
     LOMF\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x14\n\x05level\x18\
     \x02\x20\x01(\rR\x05level\x12\x1a\n\x08nickname\x18\x03\x20\x01(\tR\x08n\
-    ickname\x12\x20\n\x0bGFIDNAANAFH\x18\x04\x20\x01(\rR\x0bGFIDNAANAFH\x12)\
-    \n\x08platform\x18\x05\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x20\
-    \n\x0bAKCEJFCFBAN\x18\x06\x20\x01(\tR\x0bAKCEJFCFBAN\x12\x20\n\x0bBJELLA\
-    POGJN\x18\x07\x20\x01(\tR\x0bBJELLAPOGJN\x12\x18\n\x07version\x18\x08\
-    \x20\x01(\x04R\x07version\x12\x20\n\x0bCOCONGACIFJ\x18\t\x20\x01(\x08R\
-    \x0bCOCONGACIFJb\x06proto3\
+    ickname\x12\x12\n\x04icon\x18\x04\x20\x01(\rR\x04icon\x12)\n\x08platform\
+    \x18\x05\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x20\n\x0bDBAMJGME\
+    EGN\x18\x06\x20\x01(\tR\x0bDBAMJGMEEGN\x12\x20\n\x0bHPDCKAJLBEA\x18\x07\
+    \x20\x01(\tR\x0bHPDCKAJLBEA\x12\x18\n\x07version\x18\x08\x20\x01(\x04R\
+    \x07version\x12\x20\n\x0bDDINPOFAOFG\x18\t\x20\x01(\x08R\x0bDDINPOFAOFG\
+    \x12\x20\n\x0bJPJELHEGFAI\x18\n\x20\x01(\rR\x0bJPJELHEGFAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

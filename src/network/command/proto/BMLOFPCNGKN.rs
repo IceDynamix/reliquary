@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMLOFPCNGKN {
     // message fields
-    // @@protoc_insertion_point(field:BMLOFPCNGKN.DJFHCDDIFMI)
-    pub DJFHCDDIFMI: i32,
-    // @@protoc_insertion_point(field:BMLOFPCNGKN.OFCNDEMAPPL)
-    pub OFCNDEMAPPL: i32,
-    // @@protoc_insertion_point(field:BMLOFPCNGKN.IHLHDPNAEKC)
-    pub IHLHDPNAEKC: i32,
+    // @@protoc_insertion_point(field:BMLOFPCNGKN.NBLCGAFFDKF)
+    pub NBLCGAFFDKF: i32,
+    // @@protoc_insertion_point(field:BMLOFPCNGKN.BCPMAEPHGIM)
+    pub BCPMAEPHGIM: i32,
+    // @@protoc_insertion_point(field:BMLOFPCNGKN.JAIPEEIOFDL)
+    pub JAIPEEIOFDL: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BMLOFPCNGKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl BMLOFPCNGKN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFHCDDIFMI",
-            |m: &BMLOFPCNGKN| { &m.DJFHCDDIFMI },
-            |m: &mut BMLOFPCNGKN| { &mut m.DJFHCDDIFMI },
+            "NBLCGAFFDKF",
+            |m: &BMLOFPCNGKN| { &m.NBLCGAFFDKF },
+            |m: &mut BMLOFPCNGKN| { &mut m.NBLCGAFFDKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFCNDEMAPPL",
-            |m: &BMLOFPCNGKN| { &m.OFCNDEMAPPL },
-            |m: &mut BMLOFPCNGKN| { &mut m.OFCNDEMAPPL },
+            "BCPMAEPHGIM",
+            |m: &BMLOFPCNGKN| { &m.BCPMAEPHGIM },
+            |m: &mut BMLOFPCNGKN| { &mut m.BCPMAEPHGIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHLHDPNAEKC",
-            |m: &BMLOFPCNGKN| { &m.IHLHDPNAEKC },
-            |m: &mut BMLOFPCNGKN| { &mut m.IHLHDPNAEKC },
+            "JAIPEEIOFDL",
+            |m: &BMLOFPCNGKN| { &m.JAIPEEIOFDL },
+            |m: &mut BMLOFPCNGKN| { &mut m.JAIPEEIOFDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMLOFPCNGKN>(
             "BMLOFPCNGKN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DJFHCDDIFMI = is.read_int32()?;
+                40 => {
+                    self.NBLCGAFFDKF = is.read_int32()?;
                 },
-                8 => {
-                    self.OFCNDEMAPPL = is.read_int32()?;
+                56 => {
+                    self.BCPMAEPHGIM = is.read_int32()?;
                 },
-                96 => {
-                    self.IHLHDPNAEKC = is.read_int32()?;
+                80 => {
+                    self.JAIPEEIOFDL = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJFHCDDIFMI != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.DJFHCDDIFMI);
+        if self.NBLCGAFFDKF != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.NBLCGAFFDKF);
         }
-        if self.OFCNDEMAPPL != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.OFCNDEMAPPL);
+        if self.BCPMAEPHGIM != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.BCPMAEPHGIM);
         }
-        if self.IHLHDPNAEKC != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.IHLHDPNAEKC);
+        if self.JAIPEEIOFDL != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.JAIPEEIOFDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJFHCDDIFMI != 0 {
-            os.write_int32(3, self.DJFHCDDIFMI)?;
+        if self.NBLCGAFFDKF != 0 {
+            os.write_int32(5, self.NBLCGAFFDKF)?;
         }
-        if self.OFCNDEMAPPL != 0 {
-            os.write_int32(1, self.OFCNDEMAPPL)?;
+        if self.BCPMAEPHGIM != 0 {
+            os.write_int32(7, self.BCPMAEPHGIM)?;
         }
-        if self.IHLHDPNAEKC != 0 {
-            os.write_int32(12, self.IHLHDPNAEKC)?;
+        if self.JAIPEEIOFDL != 0 {
+            os.write_int32(10, self.JAIPEEIOFDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BMLOFPCNGKN {
     }
 
     fn clear(&mut self) {
-        self.DJFHCDDIFMI = 0;
-        self.OFCNDEMAPPL = 0;
-        self.IHLHDPNAEKC = 0;
+        self.NBLCGAFFDKF = 0;
+        self.BCPMAEPHGIM = 0;
+        self.JAIPEEIOFDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMLOFPCNGKN {
         static instance: BMLOFPCNGKN = BMLOFPCNGKN {
-            DJFHCDDIFMI: 0,
-            OFCNDEMAPPL: 0,
-            IHLHDPNAEKC: 0,
+            NBLCGAFFDKF: 0,
+            BCPMAEPHGIM: 0,
+            JAIPEEIOFDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for BMLOFPCNGKN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BMLOFPCNGKN.proto\"s\n\x0bBMLOFPCNGKN\x12\x20\n\x0bDJFHCDDIFMI\x18\
-    \x03\x20\x01(\x05R\x0bDJFHCDDIFMI\x12\x20\n\x0bOFCNDEMAPPL\x18\x01\x20\
-    \x01(\x05R\x0bOFCNDEMAPPL\x12\x20\n\x0bIHLHDPNAEKC\x18\x0c\x20\x01(\x05R\
-    \x0bIHLHDPNAEKCb\x06proto3\
+    \n\x11BMLOFPCNGKN.proto\"s\n\x0bBMLOFPCNGKN\x12\x20\n\x0bNBLCGAFFDKF\x18\
+    \x05\x20\x01(\x05R\x0bNBLCGAFFDKF\x12\x20\n\x0bBCPMAEPHGIM\x18\x07\x20\
+    \x01(\x05R\x0bBCPMAEPHGIM\x12\x20\n\x0bJAIPEEIOFDL\x18\n\x20\x01(\x05R\
+    \x0bJAIPEEIOFDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyOrderChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AlleyOrderChangedScNotify.PPHIADNKGAF)
-    pub PPHIADNKGAF: ::protobuf::MessageField<super::ECJMJJKJGOP::ECJMJJKJGOP>,
+    // @@protoc_insertion_point(field:AlleyOrderChangedScNotify.alley_order_info)
+    pub alley_order_info: ::protobuf::MessageField<super::AlleyOrderInfo::AlleyOrderInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyOrderChangedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl AlleyOrderChangedScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ECJMJJKJGOP::ECJMJJKJGOP>(
-            "PPHIADNKGAF",
-            |m: &AlleyOrderChangedScNotify| { &m.PPHIADNKGAF },
-            |m: &mut AlleyOrderChangedScNotify| { &mut m.PPHIADNKGAF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AlleyOrderInfo::AlleyOrderInfo>(
+            "alley_order_info",
+            |m: &AlleyOrderChangedScNotify| { &m.alley_order_info },
+            |m: &mut AlleyOrderChangedScNotify| { &mut m.alley_order_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyOrderChangedScNotify>(
             "AlleyOrderChangedScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for AlleyOrderChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPHIADNKGAF)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.alley_order_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for AlleyOrderChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PPHIADNKGAF.as_ref() {
+        if let Some(v) = self.alley_order_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AlleyOrderChangedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PPHIADNKGAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.alley_order_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AlleyOrderChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.PPHIADNKGAF.clear();
+        self.alley_order_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyOrderChangedScNotify {
         static instance: AlleyOrderChangedScNotify = AlleyOrderChangedScNotify {
-            PPHIADNKGAF: ::protobuf::MessageField::none(),
+            alley_order_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for AlleyOrderChangedScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fAlleyOrderChangedScNotify.proto\x1a\x11ECJMJJKJGOP.proto\"K\n\x19A\
-    lleyOrderChangedScNotify\x12.\n\x0bPPHIADNKGAF\x18\n\x20\x01(\x0b2\x0c.E\
-    CJMJJKJGOPR\x0bPPHIADNKGAFb\x06proto3\
+    \n\x1fAlleyOrderChangedScNotify.proto\x1a\x14AlleyOrderInfo.proto\"V\n\
+    \x19AlleyOrderChangedScNotify\x129\n\x10alley_order_info\x18\x05\x20\x01\
+    (\x0b2\x0f.AlleyOrderInfoR\x0ealleyOrderInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ECJMJJKJGOP::file_descriptor().clone());
+            deps.push(super::AlleyOrderInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AlleyOrderChangedScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

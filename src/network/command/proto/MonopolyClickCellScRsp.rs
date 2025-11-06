@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyClickCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.cell_id)
-    pub cell_id: u32,
     // @@protoc_insertion_point(field:MonopolyClickCellScRsp.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:MonopolyClickCellScRsp.cell_id)
+    pub cell_id: u32,
     // @@protoc_insertion_point(field:MonopolyClickCellScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MonopolyClickCellScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cell_id",
-            |m: &MonopolyClickCellScRsp| { &m.cell_id },
-            |m: &mut MonopolyClickCellScRsp| { &mut m.cell_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &MonopolyClickCellScRsp| { &m.map_id },
             |m: &mut MonopolyClickCellScRsp| { &mut m.map_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cell_id",
+            |m: &MonopolyClickCellScRsp| { &m.cell_id },
+            |m: &mut MonopolyClickCellScRsp| { &mut m.cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.cell_id = is.read_uint32()?;
-                },
-                40 => {
+                24 => {
                     self.map_id = is.read_uint32()?;
                 },
-                48 => {
+                72 => {
+                    self.cell_id = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cell_id);
-        }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.map_id);
+        }
+        if self.cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.cell_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cell_id != 0 {
-            os.write_uint32(10, self.cell_id)?;
-        }
         if self.map_id != 0 {
-            os.write_uint32(5, self.map_id)?;
+            os.write_uint32(3, self.map_id)?;
+        }
+        if self.cell_id != 0 {
+            os.write_uint32(9, self.cell_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MonopolyClickCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.cell_id = 0;
         self.map_id = 0;
+        self.cell_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyClickCellScRsp {
         static instance: MonopolyClickCellScRsp = MonopolyClickCellScRsp {
-            cell_id: 0,
             map_id: 0,
+            cell_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyClickCellScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMonopolyClickCellScRsp.proto\"b\n\x16MonopolyClickCellScRsp\x12\
-    \x17\n\x07cell_id\x18\n\x20\x01(\rR\x06cellId\x12\x15\n\x06map_id\x18\
-    \x05\x20\x01(\rR\x05mapId\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07re\
-    tcodeb\x06proto3\
+    \x15\n\x06map_id\x18\x03\x20\x01(\rR\x05mapId\x12\x17\n\x07cell_id\x18\t\
+    \x20\x01(\rR\x06cellId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

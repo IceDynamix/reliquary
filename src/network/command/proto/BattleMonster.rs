@@ -34,6 +34,8 @@ pub struct BattleMonster {
     pub cur_hp: u32,
     // @@protoc_insertion_point(field:BattleMonster.max_hp)
     pub max_hp: u32,
+    // @@protoc_insertion_point(field:BattleMonster.extra_info)
+    pub extra_info: ::protobuf::MessageField<super::ACJONMDEFIP::ACJONMDEFIP>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleMonster.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +53,7 @@ impl BattleMonster {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
@@ -67,6 +69,11 @@ impl BattleMonster {
             "max_hp",
             |m: &BattleMonster| { &m.max_hp },
             |m: &mut BattleMonster| { &mut m.max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ACJONMDEFIP::ACJONMDEFIP>(
+            "extra_info",
+            |m: &BattleMonster| { &m.extra_info },
+            |m: &mut BattleMonster| { &mut m.extra_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleMonster>(
             "BattleMonster",
@@ -95,6 +102,9 @@ impl ::protobuf::Message for BattleMonster {
                 24 => {
                     self.max_hp = is.read_uint32()?;
                 },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -116,6 +126,10 @@ impl ::protobuf::Message for BattleMonster {
         if self.max_hp != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.max_hp);
         }
+        if let Some(v) = self.extra_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -130,6 +144,9 @@ impl ::protobuf::Message for BattleMonster {
         }
         if self.max_hp != 0 {
             os.write_uint32(3, self.max_hp)?;
+        }
+        if let Some(v) = self.extra_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,6 +168,7 @@ impl ::protobuf::Message for BattleMonster {
         self.monster_id = 0;
         self.cur_hp = 0;
         self.max_hp = 0;
+        self.extra_info.clear();
         self.special_fields.clear();
     }
 
@@ -159,6 +177,7 @@ impl ::protobuf::Message for BattleMonster {
             monster_id: 0,
             cur_hp: 0,
             max_hp: 0,
+            extra_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for BattleMonster {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13BattleMonster.proto\"\\\n\rBattleMonster\x12\x1d\n\nmonster_id\x18\
-    \x01\x20\x01(\rR\tmonsterId\x12\x15\n\x06cur_hp\x18\x02\x20\x01(\rR\x05c\
-    urHp\x12\x15\n\x06max_hp\x18\x03\x20\x01(\rR\x05maxHpb\x06proto3\
+    \n\x13BattleMonster.proto\x1a\x11ACJONMDEFIP.proto\"\x89\x01\n\rBattleMo\
+    nster\x12\x1d\n\nmonster_id\x18\x01\x20\x01(\rR\tmonsterId\x12\x15\n\x06\
+    cur_hp\x18\x02\x20\x01(\rR\x05curHp\x12\x15\n\x06max_hp\x18\x03\x20\x01(\
+    \rR\x05maxHp\x12+\n\nextra_info\x18\x04\x20\x01(\x0b2\x0c.ACJONMDEFIPR\t\
+    extraInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -202,7 +223,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::ACJONMDEFIP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleMonster::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

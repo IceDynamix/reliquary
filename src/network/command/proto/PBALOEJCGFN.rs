@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PBALOEJCGFN {
     // message fields
-    // @@protoc_insertion_point(field:PBALOEJCGFN.BEMCEEDABFD)
-    pub BEMCEEDABFD: u32,
-    // @@protoc_insertion_point(field:PBALOEJCGFN.JALAMOPLDHO)
-    pub JALAMOPLDHO: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
+    // @@protoc_insertion_point(field:PBALOEJCGFN.PJMFMENNDEC)
+    pub PJMFMENNDEC: u32,
+    // @@protoc_insertion_point(field:PBALOEJCGFN.FGKOANMGBLD)
+    pub FGKOANMGBLD: ::protobuf::MessageField<super::GameRogueMiracle::GameRogueMiracle>,
     // special fields
     // @@protoc_insertion_point(special_field:PBALOEJCGFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PBALOEJCGFN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEMCEEDABFD",
-            |m: &PBALOEJCGFN| { &m.BEMCEEDABFD },
-            |m: &mut PBALOEJCGFN| { &mut m.BEMCEEDABFD },
+            "PJMFMENNDEC",
+            |m: &PBALOEJCGFN| { &m.PJMFMENNDEC },
+            |m: &mut PBALOEJCGFN| { &mut m.PJMFMENNDEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameRogueMiracle::GameRogueMiracle>(
-            "JALAMOPLDHO",
-            |m: &PBALOEJCGFN| { &m.JALAMOPLDHO },
-            |m: &mut PBALOEJCGFN| { &mut m.JALAMOPLDHO },
+            "FGKOANMGBLD",
+            |m: &PBALOEJCGFN| { &m.FGKOANMGBLD },
+            |m: &mut PBALOEJCGFN| { &mut m.FGKOANMGBLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PBALOEJCGFN>(
             "PBALOEJCGFN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PBALOEJCGFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.BEMCEEDABFD = is.read_uint32()?;
+                24 => {
+                    self.PJMFMENNDEC = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JALAMOPLDHO)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGKOANMGBLD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for PBALOEJCGFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEMCEEDABFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BEMCEEDABFD);
+        if self.PJMFMENNDEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PJMFMENNDEC);
         }
-        if let Some(v) = self.JALAMOPLDHO.as_ref() {
+        if let Some(v) = self.FGKOANMGBLD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PBALOEJCGFN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEMCEEDABFD != 0 {
-            os.write_uint32(10, self.BEMCEEDABFD)?;
+        if self.PJMFMENNDEC != 0 {
+            os.write_uint32(3, self.PJMFMENNDEC)?;
         }
-        if let Some(v) = self.JALAMOPLDHO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.FGKOANMGBLD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PBALOEJCGFN {
     }
 
     fn clear(&mut self) {
-        self.BEMCEEDABFD = 0;
-        self.JALAMOPLDHO.clear();
+        self.PJMFMENNDEC = 0;
+        self.FGKOANMGBLD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PBALOEJCGFN {
         static instance: PBALOEJCGFN = PBALOEJCGFN {
-            BEMCEEDABFD: 0,
-            JALAMOPLDHO: ::protobuf::MessageField::none(),
+            PJMFMENNDEC: 0,
+            FGKOANMGBLD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PBALOEJCGFN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PBALOEJCGFN.proto\x1a\x16GameRogueMiracle.proto\"d\n\x0bPBALOEJCGF\
-    N\x12\x20\n\x0bBEMCEEDABFD\x18\n\x20\x01(\rR\x0bBEMCEEDABFD\x123\n\x0bJA\
-    LAMOPLDHO\x18\x02\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bJALAMOPLDHOb\
+    N\x12\x20\n\x0bPJMFMENNDEC\x18\x03\x20\x01(\rR\x0bPJMFMENNDEC\x123\n\x0b\
+    FGKOANMGBLD\x18\x0b\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bFGKOANMGBLDb\
     \x06proto3\
 ";
 

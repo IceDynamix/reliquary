@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCurrentInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_map)
-    pub rogue_map: ::protobuf::MessageField<super::RogueMapInfo::RogueMapInfo>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.virtual_item_info)
-    pub virtual_item_info: ::protobuf::MessageField<super::RogueVirtualItem::RogueVirtualItem>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.module_info)
-    pub module_info: ::protobuf::MessageField<super::RogueModuleInfo::RogueModuleInfo>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_aeon_info)
-    pub rogue_aeon_info: ::protobuf::MessageField<super::GameAeonInfo::GameAeonInfo>,
     // @@protoc_insertion_point(field:RogueCurrentInfo.pending_action)
     pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.game_miracle_info)
-    pub game_miracle_info: ::protobuf::MessageField<super::GameMiracleInfo::GameMiracleInfo>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_lineup_info)
-    pub rogue_lineup_info: ::protobuf::MessageField<super::RogueLineupInfo::RogueLineupInfo>,
-    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_buff_info)
-    pub rogue_buff_info: ::protobuf::MessageField<super::RogueBuffInfo::RogueBuffInfo>,
     // @@protoc_insertion_point(field:RogueCurrentInfo.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::OMOCHGKHNIK::OMOCHGKHNIK>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::EFJDMHOAKOO::EFJDMHOAKOO>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::RogueMap::RogueMap>,
     // @@protoc_insertion_point(field:RogueCurrentInfo.is_explore_win)
     pub is_explore_win: bool,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.module_info)
+    pub module_info: ::protobuf::MessageField<super::RogueModuleInfo::RogueModuleInfo>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.money_info)
+    pub money_info: ::protobuf::MessageField<super::ChessRogueMoneyInfo::ChessRogueMoneyInfo>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.buff_info)
+    pub buff_info: ::protobuf::MessageField<super::CFMAPIMJDFC::CFMAPIMJDFC>,
+    // @@protoc_insertion_point(field:RogueCurrentInfo.aeon_info)
+    pub aeon_info: ::protobuf::MessageField<super::GABCAPJGHFG::GABCAPJGHFG>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCurrentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,55 +67,55 @@ impl RogueCurrentInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMapInfo::RogueMapInfo>(
-            "rogue_map",
-            |m: &RogueCurrentInfo| { &m.rogue_map },
-            |m: &mut RogueCurrentInfo| { &mut m.rogue_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueVirtualItem::RogueVirtualItem>(
-            "virtual_item_info",
-            |m: &RogueCurrentInfo| { &m.virtual_item_info },
-            |m: &mut RogueCurrentInfo| { &mut m.virtual_item_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModuleInfo::RogueModuleInfo>(
-            "module_info",
-            |m: &RogueCurrentInfo| { &m.module_info },
-            |m: &mut RogueCurrentInfo| { &mut m.module_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameAeonInfo::GameAeonInfo>(
-            "rogue_aeon_info",
-            |m: &RogueCurrentInfo| { &m.rogue_aeon_info },
-            |m: &mut RogueCurrentInfo| { &mut m.rogue_aeon_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
             "pending_action",
             |m: &RogueCurrentInfo| { &m.pending_action },
             |m: &mut RogueCurrentInfo| { &mut m.pending_action },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GameMiracleInfo::GameMiracleInfo>(
-            "game_miracle_info",
-            |m: &RogueCurrentInfo| { &m.game_miracle_info },
-            |m: &mut RogueCurrentInfo| { &mut m.game_miracle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueLineupInfo::RogueLineupInfo>(
-            "rogue_lineup_info",
-            |m: &RogueCurrentInfo| { &m.rogue_lineup_info },
-            |m: &mut RogueCurrentInfo| { &mut m.rogue_lineup_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffInfo::RogueBuffInfo>(
-            "rogue_buff_info",
-            |m: &RogueCurrentInfo| { &m.rogue_buff_info },
-            |m: &mut RogueCurrentInfo| { &mut m.rogue_buff_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &RogueCurrentInfo| { &m.status },
             |m: &mut RogueCurrentInfo| { &mut m.status },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMOCHGKHNIK::OMOCHGKHNIK>(
+            "miracle_info",
+            |m: &RogueCurrentInfo| { &m.miracle_info },
+            |m: &mut RogueCurrentInfo| { &mut m.miracle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EFJDMHOAKOO::EFJDMHOAKOO>(
+            "rogue_lineup_info",
+            |m: &RogueCurrentInfo| { &m.rogue_lineup_info },
+            |m: &mut RogueCurrentInfo| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMap::RogueMap>(
+            "rogue_map",
+            |m: &RogueCurrentInfo| { &m.rogue_map },
+            |m: &mut RogueCurrentInfo| { &mut m.rogue_map },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_explore_win",
             |m: &RogueCurrentInfo| { &m.is_explore_win },
             |m: &mut RogueCurrentInfo| { &mut m.is_explore_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModuleInfo::RogueModuleInfo>(
+            "module_info",
+            |m: &RogueCurrentInfo| { &m.module_info },
+            |m: &mut RogueCurrentInfo| { &mut m.module_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMoneyInfo::ChessRogueMoneyInfo>(
+            "money_info",
+            |m: &RogueCurrentInfo| { &m.money_info },
+            |m: &mut RogueCurrentInfo| { &mut m.money_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFMAPIMJDFC::CFMAPIMJDFC>(
+            "buff_info",
+            |m: &RogueCurrentInfo| { &m.buff_info },
+            |m: &mut RogueCurrentInfo| { &mut m.buff_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GABCAPJGHFG::GABCAPJGHFG>(
+            "aeon_info",
+            |m: &RogueCurrentInfo| { &m.aeon_info },
+            |m: &mut RogueCurrentInfo| { &mut m.aeon_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCurrentInfo>(
             "RogueCurrentInfo",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for RogueCurrentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.virtual_item_info)?;
-                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.module_info)?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_aeon_info)?;
-                },
-                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_miracle_info)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
                 },
                 32 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
+                },
+                88 => {
                     self.is_explore_win = is.read_bool()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.module_info)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.money_info)?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_info)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.aeon_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,27 +177,14 @@ impl ::protobuf::Message for RogueCurrentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_map.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.virtual_item_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.module_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.pending_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.game_miracle_info.as_ref() {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.status.value());
+        }
+        if let Some(v) = self.miracle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -205,15 +192,28 @@ impl ::protobuf::Message for RogueCurrentInfo {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
+        if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.status.value());
-        }
         if self.is_explore_win != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.module_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.money_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.buff_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -221,35 +221,35 @@ impl ::protobuf::Message for RogueCurrentInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.virtual_item_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if let Some(v) = self.module_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.rogue_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.game_miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.rogue_lineup_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
             os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
         if self.is_explore_win != false {
-            os.write_bool(10, self.is_explore_win)?;
+            os.write_bool(11, self.is_explore_win)?;
+        }
+        if let Some(v) = self.module_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.money_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -268,31 +268,31 @@ impl ::protobuf::Message for RogueCurrentInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_map.clear();
-        self.virtual_item_info.clear();
-        self.module_info.clear();
-        self.rogue_aeon_info.clear();
         self.pending_action.clear();
-        self.game_miracle_info.clear();
-        self.rogue_lineup_info.clear();
-        self.rogue_buff_info.clear();
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
+        self.miracle_info.clear();
+        self.rogue_lineup_info.clear();
+        self.rogue_map.clear();
         self.is_explore_win = false;
+        self.module_info.clear();
+        self.money_info.clear();
+        self.buff_info.clear();
+        self.aeon_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCurrentInfo {
         static instance: RogueCurrentInfo = RogueCurrentInfo {
-            rogue_map: ::protobuf::MessageField::none(),
-            virtual_item_info: ::protobuf::MessageField::none(),
-            module_info: ::protobuf::MessageField::none(),
-            rogue_aeon_info: ::protobuf::MessageField::none(),
             pending_action: ::protobuf::MessageField::none(),
-            game_miracle_info: ::protobuf::MessageField::none(),
-            rogue_lineup_info: ::protobuf::MessageField::none(),
-            rogue_buff_info: ::protobuf::MessageField::none(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            miracle_info: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            rogue_map: ::protobuf::MessageField::none(),
             is_explore_win: false,
+            module_info: ::protobuf::MessageField::none(),
+            money_info: ::protobuf::MessageField::none(),
+            buff_info: ::protobuf::MessageField::none(),
+            aeon_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -317,22 +317,21 @@ impl ::protobuf::reflect::ProtobufValue for RogueCurrentInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RogueCurrentInfo.proto\x1a\x12GameAeonInfo.proto\x1a\x15GameMiracl\
-    eInfo.proto\x1a\x13RogueBuffInfo.proto\x1a\x1eRogueCommonPendingAction.p\
-    roto\x1a\x15RogueLineupInfo.proto\x1a\x12RogueMapInfo.proto\x1a\x15Rogue\
-    ModuleInfo.proto\x1a\x11RogueStatus.proto\x1a\x16RogueVirtualItem.proto\
-    \"\xa9\x04\n\x10RogueCurrentInfo\x12*\n\trogue_map\x18\x0b\x20\x01(\x0b2\
-    \r.RogueMapInfoR\x08rogueMap\x12=\n\x11virtual_item_info\x18\x0c\x20\x01\
-    (\x0b2\x11.RogueVirtualItemR\x0fvirtualItemInfo\x121\n\x0bmodule_info\
-    \x18\x02\x20\x01(\x0b2\x10.RogueModuleInfoR\nmoduleInfo\x125\n\x0frogue_\
-    aeon_info\x18\x0e\x20\x01(\x0b2\r.GameAeonInfoR\rrogueAeonInfo\x12@\n\
-    \x0epending_action\x18\x03\x20\x01(\x0b2\x19.RogueCommonPendingActionR\r\
-    pendingAction\x12<\n\x11game_miracle_info\x18\x07\x20\x01(\x0b2\x10.Game\
-    MiracleInfoR\x0fgameMiracleInfo\x12<\n\x11rogue_lineup_info\x18\x08\x20\
-    \x01(\x0b2\x10.RogueLineupInfoR\x0frogueLineupInfo\x126\n\x0frogue_buff_\
-    info\x18\t\x20\x01(\x0b2\x0e.RogueBuffInfoR\rrogueBuffInfo\x12$\n\x06sta\
-    tus\x18\x04\x20\x01(\x0e2\x0c.RogueStatusR\x06status\x12$\n\x0eis_explor\
-    e_win\x18\n\x20\x01(\x08R\x0cisExploreWinb\x06proto3\
+    \n\x16RogueCurrentInfo.proto\x1a\x11CFMAPIMJDFC.proto\x1a\x19ChessRogueM\
+    oneyInfo.proto\x1a\x11EFJDMHOAKOO.proto\x1a\x11GABCAPJGHFG.proto\x1a\x11\
+    OMOCHGKHNIK.proto\x1a\x1eRogueCommonPendingAction.proto\x1a\x0eRogueMap.\
+    proto\x1a\x15RogueModuleInfo.proto\x1a\x11RogueStatus.proto\"\xf1\x03\n\
+    \x10RogueCurrentInfo\x12@\n\x0epending_action\x18\x02\x20\x01(\x0b2\x19.\
+    RogueCommonPendingActionR\rpendingAction\x12$\n\x06status\x18\x04\x20\
+    \x01(\x0e2\x0c.RogueStatusR\x06status\x12/\n\x0cmiracle_info\x18\x06\x20\
+    \x01(\x0b2\x0c.OMOCHGKHNIKR\x0bmiracleInfo\x128\n\x11rogue_lineup_info\
+    \x18\x07\x20\x01(\x0b2\x0c.EFJDMHOAKOOR\x0frogueLineupInfo\x12&\n\trogue\
+    _map\x18\n\x20\x01(\x0b2\t.RogueMapR\x08rogueMap\x12$\n\x0eis_explore_wi\
+    n\x18\x0b\x20\x01(\x08R\x0cisExploreWin\x121\n\x0bmodule_info\x18\x0c\
+    \x20\x01(\x0b2\x10.RogueModuleInfoR\nmoduleInfo\x123\n\nmoney_info\x18\r\
+    \x20\x01(\x0b2\x14.ChessRogueMoneyInfoR\tmoneyInfo\x12)\n\tbuff_info\x18\
+    \x0e\x20\x01(\x0b2\x0c.CFMAPIMJDFCR\x08buffInfo\x12)\n\taeon_info\x18\
+    \x0f\x20\x01(\x0b2\x0c.GABCAPJGHFGR\x08aeonInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -350,15 +349,15 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(9);
-            deps.push(super::GameAeonInfo::file_descriptor().clone());
-            deps.push(super::GameMiracleInfo::file_descriptor().clone());
-            deps.push(super::RogueBuffInfo::file_descriptor().clone());
+            deps.push(super::CFMAPIMJDFC::file_descriptor().clone());
+            deps.push(super::ChessRogueMoneyInfo::file_descriptor().clone());
+            deps.push(super::EFJDMHOAKOO::file_descriptor().clone());
+            deps.push(super::GABCAPJGHFG::file_descriptor().clone());
+            deps.push(super::OMOCHGKHNIK::file_descriptor().clone());
             deps.push(super::RogueCommonPendingAction::file_descriptor().clone());
-            deps.push(super::RogueLineupInfo::file_descriptor().clone());
-            deps.push(super::RogueMapInfo::file_descriptor().clone());
+            deps.push(super::RogueMap::file_descriptor().clone());
             deps.push(super::RogueModuleInfo::file_descriptor().clone());
             deps.push(super::RogueStatus::file_descriptor().clone());
-            deps.push(super::RogueVirtualItem::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueCurrentInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

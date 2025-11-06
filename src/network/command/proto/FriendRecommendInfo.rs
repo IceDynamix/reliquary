@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FriendRecommendInfo {
     // message fields
-    // @@protoc_insertion_point(field:FriendRecommendInfo.JHOLBLPEGLJ)
-    pub JHOLBLPEGLJ: bool,
+    // @@protoc_insertion_point(field:FriendRecommendInfo.is_assist)
+    pub is_assist: bool,
     // @@protoc_insertion_point(field:FriendRecommendInfo.player_info)
     pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
@@ -52,9 +52,9 @@ impl FriendRecommendInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHOLBLPEGLJ",
-            |m: &FriendRecommendInfo| { &m.JHOLBLPEGLJ },
-            |m: &mut FriendRecommendInfo| { &mut m.JHOLBLPEGLJ },
+            "is_assist",
+            |m: &FriendRecommendInfo| { &m.is_assist },
+            |m: &mut FriendRecommendInfo| { &mut m.is_assist },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
             "player_info",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FriendRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JHOLBLPEGLJ = is.read_bool()?;
+                48 => {
+                    self.is_assist = is.read_bool()?;
                 },
-                98 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FriendRecommendInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JHOLBLPEGLJ != false {
+        if self.is_assist != false {
             my_size += 1 + 1;
         }
         if let Some(v) = self.player_info.as_ref() {
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FriendRecommendInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JHOLBLPEGLJ != false {
-            os.write_bool(1, self.JHOLBLPEGLJ)?;
+        if self.is_assist != false {
+            os.write_bool(6, self.is_assist)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for FriendRecommendInfo {
     }
 
     fn clear(&mut self) {
-        self.JHOLBLPEGLJ = false;
+        self.is_assist = false;
         self.player_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendRecommendInfo {
         static instance: FriendRecommendInfo = FriendRecommendInfo {
-            JHOLBLPEGLJ: false,
+            is_assist: false,
             player_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for FriendRecommendInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"k\n\x13Fr\
-    iendRecommendInfo\x12\x20\n\x0bJHOLBLPEGLJ\x18\x01\x20\x01(\x08R\x0bJHOL\
-    BLPEGLJ\x122\n\x0bplayer_info\x18\x0c\x20\x01(\x0b2\x11.PlayerSimpleInfo\
-    R\nplayerInfob\x06proto3\
+    \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"f\n\x13Fr\
+    iendRecommendInfo\x12\x1b\n\tis_assist\x18\x06\x20\x01(\x08R\x08isAssist\
+    \x122\n\x0bplayer_info\x18\x0b\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplay\
+    erInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

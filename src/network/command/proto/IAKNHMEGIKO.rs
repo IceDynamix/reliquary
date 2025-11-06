@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IAKNHMEGIKO {
     // message fields
-    // @@protoc_insertion_point(field:IAKNHMEGIKO.AEKJLHJOPCE)
-    pub AEKJLHJOPCE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:IAKNHMEGIKO.CNEANAFMOHE)
+    pub CNEANAFMOHE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:IAKNHMEGIKO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl IAKNHMEGIKO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AEKJLHJOPCE",
-            |m: &IAKNHMEGIKO| { &m.AEKJLHJOPCE },
-            |m: &mut IAKNHMEGIKO| { &mut m.AEKJLHJOPCE },
+            "CNEANAFMOHE",
+            |m: &IAKNHMEGIKO| { &m.CNEANAFMOHE },
+            |m: &mut IAKNHMEGIKO| { &mut m.CNEANAFMOHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAKNHMEGIKO>(
             "IAKNHMEGIKO",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for IAKNHMEGIKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AEKJLHJOPCE)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CNEANAFMOHE)?;
                 },
-                40 => {
-                    self.AEKJLHJOPCE.push(is.read_uint32()?);
+                24 => {
+                    self.CNEANAFMOHE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for IAKNHMEGIKO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.AEKJLHJOPCE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CNEANAFMOHE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.AEKJLHJOPCE)?;
+        os.write_repeated_packed_uint32(3, &self.CNEANAFMOHE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for IAKNHMEGIKO {
     }
 
     fn clear(&mut self) {
-        self.AEKJLHJOPCE.clear();
+        self.CNEANAFMOHE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAKNHMEGIKO {
         static instance: IAKNHMEGIKO = IAKNHMEGIKO {
-            AEKJLHJOPCE: ::std::vec::Vec::new(),
+            CNEANAFMOHE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for IAKNHMEGIKO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IAKNHMEGIKO.proto\"/\n\x0bIAKNHMEGIKO\x12\x20\n\x0bAEKJLHJOPCE\x18\
-    \x05\x20\x03(\rR\x0bAEKJLHJOPCEb\x06proto3\
+    \n\x11IAKNHMEGIKO.proto\"/\n\x0bIAKNHMEGIKO\x12\x20\n\x0bCNEANAFMOHE\x18\
+    \x03\x20\x03(\rR\x0bCNEANAFMOHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

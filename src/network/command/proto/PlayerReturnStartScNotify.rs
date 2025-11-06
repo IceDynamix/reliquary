@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnStartScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnStartScNotify.NCHIEKEDHCE)
-    pub NCHIEKEDHCE: u32,
+    // @@protoc_insertion_point(field:PlayerReturnStartScNotify.OJGMGCKKHHM)
+    pub OJGMGCKKHHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlayerReturnStartScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCHIEKEDHCE",
-            |m: &PlayerReturnStartScNotify| { &m.NCHIEKEDHCE },
-            |m: &mut PlayerReturnStartScNotify| { &mut m.NCHIEKEDHCE },
+            "OJGMGCKKHHM",
+            |m: &PlayerReturnStartScNotify| { &m.OJGMGCKKHHM },
+            |m: &mut PlayerReturnStartScNotify| { &mut m.OJGMGCKKHHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnStartScNotify>(
             "PlayerReturnStartScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for PlayerReturnStartScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.NCHIEKEDHCE = is.read_uint32()?;
+                    self.OJGMGCKKHHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlayerReturnStartScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCHIEKEDHCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NCHIEKEDHCE);
+        if self.OJGMGCKKHHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OJGMGCKKHHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlayerReturnStartScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCHIEKEDHCE != 0 {
-            os.write_uint32(14, self.NCHIEKEDHCE)?;
+        if self.OJGMGCKKHHM != 0 {
+            os.write_uint32(14, self.OJGMGCKKHHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlayerReturnStartScNotify {
     }
 
     fn clear(&mut self) {
-        self.NCHIEKEDHCE = 0;
+        self.OJGMGCKKHHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnStartScNotify {
         static instance: PlayerReturnStartScNotify = PlayerReturnStartScNotify {
-            NCHIEKEDHCE: 0,
+            OJGMGCKKHHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnStartScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fPlayerReturnStartScNotify.proto\"=\n\x19PlayerReturnStartScNotify\
-    \x12\x20\n\x0bNCHIEKEDHCE\x18\x0e\x20\x01(\rR\x0bNCHIEKEDHCEb\x06proto3\
+    \x12\x20\n\x0bOJGMGCKKHHM\x18\x0e\x20\x01(\rR\x0bOJGMGCKKHHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

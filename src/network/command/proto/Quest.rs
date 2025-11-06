@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Quest {
     // message fields
-    // @@protoc_insertion_point(field:Quest.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:Quest.finish_time)
-    pub finish_time: i64,
-    // @@protoc_insertion_point(field:Quest.PGJNGNAJHPP)
-    pub PGJNGNAJHPP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:Quest.status)
-    pub status: ::protobuf::EnumOrUnknown<super::QuestStatus::QuestStatus>,
+    // @@protoc_insertion_point(field:Quest.taken_achievement_level_list)
+    pub taken_achievement_level_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:Quest.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:Quest.status)
+    pub status: ::protobuf::EnumOrUnknown<super::QuestStatus::QuestStatus>,
+    // @@protoc_insertion_point(field:Quest.finish_time)
+    pub finish_time: i64,
+    // @@protoc_insertion_point(field:Quest.progress)
+    pub progress: u32,
     // special fields
     // @@protoc_insertion_point(special_field:Quest.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl Quest {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &Quest| { &m.progress },
-            |m: &mut Quest| { &mut m.progress },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "finish_time",
-            |m: &Quest| { &m.finish_time },
-            |m: &mut Quest| { &mut m.finish_time },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PGJNGNAJHPP",
-            |m: &Quest| { &m.PGJNGNAJHPP },
-            |m: &mut Quest| { &mut m.PGJNGNAJHPP },
+            "taken_achievement_level_list",
+            |m: &Quest| { &m.taken_achievement_level_list },
+            |m: &mut Quest| { &mut m.taken_achievement_level_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &Quest| { &m.id },
+            |m: &mut Quest| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -78,9 +73,14 @@ impl Quest {
             |m: &mut Quest| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &Quest| { &m.id },
-            |m: &mut Quest| { &mut m.id },
+            "finish_time",
+            |m: &Quest| { &m.finish_time },
+            |m: &mut Quest| { &mut m.finish_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &Quest| { &m.progress },
+            |m: &mut Quest| { &mut m.progress },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Quest>(
             "Quest",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for Quest {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.progress = is.read_uint32()?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.taken_achievement_level_list)?;
                 },
-                72 => {
-                    self.finish_time = is.read_int64()?;
+                8 => {
+                    self.taken_achievement_level_list.push(is.read_uint32()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PGJNGNAJHPP)?;
+                24 => {
+                    self.id = is.read_uint32()?;
                 },
-                120 => {
-                    self.PGJNGNAJHPP.push(is.read_uint32()?);
-                },
-                40 => {
+                64 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                32 => {
-                    self.id = is.read_uint32()?;
+                88 => {
+                    self.finish_time = is.read_int64()?;
+                },
+                120 => {
+                    self.progress = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for Quest {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.taken_achievement_level_list);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.id);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.status.value());
         }
         if self.finish_time != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.finish_time);
+            my_size += ::protobuf::rt::int64_size(11, self.finish_time);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.PGJNGNAJHPP);
-        if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.id);
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for Quest {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(2, self.progress)?;
+        os.write_repeated_packed_uint32(1, &self.taken_achievement_level_list)?;
+        if self.id != 0 {
+            os.write_uint32(3, self.id)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.finish_time != 0 {
-            os.write_int64(9, self.finish_time)?;
+            os.write_int64(11, self.finish_time)?;
         }
-        os.write_repeated_packed_uint32(15, &self.PGJNGNAJHPP)?;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.id != 0 {
-            os.write_uint32(4, self.id)?;
+        if self.progress != 0 {
+            os.write_uint32(15, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for Quest {
     }
 
     fn clear(&mut self) {
-        self.progress = 0;
-        self.finish_time = 0;
-        self.PGJNGNAJHPP.clear();
-        self.status = ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE);
+        self.taken_achievement_level_list.clear();
         self.id = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::QuestStatus::QuestStatus::QUEST_NONE);
+        self.finish_time = 0;
+        self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Quest {
         static instance: Quest = Quest {
-            progress: 0,
-            finish_time: 0,
-            PGJNGNAJHPP: ::std::vec::Vec::new(),
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            taken_achievement_level_list: ::std::vec::Vec::new(),
             id: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            finish_time: 0,
+            progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for Quest {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bQuest.proto\x1a\x11QuestStatus.proto\"\x9c\x01\n\x05Quest\x12\x1a\
-    \n\x08progress\x18\x02\x20\x01(\rR\x08progress\x12\x1f\n\x0bfinish_time\
-    \x18\t\x20\x01(\x03R\nfinishTime\x12\x20\n\x0bPGJNGNAJHPP\x18\x0f\x20\
-    \x03(\rR\x0bPGJNGNAJHPP\x12$\n\x06status\x18\x05\x20\x01(\x0e2\x0c.Quest\
-    StatusR\x06status\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02idb\x06proto3\
+    \n\x0bQuest.proto\x1a\x11QuestStatus.proto\"\xbb\x01\n\x05Quest\x12?\n\
+    \x1ctaken_achievement_level_list\x18\x01\x20\x03(\rR\x19takenAchievement\
+    LevelList\x12\x0e\n\x02id\x18\x03\x20\x01(\rR\x02id\x12$\n\x06status\x18\
+    \x08\x20\x01(\x0e2\x0c.QuestStatusR\x06status\x12\x1f\n\x0bfinish_time\
+    \x18\x0b\x20\x01(\x03R\nfinishTime\x12\x1a\n\x08progress\x18\x0f\x20\x01\
+    (\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

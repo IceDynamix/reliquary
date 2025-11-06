@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueReviveInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueReviveInfo.rogue_revive_cost)
-    pub rogue_revive_cost: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueReviveInfo.revive_avatar_cost_items)
+    pub revive_avatar_cost_items: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueReviveInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueReviveInfo {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "rogue_revive_cost",
-            |m: &RogueReviveInfo| { &m.rogue_revive_cost },
-            |m: &mut RogueReviveInfo| { &mut m.rogue_revive_cost },
+            "revive_avatar_cost_items",
+            |m: &RogueReviveInfo| { &m.revive_avatar_cost_items },
+            |m: &mut RogueReviveInfo| { &mut m.revive_avatar_cost_items },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueReviveInfo>(
             "RogueReviveInfo",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueReviveInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_avatar_cost_items)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueReviveInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_revive_cost.as_ref() {
+        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueReviveInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueReviveInfo {
     }
 
     fn clear(&mut self) {
-        self.rogue_revive_cost.clear();
+        self.revive_avatar_cost_items.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueReviveInfo {
         static instance: RogueReviveInfo = RogueReviveInfo {
-            rogue_revive_cost: ::protobuf::MessageField::none(),
+            revive_avatar_cost_items: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueReviveInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueReviveInfo.proto\x1a\x12ItemCostData.proto\"L\n\x0fRogueReviv\
-    eInfo\x129\n\x11rogue_revive_cost\x18\x01\x20\x01(\x0b2\r.ItemCostDataR\
-    \x0frogueReviveCostb\x06proto3\
+    \n\x15RogueReviveInfo.proto\x1a\x12ItemCostData.proto\"Y\n\x0fRogueReviv\
+    eInfo\x12F\n\x18revive_avatar_cost_items\x18\x07\x20\x01(\x0b2\r.ItemCos\
+    tDataR\x15reviveAvatarCostItemsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

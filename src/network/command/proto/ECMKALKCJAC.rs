@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECMKALKCJAC {
     // message fields
-    // @@protoc_insertion_point(field:ECMKALKCJAC.MPBPONGIGID)
-    pub MPBPONGIGID: ::std::string::String,
     // @@protoc_insertion_point(field:ECMKALKCJAC.head_icon)
     pub head_icon: u32,
-    // @@protoc_insertion_point(field:ECMKALKCJAC.CMAMEDOLLJL)
-    pub CMAMEDOLLJL: ::std::string::String,
+    // @@protoc_insertion_point(field:ECMKALKCJAC.JCJDHHIOLGJ)
+    pub JCJDHHIOLGJ: ::std::string::String,
+    // @@protoc_insertion_point(field:ECMKALKCJAC.OHCNBFCLIFH)
+    pub OHCNBFCLIFH: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:ECMKALKCJAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ECMKALKCJAC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPBPONGIGID",
-            |m: &ECMKALKCJAC| { &m.MPBPONGIGID },
-            |m: &mut ECMKALKCJAC| { &mut m.MPBPONGIGID },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "head_icon",
             |m: &ECMKALKCJAC| { &m.head_icon },
             |m: &mut ECMKALKCJAC| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CMAMEDOLLJL",
-            |m: &ECMKALKCJAC| { &m.CMAMEDOLLJL },
-            |m: &mut ECMKALKCJAC| { &mut m.CMAMEDOLLJL },
+            "JCJDHHIOLGJ",
+            |m: &ECMKALKCJAC| { &m.JCJDHHIOLGJ },
+            |m: &mut ECMKALKCJAC| { &mut m.JCJDHHIOLGJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OHCNBFCLIFH",
+            |m: &ECMKALKCJAC| { &m.OHCNBFCLIFH },
+            |m: &mut ECMKALKCJAC| { &mut m.OHCNBFCLIFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ECMKALKCJAC>(
             "ECMKALKCJAC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ECMKALKCJAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MPBPONGIGID = is.read_string()?;
-                },
-                104 => {
+                32 => {
                     self.head_icon = is.read_uint32()?;
                 },
-                82 => {
-                    self.CMAMEDOLLJL = is.read_string()?;
+                50 => {
+                    self.JCJDHHIOLGJ = is.read_string()?;
+                },
+                122 => {
+                    self.OHCNBFCLIFH = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ECMKALKCJAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.MPBPONGIGID.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.MPBPONGIGID);
-        }
         if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(4, self.head_icon);
         }
-        if !self.CMAMEDOLLJL.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.CMAMEDOLLJL);
+        if !self.JCJDHHIOLGJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.JCJDHHIOLGJ);
+        }
+        if !self.OHCNBFCLIFH.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.OHCNBFCLIFH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ECMKALKCJAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.MPBPONGIGID.is_empty() {
-            os.write_string(5, &self.MPBPONGIGID)?;
-        }
         if self.head_icon != 0 {
-            os.write_uint32(13, self.head_icon)?;
+            os.write_uint32(4, self.head_icon)?;
         }
-        if !self.CMAMEDOLLJL.is_empty() {
-            os.write_string(10, &self.CMAMEDOLLJL)?;
+        if !self.JCJDHHIOLGJ.is_empty() {
+            os.write_string(6, &self.JCJDHHIOLGJ)?;
+        }
+        if !self.OHCNBFCLIFH.is_empty() {
+            os.write_string(15, &self.OHCNBFCLIFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ECMKALKCJAC {
     }
 
     fn clear(&mut self) {
-        self.MPBPONGIGID.clear();
         self.head_icon = 0;
-        self.CMAMEDOLLJL.clear();
+        self.JCJDHHIOLGJ.clear();
+        self.OHCNBFCLIFH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECMKALKCJAC {
         static instance: ECMKALKCJAC = ECMKALKCJAC {
-            MPBPONGIGID: ::std::string::String::new(),
             head_icon: 0,
-            CMAMEDOLLJL: ::std::string::String::new(),
+            JCJDHHIOLGJ: ::std::string::String::new(),
+            OHCNBFCLIFH: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ECMKALKCJAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECMKALKCJAC.proto\"n\n\x0bECMKALKCJAC\x12\x20\n\x0bMPBPONGIGID\x18\
-    \x05\x20\x01(\tR\x0bMPBPONGIGID\x12\x1b\n\thead_icon\x18\r\x20\x01(\rR\
-    \x08headIcon\x12\x20\n\x0bCMAMEDOLLJL\x18\n\x20\x01(\tR\x0bCMAMEDOLLJLb\
-    \x06proto3\
+    \n\x11ECMKALKCJAC.proto\"n\n\x0bECMKALKCJAC\x12\x1b\n\thead_icon\x18\x04\
+    \x20\x01(\rR\x08headIcon\x12\x20\n\x0bJCJDHHIOLGJ\x18\x06\x20\x01(\tR\
+    \x0bJCJDHHIOLGJ\x12\x20\n\x0bOHCNBFCLIFH\x18\x0f\x20\x01(\tR\x0bOHCNBFCL\
+    IFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

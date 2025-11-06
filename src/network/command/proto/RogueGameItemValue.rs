@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGameItemValue {
     // message fields
-    // @@protoc_insertion_point(field:RogueGameItemValue.GLAPHHABOHP)
-    pub GLAPHHABOHP: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:RogueGameItemValue.LNGIFJPIOLE)
+    pub LNGIFJPIOLE: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGameItemValue.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueGameItemValue {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "GLAPHHABOHP",
-            |m: &RogueGameItemValue| { &m.GLAPHHABOHP },
-            |m: &mut RogueGameItemValue| { &mut m.GLAPHHABOHP },
+            "LNGIFJPIOLE",
+            |m: &RogueGameItemValue| { &m.LNGIFJPIOLE },
+            |m: &mut RogueGameItemValue| { &mut m.LNGIFJPIOLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGameItemValue>(
             "RogueGameItemValue",
@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueGameItemValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -85,7 +85,7 @@ impl ::protobuf::Message for RogueGameItemValue {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.GLAPHHABOHP.insert(key, value);
+                    self.LNGIFJPIOLE.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,7 +99,7 @@ impl ::protobuf::Message for RogueGameItemValue {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.GLAPHHABOHP {
+        for (k, v) in &self.LNGIFJPIOLE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RogueGameItemValue {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.GLAPHHABOHP {
+        for (k, v) in &self.LNGIFJPIOLE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(82)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
@@ -137,7 +137,7 @@ impl ::protobuf::Message for RogueGameItemValue {
     }
 
     fn clear(&mut self) {
-        self.GLAPHHABOHP.clear();
+        self.LNGIFJPIOLE.clear();
         self.special_fields.clear();
     }
 
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueGameItemValue {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueGameItemValue.proto\"\x9c\x01\n\x12RogueGameItemValue\x12F\n\
-    \x0bGLAPHHABOHP\x18\x07\x20\x03(\x0b2$.RogueGameItemValue.GLAPHHABOHPEnt\
-    ryR\x0bGLAPHHABOHP\x1a>\n\x10GLAPHHABOHPEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    \x0bLNGIFJPIOLE\x18\n\x20\x03(\x0b2$.RogueGameItemValue.LNGIFJPIOLEEntry\
+    R\x0bLNGIFJPIOLE\x1a>\n\x10LNGIFJPIOLEEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

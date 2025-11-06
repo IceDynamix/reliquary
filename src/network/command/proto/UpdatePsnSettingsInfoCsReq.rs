@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePsnSettingsInfoCsReq {
     // message oneof groups
-    pub DFOPIIHEJFM: ::std::option::Option<update_psn_settings_info_cs_req::DFOPIIHEJFM>,
+    pub DDBNLHJNANE: ::std::option::Option<update_psn_settings_info_cs_req::DDBNLHJNANE>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePsnSettingsInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl UpdatePsnSettingsInfoCsReq {
         ::std::default::Default::default()
     }
 
-    // .NCBIMLPODON DOOCPLCLDPD = 653;
+    // .NCBIMLPODON DOOCPLCLDPD = 1499;
 
     pub fn DOOCPLCLDPD(&self) -> &super::NCBIMLPODON::NCBIMLPODON {
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(ref v)) => v,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v)) => v,
             _ => <super::NCBIMLPODON::NCBIMLPODON as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_DOOCPLCLDPD(&mut self) {
-        self.DFOPIIHEJFM = ::std::option::Option::None;
+        self.DDBNLHJNANE = ::std::option::Option::None;
     }
 
     pub fn has_DOOCPLCLDPD(&self) -> bool {
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(..)) => true,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_DOOCPLCLDPD(&mut self, v: super::NCBIMLPODON::NCBIMLPODON) {
-        self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(v))
+        self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_DOOCPLCLDPD(&mut self) -> &mut super::NCBIMLPODON::NCBIMLPODON {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(_)) = self.DFOPIIHEJFM {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(_)) = self.DDBNLHJNANE {
         } else {
-            self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(super::NCBIMLPODON::NCBIMLPODON::new()));
+            self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(super::NCBIMLPODON::NCBIMLPODON::new()));
         }
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(ref mut v)) => v,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl UpdatePsnSettingsInfoCsReq {
     // Take field
     pub fn take_DOOCPLCLDPD(&mut self) -> super::NCBIMLPODON::NCBIMLPODON {
         if self.has_DOOCPLCLDPD() {
-            match self.DFOPIIHEJFM.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(v)) => v,
+            match self.DDBNLHJNANE.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl UpdatePsnSettingsInfoCsReq {
         }
     }
 
-    // .CJAKIBDIMMJ INHLDIDJGHA = 1686;
+    // .CJAKIBDIMMJ INHLDIDJGHA = 2039;
 
     pub fn INHLDIDJGHA(&self) -> &super::CJAKIBDIMMJ::CJAKIBDIMMJ {
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(ref v)) => v,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v)) => v,
             _ => <super::CJAKIBDIMMJ::CJAKIBDIMMJ as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_INHLDIDJGHA(&mut self) {
-        self.DFOPIIHEJFM = ::std::option::Option::None;
+        self.DDBNLHJNANE = ::std::option::Option::None;
     }
 
     pub fn has_INHLDIDJGHA(&self) -> bool {
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(..)) => true,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_INHLDIDJGHA(&mut self, v: super::CJAKIBDIMMJ::CJAKIBDIMMJ) {
-        self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(v))
+        self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_INHLDIDJGHA(&mut self) -> &mut super::CJAKIBDIMMJ::CJAKIBDIMMJ {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(_)) = self.DFOPIIHEJFM {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(_)) = self.DDBNLHJNANE {
         } else {
-            self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(super::CJAKIBDIMMJ::CJAKIBDIMMJ::new()));
+            self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(super::CJAKIBDIMMJ::CJAKIBDIMMJ::new()));
         }
-        match self.DFOPIIHEJFM {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(ref mut v)) => v,
+        match self.DDBNLHJNANE {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl UpdatePsnSettingsInfoCsReq {
     // Take field
     pub fn take_INHLDIDJGHA(&mut self) -> super::CJAKIBDIMMJ::CJAKIBDIMMJ {
         if self.has_INHLDIDJGHA() {
-            match self.DFOPIIHEJFM.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(v)) => v,
+            match self.DDBNLHJNANE.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl UpdatePsnSettingsInfoCsReq {
             UpdatePsnSettingsInfoCsReq::mut_INHLDIDJGHA,
             UpdatePsnSettingsInfoCsReq::set_INHLDIDJGHA,
         ));
-        oneofs.push(update_psn_settings_info_cs_req::DFOPIIHEJFM::generated_oneof_descriptor_data());
+        oneofs.push(update_psn_settings_info_cs_req::DDBNLHJNANE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePsnSettingsInfoCsReq>(
             "UpdatePsnSettingsInfoCsReq",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                5226 => {
-                    self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(is.read_message()?));
+                11994 => {
+                    self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(is.read_message()?));
                 },
-                13490 => {
-                    self.DFOPIIHEJFM = ::std::option::Option::Some(update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(is.read_message()?));
+                16314 => {
+                    self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.DFOPIIHEJFM {
+        if let ::std::option::Option::Some(ref v) = self.DDBNLHJNANE {
             match v {
-                &update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(ref v) => {
+                &update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(ref v) => {
+                &update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.DFOPIIHEJFM {
+        if let ::std::option::Option::Some(ref v) = self.DDBNLHJNANE {
             match v {
-                &update_psn_settings_info_cs_req::DFOPIIHEJFM::DOOCPLCLDPD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(653, v, os)?;
+                &update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1499, v, os)?;
                 },
-                &update_psn_settings_info_cs_req::DFOPIIHEJFM::INHLDIDJGHA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1686, v, os)?;
+                &update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2039, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.DFOPIIHEJFM = ::std::option::Option::None;
-        self.DFOPIIHEJFM = ::std::option::Option::None;
+        self.DDBNLHJNANE = ::std::option::Option::None;
+        self.DDBNLHJNANE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePsnSettingsInfoCsReq {
         static instance: UpdatePsnSettingsInfoCsReq = UpdatePsnSettingsInfoCsReq {
-            DFOPIIHEJFM: ::std::option::Option::None,
+            DDBNLHJNANE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod update_psn_settings_info_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.DFOPIIHEJFM)
-    pub enum DFOPIIHEJFM {
+    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.DDBNLHJNANE)
+    pub enum DDBNLHJNANE {
         // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.DOOCPLCLDPD)
         DOOCPLCLDPD(super::super::NCBIMLPODON::NCBIMLPODON),
         // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.INHLDIDJGHA)
         INHLDIDJGHA(super::super::CJAKIBDIMMJ::CJAKIBDIMMJ),
     }
 
-    impl ::protobuf::Oneof for DFOPIIHEJFM {
+    impl ::protobuf::Oneof for DDBNLHJNANE {
     }
 
-    impl ::protobuf::OneofFull for DFOPIIHEJFM {
+    impl ::protobuf::OneofFull for DDBNLHJNANE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DFOPIIHEJFM").unwrap()).clone()
+            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DDBNLHJNANE").unwrap()).clone()
         }
     }
 
-    impl DFOPIIHEJFM {
+    impl DDBNLHJNANE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DFOPIIHEJFM>("DFOPIIHEJFM")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DDBNLHJNANE>("DDBNLHJNANE")
         }
     }
 }
@@ -306,9 +306,9 @@ pub mod update_psn_settings_info_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11CJAKIBDIMMJ.proto\x1a\x11N\
     CBIMLPODON.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bDOO\
-    CPLCLDPD\x18\x8d\x05\x20\x01(\x0b2\x0c.NCBIMLPODONH\0R\x0bDOOCPLCLDPD\
-    \x121\n\x0bINHLDIDJGHA\x18\x96\r\x20\x01(\x0b2\x0c.CJAKIBDIMMJH\0R\x0bIN\
-    HLDIDJGHAB\r\n\x0bDFOPIIHEJFMb\x06proto3\
+    CPLCLDPD\x18\xdb\x0b\x20\x01(\x0b2\x0c.NCBIMLPODONH\0R\x0bDOOCPLCLDPD\
+    \x121\n\x0bINHLDIDJGHA\x18\xf7\x0f\x20\x01(\x0b2\x0c.CJAKIBDIMMJH\0R\x0b\
+    INHLDIDJGHAB\r\n\x0bDDBNLHJNANEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

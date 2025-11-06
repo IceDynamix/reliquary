@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraFinishEndlessRoundCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.CPBDBAIDAEH)
-    pub CPBDBAIDAEH: u32,
     // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::EGDGHFLLMGN::EGDGHFLLMGN>,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.PAHMAGPFDDJ)
-    pub PAHMAGPFDDJ: bool,
+    pub stt: ::protobuf::MessageField<super::ChimeraBattleRecordInfo::ChimeraBattleRecordInfo>,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.DIPKDPOPLJC)
+    pub DIPKDPOPLJC: bool,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.IGFKDJEONEB)
+    pub IGFKDJEONEB: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.JDPLEMADCME)
+    pub JDPLEMADCME: ::std::vec::Vec<super::JMAANMPANHM::JMAANMPANHM>,
     // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.lineup)
     pub lineup: ::protobuf::MessageField<super::MPJDIBCCOHF::MPJDIBCCOHF>,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.OPAMAEIJCOH)
-    pub OPAMAEIJCOH: ::std::vec::Vec<super::JMAANMPANHM::JMAANMPANHM>,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.HGODGDEAAJO)
-    pub HGODGDEAAJO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundCsReq.IPBOKEHKKCP)
+    pub IPBOKEHKKCP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraFinishEndlessRoundCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,25 @@ impl ChimeraFinishEndlessRoundCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPBDBAIDAEH",
-            |m: &ChimeraFinishEndlessRoundCsReq| { &m.CPBDBAIDAEH },
-            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.CPBDBAIDAEH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EGDGHFLLMGN::EGDGHFLLMGN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChimeraBattleRecordInfo::ChimeraBattleRecordInfo>(
             "stt",
             |m: &ChimeraFinishEndlessRoundCsReq| { &m.stt },
             |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.stt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAHMAGPFDDJ",
-            |m: &ChimeraFinishEndlessRoundCsReq| { &m.PAHMAGPFDDJ },
-            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.PAHMAGPFDDJ },
+            "DIPKDPOPLJC",
+            |m: &ChimeraFinishEndlessRoundCsReq| { &m.DIPKDPOPLJC },
+            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.DIPKDPOPLJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGFKDJEONEB",
+            |m: &ChimeraFinishEndlessRoundCsReq| { &m.IGFKDJEONEB },
+            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.IGFKDJEONEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JDPLEMADCME",
+            |m: &ChimeraFinishEndlessRoundCsReq| { &m.JDPLEMADCME },
+            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.JDPLEMADCME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MPJDIBCCOHF::MPJDIBCCOHF>(
             "lineup",
@@ -80,14 +85,9 @@ impl ChimeraFinishEndlessRoundCsReq {
             |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OPAMAEIJCOH",
-            |m: &ChimeraFinishEndlessRoundCsReq| { &m.OPAMAEIJCOH },
-            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.OPAMAEIJCOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGODGDEAAJO",
-            |m: &ChimeraFinishEndlessRoundCsReq| { &m.HGODGDEAAJO },
-            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.HGODGDEAAJO },
+            "IPBOKEHKKCP",
+            |m: &ChimeraFinishEndlessRoundCsReq| { &m.IPBOKEHKKCP },
+            |m: &mut ChimeraFinishEndlessRoundCsReq| { &mut m.IPBOKEHKKCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraFinishEndlessRoundCsReq>(
             "ChimeraFinishEndlessRoundCsReq",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.CPBDBAIDAEH = is.read_uint32()?;
-                },
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                96 => {
-                    self.PAHMAGPFDDJ = is.read_bool()?;
+                24 => {
+                    self.DIPKDPOPLJC = is.read_bool()?;
                 },
-                114 => {
+                56 => {
+                    self.IGFKDJEONEB = is.read_uint32()?;
+                },
+                66 => {
+                    self.JDPLEMADCME.push(is.read_message()?);
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                82 => {
-                    self.OPAMAEIJCOH.push(is.read_message()?);
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IPBOKEHKKCP)?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HGODGDEAAJO)?;
-                },
-                88 => {
-                    self.HGODGDEAAJO.push(is.read_uint32()?);
+                104 => {
+                    self.IPBOKEHKKCP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,47 +140,47 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CPBDBAIDAEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CPBDBAIDAEH);
-        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PAHMAGPFDDJ != false {
+        if self.DIPKDPOPLJC != false {
             my_size += 1 + 1;
         }
+        if self.IGFKDJEONEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IGFKDJEONEB);
+        }
+        for value in &self.JDPLEMADCME {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.OPAMAEIJCOH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HGODGDEAAJO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.IPBOKEHKKCP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CPBDBAIDAEH != 0 {
-            os.write_uint32(4, self.CPBDBAIDAEH)?;
-        }
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.PAHMAGPFDDJ != false {
-            os.write_bool(12, self.PAHMAGPFDDJ)?;
+        if self.DIPKDPOPLJC != false {
+            os.write_bool(3, self.DIPKDPOPLJC)?;
         }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.IGFKDJEONEB != 0 {
+            os.write_uint32(7, self.IGFKDJEONEB)?;
         }
-        for v in &self.OPAMAEIJCOH {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.JDPLEMADCME {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        os.write_repeated_packed_uint32(11, &self.HGODGDEAAJO)?;
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.IPBOKEHKKCP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundCsReq {
     }
 
     fn clear(&mut self) {
-        self.CPBDBAIDAEH = 0;
         self.stt.clear();
-        self.PAHMAGPFDDJ = false;
+        self.DIPKDPOPLJC = false;
+        self.IGFKDJEONEB = 0;
+        self.JDPLEMADCME.clear();
         self.lineup.clear();
-        self.OPAMAEIJCOH.clear();
-        self.HGODGDEAAJO.clear();
+        self.IPBOKEHKKCP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraFinishEndlessRoundCsReq {
         static instance: ChimeraFinishEndlessRoundCsReq = ChimeraFinishEndlessRoundCsReq {
-            CPBDBAIDAEH: 0,
             stt: ::protobuf::MessageField::none(),
-            PAHMAGPFDDJ: false,
+            DIPKDPOPLJC: false,
+            IGFKDJEONEB: 0,
+            JDPLEMADCME: ::std::vec::Vec::new(),
             lineup: ::protobuf::MessageField::none(),
-            OPAMAEIJCOH: ::std::vec::Vec::new(),
-            HGODGDEAAJO: ::std::vec::Vec::new(),
+            IPBOKEHKKCP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +239,15 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraFinishEndlessRoundCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$ChimeraFinishEndlessRoundCsReq.proto\x1a\x11EGDGHFLLMGN.proto\x1a\x11\
-    JMAANMPANHM.proto\x1a\x11MPJDIBCCOHF.proto\"\xfc\x01\n\x1eChimeraFinishE\
-    ndlessRoundCsReq\x12\x20\n\x0bCPBDBAIDAEH\x18\x04\x20\x01(\rR\x0bCPBDBAI\
-    DAEH\x12\x1e\n\x03stt\x18\x06\x20\x01(\x0b2\x0c.EGDGHFLLMGNR\x03stt\x12\
-    \x20\n\x0bPAHMAGPFDDJ\x18\x0c\x20\x01(\x08R\x0bPAHMAGPFDDJ\x12$\n\x06lin\
-    eup\x18\x0e\x20\x01(\x0b2\x0c.MPJDIBCCOHFR\x06lineup\x12.\n\x0bOPAMAEIJC\
-    OH\x18\n\x20\x03(\x0b2\x0c.JMAANMPANHMR\x0bOPAMAEIJCOH\x12\x20\n\x0bHGOD\
-    GDEAAJO\x18\x0b\x20\x03(\rR\x0bHGODGDEAAJOb\x06proto3\
+    \n$ChimeraFinishEndlessRoundCsReq.proto\x1a\x1dChimeraBattleRecordInfo.p\
+    roto\x1a\x11JMAANMPANHM.proto\x1a\x11MPJDIBCCOHF.proto\"\x88\x02\n\x1eCh\
+    imeraFinishEndlessRoundCsReq\x12*\n\x03stt\x18\x01\x20\x01(\x0b2\x18.Chi\
+    meraBattleRecordInfoR\x03stt\x12\x20\n\x0bDIPKDPOPLJC\x18\x03\x20\x01(\
+    \x08R\x0bDIPKDPOPLJC\x12\x20\n\x0bIGFKDJEONEB\x18\x07\x20\x01(\rR\x0bIGF\
+    KDJEONEB\x12.\n\x0bJDPLEMADCME\x18\x08\x20\x03(\x0b2\x0c.JMAANMPANHMR\
+    \x0bJDPLEMADCME\x12$\n\x06lineup\x18\t\x20\x01(\x0b2\x0c.MPJDIBCCOHFR\
+    \x06lineup\x12\x20\n\x0bIPBOKEHKKCP\x18\r\x20\x03(\rR\x0bIPBOKEHKKCPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,7 +265,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::EGDGHFLLMGN::file_descriptor().clone());
+            deps.push(super::ChimeraBattleRecordInfo::file_descriptor().clone());
             deps.push(super::JMAANMPANHM::file_descriptor().clone());
             deps.push(super::MPJDIBCCOHF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

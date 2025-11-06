@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueRewardInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueRewardInfoScNotify.rogue_score_reward_info)
-    pub rogue_score_reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
+    // @@protoc_insertion_point(field:SyncRogueRewardInfoScNotify.reward_info)
+    pub reward_info: ::protobuf::MessageField<super::RogueScoreRewardInfo::RogueScoreRewardInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueRewardInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRogueRewardInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueScoreRewardInfo::RogueScoreRewardInfo>(
-            "rogue_score_reward_info",
-            |m: &SyncRogueRewardInfoScNotify| { &m.rogue_score_reward_info },
-            |m: &mut SyncRogueRewardInfoScNotify| { &mut m.rogue_score_reward_info },
+            "reward_info",
+            |m: &SyncRogueRewardInfoScNotify| { &m.reward_info },
+            |m: &mut SyncRogueRewardInfoScNotify| { &mut m.reward_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueRewardInfoScNotify>(
             "SyncRogueRewardInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRogueRewardInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_score_reward_info)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRogueRewardInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_score_reward_info.as_ref() {
+        if let Some(v) = self.reward_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRogueRewardInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_score_reward_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.reward_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRogueRewardInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.rogue_score_reward_info.clear();
+        self.reward_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueRewardInfoScNotify {
         static instance: SyncRogueRewardInfoScNotify = SyncRogueRewardInfoScNotify {
-            rogue_score_reward_info: ::protobuf::MessageField::none(),
+            reward_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueRewardInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SyncRogueRewardInfoScNotify.proto\x1a\x1aRogueScoreRewardInfo.proto\"\
-    k\n\x1bSyncRogueRewardInfoScNotify\x12L\n\x17rogue_score_reward_info\x18\
-    \x08\x20\x01(\x0b2\x15.RogueScoreRewardInfoR\x14rogueScoreRewardInfob\
-    \x06proto3\
+    U\n\x1bSyncRogueRewardInfoScNotify\x126\n\x0breward_info\x18\n\x20\x01(\
+    \x0b2\x15.RogueScoreRewardInfoR\nrewardInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

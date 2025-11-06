@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct InteractChargerCsReq {
     // message fields
     // @@protoc_insertion_point(field:InteractChargerCsReq.charger_info)
-    pub charger_info: ::protobuf::MessageField<super::ChargerInfo::ChargerInfo>,
+    pub charger_info: ::protobuf::MessageField<super::ChargerData::ChargerData>,
     // special fields
     // @@protoc_insertion_point(special_field:InteractChargerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl InteractChargerCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChargerInfo::ChargerInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChargerData::ChargerData>(
             "charger_info",
             |m: &InteractChargerCsReq| { &m.charger_info },
             |m: &mut InteractChargerCsReq| { &mut m.charger_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for InteractChargerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.charger_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for InteractChargerCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.charger_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for InteractChargerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aInteractChargerCsReq.proto\x1a\x11ChargerInfo.proto\"G\n\x14Intera\
-    ctChargerCsReq\x12/\n\x0ccharger_info\x18\x02\x20\x01(\x0b2\x0c.ChargerI\
-    nfoR\x0bchargerInfob\x06proto3\
+    \n\x1aInteractChargerCsReq.proto\x1a\x11ChargerData.proto\"G\n\x14Intera\
+    ctChargerCsReq\x12/\n\x0ccharger_info\x18\x03\x20\x01(\x0b2\x0c.ChargerD\
+    ataR\x0bchargerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ChargerInfo::file_descriptor().clone());
+            deps.push(super::ChargerData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(InteractChargerCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

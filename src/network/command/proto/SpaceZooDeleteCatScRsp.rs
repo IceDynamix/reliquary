@@ -30,8 +30,8 @@ pub struct SpaceZooDeleteCatScRsp {
     // message fields
     // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.NFHEAGELICI)
-    pub NFHEAGELICI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.NMOAIIDBFFF)
+    pub NMOAIIDBFFF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooDeleteCatScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SpaceZooDeleteCatScRsp {
             |m: &mut SpaceZooDeleteCatScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFHEAGELICI",
-            |m: &SpaceZooDeleteCatScRsp| { &m.NFHEAGELICI },
-            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.NFHEAGELICI },
+            "NMOAIIDBFFF",
+            |m: &SpaceZooDeleteCatScRsp| { &m.NMOAIIDBFFF },
+            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.NMOAIIDBFFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooDeleteCatScRsp>(
             "SpaceZooDeleteCatScRsp",
@@ -82,11 +82,11 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
                 48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NFHEAGELICI)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NMOAIIDBFFF)?;
                 },
-                80 => {
-                    self.NFHEAGELICI.push(is.read_uint32()?);
+                64 => {
+                    self.NMOAIIDBFFF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NFHEAGELICI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NMOAIIDBFFF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(10, &self.NFHEAGELICI)?;
+        os.write_repeated_packed_uint32(8, &self.NMOAIIDBFFF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NFHEAGELICI.clear();
+        self.NMOAIIDBFFF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooDeleteCatScRsp {
         static instance: SpaceZooDeleteCatScRsp = SpaceZooDeleteCatScRsp {
             retcode: 0,
-            NFHEAGELICI: ::std::vec::Vec::new(),
+            NMOAIIDBFFF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooDeleteCatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooDeleteCatScRsp.proto\"T\n\x16SpaceZooDeleteCatScRsp\x12\
-    \x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bNFHEAGELIC\
-    I\x18\n\x20\x03(\rR\x0bNFHEAGELICIb\x06proto3\
+    \x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bNMOAIIDBFF\
+    F\x18\x08\x20\x03(\rR\x0bNMOAIIDBFFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

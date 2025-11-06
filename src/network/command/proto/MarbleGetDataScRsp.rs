@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarbleGetDataScRsp.score_id)
-    pub score_id: i32,
-    // @@protoc_insertion_point(field:MarbleGetDataScRsp.MPBMPFFGIBO)
-    pub MPBMPFFGIBO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MarbleGetDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MarbleGetDataScRsp.OJNPGILJIEN)
-    pub OJNPGILJIEN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MarbleGetDataScRsp.IOGDKGFDFPC)
-    pub IOGDKGFDFPC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleGetDataScRsp.score)
+    pub score: i32,
+    // @@protoc_insertion_point(field:MarbleGetDataScRsp.FLFFELAHFMC)
+    pub FLFFELAHFMC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleGetDataScRsp.KKFJBHLHOLG)
+    pub KKFJBHLHOLG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleGetDataScRsp.AOEMBHCFCAJ)
+    pub AOEMBHCFCAJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MarbleGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl MarbleGetDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &MarbleGetDataScRsp| { &m.score_id },
-            |m: &mut MarbleGetDataScRsp| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MPBMPFFGIBO",
-            |m: &MarbleGetDataScRsp| { &m.MPBMPFFGIBO },
-            |m: &mut MarbleGetDataScRsp| { &mut m.MPBMPFFGIBO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MarbleGetDataScRsp| { &m.retcode },
             |m: &mut MarbleGetDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OJNPGILJIEN",
-            |m: &MarbleGetDataScRsp| { &m.OJNPGILJIEN },
-            |m: &mut MarbleGetDataScRsp| { &mut m.OJNPGILJIEN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score",
+            |m: &MarbleGetDataScRsp| { &m.score },
+            |m: &mut MarbleGetDataScRsp| { &mut m.score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IOGDKGFDFPC",
-            |m: &MarbleGetDataScRsp| { &m.IOGDKGFDFPC },
-            |m: &mut MarbleGetDataScRsp| { &mut m.IOGDKGFDFPC },
+            "FLFFELAHFMC",
+            |m: &MarbleGetDataScRsp| { &m.FLFFELAHFMC },
+            |m: &mut MarbleGetDataScRsp| { &mut m.FLFFELAHFMC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KKFJBHLHOLG",
+            |m: &MarbleGetDataScRsp| { &m.KKFJBHLHOLG },
+            |m: &mut MarbleGetDataScRsp| { &mut m.KKFJBHLHOLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AOEMBHCFCAJ",
+            |m: &MarbleGetDataScRsp| { &m.AOEMBHCFCAJ },
+            |m: &mut MarbleGetDataScRsp| { &mut m.AOEMBHCFCAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarbleGetDataScRsp>(
             "MarbleGetDataScRsp",
@@ -100,29 +100,29 @@ impl ::protobuf::Message for MarbleGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.score_id = is.read_int32()?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MPBMPFFGIBO)?;
-                },
-                8 => {
-                    self.MPBMPFFGIBO.push(is.read_uint32()?);
-                },
-                104 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OJNPGILJIEN)?;
+                72 => {
+                    self.score = is.read_int32()?;
                 },
-                24 => {
-                    self.OJNPGILJIEN.push(is.read_uint32()?);
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FLFFELAHFMC)?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IOGDKGFDFPC)?;
+                80 => {
+                    self.FLFFELAHFMC.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.IOGDKGFDFPC.push(is.read_uint32()?);
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KKFJBHLHOLG)?;
+                },
+                88 => {
+                    self.KKFJBHLHOLG.push(is.read_uint32()?);
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AOEMBHCFCAJ)?;
+                },
+                120 => {
+                    self.AOEMBHCFCAJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -136,30 +136,30 @@ impl ::protobuf::Message for MarbleGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.score_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MPBMPFFGIBO);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.OJNPGILJIEN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IOGDKGFDFPC);
+        if self.score != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.score);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FLFFELAHFMC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KKFJBHLHOLG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.AOEMBHCFCAJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_int32(10, self.score_id)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.MPBMPFFGIBO)?;
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(3, &self.OJNPGILJIEN)?;
-        os.write_repeated_packed_uint32(14, &self.IOGDKGFDFPC)?;
+        if self.score != 0 {
+            os.write_int32(9, self.score)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.FLFFELAHFMC)?;
+        os.write_repeated_packed_uint32(11, &self.KKFJBHLHOLG)?;
+        os.write_repeated_packed_uint32(15, &self.AOEMBHCFCAJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -177,21 +177,21 @@ impl ::protobuf::Message for MarbleGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
-        self.MPBMPFFGIBO.clear();
         self.retcode = 0;
-        self.OJNPGILJIEN.clear();
-        self.IOGDKGFDFPC.clear();
+        self.score = 0;
+        self.FLFFELAHFMC.clear();
+        self.KKFJBHLHOLG.clear();
+        self.AOEMBHCFCAJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleGetDataScRsp {
         static instance: MarbleGetDataScRsp = MarbleGetDataScRsp {
-            score_id: 0,
-            MPBMPFFGIBO: ::std::vec::Vec::new(),
             retcode: 0,
-            OJNPGILJIEN: ::std::vec::Vec::new(),
-            IOGDKGFDFPC: ::std::vec::Vec::new(),
+            score: 0,
+            FLFFELAHFMC: ::std::vec::Vec::new(),
+            KKFJBHLHOLG: ::std::vec::Vec::new(),
+            AOEMBHCFCAJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -216,12 +216,11 @@ impl ::protobuf::reflect::ProtobufValue for MarbleGetDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarbleGetDataScRsp.proto\"\xaf\x01\n\x12MarbleGetDataScRsp\x12\x19\
-    \n\x08score_id\x18\n\x20\x01(\x05R\x07scoreId\x12\x20\n\x0bMPBMPFFGIBO\
-    \x18\x01\x20\x03(\rR\x0bMPBMPFFGIBO\x12\x18\n\x07retcode\x18\r\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x0bOJNPGILJIEN\x18\x03\x20\x03(\rR\x0bOJNPGILJI\
-    EN\x12\x20\n\x0bIOGDKGFDFPC\x18\x0e\x20\x03(\rR\x0bIOGDKGFDFPCb\x06proto\
-    3\
+    \n\x18MarbleGetDataScRsp.proto\"\xaa\x01\n\x12MarbleGetDataScRsp\x12\x18\
+    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x14\n\x05score\x18\t\
+    \x20\x01(\x05R\x05score\x12\x20\n\x0bFLFFELAHFMC\x18\n\x20\x03(\rR\x0bFL\
+    FFELAHFMC\x12\x20\n\x0bKKFJBHLHOLG\x18\x0b\x20\x03(\rR\x0bKKFJBHLHOLG\
+    \x12\x20\n\x0bAOEMBHCFCAJ\x18\x0f\x20\x03(\rR\x0bAOEMBHCFCAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

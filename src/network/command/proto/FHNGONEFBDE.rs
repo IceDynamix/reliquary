@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHNGONEFBDE {
     // message fields
-    // @@protoc_insertion_point(field:FHNGONEFBDE.EIMGBKNLGNF)
-    pub EIMGBKNLGNF: u32,
+    // @@protoc_insertion_point(field:FHNGONEFBDE.JEGFILNPLEB)
+    pub JEGFILNPLEB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHNGONEFBDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FHNGONEFBDE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIMGBKNLGNF",
-            |m: &FHNGONEFBDE| { &m.EIMGBKNLGNF },
-            |m: &mut FHNGONEFBDE| { &mut m.EIMGBKNLGNF },
+            "JEGFILNPLEB",
+            |m: &FHNGONEFBDE| { &m.JEGFILNPLEB },
+            |m: &mut FHNGONEFBDE| { &mut m.JEGFILNPLEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHNGONEFBDE>(
             "FHNGONEFBDE",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FHNGONEFBDE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.EIMGBKNLGNF = is.read_uint32()?;
+                88 => {
+                    self.JEGFILNPLEB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FHNGONEFBDE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EIMGBKNLGNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EIMGBKNLGNF);
+        if self.JEGFILNPLEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JEGFILNPLEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FHNGONEFBDE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EIMGBKNLGNF != 0 {
-            os.write_uint32(6, self.EIMGBKNLGNF)?;
+        if self.JEGFILNPLEB != 0 {
+            os.write_uint32(11, self.JEGFILNPLEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FHNGONEFBDE {
     }
 
     fn clear(&mut self) {
-        self.EIMGBKNLGNF = 0;
+        self.JEGFILNPLEB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHNGONEFBDE {
         static instance: FHNGONEFBDE = FHNGONEFBDE {
-            EIMGBKNLGNF: 0,
+            JEGFILNPLEB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FHNGONEFBDE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHNGONEFBDE.proto\"/\n\x0bFHNGONEFBDE\x12\x20\n\x0bEIMGBKNLGNF\x18\
-    \x06\x20\x01(\rR\x0bEIMGBKNLGNFb\x06proto3\
+    \n\x11FHNGONEFBDE.proto\"/\n\x0bFHNGONEFBDE\x12\x20\n\x0bJEGFILNPLEB\x18\
+    \x0b\x20\x01(\rR\x0bJEGFILNPLEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

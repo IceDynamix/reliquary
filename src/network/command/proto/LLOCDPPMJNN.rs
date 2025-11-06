@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLOCDPPMJNN {
     // message fields
-    // @@protoc_insertion_point(field:LLOCDPPMJNN.rogue_dialogue_event_id)
-    pub rogue_dialogue_event_id: u32,
     // @@protoc_insertion_point(field:LLOCDPPMJNN.display_int_value)
     pub display_int_value: i32,
-    // @@protoc_insertion_point(field:LLOCDPPMJNN.ACDOPCBMPNL)
-    pub ACDOPCBMPNL: f32,
-    // @@protoc_insertion_point(field:LLOCDPPMJNN.arg_id)
-    pub arg_id: u32,
     // @@protoc_insertion_point(field:LLOCDPPMJNN.is_valid)
     pub is_valid: bool,
+    // @@protoc_insertion_point(field:LLOCDPPMJNN.arg_id)
+    pub arg_id: u32,
+    // @@protoc_insertion_point(field:LLOCDPPMJNN.dialogue_event_id)
+    pub dialogue_event_id: u32,
+    // @@protoc_insertion_point(field:LLOCDPPMJNN.ratio)
+    pub ratio: f32,
     // special fields
     // @@protoc_insertion_point(special_field:LLOCDPPMJNN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,14 @@ impl LLOCDPPMJNN {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_dialogue_event_id",
-            |m: &LLOCDPPMJNN| { &m.rogue_dialogue_event_id },
-            |m: &mut LLOCDPPMJNN| { &mut m.rogue_dialogue_event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "display_int_value",
             |m: &LLOCDPPMJNN| { &m.display_int_value },
             |m: &mut LLOCDPPMJNN| { &mut m.display_int_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACDOPCBMPNL",
-            |m: &LLOCDPPMJNN| { &m.ACDOPCBMPNL },
-            |m: &mut LLOCDPPMJNN| { &mut m.ACDOPCBMPNL },
+            "is_valid",
+            |m: &LLOCDPPMJNN| { &m.is_valid },
+            |m: &mut LLOCDPPMJNN| { &mut m.is_valid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "arg_id",
@@ -78,9 +73,14 @@ impl LLOCDPPMJNN {
             |m: &mut LLOCDPPMJNN| { &mut m.arg_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &LLOCDPPMJNN| { &m.is_valid },
-            |m: &mut LLOCDPPMJNN| { &mut m.is_valid },
+            "dialogue_event_id",
+            |m: &LLOCDPPMJNN| { &m.dialogue_event_id },
+            |m: &mut LLOCDPPMJNN| { &mut m.dialogue_event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ratio",
+            |m: &LLOCDPPMJNN| { &m.ratio },
+            |m: &mut LLOCDPPMJNN| { &mut m.ratio },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLOCDPPMJNN>(
             "LLOCDPPMJNN",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LLOCDPPMJNN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.rogue_dialogue_event_id = is.read_uint32()?;
-                },
-                120 => {
+                24 => {
                     self.display_int_value = is.read_int32()?;
                 },
-                45 => {
-                    self.ACDOPCBMPNL = is.read_float()?;
+                80 => {
+                    self.is_valid = is.read_bool()?;
                 },
-                56 => {
+                88 => {
                     self.arg_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.is_valid = is.read_bool()?;
+                96 => {
+                    self.dialogue_event_id = is.read_uint32()?;
+                },
+                109 => {
+                    self.ratio = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for LLOCDPPMJNN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rogue_dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.rogue_dialogue_event_id);
-        }
         if self.display_int_value != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.display_int_value);
-        }
-        if self.ACDOPCBMPNL != 0. {
-            my_size += 1 + 4;
-        }
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.arg_id);
+            my_size += ::protobuf::rt::int32_size(3, self.display_int_value);
         }
         if self.is_valid != false {
             my_size += 1 + 1;
+        }
+        if self.arg_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.arg_id);
+        }
+        if self.dialogue_event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.dialogue_event_id);
+        }
+        if self.ratio != 0. {
+            my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for LLOCDPPMJNN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rogue_dialogue_event_id != 0 {
-            os.write_uint32(13, self.rogue_dialogue_event_id)?;
-        }
         if self.display_int_value != 0 {
-            os.write_int32(15, self.display_int_value)?;
-        }
-        if self.ACDOPCBMPNL != 0. {
-            os.write_float(5, self.ACDOPCBMPNL)?;
-        }
-        if self.arg_id != 0 {
-            os.write_uint32(7, self.arg_id)?;
+            os.write_int32(3, self.display_int_value)?;
         }
         if self.is_valid != false {
-            os.write_bool(4, self.is_valid)?;
+            os.write_bool(10, self.is_valid)?;
+        }
+        if self.arg_id != 0 {
+            os.write_uint32(11, self.arg_id)?;
+        }
+        if self.dialogue_event_id != 0 {
+            os.write_uint32(12, self.dialogue_event_id)?;
+        }
+        if self.ratio != 0. {
+            os.write_float(13, self.ratio)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for LLOCDPPMJNN {
     }
 
     fn clear(&mut self) {
-        self.rogue_dialogue_event_id = 0;
         self.display_int_value = 0;
-        self.ACDOPCBMPNL = 0.;
-        self.arg_id = 0;
         self.is_valid = false;
+        self.arg_id = 0;
+        self.dialogue_event_id = 0;
+        self.ratio = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLOCDPPMJNN {
         static instance: LLOCDPPMJNN = LLOCDPPMJNN {
-            rogue_dialogue_event_id: 0,
             display_int_value: 0,
-            ACDOPCBMPNL: 0.,
-            arg_id: 0,
             is_valid: false,
+            arg_id: 0,
+            dialogue_event_id: 0,
+            ratio: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for LLOCDPPMJNN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LLOCDPPMJNN.proto\"\xc4\x01\n\x0bLLOCDPPMJNN\x125\n\x17rogue_dialo\
-    gue_event_id\x18\r\x20\x01(\rR\x14rogueDialogueEventId\x12*\n\x11display\
-    _int_value\x18\x0f\x20\x01(\x05R\x0fdisplayIntValue\x12\x20\n\x0bACDOPCB\
-    MPNL\x18\x05\x20\x01(\x02R\x0bACDOPCBMPNL\x12\x15\n\x06arg_id\x18\x07\
-    \x20\x01(\rR\x05argId\x12\x19\n\x08is_valid\x18\x04\x20\x01(\x08R\x07isV\
-    alidb\x06proto3\
+    \n\x11LLOCDPPMJNN.proto\"\xad\x01\n\x0bLLOCDPPMJNN\x12*\n\x11display_int\
+    _value\x18\x03\x20\x01(\x05R\x0fdisplayIntValue\x12\x19\n\x08is_valid\
+    \x18\n\x20\x01(\x08R\x07isValid\x12\x15\n\x06arg_id\x18\x0b\x20\x01(\rR\
+    \x05argId\x12*\n\x11dialogue_event_id\x18\x0c\x20\x01(\rR\x0fdialogueEve\
+    ntId\x12\x14\n\x05ratio\x18\r\x20\x01(\x02R\x05ratiob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

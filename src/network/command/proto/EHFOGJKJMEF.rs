@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EHFOGJKJMEF {
     // message fields
-    // @@protoc_insertion_point(field:EHFOGJKJMEF.IMFCIMKMJPL)
-    pub IMFCIMKMJPL: u32,
-    // @@protoc_insertion_point(field:EHFOGJKJMEF.modifier_source_type)
-    pub modifier_source_type: ::protobuf::EnumOrUnknown<super::DLBFAHOAGPH::DLBFAHOAGPH>,
+    // @@protoc_insertion_point(field:EHFOGJKJMEF.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::DLBFAHOAGPH::DLBFAHOAGPH>,
+    // @@protoc_insertion_point(field:EHFOGJKJMEF.EHALDNIAPIK)
+    pub EHALDNIAPIK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EHFOGJKJMEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EHFOGJKJMEF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMFCIMKMJPL",
-            |m: &EHFOGJKJMEF| { &m.IMFCIMKMJPL },
-            |m: &mut EHFOGJKJMEF| { &mut m.IMFCIMKMJPL },
+            "source_type",
+            |m: &EHFOGJKJMEF| { &m.source_type },
+            |m: &mut EHFOGJKJMEF| { &mut m.source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_source_type",
-            |m: &EHFOGJKJMEF| { &m.modifier_source_type },
-            |m: &mut EHFOGJKJMEF| { &mut m.modifier_source_type },
+            "EHALDNIAPIK",
+            |m: &EHFOGJKJMEF| { &m.EHALDNIAPIK },
+            |m: &mut EHFOGJKJMEF| { &mut m.EHALDNIAPIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EHFOGJKJMEF>(
             "EHFOGJKJMEF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.IMFCIMKMJPL = is.read_uint32()?;
+                40 => {
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
-                8 => {
-                    self.modifier_source_type = is.read_enum_or_unknown()?;
+                64 => {
+                    self.EHALDNIAPIK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IMFCIMKMJPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IMFCIMKMJPL);
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.source_type.value());
         }
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.modifier_source_type.value());
+        if self.EHALDNIAPIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.EHALDNIAPIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IMFCIMKMJPL != 0 {
-            os.write_uint32(2, self.IMFCIMKMJPL)?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
+        if self.EHALDNIAPIK != 0 {
+            os.write_uint32(8, self.EHALDNIAPIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EHFOGJKJMEF {
     }
 
     fn clear(&mut self) {
-        self.IMFCIMKMJPL = 0;
-        self.modifier_source_type = ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE);
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::DLBFAHOAGPH::DLBFAHOAGPH::FATE_SOURCE_TYPE_NONE);
+        self.EHALDNIAPIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EHFOGJKJMEF {
         static instance: EHFOGJKJMEF = EHFOGJKJMEF {
-            IMFCIMKMJPL: 0,
-            modifier_source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            EHALDNIAPIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EHFOGJKJMEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EHFOGJKJMEF.proto\x1a\x11DLBFAHOAGPH.proto\"o\n\x0bEHFOGJKJMEF\x12\
-    \x20\n\x0bIMFCIMKMJPL\x18\x02\x20\x01(\rR\x0bIMFCIMKMJPL\x12>\n\x14modif\
-    ier_source_type\x18\x01\x20\x01(\x0e2\x0c.DLBFAHOAGPHR\x12modifierSource\
-    Typeb\x06proto3\
+    \n\x11EHFOGJKJMEF.proto\x1a\x11DLBFAHOAGPH.proto\"^\n\x0bEHFOGJKJMEF\x12\
+    -\n\x0bsource_type\x18\x05\x20\x01(\x0e2\x0c.DLBFAHOAGPHR\nsourceType\
+    \x12\x20\n\x0bEHALDNIAPIK\x18\x08\x20\x01(\rR\x0bEHALDNIAPIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

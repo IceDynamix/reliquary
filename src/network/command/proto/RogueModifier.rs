@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifier {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifier.modifier_source_type)
-    pub modifier_source_type: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // @@protoc_insertion_point(field:RogueModifier.modifier_content)
-    pub modifier_content: ::protobuf::MessageField<super::RogueModifierContent::RogueModifierContent>,
+    pub modifier_content: ::protobuf::MessageField<super::FPCHMKKCGFA::FPCHMKKCGFA>,
     // @@protoc_insertion_point(field:RogueModifier.modifier_id)
     pub modifier_id: u64,
+    // @@protoc_insertion_point(field:RogueModifier.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<rogue_modifier::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<rogue_modifier::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifier.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,39 +52,39 @@ impl RogueModifier {
         ::std::default::Default::default()
     }
 
-    // .ChessRogueModifierInfo modifier_info = 1799;
+    // .ChessRogueModifierInfo modifier_info = 694;
 
     pub fn modifier_info(&self) -> &super::ChessRogueModifierInfo::ChessRogueModifierInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(ref v)) => v,
             _ => <super::ChessRogueModifierInfo::ChessRogueModifierInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_modifier_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_modifier_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_modifier_info(&mut self, v: super::ChessRogueModifierInfo::ChessRogueModifierInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_modifier_info(&mut self) -> &mut super::ChessRogueModifierInfo::ChessRogueModifierInfo {
-        if let ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(super::ChessRogueModifierInfo::ChessRogueModifierInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(super::ChessRogueModifierInfo::ChessRogueModifierInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -92,8 +92,8 @@ impl RogueModifier {
     // Take field
     pub fn take_modifier_info(&mut self) -> super::ChessRogueModifierInfo::ChessRogueModifierInfo {
         if self.has_modifier_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -104,12 +104,14 @@ impl RogueModifier {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_source_type",
-            |m: &RogueModifier| { &m.modifier_source_type },
-            |m: &mut RogueModifier| { &mut m.modifier_source_type },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChessRogueModifierInfo::ChessRogueModifierInfo>(
+            "modifier_info",
+            RogueModifier::has_modifier_info,
+            RogueModifier::modifier_info,
+            RogueModifier::mut_modifier_info,
+            RogueModifier::set_modifier_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueModifierContent::RogueModifierContent>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPCHMKKCGFA::FPCHMKKCGFA>(
             "modifier_content",
             |m: &RogueModifier| { &m.modifier_content },
             |m: &mut RogueModifier| { &mut m.modifier_content },
@@ -119,14 +121,12 @@ impl RogueModifier {
             |m: &RogueModifier| { &m.modifier_id },
             |m: &mut RogueModifier| { &mut m.modifier_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChessRogueModifierInfo::ChessRogueModifierInfo>(
-            "modifier_info",
-            RogueModifier::has_modifier_info,
-            RogueModifier::modifier_info,
-            RogueModifier::mut_modifier_info,
-            RogueModifier::set_modifier_info,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source_type",
+            |m: &RogueModifier| { &m.source_type },
+            |m: &mut RogueModifier| { &mut m.source_type },
         ));
-        oneofs.push(rogue_modifier::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(rogue_modifier::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifier>(
             "RogueModifier",
             fields,
@@ -145,17 +145,17 @@ impl ::protobuf::Message for RogueModifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.modifier_source_type = is.read_enum_or_unknown()?;
+                5554 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(rogue_modifier::IEICDGGELNE::ModifierInfo(is.read_message()?));
                 },
-                18 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier_content)?;
                 },
-                112 => {
+                64 => {
                     self.modifier_id = is.read_uint64()?;
                 },
-                14394 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_modifier::KFELKJLDKEH::ModifierInfo(is.read_message()?));
+                72 => {
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -169,19 +169,19 @@ impl ::protobuf::Message for RogueModifier {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.modifier_source_type.value());
-        }
         if let Some(v) = self.modifier_content.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.modifier_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.modifier_id);
+            my_size += ::protobuf::rt::uint64_size(8, self.modifier_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.source_type.value());
+        }
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_modifier::KFELKJLDKEH::ModifierInfo(ref v) => {
+                &rogue_modifier::IEICDGGELNE::ModifierInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -193,19 +193,19 @@ impl ::protobuf::Message for RogueModifier {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
-        }
         if let Some(v) = self.modifier_content.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.modifier_id != 0 {
-            os.write_uint64(14, self.modifier_id)?;
+            os.write_uint64(8, self.modifier_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_modifier::KFELKJLDKEH::ModifierInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1799, v, os)?;
+                &rogue_modifier::IEICDGGELNE::ModifierInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(694, v, os)?;
                 },
             };
         }
@@ -226,19 +226,19 @@ impl ::protobuf::Message for RogueModifier {
     }
 
     fn clear(&mut self) {
-        self.modifier_source_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
+        self.IEICDGGELNE = ::std::option::Option::None;
         self.modifier_content.clear();
         self.modifier_id = 0;
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifier {
         static instance: RogueModifier = RogueModifier {
-            modifier_source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             modifier_content: ::protobuf::MessageField::none(),
             modifier_id: 0,
-            KFELKJLDKEH: ::std::option::Option::None,
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -267,38 +267,37 @@ pub mod rogue_modifier {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueModifier.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:RogueModifier.IEICDGGELNE)
+    pub enum IEICDGGELNE {
         // @@protoc_insertion_point(oneof_field:RogueModifier.modifier_info)
         ModifierInfo(super::super::ChessRogueModifierInfo::ChessRogueModifierInfo),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueModifier as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::RogueModifier as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RogueModifier.proto\x1a\x1cChessRogueModifierInfo.proto\x1a\x1aRog\
-    ueModifierContent.proto\x1a\x1dRogueModifierSourceType.proto\"\x8e\x02\n\
-    \rRogueModifier\x12J\n\x14modifier_source_type\x18\x07\x20\x01(\x0e2\x18\
-    .RogueModifierSourceTypeR\x12modifierSourceType\x12@\n\x10modifier_conte\
-    nt\x18\x02\x20\x01(\x0b2\x15.RogueModifierContentR\x0fmodifierContent\
-    \x12\x1f\n\x0bmodifier_id\x18\x0e\x20\x01(\x04R\nmodifierId\x12?\n\rmodi\
-    fier_info\x18\x87\x0e\x20\x01(\x0b2\x17.ChessRogueModifierInfoH\0R\x0cmo\
-    difierInfoB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    \n\x13RogueModifier.proto\x1a\x1cChessRogueModifierInfo.proto\x1a\x11FPC\
+    HMKKCGFA.proto\x1a\x1dRogueModifierSourceType.proto\"\xf4\x01\n\rRogueMo\
+    difier\x12?\n\rmodifier_info\x18\xb6\x05\x20\x01(\x0b2\x17.ChessRogueMod\
+    ifierInfoH\0R\x0cmodifierInfo\x127\n\x10modifier_content\x18\x03\x20\x01\
+    (\x0b2\x0c.FPCHMKKCGFAR\x0fmodifierContent\x12\x1f\n\x0bmodifier_id\x18\
+    \x08\x20\x01(\x04R\nmodifierId\x129\n\x0bsource_type\x18\t\x20\x01(\x0e2\
+    \x18.RogueModifierSourceTypeR\nsourceTypeB\r\n\x0bIEICDGGELNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -317,7 +316,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::ChessRogueModifierInfo::file_descriptor().clone());
-            deps.push(super::RogueModifierContent::file_descriptor().clone());
+            deps.push(super::FPCHMKKCGFA::file_descriptor().clone());
             deps.push(super::RogueModifierSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueModifier::generated_message_descriptor_data());

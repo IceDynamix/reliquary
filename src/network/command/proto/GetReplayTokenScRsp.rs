@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetReplayTokenScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetReplayTokenScRsp.KIHBIGPFKKN)
-    pub KIHBIGPFKKN: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.md5)
+    pub md5: ::std::string::String,
     // @@protoc_insertion_point(field:GetReplayTokenScRsp.token)
     pub token: ::std::string::String,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetReplayTokenScRsp.replay_type)
     pub replay_type: ::protobuf::EnumOrUnknown<super::ReplayType::ReplayType>,
+    // @@protoc_insertion_point(field:GetReplayTokenScRsp.stage_id)
+    pub stage_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetReplayTokenScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,9 @@ impl GetReplayTokenScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &GetReplayTokenScRsp| { &m.stage_id },
-            |m: &mut GetReplayTokenScRsp| { &mut m.stage_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetReplayTokenScRsp| { &m.retcode },
-            |m: &mut GetReplayTokenScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIHBIGPFKKN",
-            |m: &GetReplayTokenScRsp| { &m.KIHBIGPFKKN },
-            |m: &mut GetReplayTokenScRsp| { &mut m.KIHBIGPFKKN },
+            "md5",
+            |m: &GetReplayTokenScRsp| { &m.md5 },
+            |m: &mut GetReplayTokenScRsp| { &mut m.md5 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "token",
@@ -78,9 +68,19 @@ impl GetReplayTokenScRsp {
             |m: &mut GetReplayTokenScRsp| { &mut m.token },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetReplayTokenScRsp| { &m.retcode },
+            |m: &mut GetReplayTokenScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "replay_type",
             |m: &GetReplayTokenScRsp| { &m.replay_type },
             |m: &mut GetReplayTokenScRsp| { &mut m.replay_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &GetReplayTokenScRsp| { &m.stage_id },
+            |m: &mut GetReplayTokenScRsp| { &mut m.stage_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetReplayTokenScRsp>(
             "GetReplayTokenScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.stage_id = is.read_uint32()?;
+                10 => {
+                    self.md5 = is.read_string()?;
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                26 => {
-                    self.KIHBIGPFKKN = is.read_string()?;
-                },
-                18 => {
+                50 => {
                     self.token = is.read_string()?;
                 },
-                8 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                88 => {
                     self.replay_type = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.stage_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.stage_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if !self.KIHBIGPFKKN.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.KIHBIGPFKKN);
+        if !self.md5.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.md5);
         }
         if !self.token.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.token);
+            my_size += ::protobuf::rt::string_size(6, &self.token);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.replay_type.value());
+            my_size += ::protobuf::rt::int32_size(11, self.replay_type.value());
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stage_id != 0 {
-            os.write_uint32(15, self.stage_id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if !self.KIHBIGPFKKN.is_empty() {
-            os.write_string(3, &self.KIHBIGPFKKN)?;
+        if !self.md5.is_empty() {
+            os.write_string(1, &self.md5)?;
         }
         if !self.token.is_empty() {
-            os.write_string(2, &self.token)?;
+            os.write_string(6, &self.token)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.replay_type))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.replay_type))?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(14, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for GetReplayTokenScRsp {
     }
 
     fn clear(&mut self) {
-        self.stage_id = 0;
-        self.retcode = 0;
-        self.KIHBIGPFKKN.clear();
+        self.md5.clear();
         self.token.clear();
+        self.retcode = 0;
         self.replay_type = ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE);
+        self.stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetReplayTokenScRsp {
         static instance: GetReplayTokenScRsp = GetReplayTokenScRsp {
-            stage_id: 0,
-            retcode: 0,
-            KIHBIGPFKKN: ::std::string::String::new(),
+            md5: ::std::string::String::new(),
             token: ::std::string::String::new(),
+            retcode: 0,
             replay_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for GetReplayTokenScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetReplayTokenScRsp.proto\x1a\x10ReplayType.proto\"\xb0\x01\n\x13G\
-    etReplayTokenScRsp\x12\x19\n\x08stage_id\x18\x0f\x20\x01(\rR\x07stageId\
-    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bKIHBIGPF\
-    KKN\x18\x03\x20\x01(\tR\x0bKIHBIGPFKKN\x12\x14\n\x05token\x18\x02\x20\
-    \x01(\tR\x05token\x12,\n\x0breplay_type\x18\x01\x20\x01(\x0e2\x0b.Replay\
-    TypeR\nreplayTypeb\x06proto3\
+    \n\x19GetReplayTokenScRsp.proto\x1a\x10ReplayType.proto\"\xa0\x01\n\x13G\
+    etReplayTokenScRsp\x12\x10\n\x03md5\x18\x01\x20\x01(\tR\x03md5\x12\x14\n\
+    \x05token\x18\x06\x20\x01(\tR\x05token\x12\x18\n\x07retcode\x18\x08\x20\
+    \x01(\rR\x07retcode\x12,\n\x0breplay_type\x18\x0b\x20\x01(\x0e2\x0b.Repl\
+    ayTypeR\nreplayType\x12\x19\n\x08stage_id\x18\x0e\x20\x01(\rR\x07stageId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueConfirmRollCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueConfirmRollCsReq.KCHFJDAJECM)
-    pub KCHFJDAJECM: u32,
+    // @@protoc_insertion_point(field:ChessRogueConfirmRollCsReq.EDHKMFBFLAE)
+    pub EDHKMFBFLAE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueConfirmRollCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChessRogueConfirmRollCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCHFJDAJECM",
-            |m: &ChessRogueConfirmRollCsReq| { &m.KCHFJDAJECM },
-            |m: &mut ChessRogueConfirmRollCsReq| { &mut m.KCHFJDAJECM },
+            "EDHKMFBFLAE",
+            |m: &ChessRogueConfirmRollCsReq| { &m.EDHKMFBFLAE },
+            |m: &mut ChessRogueConfirmRollCsReq| { &mut m.EDHKMFBFLAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueConfirmRollCsReq>(
             "ChessRogueConfirmRollCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueConfirmRollCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KCHFJDAJECM = is.read_uint32()?;
+                32 => {
+                    self.EDHKMFBFLAE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChessRogueConfirmRollCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KCHFJDAJECM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KCHFJDAJECM);
+        if self.EDHKMFBFLAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EDHKMFBFLAE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChessRogueConfirmRollCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KCHFJDAJECM != 0 {
-            os.write_uint32(15, self.KCHFJDAJECM)?;
+        if self.EDHKMFBFLAE != 0 {
+            os.write_uint32(4, self.EDHKMFBFLAE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChessRogueConfirmRollCsReq {
     }
 
     fn clear(&mut self) {
-        self.KCHFJDAJECM = 0;
+        self.EDHKMFBFLAE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueConfirmRollCsReq {
         static instance: ChessRogueConfirmRollCsReq = ChessRogueConfirmRollCsReq {
-            KCHFJDAJECM: 0,
+            EDHKMFBFLAE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueConfirmRollCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChessRogueConfirmRollCsReq.proto\">\n\x1aChessRogueConfirmRollCsRe\
-    q\x12\x20\n\x0bKCHFJDAJECM\x18\x0f\x20\x01(\rR\x0bKCHFJDAJECMb\x06proto3\
+    q\x12\x20\n\x0bEDHKMFBFLAE\x18\x04\x20\x01(\rR\x0bEDHKMFBFLAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

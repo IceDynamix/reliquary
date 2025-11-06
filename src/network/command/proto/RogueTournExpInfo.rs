@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournExpInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournExpInfo.exp)
-    pub exp: u32,
     // @@protoc_insertion_point(field:RogueTournExpInfo.taken_level_rewards)
     pub taken_level_rewards: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournExpInfo.exp)
+    pub exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournExpInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueTournExpInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &RogueTournExpInfo| { &m.exp },
-            |m: &mut RogueTournExpInfo| { &mut m.exp },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "taken_level_rewards",
             |m: &RogueTournExpInfo| { &m.taken_level_rewards },
             |m: &mut RogueTournExpInfo| { &mut m.taken_level_rewards },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &RogueTournExpInfo| { &m.exp },
+            |m: &mut RogueTournExpInfo| { &mut m.exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournExpInfo>(
             "RogueTournExpInfo",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for RogueTournExpInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.exp = is.read_uint32()?;
-                },
-                82 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_level_rewards)?;
                 },
-                80 => {
+                40 => {
                     self.taken_level_rewards.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueTournExpInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.taken_level_rewards);
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.exp);
+            my_size += ::protobuf::rt::uint32_size(13, self.exp);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.taken_level_rewards);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(5, &self.taken_level_rewards)?;
         if self.exp != 0 {
-            os.write_uint32(7, self.exp)?;
+            os.write_uint32(13, self.exp)?;
         }
-        os.write_repeated_packed_uint32(10, &self.taken_level_rewards)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for RogueTournExpInfo {
     }
 
     fn clear(&mut self) {
-        self.exp = 0;
         self.taken_level_rewards.clear();
+        self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournExpInfo {
         static instance: RogueTournExpInfo = RogueTournExpInfo {
-            exp: 0,
             taken_level_rewards: ::std::vec::Vec::new(),
+            exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournExpInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17RogueTournExpInfo.proto\"U\n\x11RogueTournExpInfo\x12\x10\n\x03exp\
-    \x18\x07\x20\x01(\rR\x03exp\x12.\n\x13taken_level_rewards\x18\n\x20\x03(\
-    \rR\x11takenLevelRewardsb\x06proto3\
+    \n\x17RogueTournExpInfo.proto\"U\n\x11RogueTournExpInfo\x12.\n\x13taken_\
+    level_rewards\x18\x05\x20\x03(\rR\x11takenLevelRewards\x12\x10\n\x03exp\
+    \x18\r\x20\x01(\rR\x03expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

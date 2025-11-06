@@ -30,8 +30,8 @@ pub struct ADOLEOFEGOK {
     // message fields
     // @@protoc_insertion_point(field:ADOLEOFEGOK.map_id)
     pub map_id: u32,
-    // @@protoc_insertion_point(field:ADOLEOFEGOK.POIIAIAKILF)
-    pub POIIAIAKILF: u32,
+    // @@protoc_insertion_point(field:ADOLEOFEGOK.HGLKKJDBNCK)
+    pub HGLKKJDBNCK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ADOLEOFEGOK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ADOLEOFEGOK {
             |m: &mut ADOLEOFEGOK| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POIIAIAKILF",
-            |m: &ADOLEOFEGOK| { &m.POIIAIAKILF },
-            |m: &mut ADOLEOFEGOK| { &mut m.POIIAIAKILF },
+            "HGLKKJDBNCK",
+            |m: &ADOLEOFEGOK| { &m.HGLKKJDBNCK },
+            |m: &mut ADOLEOFEGOK| { &mut m.HGLKKJDBNCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADOLEOFEGOK>(
             "ADOLEOFEGOK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ADOLEOFEGOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                40 => {
                     self.map_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.POIIAIAKILF = is.read_uint32()?;
+                80 => {
+                    self.HGLKKJDBNCK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ADOLEOFEGOK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.map_id);
         }
-        if self.POIIAIAKILF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.POIIAIAKILF);
+        if self.HGLKKJDBNCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HGLKKJDBNCK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ADOLEOFEGOK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.map_id != 0 {
-            os.write_uint32(8, self.map_id)?;
+            os.write_uint32(5, self.map_id)?;
         }
-        if self.POIIAIAKILF != 0 {
-            os.write_uint32(2, self.POIIAIAKILF)?;
+        if self.HGLKKJDBNCK != 0 {
+            os.write_uint32(10, self.HGLKKJDBNCK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ADOLEOFEGOK {
 
     fn clear(&mut self) {
         self.map_id = 0;
-        self.POIIAIAKILF = 0;
+        self.HGLKKJDBNCK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADOLEOFEGOK {
         static instance: ADOLEOFEGOK = ADOLEOFEGOK {
             map_id: 0,
-            POIIAIAKILF: 0,
+            HGLKKJDBNCK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ADOLEOFEGOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ADOLEOFEGOK.proto\"F\n\x0bADOLEOFEGOK\x12\x15\n\x06map_id\x18\x08\
-    \x20\x01(\rR\x05mapId\x12\x20\n\x0bPOIIAIAKILF\x18\x02\x20\x01(\rR\x0bPO\
-    IIAIAKILFb\x06proto3\
+    \n\x11ADOLEOFEGOK.proto\"F\n\x0bADOLEOFEGOK\x12\x15\n\x06map_id\x18\x05\
+    \x20\x01(\rR\x05mapId\x12\x20\n\x0bHGLKKJDBNCK\x18\n\x20\x01(\rR\x0bHGLK\
+    KJDBNCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

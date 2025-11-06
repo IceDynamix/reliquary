@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSocialEventServerCacheCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.JIDDLNHJNPB)
-    pub JIDDLNHJNPB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSocialEventServerCacheCsReq.CDKEAPBAPBD)
+    pub CDKEAPBAPBD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSocialEventServerCacheCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DeleteSocialEventServerCacheCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JIDDLNHJNPB",
-            |m: &DeleteSocialEventServerCacheCsReq| { &m.JIDDLNHJNPB },
-            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.JIDDLNHJNPB },
+            "CDKEAPBAPBD",
+            |m: &DeleteSocialEventServerCacheCsReq| { &m.CDKEAPBAPBD },
+            |m: &mut DeleteSocialEventServerCacheCsReq| { &mut m.CDKEAPBAPBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSocialEventServerCacheCsReq>(
             "DeleteSocialEventServerCacheCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JIDDLNHJNPB)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CDKEAPBAPBD)?;
                 },
-                56 => {
-                    self.JIDDLNHJNPB.push(is.read_uint32()?);
+                80 => {
+                    self.CDKEAPBAPBD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JIDDLNHJNPB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CDKEAPBAPBD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.JIDDLNHJNPB)?;
+        os.write_repeated_packed_uint32(10, &self.CDKEAPBAPBD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for DeleteSocialEventServerCacheCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIDDLNHJNPB.clear();
+        self.CDKEAPBAPBD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSocialEventServerCacheCsReq {
         static instance: DeleteSocialEventServerCacheCsReq = DeleteSocialEventServerCacheCsReq {
-            JIDDLNHJNPB: ::std::vec::Vec::new(),
+            CDKEAPBAPBD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSocialEventServerCacheCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'DeleteSocialEventServerCacheCsReq.proto\"E\n!DeleteSocialEventServerC\
-    acheCsReq\x12\x20\n\x0bJIDDLNHJNPB\x18\x07\x20\x03(\rR\x0bJIDDLNHJNPBb\
-    \x06proto3\
+    acheCsReq\x12\x20\n\x0bCDKEAPBAPBD\x18\n\x20\x03(\rR\x0bCDKEAPBAPBDb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

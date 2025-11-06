@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFADONHMPKE {
     // message fields
-    // @@protoc_insertion_point(field:FFADONHMPKE.HLOACJFDNGN)
-    pub HLOACJFDNGN: u32,
-    // @@protoc_insertion_point(field:FFADONHMPKE.BKGGNMBBGNL)
-    pub BKGGNMBBGNL: u32,
-    // @@protoc_insertion_point(field:FFADONHMPKE.GDCHLIBMFKM)
-    pub GDCHLIBMFKM: u32,
+    // @@protoc_insertion_point(field:FFADONHMPKE.MDLFBGGPNFN)
+    pub MDLFBGGPNFN: u32,
+    // @@protoc_insertion_point(field:FFADONHMPKE.FDDFIKMJPNK)
+    pub FDDFIKMJPNK: u32,
+    // @@protoc_insertion_point(field:FFADONHMPKE.OMKELGINCEG)
+    pub OMKELGINCEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FFADONHMPKE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl FFADONHMPKE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLOACJFDNGN",
-            |m: &FFADONHMPKE| { &m.HLOACJFDNGN },
-            |m: &mut FFADONHMPKE| { &mut m.HLOACJFDNGN },
+            "MDLFBGGPNFN",
+            |m: &FFADONHMPKE| { &m.MDLFBGGPNFN },
+            |m: &mut FFADONHMPKE| { &mut m.MDLFBGGPNFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKGGNMBBGNL",
-            |m: &FFADONHMPKE| { &m.BKGGNMBBGNL },
-            |m: &mut FFADONHMPKE| { &mut m.BKGGNMBBGNL },
+            "FDDFIKMJPNK",
+            |m: &FFADONHMPKE| { &m.FDDFIKMJPNK },
+            |m: &mut FFADONHMPKE| { &mut m.FDDFIKMJPNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDCHLIBMFKM",
-            |m: &FFADONHMPKE| { &m.GDCHLIBMFKM },
-            |m: &mut FFADONHMPKE| { &mut m.GDCHLIBMFKM },
+            "OMKELGINCEG",
+            |m: &FFADONHMPKE| { &m.OMKELGINCEG },
+            |m: &mut FFADONHMPKE| { &mut m.OMKELGINCEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFADONHMPKE>(
             "FFADONHMPKE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FFADONHMPKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.HLOACJFDNGN = is.read_uint32()?;
+                72 => {
+                    self.MDLFBGGPNFN = is.read_uint32()?;
                 },
-                96 => {
-                    self.BKGGNMBBGNL = is.read_uint32()?;
+                80 => {
+                    self.FDDFIKMJPNK = is.read_uint32()?;
                 },
                 104 => {
-                    self.GDCHLIBMFKM = is.read_uint32()?;
+                    self.OMKELGINCEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FFADONHMPKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLOACJFDNGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HLOACJFDNGN);
+        if self.MDLFBGGPNFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MDLFBGGPNFN);
         }
-        if self.BKGGNMBBGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BKGGNMBBGNL);
+        if self.FDDFIKMJPNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FDDFIKMJPNK);
         }
-        if self.GDCHLIBMFKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GDCHLIBMFKM);
+        if self.OMKELGINCEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.OMKELGINCEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FFADONHMPKE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLOACJFDNGN != 0 {
-            os.write_uint32(7, self.HLOACJFDNGN)?;
+        if self.MDLFBGGPNFN != 0 {
+            os.write_uint32(9, self.MDLFBGGPNFN)?;
         }
-        if self.BKGGNMBBGNL != 0 {
-            os.write_uint32(12, self.BKGGNMBBGNL)?;
+        if self.FDDFIKMJPNK != 0 {
+            os.write_uint32(10, self.FDDFIKMJPNK)?;
         }
-        if self.GDCHLIBMFKM != 0 {
-            os.write_uint32(13, self.GDCHLIBMFKM)?;
+        if self.OMKELGINCEG != 0 {
+            os.write_uint32(13, self.OMKELGINCEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FFADONHMPKE {
     }
 
     fn clear(&mut self) {
-        self.HLOACJFDNGN = 0;
-        self.BKGGNMBBGNL = 0;
-        self.GDCHLIBMFKM = 0;
+        self.MDLFBGGPNFN = 0;
+        self.FDDFIKMJPNK = 0;
+        self.OMKELGINCEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFADONHMPKE {
         static instance: FFADONHMPKE = FFADONHMPKE {
-            HLOACJFDNGN: 0,
-            BKGGNMBBGNL: 0,
-            GDCHLIBMFKM: 0,
+            MDLFBGGPNFN: 0,
+            FDDFIKMJPNK: 0,
+            OMKELGINCEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FFADONHMPKE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FFADONHMPKE.proto\"s\n\x0bFFADONHMPKE\x12\x20\n\x0bHLOACJFDNGN\x18\
-    \x07\x20\x01(\rR\x0bHLOACJFDNGN\x12\x20\n\x0bBKGGNMBBGNL\x18\x0c\x20\x01\
-    (\rR\x0bBKGGNMBBGNL\x12\x20\n\x0bGDCHLIBMFKM\x18\r\x20\x01(\rR\x0bGDCHLI\
-    BMFKMb\x06proto3\
+    \n\x11FFADONHMPKE.proto\"s\n\x0bFFADONHMPKE\x12\x20\n\x0bMDLFBGGPNFN\x18\
+    \t\x20\x01(\rR\x0bMDLFBGGPNFN\x12\x20\n\x0bFDDFIKMJPNK\x18\n\x20\x01(\rR\
+    \x0bFDDFIKMJPNK\x12\x20\n\x0bOMKELGINCEG\x18\r\x20\x01(\rR\x0bOMKELGINCE\
+    Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

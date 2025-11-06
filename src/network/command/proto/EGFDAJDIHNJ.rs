@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGFDAJDIHNJ {
     // message fields
-    // @@protoc_insertion_point(field:EGFDAJDIHNJ.item_count)
-    pub item_count: u32,
+    // @@protoc_insertion_point(field:EGFDAJDIHNJ.destroy_count)
+    pub destroy_count: u32,
     // @@protoc_insertion_point(field:EGFDAJDIHNJ.item_id)
     pub item_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl EGFDAJDIHNJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_count",
-            |m: &EGFDAJDIHNJ| { &m.item_count },
-            |m: &mut EGFDAJDIHNJ| { &mut m.item_count },
+            "destroy_count",
+            |m: &EGFDAJDIHNJ| { &m.destroy_count },
+            |m: &mut EGFDAJDIHNJ| { &mut m.destroy_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.item_count = is.read_uint32()?;
+                    self.destroy_count = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_count);
+        if self.destroy_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.destroy_count);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_count != 0 {
-            os.write_uint32(8, self.item_count)?;
+        if self.destroy_count != 0 {
+            os.write_uint32(8, self.destroy_count)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(5, self.item_id)?;
+            os.write_uint32(14, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for EGFDAJDIHNJ {
     }
 
     fn clear(&mut self) {
-        self.item_count = 0;
+        self.destroy_count = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGFDAJDIHNJ {
         static instance: EGFDAJDIHNJ = EGFDAJDIHNJ {
-            item_count: 0,
+            destroy_count: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EGFDAJDIHNJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGFDAJDIHNJ.proto\"E\n\x0bEGFDAJDIHNJ\x12\x1d\n\nitem_count\x18\
-    \x08\x20\x01(\rR\titemCount\x12\x17\n\x07item_id\x18\x05\x20\x01(\rR\x06\
-    itemIdb\x06proto3\
+    \n\x11EGFDAJDIHNJ.proto\"K\n\x0bEGFDAJDIHNJ\x12#\n\rdestroy_count\x18\
+    \x08\x20\x01(\rR\x0cdestroyCount\x12\x17\n\x07item_id\x18\x0e\x20\x01(\r\
+    R\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

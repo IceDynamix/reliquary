@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOGNKEKHBAI {
     // message fields
-    // @@protoc_insertion_point(field:LOGNKEKHBAI.AJBEPAHCGIK)
-    pub AJBEPAHCGIK: u32,
+    // @@protoc_insertion_point(field:LOGNKEKHBAI.LIKCMMNEGLK)
+    pub LIKCMMNEGLK: u32,
     // @@protoc_insertion_point(field:LOGNKEKHBAI.has_taken_reward)
     pub has_taken_reward: bool,
     // special fields
@@ -52,9 +52,9 @@ impl LOGNKEKHBAI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJBEPAHCGIK",
-            |m: &LOGNKEKHBAI| { &m.AJBEPAHCGIK },
-            |m: &mut LOGNKEKHBAI| { &mut m.AJBEPAHCGIK },
+            "LIKCMMNEGLK",
+            |m: &LOGNKEKHBAI| { &m.LIKCMMNEGLK },
+            |m: &mut LOGNKEKHBAI| { &mut m.LIKCMMNEGLK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_taken_reward",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.AJBEPAHCGIK = is.read_uint32()?;
+                56 => {
+                    self.LIKCMMNEGLK = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.has_taken_reward = is.read_bool()?;
                 },
                 tag => {
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AJBEPAHCGIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AJBEPAHCGIK);
+        if self.LIKCMMNEGLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LIKCMMNEGLK);
         }
         if self.has_taken_reward != false {
             my_size += 1 + 1;
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AJBEPAHCGIK != 0 {
-            os.write_uint32(3, self.AJBEPAHCGIK)?;
+        if self.LIKCMMNEGLK != 0 {
+            os.write_uint32(7, self.LIKCMMNEGLK)?;
         }
         if self.has_taken_reward != false {
-            os.write_bool(14, self.has_taken_reward)?;
+            os.write_bool(10, self.has_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for LOGNKEKHBAI {
     }
 
     fn clear(&mut self) {
-        self.AJBEPAHCGIK = 0;
+        self.LIKCMMNEGLK = 0;
         self.has_taken_reward = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOGNKEKHBAI {
         static instance: LOGNKEKHBAI = LOGNKEKHBAI {
-            AJBEPAHCGIK: 0,
+            LIKCMMNEGLK: 0,
             has_taken_reward: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LOGNKEKHBAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOGNKEKHBAI.proto\"Y\n\x0bLOGNKEKHBAI\x12\x20\n\x0bAJBEPAHCGIK\x18\
-    \x03\x20\x01(\rR\x0bAJBEPAHCGIK\x12(\n\x10has_taken_reward\x18\x0e\x20\
-    \x01(\x08R\x0ehasTakenRewardb\x06proto3\
+    \n\x11LOGNKEKHBAI.proto\"Y\n\x0bLOGNKEKHBAI\x12\x20\n\x0bLIKCMMNEGLK\x18\
+    \x07\x20\x01(\rR\x0bLIKCMMNEGLK\x12(\n\x10has_taken_reward\x18\n\x20\x01\
+    (\x08R\x0ehasTakenRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

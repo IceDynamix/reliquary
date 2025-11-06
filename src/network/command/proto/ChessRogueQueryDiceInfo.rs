@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueQueryDiceInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.NBCMAKNLPHG)
-    pub NBCMAKNLPHG: ::std::collections::HashMap<u32, bool>,
-    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.surface_id_list)
-    pub surface_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.dice_phase)
-    pub dice_phase: ::protobuf::EnumOrUnknown<super::ChessRogueNousDicePhase::ChessRogueNousDicePhase>,
     // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.dice_list)
     pub dice_list: ::std::vec::Vec<super::ChessRogueDice::ChessRogueDice>,
+    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.dice_phase)
+    pub dice_phase: ::protobuf::EnumOrUnknown<super::ChessRogueNousDicePhase::ChessRogueNousDicePhase>,
+    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.IAIPGNPEMHJ)
+    pub IAIPGNPEMHJ: ::std::collections::HashMap<u32, bool>,
+    // @@protoc_insertion_point(field:ChessRogueQueryDiceInfo.surface_id_list)
+    pub surface_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueQueryDiceInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl ChessRogueQueryDiceInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NBCMAKNLPHG",
-            |m: &ChessRogueQueryDiceInfo| { &m.NBCMAKNLPHG },
-            |m: &mut ChessRogueQueryDiceInfo| { &mut m.NBCMAKNLPHG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "surface_id_list",
-            |m: &ChessRogueQueryDiceInfo| { &m.surface_id_list },
-            |m: &mut ChessRogueQueryDiceInfo| { &mut m.surface_id_list },
+            "dice_list",
+            |m: &ChessRogueQueryDiceInfo| { &m.dice_list },
+            |m: &mut ChessRogueQueryDiceInfo| { &mut m.dice_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dice_phase",
             |m: &ChessRogueQueryDiceInfo| { &m.dice_phase },
             |m: &mut ChessRogueQueryDiceInfo| { &mut m.dice_phase },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "IAIPGNPEMHJ",
+            |m: &ChessRogueQueryDiceInfo| { &m.IAIPGNPEMHJ },
+            |m: &mut ChessRogueQueryDiceInfo| { &mut m.IAIPGNPEMHJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "dice_list",
-            |m: &ChessRogueQueryDiceInfo| { &m.dice_list },
-            |m: &mut ChessRogueQueryDiceInfo| { &mut m.dice_list },
+            "surface_id_list",
+            |m: &ChessRogueQueryDiceInfo| { &m.surface_id_list },
+            |m: &mut ChessRogueQueryDiceInfo| { &mut m.surface_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueQueryDiceInfo>(
             "ChessRogueQueryDiceInfo",
@@ -93,7 +93,13 @@ impl ::protobuf::Message for ChessRogueQueryDiceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
+                    self.dice_list.push(is.read_message()?);
+                },
+                24 => {
+                    self.dice_phase = is.read_enum_or_unknown()?;
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -106,19 +112,13 @@ impl ::protobuf::Message for ChessRogueQueryDiceInfo {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.NBCMAKNLPHG.insert(key, value);
+                    self.IAIPGNPEMHJ.insert(key, value);
                 },
                 122 => {
                     is.read_repeated_packed_uint32_into(&mut self.surface_id_list)?;
                 },
                 120 => {
                     self.surface_id_list.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.dice_phase = is.read_enum_or_unknown()?;
-                },
-                66 => {
-                    self.dice_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -132,42 +132,42 @@ impl ::protobuf::Message for ChessRogueQueryDiceInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.NBCMAKNLPHG {
+        for value in &self.dice_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.dice_phase != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.dice_phase.value());
+        }
+        for (k, v) in &self.IAIPGNPEMHJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.surface_id_list);
-        if self.dice_phase != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.dice_phase.value());
-        }
-        for value in &self.dice_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.NBCMAKNLPHG {
+        for v in &self.dice_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        if self.dice_phase != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.dice_phase))?;
+        }
+        for (k, v) in &self.IAIPGNPEMHJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
         os.write_repeated_packed_uint32(15, &self.surface_id_list)?;
-        if self.dice_phase != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.dice_phase))?;
-        }
-        for v in &self.dice_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -185,10 +185,10 @@ impl ::protobuf::Message for ChessRogueQueryDiceInfo {
     }
 
     fn clear(&mut self) {
-        self.NBCMAKNLPHG.clear();
-        self.surface_id_list.clear();
-        self.dice_phase = ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE);
         self.dice_list.clear();
+        self.dice_phase = ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::NONE);
+        self.IAIPGNPEMHJ.clear();
+        self.surface_id_list.clear();
         self.special_fields.clear();
     }
 
@@ -217,14 +217,14 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueQueryDiceInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dChessRogueQueryDiceInfo.proto\x1a\x14ChessRogueDice.proto\x1a\x1dC\
-    hessRogueNousDicePhase.proto\"\xb5\x02\n\x17ChessRogueQueryDiceInfo\x12K\
-    \n\x0bNBCMAKNLPHG\x18\n\x20\x03(\x0b2).ChessRogueQueryDiceInfo.NBCMAKNLP\
-    HGEntryR\x0bNBCMAKNLPHG\x12&\n\x0fsurface_id_list\x18\x0f\x20\x03(\rR\rs\
-    urfaceIdList\x127\n\ndice_phase\x18\r\x20\x01(\x0e2\x18.ChessRogueNousDi\
-    cePhaseR\tdicePhase\x12,\n\tdice_list\x18\x08\x20\x03(\x0b2\x0f.ChessRog\
-    ueDiceR\x08diceList\x1a>\n\x10NBCMAKNLPHGEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\
-    \x028\x01b\x06proto3\
+    hessRogueNousDicePhase.proto\"\xb5\x02\n\x17ChessRogueQueryDiceInfo\x12,\
+    \n\tdice_list\x18\x01\x20\x03(\x0b2\x0f.ChessRogueDiceR\x08diceList\x127\
+    \n\ndice_phase\x18\x03\x20\x01(\x0e2\x18.ChessRogueNousDicePhaseR\tdiceP\
+    hase\x12K\n\x0bIAIPGNPEMHJ\x18\x06\x20\x03(\x0b2).ChessRogueQueryDiceInf\
+    o.IAIPGNPEMHJEntryR\x0bIAIPGNPEMHJ\x12&\n\x0fsurface_id_list\x18\x0f\x20\
+    \x03(\rR\rsurfaceIdList\x1a>\n\x10IAIPGNPEMHJEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05valu\
+    e:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

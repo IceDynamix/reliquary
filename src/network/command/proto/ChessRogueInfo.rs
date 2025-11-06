@@ -28,10 +28,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueInfo {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueInfo.miracle_info)
+    pub miracle_info: ::protobuf::MessageField<super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.aeon_info)
+    pub aeon_info: ::protobuf::MessageField<super::ChessRogueAeonInfo::ChessRogueAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.level_info)
+    pub level_info: ::protobuf::MessageField<super::ChessRogueLevelInfo::ChessRogueLevelInfo>,
     // @@protoc_insertion_point(field:ChessRogueInfo.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:ChessRogueInfo.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.rogue_dice_info)
+    pub rogue_dice_info: ::protobuf::MessageField<super::ChessRogueDiceInfo::ChessRogueDiceInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.rogue_current_game_info)
+    pub rogue_current_game_info: ::std::vec::Vec<super::RogueGameInfo::RogueGameInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.lineup_2)
+    pub lineup_2: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.nous_value_info)
+    pub nous_value_info: ::protobuf::MessageField<super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.rogue_lineup_info)
+    pub rogue_lineup_info: ::protobuf::MessageField<super::ChessRogueLineupInfo::ChessRogueLineupInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.money_info)
+    pub money_info: ::protobuf::MessageField<super::ChessRogueMoneyInfo::ChessRogueMoneyInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.rogue_sub_mode)
+    pub rogue_sub_mode: u32,
+    // @@protoc_insertion_point(field:ChessRogueInfo.buff_info)
+    pub buff_info: ::protobuf::MessageField<super::ChessRogueBuffInfo::ChessRogueBuffInfo>,
+    // @@protoc_insertion_point(field:ChessRogueInfo.lineup_3)
+    pub lineup_3: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +73,77 @@ impl ChessRogueInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMiracleInfo::ChessRogueMiracleInfo>(
+            "miracle_info",
+            |m: &ChessRogueInfo| { &m.miracle_info },
+            |m: &mut ChessRogueInfo| { &mut m.miracle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueAeonInfo::ChessRogueAeonInfo>(
+            "aeon_info",
+            |m: &ChessRogueInfo| { &m.aeon_info },
+            |m: &mut ChessRogueInfo| { &mut m.aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLevelInfo::ChessRogueLevelInfo>(
+            "level_info",
+            |m: &ChessRogueInfo| { &m.level_info },
+            |m: &mut ChessRogueInfo| { &mut m.level_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &ChessRogueInfo| { &m.lineup },
             |m: &mut ChessRogueInfo| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &ChessRogueInfo| { &m.scene },
-            |m: &mut ChessRogueInfo| { &mut m.scene },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueDiceInfo::ChessRogueDiceInfo>(
+            "rogue_dice_info",
+            |m: &ChessRogueInfo| { &m.rogue_dice_info },
+            |m: &mut ChessRogueInfo| { &mut m.rogue_dice_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_current_game_info",
+            |m: &ChessRogueInfo| { &m.rogue_current_game_info },
+            |m: &mut ChessRogueInfo| { &mut m.rogue_current_game_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup_2",
+            |m: &ChessRogueInfo| { &m.lineup_2 },
+            |m: &mut ChessRogueInfo| { &mut m.lineup_2 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueNousValueInfo::ChessRogueNousValueInfo>(
+            "nous_value_info",
+            |m: &ChessRogueInfo| { &m.nous_value_info },
+            |m: &mut ChessRogueInfo| { &mut m.nous_value_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueLineupInfo::ChessRogueLineupInfo>(
+            "rogue_lineup_info",
+            |m: &ChessRogueInfo| { &m.rogue_lineup_info },
+            |m: &mut ChessRogueInfo| { &mut m.rogue_lineup_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "pending_action",
+            |m: &ChessRogueInfo| { &m.pending_action },
+            |m: &mut ChessRogueInfo| { &mut m.pending_action },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueMoneyInfo::ChessRogueMoneyInfo>(
+            "money_info",
+            |m: &ChessRogueInfo| { &m.money_info },
+            |m: &mut ChessRogueInfo| { &mut m.money_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_sub_mode",
+            |m: &ChessRogueInfo| { &m.rogue_sub_mode },
+            |m: &mut ChessRogueInfo| { &mut m.rogue_sub_mode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
+            "buff_info",
+            |m: &ChessRogueInfo| { &m.buff_info },
+            |m: &mut ChessRogueInfo| { &mut m.buff_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup_3",
+            |m: &ChessRogueInfo| { &m.lineup_3 },
+            |m: &mut ChessRogueInfo| { &mut m.lineup_3 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueInfo>(
             "ChessRogueInfo",
@@ -79,11 +163,47 @@ impl ::protobuf::Message for ChessRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.aeon_info)?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.level_info)?;
+                },
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_dice_info)?;
+                },
+                58 => {
+                    self.rogue_current_game_info.push(is.read_message()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup_2)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.nous_value_info)?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_lineup_info)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.money_info)?;
+                },
+                104 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_info)?;
+                },
+                15114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup_3)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,13 +217,60 @@ impl ::protobuf::Message for ChessRogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.miracle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.aeon_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.level_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.rogue_dice_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.rogue_current_game_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.lineup_2.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.nous_value_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.money_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.rogue_sub_mode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.rogue_sub_mode);
+        }
+        if let Some(v) = self.buff_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.lineup_3.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,11 +278,47 @@ impl ::protobuf::Message for ChessRogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.miracle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.aeon_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.level_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.rogue_dice_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        for v in &self.rogue_current_game_info {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if let Some(v) = self.lineup_2.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.nous_value_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.rogue_lineup_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if let Some(v) = self.money_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.rogue_sub_mode != 0 {
+            os.write_uint32(13, self.rogue_sub_mode)?;
+        }
+        if let Some(v) = self.buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if let Some(v) = self.lineup_3.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1889, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +337,39 @@ impl ::protobuf::Message for ChessRogueInfo {
     }
 
     fn clear(&mut self) {
+        self.miracle_info.clear();
+        self.aeon_info.clear();
+        self.level_info.clear();
         self.lineup.clear();
-        self.scene.clear();
+        self.rogue_dice_info.clear();
+        self.rogue_current_game_info.clear();
+        self.lineup_2.clear();
+        self.nous_value_info.clear();
+        self.rogue_lineup_info.clear();
+        self.pending_action.clear();
+        self.money_info.clear();
+        self.rogue_sub_mode = 0;
+        self.buff_info.clear();
+        self.lineup_3.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueInfo {
         static instance: ChessRogueInfo = ChessRogueInfo {
+            miracle_info: ::protobuf::MessageField::none(),
+            aeon_info: ::protobuf::MessageField::none(),
+            level_info: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
-            scene: ::protobuf::MessageField::none(),
+            rogue_dice_info: ::protobuf::MessageField::none(),
+            rogue_current_game_info: ::std::vec::Vec::new(),
+            lineup_2: ::protobuf::MessageField::none(),
+            nous_value_info: ::protobuf::MessageField::none(),
+            rogue_lineup_info: ::protobuf::MessageField::none(),
+            pending_action: ::protobuf::MessageField::none(),
+            money_info: ::protobuf::MessageField::none(),
+            rogue_sub_mode: 0,
+            buff_info: ::protobuf::MessageField::none(),
+            lineup_3: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +394,28 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14ChessRogueInfo.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.prot\
-    o\"W\n\x0eChessRogueInfo\x12#\n\x06lineup\x18\x07\x20\x01(\x0b2\x0b.Line\
-    upInfoR\x06lineup\x12\x20\n\x05scene\x18\x0e\x20\x01(\x0b2\n.SceneInfoR\
-    \x05sceneb\x06proto3\
+    \n\x14ChessRogueInfo.proto\x1a\x18ChessRogueAeonInfo.proto\x1a\x18ChessR\
+    ogueBuffInfo.proto\x1a\x18ChessRogueDiceInfo.proto\x1a\x19ChessRogueLeve\
+    lInfo.proto\x1a\x1aChessRogueLineupInfo.proto\x1a\x1bChessRogueMiracleIn\
+    fo.proto\x1a\x19ChessRogueMoneyInfo.proto\x1a\x1dChessRogueNousValueInfo\
+    .proto\x1a\x10LineupInfo.proto\x1a\x1eRogueCommonPendingAction.proto\x1a\
+    \x13RogueGameInfo.proto\"\x80\x06\n\x0eChessRogueInfo\x129\n\x0cmiracle_\
+    info\x18\x02\x20\x01(\x0b2\x16.ChessRogueMiracleInfoR\x0bmiracleInfo\x12\
+    0\n\taeon_info\x18\x03\x20\x01(\x0b2\x13.ChessRogueAeonInfoR\x08aeonInfo\
+    \x123\n\nlevel_info\x18\x04\x20\x01(\x0b2\x14.ChessRogueLevelInfoR\tleve\
+    lInfo\x12#\n\x06lineup\x18\x05\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\
+    \x12;\n\x0frogue_dice_info\x18\x06\x20\x01(\x0b2\x13.ChessRogueDiceInfoR\
+    \rrogueDiceInfo\x12E\n\x17rogue_current_game_info\x18\x07\x20\x03(\x0b2\
+    \x0e.RogueGameInfoR\x14rogueCurrentGameInfo\x12&\n\x08lineup_2\x18\x08\
+    \x20\x01(\x0b2\x0b.LineupInfoR\x07lineup2\x12@\n\x0fnous_value_info\x18\
+    \t\x20\x01(\x0b2\x18.ChessRogueNousValueInfoR\rnousValueInfo\x12A\n\x11r\
+    ogue_lineup_info\x18\n\x20\x01(\x0b2\x15.ChessRogueLineupInfoR\x0frogueL\
+    ineupInfo\x12@\n\x0epending_action\x18\x0b\x20\x01(\x0b2\x19.RogueCommon\
+    PendingActionR\rpendingAction\x123\n\nmoney_info\x18\x0c\x20\x01(\x0b2\
+    \x14.ChessRogueMoneyInfoR\tmoneyInfo\x12$\n\x0erogue_sub_mode\x18\r\x20\
+    \x01(\rR\x0crogueSubMode\x120\n\tbuff_info\x18\x0f\x20\x01(\x0b2\x13.Che\
+    ssRogueBuffInfoR\x08buffInfo\x12'\n\x08lineup_3\x18\xe1\x0e\x20\x01(\x0b\
+    2\x0b.LineupInfoR\x07lineup3b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,9 +432,18 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(11);
+            deps.push(super::ChessRogueAeonInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueBuffInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueDiceInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueLevelInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueLineupInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueMiracleInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueMoneyInfo::file_descriptor().clone());
+            deps.push(super::ChessRogueNousValueInfo::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::SceneInfo::file_descriptor().clone());
+            deps.push(super::RogueCommonPendingAction::file_descriptor().clone());
+            deps.push(super::RogueGameInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FIDFNNCJAJE {
     // message fields
-    // @@protoc_insertion_point(field:FIDFNNCJAJE.IBOEKJBOMOG)
-    pub IBOEKJBOMOG: u32,
-    // @@protoc_insertion_point(field:FIDFNNCJAJE.IJPPKNKNLNL)
-    pub IJPPKNKNLNL: u32,
-    // @@protoc_insertion_point(field:FIDFNNCJAJE.DCHPOGOBDKO)
-    pub DCHPOGOBDKO: u32,
+    // @@protoc_insertion_point(field:FIDFNNCJAJE.PBDHDDGKBIC)
+    pub PBDHDDGKBIC: u32,
+    // @@protoc_insertion_point(field:FIDFNNCJAJE.ENKPKHPIGCH)
+    pub ENKPKHPIGCH: u32,
+    // @@protoc_insertion_point(field:FIDFNNCJAJE.EMBENDFKOFK)
+    pub EMBENDFKOFK: u32,
     // @@protoc_insertion_point(field:FIDFNNCJAJE.level)
     pub level: u32,
     // special fields
@@ -56,19 +56,19 @@ impl FIDFNNCJAJE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBOEKJBOMOG",
-            |m: &FIDFNNCJAJE| { &m.IBOEKJBOMOG },
-            |m: &mut FIDFNNCJAJE| { &mut m.IBOEKJBOMOG },
+            "PBDHDDGKBIC",
+            |m: &FIDFNNCJAJE| { &m.PBDHDDGKBIC },
+            |m: &mut FIDFNNCJAJE| { &mut m.PBDHDDGKBIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJPPKNKNLNL",
-            |m: &FIDFNNCJAJE| { &m.IJPPKNKNLNL },
-            |m: &mut FIDFNNCJAJE| { &mut m.IJPPKNKNLNL },
+            "ENKPKHPIGCH",
+            |m: &FIDFNNCJAJE| { &m.ENKPKHPIGCH },
+            |m: &mut FIDFNNCJAJE| { &mut m.ENKPKHPIGCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCHPOGOBDKO",
-            |m: &FIDFNNCJAJE| { &m.DCHPOGOBDKO },
-            |m: &mut FIDFNNCJAJE| { &mut m.DCHPOGOBDKO },
+            "EMBENDFKOFK",
+            |m: &FIDFNNCJAJE| { &m.EMBENDFKOFK },
+            |m: &mut FIDFNNCJAJE| { &mut m.EMBENDFKOFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.IBOEKJBOMOG = is.read_uint32()?;
+                32 => {
+                    self.PBDHDDGKBIC = is.read_uint32()?;
                 },
-                40 => {
-                    self.IJPPKNKNLNL = is.read_uint32()?;
+                56 => {
+                    self.ENKPKHPIGCH = is.read_uint32()?;
                 },
-                112 => {
-                    self.DCHPOGOBDKO = is.read_uint32()?;
+                80 => {
+                    self.EMBENDFKOFK = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IBOEKJBOMOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IBOEKJBOMOG);
+        if self.PBDHDDGKBIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PBDHDDGKBIC);
         }
-        if self.IJPPKNKNLNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IJPPKNKNLNL);
+        if self.ENKPKHPIGCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ENKPKHPIGCH);
         }
-        if self.DCHPOGOBDKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DCHPOGOBDKO);
+        if self.EMBENDFKOFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EMBENDFKOFK);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IBOEKJBOMOG != 0 {
-            os.write_uint32(12, self.IBOEKJBOMOG)?;
+        if self.PBDHDDGKBIC != 0 {
+            os.write_uint32(4, self.PBDHDDGKBIC)?;
         }
-        if self.IJPPKNKNLNL != 0 {
-            os.write_uint32(5, self.IJPPKNKNLNL)?;
+        if self.ENKPKHPIGCH != 0 {
+            os.write_uint32(7, self.ENKPKHPIGCH)?;
         }
-        if self.DCHPOGOBDKO != 0 {
-            os.write_uint32(14, self.DCHPOGOBDKO)?;
+        if self.EMBENDFKOFK != 0 {
+            os.write_uint32(10, self.EMBENDFKOFK)?;
         }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for FIDFNNCJAJE {
     }
 
     fn clear(&mut self) {
-        self.IBOEKJBOMOG = 0;
-        self.IJPPKNKNLNL = 0;
-        self.DCHPOGOBDKO = 0;
+        self.PBDHDDGKBIC = 0;
+        self.ENKPKHPIGCH = 0;
+        self.EMBENDFKOFK = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FIDFNNCJAJE {
         static instance: FIDFNNCJAJE = FIDFNNCJAJE {
-            IBOEKJBOMOG: 0,
-            IJPPKNKNLNL: 0,
-            DCHPOGOBDKO: 0,
+            PBDHDDGKBIC: 0,
+            ENKPKHPIGCH: 0,
+            EMBENDFKOFK: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FIDFNNCJAJE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FIDFNNCJAJE.proto\"\x89\x01\n\x0bFIDFNNCJAJE\x12\x20\n\x0bIBOEKJBO\
-    MOG\x18\x0c\x20\x01(\rR\x0bIBOEKJBOMOG\x12\x20\n\x0bIJPPKNKNLNL\x18\x05\
-    \x20\x01(\rR\x0bIJPPKNKNLNL\x12\x20\n\x0bDCHPOGOBDKO\x18\x0e\x20\x01(\rR\
-    \x0bDCHPOGOBDKO\x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05levelb\x06prot\
+    \n\x11FIDFNNCJAJE.proto\"\x89\x01\n\x0bFIDFNNCJAJE\x12\x20\n\x0bPBDHDDGK\
+    BIC\x18\x04\x20\x01(\rR\x0bPBDHDDGKBIC\x12\x20\n\x0bENKPKHPIGCH\x18\x07\
+    \x20\x01(\rR\x0bENKPKHPIGCH\x12\x20\n\x0bEMBENDFKOFK\x18\n\x20\x01(\rR\
+    \x0bEMBENDFKOFK\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05levelb\x06prot\
     o3\
 ";
 

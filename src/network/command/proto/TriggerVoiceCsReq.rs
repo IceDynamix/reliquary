@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TriggerVoiceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TriggerVoiceCsReq.MNELHNHCKPJ)
-    pub MNELHNHCKPJ: ::std::vec::Vec<super::NLBMCGCAEIO::NLBMCGCAEIO>,
+    // @@protoc_insertion_point(field:TriggerVoiceCsReq.DKBJMLMJPAK)
+    pub DKBJMLMJPAK: ::std::vec::Vec<super::NLBMCGCAEIO::NLBMCGCAEIO>,
     // special fields
     // @@protoc_insertion_point(special_field:TriggerVoiceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TriggerVoiceCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MNELHNHCKPJ",
-            |m: &TriggerVoiceCsReq| { &m.MNELHNHCKPJ },
-            |m: &mut TriggerVoiceCsReq| { &mut m.MNELHNHCKPJ },
+            "DKBJMLMJPAK",
+            |m: &TriggerVoiceCsReq| { &m.DKBJMLMJPAK },
+            |m: &mut TriggerVoiceCsReq| { &mut m.DKBJMLMJPAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TriggerVoiceCsReq>(
             "TriggerVoiceCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TriggerVoiceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MNELHNHCKPJ.push(is.read_message()?);
+                66 => {
+                    self.DKBJMLMJPAK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TriggerVoiceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MNELHNHCKPJ {
+        for value in &self.DKBJMLMJPAK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TriggerVoiceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MNELHNHCKPJ {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.DKBJMLMJPAK {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TriggerVoiceCsReq {
     }
 
     fn clear(&mut self) {
-        self.MNELHNHCKPJ.clear();
+        self.DKBJMLMJPAK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TriggerVoiceCsReq {
         static instance: TriggerVoiceCsReq = TriggerVoiceCsReq {
-            MNELHNHCKPJ: ::std::vec::Vec::new(),
+            DKBJMLMJPAK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TriggerVoiceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17TriggerVoiceCsReq.proto\x1a\x11NLBMCGCAEIO.proto\"C\n\x11TriggerVo\
-    iceCsReq\x12.\n\x0bMNELHNHCKPJ\x18\x05\x20\x03(\x0b2\x0c.NLBMCGCAEIOR\
-    \x0bMNELHNHCKPJb\x06proto3\
+    iceCsReq\x12.\n\x0bDKBJMLMJPAK\x18\x08\x20\x03(\x0b2\x0c.NLBMCGCAEIOR\
+    \x0bDKBJMLMJPAKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

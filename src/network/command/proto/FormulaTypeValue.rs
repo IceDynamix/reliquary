@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FormulaTypeValue {
     // message fields
-    // @@protoc_insertion_point(field:FormulaTypeValue.NADOCCEPHJO)
-    pub NADOCCEPHJO: ::std::collections::HashMap<u32, i32>,
+    // @@protoc_insertion_point(field:FormulaTypeValue.MOGAOECHOJN)
+    pub MOGAOECHOJN: ::std::collections::HashMap<u32, i32>,
     // special fields
     // @@protoc_insertion_point(special_field:FormulaTypeValue.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FormulaTypeValue {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NADOCCEPHJO",
-            |m: &FormulaTypeValue| { &m.NADOCCEPHJO },
-            |m: &mut FormulaTypeValue| { &mut m.NADOCCEPHJO },
+            "MOGAOECHOJN",
+            |m: &FormulaTypeValue| { &m.MOGAOECHOJN },
+            |m: &mut FormulaTypeValue| { &mut m.MOGAOECHOJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FormulaTypeValue>(
             "FormulaTypeValue",
@@ -72,7 +72,7 @@ impl ::protobuf::Message for FormulaTypeValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                18 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -85,7 +85,7 @@ impl ::protobuf::Message for FormulaTypeValue {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.NADOCCEPHJO.insert(key, value);
+                    self.MOGAOECHOJN.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,7 +99,7 @@ impl ::protobuf::Message for FormulaTypeValue {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.NADOCCEPHJO {
+        for (k, v) in &self.MOGAOECHOJN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FormulaTypeValue {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.NADOCCEPHJO {
+        for (k, v) in &self.MOGAOECHOJN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(18)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_int32(2, *v)?;
@@ -137,7 +137,7 @@ impl ::protobuf::Message for FormulaTypeValue {
     }
 
     fn clear(&mut self) {
-        self.NADOCCEPHJO.clear();
+        self.MOGAOECHOJN.clear();
         self.special_fields.clear();
     }
 
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FormulaTypeValue {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FormulaTypeValue.proto\"\x98\x01\n\x10FormulaTypeValue\x12D\n\x0bN\
-    ADOCCEPHJO\x18\x06\x20\x03(\x0b2\".FormulaTypeValue.NADOCCEPHJOEntryR\
-    \x0bNADOCCEPHJO\x1a>\n\x10NADOCCEPHJOEntry\x12\x10\n\x03key\x18\x01\x20\
+    \n\x16FormulaTypeValue.proto\"\x98\x01\n\x10FormulaTypeValue\x12D\n\x0bM\
+    OGAOECHOJN\x18\x02\x20\x03(\x0b2\".FormulaTypeValue.MOGAOECHOJNEntryR\
+    \x0bMOGAOECHOJN\x1a>\n\x10MOGAOECHOJNEntry\x12\x10\n\x03key\x18\x01\x20\
     \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\
     \x01b\x06proto3\
 ";

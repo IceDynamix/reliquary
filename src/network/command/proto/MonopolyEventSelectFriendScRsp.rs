@@ -30,12 +30,12 @@ pub struct MonopolyEventSelectFriendScRsp {
     // message fields
     // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.OEFHMBJBLGC)
-    pub OEFHMBJBLGC: u32,
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.HGBIGBFGBOM)
-    pub HGBIGBFGBOM: ::protobuf::MessageField<super::IAACCAFGEPI::IAACCAFGEPI>,
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.get_item_list)
-    pub get_item_list: u32,
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.BPDENJNJBGE)
+    pub BPDENJNJBGE: u32,
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.CJDPPMMHKAI)
+    pub CJDPPMMHKAI: u32,
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendScRsp.CCLJOOOJPGA)
+    pub CCLJOOOJPGA: ::protobuf::MessageField<super::IAACCAFGEPI::IAACCAFGEPI>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyEventSelectFriendScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl MonopolyEventSelectFriendScRsp {
             |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEFHMBJBLGC",
-            |m: &MonopolyEventSelectFriendScRsp| { &m.OEFHMBJBLGC },
-            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.OEFHMBJBLGC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IAACCAFGEPI::IAACCAFGEPI>(
-            "HGBIGBFGBOM",
-            |m: &MonopolyEventSelectFriendScRsp| { &m.HGBIGBFGBOM },
-            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.HGBIGBFGBOM },
+            "BPDENJNJBGE",
+            |m: &MonopolyEventSelectFriendScRsp| { &m.BPDENJNJBGE },
+            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.BPDENJNJBGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "get_item_list",
-            |m: &MonopolyEventSelectFriendScRsp| { &m.get_item_list },
-            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.get_item_list },
+            "CJDPPMMHKAI",
+            |m: &MonopolyEventSelectFriendScRsp| { &m.CJDPPMMHKAI },
+            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.CJDPPMMHKAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IAACCAFGEPI::IAACCAFGEPI>(
+            "CCLJOOOJPGA",
+            |m: &MonopolyEventSelectFriendScRsp| { &m.CCLJOOOJPGA },
+            |m: &mut MonopolyEventSelectFriendScRsp| { &mut m.CCLJOOOJPGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyEventSelectFriendScRsp>(
             "MonopolyEventSelectFriendScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
-                    self.OEFHMBJBLGC = is.read_uint32()?;
+                88 => {
+                    self.BPDENJNJBGE = is.read_uint32()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGBIGBFGBOM)?;
+                96 => {
+                    self.CJDPPMMHKAI = is.read_uint32()?;
                 },
-                120 => {
-                    self.get_item_list = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCLJOOOJPGA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if self.OEFHMBJBLGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OEFHMBJBLGC);
+        if self.BPDENJNJBGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BPDENJNJBGE);
         }
-        if let Some(v) = self.HGBIGBFGBOM.as_ref() {
+        if self.CJDPPMMHKAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CJDPPMMHKAI);
+        }
+        if let Some(v) = self.CCLJOOOJPGA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.get_item_list != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.get_item_list);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if self.OEFHMBJBLGC != 0 {
-            os.write_uint32(9, self.OEFHMBJBLGC)?;
+        if self.BPDENJNJBGE != 0 {
+            os.write_uint32(11, self.BPDENJNJBGE)?;
         }
-        if let Some(v) = self.HGBIGBFGBOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.CJDPPMMHKAI != 0 {
+            os.write_uint32(12, self.CJDPPMMHKAI)?;
         }
-        if self.get_item_list != 0 {
-            os.write_uint32(15, self.get_item_list)?;
+        if let Some(v) = self.CCLJOOOJPGA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for MonopolyEventSelectFriendScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.OEFHMBJBLGC = 0;
-        self.HGBIGBFGBOM.clear();
-        self.get_item_list = 0;
+        self.BPDENJNJBGE = 0;
+        self.CJDPPMMHKAI = 0;
+        self.CCLJOOOJPGA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyEventSelectFriendScRsp {
         static instance: MonopolyEventSelectFriendScRsp = MonopolyEventSelectFriendScRsp {
             retcode: 0,
-            OEFHMBJBLGC: 0,
-            HGBIGBFGBOM: ::protobuf::MessageField::none(),
-            get_item_list: 0,
+            BPDENJNJBGE: 0,
+            CJDPPMMHKAI: 0,
+            CCLJOOOJPGA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventSelectFriendScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MonopolyEventSelectFriendScRsp.proto\x1a\x11IAACCAFGEPI.proto\"\xb0\
-    \x01\n\x1eMonopolyEventSelectFriendScRsp\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bOEFHMBJBLGC\x18\t\x20\x01(\rR\x0bOE\
-    FHMBJBLGC\x12.\n\x0bHGBIGBFGBOM\x18\x07\x20\x01(\x0b2\x0c.IAACCAFGEPIR\
-    \x0bHGBIGBFGBOM\x12\"\n\rget_item_list\x18\x0f\x20\x01(\rR\x0bgetItemLis\
-    tb\x06proto3\
+    \n$MonopolyEventSelectFriendScRsp.proto\x1a\x11IAACCAFGEPI.proto\"\xae\
+    \x01\n\x1eMonopolyEventSelectFriendScRsp\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bBPDENJNJBGE\x18\x0b\x20\x01(\rR\x0b\
+    BPDENJNJBGE\x12\x20\n\x0bCJDPPMMHKAI\x18\x0c\x20\x01(\rR\x0bCJDPPMMHKAI\
+    \x12.\n\x0bCCLJOOOJPGA\x18\r\x20\x01(\x0b2\x0c.IAACCAFGEPIR\x0bCCLJOOOJP\
+    GAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

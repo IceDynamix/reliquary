@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTutorialCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishTutorialCsReq.BMLEMOBCNCM)
-    pub BMLEMOBCNCM: ::protobuf::EnumOrUnknown<super::TutorialFinishType::TutorialFinishType>,
+    // @@protoc_insertion_point(field:FinishTutorialCsReq.DNAPCOALDPH)
+    pub DNAPCOALDPH: ::protobuf::EnumOrUnknown<super::TutorialFinishType::TutorialFinishType>,
     // @@protoc_insertion_point(field:FinishTutorialCsReq.tutorial_id)
     pub tutorial_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FinishTutorialCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMLEMOBCNCM",
-            |m: &FinishTutorialCsReq| { &m.BMLEMOBCNCM },
-            |m: &mut FinishTutorialCsReq| { &mut m.BMLEMOBCNCM },
+            "DNAPCOALDPH",
+            |m: &FinishTutorialCsReq| { &m.DNAPCOALDPH },
+            |m: &mut FinishTutorialCsReq| { &mut m.DNAPCOALDPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tutorial_id",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.BMLEMOBCNCM = is.read_enum_or_unknown()?;
+                32 => {
+                    self.DNAPCOALDPH = is.read_enum_or_unknown()?;
                 },
                 80 => {
                     self.tutorial_id = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BMLEMOBCNCM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.BMLEMOBCNCM.value());
+        if self.DNAPCOALDPH != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.DNAPCOALDPH.value());
         }
         if self.tutorial_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.tutorial_id);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BMLEMOBCNCM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.BMLEMOBCNCM))?;
+        if self.DNAPCOALDPH != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DNAPCOALDPH))?;
         }
         if self.tutorial_id != 0 {
             os.write_uint32(10, self.tutorial_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     }
 
     fn clear(&mut self) {
-        self.BMLEMOBCNCM = ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE);
+        self.DNAPCOALDPH = ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE);
         self.tutorial_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTutorialCsReq {
         static instance: FinishTutorialCsReq = FinishTutorialCsReq {
-            BMLEMOBCNCM: ::protobuf::EnumOrUnknown::from_i32(0),
+            DNAPCOALDPH: ::protobuf::EnumOrUnknown::from_i32(0),
             tutorial_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FinishTutorialCsReq.proto\x1a\x18TutorialFinishType.proto\"m\n\x13\
-    FinishTutorialCsReq\x125\n\x0bBMLEMOBCNCM\x18\x0e\x20\x01(\x0e2\x13.Tuto\
-    rialFinishTypeR\x0bBMLEMOBCNCM\x12\x1f\n\x0btutorial_id\x18\n\x20\x01(\r\
+    FinishTutorialCsReq\x125\n\x0bDNAPCOALDPH\x18\x04\x20\x01(\x0e2\x13.Tuto\
+    rialFinishTypeR\x0bDNAPCOALDPH\x12\x1f\n\x0btutorial_id\x18\n\x20\x01(\r\
     R\ntutorialIdb\x06proto3\
 ";
 

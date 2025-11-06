@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGameDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGameDataChangeScNotify.DNPLIHJGJIH)
-    pub DNPLIHJGJIH: ::protobuf::MessageField<super::HEHPIOGGIEG::HEHPIOGGIEG>,
+    // @@protoc_insertion_point(field:WolfBroGameDataChangeScNotify.JCBOFPPMIGE)
+    pub JCBOFPPMIGE: ::protobuf::MessageField<super::HEHPIOGGIEG::HEHPIOGGIEG>,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGameDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl WolfBroGameDataChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEHPIOGGIEG::HEHPIOGGIEG>(
-            "DNPLIHJGJIH",
-            |m: &WolfBroGameDataChangeScNotify| { &m.DNPLIHJGJIH },
-            |m: &mut WolfBroGameDataChangeScNotify| { &mut m.DNPLIHJGJIH },
+            "JCBOFPPMIGE",
+            |m: &WolfBroGameDataChangeScNotify| { &m.JCBOFPPMIGE },
+            |m: &mut WolfBroGameDataChangeScNotify| { &mut m.JCBOFPPMIGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGameDataChangeScNotify>(
             "WolfBroGameDataChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for WolfBroGameDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DNPLIHJGJIH)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCBOFPPMIGE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for WolfBroGameDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DNPLIHJGJIH.as_ref() {
+        if let Some(v) = self.JCBOFPPMIGE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for WolfBroGameDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DNPLIHJGJIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.JCBOFPPMIGE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for WolfBroGameDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.DNPLIHJGJIH.clear();
+        self.JCBOFPPMIGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGameDataChangeScNotify {
         static instance: WolfBroGameDataChangeScNotify = WolfBroGameDataChangeScNotify {
-            DNPLIHJGJIH: ::protobuf::MessageField::none(),
+            JCBOFPPMIGE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#WolfBroGameDataChangeScNotify.proto\x1a\x11HEHPIOGGIEG.proto\"O\n\x1d\
-    WolfBroGameDataChangeScNotify\x12.\n\x0bDNPLIHJGJIH\x18\x0b\x20\x01(\x0b\
-    2\x0c.HEHPIOGGIEGR\x0bDNPLIHJGJIHb\x06proto3\
+    WolfBroGameDataChangeScNotify\x12.\n\x0bJCBOFPPMIGE\x18\x04\x20\x01(\x0b\
+    2\x0c.HEHPIOGGIEGR\x0bJCBOFPPMIGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

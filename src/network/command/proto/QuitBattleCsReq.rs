@@ -79,7 +79,7 @@ impl ::protobuf::Message for QuitBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 104 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for QuitBattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
             os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for QuitBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15QuitBattleCsReq.proto\x1a\x16BattleStatistics.proto\x1a\x12Rebattl\
-    eType.proto\"j\n\x0fQuitBattleCsReq\x12#\n\x03stt\x18\x08\x20\x01(\x0b2\
+    eType.proto\"j\n\x0fQuitBattleCsReq\x12#\n\x03stt\x18\x05\x20\x01(\x0b2\
     \x11.BattleStatisticsR\x03stt\x122\n\rrebattle_type\x18\r\x20\x01(\x0e2\
     \r.RebattleTypeR\x0crebattleTypeb\x06proto3\
 ";

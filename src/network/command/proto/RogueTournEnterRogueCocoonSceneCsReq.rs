@@ -28,16 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRogueCocoonSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.IBGNLBOEBCG)
-    pub IBGNLBOEBCG: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.use_stamina)
+    pub use_stamina: bool,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.ENBCAKOPAME)
+    pub ENBCAKOPAME: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.MIEBABJLOCC)
+    pub MIEBABJLOCC: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::PHHKOMBGPPK::PHHKOMBGPPK>,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.PILMKHCKMED)
-    pub PILMKHCKMED: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.difficulty_level)
     pub difficulty_level: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.EIDDMGHLPBP)
-    pub EIDDMGHLPBP: bool,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.OHKIPFDOMGM)
+    pub OHKIPFDOMGM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnterRogueCocoonSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,12 +57,22 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBGNLBOEBCG",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.IBGNLBOEBCG },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.IBGNLBOEBCG },
+            "use_stamina",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.use_stamina },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.use_stamina },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ENBCAKOPAME",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.ENBCAKOPAME },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.ENBCAKOPAME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MIEBABJLOCC",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.MIEBABJLOCC },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.MIEBABJLOCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -68,19 +80,14 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
             |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PILMKHCKMED",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.PILMKHCKMED },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.PILMKHCKMED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "difficulty_level",
             |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.difficulty_level },
             |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.difficulty_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIDDMGHLPBP",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.EIDDMGHLPBP },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.EIDDMGHLPBP },
+            "OHKIPFDOMGM",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.OHKIPFDOMGM },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.OHKIPFDOMGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnterRogueCocoonSceneCsReq>(
             "RogueTournEnterRogueCocoonSceneCsReq",
@@ -100,20 +107,23 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.IBGNLBOEBCG = is.read_uint32()?;
+                32 => {
+                    self.use_stamina = is.read_bool()?;
                 },
-                82 => {
+                40 => {
+                    self.ENBCAKOPAME = is.read_uint32()?;
+                },
+                56 => {
+                    self.MIEBABJLOCC = is.read_uint32()?;
+                },
+                66 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                72 => {
-                    self.PILMKHCKMED = is.read_uint32()?;
-                },
-                96 => {
+                104 => {
                     self.difficulty_level = is.read_uint32()?;
                 },
-                16 => {
-                    self.EIDDMGHLPBP = is.read_bool()?;
+                112 => {
+                    self.OHKIPFDOMGM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +137,24 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IBGNLBOEBCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IBGNLBOEBCG);
+        if self.use_stamina != false {
+            my_size += 1 + 1;
+        }
+        if self.ENBCAKOPAME != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ENBCAKOPAME);
+        }
+        if self.MIEBABJLOCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MIEBABJLOCC);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PILMKHCKMED != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PILMKHCKMED);
-        }
         if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.difficulty_level);
+            my_size += ::protobuf::rt::uint32_size(13, self.difficulty_level);
         }
-        if self.EIDDMGHLPBP != false {
-            my_size += 1 + 1;
+        if self.OHKIPFDOMGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OHKIPFDOMGM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +162,23 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IBGNLBOEBCG != 0 {
-            os.write_uint32(6, self.IBGNLBOEBCG)?;
+        if self.use_stamina != false {
+            os.write_bool(4, self.use_stamina)?;
+        }
+        if self.ENBCAKOPAME != 0 {
+            os.write_uint32(5, self.ENBCAKOPAME)?;
+        }
+        if self.MIEBABJLOCC != 0 {
+            os.write_uint32(7, self.MIEBABJLOCC)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.PILMKHCKMED != 0 {
-            os.write_uint32(9, self.PILMKHCKMED)?;
-        }
         if self.difficulty_level != 0 {
-            os.write_uint32(12, self.difficulty_level)?;
+            os.write_uint32(13, self.difficulty_level)?;
         }
-        if self.EIDDMGHLPBP != false {
-            os.write_bool(2, self.EIDDMGHLPBP)?;
+        if self.OHKIPFDOMGM != 0 {
+            os.write_uint32(14, self.OHKIPFDOMGM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +197,23 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.IBGNLBOEBCG = 0;
+        self.use_stamina = false;
+        self.ENBCAKOPAME = 0;
+        self.MIEBABJLOCC = 0;
         self.avatar_list.clear();
-        self.PILMKHCKMED = 0;
         self.difficulty_level = 0;
-        self.EIDDMGHLPBP = false;
+        self.OHKIPFDOMGM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRogueCocoonSceneCsReq {
         static instance: RogueTournEnterRogueCocoonSceneCsReq = RogueTournEnterRogueCocoonSceneCsReq {
-            IBGNLBOEBCG: 0,
+            use_stamina: false,
+            ENBCAKOPAME: 0,
+            MIEBABJLOCC: 0,
             avatar_list: ::std::vec::Vec::new(),
-            PILMKHCKMED: 0,
             difficulty_level: 0,
-            EIDDMGHLPBP: false,
+            OHKIPFDOMGM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRogueCocoonSceneCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RogueTournEnterRogueCocoonSceneCsReq.proto\x1a\x11PHHKOMBGPPK.proto\"\
-    \xe6\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bIBGNLBOEBCG\
-    \x18\x06\x20\x01(\rR\x0bIBGNLBOEBCG\x12-\n\x0bavatar_list\x18\n\x20\x03(\
-    \x0b2\x0c.PHHKOMBGPPKR\navatarList\x12\x20\n\x0bPILMKHCKMED\x18\t\x20\
-    \x01(\rR\x0bPILMKHCKMED\x12)\n\x10difficulty_level\x18\x0c\x20\x01(\rR\
-    \x0fdifficultyLevel\x12\x20\n\x0bEIDDMGHLPBP\x18\x02\x20\x01(\x08R\x0bEI\
-    DDMGHLPBPb\x06proto3\
+    \x87\x02\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x1f\n\x0buse_stamina\
+    \x18\x04\x20\x01(\x08R\nuseStamina\x12\x20\n\x0bENBCAKOPAME\x18\x05\x20\
+    \x01(\rR\x0bENBCAKOPAME\x12\x20\n\x0bMIEBABJLOCC\x18\x07\x20\x01(\rR\x0b\
+    MIEBABJLOCC\x12-\n\x0bavatar_list\x18\x08\x20\x03(\x0b2\x0c.PHHKOMBGPPKR\
+    \navatarList\x12)\n\x10difficulty_level\x18\r\x20\x01(\rR\x0fdifficultyL\
+    evel\x12\x20\n\x0bOHKIPFDOMGM\x18\x0e\x20\x01(\rR\x0bOHKIPFDOMGMb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

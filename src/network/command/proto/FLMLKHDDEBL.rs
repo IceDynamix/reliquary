@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLMLKHDDEBL {
     // message fields
-    // @@protoc_insertion_point(field:FLMLKHDDEBL.ICPDAIJJFLB)
-    pub ICPDAIJJFLB: ::protobuf::MessageField<super::MOCOIBECENI::MOCOIBECENI>,
+    // @@protoc_insertion_point(field:FLMLKHDDEBL.OBLBCFJIOFO)
+    pub OBLBCFJIOFO: ::protobuf::MessageField<super::MOCOIBECENI::MOCOIBECENI>,
     // @@protoc_insertion_point(field:FLMLKHDDEBL.peak_target)
     pub peak_target: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:FLMLKHDDEBL.DBPGLFINFBF)
-    pub DBPGLFINFBF: u32,
-    // @@protoc_insertion_point(field:FLMLKHDDEBL.ALKNEFFMCLD)
-    pub ALKNEFFMCLD: ::protobuf::MessageField<super::MOCOIBECENI::MOCOIBECENI>,
+    // @@protoc_insertion_point(field:FLMLKHDDEBL.CNMLFHLEFBL)
+    pub CNMLFHLEFBL: u32,
+    // @@protoc_insertion_point(field:FLMLKHDDEBL.KOIMOMKKPOG)
+    pub KOIMOMKKPOG: ::protobuf::MessageField<super::MOCOIBECENI::MOCOIBECENI>,
     // @@protoc_insertion_point(field:FLMLKHDDEBL.challenge_peak_clear)
     pub challenge_peak_clear: bool,
     // special fields
@@ -58,9 +58,9 @@ impl FLMLKHDDEBL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MOCOIBECENI::MOCOIBECENI>(
-            "ICPDAIJJFLB",
-            |m: &FLMLKHDDEBL| { &m.ICPDAIJJFLB },
-            |m: &mut FLMLKHDDEBL| { &mut m.ICPDAIJJFLB },
+            "OBLBCFJIOFO",
+            |m: &FLMLKHDDEBL| { &m.OBLBCFJIOFO },
+            |m: &mut FLMLKHDDEBL| { &mut m.OBLBCFJIOFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "peak_target",
@@ -68,14 +68,14 @@ impl FLMLKHDDEBL {
             |m: &mut FLMLKHDDEBL| { &mut m.peak_target },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBPGLFINFBF",
-            |m: &FLMLKHDDEBL| { &m.DBPGLFINFBF },
-            |m: &mut FLMLKHDDEBL| { &mut m.DBPGLFINFBF },
+            "CNMLFHLEFBL",
+            |m: &FLMLKHDDEBL| { &m.CNMLFHLEFBL },
+            |m: &mut FLMLKHDDEBL| { &mut m.CNMLFHLEFBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MOCOIBECENI::MOCOIBECENI>(
-            "ALKNEFFMCLD",
-            |m: &FLMLKHDDEBL| { &m.ALKNEFFMCLD },
-            |m: &mut FLMLKHDDEBL| { &mut m.ALKNEFFMCLD },
+            "KOIMOMKKPOG",
+            |m: &FLMLKHDDEBL| { &m.KOIMOMKKPOG },
+            |m: &mut FLMLKHDDEBL| { &mut m.KOIMOMKKPOG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_peak_clear",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for FLMLKHDDEBL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICPDAIJJFLB)?;
-                },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
-                },
-                16 => {
-                    self.peak_target.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.DBPGLFINFBF = is.read_uint32()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBLBCFJIOFO)?;
                 },
                 34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALKNEFFMCLD)?;
+                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
                 },
-                112 => {
+                32 => {
+                    self.peak_target.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.CNMLFHLEFBL = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KOIMOMKKPOG)?;
+                },
+                104 => {
                     self.challenge_peak_clear = is.read_bool()?;
                 },
                 tag => {
@@ -130,15 +130,15 @@ impl ::protobuf::Message for FLMLKHDDEBL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ICPDAIJJFLB.as_ref() {
+        if let Some(v) = self.OBLBCFJIOFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.peak_target);
-        if self.DBPGLFINFBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DBPGLFINFBF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.peak_target);
+        if self.CNMLFHLEFBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CNMLFHLEFBL);
         }
-        if let Some(v) = self.ALKNEFFMCLD.as_ref() {
+        if let Some(v) = self.KOIMOMKKPOG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,18 +151,18 @@ impl ::protobuf::Message for FLMLKHDDEBL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ICPDAIJJFLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.OBLBCFJIOFO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(2, &self.peak_target)?;
-        if self.DBPGLFINFBF != 0 {
-            os.write_uint32(15, self.DBPGLFINFBF)?;
+        os.write_repeated_packed_uint32(4, &self.peak_target)?;
+        if self.CNMLFHLEFBL != 0 {
+            os.write_uint32(9, self.CNMLFHLEFBL)?;
         }
-        if let Some(v) = self.ALKNEFFMCLD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.KOIMOMKKPOG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.challenge_peak_clear != false {
-            os.write_bool(14, self.challenge_peak_clear)?;
+            os.write_bool(13, self.challenge_peak_clear)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for FLMLKHDDEBL {
     }
 
     fn clear(&mut self) {
-        self.ICPDAIJJFLB.clear();
+        self.OBLBCFJIOFO.clear();
         self.peak_target.clear();
-        self.DBPGLFINFBF = 0;
-        self.ALKNEFFMCLD.clear();
+        self.CNMLFHLEFBL = 0;
+        self.KOIMOMKKPOG.clear();
         self.challenge_peak_clear = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLMLKHDDEBL {
         static instance: FLMLKHDDEBL = FLMLKHDDEBL {
-            ICPDAIJJFLB: ::protobuf::MessageField::none(),
+            OBLBCFJIOFO: ::protobuf::MessageField::none(),
             peak_target: ::std::vec::Vec::new(),
-            DBPGLFINFBF: 0,
-            ALKNEFFMCLD: ::protobuf::MessageField::none(),
+            CNMLFHLEFBL: 0,
+            KOIMOMKKPOG: ::protobuf::MessageField::none(),
             challenge_peak_clear: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for FLMLKHDDEBL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLMLKHDDEBL.proto\x1a\x11MOCOIBECENI.proto\"\xe2\x01\n\x0bFLMLKHDD\
-    EBL\x12.\n\x0bICPDAIJJFLB\x18\x05\x20\x01(\x0b2\x0c.MOCOIBECENIR\x0bICPD\
-    AIJJFLB\x12\x1f\n\x0bpeak_target\x18\x02\x20\x03(\rR\npeakTarget\x12\x20\
-    \n\x0bDBPGLFINFBF\x18\x0f\x20\x01(\rR\x0bDBPGLFINFBF\x12.\n\x0bALKNEFFMC\
-    LD\x18\x04\x20\x01(\x0b2\x0c.MOCOIBECENIR\x0bALKNEFFMCLD\x120\n\x14chall\
-    enge_peak_clear\x18\x0e\x20\x01(\x08R\x12challengePeakClearb\x06proto3\
+    EBL\x12.\n\x0bOBLBCFJIOFO\x18\x02\x20\x01(\x0b2\x0c.MOCOIBECENIR\x0bOBLB\
+    CFJIOFO\x12\x1f\n\x0bpeak_target\x18\x04\x20\x03(\rR\npeakTarget\x12\x20\
+    \n\x0bCNMLFHLEFBL\x18\t\x20\x01(\rR\x0bCNMLFHLEFBL\x12.\n\x0bKOIMOMKKPOG\
+    \x18\n\x20\x01(\x0b2\x0c.MOCOIBECENIR\x0bKOIMOMKKPOG\x120\n\x14challenge\
+    _peak_clear\x18\r\x20\x01(\x08R\x12challengePeakClearb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

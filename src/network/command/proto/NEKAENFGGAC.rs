@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NEKAENFGGAC {
     // message fields
-    // @@protoc_insertion_point(field:NEKAENFGGAC.ALDGHBNAONN)
-    pub ALDGHBNAONN: ::protobuf::MessageField<super::MOGBGNCDOIA::MOGBGNCDOIA>,
+    // @@protoc_insertion_point(field:NEKAENFGGAC.GICJBEKBPBD)
+    pub GICJBEKBPBD: ::protobuf::MessageField<super::MOGBGNCDOIA::MOGBGNCDOIA>,
     // special fields
     // @@protoc_insertion_point(special_field:NEKAENFGGAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NEKAENFGGAC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MOGBGNCDOIA::MOGBGNCDOIA>(
-            "ALDGHBNAONN",
-            |m: &NEKAENFGGAC| { &m.ALDGHBNAONN },
-            |m: &mut NEKAENFGGAC| { &mut m.ALDGHBNAONN },
+            "GICJBEKBPBD",
+            |m: &NEKAENFGGAC| { &m.GICJBEKBPBD },
+            |m: &mut NEKAENFGGAC| { &mut m.GICJBEKBPBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NEKAENFGGAC>(
             "NEKAENFGGAC",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for NEKAENFGGAC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALDGHBNAONN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GICJBEKBPBD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for NEKAENFGGAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ALDGHBNAONN.as_ref() {
+        if let Some(v) = self.GICJBEKBPBD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for NEKAENFGGAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ALDGHBNAONN.as_ref() {
+        if let Some(v) = self.GICJBEKBPBD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for NEKAENFGGAC {
     }
 
     fn clear(&mut self) {
-        self.ALDGHBNAONN.clear();
+        self.GICJBEKBPBD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEKAENFGGAC {
         static instance: NEKAENFGGAC = NEKAENFGGAC {
-            ALDGHBNAONN: ::protobuf::MessageField::none(),
+            GICJBEKBPBD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for NEKAENFGGAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEKAENFGGAC.proto\x1a\x11MOGBGNCDOIA.proto\"=\n\x0bNEKAENFGGAC\x12\
-    .\n\x0bALDGHBNAONN\x18\x01\x20\x01(\x0b2\x0c.MOGBGNCDOIAR\x0bALDGHBNAONN\
+    .\n\x0bGICJBEKBPBD\x18\x01\x20\x01(\x0b2\x0c.MOGBGNCDOIAR\x0bGICJBEKBPBD\
     b\x06proto3\
 ";
 

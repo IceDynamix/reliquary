@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DHNFBGENLIG {
     // message fields
-    // @@protoc_insertion_point(field:DHNFBGENLIG.BHPCNNFOKEE)
-    pub BHPCNNFOKEE: u32,
     // @@protoc_insertion_point(field:DHNFBGENLIG.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:DHNFBGENLIG.ELCOBOEFJPI)
+    pub ELCOBOEFJPI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DHNFBGENLIG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DHNFBGENLIG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHPCNNFOKEE",
-            |m: &DHNFBGENLIG| { &m.BHPCNNFOKEE },
-            |m: &mut DHNFBGENLIG| { &mut m.BHPCNNFOKEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &DHNFBGENLIG| { &m.progress },
             |m: &mut DHNFBGENLIG| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELCOBOEFJPI",
+            |m: &DHNFBGENLIG| { &m.ELCOBOEFJPI },
+            |m: &mut DHNFBGENLIG| { &mut m.ELCOBOEFJPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DHNFBGENLIG>(
             "DHNFBGENLIG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DHNFBGENLIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.BHPCNNFOKEE = is.read_uint32()?;
-                },
-                120 => {
+                8 => {
                     self.progress = is.read_uint32()?;
+                },
+                80 => {
+                    self.ELCOBOEFJPI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DHNFBGENLIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BHPCNNFOKEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BHPCNNFOKEE);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.progress);
+            my_size += ::protobuf::rt::uint32_size(1, self.progress);
+        }
+        if self.ELCOBOEFJPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ELCOBOEFJPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DHNFBGENLIG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BHPCNNFOKEE != 0 {
-            os.write_uint32(9, self.BHPCNNFOKEE)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(15, self.progress)?;
+            os.write_uint32(1, self.progress)?;
+        }
+        if self.ELCOBOEFJPI != 0 {
+            os.write_uint32(10, self.ELCOBOEFJPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DHNFBGENLIG {
     }
 
     fn clear(&mut self) {
-        self.BHPCNNFOKEE = 0;
         self.progress = 0;
+        self.ELCOBOEFJPI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DHNFBGENLIG {
         static instance: DHNFBGENLIG = DHNFBGENLIG {
-            BHPCNNFOKEE: 0,
             progress: 0,
+            ELCOBOEFJPI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DHNFBGENLIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DHNFBGENLIG.proto\"K\n\x0bDHNFBGENLIG\x12\x20\n\x0bBHPCNNFOKEE\x18\
-    \t\x20\x01(\rR\x0bBHPCNNFOKEE\x12\x1a\n\x08progress\x18\x0f\x20\x01(\rR\
-    \x08progressb\x06proto3\
+    \n\x11DHNFBGENLIG.proto\"K\n\x0bDHNFBGENLIG\x12\x1a\n\x08progress\x18\
+    \x01\x20\x01(\rR\x08progress\x12\x20\n\x0bELCOBOEFJPI\x18\n\x20\x01(\rR\
+    \x0bELCOBOEFJPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

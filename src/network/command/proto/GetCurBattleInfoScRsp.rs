@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurBattleInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.last_end_status)
-    pub last_end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.aether_battle_info)
-    pub aether_battle_info: ::protobuf::MessageField<super::AetherDivideBattleInfo::AetherDivideBattleInfo>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.last_event_id)
+    pub last_event_id: u32,
     // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
-    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.IBPJKFFFLNG)
-    pub IBPJKFFFLNG: u32,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.aether_divide_battle_info)
+    pub aether_divide_battle_info: ::protobuf::MessageField<super::AetherDivideBattleInfo::AetherDivideBattleInfo>,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetCurBattleInfoScRsp.last_end_status)
+    pub last_end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurBattleInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl GetCurBattleInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "last_end_status",
-            |m: &GetCurBattleInfoScRsp| { &m.last_end_status },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.last_end_status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetCurBattleInfoScRsp| { &m.retcode },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AetherDivideBattleInfo::AetherDivideBattleInfo>(
-            "aether_battle_info",
-            |m: &GetCurBattleInfoScRsp| { &m.aether_battle_info },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.aether_battle_info },
+            "last_event_id",
+            |m: &GetCurBattleInfoScRsp| { &m.last_event_id },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.last_event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
             "battle_info",
             |m: &GetCurBattleInfoScRsp| { &m.battle_info },
             |m: &mut GetCurBattleInfoScRsp| { &mut m.battle_info },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AetherDivideBattleInfo::AetherDivideBattleInfo>(
+            "aether_divide_battle_info",
+            |m: &GetCurBattleInfoScRsp| { &m.aether_divide_battle_info },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.aether_divide_battle_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBPJKFFFLNG",
-            |m: &GetCurBattleInfoScRsp| { &m.IBPJKFFFLNG },
-            |m: &mut GetCurBattleInfoScRsp| { &mut m.IBPJKFFFLNG },
+            "retcode",
+            |m: &GetCurBattleInfoScRsp| { &m.retcode },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "last_end_status",
+            |m: &GetCurBattleInfoScRsp| { &m.last_end_status },
+            |m: &mut GetCurBattleInfoScRsp| { &mut m.last_end_status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurBattleInfoScRsp>(
             "GetCurBattleInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.last_end_status = is.read_enum_or_unknown()?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                8 => {
+                    self.last_event_id = is.read_uint32()?;
                 },
                 34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.aether_battle_info)?;
-                },
-                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                80 => {
-                    self.IBPJKFFFLNG = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.aether_divide_battle_info)?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.last_end_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.last_end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.last_end_status.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if let Some(v) = self.aether_battle_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.last_event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.last_event_id);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IBPJKFFFLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IBPJKFFFLNG);
+        if let Some(v) = self.aether_divide_battle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.last_end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.last_end_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.last_end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.last_end_status))?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if let Some(v) = self.aether_battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.last_event_id != 0 {
+            os.write_uint32(1, self.last_event_id)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.IBPJKFFFLNG != 0 {
-            os.write_uint32(10, self.IBPJKFFFLNG)?;
+        if let Some(v) = self.aether_divide_battle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.last_end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.last_end_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GetCurBattleInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.last_end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.retcode = 0;
-        self.aether_battle_info.clear();
+        self.last_event_id = 0;
         self.battle_info.clear();
-        self.IBPJKFFFLNG = 0;
+        self.aether_divide_battle_info.clear();
+        self.retcode = 0;
+        self.last_end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurBattleInfoScRsp {
         static instance: GetCurBattleInfoScRsp = GetCurBattleInfoScRsp {
-            last_end_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
-            aether_battle_info: ::protobuf::MessageField::none(),
+            last_event_id: 0,
             battle_info: ::protobuf::MessageField::none(),
-            IBPJKFFFLNG: 0,
+            aether_divide_battle_info: ::protobuf::MessageField::none(),
+            retcode: 0,
+            last_end_status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,13 +222,13 @@ impl ::protobuf::reflect::ProtobufValue for GetCurBattleInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetCurBattleInfoScRsp.proto\x1a\x1cAetherDivideBattleInfo.proto\
-    \x1a\x15BattleEndStatus.proto\x1a\x15SceneBattleInfo.proto\"\x87\x02\n\
-    \x15GetCurBattleInfoScRsp\x128\n\x0flast_end_status\x18\t\x20\x01(\x0e2\
-    \x10.BattleEndStatusR\rlastEndStatus\x12\x18\n\x07retcode\x18\x05\x20\
-    \x01(\rR\x07retcode\x12E\n\x12aether_battle_info\x18\x04\x20\x01(\x0b2\
-    \x17.AetherDivideBattleInfoR\x10aetherBattleInfo\x121\n\x0bbattle_info\
-    \x18\x0e\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x20\n\x0bIBP\
-    JKFFFLNG\x18\n\x20\x01(\rR\x0bIBPJKFFFLNGb\x06proto3\
+    \x1a\x15BattleEndStatus.proto\x1a\x15SceneBattleInfo.proto\"\x96\x02\n\
+    \x15GetCurBattleInfoScRsp\x12\"\n\rlast_event_id\x18\x01\x20\x01(\rR\x0b\
+    lastEventId\x121\n\x0bbattle_info\x18\x04\x20\x01(\x0b2\x10.SceneBattleI\
+    nfoR\nbattleInfo\x12R\n\x19aether_divide_battle_info\x18\x05\x20\x01(\
+    \x0b2\x17.AetherDivideBattleInfoR\x16aetherDivideBattleInfo\x12\x18\n\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x128\n\x0flast_end_status\x18\
+    \t\x20\x01(\x0e2\x10.BattleEndStatusR\rlastEndStatusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

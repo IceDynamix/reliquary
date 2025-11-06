@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.FLLABLFBEIK)
-    pub FLLABLFBEIK: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.KDLCJDIGGDK)
+    pub KDLCJDIGGDK: u32,
     // @@protoc_insertion_point(field:RogueTournEnterRoomCsReq.cur_room_index)
     pub cur_room_index: u32,
     // special fields
@@ -52,9 +52,9 @@ impl RogueTournEnterRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLLABLFBEIK",
-            |m: &RogueTournEnterRoomCsReq| { &m.FLLABLFBEIK },
-            |m: &mut RogueTournEnterRoomCsReq| { &mut m.FLLABLFBEIK },
+            "KDLCJDIGGDK",
+            |m: &RogueTournEnterRoomCsReq| { &m.KDLCJDIGGDK },
+            |m: &mut RogueTournEnterRoomCsReq| { &mut m.KDLCJDIGGDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_room_index",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FLLABLFBEIK = is.read_uint32()?;
+                16 => {
+                    self.KDLCJDIGGDK = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.cur_room_index = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FLLABLFBEIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FLLABLFBEIK);
+        if self.KDLCJDIGGDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KDLCJDIGGDK);
         }
         if self.cur_room_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.cur_room_index);
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_room_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FLLABLFBEIK != 0 {
-            os.write_uint32(4, self.FLLABLFBEIK)?;
+        if self.KDLCJDIGGDK != 0 {
+            os.write_uint32(2, self.KDLCJDIGGDK)?;
         }
         if self.cur_room_index != 0 {
-            os.write_uint32(6, self.cur_room_index)?;
+            os.write_uint32(4, self.cur_room_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for RogueTournEnterRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.FLLABLFBEIK = 0;
+        self.KDLCJDIGGDK = 0;
         self.cur_room_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRoomCsReq {
         static instance: RogueTournEnterRoomCsReq = RogueTournEnterRoomCsReq {
-            FLLABLFBEIK: 0,
+            KDLCJDIGGDK: 0,
             cur_room_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueTournEnterRoomCsReq.proto\"b\n\x18RogueTournEnterRoomCsReq\
-    \x12\x20\n\x0bFLLABLFBEIK\x18\x04\x20\x01(\rR\x0bFLLABLFBEIK\x12$\n\x0ec\
-    ur_room_index\x18\x06\x20\x01(\rR\x0ccurRoomIndexb\x06proto3\
+    \x12\x20\n\x0bKDLCJDIGGDK\x18\x02\x20\x01(\rR\x0bKDLCJDIGGDK\x12$\n\x0ec\
+    ur_room_index\x18\x04\x20\x01(\rR\x0ccurRoomIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

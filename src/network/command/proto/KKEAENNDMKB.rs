@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKEAENNDMKB {
     // message fields
-    // @@protoc_insertion_point(field:KKEAENNDMKB.NDPGBLAAGHK)
-    pub NDPGBLAAGHK: ::std::vec::Vec<super::GOAHFMLPDMF::GOAHFMLPDMF>,
+    // @@protoc_insertion_point(field:KKEAENNDMKB.BELABGLANGA)
+    pub BELABGLANGA: ::std::vec::Vec<super::GOAHFMLPDMF::GOAHFMLPDMF>,
     // special fields
     // @@protoc_insertion_point(special_field:KKEAENNDMKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KKEAENNDMKB {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NDPGBLAAGHK",
-            |m: &KKEAENNDMKB| { &m.NDPGBLAAGHK },
-            |m: &mut KKEAENNDMKB| { &mut m.NDPGBLAAGHK },
+            "BELABGLANGA",
+            |m: &KKEAENNDMKB| { &m.BELABGLANGA },
+            |m: &mut KKEAENNDMKB| { &mut m.BELABGLANGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKEAENNDMKB>(
             "KKEAENNDMKB",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for KKEAENNDMKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.NDPGBLAAGHK.push(is.read_message()?);
+                18 => {
+                    self.BELABGLANGA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for KKEAENNDMKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NDPGBLAAGHK {
+        for value in &self.BELABGLANGA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for KKEAENNDMKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NDPGBLAAGHK {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.BELABGLANGA {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for KKEAENNDMKB {
     }
 
     fn clear(&mut self) {
-        self.NDPGBLAAGHK.clear();
+        self.BELABGLANGA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKEAENNDMKB {
         static instance: KKEAENNDMKB = KKEAENNDMKB {
-            NDPGBLAAGHK: ::std::vec::Vec::new(),
+            BELABGLANGA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for KKEAENNDMKB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKEAENNDMKB.proto\x1a\x11GOAHFMLPDMF.proto\"=\n\x0bKKEAENNDMKB\x12\
-    .\n\x0bNDPGBLAAGHK\x18\x08\x20\x03(\x0b2\x0c.GOAHFMLPDMFR\x0bNDPGBLAAGHK\
+    .\n\x0bBELABGLANGA\x18\x02\x20\x03(\x0b2\x0c.GOAHFMLPDMFR\x0bBELABGLANGA\
     b\x06proto3\
 ";
 

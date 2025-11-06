@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleLevelFinishCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MarbleLevelFinishCsReq.PMKANGDFLKI)
-    pub PMKANGDFLKI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MarbleLevelFinishCsReq.NLIBKABFGCC)
-    pub NLIBKABFGCC: u32,
+    // @@protoc_insertion_point(field:MarbleLevelFinishCsReq.JFBDCLJMCMF)
+    pub JFBDCLJMCMF: u32,
+    // @@protoc_insertion_point(field:MarbleLevelFinishCsReq.OJJLOOMBEDJ)
+    pub OJJLOOMBEDJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MarbleLevelFinishCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MarbleLevelFinishCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PMKANGDFLKI",
-            |m: &MarbleLevelFinishCsReq| { &m.PMKANGDFLKI },
-            |m: &mut MarbleLevelFinishCsReq| { &mut m.PMKANGDFLKI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIBKABFGCC",
-            |m: &MarbleLevelFinishCsReq| { &m.NLIBKABFGCC },
-            |m: &mut MarbleLevelFinishCsReq| { &mut m.NLIBKABFGCC },
+            "JFBDCLJMCMF",
+            |m: &MarbleLevelFinishCsReq| { &m.JFBDCLJMCMF },
+            |m: &mut MarbleLevelFinishCsReq| { &mut m.JFBDCLJMCMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OJJLOOMBEDJ",
+            |m: &MarbleLevelFinishCsReq| { &m.OJJLOOMBEDJ },
+            |m: &mut MarbleLevelFinishCsReq| { &mut m.OJJLOOMBEDJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarbleLevelFinishCsReq>(
             "MarbleLevelFinishCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for MarbleLevelFinishCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PMKANGDFLKI)?;
+                16 => {
+                    self.JFBDCLJMCMF = is.read_uint32()?;
                 },
-                104 => {
-                    self.PMKANGDFLKI.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OJJLOOMBEDJ)?;
                 },
-                40 => {
-                    self.NLIBKABFGCC = is.read_uint32()?;
+                64 => {
+                    self.OJJLOOMBEDJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MarbleLevelFinishCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PMKANGDFLKI);
-        if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NLIBKABFGCC);
+        if self.JFBDCLJMCMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JFBDCLJMCMF);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.OJJLOOMBEDJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.PMKANGDFLKI)?;
-        if self.NLIBKABFGCC != 0 {
-            os.write_uint32(5, self.NLIBKABFGCC)?;
+        if self.JFBDCLJMCMF != 0 {
+            os.write_uint32(2, self.JFBDCLJMCMF)?;
         }
+        os.write_repeated_packed_uint32(8, &self.OJJLOOMBEDJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for MarbleLevelFinishCsReq {
     }
 
     fn clear(&mut self) {
-        self.PMKANGDFLKI.clear();
-        self.NLIBKABFGCC = 0;
+        self.JFBDCLJMCMF = 0;
+        self.OJJLOOMBEDJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleLevelFinishCsReq {
         static instance: MarbleLevelFinishCsReq = MarbleLevelFinishCsReq {
-            PMKANGDFLKI: ::std::vec::Vec::new(),
-            NLIBKABFGCC: 0,
+            JFBDCLJMCMF: 0,
+            OJJLOOMBEDJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for MarbleLevelFinishCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMarbleLevelFinishCsReq.proto\"\\\n\x16MarbleLevelFinishCsReq\x12\
-    \x20\n\x0bPMKANGDFLKI\x18\r\x20\x03(\rR\x0bPMKANGDFLKI\x12\x20\n\x0bNLIB\
-    KABFGCC\x18\x05\x20\x01(\rR\x0bNLIBKABFGCCb\x06proto3\
+    \x20\n\x0bJFBDCLJMCMF\x18\x02\x20\x01(\rR\x0bJFBDCLJMCMF\x12\x20\n\x0bOJ\
+    JLOOMBEDJ\x18\x08\x20\x03(\rR\x0bOJJLOOMBEDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

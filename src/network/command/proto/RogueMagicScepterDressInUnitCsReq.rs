@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.scepter_id = is.read_uint32()?;
                 },
-                120 => {
+                40 => {
                     self.dress_magic_unit_unique_id = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.dice_slot_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.scepter_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.scepter_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.scepter_id);
         }
         if self.dress_magic_unit_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.dress_magic_unit_unique_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.dress_magic_unit_unique_id);
         }
         if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.dice_slot_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.dice_slot_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueMagicScepterDressInUnitCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.scepter_id != 0 {
-            os.write_uint32(6, self.scepter_id)?;
+            os.write_uint32(4, self.scepter_id)?;
         }
         if self.dress_magic_unit_unique_id != 0 {
-            os.write_uint32(15, self.dress_magic_unit_unique_id)?;
+            os.write_uint32(5, self.dress_magic_unit_unique_id)?;
         }
         if self.dice_slot_id != 0 {
-            os.write_uint32(5, self.dice_slot_id)?;
+            os.write_uint32(7, self.dice_slot_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicScepterDressInUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicScepterDressInUnitCsReq.proto\"\xa0\x01\n!RogueMagicScepter\
-    DressInUnitCsReq\x12\x1d\n\nscepter_id\x18\x06\x20\x01(\rR\tscepterId\
-    \x12:\n\x1adress_magic_unit_unique_id\x18\x0f\x20\x01(\rR\x16dressMagicU\
-    nitUniqueId\x12\x20\n\x0cdice_slot_id\x18\x05\x20\x01(\rR\ndiceSlotIdb\
+    DressInUnitCsReq\x12\x1d\n\nscepter_id\x18\x04\x20\x01(\rR\tscepterId\
+    \x12:\n\x1adress_magic_unit_unique_id\x18\x05\x20\x01(\rR\x16dressMagicU\
+    nitUniqueId\x12\x20\n\x0cdice_slot_id\x18\x07\x20\x01(\rR\ndiceSlotIdb\
     \x06proto3\
 ";
 

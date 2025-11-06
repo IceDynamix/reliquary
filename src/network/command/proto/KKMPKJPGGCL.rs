@@ -30,8 +30,8 @@ pub struct KKMPKJPGGCL {
     // message fields
     // @@protoc_insertion_point(field:KKMPKJPGGCL.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:KKMPKJPGGCL.ABAPDFGJNME)
-    pub ABAPDFGJNME: i32,
+    // @@protoc_insertion_point(field:KKMPKJPGGCL.KEIJKGKMMGN)
+    pub KEIJKGKMMGN: i32,
     // @@protoc_insertion_point(field:KKMPKJPGGCL.enhanced_id)
     pub enhanced_id: u32,
     // special fields
@@ -59,9 +59,9 @@ impl KKMPKJPGGCL {
             |m: &mut KKMPKJPGGCL| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABAPDFGJNME",
-            |m: &KKMPKJPGGCL| { &m.ABAPDFGJNME },
-            |m: &mut KKMPKJPGGCL| { &mut m.ABAPDFGJNME },
+            "KEIJKGKMMGN",
+            |m: &KKMPKJPGGCL| { &m.KEIJKGKMMGN },
+            |m: &mut KKMPKJPGGCL| { &mut m.KEIJKGKMMGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "enhanced_id",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for KKMPKJPGGCL {
                     self.avatar_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.ABAPDFGJNME = is.read_int32()?;
+                    self.KEIJKGKMMGN = is.read_int32()?;
                 },
                 24 => {
                     self.enhanced_id = is.read_uint32()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for KKMPKJPGGCL {
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
         }
-        if self.ABAPDFGJNME != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.ABAPDFGJNME);
+        if self.KEIJKGKMMGN != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.KEIJKGKMMGN);
         }
         if self.enhanced_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.enhanced_id);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for KKMPKJPGGCL {
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
         }
-        if self.ABAPDFGJNME != 0 {
-            os.write_int32(2, self.ABAPDFGJNME)?;
+        if self.KEIJKGKMMGN != 0 {
+            os.write_int32(2, self.KEIJKGKMMGN)?;
         }
         if self.enhanced_id != 0 {
             os.write_uint32(3, self.enhanced_id)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for KKMPKJPGGCL {
 
     fn clear(&mut self) {
         self.avatar_id = 0;
-        self.ABAPDFGJNME = 0;
+        self.KEIJKGKMMGN = 0;
         self.enhanced_id = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for KKMPKJPGGCL {
     fn default_instance() -> &'static KKMPKJPGGCL {
         static instance: KKMPKJPGGCL = KKMPKJPGGCL {
             avatar_id: 0,
-            ABAPDFGJNME: 0,
+            KEIJKGKMMGN: 0,
             enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for KKMPKJPGGCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKMPKJPGGCL.proto\"m\n\x0bKKMPKJPGGCL\x12\x1b\n\tavatar_id\x18\x01\
-    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bABAPDFGJNME\x18\x02\x20\x01(\x05R\
-    \x0bABAPDFGJNME\x12\x1f\n\x0benhanced_id\x18\x03\x20\x01(\rR\nenhancedId\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bKEIJKGKMMGN\x18\x02\x20\x01(\x05R\
+    \x0bKEIJKGKMMGN\x12\x1f\n\x0benhanced_id\x18\x03\x20\x01(\rR\nenhancedId\
     b\x06proto3\
 ";
 

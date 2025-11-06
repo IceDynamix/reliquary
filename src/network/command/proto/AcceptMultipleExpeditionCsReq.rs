@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct AcceptMultipleExpeditionCsReq {
     // message fields
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionCsReq.expedition)
-    pub expedition: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
+    pub expedition: ::std::vec::Vec<super::Expedition::Expedition>,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptMultipleExpeditionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for AcceptMultipleExpeditionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     self.expedition.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AcceptMultipleExpeditionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.expedition {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMultipleExpeditionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#AcceptMultipleExpeditionCsReq.proto\x1a\x14ExpeditionInfo.proto\"P\n\
-    \x1dAcceptMultipleExpeditionCsReq\x12/\n\nexpedition\x18\n\x20\x03(\x0b2\
-    \x0f.ExpeditionInfoR\nexpeditionb\x06proto3\
+    \n#AcceptMultipleExpeditionCsReq.proto\x1a\x10Expedition.proto\"L\n\x1dA\
+    cceptMultipleExpeditionCsReq\x12+\n\nexpedition\x18\x02\x20\x03(\x0b2\
+    \x0b.ExpeditionR\nexpeditionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ExpeditionInfo::file_descriptor().clone());
+            deps.push(super::Expedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptMultipleExpeditionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

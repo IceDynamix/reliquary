@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChapterScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FinishChapterScNotify.FPEPICFCFFM)
-    pub FPEPICFCFFM: ::protobuf::MessageField<super::FHBLGMPMIIE::FHBLGMPMIIE>,
+    // @@protoc_insertion_point(field:FinishChapterScNotify.EDAOIPBHFFG)
+    pub EDAOIPBHFFG: ::protobuf::MessageField<super::FHBLGMPMIIE::FHBLGMPMIIE>,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChapterScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishChapterScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHBLGMPMIIE::FHBLGMPMIIE>(
-            "FPEPICFCFFM",
-            |m: &FinishChapterScNotify| { &m.FPEPICFCFFM },
-            |m: &mut FinishChapterScNotify| { &mut m.FPEPICFCFFM },
+            "EDAOIPBHFFG",
+            |m: &FinishChapterScNotify| { &m.EDAOIPBHFFG },
+            |m: &mut FinishChapterScNotify| { &mut m.EDAOIPBHFFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChapterScNotify>(
             "FinishChapterScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishChapterScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPEPICFCFFM)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDAOIPBHFFG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FinishChapterScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FPEPICFCFFM.as_ref() {
+        if let Some(v) = self.EDAOIPBHFFG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FinishChapterScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FPEPICFCFFM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.EDAOIPBHFFG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FinishChapterScNotify {
     }
 
     fn clear(&mut self) {
-        self.FPEPICFCFFM.clear();
+        self.EDAOIPBHFFG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChapterScNotify {
         static instance: FinishChapterScNotify = FinishChapterScNotify {
-            FPEPICFCFFM: ::protobuf::MessageField::none(),
+            EDAOIPBHFFG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishChapterScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFinishChapterScNotify.proto\x1a\x11FHBLGMPMIIE.proto\"G\n\x15Finis\
-    hChapterScNotify\x12.\n\x0bFPEPICFCFFM\x18\x02\x20\x01(\x0b2\x0c.FHBLGMP\
-    MIIER\x0bFPEPICFCFFMb\x06proto3\
+    hChapterScNotify\x12.\n\x0bEDAOIPBHFFG\x18\x03\x20\x01(\x0b2\x0c.FHBLGMP\
+    MIIER\x0bEDAOIPBHFFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

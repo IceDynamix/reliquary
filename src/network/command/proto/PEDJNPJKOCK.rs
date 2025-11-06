@@ -32,8 +32,8 @@ pub struct PEDJNPJKOCK {
     pub avatar_id: u32,
     // @@protoc_insertion_point(field:PEDJNPJKOCK.maze_buff_id)
     pub maze_buff_id: u32,
-    // @@protoc_insertion_point(field:PEDJNPJKOCK.IAGENFADHLP)
-    pub IAGENFADHLP: u32,
+    // @@protoc_insertion_point(field:PEDJNPJKOCK.MLDMODOCBCH)
+    pub MLDMODOCBCH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PEDJNPJKOCK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl PEDJNPJKOCK {
             |m: &mut PEDJNPJKOCK| { &mut m.maze_buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAGENFADHLP",
-            |m: &PEDJNPJKOCK| { &m.IAGENFADHLP },
-            |m: &mut PEDJNPJKOCK| { &mut m.IAGENFADHLP },
+            "MLDMODOCBCH",
+            |m: &PEDJNPJKOCK| { &m.MLDMODOCBCH },
+            |m: &mut PEDJNPJKOCK| { &mut m.MLDMODOCBCH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEDJNPJKOCK>(
             "PEDJNPJKOCK",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
                     self.maze_buff_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.IAGENFADHLP = is.read_uint32()?;
+                    self.MLDMODOCBCH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,8 +113,8 @@ impl ::protobuf::Message for PEDJNPJKOCK {
         if self.maze_buff_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.maze_buff_id);
         }
-        if self.IAGENFADHLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IAGENFADHLP);
+        if self.MLDMODOCBCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MLDMODOCBCH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,8 +128,8 @@ impl ::protobuf::Message for PEDJNPJKOCK {
         if self.maze_buff_id != 0 {
             os.write_uint32(2, self.maze_buff_id)?;
         }
-        if self.IAGENFADHLP != 0 {
-            os.write_uint32(3, self.IAGENFADHLP)?;
+        if self.MLDMODOCBCH != 0 {
+            os.write_uint32(3, self.MLDMODOCBCH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
     fn clear(&mut self) {
         self.avatar_id = 0;
         self.maze_buff_id = 0;
-        self.IAGENFADHLP = 0;
+        self.MLDMODOCBCH = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for PEDJNPJKOCK {
         static instance: PEDJNPJKOCK = PEDJNPJKOCK {
             avatar_id: 0,
             maze_buff_id: 0,
-            IAGENFADHLP: 0,
+            MLDMODOCBCH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,7 +185,7 @@ impl ::protobuf::reflect::ProtobufValue for PEDJNPJKOCK {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEDJNPJKOCK.proto\"n\n\x0bPEDJNPJKOCK\x12\x1b\n\tavatar_id\x18\x01\
     \x20\x01(\rR\x08avatarId\x12\x20\n\x0cmaze_buff_id\x18\x02\x20\x01(\rR\n\
-    mazeBuffId\x12\x20\n\x0bIAGENFADHLP\x18\x03\x20\x01(\rR\x0bIAGENFADHLPb\
+    mazeBuffId\x12\x20\n\x0bMLDMODOCBCH\x18\x03\x20\x01(\rR\x0bMLDMODOCBCHb\
     \x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GHLEDKFIIJH {
     // message fields
-    // @@protoc_insertion_point(field:GHLEDKFIIJH.KICOBNPCKAE)
-    pub KICOBNPCKAE: u32,
-    // @@protoc_insertion_point(field:GHLEDKFIIJH.JICDFLIMHHD)
-    pub JICDFLIMHHD: u32,
+    // @@protoc_insertion_point(field:GHLEDKFIIJH.JBONNFEDPNB)
+    pub JBONNFEDPNB: u32,
+    // @@protoc_insertion_point(field:GHLEDKFIIJH.percent)
+    pub percent: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GHLEDKFIIJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GHLEDKFIIJH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KICOBNPCKAE",
-            |m: &GHLEDKFIIJH| { &m.KICOBNPCKAE },
-            |m: &mut GHLEDKFIIJH| { &mut m.KICOBNPCKAE },
+            "JBONNFEDPNB",
+            |m: &GHLEDKFIIJH| { &m.JBONNFEDPNB },
+            |m: &mut GHLEDKFIIJH| { &mut m.JBONNFEDPNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JICDFLIMHHD",
-            |m: &GHLEDKFIIJH| { &m.JICDFLIMHHD },
-            |m: &mut GHLEDKFIIJH| { &mut m.JICDFLIMHHD },
+            "percent",
+            |m: &GHLEDKFIIJH| { &m.percent },
+            |m: &mut GHLEDKFIIJH| { &mut m.percent },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GHLEDKFIIJH>(
             "GHLEDKFIIJH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GHLEDKFIIJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.KICOBNPCKAE = is.read_uint32()?;
+                32 => {
+                    self.JBONNFEDPNB = is.read_uint32()?;
                 },
-                8 => {
-                    self.JICDFLIMHHD = is.read_uint32()?;
+                72 => {
+                    self.percent = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GHLEDKFIIJH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KICOBNPCKAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.KICOBNPCKAE);
+        if self.JBONNFEDPNB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JBONNFEDPNB);
         }
-        if self.JICDFLIMHHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JICDFLIMHHD);
+        if self.percent != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.percent);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GHLEDKFIIJH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KICOBNPCKAE != 0 {
-            os.write_uint32(5, self.KICOBNPCKAE)?;
+        if self.JBONNFEDPNB != 0 {
+            os.write_uint32(4, self.JBONNFEDPNB)?;
         }
-        if self.JICDFLIMHHD != 0 {
-            os.write_uint32(1, self.JICDFLIMHHD)?;
+        if self.percent != 0 {
+            os.write_uint32(9, self.percent)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GHLEDKFIIJH {
     }
 
     fn clear(&mut self) {
-        self.KICOBNPCKAE = 0;
-        self.JICDFLIMHHD = 0;
+        self.JBONNFEDPNB = 0;
+        self.percent = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GHLEDKFIIJH {
         static instance: GHLEDKFIIJH = GHLEDKFIIJH {
-            KICOBNPCKAE: 0,
-            JICDFLIMHHD: 0,
+            JBONNFEDPNB: 0,
+            percent: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GHLEDKFIIJH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GHLEDKFIIJH.proto\"Q\n\x0bGHLEDKFIIJH\x12\x20\n\x0bKICOBNPCKAE\x18\
-    \x05\x20\x01(\rR\x0bKICOBNPCKAE\x12\x20\n\x0bJICDFLIMHHD\x18\x01\x20\x01\
-    (\rR\x0bJICDFLIMHHDb\x06proto3\
+    \n\x11GHLEDKFIIJH.proto\"I\n\x0bGHLEDKFIIJH\x12\x20\n\x0bJBONNFEDPNB\x18\
+    \x04\x20\x01(\rR\x0bJBONNFEDPNB\x12\x18\n\x07percent\x18\t\x20\x01(\rR\
+    \x07percentb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

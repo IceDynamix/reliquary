@@ -30,8 +30,8 @@ pub struct SetBoxingClubResonanceLineupCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.MDLACHDKMPH)
-    pub MDLACHDKMPH: ::std::vec::Vec<super::GNEIBBPOAAB::GNEIBBPOAAB>,
+    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.BFAGCPOEBDG)
+    pub BFAGCPOEBDG: ::std::vec::Vec<super::GNEIBBPOAAB::GNEIBBPOAAB>,
     // special fields
     // @@protoc_insertion_point(special_field:SetBoxingClubResonanceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SetBoxingClubResonanceLineupCsReq {
             |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MDLACHDKMPH",
-            |m: &SetBoxingClubResonanceLineupCsReq| { &m.MDLACHDKMPH },
-            |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.MDLACHDKMPH },
+            "BFAGCPOEBDG",
+            |m: &SetBoxingClubResonanceLineupCsReq| { &m.BFAGCPOEBDG },
+            |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.BFAGCPOEBDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetBoxingClubResonanceLineupCsReq>(
             "SetBoxingClubResonanceLineupCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                88 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                106 => {
-                    self.MDLACHDKMPH.push(is.read_message()?);
+                98 => {
+                    self.BFAGCPOEBDG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.challenge_id);
         }
-        for value in &self.MDLACHDKMPH {
+        for value in &self.BFAGCPOEBDG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(7, self.challenge_id)?;
+            os.write_uint32(11, self.challenge_id)?;
         }
-        for v in &self.MDLACHDKMPH {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.BFAGCPOEBDG {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
 
     fn clear(&mut self) {
         self.challenge_id = 0;
-        self.MDLACHDKMPH.clear();
+        self.BFAGCPOEBDG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetBoxingClubResonanceLineupCsReq {
         static instance: SetBoxingClubResonanceLineupCsReq = SetBoxingClubResonanceLineupCsReq {
             challenge_id: 0,
-            MDLACHDKMPH: ::std::vec::Vec::new(),
+            BFAGCPOEBDG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SetBoxingClubResonanceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'SetBoxingClubResonanceLineupCsReq.proto\x1a\x11GNEIBBPOAAB.proto\"v\n\
-    !SetBoxingClubResonanceLineupCsReq\x12!\n\x0cchallenge_id\x18\x07\x20\
-    \x01(\rR\x0bchallengeId\x12.\n\x0bMDLACHDKMPH\x18\r\x20\x03(\x0b2\x0c.GN\
-    EIBBPOAABR\x0bMDLACHDKMPHb\x06proto3\
+    !SetBoxingClubResonanceLineupCsReq\x12!\n\x0cchallenge_id\x18\x0b\x20\
+    \x01(\rR\x0bchallengeId\x12.\n\x0bBFAGCPOEBDG\x18\x0c\x20\x03(\x0b2\x0c.\
+    GNEIBBPOAABR\x0bBFAGCPOEBDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

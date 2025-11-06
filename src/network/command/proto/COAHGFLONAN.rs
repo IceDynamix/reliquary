@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct COAHGFLONAN {
     // message fields
-    // @@protoc_insertion_point(field:COAHGFLONAN.HBPBLGLLIEN)
-    pub HBPBLGLLIEN: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:COAHGFLONAN.NGKJPCEHMBA)
-    pub NGKJPCEHMBA: bool,
     // @@protoc_insertion_point(field:COAHGFLONAN.magic_item)
     pub magic_item: ::protobuf::MessageField<super::RogueMagicScepter::RogueMagicScepter>,
+    // @@protoc_insertion_point(field:COAHGFLONAN.APDCADPGPPJ)
+    pub APDCADPGPPJ: bool,
+    // @@protoc_insertion_point(field:COAHGFLONAN.PFOJNCMCKOM)
+    pub PFOJNCMCKOM: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:COAHGFLONAN.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
@@ -55,20 +55,20 @@ impl COAHGFLONAN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "HBPBLGLLIEN",
-            |m: &COAHGFLONAN| { &m.HBPBLGLLIEN },
-            |m: &mut COAHGFLONAN| { &mut m.HBPBLGLLIEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGKJPCEHMBA",
-            |m: &COAHGFLONAN| { &m.NGKJPCEHMBA },
-            |m: &mut COAHGFLONAN| { &mut m.NGKJPCEHMBA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicScepter::RogueMagicScepter>(
             "magic_item",
             |m: &COAHGFLONAN| { &m.magic_item },
             |m: &mut COAHGFLONAN| { &mut m.magic_item },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "APDCADPGPPJ",
+            |m: &COAHGFLONAN| { &m.APDCADPGPPJ },
+            |m: &mut COAHGFLONAN| { &mut m.APDCADPGPPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "PFOJNCMCKOM",
+            |m: &COAHGFLONAN| { &m.PFOJNCMCKOM },
+            |m: &mut COAHGFLONAN| { &mut m.PFOJNCMCKOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for COAHGFLONAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBPBLGLLIEN)?;
-                },
-                104 => {
-                    self.NGKJPCEHMBA = is.read_bool()?;
-                },
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.magic_item)?;
                 },
-                34 => {
+                32 => {
+                    self.APDCADPGPPJ = is.read_bool()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFOJNCMCKOM)?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for COAHGFLONAN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
+        if let Some(v) = self.magic_item.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NGKJPCEHMBA != false {
+        if self.APDCADPGPPJ != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.magic_item.as_ref() {
+        if let Some(v) = self.PFOJNCMCKOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for COAHGFLONAN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.NGKJPCEHMBA != false {
-            os.write_bool(13, self.NGKJPCEHMBA)?;
-        }
         if let Some(v) = self.magic_item.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.APDCADPGPPJ != false {
+            os.write_bool(4, self.APDCADPGPPJ)?;
+        }
+        if let Some(v) = self.PFOJNCMCKOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for COAHGFLONAN {
     }
 
     fn clear(&mut self) {
-        self.HBPBLGLLIEN.clear();
-        self.NGKJPCEHMBA = false;
         self.magic_item.clear();
+        self.APDCADPGPPJ = false;
+        self.PFOJNCMCKOM.clear();
         self.cost_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static COAHGFLONAN {
         static instance: COAHGFLONAN = COAHGFLONAN {
-            HBPBLGLLIEN: ::protobuf::MessageField::none(),
-            NGKJPCEHMBA: false,
             magic_item: ::protobuf::MessageField::none(),
+            APDCADPGPPJ: false,
+            PFOJNCMCKOM: ::protobuf::MessageField::none(),
             cost_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for COAHGFLONAN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11COAHGFLONAN.proto\x1a\x12ItemCostData.proto\x1a\x17RogueMagicScept\
-    er.proto\"\xbf\x01\n\x0bCOAHGFLONAN\x12/\n\x0bHBPBLGLLIEN\x18\x0c\x20\
-    \x01(\x0b2\r.ItemCostDataR\x0bHBPBLGLLIEN\x12\x20\n\x0bNGKJPCEHMBA\x18\r\
-    \x20\x01(\x08R\x0bNGKJPCEHMBA\x121\n\nmagic_item\x18\n\x20\x01(\x0b2\x12\
-    .RogueMagicScepterR\tmagicItem\x12*\n\tcost_data\x18\x04\x20\x01(\x0b2\r\
-    .ItemCostDataR\x08costDatab\x06proto3\
+    er.proto\"\xbf\x01\n\x0bCOAHGFLONAN\x121\n\nmagic_item\x18\x02\x20\x01(\
+    \x0b2\x12.RogueMagicScepterR\tmagicItem\x12\x20\n\x0bAPDCADPGPPJ\x18\x04\
+    \x20\x01(\x08R\x0bAPDCADPGPPJ\x12/\n\x0bPFOJNCMCKOM\x18\x06\x20\x01(\x0b\
+    2\r.ItemCostDataR\x0bPFOJNCMCKOM\x12*\n\tcost_data\x18\x0e\x20\x01(\x0b2\
+    \r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

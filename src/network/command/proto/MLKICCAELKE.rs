@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MLKICCAELKE {
     // message fields
-    // @@protoc_insertion_point(field:MLKICCAELKE.ANBPNIHMKAH)
-    pub ANBPNIHMKAH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MLKICCAELKE.select_hint_id)
-    pub select_hint_id: u32,
+    // @@protoc_insertion_point(field:MLKICCAELKE.reforge_hint_id)
+    pub reforge_hint_id: u32,
+    // @@protoc_insertion_point(field:MLKICCAELKE.EEGGFADHPOA)
+    pub EEGGFADHPOA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MLKICCAELKE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MLKICCAELKE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ANBPNIHMKAH",
-            |m: &MLKICCAELKE| { &m.ANBPNIHMKAH },
-            |m: &mut MLKICCAELKE| { &mut m.ANBPNIHMKAH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_hint_id",
-            |m: &MLKICCAELKE| { &m.select_hint_id },
-            |m: &mut MLKICCAELKE| { &mut m.select_hint_id },
+            "reforge_hint_id",
+            |m: &MLKICCAELKE| { &m.reforge_hint_id },
+            |m: &mut MLKICCAELKE| { &mut m.reforge_hint_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EEGGFADHPOA",
+            |m: &MLKICCAELKE| { &m.EEGGFADHPOA },
+            |m: &mut MLKICCAELKE| { &mut m.EEGGFADHPOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MLKICCAELKE>(
             "MLKICCAELKE",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for MLKICCAELKE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ANBPNIHMKAH)?;
+                8 => {
+                    self.reforge_hint_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.ANBPNIHMKAH.push(is.read_uint32()?);
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EEGGFADHPOA)?;
                 },
-                120 => {
-                    self.select_hint_id = is.read_uint32()?;
+                48 => {
+                    self.EEGGFADHPOA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MLKICCAELKE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ANBPNIHMKAH);
-        if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.select_hint_id);
+        if self.reforge_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.reforge_hint_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.EEGGFADHPOA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.ANBPNIHMKAH)?;
-        if self.select_hint_id != 0 {
-            os.write_uint32(15, self.select_hint_id)?;
+        if self.reforge_hint_id != 0 {
+            os.write_uint32(1, self.reforge_hint_id)?;
         }
+        os.write_repeated_packed_uint32(6, &self.EEGGFADHPOA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for MLKICCAELKE {
     }
 
     fn clear(&mut self) {
-        self.ANBPNIHMKAH.clear();
-        self.select_hint_id = 0;
+        self.reforge_hint_id = 0;
+        self.EEGGFADHPOA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MLKICCAELKE {
         static instance: MLKICCAELKE = MLKICCAELKE {
-            ANBPNIHMKAH: ::std::vec::Vec::new(),
-            select_hint_id: 0,
+            reforge_hint_id: 0,
+            EEGGFADHPOA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for MLKICCAELKE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MLKICCAELKE.proto\"U\n\x0bMLKICCAELKE\x12\x20\n\x0bANBPNIHMKAH\x18\
-    \x02\x20\x03(\rR\x0bANBPNIHMKAH\x12$\n\x0eselect_hint_id\x18\x0f\x20\x01\
-    (\rR\x0cselectHintIdb\x06proto3\
+    \n\x11MLKICCAELKE.proto\"W\n\x0bMLKICCAELKE\x12&\n\x0freforge_hint_id\
+    \x18\x01\x20\x01(\rR\rreforgeHintId\x12\x20\n\x0bEEGGFADHPOA\x18\x06\x20\
+    \x03(\rR\x0bEEGGFADHPOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

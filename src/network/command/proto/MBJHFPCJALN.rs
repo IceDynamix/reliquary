@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MBJHFPCJALN {
     // message fields
-    // @@protoc_insertion_point(field:MBJHFPCJALN.EHNNECGHJAL)
-    pub EHNNECGHJAL: ::protobuf::MessageField<super::GBNCGKDNMIL::GBNCGKDNMIL>,
+    // @@protoc_insertion_point(field:MBJHFPCJALN.MICOCLNDEJL)
+    pub MICOCLNDEJL: ::protobuf::MessageField<super::GBNCGKDNMIL::GBNCGKDNMIL>,
     // special fields
     // @@protoc_insertion_point(special_field:MBJHFPCJALN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MBJHFPCJALN {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GBNCGKDNMIL::GBNCGKDNMIL>(
-            "EHNNECGHJAL",
-            |m: &MBJHFPCJALN| { &m.EHNNECGHJAL },
-            |m: &mut MBJHFPCJALN| { &mut m.EHNNECGHJAL },
+            "MICOCLNDEJL",
+            |m: &MBJHFPCJALN| { &m.MICOCLNDEJL },
+            |m: &mut MBJHFPCJALN| { &mut m.MICOCLNDEJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MBJHFPCJALN>(
             "MBJHFPCJALN",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for MBJHFPCJALN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHNNECGHJAL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MICOCLNDEJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MBJHFPCJALN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EHNNECGHJAL.as_ref() {
+        if let Some(v) = self.MICOCLNDEJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MBJHFPCJALN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EHNNECGHJAL.as_ref() {
+        if let Some(v) = self.MICOCLNDEJL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MBJHFPCJALN {
     }
 
     fn clear(&mut self) {
-        self.EHNNECGHJAL.clear();
+        self.MICOCLNDEJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MBJHFPCJALN {
         static instance: MBJHFPCJALN = MBJHFPCJALN {
-            EHNNECGHJAL: ::protobuf::MessageField::none(),
+            MICOCLNDEJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MBJHFPCJALN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MBJHFPCJALN.proto\x1a\x11GBNCGKDNMIL.proto\"=\n\x0bMBJHFPCJALN\x12\
-    .\n\x0bEHNNECGHJAL\x18\x01\x20\x01(\x0b2\x0c.GBNCGKDNMILR\x0bEHNNECGHJAL\
+    .\n\x0bMICOCLNDEJL\x18\x01\x20\x01(\x0b2\x0c.GBNCGKDNMILR\x0bMICOCLNDEJL\
     b\x06proto3\
 ";
 

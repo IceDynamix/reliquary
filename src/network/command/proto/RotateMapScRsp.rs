@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotateMapScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RotateMapScRsp.client_pos_version)
-    pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:RotateMapScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RotateMapScRsp.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:RotateMapScRsp.pos_version)
+    pub pos_version: u32,
+    // @@protoc_insertion_point(field:RotateMapScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RotateMapScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RotateMapScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &RotateMapScRsp| { &m.motion },
+            |m: &mut RotateMapScRsp| { &mut m.motion },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &RotateMapScRsp| { &m.client_pos_version },
-            |m: &mut RotateMapScRsp| { &mut m.client_pos_version },
+            "pos_version",
+            |m: &RotateMapScRsp| { &m.pos_version },
+            |m: &mut RotateMapScRsp| { &mut m.pos_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RotateMapScRsp| { &m.retcode },
             |m: &mut RotateMapScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &RotateMapScRsp| { &m.motion },
-            |m: &mut RotateMapScRsp| { &mut m.motion },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RotateMapScRsp>(
             "RotateMapScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RotateMapScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
                 88 => {
-                    self.client_pos_version = is.read_uint32()?;
+                    self.pos_version = is.read_uint32()?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RotateMapScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.client_pos_version);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.pos_version);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RotateMapScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.client_pos_version != 0 {
-            os.write_uint32(11, self.client_pos_version)?;
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.pos_version != 0 {
+            os.write_uint32(11, self.pos_version)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
-        }
-        if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RotateMapScRsp {
     }
 
     fn clear(&mut self) {
-        self.client_pos_version = 0;
-        self.retcode = 0;
         self.motion.clear();
+        self.pos_version = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotateMapScRsp {
         static instance: RotateMapScRsp = RotateMapScRsp {
-            client_pos_version: 0,
-            retcode: 0,
             motion: ::protobuf::MessageField::none(),
+            pos_version: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for RotateMapScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14RotateMapScRsp.proto\x1a\x10MotionInfo.proto\"}\n\x0eRotateMapScRs\
-    p\x12,\n\x12client_pos_version\x18\x0b\x20\x01(\rR\x10clientPosVersion\
-    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12#\n\x06motion\
-    \x18\n\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    \n\x14RotateMapScRsp.proto\x1a\x10MotionInfo.proto\"p\n\x0eRotateMapScRs\
+    p\x12#\n\x06motion\x18\x07\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\
+    \x1f\n\x0bpos_version\x18\x0b\x20\x01(\rR\nposVersion\x12\x18\n\x07retco\
+    de\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

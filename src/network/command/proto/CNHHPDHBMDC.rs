@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CNHHPDHBMDC {
     // message fields
-    // @@protoc_insertion_point(field:CNHHPDHBMDC.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
+    // @@protoc_insertion_point(field:CNHHPDHBMDC.story_id)
+    pub story_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CNHHPDHBMDC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CNHHPDHBMDC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &CNHHPDHBMDC| { &m.BGLEHMKMAPG },
-            |m: &mut CNHHPDHBMDC| { &mut m.BGLEHMKMAPG },
+            "story_id",
+            |m: &CNHHPDHBMDC| { &m.story_id },
+            |m: &mut CNHHPDHBMDC| { &mut m.story_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CNHHPDHBMDC>(
             "CNHHPDHBMDC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CNHHPDHBMDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.BGLEHMKMAPG = is.read_uint32()?;
+                104 => {
+                    self.story_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for CNHHPDHBMDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BGLEHMKMAPG);
+        if self.story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.story_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for CNHHPDHBMDC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(9, self.BGLEHMKMAPG)?;
+        if self.story_id != 0 {
+            os.write_uint32(13, self.story_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for CNHHPDHBMDC {
     }
 
     fn clear(&mut self) {
-        self.BGLEHMKMAPG = 0;
+        self.story_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CNHHPDHBMDC {
         static instance: CNHHPDHBMDC = CNHHPDHBMDC {
-            BGLEHMKMAPG: 0,
+            story_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for CNHHPDHBMDC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CNHHPDHBMDC.proto\"/\n\x0bCNHHPDHBMDC\x12\x20\n\x0bBGLEHMKMAPG\x18\
-    \t\x20\x01(\rR\x0bBGLEHMKMAPGb\x06proto3\
+    \n\x11CNHHPDHBMDC.proto\"(\n\x0bCNHHPDHBMDC\x12\x19\n\x08story_id\x18\r\
+    \x20\x01(\rR\x07storyIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

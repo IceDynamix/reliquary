@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PIIIPHEFDJO {
     // message fields
-    // @@protoc_insertion_point(field:PIIIPHEFDJO.APFECOOPNKN)
-    pub APFECOOPNKN: ::std::vec::Vec<super::KNNFPFKCABE::KNNFPFKCABE>,
+    // @@protoc_insertion_point(field:PIIIPHEFDJO.KILKBAOPEMA)
+    pub KILKBAOPEMA: ::std::vec::Vec<super::KNNFPFKCABE::KNNFPFKCABE>,
     // special fields
     // @@protoc_insertion_point(special_field:PIIIPHEFDJO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PIIIPHEFDJO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APFECOOPNKN",
-            |m: &PIIIPHEFDJO| { &m.APFECOOPNKN },
-            |m: &mut PIIIPHEFDJO| { &mut m.APFECOOPNKN },
+            "KILKBAOPEMA",
+            |m: &PIIIPHEFDJO| { &m.KILKBAOPEMA },
+            |m: &mut PIIIPHEFDJO| { &mut m.KILKBAOPEMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PIIIPHEFDJO>(
             "PIIIPHEFDJO",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PIIIPHEFDJO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.APFECOOPNKN.push(is.read_message()?);
+                66 => {
+                    self.KILKBAOPEMA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PIIIPHEFDJO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.APFECOOPNKN {
+        for value in &self.KILKBAOPEMA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PIIIPHEFDJO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.APFECOOPNKN {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.KILKBAOPEMA {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PIIIPHEFDJO {
     }
 
     fn clear(&mut self) {
-        self.APFECOOPNKN.clear();
+        self.KILKBAOPEMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PIIIPHEFDJO {
         static instance: PIIIPHEFDJO = PIIIPHEFDJO {
-            APFECOOPNKN: ::std::vec::Vec::new(),
+            KILKBAOPEMA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for PIIIPHEFDJO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIIIPHEFDJO.proto\x1a\x11KNNFPFKCABE.proto\"=\n\x0bPIIIPHEFDJO\x12\
-    .\n\x0bAPFECOOPNKN\x18\x03\x20\x03(\x0b2\x0c.KNNFPFKCABER\x0bAPFECOOPNKN\
+    .\n\x0bKILKBAOPEMA\x18\x08\x20\x03(\x0b2\x0c.KNNFPFKCABER\x0bKILKBAOPEMA\
     b\x06proto3\
 ";
 

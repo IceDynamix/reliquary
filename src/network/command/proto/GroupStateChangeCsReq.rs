@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GroupStateChangeCsReq {
     // message fields
     // @@protoc_insertion_point(field:GroupStateChangeCsReq.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
+    pub group_state_info: ::protobuf::MessageField<super::GroupStateChangeInfo::GroupStateChangeInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateChangeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl GroupStateChangeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateChangeInfo::GroupStateChangeInfo>(
             "group_state_info",
             |m: &GroupStateChangeCsReq| { &m.group_state_info },
             |m: &mut GroupStateChangeCsReq| { &mut m.group_state_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"R\n\x15Gr\
-    oupStateChangeCsReq\x129\n\x10group_state_info\x18\x03\x20\x01(\x0b2\x0f\
-    .GroupStateInfoR\x0egroupStateInfob\x06proto3\
+    \n\x1bGroupStateChangeCsReq.proto\x1a\x1aGroupStateChangeInfo.proto\"X\n\
+    \x15GroupStateChangeCsReq\x12?\n\x10group_state_info\x18\n\x20\x01(\x0b2\
+    \x15.GroupStateChangeInfoR\x0egroupStateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GroupStateInfo::file_descriptor().clone());
+            deps.push(super::GroupStateChangeInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GroupStateChangeCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

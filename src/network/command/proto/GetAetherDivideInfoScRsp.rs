@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAetherDivideInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.PFLJGGDAOFM)
-    pub PFLJGGDAOFM: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.PHLKDNGHOOA)
-    pub PHLKDNGHOOA: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.EGEMNDNEDIP)
-    pub EGEMNDNEDIP: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.NLFIHKICDDO)
-    pub NLFIHKICDDO: ::std::vec::Vec<super::AetherDivideSpiritInfo::AetherDivideSpiritInfo>,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.JDHLMHJBOJM)
-    pub JDHLMHJBOJM: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.IBCIPIIDCOL)
-    pub IBCIPIIDCOL: u32,
-    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::AetherDivideLineupInfo::AetherDivideLineupInfo>,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.IGKGHMPEIME)
+    pub IGKGHMPEIME: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.GHGKJBPKMIJ)
+    pub GHGKJBPKMIJ: ::std::vec::Vec<super::AetherDivideSpiritInfo::AetherDivideSpiritInfo>,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.FMHOANFMMJA)
+    pub FMHOANFMMJA: u32,
     // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.skill_list)
     pub skill_list: ::std::vec::Vec<super::AetherSkillInfo::AetherSkillInfo>,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::AetherDivideLineUp::AetherDivideLineUp>,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.BIFBHDAJILO)
+    pub BIFBHDAJILO: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.BMCNMMLMCEH)
+    pub BMCNMMLMCEH: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideInfoScRsp.PBKAOFABIFG)
+    pub PBKAOFABIFG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAetherDivideInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,34 @@ impl GetAetherDivideInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PFLJGGDAOFM",
-            |m: &GetAetherDivideInfoScRsp| { &m.PFLJGGDAOFM },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.PFLJGGDAOFM },
+            "IGKGHMPEIME",
+            |m: &GetAetherDivideInfoScRsp| { &m.IGKGHMPEIME },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.IGKGHMPEIME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GHGKJBPKMIJ",
+            |m: &GetAetherDivideInfoScRsp| { &m.GHGKJBPKMIJ },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.GHGKJBPKMIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHLKDNGHOOA",
-            |m: &GetAetherDivideInfoScRsp| { &m.PHLKDNGHOOA },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.PHLKDNGHOOA },
+            "FMHOANFMMJA",
+            |m: &GetAetherDivideInfoScRsp| { &m.FMHOANFMMJA },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.FMHOANFMMJA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "skill_list",
+            |m: &GetAetherDivideInfoScRsp| { &m.skill_list },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.skill_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_list",
+            |m: &GetAetherDivideInfoScRsp| { &m.lineup_list },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.lineup_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIFBHDAJILO",
+            |m: &GetAetherDivideInfoScRsp| { &m.BIFBHDAJILO },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.BIFBHDAJILO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -81,34 +101,14 @@ impl GetAetherDivideInfoScRsp {
             |m: &mut GetAetherDivideInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGEMNDNEDIP",
-            |m: &GetAetherDivideInfoScRsp| { &m.EGEMNDNEDIP },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.EGEMNDNEDIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NLFIHKICDDO",
-            |m: &GetAetherDivideInfoScRsp| { &m.NLFIHKICDDO },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.NLFIHKICDDO },
+            "BMCNMMLMCEH",
+            |m: &GetAetherDivideInfoScRsp| { &m.BMCNMMLMCEH },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.BMCNMMLMCEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDHLMHJBOJM",
-            |m: &GetAetherDivideInfoScRsp| { &m.JDHLMHJBOJM },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.JDHLMHJBOJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBCIPIIDCOL",
-            |m: &GetAetherDivideInfoScRsp| { &m.IBCIPIIDCOL },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.IBCIPIIDCOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_list",
-            |m: &GetAetherDivideInfoScRsp| { &m.lineup_list },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.lineup_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skill_list",
-            |m: &GetAetherDivideInfoScRsp| { &m.skill_list },
-            |m: &mut GetAetherDivideInfoScRsp| { &mut m.skill_list },
+            "PBKAOFABIFG",
+            |m: &GetAetherDivideInfoScRsp| { &m.PBKAOFABIFG },
+            |m: &mut GetAetherDivideInfoScRsp| { &mut m.PBKAOFABIFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAetherDivideInfoScRsp>(
             "GetAetherDivideInfoScRsp",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for GetAetherDivideInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.PFLJGGDAOFM = is.read_uint32()?;
+                16 => {
+                    self.IGKGHMPEIME = is.read_uint32()?;
                 },
-                112 => {
-                    self.PHLKDNGHOOA = is.read_uint32()?;
-                },
-                120 => {
-                    self.retcode = is.read_uint32()?;
+                26 => {
+                    self.GHGKJBPKMIJ.push(is.read_message()?);
                 },
                 32 => {
-                    self.EGEMNDNEDIP = is.read_uint32()?;
+                    self.FMHOANFMMJA = is.read_uint32()?;
                 },
-                82 => {
-                    self.NLFIHKICDDO.push(is.read_message()?);
+                42 => {
+                    self.skill_list.push(is.read_message()?);
                 },
-                96 => {
-                    self.JDHLMHJBOJM = is.read_uint32()?;
-                },
-                48 => {
-                    self.IBCIPIIDCOL = is.read_uint32()?;
-                },
-                18 => {
+                50 => {
                     self.lineup_list.push(is.read_message()?);
                 },
-                66 => {
-                    self.skill_list.push(is.read_message()?);
+                56 => {
+                    self.BIFBHDAJILO = is.read_uint32()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.BMCNMMLMCEH = is.read_uint32()?;
+                },
+                120 => {
+                    self.PBKAOFABIFG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,69 +167,69 @@ impl ::protobuf::Message for GetAetherDivideInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PFLJGGDAOFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PFLJGGDAOFM);
+        if self.IGKGHMPEIME != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IGKGHMPEIME);
         }
-        if self.PHLKDNGHOOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PHLKDNGHOOA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if self.EGEMNDNEDIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EGEMNDNEDIP);
-        }
-        for value in &self.NLFIHKICDDO {
+        for value in &self.GHGKJBPKMIJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JDHLMHJBOJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JDHLMHJBOJM);
+        if self.FMHOANFMMJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FMHOANFMMJA);
         }
-        if self.IBCIPIIDCOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IBCIPIIDCOL);
-        }
-        for value in &self.lineup_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.skill_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.lineup_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.BIFBHDAJILO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BIFBHDAJILO);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.BMCNMMLMCEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BMCNMMLMCEH);
+        }
+        if self.PBKAOFABIFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PBKAOFABIFG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PFLJGGDAOFM != 0 {
-            os.write_uint32(1, self.PFLJGGDAOFM)?;
+        if self.IGKGHMPEIME != 0 {
+            os.write_uint32(2, self.IGKGHMPEIME)?;
         }
-        if self.PHLKDNGHOOA != 0 {
-            os.write_uint32(14, self.PHLKDNGHOOA)?;
+        for v in &self.GHGKJBPKMIJ {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.FMHOANFMMJA != 0 {
+            os.write_uint32(4, self.FMHOANFMMJA)?;
+        }
+        for v in &self.skill_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.BIFBHDAJILO != 0 {
+            os.write_uint32(7, self.BIFBHDAJILO)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.EGEMNDNEDIP != 0 {
-            os.write_uint32(4, self.EGEMNDNEDIP)?;
+        if self.BMCNMMLMCEH != 0 {
+            os.write_uint32(13, self.BMCNMMLMCEH)?;
         }
-        for v in &self.NLFIHKICDDO {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        if self.JDHLMHJBOJM != 0 {
-            os.write_uint32(12, self.JDHLMHJBOJM)?;
+        if self.PBKAOFABIFG != 0 {
+            os.write_uint32(15, self.PBKAOFABIFG)?;
         }
-        if self.IBCIPIIDCOL != 0 {
-            os.write_uint32(6, self.IBCIPIIDCOL)?;
-        }
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.skill_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -247,29 +247,29 @@ impl ::protobuf::Message for GetAetherDivideInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.PFLJGGDAOFM = 0;
-        self.PHLKDNGHOOA = 0;
-        self.retcode = 0;
-        self.EGEMNDNEDIP = 0;
-        self.NLFIHKICDDO.clear();
-        self.JDHLMHJBOJM = 0;
-        self.IBCIPIIDCOL = 0;
-        self.lineup_list.clear();
+        self.IGKGHMPEIME = 0;
+        self.GHGKJBPKMIJ.clear();
+        self.FMHOANFMMJA = 0;
         self.skill_list.clear();
+        self.lineup_list.clear();
+        self.BIFBHDAJILO = 0;
+        self.retcode = 0;
+        self.BMCNMMLMCEH = 0;
+        self.PBKAOFABIFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAetherDivideInfoScRsp {
         static instance: GetAetherDivideInfoScRsp = GetAetherDivideInfoScRsp {
-            PFLJGGDAOFM: 0,
-            PHLKDNGHOOA: 0,
-            retcode: 0,
-            EGEMNDNEDIP: 0,
-            NLFIHKICDDO: ::std::vec::Vec::new(),
-            JDHLMHJBOJM: 0,
-            IBCIPIIDCOL: 0,
-            lineup_list: ::std::vec::Vec::new(),
+            IGKGHMPEIME: 0,
+            GHGKJBPKMIJ: ::std::vec::Vec::new(),
+            FMHOANFMMJA: 0,
             skill_list: ::std::vec::Vec::new(),
+            lineup_list: ::std::vec::Vec::new(),
+            BIFBHDAJILO: 0,
+            retcode: 0,
+            BMCNMMLMCEH: 0,
+            PBKAOFABIFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -294,17 +294,17 @@ impl ::protobuf::reflect::ProtobufValue for GetAetherDivideInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetAetherDivideInfoScRsp.proto\x1a\x1cAetherDivideLineupInfo.proto\
-    \x1a\x1cAetherDivideSpiritInfo.proto\x1a\x15AetherSkillInfo.proto\"\x84\
-    \x03\n\x18GetAetherDivideInfoScRsp\x12\x20\n\x0bPFLJGGDAOFM\x18\x01\x20\
-    \x01(\rR\x0bPFLJGGDAOFM\x12\x20\n\x0bPHLKDNGHOOA\x18\x0e\x20\x01(\rR\x0b\
-    PHLKDNGHOOA\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bEGEMNDNEDIP\x18\x04\x20\x01(\rR\x0bEGEMNDNEDIP\x129\n\x0bNLFIHKICD\
-    DO\x18\n\x20\x03(\x0b2\x17.AetherDivideSpiritInfoR\x0bNLFIHKICDDO\x12\
-    \x20\n\x0bJDHLMHJBOJM\x18\x0c\x20\x01(\rR\x0bJDHLMHJBOJM\x12\x20\n\x0bIB\
-    CIPIIDCOL\x18\x06\x20\x01(\rR\x0bIBCIPIIDCOL\x128\n\x0blineup_list\x18\
-    \x02\x20\x03(\x0b2\x17.AetherDivideLineupInfoR\nlineupList\x12/\n\nskill\
-    _list\x18\x08\x20\x03(\x0b2\x10.AetherSkillInfoR\tskillListb\x06proto3\
+    \n\x1eGetAetherDivideInfoScRsp.proto\x1a\x18AetherDivideLineUp.proto\x1a\
+    \x1cAetherDivideSpiritInfo.proto\x1a\x15AetherSkillInfo.proto\"\x80\x03\
+    \n\x18GetAetherDivideInfoScRsp\x12\x20\n\x0bIGKGHMPEIME\x18\x02\x20\x01(\
+    \rR\x0bIGKGHMPEIME\x129\n\x0bGHGKJBPKMIJ\x18\x03\x20\x03(\x0b2\x17.Aethe\
+    rDivideSpiritInfoR\x0bGHGKJBPKMIJ\x12\x20\n\x0bFMHOANFMMJA\x18\x04\x20\
+    \x01(\rR\x0bFMHOANFMMJA\x12/\n\nskill_list\x18\x05\x20\x03(\x0b2\x10.Aet\
+    herSkillInfoR\tskillList\x124\n\x0blineup_list\x18\x06\x20\x03(\x0b2\x13\
+    .AetherDivideLineUpR\nlineupList\x12\x20\n\x0bBIFBHDAJILO\x18\x07\x20\
+    \x01(\rR\x0bBIFBHDAJILO\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retc\
+    ode\x12\x20\n\x0bBMCNMMLMCEH\x18\r\x20\x01(\rR\x0bBMCNMMLMCEH\x12\x20\n\
+    \x0bPBKAOFABIFG\x18\x0f\x20\x01(\rR\x0bPBKAOFABIFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -322,7 +322,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::AetherDivideLineupInfo::file_descriptor().clone());
+            deps.push(super::AetherDivideLineUp::file_descriptor().clone());
             deps.push(super::AetherDivideSpiritInfo::file_descriptor().clone());
             deps.push(super::AetherSkillInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
-                56 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ClientObjUploadScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aClientObjUploadScRsp.proto\x1a\x1bClientObjDownloadData.proto\"\\\
-    \n\x14ClientObjUploadScRsp\x12*\n\x04data\x18\x0c\x20\x01(\x0b2\x16.Clie\
-    ntObjDownloadDataR\x04data\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07r\
+    \n\x14ClientObjUploadScRsp\x12*\n\x04data\x18\x03\x20\x01(\x0b2\x16.Clie\
+    ntObjDownloadDataR\x04data\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07r\
     etcodeb\x06proto3\
 ";
 

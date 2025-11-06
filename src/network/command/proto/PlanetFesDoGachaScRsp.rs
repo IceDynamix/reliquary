@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDoGachaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.CIKEPDANGFD)
-    pub CIKEPDANGFD: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
+    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.HCDLADPNDIO)
+    pub HCDLADPNDIO: ::std::vec::Vec<super::CEODDCEIDDL::CEODDCEIDDL>,
     // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.gacha_id)
     pub gacha_id: u32,
     // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.retcode)
     pub retcode: u32,
     // message oneof groups
-    pub MICMCKAHMPL: ::std::option::Option<planet_fes_do_gacha_sc_rsp::MICMCKAHMPL>,
+    pub CCPFABANCNN: ::std::option::Option<planet_fes_do_gacha_sc_rsp::CCPFABANCNN>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesDoGachaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,39 +52,39 @@ impl PlanetFesDoGachaScRsp {
         ::std::default::Default::default()
     }
 
-    // .CGOJKBOEOFO IDGKLMCEPBO = 5;
+    // .CGOJKBOEOFO IDGKLMCEPBO = 1;
 
     pub fn IDGKLMCEPBO(&self) -> &super::CGOJKBOEOFO::CGOJKBOEOFO {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(ref v)) => v,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(ref v)) => v,
             _ => <super::CGOJKBOEOFO::CGOJKBOEOFO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_IDGKLMCEPBO(&mut self) {
-        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.CCPFABANCNN = ::std::option::Option::None;
     }
 
     pub fn has_IDGKLMCEPBO(&self) -> bool {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(..)) => true,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_IDGKLMCEPBO(&mut self, v: super::CGOJKBOEOFO::CGOJKBOEOFO) {
-        self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(v))
+        self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_IDGKLMCEPBO(&mut self) -> &mut super::CGOJKBOEOFO::CGOJKBOEOFO {
-        if let ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(_)) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(_)) = self.CCPFABANCNN {
         } else {
-            self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(super::CGOJKBOEOFO::CGOJKBOEOFO::new()));
+            self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(super::CGOJKBOEOFO::CGOJKBOEOFO::new()));
         }
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(ref mut v)) => v,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -92,8 +92,8 @@ impl PlanetFesDoGachaScRsp {
     // Take field
     pub fn take_IDGKLMCEPBO(&mut self) -> super::CGOJKBOEOFO::CGOJKBOEOFO {
         if self.has_IDGKLMCEPBO() {
-            match self.MICMCKAHMPL.take() {
-                ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(v)) => v,
+            match self.CCPFABANCNN.take() {
+                ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -101,39 +101,39 @@ impl PlanetFesDoGachaScRsp {
         }
     }
 
-    // .PJCAKIFOOCP JABDCPFPOKE = 13;
+    // .PJCAKIFOOCP JABDCPFPOKE = 2;
 
     pub fn JABDCPFPOKE(&self) -> &super::PJCAKIFOOCP::PJCAKIFOOCP {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(ref v)) => v,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(ref v)) => v,
             _ => <super::PJCAKIFOOCP::PJCAKIFOOCP as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_JABDCPFPOKE(&mut self) {
-        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.CCPFABANCNN = ::std::option::Option::None;
     }
 
     pub fn has_JABDCPFPOKE(&self) -> bool {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(..)) => true,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_JABDCPFPOKE(&mut self, v: super::PJCAKIFOOCP::PJCAKIFOOCP) {
-        self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(v))
+        self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_JABDCPFPOKE(&mut self) -> &mut super::PJCAKIFOOCP::PJCAKIFOOCP {
-        if let ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(_)) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(_)) = self.CCPFABANCNN {
         } else {
-            self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(super::PJCAKIFOOCP::PJCAKIFOOCP::new()));
+            self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(super::PJCAKIFOOCP::PJCAKIFOOCP::new()));
         }
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(ref mut v)) => v,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -141,8 +141,8 @@ impl PlanetFesDoGachaScRsp {
     // Take field
     pub fn take_JABDCPFPOKE(&mut self) -> super::PJCAKIFOOCP::PJCAKIFOOCP {
         if self.has_JABDCPFPOKE() {
-            match self.MICMCKAHMPL.take() {
-                ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(v)) => v,
+            match self.CCPFABANCNN.take() {
+                ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -153,21 +153,6 @@ impl PlanetFesDoGachaScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CIKEPDANGFD",
-            |m: &PlanetFesDoGachaScRsp| { &m.CIKEPDANGFD },
-            |m: &mut PlanetFesDoGachaScRsp| { &mut m.CIKEPDANGFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gacha_id",
-            |m: &PlanetFesDoGachaScRsp| { &m.gacha_id },
-            |m: &mut PlanetFesDoGachaScRsp| { &mut m.gacha_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlanetFesDoGachaScRsp| { &m.retcode },
-            |m: &mut PlanetFesDoGachaScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CGOJKBOEOFO::CGOJKBOEOFO>(
             "IDGKLMCEPBO",
             PlanetFesDoGachaScRsp::has_IDGKLMCEPBO,
@@ -182,7 +167,22 @@ impl PlanetFesDoGachaScRsp {
             PlanetFesDoGachaScRsp::mut_JABDCPFPOKE,
             PlanetFesDoGachaScRsp::set_JABDCPFPOKE,
         ));
-        oneofs.push(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HCDLADPNDIO",
+            |m: &PlanetFesDoGachaScRsp| { &m.HCDLADPNDIO },
+            |m: &mut PlanetFesDoGachaScRsp| { &mut m.HCDLADPNDIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gacha_id",
+            |m: &PlanetFesDoGachaScRsp| { &m.gacha_id },
+            |m: &mut PlanetFesDoGachaScRsp| { &mut m.gacha_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlanetFesDoGachaScRsp| { &m.retcode },
+            |m: &mut PlanetFesDoGachaScRsp| { &mut m.retcode },
+        ));
+        oneofs.push(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesDoGachaScRsp>(
             "PlanetFesDoGachaScRsp",
             fields,
@@ -201,20 +201,20 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.CIKEPDANGFD.push(is.read_message()?);
+                10 => {
+                    self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(is.read_message()?));
                 },
-                32 => {
+                18 => {
+                    self.CCPFABANCNN = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(is.read_message()?));
+                },
+                82 => {
+                    self.HCDLADPNDIO.push(is.read_message()?);
+                },
+                88 => {
                     self.gacha_id = is.read_uint32()?;
                 },
-                8 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(is.read_message()?));
-                },
-                106 => {
-                    self.MICMCKAHMPL = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -228,23 +228,23 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CIKEPDANGFD {
+        for value in &self.HCDLADPNDIO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.gacha_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.gacha_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.CCPFABANCNN {
             match v {
-                &planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(ref v) => {
+                &planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(ref v) => {
+                &planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -256,22 +256,22 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CIKEPDANGFD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.HCDLADPNDIO {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.gacha_id != 0 {
-            os.write_uint32(4, self.gacha_id)?;
+            os.write_uint32(11, self.gacha_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.CCPFABANCNN {
             match v {
-                &planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::IDGKLMCEPBO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                &planet_fes_do_gacha_sc_rsp::CCPFABANCNN::IDGKLMCEPBO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &planet_fes_do_gacha_sc_rsp::MICMCKAHMPL::JABDCPFPOKE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                &planet_fes_do_gacha_sc_rsp::CCPFABANCNN::JABDCPFPOKE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -292,20 +292,20 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     }
 
     fn clear(&mut self) {
-        self.CIKEPDANGFD.clear();
+        self.CCPFABANCNN = ::std::option::Option::None;
+        self.CCPFABANCNN = ::std::option::Option::None;
+        self.HCDLADPNDIO.clear();
         self.gacha_id = 0;
         self.retcode = 0;
-        self.MICMCKAHMPL = ::std::option::Option::None;
-        self.MICMCKAHMPL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDoGachaScRsp {
         static instance: PlanetFesDoGachaScRsp = PlanetFesDoGachaScRsp {
-            CIKEPDANGFD: ::std::vec::Vec::new(),
+            HCDLADPNDIO: ::std::vec::Vec::new(),
             gacha_id: 0,
             retcode: 0,
-            MICMCKAHMPL: ::std::option::Option::None,
+            CCPFABANCNN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -334,27 +334,27 @@ pub mod planet_fes_do_gacha_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:PlanetFesDoGachaScRsp.MICMCKAHMPL)
-    pub enum MICMCKAHMPL {
+    // @@protoc_insertion_point(oneof:PlanetFesDoGachaScRsp.CCPFABANCNN)
+    pub enum CCPFABANCNN {
         // @@protoc_insertion_point(oneof_field:PlanetFesDoGachaScRsp.IDGKLMCEPBO)
         IDGKLMCEPBO(super::super::CGOJKBOEOFO::CGOJKBOEOFO),
         // @@protoc_insertion_point(oneof_field:PlanetFesDoGachaScRsp.JABDCPFPOKE)
         JABDCPFPOKE(super::super::PJCAKIFOOCP::PJCAKIFOOCP),
     }
 
-    impl ::protobuf::Oneof for MICMCKAHMPL {
+    impl ::protobuf::Oneof for CCPFABANCNN {
     }
 
-    impl ::protobuf::OneofFull for MICMCKAHMPL {
+    impl ::protobuf::OneofFull for CCPFABANCNN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::PlanetFesDoGachaScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MICMCKAHMPL").unwrap()).clone()
+            descriptor.get(|| <super::PlanetFesDoGachaScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("CCPFABANCNN").unwrap()).clone()
         }
     }
 
-    impl MICMCKAHMPL {
+    impl CCPFABANCNN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MICMCKAHMPL>("MICMCKAHMPL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CCPFABANCNN>("CCPFABANCNN")
         }
     }
 }
@@ -362,12 +362,12 @@ pub mod planet_fes_do_gacha_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesDoGachaScRsp.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11CGOJKB\
     OEOFO.proto\x1a\x11PJCAKIFOOCP.proto\"\xef\x01\n\x15PlanetFesDoGachaScRs\
-    p\x12.\n\x0bCIKEPDANGFD\x18\x0c\x20\x03(\x0b2\x0c.CEODDCEIDDLR\x0bCIKEPD\
-    ANGFD\x12\x19\n\x08gacha_id\x18\x04\x20\x01(\rR\x07gachaId\x12\x18\n\x07\
-    retcode\x18\x01\x20\x01(\rR\x07retcode\x120\n\x0bIDGKLMCEPBO\x18\x05\x20\
-    \x01(\x0b2\x0c.CGOJKBOEOFOH\0R\x0bIDGKLMCEPBO\x120\n\x0bJABDCPFPOKE\x18\
-    \r\x20\x01(\x0b2\x0c.PJCAKIFOOCPH\0R\x0bJABDCPFPOKEB\r\n\x0bMICMCKAHMPLb\
-    \x06proto3\
+    p\x120\n\x0bIDGKLMCEPBO\x18\x01\x20\x01(\x0b2\x0c.CGOJKBOEOFOH\0R\x0bIDG\
+    KLMCEPBO\x120\n\x0bJABDCPFPOKE\x18\x02\x20\x01(\x0b2\x0c.PJCAKIFOOCPH\0R\
+    \x0bJABDCPFPOKE\x12.\n\x0bHCDLADPNDIO\x18\n\x20\x03(\x0b2\x0c.CEODDCEIDD\
+    LR\x0bHCDLADPNDIO\x12\x19\n\x08gacha_id\x18\x0b\x20\x01(\rR\x07gachaId\
+    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeB\r\n\x0bCCPFABANCNN\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

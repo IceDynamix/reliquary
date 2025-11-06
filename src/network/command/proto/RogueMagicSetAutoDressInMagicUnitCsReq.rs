@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSetAutoDressInMagicUnitCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitCsReq.KHDHAHNNALM)
-    pub KHDHAHNNALM: bool,
+    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitCsReq.FMCGADNDCCB)
+    pub FMCGADNDCCB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicSetAutoDressInMagicUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicSetAutoDressInMagicUnitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHDHAHNNALM",
-            |m: &RogueMagicSetAutoDressInMagicUnitCsReq| { &m.KHDHAHNNALM },
-            |m: &mut RogueMagicSetAutoDressInMagicUnitCsReq| { &mut m.KHDHAHNNALM },
+            "FMCGADNDCCB",
+            |m: &RogueMagicSetAutoDressInMagicUnitCsReq| { &m.FMCGADNDCCB },
+            |m: &mut RogueMagicSetAutoDressInMagicUnitCsReq| { &mut m.FMCGADNDCCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicSetAutoDressInMagicUnitCsReq>(
             "RogueMagicSetAutoDressInMagicUnitCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.KHDHAHNNALM = is.read_bool()?;
+                    self.FMCGADNDCCB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHDHAHNNALM != false {
+        if self.FMCGADNDCCB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHDHAHNNALM != false {
-            os.write_bool(10, self.KHDHAHNNALM)?;
+        if self.FMCGADNDCCB != false {
+            os.write_bool(10, self.FMCGADNDCCB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitCsReq {
     }
 
     fn clear(&mut self) {
-        self.KHDHAHNNALM = false;
+        self.FMCGADNDCCB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicSetAutoDressInMagicUnitCsReq {
         static instance: RogueMagicSetAutoDressInMagicUnitCsReq = RogueMagicSetAutoDressInMagicUnitCsReq {
-            KHDHAHNNALM: false,
+            FMCGADNDCCB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSetAutoDressInMagicUnitCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicSetAutoDressInMagicUnitCsReq.proto\"J\n&RogueMagicSetAutoDr\
-    essInMagicUnitCsReq\x12\x20\n\x0bKHDHAHNNALM\x18\n\x20\x01(\x08R\x0bKHDH\
-    AHNNALMb\x06proto3\
+    essInMagicUnitCsReq\x12\x20\n\x0bFMCGADNDCCB\x18\n\x20\x01(\x08R\x0bFMCG\
+    ADNDCCBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

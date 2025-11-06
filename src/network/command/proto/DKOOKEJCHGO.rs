@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DKOOKEJCHGO {
     // message fields
-    // @@protoc_insertion_point(field:DKOOKEJCHGO.CHBJKKMIOFD)
-    pub CHBJKKMIOFD: u32,
-    // @@protoc_insertion_point(field:DKOOKEJCHGO.HGFLPENKIII)
-    pub HGFLPENKIII: f64,
+    // @@protoc_insertion_point(field:DKOOKEJCHGO.HINCLIFFNCH)
+    pub HINCLIFFNCH: u32,
+    // @@protoc_insertion_point(field:DKOOKEJCHGO.MNDOEKKLIMK)
+    pub MNDOEKKLIMK: f64,
     // special fields
     // @@protoc_insertion_point(special_field:DKOOKEJCHGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DKOOKEJCHGO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHBJKKMIOFD",
-            |m: &DKOOKEJCHGO| { &m.CHBJKKMIOFD },
-            |m: &mut DKOOKEJCHGO| { &mut m.CHBJKKMIOFD },
+            "HINCLIFFNCH",
+            |m: &DKOOKEJCHGO| { &m.HINCLIFFNCH },
+            |m: &mut DKOOKEJCHGO| { &mut m.HINCLIFFNCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGFLPENKIII",
-            |m: &DKOOKEJCHGO| { &m.HGFLPENKIII },
-            |m: &mut DKOOKEJCHGO| { &mut m.HGFLPENKIII },
+            "MNDOEKKLIMK",
+            |m: &DKOOKEJCHGO| { &m.MNDOEKKLIMK },
+            |m: &mut DKOOKEJCHGO| { &mut m.MNDOEKKLIMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DKOOKEJCHGO>(
             "DKOOKEJCHGO",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for DKOOKEJCHGO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.CHBJKKMIOFD = is.read_uint32()?;
+                    self.HINCLIFFNCH = is.read_uint32()?;
                 },
                 17 => {
-                    self.HGFLPENKIII = is.read_double()?;
+                    self.MNDOEKKLIMK = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for DKOOKEJCHGO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CHBJKKMIOFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CHBJKKMIOFD);
+        if self.HINCLIFFNCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HINCLIFFNCH);
         }
-        if self.HGFLPENKIII != 0. {
+        if self.MNDOEKKLIMK != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DKOOKEJCHGO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CHBJKKMIOFD != 0 {
-            os.write_uint32(1, self.CHBJKKMIOFD)?;
+        if self.HINCLIFFNCH != 0 {
+            os.write_uint32(1, self.HINCLIFFNCH)?;
         }
-        if self.HGFLPENKIII != 0. {
-            os.write_double(2, self.HGFLPENKIII)?;
+        if self.MNDOEKKLIMK != 0. {
+            os.write_double(2, self.MNDOEKKLIMK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DKOOKEJCHGO {
     }
 
     fn clear(&mut self) {
-        self.CHBJKKMIOFD = 0;
-        self.HGFLPENKIII = 0.;
+        self.HINCLIFFNCH = 0;
+        self.MNDOEKKLIMK = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DKOOKEJCHGO {
         static instance: DKOOKEJCHGO = DKOOKEJCHGO {
-            CHBJKKMIOFD: 0,
-            HGFLPENKIII: 0.,
+            HINCLIFFNCH: 0,
+            MNDOEKKLIMK: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DKOOKEJCHGO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DKOOKEJCHGO.proto\"Q\n\x0bDKOOKEJCHGO\x12\x20\n\x0bCHBJKKMIOFD\x18\
-    \x01\x20\x01(\rR\x0bCHBJKKMIOFD\x12\x20\n\x0bHGFLPENKIII\x18\x02\x20\x01\
-    (\x01R\x0bHGFLPENKIIIb\x06proto3\
+    \n\x11DKOOKEJCHGO.proto\"Q\n\x0bDKOOKEJCHGO\x12\x20\n\x0bHINCLIFFNCH\x18\
+    \x01\x20\x01(\rR\x0bHINCLIFFNCH\x12\x20\n\x0bMNDOEKKLIMK\x18\x02\x20\x01\
+    (\x01R\x0bMNDOEKKLIMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

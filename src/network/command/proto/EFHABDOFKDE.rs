@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EFHABDOFKDE {
     // message fields
-    // @@protoc_insertion_point(field:EFHABDOFKDE.BPCFOEGHONC)
-    pub BPCFOEGHONC: u32,
-    // @@protoc_insertion_point(field:EFHABDOFKDE.EPMOOHCJNHO)
-    pub EPMOOHCJNHO: u32,
-    // @@protoc_insertion_point(field:EFHABDOFKDE.AGMGPPAOMKA)
-    pub AGMGPPAOMKA: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:EFHABDOFKDE.NNGOPAKJICC)
-    pub NNGOPAKJICC: u32,
+    // @@protoc_insertion_point(field:EFHABDOFKDE.CJGCOJFBJAO)
+    pub CJGCOJFBJAO: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:EFHABDOFKDE.AJNKLJOGDNO)
+    pub AJNKLJOGDNO: u32,
+    // @@protoc_insertion_point(field:EFHABDOFKDE.EKABCMCGIOK)
+    pub EKABCMCGIOK: u32,
+    // @@protoc_insertion_point(field:EFHABDOFKDE.JNPLGFNDNHO)
+    pub JNPLGFNDNHO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EFHABDOFKDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EFHABDOFKDE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPCFOEGHONC",
-            |m: &EFHABDOFKDE| { &m.BPCFOEGHONC },
-            |m: &mut EFHABDOFKDE| { &mut m.BPCFOEGHONC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPMOOHCJNHO",
-            |m: &EFHABDOFKDE| { &m.EPMOOHCJNHO },
-            |m: &mut EFHABDOFKDE| { &mut m.EPMOOHCJNHO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "AGMGPPAOMKA",
-            |m: &EFHABDOFKDE| { &m.AGMGPPAOMKA },
-            |m: &mut EFHABDOFKDE| { &mut m.AGMGPPAOMKA },
+            "CJGCOJFBJAO",
+            |m: &EFHABDOFKDE| { &m.CJGCOJFBJAO },
+            |m: &mut EFHABDOFKDE| { &mut m.CJGCOJFBJAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNGOPAKJICC",
-            |m: &EFHABDOFKDE| { &m.NNGOPAKJICC },
-            |m: &mut EFHABDOFKDE| { &mut m.NNGOPAKJICC },
+            "AJNKLJOGDNO",
+            |m: &EFHABDOFKDE| { &m.AJNKLJOGDNO },
+            |m: &mut EFHABDOFKDE| { &mut m.AJNKLJOGDNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EKABCMCGIOK",
+            |m: &EFHABDOFKDE| { &m.EKABCMCGIOK },
+            |m: &mut EFHABDOFKDE| { &mut m.EKABCMCGIOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNPLGFNDNHO",
+            |m: &EFHABDOFKDE| { &m.JNPLGFNDNHO },
+            |m: &mut EFHABDOFKDE| { &mut m.JNPLGFNDNHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EFHABDOFKDE>(
             "EFHABDOFKDE",
@@ -93,13 +93,7 @@ impl ::protobuf::Message for EFHABDOFKDE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BPCFOEGHONC = is.read_uint32()?;
-                },
-                40 => {
-                    self.EPMOOHCJNHO = is.read_uint32()?;
-                },
-                10 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -112,10 +106,16 @@ impl ::protobuf::Message for EFHABDOFKDE {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.AGMGPPAOMKA.insert(key, value);
+                    self.CJGCOJFBJAO.insert(key, value);
                 },
-                48 => {
-                    self.NNGOPAKJICC = is.read_uint32()?;
+                40 => {
+                    self.AJNKLJOGDNO = is.read_uint32()?;
+                },
+                80 => {
+                    self.EKABCMCGIOK = is.read_uint32()?;
+                },
+                104 => {
+                    self.JNPLGFNDNHO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,20 +129,20 @@ impl ::protobuf::Message for EFHABDOFKDE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BPCFOEGHONC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BPCFOEGHONC);
-        }
-        if self.EPMOOHCJNHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EPMOOHCJNHO);
-        }
-        for (k, v) in &self.AGMGPPAOMKA {
+        for (k, v) in &self.CJGCOJFBJAO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.NNGOPAKJICC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NNGOPAKJICC);
+        if self.AJNKLJOGDNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AJNKLJOGDNO);
+        }
+        if self.EKABCMCGIOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EKABCMCGIOK);
+        }
+        if self.JNPLGFNDNHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JNPLGFNDNHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,23 +150,23 @@ impl ::protobuf::Message for EFHABDOFKDE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BPCFOEGHONC != 0 {
-            os.write_uint32(12, self.BPCFOEGHONC)?;
-        }
-        if self.EPMOOHCJNHO != 0 {
-            os.write_uint32(5, self.EPMOOHCJNHO)?;
-        }
-        for (k, v) in &self.AGMGPPAOMKA {
+        for (k, v) in &self.CJGCOJFBJAO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(10)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.NNGOPAKJICC != 0 {
-            os.write_uint32(6, self.NNGOPAKJICC)?;
+        if self.AJNKLJOGDNO != 0 {
+            os.write_uint32(5, self.AJNKLJOGDNO)?;
+        }
+        if self.EKABCMCGIOK != 0 {
+            os.write_uint32(10, self.EKABCMCGIOK)?;
+        }
+        if self.JNPLGFNDNHO != 0 {
+            os.write_uint32(13, self.JNPLGFNDNHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::Message for EFHABDOFKDE {
     }
 
     fn clear(&mut self) {
-        self.BPCFOEGHONC = 0;
-        self.EPMOOHCJNHO = 0;
-        self.AGMGPPAOMKA.clear();
-        self.NNGOPAKJICC = 0;
+        self.CJGCOJFBJAO.clear();
+        self.AJNKLJOGDNO = 0;
+        self.EKABCMCGIOK = 0;
+        self.JNPLGFNDNHO = 0;
         self.special_fields.clear();
     }
 
@@ -216,13 +216,13 @@ impl ::protobuf::reflect::ProtobufValue for EFHABDOFKDE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EFHABDOFKDE.proto\"\xf4\x01\n\x0bEFHABDOFKDE\x12\x20\n\x0bBPCFOEGH\
-    ONC\x18\x0c\x20\x01(\rR\x0bBPCFOEGHONC\x12\x20\n\x0bEPMOOHCJNHO\x18\x05\
-    \x20\x01(\rR\x0bEPMOOHCJNHO\x12?\n\x0bAGMGPPAOMKA\x18\x01\x20\x03(\x0b2\
-    \x1d.EFHABDOFKDE.AGMGPPAOMKAEntryR\x0bAGMGPPAOMKA\x12\x20\n\x0bNNGOPAKJI\
-    CC\x18\x06\x20\x01(\rR\x0bNNGOPAKJICC\x1a>\n\x10AGMGPPAOMKAEntry\x12\x10\
-    \n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
-    \rR\x05value:\x028\x01b\x06proto3\
+    \n\x11EFHABDOFKDE.proto\"\xf4\x01\n\x0bEFHABDOFKDE\x12?\n\x0bCJGCOJFBJAO\
+    \x18\x03\x20\x03(\x0b2\x1d.EFHABDOFKDE.CJGCOJFBJAOEntryR\x0bCJGCOJFBJAO\
+    \x12\x20\n\x0bAJNKLJOGDNO\x18\x05\x20\x01(\rR\x0bAJNKLJOGDNO\x12\x20\n\
+    \x0bEKABCMCGIOK\x18\n\x20\x01(\rR\x0bEKABCMCGIOK\x12\x20\n\x0bJNPLGFNDNH\
+    O\x18\r\x20\x01(\rR\x0bJNPLGFNDNHO\x1a>\n\x10CJGCOJFBJAOEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

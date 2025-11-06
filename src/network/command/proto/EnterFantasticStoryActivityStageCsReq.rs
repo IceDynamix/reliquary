@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFantasticStoryActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.buff_list)
-    pub buff_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.battle_id)
     pub battle_id: u32,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.BEJCALDILNC)
-    pub BEJCALDILNC: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::KJMFEOCKCML::KJMFEOCKCML>,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.buff_list)
+    pub buff_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.fantastic_story_id)
+    pub fantastic_story_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFantasticStoryActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EnterFantasticStoryActivityStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "battle_id",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.battle_id },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.battle_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.avatar_list },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.avatar_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &EnterFantasticStoryActivityStageCsReq| { &m.buff_list },
             |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "battle_id",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.battle_id },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.battle_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEJCALDILNC",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.BEJCALDILNC },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.BEJCALDILNC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.avatar_list },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.avatar_list },
+            "fantastic_story_id",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.fantastic_story_id },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.fantastic_story_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFantasticStoryActivityStageCsReq>(
             "EnterFantasticStoryActivityStageCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
-                },
-                112 => {
-                    self.buff_list.push(is.read_uint32()?);
-                },
-                64 => {
+                8 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.BEJCALDILNC = is.read_uint32()?;
-                },
-                34 => {
+                18 => {
                     self.avatar_list.push(is.read_message()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
+                },
+                40 => {
+                    self.buff_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.fantastic_story_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,33 +120,33 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.buff_list);
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.battle_id);
-        }
-        if self.BEJCALDILNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BEJCALDILNC);
+            my_size += ::protobuf::rt::uint32_size(1, self.battle_id);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.buff_list);
+        if self.fantastic_story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.fantastic_story_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.buff_list)?;
         if self.battle_id != 0 {
-            os.write_uint32(8, self.battle_id)?;
-        }
-        if self.BEJCALDILNC != 0 {
-            os.write_uint32(15, self.BEJCALDILNC)?;
+            os.write_uint32(1, self.battle_id)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        os.write_repeated_packed_uint32(5, &self.buff_list)?;
+        if self.fantastic_story_id != 0 {
+            os.write_uint32(6, self.fantastic_story_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.buff_list.clear();
         self.battle_id = 0;
-        self.BEJCALDILNC = 0;
         self.avatar_list.clear();
+        self.buff_list.clear();
+        self.fantastic_story_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFantasticStoryActivityStageCsReq {
         static instance: EnterFantasticStoryActivityStageCsReq = EnterFantasticStoryActivityStageCsReq {
-            buff_list: ::std::vec::Vec::new(),
             battle_id: 0,
-            BEJCALDILNC: 0,
             avatar_list: ::std::vec::Vec::new(),
+            buff_list: ::std::vec::Vec::new(),
+            fantastic_story_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+EnterFantasticStoryActivityStageCsReq.proto\x1a\x11KJMFEOCKCML.proto\
-    \"\xb2\x01\n%EnterFantasticStoryActivityStageCsReq\x12\x1b\n\tbuff_list\
-    \x18\x0e\x20\x03(\rR\x08buffList\x12\x1b\n\tbattle_id\x18\x08\x20\x01(\r\
-    R\x08battleId\x12\x20\n\x0bBEJCALDILNC\x18\x0f\x20\x01(\rR\x0bBEJCALDILN\
-    C\x12-\n\x0bavatar_list\x18\x04\x20\x03(\x0b2\x0c.KJMFEOCKCMLR\navatarLi\
-    stb\x06proto3\
+    \"\xbe\x01\n%EnterFantasticStoryActivityStageCsReq\x12\x1b\n\tbattle_id\
+    \x18\x01\x20\x01(\rR\x08battleId\x12-\n\x0bavatar_list\x18\x02\x20\x03(\
+    \x0b2\x0c.KJMFEOCKCMLR\navatarList\x12\x1b\n\tbuff_list\x18\x05\x20\x03(\
+    \rR\x08buffList\x12,\n\x12fantastic_story_id\x18\x06\x20\x01(\rR\x10fant\
+    asticStoryIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

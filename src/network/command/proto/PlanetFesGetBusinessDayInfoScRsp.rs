@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetBusinessDayInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoScRsp.BHFNNKKGBOH)
+    pub BHFNNKKGBOH: i64,
+    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoScRsp.COBOFPIJLAD)
+    pub COBOFPIJLAD: ::protobuf::MessageField<super::PlanetFesBusinessDayInfo::PlanetFesBusinessDayInfo>,
     // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoScRsp.AAKDAHHIGIF)
-    pub AAKDAHHIGIF: ::protobuf::MessageField<super::EGBKGEMFODN::EGBKGEMFODN>,
-    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoScRsp.BCFBFMMENJK)
-    pub BCFBFMMENJK: i64,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetBusinessDayInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl PlanetFesGetBusinessDayInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BHFNNKKGBOH",
+            |m: &PlanetFesGetBusinessDayInfoScRsp| { &m.BHFNNKKGBOH },
+            |m: &mut PlanetFesGetBusinessDayInfoScRsp| { &mut m.BHFNNKKGBOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessDayInfo::PlanetFesBusinessDayInfo>(
+            "COBOFPIJLAD",
+            |m: &PlanetFesGetBusinessDayInfoScRsp| { &m.COBOFPIJLAD },
+            |m: &mut PlanetFesGetBusinessDayInfoScRsp| { &mut m.COBOFPIJLAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesGetBusinessDayInfoScRsp| { &m.retcode },
             |m: &mut PlanetFesGetBusinessDayInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EGBKGEMFODN::EGBKGEMFODN>(
-            "AAKDAHHIGIF",
-            |m: &PlanetFesGetBusinessDayInfoScRsp| { &m.AAKDAHHIGIF },
-            |m: &mut PlanetFesGetBusinessDayInfoScRsp| { &mut m.AAKDAHHIGIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCFBFMMENJK",
-            |m: &PlanetFesGetBusinessDayInfoScRsp| { &m.BCFBFMMENJK },
-            |m: &mut PlanetFesGetBusinessDayInfoScRsp| { &mut m.BCFBFMMENJK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetBusinessDayInfoScRsp>(
             "PlanetFesGetBusinessDayInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
+                    self.BHFNNKKGBOH = is.read_int64()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COBOFPIJLAD)?;
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAKDAHHIGIF)?;
-                },
-                120 => {
-                    self.BCFBFMMENJK = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        if self.BHFNNKKGBOH != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.BHFNNKKGBOH);
         }
-        if let Some(v) = self.AAKDAHHIGIF.as_ref() {
+        if let Some(v) = self.COBOFPIJLAD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BCFBFMMENJK != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.BCFBFMMENJK);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BHFNNKKGBOH != 0 {
+            os.write_int64(7, self.BHFNNKKGBOH)?;
+        }
+        if let Some(v) = self.COBOFPIJLAD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if let Some(v) = self.AAKDAHHIGIF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.BCFBFMMENJK != 0 {
-            os.write_int64(15, self.BCFBFMMENJK)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.BHFNNKKGBOH = 0;
+        self.COBOFPIJLAD.clear();
         self.retcode = 0;
-        self.AAKDAHHIGIF.clear();
-        self.BCFBFMMENJK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetBusinessDayInfoScRsp {
         static instance: PlanetFesGetBusinessDayInfoScRsp = PlanetFesGetBusinessDayInfoScRsp {
+            BHFNNKKGBOH: 0,
+            COBOFPIJLAD: ::protobuf::MessageField::none(),
             retcode: 0,
-            AAKDAHHIGIF: ::protobuf::MessageField::none(),
-            BCFBFMMENJK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetBusinessDayInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&PlanetFesGetBusinessDayInfoScRsp.proto\x1a\x11EGBKGEMFODN.proto\"\x8e\
-    \x01\n\x20PlanetFesGetBusinessDayInfoScRsp\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bAAKDAHHIGIF\x18\r\x20\x01(\x0b2\x0c.EG\
-    BKGEMFODNR\x0bAAKDAHHIGIF\x12\x20\n\x0bBCFBFMMENJK\x18\x0f\x20\x01(\x03R\
-    \x0bBCFBFMMENJKb\x06proto3\
+    \n&PlanetFesGetBusinessDayInfoScRsp.proto\x1a\x1ePlanetFesBusinessDayInf\
+    o.proto\"\x9b\x01\n\x20PlanetFesGetBusinessDayInfoScRsp\x12\x20\n\x0bBHF\
+    NNKKGBOH\x18\x07\x20\x01(\x03R\x0bBHFNNKKGBOH\x12;\n\x0bCOBOFPIJLAD\x18\
+    \t\x20\x01(\x0b2\x19.PlanetFesBusinessDayInfoR\x0bCOBOFPIJLAD\x12\x18\n\
+    \x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EGBKGEMFODN::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessDayInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesGetBusinessDayInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

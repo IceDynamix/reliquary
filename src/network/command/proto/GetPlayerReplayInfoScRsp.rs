@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlayerReplayInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetPlayerReplayInfoScRsp.replay_info_list)
+    pub replay_info_list: ::std::vec::Vec<super::ReplayInfo::ReplayInfo>,
     // @@protoc_insertion_point(field:GetPlayerReplayInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPlayerReplayInfoScRsp.KGCFEALANKO)
-    pub KGCFEALANKO: ::std::vec::Vec<super::ReplayInfo::ReplayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlayerReplayInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetPlayerReplayInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "replay_info_list",
+            |m: &GetPlayerReplayInfoScRsp| { &m.replay_info_list },
+            |m: &mut GetPlayerReplayInfoScRsp| { &mut m.replay_info_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPlayerReplayInfoScRsp| { &m.retcode },
             |m: &mut GetPlayerReplayInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGCFEALANKO",
-            |m: &GetPlayerReplayInfoScRsp| { &m.KGCFEALANKO },
-            |m: &mut GetPlayerReplayInfoScRsp| { &mut m.KGCFEALANKO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlayerReplayInfoScRsp>(
             "GetPlayerReplayInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetPlayerReplayInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 50 => {
-                    self.KGCFEALANKO.push(is.read_message()?);
+                    self.replay_info_list.push(is.read_message()?);
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetPlayerReplayInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        for value in &self.KGCFEALANKO {
+        for value in &self.replay_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        for v in &self.KGCFEALANKO {
+        for v in &self.replay_info_list {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetPlayerReplayInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.replay_info_list.clear();
         self.retcode = 0;
-        self.KGCFEALANKO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerReplayInfoScRsp {
         static instance: GetPlayerReplayInfoScRsp = GetPlayerReplayInfoScRsp {
+            replay_info_list: ::std::vec::Vec::new(),
             retcode: 0,
-            KGCFEALANKO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerReplayInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetPlayerReplayInfoScRsp.proto\x1a\x10ReplayInfo.proto\"c\n\x18Get\
-    PlayerReplayInfoScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcod\
-    e\x12-\n\x0bKGCFEALANKO\x18\x06\x20\x03(\x0b2\x0b.ReplayInfoR\x0bKGCFEAL\
-    ANKOb\x06proto3\
+    \n\x1eGetPlayerReplayInfoScRsp.proto\x1a\x10ReplayInfo.proto\"k\n\x18Get\
+    PlayerReplayInfoScRsp\x125\n\x10replay_info_list\x18\x06\x20\x03(\x0b2\
+    \x0b.ReplayInfoR\x0ereplayInfoList\x12\x18\n\x07retcode\x18\r\x20\x01(\r\
+    R\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

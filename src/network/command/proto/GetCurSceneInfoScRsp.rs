@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                40 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetCurSceneInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetCurSceneInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetCurSceneInfoScRsp.proto\x1a\x0fSceneInfo.proto\"R\n\x14GetCurSc\
-    eneInfoScRsp\x12\x20\n\x05scene\x18\x0b\x20\x01(\x0b2\n.SceneInfoR\x05sc\
-    ene\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    eneInfoScRsp\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.SceneInfoR\x05scen\
+    e\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

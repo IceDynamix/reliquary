@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIILCBCKMPD {
     // message fields
-    // @@protoc_insertion_point(field:CIILCBCKMPD.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::JNLLONBKNEI::JNLLONBKNEI>,
-    // @@protoc_insertion_point(field:CIILCBCKMPD.KGAEPLCAEFA)
-    pub KGAEPLCAEFA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:CIILCBCKMPD.used_cycle)
-    pub used_cycle: u32,
     // @@protoc_insertion_point(field:CIILCBCKMPD.challenge_peak_id)
     pub challenge_peak_id: u32,
+    // @@protoc_insertion_point(field:CIILCBCKMPD.LHBLFFGCKLF)
+    pub LHBLFFGCKLF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CIILCBCKMPD.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::JNLLONBKNEI::JNLLONBKNEI>,
+    // @@protoc_insertion_point(field:CIILCBCKMPD.used_cycle)
+    pub used_cycle: u32,
     // @@protoc_insertion_point(field:CIILCBCKMPD.peak_target)
     pub peak_target: ::std::vec::Vec<u32>,
     // special fields
@@ -57,25 +57,25 @@ impl CIILCBCKMPD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_peak_id",
+            |m: &CIILCBCKMPD| { &m.challenge_peak_id },
+            |m: &mut CIILCBCKMPD| { &mut m.challenge_peak_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHBLFFGCKLF",
+            |m: &CIILCBCKMPD| { &m.LHBLFFGCKLF },
+            |m: &mut CIILCBCKMPD| { &mut m.LHBLFFGCKLF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &CIILCBCKMPD| { &m.avatar_list },
             |m: &mut CIILCBCKMPD| { &mut m.avatar_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGAEPLCAEFA",
-            |m: &CIILCBCKMPD| { &m.KGAEPLCAEFA },
-            |m: &mut CIILCBCKMPD| { &mut m.KGAEPLCAEFA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "used_cycle",
             |m: &CIILCBCKMPD| { &m.used_cycle },
             |m: &mut CIILCBCKMPD| { &mut m.used_cycle },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_id",
-            |m: &CIILCBCKMPD| { &m.challenge_peak_id },
-            |m: &mut CIILCBCKMPD| { &mut m.challenge_peak_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "peak_target",
@@ -100,25 +100,25 @@ impl ::protobuf::Message for CIILCBCKMPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KGAEPLCAEFA)?;
-                },
-                16 => {
-                    self.KGAEPLCAEFA.push(is.read_uint32()?);
-                },
-                64 => {
-                    self.used_cycle = is.read_uint32()?;
-                },
-                96 => {
+                48 => {
                     self.challenge_peak_id = is.read_uint32()?;
                 },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LHBLFFGCKLF)?;
                 },
                 56 => {
+                    self.LHBLFFGCKLF.push(is.read_uint32()?);
+                },
+                74 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                88 => {
+                    self.used_cycle = is.read_uint32()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
+                },
+                96 => {
                     self.peak_target.push(is.read_uint32()?);
                 },
                 tag => {
@@ -133,35 +133,35 @@ impl ::protobuf::Message for CIILCBCKMPD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.challenge_peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.challenge_peak_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.LHBLFFGCKLF);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.KGAEPLCAEFA);
         if self.used_cycle != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.used_cycle);
+            my_size += ::protobuf::rt::uint32_size(11, self.used_cycle);
         }
-        if self.challenge_peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.challenge_peak_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.peak_target);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.peak_target);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        os.write_repeated_packed_uint32(2, &self.KGAEPLCAEFA)?;
-        if self.used_cycle != 0 {
-            os.write_uint32(8, self.used_cycle)?;
-        }
         if self.challenge_peak_id != 0 {
-            os.write_uint32(12, self.challenge_peak_id)?;
+            os.write_uint32(6, self.challenge_peak_id)?;
         }
-        os.write_repeated_packed_uint32(7, &self.peak_target)?;
+        os.write_repeated_packed_uint32(7, &self.LHBLFFGCKLF)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.used_cycle != 0 {
+            os.write_uint32(11, self.used_cycle)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.peak_target)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,20 +179,20 @@ impl ::protobuf::Message for CIILCBCKMPD {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
-        self.KGAEPLCAEFA.clear();
-        self.used_cycle = 0;
         self.challenge_peak_id = 0;
+        self.LHBLFFGCKLF.clear();
+        self.avatar_list.clear();
+        self.used_cycle = 0;
         self.peak_target.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIILCBCKMPD {
         static instance: CIILCBCKMPD = CIILCBCKMPD {
-            avatar_list: ::std::vec::Vec::new(),
-            KGAEPLCAEFA: ::std::vec::Vec::new(),
-            used_cycle: 0,
             challenge_peak_id: 0,
+            LHBLFFGCKLF: ::std::vec::Vec::new(),
+            avatar_list: ::std::vec::Vec::new(),
+            used_cycle: 0,
             peak_target: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for CIILCBCKMPD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CIILCBCKMPD.proto\x1a\x11JNLLONBKNEI.proto\"\xca\x01\n\x0bCIILCBCK\
-    MPD\x12-\n\x0bavatar_list\x18\x05\x20\x03(\x0b2\x0c.JNLLONBKNEIR\navatar\
-    List\x12\x20\n\x0bKGAEPLCAEFA\x18\x02\x20\x03(\rR\x0bKGAEPLCAEFA\x12\x1d\
-    \n\nused_cycle\x18\x08\x20\x01(\rR\tusedCycle\x12*\n\x11challenge_peak_i\
-    d\x18\x0c\x20\x01(\rR\x0fchallengePeakId\x12\x1f\n\x0bpeak_target\x18\
-    \x07\x20\x03(\rR\npeakTargetb\x06proto3\
+    MPD\x12*\n\x11challenge_peak_id\x18\x06\x20\x01(\rR\x0fchallengePeakId\
+    \x12\x20\n\x0bLHBLFFGCKLF\x18\x07\x20\x03(\rR\x0bLHBLFFGCKLF\x12-\n\x0ba\
+    vatar_list\x18\t\x20\x03(\x0b2\x0c.JNLLONBKNEIR\navatarList\x12\x1d\n\nu\
+    sed_cycle\x18\x0b\x20\x01(\rR\tusedCycle\x12\x1f\n\x0bpeak_target\x18\
+    \x0c\x20\x03(\rR\npeakTargetb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

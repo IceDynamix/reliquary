@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBGKHHHPMCN {
     // message fields
-    // @@protoc_insertion_point(field:JBGKHHHPMCN.BCEILJEABKI)
-    pub BCEILJEABKI: bool,
-    // @@protoc_insertion_point(field:JBGKHHHPMCN.PGNANLAIIIK)
-    pub PGNANLAIIIK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JBGKHHHPMCN.ONDCBDNGHEE)
-    pub ONDCBDNGHEE: ::std::vec::Vec<super::JFNBFKBLGOH::JFNBFKBLGOH>,
+    // @@protoc_insertion_point(field:JBGKHHHPMCN.BPKJDEKNBEF)
+    pub BPKJDEKNBEF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JBGKHHHPMCN.PBIBEHKAFEM)
+    pub PBIBEHKAFEM: bool,
+    // @@protoc_insertion_point(field:JBGKHHHPMCN.MLPPFKODKFJ)
+    pub MLPPFKODKFJ: ::std::vec::Vec<super::JFNBFKBLGOH::JFNBFKBLGOH>,
     // special fields
     // @@protoc_insertion_point(special_field:JBGKHHHPMCN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl JBGKHHHPMCN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BPKJDEKNBEF",
+            |m: &JBGKHHHPMCN| { &m.BPKJDEKNBEF },
+            |m: &mut JBGKHHHPMCN| { &mut m.BPKJDEKNBEF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCEILJEABKI",
-            |m: &JBGKHHHPMCN| { &m.BCEILJEABKI },
-            |m: &mut JBGKHHHPMCN| { &mut m.BCEILJEABKI },
+            "PBIBEHKAFEM",
+            |m: &JBGKHHHPMCN| { &m.PBIBEHKAFEM },
+            |m: &mut JBGKHHHPMCN| { &mut m.PBIBEHKAFEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PGNANLAIIIK",
-            |m: &JBGKHHHPMCN| { &m.PGNANLAIIIK },
-            |m: &mut JBGKHHHPMCN| { &mut m.PGNANLAIIIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONDCBDNGHEE",
-            |m: &JBGKHHHPMCN| { &m.ONDCBDNGHEE },
-            |m: &mut JBGKHHHPMCN| { &mut m.ONDCBDNGHEE },
+            "MLPPFKODKFJ",
+            |m: &JBGKHHHPMCN| { &m.MLPPFKODKFJ },
+            |m: &mut JBGKHHHPMCN| { &mut m.MLPPFKODKFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JBGKHHHPMCN>(
             "JBGKHHHPMCN",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for JBGKHHHPMCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BPKJDEKNBEF)?;
+                },
+                40 => {
+                    self.BPKJDEKNBEF.push(is.read_uint32()?);
+                },
                 64 => {
-                    self.BCEILJEABKI = is.read_bool()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PGNANLAIIIK)?;
-                },
-                88 => {
-                    self.PGNANLAIIIK.push(is.read_uint32()?);
+                    self.PBIBEHKAFEM = is.read_bool()?;
                 },
                 82 => {
-                    self.ONDCBDNGHEE.push(is.read_message()?);
+                    self.MLPPFKODKFJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for JBGKHHHPMCN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BCEILJEABKI != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.BPKJDEKNBEF);
+        if self.PBIBEHKAFEM != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.PGNANLAIIIK);
-        for value in &self.ONDCBDNGHEE {
+        for value in &self.MLPPFKODKFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,11 +124,11 @@ impl ::protobuf::Message for JBGKHHHPMCN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BCEILJEABKI != false {
-            os.write_bool(8, self.BCEILJEABKI)?;
+        os.write_repeated_packed_uint32(5, &self.BPKJDEKNBEF)?;
+        if self.PBIBEHKAFEM != false {
+            os.write_bool(8, self.PBIBEHKAFEM)?;
         }
-        os.write_repeated_packed_uint32(11, &self.PGNANLAIIIK)?;
-        for v in &self.ONDCBDNGHEE {
+        for v in &self.MLPPFKODKFJ {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JBGKHHHPMCN {
     }
 
     fn clear(&mut self) {
-        self.BCEILJEABKI = false;
-        self.PGNANLAIIIK.clear();
-        self.ONDCBDNGHEE.clear();
+        self.BPKJDEKNBEF.clear();
+        self.PBIBEHKAFEM = false;
+        self.MLPPFKODKFJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JBGKHHHPMCN {
         static instance: JBGKHHHPMCN = JBGKHHHPMCN {
-            BCEILJEABKI: false,
-            PGNANLAIIIK: ::std::vec::Vec::new(),
-            ONDCBDNGHEE: ::std::vec::Vec::new(),
+            BPKJDEKNBEF: ::std::vec::Vec::new(),
+            PBIBEHKAFEM: false,
+            MLPPFKODKFJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JBGKHHHPMCN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBGKHHHPMCN.proto\x1a\x11JFNBFKBLGOH.proto\"\x81\x01\n\x0bJBGKHHHP\
-    MCN\x12\x20\n\x0bBCEILJEABKI\x18\x08\x20\x01(\x08R\x0bBCEILJEABKI\x12\
-    \x20\n\x0bPGNANLAIIIK\x18\x0b\x20\x03(\rR\x0bPGNANLAIIIK\x12.\n\x0bONDCB\
-    DNGHEE\x18\n\x20\x03(\x0b2\x0c.JFNBFKBLGOHR\x0bONDCBDNGHEEb\x06proto3\
+    MCN\x12\x20\n\x0bBPKJDEKNBEF\x18\x05\x20\x03(\rR\x0bBPKJDEKNBEF\x12\x20\
+    \n\x0bPBIBEHKAFEM\x18\x08\x20\x01(\x08R\x0bPBIBEHKAFEM\x12.\n\x0bMLPPFKO\
+    DKFJ\x18\n\x20\x03(\x0b2\x0c.JFNBFKBLGOHR\x0bMLPPFKODKFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

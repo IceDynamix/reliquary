@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMechanismBarScNotify {
     // message fields
+    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.mechanism_bar_info)
+    pub mechanism_bar_info: ::protobuf::MessageField<super::MechanismBarInfo::MechanismBarInfo>,
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.plane_id)
     pub plane_id: u32,
-    // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.GIGKDAPGNME)
-    pub GIGKDAPGNME: ::protobuf::MessageField<super::MechanismBarInfo::MechanismBarInfo>,
     // @@protoc_insertion_point(field:UpdateMechanismBarScNotify.floor_id)
     pub floor_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl UpdateMechanismBarScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MechanismBarInfo::MechanismBarInfo>(
+            "mechanism_bar_info",
+            |m: &UpdateMechanismBarScNotify| { &m.mechanism_bar_info },
+            |m: &mut UpdateMechanismBarScNotify| { &mut m.mechanism_bar_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
             |m: &UpdateMechanismBarScNotify| { &m.plane_id },
             |m: &mut UpdateMechanismBarScNotify| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MechanismBarInfo::MechanismBarInfo>(
-            "GIGKDAPGNME",
-            |m: &UpdateMechanismBarScNotify| { &m.GIGKDAPGNME },
-            |m: &mut UpdateMechanismBarScNotify| { &mut m.GIGKDAPGNME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.mechanism_bar_info)?;
+                },
+                88 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIGKDAPGNME)?;
-                },
-                16 => {
+                104 => {
                     self.floor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
-        }
-        if let Some(v) = self.GIGKDAPGNME.as_ref() {
+        if let Some(v) = self.mechanism_bar_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.plane_id);
+        }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.plane_id != 0 {
-            os.write_uint32(7, self.plane_id)?;
+        if let Some(v) = self.mechanism_bar_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.GIGKDAPGNME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.plane_id != 0 {
+            os.write_uint32(11, self.plane_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(2, self.floor_id)?;
+            os.write_uint32(13, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for UpdateMechanismBarScNotify {
     }
 
     fn clear(&mut self) {
+        self.mechanism_bar_info.clear();
         self.plane_id = 0;
-        self.GIGKDAPGNME.clear();
         self.floor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMechanismBarScNotify {
         static instance: UpdateMechanismBarScNotify = UpdateMechanismBarScNotify {
+            mechanism_bar_info: ::protobuf::MessageField::none(),
             plane_id: 0,
-            GIGKDAPGNME: ::protobuf::MessageField::none(),
             floor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMechanismBarScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdateMechanismBarScNotify.proto\x1a\x16MechanismBarInfo.proto\"\
-    \x87\x01\n\x1aUpdateMechanismBarScNotify\x12\x19\n\x08plane_id\x18\x07\
-    \x20\x01(\rR\x07planeId\x123\n\x0bGIGKDAPGNME\x18\x01\x20\x01(\x0b2\x11.\
-    MechanismBarInfoR\x0bGIGKDAPGNME\x12\x19\n\x08floor_id\x18\x02\x20\x01(\
-    \rR\x07floorIdb\x06proto3\
+    \x93\x01\n\x1aUpdateMechanismBarScNotify\x12?\n\x12mechanism_bar_info\
+    \x18\x03\x20\x01(\x0b2\x11.MechanismBarInfoR\x10mechanismBarInfo\x12\x19\
+    \n\x08plane_id\x18\x0b\x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\
+    \r\x20\x01(\rR\x07floorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

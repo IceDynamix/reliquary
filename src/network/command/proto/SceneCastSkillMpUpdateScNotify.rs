@@ -79,10 +79,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.cast_entity_id = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.mp = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cast_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cast_entity_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.cast_entity_id);
         }
         if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.mp);
+            my_size += ::protobuf::rt::uint32_size(11, self.mp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SceneCastSkillMpUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cast_entity_id != 0 {
-            os.write_uint32(4, self.cast_entity_id)?;
+            os.write_uint32(1, self.cast_entity_id)?;
         }
         if self.mp != 0 {
-            os.write_uint32(14, self.mp)?;
+            os.write_uint32(11, self.mp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneCastSkillMpUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SceneCastSkillMpUpdateScNotify.proto\"V\n\x1eSceneCastSkillMpUpdateSc\
-    Notify\x12$\n\x0ecast_entity_id\x18\x04\x20\x01(\rR\x0ccastEntityId\x12\
-    \x0e\n\x02mp\x18\x0e\x20\x01(\rR\x02mpb\x06proto3\
+    Notify\x12$\n\x0ecast_entity_id\x18\x01\x20\x01(\rR\x0ccastEntityId\x12\
+    \x0e\n\x02mp\x18\x0b\x20\x01(\rR\x02mpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

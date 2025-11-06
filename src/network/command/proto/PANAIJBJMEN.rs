@@ -30,8 +30,8 @@ pub struct PANAIJBJMEN {
     // message fields
     // @@protoc_insertion_point(field:PANAIJBJMEN.is_finish)
     pub is_finish: bool,
-    // @@protoc_insertion_point(field:PANAIJBJMEN.BELEODAIINB)
-    pub BELEODAIINB: u32,
+    // @@protoc_insertion_point(field:PANAIJBJMEN.HJIJHBDCJEP)
+    pub HJIJHBDCJEP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PANAIJBJMEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PANAIJBJMEN {
             |m: &mut PANAIJBJMEN| { &mut m.is_finish },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BELEODAIINB",
-            |m: &PANAIJBJMEN| { &m.BELEODAIINB },
-            |m: &mut PANAIJBJMEN| { &mut m.BELEODAIINB },
+            "HJIJHBDCJEP",
+            |m: &PANAIJBJMEN| { &m.HJIJHBDCJEP },
+            |m: &mut PANAIJBJMEN| { &mut m.HJIJHBDCJEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PANAIJBJMEN>(
             "PANAIJBJMEN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PANAIJBJMEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                104 => {
                     self.is_finish = is.read_bool()?;
                 },
-                56 => {
-                    self.BELEODAIINB = is.read_uint32()?;
+                120 => {
+                    self.HJIJHBDCJEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for PANAIJBJMEN {
         if self.is_finish != false {
             my_size += 1 + 1;
         }
-        if self.BELEODAIINB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BELEODAIINB);
+        if self.HJIJHBDCJEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HJIJHBDCJEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PANAIJBJMEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_finish != false {
-            os.write_bool(14, self.is_finish)?;
+            os.write_bool(13, self.is_finish)?;
         }
-        if self.BELEODAIINB != 0 {
-            os.write_uint32(7, self.BELEODAIINB)?;
+        if self.HJIJHBDCJEP != 0 {
+            os.write_uint32(15, self.HJIJHBDCJEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for PANAIJBJMEN {
 
     fn clear(&mut self) {
         self.is_finish = false;
-        self.BELEODAIINB = 0;
+        self.HJIJHBDCJEP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PANAIJBJMEN {
         static instance: PANAIJBJMEN = PANAIJBJMEN {
             is_finish: false,
-            BELEODAIINB: 0,
+            HJIJHBDCJEP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PANAIJBJMEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PANAIJBJMEN.proto\"L\n\x0bPANAIJBJMEN\x12\x1b\n\tis_finish\x18\x0e\
-    \x20\x01(\x08R\x08isFinish\x12\x20\n\x0bBELEODAIINB\x18\x07\x20\x01(\rR\
-    \x0bBELEODAIINBb\x06proto3\
+    \n\x11PANAIJBJMEN.proto\"L\n\x0bPANAIJBJMEN\x12\x1b\n\tis_finish\x18\r\
+    \x20\x01(\x08R\x08isFinish\x12\x20\n\x0bHJIJHBDCJEP\x18\x0f\x20\x01(\rR\
+    \x0bHJIJHBDCJEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

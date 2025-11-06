@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnInfoQueryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnInfoQueryCsReq.CEHFIILMJKM)
-    pub CEHFIILMJKM: u32,
+    // @@protoc_insertion_point(field:PlayerReturnInfoQueryCsReq.HHFJBKAABLK)
+    pub HHFJBKAABLK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnInfoQueryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlayerReturnInfoQueryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEHFIILMJKM",
-            |m: &PlayerReturnInfoQueryCsReq| { &m.CEHFIILMJKM },
-            |m: &mut PlayerReturnInfoQueryCsReq| { &mut m.CEHFIILMJKM },
+            "HHFJBKAABLK",
+            |m: &PlayerReturnInfoQueryCsReq| { &m.HHFJBKAABLK },
+            |m: &mut PlayerReturnInfoQueryCsReq| { &mut m.HHFJBKAABLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnInfoQueryCsReq>(
             "PlayerReturnInfoQueryCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.CEHFIILMJKM = is.read_uint32()?;
+                112 => {
+                    self.HHFJBKAABLK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CEHFIILMJKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CEHFIILMJKM);
+        if self.HHFJBKAABLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HHFJBKAABLK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CEHFIILMJKM != 0 {
-            os.write_uint32(11, self.CEHFIILMJKM)?;
+        if self.HHFJBKAABLK != 0 {
+            os.write_uint32(14, self.HHFJBKAABLK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlayerReturnInfoQueryCsReq {
     }
 
     fn clear(&mut self) {
-        self.CEHFIILMJKM = 0;
+        self.HHFJBKAABLK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnInfoQueryCsReq {
         static instance: PlayerReturnInfoQueryCsReq = PlayerReturnInfoQueryCsReq {
-            CEHFIILMJKM: 0,
+            HHFJBKAABLK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnInfoQueryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20PlayerReturnInfoQueryCsReq.proto\">\n\x1aPlayerReturnInfoQueryCsRe\
-    q\x12\x20\n\x0bCEHFIILMJKM\x18\x0b\x20\x01(\rR\x0bCEHFIILMJKMb\x06proto3\
+    q\x12\x20\n\x0bHHFJBKAABLK\x18\x0e\x20\x01(\rR\x0bHHFJBKAABLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

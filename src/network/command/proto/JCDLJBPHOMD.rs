@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JCDLJBPHOMD {
     // message fields
-    // @@protoc_insertion_point(field:JCDLJBPHOMD.GHELBOBFPAM)
-    pub GHELBOBFPAM: ::protobuf::MessageField<super::RogueMagicScepter::RogueMagicScepter>,
-    // @@protoc_insertion_point(field:JCDLJBPHOMD.BLCILJENELO)
-    pub BLCILJENELO: bool,
+    // @@protoc_insertion_point(field:JCDLJBPHOMD.NJHCGMIFPHJ)
+    pub NJHCGMIFPHJ: bool,
+    // @@protoc_insertion_point(field:JCDLJBPHOMD.NNICLOCHBJM)
+    pub NNICLOCHBJM: ::protobuf::MessageField<super::RogueMagicScepter::RogueMagicScepter>,
     // special fields
     // @@protoc_insertion_point(special_field:JCDLJBPHOMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl JCDLJBPHOMD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicScepter::RogueMagicScepter>(
-            "GHELBOBFPAM",
-            |m: &JCDLJBPHOMD| { &m.GHELBOBFPAM },
-            |m: &mut JCDLJBPHOMD| { &mut m.GHELBOBFPAM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLCILJENELO",
-            |m: &JCDLJBPHOMD| { &m.BLCILJENELO },
-            |m: &mut JCDLJBPHOMD| { &mut m.BLCILJENELO },
+            "NJHCGMIFPHJ",
+            |m: &JCDLJBPHOMD| { &m.NJHCGMIFPHJ },
+            |m: &mut JCDLJBPHOMD| { &mut m.NJHCGMIFPHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicScepter::RogueMagicScepter>(
+            "NNICLOCHBJM",
+            |m: &JCDLJBPHOMD| { &m.NNICLOCHBJM },
+            |m: &mut JCDLJBPHOMD| { &mut m.NNICLOCHBJM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JCDLJBPHOMD>(
             "JCDLJBPHOMD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JCDLJBPHOMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHELBOBFPAM)?;
+                8 => {
+                    self.NJHCGMIFPHJ = is.read_bool()?;
                 },
-                16 => {
-                    self.BLCILJENELO = is.read_bool()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NNICLOCHBJM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for JCDLJBPHOMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GHELBOBFPAM.as_ref() {
+        if self.NJHCGMIFPHJ != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.NNICLOCHBJM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BLCILJENELO != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for JCDLJBPHOMD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GHELBOBFPAM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.NJHCGMIFPHJ != false {
+            os.write_bool(1, self.NJHCGMIFPHJ)?;
         }
-        if self.BLCILJENELO != false {
-            os.write_bool(2, self.BLCILJENELO)?;
+        if let Some(v) = self.NNICLOCHBJM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for JCDLJBPHOMD {
     }
 
     fn clear(&mut self) {
-        self.GHELBOBFPAM.clear();
-        self.BLCILJENELO = false;
+        self.NJHCGMIFPHJ = false;
+        self.NNICLOCHBJM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JCDLJBPHOMD {
         static instance: JCDLJBPHOMD = JCDLJBPHOMD {
-            GHELBOBFPAM: ::protobuf::MessageField::none(),
-            BLCILJENELO: false,
+            NJHCGMIFPHJ: false,
+            NNICLOCHBJM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for JCDLJBPHOMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCDLJBPHOMD.proto\x1a\x17RogueMagicScepter.proto\"e\n\x0bJCDLJBPHO\
-    MD\x124\n\x0bGHELBOBFPAM\x18\x08\x20\x01(\x0b2\x12.RogueMagicScepterR\
-    \x0bGHELBOBFPAM\x12\x20\n\x0bBLCILJENELO\x18\x02\x20\x01(\x08R\x0bBLCILJ\
-    ENELOb\x06proto3\
+    MD\x12\x20\n\x0bNJHCGMIFPHJ\x18\x01\x20\x01(\x08R\x0bNJHCGMIFPHJ\x124\n\
+    \x0bNNICLOCHBJM\x18\x03\x20\x01(\x0b2\x12.RogueMagicScepterR\x0bNNICLOCH\
+    BJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

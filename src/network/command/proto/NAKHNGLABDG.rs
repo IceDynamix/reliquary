@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NAKHNGLABDG {
     // message fields
-    // @@protoc_insertion_point(field:NAKHNGLABDG.FJHIOFAKLIB)
-    pub FJHIOFAKLIB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NAKHNGLABDG.FLCPPPKNKJH)
-    pub FLCPPPKNKJH: ::std::vec::Vec<super::FCLFNBJLEID::FCLFNBJLEID>,
+    // @@protoc_insertion_point(field:NAKHNGLABDG.BNFNGKKJFBO)
+    pub BNFNGKKJFBO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NAKHNGLABDG.NAOLBKANDDH)
+    pub NAOLBKANDDH: ::std::vec::Vec<super::FCLFNBJLEID::FCLFNBJLEID>,
     // special fields
     // @@protoc_insertion_point(special_field:NAKHNGLABDG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NAKHNGLABDG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJHIOFAKLIB",
-            |m: &NAKHNGLABDG| { &m.FJHIOFAKLIB },
-            |m: &mut NAKHNGLABDG| { &mut m.FJHIOFAKLIB },
+            "BNFNGKKJFBO",
+            |m: &NAKHNGLABDG| { &m.BNFNGKKJFBO },
+            |m: &mut NAKHNGLABDG| { &mut m.BNFNGKKJFBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FLCPPPKNKJH",
-            |m: &NAKHNGLABDG| { &m.FLCPPPKNKJH },
-            |m: &mut NAKHNGLABDG| { &mut m.FLCPPPKNKJH },
+            "NAOLBKANDDH",
+            |m: &NAKHNGLABDG| { &m.NAOLBKANDDH },
+            |m: &mut NAKHNGLABDG| { &mut m.NAOLBKANDDH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NAKHNGLABDG>(
             "NAKHNGLABDG",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for NAKHNGLABDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJHIOFAKLIB)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BNFNGKKJFBO)?;
                 },
-                72 => {
-                    self.FJHIOFAKLIB.push(is.read_uint32()?);
+                24 => {
+                    self.BNFNGKKJFBO.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.FLCPPPKNKJH.push(is.read_message()?);
+                114 => {
+                    self.NAOLBKANDDH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for NAKHNGLABDG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.FJHIOFAKLIB);
-        for value in &self.FLCPPPKNKJH {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BNFNGKKJFBO);
+        for value in &self.NAOLBKANDDH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NAKHNGLABDG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.FJHIOFAKLIB)?;
-        for v in &self.FLCPPPKNKJH {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        os.write_repeated_packed_uint32(3, &self.BNFNGKKJFBO)?;
+        for v in &self.NAOLBKANDDH {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NAKHNGLABDG {
     }
 
     fn clear(&mut self) {
-        self.FJHIOFAKLIB.clear();
-        self.FLCPPPKNKJH.clear();
+        self.BNFNGKKJFBO.clear();
+        self.NAOLBKANDDH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NAKHNGLABDG {
         static instance: NAKHNGLABDG = NAKHNGLABDG {
-            FJHIOFAKLIB: ::std::vec::Vec::new(),
-            FLCPPPKNKJH: ::std::vec::Vec::new(),
+            BNFNGKKJFBO: ::std::vec::Vec::new(),
+            NAOLBKANDDH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NAKHNGLABDG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NAKHNGLABDG.proto\x1a\x11FCLFNBJLEID.proto\"_\n\x0bNAKHNGLABDG\x12\
-    \x20\n\x0bFJHIOFAKLIB\x18\t\x20\x03(\rR\x0bFJHIOFAKLIB\x12.\n\x0bFLCPPPK\
-    NKJH\x18\x0b\x20\x03(\x0b2\x0c.FCLFNBJLEIDR\x0bFLCPPPKNKJHb\x06proto3\
+    \x20\n\x0bBNFNGKKJFBO\x18\x03\x20\x03(\rR\x0bBNFNGKKJFBO\x12.\n\x0bNAOLB\
+    KANDDH\x18\x0e\x20\x03(\x0b2\x0c.FCLFNBJLEIDR\x0bNAOLBKANDDHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

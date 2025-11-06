@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeBenefitActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeBenefitActivityRewardCsReq.switch_list)
-    pub switch_list: ::std::vec::Vec<super::SwitchItem::SwitchItem>,
-    // @@protoc_insertion_point(field:TakeBenefitActivityRewardCsReq.BFBPCBNPFPH)
-    pub BFBPCBNPFPH: bool,
+    // @@protoc_insertion_point(field:TakeBenefitActivityRewardCsReq.param_list)
+    pub param_list: ::std::vec::Vec<super::LFLOGADLEMA::LFLOGADLEMA>,
+    // @@protoc_insertion_point(field:TakeBenefitActivityRewardCsReq.BDMMNCEJHKB)
+    pub BDMMNCEJHKB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:TakeBenefitActivityRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeBenefitActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &TakeBenefitActivityRewardCsReq| { &m.switch_list },
-            |m: &mut TakeBenefitActivityRewardCsReq| { &mut m.switch_list },
+            "param_list",
+            |m: &TakeBenefitActivityRewardCsReq| { &m.param_list },
+            |m: &mut TakeBenefitActivityRewardCsReq| { &mut m.param_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFBPCBNPFPH",
-            |m: &TakeBenefitActivityRewardCsReq| { &m.BFBPCBNPFPH },
-            |m: &mut TakeBenefitActivityRewardCsReq| { &mut m.BFBPCBNPFPH },
+            "BDMMNCEJHKB",
+            |m: &TakeBenefitActivityRewardCsReq| { &m.BDMMNCEJHKB },
+            |m: &mut TakeBenefitActivityRewardCsReq| { &mut m.BDMMNCEJHKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeBenefitActivityRewardCsReq>(
             "TakeBenefitActivityRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.switch_list.push(is.read_message()?);
+                34 => {
+                    self.param_list.push(is.read_message()?);
                 },
-                120 => {
-                    self.BFBPCBNPFPH = is.read_bool()?;
+                88 => {
+                    self.BDMMNCEJHKB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.switch_list {
+        for value in &self.param_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BFBPCBNPFPH != false {
+        if self.BDMMNCEJHKB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.param_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.BFBPCBNPFPH != false {
-            os.write_bool(15, self.BFBPCBNPFPH)?;
+        if self.BDMMNCEJHKB != false {
+            os.write_bool(11, self.BDMMNCEJHKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeBenefitActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.switch_list.clear();
-        self.BFBPCBNPFPH = false;
+        self.param_list.clear();
+        self.BDMMNCEJHKB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeBenefitActivityRewardCsReq {
         static instance: TakeBenefitActivityRewardCsReq = TakeBenefitActivityRewardCsReq {
-            switch_list: ::std::vec::Vec::new(),
-            BFBPCBNPFPH: false,
+            param_list: ::std::vec::Vec::new(),
+            BDMMNCEJHKB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeBenefitActivityRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$TakeBenefitActivityRewardCsReq.proto\x1a\x10SwitchItem.proto\"p\n\x1e\
-    TakeBenefitActivityRewardCsReq\x12,\n\x0bswitch_list\x18\t\x20\x03(\x0b2\
-    \x0b.SwitchItemR\nswitchList\x12\x20\n\x0bBFBPCBNPFPH\x18\x0f\x20\x01(\
-    \x08R\x0bBFBPCBNPFPHb\x06proto3\
+    \n$TakeBenefitActivityRewardCsReq.proto\x1a\x11LFLOGADLEMA.proto\"o\n\
+    \x1eTakeBenefitActivityRewardCsReq\x12+\n\nparam_list\x18\x04\x20\x03(\
+    \x0b2\x0c.LFLOGADLEMAR\tparamList\x12\x20\n\x0bBDMMNCEJHKB\x18\x0b\x20\
+    \x01(\x08R\x0bBDMMNCEJHKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SwitchItem::file_descriptor().clone());
+            deps.push(super::LFLOGADLEMA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeBenefitActivityRewardCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

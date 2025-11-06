@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOHDMMNDKNJ {
     // message fields
-    // @@protoc_insertion_point(field:HOHDMMNDKNJ.NFJLFNBPPPG)
-    pub NFJLFNBPPPG: ::protobuf::MessageField<super::JOFGDAIADBO::JOFGDAIADBO>,
-    // @@protoc_insertion_point(field:HOHDMMNDKNJ.PODGJPEKEEG)
-    pub PODGJPEKEEG: ::protobuf::EnumOrUnknown<super::DFHEJCIJBEJ::DFHEJCIJBEJ>,
+    // @@protoc_insertion_point(field:HOHDMMNDKNJ.IPMDGKHGOPM)
+    pub IPMDGKHGOPM: ::protobuf::EnumOrUnknown<super::PlanetFesBusinessEventState::PlanetFesBusinessEventState>,
+    // @@protoc_insertion_point(field:HOHDMMNDKNJ.IJBMFNOIEHH)
+    pub IJBMFNOIEHH: ::protobuf::MessageField<super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HOHDMMNDKNJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HOHDMMNDKNJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JOFGDAIADBO::JOFGDAIADBO>(
-            "NFJLFNBPPPG",
-            |m: &HOHDMMNDKNJ| { &m.NFJLFNBPPPG },
-            |m: &mut HOHDMMNDKNJ| { &mut m.NFJLFNBPPPG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PODGJPEKEEG",
-            |m: &HOHDMMNDKNJ| { &m.PODGJPEKEEG },
-            |m: &mut HOHDMMNDKNJ| { &mut m.PODGJPEKEEG },
+            "IPMDGKHGOPM",
+            |m: &HOHDMMNDKNJ| { &m.IPMDGKHGOPM },
+            |m: &mut HOHDMMNDKNJ| { &mut m.IPMDGKHGOPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>(
+            "IJBMFNOIEHH",
+            |m: &HOHDMMNDKNJ| { &m.IJBMFNOIEHH },
+            |m: &mut HOHDMMNDKNJ| { &mut m.IJBMFNOIEHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HOHDMMNDKNJ>(
             "HOHDMMNDKNJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJLFNBPPPG)?;
+                40 => {
+                    self.IPMDGKHGOPM = is.read_enum_or_unknown()?;
                 },
-                32 => {
-                    self.PODGJPEKEEG = is.read_enum_or_unknown()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IJBMFNOIEHH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
+        if self.IPMDGKHGOPM != ::protobuf::EnumOrUnknown::new(super::PlanetFesBusinessEventState::PlanetFesBusinessEventState::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.IPMDGKHGOPM.value());
+        }
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PODGJPEKEEG != ::protobuf::EnumOrUnknown::new(super::DFHEJCIJBEJ::DFHEJCIJBEJ::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.PODGJPEKEEG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.IPMDGKHGOPM != ::protobuf::EnumOrUnknown::new(super::PlanetFesBusinessEventState::PlanetFesBusinessEventState::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.IPMDGKHGOPM))?;
         }
-        if self.PODGJPEKEEG != ::protobuf::EnumOrUnknown::new(super::DFHEJCIJBEJ::DFHEJCIJBEJ::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.PODGJPEKEEG))?;
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HOHDMMNDKNJ {
     }
 
     fn clear(&mut self) {
-        self.NFJLFNBPPPG.clear();
-        self.PODGJPEKEEG = ::protobuf::EnumOrUnknown::new(super::DFHEJCIJBEJ::DFHEJCIJBEJ::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE);
+        self.IPMDGKHGOPM = ::protobuf::EnumOrUnknown::new(super::PlanetFesBusinessEventState::PlanetFesBusinessEventState::PLANET_FES_BUSINESS_EVENT_CHANGE_REASON_NONE);
+        self.IJBMFNOIEHH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOHDMMNDKNJ {
         static instance: HOHDMMNDKNJ = HOHDMMNDKNJ {
-            NFJLFNBPPPG: ::protobuf::MessageField::none(),
-            PODGJPEKEEG: ::protobuf::EnumOrUnknown::from_i32(0),
+            IPMDGKHGOPM: ::protobuf::EnumOrUnknown::from_i32(0),
+            IJBMFNOIEHH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for HOHDMMNDKNJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HOHDMMNDKNJ.proto\x1a\x11DFHEJCIJBEJ.proto\x1a\x11JOFGDAIADBO.prot\
-    o\"m\n\x0bHOHDMMNDKNJ\x12.\n\x0bNFJLFNBPPPG\x18\t\x20\x01(\x0b2\x0c.JOFG\
-    DAIADBOR\x0bNFJLFNBPPPG\x12.\n\x0bPODGJPEKEEG\x18\x04\x20\x01(\x0e2\x0c.\
-    DFHEJCIJBEJR\x0bPODGJPEKEEGb\x06proto3\
+    \n\x11HOHDMMNDKNJ.proto\x1a\x20PlanetFesBusinessEventInfo.proto\x1a!Plan\
+    etFesBusinessEventState.proto\"\x8c\x01\n\x0bHOHDMMNDKNJ\x12>\n\x0bIPMDG\
+    KHGOPM\x18\x05\x20\x01(\x0e2\x1c.PlanetFesBusinessEventStateR\x0bIPMDGKH\
+    GOPM\x12=\n\x0bIJBMFNOIEHH\x18\x0e\x20\x01(\x0b2\x1b.PlanetFesBusinessEv\
+    entInfoR\x0bIJBMFNOIEHHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DFHEJCIJBEJ::file_descriptor().clone());
-            deps.push(super::JOFGDAIADBO::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessEventInfo::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessEventState::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HOHDMMNDKNJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

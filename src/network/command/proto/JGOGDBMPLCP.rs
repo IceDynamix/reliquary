@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JGOGDBMPLCP {
     // message fields
+    // @@protoc_insertion_point(field:JGOGDBMPLCP.NHAIAKEMACH)
+    pub NHAIAKEMACH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JGOGDBMPLCP.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:JGOGDBMPLCP.FMCDGPJFEAF)
-    pub FMCDGPJFEAF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JGOGDBMPLCP.FJOKPLKODLD)
-    pub FJOKPLKODLD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JGOGDBMPLCP.HMAAEOJIOEM)
+    pub HMAAEOJIOEM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:JGOGDBMPLCP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl JGOGDBMPLCP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NHAIAKEMACH",
+            |m: &JGOGDBMPLCP| { &m.NHAIAKEMACH },
+            |m: &mut JGOGDBMPLCP| { &mut m.NHAIAKEMACH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &JGOGDBMPLCP| { &m.exp },
             |m: &mut JGOGDBMPLCP| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMCDGPJFEAF",
-            |m: &JGOGDBMPLCP| { &m.FMCDGPJFEAF },
-            |m: &mut JGOGDBMPLCP| { &mut m.FMCDGPJFEAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJOKPLKODLD",
-            |m: &JGOGDBMPLCP| { &m.FJOKPLKODLD },
-            |m: &mut JGOGDBMPLCP| { &mut m.FJOKPLKODLD },
+            "HMAAEOJIOEM",
+            |m: &JGOGDBMPLCP| { &m.HMAAEOJIOEM },
+            |m: &mut JGOGDBMPLCP| { &mut m.HMAAEOJIOEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JGOGDBMPLCP>(
             "JGOGDBMPLCP",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NHAIAKEMACH)?;
+                },
+                8 => {
+                    self.NHAIAKEMACH.push(is.read_uint32()?);
+                },
                 48 => {
                     self.exp = is.read_uint32()?;
                 },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FMCDGPJFEAF)?;
-                },
-                24 => {
-                    self.FMCDGPJFEAF.push(is.read_uint32()?);
-                },
                 98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJOKPLKODLD)?;
+                    is.read_repeated_packed_uint32_into(&mut self.HMAAEOJIOEM)?;
                 },
                 96 => {
-                    self.FJOKPLKODLD.push(is.read_uint32()?);
+                    self.HMAAEOJIOEM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NHAIAKEMACH);
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.exp);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FMCDGPJFEAF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FJOKPLKODLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.HMAAEOJIOEM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.NHAIAKEMACH)?;
         if self.exp != 0 {
             os.write_uint32(6, self.exp)?;
         }
-        os.write_repeated_packed_uint32(3, &self.FMCDGPJFEAF)?;
-        os.write_repeated_packed_uint32(12, &self.FJOKPLKODLD)?;
+        os.write_repeated_packed_uint32(12, &self.HMAAEOJIOEM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,17 +146,17 @@ impl ::protobuf::Message for JGOGDBMPLCP {
     }
 
     fn clear(&mut self) {
+        self.NHAIAKEMACH.clear();
         self.exp = 0;
-        self.FMCDGPJFEAF.clear();
-        self.FJOKPLKODLD.clear();
+        self.HMAAEOJIOEM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGOGDBMPLCP {
         static instance: JGOGDBMPLCP = JGOGDBMPLCP {
+            NHAIAKEMACH: ::std::vec::Vec::new(),
             exp: 0,
-            FMCDGPJFEAF: ::std::vec::Vec::new(),
-            FJOKPLKODLD: ::std::vec::Vec::new(),
+            HMAAEOJIOEM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -181,9 +181,9 @@ impl ::protobuf::reflect::ProtobufValue for JGOGDBMPLCP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JGOGDBMPLCP.proto\"c\n\x0bJGOGDBMPLCP\x12\x10\n\x03exp\x18\x06\x20\
-    \x01(\rR\x03exp\x12\x20\n\x0bFMCDGPJFEAF\x18\x03\x20\x03(\rR\x0bFMCDGPJF\
-    EAF\x12\x20\n\x0bFJOKPLKODLD\x18\x0c\x20\x03(\rR\x0bFJOKPLKODLDb\x06prot\
+    \n\x11JGOGDBMPLCP.proto\"c\n\x0bJGOGDBMPLCP\x12\x20\n\x0bNHAIAKEMACH\x18\
+    \x01\x20\x03(\rR\x0bNHAIAKEMACH\x12\x10\n\x03exp\x18\x06\x20\x01(\rR\x03\
+    exp\x12\x20\n\x0bHMAAEOJIOEM\x18\x0c\x20\x03(\rR\x0bHMAAEOJIOEMb\x06prot\
     o3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DIECDDGEBNB {
     // message fields
-    // @@protoc_insertion_point(field:DIECDDGEBNB.IKMNAMKJAFA)
-    pub IKMNAMKJAFA: u32,
+    // @@protoc_insertion_point(field:DIECDDGEBNB.IADMMCDDIII)
+    pub IADMMCDDIII: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DIECDDGEBNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DIECDDGEBNB {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKMNAMKJAFA",
-            |m: &DIECDDGEBNB| { &m.IKMNAMKJAFA },
-            |m: &mut DIECDDGEBNB| { &mut m.IKMNAMKJAFA },
+            "IADMMCDDIII",
+            |m: &DIECDDGEBNB| { &m.IADMMCDDIII },
+            |m: &mut DIECDDGEBNB| { &mut m.IADMMCDDIII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DIECDDGEBNB>(
             "DIECDDGEBNB",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DIECDDGEBNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.IKMNAMKJAFA = is.read_uint32()?;
+                24 => {
+                    self.IADMMCDDIII = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for DIECDDGEBNB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IKMNAMKJAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IKMNAMKJAFA);
+        if self.IADMMCDDIII != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IADMMCDDIII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for DIECDDGEBNB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IKMNAMKJAFA != 0 {
-            os.write_uint32(15, self.IKMNAMKJAFA)?;
+        if self.IADMMCDDIII != 0 {
+            os.write_uint32(3, self.IADMMCDDIII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for DIECDDGEBNB {
     }
 
     fn clear(&mut self) {
-        self.IKMNAMKJAFA = 0;
+        self.IADMMCDDIII = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DIECDDGEBNB {
         static instance: DIECDDGEBNB = DIECDDGEBNB {
-            IKMNAMKJAFA: 0,
+            IADMMCDDIII: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for DIECDDGEBNB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DIECDDGEBNB.proto\"/\n\x0bDIECDDGEBNB\x12\x20\n\x0bIKMNAMKJAFA\x18\
-    \x0f\x20\x01(\rR\x0bIKMNAMKJAFAb\x06proto3\
+    \n\x11DIECDDGEBNB.proto\"/\n\x0bDIECDDGEBNB\x12\x20\n\x0bIADMMCDDIII\x18\
+    \x03\x20\x01(\rR\x0bIADMMCDDIIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -106,6 +106,13 @@ impl EntitySnapshot {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropInfoSnapshot::PropInfoSnapshot>(
+            "prop",
+            EntitySnapshot::has_prop,
+            EntitySnapshot::prop,
+            EntitySnapshot::mut_prop,
+            EntitySnapshot::set_prop,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
             |m: &EntitySnapshot| { &m.entity_id },
@@ -126,13 +133,6 @@ impl EntitySnapshot {
             |m: &EntitySnapshot| { &m.map_object_type },
             |m: &mut EntitySnapshot| { &mut m.map_object_type },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropInfoSnapshot::PropInfoSnapshot>(
-            "prop",
-            EntitySnapshot::has_prop,
-            EntitySnapshot::prop,
-            EntitySnapshot::mut_prop,
-            EntitySnapshot::set_prop,
-        ));
         oneofs.push(entity_snapshot::Entity::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EntitySnapshot>(
             "EntitySnapshot",
@@ -152,6 +152,9 @@ impl ::protobuf::Message for EntitySnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    self.entity = ::std::option::Option::Some(entity_snapshot::Entity::Prop(is.read_message()?));
+                },
                 8 => {
                     self.entity_id = is.read_uint32()?;
                 },
@@ -163,9 +166,6 @@ impl ::protobuf::Message for EntitySnapshot {
                 },
                 32 => {
                     self.map_object_type = is.read_enum_or_unknown()?;
-                },
-                42 => {
-                    self.entity = ::std::option::Option::Some(entity_snapshot::Entity::Prop(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -242,11 +242,11 @@ impl ::protobuf::Message for EntitySnapshot {
     }
 
     fn clear(&mut self) {
+        self.entity = ::std::option::Option::None;
         self.entity_id = 0;
         self.instance_id = 0;
         self.motion_info.clear();
         self.map_object_type = ::protobuf::EnumOrUnknown::new(super::GOIHBGIABGE::GOIHBGIABGE::Prop);
-        self.entity = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -311,12 +311,12 @@ pub mod entity_snapshot {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14EntitySnapshot.proto\x1a\x11GOIHBGIABGE.proto\x1a\x18MotionInfoSna\
     pshot.proto\x1a\x16PropInfoSnapshot.proto\"\xed\x01\n\x0eEntitySnapshot\
+    \x12'\n\x04prop\x18\x05\x20\x01(\x0b2\x11.PropInfoSnapshotH\0R\x04prop\
     \x12\x1b\n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1f\n\x0binsta\
     nce_id\x18\x02\x20\x01(\rR\ninstanceId\x124\n\x0bmotion_info\x18\x03\x20\
     \x01(\x0b2\x13.MotionInfoSnapshotR\nmotionInfo\x124\n\x0fmap_object_type\
-    \x18\x04\x20\x01(\x0e2\x0c.GOIHBGIABGER\rmapObjectType\x12'\n\x04prop\
-    \x18\x05\x20\x01(\x0b2\x11.PropInfoSnapshotH\0R\x04propB\x08\n\x06entity\
-    b\x06proto3\
+    \x18\x04\x20\x01(\x0e2\x0c.GOIHBGIABGER\rmapObjectTypeB\x08\n\x06entityb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

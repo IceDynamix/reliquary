@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueGameInfo {
     // message oneof groups
-    pub JPBHEOJAKGE: ::std::option::Option<rogue_game_info::JPBHEOJAKGE>,
+    pub HLOEKMDPGIF: ::std::option::Option<rogue_game_info::HLOEKMDPGIF>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueGameInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,333 +45,39 @@ impl RogueGameInfo {
         ::std::default::Default::default()
     }
 
-    // .ChessRogueBuffInfo rogue_buff_info = 4;
-
-    pub fn rogue_buff_info(&self) -> &super::ChessRogueBuffInfo::ChessRogueBuffInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(ref v)) => v,
-            _ => <super::ChessRogueBuffInfo::ChessRogueBuffInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_rogue_buff_info(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_rogue_buff_info(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_rogue_buff_info(&mut self, v: super::ChessRogueBuffInfo::ChessRogueBuffInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_rogue_buff_info(&mut self) -> &mut super::ChessRogueBuffInfo::ChessRogueBuffInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(super::ChessRogueBuffInfo::ChessRogueBuffInfo::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_rogue_buff_info(&mut self) -> super::ChessRogueBuffInfo::ChessRogueBuffInfo {
-        if self.has_rogue_buff_info() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChessRogueBuffInfo::ChessRogueBuffInfo::new()
-        }
-    }
-
-    // .ChessRogueMiracleInfo game_miracle_info = 11;
-
-    pub fn game_miracle_info(&self) -> &super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(ref v)) => v,
-            _ => <super::ChessRogueMiracleInfo::ChessRogueMiracleInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_game_miracle_info(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_game_miracle_info(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_game_miracle_info(&mut self, v: super::ChessRogueMiracleInfo::ChessRogueMiracleInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_game_miracle_info(&mut self) -> &mut super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(super::ChessRogueMiracleInfo::ChessRogueMiracleInfo::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_game_miracle_info(&mut self) -> super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
-        if self.has_game_miracle_info() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChessRogueMiracleInfo::ChessRogueMiracleInfo::new()
-        }
-    }
-
-    // .RogueGameItemValue FFFCCEJIFDK = 10;
-
-    pub fn FFFCCEJIFDK(&self) -> &super::RogueGameItemValue::RogueGameItemValue {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref v)) => v,
-            _ => <super::RogueGameItemValue::RogueGameItemValue as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_FFFCCEJIFDK(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_FFFCCEJIFDK(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FFFCCEJIFDK(&mut self, v: super::RogueGameItemValue::RogueGameItemValue) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_FFFCCEJIFDK(&mut self) -> &mut super::RogueGameItemValue::RogueGameItemValue {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(super::RogueGameItemValue::RogueGameItemValue::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_FFFCCEJIFDK(&mut self) -> super::RogueGameItemValue::RogueGameItemValue {
-        if self.has_FFFCCEJIFDK() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::RogueGameItemValue::RogueGameItemValue::new()
-        }
-    }
-
-    // .ChessRogueGameAeonInfo rogue_aeon_info = 14;
-
-    pub fn rogue_aeon_info(&self) -> &super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref v)) => v,
-            _ => <super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_rogue_aeon_info(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_rogue_aeon_info(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_rogue_aeon_info(&mut self, v: super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_rogue_aeon_info(&mut self) -> &mut super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_rogue_aeon_info(&mut self) -> super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo {
-        if self.has_rogue_aeon_info() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo::new()
-        }
-    }
-
-    // .RogueDifficultyLevelInfo rogue_difficulty_info = 5;
-
-    pub fn rogue_difficulty_info(&self) -> &super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref v)) => v,
-            _ => <super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_rogue_difficulty_info(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_rogue_difficulty_info(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_rogue_difficulty_info(&mut self, v: super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_rogue_difficulty_info(&mut self) -> &mut super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_rogue_difficulty_info(&mut self) -> super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
-        if self.has_rogue_difficulty_info() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()
-        }
-    }
-
-    // .RogueTournFormulaInfo CKAANMDDKCJ = 1;
-
-    pub fn CKAANMDDKCJ(&self) -> &super::RogueTournFormulaInfo::RogueTournFormulaInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref v)) => v,
-            _ => <super::RogueTournFormulaInfo::RogueTournFormulaInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_CKAANMDDKCJ(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-    }
-
-    pub fn has_CKAANMDDKCJ(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CKAANMDDKCJ(&mut self, v: super::RogueTournFormulaInfo::RogueTournFormulaInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_CKAANMDDKCJ(&mut self) -> &mut super::RogueTournFormulaInfo::RogueTournFormulaInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(_)) = self.JPBHEOJAKGE {
-        } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(super::RogueTournFormulaInfo::RogueTournFormulaInfo::new()));
-        }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_CKAANMDDKCJ(&mut self) -> super::RogueTournFormulaInfo::RogueTournFormulaInfo {
-        if self.has_CKAANMDDKCJ() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::RogueTournFormulaInfo::RogueTournFormulaInfo::new()
-        }
-    }
-
-    // .KeywordUnlockValue NBDACDNBJIK = 3;
+    // .KeywordUnlockValue NBDACDNBJIK = 2;
 
     pub fn NBDACDNBJIK(&self) -> &super::KeywordUnlockValue::KeywordUnlockValue {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(ref v)) => v,
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(ref v)) => v,
             _ => <super::KeywordUnlockValue::KeywordUnlockValue as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_NBDACDNBJIK(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
     }
 
     pub fn has_NBDACDNBJIK(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(..)) => true,
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_NBDACDNBJIK(&mut self, v: super::KeywordUnlockValue::KeywordUnlockValue) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(v))
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_NBDACDNBJIK(&mut self) -> &mut super::KeywordUnlockValue::KeywordUnlockValue {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(_)) = self.JPBHEOJAKGE {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(_)) = self.HLOEKMDPGIF {
         } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(super::KeywordUnlockValue::KeywordUnlockValue::new()));
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(super::KeywordUnlockValue::KeywordUnlockValue::new()));
         }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(ref mut v)) => v,
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -379,8 +85,8 @@ impl RogueGameInfo {
     // Take field
     pub fn take_NBDACDNBJIK(&mut self) -> super::KeywordUnlockValue::KeywordUnlockValue {
         if self.has_NBDACDNBJIK() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(v)) => v,
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -388,58 +94,359 @@ impl RogueGameInfo {
         }
     }
 
-    // .RogueTournLineupInfo rogue_lineup_info = 12;
+    // .ChessRogueBuffInfo rogue_buff_info = 10;
 
-    pub fn rogue_lineup_info(&self) -> &super::RogueTournLineupInfo::RogueTournLineupInfo {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(ref v)) => v,
-            _ => <super::RogueTournLineupInfo::RogueTournLineupInfo as ::protobuf::Message>::default_instance(),
+    pub fn rogue_buff_info(&self) -> &super::ChessRogueBuffInfo::ChessRogueBuffInfo {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(ref v)) => v,
+            _ => <super::ChessRogueBuffInfo::ChessRogueBuffInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_rogue_lineup_info(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
+    pub fn clear_rogue_buff_info(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
     }
 
-    pub fn has_rogue_lineup_info(&self) -> bool {
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(..)) => true,
+    pub fn has_rogue_buff_info(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_lineup_info(&mut self, v: super::RogueTournLineupInfo::RogueTournLineupInfo) {
-        self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(v))
+    pub fn set_rogue_buff_info(&mut self, v: super::ChessRogueBuffInfo::ChessRogueBuffInfo) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_lineup_info(&mut self) -> &mut super::RogueTournLineupInfo::RogueTournLineupInfo {
-        if let ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(_)) = self.JPBHEOJAKGE {
+    pub fn mut_rogue_buff_info(&mut self) -> &mut super::ChessRogueBuffInfo::ChessRogueBuffInfo {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(_)) = self.HLOEKMDPGIF {
         } else {
-            self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(super::RogueTournLineupInfo::RogueTournLineupInfo::new()));
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(super::ChessRogueBuffInfo::ChessRogueBuffInfo::new()));
         }
-        match self.JPBHEOJAKGE {
-            ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(ref mut v)) => v,
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_lineup_info(&mut self) -> super::RogueTournLineupInfo::RogueTournLineupInfo {
-        if self.has_rogue_lineup_info() {
-            match self.JPBHEOJAKGE.take() {
-                ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(v)) => v,
+    pub fn take_rogue_buff_info(&mut self) -> super::ChessRogueBuffInfo::ChessRogueBuffInfo {
+        if self.has_rogue_buff_info() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::RogueTournLineupInfo::RogueTournLineupInfo::new()
+            super::ChessRogueBuffInfo::ChessRogueBuffInfo::new()
+        }
+    }
+
+    // .ChessRogueMiracleInfo game_miracle_info = 8;
+
+    pub fn game_miracle_info(&self) -> &super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(ref v)) => v,
+            _ => <super::ChessRogueMiracleInfo::ChessRogueMiracleInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_game_miracle_info(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_game_miracle_info(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_game_miracle_info(&mut self, v: super::ChessRogueMiracleInfo::ChessRogueMiracleInfo) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_game_miracle_info(&mut self) -> &mut super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(super::ChessRogueMiracleInfo::ChessRogueMiracleInfo::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_game_miracle_info(&mut self) -> super::ChessRogueMiracleInfo::ChessRogueMiracleInfo {
+        if self.has_game_miracle_info() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChessRogueMiracleInfo::ChessRogueMiracleInfo::new()
+        }
+    }
+
+    // .LADHIKPAJCJ rogue_aeon_info = 12;
+
+    pub fn rogue_aeon_info(&self) -> &super::LADHIKPAJCJ::LADHIKPAJCJ {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(ref v)) => v,
+            _ => <super::LADHIKPAJCJ::LADHIKPAJCJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_rogue_aeon_info(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_rogue_aeon_info(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_rogue_aeon_info(&mut self, v: super::LADHIKPAJCJ::LADHIKPAJCJ) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_rogue_aeon_info(&mut self) -> &mut super::LADHIKPAJCJ::LADHIKPAJCJ {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(super::LADHIKPAJCJ::LADHIKPAJCJ::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_rogue_aeon_info(&mut self) -> super::LADHIKPAJCJ::LADHIKPAJCJ {
+        if self.has_rogue_aeon_info() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LADHIKPAJCJ::LADHIKPAJCJ::new()
+        }
+    }
+
+    // .RogueGameItemValue FFFCCEJIFDK = 4;
+
+    pub fn FFFCCEJIFDK(&self) -> &super::RogueGameItemValue::RogueGameItemValue {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(ref v)) => v,
+            _ => <super::RogueGameItemValue::RogueGameItemValue as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_FFFCCEJIFDK(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_FFFCCEJIFDK(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FFFCCEJIFDK(&mut self, v: super::RogueGameItemValue::RogueGameItemValue) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_FFFCCEJIFDK(&mut self) -> &mut super::RogueGameItemValue::RogueGameItemValue {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(super::RogueGameItemValue::RogueGameItemValue::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_FFFCCEJIFDK(&mut self) -> super::RogueGameItemValue::RogueGameItemValue {
+        if self.has_FFFCCEJIFDK() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueGameItemValue::RogueGameItemValue::new()
+        }
+    }
+
+    // .RogueDifficultyLevelInfo rogue_difficulty_info_2 = 7;
+
+    pub fn rogue_difficulty_info_2(&self) -> &super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(ref v)) => v,
+            _ => <super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_rogue_difficulty_info_2(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_rogue_difficulty_info_2(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_rogue_difficulty_info_2(&mut self, v: super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_rogue_difficulty_info_2(&mut self) -> &mut super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_rogue_difficulty_info_2(&mut self) -> super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        if self.has_rogue_difficulty_info_2() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()
+        }
+    }
+
+    // .RogueTournFormulaInfo CKAANMDDKCJ = 13;
+
+    pub fn CKAANMDDKCJ(&self) -> &super::RogueTournFormulaInfo::RogueTournFormulaInfo {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(ref v)) => v,
+            _ => <super::RogueTournFormulaInfo::RogueTournFormulaInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CKAANMDDKCJ(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_CKAANMDDKCJ(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CKAANMDDKCJ(&mut self, v: super::RogueTournFormulaInfo::RogueTournFormulaInfo) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CKAANMDDKCJ(&mut self) -> &mut super::RogueTournFormulaInfo::RogueTournFormulaInfo {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(super::RogueTournFormulaInfo::RogueTournFormulaInfo::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CKAANMDDKCJ(&mut self) -> super::RogueTournFormulaInfo::RogueTournFormulaInfo {
+        if self.has_CKAANMDDKCJ() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueTournFormulaInfo::RogueTournFormulaInfo::new()
+        }
+    }
+
+    // .RogueDifficultyLevelInfo rogue_difficulty_info = 3;
+
+    pub fn rogue_difficulty_info(&self) -> &super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(ref v)) => v,
+            _ => <super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_rogue_difficulty_info(&mut self) {
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+    }
+
+    pub fn has_rogue_difficulty_info(&self) -> bool {
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_rogue_difficulty_info(&mut self, v: super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo) {
+        self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_rogue_difficulty_info(&mut self) -> &mut super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        if let ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(_)) = self.HLOEKMDPGIF {
+        } else {
+            self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()));
+        }
+        match self.HLOEKMDPGIF {
+            ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_rogue_difficulty_info(&mut self) -> super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo {
+        if self.has_rogue_difficulty_info() {
+            match self.HLOEKMDPGIF.take() {
+                ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KeywordUnlockValue::KeywordUnlockValue>(
+            "NBDACDNBJIK",
+            RogueGameInfo::has_NBDACDNBJIK,
+            RogueGameInfo::NBDACDNBJIK,
+            RogueGameInfo::mut_NBDACDNBJIK,
+            RogueGameInfo::set_NBDACDNBJIK,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChessRogueBuffInfo::ChessRogueBuffInfo>(
             "rogue_buff_info",
             RogueGameInfo::has_rogue_buff_info,
@@ -454,6 +461,13 @@ impl RogueGameInfo {
             RogueGameInfo::mut_game_miracle_info,
             RogueGameInfo::set_game_miracle_info,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LADHIKPAJCJ::LADHIKPAJCJ>(
+            "rogue_aeon_info",
+            RogueGameInfo::has_rogue_aeon_info,
+            RogueGameInfo::rogue_aeon_info,
+            RogueGameInfo::mut_rogue_aeon_info,
+            RogueGameInfo::set_rogue_aeon_info,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueGameItemValue::RogueGameItemValue>(
             "FFFCCEJIFDK",
             RogueGameInfo::has_FFFCCEJIFDK,
@@ -461,19 +475,12 @@ impl RogueGameInfo {
             RogueGameInfo::mut_FFFCCEJIFDK,
             RogueGameInfo::set_FFFCCEJIFDK,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo>(
-            "rogue_aeon_info",
-            RogueGameInfo::has_rogue_aeon_info,
-            RogueGameInfo::rogue_aeon_info,
-            RogueGameInfo::mut_rogue_aeon_info,
-            RogueGameInfo::set_rogue_aeon_info,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo>(
-            "rogue_difficulty_info",
-            RogueGameInfo::has_rogue_difficulty_info,
-            RogueGameInfo::rogue_difficulty_info,
-            RogueGameInfo::mut_rogue_difficulty_info,
-            RogueGameInfo::set_rogue_difficulty_info,
+            "rogue_difficulty_info_2",
+            RogueGameInfo::has_rogue_difficulty_info_2,
+            RogueGameInfo::rogue_difficulty_info_2,
+            RogueGameInfo::mut_rogue_difficulty_info_2,
+            RogueGameInfo::set_rogue_difficulty_info_2,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournFormulaInfo::RogueTournFormulaInfo>(
             "CKAANMDDKCJ",
@@ -482,21 +489,14 @@ impl RogueGameInfo {
             RogueGameInfo::mut_CKAANMDDKCJ,
             RogueGameInfo::set_CKAANMDDKCJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KeywordUnlockValue::KeywordUnlockValue>(
-            "NBDACDNBJIK",
-            RogueGameInfo::has_NBDACDNBJIK,
-            RogueGameInfo::NBDACDNBJIK,
-            RogueGameInfo::mut_NBDACDNBJIK,
-            RogueGameInfo::set_NBDACDNBJIK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo>(
+            "rogue_difficulty_info",
+            RogueGameInfo::has_rogue_difficulty_info,
+            RogueGameInfo::rogue_difficulty_info,
+            RogueGameInfo::mut_rogue_difficulty_info,
+            RogueGameInfo::set_rogue_difficulty_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::RogueTournLineupInfo::RogueTournLineupInfo>(
-            "rogue_lineup_info",
-            RogueGameInfo::has_rogue_lineup_info,
-            RogueGameInfo::rogue_lineup_info,
-            RogueGameInfo::mut_rogue_lineup_info,
-            RogueGameInfo::set_rogue_lineup_info,
-        ));
-        oneofs.push(rogue_game_info::JPBHEOJAKGE::generated_oneof_descriptor_data());
+        oneofs.push(rogue_game_info::HLOEKMDPGIF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueGameInfo>(
             "RogueGameInfo",
             fields,
@@ -515,29 +515,29 @@ impl ::protobuf::Message for RogueGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(is.read_message()?));
-                },
-                90 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(is.read_message()?));
+                18 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(is.read_message()?));
                 },
                 82 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(is.read_message()?));
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(is.read_message()?));
                 },
-                114 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(is.read_message()?));
-                },
-                42 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(is.read_message()?));
-                },
-                10 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(is.read_message()?));
-                },
-                26 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(is.read_message()?));
+                66 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(is.read_message()?));
                 },
                 98 => {
-                    self.JPBHEOJAKGE = ::std::option::Option::Some(rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(is.read_message()?));
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(is.read_message()?));
+                },
+                34 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(is.read_message()?));
+                },
+                58 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(is.read_message()?));
+                },
+                106 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(is.read_message()?));
+                },
+                26 => {
+                    self.HLOEKMDPGIF = ::std::option::Option::Some(rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -551,37 +551,37 @@ impl ::protobuf::Message for RogueGameInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.JPBHEOJAKGE {
+        if let ::std::option::Option::Some(ref v) = self.HLOEKMDPGIF {
             match v {
-                &rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -593,31 +593,31 @@ impl ::protobuf::Message for RogueGameInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.JPBHEOJAKGE {
+        if let ::std::option::Option::Some(ref v) = self.HLOEKMDPGIF {
             match v {
-                &rogue_game_info::JPBHEOJAKGE::RogueBuffInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &rogue_game_info::HLOEKMDPGIF::NBDACDNBJIK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
-                &rogue_game_info::JPBHEOJAKGE::GameMiracleInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::FFFCCEJIFDK(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueBuffInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &rogue_game_info::JPBHEOJAKGE::RogueAeonInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &rogue_game_info::HLOEKMDPGIF::GameMiracleInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &rogue_game_info::JPBHEOJAKGE::RogueDifficultyInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::CKAANMDDKCJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::NBDACDNBJIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &rogue_game_info::JPBHEOJAKGE::RogueLineupInfo(ref v) => {
+                &rogue_game_info::HLOEKMDPGIF::RogueAeonInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &rogue_game_info::HLOEKMDPGIF::FFFCCEJIFDK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+                &rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo2(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
+                &rogue_game_info::HLOEKMDPGIF::CKAANMDDKCJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
+                &rogue_game_info::HLOEKMDPGIF::RogueDifficultyInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -638,20 +638,20 @@ impl ::protobuf::Message for RogueGameInfo {
     }
 
     fn clear(&mut self) {
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
-        self.JPBHEOJAKGE = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
+        self.HLOEKMDPGIF = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueGameInfo {
         static instance: RogueGameInfo = RogueGameInfo {
-            JPBHEOJAKGE: ::std::option::Option::None,
+            HLOEKMDPGIF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -680,60 +680,59 @@ pub mod rogue_game_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueGameInfo.JPBHEOJAKGE)
-    pub enum JPBHEOJAKGE {
+    // @@protoc_insertion_point(oneof:RogueGameInfo.HLOEKMDPGIF)
+    pub enum HLOEKMDPGIF {
+        // @@protoc_insertion_point(oneof_field:RogueGameInfo.NBDACDNBJIK)
+        NBDACDNBJIK(super::super::KeywordUnlockValue::KeywordUnlockValue),
         // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_buff_info)
         RogueBuffInfo(super::super::ChessRogueBuffInfo::ChessRogueBuffInfo),
         // @@protoc_insertion_point(oneof_field:RogueGameInfo.game_miracle_info)
         GameMiracleInfo(super::super::ChessRogueMiracleInfo::ChessRogueMiracleInfo),
+        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_aeon_info)
+        RogueAeonInfo(super::super::LADHIKPAJCJ::LADHIKPAJCJ),
         // @@protoc_insertion_point(oneof_field:RogueGameInfo.FFFCCEJIFDK)
         FFFCCEJIFDK(super::super::RogueGameItemValue::RogueGameItemValue),
-        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_aeon_info)
-        RogueAeonInfo(super::super::ChessRogueGameAeonInfo::ChessRogueGameAeonInfo),
-        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_difficulty_info)
-        RogueDifficultyInfo(super::super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo),
+        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_difficulty_info_2)
+        RogueDifficultyInfo2(super::super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo),
         // @@protoc_insertion_point(oneof_field:RogueGameInfo.CKAANMDDKCJ)
         CKAANMDDKCJ(super::super::RogueTournFormulaInfo::RogueTournFormulaInfo),
-        // @@protoc_insertion_point(oneof_field:RogueGameInfo.NBDACDNBJIK)
-        NBDACDNBJIK(super::super::KeywordUnlockValue::KeywordUnlockValue),
-        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_lineup_info)
-        RogueLineupInfo(super::super::RogueTournLineupInfo::RogueTournLineupInfo),
+        // @@protoc_insertion_point(oneof_field:RogueGameInfo.rogue_difficulty_info)
+        RogueDifficultyInfo(super::super::RogueDifficultyLevelInfo::RogueDifficultyLevelInfo),
     }
 
-    impl ::protobuf::Oneof for JPBHEOJAKGE {
+    impl ::protobuf::Oneof for HLOEKMDPGIF {
     }
 
-    impl ::protobuf::OneofFull for JPBHEOJAKGE {
+    impl ::protobuf::OneofFull for HLOEKMDPGIF {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueGameInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("JPBHEOJAKGE").unwrap()).clone()
+            descriptor.get(|| <super::RogueGameInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("HLOEKMDPGIF").unwrap()).clone()
         }
     }
 
-    impl JPBHEOJAKGE {
+    impl HLOEKMDPGIF {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<JPBHEOJAKGE>("JPBHEOJAKGE")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HLOEKMDPGIF>("HLOEKMDPGIF")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RogueGameInfo.proto\x1a\x18ChessRogueBuffInfo.proto\x1a\x1cChessRo\
-    gueGameAeonInfo.proto\x1a\x1bChessRogueMiracleInfo.proto\x1a\x18KeywordU\
-    nlockValue.proto\x1a\x1eRogueDifficultyLevelInfo.proto\x1a\x18RogueGameI\
-    temValue.proto\x1a\x1bRogueTournFormulaInfo.proto\x1a\x1aRogueTournLineu\
-    pInfo.proto\"\xaa\x04\n\rRogueGameInfo\x12=\n\x0frogue_buff_info\x18\x04\
-    \x20\x01(\x0b2\x13.ChessRogueBuffInfoH\0R\rrogueBuffInfo\x12D\n\x11game_\
-    miracle_info\x18\x0b\x20\x01(\x0b2\x16.ChessRogueMiracleInfoH\0R\x0fgame\
-    MiracleInfo\x127\n\x0bFFFCCEJIFDK\x18\n\x20\x01(\x0b2\x13.RogueGameItemV\
-    alueH\0R\x0bFFFCCEJIFDK\x12A\n\x0frogue_aeon_info\x18\x0e\x20\x01(\x0b2\
-    \x17.ChessRogueGameAeonInfoH\0R\rrogueAeonInfo\x12O\n\x15rogue_difficult\
-    y_info\x18\x05\x20\x01(\x0b2\x19.RogueDifficultyLevelInfoH\0R\x13rogueDi\
-    fficultyInfo\x12:\n\x0bCKAANMDDKCJ\x18\x01\x20\x01(\x0b2\x16.RogueTournF\
-    ormulaInfoH\0R\x0bCKAANMDDKCJ\x127\n\x0bNBDACDNBJIK\x18\x03\x20\x01(\x0b\
-    2\x13.KeywordUnlockValueH\0R\x0bNBDACDNBJIK\x12C\n\x11rogue_lineup_info\
-    \x18\x0c\x20\x01(\x0b2\x15.RogueTournLineupInfoH\0R\x0frogueLineupInfoB\
-    \r\n\x0bJPBHEOJAKGEb\x06proto3\
+    \n\x13RogueGameInfo.proto\x1a\x18ChessRogueBuffInfo.proto\x1a\x1bChessRo\
+    gueMiracleInfo.proto\x1a\x18KeywordUnlockValue.proto\x1a\x11LADHIKPAJCJ.\
+    proto\x1a\x1eRogueDifficultyLevelInfo.proto\x1a\x18RogueGameItemValue.pr\
+    oto\x1a\x1bRogueTournFormulaInfo.proto\"\xae\x04\n\rRogueGameInfo\x127\n\
+    \x0bNBDACDNBJIK\x18\x02\x20\x01(\x0b2\x13.KeywordUnlockValueH\0R\x0bNBDA\
+    CDNBJIK\x12=\n\x0frogue_buff_info\x18\n\x20\x01(\x0b2\x13.ChessRogueBuff\
+    InfoH\0R\rrogueBuffInfo\x12D\n\x11game_miracle_info\x18\x08\x20\x01(\x0b\
+    2\x16.ChessRogueMiracleInfoH\0R\x0fgameMiracleInfo\x126\n\x0frogue_aeon_\
+    info\x18\x0c\x20\x01(\x0b2\x0c.LADHIKPAJCJH\0R\rrogueAeonInfo\x127\n\x0b\
+    FFFCCEJIFDK\x18\x04\x20\x01(\x0b2\x13.RogueGameItemValueH\0R\x0bFFFCCEJI\
+    FDK\x12R\n\x17rogue_difficulty_info_2\x18\x07\x20\x01(\x0b2\x19.RogueDif\
+    ficultyLevelInfoH\0R\x14rogueDifficultyInfo2\x12:\n\x0bCKAANMDDKCJ\x18\r\
+    \x20\x01(\x0b2\x16.RogueTournFormulaInfoH\0R\x0bCKAANMDDKCJ\x12O\n\x15ro\
+    gue_difficulty_info\x18\x03\x20\x01(\x0b2\x19.RogueDifficultyLevelInfoH\
+    \0R\x13rogueDifficultyInfoB\r\n\x0bHLOEKMDPGIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -750,15 +749,14 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(8);
+            let mut deps = ::std::vec::Vec::with_capacity(7);
             deps.push(super::ChessRogueBuffInfo::file_descriptor().clone());
-            deps.push(super::ChessRogueGameAeonInfo::file_descriptor().clone());
             deps.push(super::ChessRogueMiracleInfo::file_descriptor().clone());
             deps.push(super::KeywordUnlockValue::file_descriptor().clone());
+            deps.push(super::LADHIKPAJCJ::file_descriptor().clone());
             deps.push(super::RogueDifficultyLevelInfo::file_descriptor().clone());
             deps.push(super::RogueGameItemValue::file_descriptor().clone());
             deps.push(super::RogueTournFormulaInfo::file_descriptor().clone());
-            deps.push(super::RogueTournLineupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueGameInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

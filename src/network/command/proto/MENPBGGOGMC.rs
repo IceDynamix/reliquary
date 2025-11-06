@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MENPBGGOGMC {
     // message fields
-    // @@protoc_insertion_point(field:MENPBGGOGMC.GKHFBFKNHOB)
-    pub GKHFBFKNHOB: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:MENPBGGOGMC.ps_list)
+    pub ps_list: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:MENPBGGOGMC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MENPBGGOGMC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GKHFBFKNHOB",
-            |m: &MENPBGGOGMC| { &m.GKHFBFKNHOB },
-            |m: &mut MENPBGGOGMC| { &mut m.GKHFBFKNHOB },
+            "ps_list",
+            |m: &MENPBGGOGMC| { &m.ps_list },
+            |m: &mut MENPBGGOGMC| { &mut m.ps_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MENPBGGOGMC>(
             "MENPBGGOGMC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MENPBGGOGMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.GKHFBFKNHOB.push(is.read_string()?);
+                106 => {
+                    self.ps_list.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for MENPBGGOGMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GKHFBFKNHOB {
-            my_size += ::protobuf::rt::string_size(14, &value);
+        for value in &self.ps_list {
+            my_size += ::protobuf::rt::string_size(13, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MENPBGGOGMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GKHFBFKNHOB {
-            os.write_string(14, &v)?;
+        for v in &self.ps_list {
+            os.write_string(13, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MENPBGGOGMC {
     }
 
     fn clear(&mut self) {
-        self.GKHFBFKNHOB.clear();
+        self.ps_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MENPBGGOGMC {
         static instance: MENPBGGOGMC = MENPBGGOGMC {
-            GKHFBFKNHOB: ::std::vec::Vec::new(),
+            ps_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for MENPBGGOGMC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MENPBGGOGMC.proto\"/\n\x0bMENPBGGOGMC\x12\x20\n\x0bGKHFBFKNHOB\x18\
-    \x0e\x20\x03(\tR\x0bGKHFBFKNHOBb\x06proto3\
+    \n\x11MENPBGGOGMC.proto\"&\n\x0bMENPBGGOGMC\x12\x17\n\x07ps_list\x18\r\
+    \x20\x03(\tR\x06psListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

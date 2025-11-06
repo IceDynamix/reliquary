@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumRandomEventQueryScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MuseumRandomEventQueryScRsp.info)
+    pub info: ::protobuf::MessageField<super::JNBCPNCNOHO::JNBCPNCNOHO>,
     // @@protoc_insertion_point(field:MuseumRandomEventQueryScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MuseumRandomEventQueryScRsp.HNDLHICDNPC)
-    pub HNDLHICDNPC: ::protobuf::MessageField<super::JNBCPNCNOHO::JNBCPNCNOHO>,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumRandomEventQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MuseumRandomEventQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNBCPNCNOHO::JNBCPNCNOHO>(
+            "info",
+            |m: &MuseumRandomEventQueryScRsp| { &m.info },
+            |m: &mut MuseumRandomEventQueryScRsp| { &mut m.info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MuseumRandomEventQueryScRsp| { &m.retcode },
             |m: &mut MuseumRandomEventQueryScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNBCPNCNOHO::JNBCPNCNOHO>(
-            "HNDLHICDNPC",
-            |m: &MuseumRandomEventQueryScRsp| { &m.HNDLHICDNPC },
-            |m: &mut MuseumRandomEventQueryScRsp| { &mut m.HNDLHICDNPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumRandomEventQueryScRsp>(
             "MuseumRandomEventQueryScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MuseumRandomEventQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.info)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNDLHICDNPC)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MuseumRandomEventQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if let Some(v) = self.HNDLHICDNPC.as_ref() {
+        if let Some(v) = self.info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MuseumRandomEventQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if let Some(v) = self.info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.HNDLHICDNPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MuseumRandomEventQueryScRsp {
     }
 
     fn clear(&mut self) {
+        self.info.clear();
         self.retcode = 0;
-        self.HNDLHICDNPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumRandomEventQueryScRsp {
         static instance: MuseumRandomEventQueryScRsp = MuseumRandomEventQueryScRsp {
+            info: ::protobuf::MessageField::none(),
             retcode: 0,
-            HNDLHICDNPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for MuseumRandomEventQueryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!MuseumRandomEventQueryScRsp.proto\x1a\x11JNBCPNCNOHO.proto\"g\n\x1bMu\
-    seumRandomEventQueryScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bHNDLHICDNPC\x18\x0c\x20\x01(\x0b2\x0c.JNBCPNCNOHOR\x0bHN\
-    DLHICDNPCb\x06proto3\
+    \n!MuseumRandomEventQueryScRsp.proto\x1a\x11JNBCPNCNOHO.proto\"Y\n\x1bMu\
+    seumRandomEventQueryScRsp\x12\x20\n\x04info\x18\x02\x20\x01(\x0b2\x0c.JN\
+    BCPNCNOHOR\x04info\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

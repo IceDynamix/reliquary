@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPBFCKNEEIA {
     // message fields
-    // @@protoc_insertion_point(field:KPBFCKNEEIA.LDNBEIDJBHI)
-    pub LDNBEIDJBHI: u64,
-    // @@protoc_insertion_point(field:KPBFCKNEEIA.OILPCHBIJNO)
-    pub OILPCHBIJNO: ::protobuf::EnumOrUnknown<super::FFJPPNGGLFF::FFJPPNGGLFF>,
-    // @@protoc_insertion_point(field:KPBFCKNEEIA.BLGNMALBOLO)
-    pub BLGNMALBOLO: i32,
+    // @@protoc_insertion_point(field:KPBFCKNEEIA.HGPACIGJPFA)
+    pub HGPACIGJPFA: u64,
+    // @@protoc_insertion_point(field:KPBFCKNEEIA.OODMCNPPBAC)
+    pub OODMCNPPBAC: i32,
+    // @@protoc_insertion_point(field:KPBFCKNEEIA.GNOMAPCMEBB)
+    pub GNOMAPCMEBB: ::protobuf::EnumOrUnknown<super::FightPlayerResult::FightPlayerResult>,
     // special fields
     // @@protoc_insertion_point(special_field:KPBFCKNEEIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl KPBFCKNEEIA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDNBEIDJBHI",
-            |m: &KPBFCKNEEIA| { &m.LDNBEIDJBHI },
-            |m: &mut KPBFCKNEEIA| { &mut m.LDNBEIDJBHI },
+            "HGPACIGJPFA",
+            |m: &KPBFCKNEEIA| { &m.HGPACIGJPFA },
+            |m: &mut KPBFCKNEEIA| { &mut m.HGPACIGJPFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OILPCHBIJNO",
-            |m: &KPBFCKNEEIA| { &m.OILPCHBIJNO },
-            |m: &mut KPBFCKNEEIA| { &mut m.OILPCHBIJNO },
+            "OODMCNPPBAC",
+            |m: &KPBFCKNEEIA| { &m.OODMCNPPBAC },
+            |m: &mut KPBFCKNEEIA| { &mut m.OODMCNPPBAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLGNMALBOLO",
-            |m: &KPBFCKNEEIA| { &m.BLGNMALBOLO },
-            |m: &mut KPBFCKNEEIA| { &mut m.BLGNMALBOLO },
+            "GNOMAPCMEBB",
+            |m: &KPBFCKNEEIA| { &m.GNOMAPCMEBB },
+            |m: &mut KPBFCKNEEIA| { &mut m.GNOMAPCMEBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KPBFCKNEEIA>(
             "KPBFCKNEEIA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KPBFCKNEEIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.LDNBEIDJBHI = is.read_uint64()?;
+                40 => {
+                    self.HGPACIGJPFA = is.read_uint64()?;
                 },
-                32 => {
-                    self.OILPCHBIJNO = is.read_enum_or_unknown()?;
+                64 => {
+                    self.OODMCNPPBAC = is.read_int32()?;
                 },
-                120 => {
-                    self.BLGNMALBOLO = is.read_int32()?;
+                80 => {
+                    self.GNOMAPCMEBB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KPBFCKNEEIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDNBEIDJBHI != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.LDNBEIDJBHI);
+        if self.HGPACIGJPFA != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.HGPACIGJPFA);
         }
-        if self.OILPCHBIJNO != ::protobuf::EnumOrUnknown::new(super::FFJPPNGGLFF::FFJPPNGGLFF::FIGHT_PLAYER_RESULT_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.OILPCHBIJNO.value());
+        if self.OODMCNPPBAC != 0 {
+            my_size += ::protobuf::rt::int32_size(8, self.OODMCNPPBAC);
         }
-        if self.BLGNMALBOLO != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.BLGNMALBOLO);
+        if self.GNOMAPCMEBB != ::protobuf::EnumOrUnknown::new(super::FightPlayerResult::FightPlayerResult::FIGHT_PLAYER_RESULT_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.GNOMAPCMEBB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KPBFCKNEEIA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDNBEIDJBHI != 0 {
-            os.write_uint64(11, self.LDNBEIDJBHI)?;
+        if self.HGPACIGJPFA != 0 {
+            os.write_uint64(5, self.HGPACIGJPFA)?;
         }
-        if self.OILPCHBIJNO != ::protobuf::EnumOrUnknown::new(super::FFJPPNGGLFF::FFJPPNGGLFF::FIGHT_PLAYER_RESULT_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.OILPCHBIJNO))?;
+        if self.OODMCNPPBAC != 0 {
+            os.write_int32(8, self.OODMCNPPBAC)?;
         }
-        if self.BLGNMALBOLO != 0 {
-            os.write_int32(15, self.BLGNMALBOLO)?;
+        if self.GNOMAPCMEBB != ::protobuf::EnumOrUnknown::new(super::FightPlayerResult::FightPlayerResult::FIGHT_PLAYER_RESULT_NONE) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GNOMAPCMEBB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KPBFCKNEEIA {
     }
 
     fn clear(&mut self) {
-        self.LDNBEIDJBHI = 0;
-        self.OILPCHBIJNO = ::protobuf::EnumOrUnknown::new(super::FFJPPNGGLFF::FFJPPNGGLFF::FIGHT_PLAYER_RESULT_NONE);
-        self.BLGNMALBOLO = 0;
+        self.HGPACIGJPFA = 0;
+        self.OODMCNPPBAC = 0;
+        self.GNOMAPCMEBB = ::protobuf::EnumOrUnknown::new(super::FightPlayerResult::FightPlayerResult::FIGHT_PLAYER_RESULT_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPBFCKNEEIA {
         static instance: KPBFCKNEEIA = KPBFCKNEEIA {
-            LDNBEIDJBHI: 0,
-            OILPCHBIJNO: ::protobuf::EnumOrUnknown::from_i32(0),
-            BLGNMALBOLO: 0,
+            HGPACIGJPFA: 0,
+            OODMCNPPBAC: 0,
+            GNOMAPCMEBB: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for KPBFCKNEEIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPBFCKNEEIA.proto\x1a\x11FFJPPNGGLFF.proto\"\x81\x01\n\x0bKPBFCKNE\
-    EIA\x12\x20\n\x0bLDNBEIDJBHI\x18\x0b\x20\x01(\x04R\x0bLDNBEIDJBHI\x12.\n\
-    \x0bOILPCHBIJNO\x18\x04\x20\x01(\x0e2\x0c.FFJPPNGGLFFR\x0bOILPCHBIJNO\
-    \x12\x20\n\x0bBLGNMALBOLO\x18\x0f\x20\x01(\x05R\x0bBLGNMALBOLOb\x06proto\
-    3\
+    \n\x11KPBFCKNEEIA.proto\x1a\x17FightPlayerResult.proto\"\x87\x01\n\x0bKP\
+    BFCKNEEIA\x12\x20\n\x0bHGPACIGJPFA\x18\x05\x20\x01(\x04R\x0bHGPACIGJPFA\
+    \x12\x20\n\x0bOODMCNPPBAC\x18\x08\x20\x01(\x05R\x0bOODMCNPPBAC\x124\n\
+    \x0bGNOMAPCMEBB\x18\n\x20\x01(\x0e2\x12.FightPlayerResultR\x0bGNOMAPCMEB\
+    Bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FFJPPNGGLFF::file_descriptor().clone());
+            deps.push(super::FightPlayerResult::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KPBFCKNEEIA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,8 +30,8 @@ pub struct FKBFOOEFPAE {
     // message fields
     // @@protoc_insertion_point(field:FKBFOOEFPAE.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueCollectionStatus::RogueCollectionStatus>,
-    // @@protoc_insertion_point(field:FKBFOOEFPAE.INFBHPGDLND)
-    pub INFBHPGDLND: u32,
+    // @@protoc_insertion_point(field:FKBFOOEFPAE.KGOCGBNFILP)
+    pub KGOCGBNFILP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FKBFOOEFPAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FKBFOOEFPAE {
             |m: &mut FKBFOOEFPAE| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INFBHPGDLND",
-            |m: &FKBFOOEFPAE| { &m.INFBHPGDLND },
-            |m: &mut FKBFOOEFPAE| { &mut m.INFBHPGDLND },
+            "KGOCGBNFILP",
+            |m: &FKBFOOEFPAE| { &m.KGOCGBNFILP },
+            |m: &mut FKBFOOEFPAE| { &mut m.KGOCGBNFILP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FKBFOOEFPAE>(
             "FKBFOOEFPAE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.INFBHPGDLND = is.read_uint32()?;
+                80 => {
+                    self.KGOCGBNFILP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FKBFOOEFPAE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+            my_size += ::protobuf::rt::int32_size(2, self.status.value());
         }
-        if self.INFBHPGDLND != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.INFBHPGDLND);
+        if self.KGOCGBNFILP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KGOCGBNFILP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FKBFOOEFPAE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
-        if self.INFBHPGDLND != 0 {
-            os.write_uint32(15, self.INFBHPGDLND)?;
+        if self.KGOCGBNFILP != 0 {
+            os.write_uint32(10, self.KGOCGBNFILP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for FKBFOOEFPAE {
 
     fn clear(&mut self) {
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueCollectionStatus::RogueCollectionStatus::ROGUE_COLLECTION_NONE);
-        self.INFBHPGDLND = 0;
+        self.KGOCGBNFILP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FKBFOOEFPAE {
         static instance: FKBFOOEFPAE = FKBFOOEFPAE {
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            INFBHPGDLND: 0,
+            KGOCGBNFILP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FKBFOOEFPAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FKBFOOEFPAE.proto\x1a\x1bRogueCollectionStatus.proto\"_\n\x0bFKBFO\
-    OEFPAE\x12.\n\x06status\x18\t\x20\x01(\x0e2\x16.RogueCollectionStatusR\
-    \x06status\x12\x20\n\x0bINFBHPGDLND\x18\x0f\x20\x01(\rR\x0bINFBHPGDLNDb\
+    OEFPAE\x12.\n\x06status\x18\x02\x20\x01(\x0e2\x16.RogueCollectionStatusR\
+    \x06status\x12\x20\n\x0bKGOCGBNFILP\x18\n\x20\x01(\rR\x0bKGOCGBNFILPb\
     \x06proto3\
 ";
 

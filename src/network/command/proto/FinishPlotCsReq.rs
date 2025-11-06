@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPlotCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishPlotCsReq.CLDAJDJHOII)
-    pub CLDAJDJHOII: u32,
+    // @@protoc_insertion_point(field:FinishPlotCsReq.plot_id)
+    pub plot_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPlotCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishPlotCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLDAJDJHOII",
-            |m: &FinishPlotCsReq| { &m.CLDAJDJHOII },
-            |m: &mut FinishPlotCsReq| { &mut m.CLDAJDJHOII },
+            "plot_id",
+            |m: &FinishPlotCsReq| { &m.plot_id },
+            |m: &mut FinishPlotCsReq| { &mut m.plot_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPlotCsReq>(
             "FinishPlotCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishPlotCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.CLDAJDJHOII = is.read_uint32()?;
+                16 => {
+                    self.plot_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishPlotCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CLDAJDJHOII != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CLDAJDJHOII);
+        if self.plot_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.plot_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishPlotCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CLDAJDJHOII != 0 {
-            os.write_uint32(13, self.CLDAJDJHOII)?;
+        if self.plot_id != 0 {
+            os.write_uint32(2, self.plot_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishPlotCsReq {
     }
 
     fn clear(&mut self) {
-        self.CLDAJDJHOII = 0;
+        self.plot_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPlotCsReq {
         static instance: FinishPlotCsReq = FinishPlotCsReq {
-            CLDAJDJHOII: 0,
+            plot_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishPlotCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FinishPlotCsReq.proto\"3\n\x0fFinishPlotCsReq\x12\x20\n\x0bCLDAJDJ\
-    HOII\x18\r\x20\x01(\rR\x0bCLDAJDJHOIIb\x06proto3\
+    \n\x15FinishPlotCsReq.proto\"*\n\x0fFinishPlotCsReq\x12\x17\n\x07plot_id\
+    \x18\x02\x20\x01(\rR\x06plotIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

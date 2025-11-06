@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCPDFIPOMAP {
     // message fields
-    // @@protoc_insertion_point(field:BCPDFIPOMAP.LBHJEHFJLNF)
-    pub LBHJEHFJLNF: ::protobuf::MessageField<super::PHHLIOGFDEK::PHHLIOGFDEK>,
+    // @@protoc_insertion_point(field:BCPDFIPOMAP.KGJKNPNGIHJ)
+    pub KGJKNPNGIHJ: ::protobuf::MessageField<super::PHHLIOGFDEK::PHHLIOGFDEK>,
     // special fields
     // @@protoc_insertion_point(special_field:BCPDFIPOMAP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BCPDFIPOMAP {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHHLIOGFDEK::PHHLIOGFDEK>(
-            "LBHJEHFJLNF",
-            |m: &BCPDFIPOMAP| { &m.LBHJEHFJLNF },
-            |m: &mut BCPDFIPOMAP| { &mut m.LBHJEHFJLNF },
+            "KGJKNPNGIHJ",
+            |m: &BCPDFIPOMAP| { &m.KGJKNPNGIHJ },
+            |m: &mut BCPDFIPOMAP| { &mut m.KGJKNPNGIHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCPDFIPOMAP>(
             "BCPDFIPOMAP",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BCPDFIPOMAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBHJEHFJLNF)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGJKNPNGIHJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for BCPDFIPOMAP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LBHJEHFJLNF.as_ref() {
+        if let Some(v) = self.KGJKNPNGIHJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for BCPDFIPOMAP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LBHJEHFJLNF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.KGJKNPNGIHJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for BCPDFIPOMAP {
     }
 
     fn clear(&mut self) {
-        self.LBHJEHFJLNF.clear();
+        self.KGJKNPNGIHJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCPDFIPOMAP {
         static instance: BCPDFIPOMAP = BCPDFIPOMAP {
-            LBHJEHFJLNF: ::protobuf::MessageField::none(),
+            KGJKNPNGIHJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for BCPDFIPOMAP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BCPDFIPOMAP.proto\x1a\x11PHHLIOGFDEK.proto\"=\n\x0bBCPDFIPOMAP\x12\
-    .\n\x0bLBHJEHFJLNF\x18\x04\x20\x01(\x0b2\x0c.PHHLIOGFDEKR\x0bLBHJEHFJLNF\
-    b\x06proto3\
+    .\n\x0bKGJKNPNGIHJ\x18\t\x20\x01(\x0b2\x0c.PHHLIOGFDEKR\x0bKGJKNPNGIHJb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

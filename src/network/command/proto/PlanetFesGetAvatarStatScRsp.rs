@@ -30,8 +30,8 @@ pub struct PlanetFesGetAvatarStatScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesGetAvatarStatScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlanetFesGetAvatarStatScRsp.OEBAFBIGMBC)
-    pub OEBAFBIGMBC: ::std::vec::Vec<super::NPAIINEKEFB::NPAIINEKEFB>,
+    // @@protoc_insertion_point(field:PlanetFesGetAvatarStatScRsp.CEPGGGBKEAH)
+    pub CEPGGGBKEAH: ::std::vec::Vec<super::PlanetFesAvatarStatsDataInfo::PlanetFesAvatarStatsDataInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetAvatarStatScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PlanetFesGetAvatarStatScRsp {
             |m: &mut PlanetFesGetAvatarStatScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OEBAFBIGMBC",
-            |m: &PlanetFesGetAvatarStatScRsp| { &m.OEBAFBIGMBC },
-            |m: &mut PlanetFesGetAvatarStatScRsp| { &mut m.OEBAFBIGMBC },
+            "CEPGGGBKEAH",
+            |m: &PlanetFesGetAvatarStatScRsp| { &m.CEPGGGBKEAH },
+            |m: &mut PlanetFesGetAvatarStatScRsp| { &mut m.CEPGGGBKEAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetAvatarStatScRsp>(
             "PlanetFesGetAvatarStatScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    self.OEBAFBIGMBC.push(is.read_message()?);
+                122 => {
+                    self.CEPGGGBKEAH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        for value in &self.OEBAFBIGMBC {
+        for value in &self.CEPGGGBKEAH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        for v in &self.OEBAFBIGMBC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.CEPGGGBKEAH {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.OEBAFBIGMBC.clear();
+        self.CEPGGGBKEAH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetAvatarStatScRsp {
         static instance: PlanetFesGetAvatarStatScRsp = PlanetFesGetAvatarStatScRsp {
             retcode: 0,
-            OEBAFBIGMBC: ::std::vec::Vec::new(),
+            CEPGGGBKEAH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetAvatarStatScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PlanetFesGetAvatarStatScRsp.proto\x1a\x11NPAIINEKEFB.proto\"g\n\x1bPl\
-    anetFesGetAvatarStatScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bOEBAFBIGMBC\x18\x08\x20\x03(\x0b2\x0c.NPAIINEKEFBR\x0bOE\
-    BAFBIGMBCb\x06proto3\
+    \n!PlanetFesGetAvatarStatScRsp.proto\x1a\"PlanetFesAvatarStatsDataInfo.p\
+    roto\"x\n\x1bPlanetFesGetAvatarStatScRsp\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcode\x12?\n\x0bCEPGGGBKEAH\x18\x0f\x20\x03(\x0b2\x1d.\
+    PlanetFesAvatarStatsDataInfoR\x0bCEPGGGBKEAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NPAIINEKEFB::file_descriptor().clone());
+            deps.push(super::PlanetFesAvatarStatsDataInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesGetAvatarStatScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

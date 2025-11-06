@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueNousDiceSurfaceUnlockNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueNousDiceSurfaceUnlockNotify.CAPHIDDHLFG)
-    pub CAPHIDDHLFG: u32,
+    // @@protoc_insertion_point(field:ChessRogueNousDiceSurfaceUnlockNotify.MJKOAJEBIIL)
+    pub MJKOAJEBIIL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousDiceSurfaceUnlockNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChessRogueNousDiceSurfaceUnlockNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAPHIDDHLFG",
-            |m: &ChessRogueNousDiceSurfaceUnlockNotify| { &m.CAPHIDDHLFG },
-            |m: &mut ChessRogueNousDiceSurfaceUnlockNotify| { &mut m.CAPHIDDHLFG },
+            "MJKOAJEBIIL",
+            |m: &ChessRogueNousDiceSurfaceUnlockNotify| { &m.MJKOAJEBIIL },
+            |m: &mut ChessRogueNousDiceSurfaceUnlockNotify| { &mut m.MJKOAJEBIIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousDiceSurfaceUnlockNotify>(
             "ChessRogueNousDiceSurfaceUnlockNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueNousDiceSurfaceUnlockNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.CAPHIDDHLFG = is.read_uint32()?;
+                120 => {
+                    self.MJKOAJEBIIL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChessRogueNousDiceSurfaceUnlockNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CAPHIDDHLFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CAPHIDDHLFG);
+        if self.MJKOAJEBIIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MJKOAJEBIIL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChessRogueNousDiceSurfaceUnlockNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CAPHIDDHLFG != 0 {
-            os.write_uint32(6, self.CAPHIDDHLFG)?;
+        if self.MJKOAJEBIIL != 0 {
+            os.write_uint32(15, self.MJKOAJEBIIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChessRogueNousDiceSurfaceUnlockNotify {
     }
 
     fn clear(&mut self) {
-        self.CAPHIDDHLFG = 0;
+        self.MJKOAJEBIIL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousDiceSurfaceUnlockNotify {
         static instance: ChessRogueNousDiceSurfaceUnlockNotify = ChessRogueNousDiceSurfaceUnlockNotify {
-            CAPHIDDHLFG: 0,
+            MJKOAJEBIIL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousDiceSurfaceUnlockNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+ChessRogueNousDiceSurfaceUnlockNotify.proto\"I\n%ChessRogueNousDiceSu\
-    rfaceUnlockNotify\x12\x20\n\x0bCAPHIDDHLFG\x18\x06\x20\x01(\rR\x0bCAPHID\
-    DHLFGb\x06proto3\
+    rfaceUnlockNotify\x12\x20\n\x0bMJKOAJEBIIL\x18\x0f\x20\x01(\rR\x0bMJKOAJ\
+    EBIILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

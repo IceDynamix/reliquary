@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OEACNFIKNMD {
     // message oneof groups
-    pub IPKNEAPGPON: ::std::option::Option<oeacnfiknmd::IPKNEAPGPON>,
+    pub ANOECFMMILG: ::std::option::Option<oeacnfiknmd::ANOECFMMILG>,
     // special fields
     // @@protoc_insertion_point(special_field:OEACNFIKNMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,309 +45,39 @@ impl OEACNFIKNMD {
         ::std::default::Default::default()
     }
 
-    // .CGCLCMMIBIE LFABGNPHGAF = 8;
-
-    pub fn LFABGNPHGAF(&self) -> &super::CGCLCMMIBIE::CGCLCMMIBIE {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(ref v)) => v,
-            _ => <super::CGCLCMMIBIE::CGCLCMMIBIE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LFABGNPHGAF(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_LFABGNPHGAF(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LFABGNPHGAF(&mut self, v: super::CGCLCMMIBIE::CGCLCMMIBIE) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LFABGNPHGAF(&mut self) -> &mut super::CGCLCMMIBIE::CGCLCMMIBIE {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(_)) = self.IPKNEAPGPON {
-        } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(super::CGCLCMMIBIE::CGCLCMMIBIE::new()));
-        }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LFABGNPHGAF(&mut self) -> super::CGCLCMMIBIE::CGCLCMMIBIE {
-        if self.has_LFABGNPHGAF() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CGCLCMMIBIE::CGCLCMMIBIE::new()
-        }
-    }
-
-    // .JFNBFKBLGOH NHJBPKNLKMI = 11;
-
-    pub fn NHJBPKNLKMI(&self) -> &super::JFNBFKBLGOH::JFNBFKBLGOH {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(ref v)) => v,
-            _ => <super::JFNBFKBLGOH::JFNBFKBLGOH as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NHJBPKNLKMI(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_NHJBPKNLKMI(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NHJBPKNLKMI(&mut self, v: super::JFNBFKBLGOH::JFNBFKBLGOH) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NHJBPKNLKMI(&mut self) -> &mut super::JFNBFKBLGOH::JFNBFKBLGOH {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(_)) = self.IPKNEAPGPON {
-        } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(super::JFNBFKBLGOH::JFNBFKBLGOH::new()));
-        }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NHJBPKNLKMI(&mut self) -> super::JFNBFKBLGOH::JFNBFKBLGOH {
-        if self.has_NHJBPKNLKMI() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JFNBFKBLGOH::JFNBFKBLGOH::new()
-        }
-    }
-
-    // .AICNONBGNNP ODEAGKEJECI = 1;
-
-    pub fn ODEAGKEJECI(&self) -> &super::AICNONBGNNP::AICNONBGNNP {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(ref v)) => v,
-            _ => <super::AICNONBGNNP::AICNONBGNNP as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ODEAGKEJECI(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_ODEAGKEJECI(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ODEAGKEJECI(&mut self, v: super::AICNONBGNNP::AICNONBGNNP) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ODEAGKEJECI(&mut self) -> &mut super::AICNONBGNNP::AICNONBGNNP {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(_)) = self.IPKNEAPGPON {
-        } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(super::AICNONBGNNP::AICNONBGNNP::new()));
-        }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ODEAGKEJECI(&mut self) -> super::AICNONBGNNP::AICNONBGNNP {
-        if self.has_ODEAGKEJECI() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AICNONBGNNP::AICNONBGNNP::new()
-        }
-    }
-
-    // uint32 NOBBFJBDEEI = 9;
-
-    pub fn NOBBFJBDEEI(&self) -> u32 {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_NOBBFJBDEEI(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_NOBBFJBDEEI(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NOBBFJBDEEI(&mut self, v: u32) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(v))
-    }
-
-    // .PKIKEFAOIDE EMJFJMBKAIG = 2;
-
-    pub fn EMJFJMBKAIG(&self) -> &super::PKIKEFAOIDE::PKIKEFAOIDE {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(ref v)) => v,
-            _ => <super::PKIKEFAOIDE::PKIKEFAOIDE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_EMJFJMBKAIG(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_EMJFJMBKAIG(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EMJFJMBKAIG(&mut self, v: super::PKIKEFAOIDE::PKIKEFAOIDE) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_EMJFJMBKAIG(&mut self) -> &mut super::PKIKEFAOIDE::PKIKEFAOIDE {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(_)) = self.IPKNEAPGPON {
-        } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(super::PKIKEFAOIDE::PKIKEFAOIDE::new()));
-        }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_EMJFJMBKAIG(&mut self) -> super::PKIKEFAOIDE::PKIKEFAOIDE {
-        if self.has_EMJFJMBKAIG() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PKIKEFAOIDE::PKIKEFAOIDE::new()
-        }
-    }
-
-    // .LJJAHILCODE NHCBGLLNNPC = 6;
-
-    pub fn NHCBGLLNNPC(&self) -> &super::LJJAHILCODE::LJJAHILCODE {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(ref v)) => v,
-            _ => <super::LJJAHILCODE::LJJAHILCODE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NHCBGLLNNPC(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_NHCBGLLNNPC(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NHCBGLLNNPC(&mut self, v: super::LJJAHILCODE::LJJAHILCODE) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NHCBGLLNNPC(&mut self) -> &mut super::LJJAHILCODE::LJJAHILCODE {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(_)) = self.IPKNEAPGPON {
-        } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(super::LJJAHILCODE::LJJAHILCODE::new()));
-        }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NHCBGLLNNPC(&mut self) -> super::LJJAHILCODE::LJJAHILCODE {
-        if self.has_NHCBGLLNNPC() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::LJJAHILCODE::LJJAHILCODE::new()
-        }
-    }
-
     // .CJDNINMIBPF CCPKAHFCPIJ = 10;
 
     pub fn CCPKAHFCPIJ(&self) -> &super::CJDNINMIBPF::CJDNINMIBPF {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(ref v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(ref v)) => v,
             _ => <super::CJDNINMIBPF::CJDNINMIBPF as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CCPKAHFCPIJ(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
     }
 
     pub fn has_CCPKAHFCPIJ(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(..)) => true,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CCPKAHFCPIJ(&mut self, v: super::CJDNINMIBPF::CJDNINMIBPF) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(v))
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_CCPKAHFCPIJ(&mut self) -> &mut super::CJDNINMIBPF::CJDNINMIBPF {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(_)) = self.IPKNEAPGPON {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(_)) = self.ANOECFMMILG {
         } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(super::CJDNINMIBPF::CJDNINMIBPF::new()));
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(super::CJDNINMIBPF::CJDNINMIBPF::new()));
         }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(ref mut v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -355,8 +85,8 @@ impl OEACNFIKNMD {
     // Take field
     pub fn take_CCPKAHFCPIJ(&mut self) -> super::CJDNINMIBPF::CJDNINMIBPF {
         if self.has_CCPKAHFCPIJ() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(v)) => v,
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -364,64 +94,284 @@ impl OEACNFIKNMD {
         }
     }
 
-    // uint32 MKJNOGJNNAG = 12;
+    // .CGCLCMMIBIE LFABGNPHGAF = 2;
 
-    pub fn MKJNOGJNNAG(&self) -> u32 {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(v)) => v,
-            _ => 0,
+    pub fn LFABGNPHGAF(&self) -> &super::CGCLCMMIBIE::CGCLCMMIBIE {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(ref v)) => v,
+            _ => <super::CGCLCMMIBIE::CGCLCMMIBIE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MKJNOGJNNAG(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
+    pub fn clear_LFABGNPHGAF(&mut self) {
+        self.ANOECFMMILG = ::std::option::Option::None;
     }
 
-    pub fn has_MKJNOGJNNAG(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(..)) => true,
+    pub fn has_LFABGNPHGAF(&self) -> bool {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MKJNOGJNNAG(&mut self, v: u32) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(v))
+    pub fn set_LFABGNPHGAF(&mut self, v: super::CGCLCMMIBIE::CGCLCMMIBIE) {
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(v))
     }
 
-    // .HMKHILLIPOH FFCMCHKDFAC = 4;
+    // Mutable pointer to the field.
+    pub fn mut_LFABGNPHGAF(&mut self) -> &mut super::CGCLCMMIBIE::CGCLCMMIBIE {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(_)) = self.ANOECFMMILG {
+        } else {
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(super::CGCLCMMIBIE::CGCLCMMIBIE::new()));
+        }
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LFABGNPHGAF(&mut self) -> super::CGCLCMMIBIE::CGCLCMMIBIE {
+        if self.has_LFABGNPHGAF() {
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CGCLCMMIBIE::CGCLCMMIBIE::new()
+        }
+    }
+
+    // .JFNBFKBLGOH NHJBPKNLKMI = 13;
+
+    pub fn NHJBPKNLKMI(&self) -> &super::JFNBFKBLGOH::JFNBFKBLGOH {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(ref v)) => v,
+            _ => <super::JFNBFKBLGOH::JFNBFKBLGOH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NHJBPKNLKMI(&mut self) {
+        self.ANOECFMMILG = ::std::option::Option::None;
+    }
+
+    pub fn has_NHJBPKNLKMI(&self) -> bool {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NHJBPKNLKMI(&mut self, v: super::JFNBFKBLGOH::JFNBFKBLGOH) {
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NHJBPKNLKMI(&mut self) -> &mut super::JFNBFKBLGOH::JFNBFKBLGOH {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(_)) = self.ANOECFMMILG {
+        } else {
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(super::JFNBFKBLGOH::JFNBFKBLGOH::new()));
+        }
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NHJBPKNLKMI(&mut self) -> super::JFNBFKBLGOH::JFNBFKBLGOH {
+        if self.has_NHJBPKNLKMI() {
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JFNBFKBLGOH::JFNBFKBLGOH::new()
+        }
+    }
+
+    // .LJJAHILCODE NHCBGLLNNPC = 3;
+
+    pub fn NHCBGLLNNPC(&self) -> &super::LJJAHILCODE::LJJAHILCODE {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(ref v)) => v,
+            _ => <super::LJJAHILCODE::LJJAHILCODE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NHCBGLLNNPC(&mut self) {
+        self.ANOECFMMILG = ::std::option::Option::None;
+    }
+
+    pub fn has_NHCBGLLNNPC(&self) -> bool {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NHCBGLLNNPC(&mut self, v: super::LJJAHILCODE::LJJAHILCODE) {
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NHCBGLLNNPC(&mut self) -> &mut super::LJJAHILCODE::LJJAHILCODE {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(_)) = self.ANOECFMMILG {
+        } else {
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(super::LJJAHILCODE::LJJAHILCODE::new()));
+        }
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NHCBGLLNNPC(&mut self) -> super::LJJAHILCODE::LJJAHILCODE {
+        if self.has_NHCBGLLNNPC() {
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LJJAHILCODE::LJJAHILCODE::new()
+        }
+    }
+
+    // .AICNONBGNNP ODEAGKEJECI = 11;
+
+    pub fn ODEAGKEJECI(&self) -> &super::AICNONBGNNP::AICNONBGNNP {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(ref v)) => v,
+            _ => <super::AICNONBGNNP::AICNONBGNNP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ODEAGKEJECI(&mut self) {
+        self.ANOECFMMILG = ::std::option::Option::None;
+    }
+
+    pub fn has_ODEAGKEJECI(&self) -> bool {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ODEAGKEJECI(&mut self, v: super::AICNONBGNNP::AICNONBGNNP) {
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ODEAGKEJECI(&mut self) -> &mut super::AICNONBGNNP::AICNONBGNNP {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(_)) = self.ANOECFMMILG {
+        } else {
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(super::AICNONBGNNP::AICNONBGNNP::new()));
+        }
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ODEAGKEJECI(&mut self) -> super::AICNONBGNNP::AICNONBGNNP {
+        if self.has_ODEAGKEJECI() {
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AICNONBGNNP::AICNONBGNNP::new()
+        }
+    }
+
+    // .PKIKEFAOIDE EMJFJMBKAIG = 1;
+
+    pub fn EMJFJMBKAIG(&self) -> &super::PKIKEFAOIDE::PKIKEFAOIDE {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(ref v)) => v,
+            _ => <super::PKIKEFAOIDE::PKIKEFAOIDE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EMJFJMBKAIG(&mut self) {
+        self.ANOECFMMILG = ::std::option::Option::None;
+    }
+
+    pub fn has_EMJFJMBKAIG(&self) -> bool {
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EMJFJMBKAIG(&mut self, v: super::PKIKEFAOIDE::PKIKEFAOIDE) {
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EMJFJMBKAIG(&mut self) -> &mut super::PKIKEFAOIDE::PKIKEFAOIDE {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(_)) = self.ANOECFMMILG {
+        } else {
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(super::PKIKEFAOIDE::PKIKEFAOIDE::new()));
+        }
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EMJFJMBKAIG(&mut self) -> super::PKIKEFAOIDE::PKIKEFAOIDE {
+        if self.has_EMJFJMBKAIG() {
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PKIKEFAOIDE::PKIKEFAOIDE::new()
+        }
+    }
+
+    // .HMKHILLIPOH FFCMCHKDFAC = 8;
 
     pub fn FFCMCHKDFAC(&self) -> &super::HMKHILLIPOH::HMKHILLIPOH {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(ref v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(ref v)) => v,
             _ => <super::HMKHILLIPOH::HMKHILLIPOH as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FFCMCHKDFAC(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
     }
 
     pub fn has_FFCMCHKDFAC(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(..)) => true,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FFCMCHKDFAC(&mut self, v: super::HMKHILLIPOH::HMKHILLIPOH) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(v))
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FFCMCHKDFAC(&mut self) -> &mut super::HMKHILLIPOH::HMKHILLIPOH {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(_)) = self.IPKNEAPGPON {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(_)) = self.ANOECFMMILG {
         } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(super::HMKHILLIPOH::HMKHILLIPOH::new()));
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(super::HMKHILLIPOH::HMKHILLIPOH::new()));
         }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(ref mut v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -429,8 +379,8 @@ impl OEACNFIKNMD {
     // Take field
     pub fn take_FFCMCHKDFAC(&mut self) -> super::HMKHILLIPOH::HMKHILLIPOH {
         if self.has_FFCMCHKDFAC() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(v)) => v,
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -438,89 +388,39 @@ impl OEACNFIKNMD {
         }
     }
 
-    // uint32 GANIKGKOGOH = 13;
-
-    pub fn GANIKGKOGOH(&self) -> u32 {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_GANIKGKOGOH(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_GANIKGKOGOH(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GANIKGKOGOH(&mut self, v: u32) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(v))
-    }
-
-    // bool BCEILJEABKI = 15;
-
-    pub fn BCEILJEABKI(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_BCEILJEABKI(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-    }
-
-    pub fn has_BCEILJEABKI(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BCEILJEABKI(&mut self, v: bool) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(v))
-    }
-
-    // .JMGEGGOLAMN EPCOJMKGHPH = 3;
+    // .JMGEGGOLAMN EPCOJMKGHPH = 12;
 
     pub fn EPCOJMKGHPH(&self) -> &super::JMGEGGOLAMN::JMGEGGOLAMN {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(ref v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(ref v)) => v,
             _ => <super::JMGEGGOLAMN::JMGEGGOLAMN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_EPCOJMKGHPH(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
     }
 
     pub fn has_EPCOJMKGHPH(&self) -> bool {
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(..)) => true,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_EPCOJMKGHPH(&mut self, v: super::JMGEGGOLAMN::JMGEGGOLAMN) {
-        self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(v))
+        self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_EPCOJMKGHPH(&mut self) -> &mut super::JMGEGGOLAMN::JMGEGGOLAMN {
-        if let ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(_)) = self.IPKNEAPGPON {
+        if let ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(_)) = self.ANOECFMMILG {
         } else {
-            self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(super::JMGEGGOLAMN::JMGEGGOLAMN::new()));
+            self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(super::JMGEGGOLAMN::JMGEGGOLAMN::new()));
         }
-        match self.IPKNEAPGPON {
-            ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(ref mut v)) => v,
+        match self.ANOECFMMILG {
+            ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -528,8 +428,8 @@ impl OEACNFIKNMD {
     // Take field
     pub fn take_EPCOJMKGHPH(&mut self) -> super::JMGEGGOLAMN::JMGEGGOLAMN {
         if self.has_EPCOJMKGHPH() {
-            match self.IPKNEAPGPON.take() {
-                ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(v)) => v,
+            match self.ANOECFMMILG.take() {
+                ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -538,8 +438,15 @@ impl OEACNFIKNMD {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(12);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CJDNINMIBPF::CJDNINMIBPF>(
+            "CCPKAHFCPIJ",
+            OEACNFIKNMD::has_CCPKAHFCPIJ,
+            OEACNFIKNMD::CCPKAHFCPIJ,
+            OEACNFIKNMD::mut_CCPKAHFCPIJ,
+            OEACNFIKNMD::set_CCPKAHFCPIJ,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CGCLCMMIBIE::CGCLCMMIBIE>(
             "LFABGNPHGAF",
             OEACNFIKNMD::has_LFABGNPHGAF,
@@ -554,18 +461,19 @@ impl OEACNFIKNMD {
             OEACNFIKNMD::mut_NHJBPKNLKMI,
             OEACNFIKNMD::set_NHJBPKNLKMI,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJJAHILCODE::LJJAHILCODE>(
+            "NHCBGLLNNPC",
+            OEACNFIKNMD::has_NHCBGLLNNPC,
+            OEACNFIKNMD::NHCBGLLNNPC,
+            OEACNFIKNMD::mut_NHCBGLLNNPC,
+            OEACNFIKNMD::set_NHCBGLLNNPC,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AICNONBGNNP::AICNONBGNNP>(
             "ODEAGKEJECI",
             OEACNFIKNMD::has_ODEAGKEJECI,
             OEACNFIKNMD::ODEAGKEJECI,
             OEACNFIKNMD::mut_ODEAGKEJECI,
             OEACNFIKNMD::set_ODEAGKEJECI,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NOBBFJBDEEI",
-            OEACNFIKNMD::has_NOBBFJBDEEI,
-            OEACNFIKNMD::NOBBFJBDEEI,
-            OEACNFIKNMD::set_NOBBFJBDEEI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PKIKEFAOIDE::PKIKEFAOIDE>(
             "EMJFJMBKAIG",
@@ -574,44 +482,12 @@ impl OEACNFIKNMD {
             OEACNFIKNMD::mut_EMJFJMBKAIG,
             OEACNFIKNMD::set_EMJFJMBKAIG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJJAHILCODE::LJJAHILCODE>(
-            "NHCBGLLNNPC",
-            OEACNFIKNMD::has_NHCBGLLNNPC,
-            OEACNFIKNMD::NHCBGLLNNPC,
-            OEACNFIKNMD::mut_NHCBGLLNNPC,
-            OEACNFIKNMD::set_NHCBGLLNNPC,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CJDNINMIBPF::CJDNINMIBPF>(
-            "CCPKAHFCPIJ",
-            OEACNFIKNMD::has_CCPKAHFCPIJ,
-            OEACNFIKNMD::CCPKAHFCPIJ,
-            OEACNFIKNMD::mut_CCPKAHFCPIJ,
-            OEACNFIKNMD::set_CCPKAHFCPIJ,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MKJNOGJNNAG",
-            OEACNFIKNMD::has_MKJNOGJNNAG,
-            OEACNFIKNMD::MKJNOGJNNAG,
-            OEACNFIKNMD::set_MKJNOGJNNAG,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMKHILLIPOH::HMKHILLIPOH>(
             "FFCMCHKDFAC",
             OEACNFIKNMD::has_FFCMCHKDFAC,
             OEACNFIKNMD::FFCMCHKDFAC,
             OEACNFIKNMD::mut_FFCMCHKDFAC,
             OEACNFIKNMD::set_FFCMCHKDFAC,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "GANIKGKOGOH",
-            OEACNFIKNMD::has_GANIKGKOGOH,
-            OEACNFIKNMD::GANIKGKOGOH,
-            OEACNFIKNMD::set_GANIKGKOGOH,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "BCEILJEABKI",
-            OEACNFIKNMD::has_BCEILJEABKI,
-            OEACNFIKNMD::BCEILJEABKI,
-            OEACNFIKNMD::set_BCEILJEABKI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JMGEGGOLAMN::JMGEGGOLAMN>(
             "EPCOJMKGHPH",
@@ -620,7 +496,7 @@ impl OEACNFIKNMD {
             OEACNFIKNMD::mut_EPCOJMKGHPH,
             OEACNFIKNMD::set_EPCOJMKGHPH,
         ));
-        oneofs.push(oeacnfiknmd::IPKNEAPGPON::generated_oneof_descriptor_data());
+        oneofs.push(oeacnfiknmd::ANOECFMMILG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OEACNFIKNMD>(
             "OEACNFIKNMD",
             fields,
@@ -639,41 +515,29 @@ impl ::protobuf::Message for OEACNFIKNMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(is.read_message()?));
-                },
-                90 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(is.read_message()?));
-                },
-                10 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(is.read_message()?));
-                },
-                72 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(is.read_uint32()?));
+                82 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(is.read_message()?));
                 },
                 18 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(is.read_message()?));
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(is.read_message()?));
                 },
-                50 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(is.read_message()?));
-                },
-                82 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(is.read_message()?));
-                },
-                96 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(is.read_uint32()?));
-                },
-                34 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(is.read_message()?));
-                },
-                104 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(is.read_uint32()?));
-                },
-                120 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(is.read_bool()?));
+                106 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(is.read_message()?));
                 },
                 26 => {
-                    self.IPKNEAPGPON = ::std::option::Option::Some(oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(is.read_message()?));
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(is.read_message()?));
+                },
+                90 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(is.read_message()?));
+                },
+                10 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(is.read_message()?));
+                },
+                66 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(is.read_message()?));
+                },
+                98 => {
+                    self.ANOECFMMILG = ::std::option::Option::Some(oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -687,49 +551,37 @@ impl ::protobuf::Message for OEACNFIKNMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.IPKNEAPGPON {
+        if let ::std::option::Option::Some(ref v) = self.ANOECFMMILG {
             match v {
-                &oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
-                },
-                &oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
-                },
-                &oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
-                },
-                &oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(v) => {
-                    my_size += 1 + 1;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -741,43 +593,31 @@ impl ::protobuf::Message for OEACNFIKNMD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.IPKNEAPGPON {
+        if let ::std::option::Option::Some(ref v) = self.ANOECFMMILG {
             match v {
-                &oeacnfiknmd::IPKNEAPGPON::LFABGNPHGAF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::NHJBPKNLKMI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::ODEAGKEJECI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::NOBBFJBDEEI(v) => {
-                    os.write_uint32(9, v)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::EMJFJMBKAIG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::NHCBGLLNNPC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::CCPKAHFCPIJ(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::CCPKAHFCPIJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::MKJNOGJNNAG(v) => {
-                    os.write_uint32(12, v)?;
+                &oeacnfiknmd::ANOECFMMILG::LFABGNPHGAF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::FFCMCHKDFAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &oeacnfiknmd::ANOECFMMILG::NHJBPKNLKMI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
-                &oeacnfiknmd::IPKNEAPGPON::GANIKGKOGOH(v) => {
-                    os.write_uint32(13, v)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::BCEILJEABKI(v) => {
-                    os.write_bool(15, v)?;
-                },
-                &oeacnfiknmd::IPKNEAPGPON::EPCOJMKGHPH(ref v) => {
+                &oeacnfiknmd::ANOECFMMILG::NHCBGLLNNPC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &oeacnfiknmd::ANOECFMMILG::ODEAGKEJECI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &oeacnfiknmd::ANOECFMMILG::EMJFJMBKAIG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &oeacnfiknmd::ANOECFMMILG::FFCMCHKDFAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &oeacnfiknmd::ANOECFMMILG::EPCOJMKGHPH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -798,24 +638,20 @@ impl ::protobuf::Message for OEACNFIKNMD {
     }
 
     fn clear(&mut self) {
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
-        self.IPKNEAPGPON = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
+        self.ANOECFMMILG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OEACNFIKNMD {
         static instance: OEACNFIKNMD = OEACNFIKNMD {
-            IPKNEAPGPON: ::std::option::Option::None,
+            ANOECFMMILG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -844,47 +680,39 @@ pub mod oeacnfiknmd {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:OEACNFIKNMD.IPKNEAPGPON)
-    pub enum IPKNEAPGPON {
+    // @@protoc_insertion_point(oneof:OEACNFIKNMD.ANOECFMMILG)
+    pub enum ANOECFMMILG {
+        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.CCPKAHFCPIJ)
+        CCPKAHFCPIJ(super::super::CJDNINMIBPF::CJDNINMIBPF),
         // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.LFABGNPHGAF)
         LFABGNPHGAF(super::super::CGCLCMMIBIE::CGCLCMMIBIE),
         // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.NHJBPKNLKMI)
         NHJBPKNLKMI(super::super::JFNBFKBLGOH::JFNBFKBLGOH),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.ODEAGKEJECI)
-        ODEAGKEJECI(super::super::AICNONBGNNP::AICNONBGNNP),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.NOBBFJBDEEI)
-        NOBBFJBDEEI(u32),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.EMJFJMBKAIG)
-        EMJFJMBKAIG(super::super::PKIKEFAOIDE::PKIKEFAOIDE),
         // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.NHCBGLLNNPC)
         NHCBGLLNNPC(super::super::LJJAHILCODE::LJJAHILCODE),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.CCPKAHFCPIJ)
-        CCPKAHFCPIJ(super::super::CJDNINMIBPF::CJDNINMIBPF),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.MKJNOGJNNAG)
-        MKJNOGJNNAG(u32),
+        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.ODEAGKEJECI)
+        ODEAGKEJECI(super::super::AICNONBGNNP::AICNONBGNNP),
+        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.EMJFJMBKAIG)
+        EMJFJMBKAIG(super::super::PKIKEFAOIDE::PKIKEFAOIDE),
         // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.FFCMCHKDFAC)
         FFCMCHKDFAC(super::super::HMKHILLIPOH::HMKHILLIPOH),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.GANIKGKOGOH)
-        GANIKGKOGOH(u32),
-        // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.BCEILJEABKI)
-        BCEILJEABKI(bool),
         // @@protoc_insertion_point(oneof_field:OEACNFIKNMD.EPCOJMKGHPH)
         EPCOJMKGHPH(super::super::JMGEGGOLAMN::JMGEGGOLAMN),
     }
 
-    impl ::protobuf::Oneof for IPKNEAPGPON {
+    impl ::protobuf::Oneof for ANOECFMMILG {
     }
 
-    impl ::protobuf::OneofFull for IPKNEAPGPON {
+    impl ::protobuf::OneofFull for ANOECFMMILG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::OEACNFIKNMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("IPKNEAPGPON").unwrap()).clone()
+            descriptor.get(|| <super::OEACNFIKNMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("ANOECFMMILG").unwrap()).clone()
         }
     }
 
-    impl IPKNEAPGPON {
+    impl ANOECFMMILG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IPKNEAPGPON>("IPKNEAPGPON")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ANOECFMMILG>("ANOECFMMILG")
         }
     }
 }
@@ -893,20 +721,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OEACNFIKNMD.proto\x1a\x11AICNONBGNNP.proto\x1a\x11CGCLCMMIBIE.prot\
     o\x1a\x11CJDNINMIBPF.proto\x1a\x11HMKHILLIPOH.proto\x1a\x11JFNBFKBLGOH.p\
     roto\x1a\x11JMGEGGOLAMN.proto\x1a\x11LJJAHILCODE.proto\x1a\x11PKIKEFAOID\
-    E.proto\"\xbc\x04\n\x0bOEACNFIKNMD\x120\n\x0bLFABGNPHGAF\x18\x08\x20\x01\
-    (\x0b2\x0c.CGCLCMMIBIEH\0R\x0bLFABGNPHGAF\x120\n\x0bNHJBPKNLKMI\x18\x0b\
-    \x20\x01(\x0b2\x0c.JFNBFKBLGOHH\0R\x0bNHJBPKNLKMI\x120\n\x0bODEAGKEJECI\
-    \x18\x01\x20\x01(\x0b2\x0c.AICNONBGNNPH\0R\x0bODEAGKEJECI\x12\"\n\x0bNOB\
-    BFJBDEEI\x18\t\x20\x01(\rH\0R\x0bNOBBFJBDEEI\x120\n\x0bEMJFJMBKAIG\x18\
-    \x02\x20\x01(\x0b2\x0c.PKIKEFAOIDEH\0R\x0bEMJFJMBKAIG\x120\n\x0bNHCBGLLN\
-    NPC\x18\x06\x20\x01(\x0b2\x0c.LJJAHILCODEH\0R\x0bNHCBGLLNNPC\x120\n\x0bC\
-    CPKAHFCPIJ\x18\n\x20\x01(\x0b2\x0c.CJDNINMIBPFH\0R\x0bCCPKAHFCPIJ\x12\"\
-    \n\x0bMKJNOGJNNAG\x18\x0c\x20\x01(\rH\0R\x0bMKJNOGJNNAG\x120\n\x0bFFCMCH\
-    KDFAC\x18\x04\x20\x01(\x0b2\x0c.HMKHILLIPOHH\0R\x0bFFCMCHKDFAC\x12\"\n\
-    \x0bGANIKGKOGOH\x18\r\x20\x01(\rH\0R\x0bGANIKGKOGOH\x12\"\n\x0bBCEILJEAB\
-    KI\x18\x0f\x20\x01(\x08H\0R\x0bBCEILJEABKI\x120\n\x0bEPCOJMKGHPH\x18\x03\
-    \x20\x01(\x0b2\x0c.JMGEGGOLAMNH\0R\x0bEPCOJMKGHPHB\r\n\x0bIPKNEAPGPONb\
-    \x06proto3\
+    E.proto\"\xac\x03\n\x0bOEACNFIKNMD\x120\n\x0bCCPKAHFCPIJ\x18\n\x20\x01(\
+    \x0b2\x0c.CJDNINMIBPFH\0R\x0bCCPKAHFCPIJ\x120\n\x0bLFABGNPHGAF\x18\x02\
+    \x20\x01(\x0b2\x0c.CGCLCMMIBIEH\0R\x0bLFABGNPHGAF\x120\n\x0bNHJBPKNLKMI\
+    \x18\r\x20\x01(\x0b2\x0c.JFNBFKBLGOHH\0R\x0bNHJBPKNLKMI\x120\n\x0bNHCBGL\
+    LNNPC\x18\x03\x20\x01(\x0b2\x0c.LJJAHILCODEH\0R\x0bNHCBGLLNNPC\x120\n\
+    \x0bODEAGKEJECI\x18\x0b\x20\x01(\x0b2\x0c.AICNONBGNNPH\0R\x0bODEAGKEJECI\
+    \x120\n\x0bEMJFJMBKAIG\x18\x01\x20\x01(\x0b2\x0c.PKIKEFAOIDEH\0R\x0bEMJF\
+    JMBKAIG\x120\n\x0bFFCMCHKDFAC\x18\x08\x20\x01(\x0b2\x0c.HMKHILLIPOHH\0R\
+    \x0bFFCMCHKDFAC\x120\n\x0bEPCOJMKGHPH\x18\x0c\x20\x01(\x0b2\x0c.JMGEGGOL\
+    AMNH\0R\x0bEPCOJMKGHPHB\r\n\x0bANOECFMMILGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

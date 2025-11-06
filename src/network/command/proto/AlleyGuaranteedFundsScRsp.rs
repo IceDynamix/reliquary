@@ -30,8 +30,8 @@ pub struct AlleyGuaranteedFundsScRsp {
     // message fields
     // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.CLIBOBEHNDM)
-    pub CLIBOBEHNDM: u32,
+    // @@protoc_insertion_point(field:AlleyGuaranteedFundsScRsp.HLIJOJGEKPA)
+    pub HLIJOJGEKPA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyGuaranteedFundsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl AlleyGuaranteedFundsScRsp {
             |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLIBOBEHNDM",
-            |m: &AlleyGuaranteedFundsScRsp| { &m.CLIBOBEHNDM },
-            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.CLIBOBEHNDM },
+            "HLIJOJGEKPA",
+            |m: &AlleyGuaranteedFundsScRsp| { &m.HLIJOJGEKPA },
+            |m: &mut AlleyGuaranteedFundsScRsp| { &mut m.HLIJOJGEKPA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyGuaranteedFundsScRsp>(
             "AlleyGuaranteedFundsScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.CLIBOBEHNDM = is.read_uint32()?;
+                112 => {
+                    self.HLIJOJGEKPA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if self.CLIBOBEHNDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CLIBOBEHNDM);
+        if self.HLIJOJGEKPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HLIJOJGEKPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if self.CLIBOBEHNDM != 0 {
-            os.write_uint32(7, self.CLIBOBEHNDM)?;
+        if self.HLIJOJGEKPA != 0 {
+            os.write_uint32(14, self.HLIJOJGEKPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for AlleyGuaranteedFundsScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CLIBOBEHNDM = 0;
+        self.HLIJOJGEKPA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyGuaranteedFundsScRsp {
         static instance: AlleyGuaranteedFundsScRsp = AlleyGuaranteedFundsScRsp {
             retcode: 0,
-            CLIBOBEHNDM: 0,
+            HLIJOJGEKPA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AlleyGuaranteedFundsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fAlleyGuaranteedFundsScRsp.proto\"W\n\x19AlleyGuaranteedFundsScRsp\
-    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bCLIBOB\
-    EHNDM\x18\x07\x20\x01(\rR\x0bCLIBOBEHNDMb\x06proto3\
+    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bHLIJOJ\
+    GEKPA\x18\x0e\x20\x01(\rR\x0bHLIJOJGEKPAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

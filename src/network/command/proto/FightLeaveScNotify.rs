@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightLeaveScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightLeaveScNotify.CAGJMMMFDLI)
-    pub CAGJMMMFDLI: u32,
+    // @@protoc_insertion_point(field:FightLeaveScNotify.GFEIBKMJKCE)
+    pub GFEIBKMJKCE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightLeaveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FightLeaveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAGJMMMFDLI",
-            |m: &FightLeaveScNotify| { &m.CAGJMMMFDLI },
-            |m: &mut FightLeaveScNotify| { &mut m.CAGJMMMFDLI },
+            "GFEIBKMJKCE",
+            |m: &FightLeaveScNotify| { &m.GFEIBKMJKCE },
+            |m: &mut FightLeaveScNotify| { &mut m.GFEIBKMJKCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightLeaveScNotify>(
             "FightLeaveScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.CAGJMMMFDLI = is.read_uint32()?;
+                48 => {
+                    self.GFEIBKMJKCE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CAGJMMMFDLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CAGJMMMFDLI);
+        if self.GFEIBKMJKCE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GFEIBKMJKCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CAGJMMMFDLI != 0 {
-            os.write_uint32(1, self.CAGJMMMFDLI)?;
+        if self.GFEIBKMJKCE != 0 {
+            os.write_uint32(6, self.GFEIBKMJKCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FightLeaveScNotify {
     }
 
     fn clear(&mut self) {
-        self.CAGJMMMFDLI = 0;
+        self.GFEIBKMJKCE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightLeaveScNotify {
         static instance: FightLeaveScNotify = FightLeaveScNotify {
-            CAGJMMMFDLI: 0,
+            GFEIBKMJKCE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FightLeaveScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FightLeaveScNotify.proto\"6\n\x12FightLeaveScNotify\x12\x20\n\x0bC\
-    AGJMMMFDLI\x18\x01\x20\x01(\rR\x0bCAGJMMMFDLIb\x06proto3\
+    \n\x18FightLeaveScNotify.proto\"6\n\x12FightLeaveScNotify\x12\x20\n\x0bG\
+    FEIBKMJKCE\x18\x06\x20\x01(\rR\x0bGFEIBKMJKCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

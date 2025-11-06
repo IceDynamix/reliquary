@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HPCAIMKJDIJ {
     // message fields
-    // @@protoc_insertion_point(field:HPCAIMKJDIJ.JILAGGDMALL)
-    pub JILAGGDMALL: ::protobuf::MessageField<super::ILMELFJCCMD::ILMELFJCCMD>,
+    // @@protoc_insertion_point(field:HPCAIMKJDIJ.DOIOOGOEAIP)
+    pub DOIOOGOEAIP: ::protobuf::MessageField<super::PlanetFesBusinessDayStatisticsInfo::PlanetFesBusinessDayStatisticsInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HPCAIMKJDIJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl HPCAIMKJDIJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ILMELFJCCMD::ILMELFJCCMD>(
-            "JILAGGDMALL",
-            |m: &HPCAIMKJDIJ| { &m.JILAGGDMALL },
-            |m: &mut HPCAIMKJDIJ| { &mut m.JILAGGDMALL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessDayStatisticsInfo::PlanetFesBusinessDayStatisticsInfo>(
+            "DOIOOGOEAIP",
+            |m: &HPCAIMKJDIJ| { &m.DOIOOGOEAIP },
+            |m: &mut HPCAIMKJDIJ| { &mut m.DOIOOGOEAIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPCAIMKJDIJ>(
             "HPCAIMKJDIJ",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HPCAIMKJDIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JILAGGDMALL)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DOIOOGOEAIP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HPCAIMKJDIJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JILAGGDMALL.as_ref() {
+        if let Some(v) = self.DOIOOGOEAIP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HPCAIMKJDIJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JILAGGDMALL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.DOIOOGOEAIP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HPCAIMKJDIJ {
     }
 
     fn clear(&mut self) {
-        self.JILAGGDMALL.clear();
+        self.DOIOOGOEAIP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HPCAIMKJDIJ {
         static instance: HPCAIMKJDIJ = HPCAIMKJDIJ {
-            JILAGGDMALL: ::protobuf::MessageField::none(),
+            DOIOOGOEAIP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HPCAIMKJDIJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HPCAIMKJDIJ.proto\x1a\x11ILMELFJCCMD.proto\"=\n\x0bHPCAIMKJDIJ\x12\
-    .\n\x0bJILAGGDMALL\x18\x0f\x20\x01(\x0b2\x0c.ILMELFJCCMDR\x0bJILAGGDMALL\
-    b\x06proto3\
+    \n\x11HPCAIMKJDIJ.proto\x1a(PlanetFesBusinessDayStatisticsInfo.proto\"T\
+    \n\x0bHPCAIMKJDIJ\x12E\n\x0bDOIOOGOEAIP\x18\n\x20\x01(\x0b2#.PlanetFesBu\
+    sinessDayStatisticsInfoR\x0bDOIOOGOEAIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ILMELFJCCMD::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessDayStatisticsInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HPCAIMKJDIJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

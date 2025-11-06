@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ChessRogueBuff {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueBuff.buff_list)
-    pub buff_list: ::std::vec::Vec<super::RogueCommonBuff::RogueCommonBuff>,
+    pub buff_list: ::std::vec::Vec<super::RogueBuffInfo::RogueBuffInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueBuff.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueBuff {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                122 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueBuff {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueBuff {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14ChessRogueBuff.proto\x1a\x15RogueCommonBuff.proto\"?\n\x0eChessRog\
-    ueBuff\x12-\n\tbuff_list\x18\x0e\x20\x03(\x0b2\x10.RogueCommonBuffR\x08b\
-    uffListb\x06proto3\
+    \n\x14ChessRogueBuff.proto\x1a\x13RogueBuffInfo.proto\"=\n\x0eChessRogue\
+    Buff\x12+\n\tbuff_list\x18\x0f\x20\x03(\x0b2\x0e.RogueBuffInfoR\x08buffL\
+    istb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueCommonBuff::file_descriptor().clone());
+            deps.push(super::RogueBuffInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueBuff::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

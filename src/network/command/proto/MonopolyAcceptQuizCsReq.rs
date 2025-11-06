@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyAcceptQuizCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyAcceptQuizCsReq.NDGGACPICBF)
-    pub NDGGACPICBF: ::std::vec::Vec<super::NKACIMEOAPD::NKACIMEOAPD>,
+    // @@protoc_insertion_point(field:MonopolyAcceptQuizCsReq.MDFNCMNCGFI)
+    pub MDFNCMNCGFI: ::std::vec::Vec<super::NKACIMEOAPD::NKACIMEOAPD>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyAcceptQuizCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyAcceptQuizCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NDGGACPICBF",
-            |m: &MonopolyAcceptQuizCsReq| { &m.NDGGACPICBF },
-            |m: &mut MonopolyAcceptQuizCsReq| { &mut m.NDGGACPICBF },
+            "MDFNCMNCGFI",
+            |m: &MonopolyAcceptQuizCsReq| { &m.MDFNCMNCGFI },
+            |m: &mut MonopolyAcceptQuizCsReq| { &mut m.MDFNCMNCGFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyAcceptQuizCsReq>(
             "MonopolyAcceptQuizCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.NDGGACPICBF.push(is.read_message()?);
+                114 => {
+                    self.MDFNCMNCGFI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NDGGACPICBF {
+        for value in &self.MDFNCMNCGFI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NDGGACPICBF {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.MDFNCMNCGFI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyAcceptQuizCsReq {
     }
 
     fn clear(&mut self) {
-        self.NDGGACPICBF.clear();
+        self.MDFNCMNCGFI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyAcceptQuizCsReq {
         static instance: MonopolyAcceptQuizCsReq = MonopolyAcceptQuizCsReq {
-            NDGGACPICBF: ::std::vec::Vec::new(),
+            MDFNCMNCGFI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyAcceptQuizCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMonopolyAcceptQuizCsReq.proto\x1a\x11NKACIMEOAPD.proto\"I\n\x17Mon\
-    opolyAcceptQuizCsReq\x12.\n\x0bNDGGACPICBF\x18\r\x20\x03(\x0b2\x0c.NKACI\
-    MEOAPDR\x0bNDGGACPICBFb\x06proto3\
+    opolyAcceptQuizCsReq\x12.\n\x0bMDFNCMNCGFI\x18\x0e\x20\x03(\x0b2\x0c.NKA\
+    CIMEOAPDR\x0bMDFNCMNCGFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRecyleTimeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRecyleTimeScRsp.FCOKFFEAPMI)
-    pub FCOKFFEAPMI: ::std::vec::Vec<super::RecycleMaterial::RecycleMaterial>,
+    // @@protoc_insertion_point(field:GetRecyleTimeScRsp.expire_material_list)
+    pub expire_material_list: ::std::vec::Vec<super::ExpiredMaterial::ExpiredMaterial>,
     // @@protoc_insertion_point(field:GetRecyleTimeScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetRecyleTimeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FCOKFFEAPMI",
-            |m: &GetRecyleTimeScRsp| { &m.FCOKFFEAPMI },
-            |m: &mut GetRecyleTimeScRsp| { &mut m.FCOKFFEAPMI },
+            "expire_material_list",
+            |m: &GetRecyleTimeScRsp| { &m.expire_material_list },
+            |m: &mut GetRecyleTimeScRsp| { &mut m.expire_material_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    self.FCOKFFEAPMI.push(is.read_message()?);
+                    self.expire_material_list.push(is.read_message()?);
                 },
                 40 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FCOKFFEAPMI {
+        for value in &self.expire_material_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FCOKFFEAPMI {
+        for v in &self.expire_material_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
     }
 
     fn clear(&mut self) {
-        self.FCOKFFEAPMI.clear();
+        self.expire_material_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRecyleTimeScRsp {
         static instance: GetRecyleTimeScRsp = GetRecyleTimeScRsp {
-            FCOKFFEAPMI: ::std::vec::Vec::new(),
+            expire_material_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRecyleTimeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetRecyleTimeScRsp.proto\x1a\x15RecycleMaterial.proto\"b\n\x12GetR\
-    ecyleTimeScRsp\x122\n\x0bFCOKFFEAPMI\x18\x02\x20\x03(\x0b2\x10.RecycleMa\
-    terialR\x0bFCOKFFEAPMI\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retco\
-    deb\x06proto3\
+    \n\x18GetRecyleTimeScRsp.proto\x1a\x15ExpiredMaterial.proto\"r\n\x12GetR\
+    ecyleTimeScRsp\x12B\n\x14expire_material_list\x18\x02\x20\x03(\x0b2\x10.\
+    ExpiredMaterialR\x12expireMaterialList\x12\x18\n\x07retcode\x18\x05\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RecycleMaterial::file_descriptor().clone());
+            deps.push(super::ExpiredMaterial::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRecyleTimeScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

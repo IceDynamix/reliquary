@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetForbidOtherApplyFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendCsReq.MJPFLIKAFEJ)
-    pub MJPFLIKAFEJ: bool,
+    // @@protoc_insertion_point(field:SetForbidOtherApplyFriendCsReq.KIBFDAKNAFM)
+    pub KIBFDAKNAFM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetForbidOtherApplyFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SetForbidOtherApplyFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJPFLIKAFEJ",
-            |m: &SetForbidOtherApplyFriendCsReq| { &m.MJPFLIKAFEJ },
-            |m: &mut SetForbidOtherApplyFriendCsReq| { &mut m.MJPFLIKAFEJ },
+            "KIBFDAKNAFM",
+            |m: &SetForbidOtherApplyFriendCsReq| { &m.KIBFDAKNAFM },
+            |m: &mut SetForbidOtherApplyFriendCsReq| { &mut m.KIBFDAKNAFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetForbidOtherApplyFriendCsReq>(
             "SetForbidOtherApplyFriendCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.MJPFLIKAFEJ = is.read_bool()?;
+                104 => {
+                    self.KIBFDAKNAFM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MJPFLIKAFEJ != false {
+        if self.KIBFDAKNAFM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJPFLIKAFEJ != false {
-            os.write_bool(14, self.MJPFLIKAFEJ)?;
+        if self.KIBFDAKNAFM != false {
+            os.write_bool(13, self.KIBFDAKNAFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.MJPFLIKAFEJ = false;
+        self.KIBFDAKNAFM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetForbidOtherApplyFriendCsReq {
         static instance: SetForbidOtherApplyFriendCsReq = SetForbidOtherApplyFriendCsReq {
-            MJPFLIKAFEJ: false,
+            KIBFDAKNAFM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SetForbidOtherApplyFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SetForbidOtherApplyFriendCsReq.proto\"B\n\x1eSetForbidOtherApplyFrien\
-    dCsReq\x12\x20\n\x0bMJPFLIKAFEJ\x18\x0e\x20\x01(\x08R\x0bMJPFLIKAFEJb\
-    \x06proto3\
+    dCsReq\x12\x20\n\x0bKIBFDAKNAFM\x18\r\x20\x01(\x08R\x0bKIBFDAKNAFMb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

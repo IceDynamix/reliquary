@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SaveLogisticsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SaveLogisticsScRsp.APMCPHFMAEG)
-    pub APMCPHFMAEG: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
+    // @@protoc_insertion_point(field:SaveLogisticsScRsp.PPCOCJBBNOL)
+    pub PPCOCJBBNOL: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
     // @@protoc_insertion_point(field:SaveLogisticsScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SaveLogisticsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APMCPHFMAEG",
-            |m: &SaveLogisticsScRsp| { &m.APMCPHFMAEG },
-            |m: &mut SaveLogisticsScRsp| { &mut m.APMCPHFMAEG },
+            "PPCOCJBBNOL",
+            |m: &SaveLogisticsScRsp| { &m.PPCOCJBBNOL },
+            |m: &mut SaveLogisticsScRsp| { &mut m.PPCOCJBBNOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for SaveLogisticsScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 50 => {
-                    self.APMCPHFMAEG.push(is.read_message()?);
+                    self.PPCOCJBBNOL.push(is.read_message()?);
                 },
-                96 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SaveLogisticsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.APMCPHFMAEG {
+        for value in &self.PPCOCJBBNOL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SaveLogisticsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.APMCPHFMAEG {
+        for v in &self.PPCOCJBBNOL {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SaveLogisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.APMCPHFMAEG.clear();
+        self.PPCOCJBBNOL.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SaveLogisticsScRsp {
         static instance: SaveLogisticsScRsp = SaveLogisticsScRsp {
-            APMCPHFMAEG: ::std::vec::Vec::new(),
+            PPCOCJBBNOL: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SaveLogisticsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SaveLogisticsScRsp.proto\x1a\x11NJAOIGGMEAL.proto\"^\n\x12SaveLogi\
-    sticsScRsp\x12.\n\x0bAPMCPHFMAEG\x18\x06\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
-    \x0bAPMCPHFMAEG\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    sticsScRsp\x12.\n\x0bPPCOCJBBNOL\x18\x06\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
+    \x0bPPCOCJBBNOL\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

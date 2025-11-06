@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKECOPGKLEE {
     // message fields
-    // @@protoc_insertion_point(field:OKECOPGKLEE.PMGJICCHHDL)
-    pub PMGJICCHHDL: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
+    // @@protoc_insertion_point(field:OKECOPGKLEE.GOPAIEONOFM)
+    pub GOPAIEONOFM: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OKECOPGKLEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OKECOPGKLEE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>(
-            "PMGJICCHHDL",
-            |m: &OKECOPGKLEE| { &m.PMGJICCHHDL },
-            |m: &mut OKECOPGKLEE| { &mut m.PMGJICCHHDL },
+            "GOPAIEONOFM",
+            |m: &OKECOPGKLEE| { &m.GOPAIEONOFM },
+            |m: &mut OKECOPGKLEE| { &mut m.GOPAIEONOFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKECOPGKLEE>(
             "OKECOPGKLEE",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for OKECOPGKLEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMGJICCHHDL)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOPAIEONOFM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OKECOPGKLEE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PMGJICCHHDL.as_ref() {
+        if let Some(v) = self.GOPAIEONOFM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OKECOPGKLEE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PMGJICCHHDL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.GOPAIEONOFM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OKECOPGKLEE {
     }
 
     fn clear(&mut self) {
-        self.PMGJICCHHDL.clear();
+        self.GOPAIEONOFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKECOPGKLEE {
         static instance: OKECOPGKLEE = OKECOPGKLEE {
-            PMGJICCHHDL: ::protobuf::MessageField::none(),
+            GOPAIEONOFM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for OKECOPGKLEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKECOPGKLEE.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"H\n\x0bOKEC\
-    OPGKLEE\x129\n\x0bPMGJICCHHDL\x18\r\x20\x01(\x0b2\x17.RogueMagicGameUnit\
-    InfoR\x0bPMGJICCHHDLb\x06proto3\
+    OPGKLEE\x129\n\x0bGOPAIEONOFM\x18\n\x20\x01(\x0b2\x17.RogueMagicGameUnit\
+    InfoR\x0bGOPAIEONOFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

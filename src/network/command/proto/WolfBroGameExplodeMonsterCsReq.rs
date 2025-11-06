@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGameExplodeMonsterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGameExplodeMonsterCsReq.assist_monster_entity_id_list)
-    pub assist_monster_entity_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:WolfBroGameExplodeMonsterCsReq.hit_target_entity_id_list)
+    pub hit_target_entity_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGameExplodeMonsterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl WolfBroGameExplodeMonsterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "assist_monster_entity_id_list",
-            |m: &WolfBroGameExplodeMonsterCsReq| { &m.assist_monster_entity_id_list },
-            |m: &mut WolfBroGameExplodeMonsterCsReq| { &mut m.assist_monster_entity_id_list },
+            "hit_target_entity_id_list",
+            |m: &WolfBroGameExplodeMonsterCsReq| { &m.hit_target_entity_id_list },
+            |m: &mut WolfBroGameExplodeMonsterCsReq| { &mut m.hit_target_entity_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGameExplodeMonsterCsReq>(
             "WolfBroGameExplodeMonsterCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.assist_monster_entity_id_list)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.hit_target_entity_id_list)?;
                 },
-                80 => {
-                    self.assist_monster_entity_id_list.push(is.read_uint32()?);
+                24 => {
+                    self.hit_target_entity_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.assist_monster_entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.hit_target_entity_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.assist_monster_entity_id_list)?;
+        os.write_repeated_packed_uint32(3, &self.hit_target_entity_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for WolfBroGameExplodeMonsterCsReq {
     }
 
     fn clear(&mut self) {
-        self.assist_monster_entity_id_list.clear();
+        self.hit_target_entity_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGameExplodeMonsterCsReq {
         static instance: WolfBroGameExplodeMonsterCsReq = WolfBroGameExplodeMonsterCsReq {
-            assist_monster_entity_id_list: ::std::vec::Vec::new(),
+            hit_target_entity_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGameExplodeMonsterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$WolfBroGameExplodeMonsterCsReq.proto\"b\n\x1eWolfBroGameExplodeMonste\
-    rCsReq\x12@\n\x1dassist_monster_entity_id_list\x18\n\x20\x03(\rR\x19assi\
-    stMonsterEntityIdListb\x06proto3\
+    \n$WolfBroGameExplodeMonsterCsReq.proto\"Z\n\x1eWolfBroGameExplodeMonste\
+    rCsReq\x128\n\x19hit_target_entity_id_list\x18\x03\x20\x03(\rR\x15hitTar\
+    getEntityIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

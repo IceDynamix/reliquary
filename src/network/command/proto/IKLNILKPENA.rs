@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IKLNILKPENA {
     // message fields
-    // @@protoc_insertion_point(field:IKLNILKPENA.AEIEOJGCMMO)
-    pub AEIEOJGCMMO: u32,
-    // @@protoc_insertion_point(field:IKLNILKPENA.JBOLAAFDKAN)
-    pub JBOLAAFDKAN: u32,
-    // @@protoc_insertion_point(field:IKLNILKPENA.PLIKADKKLGD)
-    pub PLIKADKKLGD: ::protobuf::EnumOrUnknown<super::HGDAPJPKFFB::HGDAPJPKFFB>,
+    // @@protoc_insertion_point(field:IKLNILKPENA.JHFAONEHCKL)
+    pub JHFAONEHCKL: u32,
     // @@protoc_insertion_point(field:IKLNILKPENA.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:IKLNILKPENA.PGLILHBDNNB)
+    pub PGLILHBDNNB: ::protobuf::EnumOrUnknown<super::FightFestBattleType::FightFestBattleType>,
+    // @@protoc_insertion_point(field:IKLNILKPENA.PAIBJJFEJBH)
+    pub PAIBJJFEJBH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IKLNILKPENA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl IKLNILKPENA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEIEOJGCMMO",
-            |m: &IKLNILKPENA| { &m.AEIEOJGCMMO },
-            |m: &mut IKLNILKPENA| { &mut m.AEIEOJGCMMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBOLAAFDKAN",
-            |m: &IKLNILKPENA| { &m.JBOLAAFDKAN },
-            |m: &mut IKLNILKPENA| { &mut m.JBOLAAFDKAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLIKADKKLGD",
-            |m: &IKLNILKPENA| { &m.PLIKADKKLGD },
-            |m: &mut IKLNILKPENA| { &mut m.PLIKADKKLGD },
+            "JHFAONEHCKL",
+            |m: &IKLNILKPENA| { &m.JHFAONEHCKL },
+            |m: &mut IKLNILKPENA| { &mut m.JHFAONEHCKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &IKLNILKPENA| { &m.challenge_id },
             |m: &mut IKLNILKPENA| { &mut m.challenge_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PGLILHBDNNB",
+            |m: &IKLNILKPENA| { &m.PGLILHBDNNB },
+            |m: &mut IKLNILKPENA| { &mut m.PGLILHBDNNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PAIBJJFEJBH",
+            |m: &IKLNILKPENA| { &m.PAIBJJFEJBH },
+            |m: &mut IKLNILKPENA| { &mut m.PAIBJJFEJBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IKLNILKPENA>(
             "IKLNILKPENA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for IKLNILKPENA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.AEIEOJGCMMO = is.read_uint32()?;
-                },
-                88 => {
-                    self.JBOLAAFDKAN = is.read_uint32()?;
+                8 => {
+                    self.JHFAONEHCKL = is.read_uint32()?;
                 },
                 56 => {
-                    self.PLIKADKKLGD = is.read_enum_or_unknown()?;
-                },
-                40 => {
                     self.challenge_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.PGLILHBDNNB = is.read_enum_or_unknown()?;
+                },
+                72 => {
+                    self.PAIBJJFEJBH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for IKLNILKPENA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AEIEOJGCMMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AEIEOJGCMMO);
-        }
-        if self.JBOLAAFDKAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JBOLAAFDKAN);
-        }
-        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(7, self.PLIKADKKLGD.value());
+        if self.JHFAONEHCKL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JHFAONEHCKL);
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.challenge_id);
+        }
+        if self.PGLILHBDNNB != ::protobuf::EnumOrUnknown::new(super::FightFestBattleType::FightFestBattleType::FIGHT_FEST_BATTLE_RANK_C) {
+            my_size += ::protobuf::rt::int32_size(8, self.PGLILHBDNNB.value());
+        }
+        if self.PAIBJJFEJBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PAIBJJFEJBH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for IKLNILKPENA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AEIEOJGCMMO != 0 {
-            os.write_uint32(8, self.AEIEOJGCMMO)?;
-        }
-        if self.JBOLAAFDKAN != 0 {
-            os.write_uint32(11, self.JBOLAAFDKAN)?;
-        }
-        if self.PLIKADKKLGD != ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.PLIKADKKLGD))?;
+        if self.JHFAONEHCKL != 0 {
+            os.write_uint32(1, self.JHFAONEHCKL)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(5, self.challenge_id)?;
+            os.write_uint32(7, self.challenge_id)?;
+        }
+        if self.PGLILHBDNNB != ::protobuf::EnumOrUnknown::new(super::FightFestBattleType::FightFestBattleType::FIGHT_FEST_BATTLE_RANK_C) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.PGLILHBDNNB))?;
+        }
+        if self.PAIBJJFEJBH != 0 {
+            os.write_uint32(9, self.PAIBJJFEJBH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for IKLNILKPENA {
     }
 
     fn clear(&mut self) {
-        self.AEIEOJGCMMO = 0;
-        self.JBOLAAFDKAN = 0;
-        self.PLIKADKKLGD = ::protobuf::EnumOrUnknown::new(super::HGDAPJPKFFB::HGDAPJPKFFB::FIGHT_FEST_BATTLE_RANK_C);
+        self.JHFAONEHCKL = 0;
         self.challenge_id = 0;
+        self.PGLILHBDNNB = ::protobuf::EnumOrUnknown::new(super::FightFestBattleType::FightFestBattleType::FIGHT_FEST_BATTLE_RANK_C);
+        self.PAIBJJFEJBH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IKLNILKPENA {
         static instance: IKLNILKPENA = IKLNILKPENA {
-            AEIEOJGCMMO: 0,
-            JBOLAAFDKAN: 0,
-            PLIKADKKLGD: ::protobuf::EnumOrUnknown::from_i32(0),
+            JHFAONEHCKL: 0,
             challenge_id: 0,
+            PGLILHBDNNB: ::protobuf::EnumOrUnknown::from_i32(0),
+            PAIBJJFEJBH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for IKLNILKPENA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IKLNILKPENA.proto\x1a\x11HGDAPJPKFFB.proto\"\xa4\x01\n\x0bIKLNILKP\
-    ENA\x12\x20\n\x0bAEIEOJGCMMO\x18\x08\x20\x01(\rR\x0bAEIEOJGCMMO\x12\x20\
-    \n\x0bJBOLAAFDKAN\x18\x0b\x20\x01(\rR\x0bJBOLAAFDKAN\x12.\n\x0bPLIKADKKL\
-    GD\x18\x07\x20\x01(\x0e2\x0c.HGDAPJPKFFBR\x0bPLIKADKKLGD\x12!\n\x0cchall\
-    enge_id\x18\x05\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    \n\x11IKLNILKPENA.proto\x1a\x19FightFestBattleType.proto\"\xac\x01\n\x0b\
+    IKLNILKPENA\x12\x20\n\x0bJHFAONEHCKL\x18\x01\x20\x01(\rR\x0bJHFAONEHCKL\
+    \x12!\n\x0cchallenge_id\x18\x07\x20\x01(\rR\x0bchallengeId\x126\n\x0bPGL\
+    ILHBDNNB\x18\x08\x20\x01(\x0e2\x14.FightFestBattleTypeR\x0bPGLILHBDNNB\
+    \x12\x20\n\x0bPAIBJJFEJBH\x18\t\x20\x01(\rR\x0bPAIBJJFEJBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -223,7 +223,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HGDAPJPKFFB::file_descriptor().clone());
+            deps.push(super::FightFestBattleType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IKLNILKPENA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

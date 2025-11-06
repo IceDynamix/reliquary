@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ItemList {
     // message fields
-    // @@protoc_insertion_point(field:ItemList.item_list_)
-    pub item_list_: ::std::vec::Vec<super::Item::Item>,
+    // @@protoc_insertion_point(field:ItemList.item_list)
+    pub item_list: ::std::vec::Vec<super::Item::Item>,
     // special fields
     // @@protoc_insertion_point(special_field:ItemList.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ItemList {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "item_list_",
-            |m: &ItemList| { &m.item_list_ },
-            |m: &mut ItemList| { &mut m.item_list_ },
+            "item_list",
+            |m: &ItemList| { &m.item_list },
+            |m: &mut ItemList| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ItemList>(
             "ItemList",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ItemList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.item_list_.push(is.read_message()?);
+                106 => {
+                    self.item_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ItemList {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.item_list_ {
+        for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ItemList {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.item_list_ {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ItemList {
     }
 
     fn clear(&mut self) {
-        self.item_list_.clear();
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ItemList {
         static instance: ItemList = ItemList {
-            item_list_: ::std::vec::Vec::new(),
+            item_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ItemList {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eItemList.proto\x1a\nItem.proto\"/\n\x08ItemList\x12#\n\nitem_list_\
-    \x18\x0e\x20\x03(\x0b2\x05.ItemR\x08itemListb\x06proto3\
+    \n\x0eItemList.proto\x1a\nItem.proto\".\n\x08ItemList\x12\"\n\titem_list\
+    \x18\r\x20\x03(\x0b2\x05.ItemR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

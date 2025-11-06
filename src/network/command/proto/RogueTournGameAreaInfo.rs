@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGameAreaInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGameAreaInfo.game_area_id)
-    pub game_area_id: u32,
-    // @@protoc_insertion_point(field:RogueTournGameAreaInfo.game_week)
-    pub game_week: u32,
+    // @@protoc_insertion_point(field:RogueTournGameAreaInfo.JJGNAPJDPOE)
+    pub JJGNAPJDPOE: u32,
+    // @@protoc_insertion_point(field:RogueTournGameAreaInfo.BLNLPCDJCLD)
+    pub BLNLPCDJCLD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGameAreaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueTournGameAreaInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_area_id",
-            |m: &RogueTournGameAreaInfo| { &m.game_area_id },
-            |m: &mut RogueTournGameAreaInfo| { &mut m.game_area_id },
+            "JJGNAPJDPOE",
+            |m: &RogueTournGameAreaInfo| { &m.JJGNAPJDPOE },
+            |m: &mut RogueTournGameAreaInfo| { &mut m.JJGNAPJDPOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_week",
-            |m: &RogueTournGameAreaInfo| { &m.game_week },
-            |m: &mut RogueTournGameAreaInfo| { &mut m.game_week },
+            "BLNLPCDJCLD",
+            |m: &RogueTournGameAreaInfo| { &m.BLNLPCDJCLD },
+            |m: &mut RogueTournGameAreaInfo| { &mut m.BLNLPCDJCLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGameAreaInfo>(
             "RogueTournGameAreaInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.game_area_id = is.read_uint32()?;
+                32 => {
+                    self.JJGNAPJDPOE = is.read_uint32()?;
                 },
-                104 => {
-                    self.game_week = is.read_uint32()?;
+                88 => {
+                    self.BLNLPCDJCLD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.game_area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.game_area_id);
+        if self.JJGNAPJDPOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JJGNAPJDPOE);
         }
-        if self.game_week != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.game_week);
+        if self.BLNLPCDJCLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BLNLPCDJCLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.game_area_id != 0 {
-            os.write_uint32(14, self.game_area_id)?;
+        if self.JJGNAPJDPOE != 0 {
+            os.write_uint32(4, self.JJGNAPJDPOE)?;
         }
-        if self.game_week != 0 {
-            os.write_uint32(13, self.game_week)?;
+        if self.BLNLPCDJCLD != 0 {
+            os.write_uint32(11, self.BLNLPCDJCLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueTournGameAreaInfo {
     }
 
     fn clear(&mut self) {
-        self.game_area_id = 0;
-        self.game_week = 0;
+        self.JJGNAPJDPOE = 0;
+        self.BLNLPCDJCLD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGameAreaInfo {
         static instance: RogueTournGameAreaInfo = RogueTournGameAreaInfo {
-            game_area_id: 0,
-            game_week: 0,
+            JJGNAPJDPOE: 0,
+            BLNLPCDJCLD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGameAreaInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueTournGameAreaInfo.proto\"W\n\x16RogueTournGameAreaInfo\x12\
-    \x20\n\x0cgame_area_id\x18\x0e\x20\x01(\rR\ngameAreaId\x12\x1b\n\tgame_w\
-    eek\x18\r\x20\x01(\rR\x08gameWeekb\x06proto3\
+    \n\x1cRogueTournGameAreaInfo.proto\"\\\n\x16RogueTournGameAreaInfo\x12\
+    \x20\n\x0bJJGNAPJDPOE\x18\x04\x20\x01(\rR\x0bJJGNAPJDPOE\x12\x20\n\x0bBL\
+    NLPCDJCLD\x18\x0b\x20\x01(\rR\x0bBLNLPCDJCLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SaveLogisticsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SaveLogisticsCsReq.APMCPHFMAEG)
-    pub APMCPHFMAEG: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
+    // @@protoc_insertion_point(field:SaveLogisticsCsReq.PPCOCJBBNOL)
+    pub PPCOCJBBNOL: ::std::vec::Vec<super::NJAOIGGMEAL::NJAOIGGMEAL>,
     // special fields
     // @@protoc_insertion_point(special_field:SaveLogisticsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SaveLogisticsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APMCPHFMAEG",
-            |m: &SaveLogisticsCsReq| { &m.APMCPHFMAEG },
-            |m: &mut SaveLogisticsCsReq| { &mut m.APMCPHFMAEG },
+            "PPCOCJBBNOL",
+            |m: &SaveLogisticsCsReq| { &m.PPCOCJBBNOL },
+            |m: &mut SaveLogisticsCsReq| { &mut m.PPCOCJBBNOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SaveLogisticsCsReq>(
             "SaveLogisticsCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SaveLogisticsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.APMCPHFMAEG.push(is.read_message()?);
+                90 => {
+                    self.PPCOCJBBNOL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SaveLogisticsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.APMCPHFMAEG {
+        for value in &self.PPCOCJBBNOL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SaveLogisticsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.APMCPHFMAEG {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.PPCOCJBBNOL {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SaveLogisticsCsReq {
     }
 
     fn clear(&mut self) {
-        self.APMCPHFMAEG.clear();
+        self.PPCOCJBBNOL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SaveLogisticsCsReq {
         static instance: SaveLogisticsCsReq = SaveLogisticsCsReq {
-            APMCPHFMAEG: ::std::vec::Vec::new(),
+            PPCOCJBBNOL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SaveLogisticsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SaveLogisticsCsReq.proto\x1a\x11NJAOIGGMEAL.proto\"D\n\x12SaveLogi\
-    sticsCsReq\x12.\n\x0bAPMCPHFMAEG\x18\t\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
-    \x0bAPMCPHFMAEGb\x06proto3\
+    sticsCsReq\x12.\n\x0bPPCOCJBBNOL\x18\x0b\x20\x03(\x0b2\x0c.NJAOIGGMEALR\
+    \x0bPPCOCJBBNOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

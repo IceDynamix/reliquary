@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialScriptChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.unlock_status)
-    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockStatus::HeartDialUnlockStatus>,
-    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.OCMOEJIDLAM)
-    pub OCMOEJIDLAM: ::std::vec::Vec<super::MMEINFMDJFG::MMEINFMDJFG>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.HCCPFLHOBGM)
+    pub HCCPFLHOBGM: ::std::vec::Vec<super::MMEINFMDJFG::MMEINFMDJFG>,
     // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.changed_dialogue_info_list)
     pub changed_dialogue_info_list: ::std::vec::Vec<super::HeartDialDialogueInfo::HeartDialDialogueInfo>,
+    // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.unlock_status)
+    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockSatus::HeartDialUnlockSatus>,
     // @@protoc_insertion_point(field:HeartDialScriptChangeScNotify.changed_script_info_list)
     pub changed_script_info_list: ::std::vec::Vec<super::HeartDialScriptInfo::HeartDialScriptInfo>,
     // special fields
@@ -55,20 +55,20 @@ impl HeartDialScriptChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_status",
-            |m: &HeartDialScriptChangeScNotify| { &m.unlock_status },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.unlock_status },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OCMOEJIDLAM",
-            |m: &HeartDialScriptChangeScNotify| { &m.OCMOEJIDLAM },
-            |m: &mut HeartDialScriptChangeScNotify| { &mut m.OCMOEJIDLAM },
+            "HCCPFLHOBGM",
+            |m: &HeartDialScriptChangeScNotify| { &m.HCCPFLHOBGM },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.HCCPFLHOBGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "changed_dialogue_info_list",
             |m: &HeartDialScriptChangeScNotify| { &m.changed_dialogue_info_list },
             |m: &mut HeartDialScriptChangeScNotify| { &mut m.changed_dialogue_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlock_status",
+            |m: &HeartDialScriptChangeScNotify| { &m.unlock_status },
+            |m: &mut HeartDialScriptChangeScNotify| { &mut m.unlock_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "changed_script_info_list",
@@ -93,14 +93,14 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.unlock_status = is.read_enum_or_unknown()?;
+                18 => {
+                    self.HCCPFLHOBGM.push(is.read_message()?);
                 },
-                66 => {
-                    self.OCMOEJIDLAM.push(is.read_message()?);
-                },
-                122 => {
+                58 => {
                     self.changed_dialogue_info_list.push(is.read_message()?);
+                },
+                72 => {
+                    self.unlock_status = is.read_enum_or_unknown()?;
                 },
                 90 => {
                     self.changed_script_info_list.push(is.read_message()?);
@@ -117,10 +117,7 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(10, self.unlock_status.value());
-        }
-        for value in &self.OCMOEJIDLAM {
+        for value in &self.HCCPFLHOBGM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -128,6 +125,9 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(9, self.unlock_status.value());
+        }
         for value in &self.changed_script_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -138,15 +138,15 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
-        }
-        for v in &self.OCMOEJIDLAM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.HCCPFLHOBGM {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.changed_dialogue_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
+        }
         for v in &self.changed_script_info_list {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
@@ -167,18 +167,18 @@ impl ::protobuf::Message for HeartDialScriptChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
-        self.OCMOEJIDLAM.clear();
+        self.HCCPFLHOBGM.clear();
         self.changed_dialogue_info_list.clear();
+        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
         self.changed_script_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialScriptChangeScNotify {
         static instance: HeartDialScriptChangeScNotify = HeartDialScriptChangeScNotify {
-            unlock_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            OCMOEJIDLAM: ::std::vec::Vec::new(),
+            HCCPFLHOBGM: ::std::vec::Vec::new(),
             changed_dialogue_info_list: ::std::vec::Vec::new(),
+            unlock_status: ::protobuf::EnumOrUnknown::from_i32(0),
             changed_script_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -205,14 +205,14 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialScriptChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#HeartDialScriptChangeScNotify.proto\x1a\x1bHeartDialDialogueInfo.prot\
-    o\x1a\x19HeartDialScriptInfo.proto\x1a\x1bHeartDialUnlockStatus.proto\
-    \x1a\x11MMEINFMDJFG.proto\"\xb0\x02\n\x1dHeartDialScriptChangeScNotify\
-    \x12;\n\runlock_status\x18\n\x20\x01(\x0e2\x16.HeartDialUnlockStatusR\
-    \x0cunlockStatus\x12.\n\x0bOCMOEJIDLAM\x18\x08\x20\x03(\x0b2\x0c.MMEINFM\
-    DJFGR\x0bOCMOEJIDLAM\x12S\n\x1achanged_dialogue_info_list\x18\x0f\x20\
-    \x03(\x0b2\x16.HeartDialDialogueInfoR\x17changedDialogueInfoList\x12M\n\
-    \x18changed_script_info_list\x18\x0b\x20\x03(\x0b2\x14.HeartDialScriptIn\
-    foR\x15changedScriptInfoListb\x06proto3\
+    o\x1a\x19HeartDialScriptInfo.proto\x1a\x1aHeartDialUnlockSatus.proto\x1a\
+    \x11MMEINFMDJFG.proto\"\xaf\x02\n\x1dHeartDialScriptChangeScNotify\x12.\
+    \n\x0bHCCPFLHOBGM\x18\x02\x20\x03(\x0b2\x0c.MMEINFMDJFGR\x0bHCCPFLHOBGM\
+    \x12S\n\x1achanged_dialogue_info_list\x18\x07\x20\x03(\x0b2\x16.HeartDia\
+    lDialogueInfoR\x17changedDialogueInfoList\x12:\n\runlock_status\x18\t\
+    \x20\x01(\x0e2\x15.HeartDialUnlockSatusR\x0cunlockStatus\x12M\n\x18chang\
+    ed_script_info_list\x18\x0b\x20\x03(\x0b2\x14.HeartDialScriptInfoR\x15ch\
+    angedScriptInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -232,7 +232,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::HeartDialDialogueInfo::file_descriptor().clone());
             deps.push(super::HeartDialScriptInfo::file_descriptor().clone());
-            deps.push(super::HeartDialUnlockStatus::file_descriptor().clone());
+            deps.push(super::HeartDialUnlockSatus::file_descriptor().clone());
             deps.push(super::MMEINFMDJFG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeartDialScriptChangeScNotify::generated_message_descriptor_data());

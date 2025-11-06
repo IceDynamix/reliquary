@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOPJEJMOFBG {
     // message fields
-    // @@protoc_insertion_point(field:LOPJEJMOFBG.ENBIJBFBNEC)
-    pub ENBIJBFBNEC: bool,
     // @@protoc_insertion_point(field:LOPJEJMOFBG.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:LOPJEJMOFBG.BBPAPDDENHB)
-    pub BBPAPDDENHB: ::std::vec::Vec<super::DOPJLBMMPHB::DOPJLBMMPHB>,
+    // @@protoc_insertion_point(field:LOPJEJMOFBG.IFIDKMAJBMJ)
+    pub IFIDKMAJBMJ: bool,
+    // @@protoc_insertion_point(field:LOPJEJMOFBG.LLOPBDMKINN)
+    pub LLOPBDMKINN: ::std::vec::Vec<super::DOPJLBMMPHB::DOPJLBMMPHB>,
     // special fields
     // @@protoc_insertion_point(special_field:LOPJEJMOFBG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl LOPJEJMOFBG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENBIJBFBNEC",
-            |m: &LOPJEJMOFBG| { &m.ENBIJBFBNEC },
-            |m: &mut LOPJEJMOFBG| { &mut m.ENBIJBFBNEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &LOPJEJMOFBG| { &m.group_id },
             |m: &mut LOPJEJMOFBG| { &mut m.group_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFIDKMAJBMJ",
+            |m: &LOPJEJMOFBG| { &m.IFIDKMAJBMJ },
+            |m: &mut LOPJEJMOFBG| { &mut m.IFIDKMAJBMJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BBPAPDDENHB",
-            |m: &LOPJEJMOFBG| { &m.BBPAPDDENHB },
-            |m: &mut LOPJEJMOFBG| { &mut m.BBPAPDDENHB },
+            "LLOPBDMKINN",
+            |m: &LOPJEJMOFBG| { &m.LLOPBDMKINN },
+            |m: &mut LOPJEJMOFBG| { &mut m.LLOPBDMKINN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOPJEJMOFBG>(
             "LOPJEJMOFBG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LOPJEJMOFBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.ENBIJBFBNEC = is.read_bool()?;
-                },
-                72 => {
+                16 => {
                     self.group_id = is.read_uint32()?;
                 },
-                114 => {
-                    self.BBPAPDDENHB.push(is.read_message()?);
+                64 => {
+                    self.IFIDKMAJBMJ = is.read_bool()?;
+                },
+                122 => {
+                    self.LLOPBDMKINN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for LOPJEJMOFBG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ENBIJBFBNEC != false {
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
+        }
+        if self.IFIDKMAJBMJ != false {
             my_size += 1 + 1;
         }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
-        }
-        for value in &self.BBPAPDDENHB {
+        for value in &self.LLOPBDMKINN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -123,14 +123,14 @@ impl ::protobuf::Message for LOPJEJMOFBG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ENBIJBFBNEC != false {
-            os.write_bool(11, self.ENBIJBFBNEC)?;
-        }
         if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
+            os.write_uint32(2, self.group_id)?;
         }
-        for v in &self.BBPAPDDENHB {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.IFIDKMAJBMJ != false {
+            os.write_bool(8, self.IFIDKMAJBMJ)?;
+        }
+        for v in &self.LLOPBDMKINN {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for LOPJEJMOFBG {
     }
 
     fn clear(&mut self) {
-        self.ENBIJBFBNEC = false;
         self.group_id = 0;
-        self.BBPAPDDENHB.clear();
+        self.IFIDKMAJBMJ = false;
+        self.LLOPBDMKINN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOPJEJMOFBG {
         static instance: LOPJEJMOFBG = LOPJEJMOFBG {
-            ENBIJBFBNEC: false,
             group_id: 0,
-            BBPAPDDENHB: ::std::vec::Vec::new(),
+            IFIDKMAJBMJ: false,
+            LLOPBDMKINN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LOPJEJMOFBG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LOPJEJMOFBG.proto\x1a\x11DOPJLBMMPHB.proto\"z\n\x0bLOPJEJMOFBG\x12\
-    \x20\n\x0bENBIJBFBNEC\x18\x0b\x20\x01(\x08R\x0bENBIJBFBNEC\x12\x19\n\x08\
-    group_id\x18\t\x20\x01(\rR\x07groupId\x12.\n\x0bBBPAPDDENHB\x18\x0e\x20\
-    \x03(\x0b2\x0c.DOPJLBMMPHBR\x0bBBPAPDDENHBb\x06proto3\
+    \x19\n\x08group_id\x18\x02\x20\x01(\rR\x07groupId\x12\x20\n\x0bIFIDKMAJB\
+    MJ\x18\x08\x20\x01(\x08R\x0bIFIDKMAJBMJ\x12.\n\x0bLLOPBDMKINN\x18\x0f\
+    \x20\x03(\x0b2\x0c.DOPJLBMMPHBR\x0bLLOPBDMKINNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

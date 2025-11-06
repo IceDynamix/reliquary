@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptExpeditionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AcceptExpeditionCsReq.FUNC_UNLOCK_ID_EXPEDITION)
-    pub FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField<super::ExpeditionInfo::ExpeditionInfo>,
+    // @@protoc_insertion_point(field:AcceptExpeditionCsReq.expedition)
+    pub expedition: ::protobuf::MessageField<super::Expedition::Expedition>,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptExpeditionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl AcceptExpeditionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ExpeditionInfo::ExpeditionInfo>(
-            "FUNC_UNLOCK_ID_EXPEDITION",
-            |m: &AcceptExpeditionCsReq| { &m.FUNC_UNLOCK_ID_EXPEDITION },
-            |m: &mut AcceptExpeditionCsReq| { &mut m.FUNC_UNLOCK_ID_EXPEDITION },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Expedition::Expedition>(
+            "expedition",
+            |m: &AcceptExpeditionCsReq| { &m.expedition },
+            |m: &mut AcceptExpeditionCsReq| { &mut m.expedition },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptExpeditionCsReq>(
             "AcceptExpeditionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for AcceptExpeditionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FUNC_UNLOCK_ID_EXPEDITION)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.expedition)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for AcceptExpeditionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FUNC_UNLOCK_ID_EXPEDITION.as_ref() {
+        if let Some(v) = self.expedition.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for AcceptExpeditionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FUNC_UNLOCK_ID_EXPEDITION.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.expedition.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for AcceptExpeditionCsReq {
     }
 
     fn clear(&mut self) {
-        self.FUNC_UNLOCK_ID_EXPEDITION.clear();
+        self.expedition.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptExpeditionCsReq {
         static instance: AcceptExpeditionCsReq = AcceptExpeditionCsReq {
-            FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField::none(),
+            expedition: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for AcceptExpeditionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bAcceptExpeditionCsReq.proto\x1a\x14ExpeditionInfo.proto\"c\n\x15Ac\
-    ceptExpeditionCsReq\x12J\n\x19FUNC_UNLOCK_ID_EXPEDITION\x18\x0e\x20\x01(\
-    \x0b2\x0f.ExpeditionInfoR\x16FUNCUNLOCKIDEXPEDITIONb\x06proto3\
+    \n\x1bAcceptExpeditionCsReq.proto\x1a\x10Expedition.proto\"D\n\x15Accept\
+    ExpeditionCsReq\x12+\n\nexpedition\x18\x02\x20\x01(\x0b2\x0b.ExpeditionR\
+    \nexpeditionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ExpeditionInfo::file_descriptor().clone());
+            deps.push(super::Expedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptExpeditionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

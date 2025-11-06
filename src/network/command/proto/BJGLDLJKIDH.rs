@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BJGLDLJKIDH {
     // message fields
-    // @@protoc_insertion_point(field:BJGLDLJKIDH.JLLNMGBENAF)
-    pub JLLNMGBENAF: ::protobuf::EnumOrUnknown<super::DMLCPAKDBLJ::DMLCPAKDBLJ>,
     // @@protoc_insertion_point(field:BJGLDLJKIDH.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:BJGLDLJKIDH.BHNDIMBDJHH)
+    pub BHNDIMBDJHH: ::protobuf::EnumOrUnknown<super::TrainPartyMtCategoryType::TrainPartyMtCategoryType>,
     // special fields
     // @@protoc_insertion_point(special_field:BJGLDLJKIDH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BJGLDLJKIDH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLLNMGBENAF",
-            |m: &BJGLDLJKIDH| { &m.JLLNMGBENAF },
-            |m: &mut BJGLDLJKIDH| { &mut m.JLLNMGBENAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &BJGLDLJKIDH| { &m.level },
             |m: &mut BJGLDLJKIDH| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BHNDIMBDJHH",
+            |m: &BJGLDLJKIDH| { &m.BHNDIMBDJHH },
+            |m: &mut BJGLDLJKIDH| { &mut m.BHNDIMBDJHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BJGLDLJKIDH>(
             "BJGLDLJKIDH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.JLLNMGBENAF = is.read_enum_or_unknown()?;
-                },
-                104 => {
+                16 => {
                     self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.BHNDIMBDJHH = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JLLNMGBENAF != ::protobuf::EnumOrUnknown::new(super::DMLCPAKDBLJ::DMLCPAKDBLJ::TRAIN_PARTY_MT_CATEGORY_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.JLLNMGBENAF.value());
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        }
+        if self.BHNDIMBDJHH != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtCategoryType::TrainPartyMtCategoryType::TRAIN_PARTY_MT_CATEGORY_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.BHNDIMBDJHH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JLLNMGBENAF != ::protobuf::EnumOrUnknown::new(super::DMLCPAKDBLJ::DMLCPAKDBLJ::TRAIN_PARTY_MT_CATEGORY_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.JLLNMGBENAF))?;
-        }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
+            os.write_uint32(2, self.level)?;
+        }
+        if self.BHNDIMBDJHH != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtCategoryType::TrainPartyMtCategoryType::TRAIN_PARTY_MT_CATEGORY_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.BHNDIMBDJHH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BJGLDLJKIDH {
     }
 
     fn clear(&mut self) {
-        self.JLLNMGBENAF = ::protobuf::EnumOrUnknown::new(super::DMLCPAKDBLJ::DMLCPAKDBLJ::TRAIN_PARTY_MT_CATEGORY_NONE);
         self.level = 0;
+        self.BHNDIMBDJHH = ::protobuf::EnumOrUnknown::new(super::TrainPartyMtCategoryType::TrainPartyMtCategoryType::TRAIN_PARTY_MT_CATEGORY_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BJGLDLJKIDH {
         static instance: BJGLDLJKIDH = BJGLDLJKIDH {
-            JLLNMGBENAF: ::protobuf::EnumOrUnknown::from_i32(0),
             level: 0,
+            BHNDIMBDJHH: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for BJGLDLJKIDH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BJGLDLJKIDH.proto\x1a\x11DMLCPAKDBLJ.proto\"S\n\x0bBJGLDLJKIDH\x12\
-    .\n\x0bJLLNMGBENAF\x18\x0c\x20\x01(\x0e2\x0c.DMLCPAKDBLJR\x0bJLLNMGBENAF\
-    \x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x11BJGLDLJKIDH.proto\x1a\x1eTrainPartyMtCategoryType.proto\"`\n\x0bBJ\
+    GLDLJKIDH\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12;\n\x0bBHND\
+    IMBDJHH\x18\x0e\x20\x01(\x0e2\x19.TrainPartyMtCategoryTypeR\x0bBHNDIMBDJ\
+    HHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DMLCPAKDBLJ::file_descriptor().clone());
+            deps.push(super::TrainPartyMtCategoryType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BJGLDLJKIDH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

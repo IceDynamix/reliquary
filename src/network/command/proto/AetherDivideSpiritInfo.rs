@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritInfo {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.passive_skill)
-    pub passive_skill: ::std::vec::Vec<super::PassiveSkillItem::PassiveSkillItem>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.PIOJABPCKPC)
+    pub PIOJABPCKPC: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.exp)
     pub exp: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.aether_avatar_id)
-    pub aether_avatar_id: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.passive_skill_item_list)
+    pub passive_skill_item_list: ::std::vec::Vec<super::HFFIAJIANHD::HFFIAJIANHD>,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfo.promotion)
     pub promotion: u32,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.JDHCHABCLCC)
-    pub JDHCHABCLCC: u32,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.sp)
+    pub sp: ::protobuf::MessageField<super::AmountInfo::AmountInfo>,
+    // @@protoc_insertion_point(field:AetherDivideSpiritInfo.aether_avatar_id)
+    pub aether_avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideSpiritInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl AetherDivideSpiritInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "passive_skill",
-            |m: &AetherDivideSpiritInfo| { &m.passive_skill },
-            |m: &mut AetherDivideSpiritInfo| { &mut m.passive_skill },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PIOJABPCKPC",
+            |m: &AetherDivideSpiritInfo| { &m.PIOJABPCKPC },
+            |m: &mut AetherDivideSpiritInfo| { &mut m.PIOJABPCKPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &AetherDivideSpiritInfo| { &m.exp },
             |m: &mut AetherDivideSpiritInfo| { &mut m.exp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aether_avatar_id",
-            |m: &AetherDivideSpiritInfo| { &m.aether_avatar_id },
-            |m: &mut AetherDivideSpiritInfo| { &mut m.aether_avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &AetherDivideSpiritInfo| { &m.sp_bar },
-            |m: &mut AetherDivideSpiritInfo| { &mut m.sp_bar },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "passive_skill_item_list",
+            |m: &AetherDivideSpiritInfo| { &m.passive_skill_item_list },
+            |m: &mut AetherDivideSpiritInfo| { &mut m.passive_skill_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
             |m: &AetherDivideSpiritInfo| { &m.promotion },
             |m: &mut AetherDivideSpiritInfo| { &mut m.promotion },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AmountInfo::AmountInfo>(
+            "sp",
+            |m: &AetherDivideSpiritInfo| { &m.sp },
+            |m: &mut AetherDivideSpiritInfo| { &mut m.sp },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDHCHABCLCC",
-            |m: &AetherDivideSpiritInfo| { &m.JDHCHABCLCC },
-            |m: &mut AetherDivideSpiritInfo| { &mut m.JDHCHABCLCC },
+            "aether_avatar_id",
+            |m: &AetherDivideSpiritInfo| { &m.aether_avatar_id },
+            |m: &mut AetherDivideSpiritInfo| { &mut m.aether_avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideSpiritInfo>(
             "AetherDivideSpiritInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.passive_skill.push(is.read_message()?);
+                16 => {
+                    self.PIOJABPCKPC = is.read_uint32()?;
                 },
                 56 => {
                     self.exp = is.read_uint32()?;
                 },
-                112 => {
-                    self.aether_avatar_id = is.read_uint32()?;
+                66 => {
+                    self.passive_skill_item_list.push(is.read_message()?);
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
-                },
-                8 => {
+                72 => {
                     self.promotion = is.read_uint32()?;
                 },
-                40 => {
-                    self.JDHCHABCLCC = is.read_uint32()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp)?;
+                },
+                120 => {
+                    self.aether_avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.passive_skill {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.PIOJABPCKPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PIOJABPCKPC);
+        }
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.exp);
         }
-        if self.aether_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.aether_avatar_id);
+        for value in &self.passive_skill_item_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.promotion);
         }
-        if let Some(v) = self.sp_bar.as_ref() {
+        if let Some(v) = self.sp.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.promotion);
-        }
-        if self.JDHCHABCLCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JDHCHABCLCC);
+        if self.aether_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.aether_avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.passive_skill {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
+        if self.PIOJABPCKPC != 0 {
+            os.write_uint32(2, self.PIOJABPCKPC)?;
+        }
         if self.exp != 0 {
             os.write_uint32(7, self.exp)?;
         }
-        if self.aether_avatar_id != 0 {
-            os.write_uint32(14, self.aether_avatar_id)?;
-        }
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
+        for v in &self.passive_skill_item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         if self.promotion != 0 {
-            os.write_uint32(1, self.promotion)?;
+            os.write_uint32(9, self.promotion)?;
         }
-        if self.JDHCHABCLCC != 0 {
-            os.write_uint32(5, self.JDHCHABCLCC)?;
+        if let Some(v) = self.sp.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.aether_avatar_id != 0 {
+            os.write_uint32(15, self.aether_avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for AetherDivideSpiritInfo {
     }
 
     fn clear(&mut self) {
-        self.passive_skill.clear();
+        self.PIOJABPCKPC = 0;
         self.exp = 0;
-        self.aether_avatar_id = 0;
-        self.sp_bar.clear();
+        self.passive_skill_item_list.clear();
         self.promotion = 0;
-        self.JDHCHABCLCC = 0;
+        self.sp.clear();
+        self.aether_avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideSpiritInfo {
         static instance: AetherDivideSpiritInfo = AetherDivideSpiritInfo {
-            passive_skill: ::std::vec::Vec::new(),
+            PIOJABPCKPC: 0,
             exp: 0,
-            aether_avatar_id: 0,
-            sp_bar: ::protobuf::MessageField::none(),
+            passive_skill_item_list: ::std::vec::Vec::new(),
             promotion: 0,
-            JDHCHABCLCC: 0,
+            sp: ::protobuf::MessageField::none(),
+            aether_avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cAetherDivideSpiritInfo.proto\x1a\x16PassiveSkillItem.proto\x1a\x0f\
-    SpBarInfo.proto\"\xef\x01\n\x16AetherDivideSpiritInfo\x126\n\rpassive_sk\
-    ill\x18\x08\x20\x03(\x0b2\x11.PassiveSkillItemR\x0cpassiveSkill\x12\x10\
-    \n\x03exp\x18\x07\x20\x01(\rR\x03exp\x12(\n\x10aether_avatar_id\x18\x0e\
-    \x20\x01(\rR\x0eaetherAvatarId\x12!\n\x06sp_bar\x18\n\x20\x01(\x0b2\n.Sp\
-    BarInfoR\x05spBar\x12\x1c\n\tpromotion\x18\x01\x20\x01(\rR\tpromotion\
-    \x12\x20\n\x0bJDHCHABCLCC\x18\x05\x20\x01(\rR\x0bJDHCHABCLCCb\x06proto3\
+    \n\x1cAetherDivideSpiritInfo.proto\x1a\x10AmountInfo.proto\x1a\x11HFFIAJ\
+    IANHD.proto\"\xf6\x01\n\x16AetherDivideSpiritInfo\x12\x20\n\x0bPIOJABPCK\
+    PC\x18\x02\x20\x01(\rR\x0bPIOJABPCKPC\x12\x10\n\x03exp\x18\x07\x20\x01(\
+    \rR\x03exp\x12C\n\x17passive_skill_item_list\x18\x08\x20\x03(\x0b2\x0c.H\
+    FFIAJIANHDR\x14passiveSkillItemList\x12\x1c\n\tpromotion\x18\t\x20\x01(\
+    \rR\tpromotion\x12\x1b\n\x02sp\x18\x0c\x20\x01(\x0b2\x0b.AmountInfoR\x02\
+    sp\x12(\n\x10aether_avatar_id\x18\x0f\x20\x01(\rR\x0eaetherAvatarIdb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -263,8 +264,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::PassiveSkillItem::file_descriptor().clone());
-            deps.push(super::SpBarInfo::file_descriptor().clone());
+            deps.push(super::AmountInfo::file_descriptor().clone());
+            deps.push(super::HFFIAJIANHD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AetherDivideSpiritInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

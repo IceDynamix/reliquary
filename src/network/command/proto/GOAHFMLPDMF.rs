@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GOAHFMLPDMF {
     // message fields
-    // @@protoc_insertion_point(field:GOAHFMLPDMF.era_flipper_region_id)
-    pub era_flipper_region_id: u32,
     // @@protoc_insertion_point(field:GOAHFMLPDMF.state)
     pub state: u32,
+    // @@protoc_insertion_point(field:GOAHFMLPDMF.current_region_index)
+    pub current_region_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GOAHFMLPDMF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GOAHFMLPDMF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "era_flipper_region_id",
-            |m: &GOAHFMLPDMF| { &m.era_flipper_region_id },
-            |m: &mut GOAHFMLPDMF| { &mut m.era_flipper_region_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &GOAHFMLPDMF| { &m.state },
             |m: &mut GOAHFMLPDMF| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "current_region_index",
+            |m: &GOAHFMLPDMF| { &m.current_region_index },
+            |m: &mut GOAHFMLPDMF| { &mut m.current_region_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GOAHFMLPDMF>(
             "GOAHFMLPDMF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.era_flipper_region_id = is.read_uint32()?;
+                32 => {
+                    self.state = is.read_uint32()?;
                 },
                 96 => {
-                    self.state = is.read_uint32()?;
+                    self.current_region_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.era_flipper_region_id);
-        }
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.state);
+            my_size += ::protobuf::rt::uint32_size(4, self.state);
+        }
+        if self.current_region_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.current_region_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.era_flipper_region_id != 0 {
-            os.write_uint32(2, self.era_flipper_region_id)?;
-        }
         if self.state != 0 {
-            os.write_uint32(12, self.state)?;
+            os.write_uint32(4, self.state)?;
+        }
+        if self.current_region_index != 0 {
+            os.write_uint32(12, self.current_region_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GOAHFMLPDMF {
     }
 
     fn clear(&mut self) {
-        self.era_flipper_region_id = 0;
         self.state = 0;
+        self.current_region_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GOAHFMLPDMF {
         static instance: GOAHFMLPDMF = GOAHFMLPDMF {
-            era_flipper_region_id: 0,
             state: 0,
+            current_region_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GOAHFMLPDMF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GOAHFMLPDMF.proto\"V\n\x0bGOAHFMLPDMF\x121\n\x15era_flipper_region\
-    _id\x18\x02\x20\x01(\rR\x12eraFlipperRegionId\x12\x14\n\x05state\x18\x0c\
-    \x20\x01(\rR\x05stateb\x06proto3\
+    \n\x11GOAHFMLPDMF.proto\"U\n\x0bGOAHFMLPDMF\x12\x14\n\x05state\x18\x04\
+    \x20\x01(\rR\x05state\x120\n\x14current_region_index\x18\x0c\x20\x01(\rR\
+    \x12currentRegionIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NKGHHAFANHN {
     // message fields
-    // @@protoc_insertion_point(field:NKGHHAFANHN.KICOBNPCKAE)
-    pub KICOBNPCKAE: u32,
-    // @@protoc_insertion_point(field:NKGHHAFANHN.IIKGCJFJADF)
-    pub IIKGCJFJADF: u32,
-    // @@protoc_insertion_point(field:NKGHHAFANHN.FLEEFJLNLCH)
-    pub FLEEFJLNLCH: u32,
+    // @@protoc_insertion_point(field:NKGHHAFANHN.percent)
+    pub percent: u32,
+    // @@protoc_insertion_point(field:NKGHHAFANHN.GBHOIMGMJGK)
+    pub GBHOIMGMJGK: u32,
+    // @@protoc_insertion_point(field:NKGHHAFANHN.JNHFJILKFAO)
+    pub JNHFJILKFAO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NKGHHAFANHN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl NKGHHAFANHN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KICOBNPCKAE",
-            |m: &NKGHHAFANHN| { &m.KICOBNPCKAE },
-            |m: &mut NKGHHAFANHN| { &mut m.KICOBNPCKAE },
+            "percent",
+            |m: &NKGHHAFANHN| { &m.percent },
+            |m: &mut NKGHHAFANHN| { &mut m.percent },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIKGCJFJADF",
-            |m: &NKGHHAFANHN| { &m.IIKGCJFJADF },
-            |m: &mut NKGHHAFANHN| { &mut m.IIKGCJFJADF },
+            "GBHOIMGMJGK",
+            |m: &NKGHHAFANHN| { &m.GBHOIMGMJGK },
+            |m: &mut NKGHHAFANHN| { &mut m.GBHOIMGMJGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLEEFJLNLCH",
-            |m: &NKGHHAFANHN| { &m.FLEEFJLNLCH },
-            |m: &mut NKGHHAFANHN| { &mut m.FLEEFJLNLCH },
+            "JNHFJILKFAO",
+            |m: &NKGHHAFANHN| { &m.JNHFJILKFAO },
+            |m: &mut NKGHHAFANHN| { &mut m.JNHFJILKFAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NKGHHAFANHN>(
             "NKGHHAFANHN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NKGHHAFANHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KICOBNPCKAE = is.read_uint32()?;
+                8 => {
+                    self.percent = is.read_uint32()?;
                 },
                 16 => {
-                    self.IIKGCJFJADF = is.read_uint32()?;
+                    self.GBHOIMGMJGK = is.read_uint32()?;
                 },
-                32 => {
-                    self.FLEEFJLNLCH = is.read_uint32()?;
+                64 => {
+                    self.JNHFJILKFAO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for NKGHHAFANHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KICOBNPCKAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KICOBNPCKAE);
+        if self.percent != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.percent);
         }
-        if self.IIKGCJFJADF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IIKGCJFJADF);
+        if self.GBHOIMGMJGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GBHOIMGMJGK);
         }
-        if self.FLEEFJLNLCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FLEEFJLNLCH);
+        if self.JNHFJILKFAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JNHFJILKFAO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for NKGHHAFANHN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KICOBNPCKAE != 0 {
-            os.write_uint32(15, self.KICOBNPCKAE)?;
+        if self.percent != 0 {
+            os.write_uint32(1, self.percent)?;
         }
-        if self.IIKGCJFJADF != 0 {
-            os.write_uint32(2, self.IIKGCJFJADF)?;
+        if self.GBHOIMGMJGK != 0 {
+            os.write_uint32(2, self.GBHOIMGMJGK)?;
         }
-        if self.FLEEFJLNLCH != 0 {
-            os.write_uint32(4, self.FLEEFJLNLCH)?;
+        if self.JNHFJILKFAO != 0 {
+            os.write_uint32(8, self.JNHFJILKFAO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for NKGHHAFANHN {
     }
 
     fn clear(&mut self) {
-        self.KICOBNPCKAE = 0;
-        self.IIKGCJFJADF = 0;
-        self.FLEEFJLNLCH = 0;
+        self.percent = 0;
+        self.GBHOIMGMJGK = 0;
+        self.JNHFJILKFAO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NKGHHAFANHN {
         static instance: NKGHHAFANHN = NKGHHAFANHN {
-            KICOBNPCKAE: 0,
-            IIKGCJFJADF: 0,
-            FLEEFJLNLCH: 0,
+            percent: 0,
+            GBHOIMGMJGK: 0,
+            JNHFJILKFAO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for NKGHHAFANHN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NKGHHAFANHN.proto\"s\n\x0bNKGHHAFANHN\x12\x20\n\x0bKICOBNPCKAE\x18\
-    \x0f\x20\x01(\rR\x0bKICOBNPCKAE\x12\x20\n\x0bIIKGCJFJADF\x18\x02\x20\x01\
-    (\rR\x0bIIKGCJFJADF\x12\x20\n\x0bFLEEFJLNLCH\x18\x04\x20\x01(\rR\x0bFLEE\
-    FJLNLCHb\x06proto3\
+    \n\x11NKGHHAFANHN.proto\"k\n\x0bNKGHHAFANHN\x12\x18\n\x07percent\x18\x01\
+    \x20\x01(\rR\x07percent\x12\x20\n\x0bGBHOIMGMJGK\x18\x02\x20\x01(\rR\x0b\
+    GBHOIMGMJGK\x12\x20\n\x0bJNHFJILKFAO\x18\x08\x20\x01(\rR\x0bJNHFJILKFAOb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

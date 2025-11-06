@@ -30,8 +30,8 @@ pub struct GetMarkChestScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMarkChestScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMarkChestScRsp.mark_chest_func_info)
-    pub mark_chest_func_info: ::std::vec::Vec<super::MarkChestFuncInfo::MarkChestFuncInfo>,
+    // @@protoc_insertion_point(field:GetMarkChestScRsp.mark_chest_group_list)
+    pub mark_chest_group_list: ::std::vec::Vec<super::MarkChestGroupInfo::MarkChestGroupInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMarkChestScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetMarkChestScRsp {
             |m: &mut GetMarkChestScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "mark_chest_func_info",
-            |m: &GetMarkChestScRsp| { &m.mark_chest_func_info },
-            |m: &mut GetMarkChestScRsp| { &mut m.mark_chest_func_info },
+            "mark_chest_group_list",
+            |m: &GetMarkChestScRsp| { &m.mark_chest_group_list },
+            |m: &mut GetMarkChestScRsp| { &mut m.mark_chest_group_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMarkChestScRsp>(
             "GetMarkChestScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetMarkChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    self.mark_chest_func_info.push(is.read_message()?);
+                106 => {
+                    self.mark_chest_group_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetMarkChestScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        for value in &self.mark_chest_func_info {
+        for value in &self.mark_chest_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetMarkChestScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        for v in &self.mark_chest_func_info {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.mark_chest_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetMarkChestScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.mark_chest_func_info.clear();
+        self.mark_chest_group_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMarkChestScRsp {
         static instance: GetMarkChestScRsp = GetMarkChestScRsp {
             retcode: 0,
-            mark_chest_func_info: ::std::vec::Vec::new(),
+            mark_chest_group_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMarkChestScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetMarkChestScRsp.proto\x1a\x17MarkChestFuncInfo.proto\"r\n\x11Get\
-    MarkChestScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12C\
-    \n\x14mark_chest_func_info\x18\x07\x20\x03(\x0b2\x12.MarkChestFuncInfoR\
-    \x11markChestFuncInfob\x06proto3\
+    \n\x17GetMarkChestScRsp.proto\x1a\x18MarkChestGroupInfo.proto\"u\n\x11Ge\
+    tMarkChestScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12F\
+    \n\x15mark_chest_group_list\x18\r\x20\x03(\x0b2\x13.MarkChestGroupInfoR\
+    \x12markChestGroupListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MarkChestFuncInfo::file_descriptor().clone());
+            deps.push(super::MarkChestGroupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMarkChestScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

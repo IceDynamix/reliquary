@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HMCAPGMLPOB {
     // message fields
-    // @@protoc_insertion_point(field:HMCAPGMLPOB.AKIDCLEFPDK)
-    pub AKIDCLEFPDK: u32,
-    // @@protoc_insertion_point(field:HMCAPGMLPOB.MEECNGKLDJG)
-    pub MEECNGKLDJG: u32,
+    // @@protoc_insertion_point(field:HMCAPGMLPOB.BBGDELBPLMH)
+    pub BBGDELBPLMH: u32,
+    // @@protoc_insertion_point(field:HMCAPGMLPOB.NCJPDABPGLH)
+    pub NCJPDABPGLH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HMCAPGMLPOB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HMCAPGMLPOB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKIDCLEFPDK",
-            |m: &HMCAPGMLPOB| { &m.AKIDCLEFPDK },
-            |m: &mut HMCAPGMLPOB| { &mut m.AKIDCLEFPDK },
+            "BBGDELBPLMH",
+            |m: &HMCAPGMLPOB| { &m.BBGDELBPLMH },
+            |m: &mut HMCAPGMLPOB| { &mut m.BBGDELBPLMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEECNGKLDJG",
-            |m: &HMCAPGMLPOB| { &m.MEECNGKLDJG },
-            |m: &mut HMCAPGMLPOB| { &mut m.MEECNGKLDJG },
+            "NCJPDABPGLH",
+            |m: &HMCAPGMLPOB| { &m.NCJPDABPGLH },
+            |m: &mut HMCAPGMLPOB| { &mut m.NCJPDABPGLH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HMCAPGMLPOB>(
             "HMCAPGMLPOB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HMCAPGMLPOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.AKIDCLEFPDK = is.read_uint32()?;
+                48 => {
+                    self.BBGDELBPLMH = is.read_uint32()?;
                 },
-                104 => {
-                    self.MEECNGKLDJG = is.read_uint32()?;
+                112 => {
+                    self.NCJPDABPGLH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HMCAPGMLPOB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AKIDCLEFPDK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AKIDCLEFPDK);
+        if self.BBGDELBPLMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BBGDELBPLMH);
         }
-        if self.MEECNGKLDJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MEECNGKLDJG);
+        if self.NCJPDABPGLH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NCJPDABPGLH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HMCAPGMLPOB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AKIDCLEFPDK != 0 {
-            os.write_uint32(3, self.AKIDCLEFPDK)?;
+        if self.BBGDELBPLMH != 0 {
+            os.write_uint32(6, self.BBGDELBPLMH)?;
         }
-        if self.MEECNGKLDJG != 0 {
-            os.write_uint32(13, self.MEECNGKLDJG)?;
+        if self.NCJPDABPGLH != 0 {
+            os.write_uint32(14, self.NCJPDABPGLH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HMCAPGMLPOB {
     }
 
     fn clear(&mut self) {
-        self.AKIDCLEFPDK = 0;
-        self.MEECNGKLDJG = 0;
+        self.BBGDELBPLMH = 0;
+        self.NCJPDABPGLH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HMCAPGMLPOB {
         static instance: HMCAPGMLPOB = HMCAPGMLPOB {
-            AKIDCLEFPDK: 0,
-            MEECNGKLDJG: 0,
+            BBGDELBPLMH: 0,
+            NCJPDABPGLH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HMCAPGMLPOB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HMCAPGMLPOB.proto\"Q\n\x0bHMCAPGMLPOB\x12\x20\n\x0bAKIDCLEFPDK\x18\
-    \x03\x20\x01(\rR\x0bAKIDCLEFPDK\x12\x20\n\x0bMEECNGKLDJG\x18\r\x20\x01(\
-    \rR\x0bMEECNGKLDJGb\x06proto3\
+    \n\x11HMCAPGMLPOB.proto\"Q\n\x0bHMCAPGMLPOB\x12\x20\n\x0bBBGDELBPLMH\x18\
+    \x06\x20\x01(\rR\x0bBBGDELBPLMH\x12\x20\n\x0bNCJPDABPGLH\x18\x0e\x20\x01\
+    (\rR\x0bNCJPDABPGLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

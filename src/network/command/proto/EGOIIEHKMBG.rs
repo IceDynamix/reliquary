@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGOIIEHKMBG {
     // message fields
-    // @@protoc_insertion_point(field:EGOIIEHKMBG.HOIOKBKGFDN)
-    pub HOIOKBKGFDN: u32,
+    // @@protoc_insertion_point(field:EGOIIEHKMBG.event_type)
+    pub event_type: u32,
     // @@protoc_insertion_point(field:EGOIIEHKMBG.num)
     pub num: u32,
     // special fields
@@ -52,9 +52,9 @@ impl EGOIIEHKMBG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOIOKBKGFDN",
-            |m: &EGOIIEHKMBG| { &m.HOIOKBKGFDN },
-            |m: &mut EGOIIEHKMBG| { &mut m.HOIOKBKGFDN },
+            "event_type",
+            |m: &EGOIIEHKMBG| { &m.event_type },
+            |m: &mut EGOIIEHKMBG| { &mut m.event_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.HOIOKBKGFDN = is.read_uint32()?;
+                104 => {
+                    self.event_type = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.num = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HOIOKBKGFDN);
+        if self.event_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.event_type);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.num);
+            my_size += ::protobuf::rt::uint32_size(14, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(4, self.HOIOKBKGFDN)?;
+        if self.event_type != 0 {
+            os.write_uint32(13, self.event_type)?;
         }
         if self.num != 0 {
-            os.write_uint32(6, self.num)?;
+            os.write_uint32(14, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for EGOIIEHKMBG {
     }
 
     fn clear(&mut self) {
-        self.HOIOKBKGFDN = 0;
+        self.event_type = 0;
         self.num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGOIIEHKMBG {
         static instance: EGOIIEHKMBG = EGOIIEHKMBG {
-            HOIOKBKGFDN: 0,
+            event_type: 0,
             num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EGOIIEHKMBG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGOIIEHKMBG.proto\"A\n\x0bEGOIIEHKMBG\x12\x20\n\x0bHOIOKBKGFDN\x18\
-    \x04\x20\x01(\rR\x0bHOIOKBKGFDN\x12\x10\n\x03num\x18\x06\x20\x01(\rR\x03\
-    numb\x06proto3\
+    \n\x11EGOIIEHKMBG.proto\">\n\x0bEGOIIEHKMBG\x12\x1d\n\nevent_type\x18\r\
+    \x20\x01(\rR\teventType\x12\x10\n\x03num\x18\x0e\x20\x01(\rR\x03numb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

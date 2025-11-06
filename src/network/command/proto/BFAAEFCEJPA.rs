@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFAAEFCEJPA {
     // message fields
-    // @@protoc_insertion_point(field:BFAAEFCEJPA.HOCNLIJHJJK)
-    pub HOCNLIJHJJK: ::protobuf::MessageField<super::CEODDCEIDDL::CEODDCEIDDL>,
-    // @@protoc_insertion_point(field:BFAAEFCEJPA.PKBBHJPAEKI)
-    pub PKBBHJPAEKI: ::protobuf::MessageField<super::OHDHPCLIJNH::OHDHPCLIJNH>,
+    // @@protoc_insertion_point(field:BFAAEFCEJPA.IMFDIDPJEIO)
+    pub IMFDIDPJEIO: ::protobuf::MessageField<super::OHDHPCLIJNH::OHDHPCLIJNH>,
+    // @@protoc_insertion_point(field:BFAAEFCEJPA.HIEOIJHPNEE)
+    pub HIEOIJHPNEE: ::protobuf::MessageField<super::CEODDCEIDDL::CEODDCEIDDL>,
     // special fields
     // @@protoc_insertion_point(special_field:BFAAEFCEJPA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BFAAEFCEJPA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CEODDCEIDDL::CEODDCEIDDL>(
-            "HOCNLIJHJJK",
-            |m: &BFAAEFCEJPA| { &m.HOCNLIJHJJK },
-            |m: &mut BFAAEFCEJPA| { &mut m.HOCNLIJHJJK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OHDHPCLIJNH::OHDHPCLIJNH>(
-            "PKBBHJPAEKI",
-            |m: &BFAAEFCEJPA| { &m.PKBBHJPAEKI },
-            |m: &mut BFAAEFCEJPA| { &mut m.PKBBHJPAEKI },
+            "IMFDIDPJEIO",
+            |m: &BFAAEFCEJPA| { &m.IMFDIDPJEIO },
+            |m: &mut BFAAEFCEJPA| { &mut m.IMFDIDPJEIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CEODDCEIDDL::CEODDCEIDDL>(
+            "HIEOIJHPNEE",
+            |m: &BFAAEFCEJPA| { &m.HIEOIJHPNEE },
+            |m: &mut BFAAEFCEJPA| { &mut m.HIEOIJHPNEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BFAAEFCEJPA>(
             "BFAAEFCEJPA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BFAAEFCEJPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HOCNLIJHJJK)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMFDIDPJEIO)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKBBHJPAEKI)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HIEOIJHPNEE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BFAAEFCEJPA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HOCNLIJHJJK.as_ref() {
+        if let Some(v) = self.IMFDIDPJEIO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.PKBBHJPAEKI.as_ref() {
+        if let Some(v) = self.HIEOIJHPNEE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for BFAAEFCEJPA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HOCNLIJHJJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.IMFDIDPJEIO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.PKBBHJPAEKI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.HIEOIJHPNEE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for BFAAEFCEJPA {
     }
 
     fn clear(&mut self) {
-        self.HOCNLIJHJJK.clear();
-        self.PKBBHJPAEKI.clear();
+        self.IMFDIDPJEIO.clear();
+        self.HIEOIJHPNEE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFAAEFCEJPA {
         static instance: BFAAEFCEJPA = BFAAEFCEJPA {
-            HOCNLIJHJJK: ::protobuf::MessageField::none(),
-            PKBBHJPAEKI: ::protobuf::MessageField::none(),
+            IMFDIDPJEIO: ::protobuf::MessageField::none(),
+            HIEOIJHPNEE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for BFAAEFCEJPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFAAEFCEJPA.proto\x1a\x11CEODDCEIDDL.proto\x1a\x11OHDHPCLIJNH.prot\
-    o\"m\n\x0bBFAAEFCEJPA\x12.\n\x0bHOCNLIJHJJK\x18\x06\x20\x01(\x0b2\x0c.CE\
-    ODDCEIDDLR\x0bHOCNLIJHJJK\x12.\n\x0bPKBBHJPAEKI\x18\x05\x20\x01(\x0b2\
-    \x0c.OHDHPCLIJNHR\x0bPKBBHJPAEKIb\x06proto3\
+    o\"m\n\x0bBFAAEFCEJPA\x12.\n\x0bIMFDIDPJEIO\x18\x08\x20\x01(\x0b2\x0c.OH\
+    DHPCLIJNHR\x0bIMFDIDPJEIO\x12.\n\x0bHIEOIJHPNEE\x18\t\x20\x01(\x0b2\x0c.\
+    CEODDCEIDDLR\x0bHIEOIJHPNEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

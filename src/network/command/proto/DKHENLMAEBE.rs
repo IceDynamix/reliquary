@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DKHENLMAEBE {
     // message fields
-    // @@protoc_insertion_point(field:DKHENLMAEBE.HFPPEGIFFLM)
-    pub HFPPEGIFFLM: ::std::vec::Vec<super::GIIHBKMJKHM::GIIHBKMJKHM>,
+    // @@protoc_insertion_point(field:DKHENLMAEBE.DNPGFFLKPIF)
+    pub DNPGFFLKPIF: ::std::vec::Vec<super::GIIHBKMJKHM::GIIHBKMJKHM>,
     // special fields
     // @@protoc_insertion_point(special_field:DKHENLMAEBE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DKHENLMAEBE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFPPEGIFFLM",
-            |m: &DKHENLMAEBE| { &m.HFPPEGIFFLM },
-            |m: &mut DKHENLMAEBE| { &mut m.HFPPEGIFFLM },
+            "DNPGFFLKPIF",
+            |m: &DKHENLMAEBE| { &m.DNPGFFLKPIF },
+            |m: &mut DKHENLMAEBE| { &mut m.DNPGFFLKPIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DKHENLMAEBE>(
             "DKHENLMAEBE",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DKHENLMAEBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.HFPPEGIFFLM.push(is.read_message()?);
+                10 => {
+                    self.DNPGFFLKPIF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for DKHENLMAEBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HFPPEGIFFLM {
+        for value in &self.DNPGFFLKPIF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for DKHENLMAEBE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HFPPEGIFFLM {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.DNPGFFLKPIF {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for DKHENLMAEBE {
     }
 
     fn clear(&mut self) {
-        self.HFPPEGIFFLM.clear();
+        self.DNPGFFLKPIF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DKHENLMAEBE {
         static instance: DKHENLMAEBE = DKHENLMAEBE {
-            HFPPEGIFFLM: ::std::vec::Vec::new(),
+            DNPGFFLKPIF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for DKHENLMAEBE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DKHENLMAEBE.proto\x1a\x11GIIHBKMJKHM.proto\"=\n\x0bDKHENLMAEBE\x12\
-    .\n\x0bHFPPEGIFFLM\x18\x0b\x20\x03(\x0b2\x0c.GIIHBKMJKHMR\x0bHFPPEGIFFLM\
+    .\n\x0bDNPGFFLKPIF\x18\x01\x20\x03(\x0b2\x0c.GIIHBKMJKHMR\x0bDNPGFFLKPIF\
     b\x06proto3\
 ";
 

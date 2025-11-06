@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FKOCBOOCDNL {
     // message fields
-    // @@protoc_insertion_point(field:FKOCBOOCDNL.POIIAIAKILF)
-    pub POIIAIAKILF: u32,
+    // @@protoc_insertion_point(field:FKOCBOOCDNL.HGLKKJDBNCK)
+    pub HGLKKJDBNCK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FKOCBOOCDNL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FKOCBOOCDNL {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POIIAIAKILF",
-            |m: &FKOCBOOCDNL| { &m.POIIAIAKILF },
-            |m: &mut FKOCBOOCDNL| { &mut m.POIIAIAKILF },
+            "HGLKKJDBNCK",
+            |m: &FKOCBOOCDNL| { &m.HGLKKJDBNCK },
+            |m: &mut FKOCBOOCDNL| { &mut m.HGLKKJDBNCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FKOCBOOCDNL>(
             "FKOCBOOCDNL",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for FKOCBOOCDNL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.POIIAIAKILF = is.read_uint32()?;
+                    self.HGLKKJDBNCK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FKOCBOOCDNL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.POIIAIAKILF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.POIIAIAKILF);
+        if self.HGLKKJDBNCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HGLKKJDBNCK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FKOCBOOCDNL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.POIIAIAKILF != 0 {
-            os.write_uint32(1, self.POIIAIAKILF)?;
+        if self.HGLKKJDBNCK != 0 {
+            os.write_uint32(1, self.HGLKKJDBNCK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FKOCBOOCDNL {
     }
 
     fn clear(&mut self) {
-        self.POIIAIAKILF = 0;
+        self.HGLKKJDBNCK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FKOCBOOCDNL {
         static instance: FKOCBOOCDNL = FKOCBOOCDNL {
-            POIIAIAKILF: 0,
+            HGLKKJDBNCK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FKOCBOOCDNL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FKOCBOOCDNL.proto\"/\n\x0bFKOCBOOCDNL\x12\x20\n\x0bPOIIAIAKILF\x18\
-    \x01\x20\x01(\rR\x0bPOIIAIAKILFb\x06proto3\
+    \n\x11FKOCBOOCDNL.proto\"/\n\x0bFKOCBOOCDNL\x12\x20\n\x0bHGLKKJDBNCK\x18\
+    \x01\x20\x01(\rR\x0bHGLKKJDBNCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

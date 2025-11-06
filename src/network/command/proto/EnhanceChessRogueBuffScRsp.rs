@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceChessRogueBuffScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.ANAGCODDMOM)
-    pub ANAGCODDMOM: ::protobuf::MessageField<super::RogueCommonBuff::RogueCommonBuff>,
+    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.is_succ)
+    pub is_succ: bool,
     // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.FHLOMGDANJM)
-    pub FHLOMGDANJM: ::protobuf::MessageField<super::ChessRogueBuffEnhanceList::ChessRogueBuffEnhanceList>,
-    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.FGEFCEFKHMH)
-    pub FGEFCEFKHMH: bool,
+    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.buff_enhance_info)
+    pub buff_enhance_info: ::protobuf::MessageField<super::NGPIMHHELMM::NGPIMHHELMM>,
+    // @@protoc_insertion_point(field:EnhanceChessRogueBuffScRsp.maze_buff_info)
+    pub maze_buff_info: ::protobuf::MessageField<super::RogueBuffInfo::RogueBuffInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceChessRogueBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EnhanceChessRogueBuffScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonBuff::RogueCommonBuff>(
-            "ANAGCODDMOM",
-            |m: &EnhanceChessRogueBuffScRsp| { &m.ANAGCODDMOM },
-            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.ANAGCODDMOM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_succ",
+            |m: &EnhanceChessRogueBuffScRsp| { &m.is_succ },
+            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.is_succ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnhanceChessRogueBuffScRsp| { &m.retcode },
             |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueBuffEnhanceList::ChessRogueBuffEnhanceList>(
-            "FHLOMGDANJM",
-            |m: &EnhanceChessRogueBuffScRsp| { &m.FHLOMGDANJM },
-            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.FHLOMGDANJM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NGPIMHHELMM::NGPIMHHELMM>(
+            "buff_enhance_info",
+            |m: &EnhanceChessRogueBuffScRsp| { &m.buff_enhance_info },
+            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.buff_enhance_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGEFCEFKHMH",
-            |m: &EnhanceChessRogueBuffScRsp| { &m.FGEFCEFKHMH },
-            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.FGEFCEFKHMH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffInfo::RogueBuffInfo>(
+            "maze_buff_info",
+            |m: &EnhanceChessRogueBuffScRsp| { &m.maze_buff_info },
+            |m: &mut EnhanceChessRogueBuffScRsp| { &mut m.maze_buff_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceChessRogueBuffScRsp>(
             "EnhanceChessRogueBuffScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANAGCODDMOM)?;
+                8 => {
+                    self.is_succ = is.read_bool()?;
                 },
-                112 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FHLOMGDANJM)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_enhance_info)?;
                 },
-                48 => {
-                    self.FGEFCEFKHMH = is.read_bool()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.maze_buff_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ANAGCODDMOM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.is_succ != false {
+            my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if let Some(v) = self.FHLOMGDANJM.as_ref() {
+        if let Some(v) = self.buff_enhance_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FGEFCEFKHMH != false {
-            my_size += 1 + 1;
+        if let Some(v) = self.maze_buff_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ANAGCODDMOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.is_succ != false {
+            os.write_bool(1, self.is_succ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.FHLOMGDANJM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.buff_enhance_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.FGEFCEFKHMH != false {
-            os.write_bool(6, self.FGEFCEFKHMH)?;
+        if let Some(v) = self.maze_buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for EnhanceChessRogueBuffScRsp {
     }
 
     fn clear(&mut self) {
-        self.ANAGCODDMOM.clear();
+        self.is_succ = false;
         self.retcode = 0;
-        self.FHLOMGDANJM.clear();
-        self.FGEFCEFKHMH = false;
+        self.buff_enhance_info.clear();
+        self.maze_buff_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceChessRogueBuffScRsp {
         static instance: EnhanceChessRogueBuffScRsp = EnhanceChessRogueBuffScRsp {
-            ANAGCODDMOM: ::protobuf::MessageField::none(),
+            is_succ: false,
             retcode: 0,
-            FHLOMGDANJM: ::protobuf::MessageField::none(),
-            FGEFCEFKHMH: false,
+            buff_enhance_info: ::protobuf::MessageField::none(),
+            maze_buff_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,13 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceChessRogueBuffScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnhanceChessRogueBuffScRsp.proto\x1a\x1fChessRogueBuffEnhanceList.\
-    proto\x1a\x15RogueCommonBuff.proto\"\xca\x01\n\x1aEnhanceChessRogueBuffS\
-    cRsp\x122\n\x0bANAGCODDMOM\x18\x03\x20\x01(\x0b2\x10.RogueCommonBuffR\
-    \x0bANAGCODDMOM\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12<\
-    \n\x0bFHLOMGDANJM\x18\n\x20\x01(\x0b2\x1a.ChessRogueBuffEnhanceListR\x0b\
-    FHLOMGDANJM\x12\x20\n\x0bFGEFCEFKHMH\x18\x06\x20\x01(\x08R\x0bFGEFCEFKHM\
-    Hb\x06proto3\
+    \n\x20EnhanceChessRogueBuffScRsp.proto\x1a\x11NGPIMHHELMM.proto\x1a\x13R\
+    ogueBuffInfo.proto\"\xbf\x01\n\x1aEnhanceChessRogueBuffScRsp\x12\x17\n\
+    \x07is_succ\x18\x01\x20\x01(\x08R\x06isSucc\x12\x18\n\x07retcode\x18\x03\
+    \x20\x01(\rR\x07retcode\x128\n\x11buff_enhance_info\x18\x07\x20\x01(\x0b\
+    2\x0c.NGPIMHHELMMR\x0fbuffEnhanceInfo\x124\n\x0emaze_buff_info\x18\x0e\
+    \x20\x01(\x0b2\x0e.RogueBuffInfoR\x0cmazeBuffInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -227,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ChessRogueBuffEnhanceList::file_descriptor().clone());
-            deps.push(super::RogueCommonBuff::file_descriptor().clone());
+            deps.push(super::NGPIMHHELMM::file_descriptor().clone());
+            deps.push(super::RogueBuffInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnhanceChessRogueBuffScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

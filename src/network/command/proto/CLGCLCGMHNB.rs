@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CLGCLCGMHNB {
     // message fields
-    // @@protoc_insertion_point(field:CLGCLCGMHNB.FMKKABMDINJ)
-    pub FMKKABMDINJ: u32,
-    // @@protoc_insertion_point(field:CLGCLCGMHNB.BKMPFEOCFIB)
-    pub BKMPFEOCFIB: u32,
     // @@protoc_insertion_point(field:CLGCLCGMHNB.count)
     pub count: u32,
+    // @@protoc_insertion_point(field:CLGCLCGMHNB.KDHLGAAAJEB)
+    pub KDHLGAAAJEB: u32,
+    // @@protoc_insertion_point(field:CLGCLCGMHNB.bird_pos_id)
+    pub bird_pos_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CLGCLCGMHNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl CLGCLCGMHNB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMKKABMDINJ",
-            |m: &CLGCLCGMHNB| { &m.FMKKABMDINJ },
-            |m: &mut CLGCLCGMHNB| { &mut m.FMKKABMDINJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKMPFEOCFIB",
-            |m: &CLGCLCGMHNB| { &m.BKMPFEOCFIB },
-            |m: &mut CLGCLCGMHNB| { &mut m.BKMPFEOCFIB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
             |m: &CLGCLCGMHNB| { &m.count },
             |m: &mut CLGCLCGMHNB| { &mut m.count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDHLGAAAJEB",
+            |m: &CLGCLCGMHNB| { &m.KDHLGAAAJEB },
+            |m: &mut CLGCLCGMHNB| { &mut m.KDHLGAAAJEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "bird_pos_id",
+            |m: &CLGCLCGMHNB| { &m.bird_pos_id },
+            |m: &mut CLGCLCGMHNB| { &mut m.bird_pos_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CLGCLCGMHNB>(
             "CLGCLCGMHNB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CLGCLCGMHNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FMKKABMDINJ = is.read_uint32()?;
-                },
-                72 => {
-                    self.BKMPFEOCFIB = is.read_uint32()?;
-                },
-                8 => {
+                88 => {
                     self.count = is.read_uint32()?;
+                },
+                96 => {
+                    self.KDHLGAAAJEB = is.read_uint32()?;
+                },
+                104 => {
+                    self.bird_pos_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CLGCLCGMHNB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMKKABMDINJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FMKKABMDINJ);
-        }
-        if self.BKMPFEOCFIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BKMPFEOCFIB);
-        }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.count);
+            my_size += ::protobuf::rt::uint32_size(11, self.count);
+        }
+        if self.KDHLGAAAJEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KDHLGAAAJEB);
+        }
+        if self.bird_pos_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.bird_pos_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CLGCLCGMHNB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMKKABMDINJ != 0 {
-            os.write_uint32(4, self.FMKKABMDINJ)?;
-        }
-        if self.BKMPFEOCFIB != 0 {
-            os.write_uint32(9, self.BKMPFEOCFIB)?;
-        }
         if self.count != 0 {
-            os.write_uint32(1, self.count)?;
+            os.write_uint32(11, self.count)?;
+        }
+        if self.KDHLGAAAJEB != 0 {
+            os.write_uint32(12, self.KDHLGAAAJEB)?;
+        }
+        if self.bird_pos_id != 0 {
+            os.write_uint32(13, self.bird_pos_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CLGCLCGMHNB {
     }
 
     fn clear(&mut self) {
-        self.FMKKABMDINJ = 0;
-        self.BKMPFEOCFIB = 0;
         self.count = 0;
+        self.KDHLGAAAJEB = 0;
+        self.bird_pos_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CLGCLCGMHNB {
         static instance: CLGCLCGMHNB = CLGCLCGMHNB {
-            FMKKABMDINJ: 0,
-            BKMPFEOCFIB: 0,
             count: 0,
+            KDHLGAAAJEB: 0,
+            bird_pos_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CLGCLCGMHNB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CLGCLCGMHNB.proto\"g\n\x0bCLGCLCGMHNB\x12\x20\n\x0bFMKKABMDINJ\x18\
-    \x04\x20\x01(\rR\x0bFMKKABMDINJ\x12\x20\n\x0bBKMPFEOCFIB\x18\t\x20\x01(\
-    \rR\x0bBKMPFEOCFIB\x12\x14\n\x05count\x18\x01\x20\x01(\rR\x05countb\x06p\
-    roto3\
+    \n\x11CLGCLCGMHNB.proto\"e\n\x0bCLGCLCGMHNB\x12\x14\n\x05count\x18\x0b\
+    \x20\x01(\rR\x05count\x12\x20\n\x0bKDHLGAAAJEB\x18\x0c\x20\x01(\rR\x0bKD\
+    HLGAAAJEB\x12\x1e\n\x0bbird_pos_id\x18\r\x20\x01(\rR\tbirdPosIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

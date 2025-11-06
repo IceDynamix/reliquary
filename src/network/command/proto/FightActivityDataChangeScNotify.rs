@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightActivityDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.DGNFCMDJOPA)
-    pub DGNFCMDJOPA: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.JKHIFDGHJDO)
-    pub JKHIFDGHJDO: ::std::vec::Vec<super::ICLFKKNFDME::ICLFKKNFDME>,
+    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.fight_activity_group)
+    pub fight_activity_group: ::std::vec::Vec<super::ICLFKKNFDME::ICLFKKNFDME>,
+    // @@protoc_insertion_point(field:FightActivityDataChangeScNotify.food_remain_turn)
+    pub food_remain_turn: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:FightActivityDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FightActivityDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "DGNFCMDJOPA",
-            |m: &FightActivityDataChangeScNotify| { &m.DGNFCMDJOPA },
-            |m: &mut FightActivityDataChangeScNotify| { &mut m.DGNFCMDJOPA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKHIFDGHJDO",
-            |m: &FightActivityDataChangeScNotify| { &m.JKHIFDGHJDO },
-            |m: &mut FightActivityDataChangeScNotify| { &mut m.JKHIFDGHJDO },
+            "fight_activity_group",
+            |m: &FightActivityDataChangeScNotify| { &m.fight_activity_group },
+            |m: &mut FightActivityDataChangeScNotify| { &mut m.fight_activity_group },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "food_remain_turn",
+            |m: &FightActivityDataChangeScNotify| { &m.food_remain_turn },
+            |m: &mut FightActivityDataChangeScNotify| { &mut m.food_remain_turn },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightActivityDataChangeScNotify>(
             "FightActivityDataChangeScNotify",
@@ -80,6 +80,9 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
+                    self.fight_activity_group.push(is.read_message()?);
+                },
+                98 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -92,10 +95,7 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.DGNFCMDJOPA.insert(key, value);
-                },
-                98 => {
-                    self.JKHIFDGHJDO.push(is.read_message()?);
+                    self.food_remain_turn.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,15 +109,15 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.DGNFCMDJOPA {
+        for value in &self.fight_activity_group {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for (k, v) in &self.food_remain_turn {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        for value in &self.JKHIFDGHJDO {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,17 +125,17 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.DGNFCMDJOPA {
+        for v in &self.fight_activity_group {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        for (k, v) in &self.food_remain_turn {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(98)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
-        };
-        for v in &self.JKHIFDGHJDO {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -154,8 +154,8 @@ impl ::protobuf::Message for FightActivityDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.DGNFCMDJOPA.clear();
-        self.JKHIFDGHJDO.clear();
+        self.fight_activity_group.clear();
+        self.food_remain_turn.clear();
         self.special_fields.clear();
     }
 
@@ -183,13 +183,13 @@ impl ::protobuf::reflect::ProtobufValue for FightActivityDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%FightActivityDataChangeScNotify.proto\x1a\x11ICLFKKNFDME.proto\"\xe6\
-    \x01\n\x1fFightActivityDataChangeScNotify\x12S\n\x0bDGNFCMDJOPA\x18\x05\
-    \x20\x03(\x0b21.FightActivityDataChangeScNotify.DGNFCMDJOPAEntryR\x0bDGN\
-    FCMDJOPA\x12.\n\x0bJKHIFDGHJDO\x18\x0c\x20\x03(\x0b2\x0c.ICLFKKNFDMER\
-    \x0bJKHIFDGHJDO\x1a>\n\x10DGNFCMDJOPAEntry\x12\x10\n\x03key\x18\x01\x20\
-    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
-    \x01b\x06proto3\
+    \n%FightActivityDataChangeScNotify.proto\x1a\x11ICLFKKNFDME.proto\"\x84\
+    \x02\n\x1fFightActivityDataChangeScNotify\x12>\n\x14fight_activity_group\
+    \x18\x05\x20\x03(\x0b2\x0c.ICLFKKNFDMER\x12fightActivityGroup\x12^\n\x10\
+    food_remain_turn\x18\x0c\x20\x03(\x0b24.FightActivityDataChangeScNotify.\
+    FoodRemainTurnEntryR\x0efoodRemainTurn\x1aA\n\x13FoodRemainTurnEntry\x12\
+    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
+    \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

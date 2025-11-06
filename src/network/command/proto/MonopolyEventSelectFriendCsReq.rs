@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyEventSelectFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendCsReq.BAGMAOIPMJE)
-    pub BAGMAOIPMJE: bool,
-    // @@protoc_insertion_point(field:MonopolyEventSelectFriendCsReq.IPGECLELHGJ)
-    pub IPGECLELHGJ: u32,
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendCsReq.friend_uid)
+    pub friend_uid: u32,
+    // @@protoc_insertion_point(field:MonopolyEventSelectFriendCsReq.is_quit)
+    pub is_quit: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyEventSelectFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MonopolyEventSelectFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAGMAOIPMJE",
-            |m: &MonopolyEventSelectFriendCsReq| { &m.BAGMAOIPMJE },
-            |m: &mut MonopolyEventSelectFriendCsReq| { &mut m.BAGMAOIPMJE },
+            "friend_uid",
+            |m: &MonopolyEventSelectFriendCsReq| { &m.friend_uid },
+            |m: &mut MonopolyEventSelectFriendCsReq| { &mut m.friend_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPGECLELHGJ",
-            |m: &MonopolyEventSelectFriendCsReq| { &m.IPGECLELHGJ },
-            |m: &mut MonopolyEventSelectFriendCsReq| { &mut m.IPGECLELHGJ },
+            "is_quit",
+            |m: &MonopolyEventSelectFriendCsReq| { &m.is_quit },
+            |m: &mut MonopolyEventSelectFriendCsReq| { &mut m.is_quit },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyEventSelectFriendCsReq>(
             "MonopolyEventSelectFriendCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BAGMAOIPMJE = is.read_bool()?;
+                24 => {
+                    self.friend_uid = is.read_uint32()?;
                 },
-                112 => {
-                    self.IPGECLELHGJ = is.read_uint32()?;
+                72 => {
+                    self.is_quit = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BAGMAOIPMJE != false {
-            my_size += 1 + 1;
+        if self.friend_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.friend_uid);
         }
-        if self.IPGECLELHGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IPGECLELHGJ);
+        if self.is_quit != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BAGMAOIPMJE != false {
-            os.write_bool(2, self.BAGMAOIPMJE)?;
+        if self.friend_uid != 0 {
+            os.write_uint32(3, self.friend_uid)?;
         }
-        if self.IPGECLELHGJ != 0 {
-            os.write_uint32(14, self.IPGECLELHGJ)?;
+        if self.is_quit != false {
+            os.write_bool(9, self.is_quit)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MonopolyEventSelectFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.BAGMAOIPMJE = false;
-        self.IPGECLELHGJ = 0;
+        self.friend_uid = 0;
+        self.is_quit = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyEventSelectFriendCsReq {
         static instance: MonopolyEventSelectFriendCsReq = MonopolyEventSelectFriendCsReq {
-            BAGMAOIPMJE: false,
-            IPGECLELHGJ: 0,
+            friend_uid: 0,
+            is_quit: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventSelectFriendCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MonopolyEventSelectFriendCsReq.proto\"d\n\x1eMonopolyEventSelectFrien\
-    dCsReq\x12\x20\n\x0bBAGMAOIPMJE\x18\x02\x20\x01(\x08R\x0bBAGMAOIPMJE\x12\
-    \x20\n\x0bIPGECLELHGJ\x18\x0e\x20\x01(\rR\x0bIPGECLELHGJb\x06proto3\
+    \n$MonopolyEventSelectFriendCsReq.proto\"X\n\x1eMonopolyEventSelectFrien\
+    dCsReq\x12\x1d\n\nfriend_uid\x18\x03\x20\x01(\rR\tfriendUid\x12\x17\n\
+    \x07is_quit\x18\t\x20\x01(\x08R\x06isQuitb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

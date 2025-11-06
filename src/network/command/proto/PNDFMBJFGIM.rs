@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PNDFMBJFGIM {
     // message fields
     // @@protoc_insertion_point(field:PNDFMBJFGIM.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::AetherAvatarInfo::AetherAvatarInfo>,
+    pub avatar_list: ::std::vec::Vec<super::AetherBattleAvatar::AetherBattleAvatar>,
     // @@protoc_insertion_point(field:PNDFMBJFGIM.monster_wave_list)
     pub monster_wave_list: ::std::vec::Vec<super::BattleMonsterWave::BattleMonsterWave>,
     // @@protoc_insertion_point(field:PNDFMBJFGIM.buff_list)
@@ -186,12 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for PNDFMBJFGIM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNDFMBJFGIM.proto\x1a\x16AetherAvatarInfo.proto\x1a\x10BattleBuff.\
-    proto\x1a\x17BattleMonsterWave.proto\"\xab\x01\n\x0bPNDFMBJFGIM\x122\n\
-    \x0bavatar_list\x18\x01\x20\x03(\x0b2\x11.AetherAvatarInfoR\navatarList\
-    \x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWave\
-    R\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleB\
-    uffR\x08buffListb\x06proto3\
+    \n\x11PNDFMBJFGIM.proto\x1a\x18AetherBattleAvatar.proto\x1a\x10BattleBuf\
+    f.proto\x1a\x17BattleMonsterWave.proto\"\xad\x01\n\x0bPNDFMBJFGIM\x124\n\
+    \x0bavatar_list\x18\x01\x20\x03(\x0b2\x13.AetherBattleAvatarR\navatarLis\
+    t\x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWav\
+    eR\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.Battle\
+    BuffR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,7 +209,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::AetherAvatarInfo::file_descriptor().clone());
+            deps.push(super::AetherBattleAvatar::file_descriptor().clone());
             deps.push(super::BattleBuff::file_descriptor().clone());
             deps.push(super::BattleMonsterWave::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

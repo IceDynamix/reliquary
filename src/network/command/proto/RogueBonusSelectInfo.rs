@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueBonusSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueBonusSelectInfo.bonus_id_list)
-    pub bonus_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueBonusSelectInfo.bonus_list)
+    pub bonus_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueBonusSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueBonusSelectInfo {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "bonus_id_list",
-            |m: &RogueBonusSelectInfo| { &m.bonus_id_list },
-            |m: &mut RogueBonusSelectInfo| { &mut m.bonus_id_list },
+            "bonus_list",
+            |m: &RogueBonusSelectInfo| { &m.bonus_list },
+            |m: &mut RogueBonusSelectInfo| { &mut m.bonus_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueBonusSelectInfo>(
             "RogueBonusSelectInfo",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.bonus_id_list)?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.bonus_list)?;
                 },
-                80 => {
-                    self.bonus_id_list.push(is.read_uint32()?);
+                40 => {
+                    self.bonus_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.bonus_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.bonus_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.bonus_id_list)?;
+        os.write_repeated_packed_uint32(5, &self.bonus_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for RogueBonusSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.bonus_id_list.clear();
+        self.bonus_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueBonusSelectInfo {
         static instance: RogueBonusSelectInfo = RogueBonusSelectInfo {
-            bonus_id_list: ::std::vec::Vec::new(),
+            bonus_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueBonusSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueBonusSelectInfo.proto\":\n\x14RogueBonusSelectInfo\x12\"\n\rb\
-    onus_id_list\x18\n\x20\x03(\rR\x0bbonusIdListb\x06proto3\
+    \n\x1aRogueBonusSelectInfo.proto\"5\n\x14RogueBonusSelectInfo\x12\x1d\n\
+    \nbonus_list\x18\x05\x20\x03(\rR\tbonusListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

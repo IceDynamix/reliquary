@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyCellUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyCellUpdateNotify.HGBIGBFGBOM)
-    pub HGBIGBFGBOM: ::protobuf::MessageField<super::IAACCAFGEPI::IAACCAFGEPI>,
+    // @@protoc_insertion_point(field:MonopolyCellUpdateNotify.CCLJOOOJPGA)
+    pub CCLJOOOJPGA: ::protobuf::MessageField<super::IAACCAFGEPI::IAACCAFGEPI>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyCellUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyCellUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IAACCAFGEPI::IAACCAFGEPI>(
-            "HGBIGBFGBOM",
-            |m: &MonopolyCellUpdateNotify| { &m.HGBIGBFGBOM },
-            |m: &mut MonopolyCellUpdateNotify| { &mut m.HGBIGBFGBOM },
+            "CCLJOOOJPGA",
+            |m: &MonopolyCellUpdateNotify| { &m.CCLJOOOJPGA },
+            |m: &mut MonopolyCellUpdateNotify| { &mut m.CCLJOOOJPGA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyCellUpdateNotify>(
             "MonopolyCellUpdateNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGBIGBFGBOM)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCLJOOOJPGA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HGBIGBFGBOM.as_ref() {
+        if let Some(v) = self.CCLJOOOJPGA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HGBIGBFGBOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.CCLJOOOJPGA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyCellUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.HGBIGBFGBOM.clear();
+        self.CCLJOOOJPGA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyCellUpdateNotify {
         static instance: MonopolyCellUpdateNotify = MonopolyCellUpdateNotify {
-            HGBIGBFGBOM: ::protobuf::MessageField::none(),
+            CCLJOOOJPGA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyCellUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMonopolyCellUpdateNotify.proto\x1a\x11IAACCAFGEPI.proto\"J\n\x18Mo\
-    nopolyCellUpdateNotify\x12.\n\x0bHGBIGBFGBOM\x18\x06\x20\x01(\x0b2\x0c.I\
-    AACCAFGEPIR\x0bHGBIGBFGBOMb\x06proto3\
+    nopolyCellUpdateNotify\x12.\n\x0bCCLJOOOJPGA\x18\x05\x20\x01(\x0b2\x0c.I\
+    AACCAFGEPIR\x0bCCLJOOOJPGAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FriendHistoryInfo {
     // message fields
-    // @@protoc_insertion_point(field:FriendHistoryInfo.last_send_time)
-    pub last_send_time: i64,
     // @@protoc_insertion_point(field:FriendHistoryInfo.contact_side)
     pub contact_side: u32,
+    // @@protoc_insertion_point(field:FriendHistoryInfo.last_send_time)
+    pub last_send_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:FriendHistoryInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FriendHistoryInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "last_send_time",
-            |m: &FriendHistoryInfo| { &m.last_send_time },
-            |m: &mut FriendHistoryInfo| { &mut m.last_send_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "contact_side",
             |m: &FriendHistoryInfo| { &m.contact_side },
             |m: &mut FriendHistoryInfo| { &mut m.contact_side },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "last_send_time",
+            |m: &FriendHistoryInfo| { &m.last_send_time },
+            |m: &mut FriendHistoryInfo| { &mut m.last_send_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendHistoryInfo>(
             "FriendHistoryInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FriendHistoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.last_send_time = is.read_int64()?;
+                88 => {
+                    self.contact_side = is.read_uint32()?;
                 },
                 96 => {
-                    self.contact_side = is.read_uint32()?;
+                    self.last_send_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FriendHistoryInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.last_send_time != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.last_send_time);
-        }
         if self.contact_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.contact_side);
+            my_size += ::protobuf::rt::uint32_size(11, self.contact_side);
+        }
+        if self.last_send_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.last_send_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FriendHistoryInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.last_send_time != 0 {
-            os.write_int64(3, self.last_send_time)?;
-        }
         if self.contact_side != 0 {
-            os.write_uint32(12, self.contact_side)?;
+            os.write_uint32(11, self.contact_side)?;
+        }
+        if self.last_send_time != 0 {
+            os.write_int64(12, self.last_send_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FriendHistoryInfo {
     }
 
     fn clear(&mut self) {
-        self.last_send_time = 0;
         self.contact_side = 0;
+        self.last_send_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendHistoryInfo {
         static instance: FriendHistoryInfo = FriendHistoryInfo {
-            last_send_time: 0,
             contact_side: 0,
+            last_send_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FriendHistoryInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FriendHistoryInfo.proto\"\\\n\x11FriendHistoryInfo\x12$\n\x0elast_\
-    send_time\x18\x03\x20\x01(\x03R\x0clastSendTime\x12!\n\x0ccontact_side\
-    \x18\x0c\x20\x01(\rR\x0bcontactSideb\x06proto3\
+    \n\x17FriendHistoryInfo.proto\"\\\n\x11FriendHistoryInfo\x12!\n\x0cconta\
+    ct_side\x18\x0b\x20\x01(\rR\x0bcontactSide\x12$\n\x0elast_send_time\x18\
+    \x0c\x20\x01(\x03R\x0clastSendTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct BoxingClubChallengeUpdateScNotify {
     // message fields
     // @@protoc_insertion_point(field:BoxingClubChallengeUpdateScNotify.challenge)
-    pub challenge: ::protobuf::MessageField<super::FCIHIJLOMGA::FCIHIJLOMGA>,
+    pub challenge: ::protobuf::MessageField<super::BoxingClubInfo::BoxingClubInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:BoxingClubChallengeUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl BoxingClubChallengeUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FCIHIJLOMGA::FCIHIJLOMGA>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BoxingClubInfo::BoxingClubInfo>(
             "challenge",
             |m: &BoxingClubChallengeUpdateScNotify| { &m.challenge },
             |m: &mut BoxingClubChallengeUpdateScNotify| { &mut m.challenge },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for BoxingClubChallengeUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'BoxingClubChallengeUpdateScNotify.proto\x1a\x11FCIHIJLOMGA.proto\"O\n\
-    !BoxingClubChallengeUpdateScNotify\x12*\n\tchallenge\x18\x02\x20\x01(\
-    \x0b2\x0c.FCIHIJLOMGAR\tchallengeb\x06proto3\
+    \n'BoxingClubChallengeUpdateScNotify.proto\x1a\x14BoxingClubInfo.proto\"\
+    R\n!BoxingClubChallengeUpdateScNotify\x12-\n\tchallenge\x18\r\x20\x01(\
+    \x0b2\x0f.BoxingClubInfoR\tchallengeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FCIHIJLOMGA::file_descriptor().clone());
+            deps.push(super::BoxingClubInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BoxingClubChallengeUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

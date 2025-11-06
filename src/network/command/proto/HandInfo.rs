@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HandInfo {
     // message fields
-    // @@protoc_insertion_point(field:HandInfo.OFOLPKMALGI)
-    pub OFOLPKMALGI: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:HandInfo.GFJIIABANLM)
-    pub GFJIIABANLM: u32,
-    // @@protoc_insertion_point(field:HandInfo.MJNNBLCDCBJ)
-    pub MJNNBLCDCBJ: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:HandInfo.MCBIOHMIMGN)
-    pub MCBIOHMIMGN: u32,
+    // @@protoc_insertion_point(field:HandInfo.PDNBIEDMHAC)
+    pub PDNBIEDMHAC: u32,
+    // @@protoc_insertion_point(field:HandInfo.JGEMEKPNMKE)
+    pub JGEMEKPNMKE: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:HandInfo.NLEFEDIEFNO)
+    pub NLEFEDIEFNO: u32,
+    // @@protoc_insertion_point(field:HandInfo.IKEHCJPFLGG)
+    pub IKEHCJPFLGG: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:HandInfo.config_id)
     pub config_id: u32,
     // special fields
@@ -57,25 +57,25 @@ impl HandInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDNBIEDMHAC",
+            |m: &HandInfo| { &m.PDNBIEDMHAC },
+            |m: &mut HandInfo| { &mut m.PDNBIEDMHAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGEMEKPNMKE",
+            |m: &HandInfo| { &m.JGEMEKPNMKE },
+            |m: &mut HandInfo| { &mut m.JGEMEKPNMKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLEFEDIEFNO",
+            |m: &HandInfo| { &m.NLEFEDIEFNO },
+            |m: &mut HandInfo| { &mut m.NLEFEDIEFNO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "OFOLPKMALGI",
-            |m: &HandInfo| { &m.OFOLPKMALGI },
-            |m: &mut HandInfo| { &mut m.OFOLPKMALGI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFJIIABANLM",
-            |m: &HandInfo| { &m.GFJIIABANLM },
-            |m: &mut HandInfo| { &mut m.GFJIIABANLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJNNBLCDCBJ",
-            |m: &HandInfo| { &m.MJNNBLCDCBJ },
-            |m: &mut HandInfo| { &mut m.MJNNBLCDCBJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MCBIOHMIMGN",
-            |m: &HandInfo| { &m.MCBIOHMIMGN },
-            |m: &mut HandInfo| { &mut m.MCBIOHMIMGN },
+            "IKEHCJPFLGG",
+            |m: &HandInfo| { &m.IKEHCJPFLGG },
+            |m: &mut HandInfo| { &mut m.IKEHCJPFLGG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "config_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for HandInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OFOLPKMALGI)?;
+                8 => {
+                    self.PDNBIEDMHAC = is.read_uint32()?;
                 },
-                56 => {
-                    self.GFJIIABANLM = is.read_uint32()?;
-                },
-                34 => {
-                    self.MJNNBLCDCBJ = is.read_bytes()?;
+                26 => {
+                    self.JGEMEKPNMKE = is.read_bytes()?;
                 },
                 64 => {
-                    self.MCBIOHMIMGN = is.read_uint32()?;
+                    self.NLEFEDIEFNO = is.read_uint32()?;
                 },
-                8 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKEHCJPFLGG)?;
+                },
+                96 => {
                     self.config_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for HandInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OFOLPKMALGI.as_ref() {
+        if self.PDNBIEDMHAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PDNBIEDMHAC);
+        }
+        if !self.JGEMEKPNMKE.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(3, &self.JGEMEKPNMKE);
+        }
+        if self.NLEFEDIEFNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NLEFEDIEFNO);
+        }
+        if let Some(v) = self.IKEHCJPFLGG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GFJIIABANLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GFJIIABANLM);
-        }
-        if !self.MJNNBLCDCBJ.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(4, &self.MJNNBLCDCBJ);
-        }
-        if self.MCBIOHMIMGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MCBIOHMIMGN);
-        }
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.config_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for HandInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OFOLPKMALGI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.PDNBIEDMHAC != 0 {
+            os.write_uint32(1, self.PDNBIEDMHAC)?;
         }
-        if self.GFJIIABANLM != 0 {
-            os.write_uint32(7, self.GFJIIABANLM)?;
+        if !self.JGEMEKPNMKE.is_empty() {
+            os.write_bytes(3, &self.JGEMEKPNMKE)?;
         }
-        if !self.MJNNBLCDCBJ.is_empty() {
-            os.write_bytes(4, &self.MJNNBLCDCBJ)?;
+        if self.NLEFEDIEFNO != 0 {
+            os.write_uint32(8, self.NLEFEDIEFNO)?;
         }
-        if self.MCBIOHMIMGN != 0 {
-            os.write_uint32(8, self.MCBIOHMIMGN)?;
+        if let Some(v) = self.IKEHCJPFLGG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.config_id != 0 {
-            os.write_uint32(1, self.config_id)?;
+            os.write_uint32(12, self.config_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for HandInfo {
     }
 
     fn clear(&mut self) {
-        self.OFOLPKMALGI.clear();
-        self.GFJIIABANLM = 0;
-        self.MJNNBLCDCBJ.clear();
-        self.MCBIOHMIMGN = 0;
+        self.PDNBIEDMHAC = 0;
+        self.JGEMEKPNMKE.clear();
+        self.NLEFEDIEFNO = 0;
+        self.IKEHCJPFLGG.clear();
         self.config_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandInfo {
         static instance: HandInfo = HandInfo {
-            OFOLPKMALGI: ::protobuf::MessageField::none(),
-            GFJIIABANLM: 0,
-            MJNNBLCDCBJ: ::std::vec::Vec::new(),
-            MCBIOHMIMGN: 0,
+            PDNBIEDMHAC: 0,
+            JGEMEKPNMKE: ::std::vec::Vec::new(),
+            NLEFEDIEFNO: 0,
+            IKEHCJPFLGG: ::protobuf::MessageField::none(),
             config_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for HandInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eHandInfo.proto\x1a\x10MotionInfo.proto\"\xbc\x01\n\x08HandInfo\x12\
-    -\n\x0bOFOLPKMALGI\x18\r\x20\x01(\x0b2\x0b.MotionInfoR\x0bOFOLPKMALGI\
-    \x12\x20\n\x0bGFJIIABANLM\x18\x07\x20\x01(\rR\x0bGFJIIABANLM\x12\x20\n\
-    \x0bMJNNBLCDCBJ\x18\x04\x20\x01(\x0cR\x0bMJNNBLCDCBJ\x12\x20\n\x0bMCBIOH\
-    MIMGN\x18\x08\x20\x01(\rR\x0bMCBIOHMIMGN\x12\x1b\n\tconfig_id\x18\x01\
-    \x20\x01(\rR\x08configIdb\x06proto3\
+    \x20\n\x0bPDNBIEDMHAC\x18\x01\x20\x01(\rR\x0bPDNBIEDMHAC\x12\x20\n\x0bJG\
+    EMEKPNMKE\x18\x03\x20\x01(\x0cR\x0bJGEMEKPNMKE\x12\x20\n\x0bNLEFEDIEFNO\
+    \x18\x08\x20\x01(\rR\x0bNLEFEDIEFNO\x12-\n\x0bIKEHCJPFLGG\x18\n\x20\x01(\
+    \x0b2\x0b.MotionInfoR\x0bIKEHCJPFLGG\x12\x1b\n\tconfig_id\x18\x0c\x20\
+    \x01(\rR\x08configIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

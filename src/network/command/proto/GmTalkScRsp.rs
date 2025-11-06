@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GmTalkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GmTalkScRsp.BJDOJLKEHNA)
-    pub BJDOJLKEHNA: ::std::string::String,
+    // @@protoc_insertion_point(field:GmTalkScRsp.retmsg)
+    pub retmsg: ::std::string::String,
     // @@protoc_insertion_point(field:GmTalkScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GmTalkScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJDOJLKEHNA",
-            |m: &GmTalkScRsp| { &m.BJDOJLKEHNA },
-            |m: &mut GmTalkScRsp| { &mut m.BJDOJLKEHNA },
+            "retmsg",
+            |m: &GmTalkScRsp| { &m.retmsg },
+            |m: &mut GmTalkScRsp| { &mut m.retmsg },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GmTalkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.BJDOJLKEHNA = is.read_string()?;
+                58 => {
+                    self.retmsg = is.read_string()?;
                 },
-                104 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GmTalkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.BJDOJLKEHNA.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.BJDOJLKEHNA);
+        if !self.retmsg.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.retmsg);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GmTalkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.BJDOJLKEHNA.is_empty() {
-            os.write_string(9, &self.BJDOJLKEHNA)?;
+        if !self.retmsg.is_empty() {
+            os.write_string(7, &self.retmsg)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GmTalkScRsp {
     }
 
     fn clear(&mut self) {
-        self.BJDOJLKEHNA.clear();
+        self.retmsg.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GmTalkScRsp {
         static instance: GmTalkScRsp = GmTalkScRsp {
-            BJDOJLKEHNA: ::std::string::String::new(),
+            retmsg: ::std::string::String::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GmTalkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GmTalkScRsp.proto\"I\n\x0bGmTalkScRsp\x12\x20\n\x0bBJDOJLKEHNA\x18\
-    \t\x20\x01(\tR\x0bBJDOJLKEHNA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07\
-    retcodeb\x06proto3\
+    \n\x11GmTalkScRsp.proto\"?\n\x0bGmTalkScRsp\x12\x16\n\x06retmsg\x18\x07\
+    \x20\x01(\tR\x06retmsg\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -36,8 +36,8 @@ pub struct HPKEFFECHFG {
     pub unique_id: u32,
     // @@protoc_insertion_point(field:HPKEFFECHFG.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:HPKEFFECHFG.switch_list)
-    pub switch_list: ::std::vec::Vec<super::LDOBBIABDDL::LDOBBIABDDL>,
+    // @@protoc_insertion_point(field:HPKEFFECHFG.param_list)
+    pub param_list: ::std::vec::Vec<super::LDOBBIABDDL::LDOBBIABDDL>,
     // special fields
     // @@protoc_insertion_point(special_field:HPKEFFECHFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl HPKEFFECHFG {
             |m: &mut HPKEFFECHFG| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &HPKEFFECHFG| { &m.switch_list },
-            |m: &mut HPKEFFECHFG| { &mut m.switch_list },
+            "param_list",
+            |m: &HPKEFFECHFG| { &m.param_list },
+            |m: &mut HPKEFFECHFG| { &mut m.param_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPKEFFECHFG>(
             "HPKEFFECHFG",
@@ -113,7 +113,7 @@ impl ::protobuf::Message for HPKEFFECHFG {
                     self.level = is.read_uint32()?;
                 },
                 42 => {
-                    self.switch_list.push(is.read_message()?);
+                    self.param_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,7 +139,7 @@ impl ::protobuf::Message for HPKEFFECHFG {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
-        for value in &self.switch_list {
+        for value in &self.param_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -161,7 +161,7 @@ impl ::protobuf::Message for HPKEFFECHFG {
         if self.level != 0 {
             os.write_uint32(4, self.level)?;
         }
-        for v in &self.switch_list {
+        for v in &self.param_list {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -185,7 +185,7 @@ impl ::protobuf::Message for HPKEFFECHFG {
         self.config_id = 0;
         self.unique_id = 0;
         self.level = 0;
-        self.switch_list.clear();
+        self.param_list.clear();
         self.special_fields.clear();
     }
 
@@ -195,7 +195,7 @@ impl ::protobuf::Message for HPKEFFECHFG {
             config_id: 0,
             unique_id: 0,
             level: 0,
-            switch_list: ::std::vec::Vec::new(),
+            param_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for HPKEFFECHFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HPKEFFECHFG.proto\x1a\x11DLBFAHOAGPH.proto\x1a\x11LDOBBIABDDL.prot\
-    o\"\xae\x01\n\x0bHPKEFFECHFG\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c\
+    o\"\xac\x01\n\x0bHPKEFFECHFG\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c\
     .DLBFAHOAGPHR\x04type\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\x08config\
     Id\x12\x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12\x14\n\x05lev\
-    el\x18\x04\x20\x01(\rR\x05level\x12-\n\x0bswitch_list\x18\x05\x20\x03(\
-    \x0b2\x0c.LDOBBIABDDLR\nswitchListb\x06proto3\
+    el\x18\x04\x20\x01(\rR\x05level\x12+\n\nparam_list\x18\x05\x20\x03(\x0b2\
+    \x0c.LDOBBIABDDLR\tparamListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

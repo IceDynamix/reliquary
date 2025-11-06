@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopFormulaInfoCsReq {
     // message fields
+    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoCsReq.verify_server_entity_id)
+    pub verify_server_entity_id: u32,
     // @@protoc_insertion_point(field:GetRogueShopFormulaInfoCsReq.refresh)
     pub refresh: bool,
-    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoCsReq.interacted_prop_entity_id)
-    pub interacted_prop_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopFormulaInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetRogueShopFormulaInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "verify_server_entity_id",
+            |m: &GetRogueShopFormulaInfoCsReq| { &m.verify_server_entity_id },
+            |m: &mut GetRogueShopFormulaInfoCsReq| { &mut m.verify_server_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "refresh",
             |m: &GetRogueShopFormulaInfoCsReq| { &m.refresh },
             |m: &mut GetRogueShopFormulaInfoCsReq| { &mut m.refresh },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interacted_prop_entity_id",
-            |m: &GetRogueShopFormulaInfoCsReq| { &m.interacted_prop_entity_id },
-            |m: &mut GetRogueShopFormulaInfoCsReq| { &mut m.interacted_prop_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopFormulaInfoCsReq>(
             "GetRogueShopFormulaInfoCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.refresh = is.read_bool()?;
+                72 => {
+                    self.verify_server_entity_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.interacted_prop_entity_id = is.read_uint32()?;
+                88 => {
+                    self.refresh = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.verify_server_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.verify_server_entity_id);
+        }
         if self.refresh != false {
             my_size += 1 + 1;
-        }
-        if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.refresh != false {
-            os.write_bool(12, self.refresh)?;
+        if self.verify_server_entity_id != 0 {
+            os.write_uint32(9, self.verify_server_entity_id)?;
         }
-        if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(1, self.interacted_prop_entity_id)?;
+        if self.refresh != false {
+            os.write_bool(11, self.refresh)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoCsReq {
     }
 
     fn clear(&mut self) {
+        self.verify_server_entity_id = 0;
         self.refresh = false;
-        self.interacted_prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopFormulaInfoCsReq {
         static instance: GetRogueShopFormulaInfoCsReq = GetRogueShopFormulaInfoCsReq {
+            verify_server_entity_id: 0,
             refresh: false,
-            interacted_prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopFormulaInfoCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueShopFormulaInfoCsReq.proto\"s\n\x1cGetRogueShopFormulaInfoCs\
-    Req\x12\x18\n\x07refresh\x18\x0c\x20\x01(\x08R\x07refresh\x129\n\x19inte\
-    racted_prop_entity_id\x18\x01\x20\x01(\rR\x16interactedPropEntityIdb\x06\
-    proto3\
+    \n\"GetRogueShopFormulaInfoCsReq.proto\"o\n\x1cGetRogueShopFormulaInfoCs\
+    Req\x125\n\x17verify_server_entity_id\x18\t\x20\x01(\rR\x14verifyServerE\
+    ntityId\x12\x18\n\x07refresh\x18\x0b\x20\x01(\x08R\x07refreshb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLMCGEPNAIA {
     // message fields
-    // @@protoc_insertion_point(field:GLMCGEPNAIA.DMKFFFPDLDI)
-    pub DMKFFFPDLDI: u32,
-    // @@protoc_insertion_point(field:GLMCGEPNAIA.FOJCMHIMAFN)
-    pub FOJCMHIMAFN: u32,
+    // @@protoc_insertion_point(field:GLMCGEPNAIA.MEBGPBEPPKM)
+    pub MEBGPBEPPKM: u32,
+    // @@protoc_insertion_point(field:GLMCGEPNAIA.LDPANNILPJF)
+    pub LDPANNILPJF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GLMCGEPNAIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GLMCGEPNAIA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMKFFFPDLDI",
-            |m: &GLMCGEPNAIA| { &m.DMKFFFPDLDI },
-            |m: &mut GLMCGEPNAIA| { &mut m.DMKFFFPDLDI },
+            "MEBGPBEPPKM",
+            |m: &GLMCGEPNAIA| { &m.MEBGPBEPPKM },
+            |m: &mut GLMCGEPNAIA| { &mut m.MEBGPBEPPKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FOJCMHIMAFN",
-            |m: &GLMCGEPNAIA| { &m.FOJCMHIMAFN },
-            |m: &mut GLMCGEPNAIA| { &mut m.FOJCMHIMAFN },
+            "LDPANNILPJF",
+            |m: &GLMCGEPNAIA| { &m.LDPANNILPJF },
+            |m: &mut GLMCGEPNAIA| { &mut m.LDPANNILPJF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLMCGEPNAIA>(
             "GLMCGEPNAIA",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GLMCGEPNAIA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.DMKFFFPDLDI = is.read_uint32()?;
+                    self.MEBGPBEPPKM = is.read_uint32()?;
                 },
                 16 => {
-                    self.FOJCMHIMAFN = is.read_uint32()?;
+                    self.LDPANNILPJF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GLMCGEPNAIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DMKFFFPDLDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DMKFFFPDLDI);
+        if self.MEBGPBEPPKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MEBGPBEPPKM);
         }
-        if self.FOJCMHIMAFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FOJCMHIMAFN);
+        if self.LDPANNILPJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LDPANNILPJF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GLMCGEPNAIA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMKFFFPDLDI != 0 {
-            os.write_uint32(1, self.DMKFFFPDLDI)?;
+        if self.MEBGPBEPPKM != 0 {
+            os.write_uint32(1, self.MEBGPBEPPKM)?;
         }
-        if self.FOJCMHIMAFN != 0 {
-            os.write_uint32(2, self.FOJCMHIMAFN)?;
+        if self.LDPANNILPJF != 0 {
+            os.write_uint32(2, self.LDPANNILPJF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GLMCGEPNAIA {
     }
 
     fn clear(&mut self) {
-        self.DMKFFFPDLDI = 0;
-        self.FOJCMHIMAFN = 0;
+        self.MEBGPBEPPKM = 0;
+        self.LDPANNILPJF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLMCGEPNAIA {
         static instance: GLMCGEPNAIA = GLMCGEPNAIA {
-            DMKFFFPDLDI: 0,
-            FOJCMHIMAFN: 0,
+            MEBGPBEPPKM: 0,
+            LDPANNILPJF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GLMCGEPNAIA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLMCGEPNAIA.proto\"Q\n\x0bGLMCGEPNAIA\x12\x20\n\x0bDMKFFFPDLDI\x18\
-    \x01\x20\x01(\rR\x0bDMKFFFPDLDI\x12\x20\n\x0bFOJCMHIMAFN\x18\x02\x20\x01\
-    (\rR\x0bFOJCMHIMAFNb\x06proto3\
+    \n\x11GLMCGEPNAIA.proto\"Q\n\x0bGLMCGEPNAIA\x12\x20\n\x0bMEBGPBEPPKM\x18\
+    \x01\x20\x01(\rR\x0bMEBGPBEPPKM\x12\x20\n\x0bLDPANNILPJF\x18\x02\x20\x01\
+    (\rR\x0bLDPANNILPJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

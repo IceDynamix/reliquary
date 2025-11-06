@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightSessionStopScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightSessionStopScNotify.PFFFJNGNPOM)
-    pub PFFFJNGNPOM: ::protobuf::MessageField<super::PPGGKMDAOEA::PPGGKMDAOEA>,
+    // @@protoc_insertion_point(field:FightSessionStopScNotify.FLCBNJLHAKC)
+    pub FLCBNJLHAKC: ::protobuf::MessageField<super::PPGGKMDAOEA::PPGGKMDAOEA>,
     // special fields
     // @@protoc_insertion_point(special_field:FightSessionStopScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FightSessionStopScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPGGKMDAOEA::PPGGKMDAOEA>(
-            "PFFFJNGNPOM",
-            |m: &FightSessionStopScNotify| { &m.PFFFJNGNPOM },
-            |m: &mut FightSessionStopScNotify| { &mut m.PFFFJNGNPOM },
+            "FLCBNJLHAKC",
+            |m: &FightSessionStopScNotify| { &m.FLCBNJLHAKC },
+            |m: &mut FightSessionStopScNotify| { &mut m.FLCBNJLHAKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightSessionStopScNotify>(
             "FightSessionStopScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FightSessionStopScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFFFJNGNPOM)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FLCBNJLHAKC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FightSessionStopScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PFFFJNGNPOM.as_ref() {
+        if let Some(v) = self.FLCBNJLHAKC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FightSessionStopScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PFFFJNGNPOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.FLCBNJLHAKC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FightSessionStopScNotify {
     }
 
     fn clear(&mut self) {
-        self.PFFFJNGNPOM.clear();
+        self.FLCBNJLHAKC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightSessionStopScNotify {
         static instance: FightSessionStopScNotify = FightSessionStopScNotify {
-            PFFFJNGNPOM: ::protobuf::MessageField::none(),
+            FLCBNJLHAKC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FightSessionStopScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eFightSessionStopScNotify.proto\x1a\x11PPGGKMDAOEA.proto\"J\n\x18Fi\
-    ghtSessionStopScNotify\x12.\n\x0bPFFFJNGNPOM\x18\x02\x20\x01(\x0b2\x0c.P\
-    PGGKMDAOEAR\x0bPFFFJNGNPOMb\x06proto3\
+    ghtSessionStopScNotify\x12.\n\x0bFLCBNJLHAKC\x18\x0c\x20\x01(\x0b2\x0c.P\
+    PGGKMDAOEAR\x0bFLCBNJLHAKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

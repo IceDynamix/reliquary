@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGFIODPILEL {
     // message fields
-    // @@protoc_insertion_point(field:OGFIODPILEL.AKHEILMNDHJ)
-    pub AKHEILMNDHJ: bool,
-    // @@protoc_insertion_point(field:OGFIODPILEL.DMKLNJBOABO)
-    pub DMKLNJBOABO: bool,
-    // @@protoc_insertion_point(field:OGFIODPILEL.CACEKELNMIN)
-    pub CACEKELNMIN: u32,
+    // @@protoc_insertion_point(field:OGFIODPILEL.KPMLNFEJPHL)
+    pub KPMLNFEJPHL: bool,
+    // @@protoc_insertion_point(field:OGFIODPILEL.DBBFCEGBGEI)
+    pub DBBFCEGBGEI: bool,
+    // @@protoc_insertion_point(field:OGFIODPILEL.LEOIBIDMMFF)
+    pub LEOIBIDMMFF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OGFIODPILEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl OGFIODPILEL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKHEILMNDHJ",
-            |m: &OGFIODPILEL| { &m.AKHEILMNDHJ },
-            |m: &mut OGFIODPILEL| { &mut m.AKHEILMNDHJ },
+            "KPMLNFEJPHL",
+            |m: &OGFIODPILEL| { &m.KPMLNFEJPHL },
+            |m: &mut OGFIODPILEL| { &mut m.KPMLNFEJPHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMKLNJBOABO",
-            |m: &OGFIODPILEL| { &m.DMKLNJBOABO },
-            |m: &mut OGFIODPILEL| { &mut m.DMKLNJBOABO },
+            "DBBFCEGBGEI",
+            |m: &OGFIODPILEL| { &m.DBBFCEGBGEI },
+            |m: &mut OGFIODPILEL| { &mut m.DBBFCEGBGEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CACEKELNMIN",
-            |m: &OGFIODPILEL| { &m.CACEKELNMIN },
-            |m: &mut OGFIODPILEL| { &mut m.CACEKELNMIN },
+            "LEOIBIDMMFF",
+            |m: &OGFIODPILEL| { &m.LEOIBIDMMFF },
+            |m: &mut OGFIODPILEL| { &mut m.LEOIBIDMMFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGFIODPILEL>(
             "OGFIODPILEL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OGFIODPILEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.AKHEILMNDHJ = is.read_bool()?;
-                },
-                32 => {
-                    self.DMKLNJBOABO = is.read_bool()?;
-                },
                 16 => {
-                    self.CACEKELNMIN = is.read_uint32()?;
+                    self.KPMLNFEJPHL = is.read_bool()?;
+                },
+                24 => {
+                    self.DBBFCEGBGEI = is.read_bool()?;
+                },
+                120 => {
+                    self.LEOIBIDMMFF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OGFIODPILEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AKHEILMNDHJ != false {
+        if self.KPMLNFEJPHL != false {
             my_size += 1 + 1;
         }
-        if self.DMKLNJBOABO != false {
+        if self.DBBFCEGBGEI != false {
             my_size += 1 + 1;
         }
-        if self.CACEKELNMIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CACEKELNMIN);
+        if self.LEOIBIDMMFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LEOIBIDMMFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OGFIODPILEL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AKHEILMNDHJ != false {
-            os.write_bool(12, self.AKHEILMNDHJ)?;
+        if self.KPMLNFEJPHL != false {
+            os.write_bool(2, self.KPMLNFEJPHL)?;
         }
-        if self.DMKLNJBOABO != false {
-            os.write_bool(4, self.DMKLNJBOABO)?;
+        if self.DBBFCEGBGEI != false {
+            os.write_bool(3, self.DBBFCEGBGEI)?;
         }
-        if self.CACEKELNMIN != 0 {
-            os.write_uint32(2, self.CACEKELNMIN)?;
+        if self.LEOIBIDMMFF != 0 {
+            os.write_uint32(15, self.LEOIBIDMMFF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for OGFIODPILEL {
     }
 
     fn clear(&mut self) {
-        self.AKHEILMNDHJ = false;
-        self.DMKLNJBOABO = false;
-        self.CACEKELNMIN = 0;
+        self.KPMLNFEJPHL = false;
+        self.DBBFCEGBGEI = false;
+        self.LEOIBIDMMFF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGFIODPILEL {
         static instance: OGFIODPILEL = OGFIODPILEL {
-            AKHEILMNDHJ: false,
-            DMKLNJBOABO: false,
-            CACEKELNMIN: 0,
+            KPMLNFEJPHL: false,
+            DBBFCEGBGEI: false,
+            LEOIBIDMMFF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for OGFIODPILEL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OGFIODPILEL.proto\"s\n\x0bOGFIODPILEL\x12\x20\n\x0bAKHEILMNDHJ\x18\
-    \x0c\x20\x01(\x08R\x0bAKHEILMNDHJ\x12\x20\n\x0bDMKLNJBOABO\x18\x04\x20\
-    \x01(\x08R\x0bDMKLNJBOABO\x12\x20\n\x0bCACEKELNMIN\x18\x02\x20\x01(\rR\
-    \x0bCACEKELNMINb\x06proto3\
+    \n\x11OGFIODPILEL.proto\"s\n\x0bOGFIODPILEL\x12\x20\n\x0bKPMLNFEJPHL\x18\
+    \x02\x20\x01(\x08R\x0bKPMLNFEJPHL\x12\x20\n\x0bDBBFCEGBGEI\x18\x03\x20\
+    \x01(\x08R\x0bDBBFCEGBGEI\x12\x20\n\x0bLEOIBIDMMFF\x18\x0f\x20\x01(\rR\
+    \x0bLEOIBIDMMFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

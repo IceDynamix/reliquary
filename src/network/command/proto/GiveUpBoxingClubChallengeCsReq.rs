@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GiveUpBoxingClubChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.PCPDFJHDJCC)
-    pub PCPDFJHDJCC: bool,
     // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.PAAGHMPNBBA)
+    pub PAAGHMPNBBA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GiveUpBoxingClubChallengeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GiveUpBoxingClubChallengeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCPDFJHDJCC",
-            |m: &GiveUpBoxingClubChallengeCsReq| { &m.PCPDFJHDJCC },
-            |m: &mut GiveUpBoxingClubChallengeCsReq| { &mut m.PCPDFJHDJCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &GiveUpBoxingClubChallengeCsReq| { &m.challenge_id },
             |m: &mut GiveUpBoxingClubChallengeCsReq| { &mut m.challenge_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PAAGHMPNBBA",
+            |m: &GiveUpBoxingClubChallengeCsReq| { &m.PAAGHMPNBBA },
+            |m: &mut GiveUpBoxingClubChallengeCsReq| { &mut m.PAAGHMPNBBA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GiveUpBoxingClubChallengeCsReq>(
             "GiveUpBoxingClubChallengeCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.PCPDFJHDJCC = is.read_bool()?;
-                },
-                120 => {
+                96 => {
                     self.challenge_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.PAAGHMPNBBA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PCPDFJHDJCC != false {
-            my_size += 1 + 1;
-        }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.challenge_id);
+        }
+        if self.PAAGHMPNBBA != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PCPDFJHDJCC != false {
-            os.write_bool(9, self.PCPDFJHDJCC)?;
-        }
         if self.challenge_id != 0 {
-            os.write_uint32(15, self.challenge_id)?;
+            os.write_uint32(12, self.challenge_id)?;
+        }
+        if self.PAAGHMPNBBA != false {
+            os.write_bool(14, self.PAAGHMPNBBA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.PCPDFJHDJCC = false;
         self.challenge_id = 0;
+        self.PAAGHMPNBBA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GiveUpBoxingClubChallengeCsReq {
         static instance: GiveUpBoxingClubChallengeCsReq = GiveUpBoxingClubChallengeCsReq {
-            PCPDFJHDJCC: false,
             challenge_id: 0,
+            PAAGHMPNBBA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GiveUpBoxingClubChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GiveUpBoxingClubChallengeCsReq.proto\"e\n\x1eGiveUpBoxingClubChalleng\
-    eCsReq\x12\x20\n\x0bPCPDFJHDJCC\x18\t\x20\x01(\x08R\x0bPCPDFJHDJCC\x12!\
-    \n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    eCsReq\x12!\n\x0cchallenge_id\x18\x0c\x20\x01(\rR\x0bchallengeId\x12\x20\
+    \n\x0bPAAGHMPNBBA\x18\x0e\x20\x01(\x08R\x0bPAAGHMPNBBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

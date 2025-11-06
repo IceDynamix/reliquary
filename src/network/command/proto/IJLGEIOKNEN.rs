@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IJLGEIOKNEN {
     // message fields
-    // @@protoc_insertion_point(field:IJLGEIOKNEN.KHIPJLHIDIE)
-    pub KHIPJLHIDIE: ::std::vec::Vec<super::CJDNINMIBPF::CJDNINMIBPF>,
-    // @@protoc_insertion_point(field:IJLGEIOKNEN.DLCJADNLLDM)
-    pub DLCJADNLLDM: ::std::vec::Vec<super::HMKHILLIPOH::HMKHILLIPOH>,
+    // @@protoc_insertion_point(field:IJLGEIOKNEN.GAOIKBFFINM)
+    pub GAOIKBFFINM: ::std::vec::Vec<super::HMKHILLIPOH::HMKHILLIPOH>,
+    // @@protoc_insertion_point(field:IJLGEIOKNEN.NAIOHCEEEAA)
+    pub NAIOHCEEEAA: ::std::vec::Vec<super::CJDNINMIBPF::CJDNINMIBPF>,
     // special fields
     // @@protoc_insertion_point(special_field:IJLGEIOKNEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl IJLGEIOKNEN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KHIPJLHIDIE",
-            |m: &IJLGEIOKNEN| { &m.KHIPJLHIDIE },
-            |m: &mut IJLGEIOKNEN| { &mut m.KHIPJLHIDIE },
+            "GAOIKBFFINM",
+            |m: &IJLGEIOKNEN| { &m.GAOIKBFFINM },
+            |m: &mut IJLGEIOKNEN| { &mut m.GAOIKBFFINM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DLCJADNLLDM",
-            |m: &IJLGEIOKNEN| { &m.DLCJADNLLDM },
-            |m: &mut IJLGEIOKNEN| { &mut m.DLCJADNLLDM },
+            "NAIOHCEEEAA",
+            |m: &IJLGEIOKNEN| { &m.NAIOHCEEEAA },
+            |m: &mut IJLGEIOKNEN| { &mut m.NAIOHCEEEAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IJLGEIOKNEN>(
             "IJLGEIOKNEN",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for IJLGEIOKNEN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    self.KHIPJLHIDIE.push(is.read_message()?);
+                    self.GAOIKBFFINM.push(is.read_message()?);
                 },
-                58 => {
-                    self.DLCJADNLLDM.push(is.read_message()?);
+                114 => {
+                    self.NAIOHCEEEAA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IJLGEIOKNEN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KHIPJLHIDIE {
+        for value in &self.GAOIKBFFINM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.DLCJADNLLDM {
+        for value in &self.NAIOHCEEEAA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for IJLGEIOKNEN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KHIPJLHIDIE {
+        for v in &self.GAOIKBFFINM {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        for v in &self.DLCJADNLLDM {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.NAIOHCEEEAA {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for IJLGEIOKNEN {
     }
 
     fn clear(&mut self) {
-        self.KHIPJLHIDIE.clear();
-        self.DLCJADNLLDM.clear();
+        self.GAOIKBFFINM.clear();
+        self.NAIOHCEEEAA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IJLGEIOKNEN {
         static instance: IJLGEIOKNEN = IJLGEIOKNEN {
-            KHIPJLHIDIE: ::std::vec::Vec::new(),
-            DLCJADNLLDM: ::std::vec::Vec::new(),
+            GAOIKBFFINM: ::std::vec::Vec::new(),
+            NAIOHCEEEAA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for IJLGEIOKNEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IJLGEIOKNEN.proto\x1a\x11CJDNINMIBPF.proto\x1a\x11HMKHILLIPOH.prot\
-    o\"m\n\x0bIJLGEIOKNEN\x12.\n\x0bKHIPJLHIDIE\x18\x03\x20\x03(\x0b2\x0c.CJ\
-    DNINMIBPFR\x0bKHIPJLHIDIE\x12.\n\x0bDLCJADNLLDM\x18\x07\x20\x03(\x0b2\
-    \x0c.HMKHILLIPOHR\x0bDLCJADNLLDMb\x06proto3\
+    o\"m\n\x0bIJLGEIOKNEN\x12.\n\x0bGAOIKBFFINM\x18\x03\x20\x03(\x0b2\x0c.HM\
+    KHILLIPOHR\x0bGAOIKBFFINM\x12.\n\x0bNAIOHCEEEAA\x18\x0e\x20\x03(\x0b2\
+    \x0c.CJDNINMIBPFR\x0bNAIOHCEEEAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

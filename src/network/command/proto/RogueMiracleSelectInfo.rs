@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMiracleSelectInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.BMFCBCMCLAF)
-    pub BMFCBCMCLAF: u32,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.select_hint_id)
-    pub select_hint_id: u32,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.OOOECPAACCK)
-    pub OOOECPAACCK: u32,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.select_miracle_list)
-    pub select_miracle_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.APIKLEGGDHM)
-    pub APIKLEGGDHM: bool,
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.reforge_hint_id)
+    pub reforge_hint_id: u32,
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.JMBINEFACNH)
+    pub JMBINEFACNH: u32,
     // @@protoc_insertion_point(field:RogueMiracleSelectInfo.miracle_handbook_list)
     pub miracle_handbook_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.POKBAODINJG)
+    pub POKBAODINJG: u32,
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.select_miracle_list)
+    pub select_miracle_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMiracleSelectInfo.PPLNMBNDGEO)
+    pub PPLNMBNDGEO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMiracleSelectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,24 @@ impl RogueMiracleSelectInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMFCBCMCLAF",
-            |m: &RogueMiracleSelectInfo| { &m.BMFCBCMCLAF },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.BMFCBCMCLAF },
+            "reforge_hint_id",
+            |m: &RogueMiracleSelectInfo| { &m.reforge_hint_id },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.reforge_hint_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "select_hint_id",
-            |m: &RogueMiracleSelectInfo| { &m.select_hint_id },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.select_hint_id },
+            "JMBINEFACNH",
+            |m: &RogueMiracleSelectInfo| { &m.JMBINEFACNH },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.JMBINEFACNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "miracle_handbook_list",
+            |m: &RogueMiracleSelectInfo| { &m.miracle_handbook_list },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.miracle_handbook_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOOECPAACCK",
-            |m: &RogueMiracleSelectInfo| { &m.OOOECPAACCK },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.OOOECPAACCK },
+            "POKBAODINJG",
+            |m: &RogueMiracleSelectInfo| { &m.POKBAODINJG },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.POKBAODINJG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "select_miracle_list",
@@ -80,14 +85,9 @@ impl RogueMiracleSelectInfo {
             |m: &mut RogueMiracleSelectInfo| { &mut m.select_miracle_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APIKLEGGDHM",
-            |m: &RogueMiracleSelectInfo| { &m.APIKLEGGDHM },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.APIKLEGGDHM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "miracle_handbook_list",
-            |m: &RogueMiracleSelectInfo| { &m.miracle_handbook_list },
-            |m: &mut RogueMiracleSelectInfo| { &mut m.miracle_handbook_list },
+            "PPLNMBNDGEO",
+            |m: &RogueMiracleSelectInfo| { &m.PPLNMBNDGEO },
+            |m: &mut RogueMiracleSelectInfo| { &mut m.PPLNMBNDGEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMiracleSelectInfo>(
             "RogueMiracleSelectInfo",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.reforge_hint_id = is.read_uint32()?;
+                },
                 24 => {
-                    self.BMFCBCMCLAF = is.read_uint32()?;
+                    self.JMBINEFACNH = is.read_uint32()?;
                 },
-                104 => {
-                    self.select_hint_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.OOOECPAACCK = is.read_uint32()?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.select_miracle_list)?;
-                },
-                40 => {
-                    self.select_miracle_list.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.APIKLEGGDHM = is.read_bool()?;
-                },
-                66 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.miracle_handbook_list)?;
                 },
-                64 => {
+                32 => {
                     self.miracle_handbook_list.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.POKBAODINJG = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.select_miracle_list)?;
+                },
+                88 => {
+                    self.select_miracle_list.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.PPLNMBNDGEO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,40 +143,40 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BMFCBCMCLAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BMFCBCMCLAF);
+        if self.reforge_hint_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.reforge_hint_id);
         }
-        if self.select_hint_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.select_hint_id);
+        if self.JMBINEFACNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JMBINEFACNH);
         }
-        if self.OOOECPAACCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OOOECPAACCK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.miracle_handbook_list);
+        if self.POKBAODINJG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.POKBAODINJG);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.select_miracle_list);
-        if self.APIKLEGGDHM != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.select_miracle_list);
+        if self.PPLNMBNDGEO != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.miracle_handbook_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BMFCBCMCLAF != 0 {
-            os.write_uint32(3, self.BMFCBCMCLAF)?;
+        if self.reforge_hint_id != 0 {
+            os.write_uint32(2, self.reforge_hint_id)?;
         }
-        if self.select_hint_id != 0 {
-            os.write_uint32(13, self.select_hint_id)?;
+        if self.JMBINEFACNH != 0 {
+            os.write_uint32(3, self.JMBINEFACNH)?;
         }
-        if self.OOOECPAACCK != 0 {
-            os.write_uint32(6, self.OOOECPAACCK)?;
+        os.write_repeated_packed_uint32(4, &self.miracle_handbook_list)?;
+        if self.POKBAODINJG != 0 {
+            os.write_uint32(10, self.POKBAODINJG)?;
         }
-        os.write_repeated_packed_uint32(5, &self.select_miracle_list)?;
-        if self.APIKLEGGDHM != false {
-            os.write_bool(10, self.APIKLEGGDHM)?;
+        os.write_repeated_packed_uint32(11, &self.select_miracle_list)?;
+        if self.PPLNMBNDGEO != false {
+            os.write_bool(15, self.PPLNMBNDGEO)?;
         }
-        os.write_repeated_packed_uint32(8, &self.miracle_handbook_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -194,23 +194,23 @@ impl ::protobuf::Message for RogueMiracleSelectInfo {
     }
 
     fn clear(&mut self) {
-        self.BMFCBCMCLAF = 0;
-        self.select_hint_id = 0;
-        self.OOOECPAACCK = 0;
-        self.select_miracle_list.clear();
-        self.APIKLEGGDHM = false;
+        self.reforge_hint_id = 0;
+        self.JMBINEFACNH = 0;
         self.miracle_handbook_list.clear();
+        self.POKBAODINJG = 0;
+        self.select_miracle_list.clear();
+        self.PPLNMBNDGEO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMiracleSelectInfo {
         static instance: RogueMiracleSelectInfo = RogueMiracleSelectInfo {
-            BMFCBCMCLAF: 0,
-            select_hint_id: 0,
-            OOOECPAACCK: 0,
-            select_miracle_list: ::std::vec::Vec::new(),
-            APIKLEGGDHM: false,
+            reforge_hint_id: 0,
+            JMBINEFACNH: 0,
             miracle_handbook_list: ::std::vec::Vec::new(),
+            POKBAODINJG: 0,
+            select_miracle_list: ::std::vec::Vec::new(),
+            PPLNMBNDGEO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -235,13 +235,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueMiracleSelectInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueMiracleSelectInfo.proto\"\x88\x02\n\x16RogueMiracleSelectInfo\
-    \x12\x20\n\x0bBMFCBCMCLAF\x18\x03\x20\x01(\rR\x0bBMFCBCMCLAF\x12$\n\x0es\
-    elect_hint_id\x18\r\x20\x01(\rR\x0cselectHintId\x12\x20\n\x0bOOOECPAACCK\
-    \x18\x06\x20\x01(\rR\x0bOOOECPAACCK\x12.\n\x13select_miracle_list\x18\
-    \x05\x20\x03(\rR\x11selectMiracleList\x12\x20\n\x0bAPIKLEGGDHM\x18\n\x20\
-    \x01(\x08R\x0bAPIKLEGGDHM\x122\n\x15miracle_handbook_list\x18\x08\x20\
-    \x03(\rR\x13miracleHandbookListb\x06proto3\
+    \n\x1cRogueMiracleSelectInfo.proto\"\x8a\x02\n\x16RogueMiracleSelectInfo\
+    \x12&\n\x0freforge_hint_id\x18\x02\x20\x01(\rR\rreforgeHintId\x12\x20\n\
+    \x0bJMBINEFACNH\x18\x03\x20\x01(\rR\x0bJMBINEFACNH\x122\n\x15miracle_han\
+    dbook_list\x18\x04\x20\x03(\rR\x13miracleHandbookList\x12\x20\n\x0bPOKBA\
+    ODINJG\x18\n\x20\x01(\rR\x0bPOKBAODINJG\x12.\n\x13select_miracle_list\
+    \x18\x0b\x20\x03(\rR\x11selectMiracleList\x12\x20\n\x0bPPLNMBNDGEO\x18\
+    \x0f\x20\x01(\x08R\x0bPPLNMBNDGEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

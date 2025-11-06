@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IPONFKAJENJ {
     // message fields
-    // @@protoc_insertion_point(field:IPONFKAJENJ.APAOBDGJMEG)
-    pub APAOBDGJMEG: u32,
+    // @@protoc_insertion_point(field:IPONFKAJENJ.PGIKPKOGBAD)
+    pub PGIKPKOGBAD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IPONFKAJENJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl IPONFKAJENJ {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APAOBDGJMEG",
-            |m: &IPONFKAJENJ| { &m.APAOBDGJMEG },
-            |m: &mut IPONFKAJENJ| { &mut m.APAOBDGJMEG },
+            "PGIKPKOGBAD",
+            |m: &IPONFKAJENJ| { &m.PGIKPKOGBAD },
+            |m: &mut IPONFKAJENJ| { &mut m.PGIKPKOGBAD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IPONFKAJENJ>(
             "IPONFKAJENJ",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for IPONFKAJENJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.APAOBDGJMEG = is.read_uint32()?;
+                64 => {
+                    self.PGIKPKOGBAD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for IPONFKAJENJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APAOBDGJMEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.APAOBDGJMEG);
+        if self.PGIKPKOGBAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PGIKPKOGBAD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for IPONFKAJENJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APAOBDGJMEG != 0 {
-            os.write_uint32(5, self.APAOBDGJMEG)?;
+        if self.PGIKPKOGBAD != 0 {
+            os.write_uint32(8, self.PGIKPKOGBAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for IPONFKAJENJ {
     }
 
     fn clear(&mut self) {
-        self.APAOBDGJMEG = 0;
+        self.PGIKPKOGBAD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IPONFKAJENJ {
         static instance: IPONFKAJENJ = IPONFKAJENJ {
-            APAOBDGJMEG: 0,
+            PGIKPKOGBAD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for IPONFKAJENJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IPONFKAJENJ.proto\"/\n\x0bIPONFKAJENJ\x12\x20\n\x0bAPAOBDGJMEG\x18\
-    \x05\x20\x01(\rR\x0bAPAOBDGJMEGb\x06proto3\
+    \n\x11IPONFKAJENJ.proto\"/\n\x0bIPONFKAJENJ\x12\x20\n\x0bPGIKPKOGBAD\x18\
+    \x08\x20\x01(\rR\x0bPGIKPKOGBADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

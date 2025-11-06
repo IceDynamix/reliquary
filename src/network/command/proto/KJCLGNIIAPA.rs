@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KJCLGNIIAPA {
     // message fields
-    // @@protoc_insertion_point(field:KJCLGNIIAPA.CMIJGHAJLOL)
-    pub CMIJGHAJLOL: ::std::vec::Vec<super::AICNONBGNNP::AICNONBGNNP>,
+    // @@protoc_insertion_point(field:KJCLGNIIAPA.NCJLBOFKADN)
+    pub NCJLBOFKADN: ::std::vec::Vec<super::AICNONBGNNP::AICNONBGNNP>,
     // special fields
     // @@protoc_insertion_point(special_field:KJCLGNIIAPA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KJCLGNIIAPA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CMIJGHAJLOL",
-            |m: &KJCLGNIIAPA| { &m.CMIJGHAJLOL },
-            |m: &mut KJCLGNIIAPA| { &mut m.CMIJGHAJLOL },
+            "NCJLBOFKADN",
+            |m: &KJCLGNIIAPA| { &m.NCJLBOFKADN },
+            |m: &mut KJCLGNIIAPA| { &mut m.NCJLBOFKADN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KJCLGNIIAPA>(
             "KJCLGNIIAPA",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for KJCLGNIIAPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.CMIJGHAJLOL.push(is.read_message()?);
+                114 => {
+                    self.NCJLBOFKADN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for KJCLGNIIAPA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CMIJGHAJLOL {
+        for value in &self.NCJLBOFKADN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for KJCLGNIIAPA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CMIJGHAJLOL {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.NCJLBOFKADN {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for KJCLGNIIAPA {
     }
 
     fn clear(&mut self) {
-        self.CMIJGHAJLOL.clear();
+        self.NCJLBOFKADN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KJCLGNIIAPA {
         static instance: KJCLGNIIAPA = KJCLGNIIAPA {
-            CMIJGHAJLOL: ::std::vec::Vec::new(),
+            NCJLBOFKADN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for KJCLGNIIAPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KJCLGNIIAPA.proto\x1a\x11AICNONBGNNP.proto\"=\n\x0bKJCLGNIIAPA\x12\
-    .\n\x0bCMIJGHAJLOL\x18\x01\x20\x03(\x0b2\x0c.AICNONBGNNPR\x0bCMIJGHAJLOL\
+    .\n\x0bNCJLBOFKADN\x18\x0e\x20\x03(\x0b2\x0c.AICNONBGNNPR\x0bNCJLBOFKADN\
     b\x06proto3\
 ";
 

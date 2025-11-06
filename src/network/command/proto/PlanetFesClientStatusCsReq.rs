@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesClientStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesClientStatusCsReq.FJINNLFCBOJ)
-    pub FJINNLFCBOJ: bool,
+    // @@protoc_insertion_point(field:PlanetFesClientStatusCsReq.AJAGGMINFMI)
+    pub AJAGGMINFMI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesClientStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesClientStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJINNLFCBOJ",
-            |m: &PlanetFesClientStatusCsReq| { &m.FJINNLFCBOJ },
-            |m: &mut PlanetFesClientStatusCsReq| { &mut m.FJINNLFCBOJ },
+            "AJAGGMINFMI",
+            |m: &PlanetFesClientStatusCsReq| { &m.AJAGGMINFMI },
+            |m: &mut PlanetFesClientStatusCsReq| { &mut m.AJAGGMINFMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesClientStatusCsReq>(
             "PlanetFesClientStatusCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.FJINNLFCBOJ = is.read_bool()?;
+                80 => {
+                    self.AJAGGMINFMI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJINNLFCBOJ != false {
+        if self.AJAGGMINFMI != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJINNLFCBOJ != false {
-            os.write_bool(9, self.FJINNLFCBOJ)?;
+        if self.AJAGGMINFMI != false {
+            os.write_bool(10, self.AJAGGMINFMI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesClientStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.FJINNLFCBOJ = false;
+        self.AJAGGMINFMI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesClientStatusCsReq {
         static instance: PlanetFesClientStatusCsReq = PlanetFesClientStatusCsReq {
-            FJINNLFCBOJ: false,
+            AJAGGMINFMI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesClientStatusCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20PlanetFesClientStatusCsReq.proto\">\n\x1aPlanetFesClientStatusCsRe\
-    q\x12\x20\n\x0bFJINNLFCBOJ\x18\t\x20\x01(\x08R\x0bFJINNLFCBOJb\x06proto3\
+    q\x12\x20\n\x0bAJAGGMINFMI\x18\n\x20\x01(\x08R\x0bAJAGGMINFMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

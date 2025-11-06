@@ -24,171 +24,72 @@
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 
-// @@protoc_insertion_point(message:RogueModifierContent)
-#[derive(PartialEq,Clone,Default,Debug)]
-pub struct RogueModifierContent {
-    // message fields
-    // @@protoc_insertion_point(field:RogueModifierContent.content_modifier_effect_id)
-    pub content_modifier_effect_id: u32,
-    // @@protoc_insertion_point(field:RogueModifierContent.AFFJHMJDIBN)
-    pub AFFJHMJDIBN: u32,
-    // @@protoc_insertion_point(field:RogueModifierContent.modifier_content_type)
-    pub modifier_content_type: ::protobuf::EnumOrUnknown<super::RogueModifierContentType::RogueModifierContentType>,
-    // special fields
-    // @@protoc_insertion_point(special_field:RogueModifierContent.special_fields)
-    pub special_fields: ::protobuf::SpecialFields,
+#[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
+// @@protoc_insertion_point(enum:RogueModifierContent)
+pub enum RogueModifierContent {
+    // @@protoc_insertion_point(enum_value:RogueModifierContent.ROGUE_MODIFIER_CONTENT_DEFINITE)
+    ROGUE_MODIFIER_CONTENT_DEFINITE = 0,
+    // @@protoc_insertion_point(enum_value:RogueModifierContent.ROGUE_MODIFIER_CONTENT_RANDOM)
+    ROGUE_MODIFIER_CONTENT_RANDOM = 1,
 }
 
-impl<'a> ::std::default::Default for &'a RogueModifierContent {
-    fn default() -> &'a RogueModifierContent {
-        <RogueModifierContent as ::protobuf::Message>::default_instance()
+impl ::protobuf::Enum for RogueModifierContent {
+    const NAME: &'static str = "RogueModifierContent";
+
+    fn value(&self) -> i32 {
+        *self as i32
+    }
+
+    fn from_i32(value: i32) -> ::std::option::Option<RogueModifierContent> {
+        match value {
+            0 => ::std::option::Option::Some(RogueModifierContent::ROGUE_MODIFIER_CONTENT_DEFINITE),
+            1 => ::std::option::Option::Some(RogueModifierContent::ROGUE_MODIFIER_CONTENT_RANDOM),
+            _ => ::std::option::Option::None
+        }
+    }
+
+    fn from_str(str: &str) -> ::std::option::Option<RogueModifierContent> {
+        match str {
+            "ROGUE_MODIFIER_CONTENT_DEFINITE" => ::std::option::Option::Some(RogueModifierContent::ROGUE_MODIFIER_CONTENT_DEFINITE),
+            "ROGUE_MODIFIER_CONTENT_RANDOM" => ::std::option::Option::Some(RogueModifierContent::ROGUE_MODIFIER_CONTENT_RANDOM),
+            _ => ::std::option::Option::None
+        }
+    }
+
+    const VALUES: &'static [RogueModifierContent] = &[
+        RogueModifierContent::ROGUE_MODIFIER_CONTENT_DEFINITE,
+        RogueModifierContent::ROGUE_MODIFIER_CONTENT_RANDOM,
+    ];
+}
+
+impl ::protobuf::EnumFull for RogueModifierContent {
+    fn enum_descriptor() -> ::protobuf::reflect::EnumDescriptor {
+        static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::EnumDescriptor> = ::protobuf::rt::Lazy::new();
+        descriptor.get(|| file_descriptor().enum_by_package_relative_name("RogueModifierContent").unwrap()).clone()
+    }
+
+    fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
+        let index = *self as usize;
+        Self::enum_descriptor().value_by_index(index)
+    }
+}
+
+impl ::std::default::Default for RogueModifierContent {
+    fn default() -> Self {
+        RogueModifierContent::ROGUE_MODIFIER_CONTENT_DEFINITE
     }
 }
 
 impl RogueModifierContent {
-    pub fn new() -> RogueModifierContent {
-        ::std::default::Default::default()
+    fn generated_enum_descriptor_data() -> ::protobuf::reflect::GeneratedEnumDescriptorData {
+        ::protobuf::reflect::GeneratedEnumDescriptorData::new::<RogueModifierContent>("RogueModifierContent")
     }
-
-    fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_modifier_effect_id",
-            |m: &RogueModifierContent| { &m.content_modifier_effect_id },
-            |m: &mut RogueModifierContent| { &mut m.content_modifier_effect_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFFJHMJDIBN",
-            |m: &RogueModifierContent| { &m.AFFJHMJDIBN },
-            |m: &mut RogueModifierContent| { &mut m.AFFJHMJDIBN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_content_type",
-            |m: &RogueModifierContent| { &m.modifier_content_type },
-            |m: &mut RogueModifierContent| { &mut m.modifier_content_type },
-        ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierContent>(
-            "RogueModifierContent",
-            fields,
-            oneofs,
-        )
-    }
-}
-
-impl ::protobuf::Message for RogueModifierContent {
-    const NAME: &'static str = "RogueModifierContent";
-
-    fn is_initialized(&self) -> bool {
-        true
-    }
-
-    fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
-        while let Some(tag) = is.read_raw_tag_or_eof()? {
-            match tag {
-                56 => {
-                    self.content_modifier_effect_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.AFFJHMJDIBN = is.read_uint32()?;
-                },
-                24 => {
-                    self.modifier_content_type = is.read_enum_or_unknown()?;
-                },
-                tag => {
-                    ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
-                },
-            };
-        }
-        ::std::result::Result::Ok(())
-    }
-
-    // Compute sizes of nested messages
-    #[allow(unused_variables)]
-    fn compute_size(&self) -> u64 {
-        let mut my_size = 0;
-        if self.content_modifier_effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.content_modifier_effect_id);
-        }
-        if self.AFFJHMJDIBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AFFJHMJDIBN);
-        }
-        if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierContentType::RogueModifierContentType::ROGUE_MODIFIER_CONTENT_DEFINITE) {
-            my_size += ::protobuf::rt::int32_size(3, self.modifier_content_type.value());
-        }
-        my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
-        self.special_fields.cached_size().set(my_size as u32);
-        my_size
-    }
-
-    fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.content_modifier_effect_id != 0 {
-            os.write_uint32(7, self.content_modifier_effect_id)?;
-        }
-        if self.AFFJHMJDIBN != 0 {
-            os.write_uint32(9, self.AFFJHMJDIBN)?;
-        }
-        if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierContentType::RogueModifierContentType::ROGUE_MODIFIER_CONTENT_DEFINITE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.modifier_content_type))?;
-        }
-        os.write_unknown_fields(self.special_fields.unknown_fields())?;
-        ::std::result::Result::Ok(())
-    }
-
-    fn special_fields(&self) -> &::protobuf::SpecialFields {
-        &self.special_fields
-    }
-
-    fn mut_special_fields(&mut self) -> &mut ::protobuf::SpecialFields {
-        &mut self.special_fields
-    }
-
-    fn new() -> RogueModifierContent {
-        RogueModifierContent::new()
-    }
-
-    fn clear(&mut self) {
-        self.content_modifier_effect_id = 0;
-        self.AFFJHMJDIBN = 0;
-        self.modifier_content_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierContentType::RogueModifierContentType::ROGUE_MODIFIER_CONTENT_DEFINITE);
-        self.special_fields.clear();
-    }
-
-    fn default_instance() -> &'static RogueModifierContent {
-        static instance: RogueModifierContent = RogueModifierContent {
-            content_modifier_effect_id: 0,
-            AFFJHMJDIBN: 0,
-            modifier_content_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
-    }
-}
-
-impl ::protobuf::MessageFull for RogueModifierContent {
-    fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
-        static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("RogueModifierContent").unwrap()).clone()
-    }
-}
-
-impl ::std::fmt::Display for RogueModifierContent {
-    fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
-        ::protobuf::text_format::fmt(self, f)
-    }
-}
-
-impl ::protobuf::reflect::ProtobufValue for RogueModifierContent {
-    type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueModifierContent.proto\x1a\x1eRogueModifierContentType.proto\"\
-    \xc4\x01\n\x14RogueModifierContent\x12;\n\x1acontent_modifier_effect_id\
-    \x18\x07\x20\x01(\rR\x17contentModifierEffectId\x12\x20\n\x0bAFFJHMJDIBN\
-    \x18\t\x20\x01(\rR\x0bAFFJHMJDIBN\x12M\n\x15modifier_content_type\x18\
-    \x03\x20\x01(\x0e2\x19.RogueModifierContentTypeR\x13modifierContentTypeb\
-    \x06proto3\
+    \n\x1aRogueModifierContent.proto*^\n\x14RogueModifierContent\x12#\n\x1fR\
+    OGUE_MODIFIER_CONTENT_DEFINITE\x10\0\x12!\n\x1dROGUE_MODIFIER_CONTENT_RA\
+    NDOM\x10\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,11 +106,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueModifierContentType::file_descriptor().clone());
-            let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(RogueModifierContent::generated_message_descriptor_data());
-            let mut enums = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut messages = ::std::vec::Vec::with_capacity(0);
+            let mut enums = ::std::vec::Vec::with_capacity(1);
+            enums.push(RogueModifierContent::generated_enum_descriptor_data());
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),
                 deps,

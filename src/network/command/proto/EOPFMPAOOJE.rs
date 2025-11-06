@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOPFMPAOOJE {
     // message fields
-    // @@protoc_insertion_point(field:EOPFMPAOOJE.PPCLBDBJLMO)
-    pub PPCLBDBJLMO: u32,
-    // @@protoc_insertion_point(field:EOPFMPAOOJE.LOPDBAEGFKP)
-    pub LOPDBAEGFKP: bool,
-    // @@protoc_insertion_point(field:EOPFMPAOOJE.HMHJDBIFGDI)
-    pub HMHJDBIFGDI: u32,
+    // @@protoc_insertion_point(field:EOPFMPAOOJE.DOILNGMPEBF)
+    pub DOILNGMPEBF: u32,
+    // @@protoc_insertion_point(field:EOPFMPAOOJE.KMKNBNBPKNK)
+    pub KMKNBNBPKNK: bool,
+    // @@protoc_insertion_point(field:EOPFMPAOOJE.NNKANGCBJKG)
+    pub NNKANGCBJKG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EOPFMPAOOJE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl EOPFMPAOOJE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPCLBDBJLMO",
-            |m: &EOPFMPAOOJE| { &m.PPCLBDBJLMO },
-            |m: &mut EOPFMPAOOJE| { &mut m.PPCLBDBJLMO },
+            "DOILNGMPEBF",
+            |m: &EOPFMPAOOJE| { &m.DOILNGMPEBF },
+            |m: &mut EOPFMPAOOJE| { &mut m.DOILNGMPEBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPDBAEGFKP",
-            |m: &EOPFMPAOOJE| { &m.LOPDBAEGFKP },
-            |m: &mut EOPFMPAOOJE| { &mut m.LOPDBAEGFKP },
+            "KMKNBNBPKNK",
+            |m: &EOPFMPAOOJE| { &m.KMKNBNBPKNK },
+            |m: &mut EOPFMPAOOJE| { &mut m.KMKNBNBPKNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMHJDBIFGDI",
-            |m: &EOPFMPAOOJE| { &m.HMHJDBIFGDI },
-            |m: &mut EOPFMPAOOJE| { &mut m.HMHJDBIFGDI },
+            "NNKANGCBJKG",
+            |m: &EOPFMPAOOJE| { &m.NNKANGCBJKG },
+            |m: &mut EOPFMPAOOJE| { &mut m.NNKANGCBJKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOPFMPAOOJE>(
             "EOPFMPAOOJE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EOPFMPAOOJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PPCLBDBJLMO = is.read_uint32()?;
-                },
                 24 => {
-                    self.LOPDBAEGFKP = is.read_bool()?;
+                    self.DOILNGMPEBF = is.read_uint32()?;
                 },
-                48 => {
-                    self.HMHJDBIFGDI = is.read_uint32()?;
+                40 => {
+                    self.KMKNBNBPKNK = is.read_bool()?;
+                },
+                88 => {
+                    self.NNKANGCBJKG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EOPFMPAOOJE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPCLBDBJLMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PPCLBDBJLMO);
+        if self.DOILNGMPEBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DOILNGMPEBF);
         }
-        if self.LOPDBAEGFKP != false {
+        if self.KMKNBNBPKNK != false {
             my_size += 1 + 1;
         }
-        if self.HMHJDBIFGDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HMHJDBIFGDI);
+        if self.NNKANGCBJKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NNKANGCBJKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EOPFMPAOOJE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPCLBDBJLMO != 0 {
-            os.write_uint32(10, self.PPCLBDBJLMO)?;
+        if self.DOILNGMPEBF != 0 {
+            os.write_uint32(3, self.DOILNGMPEBF)?;
         }
-        if self.LOPDBAEGFKP != false {
-            os.write_bool(3, self.LOPDBAEGFKP)?;
+        if self.KMKNBNBPKNK != false {
+            os.write_bool(5, self.KMKNBNBPKNK)?;
         }
-        if self.HMHJDBIFGDI != 0 {
-            os.write_uint32(6, self.HMHJDBIFGDI)?;
+        if self.NNKANGCBJKG != 0 {
+            os.write_uint32(11, self.NNKANGCBJKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EOPFMPAOOJE {
     }
 
     fn clear(&mut self) {
-        self.PPCLBDBJLMO = 0;
-        self.LOPDBAEGFKP = false;
-        self.HMHJDBIFGDI = 0;
+        self.DOILNGMPEBF = 0;
+        self.KMKNBNBPKNK = false;
+        self.NNKANGCBJKG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOPFMPAOOJE {
         static instance: EOPFMPAOOJE = EOPFMPAOOJE {
-            PPCLBDBJLMO: 0,
-            LOPDBAEGFKP: false,
-            HMHJDBIFGDI: 0,
+            DOILNGMPEBF: 0,
+            KMKNBNBPKNK: false,
+            NNKANGCBJKG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EOPFMPAOOJE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOPFMPAOOJE.proto\"s\n\x0bEOPFMPAOOJE\x12\x20\n\x0bPPCLBDBJLMO\x18\
-    \n\x20\x01(\rR\x0bPPCLBDBJLMO\x12\x20\n\x0bLOPDBAEGFKP\x18\x03\x20\x01(\
-    \x08R\x0bLOPDBAEGFKP\x12\x20\n\x0bHMHJDBIFGDI\x18\x06\x20\x01(\rR\x0bHMH\
-    JDBIFGDIb\x06proto3\
+    \n\x11EOPFMPAOOJE.proto\"s\n\x0bEOPFMPAOOJE\x12\x20\n\x0bDOILNGMPEBF\x18\
+    \x03\x20\x01(\rR\x0bDOILNGMPEBF\x12\x20\n\x0bKMKNBNBPKNK\x18\x05\x20\x01\
+    (\x08R\x0bKMKNBNBPKNK\x12\x20\n\x0bNNKANGCBJKG\x18\x0b\x20\x01(\rR\x0bNN\
+    KANGCBJKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StarFightDataChangeNotify {
     // message fields
-    // @@protoc_insertion_point(field:StarFightDataChangeNotify.FMCDALALFIA)
-    pub FMCDALALFIA: ::protobuf::MessageField<super::MJCJAIKPLLM::MJCJAIKPLLM>,
+    // @@protoc_insertion_point(field:StarFightDataChangeNotify.LHICMLFIHGE)
+    pub LHICMLFIHGE: ::protobuf::MessageField<super::StarFightGroupInfo::StarFightGroupInfo>,
     // @@protoc_insertion_point(field:StarFightDataChangeNotify.group_id)
     pub group_id: u32,
     // special fields
@@ -51,10 +51,10 @@ impl StarFightDataChangeNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MJCJAIKPLLM::MJCJAIKPLLM>(
-            "FMCDALALFIA",
-            |m: &StarFightDataChangeNotify| { &m.FMCDALALFIA },
-            |m: &mut StarFightDataChangeNotify| { &mut m.FMCDALALFIA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::StarFightGroupInfo::StarFightGroupInfo>(
+            "LHICMLFIHGE",
+            |m: &StarFightDataChangeNotify| { &m.LHICMLFIHGE },
+            |m: &mut StarFightDataChangeNotify| { &mut m.LHICMLFIHGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMCDALALFIA)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHICMLFIHGE)?;
                 },
-                64 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FMCDALALFIA.as_ref() {
+        if let Some(v) = self.LHICMLFIHGE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FMCDALALFIA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.LHICMLFIHGE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(8, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for StarFightDataChangeNotify {
     }
 
     fn clear(&mut self) {
-        self.FMCDALALFIA.clear();
+        self.LHICMLFIHGE.clear();
         self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StarFightDataChangeNotify {
         static instance: StarFightDataChangeNotify = StarFightDataChangeNotify {
-            FMCDALALFIA: ::protobuf::MessageField::none(),
+            LHICMLFIHGE: ::protobuf::MessageField::none(),
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for StarFightDataChangeNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fStarFightDataChangeNotify.proto\x1a\x11MJCJAIKPLLM.proto\"f\n\x19S\
-    tarFightDataChangeNotify\x12.\n\x0bFMCDALALFIA\x18\x01\x20\x01(\x0b2\x0c\
-    .MJCJAIKPLLMR\x0bFMCDALALFIA\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\
-    \x07groupIdb\x06proto3\
+    \n\x1fStarFightDataChangeNotify.proto\x1a\x18StarFightGroupInfo.proto\"m\
+    \n\x19StarFightDataChangeNotify\x125\n\x0bLHICMLFIHGE\x18\x03\x20\x01(\
+    \x0b2\x13.StarFightGroupInfoR\x0bLHICMLFIHGE\x12\x19\n\x08group_id\x18\
+    \x04\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MJCJAIKPLLM::file_descriptor().clone());
+            deps.push(super::StarFightGroupInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StarFightDataChangeNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

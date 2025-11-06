@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StopRogueAdventureRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StopRogueAdventureRoomCsReq.IPOGACCFMOL)
-    pub IPOGACCFMOL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StopRogueAdventureRoomCsReq.MMHMDHIHCAB)
-    pub MMHMDHIHCAB: u32,
+    // @@protoc_insertion_point(field:StopRogueAdventureRoomCsReq.AHMMLMJLEBE)
+    pub AHMMLMJLEBE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StopRogueAdventureRoomCsReq.ILKCIMDJHDE)
+    pub ILKCIMDJHDE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StopRogueAdventureRoomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl StopRogueAdventureRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IPOGACCFMOL",
-            |m: &StopRogueAdventureRoomCsReq| { &m.IPOGACCFMOL },
-            |m: &mut StopRogueAdventureRoomCsReq| { &mut m.IPOGACCFMOL },
+            "AHMMLMJLEBE",
+            |m: &StopRogueAdventureRoomCsReq| { &m.AHMMLMJLEBE },
+            |m: &mut StopRogueAdventureRoomCsReq| { &mut m.AHMMLMJLEBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMHMDHIHCAB",
-            |m: &StopRogueAdventureRoomCsReq| { &m.MMHMDHIHCAB },
-            |m: &mut StopRogueAdventureRoomCsReq| { &mut m.MMHMDHIHCAB },
+            "ILKCIMDJHDE",
+            |m: &StopRogueAdventureRoomCsReq| { &m.ILKCIMDJHDE },
+            |m: &mut StopRogueAdventureRoomCsReq| { &mut m.ILKCIMDJHDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StopRogueAdventureRoomCsReq>(
             "StopRogueAdventureRoomCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for StopRogueAdventureRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IPOGACCFMOL)?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AHMMLMJLEBE)?;
                 },
-                80 => {
-                    self.IPOGACCFMOL.push(is.read_uint32()?);
+                72 => {
+                    self.AHMMLMJLEBE.push(is.read_uint32()?);
                 },
-                56 => {
-                    self.MMHMDHIHCAB = is.read_uint32()?;
+                112 => {
+                    self.ILKCIMDJHDE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,9 +100,9 @@ impl ::protobuf::Message for StopRogueAdventureRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IPOGACCFMOL);
-        if self.MMHMDHIHCAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MMHMDHIHCAB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.AHMMLMJLEBE);
+        if self.ILKCIMDJHDE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ILKCIMDJHDE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for StopRogueAdventureRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.IPOGACCFMOL)?;
-        if self.MMHMDHIHCAB != 0 {
-            os.write_uint32(7, self.MMHMDHIHCAB)?;
+        os.write_repeated_packed_uint32(9, &self.AHMMLMJLEBE)?;
+        if self.ILKCIMDJHDE != 0 {
+            os.write_uint32(14, self.ILKCIMDJHDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,15 +131,15 @@ impl ::protobuf::Message for StopRogueAdventureRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.IPOGACCFMOL.clear();
-        self.MMHMDHIHCAB = 0;
+        self.AHMMLMJLEBE.clear();
+        self.ILKCIMDJHDE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StopRogueAdventureRoomCsReq {
         static instance: StopRogueAdventureRoomCsReq = StopRogueAdventureRoomCsReq {
-            IPOGACCFMOL: ::std::vec::Vec::new(),
-            MMHMDHIHCAB: 0,
+            AHMMLMJLEBE: ::std::vec::Vec::new(),
+            ILKCIMDJHDE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for StopRogueAdventureRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!StopRogueAdventureRoomCsReq.proto\"a\n\x1bStopRogueAdventureRoomCsReq\
-    \x12\x20\n\x0bIPOGACCFMOL\x18\n\x20\x03(\rR\x0bIPOGACCFMOL\x12\x20\n\x0b\
-    MMHMDHIHCAB\x18\x07\x20\x01(\rR\x0bMMHMDHIHCABb\x06proto3\
+    \x12\x20\n\x0bAHMMLMJLEBE\x18\t\x20\x03(\rR\x0bAHMMLMJLEBE\x12\x20\n\x0b\
+    ILKCIMDJHDE\x18\x0e\x20\x01(\rR\x0bILKCIMDJHDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

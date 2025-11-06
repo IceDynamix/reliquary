@@ -30,8 +30,8 @@ pub struct UpdateGunPlayDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.ODFHNCHIEJN)
-    pub ODFHNCHIEJN: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.COOOKCPPJCB)
+    pub COOOKCPPJCB: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGunPlayDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl UpdateGunPlayDataScRsp {
             |m: &mut UpdateGunPlayDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLBHFHJDBFI::KLBHFHJDBFI>(
-            "ODFHNCHIEJN",
-            |m: &UpdateGunPlayDataScRsp| { &m.ODFHNCHIEJN },
-            |m: &mut UpdateGunPlayDataScRsp| { &mut m.ODFHNCHIEJN },
+            "COOOKCPPJCB",
+            |m: &UpdateGunPlayDataScRsp| { &m.COOOKCPPJCB },
+            |m: &mut UpdateGunPlayDataScRsp| { &mut m.COOOKCPPJCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGunPlayDataScRsp>(
             "UpdateGunPlayDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODFHNCHIEJN)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COOOKCPPJCB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if let Some(v) = self.ODFHNCHIEJN.as_ref() {
+        if let Some(v) = self.COOOKCPPJCB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
-        if let Some(v) = self.ODFHNCHIEJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.COOOKCPPJCB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.ODFHNCHIEJN.clear();
+        self.COOOKCPPJCB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataScRsp {
         static instance: UpdateGunPlayDataScRsp = UpdateGunPlayDataScRsp {
             retcode: 0,
-            ODFHNCHIEJN: ::protobuf::MessageField::none(),
+            COOOKCPPJCB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11KLBHFHJDBFI.proto\"b\n\x16Upda\
-    teGunPlayDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\
-    .\n\x0bODFHNCHIEJN\x18\x05\x20\x01(\x0b2\x0c.KLBHFHJDBFIR\x0bODFHNCHIEJN\
-    b\x06proto3\
+    teGunPlayDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bCOOOKCPPJCB\x18\r\x20\x01(\x0b2\x0c.KLBHFHJDBFIR\x0bCOOOKCPPJ\
+    CBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

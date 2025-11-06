@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AICNONBGNNP {
     // message fields
-    // @@protoc_insertion_point(field:AICNONBGNNP.PKGDLPKJBCN)
-    pub PKGDLPKJBCN: u32,
+    // @@protoc_insertion_point(field:AICNONBGNNP.KJLNLBHCEGN)
+    pub KJLNLBHCEGN: u32,
     // @@protoc_insertion_point(field:AICNONBGNNP.level)
     pub level: u32,
     // special fields
@@ -52,9 +52,9 @@ impl AICNONBGNNP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKGDLPKJBCN",
-            |m: &AICNONBGNNP| { &m.PKGDLPKJBCN },
-            |m: &mut AICNONBGNNP| { &mut m.PKGDLPKJBCN },
+            "KJLNLBHCEGN",
+            |m: &AICNONBGNNP| { &m.KJLNLBHCEGN },
+            |m: &mut AICNONBGNNP| { &mut m.KJLNLBHCEGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AICNONBGNNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PKGDLPKJBCN = is.read_uint32()?;
+                48 => {
+                    self.KJLNLBHCEGN = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AICNONBGNNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKGDLPKJBCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PKGDLPKJBCN);
+        if self.KJLNLBHCEGN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KJLNLBHCEGN);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AICNONBGNNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKGDLPKJBCN != 0 {
-            os.write_uint32(10, self.PKGDLPKJBCN)?;
+        if self.KJLNLBHCEGN != 0 {
+            os.write_uint32(6, self.KJLNLBHCEGN)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for AICNONBGNNP {
     }
 
     fn clear(&mut self) {
-        self.PKGDLPKJBCN = 0;
+        self.KJLNLBHCEGN = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AICNONBGNNP {
         static instance: AICNONBGNNP = AICNONBGNNP {
-            PKGDLPKJBCN: 0,
+            KJLNLBHCEGN: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AICNONBGNNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AICNONBGNNP.proto\"E\n\x0bAICNONBGNNP\x12\x20\n\x0bPKGDLPKJBCN\x18\
-    \n\x20\x01(\rR\x0bPKGDLPKJBCN\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05\
-    levelb\x06proto3\
+    \n\x11AICNONBGNNP.proto\"E\n\x0bAICNONBGNNP\x12\x20\n\x0bKJLNLBHCEGN\x18\
+    \x06\x20\x01(\rR\x0bKJLNLBHCEGN\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\
+    \x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

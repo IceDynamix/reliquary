@@ -79,7 +79,7 @@ impl ::protobuf::Message for MonopolyBuyGoodsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.goods_id = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyBuyGoodsCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.goods_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.goods_id);
         }
         if self.shop_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.shop_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MonopolyBuyGoodsCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.goods_id != 0 {
-            os.write_uint32(12, self.goods_id)?;
+            os.write_uint32(7, self.goods_id)?;
         }
         if self.shop_id != 0 {
             os.write_uint32(15, self.shop_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyBuyGoodsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMonopolyBuyGoodsCsReq.proto\"K\n\x15MonopolyBuyGoodsCsReq\x12\x19\
-    \n\x08goods_id\x18\x0c\x20\x01(\rR\x07goodsId\x12\x17\n\x07shop_id\x18\
+    \n\x08goods_id\x18\x07\x20\x01(\rR\x07goodsId\x12\x17\n\x07shop_id\x18\
     \x0f\x20\x01(\rR\x06shopIdb\x06proto3\
 ";
 

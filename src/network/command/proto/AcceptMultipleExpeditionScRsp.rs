@@ -31,7 +31,7 @@ pub struct AcceptMultipleExpeditionScRsp {
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.accept_multi_expedition)
-    pub accept_multi_expedition: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
+    pub accept_multi_expedition: ::std::vec::Vec<super::Expedition::Expedition>,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptMultipleExpeditionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                106 => {
                     self.accept_multi_expedition.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         for value in &self.accept_multi_expedition {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         for v in &self.accept_multi_expedition {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMultipleExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#AcceptMultipleExpeditionScRsp.proto\x1a\x14ExpeditionInfo.proto\"\x82\
-    \x01\n\x1dAcceptMultipleExpeditionScRsp\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12G\n\x17accept_multi_expedition\x18\n\x20\x03(\x0b\
-    2\x0f.ExpeditionInfoR\x15acceptMultiExpeditionb\x06proto3\
+    \n#AcceptMultipleExpeditionScRsp.proto\x1a\x10Expedition.proto\"~\n\x1dA\
+    cceptMultipleExpeditionScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07r\
+    etcode\x12C\n\x17accept_multi_expedition\x18\r\x20\x03(\x0b2\x0b.Expedit\
+    ionR\x15acceptMultiExpeditionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ExpeditionInfo::file_descriptor().clone());
+            deps.push(super::Expedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptMultipleExpeditionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

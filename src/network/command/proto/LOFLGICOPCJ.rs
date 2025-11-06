@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOFLGICOPCJ {
     // message fields
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.JKEDDOGNLIF)
-    pub JKEDDOGNLIF: u32,
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.IMMANIPGMIF)
-    pub IMMANIPGMIF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.LPMCGNJLBGD)
-    pub LPMCGNJLBGD: ::protobuf::MessageField<super::EEKFECDIHJE::EEKFECDIHJE>,
-    // @@protoc_insertion_point(field:LOFLGICOPCJ.PBHEDBCPDMI)
-    pub PBHEDBCPDMI: bool,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.HJJKIDFFGKI)
+    pub HJJKIDFFGKI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.ILLKIFHCCGF)
+    pub ILLKIFHCCGF: bool,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.custom_drink)
+    pub custom_drink: ::protobuf::MessageField<super::DrinkMakerBarDrink::DrinkMakerBarDrink>,
+    // @@protoc_insertion_point(field:LOFLGICOPCJ.DBHCIKAPNOE)
+    pub DBHCIKAPNOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LOFLGICOPCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl LOFLGICOPCJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKEDDOGNLIF",
-            |m: &LOFLGICOPCJ| { &m.JKEDDOGNLIF },
-            |m: &mut LOFLGICOPCJ| { &mut m.JKEDDOGNLIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IMMANIPGMIF",
-            |m: &LOFLGICOPCJ| { &m.IMMANIPGMIF },
-            |m: &mut LOFLGICOPCJ| { &mut m.IMMANIPGMIF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEKFECDIHJE::EEKFECDIHJE>(
-            "LPMCGNJLBGD",
-            |m: &LOFLGICOPCJ| { &m.LPMCGNJLBGD },
-            |m: &mut LOFLGICOPCJ| { &mut m.LPMCGNJLBGD },
+            "HJJKIDFFGKI",
+            |m: &LOFLGICOPCJ| { &m.HJJKIDFFGKI },
+            |m: &mut LOFLGICOPCJ| { &mut m.HJJKIDFFGKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBHEDBCPDMI",
-            |m: &LOFLGICOPCJ| { &m.PBHEDBCPDMI },
-            |m: &mut LOFLGICOPCJ| { &mut m.PBHEDBCPDMI },
+            "ILLKIFHCCGF",
+            |m: &LOFLGICOPCJ| { &m.ILLKIFHCCGF },
+            |m: &mut LOFLGICOPCJ| { &mut m.ILLKIFHCCGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DrinkMakerBarDrink::DrinkMakerBarDrink>(
+            "custom_drink",
+            |m: &LOFLGICOPCJ| { &m.custom_drink },
+            |m: &mut LOFLGICOPCJ| { &mut m.custom_drink },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBHCIKAPNOE",
+            |m: &LOFLGICOPCJ| { &m.DBHCIKAPNOE },
+            |m: &mut LOFLGICOPCJ| { &mut m.DBHCIKAPNOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOFLGICOPCJ>(
             "LOFLGICOPCJ",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JKEDDOGNLIF = is.read_uint32()?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HJJKIDFFGKI)?;
                 },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IMMANIPGMIF)?;
+                40 => {
+                    self.HJJKIDFFGKI.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.IMMANIPGMIF.push(is.read_uint32()?);
+                48 => {
+                    self.ILLKIFHCCGF = is.read_bool()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPMCGNJLBGD)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.custom_drink)?;
                 },
-                32 => {
-                    self.PBHEDBCPDMI = is.read_bool()?;
+                96 => {
+                    self.DBHCIKAPNOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKEDDOGNLIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JKEDDOGNLIF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.HJJKIDFFGKI);
+        if self.ILLKIFHCCGF != false {
+            my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IMMANIPGMIF);
-        if let Some(v) = self.LPMCGNJLBGD.as_ref() {
+        if let Some(v) = self.custom_drink.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PBHEDBCPDMI != false {
-            my_size += 1 + 1;
+        if self.DBHCIKAPNOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DBHCIKAPNOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKEDDOGNLIF != 0 {
-            os.write_uint32(1, self.JKEDDOGNLIF)?;
+        os.write_repeated_packed_uint32(5, &self.HJJKIDFFGKI)?;
+        if self.ILLKIFHCCGF != false {
+            os.write_bool(6, self.ILLKIFHCCGF)?;
         }
-        os.write_repeated_packed_uint32(10, &self.IMMANIPGMIF)?;
-        if let Some(v) = self.LPMCGNJLBGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.custom_drink.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.PBHEDBCPDMI != false {
-            os.write_bool(4, self.PBHEDBCPDMI)?;
+        if self.DBHCIKAPNOE != 0 {
+            os.write_uint32(12, self.DBHCIKAPNOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for LOFLGICOPCJ {
     }
 
     fn clear(&mut self) {
-        self.JKEDDOGNLIF = 0;
-        self.IMMANIPGMIF.clear();
-        self.LPMCGNJLBGD.clear();
-        self.PBHEDBCPDMI = false;
+        self.HJJKIDFFGKI.clear();
+        self.ILLKIFHCCGF = false;
+        self.custom_drink.clear();
+        self.DBHCIKAPNOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOFLGICOPCJ {
         static instance: LOFLGICOPCJ = LOFLGICOPCJ {
-            JKEDDOGNLIF: 0,
-            IMMANIPGMIF: ::std::vec::Vec::new(),
-            LPMCGNJLBGD: ::protobuf::MessageField::none(),
-            PBHEDBCPDMI: false,
+            HJJKIDFFGKI: ::std::vec::Vec::new(),
+            ILLKIFHCCGF: false,
+            custom_drink: ::protobuf::MessageField::none(),
+            DBHCIKAPNOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,12 @@ impl ::protobuf::reflect::ProtobufValue for LOFLGICOPCJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOFLGICOPCJ.proto\x1a\x11EEKFECDIHJE.proto\"\xa3\x01\n\x0bLOFLGICO\
-    PCJ\x12\x20\n\x0bJKEDDOGNLIF\x18\x01\x20\x01(\rR\x0bJKEDDOGNLIF\x12\x20\
-    \n\x0bIMMANIPGMIF\x18\n\x20\x03(\rR\x0bIMMANIPGMIF\x12.\n\x0bLPMCGNJLBGD\
-    \x18\t\x20\x01(\x0b2\x0c.EEKFECDIHJER\x0bLPMCGNJLBGD\x12\x20\n\x0bPBHEDB\
-    CPDMI\x18\x04\x20\x01(\x08R\x0bPBHEDBCPDMIb\x06proto3\
+    \n\x11LOFLGICOPCJ.proto\x1a\x18DrinkMakerBarDrink.proto\"\xab\x01\n\x0bL\
+    OFLGICOPCJ\x12\x20\n\x0bHJJKIDFFGKI\x18\x05\x20\x03(\rR\x0bHJJKIDFFGKI\
+    \x12\x20\n\x0bILLKIFHCCGF\x18\x06\x20\x01(\x08R\x0bILLKIFHCCGF\x126\n\
+    \x0ccustom_drink\x18\x07\x20\x01(\x0b2\x13.DrinkMakerBarDrinkR\x0bcustom\
+    Drink\x12\x20\n\x0bDBHCIKAPNOE\x18\x0c\x20\x01(\rR\x0bDBHCIKAPNOEb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -223,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EEKFECDIHJE::file_descriptor().clone());
+            deps.push(super::DrinkMakerBarDrink::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LOFLGICOPCJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

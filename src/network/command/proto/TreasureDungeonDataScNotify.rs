@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TreasureDungeonDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TreasureDungeonDataScNotify.DLEJPJJCELJ)
-    pub DLEJPJJCELJ: ::protobuf::MessageField<super::KLCKNKLPONM::KLCKNKLPONM>,
+    // @@protoc_insertion_point(field:TreasureDungeonDataScNotify.DEOMLGBHJPJ)
+    pub DEOMLGBHJPJ: ::protobuf::MessageField<super::KLCKNKLPONM::KLCKNKLPONM>,
     // special fields
     // @@protoc_insertion_point(special_field:TreasureDungeonDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TreasureDungeonDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLCKNKLPONM::KLCKNKLPONM>(
-            "DLEJPJJCELJ",
-            |m: &TreasureDungeonDataScNotify| { &m.DLEJPJJCELJ },
-            |m: &mut TreasureDungeonDataScNotify| { &mut m.DLEJPJJCELJ },
+            "DEOMLGBHJPJ",
+            |m: &TreasureDungeonDataScNotify| { &m.DEOMLGBHJPJ },
+            |m: &mut TreasureDungeonDataScNotify| { &mut m.DEOMLGBHJPJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TreasureDungeonDataScNotify>(
             "TreasureDungeonDataScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TreasureDungeonDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLEJPJJCELJ)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DEOMLGBHJPJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TreasureDungeonDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLEJPJJCELJ.as_ref() {
+        if let Some(v) = self.DEOMLGBHJPJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TreasureDungeonDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLEJPJJCELJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.DEOMLGBHJPJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TreasureDungeonDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.DLEJPJJCELJ.clear();
+        self.DEOMLGBHJPJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TreasureDungeonDataScNotify {
         static instance: TreasureDungeonDataScNotify = TreasureDungeonDataScNotify {
-            DLEJPJJCELJ: ::protobuf::MessageField::none(),
+            DEOMLGBHJPJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TreasureDungeonDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!TreasureDungeonDataScNotify.proto\x1a\x11KLCKNKLPONM.proto\"M\n\x1bTr\
-    easureDungeonDataScNotify\x12.\n\x0bDLEJPJJCELJ\x18\r\x20\x01(\x0b2\x0c.\
-    KLCKNKLPONMR\x0bDLEJPJJCELJb\x06proto3\
+    easureDungeonDataScNotify\x12.\n\x0bDEOMLGBHJPJ\x18\t\x20\x01(\x0b2\x0c.\
+    KLCKNKLPONMR\x0bDEOMLGBHJPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

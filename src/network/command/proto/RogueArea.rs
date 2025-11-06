@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueArea {
     // message fields
-    // @@protoc_insertion_point(field:RogueArea.MKEGBHJLJNH)
-    pub MKEGBHJLJNH: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
-    // @@protoc_insertion_point(field:RogueArea.area_status)
-    pub area_status: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
     // @@protoc_insertion_point(field:RogueArea.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:RogueArea.has_taken_reward)
-    pub has_taken_reward: bool,
-    // @@protoc_insertion_point(field:RogueArea.GMPIIAEGGEK)
-    pub GMPIIAEGGEK: u32,
     // @@protoc_insertion_point(field:RogueArea.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:RogueArea.area_status)
+    pub area_status: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
+    // @@protoc_insertion_point(field:RogueArea.rogue_status)
+    pub rogue_status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:RogueArea.cur_reach_room_num)
+    pub cur_reach_room_num: u32,
+    // @@protoc_insertion_point(field:RogueArea.has_taken_reward)
+    pub has_taken_reward: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueArea.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,14 @@ impl RogueArea {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKEGBHJLJNH",
-            |m: &RogueArea| { &m.MKEGBHJLJNH },
-            |m: &mut RogueArea| { &mut m.MKEGBHJLJNH },
+            "area_id",
+            |m: &RogueArea| { &m.area_id },
+            |m: &mut RogueArea| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "map_id",
+            |m: &RogueArea| { &m.map_id },
+            |m: &mut RogueArea| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_status",
@@ -70,24 +75,19 @@ impl RogueArea {
             |m: &mut RogueArea| { &mut m.area_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &RogueArea| { &m.area_id },
-            |m: &mut RogueArea| { &mut m.area_id },
+            "rogue_status",
+            |m: &RogueArea| { &m.rogue_status },
+            |m: &mut RogueArea| { &mut m.rogue_status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_reach_room_num",
+            |m: &RogueArea| { &m.cur_reach_room_num },
+            |m: &mut RogueArea| { &mut m.cur_reach_room_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_taken_reward",
             |m: &RogueArea| { &m.has_taken_reward },
             |m: &mut RogueArea| { &mut m.has_taken_reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMPIIAEGGEK",
-            |m: &RogueArea| { &m.GMPIIAEGGEK },
-            |m: &mut RogueArea| { &mut m.GMPIIAEGGEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &RogueArea| { &m.map_id },
-            |m: &mut RogueArea| { &mut m.map_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueArea>(
             "RogueArea",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for RogueArea {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MKEGBHJLJNH = is.read_enum_or_unknown()?;
-                },
-                80 => {
-                    self.area_status = is.read_enum_or_unknown()?;
-                },
-                48 => {
+                24 => {
                     self.area_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.has_taken_reward = is.read_bool()?;
-                },
-                96 => {
-                    self.GMPIIAEGGEK = is.read_uint32()?;
-                },
-                104 => {
+                48 => {
                     self.map_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.area_status = is.read_enum_or_unknown()?;
+                },
+                72 => {
+                    self.rogue_status = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.cur_reach_room_num = is.read_uint32()?;
+                },
+                120 => {
+                    self.has_taken_reward = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for RogueArea {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MKEGBHJLJNH != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.MKEGBHJLJNH.value());
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
+        }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.map_id);
         }
         if self.area_status != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(10, self.area_status.value());
+            my_size += ::protobuf::rt::int32_size(8, self.area_status.value());
         }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
+        if self.rogue_status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.rogue_status.value());
+        }
+        if self.cur_reach_room_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.cur_reach_room_num);
         }
         if self.has_taken_reward != false {
             my_size += 1 + 1;
-        }
-        if self.GMPIIAEGGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GMPIIAEGGEK);
-        }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for RogueArea {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MKEGBHJLJNH != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.MKEGBHJLJNH))?;
-        }
-        if self.area_status != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.area_status))?;
-        }
         if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
-        }
-        if self.has_taken_reward != false {
-            os.write_bool(8, self.has_taken_reward)?;
-        }
-        if self.GMPIIAEGGEK != 0 {
-            os.write_uint32(12, self.GMPIIAEGGEK)?;
+            os.write_uint32(3, self.area_id)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(13, self.map_id)?;
+            os.write_uint32(6, self.map_id)?;
+        }
+        if self.area_status != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.area_status))?;
+        }
+        if self.rogue_status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.rogue_status))?;
+        }
+        if self.cur_reach_room_num != 0 {
+            os.write_uint32(14, self.cur_reach_room_num)?;
+        }
+        if self.has_taken_reward != false {
+            os.write_bool(15, self.has_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for RogueArea {
     }
 
     fn clear(&mut self) {
-        self.MKEGBHJLJNH = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
-        self.area_status = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK);
         self.area_id = 0;
-        self.has_taken_reward = false;
-        self.GMPIIAEGGEK = 0;
         self.map_id = 0;
+        self.area_status = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::ROGUE_AREA_STATUS_LOCK);
+        self.rogue_status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::ROGUE_STATUS_NONE);
+        self.cur_reach_room_num = 0;
+        self.has_taken_reward = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueArea {
         static instance: RogueArea = RogueArea {
-            MKEGBHJLJNH: ::protobuf::EnumOrUnknown::from_i32(0),
-            area_status: ::protobuf::EnumOrUnknown::from_i32(0),
             area_id: 0,
-            has_taken_reward: false,
-            GMPIIAEGGEK: 0,
             map_id: 0,
+            area_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            rogue_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            cur_reach_room_num: 0,
+            has_taken_reward: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueArea {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fRogueArea.proto\x1a\x15RogueAreaStatus.proto\x1a\x11RogueStatus.pr\
-    oto\"\xea\x01\n\tRogueArea\x12.\n\x0bMKEGBHJLJNH\x18\x01\x20\x01(\x0e2\
-    \x0c.RogueStatusR\x0bMKEGBHJLJNH\x121\n\x0barea_status\x18\n\x20\x01(\
-    \x0e2\x10.RogueAreaStatusR\nareaStatus\x12\x17\n\x07area_id\x18\x06\x20\
-    \x01(\rR\x06areaId\x12(\n\x10has_taken_reward\x18\x08\x20\x01(\x08R\x0eh\
-    asTakenReward\x12\x20\n\x0bGMPIIAEGGEK\x18\x0c\x20\x01(\rR\x0bGMPIIAEGGE\
-    K\x12\x15\n\x06map_id\x18\r\x20\x01(\rR\x05mapIdb\x06proto3\
+    oto\"\xf6\x01\n\tRogueArea\x12\x17\n\x07area_id\x18\x03\x20\x01(\rR\x06a\
+    reaId\x12\x15\n\x06map_id\x18\x06\x20\x01(\rR\x05mapId\x121\n\x0barea_st\
+    atus\x18\x08\x20\x01(\x0e2\x10.RogueAreaStatusR\nareaStatus\x12/\n\x0cro\
+    gue_status\x18\t\x20\x01(\x0e2\x0c.RogueStatusR\x0brogueStatus\x12+\n\
+    \x12cur_reach_room_num\x18\x0e\x20\x01(\rR\x0fcurReachRoomNum\x12(\n\x10\
+    has_taken_reward\x18\x0f\x20\x01(\x08R\x0ehasTakenRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolySocialEventEffectScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolySocialEventEffectScNotify.MIAEAFFDGMH)
-    pub MIAEAFFDGMH: ::std::vec::Vec<super::SocialEventServerCache::SocialEventServerCache>,
+    // @@protoc_insertion_point(field:MonopolySocialEventEffectScNotify.social_event_server_cache_list)
+    pub social_event_server_cache_list: ::std::vec::Vec<super::GDAEPCCGDHG::GDAEPCCGDHG>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolySocialEventEffectScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolySocialEventEffectScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MIAEAFFDGMH",
-            |m: &MonopolySocialEventEffectScNotify| { &m.MIAEAFFDGMH },
-            |m: &mut MonopolySocialEventEffectScNotify| { &mut m.MIAEAFFDGMH },
+            "social_event_server_cache_list",
+            |m: &MonopolySocialEventEffectScNotify| { &m.social_event_server_cache_list },
+            |m: &mut MonopolySocialEventEffectScNotify| { &mut m.social_event_server_cache_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolySocialEventEffectScNotify>(
             "MonopolySocialEventEffectScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolySocialEventEffectScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MIAEAFFDGMH.push(is.read_message()?);
+                74 => {
+                    self.social_event_server_cache_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolySocialEventEffectScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MIAEAFFDGMH {
+        for value in &self.social_event_server_cache_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolySocialEventEffectScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MIAEAFFDGMH {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.social_event_server_cache_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolySocialEventEffectScNotify {
     }
 
     fn clear(&mut self) {
-        self.MIAEAFFDGMH.clear();
+        self.social_event_server_cache_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolySocialEventEffectScNotify {
         static instance: MonopolySocialEventEffectScNotify = MonopolySocialEventEffectScNotify {
-            MIAEAFFDGMH: ::std::vec::Vec::new(),
+            social_event_server_cache_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolySocialEventEffectScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'MonopolySocialEventEffectScNotify.proto\x1a\x1cSocialEventServerCache\
-    .proto\"^\n!MonopolySocialEventEffectScNotify\x129\n\x0bMIAEAFFDGMH\x18\
-    \x05\x20\x03(\x0b2\x17.SocialEventServerCacheR\x0bMIAEAFFDGMHb\x06proto3\
+    \n'MonopolySocialEventEffectScNotify.proto\x1a\x11GDAEPCCGDHG.proto\"u\n\
+    !MonopolySocialEventEffectScNotify\x12P\n\x1esocial_event_server_cache_l\
+    ist\x18\t\x20\x03(\x0b2\x0c.GDAEPCCGDHGR\x1asocialEventServerCacheListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SocialEventServerCache::file_descriptor().clone());
+            deps.push(super::GDAEPCCGDHG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolySocialEventEffectScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

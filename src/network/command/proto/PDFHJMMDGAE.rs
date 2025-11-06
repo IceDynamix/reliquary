@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PDFHJMMDGAE {
     // message fields
+    // @@protoc_insertion_point(field:PDFHJMMDGAE.JGLLMBGLPKG)
+    pub JGLLMBGLPKG: ::std::vec::Vec<super::IMGJIEBFGPF::IMGJIEBFGPF>,
     // @@protoc_insertion_point(field:PDFHJMMDGAE.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:PDFHJMMDGAE.COKDNPEEMAG)
-    pub COKDNPEEMAG: ::std::vec::Vec<super::IMGJIEBFGPF::IMGJIEBFGPF>,
-    // @@protoc_insertion_point(field:PDFHJMMDGAE.MDCJFOAFDJK)
-    pub MDCJFOAFDJK: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
+    // @@protoc_insertion_point(field:PDFHJMMDGAE.CMMOFODEEFN)
+    pub CMMOFODEEFN: ::protobuf::EnumOrUnknown<super::KLNIPNJCNMJ::KLNIPNJCNMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:PDFHJMMDGAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl PDFHJMMDGAE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JGLLMBGLPKG",
+            |m: &PDFHJMMDGAE| { &m.JGLLMBGLPKG },
+            |m: &mut PDFHJMMDGAE| { &mut m.JGLLMBGLPKG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &PDFHJMMDGAE| { &m.item_value },
             |m: &mut PDFHJMMDGAE| { &mut m.item_value },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "COKDNPEEMAG",
-            |m: &PDFHJMMDGAE| { &m.COKDNPEEMAG },
-            |m: &mut PDFHJMMDGAE| { &mut m.COKDNPEEMAG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDCJFOAFDJK",
-            |m: &PDFHJMMDGAE| { &m.MDCJFOAFDJK },
-            |m: &mut PDFHJMMDGAE| { &mut m.MDCJFOAFDJK },
+            "CMMOFODEEFN",
+            |m: &PDFHJMMDGAE| { &m.CMMOFODEEFN },
+            |m: &mut PDFHJMMDGAE| { &mut m.CMMOFODEEFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PDFHJMMDGAE>(
             "PDFHJMMDGAE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    self.JGLLMBGLPKG.push(is.read_message()?);
+                },
                 80 => {
                     self.item_value = is.read_uint32()?;
                 },
-                114 => {
-                    self.COKDNPEEMAG.push(is.read_message()?);
-                },
-                120 => {
-                    self.MDCJFOAFDJK = is.read_enum_or_unknown()?;
+                88 => {
+                    self.CMMOFODEEFN = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_value);
-        }
-        for value in &self.COKDNPEEMAG {
+        for value in &self.JGLLMBGLPKG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.MDCJFOAFDJK.value());
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.item_value);
+        }
+        if self.CMMOFODEEFN != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(11, self.CMMOFODEEFN.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.JGLLMBGLPKG {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         if self.item_value != 0 {
             os.write_uint32(10, self.item_value)?;
         }
-        for v in &self.COKDNPEEMAG {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.MDCJFOAFDJK != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.MDCJFOAFDJK))?;
+        if self.CMMOFODEEFN != ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.CMMOFODEEFN))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PDFHJMMDGAE {
     }
 
     fn clear(&mut self) {
+        self.JGLLMBGLPKG.clear();
         self.item_value = 0;
-        self.COKDNPEEMAG.clear();
-        self.MDCJFOAFDJK = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
+        self.CMMOFODEEFN = ::protobuf::EnumOrUnknown::new(super::KLNIPNJCNMJ::KLNIPNJCNMJ::EVOLVE_BUILD_SEASON_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PDFHJMMDGAE {
         static instance: PDFHJMMDGAE = PDFHJMMDGAE {
+            JGLLMBGLPKG: ::std::vec::Vec::new(),
             item_value: 0,
-            COKDNPEEMAG: ::std::vec::Vec::new(),
-            MDCJFOAFDJK: ::protobuf::EnumOrUnknown::from_i32(0),
+            CMMOFODEEFN: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PDFHJMMDGAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PDFHJMMDGAE.proto\x1a\x11IMGJIEBFGPF.proto\x1a\x11KLNIPNJCNMJ.prot\
-    o\"\x8c\x01\n\x0bPDFHJMMDGAE\x12\x1d\n\nitem_value\x18\n\x20\x01(\rR\tit\
-    emValue\x12.\n\x0bCOKDNPEEMAG\x18\x0e\x20\x03(\x0b2\x0c.IMGJIEBFGPFR\x0b\
-    COKDNPEEMAG\x12.\n\x0bMDCJFOAFDJK\x18\x0f\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\
-    \x0bMDCJFOAFDJKb\x06proto3\
+    o\"\x8c\x01\n\x0bPDFHJMMDGAE\x12.\n\x0bJGLLMBGLPKG\x18\x05\x20\x03(\x0b2\
+    \x0c.IMGJIEBFGPFR\x0bJGLLMBGLPKG\x12\x1d\n\nitem_value\x18\n\x20\x01(\rR\
+    \titemValue\x12.\n\x0bCMMOFODEEFN\x18\x0b\x20\x01(\x0e2\x0c.KLNIPNJCNMJR\
+    \x0bCMMOFODEEFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

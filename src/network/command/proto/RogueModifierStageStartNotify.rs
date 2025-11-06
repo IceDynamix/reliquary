@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierStageStartNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierStageStartNotify.modifier_source_type)
-    pub modifier_source_type: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
+    // @@protoc_insertion_point(field:RogueModifierStageStartNotify.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierStageStartNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueModifierStageStartNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_source_type",
-            |m: &RogueModifierStageStartNotify| { &m.modifier_source_type },
-            |m: &mut RogueModifierStageStartNotify| { &mut m.modifier_source_type },
+            "source_type",
+            |m: &RogueModifierStageStartNotify| { &m.source_type },
+            |m: &mut RogueModifierStageStartNotify| { &mut m.source_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierStageStartNotify>(
             "RogueModifierStageStartNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.modifier_source_type = is.read_enum_or_unknown()?;
+                72 => {
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.modifier_source_type.value());
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            my_size += ::protobuf::rt::int32_size(9, self.source_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.modifier_source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.modifier_source_type))?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     }
 
     fn clear(&mut self) {
-        self.modifier_source_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::ROGUE_MODIFIER_SOURCE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierStageStartNotify {
         static instance: RogueModifierStageStartNotify = RogueModifierStageStartNotify {
-            modifier_source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierStageStartNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueModifierStageStartNotify.proto\x1a\x1dRogueModifierSourceType.pr\
-    oto\"k\n\x1dRogueModifierStageStartNotify\x12J\n\x14modifier_source_type\
-    \x18\x04\x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x12modifierSourceTyp\
-    eb\x06proto3\
+    oto\"Z\n\x1dRogueModifierStageStartNotify\x129\n\x0bsource_type\x18\t\
+    \x20\x01(\x0e2\x18.RogueModifierSourceTypeR\nsourceTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

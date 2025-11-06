@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightGeneralScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightGeneralScNotify.JJCMFKJHCFA)
-    pub JJCMFKJHCFA: u32,
-    // @@protoc_insertion_point(field:FightGeneralScNotify.MBBDNLNCEJD)
-    pub MBBDNLNCEJD: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:FightGeneralScNotify.LHBCCCPOOLE)
+    pub LHBCCCPOOLE: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:FightGeneralScNotify.ACHKMCPEBDL)
+    pub ACHKMCPEBDL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightGeneralScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FightGeneralScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJCMFKJHCFA",
-            |m: &FightGeneralScNotify| { &m.JJCMFKJHCFA },
-            |m: &mut FightGeneralScNotify| { &mut m.JJCMFKJHCFA },
+            "LHBCCCPOOLE",
+            |m: &FightGeneralScNotify| { &m.LHBCCCPOOLE },
+            |m: &mut FightGeneralScNotify| { &mut m.LHBCCCPOOLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBBDNLNCEJD",
-            |m: &FightGeneralScNotify| { &m.MBBDNLNCEJD },
-            |m: &mut FightGeneralScNotify| { &mut m.MBBDNLNCEJD },
+            "ACHKMCPEBDL",
+            |m: &FightGeneralScNotify| { &m.ACHKMCPEBDL },
+            |m: &mut FightGeneralScNotify| { &mut m.ACHKMCPEBDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightGeneralScNotify>(
             "FightGeneralScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FightGeneralScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.JJCMFKJHCFA = is.read_uint32()?;
+                34 => {
+                    self.LHBCCCPOOLE = is.read_bytes()?;
                 },
-                18 => {
-                    self.MBBDNLNCEJD = is.read_bytes()?;
+                48 => {
+                    self.ACHKMCPEBDL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FightGeneralScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJCMFKJHCFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JJCMFKJHCFA);
+        if !self.LHBCCCPOOLE.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(4, &self.LHBCCCPOOLE);
         }
-        if !self.MBBDNLNCEJD.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(2, &self.MBBDNLNCEJD);
+        if self.ACHKMCPEBDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ACHKMCPEBDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FightGeneralScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJCMFKJHCFA != 0 {
-            os.write_uint32(5, self.JJCMFKJHCFA)?;
+        if !self.LHBCCCPOOLE.is_empty() {
+            os.write_bytes(4, &self.LHBCCCPOOLE)?;
         }
-        if !self.MBBDNLNCEJD.is_empty() {
-            os.write_bytes(2, &self.MBBDNLNCEJD)?;
+        if self.ACHKMCPEBDL != 0 {
+            os.write_uint32(6, self.ACHKMCPEBDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FightGeneralScNotify {
     }
 
     fn clear(&mut self) {
-        self.JJCMFKJHCFA = 0;
-        self.MBBDNLNCEJD.clear();
+        self.LHBCCCPOOLE.clear();
+        self.ACHKMCPEBDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightGeneralScNotify {
         static instance: FightGeneralScNotify = FightGeneralScNotify {
-            JJCMFKJHCFA: 0,
-            MBBDNLNCEJD: ::std::vec::Vec::new(),
+            LHBCCCPOOLE: ::std::vec::Vec::new(),
+            ACHKMCPEBDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FightGeneralScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aFightGeneralScNotify.proto\"Z\n\x14FightGeneralScNotify\x12\x20\n\
-    \x0bJJCMFKJHCFA\x18\x05\x20\x01(\rR\x0bJJCMFKJHCFA\x12\x20\n\x0bMBBDNLNC\
-    EJD\x18\x02\x20\x01(\x0cR\x0bMBBDNLNCEJDb\x06proto3\
+    \x0bLHBCCCPOOLE\x18\x04\x20\x01(\x0cR\x0bLHBCCCPOOLE\x12\x20\n\x0bACHKMC\
+    PEBDL\x18\x06\x20\x01(\rR\x0bACHKMCPEBDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

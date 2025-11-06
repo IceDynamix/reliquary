@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PlayerDisplaySettings {
     // message fields
     // @@protoc_insertion_point(field:PlayerDisplaySettings.challenge_list)
-    pub challenge_list: ::std::vec::Vec<super::IHKGNJDNALJ::IHKGNJDNALJ>,
-    // @@protoc_insertion_point(field:PlayerDisplaySettings.JFPCPDCFLMD)
-    pub JFPCPDCFLMD: ::protobuf::MessageField<super::OBIHNGMNKEK::OBIHNGMNKEK>,
+    pub challenge_list: ::std::vec::Vec<super::FriendChallengeBattleRecordDisplayInfo::FriendChallengeBattleRecordDisplayInfo>,
+    // @@protoc_insertion_point(field:PlayerDisplaySettings.friend_rogue_battle_record_display_info)
+    pub friend_rogue_battle_record_display_info: ::protobuf::MessageField<super::FriendRogueBattleRecordDisplayInfo::FriendRogueBattleRecordDisplayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerDisplaySettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl PlayerDisplaySettings {
             |m: &PlayerDisplaySettings| { &m.challenge_list },
             |m: &mut PlayerDisplaySettings| { &mut m.challenge_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBIHNGMNKEK::OBIHNGMNKEK>(
-            "JFPCPDCFLMD",
-            |m: &PlayerDisplaySettings| { &m.JFPCPDCFLMD },
-            |m: &mut PlayerDisplaySettings| { &mut m.JFPCPDCFLMD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FriendRogueBattleRecordDisplayInfo::FriendRogueBattleRecordDisplayInfo>(
+            "friend_rogue_battle_record_display_info",
+            |m: &PlayerDisplaySettings| { &m.friend_rogue_battle_record_display_info },
+            |m: &mut PlayerDisplaySettings| { &mut m.friend_rogue_battle_record_display_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerDisplaySettings>(
             "PlayerDisplaySettings",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerDisplaySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                26 => {
                     self.challenge_list.push(is.read_message()?);
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPCPDCFLMD)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.friend_rogue_battle_record_display_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PlayerDisplaySettings {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.JFPCPDCFLMD.as_ref() {
+        if let Some(v) = self.friend_rogue_battle_record_display_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PlayerDisplaySettings {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if let Some(v) = self.JFPCPDCFLMD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.friend_rogue_battle_record_display_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for PlayerDisplaySettings {
 
     fn clear(&mut self) {
         self.challenge_list.clear();
-        self.JFPCPDCFLMD.clear();
+        self.friend_rogue_battle_record_display_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerDisplaySettings {
         static instance: PlayerDisplaySettings = PlayerDisplaySettings {
             challenge_list: ::std::vec::Vec::new(),
-            JFPCPDCFLMD: ::protobuf::MessageField::none(),
+            friend_rogue_battle_record_display_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,12 @@ impl ::protobuf::reflect::ProtobufValue for PlayerDisplaySettings {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerDisplaySettings.proto\x1a\x11IHKGNJDNALJ.proto\x1a\x11OBIHNG\
-    MNKEK.proto\"|\n\x15PlayerDisplaySettings\x123\n\x0echallenge_list\x18\r\
-    \x20\x03(\x0b2\x0c.IHKGNJDNALJR\rchallengeList\x12.\n\x0bJFPCPDCFLMD\x18\
-    \x02\x20\x01(\x0b2\x0c.OBIHNGMNKEKR\x0bJFPCPDCFLMDb\x06proto3\
+    \n\x1bPlayerDisplaySettings.proto\x1a,FriendChallengeBattleRecordDisplay\
+    Info.proto\x1a(FriendRogueBattleRecordDisplayInfo.proto\"\xe1\x01\n\x15P\
+    layerDisplaySettings\x12N\n\x0echallenge_list\x18\x03\x20\x03(\x0b2'.Fri\
+    endChallengeBattleRecordDisplayInfoR\rchallengeList\x12x\n'friend_rogue_\
+    battle_record_display_info\x18\x0b\x20\x01(\x0b2#.FriendRogueBattleRecor\
+    dDisplayInfoR\"friendRogueBattleRecordDisplayInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +190,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::IHKGNJDNALJ::file_descriptor().clone());
-            deps.push(super::OBIHNGMNKEK::file_descriptor().clone());
+            deps.push(super::FriendChallengeBattleRecordDisplayInfo::file_descriptor().clone());
+            deps.push(super::FriendRogueBattleRecordDisplayInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerDisplaySettings::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

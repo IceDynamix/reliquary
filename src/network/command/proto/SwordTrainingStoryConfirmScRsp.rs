@@ -30,8 +30,8 @@ pub struct SwordTrainingStoryConfirmScRsp {
     // message fields
     // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
+    // @@protoc_insertion_point(field:SwordTrainingStoryConfirmScRsp.story_id)
+    pub story_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingStoryConfirmScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SwordTrainingStoryConfirmScRsp {
             |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &SwordTrainingStoryConfirmScRsp| { &m.BGLEHMKMAPG },
-            |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.BGLEHMKMAPG },
+            "story_id",
+            |m: &SwordTrainingStoryConfirmScRsp| { &m.story_id },
+            |m: &mut SwordTrainingStoryConfirmScRsp| { &mut m.story_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingStoryConfirmScRsp>(
             "SwordTrainingStoryConfirmScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.BGLEHMKMAPG = is.read_uint32()?;
+                48 => {
+                    self.story_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BGLEHMKMAPG);
+        if self.story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.story_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(14, self.BGLEHMKMAPG)?;
+        if self.story_id != 0 {
+            os.write_uint32(6, self.story_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SwordTrainingStoryConfirmScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BGLEHMKMAPG = 0;
+        self.story_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingStoryConfirmScRsp {
         static instance: SwordTrainingStoryConfirmScRsp = SwordTrainingStoryConfirmScRsp {
             retcode: 0,
-            BGLEHMKMAPG: 0,
+            story_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingStoryConfirmScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$SwordTrainingStoryConfirmScRsp.proto\"\\\n\x1eSwordTrainingStoryConfi\
-    rmScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bBGLEHMKMAPG\x18\x0e\x20\x01(\rR\x0bBGLEHMKMAPGb\x06proto3\
+    \n$SwordTrainingStoryConfirmScRsp.proto\"U\n\x1eSwordTrainingStoryConfir\
+    mScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x19\n\x08\
+    story_id\x18\x06\x20\x01(\rR\x07storyIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

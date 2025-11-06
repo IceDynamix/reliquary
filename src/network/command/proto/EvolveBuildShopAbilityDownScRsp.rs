@@ -32,8 +32,8 @@ pub struct EvolveBuildShopAbilityDownScRsp {
     pub level: u32,
     // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownScRsp.NECILJOJGAN)
-    pub NECILJOJGAN: u32,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityDownScRsp.FFJKLGNLCFJ)
+    pub FFJKLGNLCFJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityDownScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl EvolveBuildShopAbilityDownScRsp {
             |m: &mut EvolveBuildShopAbilityDownScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NECILJOJGAN",
-            |m: &EvolveBuildShopAbilityDownScRsp| { &m.NECILJOJGAN },
-            |m: &mut EvolveBuildShopAbilityDownScRsp| { &mut m.NECILJOJGAN },
+            "FFJKLGNLCFJ",
+            |m: &EvolveBuildShopAbilityDownScRsp| { &m.FFJKLGNLCFJ },
+            |m: &mut EvolveBuildShopAbilityDownScRsp| { &mut m.FFJKLGNLCFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityDownScRsp>(
             "EvolveBuildShopAbilityDownScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.NECILJOJGAN = is.read_uint32()?;
+                112 => {
+                    self.FFJKLGNLCFJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.NECILJOJGAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NECILJOJGAN);
+        if self.FFJKLGNLCFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FFJKLGNLCFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.NECILJOJGAN != 0 {
-            os.write_uint32(4, self.NECILJOJGAN)?;
+        if self.FFJKLGNLCFJ != 0 {
+            os.write_uint32(14, self.FFJKLGNLCFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownScRsp {
     fn clear(&mut self) {
         self.level = 0;
         self.retcode = 0;
-        self.NECILJOJGAN = 0;
+        self.FFJKLGNLCFJ = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for EvolveBuildShopAbilityDownScRsp {
         static instance: EvolveBuildShopAbilityDownScRsp = EvolveBuildShopAbilityDownScRsp {
             level: 0,
             retcode: 0,
-            NECILJOJGAN: 0,
+            FFJKLGNLCFJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityDownScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%EvolveBuildShopAbilityDownScRsp.proto\"s\n\x1fEvolveBuildShopAbilityD\
-    ownScRsp\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12\x18\n\x07re\
-    tcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bNECILJOJGAN\x18\x04\
-    \x20\x01(\rR\x0bNECILJOJGANb\x06proto3\
+    ownScRsp\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12\x18\n\x07re\
+    tcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bFFJKLGNLCFJ\x18\x0e\
+    \x20\x01(\rR\x0bFFJKLGNLCFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

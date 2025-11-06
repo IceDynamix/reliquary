@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MarkItemCsReq.NAEHPHHDGEK)
-    pub NAEHPHHDGEK: bool,
+    // @@protoc_insertion_point(field:MarkItemCsReq.OGHDJBJKDEK)
+    pub OGHDJBJKDEK: bool,
     // @@protoc_insertion_point(field:MarkItemCsReq.item_id)
     pub item_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MarkItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAEHPHHDGEK",
-            |m: &MarkItemCsReq| { &m.NAEHPHHDGEK },
-            |m: &mut MarkItemCsReq| { &mut m.NAEHPHHDGEK },
+            "OGHDJBJKDEK",
+            |m: &MarkItemCsReq| { &m.OGHDJBJKDEK },
+            |m: &mut MarkItemCsReq| { &mut m.OGHDJBJKDEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for MarkItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NAEHPHHDGEK = is.read_bool()?;
+                8 => {
+                    self.OGHDJBJKDEK = is.read_bool()?;
                 },
                 40 => {
                     self.item_id = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MarkItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NAEHPHHDGEK != false {
+        if self.OGHDJBJKDEK != false {
             my_size += 1 + 1;
         }
         if self.item_id != 0 {
@@ -109,8 +109,8 @@ impl ::protobuf::Message for MarkItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NAEHPHHDGEK != false {
-            os.write_bool(9, self.NAEHPHHDGEK)?;
+        if self.OGHDJBJKDEK != false {
+            os.write_bool(1, self.OGHDJBJKDEK)?;
         }
         if self.item_id != 0 {
             os.write_uint32(5, self.item_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for MarkItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.NAEHPHHDGEK = false;
+        self.OGHDJBJKDEK = false;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkItemCsReq {
         static instance: MarkItemCsReq = MarkItemCsReq {
-            NAEHPHHDGEK: false,
+            OGHDJBJKDEK: false,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13MarkItemCsReq.proto\"J\n\rMarkItemCsReq\x12\x20\n\x0bNAEHPHHDGEK\
-    \x18\t\x20\x01(\x08R\x0bNAEHPHHDGEK\x12\x17\n\x07item_id\x18\x05\x20\x01\
-    (\rR\x06itemIdb\x06proto3\
+    \n\x13MarkItemCsReq.proto\"J\n\rMarkItemCsReq\x12\x20\n\x0bOGHDJBJKDEK\
+    \x18\x01\x20\x01(\x08R\x0bOGHDJBJKDEK\x12\x17\n\x07item_id\x18\x05\x20\
+    \x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

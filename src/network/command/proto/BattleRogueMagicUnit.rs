@@ -32,12 +32,12 @@ pub struct BattleRogueMagicUnit {
     pub magic_unit_id: u32,
     // @@protoc_insertion_point(field:BattleRogueMagicUnit.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:BattleRogueMagicUnit.HEMJHDOEEBL)
-    pub HEMJHDOEEBL: bool,
+    // @@protoc_insertion_point(field:BattleRogueMagicUnit.DJBCPBKGILM)
+    pub DJBCPBKGILM: bool,
     // @@protoc_insertion_point(field:BattleRogueMagicUnit.dice_slot_id)
     pub dice_slot_id: u32,
-    // @@protoc_insertion_point(field:BattleRogueMagicUnit.IKDDALCBAFJ)
-    pub IKDDALCBAFJ: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:BattleRogueMagicUnit.IDKLJIFKIKJ)
+    pub IDKLJIFKIKJ: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleRogueMagicUnit.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,9 +68,9 @@ impl BattleRogueMagicUnit {
             |m: &mut BattleRogueMagicUnit| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEMJHDOEEBL",
-            |m: &BattleRogueMagicUnit| { &m.HEMJHDOEEBL },
-            |m: &mut BattleRogueMagicUnit| { &mut m.HEMJHDOEEBL },
+            "DJBCPBKGILM",
+            |m: &BattleRogueMagicUnit| { &m.DJBCPBKGILM },
+            |m: &mut BattleRogueMagicUnit| { &mut m.DJBCPBKGILM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dice_slot_id",
@@ -78,9 +78,9 @@ impl BattleRogueMagicUnit {
             |m: &mut BattleRogueMagicUnit| { &mut m.dice_slot_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "IKDDALCBAFJ",
-            |m: &BattleRogueMagicUnit| { &m.IKDDALCBAFJ },
-            |m: &mut BattleRogueMagicUnit| { &mut m.IKDDALCBAFJ },
+            "IDKLJIFKIKJ",
+            |m: &BattleRogueMagicUnit| { &m.IDKLJIFKIKJ },
+            |m: &mut BattleRogueMagicUnit| { &mut m.IDKLJIFKIKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleRogueMagicUnit>(
             "BattleRogueMagicUnit",
@@ -107,7 +107,7 @@ impl ::protobuf::Message for BattleRogueMagicUnit {
                     self.level = is.read_uint32()?;
                 },
                 24 => {
-                    self.HEMJHDOEEBL = is.read_bool()?;
+                    self.DJBCPBKGILM = is.read_bool()?;
                 },
                 32 => {
                     self.dice_slot_id = is.read_uint32()?;
@@ -125,7 +125,7 @@ impl ::protobuf::Message for BattleRogueMagicUnit {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.IKDDALCBAFJ.insert(key, value);
+                    self.IDKLJIFKIKJ.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -145,13 +145,13 @@ impl ::protobuf::Message for BattleRogueMagicUnit {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        if self.HEMJHDOEEBL != false {
+        if self.DJBCPBKGILM != false {
             my_size += 1 + 1;
         }
         if self.dice_slot_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.dice_slot_id);
         }
-        for (k, v) in &self.IKDDALCBAFJ {
+        for (k, v) in &self.IDKLJIFKIKJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -169,13 +169,13 @@ impl ::protobuf::Message for BattleRogueMagicUnit {
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
         }
-        if self.HEMJHDOEEBL != false {
-            os.write_bool(3, self.HEMJHDOEEBL)?;
+        if self.DJBCPBKGILM != false {
+            os.write_bool(3, self.DJBCPBKGILM)?;
         }
         if self.dice_slot_id != 0 {
             os.write_uint32(4, self.dice_slot_id)?;
         }
-        for (k, v) in &self.IKDDALCBAFJ {
+        for (k, v) in &self.IDKLJIFKIKJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -203,9 +203,9 @@ impl ::protobuf::Message for BattleRogueMagicUnit {
     fn clear(&mut self) {
         self.magic_unit_id = 0;
         self.level = 0;
-        self.HEMJHDOEEBL = false;
+        self.DJBCPBKGILM = false;
         self.dice_slot_id = 0;
-        self.IKDDALCBAFJ.clear();
+        self.IDKLJIFKIKJ.clear();
         self.special_fields.clear();
     }
 
@@ -235,10 +235,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleRogueMagicUnit {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBattleRogueMagicUnit.proto\"\x9e\x02\n\x14BattleRogueMagicUnit\x12\
     \"\n\rmagic_unit_id\x18\x01\x20\x01(\rR\x0bmagicUnitId\x12\x14\n\x05leve\
-    l\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bHEMJHDOEEBL\x18\x03\x20\x01(\
-    \x08R\x0bHEMJHDOEEBL\x12\x20\n\x0cdice_slot_id\x18\x04\x20\x01(\rR\ndice\
-    SlotId\x12H\n\x0bIKDDALCBAFJ\x18\x05\x20\x03(\x0b2&.BattleRogueMagicUnit\
-    .IKDDALCBAFJEntryR\x0bIKDDALCBAFJ\x1a>\n\x10IKDDALCBAFJEntry\x12\x10\n\
+    l\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bDJBCPBKGILM\x18\x03\x20\x01(\
+    \x08R\x0bDJBCPBKGILM\x12\x20\n\x0cdice_slot_id\x18\x04\x20\x01(\rR\ndice\
+    SlotId\x12H\n\x0bIDKLJIFKIKJ\x18\x05\x20\x03(\x0b2&.BattleRogueMagicUnit\
+    .IDKLJIFKIKJEntryR\x0bIDKLJIFKIKJ\x1a>\n\x10IDKLJIFKIKJEntry\x12\x10\n\
     \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
     R\x05value:\x028\x01b\x06proto3\
 ";

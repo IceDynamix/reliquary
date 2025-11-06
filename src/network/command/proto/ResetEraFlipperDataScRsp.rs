@@ -30,10 +30,10 @@ pub struct ResetEraFlipperDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:ResetEraFlipperDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ResetEraFlipperDataScRsp.PAHMAGPFDDJ)
-    pub PAHMAGPFDDJ: bool,
     // @@protoc_insertion_point(field:ResetEraFlipperDataScRsp.data)
     pub data: ::protobuf::MessageField<super::KKEAENNDMKB::KKEAENNDMKB>,
+    // @@protoc_insertion_point(field:ResetEraFlipperDataScRsp.DIPKDPOPLJC)
+    pub DIPKDPOPLJC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ResetEraFlipperDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ResetEraFlipperDataScRsp {
             |m: &ResetEraFlipperDataScRsp| { &m.retcode },
             |m: &mut ResetEraFlipperDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAHMAGPFDDJ",
-            |m: &ResetEraFlipperDataScRsp| { &m.PAHMAGPFDDJ },
-            |m: &mut ResetEraFlipperDataScRsp| { &mut m.PAHMAGPFDDJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKEAENNDMKB::KKEAENNDMKB>(
             "data",
             |m: &ResetEraFlipperDataScRsp| { &m.data },
             |m: &mut ResetEraFlipperDataScRsp| { &mut m.data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIPKDPOPLJC",
+            |m: &ResetEraFlipperDataScRsp| { &m.DIPKDPOPLJC },
+            |m: &mut ResetEraFlipperDataScRsp| { &mut m.DIPKDPOPLJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ResetEraFlipperDataScRsp>(
             "ResetEraFlipperDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ResetEraFlipperDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.PAHMAGPFDDJ = is.read_bool()?;
-                },
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
+                },
+                64 => {
+                    self.DIPKDPOPLJC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ResetEraFlipperDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.PAHMAGPFDDJ != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let Some(v) = self.data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DIPKDPOPLJC != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ResetEraFlipperDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.PAHMAGPFDDJ != false {
-            os.write_bool(11, self.PAHMAGPFDDJ)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.DIPKDPOPLJC != false {
+            os.write_bool(8, self.DIPKDPOPLJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ResetEraFlipperDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.PAHMAGPFDDJ = false;
         self.data.clear();
+        self.DIPKDPOPLJC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetEraFlipperDataScRsp {
         static instance: ResetEraFlipperDataScRsp = ResetEraFlipperDataScRsp {
             retcode: 0,
-            PAHMAGPFDDJ: false,
             data: ::protobuf::MessageField::none(),
+            DIPKDPOPLJC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ResetEraFlipperDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eResetEraFlipperDataScRsp.proto\x1a\x11KKEAENNDMKB.proto\"x\n\x18Re\
-    setEraFlipperDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
-    de\x12\x20\n\x0bPAHMAGPFDDJ\x18\x0b\x20\x01(\x08R\x0bPAHMAGPFDDJ\x12\x20\
-    \n\x04data\x18\r\x20\x01(\x0b2\x0c.KKEAENNDMKBR\x04datab\x06proto3\
+    setEraFlipperDataScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retco\
+    de\x12\x20\n\x04data\x18\x06\x20\x01(\x0b2\x0c.KKEAENNDMKBR\x04data\x12\
+    \x20\n\x0bDIPKDPOPLJC\x18\x08\x20\x01(\x08R\x0bDIPKDPOPLJCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for WaitDelResource {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.num = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.tid = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for WaitDelResource {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.num);
+            my_size += ::protobuf::rt::uint32_size(4, self.num);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.tid);
+            my_size += ::protobuf::rt::uint32_size(15, self.tid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for WaitDelResource {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(15, self.num)?;
+            os.write_uint32(4, self.num)?;
         }
         if self.tid != 0 {
-            os.write_uint32(8, self.tid)?;
+            os.write_uint32(15, self.tid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for WaitDelResource {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15WaitDelResource.proto\"5\n\x0fWaitDelResource\x12\x10\n\x03num\x18\
-    \x0f\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\x08\x20\x01(\rR\x03tidb\x06\
+    \x04\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\x0f\x20\x01(\rR\x03tidb\x06\
     proto3\
 ";
 

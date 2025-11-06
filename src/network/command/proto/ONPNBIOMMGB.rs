@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONPNBIOMMGB {
     // message fields
-    // @@protoc_insertion_point(field:ONPNBIOMMGB.NIFJFLDKIKK)
-    pub NIFJFLDKIKK: ::protobuf::MessageField<super::CGGBPJICHGF::CGGBPJICHGF>,
+    // @@protoc_insertion_point(field:ONPNBIOMMGB.COHNOJGBLOO)
+    pub COHNOJGBLOO: ::protobuf::MessageField<super::CGGBPJICHGF::CGGBPJICHGF>,
     // special fields
     // @@protoc_insertion_point(special_field:ONPNBIOMMGB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ONPNBIOMMGB {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGGBPJICHGF::CGGBPJICHGF>(
-            "NIFJFLDKIKK",
-            |m: &ONPNBIOMMGB| { &m.NIFJFLDKIKK },
-            |m: &mut ONPNBIOMMGB| { &mut m.NIFJFLDKIKK },
+            "COHNOJGBLOO",
+            |m: &ONPNBIOMMGB| { &m.COHNOJGBLOO },
+            |m: &mut ONPNBIOMMGB| { &mut m.COHNOJGBLOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONPNBIOMMGB>(
             "ONPNBIOMMGB",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ONPNBIOMMGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIFJFLDKIKK)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COHNOJGBLOO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ONPNBIOMMGB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NIFJFLDKIKK.as_ref() {
+        if let Some(v) = self.COHNOJGBLOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ONPNBIOMMGB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NIFJFLDKIKK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.COHNOJGBLOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ONPNBIOMMGB {
     }
 
     fn clear(&mut self) {
-        self.NIFJFLDKIKK.clear();
+        self.COHNOJGBLOO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONPNBIOMMGB {
         static instance: ONPNBIOMMGB = ONPNBIOMMGB {
-            NIFJFLDKIKK: ::protobuf::MessageField::none(),
+            COHNOJGBLOO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ONPNBIOMMGB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONPNBIOMMGB.proto\x1a\x11CGGBPJICHGF.proto\"=\n\x0bONPNBIOMMGB\x12\
-    .\n\x0bNIFJFLDKIKK\x18\x0b\x20\x01(\x0b2\x0c.CGGBPJICHGFR\x0bNIFJFLDKIKK\
+    .\n\x0bCOHNOJGBLOO\x18\x02\x20\x01(\x0b2\x0c.CGGBPJICHGFR\x0bCOHNOJGBLOO\
     b\x06proto3\
 ";
 

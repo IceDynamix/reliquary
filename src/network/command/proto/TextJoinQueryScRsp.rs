@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TextJoinQueryScRsp.NKKKOPACOKG)
-    pub NKKKOPACOKG: ::std::vec::Vec<super::IOMOPENEMBF::IOMOPENEMBF>,
     // @@protoc_insertion_point(field:TextJoinQueryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TextJoinQueryScRsp.OJPODAGOFBN)
+    pub OJPODAGOFBN: ::std::vec::Vec<super::IOMOPENEMBF::IOMOPENEMBF>,
     // special fields
     // @@protoc_insertion_point(special_field:TextJoinQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TextJoinQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NKKKOPACOKG",
-            |m: &TextJoinQueryScRsp| { &m.NKKKOPACOKG },
-            |m: &mut TextJoinQueryScRsp| { &mut m.NKKKOPACOKG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TextJoinQueryScRsp| { &m.retcode },
             |m: &mut TextJoinQueryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OJPODAGOFBN",
+            |m: &TextJoinQueryScRsp| { &m.OJPODAGOFBN },
+            |m: &mut TextJoinQueryScRsp| { &mut m.OJPODAGOFBN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TextJoinQueryScRsp>(
             "TextJoinQueryScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.NKKKOPACOKG.push(is.read_message()?);
-                },
-                64 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    self.OJPODAGOFBN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NKKKOPACOKG {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        for value in &self.OJPODAGOFBN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NKKKOPACOKG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
+        for v in &self.OJPODAGOFBN {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.NKKKOPACOKG.clear();
         self.retcode = 0;
+        self.OJPODAGOFBN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinQueryScRsp {
         static instance: TextJoinQueryScRsp = TextJoinQueryScRsp {
-            NKKKOPACOKG: ::std::vec::Vec::new(),
             retcode: 0,
+            OJPODAGOFBN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18TextJoinQueryScRsp.proto\x1a\x11IOMOPENEMBF.proto\"^\n\x12TextJoin\
-    QueryScRsp\x12.\n\x0bNKKKOPACOKG\x18\x04\x20\x03(\x0b2\x0c.IOMOPENEMBFR\
-    \x0bNKKKOPACOKG\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    QueryScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\
+    \x0bOJPODAGOFBN\x18\x0e\x20\x03(\x0b2\x0c.IOMOPENEMBFR\x0bOJPODAGOFBNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmLevel {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmLevel.full_combo)
-    pub full_combo: bool,
     // @@protoc_insertion_point(field:MusicRhythmLevel.unlock_level)
     pub unlock_level: u32,
+    // @@protoc_insertion_point(field:MusicRhythmLevel.full_combo)
+    pub full_combo: bool,
     // @@protoc_insertion_point(field:MusicRhythmLevel.level_id)
     pub level_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MusicRhythmLevel {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "full_combo",
-            |m: &MusicRhythmLevel| { &m.full_combo },
-            |m: &mut MusicRhythmLevel| { &mut m.full_combo },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unlock_level",
             |m: &MusicRhythmLevel| { &m.unlock_level },
             |m: &mut MusicRhythmLevel| { &mut m.unlock_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "full_combo",
+            |m: &MusicRhythmLevel| { &m.full_combo },
+            |m: &mut MusicRhythmLevel| { &mut m.full_combo },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicRhythmLevel {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.full_combo = is.read_bool()?;
-                },
                 72 => {
                     self.unlock_level = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
+                    self.full_combo = is.read_bool()?;
+                },
+                104 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MusicRhythmLevel {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.full_combo != false {
-            my_size += 1 + 1;
-        }
         if self.unlock_level != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.unlock_level);
         }
+        if self.full_combo != false {
+            my_size += 1 + 1;
+        }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MusicRhythmLevel {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.full_combo != false {
-            os.write_bool(6, self.full_combo)?;
-        }
         if self.unlock_level != 0 {
             os.write_uint32(9, self.unlock_level)?;
         }
+        if self.full_combo != false {
+            os.write_bool(10, self.full_combo)?;
+        }
         if self.level_id != 0 {
-            os.write_uint32(5, self.level_id)?;
+            os.write_uint32(13, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MusicRhythmLevel {
     }
 
     fn clear(&mut self) {
-        self.full_combo = false;
         self.unlock_level = 0;
+        self.full_combo = false;
         self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmLevel {
         static instance: MusicRhythmLevel = MusicRhythmLevel {
-            full_combo: false,
             unlock_level: 0,
+            full_combo: false,
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmLevel {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16MusicRhythmLevel.proto\"o\n\x10MusicRhythmLevel\x12\x1d\n\nfull_co\
-    mbo\x18\x06\x20\x01(\x08R\tfullCombo\x12!\n\x0cunlock_level\x18\t\x20\
-    \x01(\rR\x0bunlockLevel\x12\x19\n\x08level_id\x18\x05\x20\x01(\rR\x07lev\
-    elIdb\x06proto3\
+    \n\x16MusicRhythmLevel.proto\"o\n\x10MusicRhythmLevel\x12!\n\x0cunlock_l\
+    evel\x18\t\x20\x01(\rR\x0bunlockLevel\x12\x1d\n\nfull_combo\x18\n\x20\
+    \x01(\x08R\tfullCombo\x12\x19\n\x08level_id\x18\r\x20\x01(\rR\x07levelId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

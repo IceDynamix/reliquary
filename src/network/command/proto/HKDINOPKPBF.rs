@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HKDINOPKPBF {
     // message fields
-    // @@protoc_insertion_point(field:HKDINOPKPBF.value)
-    pub value: i32,
     // @@protoc_insertion_point(field:HKDINOPKPBF.type)
     pub type_: u32,
+    // @@protoc_insertion_point(field:HKDINOPKPBF.value)
+    pub value: i32,
     // special fields
     // @@protoc_insertion_point(special_field:HKDINOPKPBF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HKDINOPKPBF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "value",
-            |m: &HKDINOPKPBF| { &m.value },
-            |m: &mut HKDINOPKPBF| { &mut m.value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &HKDINOPKPBF| { &m.type_ },
             |m: &mut HKDINOPKPBF| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "value",
+            |m: &HKDINOPKPBF| { &m.value },
+            |m: &mut HKDINOPKPBF| { &mut m.value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HKDINOPKPBF>(
             "HKDINOPKPBF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HKDINOPKPBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.value = is.read_int32()?;
-                },
-                88 => {
+                32 => {
                     self.type_ = is.read_uint32()?;
+                },
+                72 => {
+                    self.value = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HKDINOPKPBF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.value != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.value);
-        }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.type_);
+            my_size += ::protobuf::rt::uint32_size(4, self.type_);
+        }
+        if self.value != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HKDINOPKPBF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.value != 0 {
-            os.write_int32(14, self.value)?;
-        }
         if self.type_ != 0 {
-            os.write_uint32(11, self.type_)?;
+            os.write_uint32(4, self.type_)?;
+        }
+        if self.value != 0 {
+            os.write_int32(9, self.value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HKDINOPKPBF {
     }
 
     fn clear(&mut self) {
-        self.value = 0;
         self.type_ = 0;
+        self.value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HKDINOPKPBF {
         static instance: HKDINOPKPBF = HKDINOPKPBF {
-            value: 0,
             type_: 0,
+            value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for HKDINOPKPBF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HKDINOPKPBF.proto\"7\n\x0bHKDINOPKPBF\x12\x14\n\x05value\x18\x0e\
-    \x20\x01(\x05R\x05value\x12\x12\n\x04type\x18\x0b\x20\x01(\rR\x04typeb\
+    \n\x11HKDINOPKPBF.proto\"7\n\x0bHKDINOPKPBF\x12\x12\n\x04type\x18\x04\
+    \x20\x01(\rR\x04type\x12\x14\n\x05value\x18\t\x20\x01(\x05R\x05valueb\
     \x06proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMEFNOCBBBC {
     // message fields
-    // @@protoc_insertion_point(field:MMEFNOCBBBC.PMAOKEOOBNO)
-    pub PMAOKEOOBNO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MMEFNOCBBBC.KOLNFGJJEGC)
+    pub KOLNFGJJEGC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MMEFNOCBBBC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MMEFNOCBBBC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PMAOKEOOBNO",
-            |m: &MMEFNOCBBBC| { &m.PMAOKEOOBNO },
-            |m: &mut MMEFNOCBBBC| { &mut m.PMAOKEOOBNO },
+            "KOLNFGJJEGC",
+            |m: &MMEFNOCBBBC| { &m.KOLNFGJJEGC },
+            |m: &mut MMEFNOCBBBC| { &mut m.KOLNFGJJEGC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMEFNOCBBBC>(
             "MMEFNOCBBBC",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for MMEFNOCBBBC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PMAOKEOOBNO)?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KOLNFGJJEGC)?;
                 },
-                104 => {
-                    self.PMAOKEOOBNO.push(is.read_uint32()?);
+                120 => {
+                    self.KOLNFGJJEGC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MMEFNOCBBBC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PMAOKEOOBNO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KOLNFGJJEGC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.PMAOKEOOBNO)?;
+        os.write_repeated_packed_uint32(15, &self.KOLNFGJJEGC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for MMEFNOCBBBC {
     }
 
     fn clear(&mut self) {
-        self.PMAOKEOOBNO.clear();
+        self.KOLNFGJJEGC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMEFNOCBBBC {
         static instance: MMEFNOCBBBC = MMEFNOCBBBC {
-            PMAOKEOOBNO: ::std::vec::Vec::new(),
+            KOLNFGJJEGC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for MMEFNOCBBBC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMEFNOCBBBC.proto\"/\n\x0bMMEFNOCBBBC\x12\x20\n\x0bPMAOKEOOBNO\x18\
-    \r\x20\x03(\rR\x0bPMAOKEOOBNOb\x06proto3\
+    \n\x11MMEFNOCBBBC.proto\"/\n\x0bMMEFNOCBBBC\x12\x20\n\x0bKOLNFGJJEGC\x18\
+    \x0f\x20\x03(\rR\x0bKOLNFGJJEGCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

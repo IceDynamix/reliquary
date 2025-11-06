@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DisplayEquipmentInfo {
     // message fields
-    // @@protoc_insertion_point(field:DisplayEquipmentInfo.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:DisplayEquipmentInfo.tid)
+    pub tid: u32,
     // @@protoc_insertion_point(field:DisplayEquipmentInfo.rank)
     pub rank: u32,
     // @@protoc_insertion_point(field:DisplayEquipmentInfo.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:DisplayEquipmentInfo.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:DisplayEquipmentInfo.promotion)
     pub promotion: u32,
-    // @@protoc_insertion_point(field:DisplayEquipmentInfo.tid)
-    pub tid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DisplayEquipmentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl DisplayEquipmentInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &DisplayEquipmentInfo| { &m.level },
-            |m: &mut DisplayEquipmentInfo| { &mut m.level },
+            "tid",
+            |m: &DisplayEquipmentInfo| { &m.tid },
+            |m: &mut DisplayEquipmentInfo| { &mut m.tid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -73,14 +73,14 @@ impl DisplayEquipmentInfo {
             |m: &mut DisplayEquipmentInfo| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &DisplayEquipmentInfo| { &m.level },
+            |m: &mut DisplayEquipmentInfo| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
             |m: &DisplayEquipmentInfo| { &m.promotion },
             |m: &mut DisplayEquipmentInfo| { &mut m.promotion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "tid",
-            |m: &DisplayEquipmentInfo| { &m.tid },
-            |m: &mut DisplayEquipmentInfo| { &mut m.tid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DisplayEquipmentInfo>(
             "DisplayEquipmentInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.level = is.read_uint32()?;
+                24 => {
+                    self.tid = is.read_uint32()?;
                 },
-                8 => {
+                40 => {
                     self.rank = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
                     self.exp = is.read_uint32()?;
                 },
-                64 => {
-                    self.promotion = is.read_uint32()?;
+                56 => {
+                    self.level = is.read_uint32()?;
                 },
-                48 => {
-                    self.tid = is.read_uint32()?;
+                72 => {
+                    self.promotion = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        if self.tid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.tid);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.rank);
+            my_size += ::protobuf::rt::uint32_size(5, self.rank);
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.exp);
+            my_size += ::protobuf::rt::uint32_size(6, self.exp);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.promotion);
-        }
-        if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.tid);
+            my_size += ::protobuf::rt::uint32_size(9, self.promotion);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+        if self.tid != 0 {
+            os.write_uint32(3, self.tid)?;
         }
         if self.rank != 0 {
-            os.write_uint32(1, self.rank)?;
+            os.write_uint32(5, self.rank)?;
         }
         if self.exp != 0 {
-            os.write_uint32(7, self.exp)?;
+            os.write_uint32(6, self.exp)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(7, self.level)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(8, self.promotion)?;
-        }
-        if self.tid != 0 {
-            os.write_uint32(6, self.tid)?;
+            os.write_uint32(9, self.promotion)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for DisplayEquipmentInfo {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
+        self.tid = 0;
         self.rank = 0;
         self.exp = 0;
+        self.level = 0;
         self.promotion = 0;
-        self.tid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DisplayEquipmentInfo {
         static instance: DisplayEquipmentInfo = DisplayEquipmentInfo {
-            level: 0,
+            tid: 0,
             rank: 0,
             exp: 0,
+            level: 0,
             promotion: 0,
-            tid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for DisplayEquipmentInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aDisplayEquipmentInfo.proto\"\x82\x01\n\x14DisplayEquipmentInfo\x12\
-    \x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12\x12\n\x04rank\x18\x01\
-    \x20\x01(\rR\x04rank\x12\x10\n\x03exp\x18\x07\x20\x01(\rR\x03exp\x12\x1c\
-    \n\tpromotion\x18\x08\x20\x01(\rR\tpromotion\x12\x10\n\x03tid\x18\x06\
-    \x20\x01(\rR\x03tidb\x06proto3\
+    \x10\n\x03tid\x18\x03\x20\x01(\rR\x03tid\x12\x12\n\x04rank\x18\x05\x20\
+    \x01(\rR\x04rank\x12\x10\n\x03exp\x18\x06\x20\x01(\rR\x03exp\x12\x14\n\
+    \x05level\x18\x07\x20\x01(\rR\x05level\x12\x1c\n\tpromotion\x18\t\x20\
+    \x01(\rR\tpromotionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournCurAreaInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.pending_action)
-    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
-    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.rogue_sub_mode)
-    pub rogue_sub_mode: u32,
     // @@protoc_insertion_point(field:RogueTournCurAreaInfo.rogue_magic_battle_const)
     pub rogue_magic_battle_const: u32,
-    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.sub_area_id)
-    pub sub_area_id: u32,
-    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.MDLNDGIJNML)
-    pub MDLNDGIJNML: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.AGEBAMBKKBC)
-    pub AGEBAMBKKBC: u32,
+    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.CKGFCGMADFK)
+    pub CKGFCGMADFK: u32,
+    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.DGILKCMODGB)
+    pub DGILKCMODGB: ::std::string::String,
+    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.rogue_sub_mode)
+    pub rogue_sub_mode: u32,
+    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.LJIOKCACMHC)
+    pub LJIOKCACMHC: u32,
+    // @@protoc_insertion_point(field:RogueTournCurAreaInfo.pending_action)
+    pub pending_action: ::protobuf::MessageField<super::RogueCommonPendingAction::RogueCommonPendingAction>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournCurAreaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,20 @@ impl RogueTournCurAreaInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
-            "pending_action",
-            |m: &RogueTournCurAreaInfo| { &m.pending_action },
-            |m: &mut RogueTournCurAreaInfo| { &mut m.pending_action },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_magic_battle_const",
+            |m: &RogueTournCurAreaInfo| { &m.rogue_magic_battle_const },
+            |m: &mut RogueTournCurAreaInfo| { &mut m.rogue_magic_battle_const },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CKGFCGMADFK",
+            |m: &RogueTournCurAreaInfo| { &m.CKGFCGMADFK },
+            |m: &mut RogueTournCurAreaInfo| { &mut m.CKGFCGMADFK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGILKCMODGB",
+            |m: &RogueTournCurAreaInfo| { &m.DGILKCMODGB },
+            |m: &mut RogueTournCurAreaInfo| { &mut m.DGILKCMODGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_sub_mode",
@@ -70,24 +80,14 @@ impl RogueTournCurAreaInfo {
             |m: &mut RogueTournCurAreaInfo| { &mut m.rogue_sub_mode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_magic_battle_const",
-            |m: &RogueTournCurAreaInfo| { &m.rogue_magic_battle_const },
-            |m: &mut RogueTournCurAreaInfo| { &mut m.rogue_magic_battle_const },
+            "LJIOKCACMHC",
+            |m: &RogueTournCurAreaInfo| { &m.LJIOKCACMHC },
+            |m: &mut RogueTournCurAreaInfo| { &mut m.LJIOKCACMHC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sub_area_id",
-            |m: &RogueTournCurAreaInfo| { &m.sub_area_id },
-            |m: &mut RogueTournCurAreaInfo| { &mut m.sub_area_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDLNDGIJNML",
-            |m: &RogueTournCurAreaInfo| { &m.MDLNDGIJNML },
-            |m: &mut RogueTournCurAreaInfo| { &mut m.MDLNDGIJNML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEBAMBKKBC",
-            |m: &RogueTournCurAreaInfo| { &m.AGEBAMBKKBC },
-            |m: &mut RogueTournCurAreaInfo| { &mut m.AGEBAMBKKBC },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonPendingAction::RogueCommonPendingAction>(
+            "pending_action",
+            |m: &RogueTournCurAreaInfo| { &m.pending_action },
+            |m: &mut RogueTournCurAreaInfo| { &mut m.pending_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournCurAreaInfo>(
             "RogueTournCurAreaInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for RogueTournCurAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
-                },
-                80 => {
-                    self.rogue_sub_mode = is.read_uint32()?;
-                },
-                56 => {
+                8 => {
                     self.rogue_magic_battle_const = is.read_uint32()?;
                 },
-                112 => {
-                    self.sub_area_id = is.read_uint32()?;
+                16 => {
+                    self.CKGFCGMADFK = is.read_uint32()?;
                 },
-                98 => {
-                    self.MDLNDGIJNML = is.read_string()?;
+                34 => {
+                    self.DGILKCMODGB = is.read_string()?;
                 },
-                32 => {
-                    self.AGEBAMBKKBC = is.read_uint32()?;
+                48 => {
+                    self.rogue_sub_mode = is.read_uint32()?;
+                },
+                64 => {
+                    self.LJIOKCACMHC = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for RogueTournCurAreaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.rogue_magic_battle_const != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.rogue_magic_battle_const);
+        }
+        if self.CKGFCGMADFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CKGFCGMADFK);
+        }
+        if !self.DGILKCMODGB.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.DGILKCMODGB);
+        }
+        if self.rogue_sub_mode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.rogue_sub_mode);
+        }
+        if self.LJIOKCACMHC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LJIOKCACMHC);
+        }
         if let Some(v) = self.pending_action.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.rogue_sub_mode);
-        }
-        if self.rogue_magic_battle_const != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rogue_magic_battle_const);
-        }
-        if self.sub_area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.sub_area_id);
-        }
-        if !self.MDLNDGIJNML.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.MDLNDGIJNML);
-        }
-        if self.AGEBAMBKKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AGEBAMBKKBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for RogueTournCurAreaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.rogue_magic_battle_const != 0 {
+            os.write_uint32(1, self.rogue_magic_battle_const)?;
+        }
+        if self.CKGFCGMADFK != 0 {
+            os.write_uint32(2, self.CKGFCGMADFK)?;
+        }
+        if !self.DGILKCMODGB.is_empty() {
+            os.write_string(4, &self.DGILKCMODGB)?;
         }
         if self.rogue_sub_mode != 0 {
-            os.write_uint32(10, self.rogue_sub_mode)?;
+            os.write_uint32(6, self.rogue_sub_mode)?;
         }
-        if self.rogue_magic_battle_const != 0 {
-            os.write_uint32(7, self.rogue_magic_battle_const)?;
+        if self.LJIOKCACMHC != 0 {
+            os.write_uint32(8, self.LJIOKCACMHC)?;
         }
-        if self.sub_area_id != 0 {
-            os.write_uint32(14, self.sub_area_id)?;
-        }
-        if !self.MDLNDGIJNML.is_empty() {
-            os.write_string(12, &self.MDLNDGIJNML)?;
-        }
-        if self.AGEBAMBKKBC != 0 {
-            os.write_uint32(4, self.AGEBAMBKKBC)?;
+        if let Some(v) = self.pending_action.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for RogueTournCurAreaInfo {
     }
 
     fn clear(&mut self) {
-        self.pending_action.clear();
-        self.rogue_sub_mode = 0;
         self.rogue_magic_battle_const = 0;
-        self.sub_area_id = 0;
-        self.MDLNDGIJNML.clear();
-        self.AGEBAMBKKBC = 0;
+        self.CKGFCGMADFK = 0;
+        self.DGILKCMODGB.clear();
+        self.rogue_sub_mode = 0;
+        self.LJIOKCACMHC = 0;
+        self.pending_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournCurAreaInfo {
         static instance: RogueTournCurAreaInfo = RogueTournCurAreaInfo {
-            pending_action: ::protobuf::MessageField::none(),
-            rogue_sub_mode: 0,
             rogue_magic_battle_const: 0,
-            sub_area_id: 0,
-            MDLNDGIJNML: ::std::string::String::new(),
-            AGEBAMBKKBC: 0,
+            CKGFCGMADFK: 0,
+            DGILKCMODGB: ::std::string::String::new(),
+            rogue_sub_mode: 0,
+            LJIOKCACMHC: 0,
+            pending_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournCurAreaInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueTournCurAreaInfo.proto\x1a\x1eRogueCommonPendingAction.proto\
-    \"\x9c\x02\n\x15RogueTournCurAreaInfo\x12@\n\x0epending_action\x18\t\x20\
-    \x01(\x0b2\x19.RogueCommonPendingActionR\rpendingAction\x12$\n\x0erogue_\
-    sub_mode\x18\n\x20\x01(\rR\x0crogueSubMode\x127\n\x18rogue_magic_battle_\
-    const\x18\x07\x20\x01(\rR\x15rogueMagicBattleConst\x12\x1e\n\x0bsub_area\
-    _id\x18\x0e\x20\x01(\rR\tsubAreaId\x12\x20\n\x0bMDLNDGIJNML\x18\x0c\x20\
-    \x01(\tR\x0bMDLNDGIJNML\x12\x20\n\x0bAGEBAMBKKBC\x18\x04\x20\x01(\rR\x0b\
-    AGEBAMBKKBCb\x06proto3\
+    \"\x9e\x02\n\x15RogueTournCurAreaInfo\x127\n\x18rogue_magic_battle_const\
+    \x18\x01\x20\x01(\rR\x15rogueMagicBattleConst\x12\x20\n\x0bCKGFCGMADFK\
+    \x18\x02\x20\x01(\rR\x0bCKGFCGMADFK\x12\x20\n\x0bDGILKCMODGB\x18\x04\x20\
+    \x01(\tR\x0bDGILKCMODGB\x12$\n\x0erogue_sub_mode\x18\x06\x20\x01(\rR\x0c\
+    rogueSubMode\x12\x20\n\x0bLJIOKCACMHC\x18\x08\x20\x01(\rR\x0bLJIOKCACMHC\
+    \x12@\n\x0epending_action\x18\x0b\x20\x01(\x0b2\x19.RogueCommonPendingAc\
+    tionR\rpendingActionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

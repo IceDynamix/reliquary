@@ -79,7 +79,7 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.site_id = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.site_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.site_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.site_id);
         }
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.room_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.site_id != 0 {
-            os.write_uint32(8, self.site_id)?;
+            os.write_uint32(1, self.site_id)?;
         }
         if self.room_id != 0 {
             os.write_uint32(6, self.room_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomCsReq.proto\"J\n\x16EnterRogueMapRoomCsReq\x12\
-    \x17\n\x07site_id\x18\x08\x20\x01(\rR\x06siteId\x12\x17\n\x07room_id\x18\
+    \x17\n\x07site_id\x18\x01\x20\x01(\rR\x06siteId\x12\x17\n\x07room_id\x18\
     \x06\x20\x01(\rR\x06roomIdb\x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BHMCFKHILFO {
     // message fields
-    // @@protoc_insertion_point(field:BHMCFKHILFO.CHNPDAJEIPK)
-    pub CHNPDAJEIPK: bool,
     // @@protoc_insertion_point(field:BHMCFKHILFO.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:BHMCFKHILFO.EONGNLKFJBP)
+    pub EONGNLKFJBP: bool,
     // @@protoc_insertion_point(field:BHMCFKHILFO.level)
     pub level: u32,
     // @@protoc_insertion_point(field:BHMCFKHILFO.id)
@@ -56,14 +56,14 @@ impl BHMCFKHILFO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHNPDAJEIPK",
-            |m: &BHMCFKHILFO| { &m.CHNPDAJEIPK },
-            |m: &mut BHMCFKHILFO| { &mut m.CHNPDAJEIPK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &BHMCFKHILFO| { &m.avatar_type },
             |m: &mut BHMCFKHILFO| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EONGNLKFJBP",
+            |m: &BHMCFKHILFO| { &m.EONGNLKFJBP },
+            |m: &mut BHMCFKHILFO| { &mut m.EONGNLKFJBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for BHMCFKHILFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CHNPDAJEIPK = is.read_bool()?;
-                },
-                64 => {
+                32 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                16 => {
+                40 => {
+                    self.EONGNLKFJBP = is.read_bool()?;
+                },
+                64 => {
                     self.level = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for BHMCFKHILFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CHNPDAJEIPK != false {
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
+        }
+        if self.EONGNLKFJBP != false {
             my_size += 1 + 1;
         }
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.avatar_type.value());
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BHMCFKHILFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CHNPDAJEIPK != false {
-            os.write_bool(5, self.CHNPDAJEIPK)?;
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.EONGNLKFJBP != false {
+            os.write_bool(5, self.EONGNLKFJBP)?;
         }
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_uint32(11, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for BHMCFKHILFO {
     }
 
     fn clear(&mut self) {
-        self.CHNPDAJEIPK = false;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.EONGNLKFJBP = false;
         self.level = 0;
         self.id = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for BHMCFKHILFO {
 
     fn default_instance() -> &'static BHMCFKHILFO {
         static instance: BHMCFKHILFO = BHMCFKHILFO {
-            CHNPDAJEIPK: false,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            EONGNLKFJBP: false,
             level: 0,
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for BHMCFKHILFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHMCFKHILFO.proto\x1a\x10AvatarType.proto\"\x83\x01\n\x0bBHMCFKHIL\
-    FO\x12\x20\n\x0bCHNPDAJEIPK\x18\x05\x20\x01(\x08R\x0bCHNPDAJEIPK\x12,\n\
-    \x0bavatar_type\x18\x08\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
-    \x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12\x0e\n\x02id\x18\x0f\x20\
-    \x01(\rR\x02idb\x06proto3\
+    FO\x12,\n\x0bavatar_type\x18\x04\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTy\
+    pe\x12\x20\n\x0bEONGNLKFJBP\x18\x05\x20\x01(\x08R\x0bEONGNLKFJBP\x12\x14\
+    \n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x0e\n\x02id\x18\x0b\x20\x01\
+    (\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

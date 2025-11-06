@@ -30,22 +30,22 @@ pub struct AHKANKEPADJ {
     // message fields
     // @@protoc_insertion_point(field:AHKANKEPADJ.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.JHHLPLJAAME)
-    pub JHHLPLJAAME: u32,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.OBHIDGFGAMD)
-    pub OBHIDGFGAMD: bool,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.POFHPDGAMKL)
-    pub POFHPDGAMKL: u32,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.BDNLNMCOHGB)
-    pub BDNLNMCOHGB: ::std::string::String,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.JKJLCIJINGK)
+    pub JKJLCIJINGK: u32,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.AKIJPANNPAG)
+    pub AKIJPANNPAG: bool,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.DNEKEDGBEHE)
+    pub DNEKEDGBEHE: u32,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.MEBOBAMLHIN)
+    pub MEBOBAMLHIN: ::std::string::String,
     // @@protoc_insertion_point(field:AHKANKEPADJ.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::PIGODJNHJML::PIGODJNHJML>,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.NCACOCCJNLD)
-    pub NCACOCCJNLD: u32,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.AHJFPNGDBDO)
-    pub AHJFPNGDBDO: u32,
-    // @@protoc_insertion_point(field:AHKANKEPADJ.PGOFPNLAPOE)
-    pub PGOFPNLAPOE: u32,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.JEIHNAGIIDD)
+    pub JEIHNAGIIDD: u32,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.OHJOLFEIHDF)
+    pub OHJOLFEIHDF: u32,
+    // @@protoc_insertion_point(field:AHKANKEPADJ.ADNMNGHDBMK)
+    pub ADNMNGHDBMK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AHKANKEPADJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,24 +71,24 @@ impl AHKANKEPADJ {
             |m: &mut AHKANKEPADJ| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHHLPLJAAME",
-            |m: &AHKANKEPADJ| { &m.JHHLPLJAAME },
-            |m: &mut AHKANKEPADJ| { &mut m.JHHLPLJAAME },
+            "JKJLCIJINGK",
+            |m: &AHKANKEPADJ| { &m.JKJLCIJINGK },
+            |m: &mut AHKANKEPADJ| { &mut m.JKJLCIJINGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBHIDGFGAMD",
-            |m: &AHKANKEPADJ| { &m.OBHIDGFGAMD },
-            |m: &mut AHKANKEPADJ| { &mut m.OBHIDGFGAMD },
+            "AKIJPANNPAG",
+            |m: &AHKANKEPADJ| { &m.AKIJPANNPAG },
+            |m: &mut AHKANKEPADJ| { &mut m.AKIJPANNPAG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POFHPDGAMKL",
-            |m: &AHKANKEPADJ| { &m.POFHPDGAMKL },
-            |m: &mut AHKANKEPADJ| { &mut m.POFHPDGAMKL },
+            "DNEKEDGBEHE",
+            |m: &AHKANKEPADJ| { &m.DNEKEDGBEHE },
+            |m: &mut AHKANKEPADJ| { &mut m.DNEKEDGBEHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDNLNMCOHGB",
-            |m: &AHKANKEPADJ| { &m.BDNLNMCOHGB },
-            |m: &mut AHKANKEPADJ| { &mut m.BDNLNMCOHGB },
+            "MEBOBAMLHIN",
+            |m: &AHKANKEPADJ| { &m.MEBOBAMLHIN },
+            |m: &mut AHKANKEPADJ| { &mut m.MEBOBAMLHIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -96,19 +96,19 @@ impl AHKANKEPADJ {
             |m: &mut AHKANKEPADJ| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCACOCCJNLD",
-            |m: &AHKANKEPADJ| { &m.NCACOCCJNLD },
-            |m: &mut AHKANKEPADJ| { &mut m.NCACOCCJNLD },
+            "JEIHNAGIIDD",
+            |m: &AHKANKEPADJ| { &m.JEIHNAGIIDD },
+            |m: &mut AHKANKEPADJ| { &mut m.JEIHNAGIIDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHJFPNGDBDO",
-            |m: &AHKANKEPADJ| { &m.AHJFPNGDBDO },
-            |m: &mut AHKANKEPADJ| { &mut m.AHJFPNGDBDO },
+            "OHJOLFEIHDF",
+            |m: &AHKANKEPADJ| { &m.OHJOLFEIHDF },
+            |m: &mut AHKANKEPADJ| { &mut m.OHJOLFEIHDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGOFPNLAPOE",
-            |m: &AHKANKEPADJ| { &m.PGOFPNLAPOE },
-            |m: &mut AHKANKEPADJ| { &mut m.PGOFPNLAPOE },
+            "ADNMNGHDBMK",
+            |m: &AHKANKEPADJ| { &m.ADNMNGHDBMK },
+            |m: &mut AHKANKEPADJ| { &mut m.ADNMNGHDBMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AHKANKEPADJ>(
             "AHKANKEPADJ",
@@ -132,28 +132,28 @@ impl ::protobuf::Message for AHKANKEPADJ {
                     self.uid = is.read_uint32()?;
                 },
                 16 => {
-                    self.JHHLPLJAAME = is.read_uint32()?;
+                    self.JKJLCIJINGK = is.read_uint32()?;
                 },
                 24 => {
-                    self.OBHIDGFGAMD = is.read_bool()?;
+                    self.AKIJPANNPAG = is.read_bool()?;
                 },
                 32 => {
-                    self.POFHPDGAMKL = is.read_uint32()?;
+                    self.DNEKEDGBEHE = is.read_uint32()?;
                 },
                 42 => {
-                    self.BDNLNMCOHGB = is.read_string()?;
+                    self.MEBOBAMLHIN = is.read_string()?;
                 },
                 50 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 56 => {
-                    self.NCACOCCJNLD = is.read_uint32()?;
+                    self.JEIHNAGIIDD = is.read_uint32()?;
                 },
                 64 => {
-                    self.AHJFPNGDBDO = is.read_uint32()?;
+                    self.OHJOLFEIHDF = is.read_uint32()?;
                 },
                 72 => {
-                    self.PGOFPNLAPOE = is.read_uint32()?;
+                    self.ADNMNGHDBMK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -170,30 +170,30 @@ impl ::protobuf::Message for AHKANKEPADJ {
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
-        if self.JHHLPLJAAME != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JHHLPLJAAME);
+        if self.JKJLCIJINGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JKJLCIJINGK);
         }
-        if self.OBHIDGFGAMD != false {
+        if self.AKIJPANNPAG != false {
             my_size += 1 + 1;
         }
-        if self.POFHPDGAMKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.POFHPDGAMKL);
+        if self.DNEKEDGBEHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DNEKEDGBEHE);
         }
-        if !self.BDNLNMCOHGB.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.BDNLNMCOHGB);
+        if !self.MEBOBAMLHIN.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.MEBOBAMLHIN);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NCACOCCJNLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NCACOCCJNLD);
+        if self.JEIHNAGIIDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JEIHNAGIIDD);
         }
-        if self.AHJFPNGDBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AHJFPNGDBDO);
+        if self.OHJOLFEIHDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OHJOLFEIHDF);
         }
-        if self.PGOFPNLAPOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PGOFPNLAPOE);
+        if self.ADNMNGHDBMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADNMNGHDBMK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -204,29 +204,29 @@ impl ::protobuf::Message for AHKANKEPADJ {
         if self.uid != 0 {
             os.write_uint32(1, self.uid)?;
         }
-        if self.JHHLPLJAAME != 0 {
-            os.write_uint32(2, self.JHHLPLJAAME)?;
+        if self.JKJLCIJINGK != 0 {
+            os.write_uint32(2, self.JKJLCIJINGK)?;
         }
-        if self.OBHIDGFGAMD != false {
-            os.write_bool(3, self.OBHIDGFGAMD)?;
+        if self.AKIJPANNPAG != false {
+            os.write_bool(3, self.AKIJPANNPAG)?;
         }
-        if self.POFHPDGAMKL != 0 {
-            os.write_uint32(4, self.POFHPDGAMKL)?;
+        if self.DNEKEDGBEHE != 0 {
+            os.write_uint32(4, self.DNEKEDGBEHE)?;
         }
-        if !self.BDNLNMCOHGB.is_empty() {
-            os.write_string(5, &self.BDNLNMCOHGB)?;
+        if !self.MEBOBAMLHIN.is_empty() {
+            os.write_string(5, &self.MEBOBAMLHIN)?;
         }
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.NCACOCCJNLD != 0 {
-            os.write_uint32(7, self.NCACOCCJNLD)?;
+        if self.JEIHNAGIIDD != 0 {
+            os.write_uint32(7, self.JEIHNAGIIDD)?;
         }
-        if self.AHJFPNGDBDO != 0 {
-            os.write_uint32(8, self.AHJFPNGDBDO)?;
+        if self.OHJOLFEIHDF != 0 {
+            os.write_uint32(8, self.OHJOLFEIHDF)?;
         }
-        if self.PGOFPNLAPOE != 0 {
-            os.write_uint32(9, self.PGOFPNLAPOE)?;
+        if self.ADNMNGHDBMK != 0 {
+            os.write_uint32(9, self.ADNMNGHDBMK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,28 +246,28 @@ impl ::protobuf::Message for AHKANKEPADJ {
 
     fn clear(&mut self) {
         self.uid = 0;
-        self.JHHLPLJAAME = 0;
-        self.OBHIDGFGAMD = false;
-        self.POFHPDGAMKL = 0;
-        self.BDNLNMCOHGB.clear();
+        self.JKJLCIJINGK = 0;
+        self.AKIJPANNPAG = false;
+        self.DNEKEDGBEHE = 0;
+        self.MEBOBAMLHIN.clear();
         self.avatar_list.clear();
-        self.NCACOCCJNLD = 0;
-        self.AHJFPNGDBDO = 0;
-        self.PGOFPNLAPOE = 0;
+        self.JEIHNAGIIDD = 0;
+        self.OHJOLFEIHDF = 0;
+        self.ADNMNGHDBMK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHKANKEPADJ {
         static instance: AHKANKEPADJ = AHKANKEPADJ {
             uid: 0,
-            JHHLPLJAAME: 0,
-            OBHIDGFGAMD: false,
-            POFHPDGAMKL: 0,
-            BDNLNMCOHGB: ::std::string::String::new(),
+            JKJLCIJINGK: 0,
+            AKIJPANNPAG: false,
+            DNEKEDGBEHE: 0,
+            MEBOBAMLHIN: ::std::string::String::new(),
             avatar_list: ::std::vec::Vec::new(),
-            NCACOCCJNLD: 0,
-            AHJFPNGDBDO: 0,
-            PGOFPNLAPOE: 0,
+            JEIHNAGIIDD: 0,
+            OHJOLFEIHDF: 0,
+            ADNMNGHDBMK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,14 +293,14 @@ impl ::protobuf::reflect::ProtobufValue for AHKANKEPADJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AHKANKEPADJ.proto\x1a\x11PIGODJNHJML.proto\"\xbc\x02\n\x0bAHKANKEP\
-    ADJ\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bJHHLPLJAAME\
-    \x18\x02\x20\x01(\rR\x0bJHHLPLJAAME\x12\x20\n\x0bOBHIDGFGAMD\x18\x03\x20\
-    \x01(\x08R\x0bOBHIDGFGAMD\x12\x20\n\x0bPOFHPDGAMKL\x18\x04\x20\x01(\rR\
-    \x0bPOFHPDGAMKL\x12\x20\n\x0bBDNLNMCOHGB\x18\x05\x20\x01(\tR\x0bBDNLNMCO\
-    HGB\x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\x0c.PIGODJNHJMLR\navatar\
-    List\x12\x20\n\x0bNCACOCCJNLD\x18\x07\x20\x01(\rR\x0bNCACOCCJNLD\x12\x20\
-    \n\x0bAHJFPNGDBDO\x18\x08\x20\x01(\rR\x0bAHJFPNGDBDO\x12\x20\n\x0bPGOFPN\
-    LAPOE\x18\t\x20\x01(\rR\x0bPGOFPNLAPOEb\x06proto3\
+    ADJ\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bJKJLCIJINGK\
+    \x18\x02\x20\x01(\rR\x0bJKJLCIJINGK\x12\x20\n\x0bAKIJPANNPAG\x18\x03\x20\
+    \x01(\x08R\x0bAKIJPANNPAG\x12\x20\n\x0bDNEKEDGBEHE\x18\x04\x20\x01(\rR\
+    \x0bDNEKEDGBEHE\x12\x20\n\x0bMEBOBAMLHIN\x18\x05\x20\x01(\tR\x0bMEBOBAML\
+    HIN\x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\x0c.PIGODJNHJMLR\navatar\
+    List\x12\x20\n\x0bJEIHNAGIIDD\x18\x07\x20\x01(\rR\x0bJEIHNAGIIDD\x12\x20\
+    \n\x0bOHJOLFEIHDF\x18\x08\x20\x01(\rR\x0bOHJOLFEIHDF\x12\x20\n\x0bADNMNG\
+    HDBMK\x18\t\x20\x01(\rR\x0bADNMNGHDBMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

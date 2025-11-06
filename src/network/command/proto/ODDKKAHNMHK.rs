@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODDKKAHNMHK {
     // message fields
-    // @@protoc_insertion_point(field:ODDKKAHNMHK.HEFMJAHOHKG)
-    pub HEFMJAHOHKG: u32,
+    // @@protoc_insertion_point(field:ODDKKAHNMHK.BHIIHIIMHJA)
+    pub BHIIHIIMHJA: u32,
     // @@protoc_insertion_point(field:ODDKKAHNMHK.op_type)
     pub op_type: ::protobuf::EnumOrUnknown<super::NLAAMOGOOBE::NLAAMOGOOBE>,
     // special fields
@@ -52,9 +52,9 @@ impl ODDKKAHNMHK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEFMJAHOHKG",
-            |m: &ODDKKAHNMHK| { &m.HEFMJAHOHKG },
-            |m: &mut ODDKKAHNMHK| { &mut m.HEFMJAHOHKG },
+            "BHIIHIIMHJA",
+            |m: &ODDKKAHNMHK| { &m.BHIIHIIMHJA },
+            |m: &mut ODDKKAHNMHK| { &mut m.BHIIHIIMHJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "op_type",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.HEFMJAHOHKG = is.read_uint32()?;
+                16 => {
+                    self.BHIIHIIMHJA = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.op_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HEFMJAHOHKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HEFMJAHOHKG);
+        if self.BHIIHIIMHJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BHIIHIIMHJA);
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.op_type.value());
+            my_size += ::protobuf::rt::int32_size(10, self.op_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HEFMJAHOHKG != 0 {
-            os.write_uint32(9, self.HEFMJAHOHKG)?;
+        if self.BHIIHIIMHJA != 0 {
+            os.write_uint32(2, self.BHIIHIIMHJA)?;
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ODDKKAHNMHK {
     }
 
     fn clear(&mut self) {
-        self.HEFMJAHOHKG = 0;
+        self.BHIIHIIMHJA = 0;
         self.op_type = ::protobuf::EnumOrUnknown::new(super::NLAAMOGOOBE::NLAAMOGOOBE::MATCH3_BATTLE_OP_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODDKKAHNMHK {
         static instance: ODDKKAHNMHK = ODDKKAHNMHK {
-            HEFMJAHOHKG: 0,
+            BHIIHIIMHJA: 0,
             op_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ODDKKAHNMHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ODDKKAHNMHK.proto\x1a\x11NLAAMOGOOBE.proto\"V\n\x0bODDKKAHNMHK\x12\
-    \x20\n\x0bHEFMJAHOHKG\x18\t\x20\x01(\rR\x0bHEFMJAHOHKG\x12%\n\x07op_type\
-    \x18\r\x20\x01(\x0e2\x0c.NLAAMOGOOBER\x06opTypeb\x06proto3\
+    \x20\n\x0bBHIIHIIMHJA\x18\x02\x20\x01(\rR\x0bBHIIHIIMHJA\x12%\n\x07op_ty\
+    pe\x18\n\x20\x01(\x0e2\x0c.NLAAMOGOOBER\x06opTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

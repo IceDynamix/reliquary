@@ -79,10 +79,10 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.cnt = is.read_uint32()?;
                 },
-                24 => {
+                112 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(5, self.cnt);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::HCFFFEIMCMF::HCFFFEIMCMF::PARKOUR_LEVEL_STT_NONE) {
-            my_size += ::protobuf::rt::int32_size(3, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BFPOLEGCCPJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cnt != 0 {
-            os.write_uint32(10, self.cnt)?;
+            os.write_uint32(5, self.cnt)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::HCFFFEIMCMF::HCFFFEIMCMF::PARKOUR_LEVEL_STT_NONE) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BFPOLEGCCPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFPOLEGCCPJ.proto\x1a\x11HCFFFEIMCMF.proto\"A\n\x0bBFPOLEGCCPJ\x12\
-    \x10\n\x03cnt\x18\n\x20\x01(\rR\x03cnt\x12\x20\n\x04type\x18\x03\x20\x01\
-    (\x0e2\x0c.HCFFFEIMCMFR\x04typeb\x06proto3\
+    \x10\n\x03cnt\x18\x05\x20\x01(\rR\x03cnt\x12\x20\n\x04type\x18\x0e\x20\
+    \x01(\x0e2\x0c.HCFFFEIMCMFR\x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

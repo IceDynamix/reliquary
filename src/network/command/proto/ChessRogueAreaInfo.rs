@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueAreaInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueAreaInfo.allow_select_cell_id_list)
-    pub allow_select_cell_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueAreaInfo.cur_board_id)
-    pub cur_board_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueAreaInfo.cell)
-    pub cell: ::protobuf::MessageField<super::CellInfo::CellInfo>,
-    // @@protoc_insertion_point(field:ChessRogueAreaInfo.cur_id)
-    pub cur_id: u32,
     // @@protoc_insertion_point(field:ChessRogueAreaInfo.layer_status)
     pub layer_status: ::protobuf::EnumOrUnknown<super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus>,
+    // @@protoc_insertion_point(field:ChessRogueAreaInfo.BIDHFAHABAE)
+    pub BIDHFAHABAE: u32,
+    // @@protoc_insertion_point(field:ChessRogueAreaInfo.allow_select_cell_id_list)
+    pub allow_select_cell_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueAreaInfo.history_cell)
     pub history_cell: ::std::vec::Vec<super::ChessRogueHistoryCellInfo::ChessRogueHistoryCellInfo>,
-    // @@protoc_insertion_point(field:ChessRogueAreaInfo.CFEKAOLKHJG)
-    pub CFEKAOLKHJG: ::protobuf::MessageField<super::KKCKGEOJFKE::KKCKGEOJFKE>,
+    // @@protoc_insertion_point(field:ChessRogueAreaInfo.NAOELJBOFDJ)
+    pub NAOELJBOFDJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueAreaInfo.cell)
+    pub cell: ::protobuf::MessageField<super::CellInfo::CellInfo>,
+    // @@protoc_insertion_point(field:ChessRogueAreaInfo.HDMJCGMGFLB)
+    pub HDMJCGMGFLB: ::protobuf::MessageField<super::KKCKGEOJFKE::KKCKGEOJFKE>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueAreaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,40 +61,40 @@ impl ChessRogueAreaInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "allow_select_cell_id_list",
-            |m: &ChessRogueAreaInfo| { &m.allow_select_cell_id_list },
-            |m: &mut ChessRogueAreaInfo| { &mut m.allow_select_cell_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_board_id",
-            |m: &ChessRogueAreaInfo| { &m.cur_board_id },
-            |m: &mut ChessRogueAreaInfo| { &mut m.cur_board_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CellInfo::CellInfo>(
-            "cell",
-            |m: &ChessRogueAreaInfo| { &m.cell },
-            |m: &mut ChessRogueAreaInfo| { &mut m.cell },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_id",
-            |m: &ChessRogueAreaInfo| { &m.cur_id },
-            |m: &mut ChessRogueAreaInfo| { &mut m.cur_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "layer_status",
             |m: &ChessRogueAreaInfo| { &m.layer_status },
             |m: &mut ChessRogueAreaInfo| { &mut m.layer_status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIDHFAHABAE",
+            |m: &ChessRogueAreaInfo| { &m.BIDHFAHABAE },
+            |m: &mut ChessRogueAreaInfo| { &mut m.BIDHFAHABAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "allow_select_cell_id_list",
+            |m: &ChessRogueAreaInfo| { &m.allow_select_cell_id_list },
+            |m: &mut ChessRogueAreaInfo| { &mut m.allow_select_cell_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "history_cell",
             |m: &ChessRogueAreaInfo| { &m.history_cell },
             |m: &mut ChessRogueAreaInfo| { &mut m.history_cell },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NAOELJBOFDJ",
+            |m: &ChessRogueAreaInfo| { &m.NAOELJBOFDJ },
+            |m: &mut ChessRogueAreaInfo| { &mut m.NAOELJBOFDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CellInfo::CellInfo>(
+            "cell",
+            |m: &ChessRogueAreaInfo| { &m.cell },
+            |m: &mut ChessRogueAreaInfo| { &mut m.cell },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKCKGEOJFKE::KKCKGEOJFKE>(
-            "CFEKAOLKHJG",
-            |m: &ChessRogueAreaInfo| { &m.CFEKAOLKHJG },
-            |m: &mut ChessRogueAreaInfo| { &mut m.CFEKAOLKHJG },
+            "HDMJCGMGFLB",
+            |m: &ChessRogueAreaInfo| { &m.HDMJCGMGFLB },
+            |m: &mut ChessRogueAreaInfo| { &mut m.HDMJCGMGFLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueAreaInfo>(
             "ChessRogueAreaInfo",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for ChessRogueAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.allow_select_cell_id_list)?;
-                },
-                104 => {
-                    self.allow_select_cell_id_list.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.cur_board_id = is.read_uint32()?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cell)?;
-                },
-                120 => {
-                    self.cur_id = is.read_uint32()?;
-                },
-                48 => {
+                40 => {
                     self.layer_status = is.read_enum_or_unknown()?;
                 },
-                98 => {
+                48 => {
+                    self.BIDHFAHABAE = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.allow_select_cell_id_list)?;
+                },
+                56 => {
+                    self.allow_select_cell_id_list.push(is.read_uint32()?);
+                },
+                82 => {
                     self.history_cell.push(is.read_message()?);
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFEKAOLKHJG)?;
+                88 => {
+                    self.NAOELJBOFDJ = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cell)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDMJCGMGFLB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,25 +150,25 @@ impl ::protobuf::Message for ChessRogueAreaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.allow_select_cell_id_list);
-        if self.cur_board_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.cur_board_id);
+        if self.layer_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
+            my_size += ::protobuf::rt::int32_size(5, self.layer_status.value());
+        }
+        if self.BIDHFAHABAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BIDHFAHABAE);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.allow_select_cell_id_list);
+        for value in &self.history_cell {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.NAOELJBOFDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NAOELJBOFDJ);
         }
         if let Some(v) = self.cell.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cur_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cur_id);
-        }
-        if self.layer_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
-            my_size += ::protobuf::rt::int32_size(6, self.layer_status.value());
-        }
-        for value in &self.history_cell {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.CFEKAOLKHJG.as_ref() {
+        if let Some(v) = self.HDMJCGMGFLB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -178,24 +178,24 @@ impl ::protobuf::Message for ChessRogueAreaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.allow_select_cell_id_list)?;
-        if self.cur_board_id != 0 {
-            os.write_uint32(1, self.cur_board_id)?;
+        if self.layer_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.layer_status))?;
+        }
+        if self.BIDHFAHABAE != 0 {
+            os.write_uint32(6, self.BIDHFAHABAE)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.allow_select_cell_id_list)?;
+        for v in &self.history_cell {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.NAOELJBOFDJ != 0 {
+            os.write_uint32(11, self.NAOELJBOFDJ)?;
         }
         if let Some(v) = self.cell.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.cur_id != 0 {
-            os.write_uint32(15, self.cur_id)?;
-        }
-        if self.layer_status != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.layer_status))?;
-        }
-        for v in &self.history_cell {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if let Some(v) = self.CFEKAOLKHJG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.HDMJCGMGFLB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for ChessRogueAreaInfo {
     }
 
     fn clear(&mut self) {
-        self.allow_select_cell_id_list.clear();
-        self.cur_board_id = 0;
-        self.cell.clear();
-        self.cur_id = 0;
         self.layer_status = ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::IDLE);
+        self.BIDHFAHABAE = 0;
+        self.allow_select_cell_id_list.clear();
         self.history_cell.clear();
-        self.CFEKAOLKHJG.clear();
+        self.NAOELJBOFDJ = 0;
+        self.cell.clear();
+        self.HDMJCGMGFLB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueAreaInfo {
         static instance: ChessRogueAreaInfo = ChessRogueAreaInfo {
-            allow_select_cell_id_list: ::std::vec::Vec::new(),
-            cur_board_id: 0,
-            cell: ::protobuf::MessageField::none(),
-            cur_id: 0,
             layer_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            BIDHFAHABAE: 0,
+            allow_select_cell_id_list: ::std::vec::Vec::new(),
             history_cell: ::std::vec::Vec::new(),
-            CFEKAOLKHJG: ::protobuf::MessageField::none(),
+            NAOELJBOFDJ: 0,
+            cell: ::protobuf::MessageField::none(),
+            HDMJCGMGFLB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -259,14 +259,14 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueAreaInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChessRogueAreaInfo.proto\x1a\x0eCellInfo.proto\x1a\x1fChessRogueBo\
     ardCellStatus.proto\x1a\x1fChessRogueHistoryCellInfo.proto\x1a\x11KKCKGE\
-    OJFKE.proto\"\xd4\x02\n\x12ChessRogueAreaInfo\x128\n\x19allow_select_cel\
-    l_id_list\x18\r\x20\x03(\rR\x15allowSelectCellIdList\x12\x20\n\x0ccur_bo\
-    ard_id\x18\x01\x20\x01(\rR\ncurBoardId\x12\x1d\n\x04cell\x18\x07\x20\x01\
-    (\x0b2\t.CellInfoR\x04cell\x12\x15\n\x06cur_id\x18\x0f\x20\x01(\rR\x05cu\
-    rId\x12=\n\x0clayer_status\x18\x06\x20\x01(\x0e2\x1a.ChessRogueBoardCell\
-    StatusR\x0blayerStatus\x12=\n\x0chistory_cell\x18\x0c\x20\x03(\x0b2\x1a.\
-    ChessRogueHistoryCellInfoR\x0bhistoryCell\x12.\n\x0bCFEKAOLKHJG\x18\x0e\
-    \x20\x01(\x0b2\x0c.KKCKGEOJFKER\x0bCFEKAOLKHJGb\x06proto3\
+    OJFKE.proto\"\xdf\x02\n\x12ChessRogueAreaInfo\x12=\n\x0clayer_status\x18\
+    \x05\x20\x01(\x0e2\x1a.ChessRogueBoardCellStatusR\x0blayerStatus\x12\x20\
+    \n\x0bBIDHFAHABAE\x18\x06\x20\x01(\rR\x0bBIDHFAHABAE\x128\n\x19allow_sel\
+    ect_cell_id_list\x18\x07\x20\x03(\rR\x15allowSelectCellIdList\x12=\n\x0c\
+    history_cell\x18\n\x20\x03(\x0b2\x1a.ChessRogueHistoryCellInfoR\x0bhisto\
+    ryCell\x12\x20\n\x0bNAOELJBOFDJ\x18\x0b\x20\x01(\rR\x0bNAOELJBOFDJ\x12\
+    \x1d\n\x04cell\x18\x0c\x20\x01(\x0b2\t.CellInfoR\x04cell\x12.\n\x0bHDMJC\
+    GMGFLB\x18\x0f\x20\x01(\x0b2\x0c.KKCKGEOJFKER\x0bHDMJCGMGFLBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

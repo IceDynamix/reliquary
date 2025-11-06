@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GetBenefitActivityInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.benefit_data_list)
-    pub benefit_data_list: ::std::vec::Vec<super::BenefitData::BenefitData>,
+    pub benefit_data_list: ::std::vec::Vec<super::ActivityBenefitDailyInfo::ActivityBenefitDailyInfo>,
     // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.is_open)
     pub is_open: bool,
     // @@protoc_insertion_point(field:GetBenefitActivityInfoScRsp.retcode)
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     self.benefit_data_list.push(is.read_message()?);
                 },
-                8 => {
+                32 => {
                     self.is_open = is.read_bool()?;
                 },
-                40 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetBenefitActivityInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.benefit_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.is_open != false {
-            os.write_bool(1, self.is_open)?;
+            os.write_bool(4, self.is_open)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GetBenefitActivityInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetBenefitActivityInfoScRsp.proto\x1a\x11BenefitData.proto\"\x8a\x01\
-    \n\x1bGetBenefitActivityInfoScRsp\x128\n\x11benefit_data_list\x18\x06\
-    \x20\x03(\x0b2\x0c.BenefitDataR\x0fbenefitDataList\x12\x17\n\x07is_open\
-    \x18\x01\x20\x01(\x08R\x06isOpen\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n!GetBenefitActivityInfoScRsp.proto\x1a\x1eActivityBenefitDailyInfo.pro\
+    to\"\x97\x01\n\x1bGetBenefitActivityInfoScRsp\x12E\n\x11benefit_data_lis\
+    t\x18\x01\x20\x03(\x0b2\x19.ActivityBenefitDailyInfoR\x0fbenefitDataList\
+    \x12\x17\n\x07is_open\x18\x04\x20\x01(\x08R\x06isOpen\x12\x18\n\x07retco\
+    de\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BenefitData::file_descriptor().clone());
+            deps.push(super::ActivityBenefitDailyInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBenefitActivityInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

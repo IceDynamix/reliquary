@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySettleNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartySettleNotify.EEGHHHKCGHB)
-    pub EEGHHHKCGHB: u32,
-    // @@protoc_insertion_point(field:TrainPartySettleNotify.HILOMEKAFBP)
-    pub HILOMEKAFBP: ::protobuf::MessageField<super::FKMBFLMEGEB::FKMBFLMEGEB>,
+    // @@protoc_insertion_point(field:TrainPartySettleNotify.CPMBJIJBLKC)
+    pub CPMBJIJBLKC: ::protobuf::MessageField<super::FKMBFLMEGEB::FKMBFLMEGEB>,
+    // @@protoc_insertion_point(field:TrainPartySettleNotify.IEHPIJFHANL)
+    pub IEHPIJFHANL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TrainPartySettleNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEGHHHKCGHB",
-            |m: &TrainPartySettleNotify| { &m.EEGHHHKCGHB },
-            |m: &mut TrainPartySettleNotify| { &mut m.EEGHHHKCGHB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKMBFLMEGEB::FKMBFLMEGEB>(
-            "HILOMEKAFBP",
-            |m: &TrainPartySettleNotify| { &m.HILOMEKAFBP },
-            |m: &mut TrainPartySettleNotify| { &mut m.HILOMEKAFBP },
+            "CPMBJIJBLKC",
+            |m: &TrainPartySettleNotify| { &m.CPMBJIJBLKC },
+            |m: &mut TrainPartySettleNotify| { &mut m.CPMBJIJBLKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEHPIJFHANL",
+            |m: &TrainPartySettleNotify| { &m.IEHPIJFHANL },
+            |m: &mut TrainPartySettleNotify| { &mut m.IEHPIJFHANL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySettleNotify>(
             "TrainPartySettleNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartySettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.EEGHHHKCGHB = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPMBJIJBLKC)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HILOMEKAFBP)?;
+                80 => {
+                    self.IEHPIJFHANL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TrainPartySettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EEGHHHKCGHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EEGHHHKCGHB);
-        }
-        if let Some(v) = self.HILOMEKAFBP.as_ref() {
+        if let Some(v) = self.CPMBJIJBLKC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.IEHPIJFHANL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IEHPIJFHANL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TrainPartySettleNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EEGHHHKCGHB != 0 {
-            os.write_uint32(2, self.EEGHHHKCGHB)?;
+        if let Some(v) = self.CPMBJIJBLKC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.HILOMEKAFBP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.IEHPIJFHANL != 0 {
+            os.write_uint32(10, self.IEHPIJFHANL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TrainPartySettleNotify {
     }
 
     fn clear(&mut self) {
-        self.EEGHHHKCGHB = 0;
-        self.HILOMEKAFBP.clear();
+        self.CPMBJIJBLKC.clear();
+        self.IEHPIJFHANL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySettleNotify {
         static instance: TrainPartySettleNotify = TrainPartySettleNotify {
-            EEGHHHKCGHB: 0,
-            HILOMEKAFBP: ::protobuf::MessageField::none(),
+            CPMBJIJBLKC: ::protobuf::MessageField::none(),
+            IEHPIJFHANL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartySettleNotify.proto\x1a\x11FKMBFLMEGEB.proto\"j\n\x16Trai\
-    nPartySettleNotify\x12\x20\n\x0bEEGHHHKCGHB\x18\x02\x20\x01(\rR\x0bEEGHH\
-    HKCGHB\x12.\n\x0bHILOMEKAFBP\x18\x0c\x20\x01(\x0b2\x0c.FKMBFLMEGEBR\x0bH\
-    ILOMEKAFBPb\x06proto3\
+    nPartySettleNotify\x12.\n\x0bCPMBJIJBLKC\x18\t\x20\x01(\x0b2\x0c.FKMBFLM\
+    EGEBR\x0bCPMBJIJBLKC\x12\x20\n\x0bIEHPIJFHANL\x18\n\x20\x01(\rR\x0bIEHPI\
+    JFHANLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

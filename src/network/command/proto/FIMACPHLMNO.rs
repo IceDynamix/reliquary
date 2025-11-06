@@ -27,8 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:FIMACPHLMNO)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FIMACPHLMNO {
-    // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<fimacphlmno::KFELKJLDKEH>,
     // special fields
     // @@protoc_insertion_point(special_field:FIMACPHLMNO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,41 +43,9 @@ impl FIMACPHLMNO {
         ::std::default::Default::default()
     }
 
-    // int64 KBEFCMIIIIN = 13;
-
-    pub fn KBEFCMIIIIN(&self) -> i64 {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_KBEFCMIIIIN(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
-    }
-
-    pub fn has_KBEFCMIIIIN(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KBEFCMIIIIN(&mut self, v: i64) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(v))
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "KBEFCMIIIIN",
-            FIMACPHLMNO::has_KBEFCMIIIIN,
-            FIMACPHLMNO::KBEFCMIIIIN,
-            FIMACPHLMNO::set_KBEFCMIIIIN,
-        ));
-        oneofs.push(fimacphlmno::KFELKJLDKEH::generated_oneof_descriptor_data());
+        let mut fields = ::std::vec::Vec::with_capacity(0);
+        let mut oneofs = ::std::vec::Vec::with_capacity(0);
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FIMACPHLMNO>(
             "FIMACPHLMNO",
             fields,
@@ -98,9 +64,6 @@ impl ::protobuf::Message for FIMACPHLMNO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(is.read_int64()?));
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -113,26 +76,12 @@ impl ::protobuf::Message for FIMACPHLMNO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
-            match v {
-                &fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(v) => {
-                    my_size += ::protobuf::rt::int64_size(13, v);
-                },
-            };
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
-            match v {
-                &fimacphlmno::KFELKJLDKEH::KBEFCMIIIIN(v) => {
-                    os.write_int64(13, v)?;
-                },
-            };
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,13 +99,11 @@ impl ::protobuf::Message for FIMACPHLMNO {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FIMACPHLMNO {
         static instance: FIMACPHLMNO = FIMACPHLMNO {
-            KFELKJLDKEH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -180,37 +127,8 @@ impl ::protobuf::reflect::ProtobufValue for FIMACPHLMNO {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
-/// Nested message and enums of message `FIMACPHLMNO`
-pub mod fimacphlmno {
-
-    #[derive(Clone,PartialEq,Debug)]
-    #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:FIMACPHLMNO.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
-        // @@protoc_insertion_point(oneof_field:FIMACPHLMNO.KBEFCMIIIIN)
-        KBEFCMIIIIN(i64),
-    }
-
-    impl ::protobuf::Oneof for KFELKJLDKEH {
-    }
-
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
-        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
-            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::FIMACPHLMNO as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
-        }
-    }
-
-    impl KFELKJLDKEH {
-        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
-        }
-    }
-}
-
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FIMACPHLMNO.proto\"@\n\x0bFIMACPHLMNO\x12\"\n\x0bKBEFCMIIIIN\x18\r\
-    \x20\x01(\x03H\0R\x0bKBEFCMIIIINB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    \n\x11FIMACPHLMNO.proto\"\r\n\x0bFIMACPHLMNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

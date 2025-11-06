@@ -86,13 +86,13 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                24 => {
+                88 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                16 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.stage_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for EnterStrongChallengeActivityStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(3, self.stage_id)?;
+            os.write_uint32(11, self.stage_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterStrongChallengeActivityStageScR
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,EnterStrongChallengeActivityStageScRsp.proto\x1a\x15SceneBattleInfo.p\
     roto\"\x90\x01\n&EnterStrongChallengeActivityStageScRsp\x121\n\x0bbattle\
-    _info\x18\n\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x19\n\x08\
-    stage_id\x18\x03\x20\x01(\rR\x07stageId\x12\x18\n\x07retcode\x18\x02\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    _info\x18\x01\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x19\n\
+    \x08stage_id\x18\x0b\x20\x01(\rR\x07stageId\x12\x18\n\x07retcode\x18\r\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

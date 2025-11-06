@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyConditionUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyConditionUpdateScNotify.HEHJKFILINN)
-    pub HEHJKFILINN: ::protobuf::MessageField<super::NFDGIJLOLGD::NFDGIJLOLGD>,
+    // @@protoc_insertion_point(field:MonopolyConditionUpdateScNotify.NPBOBEPJJDP)
+    pub NPBOBEPJJDP: ::protobuf::MessageField<super::NFDGIJLOLGD::NFDGIJLOLGD>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyConditionUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyConditionUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFDGIJLOLGD::NFDGIJLOLGD>(
-            "HEHJKFILINN",
-            |m: &MonopolyConditionUpdateScNotify| { &m.HEHJKFILINN },
-            |m: &mut MonopolyConditionUpdateScNotify| { &mut m.HEHJKFILINN },
+            "NPBOBEPJJDP",
+            |m: &MonopolyConditionUpdateScNotify| { &m.NPBOBEPJJDP },
+            |m: &mut MonopolyConditionUpdateScNotify| { &mut m.NPBOBEPJJDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyConditionUpdateScNotify>(
             "MonopolyConditionUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEHJKFILINN)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPBOBEPJJDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HEHJKFILINN.as_ref() {
+        if let Some(v) = self.NPBOBEPJJDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HEHJKFILINN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.NPBOBEPJJDP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.HEHJKFILINN.clear();
+        self.NPBOBEPJJDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyConditionUpdateScNotify {
         static instance: MonopolyConditionUpdateScNotify = MonopolyConditionUpdateScNotify {
-            HEHJKFILINN: ::protobuf::MessageField::none(),
+            NPBOBEPJJDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyConditionUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyConditionUpdateScNotify.proto\x1a\x11NFDGIJLOLGD.proto\"Q\n\
-    \x1fMonopolyConditionUpdateScNotify\x12.\n\x0bHEHJKFILINN\x18\x0b\x20\
-    \x01(\x0b2\x0c.NFDGIJLOLGDR\x0bHEHJKFILINNb\x06proto3\
+    \x1fMonopolyConditionUpdateScNotify\x12.\n\x0bNPBOBEPJJDP\x18\x07\x20\
+    \x01(\x0b2\x0c.NFDGIJLOLGDR\x0bNPBOBEPJJDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

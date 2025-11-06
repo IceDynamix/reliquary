@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureApplyPasterListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.CAGGLKLIIMF)
-    pub CAGGLKLIIMF: ::protobuf::MessageField<super::KCHJHCLJOCK::KCHJHCLJOCK>,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.HJOBGBDJLOM)
+    pub HJOBGBDJLOM: ::protobuf::MessageField<super::KCHJHCLJOCK::KCHJHCLJOCK>,
     // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TravelBrochureApplyPasterListScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCHJHCLJOCK::KCHJHCLJOCK>(
-            "CAGGLKLIIMF",
-            |m: &TravelBrochureApplyPasterListScRsp| { &m.CAGGLKLIIMF },
-            |m: &mut TravelBrochureApplyPasterListScRsp| { &mut m.CAGGLKLIIMF },
+            "HJOBGBDJLOM",
+            |m: &TravelBrochureApplyPasterListScRsp| { &m.HJOBGBDJLOM },
+            |m: &mut TravelBrochureApplyPasterListScRsp| { &mut m.HJOBGBDJLOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CAGGLKLIIMF)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HJOBGBDJLOM)?;
                 },
-                8 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CAGGLKLIIMF.as_ref() {
+        if let Some(v) = self.HJOBGBDJLOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CAGGLKLIIMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.HJOBGBDJLOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     }
 
     fn clear(&mut self) {
-        self.CAGGLKLIIMF.clear();
+        self.HJOBGBDJLOM.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureApplyPasterListScRsp {
         static instance: TravelBrochureApplyPasterListScRsp = TravelBrochureApplyPasterListScRsp {
-            CAGGLKLIIMF: ::protobuf::MessageField::none(),
+            HJOBGBDJLOM: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TravelBrochureApplyPasterListScRsp.proto\x1a\x11KCHJHCLJOCK.proto\"n\
-    \n\"TravelBrochureApplyPasterListScRsp\x12.\n\x0bCAGGLKLIIMF\x18\t\x20\
-    \x01(\x0b2\x0c.KCHJHCLJOCKR\x0bCAGGLKLIIMF\x12\x18\n\x07retcode\x18\x01\
+    \n\"TravelBrochureApplyPasterListScRsp\x12.\n\x0bHJOBGBDJLOM\x18\x03\x20\
+    \x01(\x0b2\x0c.KCHJHCLJOCKR\x0bHJOBGBDJLOM\x12\x18\n\x07retcode\x18\r\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

@@ -28,12 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTalentInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTalentInfo.talent_id)
-    pub talent_id: u32,
-    // @@protoc_insertion_point(field:RogueTalentInfo.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueTalentStatus::RogueTalentStatus>,
     // @@protoc_insertion_point(field:RogueTalentInfo.rogue_unlock_progress_list)
-    pub rogue_unlock_progress_list: ::std::vec::Vec<super::KLAAHJHNLCJ::KLAAHJHNLCJ>,
+    pub rogue_unlock_progress_list: ::std::vec::Vec<super::IBCKNKPJFOJ::IBCKNKPJFOJ>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTalentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,18 +47,8 @@ impl RogueTalentInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talent_id",
-            |m: &RogueTalentInfo| { &m.talent_id },
-            |m: &mut RogueTalentInfo| { &mut m.talent_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &RogueTalentInfo| { &m.status },
-            |m: &mut RogueTalentInfo| { &mut m.status },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "rogue_unlock_progress_list",
             |m: &RogueTalentInfo| { &m.rogue_unlock_progress_list },
@@ -86,13 +72,7 @@ impl ::protobuf::Message for RogueTalentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.talent_id = is.read_uint32()?;
-                },
-                104 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                58 => {
+                18 => {
                     self.rogue_unlock_progress_list.push(is.read_message()?);
                 },
                 tag => {
@@ -107,12 +87,6 @@ impl ::protobuf::Message for RogueTalentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.talent_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.talent_id);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
-        }
         for value in &self.rogue_unlock_progress_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -123,14 +97,8 @@ impl ::protobuf::Message for RogueTalentInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.talent_id != 0 {
-            os.write_uint32(1, self.talent_id)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         for v in &self.rogue_unlock_progress_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +117,12 @@ impl ::protobuf::Message for RogueTalentInfo {
     }
 
     fn clear(&mut self) {
-        self.talent_id = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTalentStatus::RogueTalentStatus::ROGUE_TALENT_STATUS_LOCK);
         self.rogue_unlock_progress_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTalentInfo {
         static instance: RogueTalentInfo = RogueTalentInfo {
-            talent_id: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             rogue_unlock_progress_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTalentInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueTalentInfo.proto\x1a\x11KLAAHJHNLCJ.proto\x1a\x17RogueTalentS\
-    tatus.proto\"\xa5\x01\n\x0fRogueTalentInfo\x12\x1b\n\ttalent_id\x18\x01\
-    \x20\x01(\rR\x08talentId\x12*\n\x06status\x18\r\x20\x01(\x0e2\x12.RogueT\
-    alentStatusR\x06status\x12I\n\x1arogue_unlock_progress_list\x18\x07\x20\
-    \x03(\x0b2\x0c.KLAAHJHNLCJR\x17rogueUnlockProgressListb\x06proto3\
+    \n\x15RogueTalentInfo.proto\x1a\x11IBCKNKPJFOJ.proto\"\\\n\x0fRogueTalen\
+    tInfo\x12I\n\x1arogue_unlock_progress_list\x18\x02\x20\x03(\x0b2\x0c.IBC\
+    KNKPJFOJR\x17rogueUnlockProgressListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,9 +167,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KLAAHJHNLCJ::file_descriptor().clone());
-            deps.push(super::RogueTalentStatus::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::IBCKNKPJFOJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTalentInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CPFCBLADMBH {
     // message fields
-    // @@protoc_insertion_point(field:CPFCBLADMBH.HAAFHKIAGKM)
-    pub HAAFHKIAGKM: ::std::vec::Vec<super::LHLBIANFOHK::LHLBIANFOHK>,
-    // @@protoc_insertion_point(field:CPFCBLADMBH.OEAGAMJDLMA)
-    pub OEAGAMJDLMA: ::std::vec::Vec<super::LLBMAPHBOGD::LLBMAPHBOGD>,
-    // @@protoc_insertion_point(field:CPFCBLADMBH.PLENNPAGJLL)
-    pub PLENNPAGJLL: ::std::vec::Vec<super::DPNDLHGEMEI::DPNDLHGEMEI>,
+    // @@protoc_insertion_point(field:CPFCBLADMBH.HHONCMCPJNO)
+    pub HHONCMCPJNO: ::std::vec::Vec<super::LHLBIANFOHK::LHLBIANFOHK>,
+    // @@protoc_insertion_point(field:CPFCBLADMBH.JCDCCKEBADM)
+    pub JCDCCKEBADM: ::std::vec::Vec<super::LLBMAPHBOGD::LLBMAPHBOGD>,
+    // @@protoc_insertion_point(field:CPFCBLADMBH.AFGAEJNAOGB)
+    pub AFGAEJNAOGB: ::std::vec::Vec<super::DPNDLHGEMEI::DPNDLHGEMEI>,
     // special fields
     // @@protoc_insertion_point(special_field:CPFCBLADMBH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl CPFCBLADMBH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HAAFHKIAGKM",
-            |m: &CPFCBLADMBH| { &m.HAAFHKIAGKM },
-            |m: &mut CPFCBLADMBH| { &mut m.HAAFHKIAGKM },
+            "HHONCMCPJNO",
+            |m: &CPFCBLADMBH| { &m.HHONCMCPJNO },
+            |m: &mut CPFCBLADMBH| { &mut m.HHONCMCPJNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OEAGAMJDLMA",
-            |m: &CPFCBLADMBH| { &m.OEAGAMJDLMA },
-            |m: &mut CPFCBLADMBH| { &mut m.OEAGAMJDLMA },
+            "JCDCCKEBADM",
+            |m: &CPFCBLADMBH| { &m.JCDCCKEBADM },
+            |m: &mut CPFCBLADMBH| { &mut m.JCDCCKEBADM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PLENNPAGJLL",
-            |m: &CPFCBLADMBH| { &m.PLENNPAGJLL },
-            |m: &mut CPFCBLADMBH| { &mut m.PLENNPAGJLL },
+            "AFGAEJNAOGB",
+            |m: &CPFCBLADMBH| { &m.AFGAEJNAOGB },
+            |m: &mut CPFCBLADMBH| { &mut m.AFGAEJNAOGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CPFCBLADMBH>(
             "CPFCBLADMBH",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for CPFCBLADMBH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.HAAFHKIAGKM.push(is.read_message()?);
+                    self.HHONCMCPJNO.push(is.read_message()?);
                 },
                 18 => {
-                    self.OEAGAMJDLMA.push(is.read_message()?);
+                    self.JCDCCKEBADM.push(is.read_message()?);
                 },
                 26 => {
-                    self.PLENNPAGJLL.push(is.read_message()?);
+                    self.AFGAEJNAOGB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for CPFCBLADMBH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HAAFHKIAGKM {
+        for value in &self.HHONCMCPJNO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.OEAGAMJDLMA {
+        for value in &self.JCDCCKEBADM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PLENNPAGJLL {
+        for value in &self.AFGAEJNAOGB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,13 +125,13 @@ impl ::protobuf::Message for CPFCBLADMBH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HAAFHKIAGKM {
+        for v in &self.HHONCMCPJNO {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.OEAGAMJDLMA {
+        for v in &self.JCDCCKEBADM {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        for v in &self.PLENNPAGJLL {
+        for v in &self.AFGAEJNAOGB {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -151,17 +151,17 @@ impl ::protobuf::Message for CPFCBLADMBH {
     }
 
     fn clear(&mut self) {
-        self.HAAFHKIAGKM.clear();
-        self.OEAGAMJDLMA.clear();
-        self.PLENNPAGJLL.clear();
+        self.HHONCMCPJNO.clear();
+        self.JCDCCKEBADM.clear();
+        self.AFGAEJNAOGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CPFCBLADMBH {
         static instance: CPFCBLADMBH = CPFCBLADMBH {
-            HAAFHKIAGKM: ::std::vec::Vec::new(),
-            OEAGAMJDLMA: ::std::vec::Vec::new(),
-            PLENNPAGJLL: ::std::vec::Vec::new(),
+            HHONCMCPJNO: ::std::vec::Vec::new(),
+            JCDCCKEBADM: ::std::vec::Vec::new(),
+            AFGAEJNAOGB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for CPFCBLADMBH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CPFCBLADMBH.proto\x1a\x11DPNDLHGEMEI.proto\x1a\x11LHLBIANFOHK.prot\
-    o\x1a\x11LLBMAPHBOGD.proto\"\x9d\x01\n\x0bCPFCBLADMBH\x12.\n\x0bHAAFHKIA\
-    GKM\x18\x01\x20\x03(\x0b2\x0c.LHLBIANFOHKR\x0bHAAFHKIAGKM\x12.\n\x0bOEAG\
-    AMJDLMA\x18\x02\x20\x03(\x0b2\x0c.LLBMAPHBOGDR\x0bOEAGAMJDLMA\x12.\n\x0b\
-    PLENNPAGJLL\x18\x03\x20\x03(\x0b2\x0c.DPNDLHGEMEIR\x0bPLENNPAGJLLb\x06pr\
+    o\x1a\x11LLBMAPHBOGD.proto\"\x9d\x01\n\x0bCPFCBLADMBH\x12.\n\x0bHHONCMCP\
+    JNO\x18\x01\x20\x03(\x0b2\x0c.LHLBIANFOHKR\x0bHHONCMCPJNO\x12.\n\x0bJCDC\
+    CKEBADM\x18\x02\x20\x03(\x0b2\x0c.LLBMAPHBOGDR\x0bJCDCCKEBADM\x12.\n\x0b\
+    AFGAEJNAOGB\x18\x03\x20\x03(\x0b2\x0c.DPNDLHGEMEIR\x0bAFGAEJNAOGBb\x06pr\
     oto3\
 ";
 

@@ -30,8 +30,8 @@ pub struct FEKFBAOCGKP {
     // message fields
     // @@protoc_insertion_point(field:FEKFBAOCGKP.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:FEKFBAOCGKP.HNJFFFJDGNE)
-    pub HNJFFFJDGNE: bool,
+    // @@protoc_insertion_point(field:FEKFBAOCGKP.LALNMHCNCGK)
+    pub LALNMHCNCGK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FEKFBAOCGKP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FEKFBAOCGKP {
             |m: &mut FEKFBAOCGKP| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNJFFFJDGNE",
-            |m: &FEKFBAOCGKP| { &m.HNJFFFJDGNE },
-            |m: &mut FEKFBAOCGKP| { &mut m.HNJFFFJDGNE },
+            "LALNMHCNCGK",
+            |m: &FEKFBAOCGKP| { &m.LALNMHCNCGK },
+            |m: &mut FEKFBAOCGKP| { &mut m.LALNMHCNCGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FEKFBAOCGKP>(
             "FEKFBAOCGKP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FEKFBAOCGKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.HNJFFFJDGNE = is.read_bool()?;
+                72 => {
+                    self.LALNMHCNCGK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for FEKFBAOCGKP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
         }
-        if self.HNJFFFJDGNE != false {
+        if self.LALNMHCNCGK != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FEKFBAOCGKP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(9, self.avatar_id)?;
+            os.write_uint32(8, self.avatar_id)?;
         }
-        if self.HNJFFFJDGNE != false {
-            os.write_bool(5, self.HNJFFFJDGNE)?;
+        if self.LALNMHCNCGK != false {
+            os.write_bool(9, self.LALNMHCNCGK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for FEKFBAOCGKP {
 
     fn clear(&mut self) {
         self.avatar_id = 0;
-        self.HNJFFFJDGNE = false;
+        self.LALNMHCNCGK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FEKFBAOCGKP {
         static instance: FEKFBAOCGKP = FEKFBAOCGKP {
             avatar_id: 0,
-            HNJFFFJDGNE: false,
+            LALNMHCNCGK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FEKFBAOCGKP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FEKFBAOCGKP.proto\"L\n\x0bFEKFBAOCGKP\x12\x1b\n\tavatar_id\x18\t\
-    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bHNJFFFJDGNE\x18\x05\x20\x01(\x08R\
-    \x0bHNJFFFJDGNEb\x06proto3\
+    \n\x11FEKFBAOCGKP.proto\"L\n\x0bFEKFBAOCGKP\x12\x1b\n\tavatar_id\x18\x08\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bLALNMHCNCGK\x18\t\x20\x01(\x08R\
+    \x0bLALNMHCNCGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

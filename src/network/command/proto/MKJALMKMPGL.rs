@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MKJALMKMPGL {
     // message fields
-    // @@protoc_insertion_point(field:MKJALMKMPGL.BFDMGINBOIB)
-    pub BFDMGINBOIB: ::std::vec::Vec<super::OFNGPLJKLOJ::OFNGPLJKLOJ>,
+    // @@protoc_insertion_point(field:MKJALMKMPGL.GCOAAGPKIGB)
+    pub GCOAAGPKIGB: ::std::vec::Vec<super::OFNGPLJKLOJ::OFNGPLJKLOJ>,
     // special fields
     // @@protoc_insertion_point(special_field:MKJALMKMPGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MKJALMKMPGL {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BFDMGINBOIB",
-            |m: &MKJALMKMPGL| { &m.BFDMGINBOIB },
-            |m: &mut MKJALMKMPGL| { &mut m.BFDMGINBOIB },
+            "GCOAAGPKIGB",
+            |m: &MKJALMKMPGL| { &m.GCOAAGPKIGB },
+            |m: &mut MKJALMKMPGL| { &mut m.GCOAAGPKIGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MKJALMKMPGL>(
             "MKJALMKMPGL",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MKJALMKMPGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.BFDMGINBOIB.push(is.read_message()?);
+                90 => {
+                    self.GCOAAGPKIGB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MKJALMKMPGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BFDMGINBOIB {
+        for value in &self.GCOAAGPKIGB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MKJALMKMPGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BFDMGINBOIB {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.GCOAAGPKIGB {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MKJALMKMPGL {
     }
 
     fn clear(&mut self) {
-        self.BFDMGINBOIB.clear();
+        self.GCOAAGPKIGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MKJALMKMPGL {
         static instance: MKJALMKMPGL = MKJALMKMPGL {
-            BFDMGINBOIB: ::std::vec::Vec::new(),
+            GCOAAGPKIGB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MKJALMKMPGL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MKJALMKMPGL.proto\x1a\x11OFNGPLJKLOJ.proto\"=\n\x0bMKJALMKMPGL\x12\
-    .\n\x0bBFDMGINBOIB\x18\x08\x20\x03(\x0b2\x0c.OFNGPLJKLOJR\x0bBFDMGINBOIB\
+    .\n\x0bGCOAAGPKIGB\x18\x0b\x20\x03(\x0b2\x0c.OFNGPLJKLOJR\x0bGCOAAGPKIGB\
     b\x06proto3\
 ";
 

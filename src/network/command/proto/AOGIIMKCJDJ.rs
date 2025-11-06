@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOGIIMKCJDJ {
     // message fields
-    // @@protoc_insertion_point(field:AOGIIMKCJDJ.PPMIOGCFOOC)
-    pub PPMIOGCFOOC: u32,
-    // @@protoc_insertion_point(field:AOGIIMKCJDJ.magic_unit_id)
-    pub magic_unit_id: u32,
-    // @@protoc_insertion_point(field:AOGIIMKCJDJ.HBPBLGLLIEN)
-    pub HBPBLGLLIEN: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:AOGIIMKCJDJ.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:AOGIIMKCJDJ.NGKJPCEHMBA)
-    pub NGKJPCEHMBA: bool,
+    // @@protoc_insertion_point(field:AOGIIMKCJDJ.APDCADPGPPJ)
+    pub APDCADPGPPJ: bool,
+    // @@protoc_insertion_point(field:AOGIIMKCJDJ.OFGHDKFOGFI)
+    pub OFGHDKFOGFI: u32,
+    // @@protoc_insertion_point(field:AOGIIMKCJDJ.magic_unit_id)
+    pub magic_unit_id: u32,
+    // @@protoc_insertion_point(field:AOGIIMKCJDJ.PFOJNCMCKOM)
+    pub PFOJNCMCKOM: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:AOGIIMKCJDJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,20 @@ impl AOGIIMKCJDJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &AOGIIMKCJDJ| { &m.cost_data },
+            |m: &mut AOGIIMKCJDJ| { &mut m.cost_data },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPMIOGCFOOC",
-            |m: &AOGIIMKCJDJ| { &m.PPMIOGCFOOC },
-            |m: &mut AOGIIMKCJDJ| { &mut m.PPMIOGCFOOC },
+            "APDCADPGPPJ",
+            |m: &AOGIIMKCJDJ| { &m.APDCADPGPPJ },
+            |m: &mut AOGIIMKCJDJ| { &mut m.APDCADPGPPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OFGHDKFOGFI",
+            |m: &AOGIIMKCJDJ| { &m.OFGHDKFOGFI },
+            |m: &mut AOGIIMKCJDJ| { &mut m.OFGHDKFOGFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "magic_unit_id",
@@ -68,19 +78,9 @@ impl AOGIIMKCJDJ {
             |m: &mut AOGIIMKCJDJ| { &mut m.magic_unit_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "HBPBLGLLIEN",
-            |m: &AOGIIMKCJDJ| { &m.HBPBLGLLIEN },
-            |m: &mut AOGIIMKCJDJ| { &mut m.HBPBLGLLIEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "cost_data",
-            |m: &AOGIIMKCJDJ| { &m.cost_data },
-            |m: &mut AOGIIMKCJDJ| { &mut m.cost_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGKJPCEHMBA",
-            |m: &AOGIIMKCJDJ| { &m.NGKJPCEHMBA },
-            |m: &mut AOGIIMKCJDJ| { &mut m.NGKJPCEHMBA },
+            "PFOJNCMCKOM",
+            |m: &AOGIIMKCJDJ| { &m.PFOJNCMCKOM },
+            |m: &mut AOGIIMKCJDJ| { &mut m.PFOJNCMCKOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOGIIMKCJDJ>(
             "AOGIIMKCJDJ",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PPMIOGCFOOC = is.read_uint32()?;
-                },
-                88 => {
-                    self.magic_unit_id = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBPBLGLLIEN)?;
-                },
-                50 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                64 => {
-                    self.NGKJPCEHMBA = is.read_bool()?;
+                32 => {
+                    self.APDCADPGPPJ = is.read_bool()?;
+                },
+                48 => {
+                    self.OFGHDKFOGFI = is.read_uint32()?;
+                },
+                80 => {
+                    self.magic_unit_id = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFOJNCMCKOM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPMIOGCFOOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PPMIOGCFOOC);
-        }
-        if self.magic_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.magic_unit_id);
-        }
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NGKJPCEHMBA != false {
+        if self.APDCADPGPPJ != false {
             my_size += 1 + 1;
+        }
+        if self.OFGHDKFOGFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OFGHDKFOGFI);
+        }
+        if self.magic_unit_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.magic_unit_id);
+        }
+        if let Some(v) = self.PFOJNCMCKOM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPMIOGCFOOC != 0 {
-            os.write_uint32(12, self.PPMIOGCFOOC)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.APDCADPGPPJ != false {
+            os.write_bool(4, self.APDCADPGPPJ)?;
+        }
+        if self.OFGHDKFOGFI != 0 {
+            os.write_uint32(6, self.OFGHDKFOGFI)?;
         }
         if self.magic_unit_id != 0 {
-            os.write_uint32(11, self.magic_unit_id)?;
+            os.write_uint32(10, self.magic_unit_id)?;
         }
-        if let Some(v) = self.HBPBLGLLIEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.NGKJPCEHMBA != false {
-            os.write_bool(8, self.NGKJPCEHMBA)?;
+        if let Some(v) = self.PFOJNCMCKOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for AOGIIMKCJDJ {
     }
 
     fn clear(&mut self) {
-        self.PPMIOGCFOOC = 0;
-        self.magic_unit_id = 0;
-        self.HBPBLGLLIEN.clear();
         self.cost_data.clear();
-        self.NGKJPCEHMBA = false;
+        self.APDCADPGPPJ = false;
+        self.OFGHDKFOGFI = 0;
+        self.magic_unit_id = 0;
+        self.PFOJNCMCKOM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOGIIMKCJDJ {
         static instance: AOGIIMKCJDJ = AOGIIMKCJDJ {
-            PPMIOGCFOOC: 0,
-            magic_unit_id: 0,
-            HBPBLGLLIEN: ::protobuf::MessageField::none(),
             cost_data: ::protobuf::MessageField::none(),
-            NGKJPCEHMBA: false,
+            APDCADPGPPJ: false,
+            OFGHDKFOGFI: 0,
+            magic_unit_id: 0,
+            PFOJNCMCKOM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for AOGIIMKCJDJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AOGIIMKCJDJ.proto\x1a\x12ItemCostData.proto\"\xd2\x01\n\x0bAOGIIMK\
-    CJDJ\x12\x20\n\x0bPPMIOGCFOOC\x18\x0c\x20\x01(\rR\x0bPPMIOGCFOOC\x12\"\n\
-    \rmagic_unit_id\x18\x0b\x20\x01(\rR\x0bmagicUnitId\x12/\n\x0bHBPBLGLLIEN\
-    \x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x0bHBPBLGLLIEN\x12*\n\tcost_data\
-    \x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\x0bNGKJPCEH\
-    MBA\x18\x08\x20\x01(\x08R\x0bNGKJPCEHMBAb\x06proto3\
+    CJDJ\x12*\n\tcost_data\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x08costData\
+    \x12\x20\n\x0bAPDCADPGPPJ\x18\x04\x20\x01(\x08R\x0bAPDCADPGPPJ\x12\x20\n\
+    \x0bOFGHDKFOGFI\x18\x06\x20\x01(\rR\x0bOFGHDKFOGFI\x12\"\n\rmagic_unit_i\
+    d\x18\n\x20\x01(\rR\x0bmagicUnitId\x12/\n\x0bPFOJNCMCKOM\x18\x0e\x20\x01\
+    (\x0b2\r.ItemCostDataR\x0bPFOJNCMCKOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

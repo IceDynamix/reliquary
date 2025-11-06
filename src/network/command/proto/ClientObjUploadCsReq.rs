@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjUploadCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.LKJMJGDEBEE)
-    pub LKJMJGDEBEE: ::std::vec::Vec<u8>,
     // @@protoc_insertion_point(field:ClientObjUploadCsReq.modifier_content_type)
     pub modifier_content_type: ::protobuf::EnumOrUnknown<super::JIDIECGHKGK::JIDIECGHKGK>,
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.JBPEMOFNEDG)
-    pub JBPEMOFNEDG: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.upload_data)
+    pub upload_data: ::std::vec::Vec<u8>,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.upload_version)
+    pub upload_version: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjUploadCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ClientObjUploadCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKJMJGDEBEE",
-            |m: &ClientObjUploadCsReq| { &m.LKJMJGDEBEE },
-            |m: &mut ClientObjUploadCsReq| { &mut m.LKJMJGDEBEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "modifier_content_type",
             |m: &ClientObjUploadCsReq| { &m.modifier_content_type },
             |m: &mut ClientObjUploadCsReq| { &mut m.modifier_content_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBPEMOFNEDG",
-            |m: &ClientObjUploadCsReq| { &m.JBPEMOFNEDG },
-            |m: &mut ClientObjUploadCsReq| { &mut m.JBPEMOFNEDG },
+            "upload_data",
+            |m: &ClientObjUploadCsReq| { &m.upload_data },
+            |m: &mut ClientObjUploadCsReq| { &mut m.upload_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "upload_version",
+            |m: &ClientObjUploadCsReq| { &m.upload_version },
+            |m: &mut ClientObjUploadCsReq| { &mut m.upload_version },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjUploadCsReq>(
             "ClientObjUploadCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.LKJMJGDEBEE = is.read_bytes()?;
-                },
-                80 => {
+                32 => {
                     self.modifier_content_type = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.JBPEMOFNEDG = is.read_uint32()?;
+                42 => {
+                    self.upload_data = is.read_bytes()?;
+                },
+                120 => {
+                    self.upload_version = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.LKJMJGDEBEE.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(2, &self.LKJMJGDEBEE);
-        }
         if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::JIDIECGHKGK::JIDIECGHKGK::OBJ_CONTENT_JSON) {
-            my_size += ::protobuf::rt::int32_size(10, self.modifier_content_type.value());
+            my_size += ::protobuf::rt::int32_size(4, self.modifier_content_type.value());
         }
-        if self.JBPEMOFNEDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JBPEMOFNEDG);
+        if !self.upload_data.is_empty() {
+            my_size += ::protobuf::rt::bytes_size(5, &self.upload_data);
+        }
+        if self.upload_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.upload_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.LKJMJGDEBEE.is_empty() {
-            os.write_bytes(2, &self.LKJMJGDEBEE)?;
-        }
         if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::JIDIECGHKGK::JIDIECGHKGK::OBJ_CONTENT_JSON) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.modifier_content_type))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.modifier_content_type))?;
         }
-        if self.JBPEMOFNEDG != 0 {
-            os.write_uint32(9, self.JBPEMOFNEDG)?;
+        if !self.upload_data.is_empty() {
+            os.write_bytes(5, &self.upload_data)?;
+        }
+        if self.upload_version != 0 {
+            os.write_uint32(15, self.upload_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn clear(&mut self) {
-        self.LKJMJGDEBEE.clear();
         self.modifier_content_type = ::protobuf::EnumOrUnknown::new(super::JIDIECGHKGK::JIDIECGHKGK::OBJ_CONTENT_JSON);
-        self.JBPEMOFNEDG = 0;
+        self.upload_data.clear();
+        self.upload_version = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjUploadCsReq {
         static instance: ClientObjUploadCsReq = ClientObjUploadCsReq {
-            LKJMJGDEBEE: ::std::vec::Vec::new(),
             modifier_content_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            JBPEMOFNEDG: 0,
+            upload_data: ::std::vec::Vec::new(),
+            upload_version: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aClientObjUploadCsReq.proto\x1a\x11JIDIECGHKGK.proto\"\x9c\x01\n\
-    \x14ClientObjUploadCsReq\x12\x20\n\x0bLKJMJGDEBEE\x18\x02\x20\x01(\x0cR\
-    \x0bLKJMJGDEBEE\x12@\n\x15modifier_content_type\x18\n\x20\x01(\x0e2\x0c.\
-    JIDIECGHKGKR\x13modifierContentType\x12\x20\n\x0bJBPEMOFNEDG\x18\t\x20\
-    \x01(\rR\x0bJBPEMOFNEDGb\x06proto3\
+    \n\x1aClientObjUploadCsReq.proto\x1a\x11JIDIECGHKGK.proto\"\xa0\x01\n\
+    \x14ClientObjUploadCsReq\x12@\n\x15modifier_content_type\x18\x04\x20\x01\
+    (\x0e2\x0c.JIDIECGHKGKR\x13modifierContentType\x12\x1f\n\x0bupload_data\
+    \x18\x05\x20\x01(\x0cR\nuploadData\x12%\n\x0eupload_version\x18\x0f\x20\
+    \x01(\rR\ruploadVersionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

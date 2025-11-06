@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PCAIGNJKAFA {
     // message fields
-    // @@protoc_insertion_point(field:PCAIGNJKAFA.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:PCAIGNJKAFA.hp)
-    pub hp: u32,
     // @@protoc_insertion_point(field:PCAIGNJKAFA.avatar_type)
     pub avatar_type: u32,
-    // @@protoc_insertion_point(field:PCAIGNJKAFA.EAJLJNBNPNP)
-    pub EAJLJNBNPNP: u32,
-    // @@protoc_insertion_point(field:PCAIGNJKAFA.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
+    // @@protoc_insertion_point(field:PCAIGNJKAFA.hp)
+    pub hp: u32,
+    // @@protoc_insertion_point(field:PCAIGNJKAFA.NEBNAOIMPME)
+    pub NEBNAOIMPME: u32,
+    // @@protoc_insertion_point(field:PCAIGNJKAFA.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:PCAIGNJKAFA.sp)
+    pub sp: ::protobuf::MessageField<super::AmountInfo::AmountInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PCAIGNJKAFA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl PCAIGNJKAFA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &PCAIGNJKAFA| { &m.avatar_id },
-            |m: &mut PCAIGNJKAFA| { &mut m.avatar_id },
+            "avatar_type",
+            |m: &PCAIGNJKAFA| { &m.avatar_type },
+            |m: &mut PCAIGNJKAFA| { &mut m.avatar_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
@@ -68,19 +68,19 @@ impl PCAIGNJKAFA {
             |m: &mut PCAIGNJKAFA| { &mut m.hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &PCAIGNJKAFA| { &m.avatar_type },
-            |m: &mut PCAIGNJKAFA| { &mut m.avatar_type },
+            "NEBNAOIMPME",
+            |m: &PCAIGNJKAFA| { &m.NEBNAOIMPME },
+            |m: &mut PCAIGNJKAFA| { &mut m.NEBNAOIMPME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAJLJNBNPNP",
-            |m: &PCAIGNJKAFA| { &m.EAJLJNBNPNP },
-            |m: &mut PCAIGNJKAFA| { &mut m.EAJLJNBNPNP },
+            "avatar_id",
+            |m: &PCAIGNJKAFA| { &m.avatar_id },
+            |m: &mut PCAIGNJKAFA| { &mut m.avatar_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &PCAIGNJKAFA| { &m.sp_bar },
-            |m: &mut PCAIGNJKAFA| { &mut m.sp_bar },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AmountInfo::AmountInfo>(
+            "sp",
+            |m: &PCAIGNJKAFA| { &m.sp },
+            |m: &mut PCAIGNJKAFA| { &mut m.sp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PCAIGNJKAFA>(
             "PCAIGNJKAFA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PCAIGNJKAFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.hp = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.avatar_type = is.read_uint32()?;
                 },
-                56 => {
-                    self.EAJLJNBNPNP = is.read_uint32()?;
+                64 => {
+                    self.hp = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
+                80 => {
+                    self.NEBNAOIMPME = is.read_uint32()?;
+                },
+                104 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,19 +127,19 @@ impl ::protobuf::Message for PCAIGNJKAFA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+        if self.avatar_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_type);
         }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.hp);
+            my_size += ::protobuf::rt::uint32_size(8, self.hp);
         }
-        if self.avatar_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_type);
+        if self.NEBNAOIMPME != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.NEBNAOIMPME);
         }
-        if self.EAJLJNBNPNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EAJLJNBNPNP);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
-        if let Some(v) = self.sp_bar.as_ref() {
+        if let Some(v) = self.sp.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -149,20 +149,20 @@ impl ::protobuf::Message for PCAIGNJKAFA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(10, self.avatar_id)?;
+        if self.avatar_type != 0 {
+            os.write_uint32(4, self.avatar_type)?;
         }
         if self.hp != 0 {
-            os.write_uint32(9, self.hp)?;
+            os.write_uint32(8, self.hp)?;
         }
-        if self.avatar_type != 0 {
-            os.write_uint32(6, self.avatar_type)?;
+        if self.NEBNAOIMPME != 0 {
+            os.write_uint32(10, self.NEBNAOIMPME)?;
         }
-        if self.EAJLJNBNPNP != 0 {
-            os.write_uint32(7, self.EAJLJNBNPNP)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(13, self.avatar_id)?;
         }
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.sp.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for PCAIGNJKAFA {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.hp = 0;
         self.avatar_type = 0;
-        self.EAJLJNBNPNP = 0;
-        self.sp_bar.clear();
+        self.hp = 0;
+        self.NEBNAOIMPME = 0;
+        self.avatar_id = 0;
+        self.sp.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PCAIGNJKAFA {
         static instance: PCAIGNJKAFA = PCAIGNJKAFA {
-            avatar_id: 0,
-            hp: 0,
             avatar_type: 0,
-            EAJLJNBNPNP: 0,
-            sp_bar: ::protobuf::MessageField::none(),
+            hp: 0,
+            NEBNAOIMPME: 0,
+            avatar_id: 0,
+            sp: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PCAIGNJKAFA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PCAIGNJKAFA.proto\x1a\x0fSpBarInfo.proto\"\xa0\x01\n\x0bPCAIGNJKAF\
-    A\x12\x1b\n\tavatar_id\x18\n\x20\x01(\rR\x08avatarId\x12\x0e\n\x02hp\x18\
-    \t\x20\x01(\rR\x02hp\x12\x1f\n\x0bavatar_type\x18\x06\x20\x01(\rR\navata\
-    rType\x12\x20\n\x0bEAJLJNBNPNP\x18\x07\x20\x01(\rR\x0bEAJLJNBNPNP\x12!\n\
-    \x06sp_bar\x18\x0b\x20\x01(\x0b2\n.SpBarInfoR\x05spBarb\x06proto3\
+    \n\x11PCAIGNJKAFA.proto\x1a\x10AmountInfo.proto\"\x9a\x01\n\x0bPCAIGNJKA\
+    FA\x12\x1f\n\x0bavatar_type\x18\x04\x20\x01(\rR\navatarType\x12\x0e\n\
+    \x02hp\x18\x08\x20\x01(\rR\x02hp\x12\x20\n\x0bNEBNAOIMPME\x18\n\x20\x01(\
+    \rR\x0bNEBNAOIMPME\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarId\
+    \x12\x1b\n\x02sp\x18\x0f\x20\x01(\x0b2\x0b.AmountInfoR\x02spb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +242,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::SpBarInfo::file_descriptor().clone());
+            deps.push(super::AmountInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PCAIGNJKAFA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

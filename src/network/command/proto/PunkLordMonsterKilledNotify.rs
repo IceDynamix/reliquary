@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordMonsterKilledNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordMonsterKilledNotify.AIECOBKEIGB)
-    pub AIECOBKEIGB: ::protobuf::MessageField<super::MDJGOOCKCMJ::MDJGOOCKCMJ>,
+    // @@protoc_insertion_point(field:PunkLordMonsterKilledNotify.killed_monster)
+    pub killed_monster: ::protobuf::MessageField<super::KilledPunkLordMonsterInfo::KilledPunkLordMonsterInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordMonsterKilledNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl PunkLordMonsterKilledNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDJGOOCKCMJ::MDJGOOCKCMJ>(
-            "AIECOBKEIGB",
-            |m: &PunkLordMonsterKilledNotify| { &m.AIECOBKEIGB },
-            |m: &mut PunkLordMonsterKilledNotify| { &mut m.AIECOBKEIGB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KilledPunkLordMonsterInfo::KilledPunkLordMonsterInfo>(
+            "killed_monster",
+            |m: &PunkLordMonsterKilledNotify| { &m.killed_monster },
+            |m: &mut PunkLordMonsterKilledNotify| { &mut m.killed_monster },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordMonsterKilledNotify>(
             "PunkLordMonsterKilledNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PunkLordMonsterKilledNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIECOBKEIGB)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.killed_monster)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PunkLordMonsterKilledNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AIECOBKEIGB.as_ref() {
+        if let Some(v) = self.killed_monster.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PunkLordMonsterKilledNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AIECOBKEIGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.killed_monster.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PunkLordMonsterKilledNotify {
     }
 
     fn clear(&mut self) {
-        self.AIECOBKEIGB.clear();
+        self.killed_monster.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordMonsterKilledNotify {
         static instance: PunkLordMonsterKilledNotify = PunkLordMonsterKilledNotify {
-            AIECOBKEIGB: ::protobuf::MessageField::none(),
+            killed_monster: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordMonsterKilledNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PunkLordMonsterKilledNotify.proto\x1a\x11MDJGOOCKCMJ.proto\"M\n\x1bPu\
-    nkLordMonsterKilledNotify\x12.\n\x0bAIECOBKEIGB\x18\n\x20\x01(\x0b2\x0c.\
-    MDJGOOCKCMJR\x0bAIECOBKEIGBb\x06proto3\
+    \n!PunkLordMonsterKilledNotify.proto\x1a\x1fKilledPunkLordMonsterInfo.pr\
+    oto\"`\n\x1bPunkLordMonsterKilledNotify\x12A\n\x0ekilled_monster\x18\x05\
+    \x20\x01(\x0b2\x1a.KilledPunkLordMonsterInfoR\rkilledMonsterb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MDJGOOCKCMJ::file_descriptor().clone());
+            deps.push(super::KilledPunkLordMonsterInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PunkLordMonsterKilledNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

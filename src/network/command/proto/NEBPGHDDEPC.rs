@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NEBPGHDDEPC {
     // message fields
-    // @@protoc_insertion_point(field:NEBPGHDDEPC.JEFIOIHHCLG)
-    pub JEFIOIHHCLG: i32,
+    // @@protoc_insertion_point(field:NEBPGHDDEPC.PKJNFDIBJAK)
+    pub PKJNFDIBJAK: i32,
     // special fields
     // @@protoc_insertion_point(special_field:NEBPGHDDEPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NEBPGHDDEPC {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEFIOIHHCLG",
-            |m: &NEBPGHDDEPC| { &m.JEFIOIHHCLG },
-            |m: &mut NEBPGHDDEPC| { &mut m.JEFIOIHHCLG },
+            "PKJNFDIBJAK",
+            |m: &NEBPGHDDEPC| { &m.PKJNFDIBJAK },
+            |m: &mut NEBPGHDDEPC| { &mut m.PKJNFDIBJAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NEBPGHDDEPC>(
             "NEBPGHDDEPC",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for NEBPGHDDEPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.JEFIOIHHCLG = is.read_int32()?;
+                40 => {
+                    self.PKJNFDIBJAK = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for NEBPGHDDEPC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JEFIOIHHCLG != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.JEFIOIHHCLG);
+        if self.PKJNFDIBJAK != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.PKJNFDIBJAK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for NEBPGHDDEPC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JEFIOIHHCLG != 0 {
-            os.write_int32(2, self.JEFIOIHHCLG)?;
+        if self.PKJNFDIBJAK != 0 {
+            os.write_int32(5, self.PKJNFDIBJAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for NEBPGHDDEPC {
     }
 
     fn clear(&mut self) {
-        self.JEFIOIHHCLG = 0;
+        self.PKJNFDIBJAK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEBPGHDDEPC {
         static instance: NEBPGHDDEPC = NEBPGHDDEPC {
-            JEFIOIHHCLG: 0,
+            PKJNFDIBJAK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for NEBPGHDDEPC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NEBPGHDDEPC.proto\"/\n\x0bNEBPGHDDEPC\x12\x20\n\x0bJEFIOIHHCLG\x18\
-    \x02\x20\x01(\x05R\x0bJEFIOIHHCLGb\x06proto3\
+    \n\x11NEBPGHDDEPC.proto\"/\n\x0bNEBPGHDDEPC\x12\x20\n\x0bPKJNFDIBJAK\x18\
+    \x05\x20\x01(\x05R\x0bPKJNFDIBJAKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

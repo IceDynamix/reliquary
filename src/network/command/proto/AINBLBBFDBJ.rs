@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AINBLBBFDBJ {
     // message fields
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.confirm)
-    pub confirm: bool,
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.NHGOJDODGMA)
-    pub NHGOJDODGMA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.KBFEFDINBHM)
+    pub KBFEFDINBHM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.EIEHFCEBCMH)
+    pub EIEHFCEBCMH: u32,
     // @@protoc_insertion_point(field:AINBLBBFDBJ.select_cell_id)
     pub select_cell_id: u32,
-    // @@protoc_insertion_point(field:AINBLBBFDBJ.NIJAGOAJPEM)
-    pub NIJAGOAJPEM: u32,
+    // @@protoc_insertion_point(field:AINBLBBFDBJ.confirm)
+    pub confirm: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AINBLBBFDBJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl AINBLBBFDBJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "confirm",
-            |m: &AINBLBBFDBJ| { &m.confirm },
-            |m: &mut AINBLBBFDBJ| { &mut m.confirm },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NHGOJDODGMA",
-            |m: &AINBLBBFDBJ| { &m.NHGOJDODGMA },
-            |m: &mut AINBLBBFDBJ| { &mut m.NHGOJDODGMA },
+            "KBFEFDINBHM",
+            |m: &AINBLBBFDBJ| { &m.KBFEFDINBHM },
+            |m: &mut AINBLBBFDBJ| { &mut m.KBFEFDINBHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIEHFCEBCMH",
+            |m: &AINBLBBFDBJ| { &m.EIEHFCEBCMH },
+            |m: &mut AINBLBBFDBJ| { &mut m.EIEHFCEBCMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "select_cell_id",
@@ -71,9 +71,9 @@ impl AINBLBBFDBJ {
             |m: &mut AINBLBBFDBJ| { &mut m.select_cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIJAGOAJPEM",
-            |m: &AINBLBBFDBJ| { &m.NIJAGOAJPEM },
-            |m: &mut AINBLBBFDBJ| { &mut m.NIJAGOAJPEM },
+            "confirm",
+            |m: &AINBLBBFDBJ| { &m.confirm },
+            |m: &mut AINBLBBFDBJ| { &mut m.confirm },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AINBLBBFDBJ>(
             "AINBLBBFDBJ",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.confirm = is.read_bool()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NHGOJDODGMA)?;
-                },
-                88 => {
-                    self.NHGOJDODGMA.push(is.read_uint32()?);
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KBFEFDINBHM)?;
                 },
                 40 => {
+                    self.KBFEFDINBHM.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.EIEHFCEBCMH = is.read_uint32()?;
+                },
+                104 => {
                     self.select_cell_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.NIJAGOAJPEM = is.read_uint32()?;
+                120 => {
+                    self.confirm = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KBFEFDINBHM);
+        if self.EIEHFCEBCMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.EIEHFCEBCMH);
+        }
+        if self.select_cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.select_cell_id);
+        }
         if self.confirm != false {
             my_size += 1 + 1;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NHGOJDODGMA);
-        if self.select_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.select_cell_id);
-        }
-        if self.NIJAGOAJPEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NIJAGOAJPEM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.confirm != false {
-            os.write_bool(4, self.confirm)?;
+        os.write_repeated_packed_uint32(5, &self.KBFEFDINBHM)?;
+        if self.EIEHFCEBCMH != 0 {
+            os.write_uint32(8, self.EIEHFCEBCMH)?;
         }
-        os.write_repeated_packed_uint32(11, &self.NHGOJDODGMA)?;
         if self.select_cell_id != 0 {
-            os.write_uint32(5, self.select_cell_id)?;
+            os.write_uint32(13, self.select_cell_id)?;
         }
-        if self.NIJAGOAJPEM != 0 {
-            os.write_uint32(14, self.NIJAGOAJPEM)?;
+        if self.confirm != false {
+            os.write_bool(15, self.confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for AINBLBBFDBJ {
     }
 
     fn clear(&mut self) {
-        self.confirm = false;
-        self.NHGOJDODGMA.clear();
+        self.KBFEFDINBHM.clear();
+        self.EIEHFCEBCMH = 0;
         self.select_cell_id = 0;
-        self.NIJAGOAJPEM = 0;
+        self.confirm = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AINBLBBFDBJ {
         static instance: AINBLBBFDBJ = AINBLBBFDBJ {
-            confirm: false,
-            NHGOJDODGMA: ::std::vec::Vec::new(),
+            KBFEFDINBHM: ::std::vec::Vec::new(),
+            EIEHFCEBCMH: 0,
             select_cell_id: 0,
-            NIJAGOAJPEM: 0,
+            confirm: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for AINBLBBFDBJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AINBLBBFDBJ.proto\"\x91\x01\n\x0bAINBLBBFDBJ\x12\x18\n\x07confirm\
-    \x18\x04\x20\x01(\x08R\x07confirm\x12\x20\n\x0bNHGOJDODGMA\x18\x0b\x20\
-    \x03(\rR\x0bNHGOJDODGMA\x12$\n\x0eselect_cell_id\x18\x05\x20\x01(\rR\x0c\
-    selectCellId\x12\x20\n\x0bNIJAGOAJPEM\x18\x0e\x20\x01(\rR\x0bNIJAGOAJPEM\
-    b\x06proto3\
+    \n\x11AINBLBBFDBJ.proto\"\x91\x01\n\x0bAINBLBBFDBJ\x12\x20\n\x0bKBFEFDIN\
+    BHM\x18\x05\x20\x03(\rR\x0bKBFEFDINBHM\x12\x20\n\x0bEIEHFCEBCMH\x18\x08\
+    \x20\x01(\rR\x0bEIEHFCEBCMH\x12$\n\x0eselect_cell_id\x18\r\x20\x01(\rR\
+    \x0cselectCellId\x12\x18\n\x07confirm\x18\x0f\x20\x01(\x08R\x07confirmb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

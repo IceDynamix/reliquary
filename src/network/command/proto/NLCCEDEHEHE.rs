@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NLCCEDEHEHE {
     // message fields
-    // @@protoc_insertion_point(field:NLCCEDEHEHE.OFGBJCCCIKE)
-    pub OFGBJCCCIKE: u32,
+    // @@protoc_insertion_point(field:NLCCEDEHEHE.EFELGKNFMIJ)
+    pub EFELGKNFMIJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NLCCEDEHEHE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NLCCEDEHEHE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFGBJCCCIKE",
-            |m: &NLCCEDEHEHE| { &m.OFGBJCCCIKE },
-            |m: &mut NLCCEDEHEHE| { &mut m.OFGBJCCCIKE },
+            "EFELGKNFMIJ",
+            |m: &NLCCEDEHEHE| { &m.EFELGKNFMIJ },
+            |m: &mut NLCCEDEHEHE| { &mut m.EFELGKNFMIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NLCCEDEHEHE>(
             "NLCCEDEHEHE",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for NLCCEDEHEHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OFGBJCCCIKE = is.read_uint32()?;
+                104 => {
+                    self.EFELGKNFMIJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for NLCCEDEHEHE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OFGBJCCCIKE);
+        if self.EFELGKNFMIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EFELGKNFMIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for NLCCEDEHEHE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(9, self.OFGBJCCCIKE)?;
+        if self.EFELGKNFMIJ != 0 {
+            os.write_uint32(13, self.EFELGKNFMIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for NLCCEDEHEHE {
     }
 
     fn clear(&mut self) {
-        self.OFGBJCCCIKE = 0;
+        self.EFELGKNFMIJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NLCCEDEHEHE {
         static instance: NLCCEDEHEHE = NLCCEDEHEHE {
-            OFGBJCCCIKE: 0,
+            EFELGKNFMIJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for NLCCEDEHEHE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NLCCEDEHEHE.proto\"/\n\x0bNLCCEDEHEHE\x12\x20\n\x0bOFGBJCCCIKE\x18\
-    \t\x20\x01(\rR\x0bOFGBJCCCIKEb\x06proto3\
+    \n\x11NLCCEDEHEHE.proto\"/\n\x0bNLCCEDEHEHE\x12\x20\n\x0bEFELGKNFMIJ\x18\
+    \r\x20\x01(\rR\x0bEFELGKNFMIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NFDGIJLOLGD {
     // message fields
-    // @@protoc_insertion_point(field:NFDGIJLOLGD.HFMDLHIFMPI)
-    pub HFMDLHIFMPI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NFDGIJLOLGD.JKBIOGIIOKE)
+    pub JKBIOGIIOKE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NFDGIJLOLGD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NFDGIJLOLGD {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFMDLHIFMPI",
-            |m: &NFDGIJLOLGD| { &m.HFMDLHIFMPI },
-            |m: &mut NFDGIJLOLGD| { &mut m.HFMDLHIFMPI },
+            "JKBIOGIIOKE",
+            |m: &NFDGIJLOLGD| { &m.JKBIOGIIOKE },
+            |m: &mut NFDGIJLOLGD| { &mut m.JKBIOGIIOKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NFDGIJLOLGD>(
             "NFDGIJLOLGD",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for NFDGIJLOLGD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HFMDLHIFMPI)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JKBIOGIIOKE)?;
                 },
-                88 => {
-                    self.HFMDLHIFMPI.push(is.read_uint32()?);
+                8 => {
+                    self.JKBIOGIIOKE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for NFDGIJLOLGD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HFMDLHIFMPI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JKBIOGIIOKE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.HFMDLHIFMPI)?;
+        os.write_repeated_packed_uint32(1, &self.JKBIOGIIOKE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for NFDGIJLOLGD {
     }
 
     fn clear(&mut self) {
-        self.HFMDLHIFMPI.clear();
+        self.JKBIOGIIOKE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NFDGIJLOLGD {
         static instance: NFDGIJLOLGD = NFDGIJLOLGD {
-            HFMDLHIFMPI: ::std::vec::Vec::new(),
+            JKBIOGIIOKE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for NFDGIJLOLGD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NFDGIJLOLGD.proto\"/\n\x0bNFDGIJLOLGD\x12\x20\n\x0bHFMDLHIFMPI\x18\
-    \x0b\x20\x03(\rR\x0bHFMDLHIFMPIb\x06proto3\
+    \n\x11NFDGIJLOLGD.proto\"/\n\x0bNFDGIJLOLGD\x12\x20\n\x0bJKBIOGIIOKE\x18\
+    \x01\x20\x03(\rR\x0bJKBIOGIIOKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

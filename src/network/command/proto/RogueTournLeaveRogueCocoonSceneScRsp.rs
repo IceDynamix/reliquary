@@ -31,7 +31,7 @@ pub struct RogueTournLeaveRogueCocoonSceneScRsp {
     // @@protoc_insertion_point(field:RogueTournLeaveRogueCocoonSceneScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournLeaveRogueCocoonSceneScRsp.rogue_tourn_cur_scene_info)
-    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>,
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournSceneInfo::RogueTournSceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournLeaveRogueCocoonSceneScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl RogueTournLeaveRogueCocoonSceneScRsp {
             |m: &RogueTournLeaveRogueCocoonSceneScRsp| { &m.retcode },
             |m: &mut RogueTournLeaveRogueCocoonSceneScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSceneInfo::RogueTournSceneInfo>(
             "rogue_tourn_cur_scene_info",
             |m: &RogueTournLeaveRogueCocoonSceneScRsp| { &m.rogue_tourn_cur_scene_info },
             |m: &mut RogueTournLeaveRogueCocoonSceneScRsp| { &mut m.rogue_tourn_cur_scene_info },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueTournLeaveRogueCocoonSceneScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,11 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournLeaveRogueCocoonSceneScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RogueTournLeaveRogueCocoonSceneScRsp.proto\x1a\x1cRogueTournCurSceneI\
-    nfo.proto\"\x95\x01\n$RogueTournLeaveRogueCocoonSceneScRsp\x12\x18\n\x07\
-    retcode\x18\x05\x20\x01(\rR\x07retcode\x12S\n\x1arogue_tourn_cur_scene_i\
-    nfo\x18\x0b\x20\x01(\x0b2\x17.RogueTournCurSceneInfoR\x16rogueTournCurSc\
-    eneInfob\x06proto3\
+    \n*RogueTournLeaveRogueCocoonSceneScRsp.proto\x1a\x19RogueTournSceneInfo\
+    .proto\"\x92\x01\n$RogueTournLeaveRogueCocoonSceneScRsp\x12\x18\n\x07ret\
+    code\x18\r\x20\x01(\rR\x07retcode\x12P\n\x1arogue_tourn_cur_scene_info\
+    \x18\x0e\x20\x01(\x0b2\x14.RogueTournSceneInfoR\x16rogueTournCurSceneInf\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueTournCurSceneInfo::file_descriptor().clone());
+            deps.push(super::RogueTournSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournLeaveRogueCocoonSceneScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

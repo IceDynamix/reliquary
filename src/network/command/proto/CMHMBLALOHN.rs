@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CMHMBLALOHN {
     // message fields
-    // @@protoc_insertion_point(field:CMHMBLALOHN.GPBGBMALJKP)
-    pub GPBGBMALJKP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CMHMBLALOHN.GNONPMJCOOJ)
+    pub GNONPMJCOOJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:CMHMBLALOHN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CMHMBLALOHN {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GPBGBMALJKP",
-            |m: &CMHMBLALOHN| { &m.GPBGBMALJKP },
-            |m: &mut CMHMBLALOHN| { &mut m.GPBGBMALJKP },
+            "GNONPMJCOOJ",
+            |m: &CMHMBLALOHN| { &m.GNONPMJCOOJ },
+            |m: &mut CMHMBLALOHN| { &mut m.GNONPMJCOOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CMHMBLALOHN>(
             "CMHMBLALOHN",
@@ -73,10 +73,10 @@ impl ::protobuf::Message for CMHMBLALOHN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GPBGBMALJKP)?;
+                    is.read_repeated_packed_uint32_into(&mut self.GNONPMJCOOJ)?;
                 },
                 112 => {
-                    self.GPBGBMALJKP.push(is.read_uint32()?);
+                    self.GNONPMJCOOJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for CMHMBLALOHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.GPBGBMALJKP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.GNONPMJCOOJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.GPBGBMALJKP)?;
+        os.write_repeated_packed_uint32(14, &self.GNONPMJCOOJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for CMHMBLALOHN {
     }
 
     fn clear(&mut self) {
-        self.GPBGBMALJKP.clear();
+        self.GNONPMJCOOJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CMHMBLALOHN {
         static instance: CMHMBLALOHN = CMHMBLALOHN {
-            GPBGBMALJKP: ::std::vec::Vec::new(),
+            GNONPMJCOOJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for CMHMBLALOHN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CMHMBLALOHN.proto\"/\n\x0bCMHMBLALOHN\x12\x20\n\x0bGPBGBMALJKP\x18\
-    \x0e\x20\x03(\rR\x0bGPBGBMALJKPb\x06proto3\
+    \n\x11CMHMBLALOHN.proto\"/\n\x0bCMHMBLALOHN\x12\x20\n\x0bGNONPMJCOOJ\x18\
+    \x0e\x20\x03(\rR\x0bGNONPMJCOOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

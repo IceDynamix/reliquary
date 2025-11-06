@@ -30,8 +30,8 @@ pub struct FarmElementSweepScRsp {
     // message fields
     // @@protoc_insertion_point(field:FarmElementSweepScRsp.multiple_drop_data)
     pub multiple_drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FarmElementSweepScRsp.JDANOKNHNHL)
-    pub JDANOKNHNHL: u32,
+    // @@protoc_insertion_point(field:FarmElementSweepScRsp.farm_element_id)
+    pub farm_element_id: u32,
     // @@protoc_insertion_point(field:FarmElementSweepScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -59,9 +59,9 @@ impl FarmElementSweepScRsp {
             |m: &mut FarmElementSweepScRsp| { &mut m.multiple_drop_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDANOKNHNHL",
-            |m: &FarmElementSweepScRsp| { &m.JDANOKNHNHL },
-            |m: &mut FarmElementSweepScRsp| { &mut m.JDANOKNHNHL },
+            "farm_element_id",
+            |m: &FarmElementSweepScRsp| { &m.farm_element_id },
+            |m: &mut FarmElementSweepScRsp| { &mut m.farm_element_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.multiple_drop_data)?;
                 },
-                72 => {
-                    self.JDANOKNHNHL = is.read_uint32()?;
-                },
                 64 => {
+                    self.farm_element_id = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JDANOKNHNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JDANOKNHNHL);
+        if self.farm_element_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.farm_element_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.multiple_drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.JDANOKNHNHL != 0 {
-            os.write_uint32(9, self.JDANOKNHNHL)?;
+        if self.farm_element_id != 0 {
+            os.write_uint32(8, self.farm_element_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
 
     fn clear(&mut self) {
         self.multiple_drop_data.clear();
-        self.JDANOKNHNHL = 0;
+        self.farm_element_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -158,7 +158,7 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
     fn default_instance() -> &'static FarmElementSweepScRsp {
         static instance: FarmElementSweepScRsp = FarmElementSweepScRsp {
             multiple_drop_data: ::protobuf::MessageField::none(),
-            JDANOKNHNHL: 0,
+            farm_element_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for FarmElementSweepScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bFarmElementSweepScRsp.proto\x1a\x0eItemList.proto\"\x8c\x01\n\x15F\
-    armElementSweepScRsp\x127\n\x12multiple_drop_data\x18\n\x20\x01(\x0b2\t.\
-    ItemListR\x10multipleDropData\x12\x20\n\x0bJDANOKNHNHL\x18\t\x20\x01(\rR\
-    \x0bJDANOKNHNHL\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x1bFarmElementSweepScRsp.proto\x1a\x0eItemList.proto\"\x92\x01\n\x15F\
+    armElementSweepScRsp\x127\n\x12multiple_drop_data\x18\x06\x20\x01(\x0b2\
+    \t.ItemListR\x10multipleDropData\x12&\n\x0ffarm_element_id\x18\x08\x20\
+    \x01(\rR\rfarmElementId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retc\
+    odeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

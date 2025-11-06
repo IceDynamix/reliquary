@@ -30,10 +30,10 @@ pub struct OAJOPDGKJDO {
     // message fields
     // @@protoc_insertion_point(field:OAJOPDGKJDO.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:OAJOPDGKJDO.FAJCCGHLCAC)
-    pub FAJCCGHLCAC: ::std::vec::Vec<super::LPCNJMFIPNP::LPCNJMFIPNP>,
-    // @@protoc_insertion_point(field:OAJOPDGKJDO.EGLMGHLEKEF)
-    pub EGLMGHLEKEF: u32,
+    // @@protoc_insertion_point(field:OAJOPDGKJDO.PKPLDMDABNB)
+    pub PKPLDMDABNB: ::std::vec::Vec<super::LPCNJMFIPNP::LPCNJMFIPNP>,
+    // @@protoc_insertion_point(field:OAJOPDGKJDO.FOCGMMFNAME)
+    pub FOCGMMFNAME: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OAJOPDGKJDO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl OAJOPDGKJDO {
             |m: &mut OAJOPDGKJDO| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FAJCCGHLCAC",
-            |m: &OAJOPDGKJDO| { &m.FAJCCGHLCAC },
-            |m: &mut OAJOPDGKJDO| { &mut m.FAJCCGHLCAC },
+            "PKPLDMDABNB",
+            |m: &OAJOPDGKJDO| { &m.PKPLDMDABNB },
+            |m: &mut OAJOPDGKJDO| { &mut m.PKPLDMDABNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGLMGHLEKEF",
-            |m: &OAJOPDGKJDO| { &m.EGLMGHLEKEF },
-            |m: &mut OAJOPDGKJDO| { &mut m.EGLMGHLEKEF },
+            "FOCGMMFNAME",
+            |m: &OAJOPDGKJDO| { &m.FOCGMMFNAME },
+            |m: &mut OAJOPDGKJDO| { &mut m.FOCGMMFNAME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OAJOPDGKJDO>(
             "OAJOPDGKJDO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OAJOPDGKJDO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                16 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                82 => {
-                    self.FAJCCGHLCAC.push(is.read_message()?);
+                74 => {
+                    self.PKPLDMDABNB.push(is.read_message()?);
                 },
-                104 => {
-                    self.EGLMGHLEKEF = is.read_uint32()?;
+                112 => {
+                    self.FOCGMMFNAME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for OAJOPDGKJDO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
         }
-        for value in &self.FAJCCGHLCAC {
+        for value in &self.PKPLDMDABNB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EGLMGHLEKEF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EGLMGHLEKEF);
+        if self.FOCGMMFNAME != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FOCGMMFNAME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for OAJOPDGKJDO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(14, self.unique_id)?;
+            os.write_uint32(2, self.unique_id)?;
         }
-        for v in &self.FAJCCGHLCAC {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.PKPLDMDABNB {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.EGLMGHLEKEF != 0 {
-            os.write_uint32(13, self.EGLMGHLEKEF)?;
+        if self.FOCGMMFNAME != 0 {
+            os.write_uint32(14, self.FOCGMMFNAME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for OAJOPDGKJDO {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.FAJCCGHLCAC.clear();
-        self.EGLMGHLEKEF = 0;
+        self.PKPLDMDABNB.clear();
+        self.FOCGMMFNAME = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OAJOPDGKJDO {
         static instance: OAJOPDGKJDO = OAJOPDGKJDO {
             unique_id: 0,
-            FAJCCGHLCAC: ::std::vec::Vec::new(),
-            EGLMGHLEKEF: 0,
+            PKPLDMDABNB: ::std::vec::Vec::new(),
+            FOCGMMFNAME: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for OAJOPDGKJDO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OAJOPDGKJDO.proto\x1a\x11LPCNJMFIPNP.proto\"|\n\x0bOAJOPDGKJDO\x12\
-    \x1b\n\tunique_id\x18\x0e\x20\x01(\rR\x08uniqueId\x12.\n\x0bFAJCCGHLCAC\
-    \x18\n\x20\x03(\x0b2\x0c.LPCNJMFIPNPR\x0bFAJCCGHLCAC\x12\x20\n\x0bEGLMGH\
-    LEKEF\x18\r\x20\x01(\rR\x0bEGLMGHLEKEFb\x06proto3\
+    \x1b\n\tunique_id\x18\x02\x20\x01(\rR\x08uniqueId\x12.\n\x0bPKPLDMDABNB\
+    \x18\t\x20\x03(\x0b2\x0c.LPCNJMFIPNPR\x0bPKPLDMDABNB\x12\x20\n\x0bFOCGMM\
+    FNAME\x18\x0e\x20\x01(\rR\x0bFOCGMMFNAMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

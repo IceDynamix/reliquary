@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ChessRogueUpdateReviveInfoScNotify {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueUpdateReviveInfoScNotify.revive_info)
-    pub revive_info: ::protobuf::MessageField<super::RogueAvatarReviveCost::RogueAvatarReviveCost>,
+    pub revive_info: ::protobuf::MessageField<super::NCCIEJOLNCF::NCCIEJOLNCF>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateReviveInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl ChessRogueUpdateReviveInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueAvatarReviveCost::RogueAvatarReviveCost>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCCIEJOLNCF::NCCIEJOLNCF>(
             "revive_info",
             |m: &ChessRogueUpdateReviveInfoScNotify| { &m.revive_info },
             |m: &mut ChessRogueUpdateReviveInfoScNotify| { &mut m.revive_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChessRogueUpdateReviveInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChessRogueUpdateReviveInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.revive_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateReviveInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(ChessRogueUpdateReviveInfoScNotify.proto\x1a\x1bRogueAvatarReviveCost\
-    .proto\"]\n\"ChessRogueUpdateReviveInfoScNotify\x127\n\x0brevive_info\
-    \x18\x07\x20\x01(\x0b2\x16.RogueAvatarReviveCostR\nreviveInfob\x06proto3\
+    \n(ChessRogueUpdateReviveInfoScNotify.proto\x1a\x11NCCIEJOLNCF.proto\"S\
+    \n\"ChessRogueUpdateReviveInfoScNotify\x12-\n\x0brevive_info\x18\x03\x20\
+    \x01(\x0b2\x0c.NCCIEJOLNCFR\nreviveInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueAvatarReviveCost::file_descriptor().clone());
+            deps.push(super::NCCIEJOLNCF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueUpdateReviveInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

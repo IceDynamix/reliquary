@@ -30,8 +30,8 @@ pub struct ContentPackageData {
     // message fields
     // @@protoc_insertion_point(field:ContentPackageData.cur_content_id)
     pub cur_content_id: u32,
-    // @@protoc_insertion_point(field:ContentPackageData.content_package_list)
-    pub content_package_list: ::std::vec::Vec<super::ContentPackageInfo::ContentPackageInfo>,
+    // @@protoc_insertion_point(field:ContentPackageData.adjust_data_list)
+    pub adjust_data_list: ::std::vec::Vec<super::DDMLBHBIFGA::DDMLBHBIFGA>,
     // special fields
     // @@protoc_insertion_point(special_field:ContentPackageData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ContentPackageData {
             |m: &mut ContentPackageData| { &mut m.cur_content_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "content_package_list",
-            |m: &ContentPackageData| { &m.content_package_list },
-            |m: &mut ContentPackageData| { &mut m.content_package_list },
+            "adjust_data_list",
+            |m: &ContentPackageData| { &m.adjust_data_list },
+            |m: &mut ContentPackageData| { &mut m.adjust_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ContentPackageData>(
             "ContentPackageData",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ContentPackageData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.cur_content_id = is.read_uint32()?;
                 },
-                58 => {
-                    self.content_package_list.push(is.read_message()?);
+                82 => {
+                    self.adjust_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for ContentPackageData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cur_content_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.cur_content_id);
         }
-        for value in &self.content_package_list {
+        for value in &self.adjust_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ContentPackageData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_content_id != 0 {
-            os.write_uint32(4, self.cur_content_id)?;
+            os.write_uint32(3, self.cur_content_id)?;
         }
-        for v in &self.content_package_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.adjust_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ContentPackageData {
 
     fn clear(&mut self) {
         self.cur_content_id = 0;
-        self.content_package_list.clear();
+        self.adjust_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ContentPackageData {
         static instance: ContentPackageData = ContentPackageData {
             cur_content_id: 0,
-            content_package_list: ::std::vec::Vec::new(),
+            adjust_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ContentPackageData.proto\x1a\x18ContentPackageInfo.proto\"\x81\x01\
-    \n\x12ContentPackageData\x12$\n\x0ecur_content_id\x18\x04\x20\x01(\rR\
-    \x0ccurContentId\x12E\n\x14content_package_list\x18\x07\x20\x03(\x0b2\
-    \x13.ContentPackageInfoR\x12contentPackageListb\x06proto3\
+    \n\x18ContentPackageData.proto\x1a\x11DDMLBHBIFGA.proto\"r\n\x12ContentP\
+    ackageData\x12$\n\x0ecur_content_id\x18\x03\x20\x01(\rR\x0ccurContentId\
+    \x126\n\x10adjust_data_list\x18\n\x20\x03(\x0b2\x0c.DDMLBHBIFGAR\x0eadju\
+    stDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ContentPackageInfo::file_descriptor().clone());
+            deps.push(super::DDMLBHBIFGA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ContentPackageData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

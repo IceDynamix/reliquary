@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct FightMatch3ForceUpdateNotify {
     // message fields
     // @@protoc_insertion_point(field:FightMatch3ForceUpdateNotify.data)
-    pub data: ::protobuf::MessageField<super::KLDMJEMIMCN::KLDMJEMIMCN>,
+    pub data: ::protobuf::MessageField<super::Match3Data::Match3Data>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3ForceUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl FightMatch3ForceUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLDMJEMIMCN::KLDMJEMIMCN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Match3Data::Match3Data>(
             "data",
             |m: &FightMatch3ForceUpdateNotify| { &m.data },
             |m: &mut FightMatch3ForceUpdateNotify| { &mut m.data },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for FightMatch3ForceUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FightMatch3ForceUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3ForceUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FightMatch3ForceUpdateNotify.proto\x1a\x11KLDMJEMIMCN.proto\"@\n\x1c\
-    FightMatch3ForceUpdateNotify\x12\x20\n\x04data\x18\x05\x20\x01(\x0b2\x0c\
-    .KLDMJEMIMCNR\x04datab\x06proto3\
+    \n\"FightMatch3ForceUpdateNotify.proto\x1a\x10Match3Data.proto\"?\n\x1cF\
+    ightMatch3ForceUpdateNotify\x12\x1f\n\x04data\x18\x0e\x20\x01(\x0b2\x0b.\
+    Match3DataR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KLDMJEMIMCN::file_descriptor().clone());
+            deps.push(super::Match3Data::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3ForceUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

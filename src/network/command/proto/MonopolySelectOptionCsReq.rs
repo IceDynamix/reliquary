@@ -79,7 +79,7 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.option_id = is.read_uint32()?;
                 },
                 112 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.option_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.option_id);
         }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.event_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MonopolySelectOptionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.option_id != 0 {
-            os.write_uint32(8, self.option_id)?;
+            os.write_uint32(7, self.option_id)?;
         }
         if self.event_id != 0 {
             os.write_uint32(14, self.event_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolySelectOptionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolySelectOptionCsReq.proto\"S\n\x19MonopolySelectOptionCsReq\
-    \x12\x1b\n\toption_id\x18\x08\x20\x01(\rR\x08optionId\x12\x19\n\x08event\
+    \x12\x1b\n\toption_id\x18\x07\x20\x01(\rR\x08optionId\x12\x19\n\x08event\
     _id\x18\x0e\x20\x01(\rR\x07eventIdb\x06proto3\
 ";
 

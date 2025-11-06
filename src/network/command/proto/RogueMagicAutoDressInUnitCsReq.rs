@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAutoDressInUnitCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAutoDressInUnitCsReq.BHKANKFPDCP)
-    pub BHKANKFPDCP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicAutoDressInUnitCsReq.LBNPHKNLFON)
+    pub LBNPHKNLFON: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAutoDressInUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicAutoDressInUnitCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BHKANKFPDCP",
-            |m: &RogueMagicAutoDressInUnitCsReq| { &m.BHKANKFPDCP },
-            |m: &mut RogueMagicAutoDressInUnitCsReq| { &mut m.BHKANKFPDCP },
+            "LBNPHKNLFON",
+            |m: &RogueMagicAutoDressInUnitCsReq| { &m.LBNPHKNLFON },
+            |m: &mut RogueMagicAutoDressInUnitCsReq| { &mut m.LBNPHKNLFON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAutoDressInUnitCsReq>(
             "RogueMagicAutoDressInUnitCsReq",
@@ -73,10 +73,10 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BHKANKFPDCP)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LBNPHKNLFON)?;
                 },
                 8 => {
-                    self.BHKANKFPDCP.push(is.read_uint32()?);
+                    self.LBNPHKNLFON.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BHKANKFPDCP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LBNPHKNLFON);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.BHKANKFPDCP)?;
+        os.write_repeated_packed_uint32(1, &self.LBNPHKNLFON)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for RogueMagicAutoDressInUnitCsReq {
     }
 
     fn clear(&mut self) {
-        self.BHKANKFPDCP.clear();
+        self.LBNPHKNLFON.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAutoDressInUnitCsReq {
         static instance: RogueMagicAutoDressInUnitCsReq = RogueMagicAutoDressInUnitCsReq {
-            BHKANKFPDCP: ::std::vec::Vec::new(),
+            LBNPHKNLFON: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAutoDressInUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RogueMagicAutoDressInUnitCsReq.proto\"B\n\x1eRogueMagicAutoDressInUni\
-    tCsReq\x12\x20\n\x0bBHKANKFPDCP\x18\x01\x20\x03(\rR\x0bBHKANKFPDCPb\x06p\
+    tCsReq\x12\x20\n\x0bLBNPHKNLFON\x18\x01\x20\x03(\rR\x0bLBNPHKNLFONb\x06p\
     roto3\
 ";
 

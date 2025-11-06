@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OEGMEPOHPMA {
     // message fields
-    // @@protoc_insertion_point(field:OEGMEPOHPMA.NHFMPGIIPID)
-    pub NHFMPGIIPID: ::std::vec::Vec<super::CIILCBCKMPD::CIILCBCKMPD>,
+    // @@protoc_insertion_point(field:OEGMEPOHPMA.MNHMPOGLKIN)
+    pub MNHMPOGLKIN: ::std::vec::Vec<super::CIILCBCKMPD::CIILCBCKMPD>,
     // special fields
     // @@protoc_insertion_point(special_field:OEGMEPOHPMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OEGMEPOHPMA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NHFMPGIIPID",
-            |m: &OEGMEPOHPMA| { &m.NHFMPGIIPID },
-            |m: &mut OEGMEPOHPMA| { &mut m.NHFMPGIIPID },
+            "MNHMPOGLKIN",
+            |m: &OEGMEPOHPMA| { &m.MNHMPOGLKIN },
+            |m: &mut OEGMEPOHPMA| { &mut m.MNHMPOGLKIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OEGMEPOHPMA>(
             "OEGMEPOHPMA",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for OEGMEPOHPMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.NHFMPGIIPID.push(is.read_message()?);
+                66 => {
+                    self.MNHMPOGLKIN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OEGMEPOHPMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NHFMPGIIPID {
+        for value in &self.MNHMPOGLKIN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OEGMEPOHPMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NHFMPGIIPID {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.MNHMPOGLKIN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OEGMEPOHPMA {
     }
 
     fn clear(&mut self) {
-        self.NHFMPGIIPID.clear();
+        self.MNHMPOGLKIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OEGMEPOHPMA {
         static instance: OEGMEPOHPMA = OEGMEPOHPMA {
-            NHFMPGIIPID: ::std::vec::Vec::new(),
+            MNHMPOGLKIN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for OEGMEPOHPMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OEGMEPOHPMA.proto\x1a\x11CIILCBCKMPD.proto\"=\n\x0bOEGMEPOHPMA\x12\
-    .\n\x0bNHFMPGIIPID\x18\x0e\x20\x03(\x0b2\x0c.CIILCBCKMPDR\x0bNHFMPGIIPID\
+    .\n\x0bMNHMPOGLKIN\x18\x08\x20\x03(\x0b2\x0c.CIILCBCKMPDR\x0bMNHMPOGLKIN\
     b\x06proto3\
 ";
 

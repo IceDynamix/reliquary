@@ -30,10 +30,10 @@ pub struct SpaceZooTakeScRsp {
     // message fields
     // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.HLNMAJIDIFD)
-    pub HLNMAJIDIFD: u32,
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.IAAABCLGCBG)
+    pub IAAABCLGCBG: u32,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooTakeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SpaceZooTakeScRsp {
             |m: &mut SpaceZooTakeScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLNMAJIDIFD",
-            |m: &SpaceZooTakeScRsp| { &m.HLNMAJIDIFD },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.HLNMAJIDIFD },
+            "IAAABCLGCBG",
+            |m: &SpaceZooTakeScRsp| { &m.IAAABCLGCBG },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.IAAABCLGCBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &SpaceZooTakeScRsp| { &m.player_return_reward_list },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.player_return_reward_list },
+            "reward",
+            |m: &SpaceZooTakeScRsp| { &m.reward },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooTakeScRsp>(
             "SpaceZooTakeScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.HLNMAJIDIFD = is.read_uint32()?;
+                104 => {
+                    self.IAAABCLGCBG = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,12 +108,12 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if self.HLNMAJIDIFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HLNMAJIDIFD);
+        if self.IAAABCLGCBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IAAABCLGCBG);
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if self.HLNMAJIDIFD != 0 {
-            os.write_uint32(11, self.HLNMAJIDIFD)?;
+        if self.IAAABCLGCBG != 0 {
+            os.write_uint32(13, self.IAAABCLGCBG)?;
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HLNMAJIDIFD = 0;
-        self.player_return_reward_list.clear();
+        self.IAAABCLGCBG = 0;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooTakeScRsp {
         static instance: SpaceZooTakeScRsp = SpaceZooTakeScRsp {
             retcode: 0,
-            HLNMAJIDIFD: 0,
-            player_return_reward_list: ::protobuf::MessageField::none(),
+            IAAABCLGCBG: 0,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooTakeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SpaceZooTakeScRsp.proto\x1a\x0eItemList.proto\"\x95\x01\n\x11Space\
-    ZooTakeScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bHLNMAJIDIFD\x18\x0b\x20\x01(\rR\x0bHLNMAJIDIFD\x12D\n\x19player_re\
-    turn_reward_list\x18\x06\x20\x01(\x0b2\t.ItemListR\x16playerReturnReward\
-    Listb\x06proto3\
+    \n\x17SpaceZooTakeScRsp.proto\x1a\x0eItemList.proto\"r\n\x11SpaceZooTake\
+    ScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bI\
+    AAABCLGCBG\x18\r\x20\x01(\rR\x0bIAAABCLGCBG\x12!\n\x06reward\x18\x0f\x20\
+    \x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

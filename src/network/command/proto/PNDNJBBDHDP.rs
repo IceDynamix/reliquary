@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PNDNJBBDHDP {
     // message fields
-    // @@protoc_insertion_point(field:PNDNJBBDHDP.BIMBFJGNPFB)
-    pub BIMBFJGNPFB: u32,
     // @@protoc_insertion_point(field:PNDNJBBDHDP.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:PNDNJBBDHDP.CAIBIFPLJBK)
+    pub CAIBIFPLJBK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PNDNJBBDHDP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PNDNJBBDHDP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIMBFJGNPFB",
-            |m: &PNDNJBBDHDP| { &m.BIMBFJGNPFB },
-            |m: &mut PNDNJBBDHDP| { &mut m.BIMBFJGNPFB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &PNDNJBBDHDP| { &m.level },
             |m: &mut PNDNJBBDHDP| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CAIBIFPLJBK",
+            |m: &PNDNJBBDHDP| { &m.CAIBIFPLJBK },
+            |m: &mut PNDNJBBDHDP| { &mut m.CAIBIFPLJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNDNJBBDHDP>(
             "PNDNJBBDHDP",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for PNDNJBBDHDP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.BIMBFJGNPFB = is.read_uint32()?;
-                },
-                112 => {
                     self.level = is.read_uint32()?;
+                },
+                96 => {
+                    self.CAIBIFPLJBK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PNDNJBBDHDP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BIMBFJGNPFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BIMBFJGNPFB);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        }
+        if self.CAIBIFPLJBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CAIBIFPLJBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PNDNJBBDHDP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BIMBFJGNPFB != 0 {
-            os.write_uint32(5, self.BIMBFJGNPFB)?;
-        }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(5, self.level)?;
+        }
+        if self.CAIBIFPLJBK != 0 {
+            os.write_uint32(12, self.CAIBIFPLJBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PNDNJBBDHDP {
     }
 
     fn clear(&mut self) {
-        self.BIMBFJGNPFB = 0;
         self.level = 0;
+        self.CAIBIFPLJBK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNDNJBBDHDP {
         static instance: PNDNJBBDHDP = PNDNJBBDHDP {
-            BIMBFJGNPFB: 0,
             level: 0,
+            CAIBIFPLJBK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PNDNJBBDHDP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNDNJBBDHDP.proto\"E\n\x0bPNDNJBBDHDP\x12\x20\n\x0bBIMBFJGNPFB\x18\
-    \x05\x20\x01(\rR\x0bBIMBFJGNPFB\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\
-    \x05levelb\x06proto3\
+    \n\x11PNDNJBBDHDP.proto\"E\n\x0bPNDNJBBDHDP\x12\x14\n\x05level\x18\x05\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bCAIBIFPLJBK\x18\x0c\x20\x01(\rR\x0bCA\
+    IBIFPLJBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

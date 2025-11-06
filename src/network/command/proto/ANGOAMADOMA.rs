@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ANGOAMADOMA {
     // message fields
-    // @@protoc_insertion_point(field:ANGOAMADOMA.IJHLOJEFCPM)
-    pub IJHLOJEFCPM: u32,
-    // @@protoc_insertion_point(field:ANGOAMADOMA.OFGBJCCCIKE)
-    pub OFGBJCCCIKE: u32,
+    // @@protoc_insertion_point(field:ANGOAMADOMA.EFELGKNFMIJ)
+    pub EFELGKNFMIJ: u32,
+    // @@protoc_insertion_point(field:ANGOAMADOMA.LIPDLLHEPBJ)
+    pub LIPDLLHEPBJ: u32,
     // @@protoc_insertion_point(field:ANGOAMADOMA.tourn_finish_info)
-    pub tourn_finish_info: ::protobuf::MessageField<super::RogueTournFinishInfo::RogueTournFinishInfo>,
-    // @@protoc_insertion_point(field:ANGOAMADOMA.JBLOKLCPAFN)
-    pub JBLOKLCPAFN: u32,
+    pub tourn_finish_info: ::protobuf::MessageField<super::RogueTournSettleInfo::RogueTournSettleInfo>,
+    // @@protoc_insertion_point(field:ANGOAMADOMA.JLHGJCAPACE)
+    pub JLHGJCAPACE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ANGOAMADOMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl ANGOAMADOMA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJHLOJEFCPM",
-            |m: &ANGOAMADOMA| { &m.IJHLOJEFCPM },
-            |m: &mut ANGOAMADOMA| { &mut m.IJHLOJEFCPM },
+            "EFELGKNFMIJ",
+            |m: &ANGOAMADOMA| { &m.EFELGKNFMIJ },
+            |m: &mut ANGOAMADOMA| { &mut m.EFELGKNFMIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFGBJCCCIKE",
-            |m: &ANGOAMADOMA| { &m.OFGBJCCCIKE },
-            |m: &mut ANGOAMADOMA| { &mut m.OFGBJCCCIKE },
+            "LIPDLLHEPBJ",
+            |m: &ANGOAMADOMA| { &m.LIPDLLHEPBJ },
+            |m: &mut ANGOAMADOMA| { &mut m.LIPDLLHEPBJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournFinishInfo::RogueTournFinishInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSettleInfo::RogueTournSettleInfo>(
             "tourn_finish_info",
             |m: &ANGOAMADOMA| { &m.tourn_finish_info },
             |m: &mut ANGOAMADOMA| { &mut m.tourn_finish_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBLOKLCPAFN",
-            |m: &ANGOAMADOMA| { &m.JBLOKLCPAFN },
-            |m: &mut ANGOAMADOMA| { &mut m.JBLOKLCPAFN },
+            "JLHGJCAPACE",
+            |m: &ANGOAMADOMA| { &m.JLHGJCAPACE },
+            |m: &mut ANGOAMADOMA| { &mut m.JLHGJCAPACE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ANGOAMADOMA>(
             "ANGOAMADOMA",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for ANGOAMADOMA {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.IJHLOJEFCPM = is.read_uint32()?;
+                    self.EFELGKNFMIJ = is.read_uint32()?;
                 },
-                72 => {
-                    self.OFGBJCCCIKE = is.read_uint32()?;
+                64 => {
+                    self.LIPDLLHEPBJ = is.read_uint32()?;
                 },
-                10 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
-                96 => {
-                    self.JBLOKLCPAFN = is.read_uint32()?;
+                120 => {
+                    self.JLHGJCAPACE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for ANGOAMADOMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IJHLOJEFCPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IJHLOJEFCPM);
+        if self.EFELGKNFMIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EFELGKNFMIJ);
         }
-        if self.OFGBJCCCIKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OFGBJCCCIKE);
+        if self.LIPDLLHEPBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.LIPDLLHEPBJ);
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.JBLOKLCPAFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JBLOKLCPAFN);
+        if self.JLHGJCAPACE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JLHGJCAPACE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ANGOAMADOMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IJHLOJEFCPM != 0 {
-            os.write_uint32(4, self.IJHLOJEFCPM)?;
+        if self.EFELGKNFMIJ != 0 {
+            os.write_uint32(4, self.EFELGKNFMIJ)?;
         }
-        if self.OFGBJCCCIKE != 0 {
-            os.write_uint32(9, self.OFGBJCCCIKE)?;
+        if self.LIPDLLHEPBJ != 0 {
+            os.write_uint32(8, self.LIPDLLHEPBJ)?;
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.JBLOKLCPAFN != 0 {
-            os.write_uint32(12, self.JBLOKLCPAFN)?;
+        if self.JLHGJCAPACE != 0 {
+            os.write_uint32(15, self.JLHGJCAPACE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ANGOAMADOMA {
     }
 
     fn clear(&mut self) {
-        self.IJHLOJEFCPM = 0;
-        self.OFGBJCCCIKE = 0;
+        self.EFELGKNFMIJ = 0;
+        self.LIPDLLHEPBJ = 0;
         self.tourn_finish_info.clear();
-        self.JBLOKLCPAFN = 0;
+        self.JLHGJCAPACE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ANGOAMADOMA {
         static instance: ANGOAMADOMA = ANGOAMADOMA {
-            IJHLOJEFCPM: 0,
-            OFGBJCCCIKE: 0,
+            EFELGKNFMIJ: 0,
+            LIPDLLHEPBJ: 0,
             tourn_finish_info: ::protobuf::MessageField::none(),
-            JBLOKLCPAFN: 0,
+            JLHGJCAPACE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for ANGOAMADOMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ANGOAMADOMA.proto\x1a\x1aRogueTournFinishInfo.proto\"\xb6\x01\n\
-    \x0bANGOAMADOMA\x12\x20\n\x0bIJHLOJEFCPM\x18\x04\x20\x01(\rR\x0bIJHLOJEF\
-    CPM\x12\x20\n\x0bOFGBJCCCIKE\x18\t\x20\x01(\rR\x0bOFGBJCCCIKE\x12A\n\x11\
-    tourn_finish_info\x18\x01\x20\x01(\x0b2\x15.RogueTournFinishInfoR\x0ftou\
-    rnFinishInfo\x12\x20\n\x0bJBLOKLCPAFN\x18\x0c\x20\x01(\rR\x0bJBLOKLCPAFN\
-    b\x06proto3\
+    \n\x11ANGOAMADOMA.proto\x1a\x1aRogueTournSettleInfo.proto\"\xb6\x01\n\
+    \x0bANGOAMADOMA\x12\x20\n\x0bEFELGKNFMIJ\x18\x04\x20\x01(\rR\x0bEFELGKNF\
+    MIJ\x12\x20\n\x0bLIPDLLHEPBJ\x18\x08\x20\x01(\rR\x0bLIPDLLHEPBJ\x12A\n\
+    \x11tourn_finish_info\x18\n\x20\x01(\x0b2\x15.RogueTournSettleInfoR\x0ft\
+    ournFinishInfo\x12\x20\n\x0bJLHGJCAPACE\x18\x0f\x20\x01(\rR\x0bJLHGJCAPA\
+    CEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueTournFinishInfo::file_descriptor().clone());
+            deps.push(super::RogueTournSettleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ANGOAMADOMA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -36,8 +36,8 @@ pub struct OILPIACENNH {
     pub level: u32,
     // @@protoc_insertion_point(field:OILPIACENNH.index)
     pub index: u32,
-    // @@protoc_insertion_point(field:OILPIACENNH.GGDIIBCDOBB)
-    pub GGDIIBCDOBB: u32,
+    // @@protoc_insertion_point(field:OILPIACENNH.JJPOOMKKLEA)
+    pub JJPOOMKKLEA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OILPIACENNH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl OILPIACENNH {
             |m: &mut OILPIACENNH| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGDIIBCDOBB",
-            |m: &OILPIACENNH| { &m.GGDIIBCDOBB },
-            |m: &mut OILPIACENNH| { &mut m.GGDIIBCDOBB },
+            "JJPOOMKKLEA",
+            |m: &OILPIACENNH| { &m.JJPOOMKKLEA },
+            |m: &mut OILPIACENNH| { &mut m.JJPOOMKKLEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OILPIACENNH>(
             "OILPIACENNH",
@@ -113,7 +113,7 @@ impl ::protobuf::Message for OILPIACENNH {
                     self.index = is.read_uint32()?;
                 },
                 40 => {
-                    self.GGDIIBCDOBB = is.read_uint32()?;
+                    self.JJPOOMKKLEA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,8 +139,8 @@ impl ::protobuf::Message for OILPIACENNH {
         if self.index != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.index);
         }
-        if self.GGDIIBCDOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GGDIIBCDOBB);
+        if self.JJPOOMKKLEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JJPOOMKKLEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -160,8 +160,8 @@ impl ::protobuf::Message for OILPIACENNH {
         if self.index != 0 {
             os.write_uint32(4, self.index)?;
         }
-        if self.GGDIIBCDOBB != 0 {
-            os.write_uint32(5, self.GGDIIBCDOBB)?;
+        if self.JJPOOMKKLEA != 0 {
+            os.write_uint32(5, self.JJPOOMKKLEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,7 +184,7 @@ impl ::protobuf::Message for OILPIACENNH {
         self.id = 0;
         self.level = 0;
         self.index = 0;
-        self.GGDIIBCDOBB = 0;
+        self.JJPOOMKKLEA = 0;
         self.special_fields.clear();
     }
 
@@ -194,7 +194,7 @@ impl ::protobuf::Message for OILPIACENNH {
             id: 0,
             level: 0,
             index: 0,
-            GGDIIBCDOBB: 0,
+            JJPOOMKKLEA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,7 +223,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     NH\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTy\
     pe\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\
     \x20\x01(\rR\x05level\x12\x14\n\x05index\x18\x04\x20\x01(\rR\x05index\
-    \x12\x20\n\x0bGGDIIBCDOBB\x18\x05\x20\x01(\rR\x0bGGDIIBCDOBBb\x06proto3\
+    \x12\x20\n\x0bJJPOOMKKLEA\x18\x05\x20\x01(\rR\x0bJJPOOMKKLEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

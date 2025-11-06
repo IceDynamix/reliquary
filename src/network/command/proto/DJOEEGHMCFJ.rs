@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DJOEEGHMCFJ {
     // message fields
-    // @@protoc_insertion_point(field:DJOEEGHMCFJ.AAKDAHHIGIF)
-    pub AAKDAHHIGIF: ::protobuf::MessageField<super::EGBKGEMFODN::EGBKGEMFODN>,
+    // @@protoc_insertion_point(field:DJOEEGHMCFJ.COBOFPIJLAD)
+    pub COBOFPIJLAD: ::protobuf::MessageField<super::PlanetFesBusinessDayInfo::PlanetFesBusinessDayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:DJOEEGHMCFJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl DJOEEGHMCFJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EGBKGEMFODN::EGBKGEMFODN>(
-            "AAKDAHHIGIF",
-            |m: &DJOEEGHMCFJ| { &m.AAKDAHHIGIF },
-            |m: &mut DJOEEGHMCFJ| { &mut m.AAKDAHHIGIF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessDayInfo::PlanetFesBusinessDayInfo>(
+            "COBOFPIJLAD",
+            |m: &DJOEEGHMCFJ| { &m.COBOFPIJLAD },
+            |m: &mut DJOEEGHMCFJ| { &mut m.COBOFPIJLAD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DJOEEGHMCFJ>(
             "DJOEEGHMCFJ",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DJOEEGHMCFJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAKDAHHIGIF)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COBOFPIJLAD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for DJOEEGHMCFJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AAKDAHHIGIF.as_ref() {
+        if let Some(v) = self.COBOFPIJLAD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for DJOEEGHMCFJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AAKDAHHIGIF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.COBOFPIJLAD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for DJOEEGHMCFJ {
     }
 
     fn clear(&mut self) {
-        self.AAKDAHHIGIF.clear();
+        self.COBOFPIJLAD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DJOEEGHMCFJ {
         static instance: DJOEEGHMCFJ = DJOEEGHMCFJ {
-            AAKDAHHIGIF: ::protobuf::MessageField::none(),
+            COBOFPIJLAD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for DJOEEGHMCFJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DJOEEGHMCFJ.proto\x1a\x11EGBKGEMFODN.proto\"=\n\x0bDJOEEGHMCFJ\x12\
-    .\n\x0bAAKDAHHIGIF\x18\x06\x20\x01(\x0b2\x0c.EGBKGEMFODNR\x0bAAKDAHHIGIF\
-    b\x06proto3\
+    \n\x11DJOEEGHMCFJ.proto\x1a\x1ePlanetFesBusinessDayInfo.proto\"J\n\x0bDJ\
+    OEEGHMCFJ\x12;\n\x0bCOBOFPIJLAD\x18\x07\x20\x01(\x0b2\x19.PlanetFesBusin\
+    essDayInfoR\x0bCOBOFPIJLADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EGBKGEMFODN::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessDayInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DJOEEGHMCFJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,7 +79,7 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.is_save = is.read_bool()?;
                 },
                 64 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for LeaveRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_save != false {
-            os.write_bool(2, self.is_save)?;
+            os.write_bool(3, self.is_save)?;
         }
         if self.raid_id != 0 {
             os.write_uint32(8, self.raid_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LeaveRaidCsReq.proto\"B\n\x0eLeaveRaidCsReq\x12\x17\n\x07is_save\
-    \x18\x02\x20\x01(\x08R\x06isSave\x12\x17\n\x07raid_id\x18\x08\x20\x01(\r\
+    \x18\x03\x20\x01(\x08R\x06isSave\x12\x17\n\x07raid_id\x18\x08\x20\x01(\r\
     R\x06raidIdb\x06proto3\
 ";
 

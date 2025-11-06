@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IDMDLOKHEBJ {
     // message fields
-    // @@protoc_insertion_point(field:IDMDLOKHEBJ.APPKEEOBJKC)
-    pub APPKEEOBJKC: u32,
-    // @@protoc_insertion_point(field:IDMDLOKHEBJ.HAPEKNJBOJE)
-    pub HAPEKNJBOJE: u32,
+    // @@protoc_insertion_point(field:IDMDLOKHEBJ.NMILGKECGAN)
+    pub NMILGKECGAN: u32,
+    // @@protoc_insertion_point(field:IDMDLOKHEBJ.HMHNFKBEPHC)
+    pub HMHNFKBEPHC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IDMDLOKHEBJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl IDMDLOKHEBJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APPKEEOBJKC",
-            |m: &IDMDLOKHEBJ| { &m.APPKEEOBJKC },
-            |m: &mut IDMDLOKHEBJ| { &mut m.APPKEEOBJKC },
+            "NMILGKECGAN",
+            |m: &IDMDLOKHEBJ| { &m.NMILGKECGAN },
+            |m: &mut IDMDLOKHEBJ| { &mut m.NMILGKECGAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HAPEKNJBOJE",
-            |m: &IDMDLOKHEBJ| { &m.HAPEKNJBOJE },
-            |m: &mut IDMDLOKHEBJ| { &mut m.HAPEKNJBOJE },
+            "HMHNFKBEPHC",
+            |m: &IDMDLOKHEBJ| { &m.HMHNFKBEPHC },
+            |m: &mut IDMDLOKHEBJ| { &mut m.HMHNFKBEPHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IDMDLOKHEBJ>(
             "IDMDLOKHEBJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.APPKEEOBJKC = is.read_uint32()?;
+                16 => {
+                    self.NMILGKECGAN = is.read_uint32()?;
                 },
-                64 => {
-                    self.HAPEKNJBOJE = is.read_uint32()?;
+                80 => {
+                    self.HMHNFKBEPHC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APPKEEOBJKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.APPKEEOBJKC);
+        if self.NMILGKECGAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NMILGKECGAN);
         }
-        if self.HAPEKNJBOJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HAPEKNJBOJE);
+        if self.HMHNFKBEPHC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HMHNFKBEPHC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APPKEEOBJKC != 0 {
-            os.write_uint32(3, self.APPKEEOBJKC)?;
+        if self.NMILGKECGAN != 0 {
+            os.write_uint32(2, self.NMILGKECGAN)?;
         }
-        if self.HAPEKNJBOJE != 0 {
-            os.write_uint32(8, self.HAPEKNJBOJE)?;
+        if self.HMHNFKBEPHC != 0 {
+            os.write_uint32(10, self.HMHNFKBEPHC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for IDMDLOKHEBJ {
     }
 
     fn clear(&mut self) {
-        self.APPKEEOBJKC = 0;
-        self.HAPEKNJBOJE = 0;
+        self.NMILGKECGAN = 0;
+        self.HMHNFKBEPHC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IDMDLOKHEBJ {
         static instance: IDMDLOKHEBJ = IDMDLOKHEBJ {
-            APPKEEOBJKC: 0,
-            HAPEKNJBOJE: 0,
+            NMILGKECGAN: 0,
+            HMHNFKBEPHC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IDMDLOKHEBJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IDMDLOKHEBJ.proto\"Q\n\x0bIDMDLOKHEBJ\x12\x20\n\x0bAPPKEEOBJKC\x18\
-    \x03\x20\x01(\rR\x0bAPPKEEOBJKC\x12\x20\n\x0bHAPEKNJBOJE\x18\x08\x20\x01\
-    (\rR\x0bHAPEKNJBOJEb\x06proto3\
+    \n\x11IDMDLOKHEBJ.proto\"Q\n\x0bIDMDLOKHEBJ\x12\x20\n\x0bNMILGKECGAN\x18\
+    \x02\x20\x01(\rR\x0bNMILGKECGAN\x12\x20\n\x0bHMHNFKBEPHC\x18\n\x20\x01(\
+    \rR\x0bHMHNFKBEPHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

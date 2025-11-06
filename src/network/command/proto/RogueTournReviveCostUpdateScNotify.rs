@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournReviveCostUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournReviveCostUpdateScNotify.rogue_revive_cost)
-    pub rogue_revive_cost: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueTournReviveCostUpdateScNotify.revive_avatar_cost_items)
+    pub revive_avatar_cost_items: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournReviveCostUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueTournReviveCostUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "rogue_revive_cost",
-            |m: &RogueTournReviveCostUpdateScNotify| { &m.rogue_revive_cost },
-            |m: &mut RogueTournReviveCostUpdateScNotify| { &mut m.rogue_revive_cost },
+            "revive_avatar_cost_items",
+            |m: &RogueTournReviveCostUpdateScNotify| { &m.revive_avatar_cost_items },
+            |m: &mut RogueTournReviveCostUpdateScNotify| { &mut m.revive_avatar_cost_items },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournReviveCostUpdateScNotify>(
             "RogueTournReviveCostUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournReviveCostUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_avatar_cost_items)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueTournReviveCostUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_revive_cost.as_ref() {
+        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueTournReviveCostUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_revive_cost.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueTournReviveCostUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.rogue_revive_cost.clear();
+        self.revive_avatar_cost_items.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournReviveCostUpdateScNotify {
         static instance: RogueTournReviveCostUpdateScNotify = RogueTournReviveCostUpdateScNotify {
-            rogue_revive_cost: ::protobuf::MessageField::none(),
+            revive_avatar_cost_items: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReviveCostUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(RogueTournReviveCostUpdateScNotify.proto\x1a\x12ItemCostData.proto\"_\
-    \n\"RogueTournReviveCostUpdateScNotify\x129\n\x11rogue_revive_cost\x18\
-    \x01\x20\x01(\x0b2\r.ItemCostDataR\x0frogueReviveCostb\x06proto3\
+    \n(RogueTournReviveCostUpdateScNotify.proto\x1a\x12ItemCostData.proto\"l\
+    \n\"RogueTournReviveCostUpdateScNotify\x12F\n\x18revive_avatar_cost_item\
+    s\x18\n\x20\x01(\x0b2\r.ItemCostDataR\x15reviveAvatarCostItemsb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FABGLGIINED {
     // message fields
-    // @@protoc_insertion_point(field:FABGLGIINED.DPBMLFFPOKH)
-    pub DPBMLFFPOKH: u32,
-    // @@protoc_insertion_point(field:FABGLGIINED.BGAFCOBNLPM)
-    pub BGAFCOBNLPM: ::std::vec::Vec<super::CLGCLCGMHNB::CLGCLCGMHNB>,
+    // @@protoc_insertion_point(field:FABGLGIINED.bird_record_info_list)
+    pub bird_record_info_list: ::std::vec::Vec<super::CLGCLCGMHNB::CLGCLCGMHNB>,
+    // @@protoc_insertion_point(field:FABGLGIINED.GDGNGGCBICG)
+    pub GDGNGGCBICG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FABGLGIINED.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FABGLGIINED {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPBMLFFPOKH",
-            |m: &FABGLGIINED| { &m.DPBMLFFPOKH },
-            |m: &mut FABGLGIINED| { &mut m.DPBMLFFPOKH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGAFCOBNLPM",
-            |m: &FABGLGIINED| { &m.BGAFCOBNLPM },
-            |m: &mut FABGLGIINED| { &mut m.BGAFCOBNLPM },
+            "bird_record_info_list",
+            |m: &FABGLGIINED| { &m.bird_record_info_list },
+            |m: &mut FABGLGIINED| { &mut m.bird_record_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDGNGGCBICG",
+            |m: &FABGLGIINED| { &m.GDGNGGCBICG },
+            |m: &mut FABGLGIINED| { &mut m.GDGNGGCBICG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FABGLGIINED>(
             "FABGLGIINED",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FABGLGIINED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.DPBMLFFPOKH = is.read_uint32()?;
+                58 => {
+                    self.bird_record_info_list.push(is.read_message()?);
                 },
-                90 => {
-                    self.BGAFCOBNLPM.push(is.read_message()?);
+                104 => {
+                    self.GDGNGGCBICG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for FABGLGIINED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPBMLFFPOKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DPBMLFFPOKH);
-        }
-        for value in &self.BGAFCOBNLPM {
+        for value in &self.bird_record_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GDGNGGCBICG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GDGNGGCBICG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPBMLFFPOKH != 0 {
-            os.write_uint32(1, self.DPBMLFFPOKH)?;
-        }
-        for v in &self.BGAFCOBNLPM {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.bird_record_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.GDGNGGCBICG != 0 {
+            os.write_uint32(13, self.GDGNGGCBICG)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FABGLGIINED {
     }
 
     fn clear(&mut self) {
-        self.DPBMLFFPOKH = 0;
-        self.BGAFCOBNLPM.clear();
+        self.bird_record_info_list.clear();
+        self.GDGNGGCBICG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FABGLGIINED {
         static instance: FABGLGIINED = FABGLGIINED {
-            DPBMLFFPOKH: 0,
-            BGAFCOBNLPM: ::std::vec::Vec::new(),
+            bird_record_info_list: ::std::vec::Vec::new(),
+            GDGNGGCBICG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for FABGLGIINED {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FABGLGIINED.proto\x1a\x11CLGCLCGMHNB.proto\"_\n\x0bFABGLGIINED\x12\
-    \x20\n\x0bDPBMLFFPOKH\x18\x01\x20\x01(\rR\x0bDPBMLFFPOKH\x12.\n\x0bBGAFC\
-    OBNLPM\x18\x0b\x20\x03(\x0b2\x0c.CLGCLCGMHNBR\x0bBGAFCOBNLPMb\x06proto3\
+    \n\x11FABGLGIINED.proto\x1a\x11CLGCLCGMHNB.proto\"p\n\x0bFABGLGIINED\x12\
+    ?\n\x15bird_record_info_list\x18\x07\x20\x03(\x0b2\x0c.CLGCLCGMHNBR\x12b\
+    irdRecordInfoList\x12\x20\n\x0bGDGNGGCBICG\x18\r\x20\x01(\rR\x0bGDGNGGCB\
+    ICGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DIFPDPLCIGD {
     // message fields
-    // @@protoc_insertion_point(field:DIFPDPLCIGD.JFPNMOONLNJ)
-    pub JFPNMOONLNJ: u32,
-    // @@protoc_insertion_point(field:DIFPDPLCIGD.GONEAKBDGEK)
-    pub GONEAKBDGEK: u32,
+    // @@protoc_insertion_point(field:DIFPDPLCIGD.JPEBILMEAJH)
+    pub JPEBILMEAJH: u32,
+    // @@protoc_insertion_point(field:DIFPDPLCIGD.DKACLPFJOOL)
+    pub DKACLPFJOOL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DIFPDPLCIGD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DIFPDPLCIGD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFPNMOONLNJ",
-            |m: &DIFPDPLCIGD| { &m.JFPNMOONLNJ },
-            |m: &mut DIFPDPLCIGD| { &mut m.JFPNMOONLNJ },
+            "JPEBILMEAJH",
+            |m: &DIFPDPLCIGD| { &m.JPEBILMEAJH },
+            |m: &mut DIFPDPLCIGD| { &mut m.JPEBILMEAJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GONEAKBDGEK",
-            |m: &DIFPDPLCIGD| { &m.GONEAKBDGEK },
-            |m: &mut DIFPDPLCIGD| { &mut m.GONEAKBDGEK },
+            "DKACLPFJOOL",
+            |m: &DIFPDPLCIGD| { &m.DKACLPFJOOL },
+            |m: &mut DIFPDPLCIGD| { &mut m.DKACLPFJOOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DIFPDPLCIGD>(
             "DIFPDPLCIGD",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for DIFPDPLCIGD {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.JFPNMOONLNJ = is.read_uint32()?;
+                    self.JPEBILMEAJH = is.read_uint32()?;
                 },
-                32 => {
-                    self.GONEAKBDGEK = is.read_uint32()?;
+                80 => {
+                    self.DKACLPFJOOL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DIFPDPLCIGD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JFPNMOONLNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JFPNMOONLNJ);
+        if self.JPEBILMEAJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JPEBILMEAJH);
         }
-        if self.GONEAKBDGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GONEAKBDGEK);
+        if self.DKACLPFJOOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DKACLPFJOOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DIFPDPLCIGD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JFPNMOONLNJ != 0 {
-            os.write_uint32(6, self.JFPNMOONLNJ)?;
+        if self.JPEBILMEAJH != 0 {
+            os.write_uint32(6, self.JPEBILMEAJH)?;
         }
-        if self.GONEAKBDGEK != 0 {
-            os.write_uint32(4, self.GONEAKBDGEK)?;
+        if self.DKACLPFJOOL != 0 {
+            os.write_uint32(10, self.DKACLPFJOOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DIFPDPLCIGD {
     }
 
     fn clear(&mut self) {
-        self.JFPNMOONLNJ = 0;
-        self.GONEAKBDGEK = 0;
+        self.JPEBILMEAJH = 0;
+        self.DKACLPFJOOL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DIFPDPLCIGD {
         static instance: DIFPDPLCIGD = DIFPDPLCIGD {
-            JFPNMOONLNJ: 0,
-            GONEAKBDGEK: 0,
+            JPEBILMEAJH: 0,
+            DKACLPFJOOL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DIFPDPLCIGD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DIFPDPLCIGD.proto\"Q\n\x0bDIFPDPLCIGD\x12\x20\n\x0bJFPNMOONLNJ\x18\
-    \x06\x20\x01(\rR\x0bJFPNMOONLNJ\x12\x20\n\x0bGONEAKBDGEK\x18\x04\x20\x01\
-    (\rR\x0bGONEAKBDGEKb\x06proto3\
+    \n\x11DIFPDPLCIGD.proto\"Q\n\x0bDIFPDPLCIGD\x12\x20\n\x0bJPEBILMEAJH\x18\
+    \x06\x20\x01(\rR\x0bJPEBILMEAJH\x12\x20\n\x0bDKACLPFJOOL\x18\n\x20\x01(\
+    \rR\x0bDKACLPFJOOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

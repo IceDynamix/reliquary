@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct OPGJGDOGGNJ {
     // message fields
     // @@protoc_insertion_point(field:OPGJGDOGGNJ.pos)
-    pub pos: ::protobuf::EnumOrUnknown<super::KAMLGLMNJGJ::KAMLGLMNJGJ>,
-    // @@protoc_insertion_point(field:OPGJGDOGGNJ.BDJCGCDJOEO)
-    pub BDJCGCDJOEO: u32,
+    pub pos: ::protobuf::EnumOrUnknown<super::WorkPos::WorkPos>,
+    // @@protoc_insertion_point(field:OPGJGDOGGNJ.FNAHNKOAOAP)
+    pub FNAHNKOAOAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OPGJGDOGGNJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl OPGJGDOGGNJ {
             |m: &mut OPGJGDOGGNJ| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDJCGCDJOEO",
-            |m: &OPGJGDOGGNJ| { &m.BDJCGCDJOEO },
-            |m: &mut OPGJGDOGGNJ| { &mut m.BDJCGCDJOEO },
+            "FNAHNKOAOAP",
+            |m: &OPGJGDOGGNJ| { &m.FNAHNKOAOAP },
+            |m: &mut OPGJGDOGGNJ| { &mut m.FNAHNKOAOAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPGJGDOGGNJ>(
             "OPGJGDOGGNJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OPGJGDOGGNJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.pos = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.BDJCGCDJOEO = is.read_uint32()?;
+                56 => {
+                    self.FNAHNKOAOAP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OPGJGDOGGNJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.pos.value());
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::WorkPos::WorkPos::WORK_POS_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.pos.value());
         }
-        if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BDJCGCDJOEO);
+        if self.FNAHNKOAOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FNAHNKOAOAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OPGJGDOGGNJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.pos))?;
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::WorkPos::WorkPos::WORK_POS_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.pos))?;
         }
-        if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(13, self.BDJCGCDJOEO)?;
+        if self.FNAHNKOAOAP != 0 {
+            os.write_uint32(7, self.FNAHNKOAOAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OPGJGDOGGNJ {
     }
 
     fn clear(&mut self) {
-        self.pos = ::protobuf::EnumOrUnknown::new(super::KAMLGLMNJGJ::KAMLGLMNJGJ::WORK_POS_NONE);
-        self.BDJCGCDJOEO = 0;
+        self.pos = ::protobuf::EnumOrUnknown::new(super::WorkPos::WorkPos::WORK_POS_NONE);
+        self.FNAHNKOAOAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPGJGDOGGNJ {
         static instance: OPGJGDOGGNJ = OPGJGDOGGNJ {
             pos: ::protobuf::EnumOrUnknown::from_i32(0),
-            BDJCGCDJOEO: 0,
+            FNAHNKOAOAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for OPGJGDOGGNJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OPGJGDOGGNJ.proto\x1a\x11KAMLGLMNJGJ.proto\"O\n\x0bOPGJGDOGGNJ\x12\
-    \x1e\n\x03pos\x18\x0f\x20\x01(\x0e2\x0c.KAMLGLMNJGJR\x03pos\x12\x20\n\
-    \x0bBDJCGCDJOEO\x18\r\x20\x01(\rR\x0bBDJCGCDJOEOb\x06proto3\
+    \n\x11OPGJGDOGGNJ.proto\x1a\rWorkPos.proto\"K\n\x0bOPGJGDOGGNJ\x12\x1a\n\
+    \x03pos\x18\x04\x20\x01(\x0e2\x08.WorkPosR\x03pos\x12\x20\n\x0bFNAHNKOAO\
+    AP\x18\x07\x20\x01(\rR\x0bFNAHNKOAOAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +185,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KAMLGLMNJGJ::file_descriptor().clone());
+            deps.push(super::WorkPos::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OPGJGDOGGNJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

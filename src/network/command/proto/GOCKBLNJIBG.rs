@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GOCKBLNJIBG {
     // message fields
-    // @@protoc_insertion_point(field:GOCKBLNJIBG.JGMIPMDPPIJ)
-    pub JGMIPMDPPIJ: u32,
+    // @@protoc_insertion_point(field:GOCKBLNJIBG.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:GOCKBLNJIBG.skill_id)
     pub skill_id: u32,
     // @@protoc_insertion_point(field:GOCKBLNJIBG.skill_level)
@@ -54,9 +54,9 @@ impl GOCKBLNJIBG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGMIPMDPPIJ",
-            |m: &GOCKBLNJIBG| { &m.JGMIPMDPPIJ },
-            |m: &mut GOCKBLNJIBG| { &mut m.JGMIPMDPPIJ },
+            "max_level",
+            |m: &GOCKBLNJIBG| { &m.max_level },
+            |m: &mut GOCKBLNJIBG| { &mut m.max_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -86,10 +86,10 @@ impl ::protobuf::Message for GOCKBLNJIBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.JGMIPMDPPIJ = is.read_uint32()?;
+                32 => {
+                    self.max_level = is.read_uint32()?;
                 },
-                40 => {
+                48 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 120 => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GOCKBLNJIBG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JGMIPMDPPIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JGMIPMDPPIJ);
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.max_level);
         }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.skill_id);
         }
         if self.skill_level != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.skill_level);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for GOCKBLNJIBG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JGMIPMDPPIJ != 0 {
-            os.write_uint32(11, self.JGMIPMDPPIJ)?;
+        if self.max_level != 0 {
+            os.write_uint32(4, self.max_level)?;
         }
         if self.skill_id != 0 {
-            os.write_uint32(5, self.skill_id)?;
+            os.write_uint32(6, self.skill_id)?;
         }
         if self.skill_level != 0 {
             os.write_uint32(15, self.skill_level)?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for GOCKBLNJIBG {
     }
 
     fn clear(&mut self) {
-        self.JGMIPMDPPIJ = 0;
+        self.max_level = 0;
         self.skill_id = 0;
         self.skill_level = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for GOCKBLNJIBG {
 
     fn default_instance() -> &'static GOCKBLNJIBG {
         static instance: GOCKBLNJIBG = GOCKBLNJIBG {
-            JGMIPMDPPIJ: 0,
+            max_level: 0,
             skill_id: 0,
             skill_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GOCKBLNJIBG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GOCKBLNJIBG.proto\"k\n\x0bGOCKBLNJIBG\x12\x20\n\x0bJGMIPMDPPIJ\x18\
-    \x0b\x20\x01(\rR\x0bJGMIPMDPPIJ\x12\x19\n\x08skill_id\x18\x05\x20\x01(\r\
-    R\x07skillId\x12\x1f\n\x0bskill_level\x18\x0f\x20\x01(\rR\nskillLevelb\
-    \x06proto3\
+    \n\x11GOCKBLNJIBG.proto\"f\n\x0bGOCKBLNJIBG\x12\x1b\n\tmax_level\x18\x04\
+    \x20\x01(\rR\x08maxLevel\x12\x19\n\x08skill_id\x18\x06\x20\x01(\rR\x07sk\
+    illId\x12\x1f\n\x0bskill_level\x18\x0f\x20\x01(\rR\nskillLevelb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

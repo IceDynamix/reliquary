@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EntityMotion {
     // message fields
-    // @@protoc_insertion_point(field:EntityMotion.NFOPIKDKPGG)
-    pub NFOPIKDKPGG: bool,
-    // @@protoc_insertion_point(field:EntityMotion.map_layer)
-    pub map_layer: u32,
     // @@protoc_insertion_point(field:EntityMotion.entity_id)
     pub entity_id: u32,
+    // @@protoc_insertion_point(field:EntityMotion.map_layer)
+    pub map_layer: u32,
     // @@protoc_insertion_point(field:EntityMotion.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:EntityMotion.PENNEHCJBHG)
+    pub PENNEHCJBHG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EntityMotion.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl EntityMotion {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFOPIKDKPGG",
-            |m: &EntityMotion| { &m.NFOPIKDKPGG },
-            |m: &mut EntityMotion| { &mut m.NFOPIKDKPGG },
+            "entity_id",
+            |m: &EntityMotion| { &m.entity_id },
+            |m: &mut EntityMotion| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_layer",
             |m: &EntityMotion| { &m.map_layer },
             |m: &mut EntityMotion| { &mut m.map_layer },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &EntityMotion| { &m.entity_id },
-            |m: &mut EntityMotion| { &mut m.entity_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &EntityMotion| { &m.motion },
             |m: &mut EntityMotion| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PENNEHCJBHG",
+            |m: &EntityMotion| { &m.PENNEHCJBHG },
+            |m: &mut EntityMotion| { &mut m.PENNEHCJBHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EntityMotion>(
             "EntityMotion",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EntityMotion {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NFOPIKDKPGG = is.read_bool()?;
-                },
-                32 => {
-                    self.map_layer = is.read_uint32()?;
-                },
                 72 => {
                     self.entity_id = is.read_uint32()?;
                 },
+                80 => {
+                    self.map_layer = is.read_uint32()?;
+                },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                120 => {
+                    self.PENNEHCJBHG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for EntityMotion {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFOPIKDKPGG != false {
-            my_size += 1 + 1;
-        }
-        if self.map_layer != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.map_layer);
-        }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.entity_id);
+        }
+        if self.map_layer != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.map_layer);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.PENNEHCJBHG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for EntityMotion {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFOPIKDKPGG != false {
-            os.write_bool(5, self.NFOPIKDKPGG)?;
-        }
-        if self.map_layer != 0 {
-            os.write_uint32(4, self.map_layer)?;
-        }
         if self.entity_id != 0 {
             os.write_uint32(9, self.entity_id)?;
         }
+        if self.map_layer != 0 {
+            os.write_uint32(10, self.map_layer)?;
+        }
         if let Some(v) = self.motion.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.PENNEHCJBHG != false {
+            os.write_bool(15, self.PENNEHCJBHG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for EntityMotion {
     }
 
     fn clear(&mut self) {
-        self.NFOPIKDKPGG = false;
-        self.map_layer = 0;
         self.entity_id = 0;
+        self.map_layer = 0;
         self.motion.clear();
+        self.PENNEHCJBHG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EntityMotion {
         static instance: EntityMotion = EntityMotion {
-            NFOPIKDKPGG: false,
-            map_layer: 0,
             entity_id: 0,
+            map_layer: 0,
             motion: ::protobuf::MessageField::none(),
+            PENNEHCJBHG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for EntityMotion {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12EntityMotion.proto\x1a\x10MotionInfo.proto\"\x8f\x01\n\x0cEntityMo\
-    tion\x12\x20\n\x0bNFOPIKDKPGG\x18\x05\x20\x01(\x08R\x0bNFOPIKDKPGG\x12\
-    \x1b\n\tmap_layer\x18\x04\x20\x01(\rR\x08mapLayer\x12\x1b\n\tentity_id\
-    \x18\t\x20\x01(\rR\x08entityId\x12#\n\x06motion\x18\x0c\x20\x01(\x0b2\
-    \x0b.MotionInfoR\x06motionb\x06proto3\
+    tion\x12\x1b\n\tentity_id\x18\t\x20\x01(\rR\x08entityId\x12\x1b\n\tmap_l\
+    ayer\x18\n\x20\x01(\rR\x08mapLayer\x12#\n\x06motion\x18\x0c\x20\x01(\x0b\
+    2\x0b.MotionInfoR\x06motion\x12\x20\n\x0bPENNEHCJBHG\x18\x0f\x20\x01(\
+    \x08R\x0bPENNEHCJBHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

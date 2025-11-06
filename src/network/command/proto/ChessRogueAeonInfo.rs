@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueAeonInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueAeonInfo.ICJABPGMACJ)
-    pub ICJABPGMACJ: i32,
-    // @@protoc_insertion_point(field:ChessRogueAeonInfo.game_aeon_id)
-    pub game_aeon_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueAeonInfo.BOHDMINEJNO)
-    pub BOHDMINEJNO: ::protobuf::MessageField<super::EENDHPKPFLP::EENDHPKPFLP>,
-    // @@protoc_insertion_point(field:ChessRogueAeonInfo.aeon_id_list)
-    pub aeon_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueAeonInfo.cur_aeon_modifier_value)
+    pub cur_aeon_modifier_value: i32,
+    // @@protoc_insertion_point(field:ChessRogueAeonInfo.selected_aeon_id)
+    pub selected_aeon_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueAeonInfo.select_aeon_id_list)
+    pub select_aeon_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChessRogueAeonInfo.chess_aeon_info)
     pub chess_aeon_info: ::protobuf::MessageField<super::ChessRogueQueryAeonInfo::ChessRogueQueryAeonInfo>,
+    // @@protoc_insertion_point(field:ChessRogueAeonInfo.GGDELBIMIML)
+    pub GGDELBIMIML: ::protobuf::MessageField<super::EENDHPKPFLP::EENDHPKPFLP>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueAeonInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl ChessRogueAeonInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICJABPGMACJ",
-            |m: &ChessRogueAeonInfo| { &m.ICJABPGMACJ },
-            |m: &mut ChessRogueAeonInfo| { &mut m.ICJABPGMACJ },
+            "cur_aeon_modifier_value",
+            |m: &ChessRogueAeonInfo| { &m.cur_aeon_modifier_value },
+            |m: &mut ChessRogueAeonInfo| { &mut m.cur_aeon_modifier_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_aeon_id",
-            |m: &ChessRogueAeonInfo| { &m.game_aeon_id },
-            |m: &mut ChessRogueAeonInfo| { &mut m.game_aeon_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EENDHPKPFLP::EENDHPKPFLP>(
-            "BOHDMINEJNO",
-            |m: &ChessRogueAeonInfo| { &m.BOHDMINEJNO },
-            |m: &mut ChessRogueAeonInfo| { &mut m.BOHDMINEJNO },
+            "selected_aeon_id",
+            |m: &ChessRogueAeonInfo| { &m.selected_aeon_id },
+            |m: &mut ChessRogueAeonInfo| { &mut m.selected_aeon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "aeon_id_list",
-            |m: &ChessRogueAeonInfo| { &m.aeon_id_list },
-            |m: &mut ChessRogueAeonInfo| { &mut m.aeon_id_list },
+            "select_aeon_id_list",
+            |m: &ChessRogueAeonInfo| { &m.select_aeon_id_list },
+            |m: &mut ChessRogueAeonInfo| { &mut m.select_aeon_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueQueryAeonInfo::ChessRogueQueryAeonInfo>(
             "chess_aeon_info",
             |m: &ChessRogueAeonInfo| { &m.chess_aeon_info },
             |m: &mut ChessRogueAeonInfo| { &mut m.chess_aeon_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EENDHPKPFLP::EENDHPKPFLP>(
+            "GGDELBIMIML",
+            |m: &ChessRogueAeonInfo| { &m.GGDELBIMIML },
+            |m: &mut ChessRogueAeonInfo| { &mut m.GGDELBIMIML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueAeonInfo>(
             "ChessRogueAeonInfo",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for ChessRogueAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ICJABPGMACJ = is.read_int32()?;
+                16 => {
+                    self.cur_aeon_modifier_value = is.read_int32()?;
                 },
-                112 => {
-                    self.game_aeon_id = is.read_uint32()?;
+                56 => {
+                    self.selected_aeon_id = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOHDMINEJNO)?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.select_aeon_id_list)?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.aeon_id_list)?;
+                72 => {
+                    self.select_aeon_id_list.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.aeon_id_list.push(is.read_uint32()?);
-                },
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.chess_aeon_info)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGDELBIMIML)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for ChessRogueAeonInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICJABPGMACJ != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.ICJABPGMACJ);
+        if self.cur_aeon_modifier_value != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.cur_aeon_modifier_value);
         }
-        if self.game_aeon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.game_aeon_id);
+        if self.selected_aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.selected_aeon_id);
         }
-        if let Some(v) = self.BOHDMINEJNO.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.select_aeon_id_list);
+        if let Some(v) = self.chess_aeon_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.aeon_id_list);
-        if let Some(v) = self.chess_aeon_info.as_ref() {
+        if let Some(v) = self.GGDELBIMIML.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,18 +151,18 @@ impl ::protobuf::Message for ChessRogueAeonInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICJABPGMACJ != 0 {
-            os.write_int32(8, self.ICJABPGMACJ)?;
+        if self.cur_aeon_modifier_value != 0 {
+            os.write_int32(2, self.cur_aeon_modifier_value)?;
         }
-        if self.game_aeon_id != 0 {
-            os.write_uint32(14, self.game_aeon_id)?;
+        if self.selected_aeon_id != 0 {
+            os.write_uint32(7, self.selected_aeon_id)?;
         }
-        if let Some(v) = self.BOHDMINEJNO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.aeon_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.select_aeon_id_list)?;
         if let Some(v) = self.chess_aeon_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.GGDELBIMIML.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for ChessRogueAeonInfo {
     }
 
     fn clear(&mut self) {
-        self.ICJABPGMACJ = 0;
-        self.game_aeon_id = 0;
-        self.BOHDMINEJNO.clear();
-        self.aeon_id_list.clear();
+        self.cur_aeon_modifier_value = 0;
+        self.selected_aeon_id = 0;
+        self.select_aeon_id_list.clear();
         self.chess_aeon_info.clear();
+        self.GGDELBIMIML.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueAeonInfo {
         static instance: ChessRogueAeonInfo = ChessRogueAeonInfo {
-            ICJABPGMACJ: 0,
-            game_aeon_id: 0,
-            BOHDMINEJNO: ::protobuf::MessageField::none(),
-            aeon_id_list: ::std::vec::Vec::new(),
+            cur_aeon_modifier_value: 0,
+            selected_aeon_id: 0,
+            select_aeon_id_list: ::std::vec::Vec::new(),
             chess_aeon_info: ::protobuf::MessageField::none(),
+            GGDELBIMIML: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueAeonInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChessRogueAeonInfo.proto\x1a\x1dChessRogueQueryAeonInfo.proto\x1a\
-    \x11EENDHPKPFLP.proto\"\xec\x01\n\x12ChessRogueAeonInfo\x12\x20\n\x0bICJ\
-    ABPGMACJ\x18\x08\x20\x01(\x05R\x0bICJABPGMACJ\x12\x20\n\x0cgame_aeon_id\
-    \x18\x0e\x20\x01(\rR\ngameAeonId\x12.\n\x0bBOHDMINEJNO\x18\x03\x20\x01(\
-    \x0b2\x0c.EENDHPKPFLPR\x0bBOHDMINEJNO\x12\x20\n\x0caeon_id_list\x18\r\
-    \x20\x03(\rR\naeonIdList\x12@\n\x0fchess_aeon_info\x18\x07\x20\x01(\x0b2\
-    \x18.ChessRogueQueryAeonInfoR\rchessAeonInfob\x06proto3\
+    \x11EENDHPKPFLP.proto\"\x96\x02\n\x12ChessRogueAeonInfo\x125\n\x17cur_ae\
+    on_modifier_value\x18\x02\x20\x01(\x05R\x14curAeonModifierValue\x12(\n\
+    \x10selected_aeon_id\x18\x07\x20\x01(\rR\x0eselectedAeonId\x12-\n\x13sel\
+    ect_aeon_id_list\x18\t\x20\x03(\rR\x10selectAeonIdList\x12@\n\x0fchess_a\
+    eon_info\x18\n\x20\x01(\x0b2\x18.ChessRogueQueryAeonInfoR\rchessAeonInfo\
+    \x12.\n\x0bGGDELBIMIML\x18\x0b\x20\x01(\x0b2\x0c.EENDHPKPFLPR\x0bGGDELBI\
+    MIMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

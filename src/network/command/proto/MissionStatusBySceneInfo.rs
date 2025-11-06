@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionStatusBySceneInfo {
     // message fields
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.sub_mission_status_list)
-    pub sub_mission_status_list: ::std::vec::Vec<super::Mission::Mission>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.INBAGECJGIG)
+    pub INBAGECJGIG: ::std::vec::Vec<super::MainMissionMcv::MainMissionMcv>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.HOPLCIIAGIO)
+    pub HOPLCIIAGIO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionStatusBySceneInfo.finished_main_mission_id_list)
     pub finished_main_mission_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.BIGEHKDPGPN)
-    pub BIGEHKDPGPN: ::std::vec::Vec<super::MainMissionCustomValue::MainMissionCustomValue>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.disabled_main_mission_id_list)
-    pub disabled_main_mission_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.unfinished_main_mission_id_list)
-    pub unfinished_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.PIILMEPNECJ)
+    pub PIILMEPNECJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionStatusBySceneInfo.sub_mission_status_list)
+    pub sub_mission_status_list: ::std::vec::Vec<super::Mission::Mission>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionStatusBySceneInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl MissionStatusBySceneInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sub_mission_status_list",
-            |m: &MissionStatusBySceneInfo| { &m.sub_mission_status_list },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.sub_mission_status_list },
+            "INBAGECJGIG",
+            |m: &MissionStatusBySceneInfo| { &m.INBAGECJGIG },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.INBAGECJGIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HOPLCIIAGIO",
+            |m: &MissionStatusBySceneInfo| { &m.HOPLCIIAGIO },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.HOPLCIIAGIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_main_mission_id_list",
@@ -68,19 +73,14 @@ impl MissionStatusBySceneInfo {
             |m: &mut MissionStatusBySceneInfo| { &mut m.finished_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIGEHKDPGPN",
-            |m: &MissionStatusBySceneInfo| { &m.BIGEHKDPGPN },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.BIGEHKDPGPN },
+            "PIILMEPNECJ",
+            |m: &MissionStatusBySceneInfo| { &m.PIILMEPNECJ },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.PIILMEPNECJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "disabled_main_mission_id_list",
-            |m: &MissionStatusBySceneInfo| { &m.disabled_main_mission_id_list },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.disabled_main_mission_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unfinished_main_mission_id_list",
-            |m: &MissionStatusBySceneInfo| { &m.unfinished_main_mission_id_list },
-            |m: &mut MissionStatusBySceneInfo| { &mut m.unfinished_main_mission_id_list },
+            "sub_mission_status_list",
+            |m: &MissionStatusBySceneInfo| { &m.sub_mission_status_list },
+            |m: &mut MissionStatusBySceneInfo| { &mut m.sub_mission_status_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionStatusBySceneInfo>(
             "MissionStatusBySceneInfo",
@@ -100,29 +100,29 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.sub_mission_status_list.push(is.read_message()?);
+                26 => {
+                    self.INBAGECJGIG.push(is.read_message()?);
                 },
-                50 => {
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HOPLCIIAGIO)?;
+                },
+                72 => {
+                    self.HOPLCIIAGIO.push(is.read_uint32()?);
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_main_mission_id_list)?;
                 },
-                48 => {
+                104 => {
                     self.finished_main_mission_id_list.push(is.read_uint32()?);
                 },
-                98 => {
-                    self.BIGEHKDPGPN.push(is.read_message()?);
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.disabled_main_mission_id_list)?;
-                },
-                8 => {
-                    self.disabled_main_mission_id_list.push(is.read_uint32()?);
-                },
                 114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unfinished_main_mission_id_list)?;
+                    is.read_repeated_packed_uint32_into(&mut self.PIILMEPNECJ)?;
                 },
                 112 => {
-                    self.unfinished_main_mission_id_list.push(is.read_uint32()?);
+                    self.PIILMEPNECJ.push(is.read_uint32()?);
+                },
+                122 => {
+                    self.sub_mission_status_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -136,32 +136,32 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.INBAGECJGIG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HOPLCIIAGIO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.finished_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PIILMEPNECJ);
         for value in &self.sub_mission_status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.finished_main_mission_id_list);
-        for value in &self.BIGEHKDPGPN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.disabled_main_mission_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.unfinished_main_mission_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.INBAGECJGIG {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        os.write_repeated_packed_uint32(9, &self.HOPLCIIAGIO)?;
+        os.write_repeated_packed_uint32(13, &self.finished_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.PIILMEPNECJ)?;
         for v in &self.sub_mission_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.finished_main_mission_id_list)?;
-        for v in &self.BIGEHKDPGPN {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        os.write_repeated_packed_uint32(1, &self.disabled_main_mission_id_list)?;
-        os.write_repeated_packed_uint32(14, &self.unfinished_main_mission_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -179,21 +179,21 @@ impl ::protobuf::Message for MissionStatusBySceneInfo {
     }
 
     fn clear(&mut self) {
-        self.sub_mission_status_list.clear();
+        self.INBAGECJGIG.clear();
+        self.HOPLCIIAGIO.clear();
         self.finished_main_mission_id_list.clear();
-        self.BIGEHKDPGPN.clear();
-        self.disabled_main_mission_id_list.clear();
-        self.unfinished_main_mission_id_list.clear();
+        self.PIILMEPNECJ.clear();
+        self.sub_mission_status_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionStatusBySceneInfo {
         static instance: MissionStatusBySceneInfo = MissionStatusBySceneInfo {
-            sub_mission_status_list: ::std::vec::Vec::new(),
+            INBAGECJGIG: ::std::vec::Vec::new(),
+            HOPLCIIAGIO: ::std::vec::Vec::new(),
             finished_main_mission_id_list: ::std::vec::Vec::new(),
-            BIGEHKDPGPN: ::std::vec::Vec::new(),
-            disabled_main_mission_id_list: ::std::vec::Vec::new(),
-            unfinished_main_mission_id_list: ::std::vec::Vec::new(),
+            PIILMEPNECJ: ::std::vec::Vec::new(),
+            sub_mission_status_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,15 +218,14 @@ impl ::protobuf::reflect::ProtobufValue for MissionStatusBySceneInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMissionStatusBySceneInfo.proto\x1a\x1cMainMissionCustomValue.proto\
-    \x1a\rMission.proto\"\xe0\x02\n\x18MissionStatusBySceneInfo\x12?\n\x17su\
-    b_mission_status_list\x18\x0b\x20\x03(\x0b2\x08.MissionR\x14subMissionSt\
-    atusList\x12@\n\x1dfinished_main_mission_id_list\x18\x06\x20\x03(\rR\x19\
-    finishedMainMissionIdList\x129\n\x0bBIGEHKDPGPN\x18\x0c\x20\x03(\x0b2\
-    \x17.MainMissionCustomValueR\x0bBIGEHKDPGPN\x12@\n\x1ddisabled_main_miss\
-    ion_id_list\x18\x01\x20\x03(\rR\x19disabledMainMissionIdList\x12D\n\x1fu\
-    nfinished_main_mission_id_list\x18\x0e\x20\x03(\rR\x1bunfinishedMainMiss\
-    ionIdListb\x06proto3\
+    \n\x1eMissionStatusBySceneInfo.proto\x1a\x14MainMissionMcv.proto\x1a\rMi\
+    ssion.proto\"\x94\x02\n\x18MissionStatusBySceneInfo\x121\n\x0bINBAGECJGI\
+    G\x18\x03\x20\x03(\x0b2\x0f.MainMissionMcvR\x0bINBAGECJGIG\x12\x20\n\x0b\
+    HOPLCIIAGIO\x18\t\x20\x03(\rR\x0bHOPLCIIAGIO\x12@\n\x1dfinished_main_mis\
+    sion_id_list\x18\r\x20\x03(\rR\x19finishedMainMissionIdList\x12\x20\n\
+    \x0bPIILMEPNECJ\x18\x0e\x20\x03(\rR\x0bPIILMEPNECJ\x12?\n\x17sub_mission\
+    _status_list\x18\x0f\x20\x03(\x0b2\x08.MissionR\x14subMissionStatusListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,7 +243,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MainMissionCustomValue::file_descriptor().clone());
+            deps.push(super::MainMissionMcv::file_descriptor().clone());
             deps.push(super::Mission::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MissionStatusBySceneInfo::generated_message_descriptor_data());

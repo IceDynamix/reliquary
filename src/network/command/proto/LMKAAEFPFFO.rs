@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LMKAAEFPFFO {
     // message fields
-    // @@protoc_insertion_point(field:LMKAAEFPFFO.OGJOFMCMFPG)
-    pub OGJOFMCMFPG: u32,
+    // @@protoc_insertion_point(field:LMKAAEFPFFO.IIHAMCDOMPH)
+    pub IIHAMCDOMPH: u32,
     // @@protoc_insertion_point(field:LMKAAEFPFFO.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:LMKAAEFPFFO.BMALPKEKBEL)
-    pub BMALPKEKBEL: u32,
+    // @@protoc_insertion_point(field:LMKAAEFPFFO.AAHEDIMFFME)
+    pub AAHEDIMFFME: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LMKAAEFPFFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl LMKAAEFPFFO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGJOFMCMFPG",
-            |m: &LMKAAEFPFFO| { &m.OGJOFMCMFPG },
-            |m: &mut LMKAAEFPFFO| { &mut m.OGJOFMCMFPG },
+            "IIHAMCDOMPH",
+            |m: &LMKAAEFPFFO| { &m.IIHAMCDOMPH },
+            |m: &mut LMKAAEFPFFO| { &mut m.IIHAMCDOMPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -64,9 +64,9 @@ impl LMKAAEFPFFO {
             |m: &mut LMKAAEFPFFO| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMALPKEKBEL",
-            |m: &LMKAAEFPFFO| { &m.BMALPKEKBEL },
-            |m: &mut LMKAAEFPFFO| { &mut m.BMALPKEKBEL },
+            "AAHEDIMFFME",
+            |m: &LMKAAEFPFFO| { &m.AAHEDIMFFME },
+            |m: &mut LMKAAEFPFFO| { &mut m.AAHEDIMFFME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMKAAEFPFFO>(
             "LMKAAEFPFFO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.OGJOFMCMFPG = is.read_uint32()?;
+                16 => {
+                    self.IIHAMCDOMPH = is.read_uint32()?;
                 },
                 56 => {
                     self.item_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.BMALPKEKBEL = is.read_uint32()?;
+                104 => {
+                    self.AAHEDIMFFME = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OGJOFMCMFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OGJOFMCMFPG);
+        if self.IIHAMCDOMPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IIHAMCDOMPH);
         }
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.item_id);
         }
-        if self.BMALPKEKBEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BMALPKEKBEL);
+        if self.AAHEDIMFFME != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AAHEDIMFFME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OGJOFMCMFPG != 0 {
-            os.write_uint32(14, self.OGJOFMCMFPG)?;
+        if self.IIHAMCDOMPH != 0 {
+            os.write_uint32(2, self.IIHAMCDOMPH)?;
         }
         if self.item_id != 0 {
             os.write_uint32(7, self.item_id)?;
         }
-        if self.BMALPKEKBEL != 0 {
-            os.write_uint32(1, self.BMALPKEKBEL)?;
+        if self.AAHEDIMFFME != 0 {
+            os.write_uint32(13, self.AAHEDIMFFME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LMKAAEFPFFO {
     }
 
     fn clear(&mut self) {
-        self.OGJOFMCMFPG = 0;
+        self.IIHAMCDOMPH = 0;
         self.item_id = 0;
-        self.BMALPKEKBEL = 0;
+        self.AAHEDIMFFME = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMKAAEFPFFO {
         static instance: LMKAAEFPFFO = LMKAAEFPFFO {
-            OGJOFMCMFPG: 0,
+            IIHAMCDOMPH: 0,
             item_id: 0,
-            BMALPKEKBEL: 0,
+            AAHEDIMFFME: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LMKAAEFPFFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LMKAAEFPFFO.proto\"j\n\x0bLMKAAEFPFFO\x12\x20\n\x0bOGJOFMCMFPG\x18\
-    \x0e\x20\x01(\rR\x0bOGJOFMCMFPG\x12\x17\n\x07item_id\x18\x07\x20\x01(\rR\
-    \x06itemId\x12\x20\n\x0bBMALPKEKBEL\x18\x01\x20\x01(\rR\x0bBMALPKEKBELb\
+    \n\x11LMKAAEFPFFO.proto\"j\n\x0bLMKAAEFPFFO\x12\x20\n\x0bIIHAMCDOMPH\x18\
+    \x02\x20\x01(\rR\x0bIIHAMCDOMPH\x12\x17\n\x07item_id\x18\x07\x20\x01(\rR\
+    \x06itemId\x12\x20\n\x0bAAHEDIMFFME\x18\r\x20\x01(\rR\x0bAAHEDIMFFMEb\
     \x06proto3\
 ";
 

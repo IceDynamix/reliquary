@@ -30,10 +30,10 @@ pub struct MMMNFDNLJMD {
     // message fields
     // @@protoc_insertion_point(field:MMMNFDNLJMD.queue_position)
     pub queue_position: u32,
-    // @@protoc_insertion_point(field:MMMNFDNLJMD.GPJGGKNOAFD)
-    pub GPJGGKNOAFD: u32,
+    // @@protoc_insertion_point(field:MMMNFDNLJMD.JHCCOPNEIFA)
+    pub JHCCOPNEIFA: u32,
     // message oneof groups
-    pub OEEHIFHNFDH: ::std::option::Option<mmmnfdnljmd::OEEHIFHNFDH>,
+    pub ILAAKOMCALI: ::std::option::Option<mmmnfdnljmd::ILAAKOMCALI>,
     // special fields
     // @@protoc_insertion_point(special_field:MMMNFDNLJMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,36 +53,36 @@ impl MMMNFDNLJMD {
     // .LJNPGKDOJHO marble_game_begin = 101;
 
     pub fn marble_game_begin(&self) -> &super::LJNPGKDOJHO::LJNPGKDOJHO {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(ref v)) => v,
             _ => <super::LJNPGKDOJHO::LJNPGKDOJHO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_marble_game_begin(&mut self) {
-        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
     }
 
     pub fn has_marble_game_begin(&self) -> bool {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(..)) => true,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_marble_game_begin(&mut self, v: super::LJNPGKDOJHO::LJNPGKDOJHO) {
-        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(v))
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_marble_game_begin(&mut self) -> &mut super::LJNPGKDOJHO::LJNPGKDOJHO {
-        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(_)) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(_)) = self.ILAAKOMCALI {
         } else {
-            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(super::LJNPGKDOJHO::LJNPGKDOJHO::new()));
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(super::LJNPGKDOJHO::LJNPGKDOJHO::new()));
         }
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref mut v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl MMMNFDNLJMD {
     // Take field
     pub fn take_marble_game_begin(&mut self) -> super::LJNPGKDOJHO::LJNPGKDOJHO {
         if self.has_marble_game_begin() {
-            match self.OEEHIFHNFDH.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(v)) => v,
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -102,36 +102,36 @@ impl MMMNFDNLJMD {
     // .BPNMJCHEDNL marble_game_end = 102;
 
     pub fn marble_game_end(&self) -> &super::BPNMJCHEDNL::BPNMJCHEDNL {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(ref v)) => v,
             _ => <super::BPNMJCHEDNL::BPNMJCHEDNL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_marble_game_end(&mut self) {
-        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
     }
 
     pub fn has_marble_game_end(&self) -> bool {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(..)) => true,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_marble_game_end(&mut self, v: super::BPNMJCHEDNL::BPNMJCHEDNL) {
-        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(v))
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_marble_game_end(&mut self) -> &mut super::BPNMJCHEDNL::BPNMJCHEDNL {
-        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(_)) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(_)) = self.ILAAKOMCALI {
         } else {
-            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(super::BPNMJCHEDNL::BPNMJCHEDNL::new()));
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(super::BPNMJCHEDNL::BPNMJCHEDNL::new()));
         }
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref mut v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -139,8 +139,8 @@ impl MMMNFDNLJMD {
     // Take field
     pub fn take_marble_game_end(&mut self) -> super::BPNMJCHEDNL::BPNMJCHEDNL {
         if self.has_marble_game_end() {
-            match self.OEEHIFHNFDH.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(v)) => v,
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -151,36 +151,36 @@ impl MMMNFDNLJMD {
     // .FOOPINGAFEG marble_game_round = 103;
 
     pub fn marble_game_round(&self) -> &super::FOOPINGAFEG::FOOPINGAFEG {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(ref v)) => v,
             _ => <super::FOOPINGAFEG::FOOPINGAFEG as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_marble_game_round(&mut self) {
-        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
     }
 
     pub fn has_marble_game_round(&self) -> bool {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(..)) => true,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_marble_game_round(&mut self, v: super::FOOPINGAFEG::FOOPINGAFEG) {
-        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(v))
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_marble_game_round(&mut self) -> &mut super::FOOPINGAFEG::FOOPINGAFEG {
-        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(_)) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(_)) = self.ILAAKOMCALI {
         } else {
-            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(super::FOOPINGAFEG::FOOPINGAFEG::new()));
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(super::FOOPINGAFEG::FOOPINGAFEG::new()));
         }
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref mut v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -188,8 +188,8 @@ impl MMMNFDNLJMD {
     // Take field
     pub fn take_marble_game_round(&mut self) -> super::FOOPINGAFEG::FOOPINGAFEG {
         if self.has_marble_game_round() {
-            match self.OEEHIFHNFDH.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(v)) => v,
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -200,36 +200,36 @@ impl MMMNFDNLJMD {
     // .OFILKJCLEGI marble_game_turn = 104;
 
     pub fn marble_game_turn(&self) -> &super::OFILKJCLEGI::OFILKJCLEGI {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(ref v)) => v,
             _ => <super::OFILKJCLEGI::OFILKJCLEGI as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_marble_game_turn(&mut self) {
-        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
     }
 
     pub fn has_marble_game_turn(&self) -> bool {
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(..)) => true,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_marble_game_turn(&mut self, v: super::OFILKJCLEGI::OFILKJCLEGI) {
-        self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(v))
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_marble_game_turn(&mut self) -> &mut super::OFILKJCLEGI::OFILKJCLEGI {
-        if let ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(_)) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(_)) = self.ILAAKOMCALI {
         } else {
-            self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(super::OFILKJCLEGI::OFILKJCLEGI::new()));
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(super::OFILKJCLEGI::OFILKJCLEGI::new()));
         }
-        match self.OEEHIFHNFDH {
-            ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref mut v)) => v,
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -237,8 +237,8 @@ impl MMMNFDNLJMD {
     // Take field
     pub fn take_marble_game_turn(&mut self) -> super::OFILKJCLEGI::OFILKJCLEGI {
         if self.has_marble_game_turn() {
-            match self.OEEHIFHNFDH.take() {
-                ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(v)) => v,
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -246,19 +246,156 @@ impl MMMNFDNLJMD {
         }
     }
 
+    // .BEFCMJCMIEE cake_race_section_begin = 201;
+
+    pub fn cake_race_section_begin(&self) -> &super::BEFCMJCMIEE::BEFCMJCMIEE {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(ref v)) => v,
+            _ => <super::BEFCMJCMIEE::BEFCMJCMIEE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_cake_race_section_begin(&mut self) {
+        self.ILAAKOMCALI = ::std::option::Option::None;
+    }
+
+    pub fn has_cake_race_section_begin(&self) -> bool {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_cake_race_section_begin(&mut self, v: super::BEFCMJCMIEE::BEFCMJCMIEE) {
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_cake_race_section_begin(&mut self) -> &mut super::BEFCMJCMIEE::BEFCMJCMIEE {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(_)) = self.ILAAKOMCALI {
+        } else {
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(super::BEFCMJCMIEE::BEFCMJCMIEE::new()));
+        }
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_cake_race_section_begin(&mut self) -> super::BEFCMJCMIEE::BEFCMJCMIEE {
+        if self.has_cake_race_section_begin() {
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BEFCMJCMIEE::BEFCMJCMIEE::new()
+        }
+    }
+
+    // .KPJHJIAEIBB cake_race_section_end = 202;
+
+    pub fn cake_race_section_end(&self) -> &super::KPJHJIAEIBB::KPJHJIAEIBB {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(ref v)) => v,
+            _ => <super::KPJHJIAEIBB::KPJHJIAEIBB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_cake_race_section_end(&mut self) {
+        self.ILAAKOMCALI = ::std::option::Option::None;
+    }
+
+    pub fn has_cake_race_section_end(&self) -> bool {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_cake_race_section_end(&mut self, v: super::KPJHJIAEIBB::KPJHJIAEIBB) {
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_cake_race_section_end(&mut self) -> &mut super::KPJHJIAEIBB::KPJHJIAEIBB {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(_)) = self.ILAAKOMCALI {
+        } else {
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(super::KPJHJIAEIBB::KPJHJIAEIBB::new()));
+        }
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_cake_race_section_end(&mut self) -> super::KPJHJIAEIBB::KPJHJIAEIBB {
+        if self.has_cake_race_section_end() {
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KPJHJIAEIBB::KPJHJIAEIBB::new()
+        }
+    }
+
+    // .EOPEOMGHCDJ cake_race_room_section_settle = 203;
+
+    pub fn cake_race_room_section_settle(&self) -> &super::EOPEOMGHCDJ::EOPEOMGHCDJ {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(ref v)) => v,
+            _ => <super::EOPEOMGHCDJ::EOPEOMGHCDJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_cake_race_room_section_settle(&mut self) {
+        self.ILAAKOMCALI = ::std::option::Option::None;
+    }
+
+    pub fn has_cake_race_room_section_settle(&self) -> bool {
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_cake_race_room_section_settle(&mut self, v: super::EOPEOMGHCDJ::EOPEOMGHCDJ) {
+        self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_cake_race_room_section_settle(&mut self) -> &mut super::EOPEOMGHCDJ::EOPEOMGHCDJ {
+        if let ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(_)) = self.ILAAKOMCALI {
+        } else {
+            self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(super::EOPEOMGHCDJ::EOPEOMGHCDJ::new()));
+        }
+        match self.ILAAKOMCALI {
+            ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_cake_race_room_section_settle(&mut self) -> super::EOPEOMGHCDJ::EOPEOMGHCDJ {
+        if self.has_cake_race_room_section_settle() {
+            match self.ILAAKOMCALI.take() {
+                ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::EOPEOMGHCDJ::EOPEOMGHCDJ::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "queue_position",
-            |m: &MMMNFDNLJMD| { &m.queue_position },
-            |m: &mut MMMNFDNLJMD| { &mut m.queue_position },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPJGGKNOAFD",
-            |m: &MMMNFDNLJMD| { &m.GPJGGKNOAFD },
-            |m: &mut MMMNFDNLJMD| { &mut m.GPJGGKNOAFD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJNPGKDOJHO::LJNPGKDOJHO>(
             "marble_game_begin",
             MMMNFDNLJMD::has_marble_game_begin,
@@ -287,7 +424,38 @@ impl MMMNFDNLJMD {
             MMMNFDNLJMD::mut_marble_game_turn,
             MMMNFDNLJMD::set_marble_game_turn,
         ));
-        oneofs.push(mmmnfdnljmd::OEEHIFHNFDH::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BEFCMJCMIEE::BEFCMJCMIEE>(
+            "cake_race_section_begin",
+            MMMNFDNLJMD::has_cake_race_section_begin,
+            MMMNFDNLJMD::cake_race_section_begin,
+            MMMNFDNLJMD::mut_cake_race_section_begin,
+            MMMNFDNLJMD::set_cake_race_section_begin,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KPJHJIAEIBB::KPJHJIAEIBB>(
+            "cake_race_section_end",
+            MMMNFDNLJMD::has_cake_race_section_end,
+            MMMNFDNLJMD::cake_race_section_end,
+            MMMNFDNLJMD::mut_cake_race_section_end,
+            MMMNFDNLJMD::set_cake_race_section_end,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EOPEOMGHCDJ::EOPEOMGHCDJ>(
+            "cake_race_room_section_settle",
+            MMMNFDNLJMD::has_cake_race_room_section_settle,
+            MMMNFDNLJMD::cake_race_room_section_settle,
+            MMMNFDNLJMD::mut_cake_race_room_section_settle,
+            MMMNFDNLJMD::set_cake_race_room_section_settle,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "queue_position",
+            |m: &MMMNFDNLJMD| { &m.queue_position },
+            |m: &mut MMMNFDNLJMD| { &mut m.queue_position },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JHCCOPNEIFA",
+            |m: &MMMNFDNLJMD| { &m.JHCCOPNEIFA },
+            |m: &mut MMMNFDNLJMD| { &mut m.JHCCOPNEIFA },
+        ));
+        oneofs.push(mmmnfdnljmd::ILAAKOMCALI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMMNFDNLJMD>(
             "MMMNFDNLJMD",
             fields,
@@ -306,23 +474,32 @@ impl ::protobuf::Message for MMMNFDNLJMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                810 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(is.read_message()?));
+                },
+                818 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(is.read_message()?));
+                },
+                826 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(is.read_message()?));
+                },
+                834 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(is.read_message()?));
+                },
+                1610 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(is.read_message()?));
+                },
+                1618 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(is.read_message()?));
+                },
+                1626 => {
+                    self.ILAAKOMCALI = ::std::option::Option::Some(mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(is.read_message()?));
+                },
                 8 => {
                     self.queue_position = is.read_uint32()?;
                 },
                 16 => {
-                    self.GPJGGKNOAFD = is.read_uint32()?;
-                },
-                810 => {
-                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(is.read_message()?));
-                },
-                818 => {
-                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(is.read_message()?));
-                },
-                826 => {
-                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(is.read_message()?));
-                },
-                834 => {
-                    self.OEEHIFHNFDH = ::std::option::Option::Some(mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(is.read_message()?));
+                    self.JHCCOPNEIFA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -339,24 +516,36 @@ impl ::protobuf::Message for MMMNFDNLJMD {
         if self.queue_position != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.queue_position);
         }
-        if self.GPJGGKNOAFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GPJGGKNOAFD);
+        if self.JHCCOPNEIFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JHCCOPNEIFA);
         }
-        if let ::std::option::Option::Some(ref v) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(ref v) = self.ILAAKOMCALI {
             match v {
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -371,22 +560,31 @@ impl ::protobuf::Message for MMMNFDNLJMD {
         if self.queue_position != 0 {
             os.write_uint32(1, self.queue_position)?;
         }
-        if self.GPJGGKNOAFD != 0 {
-            os.write_uint32(2, self.GPJGGKNOAFD)?;
+        if self.JHCCOPNEIFA != 0 {
+            os.write_uint32(2, self.JHCCOPNEIFA)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.OEEHIFHNFDH {
+        if let ::std::option::Option::Some(ref v) = self.ILAAKOMCALI {
             match v {
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameBegin(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameBegin(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameEnd(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameEnd(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameRound(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameRound(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(103, v, os)?;
                 },
-                &mmmnfdnljmd::OEEHIFHNFDH::MarbleGameTurn(ref v) => {
+                &mmmnfdnljmd::ILAAKOMCALI::MarbleGameTurn(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(104, v, os)?;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionBegin(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(201, v, os)?;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceSectionEnd(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(202, v, os)?;
+                },
+                &mmmnfdnljmd::ILAAKOMCALI::CakeRaceRoomSectionSettle(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(203, v, os)?;
                 },
             };
         }
@@ -407,20 +605,23 @@ impl ::protobuf::Message for MMMNFDNLJMD {
     }
 
     fn clear(&mut self) {
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
+        self.ILAAKOMCALI = ::std::option::Option::None;
         self.queue_position = 0;
-        self.GPJGGKNOAFD = 0;
-        self.OEEHIFHNFDH = ::std::option::Option::None;
-        self.OEEHIFHNFDH = ::std::option::Option::None;
-        self.OEEHIFHNFDH = ::std::option::Option::None;
-        self.OEEHIFHNFDH = ::std::option::Option::None;
+        self.JHCCOPNEIFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMMNFDNLJMD {
         static instance: MMMNFDNLJMD = MMMNFDNLJMD {
             queue_position: 0,
-            GPJGGKNOAFD: 0,
-            OEEHIFHNFDH: ::std::option::Option::None,
+            JHCCOPNEIFA: 0,
+            ILAAKOMCALI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -449,8 +650,8 @@ pub mod mmmnfdnljmd {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:MMMNFDNLJMD.OEEHIFHNFDH)
-    pub enum OEEHIFHNFDH {
+    // @@protoc_insertion_point(oneof:MMMNFDNLJMD.ILAAKOMCALI)
+    pub enum ILAAKOMCALI {
         // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_begin)
         MarbleGameBegin(super::super::LJNPGKDOJHO::LJNPGKDOJHO),
         // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_end)
@@ -459,35 +660,47 @@ pub mod mmmnfdnljmd {
         MarbleGameRound(super::super::FOOPINGAFEG::FOOPINGAFEG),
         // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.marble_game_turn)
         MarbleGameTurn(super::super::OFILKJCLEGI::OFILKJCLEGI),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.cake_race_section_begin)
+        CakeRaceSectionBegin(super::super::BEFCMJCMIEE::BEFCMJCMIEE),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.cake_race_section_end)
+        CakeRaceSectionEnd(super::super::KPJHJIAEIBB::KPJHJIAEIBB),
+        // @@protoc_insertion_point(oneof_field:MMMNFDNLJMD.cake_race_room_section_settle)
+        CakeRaceRoomSectionSettle(super::super::EOPEOMGHCDJ::EOPEOMGHCDJ),
     }
 
-    impl ::protobuf::Oneof for OEEHIFHNFDH {
+    impl ::protobuf::Oneof for ILAAKOMCALI {
     }
 
-    impl ::protobuf::OneofFull for OEEHIFHNFDH {
+    impl ::protobuf::OneofFull for ILAAKOMCALI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::MMMNFDNLJMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("OEEHIFHNFDH").unwrap()).clone()
+            descriptor.get(|| <super::MMMNFDNLJMD as ::protobuf::MessageFull>::descriptor().oneof_by_name("ILAAKOMCALI").unwrap()).clone()
         }
     }
 
-    impl OEEHIFHNFDH {
+    impl ILAAKOMCALI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OEEHIFHNFDH>("OEEHIFHNFDH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ILAAKOMCALI>("ILAAKOMCALI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMMNFDNLJMD.proto\x1a\x11BPNMJCHEDNL.proto\x1a\x11FOOPINGAFEG.prot\
-    o\x1a\x11LJNPGKDOJHO.proto\x1a\x11OFILKJCLEGI.proto\"\xcf\x02\n\x0bMMMNF\
-    DNLJMD\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueuePosition\x12\
-    \x20\n\x0bGPJGGKNOAFD\x18\x02\x20\x01(\rR\x0bGPJGGKNOAFD\x12:\n\x11marbl\
-    e_game_begin\x18e\x20\x01(\x0b2\x0c.LJNPGKDOJHOH\0R\x0fmarbleGameBegin\
-    \x126\n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c.BPNMJCHEDNLH\0R\rmarbl\
-    eGameEnd\x12:\n\x11marble_game_round\x18g\x20\x01(\x0b2\x0c.FOOPINGAFEGH\
-    \0R\x0fmarbleGameRound\x128\n\x10marble_game_turn\x18h\x20\x01(\x0b2\x0c\
-    .OFILKJCLEGIH\0R\x0emarbleGameTurnB\r\n\x0bOEEHIFHNFDHb\x06proto3\
+    \n\x11MMMNFDNLJMD.proto\x1a\x11BEFCMJCMIEE.proto\x1a\x11BPNMJCHEDNL.prot\
+    o\x1a\x11EOPEOMGHCDJ.proto\x1a\x11FOOPINGAFEG.proto\x1a\x11KPJHJIAEIBB.p\
+    roto\x1a\x11LJNPGKDOJHO.proto\x1a\x11OFILKJCLEGI.proto\"\xae\x04\n\x0bMM\
+    MNFDNLJMD\x12:\n\x11marble_game_begin\x18e\x20\x01(\x0b2\x0c.LJNPGKDOJHO\
+    H\0R\x0fmarbleGameBegin\x126\n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c\
+    .BPNMJCHEDNLH\0R\rmarbleGameEnd\x12:\n\x11marble_game_round\x18g\x20\x01\
+    (\x0b2\x0c.FOOPINGAFEGH\0R\x0fmarbleGameRound\x128\n\x10marble_game_turn\
+    \x18h\x20\x01(\x0b2\x0c.OFILKJCLEGIH\0R\x0emarbleGameTurn\x12F\n\x17cake\
+    _race_section_begin\x18\xc9\x01\x20\x01(\x0b2\x0c.BEFCMJCMIEEH\0R\x14cak\
+    eRaceSectionBegin\x12B\n\x15cake_race_section_end\x18\xca\x01\x20\x01(\
+    \x0b2\x0c.KPJHJIAEIBBH\0R\x12cakeRaceSectionEnd\x12Q\n\x1dcake_race_room\
+    _section_settle\x18\xcb\x01\x20\x01(\x0b2\x0c.EOPEOMGHCDJH\0R\x19cakeRac\
+    eRoomSectionSettle\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueuePo\
+    sition\x12\x20\n\x0bJHCCOPNEIFA\x18\x02\x20\x01(\rR\x0bJHCCOPNEIFAB\r\n\
+    \x0bILAAKOMCALIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -504,9 +717,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
+            let mut deps = ::std::vec::Vec::with_capacity(7);
+            deps.push(super::BEFCMJCMIEE::file_descriptor().clone());
             deps.push(super::BPNMJCHEDNL::file_descriptor().clone());
+            deps.push(super::EOPEOMGHCDJ::file_descriptor().clone());
             deps.push(super::FOOPINGAFEG::file_descriptor().clone());
+            deps.push(super::KPJHJIAEIBB::file_descriptor().clone());
             deps.push(super::LJNPGKDOJHO::file_descriptor().clone());
             deps.push(super::OFILKJCLEGI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

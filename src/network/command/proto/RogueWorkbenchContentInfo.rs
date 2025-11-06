@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchContentInfo {
     // message oneof groups
-    pub ECOEKHPGMEA: ::std::option::Option<rogue_workbench_content_info::ECOEKHPGMEA>,
+    pub LOFNLGCFGIC: ::std::option::Option<rogue_workbench_content_info::LOFNLGCFGIC>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchContentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,293 +45,146 @@ impl RogueWorkbenchContentInfo {
         ::std::default::Default::default()
     }
 
-    // .WorkbenchReforgeBuffTargetInfo reforge_buff_func = 1;
+    // .ALNIGMCJFDM PICLEGGGNCF = 4;
 
-    pub fn reforge_buff_func(&self) -> &super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(ref v)) => v,
-            _ => <super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo as ::protobuf::Message>::default_instance(),
+    pub fn PICLEGGGNCF(&self) -> &super::ALNIGMCJFDM::ALNIGMCJFDM {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(ref v)) => v,
+            _ => <super::ALNIGMCJFDM::ALNIGMCJFDM as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_reforge_buff_func(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+    pub fn clear_PICLEGGGNCF(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
-    pub fn has_reforge_buff_func(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(..)) => true,
+    pub fn has_PICLEGGGNCF(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_reforge_buff_func(&mut self, v: super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(v))
+    pub fn set_PICLEGGGNCF(&mut self, v: super::ALNIGMCJFDM::ALNIGMCJFDM) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_reforge_buff_func(&mut self) -> &mut super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(_)) = self.ECOEKHPGMEA {
+    pub fn mut_PICLEGGGNCF(&mut self) -> &mut super::ALNIGMCJFDM::ALNIGMCJFDM {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(super::ALNIGMCJFDM::ALNIGMCJFDM::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_reforge_buff_func(&mut self) -> super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo {
-        if self.has_reforge_buff_func() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(v)) => v,
+    pub fn take_PICLEGGGNCF(&mut self) -> super::ALNIGMCJFDM::ALNIGMCJFDM {
+        if self.has_PICLEGGGNCF() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo::new()
+            super::ALNIGMCJFDM::ALNIGMCJFDM::new()
         }
     }
 
-    // .WorkbenchReforgeFormulaTargetInfo reforge_formula_func = 3;
+    // .AKKCDLMLKDF CGGNFJCBBKM = 12;
 
-    pub fn reforge_formula_func(&self) -> &super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(ref v)) => v,
-            _ => <super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo as ::protobuf::Message>::default_instance(),
+    pub fn CGGNFJCBBKM(&self) -> &super::AKKCDLMLKDF::AKKCDLMLKDF {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(ref v)) => v,
+            _ => <super::AKKCDLMLKDF::AKKCDLMLKDF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_reforge_formula_func(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+    pub fn clear_CGGNFJCBBKM(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
-    pub fn has_reforge_formula_func(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(..)) => true,
+    pub fn has_CGGNFJCBBKM(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_reforge_formula_func(&mut self, v: super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(v))
+    pub fn set_CGGNFJCBBKM(&mut self, v: super::AKKCDLMLKDF::AKKCDLMLKDF) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_reforge_formula_func(&mut self) -> &mut super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(_)) = self.ECOEKHPGMEA {
+    pub fn mut_CGGNFJCBBKM(&mut self) -> &mut super::AKKCDLMLKDF::AKKCDLMLKDF {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(super::AKKCDLMLKDF::AKKCDLMLKDF::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_reforge_formula_func(&mut self) -> super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo {
-        if self.has_reforge_formula_func() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(v)) => v,
+    pub fn take_CGGNFJCBBKM(&mut self) -> super::AKKCDLMLKDF::AKKCDLMLKDF {
+        if self.has_CGGNFJCBBKM() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo::new()
+            super::AKKCDLMLKDF::AKKCDLMLKDF::new()
         }
     }
 
-    // .WorkbenchEnhanceBuffTargetInfo enhance_buff_func = 8;
+    // .JDOOIDBKCIM JLFDDMEKLJK = 10;
 
-    pub fn enhance_buff_func(&self) -> &super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(ref v)) => v,
-            _ => <super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_enhance_buff_func(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-    }
-
-    pub fn has_enhance_buff_func(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_enhance_buff_func(&mut self, v: super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_enhance_buff_func(&mut self) -> &mut super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(_)) = self.ECOEKHPGMEA {
-        } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo::new()));
-        }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_enhance_buff_func(&mut self) -> super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo {
-        if self.has_enhance_buff_func() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo::new()
-        }
-    }
-
-    // .WorkbenchComposeMiracleTargetInfo compose_miracle_func = 15;
-
-    pub fn compose_miracle_func(&self) -> &super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(ref v)) => v,
-            _ => <super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_compose_miracle_func(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-    }
-
-    pub fn has_compose_miracle_func(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_compose_miracle_func(&mut self, v: super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_compose_miracle_func(&mut self) -> &mut super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(_)) = self.ECOEKHPGMEA {
-        } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo::new()));
-        }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_compose_miracle_func(&mut self) -> super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo {
-        if self.has_compose_miracle_func() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo::new()
-        }
-    }
-
-    // .WorkbenchReforgeHexAvatarTargetInfo reforge_hex_avatar_func = 5;
-
-    pub fn reforge_hex_avatar_func(&self) -> &super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(ref v)) => v,
-            _ => <super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_reforge_hex_avatar_func(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-    }
-
-    pub fn has_reforge_hex_avatar_func(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_reforge_hex_avatar_func(&mut self, v: super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_reforge_hex_avatar_func(&mut self) -> &mut super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(_)) = self.ECOEKHPGMEA {
-        } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo::new()));
-        }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_reforge_hex_avatar_func(&mut self) -> super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo {
-        if self.has_reforge_hex_avatar_func() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo::new()
-        }
-    }
-
-    // .JDOOIDBKCIM magic_item = 7;
-
-    pub fn magic_item(&self) -> &super::JDOOIDBKCIM::JDOOIDBKCIM {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(ref v)) => v,
+    pub fn JLFDDMEKLJK(&self) -> &super::JDOOIDBKCIM::JDOOIDBKCIM {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(ref v)) => v,
             _ => <super::JDOOIDBKCIM::JDOOIDBKCIM as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_magic_item(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+    pub fn clear_JLFDDMEKLJK(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
-    pub fn has_magic_item(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(..)) => true,
+    pub fn has_JLFDDMEKLJK(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_magic_item(&mut self, v: super::JDOOIDBKCIM::JDOOIDBKCIM) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(v))
+    pub fn set_JLFDDMEKLJK(&mut self, v: super::JDOOIDBKCIM::JDOOIDBKCIM) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_magic_item(&mut self) -> &mut super::JDOOIDBKCIM::JDOOIDBKCIM {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(_)) = self.ECOEKHPGMEA {
+    pub fn mut_JLFDDMEKLJK(&mut self) -> &mut super::JDOOIDBKCIM::JDOOIDBKCIM {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(super::JDOOIDBKCIM::JDOOIDBKCIM::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(super::JDOOIDBKCIM::JDOOIDBKCIM::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_magic_item(&mut self) -> super::JDOOIDBKCIM::JDOOIDBKCIM {
-        if self.has_magic_item() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(v)) => v,
+    pub fn take_JLFDDMEKLJK(&mut self) -> super::JDOOIDBKCIM::JDOOIDBKCIM {
+        if self.has_JLFDDMEKLJK() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -339,48 +192,195 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .GJBBLCIPBHD game_magic_unit = 12;
+    // .NEOCCICFNED enhance_buff_func = 2;
 
-    pub fn game_magic_unit(&self) -> &super::GJBBLCIPBHD::GJBBLCIPBHD {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(ref v)) => v,
-            _ => <super::GJBBLCIPBHD::GJBBLCIPBHD as ::protobuf::Message>::default_instance(),
+    pub fn enhance_buff_func(&self) -> &super::NEOCCICFNED::NEOCCICFNED {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(ref v)) => v,
+            _ => <super::NEOCCICFNED::NEOCCICFNED as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_game_magic_unit(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+    pub fn clear_enhance_buff_func(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
-    pub fn has_game_magic_unit(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(..)) => true,
+    pub fn has_enhance_buff_func(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_game_magic_unit(&mut self, v: super::GJBBLCIPBHD::GJBBLCIPBHD) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(v))
+    pub fn set_enhance_buff_func(&mut self, v: super::NEOCCICFNED::NEOCCICFNED) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_game_magic_unit(&mut self) -> &mut super::GJBBLCIPBHD::GJBBLCIPBHD {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(_)) = self.ECOEKHPGMEA {
+    pub fn mut_enhance_buff_func(&mut self) -> &mut super::NEOCCICFNED::NEOCCICFNED {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(super::GJBBLCIPBHD::GJBBLCIPBHD::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(super::NEOCCICFNED::NEOCCICFNED::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_game_magic_unit(&mut self) -> super::GJBBLCIPBHD::GJBBLCIPBHD {
-        if self.has_game_magic_unit() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(v)) => v,
+    pub fn take_enhance_buff_func(&mut self) -> super::NEOCCICFNED::NEOCCICFNED {
+        if self.has_enhance_buff_func() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NEOCCICFNED::NEOCCICFNED::new()
+        }
+    }
+
+    // .KOJKPLCEGEN compose_miracle_func = 15;
+
+    pub fn compose_miracle_func(&self) -> &super::KOJKPLCEGEN::KOJKPLCEGEN {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(ref v)) => v,
+            _ => <super::KOJKPLCEGEN::KOJKPLCEGEN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_compose_miracle_func(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+    }
+
+    pub fn has_compose_miracle_func(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_compose_miracle_func(&mut self, v: super::KOJKPLCEGEN::KOJKPLCEGEN) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_compose_miracle_func(&mut self) -> &mut super::KOJKPLCEGEN::KOJKPLCEGEN {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(_)) = self.LOFNLGCFGIC {
+        } else {
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(super::KOJKPLCEGEN::KOJKPLCEGEN::new()));
+        }
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_compose_miracle_func(&mut self) -> super::KOJKPLCEGEN::KOJKPLCEGEN {
+        if self.has_compose_miracle_func() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KOJKPLCEGEN::KOJKPLCEGEN::new()
+        }
+    }
+
+    // .BHJHAPDLPNO NDKHOGEMKJA = 13;
+
+    pub fn NDKHOGEMKJA(&self) -> &super::BHJHAPDLPNO::BHJHAPDLPNO {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(ref v)) => v,
+            _ => <super::BHJHAPDLPNO::BHJHAPDLPNO as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NDKHOGEMKJA(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+    }
+
+    pub fn has_NDKHOGEMKJA(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NDKHOGEMKJA(&mut self, v: super::BHJHAPDLPNO::BHJHAPDLPNO) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NDKHOGEMKJA(&mut self) -> &mut super::BHJHAPDLPNO::BHJHAPDLPNO {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(_)) = self.LOFNLGCFGIC {
+        } else {
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(super::BHJHAPDLPNO::BHJHAPDLPNO::new()));
+        }
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NDKHOGEMKJA(&mut self) -> super::BHJHAPDLPNO::BHJHAPDLPNO {
+        if self.has_NDKHOGEMKJA() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BHJHAPDLPNO::BHJHAPDLPNO::new()
+        }
+    }
+
+    // .GJBBLCIPBHD LCBECPOOGCL = 6;
+
+    pub fn LCBECPOOGCL(&self) -> &super::GJBBLCIPBHD::GJBBLCIPBHD {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(ref v)) => v,
+            _ => <super::GJBBLCIPBHD::GJBBLCIPBHD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LCBECPOOGCL(&mut self) {
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+    }
+
+    pub fn has_LCBECPOOGCL(&self) -> bool {
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LCBECPOOGCL(&mut self, v: super::GJBBLCIPBHD::GJBBLCIPBHD) {
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LCBECPOOGCL(&mut self) -> &mut super::GJBBLCIPBHD::GJBBLCIPBHD {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(_)) = self.LOFNLGCFGIC {
+        } else {
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(super::GJBBLCIPBHD::GJBBLCIPBHD::new()));
+        }
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LCBECPOOGCL(&mut self) -> super::GJBBLCIPBHD::GJBBLCIPBHD {
+        if self.has_LCBECPOOGCL() {
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -391,36 +391,36 @@ impl RogueWorkbenchContentInfo {
     // .LEHGLCELJMF CEAJNLIOFHF = 11;
 
     pub fn CEAJNLIOFHF(&self) -> &super::LEHGLCELJMF::LEHGLCELJMF {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(ref v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(ref v)) => v,
             _ => <super::LEHGLCELJMF::LEHGLCELJMF as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CEAJNLIOFHF(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
     pub fn has_CEAJNLIOFHF(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(..)) => true,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CEAJNLIOFHF(&mut self, v: super::LEHGLCELJMF::LEHGLCELJMF) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(v))
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_CEAJNLIOFHF(&mut self) -> &mut super::LEHGLCELJMF::LEHGLCELJMF {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(_)) = self.ECOEKHPGMEA {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(super::LEHGLCELJMF::LEHGLCELJMF::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(super::LEHGLCELJMF::LEHGLCELJMF::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -428,8 +428,8 @@ impl RogueWorkbenchContentInfo {
     // Take field
     pub fn take_CEAJNLIOFHF(&mut self) -> super::LEHGLCELJMF::LEHGLCELJMF {
         if self.has_CEAJNLIOFHF() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(v)) => v,
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -437,39 +437,39 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .FHJGLOPMFNC PGPAAPOPDOC = 9;
+    // .FHJGLOPMFNC PGPAAPOPDOC = 8;
 
     pub fn PGPAAPOPDOC(&self) -> &super::FHJGLOPMFNC::FHJGLOPMFNC {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(ref v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(ref v)) => v,
             _ => <super::FHJGLOPMFNC::FHJGLOPMFNC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_PGPAAPOPDOC(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
     pub fn has_PGPAAPOPDOC(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(..)) => true,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_PGPAAPOPDOC(&mut self, v: super::FHJGLOPMFNC::FHJGLOPMFNC) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(v))
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_PGPAAPOPDOC(&mut self) -> &mut super::FHJGLOPMFNC::FHJGLOPMFNC {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(_)) = self.ECOEKHPGMEA {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(super::FHJGLOPMFNC::FHJGLOPMFNC::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(super::FHJGLOPMFNC::FHJGLOPMFNC::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -477,8 +477,8 @@ impl RogueWorkbenchContentInfo {
     // Take field
     pub fn take_PGPAAPOPDOC(&mut self) -> super::FHJGLOPMFNC::FHJGLOPMFNC {
         if self.has_PGPAAPOPDOC() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(v)) => v,
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -486,39 +486,39 @@ impl RogueWorkbenchContentInfo {
         }
     }
 
-    // .JBNCDFFPDOP PMKEHGBPCNG = 2;
+    // .JBNCDFFPDOP PMKEHGBPCNG = 14;
 
     pub fn PMKEHGBPCNG(&self) -> &super::JBNCDFFPDOP::JBNCDFFPDOP {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(ref v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(ref v)) => v,
             _ => <super::JBNCDFFPDOP::JBNCDFFPDOP as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_PMKEHGBPCNG(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
     }
 
     pub fn has_PMKEHGBPCNG(&self) -> bool {
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(..)) => true,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_PMKEHGBPCNG(&mut self, v: super::JBNCDFFPDOP::JBNCDFFPDOP) {
-        self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(v))
+        self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_PMKEHGBPCNG(&mut self) -> &mut super::JBNCDFFPDOP::JBNCDFFPDOP {
-        if let ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(_)) = self.ECOEKHPGMEA {
+        if let ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(_)) = self.LOFNLGCFGIC {
         } else {
-            self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(super::JBNCDFFPDOP::JBNCDFFPDOP::new()));
+            self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(super::JBNCDFFPDOP::JBNCDFFPDOP::new()));
         }
-        match self.ECOEKHPGMEA {
-            ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(ref mut v)) => v,
+        match self.LOFNLGCFGIC {
+            ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -526,8 +526,8 @@ impl RogueWorkbenchContentInfo {
     // Take field
     pub fn take_PMKEHGBPCNG(&mut self) -> super::JBNCDFFPDOP::JBNCDFFPDOP {
         if self.has_PMKEHGBPCNG() {
-            match self.ECOEKHPGMEA.take() {
-                ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(v)) => v,
+            match self.LOFNLGCFGIC.take() {
+                ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -538,54 +538,54 @@ impl RogueWorkbenchContentInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo>(
-            "reforge_buff_func",
-            RogueWorkbenchContentInfo::has_reforge_buff_func,
-            RogueWorkbenchContentInfo::reforge_buff_func,
-            RogueWorkbenchContentInfo::mut_reforge_buff_func,
-            RogueWorkbenchContentInfo::set_reforge_buff_func,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ALNIGMCJFDM::ALNIGMCJFDM>(
+            "PICLEGGGNCF",
+            RogueWorkbenchContentInfo::has_PICLEGGGNCF,
+            RogueWorkbenchContentInfo::PICLEGGGNCF,
+            RogueWorkbenchContentInfo::mut_PICLEGGGNCF,
+            RogueWorkbenchContentInfo::set_PICLEGGGNCF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo>(
-            "reforge_formula_func",
-            RogueWorkbenchContentInfo::has_reforge_formula_func,
-            RogueWorkbenchContentInfo::reforge_formula_func,
-            RogueWorkbenchContentInfo::mut_reforge_formula_func,
-            RogueWorkbenchContentInfo::set_reforge_formula_func,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AKKCDLMLKDF::AKKCDLMLKDF>(
+            "CGGNFJCBBKM",
+            RogueWorkbenchContentInfo::has_CGGNFJCBBKM,
+            RogueWorkbenchContentInfo::CGGNFJCBBKM,
+            RogueWorkbenchContentInfo::mut_CGGNFJCBBKM,
+            RogueWorkbenchContentInfo::set_CGGNFJCBBKM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JDOOIDBKCIM::JDOOIDBKCIM>(
+            "JLFDDMEKLJK",
+            RogueWorkbenchContentInfo::has_JLFDDMEKLJK,
+            RogueWorkbenchContentInfo::JLFDDMEKLJK,
+            RogueWorkbenchContentInfo::mut_JLFDDMEKLJK,
+            RogueWorkbenchContentInfo::set_JLFDDMEKLJK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NEOCCICFNED::NEOCCICFNED>(
             "enhance_buff_func",
             RogueWorkbenchContentInfo::has_enhance_buff_func,
             RogueWorkbenchContentInfo::enhance_buff_func,
             RogueWorkbenchContentInfo::mut_enhance_buff_func,
             RogueWorkbenchContentInfo::set_enhance_buff_func,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KOJKPLCEGEN::KOJKPLCEGEN>(
             "compose_miracle_func",
             RogueWorkbenchContentInfo::has_compose_miracle_func,
             RogueWorkbenchContentInfo::compose_miracle_func,
             RogueWorkbenchContentInfo::mut_compose_miracle_func,
             RogueWorkbenchContentInfo::set_compose_miracle_func,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo>(
-            "reforge_hex_avatar_func",
-            RogueWorkbenchContentInfo::has_reforge_hex_avatar_func,
-            RogueWorkbenchContentInfo::reforge_hex_avatar_func,
-            RogueWorkbenchContentInfo::mut_reforge_hex_avatar_func,
-            RogueWorkbenchContentInfo::set_reforge_hex_avatar_func,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JDOOIDBKCIM::JDOOIDBKCIM>(
-            "magic_item",
-            RogueWorkbenchContentInfo::has_magic_item,
-            RogueWorkbenchContentInfo::magic_item,
-            RogueWorkbenchContentInfo::mut_magic_item,
-            RogueWorkbenchContentInfo::set_magic_item,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BHJHAPDLPNO::BHJHAPDLPNO>(
+            "NDKHOGEMKJA",
+            RogueWorkbenchContentInfo::has_NDKHOGEMKJA,
+            RogueWorkbenchContentInfo::NDKHOGEMKJA,
+            RogueWorkbenchContentInfo::mut_NDKHOGEMKJA,
+            RogueWorkbenchContentInfo::set_NDKHOGEMKJA,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJBBLCIPBHD::GJBBLCIPBHD>(
-            "game_magic_unit",
-            RogueWorkbenchContentInfo::has_game_magic_unit,
-            RogueWorkbenchContentInfo::game_magic_unit,
-            RogueWorkbenchContentInfo::mut_game_magic_unit,
-            RogueWorkbenchContentInfo::set_game_magic_unit,
+            "LCBECPOOGCL",
+            RogueWorkbenchContentInfo::has_LCBECPOOGCL,
+            RogueWorkbenchContentInfo::LCBECPOOGCL,
+            RogueWorkbenchContentInfo::mut_LCBECPOOGCL,
+            RogueWorkbenchContentInfo::set_LCBECPOOGCL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LEHGLCELJMF::LEHGLCELJMF>(
             "CEAJNLIOFHF",
@@ -608,7 +608,7 @@ impl RogueWorkbenchContentInfo {
             RogueWorkbenchContentInfo::mut_PMKEHGBPCNG,
             RogueWorkbenchContentInfo::set_PMKEHGBPCNG,
         ));
-        oneofs.push(rogue_workbench_content_info::ECOEKHPGMEA::generated_oneof_descriptor_data());
+        oneofs.push(rogue_workbench_content_info::LOFNLGCFGIC::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchContentInfo>(
             "RogueWorkbenchContentInfo",
             fields,
@@ -627,35 +627,35 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(is.read_message()?));
-                },
-                26 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(is.read_message()?));
-                },
-                66 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(is.read_message()?));
-                },
-                122 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(is.read_message()?));
-                },
-                42 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(is.read_message()?));
-                },
-                58 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(is.read_message()?));
+                34 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(is.read_message()?));
                 },
                 98 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(is.read_message()?));
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(is.read_message()?));
                 },
-                90 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(is.read_message()?));
-                },
-                74 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(is.read_message()?));
+                82 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(is.read_message()?));
                 },
                 18 => {
-                    self.ECOEKHPGMEA = ::std::option::Option::Some(rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(is.read_message()?));
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(is.read_message()?));
+                },
+                122 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(is.read_message()?));
+                },
+                106 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(is.read_message()?));
+                },
+                50 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(is.read_message()?));
+                },
+                90 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(is.read_message()?));
+                },
+                66 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(is.read_message()?));
+                },
+                114 => {
+                    self.LOFNLGCFGIC = ::std::option::Option::Some(rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -669,45 +669,45 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
+        if let ::std::option::Option::Some(ref v) = self.LOFNLGCFGIC {
             match v {
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -719,37 +719,37 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.ECOEKHPGMEA {
+        if let ::std::option::Option::Some(ref v) = self.LOFNLGCFGIC {
             match v {
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                &rogue_workbench_content_info::LOFNLGCFGIC::PICLEGGGNCF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeFormulaFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &rogue_workbench_content_info::ECOEKHPGMEA::EnhanceBuffFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ComposeMiracleFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &rogue_workbench_content_info::ECOEKHPGMEA::ReforgeHexAvatarFunc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &rogue_workbench_content_info::ECOEKHPGMEA::MagicItem(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &rogue_workbench_content_info::ECOEKHPGMEA::GameMagicUnit(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::CGGNFJCBBKM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::CEAJNLIOFHF(ref v) => {
+                &rogue_workbench_content_info::LOFNLGCFGIC::JLFDDMEKLJK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &rogue_workbench_content_info::LOFNLGCFGIC::EnhanceBuffFunc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
+                &rogue_workbench_content_info::LOFNLGCFGIC::ComposeMiracleFunc(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &rogue_workbench_content_info::LOFNLGCFGIC::NDKHOGEMKJA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
+                &rogue_workbench_content_info::LOFNLGCFGIC::LCBECPOOGCL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                },
+                &rogue_workbench_content_info::LOFNLGCFGIC::CEAJNLIOFHF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::PGPAAPOPDOC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                &rogue_workbench_content_info::LOFNLGCFGIC::PGPAAPOPDOC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
-                &rogue_workbench_content_info::ECOEKHPGMEA::PMKEHGBPCNG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &rogue_workbench_content_info::LOFNLGCFGIC::PMKEHGBPCNG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -770,22 +770,22 @@ impl ::protobuf::Message for RogueWorkbenchContentInfo {
     }
 
     fn clear(&mut self) {
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
-        self.ECOEKHPGMEA = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
+        self.LOFNLGCFGIC = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchContentInfo {
         static instance: RogueWorkbenchContentInfo = RogueWorkbenchContentInfo {
-            ECOEKHPGMEA: ::std::option::Option::None,
+            LOFNLGCFGIC: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -814,22 +814,22 @@ pub mod rogue_workbench_content_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueWorkbenchContentInfo.ECOEKHPGMEA)
-    pub enum ECOEKHPGMEA {
-        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.reforge_buff_func)
-        ReforgeBuffFunc(super::super::WorkbenchReforgeBuffTargetInfo::WorkbenchReforgeBuffTargetInfo),
-        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.reforge_formula_func)
-        ReforgeFormulaFunc(super::super::WorkbenchReforgeFormulaTargetInfo::WorkbenchReforgeFormulaTargetInfo),
+    // @@protoc_insertion_point(oneof:RogueWorkbenchContentInfo.LOFNLGCFGIC)
+    pub enum LOFNLGCFGIC {
+        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.PICLEGGGNCF)
+        PICLEGGGNCF(super::super::ALNIGMCJFDM::ALNIGMCJFDM),
+        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.CGGNFJCBBKM)
+        CGGNFJCBBKM(super::super::AKKCDLMLKDF::AKKCDLMLKDF),
+        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.JLFDDMEKLJK)
+        JLFDDMEKLJK(super::super::JDOOIDBKCIM::JDOOIDBKCIM),
         // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.enhance_buff_func)
-        EnhanceBuffFunc(super::super::WorkbenchEnhanceBuffTargetInfo::WorkbenchEnhanceBuffTargetInfo),
+        EnhanceBuffFunc(super::super::NEOCCICFNED::NEOCCICFNED),
         // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.compose_miracle_func)
-        ComposeMiracleFunc(super::super::WorkbenchComposeMiracleTargetInfo::WorkbenchComposeMiracleTargetInfo),
-        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.reforge_hex_avatar_func)
-        ReforgeHexAvatarFunc(super::super::WorkbenchReforgeHexAvatarTargetInfo::WorkbenchReforgeHexAvatarTargetInfo),
-        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.magic_item)
-        MagicItem(super::super::JDOOIDBKCIM::JDOOIDBKCIM),
-        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.game_magic_unit)
-        GameMagicUnit(super::super::GJBBLCIPBHD::GJBBLCIPBHD),
+        ComposeMiracleFunc(super::super::KOJKPLCEGEN::KOJKPLCEGEN),
+        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.NDKHOGEMKJA)
+        NDKHOGEMKJA(super::super::BHJHAPDLPNO::BHJHAPDLPNO),
+        // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.LCBECPOOGCL)
+        LCBECPOOGCL(super::super::GJBBLCIPBHD::GJBBLCIPBHD),
         // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.CEAJNLIOFHF)
         CEAJNLIOFHF(super::super::LEHGLCELJMF::LEHGLCELJMF),
         // @@protoc_insertion_point(oneof_field:RogueWorkbenchContentInfo.PGPAAPOPDOC)
@@ -838,44 +838,41 @@ pub mod rogue_workbench_content_info {
         PMKEHGBPCNG(super::super::JBNCDFFPDOP::JBNCDFFPDOP),
     }
 
-    impl ::protobuf::Oneof for ECOEKHPGMEA {
+    impl ::protobuf::Oneof for LOFNLGCFGIC {
     }
 
-    impl ::protobuf::OneofFull for ECOEKHPGMEA {
+    impl ::protobuf::OneofFull for LOFNLGCFGIC {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueWorkbenchContentInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("ECOEKHPGMEA").unwrap()).clone()
+            descriptor.get(|| <super::RogueWorkbenchContentInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("LOFNLGCFGIC").unwrap()).clone()
         }
     }
 
-    impl ECOEKHPGMEA {
+    impl LOFNLGCFGIC {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ECOEKHPGMEA>("ECOEKHPGMEA")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LOFNLGCFGIC>("LOFNLGCFGIC")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRogueWorkbenchContentInfo.proto\x1a\x11FHJGLOPMFNC.proto\x1a\x11GJ\
-    BBLCIPBHD.proto\x1a\x11JBNCDFFPDOP.proto\x1a\x11JDOOIDBKCIM.proto\x1a\
-    \x11LEHGLCELJMF.proto\x1a'WorkbenchComposeMiracleTargetInfo.proto\x1a$Wo\
-    rkbenchEnhanceBuffTargetInfo.proto\x1a$WorkbenchReforgeBuffTargetInfo.pr\
-    oto\x1a'WorkbenchReforgeFormulaTargetInfo.proto\x1a)WorkbenchReforgeHexA\
-    vatarTargetInfo.proto\"\xd4\x05\n\x19RogueWorkbenchContentInfo\x12M\n\
-    \x11reforge_buff_func\x18\x01\x20\x01(\x0b2\x1f.WorkbenchReforgeBuffTarg\
-    etInfoH\0R\x0freforgeBuffFunc\x12V\n\x14reforge_formula_func\x18\x03\x20\
-    \x01(\x0b2\".WorkbenchReforgeFormulaTargetInfoH\0R\x12reforgeFormulaFunc\
-    \x12M\n\x11enhance_buff_func\x18\x08\x20\x01(\x0b2\x1f.WorkbenchEnhanceB\
-    uffTargetInfoH\0R\x0fenhanceBuffFunc\x12V\n\x14compose_miracle_func\x18\
-    \x0f\x20\x01(\x0b2\".WorkbenchComposeMiracleTargetInfoH\0R\x12composeMir\
-    acleFunc\x12]\n\x17reforge_hex_avatar_func\x18\x05\x20\x01(\x0b2$.Workbe\
-    nchReforgeHexAvatarTargetInfoH\0R\x14reforgeHexAvatarFunc\x12-\n\nmagic_\
-    item\x18\x07\x20\x01(\x0b2\x0c.JDOOIDBKCIMH\0R\tmagicItem\x126\n\x0fgame\
-    _magic_unit\x18\x0c\x20\x01(\x0b2\x0c.GJBBLCIPBHDH\0R\rgameMagicUnit\x12\
-    0\n\x0bCEAJNLIOFHF\x18\x0b\x20\x01(\x0b2\x0c.LEHGLCELJMFH\0R\x0bCEAJNLIO\
-    FHF\x120\n\x0bPGPAAPOPDOC\x18\t\x20\x01(\x0b2\x0c.FHJGLOPMFNCH\0R\x0bPGP\
-    AAPOPDOC\x120\n\x0bPMKEHGBPCNG\x18\x02\x20\x01(\x0b2\x0c.JBNCDFFPDOPH\0R\
-    \x0bPMKEHGBPCNGB\r\n\x0bECOEKHPGMEAb\x06proto3\
+    \n\x1fRogueWorkbenchContentInfo.proto\x1a\x11AKKCDLMLKDF.proto\x1a\x11AL\
+    NIGMCJFDM.proto\x1a\x11BHJHAPDLPNO.proto\x1a\x11FHJGLOPMFNC.proto\x1a\
+    \x11GJBBLCIPBHD.proto\x1a\x11JBNCDFFPDOP.proto\x1a\x11JDOOIDBKCIM.proto\
+    \x1a\x11KOJKPLCEGEN.proto\x1a\x11LEHGLCELJMF.proto\x1a\x11NEOCCICFNED.pr\
+    oto\"\xb8\x04\n\x19RogueWorkbenchContentInfo\x120\n\x0bPICLEGGGNCF\x18\
+    \x04\x20\x01(\x0b2\x0c.ALNIGMCJFDMH\0R\x0bPICLEGGGNCF\x120\n\x0bCGGNFJCB\
+    BKM\x18\x0c\x20\x01(\x0b2\x0c.AKKCDLMLKDFH\0R\x0bCGGNFJCBBKM\x120\n\x0bJ\
+    LFDDMEKLJK\x18\n\x20\x01(\x0b2\x0c.JDOOIDBKCIMH\0R\x0bJLFDDMEKLJK\x12:\n\
+    \x11enhance_buff_func\x18\x02\x20\x01(\x0b2\x0c.NEOCCICFNEDH\0R\x0fenhan\
+    ceBuffFunc\x12@\n\x14compose_miracle_func\x18\x0f\x20\x01(\x0b2\x0c.KOJK\
+    PLCEGENH\0R\x12composeMiracleFunc\x120\n\x0bNDKHOGEMKJA\x18\r\x20\x01(\
+    \x0b2\x0c.BHJHAPDLPNOH\0R\x0bNDKHOGEMKJA\x120\n\x0bLCBECPOOGCL\x18\x06\
+    \x20\x01(\x0b2\x0c.GJBBLCIPBHDH\0R\x0bLCBECPOOGCL\x120\n\x0bCEAJNLIOFHF\
+    \x18\x0b\x20\x01(\x0b2\x0c.LEHGLCELJMFH\0R\x0bCEAJNLIOFHF\x120\n\x0bPGPA\
+    APOPDOC\x18\x08\x20\x01(\x0b2\x0c.FHJGLOPMFNCH\0R\x0bPGPAAPOPDOC\x120\n\
+    \x0bPMKEHGBPCNG\x18\x0e\x20\x01(\x0b2\x0c.JBNCDFFPDOPH\0R\x0bPMKEHGBPCNG\
+    B\r\n\x0bLOFNLGCFGICb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -893,16 +890,16 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(10);
+            deps.push(super::AKKCDLMLKDF::file_descriptor().clone());
+            deps.push(super::ALNIGMCJFDM::file_descriptor().clone());
+            deps.push(super::BHJHAPDLPNO::file_descriptor().clone());
             deps.push(super::FHJGLOPMFNC::file_descriptor().clone());
             deps.push(super::GJBBLCIPBHD::file_descriptor().clone());
             deps.push(super::JBNCDFFPDOP::file_descriptor().clone());
             deps.push(super::JDOOIDBKCIM::file_descriptor().clone());
+            deps.push(super::KOJKPLCEGEN::file_descriptor().clone());
             deps.push(super::LEHGLCELJMF::file_descriptor().clone());
-            deps.push(super::WorkbenchComposeMiracleTargetInfo::file_descriptor().clone());
-            deps.push(super::WorkbenchEnhanceBuffTargetInfo::file_descriptor().clone());
-            deps.push(super::WorkbenchReforgeBuffTargetInfo::file_descriptor().clone());
-            deps.push(super::WorkbenchReforgeFormulaTargetInfo::file_descriptor().clone());
-            deps.push(super::WorkbenchReforgeHexAvatarTargetInfo::file_descriptor().clone());
+            deps.push(super::NEOCCICFNED::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueWorkbenchContentInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

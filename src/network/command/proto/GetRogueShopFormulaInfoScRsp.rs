@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopFormulaInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.EFOJOCFGIDJ)
-    pub EFOJOCFGIDJ: i32,
+    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.COHACKHGBNH)
+    pub COHACKHGBNH: i32,
+    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.CNKCMJPPJIG)
+    pub CNKCMJPPJIG: i32,
+    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.FPBBMIOCFLL)
+    pub FPBBMIOCFLL: ::protobuf::MessageField<super::RogueFormulaShopInfo::RogueFormulaShopInfo>,
+    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.OPGLCPCMNDE)
+    pub OPGLCPCMNDE: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.AEFHKANBFNC)
-    pub AEFHKANBFNC: i32,
-    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.CKAANMDDKCJ)
-    pub CKAANMDDKCJ: ::protobuf::MessageField<super::GLPPDLECCLI::GLPPDLECCLI>,
-    // @@protoc_insertion_point(field:GetRogueShopFormulaInfoScRsp.IHJHCCFMIFD)
-    pub IHJHCCFMIFD: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueShopFormulaInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl GetRogueShopFormulaInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFOJOCFGIDJ",
-            |m: &GetRogueShopFormulaInfoScRsp| { &m.EFOJOCFGIDJ },
-            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.EFOJOCFGIDJ },
+            "COHACKHGBNH",
+            |m: &GetRogueShopFormulaInfoScRsp| { &m.COHACKHGBNH },
+            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.COHACKHGBNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CNKCMJPPJIG",
+            |m: &GetRogueShopFormulaInfoScRsp| { &m.CNKCMJPPJIG },
+            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.CNKCMJPPJIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFormulaShopInfo::RogueFormulaShopInfo>(
+            "FPBBMIOCFLL",
+            |m: &GetRogueShopFormulaInfoScRsp| { &m.FPBBMIOCFLL },
+            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.FPBBMIOCFLL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "OPGLCPCMNDE",
+            |m: &GetRogueShopFormulaInfoScRsp| { &m.OPGLCPCMNDE },
+            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.OPGLCPCMNDE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRogueShopFormulaInfoScRsp| { &m.retcode },
             |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEFHKANBFNC",
-            |m: &GetRogueShopFormulaInfoScRsp| { &m.AEFHKANBFNC },
-            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.AEFHKANBFNC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLPPDLECCLI::GLPPDLECCLI>(
-            "CKAANMDDKCJ",
-            |m: &GetRogueShopFormulaInfoScRsp| { &m.CKAANMDDKCJ },
-            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.CKAANMDDKCJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "IHJHCCFMIFD",
-            |m: &GetRogueShopFormulaInfoScRsp| { &m.IHJHCCFMIFD },
-            |m: &mut GetRogueShopFormulaInfoScRsp| { &mut m.IHJHCCFMIFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueShopFormulaInfoScRsp>(
             "GetRogueShopFormulaInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.EFOJOCFGIDJ = is.read_int32()?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 16 => {
-                    self.AEFHKANBFNC = is.read_int32()?;
+                    self.COHACKHGBNH = is.read_int32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKAANMDDKCJ)?;
+                24 => {
+                    self.CNKCMJPPJIG = is.read_int32()?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHJHCCFMIFD)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FPBBMIOCFLL)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPGLCPCMNDE)?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EFOJOCFGIDJ != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.EFOJOCFGIDJ);
+        if self.COHACKHGBNH != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.COHACKHGBNH);
+        }
+        if self.CNKCMJPPJIG != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.CNKCMJPPJIG);
+        }
+        if let Some(v) = self.FPBBMIOCFLL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.OPGLCPCMNDE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.AEFHKANBFNC != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.AEFHKANBFNC);
-        }
-        if let Some(v) = self.CKAANMDDKCJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.IHJHCCFMIFD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EFOJOCFGIDJ != 0 {
-            os.write_int32(5, self.EFOJOCFGIDJ)?;
+        if self.COHACKHGBNH != 0 {
+            os.write_int32(2, self.COHACKHGBNH)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+        if self.CNKCMJPPJIG != 0 {
+            os.write_int32(3, self.CNKCMJPPJIG)?;
         }
-        if self.AEFHKANBFNC != 0 {
-            os.write_int32(2, self.AEFHKANBFNC)?;
+        if let Some(v) = self.FPBBMIOCFLL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.CKAANMDDKCJ.as_ref() {
+        if let Some(v) = self.OPGLCPCMNDE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.IHJHCCFMIFD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GetRogueShopFormulaInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.EFOJOCFGIDJ = 0;
+        self.COHACKHGBNH = 0;
+        self.CNKCMJPPJIG = 0;
+        self.FPBBMIOCFLL.clear();
+        self.OPGLCPCMNDE.clear();
         self.retcode = 0;
-        self.AEFHKANBFNC = 0;
-        self.CKAANMDDKCJ.clear();
-        self.IHJHCCFMIFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopFormulaInfoScRsp {
         static instance: GetRogueShopFormulaInfoScRsp = GetRogueShopFormulaInfoScRsp {
-            EFOJOCFGIDJ: 0,
+            COHACKHGBNH: 0,
+            CNKCMJPPJIG: 0,
+            FPBBMIOCFLL: ::protobuf::MessageField::none(),
+            OPGLCPCMNDE: ::protobuf::MessageField::none(),
             retcode: 0,
-            AEFHKANBFNC: 0,
-            CKAANMDDKCJ: ::protobuf::MessageField::none(),
-            IHJHCCFMIFD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopFormulaInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueShopFormulaInfoScRsp.proto\x1a\x11GLPPDLECCLI.proto\x1a\x12I\
-    temCostData.proto\"\xdd\x01\n\x1cGetRogueShopFormulaInfoScRsp\x12\x20\n\
-    \x0bEFOJOCFGIDJ\x18\x05\x20\x01(\x05R\x0bEFOJOCFGIDJ\x12\x18\n\x07retcod\
-    e\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bAEFHKANBFNC\x18\x02\x20\x01(\
-    \x05R\x0bAEFHKANBFNC\x12.\n\x0bCKAANMDDKCJ\x18\x08\x20\x01(\x0b2\x0c.GLP\
-    PDLECCLIR\x0bCKAANMDDKCJ\x12/\n\x0bIHJHCCFMIFD\x18\x07\x20\x01(\x0b2\r.I\
-    temCostDataR\x0bIHJHCCFMIFDb\x06proto3\
+    \n\"GetRogueShopFormulaInfoScRsp.proto\x1a\x12ItemCostData.proto\x1a\x1a\
+    RogueFormulaShopInfo.proto\"\xe6\x01\n\x1cGetRogueShopFormulaInfoScRsp\
+    \x12\x20\n\x0bCOHACKHGBNH\x18\x02\x20\x01(\x05R\x0bCOHACKHGBNH\x12\x20\n\
+    \x0bCNKCMJPPJIG\x18\x03\x20\x01(\x05R\x0bCNKCMJPPJIG\x127\n\x0bFPBBMIOCF\
+    LL\x18\x07\x20\x01(\x0b2\x15.RogueFormulaShopInfoR\x0bFPBBMIOCFLL\x12/\n\
+    \x0bOPGLCPCMNDE\x18\x08\x20\x01(\x0b2\r.ItemCostDataR\x0bOPGLCPCMNDE\x12\
+    \x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,8 +245,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GLPPDLECCLI::file_descriptor().clone());
             deps.push(super::ItemCostData::file_descriptor().clone());
+            deps.push(super::RogueFormulaShopInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueShopFormulaInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

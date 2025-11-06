@@ -30,8 +30,8 @@ pub struct PKIKEFAOIDE {
     // message fields
     // @@protoc_insertion_point(field:PKIKEFAOIDE.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:PKIKEFAOIDE.CJIDBADEKBO)
-    pub CJIDBADEKBO: u32,
+    // @@protoc_insertion_point(field:PKIKEFAOIDE.GAGLHDJJPHB)
+    pub GAGLHDJJPHB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PKIKEFAOIDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PKIKEFAOIDE {
             |m: &mut PKIKEFAOIDE| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJIDBADEKBO",
-            |m: &PKIKEFAOIDE| { &m.CJIDBADEKBO },
-            |m: &mut PKIKEFAOIDE| { &mut m.CJIDBADEKBO },
+            "GAGLHDJJPHB",
+            |m: &PKIKEFAOIDE| { &m.GAGLHDJJPHB },
+            |m: &mut PKIKEFAOIDE| { &mut m.GAGLHDJJPHB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PKIKEFAOIDE>(
             "PKIKEFAOIDE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PKIKEFAOIDE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.level = is.read_uint32()?;
                 },
-                16 => {
-                    self.CJIDBADEKBO = is.read_uint32()?;
+                96 => {
+                    self.GAGLHDJJPHB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PKIKEFAOIDE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
         }
-        if self.CJIDBADEKBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CJIDBADEKBO);
+        if self.GAGLHDJJPHB != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GAGLHDJJPHB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PKIKEFAOIDE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(6, self.level)?;
         }
-        if self.CJIDBADEKBO != 0 {
-            os.write_uint32(2, self.CJIDBADEKBO)?;
+        if self.GAGLHDJJPHB != 0 {
+            os.write_uint32(12, self.GAGLHDJJPHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for PKIKEFAOIDE {
 
     fn clear(&mut self) {
         self.level = 0;
-        self.CJIDBADEKBO = 0;
+        self.GAGLHDJJPHB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PKIKEFAOIDE {
         static instance: PKIKEFAOIDE = PKIKEFAOIDE {
             level: 0,
-            CJIDBADEKBO: 0,
+            GAGLHDJJPHB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PKIKEFAOIDE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PKIKEFAOIDE.proto\"E\n\x0bPKIKEFAOIDE\x12\x14\n\x05level\x18\x03\
-    \x20\x01(\rR\x05level\x12\x20\n\x0bCJIDBADEKBO\x18\x02\x20\x01(\rR\x0bCJ\
-    IDBADEKBOb\x06proto3\
+    \n\x11PKIKEFAOIDE.proto\"E\n\x0bPKIKEFAOIDE\x12\x14\n\x05level\x18\x06\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bGAGLHDJJPHB\x18\x0c\x20\x01(\rR\x0bGA\
+    GLHDJJPHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

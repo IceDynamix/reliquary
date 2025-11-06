@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOFOLLACIGO {
     // message fields
-    // @@protoc_insertion_point(field:KOFOLLACIGO.INLLEKAMNPF)
-    pub INLLEKAMNPF: ::std::vec::Vec<super::OFGBMCKNLDJ::OFGBMCKNLDJ>,
+    // @@protoc_insertion_point(field:KOFOLLACIGO.GCOCOPPADHC)
+    pub GCOCOPPADHC: ::std::vec::Vec<super::OFGBMCKNLDJ::OFGBMCKNLDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:KOFOLLACIGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KOFOLLACIGO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INLLEKAMNPF",
-            |m: &KOFOLLACIGO| { &m.INLLEKAMNPF },
-            |m: &mut KOFOLLACIGO| { &mut m.INLLEKAMNPF },
+            "GCOCOPPADHC",
+            |m: &KOFOLLACIGO| { &m.GCOCOPPADHC },
+            |m: &mut KOFOLLACIGO| { &mut m.GCOCOPPADHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOFOLLACIGO>(
             "KOFOLLACIGO",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for KOFOLLACIGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.INLLEKAMNPF.push(is.read_message()?);
+                34 => {
+                    self.GCOCOPPADHC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for KOFOLLACIGO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.INLLEKAMNPF {
+        for value in &self.GCOCOPPADHC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for KOFOLLACIGO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.INLLEKAMNPF {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.GCOCOPPADHC {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for KOFOLLACIGO {
     }
 
     fn clear(&mut self) {
-        self.INLLEKAMNPF.clear();
+        self.GCOCOPPADHC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOFOLLACIGO {
         static instance: KOFOLLACIGO = KOFOLLACIGO {
-            INLLEKAMNPF: ::std::vec::Vec::new(),
+            GCOCOPPADHC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for KOFOLLACIGO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KOFOLLACIGO.proto\x1a\x11OFGBMCKNLDJ.proto\"=\n\x0bKOFOLLACIGO\x12\
-    .\n\x0bINLLEKAMNPF\x18\x05\x20\x03(\x0b2\x0c.OFGBMCKNLDJR\x0bINLLEKAMNPF\
+    .\n\x0bGCOCOPPADHC\x18\x04\x20\x03(\x0b2\x0c.OFGBMCKNLDJR\x0bGCOCOPPADHC\
     b\x06proto3\
 ";
 

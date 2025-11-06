@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AACOFIKDCPL {
     // message fields
-    // @@protoc_insertion_point(field:AACOFIKDCPL.IENPELBPHDP)
-    pub IENPELBPHDP: u32,
+    // @@protoc_insertion_point(field:AACOFIKDCPL.OBIDCHHEBCL)
+    pub OBIDCHHEBCL: u32,
     // @@protoc_insertion_point(field:AACOFIKDCPL.progress)
     pub progress: u32,
     // special fields
@@ -52,9 +52,9 @@ impl AACOFIKDCPL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IENPELBPHDP",
-            |m: &AACOFIKDCPL| { &m.IENPELBPHDP },
-            |m: &mut AACOFIKDCPL| { &mut m.IENPELBPHDP },
+            "OBIDCHHEBCL",
+            |m: &AACOFIKDCPL| { &m.OBIDCHHEBCL },
+            |m: &mut AACOFIKDCPL| { &mut m.OBIDCHHEBCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AACOFIKDCPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IENPELBPHDP = is.read_uint32()?;
+                72 => {
+                    self.OBIDCHHEBCL = is.read_uint32()?;
                 },
-                88 => {
+                112 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AACOFIKDCPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IENPELBPHDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IENPELBPHDP);
+        if self.OBIDCHHEBCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.OBIDCHHEBCL);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
+            my_size += ::protobuf::rt::uint32_size(14, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AACOFIKDCPL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IENPELBPHDP != 0 {
-            os.write_uint32(10, self.IENPELBPHDP)?;
+        if self.OBIDCHHEBCL != 0 {
+            os.write_uint32(9, self.OBIDCHHEBCL)?;
         }
         if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+            os.write_uint32(14, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for AACOFIKDCPL {
     }
 
     fn clear(&mut self) {
-        self.IENPELBPHDP = 0;
+        self.OBIDCHHEBCL = 0;
         self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AACOFIKDCPL {
         static instance: AACOFIKDCPL = AACOFIKDCPL {
-            IENPELBPHDP: 0,
+            OBIDCHHEBCL: 0,
             progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for AACOFIKDCPL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AACOFIKDCPL.proto\"K\n\x0bAACOFIKDCPL\x12\x20\n\x0bIENPELBPHDP\x18\
-    \n\x20\x01(\rR\x0bIENPELBPHDP\x12\x1a\n\x08progress\x18\x0b\x20\x01(\rR\
+    \n\x11AACOFIKDCPL.proto\"K\n\x0bAACOFIKDCPL\x12\x20\n\x0bOBIDCHHEBCL\x18\
+    \t\x20\x01(\rR\x0bOBIDCHHEBCL\x12\x1a\n\x08progress\x18\x0e\x20\x01(\rR\
     \x08progressb\x06proto3\
 ";
 

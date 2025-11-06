@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcExtraInfo {
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<npc_extra_info::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<npc_extra_info::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:NpcExtraInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,137 +45,137 @@ impl NpcExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .NpcRogueGameInfo rogue_game_info = 2;
+    // .NpcRogueInfo rogue_game_info = 6;
 
-    pub fn rogue_game_info(&self) -> &super::NpcRogueGameInfo::NpcRogueGameInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(ref v)) => v,
-            _ => <super::NpcRogueGameInfo::NpcRogueGameInfo as ::protobuf::Message>::default_instance(),
+    pub fn rogue_game_info(&self) -> &super::NpcRogueInfo::NpcRogueInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(ref v)) => v,
+            _ => <super::NpcRogueInfo::NpcRogueInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_game_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_rogue_game_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_game_info(&mut self, v: super::NpcRogueGameInfo::NpcRogueGameInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(v))
+    pub fn set_rogue_game_info(&mut self, v: super::NpcRogueInfo::NpcRogueInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_game_info(&mut self) -> &mut super::NpcRogueGameInfo::NpcRogueGameInfo {
-        if let ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(_)) = self.KFELKJLDKEH {
+    pub fn mut_rogue_game_info(&mut self) -> &mut super::NpcRogueInfo::NpcRogueInfo {
+        if let ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(super::NpcRogueGameInfo::NpcRogueGameInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(super::NpcRogueInfo::NpcRogueInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_game_info(&mut self) -> super::NpcRogueGameInfo::NpcRogueGameInfo {
+    pub fn take_rogue_game_info(&mut self) -> super::NpcRogueInfo::NpcRogueInfo {
         if self.has_rogue_game_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NpcRogueGameInfo::NpcRogueGameInfo::new()
+            super::NpcRogueInfo::NpcRogueInfo::new()
         }
     }
 
-    // .KKFKKPPLDAI JKJOPMEFCBO = 13;
+    // .NpcTrainVisitorInfo train_visitor_info = 10;
 
-    pub fn JKJOPMEFCBO(&self) -> &super::KKFKKPPLDAI::KKFKKPPLDAI {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(ref v)) => v,
-            _ => <super::KKFKKPPLDAI::KKFKKPPLDAI as ::protobuf::Message>::default_instance(),
+    pub fn train_visitor_info(&self) -> &super::NpcTrainVisitorInfo::NpcTrainVisitorInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(ref v)) => v,
+            _ => <super::NpcTrainVisitorInfo::NpcTrainVisitorInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_JKJOPMEFCBO(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+    pub fn clear_train_visitor_info(&mut self) {
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
-    pub fn has_JKJOPMEFCBO(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(..)) => true,
+    pub fn has_train_visitor_info(&self) -> bool {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JKJOPMEFCBO(&mut self, v: super::KKFKKPPLDAI::KKFKKPPLDAI) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(v))
+    pub fn set_train_visitor_info(&mut self, v: super::NpcTrainVisitorInfo::NpcTrainVisitorInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_JKJOPMEFCBO(&mut self) -> &mut super::KKFKKPPLDAI::KKFKKPPLDAI {
-        if let ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(_)) = self.KFELKJLDKEH {
+    pub fn mut_train_visitor_info(&mut self) -> &mut super::NpcTrainVisitorInfo::NpcTrainVisitorInfo {
+        if let ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(super::KKFKKPPLDAI::KKFKKPPLDAI::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(super::NpcTrainVisitorInfo::NpcTrainVisitorInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_JKJOPMEFCBO(&mut self) -> super::KKFKKPPLDAI::KKFKKPPLDAI {
-        if self.has_JKJOPMEFCBO() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(v)) => v,
+    pub fn take_train_visitor_info(&mut self) -> super::NpcTrainVisitorInfo::NpcTrainVisitorInfo {
+        if self.has_train_visitor_info() {
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KKFKKPPLDAI::KKFKKPPLDAI::new()
+            super::NpcTrainVisitorInfo::NpcTrainVisitorInfo::new()
         }
     }
 
-    // .CLFACBCGIFL PNBJJBJNMGL = 3;
+    // .CLFACBCGIFL PNBJJBJNMGL = 8;
 
     pub fn PNBJJBJNMGL(&self) -> &super::CLFACBCGIFL::CLFACBCGIFL {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(ref v)) => v,
             _ => <super::CLFACBCGIFL::CLFACBCGIFL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_PNBJJBJNMGL(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_PNBJJBJNMGL(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_PNBJJBJNMGL(&mut self, v: super::CLFACBCGIFL::CLFACBCGIFL) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_PNBJJBJNMGL(&mut self) -> &mut super::CLFACBCGIFL::CLFACBCGIFL {
-        if let ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(super::CLFACBCGIFL::CLFACBCGIFL::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(super::CLFACBCGIFL::CLFACBCGIFL::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl NpcExtraInfo {
     // Take field
     pub fn take_PNBJJBJNMGL(&mut self) -> super::CLFACBCGIFL::CLFACBCGIFL {
         if self.has_PNBJJBJNMGL() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -195,19 +195,19 @@ impl NpcExtraInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NpcRogueGameInfo::NpcRogueGameInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NpcRogueInfo::NpcRogueInfo>(
             "rogue_game_info",
             NpcExtraInfo::has_rogue_game_info,
             NpcExtraInfo::rogue_game_info,
             NpcExtraInfo::mut_rogue_game_info,
             NpcExtraInfo::set_rogue_game_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KKFKKPPLDAI::KKFKKPPLDAI>(
-            "JKJOPMEFCBO",
-            NpcExtraInfo::has_JKJOPMEFCBO,
-            NpcExtraInfo::JKJOPMEFCBO,
-            NpcExtraInfo::mut_JKJOPMEFCBO,
-            NpcExtraInfo::set_JKJOPMEFCBO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NpcTrainVisitorInfo::NpcTrainVisitorInfo>(
+            "train_visitor_info",
+            NpcExtraInfo::has_train_visitor_info,
+            NpcExtraInfo::train_visitor_info,
+            NpcExtraInfo::mut_train_visitor_info,
+            NpcExtraInfo::set_train_visitor_info,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CLFACBCGIFL::CLFACBCGIFL>(
             "PNBJJBJNMGL",
@@ -216,7 +216,7 @@ impl NpcExtraInfo {
             NpcExtraInfo::mut_PNBJJBJNMGL,
             NpcExtraInfo::set_PNBJJBJNMGL,
         ));
-        oneofs.push(npc_extra_info::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(npc_extra_info::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcExtraInfo>(
             "NpcExtraInfo",
             fields,
@@ -235,14 +235,14 @@ impl ::protobuf::Message for NpcExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::RogueGameInfo(is.read_message()?));
+                50 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::RogueGameInfo(is.read_message()?));
                 },
-                106 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(is.read_message()?));
+                82 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::TrainVisitorInfo(is.read_message()?));
                 },
-                26 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(is.read_message()?));
+                66 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -256,17 +256,17 @@ impl ::protobuf::Message for NpcExtraInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &npc_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
+                &npc_extra_info::IEICDGGELNE::RogueGameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(ref v) => {
+                &npc_extra_info::IEICDGGELNE::TrainVisitorInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(ref v) => {
+                &npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -278,16 +278,16 @@ impl ::protobuf::Message for NpcExtraInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &npc_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &npc_extra_info::IEICDGGELNE::RogueGameInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &npc_extra_info::KFELKJLDKEH::JKJOPMEFCBO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                &npc_extra_info::IEICDGGELNE::TrainVisitorInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &npc_extra_info::KFELKJLDKEH::PNBJJBJNMGL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &npc_extra_info::IEICDGGELNE::PNBJJBJNMGL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -308,15 +308,15 @@ impl ::protobuf::Message for NpcExtraInfo {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcExtraInfo {
         static instance: NpcExtraInfo = NpcExtraInfo {
-            KFELKJLDKEH: ::std::option::Option::None,
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -345,40 +345,40 @@ pub mod npc_extra_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:NpcExtraInfo.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:NpcExtraInfo.IEICDGGELNE)
+    pub enum IEICDGGELNE {
         // @@protoc_insertion_point(oneof_field:NpcExtraInfo.rogue_game_info)
-        RogueGameInfo(super::super::NpcRogueGameInfo::NpcRogueGameInfo),
-        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.JKJOPMEFCBO)
-        JKJOPMEFCBO(super::super::KKFKKPPLDAI::KKFKKPPLDAI),
+        RogueGameInfo(super::super::NpcRogueInfo::NpcRogueInfo),
+        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.train_visitor_info)
+        TrainVisitorInfo(super::super::NpcTrainVisitorInfo::NpcTrainVisitorInfo),
         // @@protoc_insertion_point(oneof_field:NpcExtraInfo.PNBJJBJNMGL)
         PNBJJBJNMGL(super::super::CLFACBCGIFL::CLFACBCGIFL),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::NpcExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::NpcExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12NpcExtraInfo.proto\x1a\x11CLFACBCGIFL.proto\x1a\x11KKFKKPPLDAI.pro\
-    to\x1a\x16NpcRogueGameInfo.proto\"\xbe\x01\n\x0cNpcExtraInfo\x12;\n\x0fr\
-    ogue_game_info\x18\x02\x20\x01(\x0b2\x11.NpcRogueGameInfoH\0R\rrogueGame\
-    Info\x120\n\x0bJKJOPMEFCBO\x18\r\x20\x01(\x0b2\x0c.KKFKKPPLDAIH\0R\x0bJK\
-    JOPMEFCBO\x120\n\x0bPNBJJBJNMGL\x18\x03\x20\x01(\x0b2\x0c.CLFACBCGIFLH\0\
-    R\x0bPNBJJBJNMGLB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    \n\x12NpcExtraInfo.proto\x1a\x11CLFACBCGIFL.proto\x1a\x12NpcRogueInfo.pr\
+    oto\x1a\x19NpcTrainVisitorInfo.proto\"\xce\x01\n\x0cNpcExtraInfo\x127\n\
+    \x0frogue_game_info\x18\x06\x20\x01(\x0b2\r.NpcRogueInfoH\0R\rrogueGameI\
+    nfo\x12D\n\x12train_visitor_info\x18\n\x20\x01(\x0b2\x14.NpcTrainVisitor\
+    InfoH\0R\x10trainVisitorInfo\x120\n\x0bPNBJJBJNMGL\x18\x08\x20\x01(\x0b2\
+    \x0c.CLFACBCGIFLH\0R\x0bPNBJJBJNMGLB\r\n\x0bIEICDGGELNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -397,8 +397,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::CLFACBCGIFL::file_descriptor().clone());
-            deps.push(super::KKFKKPPLDAI::file_descriptor().clone());
-            deps.push(super::NpcRogueGameInfo::file_descriptor().clone());
+            deps.push(super::NpcRogueInfo::file_descriptor().clone());
+            deps.push(super::NpcTrainVisitorInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NpcExtraInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

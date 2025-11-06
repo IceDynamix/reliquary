@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveStuffFromAreaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.BDJCGCDJOEO)
-    pub BDJCGCDJOEO: u32,
+    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.FNAHNKOAOAP)
+    pub FNAHNKOAOAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveStuffFromAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RemoveStuffFromAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDJCGCDJOEO",
-            |m: &RemoveStuffFromAreaCsReq| { &m.BDJCGCDJOEO },
-            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.BDJCGCDJOEO },
+            "FNAHNKOAOAP",
+            |m: &RemoveStuffFromAreaCsReq| { &m.FNAHNKOAOAP },
+            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.FNAHNKOAOAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveStuffFromAreaCsReq>(
             "RemoveStuffFromAreaCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.BDJCGCDJOEO = is.read_uint32()?;
+                8 => {
+                    self.FNAHNKOAOAP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDJCGCDJOEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BDJCGCDJOEO);
+        if self.FNAHNKOAOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.FNAHNKOAOAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDJCGCDJOEO != 0 {
-            os.write_uint32(11, self.BDJCGCDJOEO)?;
+        if self.FNAHNKOAOAP != 0 {
+            os.write_uint32(1, self.FNAHNKOAOAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn clear(&mut self) {
-        self.BDJCGCDJOEO = 0;
+        self.FNAHNKOAOAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveStuffFromAreaCsReq {
         static instance: RemoveStuffFromAreaCsReq = RemoveStuffFromAreaCsReq {
-            BDJCGCDJOEO: 0,
+            FNAHNKOAOAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RemoveStuffFromAreaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRemoveStuffFromAreaCsReq.proto\"<\n\x18RemoveStuffFromAreaCsReq\
-    \x12\x20\n\x0bBDJCGCDJOEO\x18\x0b\x20\x01(\rR\x0bBDJCGCDJOEOb\x06proto3\
+    \x12\x20\n\x0bFNAHNKOAOAP\x18\x01\x20\x01(\rR\x0bFNAHNKOAOAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

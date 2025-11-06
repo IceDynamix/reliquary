@@ -32,10 +32,10 @@ pub struct ComposeItemCsReq {
     pub compose_id: u32,
     // @@protoc_insertion_point(field:ComposeItemCsReq.count)
     pub count: u32,
-    // @@protoc_insertion_point(field:ComposeItemCsReq.compose_item_list)
-    pub compose_item_list: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:ComposeItemCsReq.convert_item_list)
-    pub convert_item_list: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.CNNGMECKAMO)
+    pub CNNGMECKAMO: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:ComposeItemCsReq.ONJCJNEHAOO)
+    pub ONJCJNEHAOO: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl ComposeItemCsReq {
             |m: &mut ComposeItemCsReq| { &mut m.count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "compose_item_list",
-            |m: &ComposeItemCsReq| { &m.compose_item_list },
-            |m: &mut ComposeItemCsReq| { &mut m.compose_item_list },
+            "CNNGMECKAMO",
+            |m: &ComposeItemCsReq| { &m.CNNGMECKAMO },
+            |m: &mut ComposeItemCsReq| { &mut m.CNNGMECKAMO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "convert_item_list",
-            |m: &ComposeItemCsReq| { &m.convert_item_list },
-            |m: &mut ComposeItemCsReq| { &mut m.convert_item_list },
+            "ONJCJNEHAOO",
+            |m: &ComposeItemCsReq| { &m.ONJCJNEHAOO },
+            |m: &mut ComposeItemCsReq| { &mut m.ONJCJNEHAOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeItemCsReq>(
             "ComposeItemCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ComposeItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.compose_id = is.read_uint32()?;
                 },
-                32 => {
+                64 => {
                     self.count = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.compose_item_list)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CNNGMECKAMO)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.convert_item_list)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONJCJNEHAOO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for ComposeItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.compose_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.compose_id);
         }
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.count);
+            my_size += ::protobuf::rt::uint32_size(8, self.count);
         }
-        if let Some(v) = self.compose_item_list.as_ref() {
+        if let Some(v) = self.CNNGMECKAMO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.convert_item_list.as_ref() {
+        if let Some(v) = self.ONJCJNEHAOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,16 +138,16 @@ impl ::protobuf::Message for ComposeItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.compose_id != 0 {
-            os.write_uint32(10, self.compose_id)?;
+            os.write_uint32(2, self.compose_id)?;
         }
         if self.count != 0 {
-            os.write_uint32(4, self.count)?;
+            os.write_uint32(8, self.count)?;
         }
-        if let Some(v) = self.compose_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.CNNGMECKAMO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.convert_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.ONJCJNEHAOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for ComposeItemCsReq {
     fn clear(&mut self) {
         self.compose_id = 0;
         self.count = 0;
-        self.compose_item_list.clear();
-        self.convert_item_list.clear();
+        self.CNNGMECKAMO.clear();
+        self.ONJCJNEHAOO.clear();
         self.special_fields.clear();
     }
 
@@ -177,8 +177,8 @@ impl ::protobuf::Message for ComposeItemCsReq {
         static instance: ComposeItemCsReq = ComposeItemCsReq {
             compose_id: 0,
             count: 0,
-            compose_item_list: ::protobuf::MessageField::none(),
-            convert_item_list: ::protobuf::MessageField::none(),
+            CNNGMECKAMO: ::protobuf::MessageField::none(),
+            ONJCJNEHAOO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16ComposeItemCsReq.proto\x1a\x12ItemCostData.proto\"\xbd\x01\n\x10Co\
-    mposeItemCsReq\x12\x1d\n\ncompose_id\x18\n\x20\x01(\rR\tcomposeId\x12\
-    \x14\n\x05count\x18\x04\x20\x01(\rR\x05count\x129\n\x11compose_item_list\
-    \x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x0fcomposeItemList\x129\n\x11conv\
-    ert_item_list\x18\x0f\x20\x01(\x0b2\r.ItemCostDataR\x0fconvertItemListb\
-    \x06proto3\
+    \n\x16ComposeItemCsReq.proto\x1a\x12ItemCostData.proto\"\xa9\x01\n\x10Co\
+    mposeItemCsReq\x12\x1d\n\ncompose_id\x18\x02\x20\x01(\rR\tcomposeId\x12\
+    \x14\n\x05count\x18\x08\x20\x01(\rR\x05count\x12/\n\x0bCNNGMECKAMO\x18\t\
+    \x20\x01(\x0b2\r.ItemCostDataR\x0bCNNGMECKAMO\x12/\n\x0bONJCJNEHAOO\x18\
+    \x0e\x20\x01(\x0b2\r.ItemCostDataR\x0bONJCJNEHAOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

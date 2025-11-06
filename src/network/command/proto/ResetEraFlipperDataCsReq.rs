@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetEraFlipperDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ResetEraFlipperDataCsReq.PAHMAGPFDDJ)
-    pub PAHMAGPFDDJ: bool,
+    // @@protoc_insertion_point(field:ResetEraFlipperDataCsReq.DIPKDPOPLJC)
+    pub DIPKDPOPLJC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ResetEraFlipperDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ResetEraFlipperDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAHMAGPFDDJ",
-            |m: &ResetEraFlipperDataCsReq| { &m.PAHMAGPFDDJ },
-            |m: &mut ResetEraFlipperDataCsReq| { &mut m.PAHMAGPFDDJ },
+            "DIPKDPOPLJC",
+            |m: &ResetEraFlipperDataCsReq| { &m.DIPKDPOPLJC },
+            |m: &mut ResetEraFlipperDataCsReq| { &mut m.DIPKDPOPLJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ResetEraFlipperDataCsReq>(
             "ResetEraFlipperDataCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.PAHMAGPFDDJ = is.read_bool()?;
+                16 => {
+                    self.DIPKDPOPLJC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PAHMAGPFDDJ != false {
+        if self.DIPKDPOPLJC != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PAHMAGPFDDJ != false {
-            os.write_bool(14, self.PAHMAGPFDDJ)?;
+        if self.DIPKDPOPLJC != false {
+            os.write_bool(2, self.DIPKDPOPLJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.PAHMAGPFDDJ = false;
+        self.DIPKDPOPLJC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetEraFlipperDataCsReq {
         static instance: ResetEraFlipperDataCsReq = ResetEraFlipperDataCsReq {
-            PAHMAGPFDDJ: false,
+            DIPKDPOPLJC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ResetEraFlipperDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eResetEraFlipperDataCsReq.proto\"<\n\x18ResetEraFlipperDataCsReq\
-    \x12\x20\n\x0bPAHMAGPFDDJ\x18\x0e\x20\x01(\x08R\x0bPAHMAGPFDDJb\x06proto\
+    \x12\x20\n\x0bDIPKDPOPLJC\x18\x02\x20\x01(\x08R\x0bDIPKDPOPLJCb\x06proto\
     3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleLevelFinishScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarbleLevelFinishScRsp.NLIBKABFGCC)
-    pub NLIBKABFGCC: u32,
     // @@protoc_insertion_point(field:MarbleLevelFinishScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MarbleLevelFinishScRsp.JFBDCLJMCMF)
+    pub JFBDCLJMCMF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MarbleLevelFinishScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MarbleLevelFinishScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIBKABFGCC",
-            |m: &MarbleLevelFinishScRsp| { &m.NLIBKABFGCC },
-            |m: &mut MarbleLevelFinishScRsp| { &mut m.NLIBKABFGCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MarbleLevelFinishScRsp| { &m.retcode },
             |m: &mut MarbleLevelFinishScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFBDCLJMCMF",
+            |m: &MarbleLevelFinishScRsp| { &m.JFBDCLJMCMF },
+            |m: &mut MarbleLevelFinishScRsp| { &mut m.JFBDCLJMCMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarbleLevelFinishScRsp>(
             "MarbleLevelFinishScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NLIBKABFGCC = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.JFBDCLJMCMF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NLIBKABFGCC);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.JFBDCLJMCMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JFBDCLJMCMF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NLIBKABFGCC != 0 {
-            os.write_uint32(5, self.NLIBKABFGCC)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.JFBDCLJMCMF != 0 {
+            os.write_uint32(9, self.JFBDCLJMCMF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MarbleLevelFinishScRsp {
     }
 
     fn clear(&mut self) {
-        self.NLIBKABFGCC = 0;
         self.retcode = 0;
+        self.JFBDCLJMCMF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleLevelFinishScRsp {
         static instance: MarbleLevelFinishScRsp = MarbleLevelFinishScRsp {
-            NLIBKABFGCC: 0,
             retcode: 0,
+            JFBDCLJMCMF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MarbleLevelFinishScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMarbleLevelFinishScRsp.proto\"T\n\x16MarbleLevelFinishScRsp\x12\
-    \x20\n\x0bNLIBKABFGCC\x18\x05\x20\x01(\rR\x0bNLIBKABFGCC\x12\x18\n\x07re\
-    tcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bJFBDCLJMCM\
+    F\x18\t\x20\x01(\rR\x0bJFBDCLJMCMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

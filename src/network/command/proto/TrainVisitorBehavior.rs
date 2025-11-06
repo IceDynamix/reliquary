@@ -79,10 +79,10 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.visitor_id = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.is_meet = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrainVisitorBehavior {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.visitor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.visitor_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.visitor_id);
         }
         if self.is_meet != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TrainVisitorBehavior {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.visitor_id != 0 {
-            os.write_uint32(9, self.visitor_id)?;
+            os.write_uint32(2, self.visitor_id)?;
         }
         if self.is_meet != false {
-            os.write_bool(3, self.is_meet)?;
+            os.write_bool(11, self.is_meet)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainVisitorBehavior {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aTrainVisitorBehavior.proto\"N\n\x14TrainVisitorBehavior\x12\x1d\n\
-    \nvisitor_id\x18\t\x20\x01(\rR\tvisitorId\x12\x17\n\x07is_meet\x18\x03\
+    \nvisitor_id\x18\x02\x20\x01(\rR\tvisitorId\x12\x17\n\x07is_meet\x18\x0b\
     \x20\x01(\x08R\x06isMeetb\x06proto3\
 ";
 

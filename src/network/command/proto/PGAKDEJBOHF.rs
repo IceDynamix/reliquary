@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGAKDEJBOHF {
     // message fields
-    // @@protoc_insertion_point(field:PGAKDEJBOHF.JFPJBBJLIFK)
-    pub JFPJBBJLIFK: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
+    // @@protoc_insertion_point(field:PGAKDEJBOHF.NBHLAEMBIIO)
+    pub NBHLAEMBIIO: ::protobuf::MessageField<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PGAKDEJBOHF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PGAKDEJBOHF {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>(
-            "JFPJBBJLIFK",
-            |m: &PGAKDEJBOHF| { &m.JFPJBBJLIFK },
-            |m: &mut PGAKDEJBOHF| { &mut m.JFPJBBJLIFK },
+            "NBHLAEMBIIO",
+            |m: &PGAKDEJBOHF| { &m.NBHLAEMBIIO },
+            |m: &mut PGAKDEJBOHF| { &mut m.NBHLAEMBIIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PGAKDEJBOHF>(
             "PGAKDEJBOHF",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PGAKDEJBOHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPJBBJLIFK)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NBHLAEMBIIO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PGAKDEJBOHF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JFPJBBJLIFK.as_ref() {
+        if let Some(v) = self.NBHLAEMBIIO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PGAKDEJBOHF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JFPJBBJLIFK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.NBHLAEMBIIO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PGAKDEJBOHF {
     }
 
     fn clear(&mut self) {
-        self.JFPJBBJLIFK.clear();
+        self.NBHLAEMBIIO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGAKDEJBOHF {
         static instance: PGAKDEJBOHF = PGAKDEJBOHF {
-            JFPJBBJLIFK: ::protobuf::MessageField::none(),
+            NBHLAEMBIIO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for PGAKDEJBOHF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGAKDEJBOHF.proto\x1a\x1cRogueMagicGameUnitInfo.proto\"H\n\x0bPGAK\
-    DEJBOHF\x129\n\x0bJFPJBBJLIFK\x18\x05\x20\x01(\x0b2\x17.RogueMagicGameUn\
-    itInfoR\x0bJFPJBBJLIFKb\x06proto3\
+    DEJBOHF\x129\n\x0bNBHLAEMBIIO\x18\x04\x20\x01(\x0b2\x17.RogueMagicGameUn\
+    itInfoR\x0bNBHLAEMBIIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

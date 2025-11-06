@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesStartMiniGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesStartMiniGameCsReq.OOHNKOJHDHO)
-    pub OOHNKOJHDHO: u32,
-    // @@protoc_insertion_point(field:PlanetFesStartMiniGameCsReq.ACDOPCBMPNL)
-    pub ACDOPCBMPNL: u32,
+    // @@protoc_insertion_point(field:PlanetFesStartMiniGameCsReq.ratio)
+    pub ratio: u32,
+    // @@protoc_insertion_point(field:PlanetFesStartMiniGameCsReq.IJPPHOENHFI)
+    pub IJPPHOENHFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesStartMiniGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesStartMiniGameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOHNKOJHDHO",
-            |m: &PlanetFesStartMiniGameCsReq| { &m.OOHNKOJHDHO },
-            |m: &mut PlanetFesStartMiniGameCsReq| { &mut m.OOHNKOJHDHO },
+            "ratio",
+            |m: &PlanetFesStartMiniGameCsReq| { &m.ratio },
+            |m: &mut PlanetFesStartMiniGameCsReq| { &mut m.ratio },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACDOPCBMPNL",
-            |m: &PlanetFesStartMiniGameCsReq| { &m.ACDOPCBMPNL },
-            |m: &mut PlanetFesStartMiniGameCsReq| { &mut m.ACDOPCBMPNL },
+            "IJPPHOENHFI",
+            |m: &PlanetFesStartMiniGameCsReq| { &m.IJPPHOENHFI },
+            |m: &mut PlanetFesStartMiniGameCsReq| { &mut m.IJPPHOENHFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesStartMiniGameCsReq>(
             "PlanetFesStartMiniGameCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesStartMiniGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.OOHNKOJHDHO = is.read_uint32()?;
+                16 => {
+                    self.ratio = is.read_uint32()?;
                 },
-                120 => {
-                    self.ACDOPCBMPNL = is.read_uint32()?;
+                72 => {
+                    self.IJPPHOENHFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesStartMiniGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OOHNKOJHDHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OOHNKOJHDHO);
+        if self.ratio != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ratio);
         }
-        if self.ACDOPCBMPNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ACDOPCBMPNL);
+        if self.IJPPHOENHFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IJPPHOENHFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesStartMiniGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OOHNKOJHDHO != 0 {
-            os.write_uint32(13, self.OOHNKOJHDHO)?;
+        if self.ratio != 0 {
+            os.write_uint32(2, self.ratio)?;
         }
-        if self.ACDOPCBMPNL != 0 {
-            os.write_uint32(15, self.ACDOPCBMPNL)?;
+        if self.IJPPHOENHFI != 0 {
+            os.write_uint32(9, self.IJPPHOENHFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesStartMiniGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.OOHNKOJHDHO = 0;
-        self.ACDOPCBMPNL = 0;
+        self.ratio = 0;
+        self.IJPPHOENHFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesStartMiniGameCsReq {
         static instance: PlanetFesStartMiniGameCsReq = PlanetFesStartMiniGameCsReq {
-            OOHNKOJHDHO: 0,
-            ACDOPCBMPNL: 0,
+            ratio: 0,
+            IJPPHOENHFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesStartMiniGameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PlanetFesStartMiniGameCsReq.proto\"a\n\x1bPlanetFesStartMiniGameCsReq\
-    \x12\x20\n\x0bOOHNKOJHDHO\x18\r\x20\x01(\rR\x0bOOHNKOJHDHO\x12\x20\n\x0b\
-    ACDOPCBMPNL\x18\x0f\x20\x01(\rR\x0bACDOPCBMPNLb\x06proto3\
+    \n!PlanetFesStartMiniGameCsReq.proto\"U\n\x1bPlanetFesStartMiniGameCsReq\
+    \x12\x14\n\x05ratio\x18\x02\x20\x01(\rR\x05ratio\x12\x20\n\x0bIJPPHOENHF\
+    I\x18\t\x20\x01(\rR\x0bIJPPHOENHFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

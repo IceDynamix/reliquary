@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicLevelInfoUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.ACGBELAIGBO)
-    pub ACGBELAIGBO: u32,
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::RogueMagicSettleReason::RogueMagicSettleReason>,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.cur_level_index)
     pub cur_level_index: u32,
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.level_info_list)
-    pub level_info_list: ::std::vec::Vec<super::RogueMagicLayerInfo::RogueMagicLayerInfo>,
-    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.extra_round_limit)
-    pub extra_round_limit: u32,
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::RogueMagicSettleReason::RogueMagicSettleReason>,
     // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueMagicLevelStatus::RogueMagicLevelStatus>,
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.MJEPAPNGFAN)
+    pub MJEPAPNGFAN: u32,
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.level_info_list)
+    pub level_info_list: ::std::vec::Vec<super::RogueMagicLayerInfo::RogueMagicLayerInfo>,
+    // @@protoc_insertion_point(field:RogueMagicLevelInfoUpdateScNotify.CKFHJFOOEJE)
+    pub CKFHJFOOEJE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicLevelInfoUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,9 @@ impl RogueMagicLevelInfoUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACGBELAIGBO",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.ACGBELAIGBO },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.ACGBELAIGBO },
+            "cur_level_index",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.cur_level_index },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.cur_level_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -70,9 +70,14 @@ impl RogueMagicLevelInfoUpdateScNotify {
             |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_level_index",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.cur_level_index },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.cur_level_index },
+            "status",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.status },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJEPAPNGFAN",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.MJEPAPNGFAN },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.MJEPAPNGFAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "level_info_list",
@@ -80,14 +85,9 @@ impl RogueMagicLevelInfoUpdateScNotify {
             |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.level_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_round_limit",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.extra_round_limit },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.extra_round_limit },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.status },
-            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.status },
+            "CKFHJFOOEJE",
+            |m: &RogueMagicLevelInfoUpdateScNotify| { &m.CKFHJFOOEJE },
+            |m: &mut RogueMagicLevelInfoUpdateScNotify| { &mut m.CKFHJFOOEJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicLevelInfoUpdateScNotify>(
             "RogueMagicLevelInfoUpdateScNotify",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.ACGBELAIGBO = is.read_uint32()?;
-                },
-                120 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                96 => {
+                8 => {
                     self.cur_level_index = is.read_uint32()?;
                 },
-                26 => {
+                32 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                40 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.MJEPAPNGFAN = is.read_uint32()?;
+                },
+                82 => {
                     self.level_info_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.extra_round_limit = is.read_uint32()?;
-                },
-                72 => {
-                    self.status = is.read_enum_or_unknown()?;
+                112 => {
+                    self.CKFHJFOOEJE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACGBELAIGBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ACGBELAIGBO);
+        if self.cur_level_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.cur_level_index);
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(4, self.reason.value());
         }
-        if self.cur_level_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_level_index);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.status.value());
+        }
+        if self.MJEPAPNGFAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MJEPAPNGFAN);
         }
         for value in &self.level_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.extra_round_limit != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.extra_round_limit);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+        if self.CKFHJFOOEJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CKFHJFOOEJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACGBELAIGBO != 0 {
-            os.write_uint32(6, self.ACGBELAIGBO)?;
+        if self.cur_level_index != 0 {
+            os.write_uint32(1, self.cur_level_index)?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.cur_level_index != 0 {
-            os.write_uint32(12, self.cur_level_index)?;
-        }
-        for v in &self.level_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.extra_round_limit != 0 {
-            os.write_uint32(13, self.extra_round_limit)?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.MJEPAPNGFAN != 0 {
+            os.write_uint32(7, self.MJEPAPNGFAN)?;
+        }
+        for v in &self.level_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.CKFHJFOOEJE != 0 {
+            os.write_uint32(14, self.CKFHJFOOEJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for RogueMagicLevelInfoUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.ACGBELAIGBO = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE);
         self.cur_level_index = 0;
-        self.level_info_list.clear();
-        self.extra_round_limit = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::RogueMagicSettleReason::RogueMagicSettleReason::ROGUE_MAGIC_SETTLE_REASON_NONE);
         self.status = ::protobuf::EnumOrUnknown::new(super::RogueMagicLevelStatus::RogueMagicLevelStatus::ROGUE_MAGIC_LEVEL_STATUS_NONE);
+        self.MJEPAPNGFAN = 0;
+        self.level_info_list.clear();
+        self.CKFHJFOOEJE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicLevelInfoUpdateScNotify {
         static instance: RogueMagicLevelInfoUpdateScNotify = RogueMagicLevelInfoUpdateScNotify {
-            ACGBELAIGBO: 0,
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             cur_level_index: 0,
-            level_info_list: ::std::vec::Vec::new(),
-            extra_round_limit: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            MJEPAPNGFAN: 0,
+            level_info_list: ::std::vec::Vec::new(),
+            CKFHJFOOEJE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicLevelInfoUpdateScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'RogueMagicLevelInfoUpdateScNotify.proto\x1a\x19RogueMagicLayerInfo.pr\
     oto\x1a\x1bRogueMagicLevelStatus.proto\x1a\x1cRogueMagicSettleReason.pro\
-    to\"\xb8\x02\n!RogueMagicLevelInfoUpdateScNotify\x12\x20\n\x0bACGBELAIGB\
-    O\x18\x06\x20\x01(\rR\x0bACGBELAIGBO\x12/\n\x06reason\x18\x0f\x20\x01(\
-    \x0e2\x17.RogueMagicSettleReasonR\x06reason\x12&\n\x0fcur_level_index\
-    \x18\x0c\x20\x01(\rR\rcurLevelIndex\x12<\n\x0flevel_info_list\x18\x03\
-    \x20\x03(\x0b2\x14.RogueMagicLayerInfoR\rlevelInfoList\x12*\n\x11extra_r\
-    ound_limit\x18\r\x20\x01(\rR\x0fextraRoundLimit\x12.\n\x06status\x18\t\
-    \x20\x01(\x0e2\x16.RogueMagicLevelStatusR\x06statusb\x06proto3\
+    to\"\xae\x02\n!RogueMagicLevelInfoUpdateScNotify\x12&\n\x0fcur_level_ind\
+    ex\x18\x01\x20\x01(\rR\rcurLevelIndex\x12/\n\x06reason\x18\x04\x20\x01(\
+    \x0e2\x17.RogueMagicSettleReasonR\x06reason\x12.\n\x06status\x18\x05\x20\
+    \x01(\x0e2\x16.RogueMagicLevelStatusR\x06status\x12\x20\n\x0bMJEPAPNGFAN\
+    \x18\x07\x20\x01(\rR\x0bMJEPAPNGFAN\x12<\n\x0flevel_info_list\x18\n\x20\
+    \x03(\x0b2\x14.RogueMagicLayerInfoR\rlevelInfoList\x12\x20\n\x0bCKFHJFOO\
+    EJE\x18\x0e\x20\x01(\rR\x0bCKFHJFOOEJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesBuyLandCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesBuyLandCsReq.DGCFLHCPJLN)
-    pub DGCFLHCPJLN: u32,
+    // @@protoc_insertion_point(field:PlanetFesBuyLandCsReq.KLLCODNHCFK)
+    pub KLLCODNHCFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBuyLandCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesBuyLandCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGCFLHCPJLN",
-            |m: &PlanetFesBuyLandCsReq| { &m.DGCFLHCPJLN },
-            |m: &mut PlanetFesBuyLandCsReq| { &mut m.DGCFLHCPJLN },
+            "KLLCODNHCFK",
+            |m: &PlanetFesBuyLandCsReq| { &m.KLLCODNHCFK },
+            |m: &mut PlanetFesBuyLandCsReq| { &mut m.KLLCODNHCFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBuyLandCsReq>(
             "PlanetFesBuyLandCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesBuyLandCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.DGCFLHCPJLN = is.read_uint32()?;
+                72 => {
+                    self.KLLCODNHCFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesBuyLandCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGCFLHCPJLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DGCFLHCPJLN);
+        if self.KLLCODNHCFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KLLCODNHCFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesBuyLandCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGCFLHCPJLN != 0 {
-            os.write_uint32(6, self.DGCFLHCPJLN)?;
+        if self.KLLCODNHCFK != 0 {
+            os.write_uint32(9, self.KLLCODNHCFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesBuyLandCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGCFLHCPJLN = 0;
+        self.KLLCODNHCFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBuyLandCsReq {
         static instance: PlanetFesBuyLandCsReq = PlanetFesBuyLandCsReq {
-            DGCFLHCPJLN: 0,
+            KLLCODNHCFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBuyLandCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesBuyLandCsReq.proto\"9\n\x15PlanetFesBuyLandCsReq\x12\x20\
-    \n\x0bDGCFLHCPJLN\x18\x06\x20\x01(\rR\x0bDGCFLHCPJLNb\x06proto3\
+    \n\x0bKLLCODNHCFK\x18\t\x20\x01(\rR\x0bKLLCODNHCFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

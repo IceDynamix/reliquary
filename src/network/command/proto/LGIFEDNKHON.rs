@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGIFEDNKHON {
     // message fields
-    // @@protoc_insertion_point(field:LGIFEDNKHON.DAKIJNBFKOB)
-    pub DAKIJNBFKOB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LGIFEDNKHON.FJJOBAEMEHP)
-    pub FJJOBAEMEHP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LGIFEDNKHON.GFMCEFJFOEO)
+    pub GFMCEFJFOEO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LGIFEDNKHON.LDFKHHCENBG)
+    pub LDFKHHCENBG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LGIFEDNKHON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl LGIFEDNKHON {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DAKIJNBFKOB",
-            |m: &LGIFEDNKHON| { &m.DAKIJNBFKOB },
-            |m: &mut LGIFEDNKHON| { &mut m.DAKIJNBFKOB },
+            "GFMCEFJFOEO",
+            |m: &LGIFEDNKHON| { &m.GFMCEFJFOEO },
+            |m: &mut LGIFEDNKHON| { &mut m.GFMCEFJFOEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJJOBAEMEHP",
-            |m: &LGIFEDNKHON| { &m.FJJOBAEMEHP },
-            |m: &mut LGIFEDNKHON| { &mut m.FJJOBAEMEHP },
+            "LDFKHHCENBG",
+            |m: &LGIFEDNKHON| { &m.LDFKHHCENBG },
+            |m: &mut LGIFEDNKHON| { &mut m.LDFKHHCENBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGIFEDNKHON>(
             "LGIFEDNKHON",
@@ -80,16 +80,16 @@ impl ::protobuf::Message for LGIFEDNKHON {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DAKIJNBFKOB)?;
+                    is.read_repeated_packed_uint32_into(&mut self.GFMCEFJFOEO)?;
                 },
                 8 => {
-                    self.DAKIJNBFKOB.push(is.read_uint32()?);
+                    self.GFMCEFJFOEO.push(is.read_uint32()?);
                 },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJJOBAEMEHP)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LDFKHHCENBG)?;
                 },
                 16 => {
-                    self.FJJOBAEMEHP.push(is.read_uint32()?);
+                    self.LDFKHHCENBG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for LGIFEDNKHON {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DAKIJNBFKOB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.FJJOBAEMEHP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.GFMCEFJFOEO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LDFKHHCENBG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.DAKIJNBFKOB)?;
-        os.write_repeated_packed_uint32(2, &self.FJJOBAEMEHP)?;
+        os.write_repeated_packed_uint32(1, &self.GFMCEFJFOEO)?;
+        os.write_repeated_packed_uint32(2, &self.LDFKHHCENBG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for LGIFEDNKHON {
     }
 
     fn clear(&mut self) {
-        self.DAKIJNBFKOB.clear();
-        self.FJJOBAEMEHP.clear();
+        self.GFMCEFJFOEO.clear();
+        self.LDFKHHCENBG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGIFEDNKHON {
         static instance: LGIFEDNKHON = LGIFEDNKHON {
-            DAKIJNBFKOB: ::std::vec::Vec::new(),
-            FJJOBAEMEHP: ::std::vec::Vec::new(),
+            GFMCEFJFOEO: ::std::vec::Vec::new(),
+            LDFKHHCENBG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for LGIFEDNKHON {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LGIFEDNKHON.proto\"Q\n\x0bLGIFEDNKHON\x12\x20\n\x0bDAKIJNBFKOB\x18\
-    \x01\x20\x03(\rR\x0bDAKIJNBFKOB\x12\x20\n\x0bFJJOBAEMEHP\x18\x02\x20\x03\
-    (\rR\x0bFJJOBAEMEHPb\x06proto3\
+    \n\x11LGIFEDNKHON.proto\"Q\n\x0bLGIFEDNKHON\x12\x20\n\x0bGFMCEFJFOEO\x18\
+    \x01\x20\x03(\rR\x0bGFMCEFJFOEO\x12\x20\n\x0bLDFKHHCENBG\x18\x02\x20\x03\
+    (\rR\x0bLDFKHHCENBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct INNNICFOLII {
     // message fields
     // @@protoc_insertion_point(field:INNNICFOLII.gacha_random)
     pub gacha_random: u32,
-    // @@protoc_insertion_point(field:INNNICFOLII.JCNODAMFFFC)
-    pub JCNODAMFFFC: bool,
+    // @@protoc_insertion_point(field:INNNICFOLII.HNNIFFDGAGO)
+    pub HNNIFFDGAGO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:INNNICFOLII.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl INNNICFOLII {
             |m: &mut INNNICFOLII| { &mut m.gacha_random },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCNODAMFFFC",
-            |m: &INNNICFOLII| { &m.JCNODAMFFFC },
-            |m: &mut INNNICFOLII| { &mut m.JCNODAMFFFC },
+            "HNNIFFDGAGO",
+            |m: &INNNICFOLII| { &m.HNNIFFDGAGO },
+            |m: &mut INNNICFOLII| { &mut m.HNNIFFDGAGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<INNNICFOLII>(
             "INNNICFOLII",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for INNNICFOLII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.gacha_random = is.read_uint32()?;
                 },
-                104 => {
-                    self.JCNODAMFFFC = is.read_bool()?;
+                120 => {
+                    self.HNNIFFDGAGO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for INNNICFOLII {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(5, self.gacha_random);
         }
-        if self.JCNODAMFFFC != false {
+        if self.HNNIFFDGAGO != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for INNNICFOLII {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.gacha_random != 0 {
-            os.write_uint32(7, self.gacha_random)?;
+            os.write_uint32(5, self.gacha_random)?;
         }
-        if self.JCNODAMFFFC != false {
-            os.write_bool(13, self.JCNODAMFFFC)?;
+        if self.HNNIFFDGAGO != false {
+            os.write_bool(15, self.HNNIFFDGAGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for INNNICFOLII {
 
     fn clear(&mut self) {
         self.gacha_random = 0;
-        self.JCNODAMFFFC = false;
+        self.HNNIFFDGAGO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static INNNICFOLII {
         static instance: INNNICFOLII = INNNICFOLII {
             gacha_random: 0,
-            JCNODAMFFFC: false,
+            HNNIFFDGAGO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for INNNICFOLII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11INNNICFOLII.proto\"R\n\x0bINNNICFOLII\x12!\n\x0cgacha_random\x18\
-    \x07\x20\x01(\rR\x0bgachaRandom\x12\x20\n\x0bJCNODAMFFFC\x18\r\x20\x01(\
-    \x08R\x0bJCNODAMFFFCb\x06proto3\
+    \x05\x20\x01(\rR\x0bgachaRandom\x12\x20\n\x0bHNNIFFDGAGO\x18\x0f\x20\x01\
+    (\x08R\x0bHNNIFFDGAGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

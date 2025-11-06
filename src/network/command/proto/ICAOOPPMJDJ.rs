@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ICAOOPPMJDJ {
     // message fields
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.FPLJCJDEIKC)
+    pub FPLJCJDEIKC: ::protobuf::EnumOrUnknown<super::FightMarblePlayerState::FightMarblePlayerState>,
     // @@protoc_insertion_point(field:ICAOOPPMJDJ.is_win)
     pub is_win: bool,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.BPIPOBHCMFD)
-    pub BPIPOBHCMFD: ::std::vec::Vec<super::GKLOALDHNEF::GKLOALDHNEF>,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.BLKFGAJHMLK)
-    pub BLKFGAJHMLK: u32,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.KJPMOHFIILO)
-    pub KJPMOHFIILO: ::protobuf::EnumOrUnknown<super::EEIBHJPNJCF::EEIBHJPNJCF>,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.DJEEEABMDDK)
-    pub DJEEEABMDDK: bool,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CLBNHPEABFK)
-    pub CLBNHPEABFK: i32,
-    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CHLLMFJGPPA)
-    pub CHLLMFJGPPA: u32,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.IFEFAEJDOFI)
+    pub IFEFAEJDOFI: u32,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.BDJEFPCCMJK)
+    pub BDJEFPCCMJK: ::std::vec::Vec<super::GKLOALDHNEF::GKLOALDHNEF>,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.DPEMPJPECEE)
+    pub DPEMPJPECEE: i32,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.LCOGCPBHAPJ)
+    pub LCOGCPBHAPJ: bool,
+    // @@protoc_insertion_point(field:ICAOOPPMJDJ.CJOHFIPCDJH)
+    pub CJOHFIPCDJH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ICAOOPPMJDJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,39 +62,39 @@ impl ICAOOPPMJDJ {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FPLJCJDEIKC",
+            |m: &ICAOOPPMJDJ| { &m.FPLJCJDEIKC },
+            |m: &mut ICAOOPPMJDJ| { &mut m.FPLJCJDEIKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ICAOOPPMJDJ| { &m.is_win },
             |m: &mut ICAOOPPMJDJ| { &mut m.is_win },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEFAEJDOFI",
+            |m: &ICAOOPPMJDJ| { &m.IFEFAEJDOFI },
+            |m: &mut ICAOOPPMJDJ| { &mut m.IFEFAEJDOFI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BPIPOBHCMFD",
-            |m: &ICAOOPPMJDJ| { &m.BPIPOBHCMFD },
-            |m: &mut ICAOOPPMJDJ| { &mut m.BPIPOBHCMFD },
+            "BDJEFPCCMJK",
+            |m: &ICAOOPPMJDJ| { &m.BDJEFPCCMJK },
+            |m: &mut ICAOOPPMJDJ| { &mut m.BDJEFPCCMJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLKFGAJHMLK",
-            |m: &ICAOOPPMJDJ| { &m.BLKFGAJHMLK },
-            |m: &mut ICAOOPPMJDJ| { &mut m.BLKFGAJHMLK },
+            "DPEMPJPECEE",
+            |m: &ICAOOPPMJDJ| { &m.DPEMPJPECEE },
+            |m: &mut ICAOOPPMJDJ| { &mut m.DPEMPJPECEE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJPMOHFIILO",
-            |m: &ICAOOPPMJDJ| { &m.KJPMOHFIILO },
-            |m: &mut ICAOOPPMJDJ| { &mut m.KJPMOHFIILO },
+            "LCOGCPBHAPJ",
+            |m: &ICAOOPPMJDJ| { &m.LCOGCPBHAPJ },
+            |m: &mut ICAOOPPMJDJ| { &mut m.LCOGCPBHAPJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJEEEABMDDK",
-            |m: &ICAOOPPMJDJ| { &m.DJEEEABMDDK },
-            |m: &mut ICAOOPPMJDJ| { &mut m.DJEEEABMDDK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLBNHPEABFK",
-            |m: &ICAOOPPMJDJ| { &m.CLBNHPEABFK },
-            |m: &mut ICAOOPPMJDJ| { &mut m.CLBNHPEABFK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHLLMFJGPPA",
-            |m: &ICAOOPPMJDJ| { &m.CHLLMFJGPPA },
-            |m: &mut ICAOOPPMJDJ| { &mut m.CHLLMFJGPPA },
+            "CJOHFIPCDJH",
+            |m: &ICAOOPPMJDJ| { &m.CJOHFIPCDJH },
+            |m: &mut ICAOOPPMJDJ| { &mut m.CJOHFIPCDJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICAOOPPMJDJ>(
             "ICAOOPPMJDJ",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
+                    self.FPLJCJDEIKC = is.read_enum_or_unknown()?;
+                },
+                16 => {
                     self.is_win = is.read_bool()?;
                 },
-                34 => {
-                    self.BPIPOBHCMFD.push(is.read_message()?);
+                40 => {
+                    self.IFEFAEJDOFI = is.read_uint32()?;
                 },
-                88 => {
-                    self.BLKFGAJHMLK = is.read_uint32()?;
+                58 => {
+                    self.BDJEFPCCMJK.push(is.read_message()?);
                 },
-                64 => {
-                    self.KJPMOHFIILO = is.read_enum_or_unknown()?;
+                80 => {
+                    self.DPEMPJPECEE = is.read_int32()?;
                 },
-                48 => {
-                    self.DJEEEABMDDK = is.read_bool()?;
+                96 => {
+                    self.LCOGCPBHAPJ = is.read_bool()?;
                 },
-                24 => {
-                    self.CLBNHPEABFK = is.read_int32()?;
-                },
-                104 => {
-                    self.CHLLMFJGPPA = is.read_uint32()?;
+                112 => {
+                    self.CJOHFIPCDJH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FPLJCJDEIKC != ::protobuf::EnumOrUnknown::new(super::FightMarblePlayerState::FightMarblePlayerState::MARBLE_PLAYER_STATE_Default) {
+            my_size += ::protobuf::rt::int32_size(1, self.FPLJCJDEIKC.value());
+        }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        for value in &self.BPIPOBHCMFD {
+        if self.IFEFAEJDOFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IFEFAEJDOFI);
+        }
+        for value in &self.BDJEFPCCMJK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BLKFGAJHMLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BLKFGAJHMLK);
+        if self.DPEMPJPECEE != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.DPEMPJPECEE);
         }
-        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
-            my_size += ::protobuf::rt::int32_size(8, self.KJPMOHFIILO.value());
-        }
-        if self.DJEEEABMDDK != false {
+        if self.LCOGCPBHAPJ != false {
             my_size += 1 + 1;
         }
-        if self.CLBNHPEABFK != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.CLBNHPEABFK);
-        }
-        if self.CHLLMFJGPPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CHLLMFJGPPA);
+        if self.CJOHFIPCDJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CJOHFIPCDJH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FPLJCJDEIKC != ::protobuf::EnumOrUnknown::new(super::FightMarblePlayerState::FightMarblePlayerState::MARBLE_PLAYER_STATE_Default) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.FPLJCJDEIKC))?;
+        }
         if self.is_win != false {
-            os.write_bool(1, self.is_win)?;
+            os.write_bool(2, self.is_win)?;
         }
-        for v in &self.BPIPOBHCMFD {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.IFEFAEJDOFI != 0 {
+            os.write_uint32(5, self.IFEFAEJDOFI)?;
+        }
+        for v in &self.BDJEFPCCMJK {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.BLKFGAJHMLK != 0 {
-            os.write_uint32(11, self.BLKFGAJHMLK)?;
+        if self.DPEMPJPECEE != 0 {
+            os.write_int32(10, self.DPEMPJPECEE)?;
         }
-        if self.KJPMOHFIILO != ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.KJPMOHFIILO))?;
+        if self.LCOGCPBHAPJ != false {
+            os.write_bool(12, self.LCOGCPBHAPJ)?;
         }
-        if self.DJEEEABMDDK != false {
-            os.write_bool(6, self.DJEEEABMDDK)?;
-        }
-        if self.CLBNHPEABFK != 0 {
-            os.write_int32(3, self.CLBNHPEABFK)?;
-        }
-        if self.CHLLMFJGPPA != 0 {
-            os.write_uint32(13, self.CHLLMFJGPPA)?;
+        if self.CJOHFIPCDJH != 0 {
+            os.write_uint32(14, self.CJOHFIPCDJH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for ICAOOPPMJDJ {
     }
 
     fn clear(&mut self) {
+        self.FPLJCJDEIKC = ::protobuf::EnumOrUnknown::new(super::FightMarblePlayerState::FightMarblePlayerState::MARBLE_PLAYER_STATE_Default);
         self.is_win = false;
-        self.BPIPOBHCMFD.clear();
-        self.BLKFGAJHMLK = 0;
-        self.KJPMOHFIILO = ::protobuf::EnumOrUnknown::new(super::EEIBHJPNJCF::EEIBHJPNJCF::MARBLE_PLAYER_STATE_Default);
-        self.DJEEEABMDDK = false;
-        self.CLBNHPEABFK = 0;
-        self.CHLLMFJGPPA = 0;
+        self.IFEFAEJDOFI = 0;
+        self.BDJEFPCCMJK.clear();
+        self.DPEMPJPECEE = 0;
+        self.LCOGCPBHAPJ = false;
+        self.CJOHFIPCDJH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICAOOPPMJDJ {
         static instance: ICAOOPPMJDJ = ICAOOPPMJDJ {
+            FPLJCJDEIKC: ::protobuf::EnumOrUnknown::from_i32(0),
             is_win: false,
-            BPIPOBHCMFD: ::std::vec::Vec::new(),
-            BLKFGAJHMLK: 0,
-            KJPMOHFIILO: ::protobuf::EnumOrUnknown::from_i32(0),
-            DJEEEABMDDK: false,
-            CLBNHPEABFK: 0,
-            CHLLMFJGPPA: 0,
+            IFEFAEJDOFI: 0,
+            BDJEFPCCMJK: ::std::vec::Vec::new(),
+            DPEMPJPECEE: 0,
+            LCOGCPBHAPJ: false,
+            CJOHFIPCDJH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,14 +256,15 @@ impl ::protobuf::reflect::ProtobufValue for ICAOOPPMJDJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ICAOOPPMJDJ.proto\x1a\x11EEIBHJPNJCF.proto\x1a\x11GKLOALDHNEF.prot\
-    o\"\x8c\x02\n\x0bICAOOPPMJDJ\x12\x15\n\x06is_win\x18\x01\x20\x01(\x08R\
-    \x05isWin\x12.\n\x0bBPIPOBHCMFD\x18\x04\x20\x03(\x0b2\x0c.GKLOALDHNEFR\
-    \x0bBPIPOBHCMFD\x12\x20\n\x0bBLKFGAJHMLK\x18\x0b\x20\x01(\rR\x0bBLKFGAJH\
-    MLK\x12.\n\x0bKJPMOHFIILO\x18\x08\x20\x01(\x0e2\x0c.EEIBHJPNJCFR\x0bKJPM\
-    OHFIILO\x12\x20\n\x0bDJEEEABMDDK\x18\x06\x20\x01(\x08R\x0bDJEEEABMDDK\
-    \x12\x20\n\x0bCLBNHPEABFK\x18\x03\x20\x01(\x05R\x0bCLBNHPEABFK\x12\x20\n\
-    \x0bCHLLMFJGPPA\x18\r\x20\x01(\rR\x0bCHLLMFJGPPAb\x06proto3\
+    \n\x11ICAOOPPMJDJ.proto\x1a\x1cFightMarblePlayerState.proto\x1a\x11GKLOA\
+    LDHNEF.proto\"\x97\x02\n\x0bICAOOPPMJDJ\x129\n\x0bFPLJCJDEIKC\x18\x01\
+    \x20\x01(\x0e2\x17.FightMarblePlayerStateR\x0bFPLJCJDEIKC\x12\x15\n\x06i\
+    s_win\x18\x02\x20\x01(\x08R\x05isWin\x12\x20\n\x0bIFEFAEJDOFI\x18\x05\
+    \x20\x01(\rR\x0bIFEFAEJDOFI\x12.\n\x0bBDJEFPCCMJK\x18\x07\x20\x03(\x0b2\
+    \x0c.GKLOALDHNEFR\x0bBDJEFPCCMJK\x12\x20\n\x0bDPEMPJPECEE\x18\n\x20\x01(\
+    \x05R\x0bDPEMPJPECEE\x12\x20\n\x0bLCOGCPBHAPJ\x18\x0c\x20\x01(\x08R\x0bL\
+    COGCPBHAPJ\x12\x20\n\x0bCJOHFIPCDJH\x18\x0e\x20\x01(\rR\x0bCJOHFIPCDJHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -281,7 +282,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::EEIBHJPNJCF::file_descriptor().clone());
+            deps.push(super::FightMarblePlayerState::file_descriptor().clone());
             deps.push(super::GKLOALDHNEF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ICAOOPPMJDJ::generated_message_descriptor_data());

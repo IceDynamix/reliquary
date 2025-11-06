@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcMonsterExtraInfo {
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<npc_monster_extra_info::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<npc_monster_extra_info::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:NpcMonsterExtraInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,66 +45,66 @@ impl NpcMonsterExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .NpcMonsterRogueInfo rogue_game_info = 2;
+    // .NpcRogueMonsterInfo rogue_game_info = 5;
 
-    pub fn rogue_game_info(&self) -> &super::NpcMonsterRogueInfo::NpcMonsterRogueInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(ref v)) => v,
-            _ => <super::NpcMonsterRogueInfo::NpcMonsterRogueInfo as ::protobuf::Message>::default_instance(),
+    pub fn rogue_game_info(&self) -> &super::NpcRogueMonsterInfo::NpcRogueMonsterInfo {
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(ref v)) => v,
+            _ => <super::NpcRogueMonsterInfo::NpcRogueMonsterInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_game_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_rogue_game_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_rogue_game_info(&mut self, v: super::NpcMonsterRogueInfo::NpcMonsterRogueInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(v))
+    pub fn set_rogue_game_info(&mut self, v: super::NpcRogueMonsterInfo::NpcRogueMonsterInfo) {
+        self.IEICDGGELNE = ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_rogue_game_info(&mut self) -> &mut super::NpcMonsterRogueInfo::NpcMonsterRogueInfo {
-        if let ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(_)) = self.KFELKJLDKEH {
+    pub fn mut_rogue_game_info(&mut self) -> &mut super::NpcRogueMonsterInfo::NpcRogueMonsterInfo {
+        if let ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(super::NpcMonsterRogueInfo::NpcMonsterRogueInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(super::NpcRogueMonsterInfo::NpcRogueMonsterInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_rogue_game_info(&mut self) -> super::NpcMonsterRogueInfo::NpcMonsterRogueInfo {
+    pub fn take_rogue_game_info(&mut self) -> super::NpcRogueMonsterInfo::NpcRogueMonsterInfo {
         if self.has_rogue_game_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NpcMonsterRogueInfo::NpcMonsterRogueInfo::new()
+            super::NpcRogueMonsterInfo::NpcRogueMonsterInfo::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NpcMonsterRogueInfo::NpcMonsterRogueInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NpcRogueMonsterInfo::NpcRogueMonsterInfo>(
             "rogue_game_info",
             NpcMonsterExtraInfo::has_rogue_game_info,
             NpcMonsterExtraInfo::rogue_game_info,
             NpcMonsterExtraInfo::mut_rogue_game_info,
             NpcMonsterExtraInfo::set_rogue_game_info,
         ));
-        oneofs.push(npc_monster_extra_info::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(npc_monster_extra_info::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcMonsterExtraInfo>(
             "NpcMonsterExtraInfo",
             fields,
@@ -123,8 +123,8 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(is.read_message()?));
+                42 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,9 +138,9 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
+                &npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -152,10 +152,10 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &npc_monster_extra_info::KFELKJLDKEH::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &npc_monster_extra_info::IEICDGGELNE::RogueGameInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -176,13 +176,13 @@ impl ::protobuf::Message for NpcMonsterExtraInfo {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcMonsterExtraInfo {
         static instance: NpcMonsterExtraInfo = NpcMonsterExtraInfo {
-            KFELKJLDKEH: ::std::option::Option::None,
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -211,33 +211,33 @@ pub mod npc_monster_extra_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:NpcMonsterExtraInfo.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:NpcMonsterExtraInfo.IEICDGGELNE)
+    pub enum IEICDGGELNE {
         // @@protoc_insertion_point(oneof_field:NpcMonsterExtraInfo.rogue_game_info)
-        RogueGameInfo(super::super::NpcMonsterRogueInfo::NpcMonsterRogueInfo),
+        RogueGameInfo(super::super::NpcRogueMonsterInfo::NpcRogueMonsterInfo),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::NpcMonsterExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::NpcMonsterExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19NpcMonsterExtraInfo.proto\x1a\x19NpcMonsterRogueInfo.proto\"d\n\
-    \x13NpcMonsterExtraInfo\x12>\n\x0frogue_game_info\x18\x02\x20\x01(\x0b2\
-    \x14.NpcMonsterRogueInfoH\0R\rrogueGameInfoB\r\n\x0bKFELKJLDKEHb\x06prot\
+    \n\x19NpcMonsterExtraInfo.proto\x1a\x19NpcRogueMonsterInfo.proto\"d\n\
+    \x13NpcMonsterExtraInfo\x12>\n\x0frogue_game_info\x18\x05\x20\x01(\x0b2\
+    \x14.NpcRogueMonsterInfoH\0R\rrogueGameInfoB\r\n\x0bIEICDGGELNEb\x06prot\
     o3\
 ";
 
@@ -256,7 +256,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NpcMonsterRogueInfo::file_descriptor().clone());
+            deps.push(super::NpcRogueMonsterInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NpcMonsterExtraInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

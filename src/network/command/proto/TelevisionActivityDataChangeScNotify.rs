@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TelevisionActivityDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TelevisionActivityDataChangeScNotify.KADGMHHGKMP)
-    pub KADGMHHGKMP: ::std::vec::Vec<super::OGJDNLIJKFB::OGJDNLIJKFB>,
+    // @@protoc_insertion_point(field:TelevisionActivityDataChangeScNotify.FJEIBGCIFCE)
+    pub FJEIBGCIFCE: ::std::vec::Vec<super::TelevisionActivityInfo::TelevisionActivityInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:TelevisionActivityDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TelevisionActivityDataChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KADGMHHGKMP",
-            |m: &TelevisionActivityDataChangeScNotify| { &m.KADGMHHGKMP },
-            |m: &mut TelevisionActivityDataChangeScNotify| { &mut m.KADGMHHGKMP },
+            "FJEIBGCIFCE",
+            |m: &TelevisionActivityDataChangeScNotify| { &m.FJEIBGCIFCE },
+            |m: &mut TelevisionActivityDataChangeScNotify| { &mut m.FJEIBGCIFCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TelevisionActivityDataChangeScNotify>(
             "TelevisionActivityDataChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TelevisionActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.KADGMHHGKMP.push(is.read_message()?);
+                98 => {
+                    self.FJEIBGCIFCE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TelevisionActivityDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KADGMHHGKMP {
+        for value in &self.FJEIBGCIFCE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TelevisionActivityDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KADGMHHGKMP {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.FJEIBGCIFCE {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TelevisionActivityDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.KADGMHHGKMP.clear();
+        self.FJEIBGCIFCE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TelevisionActivityDataChangeScNotify {
         static instance: TelevisionActivityDataChangeScNotify = TelevisionActivityDataChangeScNotify {
-            KADGMHHGKMP: ::std::vec::Vec::new(),
+            FJEIBGCIFCE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,10 @@ impl ::protobuf::reflect::ProtobufValue for TelevisionActivityDataChangeScNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*TelevisionActivityDataChangeScNotify.proto\x1a\x11OGJDNLIJKFB.proto\"\
-    V\n$TelevisionActivityDataChangeScNotify\x12.\n\x0bKADGMHHGKMP\x18\x01\
-    \x20\x03(\x0b2\x0c.OGJDNLIJKFBR\x0bKADGMHHGKMPb\x06proto3\
+    \n*TelevisionActivityDataChangeScNotify.proto\x1a\x1cTelevisionActivityI\
+    nfo.proto\"a\n$TelevisionActivityDataChangeScNotify\x129\n\x0bFJEIBGCIFC\
+    E\x18\x0c\x20\x03(\x0b2\x17.TelevisionActivityInfoR\x0bFJEIBGCIFCEb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +169,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OGJDNLIJKFB::file_descriptor().clone());
+            deps.push(super::TelevisionActivityInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TelevisionActivityDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

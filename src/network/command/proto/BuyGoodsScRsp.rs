@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyGoodsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:BuyGoodsScRsp.return_item_list)
-    pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:BuyGoodsScRsp.goods_id)
-    pub goods_id: u32,
-    // @@protoc_insertion_point(field:BuyGoodsScRsp.shop_id)
-    pub shop_id: u32,
-    // @@protoc_insertion_point(field:BuyGoodsScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:BuyGoodsScRsp.goods_buy_times)
     pub goods_buy_times: u32,
+    // @@protoc_insertion_point(field:BuyGoodsScRsp.goods_id)
+    pub goods_id: u32,
+    // @@protoc_insertion_point(field:BuyGoodsScRsp.return_item_list)
+    pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:BuyGoodsScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:BuyGoodsScRsp.shop_id)
+    pub shop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyGoodsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,20 @@ impl BuyGoodsScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "return_item_list",
-            |m: &BuyGoodsScRsp| { &m.return_item_list },
-            |m: &mut BuyGoodsScRsp| { &mut m.return_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "goods_buy_times",
+            |m: &BuyGoodsScRsp| { &m.goods_buy_times },
+            |m: &mut BuyGoodsScRsp| { &mut m.goods_buy_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "goods_id",
             |m: &BuyGoodsScRsp| { &m.goods_id },
             |m: &mut BuyGoodsScRsp| { &mut m.goods_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &BuyGoodsScRsp| { &m.shop_id },
-            |m: &mut BuyGoodsScRsp| { &mut m.shop_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "return_item_list",
+            |m: &BuyGoodsScRsp| { &m.return_item_list },
+            |m: &mut BuyGoodsScRsp| { &mut m.return_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -78,9 +78,9 @@ impl BuyGoodsScRsp {
             |m: &mut BuyGoodsScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "goods_buy_times",
-            |m: &BuyGoodsScRsp| { &m.goods_buy_times },
-            |m: &mut BuyGoodsScRsp| { &mut m.goods_buy_times },
+            "shop_id",
+            |m: &BuyGoodsScRsp| { &m.shop_id },
+            |m: &mut BuyGoodsScRsp| { &mut m.shop_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyGoodsScRsp>(
             "BuyGoodsScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BuyGoodsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
-                },
-                112 => {
-                    self.goods_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.shop_id = is.read_uint32()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                32 => {
+                    self.goods_buy_times = is.read_uint32()?;
                 },
                 48 => {
-                    self.goods_buy_times = is.read_uint32()?;
+                    self.goods_id = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.shop_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for BuyGoodsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.goods_buy_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.goods_buy_times);
+        }
+        if self.goods_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.goods_id);
+        }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.goods_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.goods_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.shop_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.goods_buy_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.goods_buy_times);
+            my_size += ::protobuf::rt::uint32_size(15, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for BuyGoodsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.goods_buy_times != 0 {
+            os.write_uint32(4, self.goods_buy_times)?;
         }
         if self.goods_id != 0 {
-            os.write_uint32(14, self.goods_id)?;
+            os.write_uint32(6, self.goods_id)?;
         }
-        if self.shop_id != 0 {
-            os.write_uint32(8, self.shop_id)?;
+        if let Some(v) = self.return_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.goods_buy_times != 0 {
-            os.write_uint32(6, self.goods_buy_times)?;
+        if self.shop_id != 0 {
+            os.write_uint32(15, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for BuyGoodsScRsp {
     }
 
     fn clear(&mut self) {
-        self.return_item_list.clear();
-        self.goods_id = 0;
-        self.shop_id = 0;
-        self.retcode = 0;
         self.goods_buy_times = 0;
+        self.goods_id = 0;
+        self.return_item_list.clear();
+        self.retcode = 0;
+        self.shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyGoodsScRsp {
         static instance: BuyGoodsScRsp = BuyGoodsScRsp {
-            return_item_list: ::protobuf::MessageField::none(),
-            goods_id: 0,
-            shop_id: 0,
-            retcode: 0,
             goods_buy_times: 0,
+            goods_id: 0,
+            return_item_list: ::protobuf::MessageField::none(),
+            retcode: 0,
+            shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for BuyGoodsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13BuyGoodsScRsp.proto\x1a\x0eItemList.proto\"\xba\x01\n\rBuyGoodsScR\
-    sp\x123\n\x10return_item_list\x18\x05\x20\x01(\x0b2\t.ItemListR\x0eretur\
-    nItemList\x12\x19\n\x08goods_id\x18\x0e\x20\x01(\rR\x07goodsId\x12\x17\n\
-    \x07shop_id\x18\x08\x20\x01(\rR\x06shopId\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcode\x12&\n\x0fgoods_buy_times\x18\x06\x20\x01(\rR\rg\
-    oodsBuyTimesb\x06proto3\
+    sp\x12&\n\x0fgoods_buy_times\x18\x04\x20\x01(\rR\rgoodsBuyTimes\x12\x19\
+    \n\x08goods_id\x18\x06\x20\x01(\rR\x07goodsId\x123\n\x10return_item_list\
+    \x18\x08\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\x18\n\x07retcod\
+    e\x18\n\x20\x01(\rR\x07retcode\x12\x17\n\x07shop_id\x18\x0f\x20\x01(\rR\
+    \x06shopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

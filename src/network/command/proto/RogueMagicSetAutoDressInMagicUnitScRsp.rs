@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSetAutoDressInMagicUnitScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.KHDHAHNNALM)
-    pub KHDHAHNNALM: bool,
+    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.FMCGADNDCCB)
+    pub FMCGADNDCCB: bool,
     // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl RogueMagicSetAutoDressInMagicUnitScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHDHAHNNALM",
-            |m: &RogueMagicSetAutoDressInMagicUnitScRsp| { &m.KHDHAHNNALM },
-            |m: &mut RogueMagicSetAutoDressInMagicUnitScRsp| { &mut m.KHDHAHNNALM },
+            "FMCGADNDCCB",
+            |m: &RogueMagicSetAutoDressInMagicUnitScRsp| { &m.FMCGADNDCCB },
+            |m: &mut RogueMagicSetAutoDressInMagicUnitScRsp| { &mut m.FMCGADNDCCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KHDHAHNNALM = is.read_bool()?;
+                48 => {
+                    self.FMCGADNDCCB = is.read_bool()?;
                 },
-                120 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHDHAHNNALM != false {
+        if self.FMCGADNDCCB != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHDHAHNNALM != false {
-            os.write_bool(1, self.KHDHAHNNALM)?;
+        if self.FMCGADNDCCB != false {
+            os.write_bool(6, self.FMCGADNDCCB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     }
 
     fn clear(&mut self) {
-        self.KHDHAHNNALM = false;
+        self.FMCGADNDCCB = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicSetAutoDressInMagicUnitScRsp {
         static instance: RogueMagicSetAutoDressInMagicUnitScRsp = RogueMagicSetAutoDressInMagicUnitScRsp {
-            KHDHAHNNALM: false,
+            FMCGADNDCCB: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSetAutoDressInMagicUnitScR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicSetAutoDressInMagicUnitScRsp.proto\"d\n&RogueMagicSetAutoDr\
-    essInMagicUnitScRsp\x12\x20\n\x0bKHDHAHNNALM\x18\x01\x20\x01(\x08R\x0bKH\
-    DHAHNNALM\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    essInMagicUnitScRsp\x12\x20\n\x0bFMCGADNDCCB\x18\x06\x20\x01(\x08R\x0bFM\
+    CGADNDCCB\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

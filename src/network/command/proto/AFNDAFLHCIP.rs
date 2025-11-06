@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AFNDAFLHCIP {
     // message fields
-    // @@protoc_insertion_point(field:AFNDAFLHCIP.LIDGJNDGBKM)
-    pub LIDGJNDGBKM: u32,
+    // @@protoc_insertion_point(field:AFNDAFLHCIP.OEGNGEIDFEM)
+    pub OEGNGEIDFEM: u32,
     // @@protoc_insertion_point(field:AFNDAFLHCIP.damage)
     pub damage: f64,
-    // @@protoc_insertion_point(field:AFNDAFLHCIP.LDEJNHDMCBN)
-    pub LDEJNHDMCBN: f64,
+    // @@protoc_insertion_point(field:AFNDAFLHCIP.CAPEOFPONJE)
+    pub CAPEOFPONJE: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AFNDAFLHCIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl AFNDAFLHCIP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIDGJNDGBKM",
-            |m: &AFNDAFLHCIP| { &m.LIDGJNDGBKM },
-            |m: &mut AFNDAFLHCIP| { &mut m.LIDGJNDGBKM },
+            "OEGNGEIDFEM",
+            |m: &AFNDAFLHCIP| { &m.OEGNGEIDFEM },
+            |m: &mut AFNDAFLHCIP| { &mut m.OEGNGEIDFEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
@@ -64,9 +64,9 @@ impl AFNDAFLHCIP {
             |m: &mut AFNDAFLHCIP| { &mut m.damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDEJNHDMCBN",
-            |m: &AFNDAFLHCIP| { &m.LDEJNHDMCBN },
-            |m: &mut AFNDAFLHCIP| { &mut m.LDEJNHDMCBN },
+            "CAPEOFPONJE",
+            |m: &AFNDAFLHCIP| { &m.CAPEOFPONJE },
+            |m: &mut AFNDAFLHCIP| { &mut m.CAPEOFPONJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AFNDAFLHCIP>(
             "AFNDAFLHCIP",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for AFNDAFLHCIP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.LIDGJNDGBKM = is.read_uint32()?;
+                    self.OEGNGEIDFEM = is.read_uint32()?;
                 },
                 17 => {
                     self.damage = is.read_double()?;
                 },
                 25 => {
-                    self.LDEJNHDMCBN = is.read_double()?;
+                    self.CAPEOFPONJE = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for AFNDAFLHCIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LIDGJNDGBKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LIDGJNDGBKM);
+        if self.OEGNGEIDFEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.OEGNGEIDFEM);
         }
         if self.damage != 0. {
             my_size += 1 + 8;
         }
-        if self.LDEJNHDMCBN != 0. {
+        if self.CAPEOFPONJE != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AFNDAFLHCIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LIDGJNDGBKM != 0 {
-            os.write_uint32(1, self.LIDGJNDGBKM)?;
+        if self.OEGNGEIDFEM != 0 {
+            os.write_uint32(1, self.OEGNGEIDFEM)?;
         }
         if self.damage != 0. {
             os.write_double(2, self.damage)?;
         }
-        if self.LDEJNHDMCBN != 0. {
-            os.write_double(3, self.LDEJNHDMCBN)?;
+        if self.CAPEOFPONJE != 0. {
+            os.write_double(3, self.CAPEOFPONJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for AFNDAFLHCIP {
     }
 
     fn clear(&mut self) {
-        self.LIDGJNDGBKM = 0;
+        self.OEGNGEIDFEM = 0;
         self.damage = 0.;
-        self.LDEJNHDMCBN = 0.;
+        self.CAPEOFPONJE = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AFNDAFLHCIP {
         static instance: AFNDAFLHCIP = AFNDAFLHCIP {
-            LIDGJNDGBKM: 0,
+            OEGNGEIDFEM: 0,
             damage: 0.,
-            LDEJNHDMCBN: 0.,
+            CAPEOFPONJE: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for AFNDAFLHCIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AFNDAFLHCIP.proto\"i\n\x0bAFNDAFLHCIP\x12\x20\n\x0bLIDGJNDGBKM\x18\
-    \x01\x20\x01(\rR\x0bLIDGJNDGBKM\x12\x16\n\x06damage\x18\x02\x20\x01(\x01\
-    R\x06damage\x12\x20\n\x0bLDEJNHDMCBN\x18\x03\x20\x01(\x01R\x0bLDEJNHDMCB\
-    Nb\x06proto3\
+    \n\x11AFNDAFLHCIP.proto\"i\n\x0bAFNDAFLHCIP\x12\x20\n\x0bOEGNGEIDFEM\x18\
+    \x01\x20\x01(\rR\x0bOEGNGEIDFEM\x12\x16\n\x06damage\x18\x02\x20\x01(\x01\
+    R\x06damage\x12\x20\n\x0bCAPEOFPONJE\x18\x03\x20\x01(\x01R\x0bCAPEOFPONJ\
+    Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct BuyRogueShopMiracleCsReq {
     // message fields
     // @@protoc_insertion_point(field:BuyRogueShopMiracleCsReq.miracle_id)
     pub miracle_id: u32,
-    // @@protoc_insertion_point(field:BuyRogueShopMiracleCsReq.interacted_prop_entity_id)
-    pub interacted_prop_entity_id: u32,
+    // @@protoc_insertion_point(field:BuyRogueShopMiracleCsReq.verify_server_entity_id)
+    pub verify_server_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyRogueShopMiracleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl BuyRogueShopMiracleCsReq {
             |m: &mut BuyRogueShopMiracleCsReq| { &mut m.miracle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interacted_prop_entity_id",
-            |m: &BuyRogueShopMiracleCsReq| { &m.interacted_prop_entity_id },
-            |m: &mut BuyRogueShopMiracleCsReq| { &mut m.interacted_prop_entity_id },
+            "verify_server_entity_id",
+            |m: &BuyRogueShopMiracleCsReq| { &m.verify_server_entity_id },
+            |m: &mut BuyRogueShopMiracleCsReq| { &mut m.verify_server_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyRogueShopMiracleCsReq>(
             "BuyRogueShopMiracleCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.miracle_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.interacted_prop_entity_id = is.read_uint32()?;
+                88 => {
+                    self.verify_server_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.miracle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.miracle_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.miracle_id);
         }
-        if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.interacted_prop_entity_id);
+        if self.verify_server_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.verify_server_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.miracle_id != 0 {
-            os.write_uint32(8, self.miracle_id)?;
+            os.write_uint32(1, self.miracle_id)?;
         }
-        if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(5, self.interacted_prop_entity_id)?;
+        if self.verify_server_entity_id != 0 {
+            os.write_uint32(11, self.verify_server_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for BuyRogueShopMiracleCsReq {
 
     fn clear(&mut self) {
         self.miracle_id = 0;
-        self.interacted_prop_entity_id = 0;
+        self.verify_server_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyRogueShopMiracleCsReq {
         static instance: BuyRogueShopMiracleCsReq = BuyRogueShopMiracleCsReq {
             miracle_id: 0,
-            interacted_prop_entity_id: 0,
+            verify_server_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopMiracleCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eBuyRogueShopMiracleCsReq.proto\"t\n\x18BuyRogueShopMiracleCsReq\
-    \x12\x1d\n\nmiracle_id\x18\x08\x20\x01(\rR\tmiracleId\x129\n\x19interact\
-    ed_prop_entity_id\x18\x05\x20\x01(\rR\x16interactedPropEntityIdb\x06prot\
-    o3\
+    \n\x1eBuyRogueShopMiracleCsReq.proto\"p\n\x18BuyRogueShopMiracleCsReq\
+    \x12\x1d\n\nmiracle_id\x18\x01\x20\x01(\rR\tmiracleId\x125\n\x17verify_s\
+    erver_entity_id\x18\x0b\x20\x01(\rR\x14verifyServerEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

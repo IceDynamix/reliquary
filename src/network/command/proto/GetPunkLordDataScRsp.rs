@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.BDPBDGBKDOO)
-    pub BDPBDGBKDOO: u32,
     // @@protoc_insertion_point(field:GetPunkLordDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.GBJODJCOLGA)
-    pub GBJODJCOLGA: u32,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.BEDJDEANCOJ)
-    pub BEDJDEANCOJ: i64,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.GNLMKKHAEKM)
-    pub GNLMKKHAEKM: u32,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.PPNKPNBIIEN)
-    pub PPNKPNBIIEN: u32,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.EAHBIKFALLF)
-    pub EAHBIKFALLF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.IADCOHODGJN)
-    pub IADCOHODGJN: u32,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.IMFLCCLMGNN)
+    pub IMFLCCLMGNN: u32,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.ENDMHKHKGOJ)
+    pub ENDMHKHKGOJ: u32,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.LECIDGHGPHI)
+    pub LECIDGHGPHI: u32,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.support_refresh_time)
+    pub support_refresh_time: i64,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.taken_reward_level_list)
+    pub taken_reward_level_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.BHGJOPHKIHP)
+    pub BHGJOPHKIHP: u32,
+    // @@protoc_insertion_point(field:GetPunkLordDataScRsp.KKOPEJDELAH)
+    pub KKOPEJDELAH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPunkLordDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,44 +64,44 @@ impl GetPunkLordDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPBDGBKDOO",
-            |m: &GetPunkLordDataScRsp| { &m.BDPBDGBKDOO },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.BDPBDGBKDOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPunkLordDataScRsp| { &m.retcode },
             |m: &mut GetPunkLordDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBJODJCOLGA",
-            |m: &GetPunkLordDataScRsp| { &m.GBJODJCOLGA },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.GBJODJCOLGA },
+            "IMFLCCLMGNN",
+            |m: &GetPunkLordDataScRsp| { &m.IMFLCCLMGNN },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.IMFLCCLMGNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEDJDEANCOJ",
-            |m: &GetPunkLordDataScRsp| { &m.BEDJDEANCOJ },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.BEDJDEANCOJ },
+            "ENDMHKHKGOJ",
+            |m: &GetPunkLordDataScRsp| { &m.ENDMHKHKGOJ },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.ENDMHKHKGOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNLMKKHAEKM",
-            |m: &GetPunkLordDataScRsp| { &m.GNLMKKHAEKM },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.GNLMKKHAEKM },
+            "LECIDGHGPHI",
+            |m: &GetPunkLordDataScRsp| { &m.LECIDGHGPHI },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.LECIDGHGPHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPNKPNBIIEN",
-            |m: &GetPunkLordDataScRsp| { &m.PPNKPNBIIEN },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.PPNKPNBIIEN },
+            "support_refresh_time",
+            |m: &GetPunkLordDataScRsp| { &m.support_refresh_time },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.support_refresh_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EAHBIKFALLF",
-            |m: &GetPunkLordDataScRsp| { &m.EAHBIKFALLF },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.EAHBIKFALLF },
+            "taken_reward_level_list",
+            |m: &GetPunkLordDataScRsp| { &m.taken_reward_level_list },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.taken_reward_level_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IADCOHODGJN",
-            |m: &GetPunkLordDataScRsp| { &m.IADCOHODGJN },
-            |m: &mut GetPunkLordDataScRsp| { &mut m.IADCOHODGJN },
+            "BHGJOPHKIHP",
+            |m: &GetPunkLordDataScRsp| { &m.BHGJOPHKIHP },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.BHGJOPHKIHP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKOPEJDELAH",
+            |m: &GetPunkLordDataScRsp| { &m.KKOPEJDELAH },
+            |m: &mut GetPunkLordDataScRsp| { &mut m.KKOPEJDELAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPunkLordDataScRsp>(
             "GetPunkLordDataScRsp",
@@ -122,31 +122,31 @@ impl ::protobuf::Message for GetPunkLordDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.BDPBDGBKDOO = is.read_uint32()?;
-                },
-                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.GBJODJCOLGA = is.read_uint32()?;
-                },
-                48 => {
-                    self.BEDJDEANCOJ = is.read_int64()?;
-                },
-                104 => {
-                    self.GNLMKKHAEKM = is.read_uint32()?;
+                32 => {
+                    self.IMFLCCLMGNN = is.read_uint32()?;
                 },
                 40 => {
-                    self.PPNKPNBIIEN = is.read_uint32()?;
+                    self.ENDMHKHKGOJ = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EAHBIKFALLF)?;
-                },
-                88 => {
-                    self.EAHBIKFALLF.push(is.read_uint32()?);
+                48 => {
+                    self.LECIDGHGPHI = is.read_uint32()?;
                 },
                 56 => {
-                    self.IADCOHODGJN = is.read_uint32()?;
+                    self.support_refresh_time = is.read_int64()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.taken_reward_level_list)?;
+                },
+                88 => {
+                    self.taken_reward_level_list.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.BHGJOPHKIHP = is.read_uint32()?;
+                },
+                120 => {
+                    self.KKOPEJDELAH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,27 +160,27 @@ impl ::protobuf::Message for GetPunkLordDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPBDGBKDOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BDPBDGBKDOO);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.GBJODJCOLGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GBJODJCOLGA);
+        if self.IMFLCCLMGNN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IMFLCCLMGNN);
         }
-        if self.BEDJDEANCOJ != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.BEDJDEANCOJ);
+        if self.ENDMHKHKGOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ENDMHKHKGOJ);
         }
-        if self.GNLMKKHAEKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GNLMKKHAEKM);
+        if self.LECIDGHGPHI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LECIDGHGPHI);
         }
-        if self.PPNKPNBIIEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PPNKPNBIIEN);
+        if self.support_refresh_time != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.support_refresh_time);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EAHBIKFALLF);
-        if self.IADCOHODGJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IADCOHODGJN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.taken_reward_level_list);
+        if self.BHGJOPHKIHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BHGJOPHKIHP);
+        }
+        if self.KKOPEJDELAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KKOPEJDELAH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,27 +188,27 @@ impl ::protobuf::Message for GetPunkLordDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPBDGBKDOO != 0 {
-            os.write_uint32(3, self.BDPBDGBKDOO)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.GBJODJCOLGA != 0 {
-            os.write_uint32(8, self.GBJODJCOLGA)?;
+        if self.IMFLCCLMGNN != 0 {
+            os.write_uint32(4, self.IMFLCCLMGNN)?;
         }
-        if self.BEDJDEANCOJ != 0 {
-            os.write_int64(6, self.BEDJDEANCOJ)?;
+        if self.ENDMHKHKGOJ != 0 {
+            os.write_uint32(5, self.ENDMHKHKGOJ)?;
         }
-        if self.GNLMKKHAEKM != 0 {
-            os.write_uint32(13, self.GNLMKKHAEKM)?;
+        if self.LECIDGHGPHI != 0 {
+            os.write_uint32(6, self.LECIDGHGPHI)?;
         }
-        if self.PPNKPNBIIEN != 0 {
-            os.write_uint32(5, self.PPNKPNBIIEN)?;
+        if self.support_refresh_time != 0 {
+            os.write_int64(7, self.support_refresh_time)?;
         }
-        os.write_repeated_packed_uint32(11, &self.EAHBIKFALLF)?;
-        if self.IADCOHODGJN != 0 {
-            os.write_uint32(7, self.IADCOHODGJN)?;
+        os.write_repeated_packed_uint32(11, &self.taken_reward_level_list)?;
+        if self.BHGJOPHKIHP != 0 {
+            os.write_uint32(13, self.BHGJOPHKIHP)?;
+        }
+        if self.KKOPEJDELAH != 0 {
+            os.write_uint32(15, self.KKOPEJDELAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,27 +227,27 @@ impl ::protobuf::Message for GetPunkLordDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.BDPBDGBKDOO = 0;
         self.retcode = 0;
-        self.GBJODJCOLGA = 0;
-        self.BEDJDEANCOJ = 0;
-        self.GNLMKKHAEKM = 0;
-        self.PPNKPNBIIEN = 0;
-        self.EAHBIKFALLF.clear();
-        self.IADCOHODGJN = 0;
+        self.IMFLCCLMGNN = 0;
+        self.ENDMHKHKGOJ = 0;
+        self.LECIDGHGPHI = 0;
+        self.support_refresh_time = 0;
+        self.taken_reward_level_list.clear();
+        self.BHGJOPHKIHP = 0;
+        self.KKOPEJDELAH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordDataScRsp {
         static instance: GetPunkLordDataScRsp = GetPunkLordDataScRsp {
-            BDPBDGBKDOO: 0,
             retcode: 0,
-            GBJODJCOLGA: 0,
-            BEDJDEANCOJ: 0,
-            GNLMKKHAEKM: 0,
-            PPNKPNBIIEN: 0,
-            EAHBIKFALLF: ::std::vec::Vec::new(),
-            IADCOHODGJN: 0,
+            IMFLCCLMGNN: 0,
+            ENDMHKHKGOJ: 0,
+            LECIDGHGPHI: 0,
+            support_refresh_time: 0,
+            taken_reward_level_list: ::std::vec::Vec::new(),
+            BHGJOPHKIHP: 0,
+            KKOPEJDELAH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -272,14 +272,15 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetPunkLordDataScRsp.proto\"\x9e\x02\n\x14GetPunkLordDataScRsp\x12\
-    \x20\n\x0bBDPBDGBKDOO\x18\x03\x20\x01(\rR\x0bBDPBDGBKDOO\x12\x18\n\x07re\
-    tcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bGBJODJCOLGA\x18\x08\
-    \x20\x01(\rR\x0bGBJODJCOLGA\x12\x20\n\x0bBEDJDEANCOJ\x18\x06\x20\x01(\
-    \x03R\x0bBEDJDEANCOJ\x12\x20\n\x0bGNLMKKHAEKM\x18\r\x20\x01(\rR\x0bGNLMK\
-    KHAEKM\x12\x20\n\x0bPPNKPNBIIEN\x18\x05\x20\x01(\rR\x0bPPNKPNBIIEN\x12\
-    \x20\n\x0bEAHBIKFALLF\x18\x0b\x20\x03(\rR\x0bEAHBIKFALLF\x12\x20\n\x0bIA\
-    DCOHODGJN\x18\x07\x20\x01(\rR\x0bIADCOHODGJNb\x06proto3\
+    \n\x1aGetPunkLordDataScRsp.proto\"\xc3\x02\n\x14GetPunkLordDataScRsp\x12\
+    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bIMFLCCLMGN\
+    N\x18\x04\x20\x01(\rR\x0bIMFLCCLMGNN\x12\x20\n\x0bENDMHKHKGOJ\x18\x05\
+    \x20\x01(\rR\x0bENDMHKHKGOJ\x12\x20\n\x0bLECIDGHGPHI\x18\x06\x20\x01(\rR\
+    \x0bLECIDGHGPHI\x120\n\x14support_refresh_time\x18\x07\x20\x01(\x03R\x12\
+    supportRefreshTime\x125\n\x17taken_reward_level_list\x18\x0b\x20\x03(\rR\
+    \x14takenRewardLevelList\x12\x20\n\x0bBHGJOPHKIHP\x18\r\x20\x01(\rR\x0bB\
+    HGJOPHKIHP\x12\x20\n\x0bKKOPEJDELAH\x18\x0f\x20\x01(\rR\x0bKKOPEJDELAHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

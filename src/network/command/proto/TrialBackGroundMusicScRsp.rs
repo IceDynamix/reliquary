@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrialBackGroundMusicScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrialBackGroundMusicScRsp.PIGBBGCLAMJ)
-    pub PIGBBGCLAMJ: u32,
     // @@protoc_insertion_point(field:TrialBackGroundMusicScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TrialBackGroundMusicScRsp.trial_music_id)
+    pub trial_music_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrialBackGroundMusicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrialBackGroundMusicScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIGBBGCLAMJ",
-            |m: &TrialBackGroundMusicScRsp| { &m.PIGBBGCLAMJ },
-            |m: &mut TrialBackGroundMusicScRsp| { &mut m.PIGBBGCLAMJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrialBackGroundMusicScRsp| { &m.retcode },
             |m: &mut TrialBackGroundMusicScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trial_music_id",
+            |m: &TrialBackGroundMusicScRsp| { &m.trial_music_id },
+            |m: &mut TrialBackGroundMusicScRsp| { &mut m.trial_music_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrialBackGroundMusicScRsp>(
             "TrialBackGroundMusicScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrialBackGroundMusicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.PIGBBGCLAMJ = is.read_uint32()?;
-                },
-                8 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.trial_music_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TrialBackGroundMusicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PIGBBGCLAMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PIGBBGCLAMJ);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.trial_music_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.trial_music_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TrialBackGroundMusicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PIGBBGCLAMJ != 0 {
-            os.write_uint32(10, self.PIGBBGCLAMJ)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.trial_music_id != 0 {
+            os.write_uint32(15, self.trial_music_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrialBackGroundMusicScRsp {
     }
 
     fn clear(&mut self) {
-        self.PIGBBGCLAMJ = 0;
         self.retcode = 0;
+        self.trial_music_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrialBackGroundMusicScRsp {
         static instance: TrialBackGroundMusicScRsp = TrialBackGroundMusicScRsp {
-            PIGBBGCLAMJ: 0,
             retcode: 0,
+            trial_music_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for TrialBackGroundMusicScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fTrialBackGroundMusicScRsp.proto\"W\n\x19TrialBackGroundMusicScRsp\
-    \x12\x20\n\x0bPIGBBGCLAMJ\x18\n\x20\x01(\rR\x0bPIGBBGCLAMJ\x12\x18\n\x07\
-    retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fTrialBackGroundMusicScRsp.proto\"[\n\x19TrialBackGroundMusicScRsp\
+    \x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12$\n\x0etrial_mus\
+    ic_id\x18\x0f\x20\x01(\rR\x0ctrialMusicIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

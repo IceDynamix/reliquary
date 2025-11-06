@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteSummonUnitScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.entity_id_list)
-    pub entity_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.assist_monster_entity_id_list)
+    pub assist_monster_entity_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DeleteSummonUnitScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DeleteSummonUnitScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_id_list",
-            |m: &DeleteSummonUnitScRsp| { &m.entity_id_list },
-            |m: &mut DeleteSummonUnitScRsp| { &mut m.entity_id_list },
+            "assist_monster_entity_id_list",
+            |m: &DeleteSummonUnitScRsp| { &m.assist_monster_entity_id_list },
+            |m: &mut DeleteSummonUnitScRsp| { &mut m.assist_monster_entity_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.entity_id_list)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.assist_monster_entity_id_list)?;
                 },
-                120 => {
-                    self.entity_id_list.push(is.read_uint32()?);
+                24 => {
+                    self.assist_monster_entity_id_list.push(is.read_uint32()?);
                 },
                 48 => {
                     self.retcode = is.read_uint32()?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.assist_monster_entity_id_list);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.entity_id_list)?;
+        os.write_repeated_packed_uint32(3, &self.assist_monster_entity_id_list)?;
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for DeleteSummonUnitScRsp {
     }
 
     fn clear(&mut self) {
-        self.entity_id_list.clear();
+        self.assist_monster_entity_id_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSummonUnitScRsp {
         static instance: DeleteSummonUnitScRsp = DeleteSummonUnitScRsp {
-            entity_id_list: ::std::vec::Vec::new(),
+            assist_monster_entity_id_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,10 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSummonUnitScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bDeleteSummonUnitScRsp.proto\"W\n\x15DeleteSummonUnitScRsp\x12$\n\
-    \x0eentity_id_list\x18\x0f\x20\x03(\rR\x0centityIdList\x12\x18\n\x07retc\
-    ode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bDeleteSummonUnitScRsp.proto\"s\n\x15DeleteSummonUnitScRsp\x12@\n\
+    \x1dassist_monster_entity_id_list\x18\x03\x20\x03(\rR\x19assistMonsterEn\
+    tityIdList\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

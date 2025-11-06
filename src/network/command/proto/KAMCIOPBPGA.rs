@@ -79,13 +79,13 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
                 },
-                80 => {
+                64 => {
                     self.peak_target.push(is.read_uint32()?);
                 },
-                66 => {
+                82 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.peak_target);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.peak_target);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for KAMCIOPBPGA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.peak_target)?;
+        os.write_repeated_packed_uint32(8, &self.peak_target)?;
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KAMCIOPBPGA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KAMCIOPBPGA.proto\x1a\x11OILPIACENNH.proto\"]\n\x0bKAMCIOPBPGA\x12\
-    \x1f\n\x0bpeak_target\x18\n\x20\x03(\rR\npeakTarget\x12-\n\x0bavatar_lis\
-    t\x18\x08\x20\x03(\x0b2\x0c.OILPIACENNHR\navatarListb\x06proto3\
+    \x1f\n\x0bpeak_target\x18\x08\x20\x03(\rR\npeakTarget\x12-\n\x0bavatar_l\
+    ist\x18\n\x20\x03(\x0b2\x0c.OILPIACENNHR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

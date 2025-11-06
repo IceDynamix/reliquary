@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetMiscRealTimeDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.KGCIAIAFIBE)
-    pub KGCIAIAFIBE: ::protobuf::MessageField<super::GPNJMEHNDMN::GPNJMEHNDMN>,
-    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.CLKHPONDDDO)
-    pub CLKHPONDDDO: ::protobuf::MessageField<super::KCLCHJMNPGL::KCLCHJMNPGL>,
-    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.PFOEPFPHFNJ)
-    pub PFOEPFPHFNJ: ::protobuf::MessageField<super::FBHNFJCNHML::FBHNFJCNHML>,
-    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.CJCOJAMLEEL)
-    pub CJCOJAMLEEL: ::protobuf::MessageField<super::NKPKIAAMODG::NKPKIAAMODG>,
-    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.GCGLNKFDKKN)
-    pub GCGLNKFDKKN: ::protobuf::MessageField<super::NNIJCDKHPKL::NNIJCDKHPKL>,
+    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.NJDLIKGEAKD)
+    pub NJDLIKGEAKD: ::protobuf::MessageField<super::NKPKIAAMODG::NKPKIAAMODG>,
     // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.GODMHJNGKFL)
+    pub GODMHJNGKFL: ::protobuf::MessageField<super::GPNJMEHNDMN::GPNJMEHNDMN>,
+    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.HGEKBNONHOH)
+    pub HGEKBNONHOH: ::protobuf::MessageField<super::FBHNFJCNHML::FBHNFJCNHML>,
+    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.NBOOBAPAFLD)
+    pub NBOOBAPAFLD: ::protobuf::MessageField<super::NNIJCDKHPKL::NNIJCDKHPKL>,
+    // @@protoc_insertion_point(field:RogueTournGetMiscRealTimeDataScRsp.CMFCHLPMGME)
+    pub CMFCHLPMGME: ::protobuf::MessageField<super::RogueTournDivisionInfo::RogueTournDivisionInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetMiscRealTimeDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl RogueTournGetMiscRealTimeDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPNJMEHNDMN::GPNJMEHNDMN>(
-            "KGCIAIAFIBE",
-            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.KGCIAIAFIBE },
-            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.KGCIAIAFIBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCLCHJMNPGL::KCLCHJMNPGL>(
-            "CLKHPONDDDO",
-            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.CLKHPONDDDO },
-            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.CLKHPONDDDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBHNFJCNHML::FBHNFJCNHML>(
-            "PFOEPFPHFNJ",
-            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.PFOEPFPHFNJ },
-            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.PFOEPFPHFNJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKPKIAAMODG::NKPKIAAMODG>(
-            "CJCOJAMLEEL",
-            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.CJCOJAMLEEL },
-            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.CJCOJAMLEEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNIJCDKHPKL::NNIJCDKHPKL>(
-            "GCGLNKFDKKN",
-            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.GCGLNKFDKKN },
-            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.GCGLNKFDKKN },
+            "NJDLIKGEAKD",
+            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.NJDLIKGEAKD },
+            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.NJDLIKGEAKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.retcode },
             |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPNJMEHNDMN::GPNJMEHNDMN>(
+            "GODMHJNGKFL",
+            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.GODMHJNGKFL },
+            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.GODMHJNGKFL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBHNFJCNHML::FBHNFJCNHML>(
+            "HGEKBNONHOH",
+            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.HGEKBNONHOH },
+            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.HGEKBNONHOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNIJCDKHPKL::NNIJCDKHPKL>(
+            "NBOOBAPAFLD",
+            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.NBOOBAPAFLD },
+            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.NBOOBAPAFLD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournDivisionInfo::RogueTournDivisionInfo>(
+            "CMFCHLPMGME",
+            |m: &RogueTournGetMiscRealTimeDataScRsp| { &m.CMFCHLPMGME },
+            |m: &mut RogueTournGetMiscRealTimeDataScRsp| { &mut m.CMFCHLPMGME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetMiscRealTimeDataScRsp>(
             "RogueTournGetMiscRealTimeDataScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for RogueTournGetMiscRealTimeDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGCIAIAFIBE)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJDLIKGEAKD)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLKHPONDDDO)?;
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GODMHJNGKFL)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HGEKBNONHOH)?;
                 },
                 106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PFOEPFPHFNJ)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CJCOJAMLEEL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NBOOBAPAFLD)?;
                 },
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCGLNKFDKKN)?;
-                },
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMFCHLPMGME)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,28 +137,28 @@ impl ::protobuf::Message for RogueTournGetMiscRealTimeDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.CLKHPONDDDO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.PFOEPFPHFNJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.CJCOJAMLEEL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
+        if let Some(v) = self.NJDLIKGEAKD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if let Some(v) = self.GODMHJNGKFL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.HGEKBNONHOH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.NBOOBAPAFLD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.CMFCHLPMGME.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -166,23 +166,23 @@ impl ::protobuf::Message for RogueTournGetMiscRealTimeDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KGCIAIAFIBE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.CLKHPONDDDO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.PFOEPFPHFNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.CJCOJAMLEEL.as_ref() {
+        if let Some(v) = self.NJDLIKGEAKD.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.GCGLNKFDKKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if let Some(v) = self.GODMHJNGKFL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.HGEKBNONHOH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.NBOOBAPAFLD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.CMFCHLPMGME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,23 +201,23 @@ impl ::protobuf::Message for RogueTournGetMiscRealTimeDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.KGCIAIAFIBE.clear();
-        self.CLKHPONDDDO.clear();
-        self.PFOEPFPHFNJ.clear();
-        self.CJCOJAMLEEL.clear();
-        self.GCGLNKFDKKN.clear();
+        self.NJDLIKGEAKD.clear();
         self.retcode = 0;
+        self.GODMHJNGKFL.clear();
+        self.HGEKBNONHOH.clear();
+        self.NBOOBAPAFLD.clear();
+        self.CMFCHLPMGME.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetMiscRealTimeDataScRsp {
         static instance: RogueTournGetMiscRealTimeDataScRsp = RogueTournGetMiscRealTimeDataScRsp {
-            KGCIAIAFIBE: ::protobuf::MessageField::none(),
-            CLKHPONDDDO: ::protobuf::MessageField::none(),
-            PFOEPFPHFNJ: ::protobuf::MessageField::none(),
-            CJCOJAMLEEL: ::protobuf::MessageField::none(),
-            GCGLNKFDKKN: ::protobuf::MessageField::none(),
+            NJDLIKGEAKD: ::protobuf::MessageField::none(),
             retcode: 0,
+            GODMHJNGKFL: ::protobuf::MessageField::none(),
+            HGEKBNONHOH: ::protobuf::MessageField::none(),
+            NBOOBAPAFLD: ::protobuf::MessageField::none(),
+            CMFCHLPMGME: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -243,15 +243,15 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetMiscRealTimeDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(RogueTournGetMiscRealTimeDataScRsp.proto\x1a\x11FBHNFJCNHML.proto\x1a\
-    \x11GPNJMEHNDMN.proto\x1a\x11KCLCHJMNPGL.proto\x1a\x11NKPKIAAMODG.proto\
-    \x1a\x11NNIJCDKHPKL.proto\"\xae\x02\n\"RogueTournGetMiscRealTimeDataScRs\
-    p\x12.\n\x0bKGCIAIAFIBE\x18\x02\x20\x01(\x0b2\x0c.GPNJMEHNDMNR\x0bKGCIAI\
-    AFIBE\x12.\n\x0bCLKHPONDDDO\x18\x05\x20\x01(\x0b2\x0c.KCLCHJMNPGLR\x0bCL\
-    KHPONDDDO\x12.\n\x0bPFOEPFPHFNJ\x18\r\x20\x01(\x0b2\x0c.FBHNFJCNHMLR\x0b\
-    PFOEPFPHFNJ\x12.\n\x0bCJCOJAMLEEL\x18\x04\x20\x01(\x0b2\x0c.NKPKIAAMODGR\
-    \x0bCJCOJAMLEEL\x12.\n\x0bGCGLNKFDKKN\x18\x0e\x20\x01(\x0b2\x0c.NNIJCDKH\
-    PKLR\x0bGCGLNKFDKKN\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \x11GPNJMEHNDMN.proto\x1a\x11NKPKIAAMODG.proto\x1a\x11NNIJCDKHPKL.proto\
+    \x1a\x1cRogueTournDivisionInfo.proto\"\xb9\x02\n\"RogueTournGetMiscRealT\
+    imeDataScRsp\x12.\n\x0bNJDLIKGEAKD\x18\x04\x20\x01(\x0b2\x0c.NKPKIAAMODG\
+    R\x0bNJDLIKGEAKD\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bGODMHJNGKFL\x18\t\x20\x01(\x0b2\x0c.GPNJMEHNDMNR\x0bGODMHJNGKFL\
+    \x12.\n\x0bHGEKBNONHOH\x18\x0c\x20\x01(\x0b2\x0c.FBHNFJCNHMLR\x0bHGEKBNO\
+    NHOH\x12.\n\x0bNBOOBAPAFLD\x18\r\x20\x01(\x0b2\x0c.NNIJCDKHPKLR\x0bNBOOB\
+    APAFLD\x129\n\x0bCMFCHLPMGME\x18\x0e\x20\x01(\x0b2\x17.RogueTournDivisio\
+    nInfoR\x0bCMFCHLPMGMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -271,9 +271,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::FBHNFJCNHML::file_descriptor().clone());
             deps.push(super::GPNJMEHNDMN::file_descriptor().clone());
-            deps.push(super::KCLCHJMNPGL::file_descriptor().clone());
             deps.push(super::NKPKIAAMODG::file_descriptor().clone());
             deps.push(super::NNIJCDKHPKL::file_descriptor().clone());
+            deps.push(super::RogueTournDivisionInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournGetMiscRealTimeDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

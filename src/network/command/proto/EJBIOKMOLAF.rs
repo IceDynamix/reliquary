@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EJBIOKMOLAF {
     // message fields
-    // @@protoc_insertion_point(field:EJBIOKMOLAF.FFBEEBKOGPN)
-    pub FFBEEBKOGPN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:EJBIOKMOLAF.MDEHOEPNFDG)
+    pub MDEHOEPNFDG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:EJBIOKMOLAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EJBIOKMOLAF {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFBEEBKOGPN",
-            |m: &EJBIOKMOLAF| { &m.FFBEEBKOGPN },
-            |m: &mut EJBIOKMOLAF| { &mut m.FFBEEBKOGPN },
+            "MDEHOEPNFDG",
+            |m: &EJBIOKMOLAF| { &m.MDEHOEPNFDG },
+            |m: &mut EJBIOKMOLAF| { &mut m.MDEHOEPNFDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJBIOKMOLAF>(
             "EJBIOKMOLAF",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for EJBIOKMOLAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FFBEEBKOGPN)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MDEHOEPNFDG)?;
                 },
-                40 => {
-                    self.FFBEEBKOGPN.push(is.read_uint32()?);
+                56 => {
+                    self.MDEHOEPNFDG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for EJBIOKMOLAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.FFBEEBKOGPN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.MDEHOEPNFDG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.FFBEEBKOGPN)?;
+        os.write_repeated_packed_uint32(7, &self.MDEHOEPNFDG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for EJBIOKMOLAF {
     }
 
     fn clear(&mut self) {
-        self.FFBEEBKOGPN.clear();
+        self.MDEHOEPNFDG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EJBIOKMOLAF {
         static instance: EJBIOKMOLAF = EJBIOKMOLAF {
-            FFBEEBKOGPN: ::std::vec::Vec::new(),
+            MDEHOEPNFDG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for EJBIOKMOLAF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EJBIOKMOLAF.proto\"/\n\x0bEJBIOKMOLAF\x12\x20\n\x0bFFBEEBKOGPN\x18\
-    \x05\x20\x03(\rR\x0bFFBEEBKOGPNb\x06proto3\
+    \n\x11EJBIOKMOLAF.proto\"/\n\x0bEJBIOKMOLAF\x12\x20\n\x0bMDEHOEPNFDG\x18\
+    \x07\x20\x03(\rR\x0bMDEHOEPNFDGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

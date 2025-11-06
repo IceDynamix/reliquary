@@ -30,8 +30,8 @@ pub struct PlayerReturnTakeRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlayerReturnTakeRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlayerReturnTakeRewardScRsp.IPFLHCJIEBM)
-    pub IPFLHCJIEBM: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PlayerReturnTakeRewardScRsp.NMMJBDJEABG)
+    pub NMMJBDJEABG: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnTakeRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PlayerReturnTakeRewardScRsp {
             |m: &mut PlayerReturnTakeRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "IPFLHCJIEBM",
-            |m: &PlayerReturnTakeRewardScRsp| { &m.IPFLHCJIEBM },
-            |m: &mut PlayerReturnTakeRewardScRsp| { &mut m.IPFLHCJIEBM },
+            "NMMJBDJEABG",
+            |m: &PlayerReturnTakeRewardScRsp| { &m.NMMJBDJEABG },
+            |m: &mut PlayerReturnTakeRewardScRsp| { &mut m.NMMJBDJEABG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnTakeRewardScRsp>(
             "PlayerReturnTakeRewardScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerReturnTakeRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IPFLHCJIEBM)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMMJBDJEABG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for PlayerReturnTakeRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if let Some(v) = self.IPFLHCJIEBM.as_ref() {
+        if let Some(v) = self.NMMJBDJEABG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlayerReturnTakeRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.IPFLHCJIEBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.NMMJBDJEABG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for PlayerReturnTakeRewardScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.IPFLHCJIEBM.clear();
+        self.NMMJBDJEABG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnTakeRewardScRsp {
         static instance: PlayerReturnTakeRewardScRsp = PlayerReturnTakeRewardScRsp {
             retcode: 0,
-            IPFLHCJIEBM: ::protobuf::MessageField::none(),
+            NMMJBDJEABG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakeRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlayerReturnTakeRewardScRsp.proto\x1a\x0eItemList.proto\"d\n\x1bPlaye\
-    rReturnTakeRewardScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retco\
-    de\x12+\n\x0bIPFLHCJIEBM\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0bIPFLHCJIEB\
-    Mb\x06proto3\
+    rReturnTakeRewardScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retco\
+    de\x12+\n\x0bNMMJBDJEABG\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bNMMJBDJEAB\
+    Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

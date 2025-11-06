@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildingUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildingUpdateNotify.BJDFKEMKAOL)
-    pub BJDFKEMKAOL: ::std::vec::Vec<super::PPKGJKIFELK::PPKGJKIFELK>,
+    // @@protoc_insertion_point(field:TrainPartyBuildingUpdateNotify.PAPIDLEAHAA)
+    pub PAPIDLEAHAA: ::std::vec::Vec<super::PPKGJKIFELK::PPKGJKIFELK>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildingUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartyBuildingUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BJDFKEMKAOL",
-            |m: &TrainPartyBuildingUpdateNotify| { &m.BJDFKEMKAOL },
-            |m: &mut TrainPartyBuildingUpdateNotify| { &mut m.BJDFKEMKAOL },
+            "PAPIDLEAHAA",
+            |m: &TrainPartyBuildingUpdateNotify| { &m.PAPIDLEAHAA },
+            |m: &mut TrainPartyBuildingUpdateNotify| { &mut m.PAPIDLEAHAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildingUpdateNotify>(
             "TrainPartyBuildingUpdateNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.BJDFKEMKAOL.push(is.read_message()?);
+                106 => {
+                    self.PAPIDLEAHAA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BJDFKEMKAOL {
+        for value in &self.PAPIDLEAHAA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BJDFKEMKAOL {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.PAPIDLEAHAA {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.BJDFKEMKAOL.clear();
+        self.PAPIDLEAHAA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildingUpdateNotify {
         static instance: TrainPartyBuildingUpdateNotify = TrainPartyBuildingUpdateNotify {
-            BJDFKEMKAOL: ::std::vec::Vec::new(),
+            PAPIDLEAHAA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildingUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TrainPartyBuildingUpdateNotify.proto\x1a\x11PPKGJKIFELK.proto\"P\n\
-    \x1eTrainPartyBuildingUpdateNotify\x12.\n\x0bBJDFKEMKAOL\x18\x0e\x20\x03\
-    (\x0b2\x0c.PPKGJKIFELKR\x0bBJDFKEMKAOLb\x06proto3\
+    \x1eTrainPartyBuildingUpdateNotify\x12.\n\x0bPAPIDLEAHAA\x18\r\x20\x03(\
+    \x0b2\x0c.PPKGJKIFELKR\x0bPAPIDLEAHAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

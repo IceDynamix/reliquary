@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DEMLPCNDJJP {
     // message fields
-    // @@protoc_insertion_point(field:DEMLPCNDJJP.GJDOKFCHBGA)
-    pub GJDOKFCHBGA: ::protobuf::MessageField<super::GJDKILHKIED::GJDKILHKIED>,
-    // @@protoc_insertion_point(field:DEMLPCNDJJP.CFKJEPMNLJI)
-    pub CFKJEPMNLJI: ::std::vec::Vec<super::HPKEFFECHFG::HPKEFFECHFG>,
+    // @@protoc_insertion_point(field:DEMLPCNDJJP.MFNLIALDHMO)
+    pub MFNLIALDHMO: ::protobuf::MessageField<super::GJDKILHKIED::GJDKILHKIED>,
+    // @@protoc_insertion_point(field:DEMLPCNDJJP.MLFAGDKLPIA)
+    pub MLFAGDKLPIA: ::std::vec::Vec<super::HPKEFFECHFG::HPKEFFECHFG>,
     // special fields
     // @@protoc_insertion_point(special_field:DEMLPCNDJJP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DEMLPCNDJJP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJDKILHKIED::GJDKILHKIED>(
-            "GJDOKFCHBGA",
-            |m: &DEMLPCNDJJP| { &m.GJDOKFCHBGA },
-            |m: &mut DEMLPCNDJJP| { &mut m.GJDOKFCHBGA },
+            "MFNLIALDHMO",
+            |m: &DEMLPCNDJJP| { &m.MFNLIALDHMO },
+            |m: &mut DEMLPCNDJJP| { &mut m.MFNLIALDHMO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFKJEPMNLJI",
-            |m: &DEMLPCNDJJP| { &m.CFKJEPMNLJI },
-            |m: &mut DEMLPCNDJJP| { &mut m.CFKJEPMNLJI },
+            "MLFAGDKLPIA",
+            |m: &DEMLPCNDJJP| { &m.MLFAGDKLPIA },
+            |m: &mut DEMLPCNDJJP| { &mut m.MLFAGDKLPIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DEMLPCNDJJP>(
             "DEMLPCNDJJP",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for DEMLPCNDJJP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJDOKFCHBGA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNLIALDHMO)?;
                 },
                 18 => {
-                    self.CFKJEPMNLJI.push(is.read_message()?);
+                    self.MLFAGDKLPIA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DEMLPCNDJJP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.GJDOKFCHBGA.as_ref() {
+        if let Some(v) = self.MFNLIALDHMO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.CFKJEPMNLJI {
+        for value in &self.MLFAGDKLPIA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for DEMLPCNDJJP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GJDOKFCHBGA.as_ref() {
+        if let Some(v) = self.MFNLIALDHMO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        for v in &self.CFKJEPMNLJI {
+        for v in &self.MLFAGDKLPIA {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -134,15 +134,15 @@ impl ::protobuf::Message for DEMLPCNDJJP {
     }
 
     fn clear(&mut self) {
-        self.GJDOKFCHBGA.clear();
-        self.CFKJEPMNLJI.clear();
+        self.MFNLIALDHMO.clear();
+        self.MLFAGDKLPIA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DEMLPCNDJJP {
         static instance: DEMLPCNDJJP = DEMLPCNDJJP {
-            GJDOKFCHBGA: ::protobuf::MessageField::none(),
-            CFKJEPMNLJI: ::std::vec::Vec::new(),
+            MFNLIALDHMO: ::protobuf::MessageField::none(),
+            MLFAGDKLPIA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for DEMLPCNDJJP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEMLPCNDJJP.proto\x1a\x11GJDKILHKIED.proto\x1a\x11HPKEFFECHFG.prot\
-    o\"m\n\x0bDEMLPCNDJJP\x12.\n\x0bGJDOKFCHBGA\x18\x01\x20\x01(\x0b2\x0c.GJ\
-    DKILHKIEDR\x0bGJDOKFCHBGA\x12.\n\x0bCFKJEPMNLJI\x18\x02\x20\x03(\x0b2\
-    \x0c.HPKEFFECHFGR\x0bCFKJEPMNLJIb\x06proto3\
+    o\"m\n\x0bDEMLPCNDJJP\x12.\n\x0bMFNLIALDHMO\x18\x01\x20\x01(\x0b2\x0c.GJ\
+    DKILHKIEDR\x0bMFNLIALDHMO\x12.\n\x0bMLFAGDKLPIA\x18\x02\x20\x03(\x0b2\
+    \x0c.HPKEFFECHFGR\x0bMLFAGDKLPIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

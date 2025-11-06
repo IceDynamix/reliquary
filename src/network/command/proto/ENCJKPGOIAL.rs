@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENCJKPGOIAL {
     // message fields
-    // @@protoc_insertion_point(field:ENCJKPGOIAL.CANNGFDAFOE)
-    pub CANNGFDAFOE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ENCJKPGOIAL.MKELMDLGHHN)
+    pub MKELMDLGHHN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ENCJKPGOIAL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ENCJKPGOIAL {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CANNGFDAFOE",
-            |m: &ENCJKPGOIAL| { &m.CANNGFDAFOE },
-            |m: &mut ENCJKPGOIAL| { &mut m.CANNGFDAFOE },
+            "MKELMDLGHHN",
+            |m: &ENCJKPGOIAL| { &m.MKELMDLGHHN },
+            |m: &mut ENCJKPGOIAL| { &mut m.MKELMDLGHHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENCJKPGOIAL>(
             "ENCJKPGOIAL",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for ENCJKPGOIAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CANNGFDAFOE)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MKELMDLGHHN)?;
                 },
-                24 => {
-                    self.CANNGFDAFOE.push(is.read_uint32()?);
+                8 => {
+                    self.MKELMDLGHHN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for ENCJKPGOIAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CANNGFDAFOE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MKELMDLGHHN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.CANNGFDAFOE)?;
+        os.write_repeated_packed_uint32(1, &self.MKELMDLGHHN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for ENCJKPGOIAL {
     }
 
     fn clear(&mut self) {
-        self.CANNGFDAFOE.clear();
+        self.MKELMDLGHHN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENCJKPGOIAL {
         static instance: ENCJKPGOIAL = ENCJKPGOIAL {
-            CANNGFDAFOE: ::std::vec::Vec::new(),
+            MKELMDLGHHN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for ENCJKPGOIAL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ENCJKPGOIAL.proto\"/\n\x0bENCJKPGOIAL\x12\x20\n\x0bCANNGFDAFOE\x18\
-    \x03\x20\x03(\rR\x0bCANNGFDAFOEb\x06proto3\
+    \n\x11ENCJKPGOIAL.proto\"/\n\x0bENCJKPGOIAL\x12\x20\n\x0bMKELMDLGHHN\x18\
+    \x01\x20\x03(\rR\x0bMKELMDLGHHNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

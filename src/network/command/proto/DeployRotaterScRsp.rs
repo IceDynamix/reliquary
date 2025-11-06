@@ -32,8 +32,8 @@ pub struct DeployRotaterScRsp {
     pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // @@protoc_insertion_point(field:DeployRotaterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DeployRotaterScRsp.rotater_data)
-    pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
+    // @@protoc_insertion_point(field:DeployRotaterScRsp.rotater_config)
+    pub rotater_config: ::protobuf::MessageField<super::RotaterData::RotaterData>,
     // special fields
     // @@protoc_insertion_point(special_field:DeployRotaterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl DeployRotaterScRsp {
             |m: &mut DeployRotaterScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterData::RotaterData>(
-            "rotater_data",
-            |m: &DeployRotaterScRsp| { &m.rotater_data },
-            |m: &mut DeployRotaterScRsp| { &mut m.rotater_data },
+            "rotater_config",
+            |m: &DeployRotaterScRsp| { &m.rotater_config },
+            |m: &mut DeployRotaterScRsp| { &mut m.rotater_config },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeployRotaterScRsp>(
             "DeployRotaterScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
-                64 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_config)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -112,9 +112,9 @@ impl ::protobuf::Message for DeployRotaterScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if let Some(v) = self.rotater_data.as_ref() {
+        if let Some(v) = self.rotater_config.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +125,13 @@ impl ::protobuf::Message for DeployRotaterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.rotater_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.rotater_config.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,7 +152,7 @@ impl ::protobuf::Message for DeployRotaterScRsp {
     fn clear(&mut self) {
         self.energy_info.clear();
         self.retcode = 0;
-        self.rotater_data.clear();
+        self.rotater_config.clear();
         self.special_fields.clear();
     }
 
@@ -160,7 +160,7 @@ impl ::protobuf::Message for DeployRotaterScRsp {
         static instance: DeployRotaterScRsp = DeployRotaterScRsp {
             energy_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            rotater_data: ::protobuf::MessageField::none(),
+            rotater_config: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for DeployRotaterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18DeployRotaterScRsp.proto\x1a\x11RotaterData.proto\x1a\x17RotaterEn\
-    ergyInfo.proto\"\x94\x01\n\x12DeployRotaterScRsp\x123\n\x0benergy_info\
-    \x18\x0f\x20\x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfo\x12\x18\n\x07r\
-    etcode\x18\x08\x20\x01(\rR\x07retcode\x12/\n\x0crotater_data\x18\x03\x20\
-    \x01(\x0b2\x0c.RotaterDataR\x0brotaterDatab\x06proto3\
+    ergyInfo.proto\"\x98\x01\n\x12DeployRotaterScRsp\x123\n\x0benergy_info\
+    \x18\x03\x20\x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfo\x12\x18\n\x07r\
+    etcode\x18\t\x20\x01(\rR\x07retcode\x123\n\x0erotater_config\x18\x0c\x20\
+    \x01(\x0b2\x0c.RotaterDataR\rrotaterConfigb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

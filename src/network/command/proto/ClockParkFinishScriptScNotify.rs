@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkFinishScriptScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ClockParkFinishScriptScNotify.rogue_finish_info)
-    pub rogue_finish_info: ::protobuf::MessageField<super::MDJLOJFMEMC::MDJLOJFMEMC>,
+    // @@protoc_insertion_point(field:ClockParkFinishScriptScNotify.finish_info)
+    pub finish_info: ::protobuf::MessageField<super::ClockParkGameResultInfo::ClockParkGameResultInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkFinishScriptScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl ClockParkFinishScriptScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDJLOJFMEMC::MDJLOJFMEMC>(
-            "rogue_finish_info",
-            |m: &ClockParkFinishScriptScNotify| { &m.rogue_finish_info },
-            |m: &mut ClockParkFinishScriptScNotify| { &mut m.rogue_finish_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClockParkGameResultInfo::ClockParkGameResultInfo>(
+            "finish_info",
+            |m: &ClockParkFinishScriptScNotify| { &m.finish_info },
+            |m: &mut ClockParkFinishScriptScNotify| { &mut m.finish_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkFinishScriptScNotify>(
             "ClockParkFinishScriptScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_finish_info)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.finish_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_finish_info.as_ref() {
+        if let Some(v) = self.finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.finish_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
     }
 
     fn clear(&mut self) {
-        self.rogue_finish_info.clear();
+        self.finish_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkFinishScriptScNotify {
         static instance: ClockParkFinishScriptScNotify = ClockParkFinishScriptScNotify {
-            rogue_finish_info: ::protobuf::MessageField::none(),
+            finish_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkFinishScriptScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#ClockParkFinishScriptScNotify.proto\x1a\x11MDJLOJFMEMC.proto\"Y\n\x1d\
-    ClockParkFinishScriptScNotify\x128\n\x11rogue_finish_info\x18\x0b\x20\
-    \x01(\x0b2\x0c.MDJLOJFMEMCR\x0frogueFinishInfob\x06proto3\
+    \n#ClockParkFinishScriptScNotify.proto\x1a\x1dClockParkGameResultInfo.pr\
+    oto\"Z\n\x1dClockParkFinishScriptScNotify\x129\n\x0bfinish_info\x18\x0c\
+    \x20\x01(\x0b2\x18.ClockParkGameResultInfoR\nfinishInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MDJLOJFMEMC::file_descriptor().clone());
+            deps.push(super::ClockParkGameResultInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClockParkFinishScriptScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

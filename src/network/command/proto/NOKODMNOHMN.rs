@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NOKODMNOHMN {
     // message fields
-    // @@protoc_insertion_point(field:NOKODMNOHMN.ONILFFENAMO)
-    pub ONILFFENAMO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NOKODMNOHMN.NCKCMGCBEHK)
-    pub NCKCMGCBEHK: ::std::vec::Vec<super::HDFKPEEBGEN::HDFKPEEBGEN>,
+    // @@protoc_insertion_point(field:NOKODMNOHMN.AHOCGMOKFOE)
+    pub AHOCGMOKFOE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NOKODMNOHMN.IOMLGNDKFDE)
+    pub IOMLGNDKFDE: ::std::vec::Vec<super::HDFKPEEBGEN::HDFKPEEBGEN>,
     // special fields
     // @@protoc_insertion_point(special_field:NOKODMNOHMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NOKODMNOHMN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONILFFENAMO",
-            |m: &NOKODMNOHMN| { &m.ONILFFENAMO },
-            |m: &mut NOKODMNOHMN| { &mut m.ONILFFENAMO },
+            "AHOCGMOKFOE",
+            |m: &NOKODMNOHMN| { &m.AHOCGMOKFOE },
+            |m: &mut NOKODMNOHMN| { &mut m.AHOCGMOKFOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NCKCMGCBEHK",
-            |m: &NOKODMNOHMN| { &m.NCKCMGCBEHK },
-            |m: &mut NOKODMNOHMN| { &mut m.NCKCMGCBEHK },
+            "IOMLGNDKFDE",
+            |m: &NOKODMNOHMN| { &m.IOMLGNDKFDE },
+            |m: &mut NOKODMNOHMN| { &mut m.IOMLGNDKFDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NOKODMNOHMN>(
             "NOKODMNOHMN",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for NOKODMNOHMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONILFFENAMO)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AHOCGMOKFOE)?;
                 },
-                104 => {
-                    self.ONILFFENAMO.push(is.read_uint32()?);
+                56 => {
+                    self.AHOCGMOKFOE.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.NCKCMGCBEHK.push(is.read_message()?);
+                82 => {
+                    self.IOMLGNDKFDE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for NOKODMNOHMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.ONILFFENAMO);
-        for value in &self.NCKCMGCBEHK {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AHOCGMOKFOE);
+        for value in &self.IOMLGNDKFDE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NOKODMNOHMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.ONILFFENAMO)?;
-        for v in &self.NCKCMGCBEHK {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        os.write_repeated_packed_uint32(7, &self.AHOCGMOKFOE)?;
+        for v in &self.IOMLGNDKFDE {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NOKODMNOHMN {
     }
 
     fn clear(&mut self) {
-        self.ONILFFENAMO.clear();
-        self.NCKCMGCBEHK.clear();
+        self.AHOCGMOKFOE.clear();
+        self.IOMLGNDKFDE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NOKODMNOHMN {
         static instance: NOKODMNOHMN = NOKODMNOHMN {
-            ONILFFENAMO: ::std::vec::Vec::new(),
-            NCKCMGCBEHK: ::std::vec::Vec::new(),
+            AHOCGMOKFOE: ::std::vec::Vec::new(),
+            IOMLGNDKFDE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NOKODMNOHMN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NOKODMNOHMN.proto\x1a\x11HDFKPEEBGEN.proto\"_\n\x0bNOKODMNOHMN\x12\
-    \x20\n\x0bONILFFENAMO\x18\r\x20\x03(\rR\x0bONILFFENAMO\x12.\n\x0bNCKCMGC\
-    BEHK\x18\x0b\x20\x03(\x0b2\x0c.HDFKPEEBGENR\x0bNCKCMGCBEHKb\x06proto3\
+    \x20\n\x0bAHOCGMOKFOE\x18\x07\x20\x03(\rR\x0bAHOCGMOKFOE\x12.\n\x0bIOMLG\
+    NDKFDE\x18\n\x20\x03(\x0b2\x0c.HDFKPEEBGENR\x0bIOMLGNDKFDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

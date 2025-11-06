@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PickRogueAvatarCsReq {
     // message fields
+    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.prop_entity_id)
+    pub prop_entity_id: u32,
     // @@protoc_insertion_point(field:PickRogueAvatarCsReq.base_avatar_id_list)
     pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PickRogueAvatarCsReq.trial_avatar_id_list)
     pub trial_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.prop_entity_id)
-    pub prop_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PickRogueAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl PickRogueAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "prop_entity_id",
+            |m: &PickRogueAvatarCsReq| { &m.prop_entity_id },
+            |m: &mut PickRogueAvatarCsReq| { &mut m.prop_entity_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "base_avatar_id_list",
             |m: &PickRogueAvatarCsReq| { &m.base_avatar_id_list },
@@ -62,11 +67,6 @@ impl PickRogueAvatarCsReq {
             "trial_avatar_id_list",
             |m: &PickRogueAvatarCsReq| { &m.trial_avatar_id_list },
             |m: &mut PickRogueAvatarCsReq| { &mut m.trial_avatar_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_entity_id",
-            |m: &PickRogueAvatarCsReq| { &m.prop_entity_id },
-            |m: &mut PickRogueAvatarCsReq| { &mut m.prop_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PickRogueAvatarCsReq>(
             "PickRogueAvatarCsReq",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                40 => {
+                    self.prop_entity_id = is.read_uint32()?;
+                },
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                80 => {
+                48 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                42 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                40 => {
+                104 => {
                     self.trial_avatar_id_list.push(is.read_uint32()?);
-                },
-                48 => {
-                    self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.base_avatar_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.trial_avatar_id_list);
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.prop_entity_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.trial_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.base_avatar_id_list)?;
-        os.write_repeated_packed_uint32(5, &self.trial_avatar_id_list)?;
         if self.prop_entity_id != 0 {
-            os.write_uint32(6, self.prop_entity_id)?;
+            os.write_uint32(5, self.prop_entity_id)?;
         }
+        os.write_repeated_packed_uint32(6, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.trial_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,17 +146,17 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     }
 
     fn clear(&mut self) {
+        self.prop_entity_id = 0;
         self.base_avatar_id_list.clear();
         self.trial_avatar_id_list.clear();
-        self.prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PickRogueAvatarCsReq {
         static instance: PickRogueAvatarCsReq = PickRogueAvatarCsReq {
+            prop_entity_id: 0,
             base_avatar_id_list: ::std::vec::Vec::new(),
             trial_avatar_id_list: ::std::vec::Vec::new(),
-            prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPickRogueAvatarCsReq.proto\"\x9c\x01\n\x14PickRogueAvatarCsReq\x12\
-    -\n\x13base_avatar_id_list\x18\n\x20\x03(\rR\x10baseAvatarIdList\x12/\n\
-    \x14trial_avatar_id_list\x18\x05\x20\x03(\rR\x11trialAvatarIdList\x12$\n\
-    \x0eprop_entity_id\x18\x06\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
+    $\n\x0eprop_entity_id\x18\x05\x20\x01(\rR\x0cpropEntityId\x12-\n\x13base\
+    _avatar_id_list\x18\x06\x20\x03(\rR\x10baseAvatarIdList\x12/\n\x14trial_\
+    avatar_id_list\x18\r\x20\x03(\rR\x11trialAvatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

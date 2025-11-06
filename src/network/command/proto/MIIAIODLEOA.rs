@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MIIAIODLEOA {
     // message fields
-    // @@protoc_insertion_point(field:MIIAIODLEOA.GANAKFAIBFC)
-    pub GANAKFAIBFC: ::std::vec::Vec<super::OCMHOFEMNHI::OCMHOFEMNHI>,
+    // @@protoc_insertion_point(field:MIIAIODLEOA.KFGGJOGNFAK)
+    pub KFGGJOGNFAK: ::std::vec::Vec<super::OCMHOFEMNHI::OCMHOFEMNHI>,
     // @@protoc_insertion_point(field:MIIAIODLEOA.passenger_id)
     pub passenger_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MIIAIODLEOA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GANAKFAIBFC",
-            |m: &MIIAIODLEOA| { &m.GANAKFAIBFC },
-            |m: &mut MIIAIODLEOA| { &mut m.GANAKFAIBFC },
+            "KFGGJOGNFAK",
+            |m: &MIIAIODLEOA| { &m.KFGGJOGNFAK },
+            |m: &mut MIIAIODLEOA| { &mut m.KFGGJOGNFAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "passenger_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MIIAIODLEOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.GANAKFAIBFC.push(is.read_message()?);
+                10 => {
+                    self.KFGGJOGNFAK.push(is.read_message()?);
                 },
-                8 => {
+                72 => {
                     self.passenger_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MIIAIODLEOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GANAKFAIBFC {
+        for value in &self.KFGGJOGNFAK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.passenger_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.passenger_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.passenger_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MIIAIODLEOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GANAKFAIBFC {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.KFGGJOGNFAK {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.passenger_id != 0 {
-            os.write_uint32(1, self.passenger_id)?;
+            os.write_uint32(9, self.passenger_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MIIAIODLEOA {
     }
 
     fn clear(&mut self) {
-        self.GANAKFAIBFC.clear();
+        self.KFGGJOGNFAK.clear();
         self.passenger_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIIAIODLEOA {
         static instance: MIIAIODLEOA = MIIAIODLEOA {
-            GANAKFAIBFC: ::std::vec::Vec::new(),
+            KFGGJOGNFAK: ::std::vec::Vec::new(),
             passenger_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MIIAIODLEOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MIIAIODLEOA.proto\x1a\x11OCMHOFEMNHI.proto\"`\n\x0bMIIAIODLEOA\x12\
-    .\n\x0bGANAKFAIBFC\x18\n\x20\x03(\x0b2\x0c.OCMHOFEMNHIR\x0bGANAKFAIBFC\
-    \x12!\n\x0cpassenger_id\x18\x01\x20\x01(\rR\x0bpassengerIdb\x06proto3\
+    .\n\x0bKFGGJOGNFAK\x18\x01\x20\x03(\x0b2\x0c.OCMHOFEMNHIR\x0bKFGGJOGNFAK\
+    \x12!\n\x0cpassenger_id\x18\t\x20\x01(\rR\x0bpassengerIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

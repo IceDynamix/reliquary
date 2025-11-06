@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MIOAEGBPOMA {
     // message fields
-    // @@protoc_insertion_point(field:MIOAEGBPOMA.FGIMACCHHDK)
-    pub FGIMACCHHDK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MIOAEGBPOMA.EPCPDOCDOCB)
-    pub EPCPDOCDOCB: i64,
-    // @@protoc_insertion_point(field:MIOAEGBPOMA.FGPACIHLANB)
-    pub FGPACIHLANB: u32,
+    // @@protoc_insertion_point(field:MIOAEGBPOMA.DPPEDNOCLAB)
+    pub DPPEDNOCLAB: i64,
+    // @@protoc_insertion_point(field:MIOAEGBPOMA.BACOJOCKLJC)
+    pub BACOJOCKLJC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MIOAEGBPOMA.MFJOFCLMHLG)
+    pub MFJOFCLMHLG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MIOAEGBPOMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MIOAEGBPOMA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPPEDNOCLAB",
+            |m: &MIOAEGBPOMA| { &m.DPPEDNOCLAB },
+            |m: &mut MIOAEGBPOMA| { &mut m.DPPEDNOCLAB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FGIMACCHHDK",
-            |m: &MIOAEGBPOMA| { &m.FGIMACCHHDK },
-            |m: &mut MIOAEGBPOMA| { &mut m.FGIMACCHHDK },
+            "BACOJOCKLJC",
+            |m: &MIOAEGBPOMA| { &m.BACOJOCKLJC },
+            |m: &mut MIOAEGBPOMA| { &mut m.BACOJOCKLJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPCPDOCDOCB",
-            |m: &MIOAEGBPOMA| { &m.EPCPDOCDOCB },
-            |m: &mut MIOAEGBPOMA| { &mut m.EPCPDOCDOCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGPACIHLANB",
-            |m: &MIOAEGBPOMA| { &m.FGPACIHLANB },
-            |m: &mut MIOAEGBPOMA| { &mut m.FGPACIHLANB },
+            "MFJOFCLMHLG",
+            |m: &MIOAEGBPOMA| { &m.MFJOFCLMHLG },
+            |m: &mut MIOAEGBPOMA| { &mut m.MFJOFCLMHLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIOAEGBPOMA>(
             "MIOAEGBPOMA",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for MIOAEGBPOMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FGIMACCHHDK)?;
+                56 => {
+                    self.DPPEDNOCLAB = is.read_int64()?;
                 },
-                72 => {
-                    self.FGIMACCHHDK.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BACOJOCKLJC)?;
                 },
-                8 => {
-                    self.EPCPDOCDOCB = is.read_int64()?;
+                64 => {
+                    self.BACOJOCKLJC.push(is.read_uint32()?);
                 },
-                96 => {
-                    self.FGPACIHLANB = is.read_uint32()?;
+                88 => {
+                    self.MFJOFCLMHLG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for MIOAEGBPOMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.FGIMACCHHDK);
-        if self.EPCPDOCDOCB != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.EPCPDOCDOCB);
+        if self.DPPEDNOCLAB != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.DPPEDNOCLAB);
         }
-        if self.FGPACIHLANB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGPACIHLANB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.BACOJOCKLJC);
+        if self.MFJOFCLMHLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.MFJOFCLMHLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MIOAEGBPOMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.FGIMACCHHDK)?;
-        if self.EPCPDOCDOCB != 0 {
-            os.write_int64(1, self.EPCPDOCDOCB)?;
+        if self.DPPEDNOCLAB != 0 {
+            os.write_int64(7, self.DPPEDNOCLAB)?;
         }
-        if self.FGPACIHLANB != 0 {
-            os.write_uint32(12, self.FGPACIHLANB)?;
+        os.write_repeated_packed_uint32(8, &self.BACOJOCKLJC)?;
+        if self.MFJOFCLMHLG != 0 {
+            os.write_uint32(11, self.MFJOFCLMHLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for MIOAEGBPOMA {
     }
 
     fn clear(&mut self) {
-        self.FGIMACCHHDK.clear();
-        self.EPCPDOCDOCB = 0;
-        self.FGPACIHLANB = 0;
+        self.DPPEDNOCLAB = 0;
+        self.BACOJOCKLJC.clear();
+        self.MFJOFCLMHLG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIOAEGBPOMA {
         static instance: MIOAEGBPOMA = MIOAEGBPOMA {
-            FGIMACCHHDK: ::std::vec::Vec::new(),
-            EPCPDOCDOCB: 0,
-            FGPACIHLANB: 0,
+            DPPEDNOCLAB: 0,
+            BACOJOCKLJC: ::std::vec::Vec::new(),
+            MFJOFCLMHLG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for MIOAEGBPOMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MIOAEGBPOMA.proto\"s\n\x0bMIOAEGBPOMA\x12\x20\n\x0bFGIMACCHHDK\x18\
-    \t\x20\x03(\rR\x0bFGIMACCHHDK\x12\x20\n\x0bEPCPDOCDOCB\x18\x01\x20\x01(\
-    \x03R\x0bEPCPDOCDOCB\x12\x20\n\x0bFGPACIHLANB\x18\x0c\x20\x01(\rR\x0bFGP\
-    ACIHLANBb\x06proto3\
+    \n\x11MIOAEGBPOMA.proto\"s\n\x0bMIOAEGBPOMA\x12\x20\n\x0bDPPEDNOCLAB\x18\
+    \x07\x20\x01(\x03R\x0bDPPEDNOCLAB\x12\x20\n\x0bBACOJOCKLJC\x18\x08\x20\
+    \x03(\rR\x0bBACOJOCKLJC\x12\x20\n\x0bMFJOFCLMHLG\x18\x0b\x20\x01(\rR\x0b\
+    MFJOFCLMHLGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

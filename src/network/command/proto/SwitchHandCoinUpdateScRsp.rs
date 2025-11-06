@@ -30,8 +30,8 @@ pub struct SwitchHandCoinUpdateScRsp {
     // message fields
     // @@protoc_insertion_point(field:SwitchHandCoinUpdateScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SwitchHandCoinUpdateScRsp.MCBIOHMIMGN)
-    pub MCBIOHMIMGN: u32,
+    // @@protoc_insertion_point(field:SwitchHandCoinUpdateScRsp.NLEFEDIEFNO)
+    pub NLEFEDIEFNO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchHandCoinUpdateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SwitchHandCoinUpdateScRsp {
             |m: &mut SwitchHandCoinUpdateScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MCBIOHMIMGN",
-            |m: &SwitchHandCoinUpdateScRsp| { &m.MCBIOHMIMGN },
-            |m: &mut SwitchHandCoinUpdateScRsp| { &mut m.MCBIOHMIMGN },
+            "NLEFEDIEFNO",
+            |m: &SwitchHandCoinUpdateScRsp| { &m.NLEFEDIEFNO },
+            |m: &mut SwitchHandCoinUpdateScRsp| { &mut m.NLEFEDIEFNO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchHandCoinUpdateScRsp>(
             "SwitchHandCoinUpdateScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwitchHandCoinUpdateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.MCBIOHMIMGN = is.read_uint32()?;
+                48 => {
+                    self.NLEFEDIEFNO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SwitchHandCoinUpdateScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.MCBIOHMIMGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MCBIOHMIMGN);
+        if self.NLEFEDIEFNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NLEFEDIEFNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SwitchHandCoinUpdateScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.MCBIOHMIMGN != 0 {
-            os.write_uint32(10, self.MCBIOHMIMGN)?;
+        if self.NLEFEDIEFNO != 0 {
+            os.write_uint32(6, self.NLEFEDIEFNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SwitchHandCoinUpdateScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.MCBIOHMIMGN = 0;
+        self.NLEFEDIEFNO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchHandCoinUpdateScRsp {
         static instance: SwitchHandCoinUpdateScRsp = SwitchHandCoinUpdateScRsp {
             retcode: 0,
-            MCBIOHMIMGN: 0,
+            NLEFEDIEFNO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandCoinUpdateScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSwitchHandCoinUpdateScRsp.proto\"W\n\x19SwitchHandCoinUpdateScRsp\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bMCBIOH\
-    MIMGN\x18\n\x20\x01(\rR\x0bMCBIOHMIMGNb\x06proto3\
+    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bNLEFED\
+    IEFNO\x18\x06\x20\x01(\rR\x0bNLEFEDIEFNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

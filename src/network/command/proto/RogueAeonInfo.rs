@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueAeonInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueAeonInfo.unlocked_aeon_enhance_num)
-    pub unlocked_aeon_enhance_num: u32,
-    // @@protoc_insertion_point(field:RogueAeonInfo.is_unlocked)
-    pub is_unlocked: bool,
-    // @@protoc_insertion_point(field:RogueAeonInfo.aeon_id_list)
-    pub aeon_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueAeonInfo.unlocked_aeon_num)
-    pub unlocked_aeon_num: u32,
+    // @@protoc_insertion_point(field:RogueAeonInfo.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:RogueAeonInfo.max_level)
+    pub max_level: u32,
+    // @@protoc_insertion_point(field:RogueAeonInfo.aeon_id)
+    pub aeon_id: u32,
+    // @@protoc_insertion_point(field:RogueAeonInfo.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueAeonInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl RogueAeonInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlocked_aeon_enhance_num",
-            |m: &RogueAeonInfo| { &m.unlocked_aeon_enhance_num },
-            |m: &mut RogueAeonInfo| { &mut m.unlocked_aeon_enhance_num },
+            "exp",
+            |m: &RogueAeonInfo| { &m.exp },
+            |m: &mut RogueAeonInfo| { &mut m.exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlocked",
-            |m: &RogueAeonInfo| { &m.is_unlocked },
-            |m: &mut RogueAeonInfo| { &mut m.is_unlocked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "aeon_id_list",
-            |m: &RogueAeonInfo| { &m.aeon_id_list },
-            |m: &mut RogueAeonInfo| { &mut m.aeon_id_list },
+            "max_level",
+            |m: &RogueAeonInfo| { &m.max_level },
+            |m: &mut RogueAeonInfo| { &mut m.max_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlocked_aeon_num",
-            |m: &RogueAeonInfo| { &m.unlocked_aeon_num },
-            |m: &mut RogueAeonInfo| { &mut m.unlocked_aeon_num },
+            "aeon_id",
+            |m: &RogueAeonInfo| { &m.aeon_id },
+            |m: &mut RogueAeonInfo| { &mut m.aeon_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &RogueAeonInfo| { &m.level },
+            |m: &mut RogueAeonInfo| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueAeonInfo>(
             "RogueAeonInfo",
@@ -93,20 +93,17 @@ impl ::protobuf::Message for RogueAeonInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.exp = is.read_uint32()?;
+                },
+                40 => {
+                    self.max_level = is.read_uint32()?;
+                },
                 80 => {
-                    self.unlocked_aeon_enhance_num = is.read_uint32()?;
+                    self.aeon_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.is_unlocked = is.read_bool()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.aeon_id_list)?;
-                },
-                96 => {
-                    self.aeon_id_list.push(is.read_uint32()?);
-                },
-                48 => {
-                    self.unlocked_aeon_num = is.read_uint32()?;
+                112 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +117,17 @@ impl ::protobuf::Message for RogueAeonInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unlocked_aeon_enhance_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unlocked_aeon_enhance_num);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.exp);
         }
-        if self.is_unlocked != false {
-            my_size += 1 + 1;
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.max_level);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.aeon_id_list);
-        if self.unlocked_aeon_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unlocked_aeon_num);
+        if self.aeon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.aeon_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +135,17 @@ impl ::protobuf::Message for RogueAeonInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unlocked_aeon_enhance_num != 0 {
-            os.write_uint32(10, self.unlocked_aeon_enhance_num)?;
+        if self.exp != 0 {
+            os.write_uint32(2, self.exp)?;
         }
-        if self.is_unlocked != false {
-            os.write_bool(9, self.is_unlocked)?;
+        if self.max_level != 0 {
+            os.write_uint32(5, self.max_level)?;
         }
-        os.write_repeated_packed_uint32(12, &self.aeon_id_list)?;
-        if self.unlocked_aeon_num != 0 {
-            os.write_uint32(6, self.unlocked_aeon_num)?;
+        if self.aeon_id != 0 {
+            os.write_uint32(10, self.aeon_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +164,19 @@ impl ::protobuf::Message for RogueAeonInfo {
     }
 
     fn clear(&mut self) {
-        self.unlocked_aeon_enhance_num = 0;
-        self.is_unlocked = false;
-        self.aeon_id_list.clear();
-        self.unlocked_aeon_num = 0;
+        self.exp = 0;
+        self.max_level = 0;
+        self.aeon_id = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueAeonInfo {
         static instance: RogueAeonInfo = RogueAeonInfo {
-            unlocked_aeon_enhance_num: 0,
-            is_unlocked: false,
-            aeon_id_list: ::std::vec::Vec::new(),
-            unlocked_aeon_num: 0,
+            exp: 0,
+            max_level: 0,
+            aeon_id: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueAeonInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13RogueAeonInfo.proto\"\xb9\x01\n\rRogueAeonInfo\x129\n\x19unlocked_\
-    aeon_enhance_num\x18\n\x20\x01(\rR\x16unlockedAeonEnhanceNum\x12\x1f\n\
-    \x0bis_unlocked\x18\t\x20\x01(\x08R\nisUnlocked\x12\x20\n\x0caeon_id_lis\
-    t\x18\x0c\x20\x03(\rR\naeonIdList\x12*\n\x11unlocked_aeon_num\x18\x06\
-    \x20\x01(\rR\x0funlockedAeonNumb\x06proto3\
+    \n\x13RogueAeonInfo.proto\"m\n\rRogueAeonInfo\x12\x10\n\x03exp\x18\x02\
+    \x20\x01(\rR\x03exp\x12\x1b\n\tmax_level\x18\x05\x20\x01(\rR\x08maxLevel\
+    \x12\x17\n\x07aeon_id\x18\n\x20\x01(\rR\x06aeonId\x12\x14\n\x05level\x18\
+    \x0e\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,38 +28,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LBAOGIBPJOP {
     // message fields
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.HJEFOLKGAEI)
-    pub HJEFOLKGAEI: ::protobuf::EnumOrUnknown<super::JOMKPEGEFMP::JOMKPEGEFMP>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.AEPBFJNIDMA)
+    pub AEPBFJNIDMA: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.JLGCOLBLPAL)
+    pub JLGCOLBLPAL: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.BMLGAFGOFDC)
+    pub BMLGAFGOFDC: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.OLOICKBOLBC)
+    pub OLOICKBOLBC: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.KONCGPOOAOJ)
+    pub KONCGPOOAOJ: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.NCOOOBOIKNM)
+    pub NCOOOBOIKNM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.NGOLPMONKPP)
+    pub NGOLPMONKPP: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.CCMJLCIGGLK)
+    pub CCMJLCIGGLK: ::protobuf::EnumOrUnknown<super::FightMarbleTeamType::FightMarbleTeamType>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.EDFHOLPNCKK)
+    pub EDFHOLPNCKK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.LAAINNOKICJ)
+    pub LAAINNOKICJ: bool,
     // @@protoc_insertion_point(field:LBAOGIBPJOP.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.JJEFBPKPKBK)
-    pub JJEFBPKPKBK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.BBDOPLEKIAC)
-    pub BBDOPLEKIAC: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.JIKEIGBCABB)
-    pub JIKEIGBCABB: bool,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.DKPNENBHELH)
-    pub DKPNENBHELH: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.LIKHCLPMHJK)
-    pub LIKHCLPMHJK: bool,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.KHCMOFPFOAK)
-    pub KHCMOFPFOAK: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.LIPJDJPMOKB)
-    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.NLIBKABFGCC)
-    pub NLIBKABFGCC: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.JIJHAAIHNCN)
-    pub JIJHAAIHNCN: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.PCMGAGAHBLK)
-    pub PCMGAGAHBLK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.EIGABCKEDNP)
-    pub EIGABCKEDNP: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.PBFAIOJJGNL)
-    pub PBFAIOJJGNL: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.MODDKLNDAMK)
-    pub MODDKLNDAMK: u32,
-    // @@protoc_insertion_point(field:LBAOGIBPJOP.CEIFKJIEAJE)
-    pub CEIFKJIEAJE: ::protobuf::EnumOrUnknown<super::JOMKPEGEFMP::JOMKPEGEFMP>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.HEOJPCJEOKM)
+    pub HEOJPCJEOKM: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.ELKJDLOMMAM)
+    pub ELKJDLOMMAM: bool,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.IIPIAFMLNFD)
+    pub IIPIAFMLNFD: ::protobuf::EnumOrUnknown<super::FightMarbleTeamType::FightMarbleTeamType>,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.JFBDCLJMCMF)
+    pub JFBDCLJMCMF: u32,
+    // @@protoc_insertion_point(field:LBAOGIBPJOP.DDDJPDDBFIP)
+    pub DDDJPDDBFIP: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
     // special fields
     // @@protoc_insertion_point(special_field:LBAOGIBPJOP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -80,84 +80,84 @@ impl LBAOGIBPJOP {
         let mut fields = ::std::vec::Vec::with_capacity(16);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJEFOLKGAEI",
-            |m: &LBAOGIBPJOP| { &m.HJEFOLKGAEI },
-            |m: &mut LBAOGIBPJOP| { &mut m.HJEFOLKGAEI },
+            "AEPBFJNIDMA",
+            |m: &LBAOGIBPJOP| { &m.AEPBFJNIDMA },
+            |m: &mut LBAOGIBPJOP| { &mut m.AEPBFJNIDMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLGCOLBLPAL",
+            |m: &LBAOGIBPJOP| { &m.JLGCOLBLPAL },
+            |m: &mut LBAOGIBPJOP| { &mut m.JLGCOLBLPAL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BMLGAFGOFDC",
+            |m: &LBAOGIBPJOP| { &m.BMLGAFGOFDC },
+            |m: &mut LBAOGIBPJOP| { &mut m.BMLGAFGOFDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OLOICKBOLBC",
+            |m: &LBAOGIBPJOP| { &m.OLOICKBOLBC },
+            |m: &mut LBAOGIBPJOP| { &mut m.OLOICKBOLBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KONCGPOOAOJ",
+            |m: &LBAOGIBPJOP| { &m.KONCGPOOAOJ },
+            |m: &mut LBAOGIBPJOP| { &mut m.KONCGPOOAOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NCOOOBOIKNM",
+            |m: &LBAOGIBPJOP| { &m.NCOOOBOIKNM },
+            |m: &mut LBAOGIBPJOP| { &mut m.NCOOOBOIKNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGOLPMONKPP",
+            |m: &LBAOGIBPJOP| { &m.NGOLPMONKPP },
+            |m: &mut LBAOGIBPJOP| { &mut m.NGOLPMONKPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CCMJLCIGGLK",
+            |m: &LBAOGIBPJOP| { &m.CCMJLCIGGLK },
+            |m: &mut LBAOGIBPJOP| { &mut m.CCMJLCIGGLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EDFHOLPNCKK",
+            |m: &LBAOGIBPJOP| { &m.EDFHOLPNCKK },
+            |m: &mut LBAOGIBPJOP| { &mut m.EDFHOLPNCKK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LAAINNOKICJ",
+            |m: &LBAOGIBPJOP| { &m.LAAINNOKICJ },
+            |m: &mut LBAOGIBPJOP| { &mut m.LAAINNOKICJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
             |m: &LBAOGIBPJOP| { &m.level_id },
             |m: &mut LBAOGIBPJOP| { &mut m.level_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJEFBPKPKBK",
-            |m: &LBAOGIBPJOP| { &m.JJEFBPKPKBK },
-            |m: &mut LBAOGIBPJOP| { &mut m.JJEFBPKPKBK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HEOJPCJEOKM",
+            |m: &LBAOGIBPJOP| { &m.HEOJPCJEOKM },
+            |m: &mut LBAOGIBPJOP| { &mut m.HEOJPCJEOKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBDOPLEKIAC",
-            |m: &LBAOGIBPJOP| { &m.BBDOPLEKIAC },
-            |m: &mut LBAOGIBPJOP| { &mut m.BBDOPLEKIAC },
+            "ELKJDLOMMAM",
+            |m: &LBAOGIBPJOP| { &m.ELKJDLOMMAM },
+            |m: &mut LBAOGIBPJOP| { &mut m.ELKJDLOMMAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIKEIGBCABB",
-            |m: &LBAOGIBPJOP| { &m.JIKEIGBCABB },
-            |m: &mut LBAOGIBPJOP| { &mut m.JIKEIGBCABB },
+            "IIPIAFMLNFD",
+            |m: &LBAOGIBPJOP| { &m.IIPIAFMLNFD },
+            |m: &mut LBAOGIBPJOP| { &mut m.IIPIAFMLNFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKPNENBHELH",
-            |m: &LBAOGIBPJOP| { &m.DKPNENBHELH },
-            |m: &mut LBAOGIBPJOP| { &mut m.DKPNENBHELH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIKHCLPMHJK",
-            |m: &LBAOGIBPJOP| { &m.LIKHCLPMHJK },
-            |m: &mut LBAOGIBPJOP| { &mut m.LIKHCLPMHJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHCMOFPFOAK",
-            |m: &LBAOGIBPJOP| { &m.KHCMOFPFOAK },
-            |m: &mut LBAOGIBPJOP| { &mut m.KHCMOFPFOAK },
+            "JFBDCLJMCMF",
+            |m: &LBAOGIBPJOP| { &m.JFBDCLJMCMF },
+            |m: &mut LBAOGIBPJOP| { &mut m.JFBDCLJMCMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LIPJDJPMOKB",
-            |m: &LBAOGIBPJOP| { &m.LIPJDJPMOKB },
-            |m: &mut LBAOGIBPJOP| { &mut m.LIPJDJPMOKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIBKABFGCC",
-            |m: &LBAOGIBPJOP| { &m.NLIBKABFGCC },
-            |m: &mut LBAOGIBPJOP| { &mut m.NLIBKABFGCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIJHAAIHNCN",
-            |m: &LBAOGIBPJOP| { &m.JIJHAAIHNCN },
-            |m: &mut LBAOGIBPJOP| { &mut m.JIJHAAIHNCN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PCMGAGAHBLK",
-            |m: &LBAOGIBPJOP| { &m.PCMGAGAHBLK },
-            |m: &mut LBAOGIBPJOP| { &mut m.PCMGAGAHBLK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIGABCKEDNP",
-            |m: &LBAOGIBPJOP| { &m.EIGABCKEDNP },
-            |m: &mut LBAOGIBPJOP| { &mut m.EIGABCKEDNP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBFAIOJJGNL",
-            |m: &LBAOGIBPJOP| { &m.PBFAIOJJGNL },
-            |m: &mut LBAOGIBPJOP| { &mut m.PBFAIOJJGNL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MODDKLNDAMK",
-            |m: &LBAOGIBPJOP| { &m.MODDKLNDAMK },
-            |m: &mut LBAOGIBPJOP| { &mut m.MODDKLNDAMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEIFKJIEAJE",
-            |m: &LBAOGIBPJOP| { &m.CEIFKJIEAJE },
-            |m: &mut LBAOGIBPJOP| { &mut m.CEIFKJIEAJE },
+            "DDDJPDDBFIP",
+            |m: &LBAOGIBPJOP| { &m.DDDJPDDBFIP },
+            |m: &mut LBAOGIBPJOP| { &mut m.DDDJPDDBFIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LBAOGIBPJOP>(
             "LBAOGIBPJOP",
@@ -177,59 +177,59 @@ impl ::protobuf::Message for LBAOGIBPJOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.HJEFOLKGAEI = is.read_enum_or_unknown()?;
-                },
-                120 => {
-                    self.level_id = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JJEFBPKPKBK)?;
-                },
-                112 => {
-                    self.JJEFBPKPKBK.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.BBDOPLEKIAC = is.read_uint32()?;
-                },
-                72 => {
-                    self.JIKEIGBCABB = is.read_bool()?;
-                },
-                24 => {
-                    self.DKPNENBHELH = is.read_uint32()?;
-                },
-                32 => {
-                    self.LIKHCLPMHJK = is.read_bool()?;
-                },
-                56 => {
-                    self.KHCMOFPFOAK = is.read_uint32()?;
-                },
-                2090 => {
-                    self.LIPJDJPMOKB.push(is.read_message()?);
-                },
                 8 => {
-                    self.NLIBKABFGCC = is.read_uint32()?;
-                },
-                40 => {
-                    self.JIJHAAIHNCN = is.read_uint32()?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PCMGAGAHBLK)?;
-                },
-                88 => {
-                    self.PCMGAGAHBLK.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.EIGABCKEDNP = is.read_uint32()?;
-                },
-                80 => {
-                    self.PBFAIOJJGNL = is.read_uint32()?;
-                },
-                64 => {
-                    self.MODDKLNDAMK = is.read_uint32()?;
+                    self.AEPBFJNIDMA = is.read_uint32()?;
                 },
                 16 => {
-                    self.CEIFKJIEAJE = is.read_enum_or_unknown()?;
+                    self.JLGCOLBLPAL = is.read_uint32()?;
+                },
+                24 => {
+                    self.BMLGAFGOFDC = is.read_uint32()?;
+                },
+                32 => {
+                    self.OLOICKBOLBC = is.read_uint32()?;
+                },
+                40 => {
+                    self.KONCGPOOAOJ = is.read_uint32()?;
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NCOOOBOIKNM)?;
+                },
+                48 => {
+                    self.NCOOOBOIKNM.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.NGOLPMONKPP = is.read_uint32()?;
+                },
+                64 => {
+                    self.CCMJLCIGGLK = is.read_enum_or_unknown()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EDFHOLPNCKK)?;
+                },
+                72 => {
+                    self.EDFHOLPNCKK.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.LAAINNOKICJ = is.read_bool()?;
+                },
+                88 => {
+                    self.level_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.HEOJPCJEOKM = is.read_uint32()?;
+                },
+                104 => {
+                    self.ELKJDLOMMAM = is.read_bool()?;
+                },
+                112 => {
+                    self.IIPIAFMLNFD = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.JFBDCLJMCMF = is.read_uint32()?;
+                },
+                15970 => {
+                    self.DDDJPDDBFIP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -243,101 +243,101 @@ impl ::protobuf::Message for LBAOGIBPJOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HJEFOLKGAEI != ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.HJEFOLKGAEI.value());
+        if self.AEPBFJNIDMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AEPBFJNIDMA);
+        }
+        if self.JLGCOLBLPAL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JLGCOLBLPAL);
+        }
+        if self.BMLGAFGOFDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BMLGAFGOFDC);
+        }
+        if self.OLOICKBOLBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.OLOICKBOLBC);
+        }
+        if self.KONCGPOOAOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.KONCGPOOAOJ);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.NCOOOBOIKNM);
+        if self.NGOLPMONKPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NGOLPMONKPP);
+        }
+        if self.CCMJLCIGGLK != ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(8, self.CCMJLCIGGLK.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.EDFHOLPNCKK);
+        if self.LAAINNOKICJ != false {
+            my_size += 1 + 1;
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.level_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.JJEFBPKPKBK);
-        if self.BBDOPLEKIAC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BBDOPLEKIAC);
+        if self.HEOJPCJEOKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HEOJPCJEOKM);
         }
-        if self.JIKEIGBCABB != false {
+        if self.ELKJDLOMMAM != false {
             my_size += 1 + 1;
         }
-        if self.DKPNENBHELH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DKPNENBHELH);
+        if self.IIPIAFMLNFD != ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(14, self.IIPIAFMLNFD.value());
         }
-        if self.LIKHCLPMHJK != false {
-            my_size += 1 + 1;
+        if self.JFBDCLJMCMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JFBDCLJMCMF);
         }
-        if self.KHCMOFPFOAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KHCMOFPFOAK);
-        }
-        for value in &self.LIPJDJPMOKB {
+        for value in &self.DDDJPDDBFIP {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NLIBKABFGCC);
-        }
-        if self.JIJHAAIHNCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JIJHAAIHNCN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.PCMGAGAHBLK);
-        if self.EIGABCKEDNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EIGABCKEDNP);
-        }
-        if self.PBFAIOJJGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PBFAIOJJGNL);
-        }
-        if self.MODDKLNDAMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MODDKLNDAMK);
-        }
-        if self.CEIFKJIEAJE != ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.CEIFKJIEAJE.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HJEFOLKGAEI != ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.HJEFOLKGAEI))?;
+        if self.AEPBFJNIDMA != 0 {
+            os.write_uint32(1, self.AEPBFJNIDMA)?;
+        }
+        if self.JLGCOLBLPAL != 0 {
+            os.write_uint32(2, self.JLGCOLBLPAL)?;
+        }
+        if self.BMLGAFGOFDC != 0 {
+            os.write_uint32(3, self.BMLGAFGOFDC)?;
+        }
+        if self.OLOICKBOLBC != 0 {
+            os.write_uint32(4, self.OLOICKBOLBC)?;
+        }
+        if self.KONCGPOOAOJ != 0 {
+            os.write_uint32(5, self.KONCGPOOAOJ)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.NCOOOBOIKNM)?;
+        if self.NGOLPMONKPP != 0 {
+            os.write_uint32(7, self.NGOLPMONKPP)?;
+        }
+        if self.CCMJLCIGGLK != ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.CCMJLCIGGLK))?;
+        }
+        os.write_repeated_packed_uint32(9, &self.EDFHOLPNCKK)?;
+        if self.LAAINNOKICJ != false {
+            os.write_bool(10, self.LAAINNOKICJ)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(15, self.level_id)?;
+            os.write_uint32(11, self.level_id)?;
         }
-        os.write_repeated_packed_uint32(14, &self.JJEFBPKPKBK)?;
-        if self.BBDOPLEKIAC != 0 {
-            os.write_uint32(13, self.BBDOPLEKIAC)?;
+        if self.HEOJPCJEOKM != 0 {
+            os.write_uint32(12, self.HEOJPCJEOKM)?;
         }
-        if self.JIKEIGBCABB != false {
-            os.write_bool(9, self.JIKEIGBCABB)?;
+        if self.ELKJDLOMMAM != false {
+            os.write_bool(13, self.ELKJDLOMMAM)?;
         }
-        if self.DKPNENBHELH != 0 {
-            os.write_uint32(3, self.DKPNENBHELH)?;
+        if self.IIPIAFMLNFD != ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IIPIAFMLNFD))?;
         }
-        if self.LIKHCLPMHJK != false {
-            os.write_bool(4, self.LIKHCLPMHJK)?;
+        if self.JFBDCLJMCMF != 0 {
+            os.write_uint32(15, self.JFBDCLJMCMF)?;
         }
-        if self.KHCMOFPFOAK != 0 {
-            os.write_uint32(7, self.KHCMOFPFOAK)?;
-        }
-        for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(261, v, os)?;
+        for v in &self.DDDJPDDBFIP {
+            ::protobuf::rt::write_message_field_with_cached_size(1996, v, os)?;
         };
-        if self.NLIBKABFGCC != 0 {
-            os.write_uint32(1, self.NLIBKABFGCC)?;
-        }
-        if self.JIJHAAIHNCN != 0 {
-            os.write_uint32(5, self.JIJHAAIHNCN)?;
-        }
-        os.write_repeated_packed_uint32(11, &self.PCMGAGAHBLK)?;
-        if self.EIGABCKEDNP != 0 {
-            os.write_uint32(12, self.EIGABCKEDNP)?;
-        }
-        if self.PBFAIOJJGNL != 0 {
-            os.write_uint32(10, self.PBFAIOJJGNL)?;
-        }
-        if self.MODDKLNDAMK != 0 {
-            os.write_uint32(8, self.MODDKLNDAMK)?;
-        }
-        if self.CEIFKJIEAJE != ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.CEIFKJIEAJE))?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -355,43 +355,43 @@ impl ::protobuf::Message for LBAOGIBPJOP {
     }
 
     fn clear(&mut self) {
-        self.HJEFOLKGAEI = ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE);
+        self.AEPBFJNIDMA = 0;
+        self.JLGCOLBLPAL = 0;
+        self.BMLGAFGOFDC = 0;
+        self.OLOICKBOLBC = 0;
+        self.KONCGPOOAOJ = 0;
+        self.NCOOOBOIKNM.clear();
+        self.NGOLPMONKPP = 0;
+        self.CCMJLCIGGLK = ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE);
+        self.EDFHOLPNCKK.clear();
+        self.LAAINNOKICJ = false;
         self.level_id = 0;
-        self.JJEFBPKPKBK.clear();
-        self.BBDOPLEKIAC = 0;
-        self.JIKEIGBCABB = false;
-        self.DKPNENBHELH = 0;
-        self.LIKHCLPMHJK = false;
-        self.KHCMOFPFOAK = 0;
-        self.LIPJDJPMOKB.clear();
-        self.NLIBKABFGCC = 0;
-        self.JIJHAAIHNCN = 0;
-        self.PCMGAGAHBLK.clear();
-        self.EIGABCKEDNP = 0;
-        self.PBFAIOJJGNL = 0;
-        self.MODDKLNDAMK = 0;
-        self.CEIFKJIEAJE = ::protobuf::EnumOrUnknown::new(super::JOMKPEGEFMP::JOMKPEGEFMP::MARBLE_TEAM_TYPE_NONE);
+        self.HEOJPCJEOKM = 0;
+        self.ELKJDLOMMAM = false;
+        self.IIPIAFMLNFD = ::protobuf::EnumOrUnknown::new(super::FightMarbleTeamType::FightMarbleTeamType::MARBLE_TEAM_TYPE_NONE);
+        self.JFBDCLJMCMF = 0;
+        self.DDDJPDDBFIP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LBAOGIBPJOP {
         static instance: LBAOGIBPJOP = LBAOGIBPJOP {
-            HJEFOLKGAEI: ::protobuf::EnumOrUnknown::from_i32(0),
+            AEPBFJNIDMA: 0,
+            JLGCOLBLPAL: 0,
+            BMLGAFGOFDC: 0,
+            OLOICKBOLBC: 0,
+            KONCGPOOAOJ: 0,
+            NCOOOBOIKNM: ::std::vec::Vec::new(),
+            NGOLPMONKPP: 0,
+            CCMJLCIGGLK: ::protobuf::EnumOrUnknown::from_i32(0),
+            EDFHOLPNCKK: ::std::vec::Vec::new(),
+            LAAINNOKICJ: false,
             level_id: 0,
-            JJEFBPKPKBK: ::std::vec::Vec::new(),
-            BBDOPLEKIAC: 0,
-            JIKEIGBCABB: false,
-            DKPNENBHELH: 0,
-            LIKHCLPMHJK: false,
-            KHCMOFPFOAK: 0,
-            LIPJDJPMOKB: ::std::vec::Vec::new(),
-            NLIBKABFGCC: 0,
-            JIJHAAIHNCN: 0,
-            PCMGAGAHBLK: ::std::vec::Vec::new(),
-            EIGABCKEDNP: 0,
-            PBFAIOJJGNL: 0,
-            MODDKLNDAMK: 0,
-            CEIFKJIEAJE: ::protobuf::EnumOrUnknown::from_i32(0),
+            HEOJPCJEOKM: 0,
+            ELKJDLOMMAM: false,
+            IIPIAFMLNFD: ::protobuf::EnumOrUnknown::from_i32(0),
+            JFBDCLJMCMF: 0,
+            DDDJPDDBFIP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -416,22 +416,22 @@ impl ::protobuf::reflect::ProtobufValue for LBAOGIBPJOP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LBAOGIBPJOP.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x11JOMKPEGEFMP.prot\
-    o\"\xd1\x04\n\x0bLBAOGIBPJOP\x12.\n\x0bHJEFOLKGAEI\x18\x06\x20\x01(\x0e2\
-    \x0c.JOMKPEGEFMPR\x0bHJEFOLKGAEI\x12\x19\n\x08level_id\x18\x0f\x20\x01(\
-    \rR\x07levelId\x12\x20\n\x0bJJEFBPKPKBK\x18\x0e\x20\x03(\rR\x0bJJEFBPKPK\
-    BK\x12\x20\n\x0bBBDOPLEKIAC\x18\r\x20\x01(\rR\x0bBBDOPLEKIAC\x12\x20\n\
-    \x0bJIKEIGBCABB\x18\t\x20\x01(\x08R\x0bJIKEIGBCABB\x12\x20\n\x0bDKPNENBH\
-    ELH\x18\x03\x20\x01(\rR\x0bDKPNENBHELH\x12\x20\n\x0bLIKHCLPMHJK\x18\x04\
-    \x20\x01(\x08R\x0bLIKHCLPMHJK\x12\x20\n\x0bKHCMOFPFOAK\x18\x07\x20\x01(\
-    \rR\x0bKHCMOFPFOAK\x12/\n\x0bLIPJDJPMOKB\x18\x85\x02\x20\x03(\x0b2\x0c.C\
-    BBDIOMIFHDR\x0bLIPJDJPMOKB\x12\x20\n\x0bNLIBKABFGCC\x18\x01\x20\x01(\rR\
-    \x0bNLIBKABFGCC\x12\x20\n\x0bJIJHAAIHNCN\x18\x05\x20\x01(\rR\x0bJIJHAAIH\
-    NCN\x12\x20\n\x0bPCMGAGAHBLK\x18\x0b\x20\x03(\rR\x0bPCMGAGAHBLK\x12\x20\
-    \n\x0bEIGABCKEDNP\x18\x0c\x20\x01(\rR\x0bEIGABCKEDNP\x12\x20\n\x0bPBFAIO\
-    JJGNL\x18\n\x20\x01(\rR\x0bPBFAIOJJGNL\x12\x20\n\x0bMODDKLNDAMK\x18\x08\
-    \x20\x01(\rR\x0bMODDKLNDAMK\x12.\n\x0bCEIFKJIEAJE\x18\x02\x20\x01(\x0e2\
-    \x0c.JOMKPEGEFMPR\x0bCEIFKJIEAJEb\x06proto3\
+    \n\x11LBAOGIBPJOP.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x19FightMarbleTeamT\
+    ype.proto\"\xe1\x04\n\x0bLBAOGIBPJOP\x12\x20\n\x0bAEPBFJNIDMA\x18\x01\
+    \x20\x01(\rR\x0bAEPBFJNIDMA\x12\x20\n\x0bJLGCOLBLPAL\x18\x02\x20\x01(\rR\
+    \x0bJLGCOLBLPAL\x12\x20\n\x0bBMLGAFGOFDC\x18\x03\x20\x01(\rR\x0bBMLGAFGO\
+    FDC\x12\x20\n\x0bOLOICKBOLBC\x18\x04\x20\x01(\rR\x0bOLOICKBOLBC\x12\x20\
+    \n\x0bKONCGPOOAOJ\x18\x05\x20\x01(\rR\x0bKONCGPOOAOJ\x12\x20\n\x0bNCOOOB\
+    OIKNM\x18\x06\x20\x03(\rR\x0bNCOOOBOIKNM\x12\x20\n\x0bNGOLPMONKPP\x18\
+    \x07\x20\x01(\rR\x0bNGOLPMONKPP\x126\n\x0bCCMJLCIGGLK\x18\x08\x20\x01(\
+    \x0e2\x14.FightMarbleTeamTypeR\x0bCCMJLCIGGLK\x12\x20\n\x0bEDFHOLPNCKK\
+    \x18\t\x20\x03(\rR\x0bEDFHOLPNCKK\x12\x20\n\x0bLAAINNOKICJ\x18\n\x20\x01\
+    (\x08R\x0bLAAINNOKICJ\x12\x19\n\x08level_id\x18\x0b\x20\x01(\rR\x07level\
+    Id\x12\x20\n\x0bHEOJPCJEOKM\x18\x0c\x20\x01(\rR\x0bHEOJPCJEOKM\x12\x20\n\
+    \x0bELKJDLOMMAM\x18\r\x20\x01(\x08R\x0bELKJDLOMMAM\x126\n\x0bIIPIAFMLNFD\
+    \x18\x0e\x20\x01(\x0e2\x14.FightMarbleTeamTypeR\x0bIIPIAFMLNFD\x12\x20\n\
+    \x0bJFBDCLJMCMF\x18\x0f\x20\x01(\rR\x0bJFBDCLJMCMF\x12/\n\x0bDDDJPDDBFIP\
+    \x18\xcc\x0f\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bDDDJPDDBFIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -450,7 +450,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::CBBDIOMIFHD::file_descriptor().clone());
-            deps.push(super::JOMKPEGEFMP::file_descriptor().clone());
+            deps.push(super::FightMarbleTeamType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LBAOGIBPJOP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

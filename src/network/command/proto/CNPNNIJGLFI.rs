@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CNPNNIJGLFI {
     // message fields
-    // @@protoc_insertion_point(field:CNPNNIJGLFI.DPDNNMBCPOI)
-    pub DPDNNMBCPOI: u32,
-    // @@protoc_insertion_point(field:CNPNNIJGLFI.DBELJGBKBPA)
-    pub DBELJGBKBPA: u32,
+    // @@protoc_insertion_point(field:CNPNNIJGLFI.DKNNBOHDKIL)
+    pub DKNNBOHDKIL: u32,
+    // @@protoc_insertion_point(field:CNPNNIJGLFI.NFFHIMHGBEC)
+    pub NFFHIMHGBEC: u32,
     // @@protoc_insertion_point(field:CNPNNIJGLFI.entity_id)
     pub entity_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CNPNNIJGLFI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPDNNMBCPOI",
-            |m: &CNPNNIJGLFI| { &m.DPDNNMBCPOI },
-            |m: &mut CNPNNIJGLFI| { &mut m.DPDNNMBCPOI },
+            "DKNNBOHDKIL",
+            |m: &CNPNNIJGLFI| { &m.DKNNBOHDKIL },
+            |m: &mut CNPNNIJGLFI| { &mut m.DKNNBOHDKIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBELJGBKBPA",
-            |m: &CNPNNIJGLFI| { &m.DBELJGBKBPA },
-            |m: &mut CNPNNIJGLFI| { &mut m.DBELJGBKBPA },
+            "NFFHIMHGBEC",
+            |m: &CNPNNIJGLFI| { &m.NFFHIMHGBEC },
+            |m: &mut CNPNNIJGLFI| { &mut m.NFFHIMHGBEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -87,10 +87,10 @@ impl ::protobuf::Message for CNPNNIJGLFI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.DPDNNMBCPOI = is.read_uint32()?;
+                    self.DKNNBOHDKIL = is.read_uint32()?;
                 },
                 16 => {
-                    self.DBELJGBKBPA = is.read_uint32()?;
+                    self.NFFHIMHGBEC = is.read_uint32()?;
                 },
                 24 => {
                     self.entity_id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for CNPNNIJGLFI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPDNNMBCPOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DPDNNMBCPOI);
+        if self.DKNNBOHDKIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DKNNBOHDKIL);
         }
-        if self.DBELJGBKBPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DBELJGBKBPA);
+        if self.NFFHIMHGBEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NFFHIMHGBEC);
         }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.entity_id);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for CNPNNIJGLFI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPDNNMBCPOI != 0 {
-            os.write_uint32(1, self.DPDNNMBCPOI)?;
+        if self.DKNNBOHDKIL != 0 {
+            os.write_uint32(1, self.DKNNBOHDKIL)?;
         }
-        if self.DBELJGBKBPA != 0 {
-            os.write_uint32(2, self.DBELJGBKBPA)?;
+        if self.NFFHIMHGBEC != 0 {
+            os.write_uint32(2, self.NFFHIMHGBEC)?;
         }
         if self.entity_id != 0 {
             os.write_uint32(3, self.entity_id)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CNPNNIJGLFI {
     }
 
     fn clear(&mut self) {
-        self.DPDNNMBCPOI = 0;
-        self.DBELJGBKBPA = 0;
+        self.DKNNBOHDKIL = 0;
+        self.NFFHIMHGBEC = 0;
         self.entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CNPNNIJGLFI {
         static instance: CNPNNIJGLFI = CNPNNIJGLFI {
-            DPDNNMBCPOI: 0,
-            DBELJGBKBPA: 0,
+            DKNNBOHDKIL: 0,
+            NFFHIMHGBEC: 0,
             entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for CNPNNIJGLFI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CNPNNIJGLFI.proto\"n\n\x0bCNPNNIJGLFI\x12\x20\n\x0bDPDNNMBCPOI\x18\
-    \x01\x20\x01(\rR\x0bDPDNNMBCPOI\x12\x20\n\x0bDBELJGBKBPA\x18\x02\x20\x01\
-    (\rR\x0bDBELJGBKBPA\x12\x1b\n\tentity_id\x18\x03\x20\x01(\rR\x08entityId\
+    \n\x11CNPNNIJGLFI.proto\"n\n\x0bCNPNNIJGLFI\x12\x20\n\x0bDKNNBOHDKIL\x18\
+    \x01\x20\x01(\rR\x0bDKNNBOHDKIL\x12\x20\n\x0bNFFHIMHGBEC\x18\x02\x20\x01\
+    (\rR\x0bNFFHIMHGBEC\x12\x1b\n\tentity_id\x18\x03\x20\x01(\rR\x08entityId\
     b\x06proto3\
 ";
 

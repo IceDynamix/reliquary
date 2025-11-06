@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonDialogueOptionInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.is_valid)
-    pub is_valid: bool,
-    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.display_value)
-    pub display_value: ::protobuf::MessageField<super::RogueCommonDialogueOptionDisplayInfo::RogueCommonDialogueOptionDisplayInfo>,
     // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.option_result_info)
-    pub option_result_info: ::std::vec::Vec<super::RogueCommonDialogueOptionResultInfo::RogueCommonDialogueOptionResultInfo>,
-    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.confirm)
-    pub confirm: bool,
+    pub option_result_info: ::std::vec::Vec<super::HJPGNCNGILG::HJPGNCNGILG>,
+    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.param)
+    pub param: ::protobuf::MessageField<super::ABENFANELFL::ABENFANELFL>,
     // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.arg_id)
     pub arg_id: u32,
+    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.confirm)
+    pub confirm: bool,
+    // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.is_valid)
+    pub is_valid: bool,
     // @@protoc_insertion_point(field:RogueCommonDialogueOptionInfo.option_id)
     pub option_id: u32,
     // special fields
@@ -59,20 +59,20 @@ impl RogueCommonDialogueOptionInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &RogueCommonDialogueOptionInfo| { &m.is_valid },
-            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.is_valid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonDialogueOptionDisplayInfo::RogueCommonDialogueOptionDisplayInfo>(
-            "display_value",
-            |m: &RogueCommonDialogueOptionInfo| { &m.display_value },
-            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.display_value },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "option_result_info",
             |m: &RogueCommonDialogueOptionInfo| { &m.option_result_info },
             |m: &mut RogueCommonDialogueOptionInfo| { &mut m.option_result_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABENFANELFL::ABENFANELFL>(
+            "param",
+            |m: &RogueCommonDialogueOptionInfo| { &m.param },
+            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.param },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "arg_id",
+            |m: &RogueCommonDialogueOptionInfo| { &m.arg_id },
+            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.arg_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "confirm",
@@ -80,9 +80,9 @@ impl RogueCommonDialogueOptionInfo {
             |m: &mut RogueCommonDialogueOptionInfo| { &mut m.confirm },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "arg_id",
-            |m: &RogueCommonDialogueOptionInfo| { &m.arg_id },
-            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.arg_id },
+            "is_valid",
+            |m: &RogueCommonDialogueOptionInfo| { &m.is_valid },
+            |m: &mut RogueCommonDialogueOptionInfo| { &mut m.is_valid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "option_id",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for RogueCommonDialogueOptionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.is_valid = is.read_bool()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
-                },
-                122 => {
+                10 => {
                     self.option_result_info.push(is.read_message()?);
                 },
-                80 => {
-                    self.confirm = is.read_bool()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.param)?;
                 },
-                24 => {
+                48 => {
                     self.arg_id = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
+                    self.confirm = is.read_bool()?;
+                },
+                96 => {
+                    self.is_valid = is.read_bool()?;
+                },
+                120 => {
                     self.option_id = is.read_uint32()?;
                 },
                 tag => {
@@ -137,25 +137,25 @@ impl ::protobuf::Message for RogueCommonDialogueOptionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_valid != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.display_value.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.option_result_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.param.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.arg_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.arg_id);
+        }
         if self.confirm != false {
             my_size += 1 + 1;
         }
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.arg_id);
+        if self.is_valid != false {
+            my_size += 1 + 1;
         }
         if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.option_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.option_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for RogueCommonDialogueOptionInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_valid != false {
-            os.write_bool(9, self.is_valid)?;
-        }
-        if let Some(v) = self.display_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         for v in &self.option_result_info {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.confirm != false {
-            os.write_bool(10, self.confirm)?;
+        if let Some(v) = self.param.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.arg_id != 0 {
-            os.write_uint32(3, self.arg_id)?;
+            os.write_uint32(6, self.arg_id)?;
+        }
+        if self.confirm != false {
+            os.write_bool(7, self.confirm)?;
+        }
+        if self.is_valid != false {
+            os.write_bool(12, self.is_valid)?;
         }
         if self.option_id != 0 {
-            os.write_uint32(14, self.option_id)?;
+            os.write_uint32(15, self.option_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +198,22 @@ impl ::protobuf::Message for RogueCommonDialogueOptionInfo {
     }
 
     fn clear(&mut self) {
-        self.is_valid = false;
-        self.display_value.clear();
         self.option_result_info.clear();
-        self.confirm = false;
+        self.param.clear();
         self.arg_id = 0;
+        self.confirm = false;
+        self.is_valid = false;
         self.option_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonDialogueOptionInfo {
         static instance: RogueCommonDialogueOptionInfo = RogueCommonDialogueOptionInfo {
-            is_valid: false,
-            display_value: ::protobuf::MessageField::none(),
             option_result_info: ::std::vec::Vec::new(),
-            confirm: false,
+            param: ::protobuf::MessageField::none(),
             arg_id: 0,
+            confirm: false,
+            is_valid: false,
             option_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,15 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonDialogueOptionInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#RogueCommonDialogueOptionInfo.proto\x1a*RogueCommonDialogueOptionDisp\
-    layInfo.proto\x1a)RogueCommonDialogueOptionResultInfo.proto\"\xa8\x02\n\
-    \x1dRogueCommonDialogueOptionInfo\x12\x19\n\x08is_valid\x18\t\x20\x01(\
-    \x08R\x07isValid\x12J\n\rdisplay_value\x18\x06\x20\x01(\x0b2%.RogueCommo\
-    nDialogueOptionDisplayInfoR\x0cdisplayValue\x12R\n\x12option_result_info\
-    \x18\x0f\x20\x03(\x0b2$.RogueCommonDialogueOptionResultInfoR\x10optionRe\
-    sultInfo\x12\x18\n\x07confirm\x18\n\x20\x01(\x08R\x07confirm\x12\x15\n\
-    \x06arg_id\x18\x03\x20\x01(\rR\x05argId\x12\x1b\n\toption_id\x18\x0e\x20\
-    \x01(\rR\x08optionIdb\x06proto3\
+    \n#RogueCommonDialogueOptionInfo.proto\x1a\x11ABENFANELFL.proto\x1a\x11H\
+    JPGNCNGILG.proto\"\xe8\x01\n\x1dRogueCommonDialogueOptionInfo\x12:\n\x12\
+    option_result_info\x18\x01\x20\x03(\x0b2\x0c.HJPGNCNGILGR\x10optionResul\
+    tInfo\x12\"\n\x05param\x18\x04\x20\x01(\x0b2\x0c.ABENFANELFLR\x05param\
+    \x12\x15\n\x06arg_id\x18\x06\x20\x01(\rR\x05argId\x12\x18\n\x07confirm\
+    \x18\x07\x20\x01(\x08R\x07confirm\x12\x19\n\x08is_valid\x18\x0c\x20\x01(\
+    \x08R\x07isValid\x12\x1b\n\toption_id\x18\x0f\x20\x01(\rR\x08optionIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -265,8 +264,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::RogueCommonDialogueOptionDisplayInfo::file_descriptor().clone());
-            deps.push(super::RogueCommonDialogueOptionResultInfo::file_descriptor().clone());
+            deps.push(super::ABENFANELFL::file_descriptor().clone());
+            deps.push(super::HJPGNCNGILG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueCommonDialogueOptionInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

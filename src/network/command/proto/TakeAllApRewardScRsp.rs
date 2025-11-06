@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeAllApRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeAllApRewardScRsp.take_reward_level_list)
-    pub take_reward_level_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TakeAllApRewardScRsp.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeAllApRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeAllApRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeAllApRewardScRsp.take_reward_level_list)
+    pub take_reward_level_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeAllApRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl TakeAllApRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "take_reward_level_list",
-            |m: &TakeAllApRewardScRsp| { &m.take_reward_level_list },
-            |m: &mut TakeAllApRewardScRsp| { &mut m.take_reward_level_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &TakeAllApRewardScRsp| { &m.player_return_reward_list },
-            |m: &mut TakeAllApRewardScRsp| { &mut m.player_return_reward_list },
+            "reward",
+            |m: &TakeAllApRewardScRsp| { &m.reward },
+            |m: &mut TakeAllApRewardScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeAllApRewardScRsp| { &m.retcode },
             |m: &mut TakeAllApRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "take_reward_level_list",
+            |m: &TakeAllApRewardScRsp| { &m.take_reward_level_list },
+            |m: &mut TakeAllApRewardScRsp| { &mut m.take_reward_level_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeAllApRewardScRsp>(
             "TakeAllApRewardScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for TakeAllApRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.take_reward_level_list)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                88 => {
-                    self.take_reward_level_list.push(is.read_uint32()?);
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
+                    is.read_repeated_packed_uint32_into(&mut self.take_reward_level_list)?;
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.take_reward_level_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for TakeAllApRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.take_reward_level_list);
-        if let Some(v) = self.player_return_reward_list.as_ref() {
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.take_reward_level_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.take_reward_level_list)?;
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(15, &self.take_reward_level_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TakeAllApRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.take_reward_level_list.clear();
-        self.player_return_reward_list.clear();
+        self.reward.clear();
         self.retcode = 0;
+        self.take_reward_level_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeAllApRewardScRsp {
         static instance: TakeAllApRewardScRsp = TakeAllApRewardScRsp {
-            take_reward_level_list: ::std::vec::Vec::new(),
-            player_return_reward_list: ::protobuf::MessageField::none(),
+            reward: ::protobuf::MessageField::none(),
             retcode: 0,
+            take_reward_level_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeAllApRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aTakeAllApRewardScRsp.proto\x1a\x0eItemList.proto\"\xab\x01\n\x14Ta\
-    keAllApRewardScRsp\x123\n\x16take_reward_level_list\x18\x0b\x20\x03(\rR\
-    \x13takeRewardLevelList\x12D\n\x19player_return_reward_list\x18\x0f\x20\
-    \x01(\x0b2\t.ItemListR\x16playerReturnRewardList\x12\x18\n\x07retcode\
-    \x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1aTakeAllApRewardScRsp.proto\x1a\x0eItemList.proto\"\x88\x01\n\x14Ta\
+    keAllApRewardScRsp\x12!\n\x06reward\x18\x02\x20\x01(\x0b2\t.ItemListR\
+    \x06reward\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x123\n\x16t\
+    ake_reward_level_list\x18\x0f\x20\x03(\rR\x13takeRewardLevelListb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

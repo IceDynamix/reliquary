@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OOEMIBFNLLD {
     // message fields
-    // @@protoc_insertion_point(field:OOEMIBFNLLD.EKPNCLPOENK)
-    pub EKPNCLPOENK: u32,
     // @@protoc_insertion_point(field:OOEMIBFNLLD.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:OOEMIBFNLLD.EKHOOFBDGMD)
+    pub EKHOOFBDGMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OOEMIBFNLLD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OOEMIBFNLLD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKPNCLPOENK",
-            |m: &OOEMIBFNLLD| { &m.EKPNCLPOENK },
-            |m: &mut OOEMIBFNLLD| { &mut m.EKPNCLPOENK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &OOEMIBFNLLD| { &m.progress },
             |m: &mut OOEMIBFNLLD| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EKHOOFBDGMD",
+            |m: &OOEMIBFNLLD| { &m.EKHOOFBDGMD },
+            |m: &mut OOEMIBFNLLD| { &mut m.EKHOOFBDGMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OOEMIBFNLLD>(
             "OOEMIBFNLLD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EKPNCLPOENK = is.read_uint32()?;
-                },
-                88 => {
+                104 => {
                     self.progress = is.read_uint32()?;
+                },
+                112 => {
+                    self.EKHOOFBDGMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EKPNCLPOENK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EKPNCLPOENK);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
+            my_size += ::protobuf::rt::uint32_size(13, self.progress);
+        }
+        if self.EKHOOFBDGMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EKHOOFBDGMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EKPNCLPOENK != 0 {
-            os.write_uint32(15, self.EKPNCLPOENK)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+            os.write_uint32(13, self.progress)?;
+        }
+        if self.EKHOOFBDGMD != 0 {
+            os.write_uint32(14, self.EKHOOFBDGMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OOEMIBFNLLD {
     }
 
     fn clear(&mut self) {
-        self.EKPNCLPOENK = 0;
         self.progress = 0;
+        self.EKHOOFBDGMD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OOEMIBFNLLD {
         static instance: OOEMIBFNLLD = OOEMIBFNLLD {
-            EKPNCLPOENK: 0,
             progress: 0,
+            EKHOOFBDGMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for OOEMIBFNLLD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OOEMIBFNLLD.proto\"K\n\x0bOOEMIBFNLLD\x12\x20\n\x0bEKPNCLPOENK\x18\
-    \x0f\x20\x01(\rR\x0bEKPNCLPOENK\x12\x1a\n\x08progress\x18\x0b\x20\x01(\r\
-    R\x08progressb\x06proto3\
+    \n\x11OOEMIBFNLLD.proto\"K\n\x0bOOEMIBFNLLD\x12\x1a\n\x08progress\x18\r\
+    \x20\x01(\rR\x08progress\x12\x20\n\x0bEKHOOFBDGMD\x18\x0e\x20\x01(\rR\
+    \x0bEKHOOFBDGMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

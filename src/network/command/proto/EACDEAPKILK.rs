@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EACDEAPKILK {
     // message fields
-    // @@protoc_insertion_point(field:EACDEAPKILK.CFKJEPMNLJI)
-    pub CFKJEPMNLJI: ::std::vec::Vec<super::HPKEFFECHFG::HPKEFFECHFG>,
-    // @@protoc_insertion_point(field:EACDEAPKILK.LKGDFHFBLDE)
-    pub LKGDFHFBLDE: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:EACDEAPKILK.FEBMNCJIFMN)
-    pub FEBMNCJIFMN: ::std::vec::Vec<super::PFKAMAFIKKO::PFKAMAFIKKO>,
+    // @@protoc_insertion_point(field:EACDEAPKILK.MLFAGDKLPIA)
+    pub MLFAGDKLPIA: ::std::vec::Vec<super::HPKEFFECHFG::HPKEFFECHFG>,
+    // @@protoc_insertion_point(field:EACDEAPKILK.HBGNHKHCHCE)
+    pub HBGNHKHCHCE: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:EACDEAPKILK.ANFCCEMLCHB)
+    pub ANFCCEMLCHB: ::std::vec::Vec<super::PFKAMAFIKKO::PFKAMAFIKKO>,
     // @@protoc_insertion_point(field:EACDEAPKILK.area_id)
     pub area_id: u32,
     // @@protoc_insertion_point(field:EACDEAPKILK.difficulty_level)
@@ -58,19 +58,19 @@ impl EACDEAPKILK {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFKJEPMNLJI",
-            |m: &EACDEAPKILK| { &m.CFKJEPMNLJI },
-            |m: &mut EACDEAPKILK| { &mut m.CFKJEPMNLJI },
+            "MLFAGDKLPIA",
+            |m: &EACDEAPKILK| { &m.MLFAGDKLPIA },
+            |m: &mut EACDEAPKILK| { &mut m.MLFAGDKLPIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "LKGDFHFBLDE",
-            |m: &EACDEAPKILK| { &m.LKGDFHFBLDE },
-            |m: &mut EACDEAPKILK| { &mut m.LKGDFHFBLDE },
+            "HBGNHKHCHCE",
+            |m: &EACDEAPKILK| { &m.HBGNHKHCHCE },
+            |m: &mut EACDEAPKILK| { &mut m.HBGNHKHCHCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FEBMNCJIFMN",
-            |m: &EACDEAPKILK| { &m.FEBMNCJIFMN },
-            |m: &mut EACDEAPKILK| { &mut m.FEBMNCJIFMN },
+            "ANFCCEMLCHB",
+            |m: &EACDEAPKILK| { &m.ANFCCEMLCHB },
+            |m: &mut EACDEAPKILK| { &mut m.ANFCCEMLCHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -101,7 +101,7 @@ impl ::protobuf::Message for EACDEAPKILK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.CFKJEPMNLJI.push(is.read_message()?);
+                    self.MLFAGDKLPIA.push(is.read_message()?);
                 },
                 18 => {
                     let len = is.read_raw_varint32()?;
@@ -116,10 +116,10 @@ impl ::protobuf::Message for EACDEAPKILK {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.LKGDFHFBLDE.insert(key, value);
+                    self.HBGNHKHCHCE.insert(key, value);
                 },
                 26 => {
-                    self.FEBMNCJIFMN.push(is.read_message()?);
+                    self.ANFCCEMLCHB.push(is.read_message()?);
                 },
                 32 => {
                     self.area_id = is.read_uint32()?;
@@ -139,17 +139,17 @@ impl ::protobuf::Message for EACDEAPKILK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CFKJEPMNLJI {
+        for value in &self.MLFAGDKLPIA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for (k, v) in &self.LKGDFHFBLDE {
+        for (k, v) in &self.HBGNHKHCHCE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.FEBMNCJIFMN {
+        for value in &self.ANFCCEMLCHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -165,10 +165,10 @@ impl ::protobuf::Message for EACDEAPKILK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CFKJEPMNLJI {
+        for v in &self.MLFAGDKLPIA {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for (k, v) in &self.LKGDFHFBLDE {
+        for (k, v) in &self.HBGNHKHCHCE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -177,7 +177,7 @@ impl ::protobuf::Message for EACDEAPKILK {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        for v in &self.FEBMNCJIFMN {
+        for v in &self.ANFCCEMLCHB {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.area_id != 0 {
@@ -203,9 +203,9 @@ impl ::protobuf::Message for EACDEAPKILK {
     }
 
     fn clear(&mut self) {
-        self.CFKJEPMNLJI.clear();
-        self.LKGDFHFBLDE.clear();
-        self.FEBMNCJIFMN.clear();
+        self.MLFAGDKLPIA.clear();
+        self.HBGNHKHCHCE.clear();
+        self.ANFCCEMLCHB.clear();
         self.area_id = 0;
         self.difficulty_level = 0;
         self.special_fields.clear();
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for EACDEAPKILK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EACDEAPKILK.proto\x1a\x11HPKEFFECHFG.proto\x1a\x11PFKAMAFIKKO.prot\
-    o\"\xb2\x02\n\x0bEACDEAPKILK\x12.\n\x0bCFKJEPMNLJI\x18\x01\x20\x03(\x0b2\
-    \x0c.HPKEFFECHFGR\x0bCFKJEPMNLJI\x12?\n\x0bLKGDFHFBLDE\x18\x02\x20\x03(\
-    \x0b2\x1d.EACDEAPKILK.LKGDFHFBLDEEntryR\x0bLKGDFHFBLDE\x12.\n\x0bFEBMNCJ\
-    IFMN\x18\x03\x20\x03(\x0b2\x0c.PFKAMAFIKKOR\x0bFEBMNCJIFMN\x12\x17\n\x07\
+    o\"\xb2\x02\n\x0bEACDEAPKILK\x12.\n\x0bMLFAGDKLPIA\x18\x01\x20\x03(\x0b2\
+    \x0c.HPKEFFECHFGR\x0bMLFAGDKLPIA\x12?\n\x0bHBGNHKHCHCE\x18\x02\x20\x03(\
+    \x0b2\x1d.EACDEAPKILK.HBGNHKHCHCEEntryR\x0bHBGNHKHCHCE\x12.\n\x0bANFCCEM\
+    LCHB\x18\x03\x20\x03(\x0b2\x0c.PFKAMAFIKKOR\x0bANFCCEMLCHB\x12\x17\n\x07\
     area_id\x18\x04\x20\x01(\rR\x06areaId\x12)\n\x10difficulty_level\x18\x05\
-    \x20\x01(\rR\x0fdifficultyLevel\x1a>\n\x10LKGDFHFBLDEEntry\x12\x10\n\x03\
+    \x20\x01(\rR\x0fdifficultyLevel\x1a>\n\x10HBGNHKHCHCEEntry\x12\x10\n\x03\
     key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\
     \x05value:\x028\x01b\x06proto3\
 ";

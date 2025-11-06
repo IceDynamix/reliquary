@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRotaterScNotify {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRotaterScNotify.rotater_data_list)
-    pub rotater_data_list: ::std::vec::Vec<super::RotaterData::RotaterData>,
+    // @@protoc_insertion_point(field:UpdateRotaterScNotify.rotater_config_list)
+    pub rotater_config_list: ::std::vec::Vec<super::RotaterData::RotaterData>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRotaterScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl UpdateRotaterScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rotater_data_list",
-            |m: &UpdateRotaterScNotify| { &m.rotater_data_list },
-            |m: &mut UpdateRotaterScNotify| { &mut m.rotater_data_list },
+            "rotater_config_list",
+            |m: &UpdateRotaterScNotify| { &m.rotater_config_list },
+            |m: &mut UpdateRotaterScNotify| { &mut m.rotater_config_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRotaterScNotify>(
             "UpdateRotaterScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.rotater_data_list.push(is.read_message()?);
+                10 => {
+                    self.rotater_config_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.rotater_data_list {
+        for value in &self.rotater_config_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.rotater_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.rotater_config_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UpdateRotaterScNotify {
     }
 
     fn clear(&mut self) {
-        self.rotater_data_list.clear();
+        self.rotater_config_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRotaterScNotify {
         static instance: UpdateRotaterScNotify = UpdateRotaterScNotify {
-            rotater_data_list: ::std::vec::Vec::new(),
+            rotater_config_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRotaterScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bUpdateRotaterScNotify.proto\x1a\x11RotaterData.proto\"Q\n\x15Updat\
-    eRotaterScNotify\x128\n\x11rotater_data_list\x18\x04\x20\x03(\x0b2\x0c.R\
-    otaterDataR\x0frotaterDataListb\x06proto3\
+    \n\x1bUpdateRotaterScNotify.proto\x1a\x11RotaterData.proto\"U\n\x15Updat\
+    eRotaterScNotify\x12<\n\x13rotater_config_list\x18\x01\x20\x03(\x0b2\x0c\
+    .RotaterDataR\x11rotaterConfigListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

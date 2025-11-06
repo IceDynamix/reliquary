@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartPunkLordRaidScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.DMILCFHLIHP)
-    pub DMILCFHLIHP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.CLOMMFKJPMM)
-    pub CLOMMFKJPMM: bool,
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.DPMKAMMIOLB)
-    pub DPMKAMMIOLB: ::protobuf::MessageField<super::KAOAHKAOHFI::KAOAHKAOHFI>,
-    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.AGEGDMGNPDK)
-    pub AGEGDMGNPDK: i64,
     // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.scene)
     pub scene: ::protobuf::MessageField<super::FNLGPLNCPCL::FNLGPLNCPCL>,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.monster_info)
+    pub monster_info: ::protobuf::MessageField<super::PunkLordMonsterInfo::PunkLordMonsterInfo>,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.attacker_uid_list)
+    pub attacker_uid_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.raid_start_time)
+    pub raid_start_time: i64,
     // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartPunkLordRaidScRsp.PCJIDPHFCIL)
+    pub PCJIDPHFCIL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:StartPunkLordRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl StartPunkLordRaidScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DMILCFHLIHP",
-            |m: &StartPunkLordRaidScRsp| { &m.DMILCFHLIHP },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.DMILCFHLIHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLOMMFKJPMM",
-            |m: &StartPunkLordRaidScRsp| { &m.CLOMMFKJPMM },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.CLOMMFKJPMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KAOAHKAOHFI::KAOAHKAOHFI>(
-            "DPMKAMMIOLB",
-            |m: &StartPunkLordRaidScRsp| { &m.DPMKAMMIOLB },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.DPMKAMMIOLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AGEGDMGNPDK",
-            |m: &StartPunkLordRaidScRsp| { &m.AGEGDMGNPDK },
-            |m: &mut StartPunkLordRaidScRsp| { &mut m.AGEGDMGNPDK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FNLGPLNCPCL::FNLGPLNCPCL>(
             "scene",
             |m: &StartPunkLordRaidScRsp| { &m.scene },
             |m: &mut StartPunkLordRaidScRsp| { &mut m.scene },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterInfo::PunkLordMonsterInfo>(
+            "monster_info",
+            |m: &StartPunkLordRaidScRsp| { &m.monster_info },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.monster_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "attacker_uid_list",
+            |m: &StartPunkLordRaidScRsp| { &m.attacker_uid_list },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.attacker_uid_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "raid_start_time",
+            |m: &StartPunkLordRaidScRsp| { &m.raid_start_time },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.raid_start_time },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartPunkLordRaidScRsp| { &m.retcode },
             |m: &mut StartPunkLordRaidScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCJIDPHFCIL",
+            |m: &StartPunkLordRaidScRsp| { &m.PCJIDPHFCIL },
+            |m: &mut StartPunkLordRaidScRsp| { &mut m.PCJIDPHFCIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartPunkLordRaidScRsp>(
             "StartPunkLordRaidScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DMILCFHLIHP)?;
-                },
-                64 => {
-                    self.DMILCFHLIHP.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.CLOMMFKJPMM = is.read_bool()?;
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPMKAMMIOLB)?;
-                },
-                120 => {
-                    self.AGEGDMGNPDK = is.read_int64()?;
-                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                112 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_info)?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.attacker_uid_list)?;
+                },
+                56 => {
+                    self.attacker_uid_list.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.raid_start_time = is.read_int64()?;
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.PCJIDPHFCIL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,23 +140,23 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DMILCFHLIHP);
-        if self.CLOMMFKJPMM != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.AGEGDMGNPDK != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.AGEGDMGNPDK);
-        }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.monster_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.attacker_uid_list);
+        if self.raid_start_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.raid_start_time);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.PCJIDPHFCIL != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,21 +164,21 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.DMILCFHLIHP)?;
-        if self.CLOMMFKJPMM != false {
-            os.write_bool(10, self.CLOMMFKJPMM)?;
-        }
-        if let Some(v) = self.DPMKAMMIOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.AGEGDMGNPDK != 0 {
-            os.write_int64(15, self.AGEGDMGNPDK)?;
-        }
         if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
+        if let Some(v) = self.monster_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.attacker_uid_list)?;
+        if self.raid_start_time != 0 {
+            os.write_int64(8, self.raid_start_time)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.PCJIDPHFCIL != false {
+            os.write_bool(15, self.PCJIDPHFCIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for StartPunkLordRaidScRsp {
     }
 
     fn clear(&mut self) {
-        self.DMILCFHLIHP.clear();
-        self.CLOMMFKJPMM = false;
-        self.DPMKAMMIOLB.clear();
-        self.AGEGDMGNPDK = 0;
         self.scene.clear();
+        self.monster_info.clear();
+        self.attacker_uid_list.clear();
+        self.raid_start_time = 0;
         self.retcode = 0;
+        self.PCJIDPHFCIL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartPunkLordRaidScRsp {
         static instance: StartPunkLordRaidScRsp = StartPunkLordRaidScRsp {
-            DMILCFHLIHP: ::std::vec::Vec::new(),
-            CLOMMFKJPMM: false,
-            DPMKAMMIOLB: ::protobuf::MessageField::none(),
-            AGEGDMGNPDK: 0,
             scene: ::protobuf::MessageField::none(),
+            monster_info: ::protobuf::MessageField::none(),
+            attacker_uid_list: ::std::vec::Vec::new(),
+            raid_start_time: 0,
             retcode: 0,
+            PCJIDPHFCIL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,14 +238,14 @@ impl ::protobuf::reflect::ProtobufValue for StartPunkLordRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cStartPunkLordRaidScRsp.proto\x1a\x11FNLGPLNCPCL.proto\x1a\x11KAOAH\
-    KAOHFI.proto\"\xec\x01\n\x16StartPunkLordRaidScRsp\x12\x20\n\x0bDMILCFHL\
-    IHP\x18\x08\x20\x03(\rR\x0bDMILCFHLIHP\x12\x20\n\x0bCLOMMFKJPMM\x18\n\
-    \x20\x01(\x08R\x0bCLOMMFKJPMM\x12.\n\x0bDPMKAMMIOLB\x18\x01\x20\x01(\x0b\
-    2\x0c.KAOAHKAOHFIR\x0bDPMKAMMIOLB\x12\x20\n\x0bAGEGDMGNPDK\x18\x0f\x20\
-    \x01(\x03R\x0bAGEGDMGNPDK\x12\"\n\x05scene\x18\x02\x20\x01(\x0b2\x0c.FNL\
-    GPLNCPCLR\x05scene\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x1cStartPunkLordRaidScRsp.proto\x1a\x11FNLGPLNCPCL.proto\x1a\x19PunkL\
+    ordMonsterInfo.proto\"\x85\x02\n\x16StartPunkLordRaidScRsp\x12\"\n\x05sc\
+    ene\x18\x02\x20\x01(\x0b2\x0c.FNLGPLNCPCLR\x05scene\x127\n\x0cmonster_in\
+    fo\x18\x05\x20\x01(\x0b2\x14.PunkLordMonsterInfoR\x0bmonsterInfo\x12*\n\
+    \x11attacker_uid_list\x18\x07\x20\x03(\rR\x0fattackerUidList\x12&\n\x0fr\
+    aid_start_time\x18\x08\x20\x01(\x03R\rraidStartTime\x12\x18\n\x07retcode\
+    \x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bPCJIDPHFCIL\x18\x0f\x20\x01(\
+    \x08R\x0bPCJIDPHFCILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,7 +264,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::FNLGPLNCPCL::file_descriptor().clone());
-            deps.push(super::KAOAHKAOHFI::file_descriptor().clone());
+            deps.push(super::PunkLordMonsterInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartPunkLordRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

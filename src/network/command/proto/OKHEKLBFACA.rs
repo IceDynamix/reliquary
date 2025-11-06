@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKHEKLBFACA {
     // message fields
-    // @@protoc_insertion_point(field:OKHEKLBFACA.IEPHDLMLOAO)
-    pub IEPHDLMLOAO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OKHEKLBFACA.challenge_peak_id)
-    pub challenge_peak_id: u32,
     // @@protoc_insertion_point(field:OKHEKLBFACA.used_cycle)
     pub used_cycle: u32,
+    // @@protoc_insertion_point(field:OKHEKLBFACA.challenge_peak_id)
+    pub challenge_peak_id: u32,
+    // @@protoc_insertion_point(field:OKHEKLBFACA.LEFIDHFANMI)
+    pub LEFIDHFANMI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OKHEKLBFACA.lineup)
-    pub lineup: ::protobuf::MessageField<super::ChallengeLineupList::ChallengeLineupList>,
+    pub lineup: ::protobuf::MessageField<super::EIOAFODNCOJ::EIOAFODNCOJ>,
     // special fields
     // @@protoc_insertion_point(special_field:OKHEKLBFACA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,22 +55,22 @@ impl OKHEKLBFACA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IEPHDLMLOAO",
-            |m: &OKHEKLBFACA| { &m.IEPHDLMLOAO },
-            |m: &mut OKHEKLBFACA| { &mut m.IEPHDLMLOAO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "used_cycle",
+            |m: &OKHEKLBFACA| { &m.used_cycle },
+            |m: &mut OKHEKLBFACA| { &mut m.used_cycle },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_peak_id",
             |m: &OKHEKLBFACA| { &m.challenge_peak_id },
             |m: &mut OKHEKLBFACA| { &mut m.challenge_peak_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "used_cycle",
-            |m: &OKHEKLBFACA| { &m.used_cycle },
-            |m: &mut OKHEKLBFACA| { &mut m.used_cycle },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LEFIDHFANMI",
+            |m: &OKHEKLBFACA| { &m.LEFIDHFANMI },
+            |m: &mut OKHEKLBFACA| { &mut m.LEFIDHFANMI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeLineupList::ChallengeLineupList>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIOAFODNCOJ::EIOAFODNCOJ>(
             "lineup",
             |m: &OKHEKLBFACA| { &m.lineup },
             |m: &mut OKHEKLBFACA| { &mut m.lineup },
@@ -93,19 +93,19 @@ impl ::protobuf::Message for OKHEKLBFACA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IEPHDLMLOAO)?;
-                },
-                120 => {
-                    self.IEPHDLMLOAO.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.challenge_peak_id = is.read_uint32()?;
-                },
                 72 => {
                     self.used_cycle = is.read_uint32()?;
                 },
-                50 => {
+                80 => {
+                    self.challenge_peak_id = is.read_uint32()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LEFIDHFANMI)?;
+                },
+                96 => {
+                    self.LEFIDHFANMI.push(is.read_uint32()?);
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -120,13 +120,13 @@ impl ::protobuf::Message for OKHEKLBFACA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IEPHDLMLOAO);
-        if self.challenge_peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.challenge_peak_id);
-        }
         if self.used_cycle != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.used_cycle);
         }
+        if self.challenge_peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.challenge_peak_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LEFIDHFANMI);
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -137,15 +137,15 @@ impl ::protobuf::Message for OKHEKLBFACA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.IEPHDLMLOAO)?;
-        if self.challenge_peak_id != 0 {
-            os.write_uint32(14, self.challenge_peak_id)?;
-        }
         if self.used_cycle != 0 {
             os.write_uint32(9, self.used_cycle)?;
         }
+        if self.challenge_peak_id != 0 {
+            os.write_uint32(10, self.challenge_peak_id)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.LEFIDHFANMI)?;
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for OKHEKLBFACA {
     }
 
     fn clear(&mut self) {
-        self.IEPHDLMLOAO.clear();
-        self.challenge_peak_id = 0;
         self.used_cycle = 0;
+        self.challenge_peak_id = 0;
+        self.LEFIDHFANMI.clear();
         self.lineup.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKHEKLBFACA {
         static instance: OKHEKLBFACA = OKHEKLBFACA {
-            IEPHDLMLOAO: ::std::vec::Vec::new(),
-            challenge_peak_id: 0,
             used_cycle: 0,
+            challenge_peak_id: 0,
+            LEFIDHFANMI: ::std::vec::Vec::new(),
             lineup: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for OKHEKLBFACA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKHEKLBFACA.proto\x1a\x19ChallengeLineupList.proto\"\xa8\x01\n\x0b\
-    OKHEKLBFACA\x12\x20\n\x0bIEPHDLMLOAO\x18\x0f\x20\x03(\rR\x0bIEPHDLMLOAO\
-    \x12*\n\x11challenge_peak_id\x18\x0e\x20\x01(\rR\x0fchallengePeakId\x12\
-    \x1d\n\nused_cycle\x18\t\x20\x01(\rR\tusedCycle\x12,\n\x06lineup\x18\x06\
-    \x20\x01(\x0b2\x14.ChallengeLineupListR\x06lineupb\x06proto3\
+    \n\x11OKHEKLBFACA.proto\x1a\x11EIOAFODNCOJ.proto\"\xa0\x01\n\x0bOKHEKLBF\
+    ACA\x12\x1d\n\nused_cycle\x18\t\x20\x01(\rR\tusedCycle\x12*\n\x11challen\
+    ge_peak_id\x18\n\x20\x01(\rR\x0fchallengePeakId\x12\x20\n\x0bLEFIDHFANMI\
+    \x18\x0c\x20\x03(\rR\x0bLEFIDHFANMI\x12$\n\x06lineup\x18\r\x20\x01(\x0b2\
+    \x0c.EIOAFODNCOJR\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -223,7 +223,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ChallengeLineupList::file_descriptor().clone());
+            deps.push(super::EIOAFODNCOJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OKHEKLBFACA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

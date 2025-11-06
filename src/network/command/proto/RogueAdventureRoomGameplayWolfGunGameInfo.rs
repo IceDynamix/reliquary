@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     self.battle_target_list.push(is.read_message()?);
                 },
-                72 => {
+                88 => {
                     self.game_target_num = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunGameInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.game_target_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.game_target_num);
+            my_size += ::protobuf::rt::uint32_size(11, self.game_target_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunGameInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.game_target_num != 0 {
-            os.write_uint32(9, self.game_target_num)?;
+            os.write_uint32(11, self.game_target_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueAdventureRoomGameplayWolfGunGam
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/RogueAdventureRoomGameplayWolfGunGameInfo.proto\x1a-RogueAdventureRoo\
     mGameplayWolfGunTarget.proto\"\xab\x01\n)RogueAdventureRoomGameplayWolfG\
-    unGameInfo\x12V\n\x12battle_target_list\x18\x08\x20\x03(\x0b2(.RogueAdve\
+    unGameInfo\x12V\n\x12battle_target_list\x18\x06\x20\x03(\x0b2(.RogueAdve\
     ntureRoomGameplayWolfGunTargetR\x10battleTargetList\x12&\n\x0fgame_targe\
-    t_num\x18\t\x20\x01(\rR\rgameTargetNumb\x06proto3\
+    t_num\x18\x0b\x20\x01(\rR\rgameTargetNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

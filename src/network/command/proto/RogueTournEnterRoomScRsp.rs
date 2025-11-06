@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct RogueTournEnterRoomScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.rogue_tourn_cur_scene_info)
-    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>,
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueTournSceneInfo::RogueTournSceneInfo>,
     // @@protoc_insertion_point(field:RogueTournEnterRoomScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,7 +51,7 @@ impl RogueTournEnterRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournCurSceneInfo::RogueTournCurSceneInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournSceneInfo::RogueTournSceneInfo>(
             "rogue_tourn_cur_scene_info",
             |m: &RogueTournEnterRoomScRsp| { &m.rogue_tourn_cur_scene_info },
             |m: &mut RogueTournEnterRoomScRsp| { &mut m.rogue_tourn_cur_scene_info },
@@ -79,7 +79,7 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for RogueTournEnterRoomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueTournEnterRoomScRsp.proto\x1a\x1cRogueTournCurSceneInfo.proto\
-    \"\x89\x01\n\x18RogueTournEnterRoomScRsp\x12S\n\x1arogue_tourn_cur_scene\
-    _info\x18\x03\x20\x01(\x0b2\x17.RogueTournCurSceneInfoR\x16rogueTournCur\
-    SceneInfo\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1eRogueTournEnterRoomScRsp.proto\x1a\x19RogueTournSceneInfo.proto\"\
+    \x86\x01\n\x18RogueTournEnterRoomScRsp\x12P\n\x1arogue_tourn_cur_scene_i\
+    nfo\x18\t\x20\x01(\x0b2\x14.RogueTournSceneInfoR\x16rogueTournCurSceneIn\
+    fo\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueTournCurSceneInfo::file_descriptor().clone());
+            deps.push(super::RogueTournSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournEnterRoomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

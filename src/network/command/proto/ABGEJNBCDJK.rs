@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ABGEJNBCDJK {
     // message fields
-    // @@protoc_insertion_point(field:ABGEJNBCDJK.BGAFCOBNLPM)
-    pub BGAFCOBNLPM: ::std::vec::Vec<super::DHONNIHMACI::DHONNIHMACI>,
-    // @@protoc_insertion_point(field:ABGEJNBCDJK.BEGMFIAPHLM)
-    pub BEGMFIAPHLM: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:ABGEJNBCDJK.ILBHDLMLMCK)
-    pub ILBHDLMLMCK: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:ABGEJNBCDJK.JMBCICLCHKD)
-    pub JMBCICLCHKD: ::std::vec::Vec<super::LMPIECFMFOI::LMPIECFMFOI>,
+    // @@protoc_insertion_point(field:ABGEJNBCDJK.bird_record_info_list)
+    pub bird_record_info_list: ::std::vec::Vec<super::BirdRecordInfo::BirdRecordInfo>,
+    // @@protoc_insertion_point(field:ABGEJNBCDJK.MCMLDLJAPNF)
+    pub MCMLDLJAPNF: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:ABGEJNBCDJK.finished_level_list)
+    pub finished_level_list: ::std::vec::Vec<super::FinishedLevel::FinishedLevel>,
+    // @@protoc_insertion_point(field:ABGEJNBCDJK.KNLCBJDNCMP)
+    pub KNLCBJDNCMP: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ABGEJNBCDJK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl ABGEJNBCDJK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGAFCOBNLPM",
-            |m: &ABGEJNBCDJK| { &m.BGAFCOBNLPM },
-            |m: &mut ABGEJNBCDJK| { &mut m.BGAFCOBNLPM },
+            "bird_record_info_list",
+            |m: &ABGEJNBCDJK| { &m.bird_record_info_list },
+            |m: &mut ABGEJNBCDJK| { &mut m.bird_record_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "BEGMFIAPHLM",
-            |m: &ABGEJNBCDJK| { &m.BEGMFIAPHLM },
-            |m: &mut ABGEJNBCDJK| { &mut m.BEGMFIAPHLM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "ILBHDLMLMCK",
-            |m: &ABGEJNBCDJK| { &m.ILBHDLMLMCK },
-            |m: &mut ABGEJNBCDJK| { &mut m.ILBHDLMLMCK },
+            "MCMLDLJAPNF",
+            |m: &ABGEJNBCDJK| { &m.MCMLDLJAPNF },
+            |m: &mut ABGEJNBCDJK| { &mut m.MCMLDLJAPNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JMBCICLCHKD",
-            |m: &ABGEJNBCDJK| { &m.JMBCICLCHKD },
-            |m: &mut ABGEJNBCDJK| { &mut m.JMBCICLCHKD },
+            "finished_level_list",
+            |m: &ABGEJNBCDJK| { &m.finished_level_list },
+            |m: &mut ABGEJNBCDJK| { &mut m.finished_level_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "KNLCBJDNCMP",
+            |m: &ABGEJNBCDJK| { &m.KNLCBJDNCMP },
+            |m: &mut ABGEJNBCDJK| { &mut m.KNLCBJDNCMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ABGEJNBCDJK>(
             "ABGEJNBCDJK",
@@ -93,23 +93,8 @@ impl ::protobuf::Message for ABGEJNBCDJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.BGAFCOBNLPM.push(is.read_message()?);
-                },
-                58 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.BEGMFIAPHLM.insert(key, value);
+                10 => {
+                    self.bird_record_info_list.push(is.read_message()?);
                 },
                 50 => {
                     let len = is.read_raw_varint32()?;
@@ -124,10 +109,25 @@ impl ::protobuf::Message for ABGEJNBCDJK {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.ILBHDLMLMCK.insert(key, value);
+                    self.MCMLDLJAPNF.insert(key, value);
                 },
-                26 => {
-                    self.JMBCICLCHKD.push(is.read_message()?);
+                74 => {
+                    self.finished_level_list.push(is.read_message()?);
+                },
+                90 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.KNLCBJDNCMP.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,25 +141,25 @@ impl ::protobuf::Message for ABGEJNBCDJK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BGAFCOBNLPM {
+        for value in &self.bird_record_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for (k, v) in &self.BEGMFIAPHLM {
+        for (k, v) in &self.MCMLDLJAPNF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for (k, v) in &self.ILBHDLMLMCK {
+        for value in &self.finished_level_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for (k, v) in &self.KNLCBJDNCMP {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        for value in &self.JMBCICLCHKD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -167,19 +167,10 @@ impl ::protobuf::Message for ABGEJNBCDJK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BGAFCOBNLPM {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.bird_record_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for (k, v) in &self.BEGMFIAPHLM {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
-        for (k, v) in &self.ILBHDLMLMCK {
+        for (k, v) in &self.MCMLDLJAPNF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -188,8 +179,17 @@ impl ::protobuf::Message for ABGEJNBCDJK {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        for v in &self.JMBCICLCHKD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.finished_level_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for (k, v) in &self.KNLCBJDNCMP {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -208,10 +208,10 @@ impl ::protobuf::Message for ABGEJNBCDJK {
     }
 
     fn clear(&mut self) {
-        self.BGAFCOBNLPM.clear();
-        self.BEGMFIAPHLM.clear();
-        self.ILBHDLMLMCK.clear();
-        self.JMBCICLCHKD.clear();
+        self.bird_record_info_list.clear();
+        self.MCMLDLJAPNF.clear();
+        self.finished_level_list.clear();
+        self.KNLCBJDNCMP.clear();
         self.special_fields.clear();
     }
 
@@ -239,16 +239,17 @@ impl ::protobuf::reflect::ProtobufValue for ABGEJNBCDJK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABGEJNBCDJK.proto\x1a\x11DHONNIHMACI.proto\x1a\x11LMPIECFMFOI.prot\
-    o\"\xef\x02\n\x0bABGEJNBCDJK\x12.\n\x0bBGAFCOBNLPM\x18\t\x20\x03(\x0b2\
-    \x0c.DHONNIHMACIR\x0bBGAFCOBNLPM\x12?\n\x0bBEGMFIAPHLM\x18\x07\x20\x03(\
-    \x0b2\x1d.ABGEJNBCDJK.BEGMFIAPHLMEntryR\x0bBEGMFIAPHLM\x12?\n\x0bILBHDLM\
-    LMCK\x18\x06\x20\x03(\x0b2\x1d.ABGEJNBCDJK.ILBHDLMLMCKEntryR\x0bILBHDLML\
-    MCK\x12.\n\x0bJMBCICLCHKD\x18\x03\x20\x03(\x0b2\x0c.LMPIECFMFOIR\x0bJMBC\
-    ICLCHKD\x1a>\n\x10BEGMFIAPHLMEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
-    \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\
-    \x10ILBHDLMLMCKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
-    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11ABGEJNBCDJK.proto\x1a\x14BirdRecordInfo.proto\x1a\x13FinishedLevel\
+    .proto\"\x93\x03\n\x0bABGEJNBCDJK\x12B\n\x15bird_record_info_list\x18\
+    \x01\x20\x03(\x0b2\x0f.BirdRecordInfoR\x12birdRecordInfoList\x12?\n\x0bM\
+    CMLDLJAPNF\x18\x06\x20\x03(\x0b2\x1d.ABGEJNBCDJK.MCMLDLJAPNFEntryR\x0bMC\
+    MLDLJAPNF\x12>\n\x13finished_level_list\x18\t\x20\x03(\x0b2\x0e.Finished\
+    LevelR\x11finishedLevelList\x12?\n\x0bKNLCBJDNCMP\x18\x0b\x20\x03(\x0b2\
+    \x1d.ABGEJNBCDJK.KNLCBJDNCMPEntryR\x0bKNLCBJDNCMP\x1a>\n\x10MCMLDLJAPNFE\
+    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
+    \x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10KNLCBJDNCMPEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -266,8 +267,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DHONNIHMACI::file_descriptor().clone());
-            deps.push(super::LMPIECFMFOI::file_descriptor().clone());
+            deps.push(super::BirdRecordInfo::file_descriptor().clone());
+            deps.push(super::FinishedLevel::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ABGEJNBCDJK::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

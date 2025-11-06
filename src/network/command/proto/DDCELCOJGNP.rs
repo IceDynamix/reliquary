@@ -30,8 +30,8 @@ pub struct DDCELCOJGNP {
     // message fields
     // @@protoc_insertion_point(field:DDCELCOJGNP.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:DDCELCOJGNP.LGIIAHIDLMG)
-    pub LGIIAHIDLMG: u32,
+    // @@protoc_insertion_point(field:DDCELCOJGNP.HLIENFMNNDE)
+    pub HLIENFMNNDE: u32,
     // @@protoc_insertion_point(field:DDCELCOJGNP.option_id)
     pub option_id: u32,
     // special fields
@@ -59,9 +59,9 @@ impl DDCELCOJGNP {
             |m: &mut DDCELCOJGNP| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGIIAHIDLMG",
-            |m: &DDCELCOJGNP| { &m.LGIIAHIDLMG },
-            |m: &mut DDCELCOJGNP| { &mut m.LGIIAHIDLMG },
+            "HLIENFMNNDE",
+            |m: &DDCELCOJGNP| { &m.HLIENFMNNDE },
+            |m: &mut DDCELCOJGNP| { &mut m.HLIENFMNNDE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "option_id",
@@ -89,8 +89,8 @@ impl ::protobuf::Message for DDCELCOJGNP {
                 8 => {
                     self.event_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.LGIIAHIDLMG = is.read_uint32()?;
+                24 => {
+                    self.HLIENFMNNDE = is.read_uint32()?;
                 },
                 80 => {
                     self.option_id = is.read_uint32()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for DDCELCOJGNP {
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.event_id);
         }
-        if self.LGIIAHIDLMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LGIIAHIDLMG);
+        if self.HLIENFMNNDE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HLIENFMNNDE);
         }
         if self.option_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.option_id);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for DDCELCOJGNP {
         if self.event_id != 0 {
             os.write_uint32(1, self.event_id)?;
         }
-        if self.LGIIAHIDLMG != 0 {
-            os.write_uint32(4, self.LGIIAHIDLMG)?;
+        if self.HLIENFMNNDE != 0 {
+            os.write_uint32(3, self.HLIENFMNNDE)?;
         }
         if self.option_id != 0 {
             os.write_uint32(10, self.option_id)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for DDCELCOJGNP {
 
     fn clear(&mut self) {
         self.event_id = 0;
-        self.LGIIAHIDLMG = 0;
+        self.HLIENFMNNDE = 0;
         self.option_id = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for DDCELCOJGNP {
     fn default_instance() -> &'static DDCELCOJGNP {
         static instance: DDCELCOJGNP = DDCELCOJGNP {
             event_id: 0,
-            LGIIAHIDLMG: 0,
+            HLIENFMNNDE: 0,
             option_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for DDCELCOJGNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDCELCOJGNP.proto\"g\n\x0bDDCELCOJGNP\x12\x19\n\x08event_id\x18\
-    \x01\x20\x01(\rR\x07eventId\x12\x20\n\x0bLGIIAHIDLMG\x18\x04\x20\x01(\rR\
-    \x0bLGIIAHIDLMG\x12\x1b\n\toption_id\x18\n\x20\x01(\rR\x08optionIdb\x06p\
+    \x01\x20\x01(\rR\x07eventId\x12\x20\n\x0bHLIENFMNNDE\x18\x03\x20\x01(\rR\
+    \x0bHLIENFMNNDE\x12\x1b\n\toption_id\x18\n\x20\x01(\rR\x08optionIdb\x06p\
     roto3\
 ";
 

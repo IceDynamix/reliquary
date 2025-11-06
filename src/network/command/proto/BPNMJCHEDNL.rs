@@ -30,38 +30,38 @@ pub struct BPNMJCHEDNL {
     // message fields
     // @@protoc_insertion_point(field:BPNMJCHEDNL.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.DBADLNFOPAO)
-    pub DBADLNFOPAO: u64,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.KLHPDAKBMHA)
+    pub KLHPDAKBMHA: u64,
     // @@protoc_insertion_point(field:BPNMJCHEDNL.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.NLIBKABFGCC)
-    pub NLIBKABFGCC: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.BIECGFIMCFB)
-    pub BIECGFIMCFB: ::std::vec::Vec<super::HCJJOOFKCJH::HCJJOOFKCJH>,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.JFBDCLJMCMF)
+    pub JFBDCLJMCMF: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.FNABGNEBILD)
+    pub FNABGNEBILD: ::std::vec::Vec<super::HCJJOOFKCJH::HCJJOOFKCJH>,
     // @@protoc_insertion_point(field:BPNMJCHEDNL.rank)
     pub rank: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.EKLDPALNLDC)
-    pub EKLDPALNLDC: u64,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.FFFGFCPHBPN)
-    pub FFFGFCPHBPN: ::std::vec::Vec<super::HCJJOOFKCJH::HCJJOOFKCJH>,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.JBLMGNPMADM)
-    pub JBLMGNPMADM: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.IMBCLFCBODJ)
-    pub IMBCLFCBODJ: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.score_id)
-    pub score_id: i32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.NPJEECEDPOK)
-    pub NPJEECEDPOK: i32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.PCEAECMKDEH)
-    pub PCEAECMKDEH: ::std::vec::Vec<super::LNGMDMIPCKL::LNGMDMIPCKL>,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.IFNMBNGIFPH)
-    pub IFNMBNGIFPH: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.IEHJGOMBPBI)
-    pub IEHJGOMBPBI: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.IPHAFKFGNAO)
-    pub IPHAFKFGNAO: u32,
-    // @@protoc_insertion_point(field:BPNMJCHEDNL.LBPFECLGEFC)
-    pub LBPFECLGEFC: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.IOLLKNGGINN)
+    pub IOLLKNGGINN: u64,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.GALNDHPCHHN)
+    pub GALNDHPCHHN: ::std::vec::Vec<super::HCJJOOFKCJH::HCJJOOFKCJH>,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.NEPGCJIIPOP)
+    pub NEPGCJIIPOP: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.EELNBPLBPMN)
+    pub EELNBPLBPMN: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.score)
+    pub score: i32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.total_score)
+    pub total_score: i32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.LONHECLILDD)
+    pub LONHECLILDD: ::std::vec::Vec<super::LNGMDMIPCKL::LNGMDMIPCKL>,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.DLNMFMMBDNL)
+    pub DLNMFMMBDNL: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.NFABDEHMFLN)
+    pub NFABDEHMFLN: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.IJKIGGAJHHE)
+    pub IJKIGGAJHHE: u32,
+    // @@protoc_insertion_point(field:BPNMJCHEDNL.PKBFPGBHKEI)
+    pub PKBFPGBHKEI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BPNMJCHEDNL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -87,9 +87,9 @@ impl BPNMJCHEDNL {
             |m: &mut BPNMJCHEDNL| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBADLNFOPAO",
-            |m: &BPNMJCHEDNL| { &m.DBADLNFOPAO },
-            |m: &mut BPNMJCHEDNL| { &mut m.DBADLNFOPAO },
+            "KLHPDAKBMHA",
+            |m: &BPNMJCHEDNL| { &m.KLHPDAKBMHA },
+            |m: &mut BPNMJCHEDNL| { &mut m.KLHPDAKBMHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -97,14 +97,14 @@ impl BPNMJCHEDNL {
             |m: &mut BPNMJCHEDNL| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIBKABFGCC",
-            |m: &BPNMJCHEDNL| { &m.NLIBKABFGCC },
-            |m: &mut BPNMJCHEDNL| { &mut m.NLIBKABFGCC },
+            "JFBDCLJMCMF",
+            |m: &BPNMJCHEDNL| { &m.JFBDCLJMCMF },
+            |m: &mut BPNMJCHEDNL| { &mut m.JFBDCLJMCMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIECGFIMCFB",
-            |m: &BPNMJCHEDNL| { &m.BIECGFIMCFB },
-            |m: &mut BPNMJCHEDNL| { &mut m.BIECGFIMCFB },
+            "FNABGNEBILD",
+            |m: &BPNMJCHEDNL| { &m.FNABGNEBILD },
+            |m: &mut BPNMJCHEDNL| { &mut m.FNABGNEBILD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -112,59 +112,59 @@ impl BPNMJCHEDNL {
             |m: &mut BPNMJCHEDNL| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKLDPALNLDC",
-            |m: &BPNMJCHEDNL| { &m.EKLDPALNLDC },
-            |m: &mut BPNMJCHEDNL| { &mut m.EKLDPALNLDC },
+            "IOLLKNGGINN",
+            |m: &BPNMJCHEDNL| { &m.IOLLKNGGINN },
+            |m: &mut BPNMJCHEDNL| { &mut m.IOLLKNGGINN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFFGFCPHBPN",
-            |m: &BPNMJCHEDNL| { &m.FFFGFCPHBPN },
-            |m: &mut BPNMJCHEDNL| { &mut m.FFFGFCPHBPN },
+            "GALNDHPCHHN",
+            |m: &BPNMJCHEDNL| { &m.GALNDHPCHHN },
+            |m: &mut BPNMJCHEDNL| { &mut m.GALNDHPCHHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBLMGNPMADM",
-            |m: &BPNMJCHEDNL| { &m.JBLMGNPMADM },
-            |m: &mut BPNMJCHEDNL| { &mut m.JBLMGNPMADM },
+            "NEPGCJIIPOP",
+            |m: &BPNMJCHEDNL| { &m.NEPGCJIIPOP },
+            |m: &mut BPNMJCHEDNL| { &mut m.NEPGCJIIPOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMBCLFCBODJ",
-            |m: &BPNMJCHEDNL| { &m.IMBCLFCBODJ },
-            |m: &mut BPNMJCHEDNL| { &mut m.IMBCLFCBODJ },
+            "EELNBPLBPMN",
+            |m: &BPNMJCHEDNL| { &m.EELNBPLBPMN },
+            |m: &mut BPNMJCHEDNL| { &mut m.EELNBPLBPMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &BPNMJCHEDNL| { &m.score_id },
-            |m: &mut BPNMJCHEDNL| { &mut m.score_id },
+            "score",
+            |m: &BPNMJCHEDNL| { &m.score },
+            |m: &mut BPNMJCHEDNL| { &mut m.score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPJEECEDPOK",
-            |m: &BPNMJCHEDNL| { &m.NPJEECEDPOK },
-            |m: &mut BPNMJCHEDNL| { &mut m.NPJEECEDPOK },
+            "total_score",
+            |m: &BPNMJCHEDNL| { &m.total_score },
+            |m: &mut BPNMJCHEDNL| { &mut m.total_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PCEAECMKDEH",
-            |m: &BPNMJCHEDNL| { &m.PCEAECMKDEH },
-            |m: &mut BPNMJCHEDNL| { &mut m.PCEAECMKDEH },
+            "LONHECLILDD",
+            |m: &BPNMJCHEDNL| { &m.LONHECLILDD },
+            |m: &mut BPNMJCHEDNL| { &mut m.LONHECLILDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFNMBNGIFPH",
-            |m: &BPNMJCHEDNL| { &m.IFNMBNGIFPH },
-            |m: &mut BPNMJCHEDNL| { &mut m.IFNMBNGIFPH },
+            "DLNMFMMBDNL",
+            |m: &BPNMJCHEDNL| { &m.DLNMFMMBDNL },
+            |m: &mut BPNMJCHEDNL| { &mut m.DLNMFMMBDNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEHJGOMBPBI",
-            |m: &BPNMJCHEDNL| { &m.IEHJGOMBPBI },
-            |m: &mut BPNMJCHEDNL| { &mut m.IEHJGOMBPBI },
+            "NFABDEHMFLN",
+            |m: &BPNMJCHEDNL| { &m.NFABDEHMFLN },
+            |m: &mut BPNMJCHEDNL| { &mut m.NFABDEHMFLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPHAFKFGNAO",
-            |m: &BPNMJCHEDNL| { &m.IPHAFKFGNAO },
-            |m: &mut BPNMJCHEDNL| { &mut m.IPHAFKFGNAO },
+            "IJKIGGAJHHE",
+            |m: &BPNMJCHEDNL| { &m.IJKIGGAJHHE },
+            |m: &mut BPNMJCHEDNL| { &mut m.IJKIGGAJHHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBPFECLGEFC",
-            |m: &BPNMJCHEDNL| { &m.LBPFECLGEFC },
-            |m: &mut BPNMJCHEDNL| { &mut m.LBPFECLGEFC },
+            "PKBFPGBHKEI",
+            |m: &BPNMJCHEDNL| { &m.PKBFPGBHKEI },
+            |m: &mut BPNMJCHEDNL| { &mut m.PKBFPGBHKEI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPNMJCHEDNL>(
             "BPNMJCHEDNL",
@@ -188,52 +188,52 @@ impl ::protobuf::Message for BPNMJCHEDNL {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.DBADLNFOPAO = is.read_uint64()?;
+                    self.KLHPDAKBMHA = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.NLIBKABFGCC = is.read_uint32()?;
+                    self.JFBDCLJMCMF = is.read_uint32()?;
                 },
                 42 => {
-                    self.BIECGFIMCFB.push(is.read_message()?);
+                    self.FNABGNEBILD.push(is.read_message()?);
                 },
                 48 => {
                     self.rank = is.read_uint32()?;
                 },
                 56 => {
-                    self.EKLDPALNLDC = is.read_uint64()?;
+                    self.IOLLKNGGINN = is.read_uint64()?;
                 },
                 66 => {
-                    self.FFFGFCPHBPN.push(is.read_message()?);
+                    self.GALNDHPCHHN.push(is.read_message()?);
                 },
                 72 => {
-                    self.JBLMGNPMADM = is.read_uint32()?;
+                    self.NEPGCJIIPOP = is.read_uint32()?;
                 },
                 80 => {
-                    self.IMBCLFCBODJ = is.read_uint32()?;
+                    self.EELNBPLBPMN = is.read_uint32()?;
                 },
                 88 => {
-                    self.score_id = is.read_int32()?;
+                    self.score = is.read_int32()?;
                 },
                 96 => {
-                    self.NPJEECEDPOK = is.read_int32()?;
+                    self.total_score = is.read_int32()?;
                 },
                 106 => {
-                    self.PCEAECMKDEH.push(is.read_message()?);
+                    self.LONHECLILDD.push(is.read_message()?);
                 },
                 112 => {
-                    self.IFNMBNGIFPH = is.read_uint32()?;
+                    self.DLNMFMMBDNL = is.read_uint32()?;
                 },
                 120 => {
-                    self.IEHJGOMBPBI = is.read_uint32()?;
+                    self.NFABDEHMFLN = is.read_uint32()?;
                 },
                 128 => {
-                    self.IPHAFKFGNAO = is.read_uint32()?;
+                    self.IJKIGGAJHHE = is.read_uint32()?;
                 },
                 136 => {
-                    self.LBPFECLGEFC = is.read_uint32()?;
+                    self.PKBFPGBHKEI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -250,56 +250,56 @@ impl ::protobuf::Message for BPNMJCHEDNL {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.DBADLNFOPAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.DBADLNFOPAO);
+        if self.KLHPDAKBMHA != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.KLHPDAKBMHA);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
         }
-        if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NLIBKABFGCC);
+        if self.JFBDCLJMCMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JFBDCLJMCMF);
         }
-        for value in &self.BIECGFIMCFB {
+        for value in &self.FNABGNEBILD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.rank != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.rank);
         }
-        if self.EKLDPALNLDC != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.EKLDPALNLDC);
+        if self.IOLLKNGGINN != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.IOLLKNGGINN);
         }
-        for value in &self.FFFGFCPHBPN {
+        for value in &self.GALNDHPCHHN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JBLMGNPMADM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JBLMGNPMADM);
+        if self.NEPGCJIIPOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NEPGCJIIPOP);
         }
-        if self.IMBCLFCBODJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IMBCLFCBODJ);
+        if self.EELNBPLBPMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EELNBPLBPMN);
         }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.score_id);
+        if self.score != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.score);
         }
-        if self.NPJEECEDPOK != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.NPJEECEDPOK);
+        if self.total_score != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.total_score);
         }
-        for value in &self.PCEAECMKDEH {
+        for value in &self.LONHECLILDD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.IFNMBNGIFPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IFNMBNGIFPH);
+        if self.DLNMFMMBDNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DLNMFMMBDNL);
         }
-        if self.IEHJGOMBPBI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IEHJGOMBPBI);
+        if self.NFABDEHMFLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NFABDEHMFLN);
         }
-        if self.IPHAFKFGNAO != 0 {
-            my_size += ::protobuf::rt::uint32_size(16, self.IPHAFKFGNAO);
+        if self.IJKIGGAJHHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(16, self.IJKIGGAJHHE);
         }
-        if self.LBPFECLGEFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.LBPFECLGEFC);
+        if self.PKBFPGBHKEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.PKBFPGBHKEI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -310,53 +310,53 @@ impl ::protobuf::Message for BPNMJCHEDNL {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.DBADLNFOPAO != 0 {
-            os.write_uint64(2, self.DBADLNFOPAO)?;
+        if self.KLHPDAKBMHA != 0 {
+            os.write_uint64(2, self.KLHPDAKBMHA)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
         }
-        if self.NLIBKABFGCC != 0 {
-            os.write_uint32(4, self.NLIBKABFGCC)?;
+        if self.JFBDCLJMCMF != 0 {
+            os.write_uint32(4, self.JFBDCLJMCMF)?;
         }
-        for v in &self.BIECGFIMCFB {
+        for v in &self.FNABGNEBILD {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.rank != 0 {
             os.write_uint32(6, self.rank)?;
         }
-        if self.EKLDPALNLDC != 0 {
-            os.write_uint64(7, self.EKLDPALNLDC)?;
+        if self.IOLLKNGGINN != 0 {
+            os.write_uint64(7, self.IOLLKNGGINN)?;
         }
-        for v in &self.FFFGFCPHBPN {
+        for v in &self.GALNDHPCHHN {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.JBLMGNPMADM != 0 {
-            os.write_uint32(9, self.JBLMGNPMADM)?;
+        if self.NEPGCJIIPOP != 0 {
+            os.write_uint32(9, self.NEPGCJIIPOP)?;
         }
-        if self.IMBCLFCBODJ != 0 {
-            os.write_uint32(10, self.IMBCLFCBODJ)?;
+        if self.EELNBPLBPMN != 0 {
+            os.write_uint32(10, self.EELNBPLBPMN)?;
         }
-        if self.score_id != 0 {
-            os.write_int32(11, self.score_id)?;
+        if self.score != 0 {
+            os.write_int32(11, self.score)?;
         }
-        if self.NPJEECEDPOK != 0 {
-            os.write_int32(12, self.NPJEECEDPOK)?;
+        if self.total_score != 0 {
+            os.write_int32(12, self.total_score)?;
         }
-        for v in &self.PCEAECMKDEH {
+        for v in &self.LONHECLILDD {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.IFNMBNGIFPH != 0 {
-            os.write_uint32(14, self.IFNMBNGIFPH)?;
+        if self.DLNMFMMBDNL != 0 {
+            os.write_uint32(14, self.DLNMFMMBDNL)?;
         }
-        if self.IEHJGOMBPBI != 0 {
-            os.write_uint32(15, self.IEHJGOMBPBI)?;
+        if self.NFABDEHMFLN != 0 {
+            os.write_uint32(15, self.NFABDEHMFLN)?;
         }
-        if self.IPHAFKFGNAO != 0 {
-            os.write_uint32(16, self.IPHAFKFGNAO)?;
+        if self.IJKIGGAJHHE != 0 {
+            os.write_uint32(16, self.IJKIGGAJHHE)?;
         }
-        if self.LBPFECLGEFC != 0 {
-            os.write_uint32(17, self.LBPFECLGEFC)?;
+        if self.PKBFPGBHKEI != 0 {
+            os.write_uint32(17, self.PKBFPGBHKEI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -376,44 +376,44 @@ impl ::protobuf::Message for BPNMJCHEDNL {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.DBADLNFOPAO = 0;
+        self.KLHPDAKBMHA = 0;
         self.level_id = 0;
-        self.NLIBKABFGCC = 0;
-        self.BIECGFIMCFB.clear();
+        self.JFBDCLJMCMF = 0;
+        self.FNABGNEBILD.clear();
         self.rank = 0;
-        self.EKLDPALNLDC = 0;
-        self.FFFGFCPHBPN.clear();
-        self.JBLMGNPMADM = 0;
-        self.IMBCLFCBODJ = 0;
-        self.score_id = 0;
-        self.NPJEECEDPOK = 0;
-        self.PCEAECMKDEH.clear();
-        self.IFNMBNGIFPH = 0;
-        self.IEHJGOMBPBI = 0;
-        self.IPHAFKFGNAO = 0;
-        self.LBPFECLGEFC = 0;
+        self.IOLLKNGGINN = 0;
+        self.GALNDHPCHHN.clear();
+        self.NEPGCJIIPOP = 0;
+        self.EELNBPLBPMN = 0;
+        self.score = 0;
+        self.total_score = 0;
+        self.LONHECLILDD.clear();
+        self.DLNMFMMBDNL = 0;
+        self.NFABDEHMFLN = 0;
+        self.IJKIGGAJHHE = 0;
+        self.PKBFPGBHKEI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPNMJCHEDNL {
         static instance: BPNMJCHEDNL = BPNMJCHEDNL {
             monster_battle_type: 0,
-            DBADLNFOPAO: 0,
+            KLHPDAKBMHA: 0,
             level_id: 0,
-            NLIBKABFGCC: 0,
-            BIECGFIMCFB: ::std::vec::Vec::new(),
+            JFBDCLJMCMF: 0,
+            FNABGNEBILD: ::std::vec::Vec::new(),
             rank: 0,
-            EKLDPALNLDC: 0,
-            FFFGFCPHBPN: ::std::vec::Vec::new(),
-            JBLMGNPMADM: 0,
-            IMBCLFCBODJ: 0,
-            score_id: 0,
-            NPJEECEDPOK: 0,
-            PCEAECMKDEH: ::std::vec::Vec::new(),
-            IFNMBNGIFPH: 0,
-            IEHJGOMBPBI: 0,
-            IPHAFKFGNAO: 0,
-            LBPFECLGEFC: 0,
+            IOLLKNGGINN: 0,
+            GALNDHPCHHN: ::std::vec::Vec::new(),
+            NEPGCJIIPOP: 0,
+            EELNBPLBPMN: 0,
+            score: 0,
+            total_score: 0,
+            LONHECLILDD: ::std::vec::Vec::new(),
+            DLNMFMMBDNL: 0,
+            NFABDEHMFLN: 0,
+            IJKIGGAJHHE: 0,
+            PKBFPGBHKEI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -439,22 +439,22 @@ impl ::protobuf::reflect::ProtobufValue for BPNMJCHEDNL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPNMJCHEDNL.proto\x1a\x11HCJJOOFKCJH.proto\x1a\x11LNGMDMIPCKL.prot\
-    o\"\xeb\x04\n\x0bBPNMJCHEDNL\x12.\n\x13monster_battle_type\x18\x01\x20\
-    \x01(\rR\x11monsterBattleType\x12\x20\n\x0bDBADLNFOPAO\x18\x02\x20\x01(\
-    \x04R\x0bDBADLNFOPAO\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelI\
-    d\x12\x20\n\x0bNLIBKABFGCC\x18\x04\x20\x01(\rR\x0bNLIBKABFGCC\x12.\n\x0b\
-    BIECGFIMCFB\x18\x05\x20\x03(\x0b2\x0c.HCJJOOFKCJHR\x0bBIECGFIMCFB\x12\
-    \x12\n\x04rank\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\
-    \x07\x20\x01(\x04R\x0bEKLDPALNLDC\x12.\n\x0bFFFGFCPHBPN\x18\x08\x20\x03(\
-    \x0b2\x0c.HCJJOOFKCJHR\x0bFFFGFCPHBPN\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\
-    \x01(\rR\x0bJBLMGNPMADM\x12\x20\n\x0bIMBCLFCBODJ\x18\n\x20\x01(\rR\x0bIM\
-    BCLFCBODJ\x12\x19\n\x08score_id\x18\x0b\x20\x01(\x05R\x07scoreId\x12\x20\
-    \n\x0bNPJEECEDPOK\x18\x0c\x20\x01(\x05R\x0bNPJEECEDPOK\x12.\n\x0bPCEAECM\
-    KDEH\x18\r\x20\x03(\x0b2\x0c.LNGMDMIPCKLR\x0bPCEAECMKDEH\x12\x20\n\x0bIF\
-    NMBNGIFPH\x18\x0e\x20\x01(\rR\x0bIFNMBNGIFPH\x12\x20\n\x0bIEHJGOMBPBI\
-    \x18\x0f\x20\x01(\rR\x0bIEHJGOMBPBI\x12\x20\n\x0bIPHAFKFGNAO\x18\x10\x20\
-    \x01(\rR\x0bIPHAFKFGNAO\x12\x20\n\x0bLBPFECLGEFC\x18\x11\x20\x01(\rR\x0b\
-    LBPFECLGEFCb\x06proto3\
+    o\"\xe5\x04\n\x0bBPNMJCHEDNL\x12.\n\x13monster_battle_type\x18\x01\x20\
+    \x01(\rR\x11monsterBattleType\x12\x20\n\x0bKLHPDAKBMHA\x18\x02\x20\x01(\
+    \x04R\x0bKLHPDAKBMHA\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelI\
+    d\x12\x20\n\x0bJFBDCLJMCMF\x18\x04\x20\x01(\rR\x0bJFBDCLJMCMF\x12.\n\x0b\
+    FNABGNEBILD\x18\x05\x20\x03(\x0b2\x0c.HCJJOOFKCJHR\x0bFNABGNEBILD\x12\
+    \x12\n\x04rank\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bIOLLKNGGINN\x18\
+    \x07\x20\x01(\x04R\x0bIOLLKNGGINN\x12.\n\x0bGALNDHPCHHN\x18\x08\x20\x03(\
+    \x0b2\x0c.HCJJOOFKCJHR\x0bGALNDHPCHHN\x12\x20\n\x0bNEPGCJIIPOP\x18\t\x20\
+    \x01(\rR\x0bNEPGCJIIPOP\x12\x20\n\x0bEELNBPLBPMN\x18\n\x20\x01(\rR\x0bEE\
+    LNBPLBPMN\x12\x14\n\x05score\x18\x0b\x20\x01(\x05R\x05score\x12\x1f\n\
+    \x0btotal_score\x18\x0c\x20\x01(\x05R\ntotalScore\x12.\n\x0bLONHECLILDD\
+    \x18\r\x20\x03(\x0b2\x0c.LNGMDMIPCKLR\x0bLONHECLILDD\x12\x20\n\x0bDLNMFM\
+    MBDNL\x18\x0e\x20\x01(\rR\x0bDLNMFMMBDNL\x12\x20\n\x0bNFABDEHMFLN\x18\
+    \x0f\x20\x01(\rR\x0bNFABDEHMFLN\x12\x20\n\x0bIJKIGGAJHHE\x18\x10\x20\x01\
+    (\rR\x0bIJKIGGAJHHE\x12\x20\n\x0bPKBFPGBHKEI\x18\x11\x20\x01(\rR\x0bPKBF\
+    PGBHKEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

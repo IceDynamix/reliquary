@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishQuestCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishQuestCsReq.prop_id)
-    pub prop_id: u32,
-    // @@protoc_insertion_point(field:FinishQuestCsReq.quest_id)
-    pub quest_id: u32,
     // @@protoc_insertion_point(field:FinishQuestCsReq.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:FinishQuestCsReq.quest_id)
+    pub quest_id: u32,
+    // @@protoc_insertion_point(field:FinishQuestCsReq.prop_id)
+    pub prop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishQuestCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl FinishQuestCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_id",
-            |m: &FinishQuestCsReq| { &m.prop_id },
-            |m: &mut FinishQuestCsReq| { &mut m.prop_id },
+            "group_id",
+            |m: &FinishQuestCsReq| { &m.group_id },
+            |m: &mut FinishQuestCsReq| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "quest_id",
@@ -64,9 +64,9 @@ impl FinishQuestCsReq {
             |m: &mut FinishQuestCsReq| { &mut m.quest_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &FinishQuestCsReq| { &m.group_id },
-            |m: &mut FinishQuestCsReq| { &mut m.group_id },
+            "prop_id",
+            |m: &FinishQuestCsReq| { &m.prop_id },
+            |m: &mut FinishQuestCsReq| { &mut m.prop_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishQuestCsReq>(
             "FinishQuestCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.prop_id = is.read_uint32()?;
+                48 => {
+                    self.group_id = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.group_id = is.read_uint32()?;
+                120 => {
+                    self.prop_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.prop_id);
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.group_id);
         }
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.quest_id);
         }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+        if self.prop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.prop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FinishQuestCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.prop_id != 0 {
-            os.write_uint32(8, self.prop_id)?;
+        if self.group_id != 0 {
+            os.write_uint32(6, self.group_id)?;
         }
         if self.quest_id != 0 {
-            os.write_uint32(10, self.quest_id)?;
+            os.write_uint32(8, self.quest_id)?;
         }
-        if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+        if self.prop_id != 0 {
+            os.write_uint32(15, self.prop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FinishQuestCsReq {
     }
 
     fn clear(&mut self) {
-        self.prop_id = 0;
-        self.quest_id = 0;
         self.group_id = 0;
+        self.quest_id = 0;
+        self.prop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishQuestCsReq {
         static instance: FinishQuestCsReq = FinishQuestCsReq {
-            prop_id: 0,
-            quest_id: 0,
             group_id: 0,
+            quest_id: 0,
+            prop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishQuestCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FinishQuestCsReq.proto\"a\n\x10FinishQuestCsReq\x12\x17\n\x07prop_\
-    id\x18\x08\x20\x01(\rR\x06propId\x12\x19\n\x08quest_id\x18\n\x20\x01(\rR\
-    \x07questId\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupIdb\x06pro\
-    to3\
+    \n\x16FinishQuestCsReq.proto\"a\n\x10FinishQuestCsReq\x12\x19\n\x08group\
+    _id\x18\x06\x20\x01(\rR\x07groupId\x12\x19\n\x08quest_id\x18\x08\x20\x01\
+    (\rR\x07questId\x12\x17\n\x07prop_id\x18\x0f\x20\x01(\rR\x06propIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

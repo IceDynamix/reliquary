@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OLFGBAMEFJI {
     // message fields
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.rogue_magic_unit_info_list)
-    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.magic_scepter_info_list)
-    pub magic_scepter_info_list: ::std::vec::Vec<super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo>,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.FONNGHLGJFA)
-    pub FONNGHLGJFA: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.IPODNBLJPOL)
-    pub IPODNBLJPOL: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.JLHFOJODOKG)
-    pub JLHFOJODOKG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.NMKCIKHJKKA)
+    pub NMKCIKHJKKA: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.JONFBGINFAC)
+    pub JONFBGINFAC: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.HBNPLIKPIPJ)
+    pub HBNPLIKPIPJ: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.rogue_coin)
+    pub rogue_coin: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.FIONJIOIIOI)
+    pub FIONJIOIIOI: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.ABLAODDKFBI)
+    pub ABLAODDKFBI: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.CKFHJFOOEJE)
+    pub CKFHJFOOEJE: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.GAEOFLOGIGD)
+    pub GAEOFLOGIGD: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.AHFOJENKBOL)
+    pub AHFOJENKBOL: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.LCHGIDMEJAA)
+    pub LCHGIDMEJAA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OLFGBAMEFJI.avatar_id_list)
     pub avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.HMKGBMIDGOP)
-    pub HMKGBMIDGOP: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.extra_round_limit)
-    pub extra_round_limit: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.NJIEMPGEEOG)
-    pub NJIEMPGEEOG: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.game_style_type)
-    pub game_style_type: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.BLFDFMCFFIM)
-    pub BLFDFMCFFIM: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.OFBIAHGOPCM)
-    pub OFBIAHGOPCM: u32,
-    // @@protoc_insertion_point(field:OLFGBAMEFJI.NNNKJKCLBLO)
-    pub NNNKJKCLBLO: u32,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.magic_scepter_info_list)
+    pub magic_scepter_info_list: ::std::vec::Vec<super::RogueMagicGameScepterInfo::RogueMagicGameScepterInfo>,
+    // @@protoc_insertion_point(field:OLFGBAMEFJI.rogue_magic_unit_info_list)
+    pub rogue_magic_unit_info_list: ::std::vec::Vec<super::RogueMagicGameUnitInfo::RogueMagicGameUnitInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OLFGBAMEFJI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,70 +73,70 @@ impl OLFGBAMEFJI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rogue_magic_unit_info_list",
-            |m: &OLFGBAMEFJI| { &m.rogue_magic_unit_info_list },
-            |m: &mut OLFGBAMEFJI| { &mut m.rogue_magic_unit_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "magic_scepter_info_list",
-            |m: &OLFGBAMEFJI| { &m.magic_scepter_info_list },
-            |m: &mut OLFGBAMEFJI| { &mut m.magic_scepter_info_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMKCIKHJKKA",
+            |m: &OLFGBAMEFJI| { &m.NMKCIKHJKKA },
+            |m: &mut OLFGBAMEFJI| { &mut m.NMKCIKHJKKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FONNGHLGJFA",
-            |m: &OLFGBAMEFJI| { &m.FONNGHLGJFA },
-            |m: &mut OLFGBAMEFJI| { &mut m.FONNGHLGJFA },
+            "JONFBGINFAC",
+            |m: &OLFGBAMEFJI| { &m.JONFBGINFAC },
+            |m: &mut OLFGBAMEFJI| { &mut m.JONFBGINFAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPODNBLJPOL",
-            |m: &OLFGBAMEFJI| { &m.IPODNBLJPOL },
-            |m: &mut OLFGBAMEFJI| { &mut m.IPODNBLJPOL },
+            "HBNPLIKPIPJ",
+            |m: &OLFGBAMEFJI| { &m.HBNPLIKPIPJ },
+            |m: &mut OLFGBAMEFJI| { &mut m.HBNPLIKPIPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_coin",
+            |m: &OLFGBAMEFJI| { &m.rogue_coin },
+            |m: &mut OLFGBAMEFJI| { &mut m.rogue_coin },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FIONJIOIIOI",
+            |m: &OLFGBAMEFJI| { &m.FIONJIOIIOI },
+            |m: &mut OLFGBAMEFJI| { &mut m.FIONJIOIIOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABLAODDKFBI",
+            |m: &OLFGBAMEFJI| { &m.ABLAODDKFBI },
+            |m: &mut OLFGBAMEFJI| { &mut m.ABLAODDKFBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CKFHJFOOEJE",
+            |m: &OLFGBAMEFJI| { &m.CKFHJFOOEJE },
+            |m: &mut OLFGBAMEFJI| { &mut m.CKFHJFOOEJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAEOFLOGIGD",
+            |m: &OLFGBAMEFJI| { &m.GAEOFLOGIGD },
+            |m: &mut OLFGBAMEFJI| { &mut m.GAEOFLOGIGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AHFOJENKBOL",
+            |m: &OLFGBAMEFJI| { &m.AHFOJENKBOL },
+            |m: &mut OLFGBAMEFJI| { &mut m.AHFOJENKBOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JLHFOJODOKG",
-            |m: &OLFGBAMEFJI| { &m.JLHFOJODOKG },
-            |m: &mut OLFGBAMEFJI| { &mut m.JLHFOJODOKG },
+            "LCHGIDMEJAA",
+            |m: &OLFGBAMEFJI| { &m.LCHGIDMEJAA },
+            |m: &mut OLFGBAMEFJI| { &mut m.LCHGIDMEJAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_id_list",
             |m: &OLFGBAMEFJI| { &m.avatar_id_list },
             |m: &mut OLFGBAMEFJI| { &mut m.avatar_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMKGBMIDGOP",
-            |m: &OLFGBAMEFJI| { &m.HMKGBMIDGOP },
-            |m: &mut OLFGBAMEFJI| { &mut m.HMKGBMIDGOP },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "magic_scepter_info_list",
+            |m: &OLFGBAMEFJI| { &m.magic_scepter_info_list },
+            |m: &mut OLFGBAMEFJI| { &mut m.magic_scepter_info_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_round_limit",
-            |m: &OLFGBAMEFJI| { &m.extra_round_limit },
-            |m: &mut OLFGBAMEFJI| { &mut m.extra_round_limit },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJIEMPGEEOG",
-            |m: &OLFGBAMEFJI| { &m.NJIEMPGEEOG },
-            |m: &mut OLFGBAMEFJI| { &mut m.NJIEMPGEEOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_style_type",
-            |m: &OLFGBAMEFJI| { &m.game_style_type },
-            |m: &mut OLFGBAMEFJI| { &mut m.game_style_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLFDFMCFFIM",
-            |m: &OLFGBAMEFJI| { &m.BLFDFMCFFIM },
-            |m: &mut OLFGBAMEFJI| { &mut m.BLFDFMCFFIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFBIAHGOPCM",
-            |m: &OLFGBAMEFJI| { &m.OFBIAHGOPCM },
-            |m: &mut OLFGBAMEFJI| { &mut m.OFBIAHGOPCM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNNKJKCLBLO",
-            |m: &OLFGBAMEFJI| { &m.NNNKJKCLBLO },
-            |m: &mut OLFGBAMEFJI| { &mut m.NNNKJKCLBLO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_magic_unit_info_list",
+            |m: &OLFGBAMEFJI| { &m.rogue_magic_unit_info_list },
+            |m: &mut OLFGBAMEFJI| { &mut m.rogue_magic_unit_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OLFGBAMEFJI>(
             "OLFGBAMEFJI",
@@ -156,50 +156,50 @@ impl ::protobuf::Message for OLFGBAMEFJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                4210 => {
-                    self.rogue_magic_unit_info_list.push(is.read_message()?);
-                },
-                3866 => {
-                    self.magic_scepter_info_list.push(is.read_message()?);
+                8 => {
+                    self.NMKCIKHJKKA = is.read_uint32()?;
                 },
                 40 => {
-                    self.FONNGHLGJFA = is.read_uint32()?;
+                    self.JONFBGINFAC = is.read_uint32()?;
                 },
-                24 => {
-                    self.IPODNBLJPOL = is.read_uint32()?;
-                },
-                10754 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JLHFOJODOKG)?;
-                },
-                10752 => {
-                    self.JLHFOJODOKG.push(is.read_uint32()?);
-                },
-                14834 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
-                },
-                14832 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.HMKGBMIDGOP = is.read_uint32()?;
+                48 => {
+                    self.HBNPLIKPIPJ = is.read_uint32()?;
                 },
                 64 => {
-                    self.extra_round_limit = is.read_uint32()?;
-                },
-                120 => {
-                    self.NJIEMPGEEOG = is.read_uint32()?;
+                    self.rogue_coin = is.read_uint32()?;
                 },
                 72 => {
-                    self.game_style_type = is.read_uint32()?;
+                    self.FIONJIOIIOI = is.read_uint32()?;
                 },
-                32 => {
-                    self.BLFDFMCFFIM = is.read_uint32()?;
-                },
-                16 => {
-                    self.OFBIAHGOPCM = is.read_uint32()?;
+                80 => {
+                    self.ABLAODDKFBI = is.read_uint32()?;
                 },
                 88 => {
-                    self.NNNKJKCLBLO = is.read_uint32()?;
+                    self.CKFHJFOOEJE = is.read_uint32()?;
+                },
+                96 => {
+                    self.GAEOFLOGIGD = is.read_uint32()?;
+                },
+                104 => {
+                    self.AHFOJENKBOL = is.read_uint32()?;
+                },
+                498 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LCHGIDMEJAA)?;
+                },
+                496 => {
+                    self.LCHGIDMEJAA.push(is.read_uint32()?);
+                },
+                10762 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                },
+                10760 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
+                },
+                11978 => {
+                    self.magic_scepter_info_list.push(is.read_message()?);
+                },
+                15434 => {
+                    self.rogue_magic_unit_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -213,84 +213,84 @@ impl ::protobuf::Message for OLFGBAMEFJI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.rogue_magic_unit_info_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.NMKCIKHJKKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NMKCIKHJKKA);
+        }
+        if self.JONFBGINFAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JONFBGINFAC);
+        }
+        if self.HBNPLIKPIPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HBNPLIKPIPJ);
+        }
+        if self.rogue_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.rogue_coin);
+        }
+        if self.FIONJIOIIOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FIONJIOIIOI);
+        }
+        if self.ABLAODDKFBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ABLAODDKFBI);
+        }
+        if self.CKFHJFOOEJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CKFHJFOOEJE);
+        }
+        if self.GAEOFLOGIGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GAEOFLOGIGD);
+        }
+        if self.AHFOJENKBOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AHFOJENKBOL);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(62, &self.LCHGIDMEJAA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1345, &self.avatar_id_list);
         for value in &self.magic_scepter_info_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FONNGHLGJFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FONNGHLGJFA);
-        }
-        if self.IPODNBLJPOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IPODNBLJPOL);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1344, &self.JLHFOJODOKG);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1854, &self.avatar_id_list);
-        if self.HMKGBMIDGOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HMKGBMIDGOP);
-        }
-        if self.extra_round_limit != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.extra_round_limit);
-        }
-        if self.NJIEMPGEEOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NJIEMPGEEOG);
-        }
-        if self.game_style_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.game_style_type);
-        }
-        if self.BLFDFMCFFIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BLFDFMCFFIM);
-        }
-        if self.OFBIAHGOPCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OFBIAHGOPCM);
-        }
-        if self.NNNKJKCLBLO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NNNKJKCLBLO);
-        }
+        for value in &self.rogue_magic_unit_info_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.rogue_magic_unit_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(526, v, os)?;
-        };
+        if self.NMKCIKHJKKA != 0 {
+            os.write_uint32(1, self.NMKCIKHJKKA)?;
+        }
+        if self.JONFBGINFAC != 0 {
+            os.write_uint32(5, self.JONFBGINFAC)?;
+        }
+        if self.HBNPLIKPIPJ != 0 {
+            os.write_uint32(6, self.HBNPLIKPIPJ)?;
+        }
+        if self.rogue_coin != 0 {
+            os.write_uint32(8, self.rogue_coin)?;
+        }
+        if self.FIONJIOIIOI != 0 {
+            os.write_uint32(9, self.FIONJIOIIOI)?;
+        }
+        if self.ABLAODDKFBI != 0 {
+            os.write_uint32(10, self.ABLAODDKFBI)?;
+        }
+        if self.CKFHJFOOEJE != 0 {
+            os.write_uint32(11, self.CKFHJFOOEJE)?;
+        }
+        if self.GAEOFLOGIGD != 0 {
+            os.write_uint32(12, self.GAEOFLOGIGD)?;
+        }
+        if self.AHFOJENKBOL != 0 {
+            os.write_uint32(13, self.AHFOJENKBOL)?;
+        }
+        os.write_repeated_packed_uint32(62, &self.LCHGIDMEJAA)?;
+        os.write_repeated_packed_uint32(1345, &self.avatar_id_list)?;
         for v in &self.magic_scepter_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(483, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1497, v, os)?;
         };
-        if self.FONNGHLGJFA != 0 {
-            os.write_uint32(5, self.FONNGHLGJFA)?;
-        }
-        if self.IPODNBLJPOL != 0 {
-            os.write_uint32(3, self.IPODNBLJPOL)?;
-        }
-        os.write_repeated_packed_uint32(1344, &self.JLHFOJODOKG)?;
-        os.write_repeated_packed_uint32(1854, &self.avatar_id_list)?;
-        if self.HMKGBMIDGOP != 0 {
-            os.write_uint32(7, self.HMKGBMIDGOP)?;
-        }
-        if self.extra_round_limit != 0 {
-            os.write_uint32(8, self.extra_round_limit)?;
-        }
-        if self.NJIEMPGEEOG != 0 {
-            os.write_uint32(15, self.NJIEMPGEEOG)?;
-        }
-        if self.game_style_type != 0 {
-            os.write_uint32(9, self.game_style_type)?;
-        }
-        if self.BLFDFMCFFIM != 0 {
-            os.write_uint32(4, self.BLFDFMCFFIM)?;
-        }
-        if self.OFBIAHGOPCM != 0 {
-            os.write_uint32(2, self.OFBIAHGOPCM)?;
-        }
-        if self.NNNKJKCLBLO != 0 {
-            os.write_uint32(11, self.NNNKJKCLBLO)?;
-        }
+        for v in &self.rogue_magic_unit_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1929, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -308,37 +308,37 @@ impl ::protobuf::Message for OLFGBAMEFJI {
     }
 
     fn clear(&mut self) {
-        self.rogue_magic_unit_info_list.clear();
-        self.magic_scepter_info_list.clear();
-        self.FONNGHLGJFA = 0;
-        self.IPODNBLJPOL = 0;
-        self.JLHFOJODOKG.clear();
+        self.NMKCIKHJKKA = 0;
+        self.JONFBGINFAC = 0;
+        self.HBNPLIKPIPJ = 0;
+        self.rogue_coin = 0;
+        self.FIONJIOIIOI = 0;
+        self.ABLAODDKFBI = 0;
+        self.CKFHJFOOEJE = 0;
+        self.GAEOFLOGIGD = 0;
+        self.AHFOJENKBOL = 0;
+        self.LCHGIDMEJAA.clear();
         self.avatar_id_list.clear();
-        self.HMKGBMIDGOP = 0;
-        self.extra_round_limit = 0;
-        self.NJIEMPGEEOG = 0;
-        self.game_style_type = 0;
-        self.BLFDFMCFFIM = 0;
-        self.OFBIAHGOPCM = 0;
-        self.NNNKJKCLBLO = 0;
+        self.magic_scepter_info_list.clear();
+        self.rogue_magic_unit_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OLFGBAMEFJI {
         static instance: OLFGBAMEFJI = OLFGBAMEFJI {
-            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
-            magic_scepter_info_list: ::std::vec::Vec::new(),
-            FONNGHLGJFA: 0,
-            IPODNBLJPOL: 0,
-            JLHFOJODOKG: ::std::vec::Vec::new(),
+            NMKCIKHJKKA: 0,
+            JONFBGINFAC: 0,
+            HBNPLIKPIPJ: 0,
+            rogue_coin: 0,
+            FIONJIOIIOI: 0,
+            ABLAODDKFBI: 0,
+            CKFHJFOOEJE: 0,
+            GAEOFLOGIGD: 0,
+            AHFOJENKBOL: 0,
+            LCHGIDMEJAA: ::std::vec::Vec::new(),
             avatar_id_list: ::std::vec::Vec::new(),
-            HMKGBMIDGOP: 0,
-            extra_round_limit: 0,
-            NJIEMPGEEOG: 0,
-            game_style_type: 0,
-            BLFDFMCFFIM: 0,
-            OFBIAHGOPCM: 0,
-            NNNKJKCLBLO: 0,
+            magic_scepter_info_list: ::std::vec::Vec::new(),
+            rogue_magic_unit_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -364,20 +364,20 @@ impl ::protobuf::reflect::ProtobufValue for OLFGBAMEFJI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OLFGBAMEFJI.proto\x1a\x1fRogueMagicGameScepterInfo.proto\x1a\x1cRo\
-    gueMagicGameUnitInfo.proto\"\xc3\x04\n\x0bOLFGBAMEFJI\x12T\n\x1arogue_ma\
-    gic_unit_info_list\x18\x8e\x04\x20\x03(\x0b2\x17.RogueMagicGameUnitInfoR\
-    \x16rogueMagicUnitInfoList\x12R\n\x17magic_scepter_info_list\x18\xe3\x03\
-    \x20\x03(\x0b2\x1a.RogueMagicGameScepterInfoR\x14magicScepterInfoList\
-    \x12\x20\n\x0bFONNGHLGJFA\x18\x05\x20\x01(\rR\x0bFONNGHLGJFA\x12\x20\n\
-    \x0bIPODNBLJPOL\x18\x03\x20\x01(\rR\x0bIPODNBLJPOL\x12!\n\x0bJLHFOJODOKG\
-    \x18\xc0\n\x20\x03(\rR\x0bJLHFOJODOKG\x12%\n\x0eavatar_id_list\x18\xbe\
-    \x0e\x20\x03(\rR\x0cavatarIdList\x12\x20\n\x0bHMKGBMIDGOP\x18\x07\x20\
-    \x01(\rR\x0bHMKGBMIDGOP\x12*\n\x11extra_round_limit\x18\x08\x20\x01(\rR\
-    \x0fextraRoundLimit\x12\x20\n\x0bNJIEMPGEEOG\x18\x0f\x20\x01(\rR\x0bNJIE\
-    MPGEEOG\x12&\n\x0fgame_style_type\x18\t\x20\x01(\rR\rgameStyleType\x12\
-    \x20\n\x0bBLFDFMCFFIM\x18\x04\x20\x01(\rR\x0bBLFDFMCFFIM\x12\x20\n\x0bOF\
-    BIAHGOPCM\x18\x02\x20\x01(\rR\x0bOFBIAHGOPCM\x12\x20\n\x0bNNNKJKCLBLO\
-    \x18\x0b\x20\x01(\rR\x0bNNNKJKCLBLOb\x06proto3\
+    gueMagicGameUnitInfo.proto\"\xaf\x04\n\x0bOLFGBAMEFJI\x12\x20\n\x0bNMKCI\
+    KHJKKA\x18\x01\x20\x01(\rR\x0bNMKCIKHJKKA\x12\x20\n\x0bJONFBGINFAC\x18\
+    \x05\x20\x01(\rR\x0bJONFBGINFAC\x12\x20\n\x0bHBNPLIKPIPJ\x18\x06\x20\x01\
+    (\rR\x0bHBNPLIKPIPJ\x12\x1d\n\nrogue_coin\x18\x08\x20\x01(\rR\trogueCoin\
+    \x12\x20\n\x0bFIONJIOIIOI\x18\t\x20\x01(\rR\x0bFIONJIOIIOI\x12\x20\n\x0b\
+    ABLAODDKFBI\x18\n\x20\x01(\rR\x0bABLAODDKFBI\x12\x20\n\x0bCKFHJFOOEJE\
+    \x18\x0b\x20\x01(\rR\x0bCKFHJFOOEJE\x12\x20\n\x0bGAEOFLOGIGD\x18\x0c\x20\
+    \x01(\rR\x0bGAEOFLOGIGD\x12\x20\n\x0bAHFOJENKBOL\x18\r\x20\x01(\rR\x0bAH\
+    FOJENKBOL\x12\x20\n\x0bLCHGIDMEJAA\x18>\x20\x03(\rR\x0bLCHGIDMEJAA\x12%\
+    \n\x0eavatar_id_list\x18\xc1\n\x20\x03(\rR\x0cavatarIdList\x12R\n\x17mag\
+    ic_scepter_info_list\x18\xd9\x0b\x20\x03(\x0b2\x1a.RogueMagicGameScepter\
+    InfoR\x14magicScepterInfoList\x12T\n\x1arogue_magic_unit_info_list\x18\
+    \x89\x0f\x20\x03(\x0b2\x17.RogueMagicGameUnitInfoR\x16rogueMagicUnitInfo\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

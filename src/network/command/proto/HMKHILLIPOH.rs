@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HMKHILLIPOH {
     // message fields
-    // @@protoc_insertion_point(field:HMKHILLIPOH.DLDPMOJFAMC)
-    pub DLDPMOJFAMC: u32,
-    // @@protoc_insertion_point(field:HMKHILLIPOH.DOAHMGAOLOJ)
-    pub DOAHMGAOLOJ: u32,
+    // @@protoc_insertion_point(field:HMKHILLIPOH.LNDDHNIFACL)
+    pub LNDDHNIFACL: u32,
+    // @@protoc_insertion_point(field:HMKHILLIPOH.MOOHNNAPGMD)
+    pub MOOHNNAPGMD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HMKHILLIPOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HMKHILLIPOH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLDPMOJFAMC",
-            |m: &HMKHILLIPOH| { &m.DLDPMOJFAMC },
-            |m: &mut HMKHILLIPOH| { &mut m.DLDPMOJFAMC },
+            "LNDDHNIFACL",
+            |m: &HMKHILLIPOH| { &m.LNDDHNIFACL },
+            |m: &mut HMKHILLIPOH| { &mut m.LNDDHNIFACL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOAHMGAOLOJ",
-            |m: &HMKHILLIPOH| { &m.DOAHMGAOLOJ },
-            |m: &mut HMKHILLIPOH| { &mut m.DOAHMGAOLOJ },
+            "MOOHNNAPGMD",
+            |m: &HMKHILLIPOH| { &m.MOOHNNAPGMD },
+            |m: &mut HMKHILLIPOH| { &mut m.MOOHNNAPGMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HMKHILLIPOH>(
             "HMKHILLIPOH",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for HMKHILLIPOH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.DLDPMOJFAMC = is.read_uint32()?;
+                    self.LNDDHNIFACL = is.read_uint32()?;
                 },
-                88 => {
-                    self.DOAHMGAOLOJ = is.read_uint32()?;
+                32 => {
+                    self.MOOHNNAPGMD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HMKHILLIPOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLDPMOJFAMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DLDPMOJFAMC);
+        if self.LNDDHNIFACL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LNDDHNIFACL);
         }
-        if self.DOAHMGAOLOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DOAHMGAOLOJ);
+        if self.MOOHNNAPGMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MOOHNNAPGMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HMKHILLIPOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLDPMOJFAMC != 0 {
-            os.write_uint32(2, self.DLDPMOJFAMC)?;
+        if self.LNDDHNIFACL != 0 {
+            os.write_uint32(2, self.LNDDHNIFACL)?;
         }
-        if self.DOAHMGAOLOJ != 0 {
-            os.write_uint32(11, self.DOAHMGAOLOJ)?;
+        if self.MOOHNNAPGMD != 0 {
+            os.write_uint32(4, self.MOOHNNAPGMD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HMKHILLIPOH {
     }
 
     fn clear(&mut self) {
-        self.DLDPMOJFAMC = 0;
-        self.DOAHMGAOLOJ = 0;
+        self.LNDDHNIFACL = 0;
+        self.MOOHNNAPGMD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HMKHILLIPOH {
         static instance: HMKHILLIPOH = HMKHILLIPOH {
-            DLDPMOJFAMC: 0,
-            DOAHMGAOLOJ: 0,
+            LNDDHNIFACL: 0,
+            MOOHNNAPGMD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HMKHILLIPOH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HMKHILLIPOH.proto\"Q\n\x0bHMKHILLIPOH\x12\x20\n\x0bDLDPMOJFAMC\x18\
-    \x02\x20\x01(\rR\x0bDLDPMOJFAMC\x12\x20\n\x0bDOAHMGAOLOJ\x18\x0b\x20\x01\
-    (\rR\x0bDOAHMGAOLOJb\x06proto3\
+    \n\x11HMKHILLIPOH.proto\"Q\n\x0bHMKHILLIPOH\x12\x20\n\x0bLNDDHNIFACL\x18\
+    \x02\x20\x01(\rR\x0bLNDDHNIFACL\x12\x20\n\x0bMOOHNNAPGMD\x18\x04\x20\x01\
+    (\rR\x0bMOOHNNAPGMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

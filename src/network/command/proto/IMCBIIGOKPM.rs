@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IMCBIIGOKPM {
     // message fields
-    // @@protoc_insertion_point(field:IMCBIIGOKPM.CGHLHFNLADN)
-    pub CGHLHFNLADN: u32,
+    // @@protoc_insertion_point(field:IMCBIIGOKPM.EEEEHDMADOH)
+    pub EEEEHDMADOH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IMCBIIGOKPM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl IMCBIIGOKPM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGHLHFNLADN",
-            |m: &IMCBIIGOKPM| { &m.CGHLHFNLADN },
-            |m: &mut IMCBIIGOKPM| { &mut m.CGHLHFNLADN },
+            "EEEEHDMADOH",
+            |m: &IMCBIIGOKPM| { &m.EEEEHDMADOH },
+            |m: &mut IMCBIIGOKPM| { &mut m.EEEEHDMADOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IMCBIIGOKPM>(
             "IMCBIIGOKPM",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for IMCBIIGOKPM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 104 => {
-                    self.CGHLHFNLADN = is.read_uint32()?;
+                    self.EEEEHDMADOH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for IMCBIIGOKPM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CGHLHFNLADN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CGHLHFNLADN);
+        if self.EEEEHDMADOH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EEEEHDMADOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for IMCBIIGOKPM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CGHLHFNLADN != 0 {
-            os.write_uint32(13, self.CGHLHFNLADN)?;
+        if self.EEEEHDMADOH != 0 {
+            os.write_uint32(13, self.EEEEHDMADOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for IMCBIIGOKPM {
     }
 
     fn clear(&mut self) {
-        self.CGHLHFNLADN = 0;
+        self.EEEEHDMADOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IMCBIIGOKPM {
         static instance: IMCBIIGOKPM = IMCBIIGOKPM {
-            CGHLHFNLADN: 0,
+            EEEEHDMADOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for IMCBIIGOKPM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IMCBIIGOKPM.proto\"/\n\x0bIMCBIIGOKPM\x12\x20\n\x0bCGHLHFNLADN\x18\
-    \r\x20\x01(\rR\x0bCGHLHFNLADNb\x06proto3\
+    \n\x11IMCBIIGOKPM.proto\"/\n\x0bIMCBIIGOKPM\x12\x20\n\x0bEEEEHDMADOH\x18\
+    \r\x20\x01(\rR\x0bEEEEHDMADOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

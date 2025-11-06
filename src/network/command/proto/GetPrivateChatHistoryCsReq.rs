@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.contact_side = is.read_uint32()?;
                 },
                 72 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.contact_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.contact_side);
+            my_size += ::protobuf::rt::uint32_size(4, self.contact_side);
         }
         if self.target_side != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.target_side);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetPrivateChatHistoryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.contact_side != 0 {
-            os.write_uint32(5, self.contact_side)?;
+            os.write_uint32(4, self.contact_side)?;
         }
         if self.target_side != 0 {
             os.write_uint32(9, self.target_side)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GetPrivateChatHistoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPrivateChatHistoryCsReq.proto\"`\n\x1aGetPrivateChatHistoryCsRe\
-    q\x12!\n\x0ccontact_side\x18\x05\x20\x01(\rR\x0bcontactSide\x12\x1f\n\
+    q\x12!\n\x0ccontact_side\x18\x04\x20\x01(\rR\x0bcontactSide\x12\x1f\n\
     \x0btarget_side\x18\t\x20\x01(\rR\ntargetSideb\x06proto3\
 ";
 

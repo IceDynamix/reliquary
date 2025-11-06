@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGNDIBBGIJN {
     // message fields
-    // @@protoc_insertion_point(field:PGNDIBBGIJN.ECILICNOLFN)
-    pub ECILICNOLFN: u32,
-    // @@protoc_insertion_point(field:PGNDIBBGIJN.GFJAGHLJJDN)
-    pub GFJAGHLJJDN: u32,
+    // @@protoc_insertion_point(field:PGNDIBBGIJN.BAEECHBCNEH)
+    pub BAEECHBCNEH: u32,
+    // @@protoc_insertion_point(field:PGNDIBBGIJN.FADFAHBOHGF)
+    pub FADFAHBOHGF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PGNDIBBGIJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PGNDIBBGIJN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECILICNOLFN",
-            |m: &PGNDIBBGIJN| { &m.ECILICNOLFN },
-            |m: &mut PGNDIBBGIJN| { &mut m.ECILICNOLFN },
+            "BAEECHBCNEH",
+            |m: &PGNDIBBGIJN| { &m.BAEECHBCNEH },
+            |m: &mut PGNDIBBGIJN| { &mut m.BAEECHBCNEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFJAGHLJJDN",
-            |m: &PGNDIBBGIJN| { &m.GFJAGHLJJDN },
-            |m: &mut PGNDIBBGIJN| { &mut m.GFJAGHLJJDN },
+            "FADFAHBOHGF",
+            |m: &PGNDIBBGIJN| { &m.FADFAHBOHGF },
+            |m: &mut PGNDIBBGIJN| { &mut m.FADFAHBOHGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PGNDIBBGIJN>(
             "PGNDIBBGIJN",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for PGNDIBBGIJN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.ECILICNOLFN = is.read_uint32()?;
+                    self.BAEECHBCNEH = is.read_uint32()?;
                 },
-                120 => {
-                    self.GFJAGHLJJDN = is.read_uint32()?;
+                48 => {
+                    self.FADFAHBOHGF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PGNDIBBGIJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECILICNOLFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ECILICNOLFN);
+        if self.BAEECHBCNEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BAEECHBCNEH);
         }
-        if self.GFJAGHLJJDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GFJAGHLJJDN);
+        if self.FADFAHBOHGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FADFAHBOHGF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PGNDIBBGIJN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECILICNOLFN != 0 {
-            os.write_uint32(2, self.ECILICNOLFN)?;
+        if self.BAEECHBCNEH != 0 {
+            os.write_uint32(2, self.BAEECHBCNEH)?;
         }
-        if self.GFJAGHLJJDN != 0 {
-            os.write_uint32(15, self.GFJAGHLJJDN)?;
+        if self.FADFAHBOHGF != 0 {
+            os.write_uint32(6, self.FADFAHBOHGF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PGNDIBBGIJN {
     }
 
     fn clear(&mut self) {
-        self.ECILICNOLFN = 0;
-        self.GFJAGHLJJDN = 0;
+        self.BAEECHBCNEH = 0;
+        self.FADFAHBOHGF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGNDIBBGIJN {
         static instance: PGNDIBBGIJN = PGNDIBBGIJN {
-            ECILICNOLFN: 0,
-            GFJAGHLJJDN: 0,
+            BAEECHBCNEH: 0,
+            FADFAHBOHGF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PGNDIBBGIJN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGNDIBBGIJN.proto\"Q\n\x0bPGNDIBBGIJN\x12\x20\n\x0bECILICNOLFN\x18\
-    \x02\x20\x01(\rR\x0bECILICNOLFN\x12\x20\n\x0bGFJAGHLJJDN\x18\x0f\x20\x01\
-    (\rR\x0bGFJAGHLJJDNb\x06proto3\
+    \n\x11PGNDIBBGIJN.proto\"Q\n\x0bPGNDIBBGIJN\x12\x20\n\x0bBAEECHBCNEH\x18\
+    \x02\x20\x01(\rR\x0bBAEECHBCNEH\x12\x20\n\x0bFADFAHBOHGF\x18\x06\x20\x01\
+    (\rR\x0bFADFAHBOHGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

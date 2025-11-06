@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncClientResVersionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SyncClientResVersionCsReq.client_res_version)
-    pub client_res_version: u32,
+    // @@protoc_insertion_point(field:SyncClientResVersionCsReq.res_version)
+    pub res_version: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncClientResVersionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncClientResVersionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_res_version",
-            |m: &SyncClientResVersionCsReq| { &m.client_res_version },
-            |m: &mut SyncClientResVersionCsReq| { &mut m.client_res_version },
+            "res_version",
+            |m: &SyncClientResVersionCsReq| { &m.res_version },
+            |m: &mut SyncClientResVersionCsReq| { &mut m.res_version },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncClientResVersionCsReq>(
             "SyncClientResVersionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.client_res_version = is.read_uint32()?;
+                40 => {
+                    self.res_version = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.client_res_version);
+        if self.res_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.res_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.client_res_version != 0 {
-            os.write_uint32(4, self.client_res_version)?;
+        if self.res_version != 0 {
+            os.write_uint32(5, self.res_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SyncClientResVersionCsReq {
     }
 
     fn clear(&mut self) {
-        self.client_res_version = 0;
+        self.res_version = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncClientResVersionCsReq {
         static instance: SyncClientResVersionCsReq = SyncClientResVersionCsReq {
-            client_res_version: 0,
+            res_version: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncClientResVersionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fSyncClientResVersionCsReq.proto\"I\n\x19SyncClientResVersionCsReq\
-    \x12,\n\x12client_res_version\x18\x04\x20\x01(\rR\x10clientResVersionb\
-    \x06proto3\
+    \n\x1fSyncClientResVersionCsReq.proto\"<\n\x19SyncClientResVersionCsReq\
+    \x12\x1f\n\x0bres_version\x18\x05\x20\x01(\rR\nresVersionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

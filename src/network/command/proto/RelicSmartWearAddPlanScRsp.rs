@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearAddPlanScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RelicSmartWearAddPlanScRsp.relic_smart_suit_plan_info)
+    pub relic_smart_suit_plan_info: ::protobuf::MessageField<super::RelicSmartSuitPlanInfo::RelicSmartSuitPlanInfo>,
     // @@protoc_insertion_point(field:RelicSmartWearAddPlanScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RelicSmartWearAddPlanScRsp.relic_plan)
-    pub relic_plan: ::protobuf::MessageField<super::RelicSmartWearPlan::RelicSmartWearPlan>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicSmartWearAddPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RelicSmartWearAddPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicSmartSuitPlanInfo::RelicSmartSuitPlanInfo>(
+            "relic_smart_suit_plan_info",
+            |m: &RelicSmartWearAddPlanScRsp| { &m.relic_smart_suit_plan_info },
+            |m: &mut RelicSmartWearAddPlanScRsp| { &mut m.relic_smart_suit_plan_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RelicSmartWearAddPlanScRsp| { &m.retcode },
             |m: &mut RelicSmartWearAddPlanScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RelicSmartWearPlan::RelicSmartWearPlan>(
-            "relic_plan",
-            |m: &RelicSmartWearAddPlanScRsp| { &m.relic_plan },
-            |m: &mut RelicSmartWearAddPlanScRsp| { &mut m.relic_plan },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicSmartWearAddPlanScRsp>(
             "RelicSmartWearAddPlanScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RelicSmartWearAddPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.relic_smart_suit_plan_info)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.relic_plan)?;
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RelicSmartWearAddPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if let Some(v) = self.relic_plan.as_ref() {
+        if let Some(v) = self.relic_smart_suit_plan_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RelicSmartWearAddPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if let Some(v) = self.relic_smart_suit_plan_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.relic_plan.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RelicSmartWearAddPlanScRsp {
     }
 
     fn clear(&mut self) {
+        self.relic_smart_suit_plan_info.clear();
         self.retcode = 0;
-        self.relic_plan.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearAddPlanScRsp {
         static instance: RelicSmartWearAddPlanScRsp = RelicSmartWearAddPlanScRsp {
+            relic_smart_suit_plan_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            relic_plan: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearAddPlanScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20RelicSmartWearAddPlanScRsp.proto\x1a\x18RelicSmartWearPlan.proto\"\
-    j\n\x1aRelicSmartWearAddPlanScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\
-    \rR\x07retcode\x122\n\nrelic_plan\x18\r\x20\x01(\x0b2\x13.RelicSmartWear\
-    PlanR\trelicPlanb\x06proto3\
+    \n\x20RelicSmartWearAddPlanScRsp.proto\x1a\x1cRelicSmartSuitPlanInfo.pro\
+    to\"\x8b\x01\n\x1aRelicSmartWearAddPlanScRsp\x12S\n\x1arelic_smart_suit_\
+    plan_info\x18\x04\x20\x01(\x0b2\x17.RelicSmartSuitPlanInfoR\x16relicSmar\
+    tSuitPlanInfo\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RelicSmartWearPlan::file_descriptor().clone());
+            deps.push(super::RelicSmartSuitPlanInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicSmartWearAddPlanScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

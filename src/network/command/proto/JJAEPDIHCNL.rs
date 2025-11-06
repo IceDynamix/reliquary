@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JJAEPDIHCNL {
     // message fields
-    // @@protoc_insertion_point(field:JJAEPDIHCNL.HECKMDLOLAG)
-    pub HECKMDLOLAG: u32,
-    // @@protoc_insertion_point(field:JJAEPDIHCNL.FPBEDNCOCHO)
-    pub FPBEDNCOCHO: u32,
+    // @@protoc_insertion_point(field:JJAEPDIHCNL.LIGMPLNIDLF)
+    pub LIGMPLNIDLF: u32,
+    // @@protoc_insertion_point(field:JJAEPDIHCNL.PDEBLJBPGJP)
+    pub PDEBLJBPGJP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JJAEPDIHCNL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JJAEPDIHCNL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HECKMDLOLAG",
-            |m: &JJAEPDIHCNL| { &m.HECKMDLOLAG },
-            |m: &mut JJAEPDIHCNL| { &mut m.HECKMDLOLAG },
+            "LIGMPLNIDLF",
+            |m: &JJAEPDIHCNL| { &m.LIGMPLNIDLF },
+            |m: &mut JJAEPDIHCNL| { &mut m.LIGMPLNIDLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPBEDNCOCHO",
-            |m: &JJAEPDIHCNL| { &m.FPBEDNCOCHO },
-            |m: &mut JJAEPDIHCNL| { &mut m.FPBEDNCOCHO },
+            "PDEBLJBPGJP",
+            |m: &JJAEPDIHCNL| { &m.PDEBLJBPGJP },
+            |m: &mut JJAEPDIHCNL| { &mut m.PDEBLJBPGJP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JJAEPDIHCNL>(
             "JJAEPDIHCNL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.HECKMDLOLAG = is.read_uint32()?;
+                16 => {
+                    self.LIGMPLNIDLF = is.read_uint32()?;
                 },
                 104 => {
-                    self.FPBEDNCOCHO = is.read_uint32()?;
+                    self.PDEBLJBPGJP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HECKMDLOLAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HECKMDLOLAG);
+        if self.LIGMPLNIDLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LIGMPLNIDLF);
         }
-        if self.FPBEDNCOCHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FPBEDNCOCHO);
+        if self.PDEBLJBPGJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PDEBLJBPGJP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HECKMDLOLAG != 0 {
-            os.write_uint32(1, self.HECKMDLOLAG)?;
+        if self.LIGMPLNIDLF != 0 {
+            os.write_uint32(2, self.LIGMPLNIDLF)?;
         }
-        if self.FPBEDNCOCHO != 0 {
-            os.write_uint32(13, self.FPBEDNCOCHO)?;
+        if self.PDEBLJBPGJP != 0 {
+            os.write_uint32(13, self.PDEBLJBPGJP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JJAEPDIHCNL {
     }
 
     fn clear(&mut self) {
-        self.HECKMDLOLAG = 0;
-        self.FPBEDNCOCHO = 0;
+        self.LIGMPLNIDLF = 0;
+        self.PDEBLJBPGJP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JJAEPDIHCNL {
         static instance: JJAEPDIHCNL = JJAEPDIHCNL {
-            HECKMDLOLAG: 0,
-            FPBEDNCOCHO: 0,
+            LIGMPLNIDLF: 0,
+            PDEBLJBPGJP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JJAEPDIHCNL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JJAEPDIHCNL.proto\"Q\n\x0bJJAEPDIHCNL\x12\x20\n\x0bHECKMDLOLAG\x18\
-    \x01\x20\x01(\rR\x0bHECKMDLOLAG\x12\x20\n\x0bFPBEDNCOCHO\x18\r\x20\x01(\
-    \rR\x0bFPBEDNCOCHOb\x06proto3\
+    \n\x11JJAEPDIHCNL.proto\"Q\n\x0bJJAEPDIHCNL\x12\x20\n\x0bLIGMPLNIDLF\x18\
+    \x02\x20\x01(\rR\x0bLIGMPLNIDLF\x12\x20\n\x0bPDEBLJBPGJP\x18\r\x20\x01(\
+    \rR\x0bPDEBLJBPGJPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

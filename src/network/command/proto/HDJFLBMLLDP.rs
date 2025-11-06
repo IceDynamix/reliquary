@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct HDJFLBMLLDP {
     // message fields
     // @@protoc_insertion_point(field:HDJFLBMLLDP.bonus_select_info)
-    pub bonus_select_info: ::protobuf::MessageField<super::FLECFLLDNFP::FLECFLLDNFP>,
+    pub bonus_select_info: ::protobuf::MessageField<super::RogueBonusSelectInfo::RogueBonusSelectInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HDJFLBMLLDP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl HDJFLBMLLDP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FLECFLLDNFP::FLECFLLDNFP>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBonusSelectInfo::RogueBonusSelectInfo>(
             "bonus_select_info",
             |m: &HDJFLBMLLDP| { &m.bonus_select_info },
             |m: &mut HDJFLBMLLDP| { &mut m.bonus_select_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for HDJFLBMLLDP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.bonus_select_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HDJFLBMLLDP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.bonus_select_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for HDJFLBMLLDP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDJFLBMLLDP.proto\x1a\x11FLECFLLDNFP.proto\"G\n\x0bHDJFLBMLLDP\x12\
-    8\n\x11bonus_select_info\x18\x0c\x20\x01(\x0b2\x0c.FLECFLLDNFPR\x0fbonus\
-    SelectInfob\x06proto3\
+    \n\x11HDJFLBMLLDP.proto\x1a\x1aRogueBonusSelectInfo.proto\"P\n\x0bHDJFLB\
+    MLLDP\x12A\n\x11bonus_select_info\x18\r\x20\x01(\x0b2\x15.RogueBonusSele\
+    ctInfoR\x0fbonusSelectInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FLECFLLDNFP::file_descriptor().clone());
+            deps.push(super::RogueBonusSelectInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HDJFLBMLLDP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

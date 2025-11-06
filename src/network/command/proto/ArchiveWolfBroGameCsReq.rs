@@ -79,10 +79,10 @@ impl ::protobuf::Message for ArchiveWolfBroGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.id = is.read_uint32()?;
                 },
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ArchiveWolfBroGameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
+            my_size += ::protobuf::rt::uint32_size(4, self.id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ArchiveWolfBroGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(9, self.id)?;
+            os.write_uint32(4, self.id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ArchiveWolfBroGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dArchiveWolfBroGameCsReq.proto\x1a\x10MotionInfo.proto\"N\n\x17Arch\
-    iveWolfBroGameCsReq\x12\x0e\n\x02id\x18\t\x20\x01(\rR\x02id\x12#\n\x06mo\
-    tion\x18\x0c\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    iveWolfBroGameCsReq\x12\x0e\n\x02id\x18\x04\x20\x01(\rR\x02id\x12#\n\x06\
+    motion\x18\x05\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

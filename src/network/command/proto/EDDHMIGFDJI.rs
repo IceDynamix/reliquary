@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDDHMIGFDJI {
     // message fields
-    // @@protoc_insertion_point(field:EDDHMIGFDJI.select_cell_id)
-    pub select_cell_id: u32,
-    // @@protoc_insertion_point(field:EDDHMIGFDJI.MBGKCKLDHIB)
-    pub MBGKCKLDHIB: u32,
     // @@protoc_insertion_point(field:EDDHMIGFDJI.confirm)
     pub confirm: bool,
+    // @@protoc_insertion_point(field:EDDHMIGFDJI.select_cell_id)
+    pub select_cell_id: u32,
+    // @@protoc_insertion_point(field:EDDHMIGFDJI.AMBJJJJANAP)
+    pub AMBJJJJANAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EDDHMIGFDJI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl EDDHMIGFDJI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "confirm",
+            |m: &EDDHMIGFDJI| { &m.confirm },
+            |m: &mut EDDHMIGFDJI| { &mut m.confirm },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "select_cell_id",
             |m: &EDDHMIGFDJI| { &m.select_cell_id },
             |m: &mut EDDHMIGFDJI| { &mut m.select_cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBGKCKLDHIB",
-            |m: &EDDHMIGFDJI| { &m.MBGKCKLDHIB },
-            |m: &mut EDDHMIGFDJI| { &mut m.MBGKCKLDHIB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "confirm",
-            |m: &EDDHMIGFDJI| { &m.confirm },
-            |m: &mut EDDHMIGFDJI| { &mut m.confirm },
+            "AMBJJJJANAP",
+            |m: &EDDHMIGFDJI| { &m.AMBJJJJANAP },
+            |m: &mut EDDHMIGFDJI| { &mut m.AMBJJJJANAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EDDHMIGFDJI>(
             "EDDHMIGFDJI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
+                    self.confirm = is.read_bool()?;
+                },
+                72 => {
                     self.select_cell_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.MBGKCKLDHIB = is.read_uint32()?;
-                },
-                56 => {
-                    self.confirm = is.read_bool()?;
+                112 => {
+                    self.AMBJJJJANAP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.select_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.select_cell_id);
-        }
-        if self.MBGKCKLDHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MBGKCKLDHIB);
-        }
         if self.confirm != false {
             my_size += 1 + 1;
+        }
+        if self.select_cell_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.select_cell_id);
+        }
+        if self.AMBJJJJANAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AMBJJJJANAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.select_cell_id != 0 {
-            os.write_uint32(15, self.select_cell_id)?;
-        }
-        if self.MBGKCKLDHIB != 0 {
-            os.write_uint32(2, self.MBGKCKLDHIB)?;
-        }
         if self.confirm != false {
-            os.write_bool(7, self.confirm)?;
+            os.write_bool(1, self.confirm)?;
+        }
+        if self.select_cell_id != 0 {
+            os.write_uint32(9, self.select_cell_id)?;
+        }
+        if self.AMBJJJJANAP != 0 {
+            os.write_uint32(14, self.AMBJJJJANAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EDDHMIGFDJI {
     }
 
     fn clear(&mut self) {
-        self.select_cell_id = 0;
-        self.MBGKCKLDHIB = 0;
         self.confirm = false;
+        self.select_cell_id = 0;
+        self.AMBJJJJANAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDDHMIGFDJI {
         static instance: EDDHMIGFDJI = EDDHMIGFDJI {
-            select_cell_id: 0,
-            MBGKCKLDHIB: 0,
             confirm: false,
+            select_cell_id: 0,
+            AMBJJJJANAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EDDHMIGFDJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDDHMIGFDJI.proto\"o\n\x0bEDDHMIGFDJI\x12$\n\x0eselect_cell_id\x18\
-    \x0f\x20\x01(\rR\x0cselectCellId\x12\x20\n\x0bMBGKCKLDHIB\x18\x02\x20\
-    \x01(\rR\x0bMBGKCKLDHIB\x12\x18\n\x07confirm\x18\x07\x20\x01(\x08R\x07co\
-    nfirmb\x06proto3\
+    \n\x11EDDHMIGFDJI.proto\"o\n\x0bEDDHMIGFDJI\x12\x18\n\x07confirm\x18\x01\
+    \x20\x01(\x08R\x07confirm\x12$\n\x0eselect_cell_id\x18\t\x20\x01(\rR\x0c\
+    selectCellId\x12\x20\n\x0bAMBJJJJANAP\x18\x0e\x20\x01(\rR\x0bAMBJJJJANAP\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

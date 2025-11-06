@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIAOLBGOAAG {
     // message fields
-    // @@protoc_insertion_point(field:OIAOLBGOAAG.HHPHLEGCLDM)
-    pub HHPHLEGCLDM: ::protobuf::MessageField<super::CFELLCPMONH::CFELLCPMONH>,
-    // @@protoc_insertion_point(field:OIAOLBGOAAG.NOAEDNNIBAF)
-    pub NOAEDNNIBAF: ::protobuf::MessageField<super::DDJHDEHMHCF::DDJHDEHMHCF>,
+    // @@protoc_insertion_point(field:OIAOLBGOAAG.HDFAKJLJNCI)
+    pub HDFAKJLJNCI: ::protobuf::MessageField<super::CFELLCPMONH::CFELLCPMONH>,
+    // @@protoc_insertion_point(field:OIAOLBGOAAG.LMLHBNEOFJN)
+    pub LMLHBNEOFJN: ::protobuf::MessageField<super::DDJHDEHMHCF::DDJHDEHMHCF>,
     // special fields
     // @@protoc_insertion_point(special_field:OIAOLBGOAAG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OIAOLBGOAAG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFELLCPMONH::CFELLCPMONH>(
-            "HHPHLEGCLDM",
-            |m: &OIAOLBGOAAG| { &m.HHPHLEGCLDM },
-            |m: &mut OIAOLBGOAAG| { &mut m.HHPHLEGCLDM },
+            "HDFAKJLJNCI",
+            |m: &OIAOLBGOAAG| { &m.HDFAKJLJNCI },
+            |m: &mut OIAOLBGOAAG| { &mut m.HDFAKJLJNCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDJHDEHMHCF::DDJHDEHMHCF>(
-            "NOAEDNNIBAF",
-            |m: &OIAOLBGOAAG| { &m.NOAEDNNIBAF },
-            |m: &mut OIAOLBGOAAG| { &mut m.NOAEDNNIBAF },
+            "LMLHBNEOFJN",
+            |m: &OIAOLBGOAAG| { &m.LMLHBNEOFJN },
+            |m: &mut OIAOLBGOAAG| { &mut m.LMLHBNEOFJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIAOLBGOAAG>(
             "OIAOLBGOAAG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HHPHLEGCLDM)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDFAKJLJNCI)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOAEDNNIBAF)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMLHBNEOFJN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HHPHLEGCLDM.as_ref() {
+        if let Some(v) = self.HDFAKJLJNCI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
+        if let Some(v) = self.LMLHBNEOFJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HHPHLEGCLDM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.HDFAKJLJNCI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.NOAEDNNIBAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.LMLHBNEOFJN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for OIAOLBGOAAG {
     }
 
     fn clear(&mut self) {
-        self.HHPHLEGCLDM.clear();
-        self.NOAEDNNIBAF.clear();
+        self.HDFAKJLJNCI.clear();
+        self.LMLHBNEOFJN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIAOLBGOAAG {
         static instance: OIAOLBGOAAG = OIAOLBGOAAG {
-            HHPHLEGCLDM: ::protobuf::MessageField::none(),
-            NOAEDNNIBAF: ::protobuf::MessageField::none(),
+            HDFAKJLJNCI: ::protobuf::MessageField::none(),
+            LMLHBNEOFJN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for OIAOLBGOAAG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIAOLBGOAAG.proto\x1a\x11CFELLCPMONH.proto\x1a\x11DDJHDEHMHCF.prot\
-    o\"m\n\x0bOIAOLBGOAAG\x12.\n\x0bHHPHLEGCLDM\x18\r\x20\x01(\x0b2\x0c.CFEL\
-    LCPMONHR\x0bHHPHLEGCLDM\x12.\n\x0bNOAEDNNIBAF\x18\x05\x20\x01(\x0b2\x0c.\
-    DDJHDEHMHCFR\x0bNOAEDNNIBAFb\x06proto3\
+    o\"m\n\x0bOIAOLBGOAAG\x12.\n\x0bHDFAKJLJNCI\x18\x03\x20\x01(\x0b2\x0c.CF\
+    ELLCPMONHR\x0bHDFAKJLJNCI\x12.\n\x0bLMLHBNEOFJN\x18\x0b\x20\x01(\x0b2\
+    \x0c.DDJHDEHMHCFR\x0bLMLHBNEOFJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

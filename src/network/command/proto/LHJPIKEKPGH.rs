@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHJPIKEKPGH {
     // message fields
-    // @@protoc_insertion_point(field:LHJPIKEKPGH.GAKJOLGDBBD)
-    pub GAKJOLGDBBD: u32,
+    // @@protoc_insertion_point(field:LHJPIKEKPGH.PGCMKFBJJHO)
+    pub PGCMKFBJJHO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LHJPIKEKPGH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LHJPIKEKPGH {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAKJOLGDBBD",
-            |m: &LHJPIKEKPGH| { &m.GAKJOLGDBBD },
-            |m: &mut LHJPIKEKPGH| { &mut m.GAKJOLGDBBD },
+            "PGCMKFBJJHO",
+            |m: &LHJPIKEKPGH| { &m.PGCMKFBJJHO },
+            |m: &mut LHJPIKEKPGH| { &mut m.PGCMKFBJJHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHJPIKEKPGH>(
             "LHJPIKEKPGH",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for LHJPIKEKPGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.GAKJOLGDBBD = is.read_uint32()?;
+                48 => {
+                    self.PGCMKFBJJHO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for LHJPIKEKPGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GAKJOLGDBBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GAKJOLGDBBD);
+        if self.PGCMKFBJJHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PGCMKFBJJHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for LHJPIKEKPGH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GAKJOLGDBBD != 0 {
-            os.write_uint32(12, self.GAKJOLGDBBD)?;
+        if self.PGCMKFBJJHO != 0 {
+            os.write_uint32(6, self.PGCMKFBJJHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for LHJPIKEKPGH {
     }
 
     fn clear(&mut self) {
-        self.GAKJOLGDBBD = 0;
+        self.PGCMKFBJJHO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHJPIKEKPGH {
         static instance: LHJPIKEKPGH = LHJPIKEKPGH {
-            GAKJOLGDBBD: 0,
+            PGCMKFBJJHO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for LHJPIKEKPGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHJPIKEKPGH.proto\"/\n\x0bLHJPIKEKPGH\x12\x20\n\x0bGAKJOLGDBBD\x18\
-    \x0c\x20\x01(\rR\x0bGAKJOLGDBBDb\x06proto3\
+    \n\x11LHJPIKEKPGH.proto\"/\n\x0bLHJPIKEKPGH\x12\x20\n\x0bPGCMKFBJJHO\x18\
+    \x06\x20\x01(\rR\x0bPGCMKFBJJHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

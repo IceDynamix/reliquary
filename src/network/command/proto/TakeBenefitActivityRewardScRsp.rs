@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeBenefitActivityRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeBenefitActivityRewardScRsp.CKEKCCONJGB)
-    pub CKEKCCONJGB: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeBenefitActivityRewardScRsp.switch_list)
-    pub switch_list: ::std::vec::Vec<super::RewardSwitchItem::RewardSwitchItem>,
+    // @@protoc_insertion_point(field:TakeBenefitActivityRewardScRsp.param_list)
+    pub param_list: ::std::vec::Vec<super::CMGDHFIOBEF::CMGDHFIOBEF>,
+    // @@protoc_insertion_point(field:TakeBenefitActivityRewardScRsp.POHGBBBBLBN)
+    pub POHGBBBBLBN: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeBenefitActivityRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl TakeBenefitActivityRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "CKEKCCONJGB",
-            |m: &TakeBenefitActivityRewardScRsp| { &m.CKEKCCONJGB },
-            |m: &mut TakeBenefitActivityRewardScRsp| { &mut m.CKEKCCONJGB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &TakeBenefitActivityRewardScRsp| { &m.switch_list },
-            |m: &mut TakeBenefitActivityRewardScRsp| { &mut m.switch_list },
+            "param_list",
+            |m: &TakeBenefitActivityRewardScRsp| { &m.param_list },
+            |m: &mut TakeBenefitActivityRewardScRsp| { &mut m.param_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "POHGBBBBLBN",
+            |m: &TakeBenefitActivityRewardScRsp| { &m.POHGBBBBLBN },
+            |m: &mut TakeBenefitActivityRewardScRsp| { &mut m.POHGBBBBLBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKEKCCONJGB)?;
+                42 => {
+                    self.param_list.push(is.read_message()?);
                 },
-                58 => {
-                    self.switch_list.push(is.read_message()?);
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POHGBBBBLBN)?;
                 },
-                32 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,16 +107,16 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CKEKCCONJGB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.switch_list {
+        for value in &self.param_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.POHGBBBBLBN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CKEKCCONJGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.param_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if let Some(v) = self.POHGBBBBLBN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeBenefitActivityRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.CKEKCCONJGB.clear();
-        self.switch_list.clear();
+        self.param_list.clear();
+        self.POHGBBBBLBN.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeBenefitActivityRewardScRsp {
         static instance: TakeBenefitActivityRewardScRsp = TakeBenefitActivityRewardScRsp {
-            CKEKCCONJGB: ::protobuf::MessageField::none(),
-            switch_list: ::std::vec::Vec::new(),
+            param_list: ::std::vec::Vec::new(),
+            POHGBBBBLBN: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeBenefitActivityRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$TakeBenefitActivityRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x16Rew\
-    ardSwitchItem.proto\"\x9b\x01\n\x1eTakeBenefitActivityRewardScRsp\x12+\n\
-    \x0bCKEKCCONJGB\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0bCKEKCCONJGB\x122\n\
-    \x0bswitch_list\x18\x07\x20\x03(\x0b2\x11.RewardSwitchItemR\nswitchList\
-    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n$TakeBenefitActivityRewardScRsp.proto\x1a\x11CMGDHFIOBEF.proto\x1a\x0e\
+    ItemList.proto\"\x94\x01\n\x1eTakeBenefitActivityRewardScRsp\x12+\n\npar\
+    am_list\x18\x05\x20\x03(\x0b2\x0c.CMGDHFIOBEFR\tparamList\x12+\n\x0bPOHG\
+    BBBBLBN\x18\x06\x20\x01(\x0b2\t.ItemListR\x0bPOHGBBBBLBN\x12\x18\n\x07re\
+    tcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::CMGDHFIOBEF::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::RewardSwitchItem::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeBenefitActivityRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

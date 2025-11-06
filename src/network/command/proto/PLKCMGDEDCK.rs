@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PLKCMGDEDCK {
     // message fields
     // @@protoc_insertion_point(field:PLKCMGDEDCK.src)
-    pub src: ::protobuf::EnumOrUnknown<super::CBEJAJENOHJ::CBEJAJENOHJ>,
+    pub src: ::protobuf::EnumOrUnknown<super::TrainPartySrcType::TrainPartySrcType>,
     // message oneof groups
-    pub PPHBGCABELF: ::std::option::Option<plkcmgdedck::PPHBGCABELF>,
+    pub LGNAKLFMHFF: ::std::option::Option<plkcmgdedck::LGNAKLFMHFF>,
     // special fields
     // @@protoc_insertion_point(special_field:PLKCMGDEDCK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,88 +48,39 @@ impl PLKCMGDEDCK {
         ::std::default::Default::default()
     }
 
-    // .HBCINIKPAFI LNMMKFMEAJM = 530;
-
-    pub fn LNMMKFMEAJM(&self) -> &super::HBCINIKPAFI::HBCINIKPAFI {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(ref v)) => v,
-            _ => <super::HBCINIKPAFI::HBCINIKPAFI as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LNMMKFMEAJM(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
-    }
-
-    pub fn has_LNMMKFMEAJM(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LNMMKFMEAJM(&mut self, v: super::HBCINIKPAFI::HBCINIKPAFI) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LNMMKFMEAJM(&mut self) -> &mut super::HBCINIKPAFI::HBCINIKPAFI {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(_)) = self.PPHBGCABELF {
-        } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(super::HBCINIKPAFI::HBCINIKPAFI::new()));
-        }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LNMMKFMEAJM(&mut self) -> super::HBCINIKPAFI::HBCINIKPAFI {
-        if self.has_LNMMKFMEAJM() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HBCINIKPAFI::HBCINIKPAFI::new()
-        }
-    }
-
-    // .IBOMHKHBAAO FPFDJNDNPIM = 1271;
+    // .IBOMHKHBAAO FPFDJNDNPIM = 937;
 
     pub fn FPFDJNDNPIM(&self) -> &super::IBOMHKHBAAO::IBOMHKHBAAO {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(ref v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(ref v)) => v,
             _ => <super::IBOMHKHBAAO::IBOMHKHBAAO as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_FPFDJNDNPIM(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
     }
 
     pub fn has_FPFDJNDNPIM(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(..)) => true,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_FPFDJNDNPIM(&mut self, v: super::IBOMHKHBAAO::IBOMHKHBAAO) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(v))
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_FPFDJNDNPIM(&mut self) -> &mut super::IBOMHKHBAAO::IBOMHKHBAAO {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(_)) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(_)) = self.LGNAKLFMHFF {
         } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(super::IBOMHKHBAAO::IBOMHKHBAAO::new()));
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(super::IBOMHKHBAAO::IBOMHKHBAAO::new()));
         }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(ref mut v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +88,8 @@ impl PLKCMGDEDCK {
     // Take field
     pub fn take_FPFDJNDNPIM(&mut self) -> super::IBOMHKHBAAO::IBOMHKHBAAO {
         if self.has_FPFDJNDNPIM() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(v)) => v,
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -146,235 +97,39 @@ impl PLKCMGDEDCK {
         }
     }
 
-    // .ENJHDLHKINO NJKJNBDBOCA = 978;
-
-    pub fn NJKJNBDBOCA(&self) -> &super::ENJHDLHKINO::ENJHDLHKINO {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(ref v)) => v,
-            _ => <super::ENJHDLHKINO::ENJHDLHKINO as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NJKJNBDBOCA(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
-    }
-
-    pub fn has_NJKJNBDBOCA(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NJKJNBDBOCA(&mut self, v: super::ENJHDLHKINO::ENJHDLHKINO) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NJKJNBDBOCA(&mut self) -> &mut super::ENJHDLHKINO::ENJHDLHKINO {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(_)) = self.PPHBGCABELF {
-        } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(super::ENJHDLHKINO::ENJHDLHKINO::new()));
-        }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NJKJNBDBOCA(&mut self) -> super::ENJHDLHKINO::ENJHDLHKINO {
-        if self.has_NJKJNBDBOCA() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ENJHDLHKINO::ENJHDLHKINO::new()
-        }
-    }
-
-    // .FNOGHGHPJPD LGJGBIGHONP = 1524;
-
-    pub fn LGJGBIGHONP(&self) -> &super::FNOGHGHPJPD::FNOGHGHPJPD {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(ref v)) => v,
-            _ => <super::FNOGHGHPJPD::FNOGHGHPJPD as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LGJGBIGHONP(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
-    }
-
-    pub fn has_LGJGBIGHONP(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LGJGBIGHONP(&mut self, v: super::FNOGHGHPJPD::FNOGHGHPJPD) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LGJGBIGHONP(&mut self) -> &mut super::FNOGHGHPJPD::FNOGHGHPJPD {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(_)) = self.PPHBGCABELF {
-        } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(super::FNOGHGHPJPD::FNOGHGHPJPD::new()));
-        }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LGJGBIGHONP(&mut self) -> super::FNOGHGHPJPD::FNOGHGHPJPD {
-        if self.has_LGJGBIGHONP() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::FNOGHGHPJPD::FNOGHGHPJPD::new()
-        }
-    }
-
-    // .HAKMEBIAJCF DGNKBNGIPKI = 1363;
-
-    pub fn DGNKBNGIPKI(&self) -> &super::HAKMEBIAJCF::HAKMEBIAJCF {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(ref v)) => v,
-            _ => <super::HAKMEBIAJCF::HAKMEBIAJCF as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DGNKBNGIPKI(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
-    }
-
-    pub fn has_DGNKBNGIPKI(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DGNKBNGIPKI(&mut self, v: super::HAKMEBIAJCF::HAKMEBIAJCF) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DGNKBNGIPKI(&mut self) -> &mut super::HAKMEBIAJCF::HAKMEBIAJCF {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(_)) = self.PPHBGCABELF {
-        } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(super::HAKMEBIAJCF::HAKMEBIAJCF::new()));
-        }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DGNKBNGIPKI(&mut self) -> super::HAKMEBIAJCF::HAKMEBIAJCF {
-        if self.has_DGNKBNGIPKI() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HAKMEBIAJCF::HAKMEBIAJCF::new()
-        }
-    }
-
-    // .JLDHCFGGEAO MKKPCHHNHCJ = 654;
-
-    pub fn MKKPCHHNHCJ(&self) -> &super::JLDHCFGGEAO::JLDHCFGGEAO {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(ref v)) => v,
-            _ => <super::JLDHCFGGEAO::JLDHCFGGEAO as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MKKPCHHNHCJ(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
-    }
-
-    pub fn has_MKKPCHHNHCJ(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MKKPCHHNHCJ(&mut self, v: super::JLDHCFGGEAO::JLDHCFGGEAO) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MKKPCHHNHCJ(&mut self) -> &mut super::JLDHCFGGEAO::JLDHCFGGEAO {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(_)) = self.PPHBGCABELF {
-        } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(super::JLDHCFGGEAO::JLDHCFGGEAO::new()));
-        }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MKKPCHHNHCJ(&mut self) -> super::JLDHCFGGEAO::JLDHCFGGEAO {
-        if self.has_MKKPCHHNHCJ() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JLDHCFGGEAO::JLDHCFGGEAO::new()
-        }
-    }
-
-    // .HMOPIBLFCLN PKPJEFGGBOO = 2042;
+    // .HMOPIBLFCLN PKPJEFGGBOO = 1598;
 
     pub fn PKPJEFGGBOO(&self) -> &super::HMOPIBLFCLN::HMOPIBLFCLN {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(ref v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(ref v)) => v,
             _ => <super::HMOPIBLFCLN::HMOPIBLFCLN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_PKPJEFGGBOO(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
     }
 
     pub fn has_PKPJEFGGBOO(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(..)) => true,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_PKPJEFGGBOO(&mut self, v: super::HMOPIBLFCLN::HMOPIBLFCLN) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(v))
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_PKPJEFGGBOO(&mut self) -> &mut super::HMOPIBLFCLN::HMOPIBLFCLN {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(_)) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(_)) = self.LGNAKLFMHFF {
         } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(super::HMOPIBLFCLN::HMOPIBLFCLN::new()));
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(super::HMOPIBLFCLN::HMOPIBLFCLN::new()));
         }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(ref mut v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -382,8 +137,8 @@ impl PLKCMGDEDCK {
     // Take field
     pub fn take_PKPJEFGGBOO(&mut self) -> super::HMOPIBLFCLN::HMOPIBLFCLN {
         if self.has_PKPJEFGGBOO() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(v)) => v,
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -391,39 +146,284 @@ impl PLKCMGDEDCK {
         }
     }
 
-    // .PFGIAHAIDLM NHACNNJPALP = 1837;
+    // .HBCINIKPAFI LNMMKFMEAJM = 785;
+
+    pub fn LNMMKFMEAJM(&self) -> &super::HBCINIKPAFI::HBCINIKPAFI {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(ref v)) => v,
+            _ => <super::HBCINIKPAFI::HBCINIKPAFI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LNMMKFMEAJM(&mut self) {
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+    }
+
+    pub fn has_LNMMKFMEAJM(&self) -> bool {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LNMMKFMEAJM(&mut self, v: super::HBCINIKPAFI::HBCINIKPAFI) {
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LNMMKFMEAJM(&mut self) -> &mut super::HBCINIKPAFI::HBCINIKPAFI {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(_)) = self.LGNAKLFMHFF {
+        } else {
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(super::HBCINIKPAFI::HBCINIKPAFI::new()));
+        }
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LNMMKFMEAJM(&mut self) -> super::HBCINIKPAFI::HBCINIKPAFI {
+        if self.has_LNMMKFMEAJM() {
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HBCINIKPAFI::HBCINIKPAFI::new()
+        }
+    }
+
+    // .ENJHDLHKINO NJKJNBDBOCA = 341;
+
+    pub fn NJKJNBDBOCA(&self) -> &super::ENJHDLHKINO::ENJHDLHKINO {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(ref v)) => v,
+            _ => <super::ENJHDLHKINO::ENJHDLHKINO as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NJKJNBDBOCA(&mut self) {
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+    }
+
+    pub fn has_NJKJNBDBOCA(&self) -> bool {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NJKJNBDBOCA(&mut self, v: super::ENJHDLHKINO::ENJHDLHKINO) {
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NJKJNBDBOCA(&mut self) -> &mut super::ENJHDLHKINO::ENJHDLHKINO {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(_)) = self.LGNAKLFMHFF {
+        } else {
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(super::ENJHDLHKINO::ENJHDLHKINO::new()));
+        }
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NJKJNBDBOCA(&mut self) -> super::ENJHDLHKINO::ENJHDLHKINO {
+        if self.has_NJKJNBDBOCA() {
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ENJHDLHKINO::ENJHDLHKINO::new()
+        }
+    }
+
+    // .FNOGHGHPJPD LGJGBIGHONP = 77;
+
+    pub fn LGJGBIGHONP(&self) -> &super::FNOGHGHPJPD::FNOGHGHPJPD {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(ref v)) => v,
+            _ => <super::FNOGHGHPJPD::FNOGHGHPJPD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LGJGBIGHONP(&mut self) {
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+    }
+
+    pub fn has_LGJGBIGHONP(&self) -> bool {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LGJGBIGHONP(&mut self, v: super::FNOGHGHPJPD::FNOGHGHPJPD) {
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LGJGBIGHONP(&mut self) -> &mut super::FNOGHGHPJPD::FNOGHGHPJPD {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(_)) = self.LGNAKLFMHFF {
+        } else {
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(super::FNOGHGHPJPD::FNOGHGHPJPD::new()));
+        }
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LGJGBIGHONP(&mut self) -> super::FNOGHGHPJPD::FNOGHGHPJPD {
+        if self.has_LGJGBIGHONP() {
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::FNOGHGHPJPD::FNOGHGHPJPD::new()
+        }
+    }
+
+    // .JLDHCFGGEAO MKKPCHHNHCJ = 369;
+
+    pub fn MKKPCHHNHCJ(&self) -> &super::JLDHCFGGEAO::JLDHCFGGEAO {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(ref v)) => v,
+            _ => <super::JLDHCFGGEAO::JLDHCFGGEAO as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MKKPCHHNHCJ(&mut self) {
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+    }
+
+    pub fn has_MKKPCHHNHCJ(&self) -> bool {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MKKPCHHNHCJ(&mut self, v: super::JLDHCFGGEAO::JLDHCFGGEAO) {
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MKKPCHHNHCJ(&mut self) -> &mut super::JLDHCFGGEAO::JLDHCFGGEAO {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(_)) = self.LGNAKLFMHFF {
+        } else {
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(super::JLDHCFGGEAO::JLDHCFGGEAO::new()));
+        }
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MKKPCHHNHCJ(&mut self) -> super::JLDHCFGGEAO::JLDHCFGGEAO {
+        if self.has_MKKPCHHNHCJ() {
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JLDHCFGGEAO::JLDHCFGGEAO::new()
+        }
+    }
+
+    // .HAKMEBIAJCF DGNKBNGIPKI = 178;
+
+    pub fn DGNKBNGIPKI(&self) -> &super::HAKMEBIAJCF::HAKMEBIAJCF {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(ref v)) => v,
+            _ => <super::HAKMEBIAJCF::HAKMEBIAJCF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DGNKBNGIPKI(&mut self) {
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+    }
+
+    pub fn has_DGNKBNGIPKI(&self) -> bool {
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DGNKBNGIPKI(&mut self, v: super::HAKMEBIAJCF::HAKMEBIAJCF) {
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DGNKBNGIPKI(&mut self) -> &mut super::HAKMEBIAJCF::HAKMEBIAJCF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(_)) = self.LGNAKLFMHFF {
+        } else {
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(super::HAKMEBIAJCF::HAKMEBIAJCF::new()));
+        }
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DGNKBNGIPKI(&mut self) -> super::HAKMEBIAJCF::HAKMEBIAJCF {
+        if self.has_DGNKBNGIPKI() {
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HAKMEBIAJCF::HAKMEBIAJCF::new()
+        }
+    }
+
+    // .PFGIAHAIDLM NHACNNJPALP = 1865;
 
     pub fn NHACNNJPALP(&self) -> &super::PFGIAHAIDLM::PFGIAHAIDLM {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(ref v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(ref v)) => v,
             _ => <super::PFGIAHAIDLM::PFGIAHAIDLM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_NHACNNJPALP(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
     }
 
     pub fn has_NHACNNJPALP(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(..)) => true,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_NHACNNJPALP(&mut self, v: super::PFGIAHAIDLM::PFGIAHAIDLM) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(v))
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_NHACNNJPALP(&mut self) -> &mut super::PFGIAHAIDLM::PFGIAHAIDLM {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(_)) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(_)) = self.LGNAKLFMHFF {
         } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(super::PFGIAHAIDLM::PFGIAHAIDLM::new()));
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(super::PFGIAHAIDLM::PFGIAHAIDLM::new()));
         }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(ref mut v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -431,8 +431,8 @@ impl PLKCMGDEDCK {
     // Take field
     pub fn take_NHACNNJPALP(&mut self) -> super::PFGIAHAIDLM::PFGIAHAIDLM {
         if self.has_NHACNNJPALP() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(v)) => v,
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -440,39 +440,39 @@ impl PLKCMGDEDCK {
         }
     }
 
-    // .JHMNLCOBJCJ AHPDPOOLJLE = 363;
+    // .JHMNLCOBJCJ AHPDPOOLJLE = 818;
 
     pub fn AHPDPOOLJLE(&self) -> &super::JHMNLCOBJCJ::JHMNLCOBJCJ {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(ref v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(ref v)) => v,
             _ => <super::JHMNLCOBJCJ::JHMNLCOBJCJ as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_AHPDPOOLJLE(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
     }
 
     pub fn has_AHPDPOOLJLE(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(..)) => true,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_AHPDPOOLJLE(&mut self, v: super::JHMNLCOBJCJ::JHMNLCOBJCJ) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(v))
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_AHPDPOOLJLE(&mut self) -> &mut super::JHMNLCOBJCJ::JHMNLCOBJCJ {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(_)) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(_)) = self.LGNAKLFMHFF {
         } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(super::JHMNLCOBJCJ::JHMNLCOBJCJ::new()));
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(super::JHMNLCOBJCJ::JHMNLCOBJCJ::new()));
         }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(ref mut v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -480,8 +480,8 @@ impl PLKCMGDEDCK {
     // Take field
     pub fn take_AHPDPOOLJLE(&mut self) -> super::JHMNLCOBJCJ::JHMNLCOBJCJ {
         if self.has_AHPDPOOLJLE() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(v)) => v,
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -489,39 +489,39 @@ impl PLKCMGDEDCK {
         }
     }
 
-    // .FKJLBFNIGGM AFMIEICDNEA = 1788;
+    // .FKJLBFNIGGM AFMIEICDNEA = 354;
 
     pub fn AFMIEICDNEA(&self) -> &super::FKJLBFNIGGM::FKJLBFNIGGM {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(ref v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(ref v)) => v,
             _ => <super::FKJLBFNIGGM::FKJLBFNIGGM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_AFMIEICDNEA(&mut self) {
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
     }
 
     pub fn has_AFMIEICDNEA(&self) -> bool {
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(..)) => true,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_AFMIEICDNEA(&mut self, v: super::FKJLBFNIGGM::FKJLBFNIGGM) {
-        self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(v))
+        self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_AFMIEICDNEA(&mut self) -> &mut super::FKJLBFNIGGM::FKJLBFNIGGM {
-        if let ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(_)) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(_)) = self.LGNAKLFMHFF {
         } else {
-            self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(super::FKJLBFNIGGM::FKJLBFNIGGM::new()));
+            self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(super::FKJLBFNIGGM::FKJLBFNIGGM::new()));
         }
-        match self.PPHBGCABELF {
-            ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(ref mut v)) => v,
+        match self.LGNAKLFMHFF {
+            ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -529,8 +529,8 @@ impl PLKCMGDEDCK {
     // Take field
     pub fn take_AFMIEICDNEA(&mut self) -> super::FKJLBFNIGGM::FKJLBFNIGGM {
         if self.has_AFMIEICDNEA() {
-            match self.PPHBGCABELF.take() {
-                ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(v)) => v,
+            match self.LGNAKLFMHFF.take() {
+                ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -541,10 +541,19 @@ impl PLKCMGDEDCK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "src",
-            |m: &PLKCMGDEDCK| { &m.src },
-            |m: &mut PLKCMGDEDCK| { &mut m.src },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IBOMHKHBAAO::IBOMHKHBAAO>(
+            "FPFDJNDNPIM",
+            PLKCMGDEDCK::has_FPFDJNDNPIM,
+            PLKCMGDEDCK::FPFDJNDNPIM,
+            PLKCMGDEDCK::mut_FPFDJNDNPIM,
+            PLKCMGDEDCK::set_FPFDJNDNPIM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMOPIBLFCLN::HMOPIBLFCLN>(
+            "PKPJEFGGBOO",
+            PLKCMGDEDCK::has_PKPJEFGGBOO,
+            PLKCMGDEDCK::PKPJEFGGBOO,
+            PLKCMGDEDCK::mut_PKPJEFGGBOO,
+            PLKCMGDEDCK::set_PKPJEFGGBOO,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HBCINIKPAFI::HBCINIKPAFI>(
             "LNMMKFMEAJM",
@@ -552,13 +561,6 @@ impl PLKCMGDEDCK {
             PLKCMGDEDCK::LNMMKFMEAJM,
             PLKCMGDEDCK::mut_LNMMKFMEAJM,
             PLKCMGDEDCK::set_LNMMKFMEAJM,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IBOMHKHBAAO::IBOMHKHBAAO>(
-            "FPFDJNDNPIM",
-            PLKCMGDEDCK::has_FPFDJNDNPIM,
-            PLKCMGDEDCK::FPFDJNDNPIM,
-            PLKCMGDEDCK::mut_FPFDJNDNPIM,
-            PLKCMGDEDCK::set_FPFDJNDNPIM,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ENJHDLHKINO::ENJHDLHKINO>(
             "NJKJNBDBOCA",
@@ -574,13 +576,6 @@ impl PLKCMGDEDCK {
             PLKCMGDEDCK::mut_LGJGBIGHONP,
             PLKCMGDEDCK::set_LGJGBIGHONP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HAKMEBIAJCF::HAKMEBIAJCF>(
-            "DGNKBNGIPKI",
-            PLKCMGDEDCK::has_DGNKBNGIPKI,
-            PLKCMGDEDCK::DGNKBNGIPKI,
-            PLKCMGDEDCK::mut_DGNKBNGIPKI,
-            PLKCMGDEDCK::set_DGNKBNGIPKI,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JLDHCFGGEAO::JLDHCFGGEAO>(
             "MKKPCHHNHCJ",
             PLKCMGDEDCK::has_MKKPCHHNHCJ,
@@ -588,12 +583,12 @@ impl PLKCMGDEDCK {
             PLKCMGDEDCK::mut_MKKPCHHNHCJ,
             PLKCMGDEDCK::set_MKKPCHHNHCJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMOPIBLFCLN::HMOPIBLFCLN>(
-            "PKPJEFGGBOO",
-            PLKCMGDEDCK::has_PKPJEFGGBOO,
-            PLKCMGDEDCK::PKPJEFGGBOO,
-            PLKCMGDEDCK::mut_PKPJEFGGBOO,
-            PLKCMGDEDCK::set_PKPJEFGGBOO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HAKMEBIAJCF::HAKMEBIAJCF>(
+            "DGNKBNGIPKI",
+            PLKCMGDEDCK::has_DGNKBNGIPKI,
+            PLKCMGDEDCK::DGNKBNGIPKI,
+            PLKCMGDEDCK::mut_DGNKBNGIPKI,
+            PLKCMGDEDCK::set_DGNKBNGIPKI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PFGIAHAIDLM::PFGIAHAIDLM>(
             "NHACNNJPALP",
@@ -616,7 +611,12 @@ impl PLKCMGDEDCK {
             PLKCMGDEDCK::mut_AFMIEICDNEA,
             PLKCMGDEDCK::set_AFMIEICDNEA,
         ));
-        oneofs.push(plkcmgdedck::PPHBGCABELF::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "src",
+            |m: &PLKCMGDEDCK| { &m.src },
+            |m: &mut PLKCMGDEDCK| { &mut m.src },
+        ));
+        oneofs.push(plkcmgdedck::LGNAKLFMHFF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PLKCMGDEDCK>(
             "PLKCMGDEDCK",
             fields,
@@ -635,38 +635,38 @@ impl ::protobuf::Message for PLKCMGDEDCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                7498 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(is.read_message()?));
+                },
+                12786 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(is.read_message()?));
+                },
+                6282 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(is.read_message()?));
+                },
+                2730 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(is.read_message()?));
+                },
+                618 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(is.read_message()?));
+                },
+                2954 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(is.read_message()?));
+                },
+                1426 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(is.read_message()?));
+                },
+                14922 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(is.read_message()?));
+                },
+                6546 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(is.read_message()?));
+                },
+                2834 => {
+                    self.LGNAKLFMHFF = ::std::option::Option::Some(plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(is.read_message()?));
+                },
+                72 => {
                     self.src = is.read_enum_or_unknown()?;
-                },
-                4242 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(is.read_message()?));
-                },
-                10170 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(is.read_message()?));
-                },
-                7826 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(is.read_message()?));
-                },
-                12194 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(is.read_message()?));
-                },
-                10906 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(is.read_message()?));
-                },
-                5234 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(is.read_message()?));
-                },
-                16338 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(is.read_message()?));
-                },
-                14698 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::NHACNNJPALP(is.read_message()?));
-                },
-                2906 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(is.read_message()?));
-                },
-                14306 => {
-                    self.PPHBGCABELF = ::std::option::Option::Some(plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -680,48 +680,48 @@ impl ::protobuf::Message for PLKCMGDEDCK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.src != ::protobuf::EnumOrUnknown::new(super::CBEJAJENOHJ::CBEJAJENOHJ::kTrainPartySrcNone) {
-            my_size += ::protobuf::rt::int32_size(1, self.src.value());
+        if self.src != ::protobuf::EnumOrUnknown::new(super::TrainPartySrcType::TrainPartySrcType::kTrainPartySrcNone) {
+            my_size += ::protobuf::rt::int32_size(9, self.src.value());
         }
-        if let ::std::option::Option::Some(ref v) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(ref v) = self.LGNAKLFMHFF {
             match v {
-                &plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::NHACNNJPALP(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(ref v) => {
+                &plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -733,40 +733,40 @@ impl ::protobuf::Message for PLKCMGDEDCK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.src != ::protobuf::EnumOrUnknown::new(super::CBEJAJENOHJ::CBEJAJENOHJ::kTrainPartySrcNone) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.src))?;
+        if self.src != ::protobuf::EnumOrUnknown::new(super::TrainPartySrcType::TrainPartySrcType::kTrainPartySrcNone) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.src))?;
         }
-        if let ::std::option::Option::Some(ref v) = self.PPHBGCABELF {
+        if let ::std::option::Option::Some(ref v) = self.LGNAKLFMHFF {
             match v {
-                &plkcmgdedck::PPHBGCABELF::LNMMKFMEAJM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(530, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::FPFDJNDNPIM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(937, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::FPFDJNDNPIM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1271, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::PKPJEFGGBOO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1598, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::NJKJNBDBOCA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(978, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::LNMMKFMEAJM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(785, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::LGJGBIGHONP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1524, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::NJKJNBDBOCA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(341, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::DGNKBNGIPKI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1363, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::LGJGBIGHONP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(77, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::MKKPCHHNHCJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(654, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::MKKPCHHNHCJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(369, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::PKPJEFGGBOO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2042, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::DGNKBNGIPKI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(178, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::NHACNNJPALP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1837, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::NHACNNJPALP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1865, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::AHPDPOOLJLE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(363, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::AHPDPOOLJLE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(818, v, os)?;
                 },
-                &plkcmgdedck::PPHBGCABELF::AFMIEICDNEA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1788, v, os)?;
+                &plkcmgdedck::LGNAKLFMHFF::AFMIEICDNEA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(354, v, os)?;
                 },
             };
         }
@@ -787,24 +787,24 @@ impl ::protobuf::Message for PLKCMGDEDCK {
     }
 
     fn clear(&mut self) {
-        self.src = ::protobuf::EnumOrUnknown::new(super::CBEJAJENOHJ::CBEJAJENOHJ::kTrainPartySrcNone);
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
-        self.PPHBGCABELF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.LGNAKLFMHFF = ::std::option::Option::None;
+        self.src = ::protobuf::EnumOrUnknown::new(super::TrainPartySrcType::TrainPartySrcType::kTrainPartySrcNone);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PLKCMGDEDCK {
         static instance: PLKCMGDEDCK = PLKCMGDEDCK {
             src: ::protobuf::EnumOrUnknown::from_i32(0),
-            PPHBGCABELF: ::std::option::Option::None,
+            LGNAKLFMHFF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -833,22 +833,22 @@ pub mod plkcmgdedck {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:PLKCMGDEDCK.PPHBGCABELF)
-    pub enum PPHBGCABELF {
-        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.LNMMKFMEAJM)
-        LNMMKFMEAJM(super::super::HBCINIKPAFI::HBCINIKPAFI),
+    // @@protoc_insertion_point(oneof:PLKCMGDEDCK.LGNAKLFMHFF)
+    pub enum LGNAKLFMHFF {
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.FPFDJNDNPIM)
         FPFDJNDNPIM(super::super::IBOMHKHBAAO::IBOMHKHBAAO),
+        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.PKPJEFGGBOO)
+        PKPJEFGGBOO(super::super::HMOPIBLFCLN::HMOPIBLFCLN),
+        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.LNMMKFMEAJM)
+        LNMMKFMEAJM(super::super::HBCINIKPAFI::HBCINIKPAFI),
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.NJKJNBDBOCA)
         NJKJNBDBOCA(super::super::ENJHDLHKINO::ENJHDLHKINO),
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.LGJGBIGHONP)
         LGJGBIGHONP(super::super::FNOGHGHPJPD::FNOGHGHPJPD),
-        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.DGNKBNGIPKI)
-        DGNKBNGIPKI(super::super::HAKMEBIAJCF::HAKMEBIAJCF),
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.MKKPCHHNHCJ)
         MKKPCHHNHCJ(super::super::JLDHCFGGEAO::JLDHCFGGEAO),
-        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.PKPJEFGGBOO)
-        PKPJEFGGBOO(super::super::HMOPIBLFCLN::HMOPIBLFCLN),
+        // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.DGNKBNGIPKI)
+        DGNKBNGIPKI(super::super::HAKMEBIAJCF::HAKMEBIAJCF),
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.NHACNNJPALP)
         NHACNNJPALP(super::super::PFGIAHAIDLM::PFGIAHAIDLM),
         // @@protoc_insertion_point(oneof_field:PLKCMGDEDCK.AHPDPOOLJLE)
@@ -857,42 +857,42 @@ pub mod plkcmgdedck {
         AFMIEICDNEA(super::super::FKJLBFNIGGM::FKJLBFNIGGM),
     }
 
-    impl ::protobuf::Oneof for PPHBGCABELF {
+    impl ::protobuf::Oneof for LGNAKLFMHFF {
     }
 
-    impl ::protobuf::OneofFull for PPHBGCABELF {
+    impl ::protobuf::OneofFull for LGNAKLFMHFF {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::PLKCMGDEDCK as ::protobuf::MessageFull>::descriptor().oneof_by_name("PPHBGCABELF").unwrap()).clone()
+            descriptor.get(|| <super::PLKCMGDEDCK as ::protobuf::MessageFull>::descriptor().oneof_by_name("LGNAKLFMHFF").unwrap()).clone()
         }
     }
 
-    impl PPHBGCABELF {
+    impl LGNAKLFMHFF {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PPHBGCABELF>("PPHBGCABELF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LGNAKLFMHFF>("LGNAKLFMHFF")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PLKCMGDEDCK.proto\x1a\x11CBEJAJENOHJ.proto\x1a\x11ENJHDLHKINO.prot\
-    o\x1a\x11FKJLBFNIGGM.proto\x1a\x11FNOGHGHPJPD.proto\x1a\x11HAKMEBIAJCF.p\
-    roto\x1a\x11HBCINIKPAFI.proto\x1a\x11HMOPIBLFCLN.proto\x1a\x11IBOMHKHBAA\
-    O.proto\x1a\x11JHMNLCOBJCJ.proto\x1a\x11JLDHCFGGEAO.proto\x1a\x11PFGIAHA\
-    IDLM.proto\"\xba\x04\n\x0bPLKCMGDEDCK\x12\x1e\n\x03src\x18\x01\x20\x01(\
-    \x0e2\x0c.CBEJAJENOHJR\x03src\x121\n\x0bLNMMKFMEAJM\x18\x92\x04\x20\x01(\
-    \x0b2\x0c.HBCINIKPAFIH\0R\x0bLNMMKFMEAJM\x121\n\x0bFPFDJNDNPIM\x18\xf7\t\
-    \x20\x01(\x0b2\x0c.IBOMHKHBAAOH\0R\x0bFPFDJNDNPIM\x121\n\x0bNJKJNBDBOCA\
-    \x18\xd2\x07\x20\x01(\x0b2\x0c.ENJHDLHKINOH\0R\x0bNJKJNBDBOCA\x121\n\x0b\
-    LGJGBIGHONP\x18\xf4\x0b\x20\x01(\x0b2\x0c.FNOGHGHPJPDH\0R\x0bLGJGBIGHONP\
-    \x121\n\x0bDGNKBNGIPKI\x18\xd3\n\x20\x01(\x0b2\x0c.HAKMEBIAJCFH\0R\x0bDG\
-    NKBNGIPKI\x121\n\x0bMKKPCHHNHCJ\x18\x8e\x05\x20\x01(\x0b2\x0c.JLDHCFGGEA\
-    OH\0R\x0bMKKPCHHNHCJ\x121\n\x0bPKPJEFGGBOO\x18\xfa\x0f\x20\x01(\x0b2\x0c\
-    .HMOPIBLFCLNH\0R\x0bPKPJEFGGBOO\x121\n\x0bNHACNNJPALP\x18\xad\x0e\x20\
-    \x01(\x0b2\x0c.PFGIAHAIDLMH\0R\x0bNHACNNJPALP\x121\n\x0bAHPDPOOLJLE\x18\
-    \xeb\x02\x20\x01(\x0b2\x0c.JHMNLCOBJCJH\0R\x0bAHPDPOOLJLE\x121\n\x0bAFMI\
-    EICDNEA\x18\xfc\r\x20\x01(\x0b2\x0c.FKJLBFNIGGMH\0R\x0bAFMIEICDNEAB\r\n\
-    \x0bPPHBGCABELFb\x06proto3\
+    \n\x11PLKCMGDEDCK.proto\x1a\x11ENJHDLHKINO.proto\x1a\x11FKJLBFNIGGM.prot\
+    o\x1a\x11FNOGHGHPJPD.proto\x1a\x11HAKMEBIAJCF.proto\x1a\x11HBCINIKPAFI.p\
+    roto\x1a\x11HMOPIBLFCLN.proto\x1a\x11IBOMHKHBAAO.proto\x1a\x11JHMNLCOBJC\
+    J.proto\x1a\x11JLDHCFGGEAO.proto\x1a\x11PFGIAHAIDLM.proto\x1a\x17TrainPa\
+    rtySrcType.proto\"\xbf\x04\n\x0bPLKCMGDEDCK\x121\n\x0bFPFDJNDNPIM\x18\
+    \xa9\x07\x20\x01(\x0b2\x0c.IBOMHKHBAAOH\0R\x0bFPFDJNDNPIM\x121\n\x0bPKPJ\
+    EFGGBOO\x18\xbe\x0c\x20\x01(\x0b2\x0c.HMOPIBLFCLNH\0R\x0bPKPJEFGGBOO\x12\
+    1\n\x0bLNMMKFMEAJM\x18\x91\x06\x20\x01(\x0b2\x0c.HBCINIKPAFIH\0R\x0bLNMM\
+    KFMEAJM\x121\n\x0bNJKJNBDBOCA\x18\xd5\x02\x20\x01(\x0b2\x0c.ENJHDLHKINOH\
+    \0R\x0bNJKJNBDBOCA\x120\n\x0bLGJGBIGHONP\x18M\x20\x01(\x0b2\x0c.FNOGHGHP\
+    JPDH\0R\x0bLGJGBIGHONP\x121\n\x0bMKKPCHHNHCJ\x18\xf1\x02\x20\x01(\x0b2\
+    \x0c.JLDHCFGGEAOH\0R\x0bMKKPCHHNHCJ\x121\n\x0bDGNKBNGIPKI\x18\xb2\x01\
+    \x20\x01(\x0b2\x0c.HAKMEBIAJCFH\0R\x0bDGNKBNGIPKI\x121\n\x0bNHACNNJPALP\
+    \x18\xc9\x0e\x20\x01(\x0b2\x0c.PFGIAHAIDLMH\0R\x0bNHACNNJPALP\x121\n\x0b\
+    AHPDPOOLJLE\x18\xb2\x06\x20\x01(\x0b2\x0c.JHMNLCOBJCJH\0R\x0bAHPDPOOLJLE\
+    \x121\n\x0bAFMIEICDNEA\x18\xe2\x02\x20\x01(\x0b2\x0c.FKJLBFNIGGMH\0R\x0b\
+    AFMIEICDNEA\x12$\n\x03src\x18\t\x20\x01(\x0e2\x12.TrainPartySrcTypeR\x03\
+    srcB\r\n\x0bLGNAKLFMHFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -910,7 +910,6 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(11);
-            deps.push(super::CBEJAJENOHJ::file_descriptor().clone());
             deps.push(super::ENJHDLHKINO::file_descriptor().clone());
             deps.push(super::FKJLBFNIGGM::file_descriptor().clone());
             deps.push(super::FNOGHGHPJPD::file_descriptor().clone());
@@ -921,6 +920,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::JHMNLCOBJCJ::file_descriptor().clone());
             deps.push(super::JLDHCFGGEAO::file_descriptor().clone());
             deps.push(super::PFGIAHAIDLM::file_descriptor().clone());
+            deps.push(super::TrainPartySrcType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PLKCMGDEDCK::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchHandUpdateCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwitchHandUpdateCsReq.OPBHJAGOAGG)
-    pub OPBHJAGOAGG: ::protobuf::MessageField<super::HandInfo::HandInfo>,
-    // @@protoc_insertion_point(field:SwitchHandUpdateCsReq.CLBMGBFANLC)
-    pub CLBMGBFANLC: ::protobuf::MessageField<super::PMGECPBKJCJ::PMGECPBKJCJ>,
+    // @@protoc_insertion_point(field:SwitchHandUpdateCsReq.GGMFDBOGCBI)
+    pub GGMFDBOGCBI: ::protobuf::MessageField<super::PMGECPBKJCJ::PMGECPBKJCJ>,
+    // @@protoc_insertion_point(field:SwitchHandUpdateCsReq.MAKPOIMLKEO)
+    pub MAKPOIMLKEO: ::protobuf::MessageField<super::HandInfo::HandInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchHandUpdateCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SwitchHandUpdateCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HandInfo::HandInfo>(
-            "OPBHJAGOAGG",
-            |m: &SwitchHandUpdateCsReq| { &m.OPBHJAGOAGG },
-            |m: &mut SwitchHandUpdateCsReq| { &mut m.OPBHJAGOAGG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PMGECPBKJCJ::PMGECPBKJCJ>(
-            "CLBMGBFANLC",
-            |m: &SwitchHandUpdateCsReq| { &m.CLBMGBFANLC },
-            |m: &mut SwitchHandUpdateCsReq| { &mut m.CLBMGBFANLC },
+            "GGMFDBOGCBI",
+            |m: &SwitchHandUpdateCsReq| { &m.GGMFDBOGCBI },
+            |m: &mut SwitchHandUpdateCsReq| { &mut m.GGMFDBOGCBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HandInfo::HandInfo>(
+            "MAKPOIMLKEO",
+            |m: &SwitchHandUpdateCsReq| { &m.MAKPOIMLKEO },
+            |m: &mut SwitchHandUpdateCsReq| { &mut m.MAKPOIMLKEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchHandUpdateCsReq>(
             "SwitchHandUpdateCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPBHJAGOAGG)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGMFDBOGCBI)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLBMGBFANLC)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MAKPOIMLKEO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OPBHJAGOAGG.as_ref() {
+        if let Some(v) = self.GGMFDBOGCBI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CLBMGBFANLC.as_ref() {
+        if let Some(v) = self.MAKPOIMLKEO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OPBHJAGOAGG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.GGMFDBOGCBI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.CLBMGBFANLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.MAKPOIMLKEO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SwitchHandUpdateCsReq {
     }
 
     fn clear(&mut self) {
-        self.OPBHJAGOAGG.clear();
-        self.CLBMGBFANLC.clear();
+        self.GGMFDBOGCBI.clear();
+        self.MAKPOIMLKEO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchHandUpdateCsReq {
         static instance: SwitchHandUpdateCsReq = SwitchHandUpdateCsReq {
-            OPBHJAGOAGG: ::protobuf::MessageField::none(),
-            CLBMGBFANLC: ::protobuf::MessageField::none(),
+            GGMFDBOGCBI: ::protobuf::MessageField::none(),
+            MAKPOIMLKEO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandUpdateCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSwitchHandUpdateCsReq.proto\x1a\x0eHandInfo.proto\x1a\x11PMGECPBKJ\
-    CJ.proto\"t\n\x15SwitchHandUpdateCsReq\x12+\n\x0bOPBHJAGOAGG\x18\x0e\x20\
-    \x01(\x0b2\t.HandInfoR\x0bOPBHJAGOAGG\x12.\n\x0bCLBMGBFANLC\x18\x02\x20\
-    \x01(\x0b2\x0c.PMGECPBKJCJR\x0bCLBMGBFANLCb\x06proto3\
+    CJ.proto\"t\n\x15SwitchHandUpdateCsReq\x12.\n\x0bGGMFDBOGCBI\x18\x03\x20\
+    \x01(\x0b2\x0c.PMGECPBKJCJR\x0bGGMFDBOGCBI\x12+\n\x0bMAKPOIMLKEO\x18\x0c\
+    \x20\x01(\x0b2\t.HandInfoR\x0bMAKPOIMLKEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

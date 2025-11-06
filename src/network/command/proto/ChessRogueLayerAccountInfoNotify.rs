@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueLayerAccountInfoNotify {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.KKOILFNDLAN)
+    pub KKOILFNDLAN: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
     // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.layer_id)
     pub layer_id: u32,
-    // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.BOIKABLFKEC)
-    pub BOIKABLFKEC: ::protobuf::MessageField<super::ChessRogueFinishInfo::ChessRogueFinishInfo>,
     // @@protoc_insertion_point(field:ChessRogueLayerAccountInfoNotify.difficulty_level)
     pub difficulty_level: u32,
     // special fields
@@ -53,15 +53,15 @@ impl ChessRogueLayerAccountInfoNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
+            "KKOILFNDLAN",
+            |m: &ChessRogueLayerAccountInfoNotify| { &m.KKOILFNDLAN },
+            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.KKOILFNDLAN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "layer_id",
             |m: &ChessRogueLayerAccountInfoNotify| { &m.layer_id },
             |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.layer_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChessRogueFinishInfo::ChessRogueFinishInfo>(
-            "BOIKABLFKEC",
-            |m: &ChessRogueLayerAccountInfoNotify| { &m.BOIKABLFKEC },
-            |m: &mut ChessRogueLayerAccountInfoNotify| { &mut m.BOIKABLFKEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "difficulty_level",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KKOILFNDLAN)?;
+                },
+                56 => {
                     self.layer_id = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOIKABLFKEC)?;
-                },
-                40 => {
+                80 => {
                     self.difficulty_level = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.layer_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.layer_id);
-        }
-        if let Some(v) = self.BOIKABLFKEC.as_ref() {
+        if let Some(v) = self.KKOILFNDLAN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.layer_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.layer_id);
+        }
         if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.difficulty_level);
+            my_size += ::protobuf::rt::uint32_size(10, self.difficulty_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.layer_id != 0 {
-            os.write_uint32(14, self.layer_id)?;
-        }
-        if let Some(v) = self.BOIKABLFKEC.as_ref() {
+        if let Some(v) = self.KKOILFNDLAN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
+        if self.layer_id != 0 {
+            os.write_uint32(7, self.layer_id)?;
+        }
         if self.difficulty_level != 0 {
-            os.write_uint32(5, self.difficulty_level)?;
+            os.write_uint32(10, self.difficulty_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ChessRogueLayerAccountInfoNotify {
     }
 
     fn clear(&mut self) {
+        self.KKOILFNDLAN.clear();
         self.layer_id = 0;
-        self.BOIKABLFKEC.clear();
         self.difficulty_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueLayerAccountInfoNotify {
         static instance: ChessRogueLayerAccountInfoNotify = ChessRogueLayerAccountInfoNotify {
+            KKOILFNDLAN: ::protobuf::MessageField::none(),
             layer_id: 0,
-            BOIKABLFKEC: ::protobuf::MessageField::none(),
             difficulty_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLayerAccountInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&ChessRogueLayerAccountInfoNotify.proto\x1a\x1aChessRogueFinishInfo.pr\
-    oto\"\xa1\x01\n\x20ChessRogueLayerAccountInfoNotify\x12\x19\n\x08layer_i\
-    d\x18\x0e\x20\x01(\rR\x07layerId\x127\n\x0bBOIKABLFKEC\x18\x01\x20\x01(\
-    \x0b2\x15.ChessRogueFinishInfoR\x0bBOIKABLFKEC\x12)\n\x10difficulty_leve\
-    l\x18\x05\x20\x01(\rR\x0fdifficultyLevelb\x06proto3\
+    oto\"\xa1\x01\n\x20ChessRogueLayerAccountInfoNotify\x127\n\x0bKKOILFNDLA\
+    N\x18\x01\x20\x01(\x0b2\x15.ChessRogueFinishInfoR\x0bKKOILFNDLAN\x12\x19\
+    \n\x08layer_id\x18\x07\x20\x01(\rR\x07layerId\x12)\n\x10difficulty_level\
+    \x18\n\x20\x01(\rR\x0fdifficultyLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

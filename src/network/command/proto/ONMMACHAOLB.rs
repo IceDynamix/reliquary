@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONMMACHAOLB {
     // message fields
-    // @@protoc_insertion_point(field:ONMMACHAOLB.GBCHDBMBLIK)
-    pub GBCHDBMBLIK: u32,
-    // @@protoc_insertion_point(field:ONMMACHAOLB.DBCJBOJCEAC)
-    pub DBCJBOJCEAC: u32,
-    // @@protoc_insertion_point(field:ONMMACHAOLB.NCNAONIFPFM)
-    pub NCNAONIFPFM: bool,
-    // @@protoc_insertion_point(field:ONMMACHAOLB.PMHBDMJGDGJ)
-    pub PMHBDMJGDGJ: u32,
+    // @@protoc_insertion_point(field:ONMMACHAOLB.CHONPJBJPNG)
+    pub CHONPJBJPNG: u32,
+    // @@protoc_insertion_point(field:ONMMACHAOLB.BKKMFKBHFHJ)
+    pub BKKMFKBHFHJ: u32,
+    // @@protoc_insertion_point(field:ONMMACHAOLB.DAIHIMAIKOO)
+    pub DAIHIMAIKOO: u32,
     // @@protoc_insertion_point(field:ONMMACHAOLB.level_id)
     pub level_id: u32,
+    // @@protoc_insertion_point(field:ONMMACHAOLB.KEKPOOLNKOD)
+    pub KEKPOOLNKOD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ONMMACHAOLB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl ONMMACHAOLB {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBCHDBMBLIK",
-            |m: &ONMMACHAOLB| { &m.GBCHDBMBLIK },
-            |m: &mut ONMMACHAOLB| { &mut m.GBCHDBMBLIK },
+            "CHONPJBJPNG",
+            |m: &ONMMACHAOLB| { &m.CHONPJBJPNG },
+            |m: &mut ONMMACHAOLB| { &mut m.CHONPJBJPNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBCJBOJCEAC",
-            |m: &ONMMACHAOLB| { &m.DBCJBOJCEAC },
-            |m: &mut ONMMACHAOLB| { &mut m.DBCJBOJCEAC },
+            "BKKMFKBHFHJ",
+            |m: &ONMMACHAOLB| { &m.BKKMFKBHFHJ },
+            |m: &mut ONMMACHAOLB| { &mut m.BKKMFKBHFHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCNAONIFPFM",
-            |m: &ONMMACHAOLB| { &m.NCNAONIFPFM },
-            |m: &mut ONMMACHAOLB| { &mut m.NCNAONIFPFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMHBDMJGDGJ",
-            |m: &ONMMACHAOLB| { &m.PMHBDMJGDGJ },
-            |m: &mut ONMMACHAOLB| { &mut m.PMHBDMJGDGJ },
+            "DAIHIMAIKOO",
+            |m: &ONMMACHAOLB| { &m.DAIHIMAIKOO },
+            |m: &mut ONMMACHAOLB| { &mut m.DAIHIMAIKOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
             |m: &ONMMACHAOLB| { &m.level_id },
             |m: &mut ONMMACHAOLB| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KEKPOOLNKOD",
+            |m: &ONMMACHAOLB| { &m.KEKPOOLNKOD },
+            |m: &mut ONMMACHAOLB| { &mut m.KEKPOOLNKOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONMMACHAOLB>(
             "ONMMACHAOLB",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ONMMACHAOLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GBCHDBMBLIK = is.read_uint32()?;
+                8 => {
+                    self.CHONPJBJPNG = is.read_uint32()?;
                 },
                 48 => {
-                    self.DBCJBOJCEAC = is.read_uint32()?;
+                    self.BKKMFKBHFHJ = is.read_uint32()?;
                 },
-                64 => {
-                    self.NCNAONIFPFM = is.read_bool()?;
+                80 => {
+                    self.DAIHIMAIKOO = is.read_uint32()?;
                 },
-                120 => {
-                    self.PMHBDMJGDGJ = is.read_uint32()?;
-                },
-                16 => {
+                88 => {
                     self.level_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.KEKPOOLNKOD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for ONMMACHAOLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GBCHDBMBLIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GBCHDBMBLIK);
+        if self.CHONPJBJPNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CHONPJBJPNG);
         }
-        if self.DBCJBOJCEAC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DBCJBOJCEAC);
+        if self.BKKMFKBHFHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BKKMFKBHFHJ);
         }
-        if self.NCNAONIFPFM != false {
-            my_size += 1 + 1;
-        }
-        if self.PMHBDMJGDGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PMHBDMJGDGJ);
+        if self.DAIHIMAIKOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DAIHIMAIKOO);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.level_id);
+        }
+        if self.KEKPOOLNKOD != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for ONMMACHAOLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GBCHDBMBLIK != 0 {
-            os.write_uint32(4, self.GBCHDBMBLIK)?;
+        if self.CHONPJBJPNG != 0 {
+            os.write_uint32(1, self.CHONPJBJPNG)?;
         }
-        if self.DBCJBOJCEAC != 0 {
-            os.write_uint32(6, self.DBCJBOJCEAC)?;
+        if self.BKKMFKBHFHJ != 0 {
+            os.write_uint32(6, self.BKKMFKBHFHJ)?;
         }
-        if self.NCNAONIFPFM != false {
-            os.write_bool(8, self.NCNAONIFPFM)?;
-        }
-        if self.PMHBDMJGDGJ != 0 {
-            os.write_uint32(15, self.PMHBDMJGDGJ)?;
+        if self.DAIHIMAIKOO != 0 {
+            os.write_uint32(10, self.DAIHIMAIKOO)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(2, self.level_id)?;
+            os.write_uint32(11, self.level_id)?;
+        }
+        if self.KEKPOOLNKOD != false {
+            os.write_bool(13, self.KEKPOOLNKOD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ONMMACHAOLB {
     }
 
     fn clear(&mut self) {
-        self.GBCHDBMBLIK = 0;
-        self.DBCJBOJCEAC = 0;
-        self.NCNAONIFPFM = false;
-        self.PMHBDMJGDGJ = 0;
+        self.CHONPJBJPNG = 0;
+        self.BKKMFKBHFHJ = 0;
+        self.DAIHIMAIKOO = 0;
         self.level_id = 0;
+        self.KEKPOOLNKOD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONMMACHAOLB {
         static instance: ONMMACHAOLB = ONMMACHAOLB {
-            GBCHDBMBLIK: 0,
-            DBCJBOJCEAC: 0,
-            NCNAONIFPFM: false,
-            PMHBDMJGDGJ: 0,
+            CHONPJBJPNG: 0,
+            BKKMFKBHFHJ: 0,
+            DAIHIMAIKOO: 0,
             level_id: 0,
+            KEKPOOLNKOD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for ONMMACHAOLB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONMMACHAOLB.proto\"\xb0\x01\n\x0bONMMACHAOLB\x12\x20\n\x0bGBCHDBMB\
-    LIK\x18\x04\x20\x01(\rR\x0bGBCHDBMBLIK\x12\x20\n\x0bDBCJBOJCEAC\x18\x06\
-    \x20\x01(\rR\x0bDBCJBOJCEAC\x12\x20\n\x0bNCNAONIFPFM\x18\x08\x20\x01(\
-    \x08R\x0bNCNAONIFPFM\x12\x20\n\x0bPMHBDMJGDGJ\x18\x0f\x20\x01(\rR\x0bPMH\
-    BDMJGDGJ\x12\x19\n\x08level_id\x18\x02\x20\x01(\rR\x07levelIdb\x06proto3\
+    \n\x11ONMMACHAOLB.proto\"\xb0\x01\n\x0bONMMACHAOLB\x12\x20\n\x0bCHONPJBJ\
+    PNG\x18\x01\x20\x01(\rR\x0bCHONPJBJPNG\x12\x20\n\x0bBKKMFKBHFHJ\x18\x06\
+    \x20\x01(\rR\x0bBKKMFKBHFHJ\x12\x20\n\x0bDAIHIMAIKOO\x18\n\x20\x01(\rR\
+    \x0bDAIHIMAIKOO\x12\x19\n\x08level_id\x18\x0b\x20\x01(\rR\x07levelId\x12\
+    \x20\n\x0bKEKPOOLNKOD\x18\r\x20\x01(\x08R\x0bKEKPOOLNKODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

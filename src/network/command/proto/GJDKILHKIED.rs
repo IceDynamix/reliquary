@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GJDKILHKIED {
     // message fields
-    // @@protoc_insertion_point(field:GJDKILHKIED.IMHHILCMMGI)
-    pub IMHHILCMMGI: u32,
-    // @@protoc_insertion_point(field:GJDKILHKIED.HAHJHBFAEFC)
-    pub HAHJHBFAEFC: u32,
-    // @@protoc_insertion_point(field:GJDKILHKIED.BILEJKHIHJL)
-    pub BILEJKHIHJL: u32,
+    // @@protoc_insertion_point(field:GJDKILHKIED.HHBMEBIMDPM)
+    pub HHBMEBIMDPM: u32,
+    // @@protoc_insertion_point(field:GJDKILHKIED.BKFMKDPEBHB)
+    pub BKFMKDPEBHB: u32,
+    // @@protoc_insertion_point(field:GJDKILHKIED.HCJCJGJABFH)
+    pub HCJCJGJABFH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GJDKILHKIED.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GJDKILHKIED {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMHHILCMMGI",
-            |m: &GJDKILHKIED| { &m.IMHHILCMMGI },
-            |m: &mut GJDKILHKIED| { &mut m.IMHHILCMMGI },
+            "HHBMEBIMDPM",
+            |m: &GJDKILHKIED| { &m.HHBMEBIMDPM },
+            |m: &mut GJDKILHKIED| { &mut m.HHBMEBIMDPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HAHJHBFAEFC",
-            |m: &GJDKILHKIED| { &m.HAHJHBFAEFC },
-            |m: &mut GJDKILHKIED| { &mut m.HAHJHBFAEFC },
+            "BKFMKDPEBHB",
+            |m: &GJDKILHKIED| { &m.BKFMKDPEBHB },
+            |m: &mut GJDKILHKIED| { &mut m.BKFMKDPEBHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BILEJKHIHJL",
-            |m: &GJDKILHKIED| { &m.BILEJKHIHJL },
-            |m: &mut GJDKILHKIED| { &mut m.BILEJKHIHJL },
+            "HCJCJGJABFH",
+            |m: &GJDKILHKIED| { &m.HCJCJGJABFH },
+            |m: &mut GJDKILHKIED| { &mut m.HCJCJGJABFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GJDKILHKIED>(
             "GJDKILHKIED",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for GJDKILHKIED {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.IMHHILCMMGI = is.read_uint32()?;
+                    self.HHBMEBIMDPM = is.read_uint32()?;
                 },
                 16 => {
-                    self.HAHJHBFAEFC = is.read_uint32()?;
+                    self.BKFMKDPEBHB = is.read_uint32()?;
                 },
                 24 => {
-                    self.BILEJKHIHJL = is.read_uint32()?;
+                    self.HCJCJGJABFH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GJDKILHKIED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IMHHILCMMGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IMHHILCMMGI);
+        if self.HHBMEBIMDPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HHBMEBIMDPM);
         }
-        if self.HAHJHBFAEFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HAHJHBFAEFC);
+        if self.BKFMKDPEBHB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BKFMKDPEBHB);
         }
-        if self.BILEJKHIHJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BILEJKHIHJL);
+        if self.HCJCJGJABFH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HCJCJGJABFH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GJDKILHKIED {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IMHHILCMMGI != 0 {
-            os.write_uint32(1, self.IMHHILCMMGI)?;
+        if self.HHBMEBIMDPM != 0 {
+            os.write_uint32(1, self.HHBMEBIMDPM)?;
         }
-        if self.HAHJHBFAEFC != 0 {
-            os.write_uint32(2, self.HAHJHBFAEFC)?;
+        if self.BKFMKDPEBHB != 0 {
+            os.write_uint32(2, self.BKFMKDPEBHB)?;
         }
-        if self.BILEJKHIHJL != 0 {
-            os.write_uint32(3, self.BILEJKHIHJL)?;
+        if self.HCJCJGJABFH != 0 {
+            os.write_uint32(3, self.HCJCJGJABFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GJDKILHKIED {
     }
 
     fn clear(&mut self) {
-        self.IMHHILCMMGI = 0;
-        self.HAHJHBFAEFC = 0;
-        self.BILEJKHIHJL = 0;
+        self.HHBMEBIMDPM = 0;
+        self.BKFMKDPEBHB = 0;
+        self.HCJCJGJABFH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GJDKILHKIED {
         static instance: GJDKILHKIED = GJDKILHKIED {
-            IMHHILCMMGI: 0,
-            HAHJHBFAEFC: 0,
-            BILEJKHIHJL: 0,
+            HHBMEBIMDPM: 0,
+            BKFMKDPEBHB: 0,
+            HCJCJGJABFH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GJDKILHKIED {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJDKILHKIED.proto\"s\n\x0bGJDKILHKIED\x12\x20\n\x0bIMHHILCMMGI\x18\
-    \x01\x20\x01(\rR\x0bIMHHILCMMGI\x12\x20\n\x0bHAHJHBFAEFC\x18\x02\x20\x01\
-    (\rR\x0bHAHJHBFAEFC\x12\x20\n\x0bBILEJKHIHJL\x18\x03\x20\x01(\rR\x0bBILE\
-    JKHIHJLb\x06proto3\
+    \n\x11GJDKILHKIED.proto\"s\n\x0bGJDKILHKIED\x12\x20\n\x0bHHBMEBIMDPM\x18\
+    \x01\x20\x01(\rR\x0bHHBMEBIMDPM\x12\x20\n\x0bBKFMKDPEBHB\x18\x02\x20\x01\
+    (\rR\x0bBKFMKDPEBHB\x12\x20\n\x0bHCJCJGJABFH\x18\x03\x20\x01(\rR\x0bHCJC\
+    JGJABFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

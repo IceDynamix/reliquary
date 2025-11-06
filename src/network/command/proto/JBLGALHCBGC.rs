@@ -30,12 +30,12 @@ pub struct JBLGALHCBGC {
     // message fields
     // @@protoc_insertion_point(field:JBLGALHCBGC.cell_id)
     pub cell_id: u32,
-    // @@protoc_insertion_point(field:JBLGALHCBGC.KNMMCBONCCH)
-    pub KNMMCBONCCH: ::std::collections::HashMap<u32, super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:JBLGALHCBGC.GIGCOJGOLPM)
-    pub GIGCOJGOLPM: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:JBLGALHCBGC.HGMNJFJPMDF)
-    pub HGMNJFJPMDF: u32,
+    // @@protoc_insertion_point(field:JBLGALHCBGC.MEIIKOALMHM)
+    pub MEIIKOALMHM: u32,
+    // @@protoc_insertion_point(field:JBLGALHCBGC.MCDAGGNEIEJ)
+    pub MCDAGGNEIEJ: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:JBLGALHCBGC.NBKBCICKNNJ)
+    pub NBKBCICKNNJ: ::std::collections::HashMap<u32, super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:JBLGALHCBGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl JBLGALHCBGC {
             |m: &JBLGALHCBGC| { &m.cell_id },
             |m: &mut JBLGALHCBGC| { &mut m.cell_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "KNMMCBONCCH",
-            |m: &JBLGALHCBGC| { &m.KNMMCBONCCH },
-            |m: &mut JBLGALHCBGC| { &mut m.KNMMCBONCCH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MEIIKOALMHM",
+            |m: &JBLGALHCBGC| { &m.MEIIKOALMHM },
+            |m: &mut JBLGALHCBGC| { &mut m.MEIIKOALMHM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "GIGCOJGOLPM",
-            |m: &JBLGALHCBGC| { &m.GIGCOJGOLPM },
-            |m: &mut JBLGALHCBGC| { &mut m.GIGCOJGOLPM },
+            "MCDAGGNEIEJ",
+            |m: &JBLGALHCBGC| { &m.MCDAGGNEIEJ },
+            |m: &mut JBLGALHCBGC| { &mut m.MCDAGGNEIEJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGMNJFJPMDF",
-            |m: &JBLGALHCBGC| { &m.HGMNJFJPMDF },
-            |m: &mut JBLGALHCBGC| { &mut m.HGMNJFJPMDF },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NBKBCICKNNJ",
+            |m: &JBLGALHCBGC| { &m.NBKBCICKNNJ },
+            |m: &mut JBLGALHCBGC| { &mut m.NBKBCICKNNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JBLGALHCBGC>(
             "JBLGALHCBGC",
@@ -93,10 +93,16 @@ impl ::protobuf::Message for JBLGALHCBGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.cell_id = is.read_uint32()?;
                 },
-                74 => {
+                96 => {
+                    self.MEIIKOALMHM = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCDAGGNEIEJ)?;
+                },
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -109,13 +115,7 @@ impl ::protobuf::Message for JBLGALHCBGC {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.KNMMCBONCCH.insert(key, value);
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIGCOJGOLPM)?;
-                },
-                56 => {
-                    self.HGMNJFJPMDF = is.read_uint32()?;
+                    self.NBKBCICKNNJ.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,22 +130,22 @@ impl ::protobuf::Message for JBLGALHCBGC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cell_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.cell_id);
         }
-        for (k, v) in &self.KNMMCBONCCH {
+        if self.MEIIKOALMHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.MEIIKOALMHM);
+        }
+        if let Some(v) = self.MCDAGGNEIEJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for (k, v) in &self.NBKBCICKNNJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.compute_size();
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.GIGCOJGOLPM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.HGMNJFJPMDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HGMNJFJPMDF);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -153,24 +153,24 @@ impl ::protobuf::Message for JBLGALHCBGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cell_id != 0 {
-            os.write_uint32(4, self.cell_id)?;
+            os.write_uint32(6, self.cell_id)?;
         }
-        for (k, v) in &self.KNMMCBONCCH {
+        if self.MEIIKOALMHM != 0 {
+            os.write_uint32(12, self.MEIIKOALMHM)?;
+        }
+        if let Some(v) = self.MCDAGGNEIEJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        for (k, v) in &self.NBKBCICKNNJ {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(74)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.GIGCOJGOLPM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.HGMNJFJPMDF != 0 {
-            os.write_uint32(7, self.HGMNJFJPMDF)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -189,9 +189,9 @@ impl ::protobuf::Message for JBLGALHCBGC {
 
     fn clear(&mut self) {
         self.cell_id = 0;
-        self.KNMMCBONCCH.clear();
-        self.GIGCOJGOLPM.clear();
-        self.HGMNJFJPMDF = 0;
+        self.MEIIKOALMHM = 0;
+        self.MCDAGGNEIEJ.clear();
+        self.NBKBCICKNNJ.clear();
         self.special_fields.clear();
     }
 
@@ -220,13 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for JBLGALHCBGC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBLGALHCBGC.proto\x1a\x0eItemList.proto\"\x81\x02\n\x0bJBLGALHCBGC\
-    \x12\x17\n\x07cell_id\x18\x04\x20\x01(\rR\x06cellId\x12?\n\x0bKNMMCBONCC\
-    H\x18\t\x20\x03(\x0b2\x1d.JBLGALHCBGC.KNMMCBONCCHEntryR\x0bKNMMCBONCCH\
-    \x12+\n\x0bGIGCOJGOLPM\x18\x0c\x20\x01(\x0b2\t.ItemListR\x0bGIGCOJGOLPM\
-    \x12\x20\n\x0bHGMNJFJPMDF\x18\x07\x20\x01(\rR\x0bHGMNJFJPMDF\x1aI\n\x10K\
-    NMMCBONCCHEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x1f\n\
-    \x05value\x18\x02\x20\x01(\x0b2\t.ItemListR\x05value:\x028\x01b\x06proto\
-    3\
+    \x12\x17\n\x07cell_id\x18\x06\x20\x01(\rR\x06cellId\x12\x20\n\x0bMEIIKOA\
+    LMHM\x18\x0c\x20\x01(\rR\x0bMEIIKOALMHM\x12+\n\x0bMCDAGGNEIEJ\x18\r\x20\
+    \x01(\x0b2\t.ItemListR\x0bMCDAGGNEIEJ\x12?\n\x0bNBKBCICKNNJ\x18\x0e\x20\
+    \x03(\x0b2\x1d.JBLGALHCBGC.NBKBCICKNNJEntryR\x0bNBKBCICKNNJ\x1aI\n\x10NB\
+    KBCICKNNJEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x1f\n\x05\
+    value\x18\x02\x20\x01(\x0b2\t.ItemListR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGetDailyInitItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.OFGNIGNOHAF)
-    pub OFGNIGNOHAF: u32,
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.HEOOFPGKDCD)
-    pub HEOOFPGKDCD: u32,
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.IOABHFPABBE)
-    pub IOABHFPABBE: u32,
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.HBFFFGPJKIC)
-    pub HBFFFGPJKIC: u32,
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.HCDBBFLPCFL)
-    pub HCDBBFLPCFL: u32,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.OLADEOGLAGI)
+    pub OLADEOGLAGI: i64,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.MNKPOFECCFP)
+    pub MNKPOFECCFP: u32,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.OIAALPHPDLO)
+    pub OIAALPHPDLO: u32,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.AIFGFHMGJDK)
+    pub AIFGFHMGJDK: u32,
     // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.IIHKIKLIOJI)
-    pub IIHKIKLIOJI: i64,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.LMPKIOGPNAH)
+    pub LMPKIOGPNAH: u32,
+    // @@protoc_insertion_point(field:MonopolyGetDailyInitItemScRsp.KHCLPNHOHEB)
+    pub KHCLPNHOHEB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGetDailyInitItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,29 +62,24 @@ impl MonopolyGetDailyInitItemScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFGNIGNOHAF",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.OFGNIGNOHAF },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.OFGNIGNOHAF },
+            "OLADEOGLAGI",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.OLADEOGLAGI },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.OLADEOGLAGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEOOFPGKDCD",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.HEOOFPGKDCD },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.HEOOFPGKDCD },
+            "MNKPOFECCFP",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.MNKPOFECCFP },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.MNKPOFECCFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOABHFPABBE",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.IOABHFPABBE },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.IOABHFPABBE },
+            "OIAALPHPDLO",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.OIAALPHPDLO },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.OIAALPHPDLO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBFFFGPJKIC",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.HBFFFGPJKIC },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.HBFFFGPJKIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCDBBFLPCFL",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.HCDBBFLPCFL },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.HCDBBFLPCFL },
+            "AIFGFHMGJDK",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.AIFGFHMGJDK },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.AIFGFHMGJDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -92,9 +87,14 @@ impl MonopolyGetDailyInitItemScRsp {
             |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIHKIKLIOJI",
-            |m: &MonopolyGetDailyInitItemScRsp| { &m.IIHKIKLIOJI },
-            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.IIHKIKLIOJI },
+            "LMPKIOGPNAH",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.LMPKIOGPNAH },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.LMPKIOGPNAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KHCLPNHOHEB",
+            |m: &MonopolyGetDailyInitItemScRsp| { &m.KHCLPNHOHEB },
+            |m: &mut MonopolyGetDailyInitItemScRsp| { &mut m.KHCLPNHOHEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGetDailyInitItemScRsp>(
             "MonopolyGetDailyInitItemScRsp",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.OLADEOGLAGI = is.read_int64()?;
+                },
+                40 => {
+                    self.MNKPOFECCFP = is.read_uint32()?;
+                },
+                48 => {
+                    self.OIAALPHPDLO = is.read_uint32()?;
+                },
                 64 => {
-                    self.OFGNIGNOHAF = is.read_uint32()?;
+                    self.AIFGFHMGJDK = is.read_uint32()?;
                 },
-                16 => {
-                    self.HEOOFPGKDCD = is.read_uint32()?;
-                },
-                120 => {
-                    self.IOABHFPABBE = is.read_uint32()?;
-                },
-                88 => {
-                    self.HBFFFGPJKIC = is.read_uint32()?;
-                },
-                8 => {
-                    self.HCDBBFLPCFL = is.read_uint32()?;
-                },
-                56 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
+                88 => {
+                    self.LMPKIOGPNAH = is.read_uint32()?;
+                },
                 96 => {
-                    self.IIHKIKLIOJI = is.read_int64()?;
+                    self.KHCLPNHOHEB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OFGNIGNOHAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OFGNIGNOHAF);
+        if self.OLADEOGLAGI != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.OLADEOGLAGI);
         }
-        if self.HEOOFPGKDCD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HEOOFPGKDCD);
+        if self.MNKPOFECCFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MNKPOFECCFP);
         }
-        if self.IOABHFPABBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IOABHFPABBE);
+        if self.OIAALPHPDLO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OIAALPHPDLO);
         }
-        if self.HBFFFGPJKIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HBFFFGPJKIC);
-        }
-        if self.HCDBBFLPCFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HCDBBFLPCFL);
+        if self.AIFGFHMGJDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AIFGFHMGJDK);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.IIHKIKLIOJI != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.IIHKIKLIOJI);
+        if self.LMPKIOGPNAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LMPKIOGPNAH);
+        }
+        if self.KHCLPNHOHEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KHCLPNHOHEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OFGNIGNOHAF != 0 {
-            os.write_uint32(8, self.OFGNIGNOHAF)?;
+        if self.OLADEOGLAGI != 0 {
+            os.write_int64(3, self.OLADEOGLAGI)?;
         }
-        if self.HEOOFPGKDCD != 0 {
-            os.write_uint32(2, self.HEOOFPGKDCD)?;
+        if self.MNKPOFECCFP != 0 {
+            os.write_uint32(5, self.MNKPOFECCFP)?;
         }
-        if self.IOABHFPABBE != 0 {
-            os.write_uint32(15, self.IOABHFPABBE)?;
+        if self.OIAALPHPDLO != 0 {
+            os.write_uint32(6, self.OIAALPHPDLO)?;
         }
-        if self.HBFFFGPJKIC != 0 {
-            os.write_uint32(11, self.HBFFFGPJKIC)?;
-        }
-        if self.HCDBBFLPCFL != 0 {
-            os.write_uint32(1, self.HCDBBFLPCFL)?;
+        if self.AIFGFHMGJDK != 0 {
+            os.write_uint32(8, self.AIFGFHMGJDK)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.IIHKIKLIOJI != 0 {
-            os.write_int64(12, self.IIHKIKLIOJI)?;
+        if self.LMPKIOGPNAH != 0 {
+            os.write_uint32(11, self.LMPKIOGPNAH)?;
+        }
+        if self.KHCLPNHOHEB != 0 {
+            os.write_uint32(12, self.KHCLPNHOHEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for MonopolyGetDailyInitItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.OFGNIGNOHAF = 0;
-        self.HEOOFPGKDCD = 0;
-        self.IOABHFPABBE = 0;
-        self.HBFFFGPJKIC = 0;
-        self.HCDBBFLPCFL = 0;
+        self.OLADEOGLAGI = 0;
+        self.MNKPOFECCFP = 0;
+        self.OIAALPHPDLO = 0;
+        self.AIFGFHMGJDK = 0;
         self.retcode = 0;
-        self.IIHKIKLIOJI = 0;
+        self.LMPKIOGPNAH = 0;
+        self.KHCLPNHOHEB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGetDailyInitItemScRsp {
         static instance: MonopolyGetDailyInitItemScRsp = MonopolyGetDailyInitItemScRsp {
-            OFGNIGNOHAF: 0,
-            HEOOFPGKDCD: 0,
-            IOABHFPABBE: 0,
-            HBFFFGPJKIC: 0,
-            HCDBBFLPCFL: 0,
+            OLADEOGLAGI: 0,
+            MNKPOFECCFP: 0,
+            OIAALPHPDLO: 0,
+            AIFGFHMGJDK: 0,
             retcode: 0,
-            IIHKIKLIOJI: 0,
+            LMPKIOGPNAH: 0,
+            KHCLPNHOHEB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,13 +256,13 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGetDailyInitItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#MonopolyGetDailyInitItemScRsp.proto\"\x85\x02\n\x1dMonopolyGetDailyIn\
-    itItemScRsp\x12\x20\n\x0bOFGNIGNOHAF\x18\x08\x20\x01(\rR\x0bOFGNIGNOHAF\
-    \x12\x20\n\x0bHEOOFPGKDCD\x18\x02\x20\x01(\rR\x0bHEOOFPGKDCD\x12\x20\n\
-    \x0bIOABHFPABBE\x18\x0f\x20\x01(\rR\x0bIOABHFPABBE\x12\x20\n\x0bHBFFFGPJ\
-    KIC\x18\x0b\x20\x01(\rR\x0bHBFFFGPJKIC\x12\x20\n\x0bHCDBBFLPCFL\x18\x01\
-    \x20\x01(\rR\x0bHCDBBFLPCFL\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07\
-    retcode\x12\x20\n\x0bIIHKIKLIOJI\x18\x0c\x20\x01(\x03R\x0bIIHKIKLIOJIb\
-    \x06proto3\
+    itItemScRsp\x12\x20\n\x0bOLADEOGLAGI\x18\x03\x20\x01(\x03R\x0bOLADEOGLAG\
+    I\x12\x20\n\x0bMNKPOFECCFP\x18\x05\x20\x01(\rR\x0bMNKPOFECCFP\x12\x20\n\
+    \x0bOIAALPHPDLO\x18\x06\x20\x01(\rR\x0bOIAALPHPDLO\x12\x20\n\x0bAIFGFHMG\
+    JDK\x18\x08\x20\x01(\rR\x0bAIFGFHMGJDK\x12\x18\n\x07retcode\x18\t\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bLMPKIOGPNAH\x18\x0b\x20\x01(\rR\x0bLMPK\
+    IOGPNAH\x12\x20\n\x0bKHCLPNHOHEB\x18\x0c\x20\x01(\rR\x0bKHCLPNHOHEBb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

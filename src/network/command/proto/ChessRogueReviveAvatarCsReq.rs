@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueReviveAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.interacted_prop_entity_id)
-    pub interacted_prop_entity_id: u32,
+    // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.verify_server_entity_id)
+    pub verify_server_entity_id: u32,
     // @@protoc_insertion_point(field:ChessRogueReviveAvatarCsReq.base_avatar_id_list)
     pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl ChessRogueReviveAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interacted_prop_entity_id",
-            |m: &ChessRogueReviveAvatarCsReq| { &m.interacted_prop_entity_id },
-            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.interacted_prop_entity_id },
+            "verify_server_entity_id",
+            |m: &ChessRogueReviveAvatarCsReq| { &m.verify_server_entity_id },
+            |m: &mut ChessRogueReviveAvatarCsReq| { &mut m.verify_server_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "base_avatar_id_list",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.interacted_prop_entity_id = is.read_uint32()?;
+                24 => {
+                    self.verify_server_entity_id = is.read_uint32()?;
                 },
-                74 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                72 => {
+                96 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.interacted_prop_entity_id);
+        if self.verify_server_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.verify_server_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(4, self.interacted_prop_entity_id)?;
+        if self.verify_server_entity_id != 0 {
+            os.write_uint32(3, self.verify_server_entity_id)?;
         }
-        os.write_repeated_packed_uint32(9, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(12, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for ChessRogueReviveAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.interacted_prop_entity_id = 0;
+        self.verify_server_entity_id = 0;
         self.base_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueReviveAvatarCsReq {
         static instance: ChessRogueReviveAvatarCsReq = ChessRogueReviveAvatarCsReq {
-            interacted_prop_entity_id: 0,
+            verify_server_entity_id: 0,
             base_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,10 +164,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueReviveAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!ChessRogueReviveAvatarCsReq.proto\"\x87\x01\n\x1bChessRogueReviveAvat\
-    arCsReq\x129\n\x19interacted_prop_entity_id\x18\x04\x20\x01(\rR\x16inter\
-    actedPropEntityId\x12-\n\x13base_avatar_id_list\x18\t\x20\x03(\rR\x10bas\
-    eAvatarIdListb\x06proto3\
+    \n!ChessRogueReviveAvatarCsReq.proto\"\x83\x01\n\x1bChessRogueReviveAvat\
+    arCsReq\x125\n\x17verify_server_entity_id\x18\x03\x20\x01(\rR\x14verifyS\
+    erverEntityId\x12-\n\x13base_avatar_id_list\x18\x0c\x20\x03(\rR\x10baseA\
+    vatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

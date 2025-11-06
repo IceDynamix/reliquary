@@ -72,7 +72,7 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.server_prefs)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UpdateServerPrefsDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.server_prefs.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateServerPrefsDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20UpdateServerPrefsDataCsReq.proto\x1a\x11ServerPrefs.proto\"M\n\x1a\
-    UpdateServerPrefsDataCsReq\x12/\n\x0cserver_prefs\x18\x0c\x20\x01(\x0b2\
+    UpdateServerPrefsDataCsReq\x12/\n\x0cserver_prefs\x18\x05\x20\x01(\x0b2\
     \x0c.ServerPrefsR\x0bserverPrefsb\x06proto3\
 ";
 

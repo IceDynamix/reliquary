@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JNIPIAADOIP {
     // message fields
-    // @@protoc_insertion_point(field:JNIPIAADOIP.MLGFJGCHONH)
-    pub MLGFJGCHONH: u32,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.HJNOIENGEDL)
-    pub HJNOIENGEDL: u32,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.DKHIGCIPEKF)
-    pub DKHIGCIPEKF: bool,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.challenge_peak_perfect_clear)
-    pub challenge_peak_perfect_clear: bool,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.BCFBFMMENJK)
-    pub BCFBFMMENJK: i64,
-    // @@protoc_insertion_point(field:JNIPIAADOIP.BLMNEKFPAGH)
-    pub BLMNEKFPAGH: u32,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.JCLFLBJOHEO)
+    pub JCLFLBJOHEO: u32,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.IHMIIMECJCC)
+    pub IHMIIMECJCC: u32,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.BHFNNKKGBOH)
+    pub BHFNNKKGBOH: i64,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.is_infinite)
+    pub is_infinite: bool,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.is_finished)
+    pub is_finished: bool,
+    // @@protoc_insertion_point(field:JNIPIAADOIP.OCMOHNPOGNH)
+    pub OCMOHNPOGNH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JNIPIAADOIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl JNIPIAADOIP {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLGFJGCHONH",
-            |m: &JNIPIAADOIP| { &m.MLGFJGCHONH },
-            |m: &mut JNIPIAADOIP| { &mut m.MLGFJGCHONH },
+            "JCLFLBJOHEO",
+            |m: &JNIPIAADOIP| { &m.JCLFLBJOHEO },
+            |m: &mut JNIPIAADOIP| { &mut m.JCLFLBJOHEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJNOIENGEDL",
-            |m: &JNIPIAADOIP| { &m.HJNOIENGEDL },
-            |m: &mut JNIPIAADOIP| { &mut m.HJNOIENGEDL },
+            "IHMIIMECJCC",
+            |m: &JNIPIAADOIP| { &m.IHMIIMECJCC },
+            |m: &mut JNIPIAADOIP| { &mut m.IHMIIMECJCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKHIGCIPEKF",
-            |m: &JNIPIAADOIP| { &m.DKHIGCIPEKF },
-            |m: &mut JNIPIAADOIP| { &mut m.DKHIGCIPEKF },
+            "BHFNNKKGBOH",
+            |m: &JNIPIAADOIP| { &m.BHFNNKKGBOH },
+            |m: &mut JNIPIAADOIP| { &mut m.BHFNNKKGBOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_perfect_clear",
-            |m: &JNIPIAADOIP| { &m.challenge_peak_perfect_clear },
-            |m: &mut JNIPIAADOIP| { &mut m.challenge_peak_perfect_clear },
+            "is_infinite",
+            |m: &JNIPIAADOIP| { &m.is_infinite },
+            |m: &mut JNIPIAADOIP| { &mut m.is_infinite },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCFBFMMENJK",
-            |m: &JNIPIAADOIP| { &m.BCFBFMMENJK },
-            |m: &mut JNIPIAADOIP| { &mut m.BCFBFMMENJK },
+            "is_finished",
+            |m: &JNIPIAADOIP| { &m.is_finished },
+            |m: &mut JNIPIAADOIP| { &mut m.is_finished },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLMNEKFPAGH",
-            |m: &JNIPIAADOIP| { &m.BLMNEKFPAGH },
-            |m: &mut JNIPIAADOIP| { &mut m.BLMNEKFPAGH },
+            "OCMOHNPOGNH",
+            |m: &JNIPIAADOIP| { &m.OCMOHNPOGNH },
+            |m: &mut JNIPIAADOIP| { &mut m.OCMOHNPOGNH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JNIPIAADOIP>(
             "JNIPIAADOIP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.MLGFJGCHONH = is.read_uint32()?;
-                },
                 8 => {
-                    self.HJNOIENGEDL = is.read_uint32()?;
+                    self.JCLFLBJOHEO = is.read_uint32()?;
                 },
-                96 => {
-                    self.DKHIGCIPEKF = is.read_bool()?;
-                },
-                120 => {
-                    self.challenge_peak_perfect_clear = is.read_bool()?;
+                56 => {
+                    self.IHMIIMECJCC = is.read_uint32()?;
                 },
                 72 => {
-                    self.BCFBFMMENJK = is.read_int64()?;
+                    self.BHFNNKKGBOH = is.read_int64()?;
                 },
-                112 => {
-                    self.BLMNEKFPAGH = is.read_uint32()?;
+                96 => {
+                    self.is_infinite = is.read_bool()?;
+                },
+                104 => {
+                    self.is_finished = is.read_bool()?;
+                },
+                120 => {
+                    self.OCMOHNPOGNH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MLGFJGCHONH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MLGFJGCHONH);
+        if self.JCLFLBJOHEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JCLFLBJOHEO);
         }
-        if self.HJNOIENGEDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HJNOIENGEDL);
+        if self.IHMIIMECJCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IHMIIMECJCC);
         }
-        if self.DKHIGCIPEKF != false {
+        if self.BHFNNKKGBOH != 0 {
+            my_size += ::protobuf::rt::int64_size(9, self.BHFNNKKGBOH);
+        }
+        if self.is_infinite != false {
             my_size += 1 + 1;
         }
-        if self.challenge_peak_perfect_clear != false {
+        if self.is_finished != false {
             my_size += 1 + 1;
         }
-        if self.BCFBFMMENJK != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.BCFBFMMENJK);
-        }
-        if self.BLMNEKFPAGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BLMNEKFPAGH);
+        if self.OCMOHNPOGNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.OCMOHNPOGNH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MLGFJGCHONH != 0 {
-            os.write_uint32(5, self.MLGFJGCHONH)?;
+        if self.JCLFLBJOHEO != 0 {
+            os.write_uint32(1, self.JCLFLBJOHEO)?;
         }
-        if self.HJNOIENGEDL != 0 {
-            os.write_uint32(1, self.HJNOIENGEDL)?;
+        if self.IHMIIMECJCC != 0 {
+            os.write_uint32(7, self.IHMIIMECJCC)?;
         }
-        if self.DKHIGCIPEKF != false {
-            os.write_bool(12, self.DKHIGCIPEKF)?;
+        if self.BHFNNKKGBOH != 0 {
+            os.write_int64(9, self.BHFNNKKGBOH)?;
         }
-        if self.challenge_peak_perfect_clear != false {
-            os.write_bool(15, self.challenge_peak_perfect_clear)?;
+        if self.is_infinite != false {
+            os.write_bool(12, self.is_infinite)?;
         }
-        if self.BCFBFMMENJK != 0 {
-            os.write_int64(9, self.BCFBFMMENJK)?;
+        if self.is_finished != false {
+            os.write_bool(13, self.is_finished)?;
         }
-        if self.BLMNEKFPAGH != 0 {
-            os.write_uint32(14, self.BLMNEKFPAGH)?;
+        if self.OCMOHNPOGNH != 0 {
+            os.write_uint32(15, self.OCMOHNPOGNH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for JNIPIAADOIP {
     }
 
     fn clear(&mut self) {
-        self.MLGFJGCHONH = 0;
-        self.HJNOIENGEDL = 0;
-        self.DKHIGCIPEKF = false;
-        self.challenge_peak_perfect_clear = false;
-        self.BCFBFMMENJK = 0;
-        self.BLMNEKFPAGH = 0;
+        self.JCLFLBJOHEO = 0;
+        self.IHMIIMECJCC = 0;
+        self.BHFNNKKGBOH = 0;
+        self.is_infinite = false;
+        self.is_finished = false;
+        self.OCMOHNPOGNH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JNIPIAADOIP {
         static instance: JNIPIAADOIP = JNIPIAADOIP {
-            MLGFJGCHONH: 0,
-            HJNOIENGEDL: 0,
-            DKHIGCIPEKF: false,
-            challenge_peak_perfect_clear: false,
-            BCFBFMMENJK: 0,
-            BLMNEKFPAGH: 0,
+            JCLFLBJOHEO: 0,
+            IHMIIMECJCC: 0,
+            BHFNNKKGBOH: 0,
+            is_infinite: false,
+            is_finished: false,
+            OCMOHNPOGNH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,13 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for JNIPIAADOIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JNIPIAADOIP.proto\"\xf8\x01\n\x0bJNIPIAADOIP\x12\x20\n\x0bMLGFJGCH\
-    ONH\x18\x05\x20\x01(\rR\x0bMLGFJGCHONH\x12\x20\n\x0bHJNOIENGEDL\x18\x01\
-    \x20\x01(\rR\x0bHJNOIENGEDL\x12\x20\n\x0bDKHIGCIPEKF\x18\x0c\x20\x01(\
-    \x08R\x0bDKHIGCIPEKF\x12?\n\x1cchallenge_peak_perfect_clear\x18\x0f\x20\
-    \x01(\x08R\x19challengePeakPerfectClear\x12\x20\n\x0bBCFBFMMENJK\x18\t\
-    \x20\x01(\x03R\x0bBCFBFMMENJK\x12\x20\n\x0bBLMNEKFPAGH\x18\x0e\x20\x01(\
-    \rR\x0bBLMNEKFPAGHb\x06proto3\
+    \n\x11JNIPIAADOIP.proto\"\xd7\x01\n\x0bJNIPIAADOIP\x12\x20\n\x0bJCLFLBJO\
+    HEO\x18\x01\x20\x01(\rR\x0bJCLFLBJOHEO\x12\x20\n\x0bIHMIIMECJCC\x18\x07\
+    \x20\x01(\rR\x0bIHMIIMECJCC\x12\x20\n\x0bBHFNNKKGBOH\x18\t\x20\x01(\x03R\
+    \x0bBHFNNKKGBOH\x12\x1f\n\x0bis_infinite\x18\x0c\x20\x01(\x08R\nisInfini\
+    te\x12\x1f\n\x0bis_finished\x18\r\x20\x01(\x08R\nisFinished\x12\x20\n\
+    \x0bOCMOHNPOGNH\x18\x0f\x20\x01(\rR\x0bOCMOHNPOGNHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePlayerSetting {
     // message oneof groups
-    pub GCMPPOICPOD: ::std::option::Option<update_player_setting::GCMPPOICPOD>,
+    pub CKMAIKMMJME: ::std::option::Option<update_player_setting::CKMAIKMMJME>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePlayerSetting.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,264 +45,39 @@ impl UpdatePlayerSetting {
         ::std::default::Default::default()
     }
 
-    // bool KAPDIMGJLNF = 3;
-
-    pub fn KAPDIMGJLNF(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_KAPDIMGJLNF(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_KAPDIMGJLNF(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KAPDIMGJLNF(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(v))
-    }
-
-    // bool MMMNJCHEMFN = 10;
-
-    pub fn MMMNJCHEMFN(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_MMMNJCHEMFN(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_MMMNJCHEMFN(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MMMNJCHEMFN(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(v))
-    }
-
-    // bool NKEKIBNJMPA = 5;
-
-    pub fn NKEKIBNJMPA(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_NKEKIBNJMPA(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_NKEKIBNJMPA(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NKEKIBNJMPA(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(v))
-    }
-
-    // bool PBKBGLHHKPE = 4;
-
-    pub fn PBKBGLHHKPE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_PBKBGLHHKPE(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_PBKBGLHHKPE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_PBKBGLHHKPE(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(v))
-    }
-
-    // bool NJFMILJOFOK = 13;
-
-    pub fn NJFMILJOFOK(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NJFMILJOFOK(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_NJFMILJOFOK(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_NJFMILJOFOK(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NJFMILJOFOK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NJFMILJOFOK(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NJFMILJOFOK(v))
-    }
-
-    // bool AICNFAOBCPI = 8;
-
-    pub fn AICNFAOBCPI(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::AICNFAOBCPI(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_AICNFAOBCPI(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_AICNFAOBCPI(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::AICNFAOBCPI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AICNFAOBCPI(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::AICNFAOBCPI(v))
-    }
-
-    // bool KJNCCKHJFHE = 2;
-
-    pub fn KJNCCKHJFHE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_KJNCCKHJFHE(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_KJNCCKHJFHE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KJNCCKHJFHE(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(v))
-    }
-
-    // bool APONEIDMPHL = 6;
-
-    pub fn APONEIDMPHL(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::APONEIDMPHL(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_APONEIDMPHL(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_APONEIDMPHL(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::APONEIDMPHL(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_APONEIDMPHL(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::APONEIDMPHL(v))
-    }
-
-    // bool GMJANOJMKCE = 1;
-
-    pub fn GMJANOJMKCE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GMJANOJMKCE(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_GMJANOJMKCE(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_GMJANOJMKCE(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GMJANOJMKCE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GMJANOJMKCE(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GMJANOJMKCE(v))
-    }
-
-    // .OGFIODPILEL GHKCMDNKOPN = 7;
+    // .OGFIODPILEL GHKCMDNKOPN = 8;
 
     pub fn GHKCMDNKOPN(&self) -> &super::OGFIODPILEL::OGFIODPILEL {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(ref v)) => v,
+        match self.CKMAIKMMJME {
+            ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(ref v)) => v,
             _ => <super::OGFIODPILEL::OGFIODPILEL as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_GHKCMDNKOPN(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
+        self.CKMAIKMMJME = ::std::option::Option::None;
     }
 
     pub fn has_GHKCMDNKOPN(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(..)) => true,
+        match self.CKMAIKMMJME {
+            ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_GHKCMDNKOPN(&mut self, v: super::OGFIODPILEL::OGFIODPILEL) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(v))
+        self.CKMAIKMMJME = ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_GHKCMDNKOPN(&mut self) -> &mut super::OGFIODPILEL::OGFIODPILEL {
-        if let ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(_)) = self.GCMPPOICPOD {
+        if let ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(_)) = self.CKMAIKMMJME {
         } else {
-            self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(super::OGFIODPILEL::OGFIODPILEL::new()));
+            self.CKMAIKMMJME = ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(super::OGFIODPILEL::OGFIODPILEL::new()));
         }
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(ref mut v)) => v,
+        match self.CKMAIKMMJME {
+            ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -310,8 +85,8 @@ impl UpdatePlayerSetting {
     // Take field
     pub fn take_GHKCMDNKOPN(&mut self) -> super::OGFIODPILEL::OGFIODPILEL {
         if self.has_GHKCMDNKOPN() {
-            match self.GCMPPOICPOD.take() {
-                ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(v)) => v,
+            match self.CKMAIKMMJME.take() {
+                ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -319,113 +94,9 @@ impl UpdatePlayerSetting {
         }
     }
 
-    // bool MCCJLBEMKCN = 1661;
-
-    pub fn MCCJLBEMKCN(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_MCCJLBEMKCN(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_MCCJLBEMKCN(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MCCJLBEMKCN(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(v))
-    }
-
-    // bool OEGIFODEAKK = 234;
-
-    pub fn OEGIFODEAKK(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::OEGIFODEAKK(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_OEGIFODEAKK(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-    }
-
-    pub fn has_OEGIFODEAKK(&self) -> bool {
-        match self.GCMPPOICPOD {
-            ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::OEGIFODEAKK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OEGIFODEAKK(&mut self, v: bool) {
-        self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::OEGIFODEAKK(v))
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(12);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "KAPDIMGJLNF",
-            UpdatePlayerSetting::has_KAPDIMGJLNF,
-            UpdatePlayerSetting::KAPDIMGJLNF,
-            UpdatePlayerSetting::set_KAPDIMGJLNF,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MMMNJCHEMFN",
-            UpdatePlayerSetting::has_MMMNJCHEMFN,
-            UpdatePlayerSetting::MMMNJCHEMFN,
-            UpdatePlayerSetting::set_MMMNJCHEMFN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NKEKIBNJMPA",
-            UpdatePlayerSetting::has_NKEKIBNJMPA,
-            UpdatePlayerSetting::NKEKIBNJMPA,
-            UpdatePlayerSetting::set_NKEKIBNJMPA,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PBKBGLHHKPE",
-            UpdatePlayerSetting::has_PBKBGLHHKPE,
-            UpdatePlayerSetting::PBKBGLHHKPE,
-            UpdatePlayerSetting::set_PBKBGLHHKPE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NJFMILJOFOK",
-            UpdatePlayerSetting::has_NJFMILJOFOK,
-            UpdatePlayerSetting::NJFMILJOFOK,
-            UpdatePlayerSetting::set_NJFMILJOFOK,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "AICNFAOBCPI",
-            UpdatePlayerSetting::has_AICNFAOBCPI,
-            UpdatePlayerSetting::AICNFAOBCPI,
-            UpdatePlayerSetting::set_AICNFAOBCPI,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "KJNCCKHJFHE",
-            UpdatePlayerSetting::has_KJNCCKHJFHE,
-            UpdatePlayerSetting::KJNCCKHJFHE,
-            UpdatePlayerSetting::set_KJNCCKHJFHE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "APONEIDMPHL",
-            UpdatePlayerSetting::has_APONEIDMPHL,
-            UpdatePlayerSetting::APONEIDMPHL,
-            UpdatePlayerSetting::set_APONEIDMPHL,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "GMJANOJMKCE",
-            UpdatePlayerSetting::has_GMJANOJMKCE,
-            UpdatePlayerSetting::GMJANOJMKCE,
-            UpdatePlayerSetting::set_GMJANOJMKCE,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGFIODPILEL::OGFIODPILEL>(
             "GHKCMDNKOPN",
             UpdatePlayerSetting::has_GHKCMDNKOPN,
@@ -433,19 +104,7 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::mut_GHKCMDNKOPN,
             UpdatePlayerSetting::set_GHKCMDNKOPN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MCCJLBEMKCN",
-            UpdatePlayerSetting::has_MCCJLBEMKCN,
-            UpdatePlayerSetting::MCCJLBEMKCN,
-            UpdatePlayerSetting::set_MCCJLBEMKCN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "OEGIFODEAKK",
-            UpdatePlayerSetting::has_OEGIFODEAKK,
-            UpdatePlayerSetting::OEGIFODEAKK,
-            UpdatePlayerSetting::set_OEGIFODEAKK,
-        ));
-        oneofs.push(update_player_setting::GCMPPOICPOD::generated_oneof_descriptor_data());
+        oneofs.push(update_player_setting::CKMAIKMMJME::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayerSetting>(
             "UpdatePlayerSetting",
             fields,
@@ -464,41 +123,8 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(is.read_bool()?));
-                },
-                80 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(is.read_bool()?));
-                },
-                40 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(is.read_bool()?));
-                },
-                32 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(is.read_bool()?));
-                },
-                104 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::NJFMILJOFOK(is.read_bool()?));
-                },
-                64 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::AICNFAOBCPI(is.read_bool()?));
-                },
-                16 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(is.read_bool()?));
-                },
-                48 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::APONEIDMPHL(is.read_bool()?));
-                },
-                8 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GMJANOJMKCE(is.read_bool()?));
-                },
-                58 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(is.read_message()?));
-                },
-                13288 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(is.read_bool()?));
-                },
-                1872 => {
-                    self.GCMPPOICPOD = ::std::option::Option::Some(update_player_setting::GCMPPOICPOD::OEGIFODEAKK(is.read_bool()?));
+                66 => {
+                    self.CKMAIKMMJME = ::std::option::Option::Some(update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -512,44 +138,11 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.GCMPPOICPOD {
+        if let ::std::option::Option::Some(ref v) = self.CKMAIKMMJME {
             match v {
-                &update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::NJFMILJOFOK(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::AICNFAOBCPI(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::APONEIDMPHL(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::GMJANOJMKCE(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(ref v) => {
+                &update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(v) => {
-                    my_size += 2 + 1;
-                },
-                &update_player_setting::GCMPPOICPOD::OEGIFODEAKK(v) => {
-                    my_size += 2 + 1;
                 },
             };
         }
@@ -559,43 +152,10 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.GCMPPOICPOD {
+        if let ::std::option::Option::Some(ref v) = self.CKMAIKMMJME {
             match v {
-                &update_player_setting::GCMPPOICPOD::KAPDIMGJLNF(v) => {
-                    os.write_bool(3, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::MMMNJCHEMFN(v) => {
-                    os.write_bool(10, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::NKEKIBNJMPA(v) => {
-                    os.write_bool(5, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::PBKBGLHHKPE(v) => {
-                    os.write_bool(4, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::NJFMILJOFOK(v) => {
-                    os.write_bool(13, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::AICNFAOBCPI(v) => {
-                    os.write_bool(8, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::KJNCCKHJFHE(v) => {
-                    os.write_bool(2, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::APONEIDMPHL(v) => {
-                    os.write_bool(6, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::GMJANOJMKCE(v) => {
-                    os.write_bool(1, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::GHKCMDNKOPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &update_player_setting::GCMPPOICPOD::MCCJLBEMKCN(v) => {
-                    os.write_bool(1661, v)?;
-                },
-                &update_player_setting::GCMPPOICPOD::OEGIFODEAKK(v) => {
-                    os.write_bool(234, v)?;
+                &update_player_setting::CKMAIKMMJME::GHKCMDNKOPN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -616,24 +176,13 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     }
 
     fn clear(&mut self) {
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
-        self.GCMPPOICPOD = ::std::option::Option::None;
+        self.CKMAIKMMJME = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePlayerSetting {
         static instance: UpdatePlayerSetting = UpdatePlayerSetting {
-            GCMPPOICPOD: ::std::option::Option::None,
+            CKMAIKMMJME: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -662,65 +211,33 @@ pub mod update_player_setting {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdatePlayerSetting.GCMPPOICPOD)
-    pub enum GCMPPOICPOD {
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.KAPDIMGJLNF)
-        KAPDIMGJLNF(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.MMMNJCHEMFN)
-        MMMNJCHEMFN(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.NKEKIBNJMPA)
-        NKEKIBNJMPA(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.PBKBGLHHKPE)
-        PBKBGLHHKPE(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.NJFMILJOFOK)
-        NJFMILJOFOK(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.AICNFAOBCPI)
-        AICNFAOBCPI(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.KJNCCKHJFHE)
-        KJNCCKHJFHE(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.APONEIDMPHL)
-        APONEIDMPHL(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.GMJANOJMKCE)
-        GMJANOJMKCE(bool),
+    // @@protoc_insertion_point(oneof:UpdatePlayerSetting.CKMAIKMMJME)
+    pub enum CKMAIKMMJME {
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.GHKCMDNKOPN)
         GHKCMDNKOPN(super::super::OGFIODPILEL::OGFIODPILEL),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.MCCJLBEMKCN)
-        MCCJLBEMKCN(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.OEGIFODEAKK)
-        OEGIFODEAKK(bool),
     }
 
-    impl ::protobuf::Oneof for GCMPPOICPOD {
+    impl ::protobuf::Oneof for CKMAIKMMJME {
     }
 
-    impl ::protobuf::OneofFull for GCMPPOICPOD {
+    impl ::protobuf::OneofFull for CKMAIKMMJME {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdatePlayerSetting as ::protobuf::MessageFull>::descriptor().oneof_by_name("GCMPPOICPOD").unwrap()).clone()
+            descriptor.get(|| <super::UpdatePlayerSetting as ::protobuf::MessageFull>::descriptor().oneof_by_name("CKMAIKMMJME").unwrap()).clone()
         }
     }
 
-    impl GCMPPOICPOD {
+    impl CKMAIKMMJME {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GCMPPOICPOD>("GCMPPOICPOD")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CKMAIKMMJME>("CKMAIKMMJME")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19UpdatePlayerSetting.proto\x1a\x11OGFIODPILEL.proto\"\xe4\x03\n\x13\
-    UpdatePlayerSetting\x12\"\n\x0bKAPDIMGJLNF\x18\x03\x20\x01(\x08H\0R\x0bK\
-    APDIMGJLNF\x12\"\n\x0bMMMNJCHEMFN\x18\n\x20\x01(\x08H\0R\x0bMMMNJCHEMFN\
-    \x12\"\n\x0bNKEKIBNJMPA\x18\x05\x20\x01(\x08H\0R\x0bNKEKIBNJMPA\x12\"\n\
-    \x0bPBKBGLHHKPE\x18\x04\x20\x01(\x08H\0R\x0bPBKBGLHHKPE\x12\"\n\x0bNJFMI\
-    LJOFOK\x18\r\x20\x01(\x08H\0R\x0bNJFMILJOFOK\x12\"\n\x0bAICNFAOBCPI\x18\
-    \x08\x20\x01(\x08H\0R\x0bAICNFAOBCPI\x12\"\n\x0bKJNCCKHJFHE\x18\x02\x20\
-    \x01(\x08H\0R\x0bKJNCCKHJFHE\x12\"\n\x0bAPONEIDMPHL\x18\x06\x20\x01(\x08\
-    H\0R\x0bAPONEIDMPHL\x12\"\n\x0bGMJANOJMKCE\x18\x01\x20\x01(\x08H\0R\x0bG\
-    MJANOJMKCE\x120\n\x0bGHKCMDNKOPN\x18\x07\x20\x01(\x0b2\x0c.OGFIODPILELH\
-    \0R\x0bGHKCMDNKOPN\x12#\n\x0bMCCJLBEMKCN\x18\xfd\x0c\x20\x01(\x08H\0R\
-    \x0bMCCJLBEMKCN\x12#\n\x0bOEGIFODEAKK\x18\xea\x01\x20\x01(\x08H\0R\x0bOE\
-    GIFODEAKKB\r\n\x0bGCMPPOICPODb\x06proto3\
+    \n\x19UpdatePlayerSetting.proto\x1a\x11OGFIODPILEL.proto\"V\n\x13UpdateP\
+    layerSetting\x120\n\x0bGHKCMDNKOPN\x18\x08\x20\x01(\x0b2\x0c.OGFIODPILEL\
+    H\0R\x0bGHKCMDNKOPNB\r\n\x0bCKMAIKMMJMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartCocoonStageScRsp {
     // message fields
+    // @@protoc_insertion_point(field:StartCocoonStageScRsp.battle_info)
+    pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
+    // @@protoc_insertion_point(field:StartCocoonStageScRsp.wave)
+    pub wave: u32,
     // @@protoc_insertion_point(field:StartCocoonStageScRsp.prop_entity_id)
     pub prop_entity_id: u32,
     // @@protoc_insertion_point(field:StartCocoonStageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartCocoonStageScRsp.challenge_cnt)
+    pub challenge_cnt: u32,
     // @@protoc_insertion_point(field:StartCocoonStageScRsp.cocoon_id)
     pub cocoon_id: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageScRsp.wave)
-    pub wave: u32,
-    // @@protoc_insertion_point(field:StartCocoonStageScRsp.battle_info)
-    pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:StartCocoonStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,8 +57,18 @@ impl StartCocoonStageScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
+            "battle_info",
+            |m: &StartCocoonStageScRsp| { &m.battle_info },
+            |m: &mut StartCocoonStageScRsp| { &mut m.battle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "wave",
+            |m: &StartCocoonStageScRsp| { &m.wave },
+            |m: &mut StartCocoonStageScRsp| { &mut m.wave },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "prop_entity_id",
             |m: &StartCocoonStageScRsp| { &m.prop_entity_id },
@@ -68,19 +80,14 @@ impl StartCocoonStageScRsp {
             |m: &mut StartCocoonStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_cnt",
+            |m: &StartCocoonStageScRsp| { &m.challenge_cnt },
+            |m: &mut StartCocoonStageScRsp| { &mut m.challenge_cnt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cocoon_id",
             |m: &StartCocoonStageScRsp| { &m.cocoon_id },
             |m: &mut StartCocoonStageScRsp| { &mut m.cocoon_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &StartCocoonStageScRsp| { &m.wave },
-            |m: &mut StartCocoonStageScRsp| { &mut m.wave },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "battle_info",
-            |m: &StartCocoonStageScRsp| { &m.battle_info },
-            |m: &mut StartCocoonStageScRsp| { &mut m.battle_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartCocoonStageScRsp>(
             "StartCocoonStageScRsp",
@@ -100,20 +107,23 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.prop_entity_id = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.cocoon_id = is.read_uint32()?;
-                },
-                112 => {
+                40 => {
                     self.wave = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
+                48 => {
+                    self.prop_entity_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.challenge_cnt = is.read_uint32()?;
+                },
+                112 => {
+                    self.cocoon_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +137,24 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.prop_entity_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cocoon_id);
-        }
-        if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.wave);
-        }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.wave);
+        }
+        if self.prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.prop_entity_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.challenge_cnt != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.challenge_cnt);
+        }
+        if self.cocoon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.cocoon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +162,23 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.prop_entity_id != 0 {
-            os.write_uint32(13, self.prop_entity_id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if self.cocoon_id != 0 {
-            os.write_uint32(3, self.cocoon_id)?;
+        if let Some(v) = self.battle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.wave != 0 {
-            os.write_uint32(14, self.wave)?;
+            os.write_uint32(5, self.wave)?;
         }
-        if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.prop_entity_id != 0 {
+            os.write_uint32(6, self.prop_entity_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.challenge_cnt != 0 {
+            os.write_uint32(10, self.challenge_cnt)?;
+        }
+        if self.cocoon_id != 0 {
+            os.write_uint32(14, self.cocoon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +197,23 @@ impl ::protobuf::Message for StartCocoonStageScRsp {
     }
 
     fn clear(&mut self) {
+        self.battle_info.clear();
+        self.wave = 0;
         self.prop_entity_id = 0;
         self.retcode = 0;
+        self.challenge_cnt = 0;
         self.cocoon_id = 0;
-        self.wave = 0;
-        self.battle_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartCocoonStageScRsp {
         static instance: StartCocoonStageScRsp = StartCocoonStageScRsp {
+            battle_info: ::protobuf::MessageField::none(),
+            wave: 0,
             prop_entity_id: 0,
             retcode: 0,
+            challenge_cnt: 0,
             cocoon_id: 0,
-            wave: 0,
-            battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for StartCocoonStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartCocoonStageScRsp.proto\x1a\x15SceneBattleInfo.proto\"\xbb\x01\
-    \n\x15StartCocoonStageScRsp\x12$\n\x0eprop_entity_id\x18\r\x20\x01(\rR\
-    \x0cpropEntityId\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\
-    \x1b\n\tcocoon_id\x18\x03\x20\x01(\rR\x08cocoonId\x12\x12\n\x04wave\x18\
-    \x0e\x20\x01(\rR\x04wave\x121\n\x0bbattle_info\x18\x01\x20\x01(\x0b2\x10\
-    .SceneBattleInfoR\nbattleInfob\x06proto3\
+    \n\x1bStartCocoonStageScRsp.proto\x1a\x15SceneBattleInfo.proto\"\xe0\x01\
+    \n\x15StartCocoonStageScRsp\x121\n\x0bbattle_info\x18\x02\x20\x01(\x0b2\
+    \x10.SceneBattleInfoR\nbattleInfo\x12\x12\n\x04wave\x18\x05\x20\x01(\rR\
+    \x04wave\x12$\n\x0eprop_entity_id\x18\x06\x20\x01(\rR\x0cpropEntityId\
+    \x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12#\n\rchallenge_c\
+    nt\x18\n\x20\x01(\rR\x0cchallengeCnt\x12\x1b\n\tcocoon_id\x18\x0e\x20\
+    \x01(\rR\x08cocoonIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

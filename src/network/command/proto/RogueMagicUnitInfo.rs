@@ -30,8 +30,8 @@ pub struct RogueMagicUnitInfo {
     // message fields
     // @@protoc_insertion_point(field:RogueMagicUnitInfo.magic_unit_id)
     pub magic_unit_id: u32,
-    // @@protoc_insertion_point(field:RogueMagicUnitInfo.PPMIOGCFOOC)
-    pub PPMIOGCFOOC: u32,
+    // @@protoc_insertion_point(field:RogueMagicUnitInfo.OFGHDKFOGFI)
+    pub OFGHDKFOGFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicUnitInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl RogueMagicUnitInfo {
             |m: &mut RogueMagicUnitInfo| { &mut m.magic_unit_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPMIOGCFOOC",
-            |m: &RogueMagicUnitInfo| { &m.PPMIOGCFOOC },
-            |m: &mut RogueMagicUnitInfo| { &mut m.PPMIOGCFOOC },
+            "OFGHDKFOGFI",
+            |m: &RogueMagicUnitInfo| { &m.OFGHDKFOGFI },
+            |m: &mut RogueMagicUnitInfo| { &mut m.OFGHDKFOGFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicUnitInfo>(
             "RogueMagicUnitInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.magic_unit_id = is.read_uint32()?;
                 },
-                96 => {
-                    self.PPMIOGCFOOC = is.read_uint32()?;
+                80 => {
+                    self.OFGHDKFOGFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.magic_unit_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.magic_unit_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.magic_unit_id);
         }
-        if self.PPMIOGCFOOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PPMIOGCFOOC);
+        if self.OFGHDKFOGFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OFGHDKFOGFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.magic_unit_id != 0 {
-            os.write_uint32(8, self.magic_unit_id)?;
+            os.write_uint32(7, self.magic_unit_id)?;
         }
-        if self.PPMIOGCFOOC != 0 {
-            os.write_uint32(12, self.PPMIOGCFOOC)?;
+        if self.OFGHDKFOGFI != 0 {
+            os.write_uint32(10, self.OFGHDKFOGFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
 
     fn clear(&mut self) {
         self.magic_unit_id = 0;
-        self.PPMIOGCFOOC = 0;
+        self.OFGHDKFOGFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicUnitInfo {
         static instance: RogueMagicUnitInfo = RogueMagicUnitInfo {
             magic_unit_id: 0,
-            PPMIOGCFOOC: 0,
+            OFGHDKFOGFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicUnitInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueMagicUnitInfo.proto\"Z\n\x12RogueMagicUnitInfo\x12\"\n\rmagic\
-    _unit_id\x18\x08\x20\x01(\rR\x0bmagicUnitId\x12\x20\n\x0bPPMIOGCFOOC\x18\
-    \x0c\x20\x01(\rR\x0bPPMIOGCFOOCb\x06proto3\
+    _unit_id\x18\x07\x20\x01(\rR\x0bmagicUnitId\x12\x20\n\x0bOFGHDKFOGFI\x18\
+    \n\x20\x01(\rR\x0bOFGHDKFOGFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

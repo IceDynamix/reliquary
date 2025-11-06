@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightMatch3TurnStartScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightMatch3TurnStartScNotify.HKPODFLGCDJ)
-    pub HKPODFLGCDJ: ::protobuf::MessageField<super::KLDMJEMIMCN::KLDMJEMIMCN>,
+    // @@protoc_insertion_point(field:FightMatch3TurnStartScNotify.KACPHJHOCKP)
+    pub KACPHJHOCKP: ::protobuf::MessageField<super::Match3Data::Match3Data>,
     // special fields
     // @@protoc_insertion_point(special_field:FightMatch3TurnStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl FightMatch3TurnStartScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLDMJEMIMCN::KLDMJEMIMCN>(
-            "HKPODFLGCDJ",
-            |m: &FightMatch3TurnStartScNotify| { &m.HKPODFLGCDJ },
-            |m: &mut FightMatch3TurnStartScNotify| { &mut m.HKPODFLGCDJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Match3Data::Match3Data>(
+            "KACPHJHOCKP",
+            |m: &FightMatch3TurnStartScNotify| { &m.KACPHJHOCKP },
+            |m: &mut FightMatch3TurnStartScNotify| { &mut m.KACPHJHOCKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightMatch3TurnStartScNotify>(
             "FightMatch3TurnStartScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FightMatch3TurnStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HKPODFLGCDJ)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KACPHJHOCKP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FightMatch3TurnStartScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HKPODFLGCDJ.as_ref() {
+        if let Some(v) = self.KACPHJHOCKP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FightMatch3TurnStartScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HKPODFLGCDJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.KACPHJHOCKP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FightMatch3TurnStartScNotify {
     }
 
     fn clear(&mut self) {
-        self.HKPODFLGCDJ.clear();
+        self.KACPHJHOCKP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightMatch3TurnStartScNotify {
         static instance: FightMatch3TurnStartScNotify = FightMatch3TurnStartScNotify {
-            HKPODFLGCDJ: ::protobuf::MessageField::none(),
+            KACPHJHOCKP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FightMatch3TurnStartScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FightMatch3TurnStartScNotify.proto\x1a\x11KLDMJEMIMCN.proto\"N\n\x1c\
-    FightMatch3TurnStartScNotify\x12.\n\x0bHKPODFLGCDJ\x18\x03\x20\x01(\x0b2\
-    \x0c.KLDMJEMIMCNR\x0bHKPODFLGCDJb\x06proto3\
+    \n\"FightMatch3TurnStartScNotify.proto\x1a\x10Match3Data.proto\"M\n\x1cF\
+    ightMatch3TurnStartScNotify\x12-\n\x0bKACPHJHOCKP\x18\x02\x20\x01(\x0b2\
+    \x0b.Match3DataR\x0bKACPHJHOCKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KLDMJEMIMCN::file_descriptor().clone());
+            deps.push(super::Match3Data::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightMatch3TurnStartScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

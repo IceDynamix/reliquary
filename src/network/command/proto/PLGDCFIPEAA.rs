@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PLGDCFIPEAA {
     // message fields
-    // @@protoc_insertion_point(field:PLGDCFIPEAA.JPGCDJDGDBI)
-    pub JPGCDJDGDBI: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::RogueUnlockFunctionType::RogueUnlockFunctionType>>,
+    // @@protoc_insertion_point(field:PLGDCFIPEAA.NGDOMOFCAIE)
+    pub NGDOMOFCAIE: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::RogueUnlockFunctionType::RogueUnlockFunctionType>>,
     // special fields
     // @@protoc_insertion_point(special_field:PLGDCFIPEAA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PLGDCFIPEAA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JPGCDJDGDBI",
-            |m: &PLGDCFIPEAA| { &m.JPGCDJDGDBI },
-            |m: &mut PLGDCFIPEAA| { &mut m.JPGCDJDGDBI },
+            "NGDOMOFCAIE",
+            |m: &PLGDCFIPEAA| { &m.NGDOMOFCAIE },
+            |m: &mut PLGDCFIPEAA| { &mut m.NGDOMOFCAIE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PLGDCFIPEAA>(
             "PLGDCFIPEAA",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for PLGDCFIPEAA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.JPGCDJDGDBI.push(is.read_enum_or_unknown()?);
+                88 => {
+                    self.NGDOMOFCAIE.push(is.read_enum_or_unknown()?);
                 },
-                98 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.JPGCDJDGDBI)?
+                90 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.NGDOMOFCAIE)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for PLGDCFIPEAA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(12, &self.JPGCDJDGDBI);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(11, &self.NGDOMOFCAIE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(12, &self.JPGCDJDGDBI)?;
+        os.write_repeated_packed_enum_or_unknown(11, &self.NGDOMOFCAIE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for PLGDCFIPEAA {
     }
 
     fn clear(&mut self) {
-        self.JPGCDJDGDBI.clear();
+        self.NGDOMOFCAIE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PLGDCFIPEAA {
         static instance: PLGDCFIPEAA = PLGDCFIPEAA {
-            JPGCDJDGDBI: ::std::vec::Vec::new(),
+            NGDOMOFCAIE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for PLGDCFIPEAA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLGDCFIPEAA.proto\x1a\x1dRogueUnlockFunctionType.proto\"I\n\x0bPLG\
-    DCFIPEAA\x12:\n\x0bJPGCDJDGDBI\x18\x0c\x20\x03(\x0e2\x18.RogueUnlockFunc\
-    tionTypeR\x0bJPGCDJDGDBIb\x06proto3\
+    DCFIPEAA\x12:\n\x0bNGDOMOFCAIE\x18\x0b\x20\x03(\x0e2\x18.RogueUnlockFunc\
+    tionTypeR\x0bNGDOMOFCAIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

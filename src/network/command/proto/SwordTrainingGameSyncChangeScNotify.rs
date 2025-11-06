@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingGameSyncChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingGameSyncChangeScNotify.LEADMNEIMDP)
-    pub LEADMNEIMDP: ::std::vec::Vec<super::OMOJDEIFDAM::OMOJDEIFDAM>,
+    // @@protoc_insertion_point(field:SwordTrainingGameSyncChangeScNotify.LIFANHMGGIN)
+    pub LIFANHMGGIN: ::std::vec::Vec<super::OMOJDEIFDAM::OMOJDEIFDAM>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingGameSyncChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwordTrainingGameSyncChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LEADMNEIMDP",
-            |m: &SwordTrainingGameSyncChangeScNotify| { &m.LEADMNEIMDP },
-            |m: &mut SwordTrainingGameSyncChangeScNotify| { &mut m.LEADMNEIMDP },
+            "LIFANHMGGIN",
+            |m: &SwordTrainingGameSyncChangeScNotify| { &m.LIFANHMGGIN },
+            |m: &mut SwordTrainingGameSyncChangeScNotify| { &mut m.LIFANHMGGIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingGameSyncChangeScNotify>(
             "SwordTrainingGameSyncChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.LEADMNEIMDP.push(is.read_message()?);
+                114 => {
+                    self.LIFANHMGGIN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LEADMNEIMDP {
+        for value in &self.LIFANHMGGIN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LEADMNEIMDP {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.LIFANHMGGIN {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SwordTrainingGameSyncChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.LEADMNEIMDP.clear();
+        self.LIFANHMGGIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingGameSyncChangeScNotify {
         static instance: SwordTrainingGameSyncChangeScNotify = SwordTrainingGameSyncChangeScNotify {
-            LEADMNEIMDP: ::std::vec::Vec::new(),
+            LIFANHMGGIN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingGameSyncChangeScNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SwordTrainingGameSyncChangeScNotify.proto\x1a\x11OMOJDEIFDAM.proto\"U\
-    \n#SwordTrainingGameSyncChangeScNotify\x12.\n\x0bLEADMNEIMDP\x18\x02\x20\
-    \x03(\x0b2\x0c.OMOJDEIFDAMR\x0bLEADMNEIMDPb\x06proto3\
+    \n#SwordTrainingGameSyncChangeScNotify\x12.\n\x0bLIFANHMGGIN\x18\x0e\x20\
+    \x03(\x0b2\x0c.OMOJDEIFDAMR\x0bLIFANHMGGINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

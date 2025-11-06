@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MLPKNLLAOIF {
     // message fields
-    // @@protoc_insertion_point(field:MLPKNLLAOIF.CFCLOGFJPBD)
-    pub CFCLOGFJPBD: i32,
-    // @@protoc_insertion_point(field:MLPKNLLAOIF.EEGCBBHOPHG)
-    pub EEGCBBHOPHG: i32,
-    // @@protoc_insertion_point(field:MLPKNLLAOIF.JPNFBFKHPGD)
-    pub JPNFBFKHPGD: u32,
+    // @@protoc_insertion_point(field:MLPKNLLAOIF.BLLAOLNODLM)
+    pub BLLAOLNODLM: i32,
+    // @@protoc_insertion_point(field:MLPKNLLAOIF.GJKJAGHEELF)
+    pub GJKJAGHEELF: u32,
+    // @@protoc_insertion_point(field:MLPKNLLAOIF.IBOMMHGFEGP)
+    pub IBOMMHGFEGP: i32,
     // special fields
     // @@protoc_insertion_point(special_field:MLPKNLLAOIF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MLPKNLLAOIF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFCLOGFJPBD",
-            |m: &MLPKNLLAOIF| { &m.CFCLOGFJPBD },
-            |m: &mut MLPKNLLAOIF| { &mut m.CFCLOGFJPBD },
+            "BLLAOLNODLM",
+            |m: &MLPKNLLAOIF| { &m.BLLAOLNODLM },
+            |m: &mut MLPKNLLAOIF| { &mut m.BLLAOLNODLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEGCBBHOPHG",
-            |m: &MLPKNLLAOIF| { &m.EEGCBBHOPHG },
-            |m: &mut MLPKNLLAOIF| { &mut m.EEGCBBHOPHG },
+            "GJKJAGHEELF",
+            |m: &MLPKNLLAOIF| { &m.GJKJAGHEELF },
+            |m: &mut MLPKNLLAOIF| { &mut m.GJKJAGHEELF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPNFBFKHPGD",
-            |m: &MLPKNLLAOIF| { &m.JPNFBFKHPGD },
-            |m: &mut MLPKNLLAOIF| { &mut m.JPNFBFKHPGD },
+            "IBOMMHGFEGP",
+            |m: &MLPKNLLAOIF| { &m.IBOMMHGFEGP },
+            |m: &mut MLPKNLLAOIF| { &mut m.IBOMMHGFEGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MLPKNLLAOIF>(
             "MLPKNLLAOIF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MLPKNLLAOIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.CFCLOGFJPBD = is.read_int32()?;
+                56 => {
+                    self.BLLAOLNODLM = is.read_int32()?;
                 },
-                112 => {
-                    self.EEGCBBHOPHG = is.read_int32()?;
+                80 => {
+                    self.GJKJAGHEELF = is.read_uint32()?;
                 },
-                48 => {
-                    self.JPNFBFKHPGD = is.read_uint32()?;
+                88 => {
+                    self.IBOMMHGFEGP = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MLPKNLLAOIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CFCLOGFJPBD != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.CFCLOGFJPBD);
+        if self.BLLAOLNODLM != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.BLLAOLNODLM);
         }
-        if self.EEGCBBHOPHG != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.EEGCBBHOPHG);
+        if self.GJKJAGHEELF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GJKJAGHEELF);
         }
-        if self.JPNFBFKHPGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JPNFBFKHPGD);
+        if self.IBOMMHGFEGP != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.IBOMMHGFEGP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MLPKNLLAOIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CFCLOGFJPBD != 0 {
-            os.write_int32(12, self.CFCLOGFJPBD)?;
+        if self.BLLAOLNODLM != 0 {
+            os.write_int32(7, self.BLLAOLNODLM)?;
         }
-        if self.EEGCBBHOPHG != 0 {
-            os.write_int32(14, self.EEGCBBHOPHG)?;
+        if self.GJKJAGHEELF != 0 {
+            os.write_uint32(10, self.GJKJAGHEELF)?;
         }
-        if self.JPNFBFKHPGD != 0 {
-            os.write_uint32(6, self.JPNFBFKHPGD)?;
+        if self.IBOMMHGFEGP != 0 {
+            os.write_int32(11, self.IBOMMHGFEGP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MLPKNLLAOIF {
     }
 
     fn clear(&mut self) {
-        self.CFCLOGFJPBD = 0;
-        self.EEGCBBHOPHG = 0;
-        self.JPNFBFKHPGD = 0;
+        self.BLLAOLNODLM = 0;
+        self.GJKJAGHEELF = 0;
+        self.IBOMMHGFEGP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MLPKNLLAOIF {
         static instance: MLPKNLLAOIF = MLPKNLLAOIF {
-            CFCLOGFJPBD: 0,
-            EEGCBBHOPHG: 0,
-            JPNFBFKHPGD: 0,
+            BLLAOLNODLM: 0,
+            GJKJAGHEELF: 0,
+            IBOMMHGFEGP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MLPKNLLAOIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MLPKNLLAOIF.proto\"s\n\x0bMLPKNLLAOIF\x12\x20\n\x0bCFCLOGFJPBD\x18\
-    \x0c\x20\x01(\x05R\x0bCFCLOGFJPBD\x12\x20\n\x0bEEGCBBHOPHG\x18\x0e\x20\
-    \x01(\x05R\x0bEEGCBBHOPHG\x12\x20\n\x0bJPNFBFKHPGD\x18\x06\x20\x01(\rR\
-    \x0bJPNFBFKHPGDb\x06proto3\
+    \n\x11MLPKNLLAOIF.proto\"s\n\x0bMLPKNLLAOIF\x12\x20\n\x0bBLLAOLNODLM\x18\
+    \x07\x20\x01(\x05R\x0bBLLAOLNODLM\x12\x20\n\x0bGJKJAGHEELF\x18\n\x20\x01\
+    (\rR\x0bGJKJAGHEELF\x12\x20\n\x0bIBOMMHGFEGP\x18\x0b\x20\x01(\x05R\x0bIB\
+    OMMHGFEGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

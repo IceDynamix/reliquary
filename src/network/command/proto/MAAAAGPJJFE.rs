@@ -72,7 +72,7 @@ impl ::protobuf::Message for MAAAAGPJJFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MAAAAGPJJFE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.miracle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MAAAAGPJJFE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAAAAGPJJFE.proto\x1a\x16GameRogueMiracle.proto\"C\n\x0bMAAAAGPJJF\
-    E\x124\n\x0cmiracle_info\x18\x04\x20\x01(\x0b2\x11.GameRogueMiracleR\x0b\
-    miracleInfob\x06proto3\
+    E\x124\n\x0cmiracle_info\x18\r\x20\x01(\x0b2\x11.GameRogueMiracleR\x0bmi\
+    racleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

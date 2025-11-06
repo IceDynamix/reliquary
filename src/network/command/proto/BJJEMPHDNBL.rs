@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BJJEMPHDNBL {
     // message fields
-    // @@protoc_insertion_point(field:BJJEMPHDNBL.OPEEDJIHJOP)
-    pub OPEEDJIHJOP: u32,
-    // @@protoc_insertion_point(field:BJJEMPHDNBL.IIFOMGOFMDL)
-    pub IIFOMGOFMDL: u32,
-    // @@protoc_insertion_point(field:BJJEMPHDNBL.authkey_ver)
-    pub authkey_ver: ::protobuf::EnumOrUnknown<super::FCEKMEOHLLG::FCEKMEOHLLG>,
+    // @@protoc_insertion_point(field:BJJEMPHDNBL.sign_type)
+    pub sign_type: ::protobuf::EnumOrUnknown<super::FCEKMEOHLLG::FCEKMEOHLLG>,
+    // @@protoc_insertion_point(field:BJJEMPHDNBL.JLKMIOCFBOF)
+    pub JLKMIOCFBOF: u32,
+    // @@protoc_insertion_point(field:BJJEMPHDNBL.DDLPOMLFCLI)
+    pub DDLPOMLFCLI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BJJEMPHDNBL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl BJJEMPHDNBL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPEEDJIHJOP",
-            |m: &BJJEMPHDNBL| { &m.OPEEDJIHJOP },
-            |m: &mut BJJEMPHDNBL| { &mut m.OPEEDJIHJOP },
+            "sign_type",
+            |m: &BJJEMPHDNBL| { &m.sign_type },
+            |m: &mut BJJEMPHDNBL| { &mut m.sign_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIFOMGOFMDL",
-            |m: &BJJEMPHDNBL| { &m.IIFOMGOFMDL },
-            |m: &mut BJJEMPHDNBL| { &mut m.IIFOMGOFMDL },
+            "JLKMIOCFBOF",
+            |m: &BJJEMPHDNBL| { &m.JLKMIOCFBOF },
+            |m: &mut BJJEMPHDNBL| { &mut m.JLKMIOCFBOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "authkey_ver",
-            |m: &BJJEMPHDNBL| { &m.authkey_ver },
-            |m: &mut BJJEMPHDNBL| { &mut m.authkey_ver },
+            "DDLPOMLFCLI",
+            |m: &BJJEMPHDNBL| { &m.DDLPOMLFCLI },
+            |m: &mut BJJEMPHDNBL| { &mut m.DDLPOMLFCLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BJJEMPHDNBL>(
             "BJJEMPHDNBL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BJJEMPHDNBL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.OPEEDJIHJOP = is.read_uint32()?;
+                16 => {
+                    self.sign_type = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.IIFOMGOFMDL = is.read_uint32()?;
+                40 => {
+                    self.JLKMIOCFBOF = is.read_uint32()?;
                 },
-                88 => {
-                    self.authkey_ver = is.read_enum_or_unknown()?;
+                72 => {
+                    self.DDLPOMLFCLI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BJJEMPHDNBL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPEEDJIHJOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OPEEDJIHJOP);
+        if self.sign_type != ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.sign_type.value());
         }
-        if self.IIFOMGOFMDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IIFOMGOFMDL);
+        if self.JLKMIOCFBOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JLKMIOCFBOF);
         }
-        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.authkey_ver.value());
+        if self.DDLPOMLFCLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DDLPOMLFCLI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BJJEMPHDNBL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPEEDJIHJOP != 0 {
-            os.write_uint32(12, self.OPEEDJIHJOP)?;
+        if self.sign_type != ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.sign_type))?;
         }
-        if self.IIFOMGOFMDL != 0 {
-            os.write_uint32(3, self.IIFOMGOFMDL)?;
+        if self.JLKMIOCFBOF != 0 {
+            os.write_uint32(5, self.JLKMIOCFBOF)?;
         }
-        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.authkey_ver))?;
+        if self.DDLPOMLFCLI != 0 {
+            os.write_uint32(9, self.DDLPOMLFCLI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BJJEMPHDNBL {
     }
 
     fn clear(&mut self) {
-        self.OPEEDJIHJOP = 0;
-        self.IIFOMGOFMDL = 0;
-        self.authkey_ver = ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE);
+        self.sign_type = ::protobuf::EnumOrUnknown::new(super::FCEKMEOHLLG::FCEKMEOHLLG::PLAYER_RETURN_SIGN_TYPE_NONE);
+        self.JLKMIOCFBOF = 0;
+        self.DDLPOMLFCLI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BJJEMPHDNBL {
         static instance: BJJEMPHDNBL = BJJEMPHDNBL {
-            OPEEDJIHJOP: 0,
-            IIFOMGOFMDL: 0,
-            authkey_ver: ::protobuf::EnumOrUnknown::from_i32(0),
+            sign_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            JLKMIOCFBOF: 0,
+            DDLPOMLFCLI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for BJJEMPHDNBL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BJJEMPHDNBL.proto\x1a\x11FCEKMEOHLLG.proto\"\x80\x01\n\x0bBJJEMPHD\
-    NBL\x12\x20\n\x0bOPEEDJIHJOP\x18\x0c\x20\x01(\rR\x0bOPEEDJIHJOP\x12\x20\
-    \n\x0bIIFOMGOFMDL\x18\x03\x20\x01(\rR\x0bIIFOMGOFMDL\x12-\n\x0bauthkey_v\
-    er\x18\x0b\x20\x01(\x0e2\x0c.FCEKMEOHLLGR\nauthkeyVerb\x06proto3\
+    \n\x11BJJEMPHDNBL.proto\x1a\x11FCEKMEOHLLG.proto\"|\n\x0bBJJEMPHDNBL\x12\
+    )\n\tsign_type\x18\x02\x20\x01(\x0e2\x0c.FCEKMEOHLLGR\x08signType\x12\
+    \x20\n\x0bJLKMIOCFBOF\x18\x05\x20\x01(\rR\x0bJLKMIOCFBOF\x12\x20\n\x0bDD\
+    LPOMLFCLI\x18\t\x20\x01(\rR\x0bDDLPOMLFCLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

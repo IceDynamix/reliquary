@@ -30,8 +30,8 @@ pub struct CBBDIOMIFHD {
     // message fields
     // @@protoc_insertion_point(field:CBBDIOMIFHD.basic_info)
     pub basic_info: ::protobuf::MessageField<super::OODOCMDLOMF::OODOCMDLOMF>,
-    // @@protoc_insertion_point(field:CBBDIOMIFHD.NCKCCOKDKOL)
-    pub NCKCCOKDKOL: ::protobuf::MessageField<super::IDDLKHHLECG::IDDLKHHLECG>,
+    // @@protoc_insertion_point(field:CBBDIOMIFHD.JJPDIPGEADG)
+    pub JJPDIPGEADG: ::protobuf::MessageField<super::IDDLKHHLECG::IDDLKHHLECG>,
     // @@protoc_insertion_point(field:CBBDIOMIFHD.stage_info)
     pub stage_info: ::protobuf::MessageField<super::EPEGHCGCMHP::EPEGHCGCMHP>,
     // special fields
@@ -59,9 +59,9 @@ impl CBBDIOMIFHD {
             |m: &mut CBBDIOMIFHD| { &mut m.basic_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IDDLKHHLECG::IDDLKHHLECG>(
-            "NCKCCOKDKOL",
-            |m: &CBBDIOMIFHD| { &m.NCKCCOKDKOL },
-            |m: &mut CBBDIOMIFHD| { &mut m.NCKCCOKDKOL },
+            "JJPDIPGEADG",
+            |m: &CBBDIOMIFHD| { &m.JJPDIPGEADG },
+            |m: &mut CBBDIOMIFHD| { &mut m.JJPDIPGEADG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPEGHCGCMHP::EPEGHCGCMHP>(
             "stage_info",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCKCCOKDKOL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJPDIPGEADG)?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
@@ -111,7 +111,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.NCKCCOKDKOL.as_ref() {
+        if let Some(v) = self.JJPDIPGEADG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -128,7 +128,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
         if let Some(v) = self.basic_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.NCKCCOKDKOL.as_ref() {
+        if let Some(v) = self.JJPDIPGEADG.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
@@ -152,7 +152,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
 
     fn clear(&mut self) {
         self.basic_info.clear();
-        self.NCKCCOKDKOL.clear();
+        self.JJPDIPGEADG.clear();
         self.stage_info.clear();
         self.special_fields.clear();
     }
@@ -160,7 +160,7 @@ impl ::protobuf::Message for CBBDIOMIFHD {
     fn default_instance() -> &'static CBBDIOMIFHD {
         static instance: CBBDIOMIFHD = CBBDIOMIFHD {
             basic_info: ::protobuf::MessageField::none(),
-            NCKCCOKDKOL: ::protobuf::MessageField::none(),
+            JJPDIPGEADG: ::protobuf::MessageField::none(),
             stage_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -188,8 +188,8 @@ impl ::protobuf::reflect::ProtobufValue for CBBDIOMIFHD {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CBBDIOMIFHD.proto\x1a\x11EPEGHCGCMHP.proto\x1a\x11IDDLKHHLECG.prot\
     o\x1a\x11OODOCMDLOMF.proto\"\x97\x01\n\x0bCBBDIOMIFHD\x12+\n\nbasic_info\
-    \x18\x01\x20\x01(\x0b2\x0c.OODOCMDLOMFR\tbasicInfo\x12.\n\x0bNCKCCOKDKOL\
-    \x18\x02\x20\x01(\x0b2\x0c.IDDLKHHLECGR\x0bNCKCCOKDKOL\x12+\n\nstage_inf\
+    \x18\x01\x20\x01(\x0b2\x0c.OODOCMDLOMFR\tbasicInfo\x12.\n\x0bJJPDIPGEADG\
+    \x18\x02\x20\x01(\x0b2\x0c.IDDLKHHLECGR\x0bJJPDIPGEADG\x12+\n\nstage_inf\
     o\x18\x03\x20\x01(\x0b2\x0c.EPEGHCGCMHPR\tstageInfob\x06proto3\
 ";
 

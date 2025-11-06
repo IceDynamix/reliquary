@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CurTrialActivityScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CurTrialActivityScNotify.status)
-    pub status: ::protobuf::EnumOrUnknown<super::TrialActivityStatus::TrialActivityStatus>,
     // @@protoc_insertion_point(field:CurTrialActivityScNotify.activity_stage_id)
     pub activity_stage_id: u32,
+    // @@protoc_insertion_point(field:CurTrialActivityScNotify.status)
+    pub status: ::protobuf::EnumOrUnknown<super::TrialActivityStatus::TrialActivityStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:CurTrialActivityScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CurTrialActivityScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &CurTrialActivityScNotify| { &m.status },
-            |m: &mut CurTrialActivityScNotify| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "activity_stage_id",
             |m: &CurTrialActivityScNotify| { &m.activity_stage_id },
             |m: &mut CurTrialActivityScNotify| { &mut m.activity_stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &CurTrialActivityScNotify| { &m.status },
+            |m: &mut CurTrialActivityScNotify| { &mut m.status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CurTrialActivityScNotify>(
             "CurTrialActivityScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
                 88 => {
                     self.activity_stage_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.status.value());
-        }
         if self.activity_stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.activity_stage_id);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         if self.activity_stage_id != 0 {
             os.write_uint32(11, self.activity_stage_id)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE);
         self.activity_stage_id = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CurTrialActivityScNotify {
         static instance: CurTrialActivityScNotify = CurTrialActivityScNotify {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             activity_stage_id: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for CurTrialActivityScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCurTrialActivityScNotify.proto\x1a\x19TrialActivityStatus.proto\"t\
-    \n\x18CurTrialActivityScNotify\x12,\n\x06status\x18\x0c\x20\x01(\x0e2\
-    \x14.TrialActivityStatusR\x06status\x12*\n\x11activity_stage_id\x18\x0b\
-    \x20\x01(\rR\x0factivityStageIdb\x06proto3\
+    \n\x18CurTrialActivityScNotify\x12*\n\x11activity_stage_id\x18\x0b\x20\
+    \x01(\rR\x0factivityStageId\x12,\n\x06status\x18\x0f\x20\x01(\x0e2\x14.T\
+    rialActivityStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

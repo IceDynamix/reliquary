@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCBOLHFOIGI {
     // message fields
-    // @@protoc_insertion_point(field:OCBOLHFOIGI.FMDKHADMCOC)
-    pub FMDKHADMCOC: ::std::vec::Vec<super::LEEHJGNBGNK::LEEHJGNBGNK>,
+    // @@protoc_insertion_point(field:OCBOLHFOIGI.LPFMMNOPDMG)
+    pub LPFMMNOPDMG: ::std::vec::Vec<super::LEEHJGNBGNK::LEEHJGNBGNK>,
     // special fields
     // @@protoc_insertion_point(special_field:OCBOLHFOIGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl OCBOLHFOIGI {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMDKHADMCOC",
-            |m: &OCBOLHFOIGI| { &m.FMDKHADMCOC },
-            |m: &mut OCBOLHFOIGI| { &mut m.FMDKHADMCOC },
+            "LPFMMNOPDMG",
+            |m: &OCBOLHFOIGI| { &m.LPFMMNOPDMG },
+            |m: &mut OCBOLHFOIGI| { &mut m.LPFMMNOPDMG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OCBOLHFOIGI>(
             "OCBOLHFOIGI",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for OCBOLHFOIGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.FMDKHADMCOC.push(is.read_message()?);
+                58 => {
+                    self.LPFMMNOPDMG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OCBOLHFOIGI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FMDKHADMCOC {
+        for value in &self.LPFMMNOPDMG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for OCBOLHFOIGI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FMDKHADMCOC {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.LPFMMNOPDMG {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OCBOLHFOIGI {
     }
 
     fn clear(&mut self) {
-        self.FMDKHADMCOC.clear();
+        self.LPFMMNOPDMG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OCBOLHFOIGI {
         static instance: OCBOLHFOIGI = OCBOLHFOIGI {
-            FMDKHADMCOC: ::std::vec::Vec::new(),
+            LPFMMNOPDMG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for OCBOLHFOIGI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCBOLHFOIGI.proto\x1a\x11LEEHJGNBGNK.proto\"=\n\x0bOCBOLHFOIGI\x12\
-    .\n\x0bFMDKHADMCOC\x18\x02\x20\x03(\x0b2\x0c.LEEHJGNBGNKR\x0bFMDKHADMCOC\
+    .\n\x0bLPFMMNOPDMG\x18\x07\x20\x03(\x0b2\x0c.LEEHJGNBGNKR\x0bLPFMMNOPDMG\
     b\x06proto3\
 ";
 

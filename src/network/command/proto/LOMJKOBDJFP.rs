@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOMJKOBDJFP {
     // message fields
-    // @@protoc_insertion_point(field:LOMJKOBDJFP.FINBJPFFDHI)
-    pub FINBJPFFDHI: u32,
+    // @@protoc_insertion_point(field:LOMJKOBDJFP.ILHNKCDGHBE)
+    pub ILHNKCDGHBE: u32,
     // @@protoc_insertion_point(field:LOMJKOBDJFP.unique_id)
     pub unique_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl LOMJKOBDJFP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FINBJPFFDHI",
-            |m: &LOMJKOBDJFP| { &m.FINBJPFFDHI },
-            |m: &mut LOMJKOBDJFP| { &mut m.FINBJPFFDHI },
+            "ILHNKCDGHBE",
+            |m: &LOMJKOBDJFP| { &m.ILHNKCDGHBE },
+            |m: &mut LOMJKOBDJFP| { &mut m.ILHNKCDGHBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for LOMJKOBDJFP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.FINBJPFFDHI = is.read_uint32()?;
+                56 => {
+                    self.ILHNKCDGHBE = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for LOMJKOBDJFP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FINBJPFFDHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FINBJPFFDHI);
+        if self.ILHNKCDGHBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ILHNKCDGHBE);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for LOMJKOBDJFP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FINBJPFFDHI != 0 {
-            os.write_uint32(15, self.FINBJPFFDHI)?;
+        if self.ILHNKCDGHBE != 0 {
+            os.write_uint32(7, self.ILHNKCDGHBE)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(14, self.unique_id)?;
+            os.write_uint32(9, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for LOMJKOBDJFP {
     }
 
     fn clear(&mut self) {
-        self.FINBJPFFDHI = 0;
+        self.ILHNKCDGHBE = 0;
         self.unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOMJKOBDJFP {
         static instance: LOMJKOBDJFP = LOMJKOBDJFP {
-            FINBJPFFDHI: 0,
+            ILHNKCDGHBE: 0,
             unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for LOMJKOBDJFP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOMJKOBDJFP.proto\"L\n\x0bLOMJKOBDJFP\x12\x20\n\x0bFINBJPFFDHI\x18\
-    \x0f\x20\x01(\rR\x0bFINBJPFFDHI\x12\x1b\n\tunique_id\x18\x0e\x20\x01(\rR\
+    \n\x11LOMJKOBDJFP.proto\"L\n\x0bLOMJKOBDJFP\x12\x20\n\x0bILHNKCDGHBE\x18\
+    \x07\x20\x01(\rR\x0bILHNKCDGHBE\x12\x1b\n\tunique_id\x18\t\x20\x01(\rR\
     \x08uniqueIdb\x06proto3\
 ";
 

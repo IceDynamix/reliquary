@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEMEDOEHBGE {
     // message fields
-    // @@protoc_insertion_point(field:CEMEDOEHBGE.BDNLNMCOHGB)
-    pub BDNLNMCOHGB: ::std::string::String,
-    // @@protoc_insertion_point(field:CEMEDOEHBGE.FGNFBKBOGDJ)
-    pub FGNFBKBOGDJ: ::protobuf::MessageField<super::ReplayInfo::ReplayInfo>,
+    // @@protoc_insertion_point(field:CEMEDOEHBGE.MEBOBAMLHIN)
+    pub MEBOBAMLHIN: ::std::string::String,
+    // @@protoc_insertion_point(field:CEMEDOEHBGE.IMEENILCMEC)
+    pub IMEENILCMEC: ::protobuf::MessageField<super::ReplayInfo::ReplayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:CEMEDOEHBGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CEMEDOEHBGE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDNLNMCOHGB",
-            |m: &CEMEDOEHBGE| { &m.BDNLNMCOHGB },
-            |m: &mut CEMEDOEHBGE| { &mut m.BDNLNMCOHGB },
+            "MEBOBAMLHIN",
+            |m: &CEMEDOEHBGE| { &m.MEBOBAMLHIN },
+            |m: &mut CEMEDOEHBGE| { &mut m.MEBOBAMLHIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReplayInfo::ReplayInfo>(
-            "FGNFBKBOGDJ",
-            |m: &CEMEDOEHBGE| { &m.FGNFBKBOGDJ },
-            |m: &mut CEMEDOEHBGE| { &mut m.FGNFBKBOGDJ },
+            "IMEENILCMEC",
+            |m: &CEMEDOEHBGE| { &m.IMEENILCMEC },
+            |m: &mut CEMEDOEHBGE| { &mut m.IMEENILCMEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEMEDOEHBGE>(
             "CEMEDOEHBGE",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for CEMEDOEHBGE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.BDNLNMCOHGB = is.read_string()?;
+                    self.MEBOBAMLHIN = is.read_string()?;
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGNFBKBOGDJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMEENILCMEC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for CEMEDOEHBGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.BDNLNMCOHGB.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.BDNLNMCOHGB);
+        if !self.MEBOBAMLHIN.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.MEBOBAMLHIN);
         }
-        if let Some(v) = self.FGNFBKBOGDJ.as_ref() {
+        if let Some(v) = self.IMEENILCMEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CEMEDOEHBGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.BDNLNMCOHGB.is_empty() {
-            os.write_string(1, &self.BDNLNMCOHGB)?;
+        if !self.MEBOBAMLHIN.is_empty() {
+            os.write_string(1, &self.MEBOBAMLHIN)?;
         }
-        if let Some(v) = self.FGNFBKBOGDJ.as_ref() {
+        if let Some(v) = self.IMEENILCMEC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CEMEDOEHBGE {
     }
 
     fn clear(&mut self) {
-        self.BDNLNMCOHGB.clear();
-        self.FGNFBKBOGDJ.clear();
+        self.MEBOBAMLHIN.clear();
+        self.IMEENILCMEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEMEDOEHBGE {
         static instance: CEMEDOEHBGE = CEMEDOEHBGE {
-            BDNLNMCOHGB: ::std::string::String::new(),
-            FGNFBKBOGDJ: ::protobuf::MessageField::none(),
+            MEBOBAMLHIN: ::std::string::String::new(),
+            IMEENILCMEC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CEMEDOEHBGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEMEDOEHBGE.proto\x1a\x10ReplayInfo.proto\"^\n\x0bCEMEDOEHBGE\x12\
-    \x20\n\x0bBDNLNMCOHGB\x18\x01\x20\x01(\tR\x0bBDNLNMCOHGB\x12-\n\x0bFGNFB\
-    KBOGDJ\x18\x02\x20\x01(\x0b2\x0b.ReplayInfoR\x0bFGNFBKBOGDJb\x06proto3\
+    \x20\n\x0bMEBOBAMLHIN\x18\x01\x20\x01(\tR\x0bMEBOBAMLHIN\x12-\n\x0bIMEEN\
+    ILCMEC\x18\x02\x20\x01(\x0b2\x0b.ReplayInfoR\x0bIMEENILCMECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

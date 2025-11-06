@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct POHNIIFLCGE {
     // message fields
-    // @@protoc_insertion_point(field:POHNIIFLCGE.DGDDJNHLGGJ)
-    pub DGDDJNHLGGJ: u32,
+    // @@protoc_insertion_point(field:POHNIIFLCGE.ELBLEBOEILN)
+    pub ELBLEBOEILN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:POHNIIFLCGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl POHNIIFLCGE {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGDDJNHLGGJ",
-            |m: &POHNIIFLCGE| { &m.DGDDJNHLGGJ },
-            |m: &mut POHNIIFLCGE| { &mut m.DGDDJNHLGGJ },
+            "ELBLEBOEILN",
+            |m: &POHNIIFLCGE| { &m.ELBLEBOEILN },
+            |m: &mut POHNIIFLCGE| { &mut m.ELBLEBOEILN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<POHNIIFLCGE>(
             "POHNIIFLCGE",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for POHNIIFLCGE {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.DGDDJNHLGGJ = is.read_uint32()?;
+                    self.ELBLEBOEILN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for POHNIIFLCGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGDDJNHLGGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DGDDJNHLGGJ);
+        if self.ELBLEBOEILN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ELBLEBOEILN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for POHNIIFLCGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGDDJNHLGGJ != 0 {
-            os.write_uint32(6, self.DGDDJNHLGGJ)?;
+        if self.ELBLEBOEILN != 0 {
+            os.write_uint32(6, self.ELBLEBOEILN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for POHNIIFLCGE {
     }
 
     fn clear(&mut self) {
-        self.DGDDJNHLGGJ = 0;
+        self.ELBLEBOEILN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static POHNIIFLCGE {
         static instance: POHNIIFLCGE = POHNIIFLCGE {
-            DGDDJNHLGGJ: 0,
+            ELBLEBOEILN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for POHNIIFLCGE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11POHNIIFLCGE.proto\"/\n\x0bPOHNIIFLCGE\x12\x20\n\x0bDGDDJNHLGGJ\x18\
-    \x06\x20\x01(\rR\x0bDGDDJNHLGGJb\x06proto3\
+    \n\x11POHNIIFLCGE.proto\"/\n\x0bPOHNIIFLCGE\x12\x20\n\x0bELBLEBOEILN\x18\
+    \x06\x20\x01(\rR\x0bELBLEBOEILNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

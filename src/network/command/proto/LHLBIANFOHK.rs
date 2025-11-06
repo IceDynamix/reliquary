@@ -30,12 +30,12 @@ pub struct LHLBIANFOHK {
     // message fields
     // @@protoc_insertion_point(field:LHLBIANFOHK.monster_id)
     pub monster_id: u32,
-    // @@protoc_insertion_point(field:LHLBIANFOHK.GMLFMPJPEGG)
-    pub GMLFMPJPEGG: u32,
-    // @@protoc_insertion_point(field:LHLBIANFOHK.FFPMJFHNCHO)
-    pub FFPMJFHNCHO: u32,
-    // @@protoc_insertion_point(field:LHLBIANFOHK.GMMBGAMHBKB)
-    pub GMMBGAMHBKB: u32,
+    // @@protoc_insertion_point(field:LHLBIANFOHK.PJDDDOOMHBL)
+    pub PJDDDOOMHBL: u32,
+    // @@protoc_insertion_point(field:LHLBIANFOHK.HCDPLDEIBEM)
+    pub HCDPLDEIBEM: u32,
+    // @@protoc_insertion_point(field:LHLBIANFOHK.KOIAINPOGMF)
+    pub KOIAINPOGMF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LHLBIANFOHK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl LHLBIANFOHK {
             |m: &mut LHLBIANFOHK| { &mut m.monster_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMLFMPJPEGG",
-            |m: &LHLBIANFOHK| { &m.GMLFMPJPEGG },
-            |m: &mut LHLBIANFOHK| { &mut m.GMLFMPJPEGG },
+            "PJDDDOOMHBL",
+            |m: &LHLBIANFOHK| { &m.PJDDDOOMHBL },
+            |m: &mut LHLBIANFOHK| { &mut m.PJDDDOOMHBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFPMJFHNCHO",
-            |m: &LHLBIANFOHK| { &m.FFPMJFHNCHO },
-            |m: &mut LHLBIANFOHK| { &mut m.FFPMJFHNCHO },
+            "HCDPLDEIBEM",
+            |m: &LHLBIANFOHK| { &m.HCDPLDEIBEM },
+            |m: &mut LHLBIANFOHK| { &mut m.HCDPLDEIBEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMMBGAMHBKB",
-            |m: &LHLBIANFOHK| { &m.GMMBGAMHBKB },
-            |m: &mut LHLBIANFOHK| { &mut m.GMMBGAMHBKB },
+            "KOIAINPOGMF",
+            |m: &LHLBIANFOHK| { &m.KOIAINPOGMF },
+            |m: &mut LHLBIANFOHK| { &mut m.KOIAINPOGMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHLBIANFOHK>(
             "LHLBIANFOHK",
@@ -97,13 +97,13 @@ impl ::protobuf::Message for LHLBIANFOHK {
                     self.monster_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.GMLFMPJPEGG = is.read_uint32()?;
+                    self.PJDDDOOMHBL = is.read_uint32()?;
                 },
                 24 => {
-                    self.FFPMJFHNCHO = is.read_uint32()?;
+                    self.HCDPLDEIBEM = is.read_uint32()?;
                 },
                 32 => {
-                    self.GMMBGAMHBKB = is.read_uint32()?;
+                    self.KOIAINPOGMF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for LHLBIANFOHK {
         if self.monster_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_id);
         }
-        if self.GMLFMPJPEGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GMLFMPJPEGG);
+        if self.PJDDDOOMHBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PJDDDOOMHBL);
         }
-        if self.FFPMJFHNCHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FFPMJFHNCHO);
+        if self.HCDPLDEIBEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HCDPLDEIBEM);
         }
-        if self.GMMBGAMHBKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GMMBGAMHBKB);
+        if self.KOIAINPOGMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.KOIAINPOGMF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for LHLBIANFOHK {
         if self.monster_id != 0 {
             os.write_uint32(1, self.monster_id)?;
         }
-        if self.GMLFMPJPEGG != 0 {
-            os.write_uint32(2, self.GMLFMPJPEGG)?;
+        if self.PJDDDOOMHBL != 0 {
+            os.write_uint32(2, self.PJDDDOOMHBL)?;
         }
-        if self.FFPMJFHNCHO != 0 {
-            os.write_uint32(3, self.FFPMJFHNCHO)?;
+        if self.HCDPLDEIBEM != 0 {
+            os.write_uint32(3, self.HCDPLDEIBEM)?;
         }
-        if self.GMMBGAMHBKB != 0 {
-            os.write_uint32(4, self.GMMBGAMHBKB)?;
+        if self.KOIAINPOGMF != 0 {
+            os.write_uint32(4, self.KOIAINPOGMF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for LHLBIANFOHK {
 
     fn clear(&mut self) {
         self.monster_id = 0;
-        self.GMLFMPJPEGG = 0;
-        self.FFPMJFHNCHO = 0;
-        self.GMMBGAMHBKB = 0;
+        self.PJDDDOOMHBL = 0;
+        self.HCDPLDEIBEM = 0;
+        self.KOIAINPOGMF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHLBIANFOHK {
         static instance: LHLBIANFOHK = LHLBIANFOHK {
             monster_id: 0,
-            GMLFMPJPEGG: 0,
-            FFPMJFHNCHO: 0,
-            GMMBGAMHBKB: 0,
+            PJDDDOOMHBL: 0,
+            HCDPLDEIBEM: 0,
+            KOIAINPOGMF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for LHLBIANFOHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHLBIANFOHK.proto\"\x92\x01\n\x0bLHLBIANFOHK\x12\x1d\n\nmonster_id\
-    \x18\x01\x20\x01(\rR\tmonsterId\x12\x20\n\x0bGMLFMPJPEGG\x18\x02\x20\x01\
-    (\rR\x0bGMLFMPJPEGG\x12\x20\n\x0bFFPMJFHNCHO\x18\x03\x20\x01(\rR\x0bFFPM\
-    JFHNCHO\x12\x20\n\x0bGMMBGAMHBKB\x18\x04\x20\x01(\rR\x0bGMMBGAMHBKBb\x06\
+    \x18\x01\x20\x01(\rR\tmonsterId\x12\x20\n\x0bPJDDDOOMHBL\x18\x02\x20\x01\
+    (\rR\x0bPJDDDOOMHBL\x12\x20\n\x0bHCDPLDEIBEM\x18\x03\x20\x01(\rR\x0bHCDP\
+    LDEIBEM\x12\x20\n\x0bKOIAINPOGMF\x18\x04\x20\x01(\rR\x0bKOIAINPOGMFb\x06\
     proto3\
 ";
 

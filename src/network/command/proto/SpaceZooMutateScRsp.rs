@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooMutateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.GOEAOFNFJOD)
-    pub GOEAOFNFJOD: ::std::vec::Vec<super::IPJAIINEGEL::IPJAIINEGEL>,
-    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.IKLPNCGBPPC)
-    pub IKLPNCGBPPC: bool,
+    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.DGJMOMNAKPP)
+    pub DGJMOMNAKPP: ::std::vec::Vec<super::IPJAIINEGEL::IPJAIINEGEL>,
+    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.EALLKDINNBO)
+    pub EALLKDINNBO: bool,
+    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.ECFEAFBJHCE)
+    pub ECFEAFBJHCE: ::protobuf::MessageField<super::FAFGMLPADMI::FAFGMLPADMI>,
     // @@protoc_insertion_point(field:SpaceZooMutateScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SpaceZooMutateScRsp.EFLCMHMAJAL)
-    pub EFLCMHMAJAL: ::protobuf::MessageField<super::FAFGMLPADMI::FAFGMLPADMI>,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooMutateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl SpaceZooMutateScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GOEAOFNFJOD",
-            |m: &SpaceZooMutateScRsp| { &m.GOEAOFNFJOD },
-            |m: &mut SpaceZooMutateScRsp| { &mut m.GOEAOFNFJOD },
+            "DGJMOMNAKPP",
+            |m: &SpaceZooMutateScRsp| { &m.DGJMOMNAKPP },
+            |m: &mut SpaceZooMutateScRsp| { &mut m.DGJMOMNAKPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKLPNCGBPPC",
-            |m: &SpaceZooMutateScRsp| { &m.IKLPNCGBPPC },
-            |m: &mut SpaceZooMutateScRsp| { &mut m.IKLPNCGBPPC },
+            "EALLKDINNBO",
+            |m: &SpaceZooMutateScRsp| { &m.EALLKDINNBO },
+            |m: &mut SpaceZooMutateScRsp| { &mut m.EALLKDINNBO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAFGMLPADMI::FAFGMLPADMI>(
+            "ECFEAFBJHCE",
+            |m: &SpaceZooMutateScRsp| { &m.ECFEAFBJHCE },
+            |m: &mut SpaceZooMutateScRsp| { &mut m.ECFEAFBJHCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SpaceZooMutateScRsp| { &m.retcode },
             |m: &mut SpaceZooMutateScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAFGMLPADMI::FAFGMLPADMI>(
-            "EFLCMHMAJAL",
-            |m: &SpaceZooMutateScRsp| { &m.EFLCMHMAJAL },
-            |m: &mut SpaceZooMutateScRsp| { &mut m.EFLCMHMAJAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooMutateScRsp>(
             "SpaceZooMutateScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SpaceZooMutateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.GOEAOFNFJOD.push(is.read_message()?);
-                },
-                96 => {
-                    self.IKLPNCGBPPC = is.read_bool()?;
+                50 => {
+                    self.DGJMOMNAKPP.push(is.read_message()?);
                 },
                 72 => {
-                    self.retcode = is.read_uint32()?;
+                    self.EALLKDINNBO = is.read_bool()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EFLCMHMAJAL)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ECFEAFBJHCE)?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for SpaceZooMutateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GOEAOFNFJOD {
+        for value in &self.DGJMOMNAKPP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.IKLPNCGBPPC != false {
+        if self.EALLKDINNBO != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if let Some(v) = self.EFLCMHMAJAL.as_ref() {
+        if let Some(v) = self.ECFEAFBJHCE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for SpaceZooMutateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GOEAOFNFJOD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.DGJMOMNAKPP {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.IKLPNCGBPPC != false {
-            os.write_bool(12, self.IKLPNCGBPPC)?;
+        if self.EALLKDINNBO != false {
+            os.write_bool(9, self.EALLKDINNBO)?;
+        }
+        if let Some(v) = self.ECFEAFBJHCE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        if let Some(v) = self.EFLCMHMAJAL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SpaceZooMutateScRsp {
     }
 
     fn clear(&mut self) {
-        self.GOEAOFNFJOD.clear();
-        self.IKLPNCGBPPC = false;
+        self.DGJMOMNAKPP.clear();
+        self.EALLKDINNBO = false;
+        self.ECFEAFBJHCE.clear();
         self.retcode = 0;
-        self.EFLCMHMAJAL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooMutateScRsp {
         static instance: SpaceZooMutateScRsp = SpaceZooMutateScRsp {
-            GOEAOFNFJOD: ::std::vec::Vec::new(),
-            IKLPNCGBPPC: false,
+            DGJMOMNAKPP: ::std::vec::Vec::new(),
+            EALLKDINNBO: false,
+            ECFEAFBJHCE: ::protobuf::MessageField::none(),
             retcode: 0,
-            EFLCMHMAJAL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooMutateScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SpaceZooMutateScRsp.proto\x1a\x11FAFGMLPADMI.proto\x1a\x11IPJAIINE\
-    GEL.proto\"\xb1\x01\n\x13SpaceZooMutateScRsp\x12.\n\x0bGOEAOFNFJOD\x18\r\
-    \x20\x03(\x0b2\x0c.IPJAIINEGELR\x0bGOEAOFNFJOD\x12\x20\n\x0bIKLPNCGBPPC\
-    \x18\x0c\x20\x01(\x08R\x0bIKLPNCGBPPC\x12\x18\n\x07retcode\x18\t\x20\x01\
-    (\rR\x07retcode\x12.\n\x0bEFLCMHMAJAL\x18\x03\x20\x01(\x0b2\x0c.FAFGMLPA\
-    DMIR\x0bEFLCMHMAJALb\x06proto3\
+    GEL.proto\"\xb1\x01\n\x13SpaceZooMutateScRsp\x12.\n\x0bDGJMOMNAKPP\x18\
+    \x06\x20\x03(\x0b2\x0c.IPJAIINEGELR\x0bDGJMOMNAKPP\x12\x20\n\x0bEALLKDIN\
+    NBO\x18\t\x20\x01(\x08R\x0bEALLKDINNBO\x12.\n\x0bECFEAFBJHCE\x18\x0c\x20\
+    \x01(\x0b2\x0c.FAFGMLPADMIR\x0bECFEAFBJHCE\x12\x18\n\x07retcode\x18\r\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

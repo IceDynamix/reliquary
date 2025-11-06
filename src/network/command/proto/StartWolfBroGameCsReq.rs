@@ -30,12 +30,12 @@ pub struct StartWolfBroGameCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
-    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.DJFCMLIPDAB)
-    pub DJFCMLIPDAB: bool,
     // @@protoc_insertion_point(field:StartWolfBroGameCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.BFKFDKBOCJG)
+    pub BFKFDKBOCJG: bool,
+    // @@protoc_insertion_point(field:StartWolfBroGameCsReq.group_state_info)
+    pub group_state_info: ::protobuf::MessageField<super::GroupStateChangeInfo::GroupStateChangeInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:StartWolfBroGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl StartWolfBroGameCsReq {
             |m: &StartWolfBroGameCsReq| { &m.id },
             |m: &mut StartWolfBroGameCsReq| { &mut m.id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
-            "group_state_info",
-            |m: &StartWolfBroGameCsReq| { &m.group_state_info },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.group_state_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFCMLIPDAB",
-            |m: &StartWolfBroGameCsReq| { &m.DJFCMLIPDAB },
-            |m: &mut StartWolfBroGameCsReq| { &mut m.DJFCMLIPDAB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &StartWolfBroGameCsReq| { &m.motion },
             |m: &mut StartWolfBroGameCsReq| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BFKFDKBOCJG",
+            |m: &StartWolfBroGameCsReq| { &m.BFKFDKBOCJG },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.BFKFDKBOCJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateChangeInfo::GroupStateChangeInfo>(
+            "group_state_info",
+            |m: &StartWolfBroGameCsReq| { &m.group_state_info },
+            |m: &mut StartWolfBroGameCsReq| { &mut m.group_state_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartWolfBroGameCsReq>(
             "StartWolfBroGameCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.id = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
-                },
-                88 => {
-                    self.DJFCMLIPDAB = is.read_bool()?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                48 => {
+                    self.BFKFDKBOCJG = is.read_bool()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
-        if let Some(v) = self.group_state_info.as_ref() {
+        if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DJFCMLIPDAB != false {
+        if self.BFKFDKBOCJG != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.motion.as_ref() {
+        if let Some(v) = self.group_state_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,16 +138,16 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(13, self.id)?;
-        }
-        if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.DJFCMLIPDAB != false {
-            os.write_bool(11, self.DJFCMLIPDAB)?;
+            os.write_uint32(2, self.id)?;
         }
         if let Some(v) = self.motion.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.BFKFDKBOCJG != false {
+            os.write_bool(6, self.BFKFDKBOCJG)?;
+        }
+        if let Some(v) = self.group_state_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for StartWolfBroGameCsReq {
 
     fn clear(&mut self) {
         self.id = 0;
-        self.group_state_info.clear();
-        self.DJFCMLIPDAB = false;
         self.motion.clear();
+        self.BFKFDKBOCJG = false;
+        self.group_state_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartWolfBroGameCsReq {
         static instance: StartWolfBroGameCsReq = StartWolfBroGameCsReq {
             id: 0,
-            group_state_info: ::protobuf::MessageField::none(),
-            DJFCMLIPDAB: false,
             motion: ::protobuf::MessageField::none(),
+            BFKFDKBOCJG: false,
+            group_state_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for StartWolfBroGameCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bStartWolfBroGameCsReq.proto\x1a\x14GroupStateInfo.proto\x1a\x10Mot\
-    ionInfo.proto\"\xa9\x01\n\x15StartWolfBroGameCsReq\x12\x0e\n\x02id\x18\r\
-    \x20\x01(\rR\x02id\x129\n\x10group_state_info\x18\x05\x20\x01(\x0b2\x0f.\
-    GroupStateInfoR\x0egroupStateInfo\x12\x20\n\x0bDJFCMLIPDAB\x18\x0b\x20\
-    \x01(\x08R\x0bDJFCMLIPDAB\x12#\n\x06motion\x18\x03\x20\x01(\x0b2\x0b.Mot\
-    ionInfoR\x06motionb\x06proto3\
+    \n\x1bStartWolfBroGameCsReq.proto\x1a\x1aGroupStateChangeInfo.proto\x1a\
+    \x10MotionInfo.proto\"\xaf\x01\n\x15StartWolfBroGameCsReq\x12\x0e\n\x02i\
+    d\x18\x02\x20\x01(\rR\x02id\x12#\n\x06motion\x18\x03\x20\x01(\x0b2\x0b.M\
+    otionInfoR\x06motion\x12\x20\n\x0bBFKFDKBOCJG\x18\x06\x20\x01(\x08R\x0bB\
+    FKFDKBOCJG\x12?\n\x10group_state_info\x18\x0c\x20\x01(\x0b2\x15.GroupSta\
+    teChangeInfoR\x0egroupStateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GroupStateInfo::file_descriptor().clone());
+            deps.push(super::GroupStateChangeInfo::file_descriptor().clone());
             deps.push(super::MotionInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartWolfBroGameCsReq::generated_message_descriptor_data());

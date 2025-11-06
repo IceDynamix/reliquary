@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LFEGOIFPDJJ {
     // message oneof groups
-    pub PHILNEAOHKO: ::std::option::Option<lfegoifpdjj::PHILNEAOHKO>,
+    pub NDPFGALOELN: ::std::option::Option<lfegoifpdjj::NDPFGALOELN>,
     // special fields
     // @@protoc_insertion_point(special_field:LFEGOIFPDJJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl LFEGOIFPDJJ {
         ::std::default::Default::default()
     }
 
-    // .CAGFLKCLGCH NIBDJFABMAC = 12;
+    // .CAGFLKCLGCH NIBDJFABMAC = 10;
 
     pub fn NIBDJFABMAC(&self) -> &super::CAGFLKCLGCH::CAGFLKCLGCH {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(ref v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(ref v)) => v,
             _ => <super::CAGFLKCLGCH::CAGFLKCLGCH as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_NIBDJFABMAC(&mut self) {
-        self.PHILNEAOHKO = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
     }
 
     pub fn has_NIBDJFABMAC(&self) -> bool {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(..)) => true,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_NIBDJFABMAC(&mut self, v: super::CAGFLKCLGCH::CAGFLKCLGCH) {
-        self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(v))
+        self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_NIBDJFABMAC(&mut self) -> &mut super::CAGFLKCLGCH::CAGFLKCLGCH {
-        if let ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(_)) = self.PHILNEAOHKO {
+        if let ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(_)) = self.NDPFGALOELN {
         } else {
-            self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(super::CAGFLKCLGCH::CAGFLKCLGCH::new()));
+            self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(super::CAGFLKCLGCH::CAGFLKCLGCH::new()));
         }
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(ref mut v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl LFEGOIFPDJJ {
     // Take field
     pub fn take_NIBDJFABMAC(&mut self) -> super::CAGFLKCLGCH::CAGFLKCLGCH {
         if self.has_NIBDJFABMAC() {
-            match self.PHILNEAOHKO.take() {
-                ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(v)) => v,
+            match self.NDPFGALOELN.take() {
+                ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,88 +94,39 @@ impl LFEGOIFPDJJ {
         }
     }
 
-    // .NKGPOJPAKDP NIAHDPNHMFC = 2;
-
-    pub fn NIAHDPNHMFC(&self) -> &super::NKGPOJPAKDP::NKGPOJPAKDP {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(ref v)) => v,
-            _ => <super::NKGPOJPAKDP::NKGPOJPAKDP as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NIAHDPNHMFC(&mut self) {
-        self.PHILNEAOHKO = ::std::option::Option::None;
-    }
-
-    pub fn has_NIAHDPNHMFC(&self) -> bool {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NIAHDPNHMFC(&mut self, v: super::NKGPOJPAKDP::NKGPOJPAKDP) {
-        self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NIAHDPNHMFC(&mut self) -> &mut super::NKGPOJPAKDP::NKGPOJPAKDP {
-        if let ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(_)) = self.PHILNEAOHKO {
-        } else {
-            self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(super::NKGPOJPAKDP::NKGPOJPAKDP::new()));
-        }
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NIAHDPNHMFC(&mut self) -> super::NKGPOJPAKDP::NKGPOJPAKDP {
-        if self.has_NIAHDPNHMFC() {
-            match self.PHILNEAOHKO.take() {
-                ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::NKGPOJPAKDP::NKGPOJPAKDP::new()
-        }
-    }
-
-    // .ACCGMJOIFMJ LFDNCHKALIK = 7;
+    // .ACCGMJOIFMJ LFDNCHKALIK = 4;
 
     pub fn LFDNCHKALIK(&self) -> &super::ACCGMJOIFMJ::ACCGMJOIFMJ {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(ref v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(ref v)) => v,
             _ => <super::ACCGMJOIFMJ::ACCGMJOIFMJ as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_LFDNCHKALIK(&mut self) {
-        self.PHILNEAOHKO = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
     }
 
     pub fn has_LFDNCHKALIK(&self) -> bool {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(..)) => true,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_LFDNCHKALIK(&mut self, v: super::ACCGMJOIFMJ::ACCGMJOIFMJ) {
-        self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(v))
+        self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_LFDNCHKALIK(&mut self) -> &mut super::ACCGMJOIFMJ::ACCGMJOIFMJ {
-        if let ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(_)) = self.PHILNEAOHKO {
+        if let ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(_)) = self.NDPFGALOELN {
         } else {
-            self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(super::ACCGMJOIFMJ::ACCGMJOIFMJ::new()));
+            self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(super::ACCGMJOIFMJ::ACCGMJOIFMJ::new()));
         }
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(ref mut v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +134,8 @@ impl LFEGOIFPDJJ {
     // Take field
     pub fn take_LFDNCHKALIK(&mut self) -> super::ACCGMJOIFMJ::ACCGMJOIFMJ {
         if self.has_LFDNCHKALIK() {
-            match self.PHILNEAOHKO.take() {
-                ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(v)) => v,
+            match self.NDPFGALOELN.take() {
+                ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -192,39 +143,88 @@ impl LFEGOIFPDJJ {
         }
     }
 
-    // .IHJIEMMAOMM CIOGIOCCGJE = 14;
+    // .NKGPOJPAKDP NIAHDPNHMFC = 12;
+
+    pub fn NIAHDPNHMFC(&self) -> &super::NKGPOJPAKDP::NKGPOJPAKDP {
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(ref v)) => v,
+            _ => <super::NKGPOJPAKDP::NKGPOJPAKDP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NIAHDPNHMFC(&mut self) {
+        self.NDPFGALOELN = ::std::option::Option::None;
+    }
+
+    pub fn has_NIAHDPNHMFC(&self) -> bool {
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NIAHDPNHMFC(&mut self, v: super::NKGPOJPAKDP::NKGPOJPAKDP) {
+        self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NIAHDPNHMFC(&mut self) -> &mut super::NKGPOJPAKDP::NKGPOJPAKDP {
+        if let ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(_)) = self.NDPFGALOELN {
+        } else {
+            self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(super::NKGPOJPAKDP::NKGPOJPAKDP::new()));
+        }
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NIAHDPNHMFC(&mut self) -> super::NKGPOJPAKDP::NKGPOJPAKDP {
+        if self.has_NIAHDPNHMFC() {
+            match self.NDPFGALOELN.take() {
+                ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NKGPOJPAKDP::NKGPOJPAKDP::new()
+        }
+    }
+
+    // .IHJIEMMAOMM CIOGIOCCGJE = 6;
 
     pub fn CIOGIOCCGJE(&self) -> &super::IHJIEMMAOMM::IHJIEMMAOMM {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(ref v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(ref v)) => v,
             _ => <super::IHJIEMMAOMM::IHJIEMMAOMM as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CIOGIOCCGJE(&mut self) {
-        self.PHILNEAOHKO = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
     }
 
     pub fn has_CIOGIOCCGJE(&self) -> bool {
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(..)) => true,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CIOGIOCCGJE(&mut self, v: super::IHJIEMMAOMM::IHJIEMMAOMM) {
-        self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(v))
+        self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_CIOGIOCCGJE(&mut self) -> &mut super::IHJIEMMAOMM::IHJIEMMAOMM {
-        if let ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(_)) = self.PHILNEAOHKO {
+        if let ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(_)) = self.NDPFGALOELN {
         } else {
-            self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(super::IHJIEMMAOMM::IHJIEMMAOMM::new()));
+            self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(super::IHJIEMMAOMM::IHJIEMMAOMM::new()));
         }
-        match self.PHILNEAOHKO {
-            ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(ref mut v)) => v,
+        match self.NDPFGALOELN {
+            ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -232,8 +232,8 @@ impl LFEGOIFPDJJ {
     // Take field
     pub fn take_CIOGIOCCGJE(&mut self) -> super::IHJIEMMAOMM::IHJIEMMAOMM {
         if self.has_CIOGIOCCGJE() {
-            match self.PHILNEAOHKO.take() {
-                ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(v)) => v,
+            match self.NDPFGALOELN.take() {
+                ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -251,19 +251,19 @@ impl LFEGOIFPDJJ {
             LFEGOIFPDJJ::mut_NIBDJFABMAC,
             LFEGOIFPDJJ::set_NIBDJFABMAC,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NKGPOJPAKDP::NKGPOJPAKDP>(
-            "NIAHDPNHMFC",
-            LFEGOIFPDJJ::has_NIAHDPNHMFC,
-            LFEGOIFPDJJ::NIAHDPNHMFC,
-            LFEGOIFPDJJ::mut_NIAHDPNHMFC,
-            LFEGOIFPDJJ::set_NIAHDPNHMFC,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ACCGMJOIFMJ::ACCGMJOIFMJ>(
             "LFDNCHKALIK",
             LFEGOIFPDJJ::has_LFDNCHKALIK,
             LFEGOIFPDJJ::LFDNCHKALIK,
             LFEGOIFPDJJ::mut_LFDNCHKALIK,
             LFEGOIFPDJJ::set_LFDNCHKALIK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NKGPOJPAKDP::NKGPOJPAKDP>(
+            "NIAHDPNHMFC",
+            LFEGOIFPDJJ::has_NIAHDPNHMFC,
+            LFEGOIFPDJJ::NIAHDPNHMFC,
+            LFEGOIFPDJJ::mut_NIAHDPNHMFC,
+            LFEGOIFPDJJ::set_NIAHDPNHMFC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IHJIEMMAOMM::IHJIEMMAOMM>(
             "CIOGIOCCGJE",
@@ -272,7 +272,7 @@ impl LFEGOIFPDJJ {
             LFEGOIFPDJJ::mut_CIOGIOCCGJE,
             LFEGOIFPDJJ::set_CIOGIOCCGJE,
         ));
-        oneofs.push(lfegoifpdjj::PHILNEAOHKO::generated_oneof_descriptor_data());
+        oneofs.push(lfegoifpdjj::NDPFGALOELN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LFEGOIFPDJJ>(
             "LFEGOIFPDJJ",
             fields,
@@ -291,17 +291,17 @@ impl ::protobuf::Message for LFEGOIFPDJJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                82 => {
+                    self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(is.read_message()?));
+                },
+                34 => {
+                    self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(is.read_message()?));
+                },
                 98 => {
-                    self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(is.read_message()?));
+                    self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(is.read_message()?));
                 },
-                18 => {
-                    self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(is.read_message()?));
-                },
-                58 => {
-                    self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(is.read_message()?));
-                },
-                114 => {
-                    self.PHILNEAOHKO = ::std::option::Option::Some(lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(is.read_message()?));
+                50 => {
+                    self.NDPFGALOELN = ::std::option::Option::Some(lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -315,21 +315,21 @@ impl ::protobuf::Message for LFEGOIFPDJJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.PHILNEAOHKO {
+        if let ::std::option::Option::Some(ref v) = self.NDPFGALOELN {
             match v {
-                &lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(ref v) => {
+                &lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(ref v) => {
+                &lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(ref v) => {
+                &lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(ref v) => {
+                &lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -341,19 +341,19 @@ impl ::protobuf::Message for LFEGOIFPDJJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.PHILNEAOHKO {
+        if let ::std::option::Option::Some(ref v) = self.NDPFGALOELN {
             match v {
-                &lfegoifpdjj::PHILNEAOHKO::NIBDJFABMAC(ref v) => {
+                &lfegoifpdjj::NDPFGALOELN::NIBDJFABMAC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &lfegoifpdjj::NDPFGALOELN::LFDNCHKALIK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+                &lfegoifpdjj::NDPFGALOELN::NIAHDPNHMFC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &lfegoifpdjj::PHILNEAOHKO::NIAHDPNHMFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &lfegoifpdjj::PHILNEAOHKO::LFDNCHKALIK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &lfegoifpdjj::PHILNEAOHKO::CIOGIOCCGJE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &lfegoifpdjj::NDPFGALOELN::CIOGIOCCGJE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -374,16 +374,16 @@ impl ::protobuf::Message for LFEGOIFPDJJ {
     }
 
     fn clear(&mut self) {
-        self.PHILNEAOHKO = ::std::option::Option::None;
-        self.PHILNEAOHKO = ::std::option::Option::None;
-        self.PHILNEAOHKO = ::std::option::Option::None;
-        self.PHILNEAOHKO = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
+        self.NDPFGALOELN = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LFEGOIFPDJJ {
         static instance: LFEGOIFPDJJ = LFEGOIFPDJJ {
-            PHILNEAOHKO: ::std::option::Option::None,
+            NDPFGALOELN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -412,31 +412,31 @@ pub mod lfegoifpdjj {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:LFEGOIFPDJJ.PHILNEAOHKO)
-    pub enum PHILNEAOHKO {
+    // @@protoc_insertion_point(oneof:LFEGOIFPDJJ.NDPFGALOELN)
+    pub enum NDPFGALOELN {
         // @@protoc_insertion_point(oneof_field:LFEGOIFPDJJ.NIBDJFABMAC)
         NIBDJFABMAC(super::super::CAGFLKCLGCH::CAGFLKCLGCH),
-        // @@protoc_insertion_point(oneof_field:LFEGOIFPDJJ.NIAHDPNHMFC)
-        NIAHDPNHMFC(super::super::NKGPOJPAKDP::NKGPOJPAKDP),
         // @@protoc_insertion_point(oneof_field:LFEGOIFPDJJ.LFDNCHKALIK)
         LFDNCHKALIK(super::super::ACCGMJOIFMJ::ACCGMJOIFMJ),
+        // @@protoc_insertion_point(oneof_field:LFEGOIFPDJJ.NIAHDPNHMFC)
+        NIAHDPNHMFC(super::super::NKGPOJPAKDP::NKGPOJPAKDP),
         // @@protoc_insertion_point(oneof_field:LFEGOIFPDJJ.CIOGIOCCGJE)
         CIOGIOCCGJE(super::super::IHJIEMMAOMM::IHJIEMMAOMM),
     }
 
-    impl ::protobuf::Oneof for PHILNEAOHKO {
+    impl ::protobuf::Oneof for NDPFGALOELN {
     }
 
-    impl ::protobuf::OneofFull for PHILNEAOHKO {
+    impl ::protobuf::OneofFull for NDPFGALOELN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::LFEGOIFPDJJ as ::protobuf::MessageFull>::descriptor().oneof_by_name("PHILNEAOHKO").unwrap()).clone()
+            descriptor.get(|| <super::LFEGOIFPDJJ as ::protobuf::MessageFull>::descriptor().oneof_by_name("NDPFGALOELN").unwrap()).clone()
         }
     }
 
-    impl PHILNEAOHKO {
+    impl NDPFGALOELN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PHILNEAOHKO>("PHILNEAOHKO")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NDPFGALOELN>("NDPFGALOELN")
         }
     }
 }
@@ -444,11 +444,11 @@ pub mod lfegoifpdjj {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LFEGOIFPDJJ.proto\x1a\x11ACCGMJOIFMJ.proto\x1a\x11CAGFLKCLGCH.prot\
     o\x1a\x11IHJIEMMAOMM.proto\x1a\x11NKGPOJPAKDP.proto\"\xe4\x01\n\x0bLFEGO\
-    IFPDJJ\x120\n\x0bNIBDJFABMAC\x18\x0c\x20\x01(\x0b2\x0c.CAGFLKCLGCHH\0R\
-    \x0bNIBDJFABMAC\x120\n\x0bNIAHDPNHMFC\x18\x02\x20\x01(\x0b2\x0c.NKGPOJPA\
-    KDPH\0R\x0bNIAHDPNHMFC\x120\n\x0bLFDNCHKALIK\x18\x07\x20\x01(\x0b2\x0c.A\
-    CCGMJOIFMJH\0R\x0bLFDNCHKALIK\x120\n\x0bCIOGIOCCGJE\x18\x0e\x20\x01(\x0b\
-    2\x0c.IHJIEMMAOMMH\0R\x0bCIOGIOCCGJEB\r\n\x0bPHILNEAOHKOb\x06proto3\
+    IFPDJJ\x120\n\x0bNIBDJFABMAC\x18\n\x20\x01(\x0b2\x0c.CAGFLKCLGCHH\0R\x0b\
+    NIBDJFABMAC\x120\n\x0bLFDNCHKALIK\x18\x04\x20\x01(\x0b2\x0c.ACCGMJOIFMJH\
+    \0R\x0bLFDNCHKALIK\x120\n\x0bNIAHDPNHMFC\x18\x0c\x20\x01(\x0b2\x0c.NKGPO\
+    JPAKDPH\0R\x0bNIAHDPNHMFC\x120\n\x0bCIOGIOCCGJE\x18\x06\x20\x01(\x0b2\
+    \x0c.IHJIEMMAOMMH\0R\x0bCIOGIOCCGJEB\r\n\x0bNDPFGALOELNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

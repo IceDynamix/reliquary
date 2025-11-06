@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FarmElementSweepCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FarmElementSweepCsReq.JDANOKNHNHL)
-    pub JDANOKNHNHL: u32,
     // @@protoc_insertion_point(field:FarmElementSweepCsReq.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:FarmElementSweepCsReq.farm_element_id)
+    pub farm_element_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FarmElementSweepCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FarmElementSweepCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDANOKNHNHL",
-            |m: &FarmElementSweepCsReq| { &m.JDANOKNHNHL },
-            |m: &mut FarmElementSweepCsReq| { &mut m.JDANOKNHNHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
             |m: &FarmElementSweepCsReq| { &m.world_level },
             |m: &mut FarmElementSweepCsReq| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "farm_element_id",
+            |m: &FarmElementSweepCsReq| { &m.farm_element_id },
+            |m: &mut FarmElementSweepCsReq| { &mut m.farm_element_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FarmElementSweepCsReq>(
             "FarmElementSweepCsReq",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
-                    self.JDANOKNHNHL = is.read_uint32()?;
-                },
-                80 => {
                     self.world_level = is.read_uint32()?;
+                },
+                88 => {
+                    self.farm_element_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDANOKNHNHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JDANOKNHNHL);
-        }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(6, self.world_level);
+        }
+        if self.farm_element_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.farm_element_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDANOKNHNHL != 0 {
-            os.write_uint32(6, self.JDANOKNHNHL)?;
-        }
         if self.world_level != 0 {
-            os.write_uint32(10, self.world_level)?;
+            os.write_uint32(6, self.world_level)?;
+        }
+        if self.farm_element_id != 0 {
+            os.write_uint32(11, self.farm_element_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FarmElementSweepCsReq {
     }
 
     fn clear(&mut self) {
-        self.JDANOKNHNHL = 0;
         self.world_level = 0;
+        self.farm_element_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FarmElementSweepCsReq {
         static instance: FarmElementSweepCsReq = FarmElementSweepCsReq {
-            JDANOKNHNHL: 0,
             world_level: 0,
+            farm_element_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FarmElementSweepCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bFarmElementSweepCsReq.proto\"Z\n\x15FarmElementSweepCsReq\x12\x20\
-    \n\x0bJDANOKNHNHL\x18\x06\x20\x01(\rR\x0bJDANOKNHNHL\x12\x1f\n\x0bworld_\
-    level\x18\n\x20\x01(\rR\nworldLevelb\x06proto3\
+    \n\x1bFarmElementSweepCsReq.proto\"`\n\x15FarmElementSweepCsReq\x12\x1f\
+    \n\x0bworld_level\x18\x06\x20\x01(\rR\nworldLevel\x12&\n\x0ffarm_element\
+    _id\x18\x0b\x20\x01(\rR\rfarmElementIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

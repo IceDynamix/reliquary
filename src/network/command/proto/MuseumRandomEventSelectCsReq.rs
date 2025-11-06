@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumRandomEventSelectCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MuseumRandomEventSelectCsReq.DGJBACBIICO)
-    pub DGJBACBIICO: u32,
+    // @@protoc_insertion_point(field:MuseumRandomEventSelectCsReq.EKKLNJCLOAB)
+    pub EKKLNJCLOAB: u32,
     // @@protoc_insertion_point(field:MuseumRandomEventSelectCsReq.event_id)
     pub event_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MuseumRandomEventSelectCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGJBACBIICO",
-            |m: &MuseumRandomEventSelectCsReq| { &m.DGJBACBIICO },
-            |m: &mut MuseumRandomEventSelectCsReq| { &mut m.DGJBACBIICO },
+            "EKKLNJCLOAB",
+            |m: &MuseumRandomEventSelectCsReq| { &m.EKKLNJCLOAB },
+            |m: &mut MuseumRandomEventSelectCsReq| { &mut m.EKKLNJCLOAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for MuseumRandomEventSelectCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.DGJBACBIICO = is.read_uint32()?;
+                    self.EKKLNJCLOAB = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.event_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MuseumRandomEventSelectCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DGJBACBIICO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DGJBACBIICO);
+        if self.EKKLNJCLOAB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EKKLNJCLOAB);
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.event_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MuseumRandomEventSelectCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DGJBACBIICO != 0 {
-            os.write_uint32(1, self.DGJBACBIICO)?;
+        if self.EKKLNJCLOAB != 0 {
+            os.write_uint32(1, self.EKKLNJCLOAB)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(15, self.event_id)?;
+            os.write_uint32(6, self.event_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for MuseumRandomEventSelectCsReq {
     }
 
     fn clear(&mut self) {
-        self.DGJBACBIICO = 0;
+        self.EKKLNJCLOAB = 0;
         self.event_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumRandomEventSelectCsReq {
         static instance: MuseumRandomEventSelectCsReq = MuseumRandomEventSelectCsReq {
-            DGJBACBIICO: 0,
+            EKKLNJCLOAB: 0,
             event_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MuseumRandomEventSelectCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MuseumRandomEventSelectCsReq.proto\"[\n\x1cMuseumRandomEventSelectCs\
-    Req\x12\x20\n\x0bDGJBACBIICO\x18\x01\x20\x01(\rR\x0bDGJBACBIICO\x12\x19\
-    \n\x08event_id\x18\x0f\x20\x01(\rR\x07eventIdb\x06proto3\
+    Req\x12\x20\n\x0bEKKLNJCLOAB\x18\x01\x20\x01(\rR\x0bEKKLNJCLOAB\x12\x19\
+    \n\x08event_id\x18\x06\x20\x01(\rR\x07eventIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

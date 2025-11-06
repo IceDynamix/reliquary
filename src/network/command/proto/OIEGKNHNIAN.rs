@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIEGKNHNIAN {
     // message fields
-    // @@protoc_insertion_point(field:OIEGKNHNIAN.LGHOCABPPEH)
-    pub LGHOCABPPEH: ::protobuf::MessageField<super::FEKFBAOCGKP::FEKFBAOCGKP>,
-    // @@protoc_insertion_point(field:OIEGKNHNIAN.JMJDBALGMHD)
-    pub JMJDBALGMHD: ::protobuf::MessageField<super::FEKFBAOCGKP::FEKFBAOCGKP>,
+    // @@protoc_insertion_point(field:OIEGKNHNIAN.NONHDOJOKPG)
+    pub NONHDOJOKPG: ::protobuf::MessageField<super::FEKFBAOCGKP::FEKFBAOCGKP>,
+    // @@protoc_insertion_point(field:OIEGKNHNIAN.MLLKNOIJLAJ)
+    pub MLLKNOIJLAJ: ::protobuf::MessageField<super::FEKFBAOCGKP::FEKFBAOCGKP>,
     // special fields
     // @@protoc_insertion_point(special_field:OIEGKNHNIAN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OIEGKNHNIAN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FEKFBAOCGKP::FEKFBAOCGKP>(
-            "LGHOCABPPEH",
-            |m: &OIEGKNHNIAN| { &m.LGHOCABPPEH },
-            |m: &mut OIEGKNHNIAN| { &mut m.LGHOCABPPEH },
+            "NONHDOJOKPG",
+            |m: &OIEGKNHNIAN| { &m.NONHDOJOKPG },
+            |m: &mut OIEGKNHNIAN| { &mut m.NONHDOJOKPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FEKFBAOCGKP::FEKFBAOCGKP>(
-            "JMJDBALGMHD",
-            |m: &OIEGKNHNIAN| { &m.JMJDBALGMHD },
-            |m: &mut OIEGKNHNIAN| { &mut m.JMJDBALGMHD },
+            "MLLKNOIJLAJ",
+            |m: &OIEGKNHNIAN| { &m.MLLKNOIJLAJ },
+            |m: &mut OIEGKNHNIAN| { &mut m.MLLKNOIJLAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIEGKNHNIAN>(
             "OIEGKNHNIAN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OIEGKNHNIAN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LGHOCABPPEH)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NONHDOJOKPG)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMJDBALGMHD)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MLLKNOIJLAJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OIEGKNHNIAN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LGHOCABPPEH.as_ref() {
+        if let Some(v) = self.NONHDOJOKPG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.JMJDBALGMHD.as_ref() {
+        if let Some(v) = self.MLLKNOIJLAJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OIEGKNHNIAN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LGHOCABPPEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.NONHDOJOKPG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.JMJDBALGMHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.MLLKNOIJLAJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for OIEGKNHNIAN {
     }
 
     fn clear(&mut self) {
-        self.LGHOCABPPEH.clear();
-        self.JMJDBALGMHD.clear();
+        self.NONHDOJOKPG.clear();
+        self.MLLKNOIJLAJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIEGKNHNIAN {
         static instance: OIEGKNHNIAN = OIEGKNHNIAN {
-            LGHOCABPPEH: ::protobuf::MessageField::none(),
-            JMJDBALGMHD: ::protobuf::MessageField::none(),
+            NONHDOJOKPG: ::protobuf::MessageField::none(),
+            MLLKNOIJLAJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for OIEGKNHNIAN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIEGKNHNIAN.proto\x1a\x11FEKFBAOCGKP.proto\"m\n\x0bOIEGKNHNIAN\x12\
-    .\n\x0bLGHOCABPPEH\x18\r\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bLGHOCABPPEH\
-    \x12.\n\x0bJMJDBALGMHD\x18\x07\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bJMJDBAL\
-    GMHDb\x06proto3\
+    .\n\x0bNONHDOJOKPG\x18\x06\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bNONHDOJOKPG\
+    \x12.\n\x0bMLLKNOIJLAJ\x18\x0f\x20\x01(\x0b2\x0c.FEKFBAOCGKPR\x0bMLLKNOI\
+    JLAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

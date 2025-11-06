@@ -30,8 +30,8 @@ pub struct MonopolyUpgradeAssetScRsp {
     // message fields
     // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.PAGCAMAGFLB)
-    pub PAGCAMAGFLB: u32,
+    // @@protoc_insertion_point(field:MonopolyUpgradeAssetScRsp.LGHJNFPDIDD)
+    pub LGHJNFPDIDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyUpgradeAssetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl MonopolyUpgradeAssetScRsp {
             |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAGCAMAGFLB",
-            |m: &MonopolyUpgradeAssetScRsp| { &m.PAGCAMAGFLB },
-            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.PAGCAMAGFLB },
+            "LGHJNFPDIDD",
+            |m: &MonopolyUpgradeAssetScRsp| { &m.LGHJNFPDIDD },
+            |m: &mut MonopolyUpgradeAssetScRsp| { &mut m.LGHJNFPDIDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyUpgradeAssetScRsp>(
             "MonopolyUpgradeAssetScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.PAGCAMAGFLB = is.read_uint32()?;
+                104 => {
+                    self.LGHJNFPDIDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.PAGCAMAGFLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PAGCAMAGFLB);
+        if self.LGHJNFPDIDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LGHJNFPDIDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if self.PAGCAMAGFLB != 0 {
-            os.write_uint32(5, self.PAGCAMAGFLB)?;
+        if self.LGHJNFPDIDD != 0 {
+            os.write_uint32(13, self.LGHJNFPDIDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MonopolyUpgradeAssetScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.PAGCAMAGFLB = 0;
+        self.LGHJNFPDIDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyUpgradeAssetScRsp {
         static instance: MonopolyUpgradeAssetScRsp = MonopolyUpgradeAssetScRsp {
             retcode: 0,
-            PAGCAMAGFLB: 0,
+            LGHJNFPDIDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyUpgradeAssetScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolyUpgradeAssetScRsp.proto\"W\n\x19MonopolyUpgradeAssetScRsp\
-    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bPAGCAMAG\
-    FLB\x18\x05\x20\x01(\rR\x0bPAGCAMAGFLBb\x06proto3\
+    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bLGHJNFPD\
+    IDD\x18\r\x20\x01(\rR\x0bLGHJNFPDIDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

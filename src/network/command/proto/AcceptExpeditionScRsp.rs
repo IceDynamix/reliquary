@@ -30,8 +30,8 @@ pub struct AcceptExpeditionScRsp {
     // message fields
     // @@protoc_insertion_point(field:AcceptExpeditionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AcceptExpeditionScRsp.FUNC_UNLOCK_ID_EXPEDITION)
-    pub FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField<super::ExpeditionInfo::ExpeditionInfo>,
+    // @@protoc_insertion_point(field:AcceptExpeditionScRsp.expedition)
+    pub expedition: ::protobuf::MessageField<super::Expedition::Expedition>,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptExpeditionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl AcceptExpeditionScRsp {
             |m: &AcceptExpeditionScRsp| { &m.retcode },
             |m: &mut AcceptExpeditionScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ExpeditionInfo::ExpeditionInfo>(
-            "FUNC_UNLOCK_ID_EXPEDITION",
-            |m: &AcceptExpeditionScRsp| { &m.FUNC_UNLOCK_ID_EXPEDITION },
-            |m: &mut AcceptExpeditionScRsp| { &mut m.FUNC_UNLOCK_ID_EXPEDITION },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Expedition::Expedition>(
+            "expedition",
+            |m: &AcceptExpeditionScRsp| { &m.expedition },
+            |m: &mut AcceptExpeditionScRsp| { &mut m.expedition },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptExpeditionScRsp>(
             "AcceptExpeditionScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FUNC_UNLOCK_ID_EXPEDITION)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.expedition)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.FUNC_UNLOCK_ID_EXPEDITION.as_ref() {
+        if let Some(v) = self.expedition.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.FUNC_UNLOCK_ID_EXPEDITION.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.expedition.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for AcceptExpeditionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.FUNC_UNLOCK_ID_EXPEDITION.clear();
+        self.expedition.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptExpeditionScRsp {
         static instance: AcceptExpeditionScRsp = AcceptExpeditionScRsp {
             retcode: 0,
-            FUNC_UNLOCK_ID_EXPEDITION: ::protobuf::MessageField::none(),
+            expedition: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for AcceptExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bAcceptExpeditionScRsp.proto\x1a\x14ExpeditionInfo.proto\"}\n\x15Ac\
-    ceptExpeditionScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
-    \x12J\n\x19FUNC_UNLOCK_ID_EXPEDITION\x18\x0f\x20\x01(\x0b2\x0f.Expeditio\
-    nInfoR\x16FUNCUNLOCKIDEXPEDITIONb\x06proto3\
+    \n\x1bAcceptExpeditionScRsp.proto\x1a\x10Expedition.proto\"^\n\x15Accept\
+    ExpeditionScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12+\
+    \n\nexpedition\x18\x08\x20\x01(\x0b2\x0b.ExpeditionR\nexpeditionb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ExpeditionInfo::file_descriptor().clone());
+            deps.push(super::Expedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptExpeditionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

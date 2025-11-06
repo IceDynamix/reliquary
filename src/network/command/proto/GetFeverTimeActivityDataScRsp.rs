@@ -30,8 +30,8 @@ pub struct GetFeverTimeActivityDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.CAAEJFIJIDJ)
-    pub CAAEJFIJIDJ: ::std::vec::Vec<super::FeverTimeActivityData::FeverTimeActivityData>,
+    // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.PPNDGMDBAPF)
+    pub PPNDGMDBAPF: ::std::vec::Vec<super::FeverTimeActivityData::FeverTimeActivityData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFeverTimeActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetFeverTimeActivityDataScRsp {
             |m: &mut GetFeverTimeActivityDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CAAEJFIJIDJ",
-            |m: &GetFeverTimeActivityDataScRsp| { &m.CAAEJFIJIDJ },
-            |m: &mut GetFeverTimeActivityDataScRsp| { &mut m.CAAEJFIJIDJ },
+            "PPNDGMDBAPF",
+            |m: &GetFeverTimeActivityDataScRsp| { &m.PPNDGMDBAPF },
+            |m: &mut GetFeverTimeActivityDataScRsp| { &mut m.PPNDGMDBAPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFeverTimeActivityDataScRsp>(
             "GetFeverTimeActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    self.CAAEJFIJIDJ.push(is.read_message()?);
+                106 => {
+                    self.PPNDGMDBAPF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        for value in &self.CAAEJFIJIDJ {
+        for value in &self.PPNDGMDBAPF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        for v in &self.CAAEJFIJIDJ {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.PPNDGMDBAPF {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CAAEJFIJIDJ.clear();
+        self.PPNDGMDBAPF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFeverTimeActivityDataScRsp {
         static instance: GetFeverTimeActivityDataScRsp = GetFeverTimeActivityDataScRsp {
             retcode: 0,
-            CAAEJFIJIDJ: ::std::vec::Vec::new(),
+            PPNDGMDBAPF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFeverTimeActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetFeverTimeActivityDataScRsp.proto\x1a\x1bFeverTimeActivityData.prot\
-    o\"s\n\x1dGetFeverTimeActivityDataScRsp\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcode\x128\n\x0bCAAEJFIJIDJ\x18\x06\x20\x03(\x0b2\x16.Feve\
-    rTimeActivityDataR\x0bCAAEJFIJIDJb\x06proto3\
+    o\"s\n\x1dGetFeverTimeActivityDataScRsp\x12\x18\n\x07retcode\x18\x05\x20\
+    \x01(\rR\x07retcode\x128\n\x0bPPNDGMDBAPF\x18\r\x20\x03(\x0b2\x16.FeverT\
+    imeActivityDataR\x0bPPNDGMDBAPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

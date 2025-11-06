@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesChooseAvatarEventOptionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesChooseAvatarEventOptionCsReq.NFCAAMBMMMB)
-    pub NFCAAMBMMMB: u32,
+    // @@protoc_insertion_point(field:PlanetFesChooseAvatarEventOptionCsReq.JDBPJPEOCCC)
+    pub JDBPJPEOCCC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesChooseAvatarEventOptionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesChooseAvatarEventOptionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFCAAMBMMMB",
-            |m: &PlanetFesChooseAvatarEventOptionCsReq| { &m.NFCAAMBMMMB },
-            |m: &mut PlanetFesChooseAvatarEventOptionCsReq| { &mut m.NFCAAMBMMMB },
+            "JDBPJPEOCCC",
+            |m: &PlanetFesChooseAvatarEventOptionCsReq| { &m.JDBPJPEOCCC },
+            |m: &mut PlanetFesChooseAvatarEventOptionCsReq| { &mut m.JDBPJPEOCCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesChooseAvatarEventOptionCsReq>(
             "PlanetFesChooseAvatarEventOptionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesChooseAvatarEventOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.NFCAAMBMMMB = is.read_uint32()?;
+                56 => {
+                    self.JDBPJPEOCCC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesChooseAvatarEventOptionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFCAAMBMMMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NFCAAMBMMMB);
+        if self.JDBPJPEOCCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JDBPJPEOCCC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesChooseAvatarEventOptionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFCAAMBMMMB != 0 {
-            os.write_uint32(10, self.NFCAAMBMMMB)?;
+        if self.JDBPJPEOCCC != 0 {
+            os.write_uint32(7, self.JDBPJPEOCCC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesChooseAvatarEventOptionCsReq {
     }
 
     fn clear(&mut self) {
-        self.NFCAAMBMMMB = 0;
+        self.JDBPJPEOCCC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesChooseAvatarEventOptionCsReq {
         static instance: PlanetFesChooseAvatarEventOptionCsReq = PlanetFesChooseAvatarEventOptionCsReq {
-            NFCAAMBMMMB: 0,
+            JDBPJPEOCCC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesChooseAvatarEventOptionCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+PlanetFesChooseAvatarEventOptionCsReq.proto\"I\n%PlanetFesChooseAvata\
-    rEventOptionCsReq\x12\x20\n\x0bNFCAAMBMMMB\x18\n\x20\x01(\rR\x0bNFCAAMBM\
-    MMBb\x06proto3\
+    rEventOptionCsReq\x12\x20\n\x0bJDBPJPEOCCC\x18\x07\x20\x01(\rR\x0bJDBPJP\
+    EOCCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OGNLDADPJFO {
     // message fields
+    // @@protoc_insertion_point(field:OGNLDADPJFO.finish_info)
+    pub finish_info: ::protobuf::MessageField<super::RogueFinishInfo::RogueFinishInfo>,
     // @@protoc_insertion_point(field:OGNLDADPJFO.map_id)
     pub map_id: u32,
-    // @@protoc_insertion_point(field:OGNLDADPJFO.rogue_finish_info)
-    pub rogue_finish_info: ::protobuf::MessageField<super::RogueFinishInfo::RogueFinishInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OGNLDADPJFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OGNLDADPJFO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFinishInfo::RogueFinishInfo>(
+            "finish_info",
+            |m: &OGNLDADPJFO| { &m.finish_info },
+            |m: &mut OGNLDADPJFO| { &mut m.finish_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &OGNLDADPJFO| { &m.map_id },
             |m: &mut OGNLDADPJFO| { &mut m.map_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueFinishInfo::RogueFinishInfo>(
-            "rogue_finish_info",
-            |m: &OGNLDADPJFO| { &m.rogue_finish_info },
-            |m: &mut OGNLDADPJFO| { &mut m.rogue_finish_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OGNLDADPJFO>(
             "OGNLDADPJFO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OGNLDADPJFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.map_id = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.finish_info)?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_finish_info)?;
+                96 => {
+                    self.map_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OGNLDADPJFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.map_id);
-        }
-        if let Some(v) = self.rogue_finish_info.as_ref() {
+        if let Some(v) = self.finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OGNLDADPJFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.map_id != 0 {
-            os.write_uint32(9, self.map_id)?;
+        if let Some(v) = self.finish_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.rogue_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.map_id != 0 {
+            os.write_uint32(12, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OGNLDADPJFO {
     }
 
     fn clear(&mut self) {
+        self.finish_info.clear();
         self.map_id = 0;
-        self.rogue_finish_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OGNLDADPJFO {
         static instance: OGNLDADPJFO = OGNLDADPJFO {
+            finish_info: ::protobuf::MessageField::none(),
             map_id: 0,
-            rogue_finish_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OGNLDADPJFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OGNLDADPJFO.proto\x1a\x15RogueFinishInfo.proto\"b\n\x0bOGNLDADPJFO\
-    \x12\x15\n\x06map_id\x18\t\x20\x01(\rR\x05mapId\x12<\n\x11rogue_finish_i\
-    nfo\x18\x0b\x20\x01(\x0b2\x10.RogueFinishInfoR\x0frogueFinishInfob\x06pr\
-    oto3\
+    \n\x11OGNLDADPJFO.proto\x1a\x15RogueFinishInfo.proto\"W\n\x0bOGNLDADPJFO\
+    \x121\n\x0bfinish_info\x18\t\x20\x01(\x0b2\x10.RogueFinishInfoR\nfinishI\
+    nfo\x12\x15\n\x06map_id\x18\x0c\x20\x01(\rR\x05mapIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

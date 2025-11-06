@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECMMJLLHPMD {
     // message fields
-    // @@protoc_insertion_point(field:ECMMJLLHPMD.CADMFGHALJG)
-    pub CADMFGHALJG: bool,
-    // @@protoc_insertion_point(field:ECMMJLLHPMD.NAJOHIHMABC)
-    pub NAJOHIHMABC: bool,
-    // @@protoc_insertion_point(field:ECMMJLLHPMD.LGDNIIGEPHH)
-    pub LGDNIIGEPHH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ECMMJLLHPMD.IIEHILHHBKO)
+    pub IIEHILHHBKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ECMMJLLHPMD.FEAIEKBEIHD)
+    pub FEAIEKBEIHD: bool,
+    // @@protoc_insertion_point(field:ECMMJLLHPMD.CBLIFMIMBGN)
+    pub CBLIFMIMBGN: bool,
     // @@protoc_insertion_point(field:ECMMJLLHPMD.level_id)
     pub level_id: u32,
     // special fields
@@ -55,20 +55,20 @@ impl ECMMJLLHPMD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CADMFGHALJG",
-            |m: &ECMMJLLHPMD| { &m.CADMFGHALJG },
-            |m: &mut ECMMJLLHPMD| { &mut m.CADMFGHALJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAJOHIHMABC",
-            |m: &ECMMJLLHPMD| { &m.NAJOHIHMABC },
-            |m: &mut ECMMJLLHPMD| { &mut m.NAJOHIHMABC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGDNIIGEPHH",
-            |m: &ECMMJLLHPMD| { &m.LGDNIIGEPHH },
-            |m: &mut ECMMJLLHPMD| { &mut m.LGDNIIGEPHH },
+            "IIEHILHHBKO",
+            |m: &ECMMJLLHPMD| { &m.IIEHILHHBKO },
+            |m: &mut ECMMJLLHPMD| { &mut m.IIEHILHHBKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FEAIEKBEIHD",
+            |m: &ECMMJLLHPMD| { &m.FEAIEKBEIHD },
+            |m: &mut ECMMJLLHPMD| { &mut m.FEAIEKBEIHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBLIFMIMBGN",
+            |m: &ECMMJLLHPMD| { &m.CBLIFMIMBGN },
+            |m: &mut ECMMJLLHPMD| { &mut m.CBLIFMIMBGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for ECMMJLLHPMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CADMFGHALJG = is.read_bool()?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IIEHILHHBKO)?;
+                },
+                64 => {
+                    self.IIEHILHHBKO.push(is.read_uint32()?);
                 },
                 72 => {
-                    self.NAJOHIHMABC = is.read_bool()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LGDNIIGEPHH)?;
-                },
-                32 => {
-                    self.LGDNIIGEPHH.push(is.read_uint32()?);
+                    self.FEAIEKBEIHD = is.read_bool()?;
                 },
                 80 => {
+                    self.CBLIFMIMBGN = is.read_bool()?;
+                },
+                96 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for ECMMJLLHPMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CADMFGHALJG != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.IIEHILHHBKO);
+        if self.FEAIEKBEIHD != false {
             my_size += 1 + 1;
         }
-        if self.NAJOHIHMABC != false {
+        if self.CBLIFMIMBGN != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LGDNIIGEPHH);
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for ECMMJLLHPMD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CADMFGHALJG != false {
-            os.write_bool(3, self.CADMFGHALJG)?;
+        os.write_repeated_packed_uint32(8, &self.IIEHILHHBKO)?;
+        if self.FEAIEKBEIHD != false {
+            os.write_bool(9, self.FEAIEKBEIHD)?;
         }
-        if self.NAJOHIHMABC != false {
-            os.write_bool(9, self.NAJOHIHMABC)?;
+        if self.CBLIFMIMBGN != false {
+            os.write_bool(10, self.CBLIFMIMBGN)?;
         }
-        os.write_repeated_packed_uint32(4, &self.LGDNIIGEPHH)?;
         if self.level_id != 0 {
-            os.write_uint32(10, self.level_id)?;
+            os.write_uint32(12, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for ECMMJLLHPMD {
     }
 
     fn clear(&mut self) {
-        self.CADMFGHALJG = false;
-        self.NAJOHIHMABC = false;
-        self.LGDNIIGEPHH.clear();
+        self.IIEHILHHBKO.clear();
+        self.FEAIEKBEIHD = false;
+        self.CBLIFMIMBGN = false;
         self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECMMJLLHPMD {
         static instance: ECMMJLLHPMD = ECMMJLLHPMD {
-            CADMFGHALJG: false,
-            NAJOHIHMABC: false,
-            LGDNIIGEPHH: ::std::vec::Vec::new(),
+            IIEHILHHBKO: ::std::vec::Vec::new(),
+            FEAIEKBEIHD: false,
+            CBLIFMIMBGN: false,
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for ECMMJLLHPMD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECMMJLLHPMD.proto\"\x8e\x01\n\x0bECMMJLLHPMD\x12\x20\n\x0bCADMFGHA\
-    LJG\x18\x03\x20\x01(\x08R\x0bCADMFGHALJG\x12\x20\n\x0bNAJOHIHMABC\x18\t\
-    \x20\x01(\x08R\x0bNAJOHIHMABC\x12\x20\n\x0bLGDNIIGEPHH\x18\x04\x20\x03(\
-    \rR\x0bLGDNIIGEPHH\x12\x19\n\x08level_id\x18\n\x20\x01(\rR\x07levelIdb\
-    \x06proto3\
+    \n\x11ECMMJLLHPMD.proto\"\x8e\x01\n\x0bECMMJLLHPMD\x12\x20\n\x0bIIEHILHH\
+    BKO\x18\x08\x20\x03(\rR\x0bIIEHILHHBKO\x12\x20\n\x0bFEAIEKBEIHD\x18\t\
+    \x20\x01(\x08R\x0bFEAIEKBEIHD\x12\x20\n\x0bCBLIFMIMBGN\x18\n\x20\x01(\
+    \x08R\x0bCBLIFMIMBGN\x12\x19\n\x08level_id\x18\x0c\x20\x01(\rR\x07levelI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

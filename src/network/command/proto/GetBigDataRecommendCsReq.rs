@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBigDataRecommendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetBigDataRecommendCsReq.big_data_recommend_type)
-    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
     // @@protoc_insertion_point(field:GetBigDataRecommendCsReq.equip_avatar)
     pub equip_avatar: u32,
+    // @@protoc_insertion_point(field:GetBigDataRecommendCsReq.big_data_recommend_type)
+    pub big_data_recommend_type: ::protobuf::EnumOrUnknown<super::BigDataRecommendType::BigDataRecommendType>,
     // special fields
     // @@protoc_insertion_point(special_field:GetBigDataRecommendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetBigDataRecommendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "big_data_recommend_type",
-            |m: &GetBigDataRecommendCsReq| { &m.big_data_recommend_type },
-            |m: &mut GetBigDataRecommendCsReq| { &mut m.big_data_recommend_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "equip_avatar",
             |m: &GetBigDataRecommendCsReq| { &m.equip_avatar },
             |m: &mut GetBigDataRecommendCsReq| { &mut m.equip_avatar },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "big_data_recommend_type",
+            |m: &GetBigDataRecommendCsReq| { &m.big_data_recommend_type },
+            |m: &mut GetBigDataRecommendCsReq| { &mut m.big_data_recommend_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBigDataRecommendCsReq>(
             "GetBigDataRecommendCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                64 => {
+                    self.equip_avatar = is.read_uint32()?;
+                },
                 88 => {
                     self.big_data_recommend_type = is.read_enum_or_unknown()?;
-                },
-                80 => {
-                    self.equip_avatar = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.equip_avatar != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.equip_avatar);
+        }
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
             my_size += ::protobuf::rt::int32_size(11, self.big_data_recommend_type.value());
-        }
-        if self.equip_avatar != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.equip_avatar);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.equip_avatar != 0 {
+            os.write_uint32(8, self.equip_avatar)?;
+        }
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
-        }
-        if self.equip_avatar != 0 {
-            os.write_uint32(10, self.equip_avatar)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetBigDataRecommendCsReq {
     }
 
     fn clear(&mut self) {
-        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
         self.equip_avatar = 0;
+        self.big_data_recommend_type = ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBigDataRecommendCsReq {
         static instance: GetBigDataRecommendCsReq = GetBigDataRecommendCsReq {
-            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
             equip_avatar: 0,
+            big_data_recommend_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetBigDataRecommendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetBigDataRecommendCsReq.proto\x1a\x1aBigDataRecommendType.proto\"\
-    \x8b\x01\n\x18GetBigDataRecommendCsReq\x12L\n\x17big_data_recommend_type\
-    \x18\x0b\x20\x01(\x0e2\x15.BigDataRecommendTypeR\x14bigDataRecommendType\
-    \x12!\n\x0cequip_avatar\x18\n\x20\x01(\rR\x0bequipAvatarb\x06proto3\
+    \x8b\x01\n\x18GetBigDataRecommendCsReq\x12!\n\x0cequip_avatar\x18\x08\
+    \x20\x01(\rR\x0bequipAvatar\x12L\n\x17big_data_recommend_type\x18\x0b\
+    \x20\x01(\x0e2\x15.BigDataRecommendTypeR\x14bigDataRecommendTypeb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

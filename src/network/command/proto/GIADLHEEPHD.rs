@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIADLHEEPHD {
     // message fields
+    // @@protoc_insertion_point(field:GIADLHEEPHD.AILEFEAMGIM)
+    pub AILEFEAMGIM: u32,
     // @@protoc_insertion_point(field:GIADLHEEPHD.has_taken_reward)
     pub has_taken_reward: bool,
-    // @@protoc_insertion_point(field:GIADLHEEPHD.FHHGDPCECEE)
-    pub FHHGDPCECEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GIADLHEEPHD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GIADLHEEPHD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AILEFEAMGIM",
+            |m: &GIADLHEEPHD| { &m.AILEFEAMGIM },
+            |m: &mut GIADLHEEPHD| { &mut m.AILEFEAMGIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_taken_reward",
             |m: &GIADLHEEPHD| { &m.has_taken_reward },
             |m: &mut GIADLHEEPHD| { &mut m.has_taken_reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHHGDPCECEE",
-            |m: &GIADLHEEPHD| { &m.FHHGDPCECEE },
-            |m: &mut GIADLHEEPHD| { &mut m.FHHGDPCECEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIADLHEEPHD>(
             "GIADLHEEPHD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GIADLHEEPHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.AILEFEAMGIM = is.read_uint32()?;
+                },
                 96 => {
                     self.has_taken_reward = is.read_bool()?;
-                },
-                72 => {
-                    self.FHHGDPCECEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GIADLHEEPHD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AILEFEAMGIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AILEFEAMGIM);
+        }
         if self.has_taken_reward != false {
             my_size += 1 + 1;
-        }
-        if self.FHHGDPCECEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FHHGDPCECEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GIADLHEEPHD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.AILEFEAMGIM != 0 {
+            os.write_uint32(1, self.AILEFEAMGIM)?;
+        }
         if self.has_taken_reward != false {
             os.write_bool(12, self.has_taken_reward)?;
-        }
-        if self.FHHGDPCECEE != 0 {
-            os.write_uint32(9, self.FHHGDPCECEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GIADLHEEPHD {
     }
 
     fn clear(&mut self) {
+        self.AILEFEAMGIM = 0;
         self.has_taken_reward = false;
-        self.FHHGDPCECEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIADLHEEPHD {
         static instance: GIADLHEEPHD = GIADLHEEPHD {
+            AILEFEAMGIM: 0,
             has_taken_reward: false,
-            FHHGDPCECEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GIADLHEEPHD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GIADLHEEPHD.proto\"Y\n\x0bGIADLHEEPHD\x12(\n\x10has_taken_reward\
-    \x18\x0c\x20\x01(\x08R\x0ehasTakenReward\x12\x20\n\x0bFHHGDPCECEE\x18\t\
-    \x20\x01(\rR\x0bFHHGDPCECEEb\x06proto3\
+    \n\x11GIADLHEEPHD.proto\"Y\n\x0bGIADLHEEPHD\x12\x20\n\x0bAILEFEAMGIM\x18\
+    \x01\x20\x01(\rR\x0bAILEFEAMGIM\x12(\n\x10has_taken_reward\x18\x0c\x20\
+    \x01(\x08R\x0ehasTakenRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

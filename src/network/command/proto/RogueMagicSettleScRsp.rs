@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSettleScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.OEGPMBIHAOK)
+    pub OEGPMBIHAOK: ::protobuf::MessageField<super::HCJGPMDGBJO::HCJGPMDGBJO>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.rogue_tourn_cur_scene_info)
-    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.MGCFOGLKMCH)
-    pub MGCFOGLKMCH: ::protobuf::MessageField<super::HCJGPMDGBJO::HCJGPMDGBJO>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.tourn_finish_info)
     pub tourn_finish_info: ::protobuf::MessageField<super::OGNBIGKHHBM::OGNBIGKHHBM>,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.GFONFDBFBNA)
-    pub GFONFDBFBNA: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.BKMJDDFICEI)
+    pub BKMJDDFICEI: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.rogue_tourn_cur_scene_info)
+    pub rogue_tourn_cur_scene_info: ::protobuf::MessageField<super::HFIPPDGGJOL::HFIPPDGGJOL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl RogueMagicSettleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCJGPMDGBJO::HCJGPMDGBJO>(
+            "OEGPMBIHAOK",
+            |m: &RogueMagicSettleScRsp| { &m.OEGPMBIHAOK },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.OEGPMBIHAOK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicSettleScRsp| { &m.retcode },
             |m: &mut RogueMagicSettleScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueMagicCurSceneInfo::RogueMagicCurSceneInfo>(
-            "rogue_tourn_cur_scene_info",
-            |m: &RogueMagicSettleScRsp| { &m.rogue_tourn_cur_scene_info },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.rogue_tourn_cur_scene_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCJGPMDGBJO::HCJGPMDGBJO>(
-            "MGCFOGLKMCH",
-            |m: &RogueMagicSettleScRsp| { &m.MGCFOGLKMCH },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.MGCFOGLKMCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGNBIGKHHBM::OGNBIGKHHBM>(
             "tourn_finish_info",
@@ -78,9 +73,14 @@ impl RogueMagicSettleScRsp {
             |m: &mut RogueMagicSettleScRsp| { &mut m.tourn_finish_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "GFONFDBFBNA",
-            |m: &RogueMagicSettleScRsp| { &m.GFONFDBFBNA },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.GFONFDBFBNA },
+            "BKMJDDFICEI",
+            |m: &RogueMagicSettleScRsp| { &m.BKMJDDFICEI },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.BKMJDDFICEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFIPPDGGJOL::HFIPPDGGJOL>(
+            "rogue_tourn_cur_scene_info",
+            |m: &RogueMagicSettleScRsp| { &m.rogue_tourn_cur_scene_info },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.rogue_tourn_cur_scene_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicSettleScRsp>(
             "RogueMagicSettleScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEGPMBIHAOK)?;
+                },
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGCFOGLKMCH)?;
-                },
-                26 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tourn_finish_info)?;
                 },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BKMJDDFICEI)?;
+                },
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFONFDBFBNA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_scene_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.OEGPMBIHAOK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GFONFDBFBNA.as_ref() {
+        if let Some(v) = self.BKMJDDFICEI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,19 +152,19 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
+        if let Some(v) = self.OEGPMBIHAOK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.MGCFOGLKMCH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         if let Some(v) = self.tourn_finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.GFONFDBFBNA.as_ref() {
+        if let Some(v) = self.BKMJDDFICEI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.rogue_tourn_cur_scene_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -184,21 +184,21 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn clear(&mut self) {
+        self.OEGPMBIHAOK.clear();
         self.retcode = 0;
-        self.rogue_tourn_cur_scene_info.clear();
-        self.MGCFOGLKMCH.clear();
         self.tourn_finish_info.clear();
-        self.GFONFDBFBNA.clear();
+        self.BKMJDDFICEI.clear();
+        self.rogue_tourn_cur_scene_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicSettleScRsp {
         static instance: RogueMagicSettleScRsp = RogueMagicSettleScRsp {
+            OEGPMBIHAOK: ::protobuf::MessageField::none(),
             retcode: 0,
-            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
-            MGCFOGLKMCH: ::protobuf::MessageField::none(),
             tourn_finish_info: ::protobuf::MessageField::none(),
-            GFONFDBFBNA: ::protobuf::MessageField::none(),
+            BKMJDDFICEI: ::protobuf::MessageField::none(),
+            rogue_tourn_cur_scene_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,15 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSettleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11HCJGPMDGBJO.proto\x1a\x0eItemLi\
-    st.proto\x1a\x11OGNBIGKHHBM.proto\x1a\x1cRogueMagicCurSceneInfo.proto\"\
-    \x9d\x02\n\x15RogueMagicSettleScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\
-    \rR\x07retcode\x12S\n\x1arogue_tourn_cur_scene_info\x18\x02\x20\x01(\x0b\
-    2\x17.RogueMagicCurSceneInfoR\x16rogueTournCurSceneInfo\x12.\n\x0bMGCFOG\
-    LKMCH\x18\r\x20\x01(\x0b2\x0c.HCJGPMDGBJOR\x0bMGCFOGLKMCH\x128\n\x11tour\
-    n_finish_info\x18\x03\x20\x01(\x0b2\x0c.OGNBIGKHHBMR\x0ftournFinishInfo\
-    \x12+\n\x0bGFONFDBFBNA\x18\x0e\x20\x01(\x0b2\t.ItemListR\x0bGFONFDBFBNAb\
-    \x06proto3\
+    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11HCJGPMDGBJO.proto\x1a\x11HFIPPD\
+    GGJOL.proto\x1a\x0eItemList.proto\x1a\x11OGNBIGKHHBM.proto\"\x92\x02\n\
+    \x15RogueMagicSettleScRsp\x12.\n\x0bOEGPMBIHAOK\x18\x02\x20\x01(\x0b2\
+    \x0c.HCJGPMDGBJOR\x0bOEGPMBIHAOK\x12\x18\n\x07retcode\x18\x03\x20\x01(\r\
+    R\x07retcode\x128\n\x11tourn_finish_info\x18\x0c\x20\x01(\x0b2\x0c.OGNBI\
+    GKHHBMR\x0ftournFinishInfo\x12+\n\x0bBKMJDDFICEI\x18\r\x20\x01(\x0b2\t.I\
+    temListR\x0bBKMJDDFICEI\x12H\n\x1arogue_tourn_cur_scene_info\x18\x0e\x20\
+    \x01(\x0b2\x0c.HFIPPDGGJOLR\x16rogueTournCurSceneInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -250,9 +249,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::HCJGPMDGBJO::file_descriptor().clone());
+            deps.push(super::HFIPPDGGJOL::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             deps.push(super::OGNBIGKHHBM::file_descriptor().clone());
-            deps.push(super::RogueMagicCurSceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicSettleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

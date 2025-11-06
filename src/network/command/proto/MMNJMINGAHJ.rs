@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMNJMINGAHJ {
     // message fields
-    // @@protoc_insertion_point(field:MMNJMINGAHJ.score_id)
-    pub score_id: u32,
+    // @@protoc_insertion_point(field:MMNJMINGAHJ.score)
+    pub score: u32,
     // @@protoc_insertion_point(field:MMNJMINGAHJ.extra_reward)
     pub extra_reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:MMNJMINGAHJ.MPGEMLGLHBH)
-    pub MPGEMLGLHBH: u32,
-    // @@protoc_insertion_point(field:MMNJMINGAHJ.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MMNJMINGAHJ.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:MMNJMINGAHJ.HAINKBLKDBG)
+    pub HAINKBLKDBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MMNJMINGAHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl MMNJMINGAHJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &MMNJMINGAHJ| { &m.score_id },
-            |m: &mut MMNJMINGAHJ| { &mut m.score_id },
+            "score",
+            |m: &MMNJMINGAHJ| { &m.score },
+            |m: &mut MMNJMINGAHJ| { &mut m.score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "extra_reward",
             |m: &MMNJMINGAHJ| { &m.extra_reward },
             |m: &mut MMNJMINGAHJ| { &mut m.extra_reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPGEMLGLHBH",
-            |m: &MMNJMINGAHJ| { &m.MPGEMLGLHBH },
-            |m: &mut MMNJMINGAHJ| { &mut m.MPGEMLGLHBH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &MMNJMINGAHJ| { &m.player_return_reward_list },
-            |m: &mut MMNJMINGAHJ| { &mut m.player_return_reward_list },
+            "reward",
+            |m: &MMNJMINGAHJ| { &m.reward },
+            |m: &mut MMNJMINGAHJ| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HAINKBLKDBG",
+            |m: &MMNJMINGAHJ| { &m.HAINKBLKDBG },
+            |m: &mut MMNJMINGAHJ| { &mut m.HAINKBLKDBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMNJMINGAHJ>(
             "MMNJMINGAHJ",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MMNJMINGAHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.score_id = is.read_uint32()?;
+                40 => {
+                    self.score = is.read_uint32()?;
                 },
-                42 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_reward)?;
                 },
-                96 => {
-                    self.MPGEMLGLHBH = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
+                88 => {
+                    self.HAINKBLKDBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for MMNJMINGAHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.score_id);
+        if self.score != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.score);
         }
         if let Some(v) = self.extra_reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.MPGEMLGLHBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MPGEMLGLHBH);
-        }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.HAINKBLKDBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HAINKBLKDBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for MMNJMINGAHJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(3, self.score_id)?;
+        if self.score != 0 {
+            os.write_uint32(5, self.score)?;
         }
         if let Some(v) = self.extra_reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.MPGEMLGLHBH != 0 {
-            os.write_uint32(12, self.MPGEMLGLHBH)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.HAINKBLKDBG != 0 {
+            os.write_uint32(11, self.HAINKBLKDBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for MMNJMINGAHJ {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
+        self.score = 0;
         self.extra_reward.clear();
-        self.MPGEMLGLHBH = 0;
-        self.player_return_reward_list.clear();
+        self.reward.clear();
+        self.HAINKBLKDBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMNJMINGAHJ {
         static instance: MMNJMINGAHJ = MMNJMINGAHJ {
-            score_id: 0,
+            score: 0,
             extra_reward: ::protobuf::MessageField::none(),
-            MPGEMLGLHBH: 0,
-            player_return_reward_list: ::protobuf::MessageField::none(),
+            reward: ::protobuf::MessageField::none(),
+            HAINKBLKDBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for MMNJMINGAHJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMNJMINGAHJ.proto\x1a\x0eItemList.proto\"\xbe\x01\n\x0bMMNJMINGAHJ\
-    \x12\x19\n\x08score_id\x18\x03\x20\x01(\rR\x07scoreId\x12,\n\x0cextra_re\
-    ward\x18\x05\x20\x01(\x0b2\t.ItemListR\x0bextraReward\x12\x20\n\x0bMPGEM\
-    LGLHBH\x18\x0c\x20\x01(\rR\x0bMPGEMLGLHBH\x12D\n\x19player_return_reward\
-    _list\x18\x07\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardListb\x06pr\
-    oto3\
+    \n\x11MMNJMINGAHJ.proto\x1a\x0eItemList.proto\"\x96\x01\n\x0bMMNJMINGAHJ\
+    \x12\x14\n\x05score\x18\x05\x20\x01(\rR\x05score\x12,\n\x0cextra_reward\
+    \x18\x08\x20\x01(\x0b2\t.ItemListR\x0bextraReward\x12!\n\x06reward\x18\t\
+    \x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bHAINKBLKDBG\x18\x0b\
+    \x20\x01(\rR\x0bHAINKBLKDBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

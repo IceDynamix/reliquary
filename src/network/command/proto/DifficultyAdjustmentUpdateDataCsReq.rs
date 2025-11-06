@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct DifficultyAdjustmentUpdateDataCsReq {
     // message fields
     // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataCsReq.data)
-    pub data: ::protobuf::MessageField<super::JCDNMBCKPLF::JCDNMBCKPLF>,
+    pub data: ::protobuf::MessageField<super::DifficultyAdjustData::DifficultyAdjustData>,
     // special fields
     // @@protoc_insertion_point(special_field:DifficultyAdjustmentUpdateDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl DifficultyAdjustmentUpdateDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCDNMBCKPLF::JCDNMBCKPLF>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DifficultyAdjustData::DifficultyAdjustData>(
             "data",
             |m: &DifficultyAdjustmentUpdateDataCsReq| { &m.data },
             |m: &mut DifficultyAdjustmentUpdateDataCsReq| { &mut m.data },
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for DifficultyAdjustmentUpdateDataCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x11JCDNMBCKPLF.proto\"G\
-    \n#DifficultyAdjustmentUpdateDataCsReq\x12\x20\n\x04data\x18\x0f\x20\x01\
-    (\x0b2\x0c.JCDNMBCKPLFR\x04datab\x06proto3\
+    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x1aDifficultyAdjustData\
+    .proto\"P\n#DifficultyAdjustmentUpdateDataCsReq\x12)\n\x04data\x18\x0f\
+    \x20\x01(\x0b2\x15.DifficultyAdjustDataR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JCDNMBCKPLF::file_descriptor().clone());
+            deps.push(super::DifficultyAdjustData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DifficultyAdjustmentUpdateDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

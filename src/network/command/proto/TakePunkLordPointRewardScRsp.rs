@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakePunkLordPointRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.MDHJKKBNMCF)
-    pub MDHJKKBNMCF: bool,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.is_over_bonus_reward)
+    pub is_over_bonus_reward: bool,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakePunkLordPointRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl TakePunkLordPointRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakePunkLordPointRewardScRsp| { &m.retcode },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &TakePunkLordPointRewardScRsp| { &m.level },
             |m: &mut TakePunkLordPointRewardScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDHJKKBNMCF",
-            |m: &TakePunkLordPointRewardScRsp| { &m.MDHJKKBNMCF },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.MDHJKKBNMCF },
+            "retcode",
+            |m: &TakePunkLordPointRewardScRsp| { &m.retcode },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_over_bonus_reward",
+            |m: &TakePunkLordPointRewardScRsp| { &m.is_over_bonus_reward },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.is_over_bonus_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &TakePunkLordPointRewardScRsp| { &m.player_return_reward_list },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.player_return_reward_list },
+            "reward",
+            |m: &TakePunkLordPointRewardScRsp| { &m.reward },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakePunkLordPointRewardScRsp>(
             "TakePunkLordPointRewardScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                8 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                96 => {
-                    self.MDHJKKBNMCF = is.read_bool()?;
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
+                40 => {
+                    self.is_over_bonus_reward = is.read_bool()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,16 +117,16 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        if self.MDHJKKBNMCF != false {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.is_over_bonus_reward != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -136,17 +136,17 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         if self.level != 0 {
-            os.write_uint32(1, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
-        if self.MDHJKKBNMCF != false {
-            os.write_bool(12, self.MDHJKKBNMCF)?;
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.is_over_bonus_reward != false {
+            os.write_bool(5, self.is_over_bonus_reward)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.level = 0;
-        self.MDHJKKBNMCF = false;
-        self.player_return_reward_list.clear();
+        self.retcode = 0;
+        self.is_over_bonus_reward = false;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakePunkLordPointRewardScRsp {
         static instance: TakePunkLordPointRewardScRsp = TakePunkLordPointRewardScRsp {
-            retcode: 0,
             level: 0,
-            MDHJKKBNMCF: false,
-            player_return_reward_list: ::protobuf::MessageField::none(),
+            retcode: 0,
+            is_over_bonus_reward: false,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for TakePunkLordPointRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakePunkLordPointRewardScRsp.proto\x1a\x0eItemList.proto\"\xb6\x01\n\
-    \x1cTakePunkLordPointRewardScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x20\n\
-    \x0bMDHJKKBNMCF\x18\x0c\x20\x01(\x08R\x0bMDHJKKBNMCF\x12D\n\x19player_re\
-    turn_reward_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x16playerReturnReward\
-    Listb\x06proto3\
+    \n\"TakePunkLordPointRewardScRsp.proto\x1a\x0eItemList.proto\"\xa2\x01\n\
+    \x1cTakePunkLordPointRewardScRsp\x12\x14\n\x05level\x18\x02\x20\x01(\rR\
+    \x05level\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12/\n\x14\
+    is_over_bonus_reward\x18\x05\x20\x01(\x08R\x11isOverBonusReward\x12!\n\
+    \x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

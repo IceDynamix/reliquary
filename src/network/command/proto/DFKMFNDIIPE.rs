@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DFKMFNDIIPE {
     // message fields
+    // @@protoc_insertion_point(field:DFKMFNDIIPE.GPGBOFDDBJP)
+    pub GPGBOFDDBJP: u32,
     // @@protoc_insertion_point(field:DFKMFNDIIPE.count)
     pub count: u32,
-    // @@protoc_insertion_point(field:DFKMFNDIIPE.HPCHOLPMJFP)
-    pub HPCHOLPMJFP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DFKMFNDIIPE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DFKMFNDIIPE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPGBOFDDBJP",
+            |m: &DFKMFNDIIPE| { &m.GPGBOFDDBJP },
+            |m: &mut DFKMFNDIIPE| { &mut m.GPGBOFDDBJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
             |m: &DFKMFNDIIPE| { &m.count },
             |m: &mut DFKMFNDIIPE| { &mut m.count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPCHOLPMJFP",
-            |m: &DFKMFNDIIPE| { &m.HPCHOLPMJFP },
-            |m: &mut DFKMFNDIIPE| { &mut m.HPCHOLPMJFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFKMFNDIIPE>(
             "DFKMFNDIIPE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.count = is.read_uint32()?;
+                16 => {
+                    self.GPGBOFDDBJP = is.read_uint32()?;
                 },
-                32 => {
-                    self.HPCHOLPMJFP = is.read_uint32()?;
+                80 => {
+                    self.count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.count);
+        if self.GPGBOFDDBJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GPGBOFDDBJP);
         }
-        if self.HPCHOLPMJFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HPCHOLPMJFP);
+        if self.count != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.count != 0 {
-            os.write_uint32(6, self.count)?;
+        if self.GPGBOFDDBJP != 0 {
+            os.write_uint32(2, self.GPGBOFDDBJP)?;
         }
-        if self.HPCHOLPMJFP != 0 {
-            os.write_uint32(4, self.HPCHOLPMJFP)?;
+        if self.count != 0 {
+            os.write_uint32(10, self.count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DFKMFNDIIPE {
     }
 
     fn clear(&mut self) {
+        self.GPGBOFDDBJP = 0;
         self.count = 0;
-        self.HPCHOLPMJFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFKMFNDIIPE {
         static instance: DFKMFNDIIPE = DFKMFNDIIPE {
+            GPGBOFDDBJP: 0,
             count: 0,
-            HPCHOLPMJFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DFKMFNDIIPE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DFKMFNDIIPE.proto\"E\n\x0bDFKMFNDIIPE\x12\x14\n\x05count\x18\x06\
-    \x20\x01(\rR\x05count\x12\x20\n\x0bHPCHOLPMJFP\x18\x04\x20\x01(\rR\x0bHP\
-    CHOLPMJFPb\x06proto3\
+    \n\x11DFKMFNDIIPE.proto\"E\n\x0bDFKMFNDIIPE\x12\x20\n\x0bGPGBOFDDBJP\x18\
+    \x02\x20\x01(\rR\x0bGPGBOFDDBJP\x12\x14\n\x05count\x18\n\x20\x01(\rR\x05\
+    countb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

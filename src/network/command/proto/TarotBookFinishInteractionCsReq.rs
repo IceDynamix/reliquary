@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookFinishInteractionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookFinishInteractionCsReq.NBLHJJJEGNO)
-    pub NBLHJJJEGNO: u32,
+    // @@protoc_insertion_point(field:TarotBookFinishInteractionCsReq.BHFBAIELIGF)
+    pub BHFBAIELIGF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TarotBookFinishInteractionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TarotBookFinishInteractionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBLHJJJEGNO",
-            |m: &TarotBookFinishInteractionCsReq| { &m.NBLHJJJEGNO },
-            |m: &mut TarotBookFinishInteractionCsReq| { &mut m.NBLHJJJEGNO },
+            "BHFBAIELIGF",
+            |m: &TarotBookFinishInteractionCsReq| { &m.BHFBAIELIGF },
+            |m: &mut TarotBookFinishInteractionCsReq| { &mut m.BHFBAIELIGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TarotBookFinishInteractionCsReq>(
             "TarotBookFinishInteractionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NBLHJJJEGNO = is.read_uint32()?;
+                32 => {
+                    self.BHFBAIELIGF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NBLHJJJEGNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NBLHJJJEGNO);
+        if self.BHFBAIELIGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BHFBAIELIGF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NBLHJJJEGNO != 0 {
-            os.write_uint32(2, self.NBLHJJJEGNO)?;
+        if self.BHFBAIELIGF != 0 {
+            os.write_uint32(4, self.BHFBAIELIGF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TarotBookFinishInteractionCsReq {
     }
 
     fn clear(&mut self) {
-        self.NBLHJJJEGNO = 0;
+        self.BHFBAIELIGF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TarotBookFinishInteractionCsReq {
         static instance: TarotBookFinishInteractionCsReq = TarotBookFinishInteractionCsReq {
-            NBLHJJJEGNO: 0,
+            BHFBAIELIGF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookFinishInteractionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TarotBookFinishInteractionCsReq.proto\"C\n\x1fTarotBookFinishInteract\
-    ionCsReq\x12\x20\n\x0bNBLHJJJEGNO\x18\x02\x20\x01(\rR\x0bNBLHJJJEGNOb\
+    ionCsReq\x12\x20\n\x0bBHFBAIELIGF\x18\x04\x20\x01(\rR\x0bBHFBAIELIGFb\
     \x06proto3\
 ";
 

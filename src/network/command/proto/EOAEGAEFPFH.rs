@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOAEGAEFPFH {
     // message fields
-    // @@protoc_insertion_point(field:EOAEGAEFPFH.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:EOAEGAEFPFH.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:EOAEGAEFPFH.PAEHAMJHNDD)
-    pub PAEHAMJHNDD: u32,
+    // @@protoc_insertion_point(field:EOAEGAEFPFH.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:EOAEGAEFPFH.star)
     pub star: u32,
+    // @@protoc_insertion_point(field:EOAEGAEFPFH.DMFNOIOPOLE)
+    pub DMFNOIOPOLE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EOAEGAEFPFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl EOAEGAEFPFH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &EOAEGAEFPFH| { &m.level },
-            |m: &mut EOAEGAEFPFH| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &EOAEGAEFPFH| { &m.avatar_id },
             |m: &mut EOAEGAEFPFH| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAEHAMJHNDD",
-            |m: &EOAEGAEFPFH| { &m.PAEHAMJHNDD },
-            |m: &mut EOAEGAEFPFH| { &mut m.PAEHAMJHNDD },
+            "level",
+            |m: &EOAEGAEFPFH| { &m.level },
+            |m: &mut EOAEGAEFPFH| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "star",
             |m: &EOAEGAEFPFH| { &m.star },
             |m: &mut EOAEGAEFPFH| { &mut m.star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMFNOIOPOLE",
+            |m: &EOAEGAEFPFH| { &m.DMFNOIOPOLE },
+            |m: &mut EOAEGAEFPFH| { &mut m.DMFNOIOPOLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOAEGAEFPFH>(
             "EOAEGAEFPFH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.level = is.read_uint32()?;
-                },
-                112 => {
+                24 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.PAEHAMJHNDD = is.read_uint32()?;
+                72 => {
+                    self.level = is.read_uint32()?;
                 },
                 80 => {
                     self.star = is.read_uint32()?;
+                },
+                112 => {
+                    self.DMFNOIOPOLE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
         }
-        if self.PAEHAMJHNDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PAEHAMJHNDD);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.star != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.star);
+        }
+        if self.DMFNOIOPOLE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DMFNOIOPOLE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(12, self.level)?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+            os.write_uint32(3, self.avatar_id)?;
         }
-        if self.PAEHAMJHNDD != 0 {
-            os.write_uint32(2, self.PAEHAMJHNDD)?;
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
         }
         if self.star != 0 {
             os.write_uint32(10, self.star)?;
+        }
+        if self.DMFNOIOPOLE != 0 {
+            os.write_uint32(14, self.DMFNOIOPOLE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EOAEGAEFPFH {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.avatar_id = 0;
-        self.PAEHAMJHNDD = 0;
+        self.level = 0;
         self.star = 0;
+        self.DMFNOIOPOLE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOAEGAEFPFH {
         static instance: EOAEGAEFPFH = EOAEGAEFPFH {
-            level: 0,
             avatar_id: 0,
-            PAEHAMJHNDD: 0,
+            level: 0,
             star: 0,
+            DMFNOIOPOLE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for EOAEGAEFPFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOAEGAEFPFH.proto\"v\n\x0bEOAEGAEFPFH\x12\x14\n\x05level\x18\x0c\
-    \x20\x01(\rR\x05level\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatar\
-    Id\x12\x20\n\x0bPAEHAMJHNDD\x18\x02\x20\x01(\rR\x0bPAEHAMJHNDD\x12\x12\n\
-    \x04star\x18\n\x20\x01(\rR\x04starb\x06proto3\
+    \n\x11EOAEGAEFPFH.proto\"v\n\x0bEOAEGAEFPFH\x12\x1b\n\tavatar_id\x18\x03\
+    \x20\x01(\rR\x08avatarId\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05level\
+    \x12\x12\n\x04star\x18\n\x20\x01(\rR\x04star\x12\x20\n\x0bDMFNOIOPOLE\
+    \x18\x0e\x20\x01(\rR\x0bDMFNOIOPOLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

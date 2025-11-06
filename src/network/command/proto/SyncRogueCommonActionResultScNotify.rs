@@ -30,10 +30,10 @@ pub struct SyncRogueCommonActionResultScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.action_result_list)
     pub action_result_list: ::std::vec::Vec<super::RogueCommonActionResult::RogueCommonActionResult>,
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.display_type)
-    pub display_type: ::protobuf::EnumOrUnknown<super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType>,
     // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.rogue_sub_mode)
     pub rogue_sub_mode: u32,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.display_type)
+    pub display_type: ::protobuf::EnumOrUnknown<super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SyncRogueCommonActionResultScNotify {
             |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.action_result_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_type",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.display_type },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.display_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_sub_mode",
             |m: &SyncRogueCommonActionResultScNotify| { &m.rogue_sub_mode },
             |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.rogue_sub_mode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "display_type",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.display_type },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.display_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonActionResultScNotify>(
             "SyncRogueCommonActionResultScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                34 => {
                     self.action_result_list.push(is.read_message()?);
                 },
-                96 => {
-                    self.display_type = is.read_enum_or_unknown()?;
-                },
-                24 => {
+                64 => {
                     self.rogue_sub_mode = is.read_uint32()?;
+                },
+                88 => {
+                    self.display_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.display_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.display_type.value());
-        }
         if self.rogue_sub_mode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.rogue_sub_mode);
+            my_size += ::protobuf::rt::uint32_size(8, self.rogue_sub_mode);
+        }
+        if self.display_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(11, self.display_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.action_result_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.display_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.display_type))?;
-        }
         if self.rogue_sub_mode != 0 {
-            os.write_uint32(3, self.rogue_sub_mode)?;
+            os.write_uint32(8, self.rogue_sub_mode)?;
+        }
+        if self.display_type != ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.display_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
 
     fn clear(&mut self) {
         self.action_result_list.clear();
-        self.display_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE);
         self.rogue_sub_mode = 0;
+        self.display_type = ::protobuf::EnumOrUnknown::new(super::RogueCommonActionResultDisplayType::RogueCommonActionResultDisplayType::ROGUE_COMMON_ACTION_RESULT_DISPLAY_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonActionResultScNotify {
         static instance: SyncRogueCommonActionResultScNotify = SyncRogueCommonActionResultScNotify {
             action_result_list: ::std::vec::Vec::new(),
-            display_type: ::protobuf::EnumOrUnknown::from_i32(0),
             rogue_sub_mode: 0,
+            display_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonActionResultScNotify 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SyncRogueCommonActionResultScNotify.proto\x1a\x1dRogueCommonActionRes\
     ult.proto\x1a(RogueCommonActionResultDisplayType.proto\"\xdb\x01\n#SyncR\
-    ogueCommonActionResultScNotify\x12F\n\x12action_result_list\x18\r\x20\
-    \x03(\x0b2\x18.RogueCommonActionResultR\x10actionResultList\x12F\n\x0cdi\
-    splay_type\x18\x0c\x20\x01(\x0e2#.RogueCommonActionResultDisplayTypeR\
-    \x0bdisplayType\x12$\n\x0erogue_sub_mode\x18\x03\x20\x01(\rR\x0crogueSub\
-    Modeb\x06proto3\
+    ogueCommonActionResultScNotify\x12F\n\x12action_result_list\x18\x04\x20\
+    \x03(\x0b2\x18.RogueCommonActionResultR\x10actionResultList\x12$\n\x0ero\
+    gue_sub_mode\x18\x08\x20\x01(\rR\x0crogueSubMode\x12F\n\x0cdisplay_type\
+    \x18\x0b\x20\x01(\x0e2#.RogueCommonActionResultDisplayTypeR\x0bdisplayTy\
+    peb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

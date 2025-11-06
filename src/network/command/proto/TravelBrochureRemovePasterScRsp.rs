@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureRemovePasterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterScRsp.CAGGLKLIIMF)
-    pub CAGGLKLIIMF: ::protobuf::MessageField<super::KCHJHCLJOCK::KCHJHCLJOCK>,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterScRsp.HJOBGBDJLOM)
+    pub HJOBGBDJLOM: ::protobuf::MessageField<super::KCHJHCLJOCK::KCHJHCLJOCK>,
     // @@protoc_insertion_point(field:TravelBrochureRemovePasterScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TravelBrochureRemovePasterScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCHJHCLJOCK::KCHJHCLJOCK>(
-            "CAGGLKLIIMF",
-            |m: &TravelBrochureRemovePasterScRsp| { &m.CAGGLKLIIMF },
-            |m: &mut TravelBrochureRemovePasterScRsp| { &mut m.CAGGLKLIIMF },
+            "HJOBGBDJLOM",
+            |m: &TravelBrochureRemovePasterScRsp| { &m.HJOBGBDJLOM },
+            |m: &mut TravelBrochureRemovePasterScRsp| { &mut m.HJOBGBDJLOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TravelBrochureRemovePasterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CAGGLKLIIMF)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HJOBGBDJLOM)?;
                 },
-                112 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TravelBrochureRemovePasterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CAGGLKLIIMF.as_ref() {
+        if let Some(v) = self.HJOBGBDJLOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TravelBrochureRemovePasterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CAGGLKLIIMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.HJOBGBDJLOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterScRsp {
     }
 
     fn clear(&mut self) {
-        self.CAGGLKLIIMF.clear();
+        self.HJOBGBDJLOM.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureRemovePasterScRsp {
         static instance: TravelBrochureRemovePasterScRsp = TravelBrochureRemovePasterScRsp {
-            CAGGLKLIIMF: ::protobuf::MessageField::none(),
+            HJOBGBDJLOM: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureRemovePasterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TravelBrochureRemovePasterScRsp.proto\x1a\x11KCHJHCLJOCK.proto\"k\n\
-    \x1fTravelBrochureRemovePasterScRsp\x12.\n\x0bCAGGLKLIIMF\x18\x0c\x20\
-    \x01(\x0b2\x0c.KCHJHCLJOCKR\x0bCAGGLKLIIMF\x12\x18\n\x07retcode\x18\x0e\
+    \x1fTravelBrochureRemovePasterScRsp\x12.\n\x0bHJOBGBDJLOM\x18\x01\x20\
+    \x01(\x0b2\x0c.KCHJHCLJOCKR\x0bHJOBGBDJLOM\x12\x18\n\x07retcode\x18\x05\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

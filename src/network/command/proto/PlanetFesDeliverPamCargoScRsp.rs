@@ -30,12 +30,12 @@ pub struct PlanetFesDeliverPamCargoScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.IJBMFNOIEHH)
+    pub IJBMFNOIEHH: ::protobuf::MessageField<super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>,
     // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.NFJLFNBPPPG)
-    pub NFJLFNBPPPG: ::protobuf::MessageField<super::JOFGDAIADBO::JOFGDAIADBO>,
-    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.GCBDEDABGKO)
-    pub GCBDEDABGKO: ::protobuf::MessageField<super::PlanetFesReward::PlanetFesReward>,
+    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoScRsp.LCLBDCOPCAJ)
+    pub LCLBDCOPCAJ: ::protobuf::MessageField<super::PlanetFesRewardInfo::PlanetFesRewardInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesDeliverPamCargoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,20 +60,20 @@ impl PlanetFesDeliverPamCargoScRsp {
             |m: &PlanetFesDeliverPamCargoScRsp| { &m.retcode },
             |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>(
+            "IJBMFNOIEHH",
+            |m: &PlanetFesDeliverPamCargoScRsp| { &m.IJBMFNOIEHH },
+            |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.IJBMFNOIEHH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &PlanetFesDeliverPamCargoScRsp| { &m.avatar_id },
             |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.avatar_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JOFGDAIADBO::JOFGDAIADBO>(
-            "NFJLFNBPPPG",
-            |m: &PlanetFesDeliverPamCargoScRsp| { &m.NFJLFNBPPPG },
-            |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.NFJLFNBPPPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesReward::PlanetFesReward>(
-            "GCBDEDABGKO",
-            |m: &PlanetFesDeliverPamCargoScRsp| { &m.GCBDEDABGKO },
-            |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.GCBDEDABGKO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesRewardInfo::PlanetFesRewardInfo>(
+            "LCLBDCOPCAJ",
+            |m: &PlanetFesDeliverPamCargoScRsp| { &m.LCLBDCOPCAJ },
+            |m: &mut PlanetFesDeliverPamCargoScRsp| { &mut m.LCLBDCOPCAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesDeliverPamCargoScRsp>(
             "PlanetFesDeliverPamCargoScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IJBMFNOIEHH)?;
+                },
+                96 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJLFNBPPPG)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GCBDEDABGKO)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCLBDCOPCAJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
-        }
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GCBDEDABGKO.as_ref() {
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+        }
+        if let Some(v) = self.LCLBDCOPCAJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,16 +138,16 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
-        }
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.GCBDEDABGKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(12, self.avatar_id)?;
+        }
+        if let Some(v) = self.LCLBDCOPCAJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.IJBMFNOIEHH.clear();
         self.avatar_id = 0;
-        self.NFJLFNBPPPG.clear();
-        self.GCBDEDABGKO.clear();
+        self.LCLBDCOPCAJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDeliverPamCargoScRsp {
         static instance: PlanetFesDeliverPamCargoScRsp = PlanetFesDeliverPamCargoScRsp {
             retcode: 0,
+            IJBMFNOIEHH: ::protobuf::MessageField::none(),
             avatar_id: 0,
-            NFJLFNBPPPG: ::protobuf::MessageField::none(),
-            GCBDEDABGKO: ::protobuf::MessageField::none(),
+            LCLBDCOPCAJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDeliverPamCargoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#PlanetFesDeliverPamCargoScRsp.proto\x1a\x11JOFGDAIADBO.proto\x1a\x15P\
-    lanetFesReward.proto\"\xba\x01\n\x1dPlanetFesDeliverPamCargoScRsp\x12\
-    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\
-    \x18\x0e\x20\x01(\rR\x08avatarId\x12.\n\x0bNFJLFNBPPPG\x18\x03\x20\x01(\
-    \x0b2\x0c.JOFGDAIADBOR\x0bNFJLFNBPPPG\x122\n\x0bGCBDEDABGKO\x18\n\x20\
-    \x01(\x0b2\x10.PlanetFesRewardR\x0bGCBDEDABGKOb\x06proto3\
+    \n#PlanetFesDeliverPamCargoScRsp.proto\x1a\x20PlanetFesBusinessEventInfo\
+    .proto\x1a\x19PlanetFesRewardInfo.proto\"\xcd\x01\n\x1dPlanetFesDeliverP\
+    amCargoScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12=\n\
+    \x0bIJBMFNOIEHH\x18\x03\x20\x01(\x0b2\x1b.PlanetFesBusinessEventInfoR\
+    \x0bIJBMFNOIEHH\x12\x1b\n\tavatar_id\x18\x0c\x20\x01(\rR\x08avatarId\x12\
+    6\n\x0bLCLBDCOPCAJ\x18\x0e\x20\x01(\x0b2\x14.PlanetFesRewardInfoR\x0bLCL\
+    BDCOPCAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +227,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JOFGDAIADBO::file_descriptor().clone());
-            deps.push(super::PlanetFesReward::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessEventInfo::file_descriptor().clone());
+            deps.push(super::PlanetFesRewardInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesDeliverPamCargoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

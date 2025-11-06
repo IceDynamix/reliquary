@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGameCreateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGameCreateScNotify.NPOIGJPCGFB)
-    pub NPOIGJPCGFB: ::protobuf::MessageField<super::LMMEBMBGLDN::LMMEBMBGLDN>,
-    // @@protoc_insertion_point(field:MonopolyGameCreateScNotify.GAJBFPCPIGM)
-    pub GAJBFPCPIGM: ::protobuf::MessageField<super::HAKNOFDPBOD::HAKNOFDPBOD>,
+    // @@protoc_insertion_point(field:MonopolyGameCreateScNotify.DJGKOMGHBEK)
+    pub DJGKOMGHBEK: ::protobuf::MessageField<super::LMMEBMBGLDN::LMMEBMBGLDN>,
+    // @@protoc_insertion_point(field:MonopolyGameCreateScNotify.EMOGOHMDINB)
+    pub EMOGOHMDINB: ::protobuf::MessageField<super::HAKNOFDPBOD::HAKNOFDPBOD>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGameCreateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MonopolyGameCreateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMMEBMBGLDN::LMMEBMBGLDN>(
-            "NPOIGJPCGFB",
-            |m: &MonopolyGameCreateScNotify| { &m.NPOIGJPCGFB },
-            |m: &mut MonopolyGameCreateScNotify| { &mut m.NPOIGJPCGFB },
+            "DJGKOMGHBEK",
+            |m: &MonopolyGameCreateScNotify| { &m.DJGKOMGHBEK },
+            |m: &mut MonopolyGameCreateScNotify| { &mut m.DJGKOMGHBEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HAKNOFDPBOD::HAKNOFDPBOD>(
-            "GAJBFPCPIGM",
-            |m: &MonopolyGameCreateScNotify| { &m.GAJBFPCPIGM },
-            |m: &mut MonopolyGameCreateScNotify| { &mut m.GAJBFPCPIGM },
+            "EMOGOHMDINB",
+            |m: &MonopolyGameCreateScNotify| { &m.EMOGOHMDINB },
+            |m: &mut MonopolyGameCreateScNotify| { &mut m.EMOGOHMDINB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGameCreateScNotify>(
             "MonopolyGameCreateScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MonopolyGameCreateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPOIGJPCGFB)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJGKOMGHBEK)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAJBFPCPIGM)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMOGOHMDINB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MonopolyGameCreateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NPOIGJPCGFB.as_ref() {
+        if let Some(v) = self.DJGKOMGHBEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GAJBFPCPIGM.as_ref() {
+        if let Some(v) = self.EMOGOHMDINB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MonopolyGameCreateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NPOIGJPCGFB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.DJGKOMGHBEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.GAJBFPCPIGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.EMOGOHMDINB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MonopolyGameCreateScNotify {
     }
 
     fn clear(&mut self) {
-        self.NPOIGJPCGFB.clear();
-        self.GAJBFPCPIGM.clear();
+        self.DJGKOMGHBEK.clear();
+        self.EMOGOHMDINB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGameCreateScNotify {
         static instance: MonopolyGameCreateScNotify = MonopolyGameCreateScNotify {
-            NPOIGJPCGFB: ::protobuf::MessageField::none(),
-            GAJBFPCPIGM: ::protobuf::MessageField::none(),
+            DJGKOMGHBEK: ::protobuf::MessageField::none(),
+            EMOGOHMDINB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameCreateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MonopolyGameCreateScNotify.proto\x1a\x11HAKNOFDPBOD.proto\x1a\x11L\
-    MMEBMBGLDN.proto\"|\n\x1aMonopolyGameCreateScNotify\x12.\n\x0bNPOIGJPCGF\
-    B\x18\x0f\x20\x01(\x0b2\x0c.LMMEBMBGLDNR\x0bNPOIGJPCGFB\x12.\n\x0bGAJBFP\
-    CPIGM\x18\x04\x20\x01(\x0b2\x0c.HAKNOFDPBODR\x0bGAJBFPCPIGMb\x06proto3\
+    MMEBMBGLDN.proto\"|\n\x1aMonopolyGameCreateScNotify\x12.\n\x0bDJGKOMGHBE\
+    K\x18\x01\x20\x01(\x0b2\x0c.LMMEBMBGLDNR\x0bDJGKOMGHBEK\x12.\n\x0bEMOGOH\
+    MDINB\x18\x05\x20\x01(\x0b2\x0c.HAKNOFDPBODR\x0bEMOGOHMDINBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

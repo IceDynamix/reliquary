@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DOLGFNLHEAE {
     // message fields
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.PNGDDNAJCGG)
-    pub PNGDDNAJCGG: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FMBFBGNABOC)
-    pub FMBFBGNABOC: ::std::vec::Vec<super::PANAIJBJMEN::PANAIJBJMEN>,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.GGFDDEJHLIF)
-    pub GGFDDEJHLIF: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FILEDDCMDOC)
-    pub FILEDDCMDOC: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.FNPPHMBLKOA)
-    pub FNPPHMBLKOA: u32,
-    // @@protoc_insertion_point(field:DOLGFNLHEAE.DCEHOGAGKOM)
-    pub DCEHOGAGKOM: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.DMFNJEDPCFF)
+    pub DMFNJEDPCFF: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.NDECOHHBJOJ)
+    pub NDECOHHBJOJ: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.BMNDJKIMPGB)
+    pub BMNDJKIMPGB: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.target_mission_list)
+    pub target_mission_list: ::std::vec::Vec<super::PANAIJBJMEN::PANAIJBJMEN>,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.MOFBPKBCAEE)
+    pub MOFBPKBCAEE: u32,
+    // @@protoc_insertion_point(field:DOLGFNLHEAE.DHGAFIFCLFD)
+    pub DHGAFIFCLFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DOLGFNLHEAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl DOLGFNLHEAE {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNGDDNAJCGG",
-            |m: &DOLGFNLHEAE| { &m.PNGDDNAJCGG },
-            |m: &mut DOLGFNLHEAE| { &mut m.PNGDDNAJCGG },
+            "DMFNJEDPCFF",
+            |m: &DOLGFNLHEAE| { &m.DMFNJEDPCFF },
+            |m: &mut DOLGFNLHEAE| { &mut m.DMFNJEDPCFF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDECOHHBJOJ",
+            |m: &DOLGFNLHEAE| { &m.NDECOHHBJOJ },
+            |m: &mut DOLGFNLHEAE| { &mut m.NDECOHHBJOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BMNDJKIMPGB",
+            |m: &DOLGFNLHEAE| { &m.BMNDJKIMPGB },
+            |m: &mut DOLGFNLHEAE| { &mut m.BMNDJKIMPGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMBFBGNABOC",
-            |m: &DOLGFNLHEAE| { &m.FMBFBGNABOC },
-            |m: &mut DOLGFNLHEAE| { &mut m.FMBFBGNABOC },
+            "target_mission_list",
+            |m: &DOLGFNLHEAE| { &m.target_mission_list },
+            |m: &mut DOLGFNLHEAE| { &mut m.target_mission_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGFDDEJHLIF",
-            |m: &DOLGFNLHEAE| { &m.GGFDDEJHLIF },
-            |m: &mut DOLGFNLHEAE| { &mut m.GGFDDEJHLIF },
+            "MOFBPKBCAEE",
+            |m: &DOLGFNLHEAE| { &m.MOFBPKBCAEE },
+            |m: &mut DOLGFNLHEAE| { &mut m.MOFBPKBCAEE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FILEDDCMDOC",
-            |m: &DOLGFNLHEAE| { &m.FILEDDCMDOC },
-            |m: &mut DOLGFNLHEAE| { &mut m.FILEDDCMDOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNPPHMBLKOA",
-            |m: &DOLGFNLHEAE| { &m.FNPPHMBLKOA },
-            |m: &mut DOLGFNLHEAE| { &mut m.FNPPHMBLKOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCEHOGAGKOM",
-            |m: &DOLGFNLHEAE| { &m.DCEHOGAGKOM },
-            |m: &mut DOLGFNLHEAE| { &mut m.DCEHOGAGKOM },
+            "DHGAFIFCLFD",
+            |m: &DOLGFNLHEAE| { &m.DHGAFIFCLFD },
+            |m: &mut DOLGFNLHEAE| { &mut m.DHGAFIFCLFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DOLGFNLHEAE>(
             "DOLGFNLHEAE",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.PNGDDNAJCGG = is.read_uint32()?;
-                },
-                26 => {
-                    self.FMBFBGNABOC.push(is.read_message()?);
+                8 => {
+                    self.DMFNJEDPCFF = is.read_uint32()?;
                 },
                 16 => {
-                    self.GGFDDEJHLIF = is.read_uint32()?;
+                    self.NDECOHHBJOJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.FILEDDCMDOC = is.read_uint32()?;
+                72 => {
+                    self.BMNDJKIMPGB = is.read_uint32()?;
                 },
-                56 => {
-                    self.FNPPHMBLKOA = is.read_uint32()?;
+                82 => {
+                    self.target_mission_list.push(is.read_message()?);
                 },
-                80 => {
-                    self.DCEHOGAGKOM = is.read_uint32()?;
+                88 => {
+                    self.MOFBPKBCAEE = is.read_uint32()?;
+                },
+                112 => {
+                    self.DHGAFIFCLFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PNGDDNAJCGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PNGDDNAJCGG);
+        if self.DMFNJEDPCFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DMFNJEDPCFF);
         }
-        for value in &self.FMBFBGNABOC {
+        if self.NDECOHHBJOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NDECOHHBJOJ);
+        }
+        if self.BMNDJKIMPGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BMNDJKIMPGB);
+        }
+        for value in &self.target_mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GGFDDEJHLIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GGFDDEJHLIF);
+        if self.MOFBPKBCAEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.MOFBPKBCAEE);
         }
-        if self.FILEDDCMDOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FILEDDCMDOC);
-        }
-        if self.FNPPHMBLKOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FNPPHMBLKOA);
-        }
-        if self.DCEHOGAGKOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCEHOGAGKOM);
+        if self.DHGAFIFCLFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DHGAFIFCLFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PNGDDNAJCGG != 0 {
-            os.write_uint32(12, self.PNGDDNAJCGG)?;
+        if self.DMFNJEDPCFF != 0 {
+            os.write_uint32(1, self.DMFNJEDPCFF)?;
         }
-        for v in &self.FMBFBGNABOC {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.NDECOHHBJOJ != 0 {
+            os.write_uint32(2, self.NDECOHHBJOJ)?;
+        }
+        if self.BMNDJKIMPGB != 0 {
+            os.write_uint32(9, self.BMNDJKIMPGB)?;
+        }
+        for v in &self.target_mission_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.GGFDDEJHLIF != 0 {
-            os.write_uint32(2, self.GGFDDEJHLIF)?;
+        if self.MOFBPKBCAEE != 0 {
+            os.write_uint32(11, self.MOFBPKBCAEE)?;
         }
-        if self.FILEDDCMDOC != 0 {
-            os.write_uint32(13, self.FILEDDCMDOC)?;
-        }
-        if self.FNPPHMBLKOA != 0 {
-            os.write_uint32(7, self.FNPPHMBLKOA)?;
-        }
-        if self.DCEHOGAGKOM != 0 {
-            os.write_uint32(10, self.DCEHOGAGKOM)?;
+        if self.DHGAFIFCLFD != 0 {
+            os.write_uint32(14, self.DHGAFIFCLFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for DOLGFNLHEAE {
     }
 
     fn clear(&mut self) {
-        self.PNGDDNAJCGG = 0;
-        self.FMBFBGNABOC.clear();
-        self.GGFDDEJHLIF = 0;
-        self.FILEDDCMDOC = 0;
-        self.FNPPHMBLKOA = 0;
-        self.DCEHOGAGKOM = 0;
+        self.DMFNJEDPCFF = 0;
+        self.NDECOHHBJOJ = 0;
+        self.BMNDJKIMPGB = 0;
+        self.target_mission_list.clear();
+        self.MOFBPKBCAEE = 0;
+        self.DHGAFIFCLFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DOLGFNLHEAE {
         static instance: DOLGFNLHEAE = DOLGFNLHEAE {
-            PNGDDNAJCGG: 0,
-            FMBFBGNABOC: ::std::vec::Vec::new(),
-            GGFDDEJHLIF: 0,
-            FILEDDCMDOC: 0,
-            FNPPHMBLKOA: 0,
-            DCEHOGAGKOM: 0,
+            DMFNJEDPCFF: 0,
+            NDECOHHBJOJ: 0,
+            BMNDJKIMPGB: 0,
+            target_mission_list: ::std::vec::Vec::new(),
+            MOFBPKBCAEE: 0,
+            DHGAFIFCLFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for DOLGFNLHEAE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DOLGFNLHEAE.proto\x1a\x11PANAIJBJMEN.proto\"\xe7\x01\n\x0bDOLGFNLH\
-    EAE\x12\x20\n\x0bPNGDDNAJCGG\x18\x0c\x20\x01(\rR\x0bPNGDDNAJCGG\x12.\n\
-    \x0bFMBFBGNABOC\x18\x03\x20\x03(\x0b2\x0c.PANAIJBJMENR\x0bFMBFBGNABOC\
-    \x12\x20\n\x0bGGFDDEJHLIF\x18\x02\x20\x01(\rR\x0bGGFDDEJHLIF\x12\x20\n\
-    \x0bFILEDDCMDOC\x18\r\x20\x01(\rR\x0bFILEDDCMDOC\x12\x20\n\x0bFNPPHMBLKO\
-    A\x18\x07\x20\x01(\rR\x0bFNPPHMBLKOA\x12\x20\n\x0bDCEHOGAGKOM\x18\n\x20\
-    \x01(\rR\x0bDCEHOGAGKOMb\x06proto3\
+    \n\x11DOLGFNLHEAE.proto\x1a\x11PANAIJBJMEN.proto\"\xf5\x01\n\x0bDOLGFNLH\
+    EAE\x12\x20\n\x0bDMFNJEDPCFF\x18\x01\x20\x01(\rR\x0bDMFNJEDPCFF\x12\x20\
+    \n\x0bNDECOHHBJOJ\x18\x02\x20\x01(\rR\x0bNDECOHHBJOJ\x12\x20\n\x0bBMNDJK\
+    IMPGB\x18\t\x20\x01(\rR\x0bBMNDJKIMPGB\x12<\n\x13target_mission_list\x18\
+    \n\x20\x03(\x0b2\x0c.PANAIJBJMENR\x11targetMissionList\x12\x20\n\x0bMOFB\
+    PKBCAEE\x18\x0b\x20\x01(\rR\x0bMOFBPKBCAEE\x12\x20\n\x0bDHGAFIFCLFD\x18\
+    \x0e\x20\x01(\rR\x0bDHGAFIFCLFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

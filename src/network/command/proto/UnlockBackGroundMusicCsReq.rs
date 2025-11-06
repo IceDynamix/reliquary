@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockBackGroundMusicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UnlockBackGroundMusicCsReq.unlock_ids)
-    pub unlock_ids: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:UnlockBackGroundMusicCsReq.unlock_music_id_list)
+    pub unlock_music_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:UnlockBackGroundMusicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl UnlockBackGroundMusicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlock_ids",
-            |m: &UnlockBackGroundMusicCsReq| { &m.unlock_ids },
-            |m: &mut UnlockBackGroundMusicCsReq| { &mut m.unlock_ids },
+            "unlock_music_id_list",
+            |m: &UnlockBackGroundMusicCsReq| { &m.unlock_music_id_list },
+            |m: &mut UnlockBackGroundMusicCsReq| { &mut m.unlock_music_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UnlockBackGroundMusicCsReq>(
             "UnlockBackGroundMusicCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unlock_ids)?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.unlock_music_id_list)?;
                 },
-                40 => {
-                    self.unlock_ids.push(is.read_uint32()?);
+                72 => {
+                    self.unlock_music_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.unlock_ids);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.unlock_music_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.unlock_ids)?;
+        os.write_repeated_packed_uint32(9, &self.unlock_music_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for UnlockBackGroundMusicCsReq {
     }
 
     fn clear(&mut self) {
-        self.unlock_ids.clear();
+        self.unlock_music_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockBackGroundMusicCsReq {
         static instance: UnlockBackGroundMusicCsReq = UnlockBackGroundMusicCsReq {
-            unlock_ids: ::std::vec::Vec::new(),
+            unlock_music_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for UnlockBackGroundMusicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UnlockBackGroundMusicCsReq.proto\";\n\x1aUnlockBackGroundMusicCsRe\
-    q\x12\x1d\n\nunlock_ids\x18\x05\x20\x03(\rR\tunlockIdsb\x06proto3\
+    \n\x20UnlockBackGroundMusicCsReq.proto\"M\n\x1aUnlockBackGroundMusicCsRe\
+    q\x12/\n\x14unlock_music_id_list\x18\t\x20\x03(\rR\x11unlockMusicIdListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

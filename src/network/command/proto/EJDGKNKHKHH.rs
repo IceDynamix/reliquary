@@ -82,7 +82,7 @@ impl ::protobuf::Message for EJDGKNKHKHH {
                 64 => {
                     self.id = is.read_uint32()?;
                 },
-                32 => {
+                104 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for EJDGKNKHKHH {
             my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for EJDGKNKHKHH {
             os.write_uint32(8, self.id)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(13, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EJDGKNKHKHH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJDGKNKHKHH.proto\"3\n\x0bEJDGKNKHKHH\x12\x0e\n\x02id\x18\x08\x20\
-    \x01(\rR\x02id\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05levelb\x06proto\
-    3\
+    \x01(\rR\x02id\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct BuyRogueShopBuffScRsp {
     // message fields
     // @@protoc_insertion_point(field:BuyRogueShopBuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:BuyRogueShopBuffScRsp.rogue_buff_info)
-    pub rogue_buff_info: ::protobuf::MessageField<super::ANJDKFJOEEI::ANJDKFJOEEI>,
+    // @@protoc_insertion_point(field:BuyRogueShopBuffScRsp.buff_info)
+    pub buff_info: ::protobuf::MessageField<super::RogueBuffShopInfo::RogueBuffShopInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:BuyRogueShopBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl BuyRogueShopBuffScRsp {
             |m: &BuyRogueShopBuffScRsp| { &m.retcode },
             |m: &mut BuyRogueShopBuffScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANJDKFJOEEI::ANJDKFJOEEI>(
-            "rogue_buff_info",
-            |m: &BuyRogueShopBuffScRsp| { &m.rogue_buff_info },
-            |m: &mut BuyRogueShopBuffScRsp| { &mut m.rogue_buff_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueBuffShopInfo::RogueBuffShopInfo>(
+            "buff_info",
+            |m: &BuyRogueShopBuffScRsp| { &m.buff_info },
+            |m: &mut BuyRogueShopBuffScRsp| { &mut m.buff_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyRogueShopBuffScRsp>(
             "BuyRogueShopBuffScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_buff_info)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.buff_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
+        if let Some(v) = self.buff_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.rogue_buff_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.buff_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.rogue_buff_info.clear();
+        self.buff_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyRogueShopBuffScRsp {
         static instance: BuyRogueShopBuffScRsp = BuyRogueShopBuffScRsp {
             retcode: 0,
-            rogue_buff_info: ::protobuf::MessageField::none(),
+            buff_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopBuffScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bBuyRogueShopBuffScRsp.proto\x1a\x11ANJDKFJOEEI.proto\"g\n\x15BuyRo\
-    gueShopBuffScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x124\
-    \n\x0frogue_buff_info\x18\x0e\x20\x01(\x0b2\x0c.ANJDKFJOEEIR\rrogueBuffI\
-    nfob\x06proto3\
+    \n\x1bBuyRogueShopBuffScRsp.proto\x1a\x17RogueBuffShopInfo.proto\"b\n\
+    \x15BuyRogueShopBuffScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07re\
+    tcode\x12/\n\tbuff_info\x18\x05\x20\x01(\x0b2\x12.RogueBuffShopInfoR\x08\
+    buffInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ANJDKFJOEEI::file_descriptor().clone());
+            deps.push(super::RogueBuffShopInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BuyRogueShopBuffScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

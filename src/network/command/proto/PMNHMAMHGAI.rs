@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PMNHMAMHGAI {
     // message fields
-    // @@protoc_insertion_point(field:PMNHMAMHGAI.ICPHOOMNDKA)
-    pub ICPHOOMNDKA: u32,
-    // @@protoc_insertion_point(field:PMNHMAMHGAI.ENBJCPKGCOL)
-    pub ENBJCPKGCOL: ::std::vec::Vec<super::MJKIBJLOBKD::MJKIBJLOBKD>,
-    // @@protoc_insertion_point(field:PMNHMAMHGAI.OOOGLIEOOKI)
-    pub OOOGLIEOOKI: ::std::vec::Vec<super::DKOOKEJCHGO::DKOOKEJCHGO>,
+    // @@protoc_insertion_point(field:PMNHMAMHGAI.GNLAPOGLKBL)
+    pub GNLAPOGLKBL: u32,
+    // @@protoc_insertion_point(field:PMNHMAMHGAI.wave_stt_list)
+    pub wave_stt_list: ::std::vec::Vec<super::MJKIBJLOBKD::MJKIBJLOBKD>,
+    // @@protoc_insertion_point(field:PMNHMAMHGAI.EOENDEKJABD)
+    pub EOENDEKJABD: ::std::vec::Vec<super::DKOOKEJCHGO::DKOOKEJCHGO>,
     // special fields
     // @@protoc_insertion_point(special_field:PMNHMAMHGAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl PMNHMAMHGAI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICPHOOMNDKA",
-            |m: &PMNHMAMHGAI| { &m.ICPHOOMNDKA },
-            |m: &mut PMNHMAMHGAI| { &mut m.ICPHOOMNDKA },
+            "GNLAPOGLKBL",
+            |m: &PMNHMAMHGAI| { &m.GNLAPOGLKBL },
+            |m: &mut PMNHMAMHGAI| { &mut m.GNLAPOGLKBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ENBJCPKGCOL",
-            |m: &PMNHMAMHGAI| { &m.ENBJCPKGCOL },
-            |m: &mut PMNHMAMHGAI| { &mut m.ENBJCPKGCOL },
+            "wave_stt_list",
+            |m: &PMNHMAMHGAI| { &m.wave_stt_list },
+            |m: &mut PMNHMAMHGAI| { &mut m.wave_stt_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OOOGLIEOOKI",
-            |m: &PMNHMAMHGAI| { &m.OOOGLIEOOKI },
-            |m: &mut PMNHMAMHGAI| { &mut m.OOOGLIEOOKI },
+            "EOENDEKJABD",
+            |m: &PMNHMAMHGAI| { &m.EOENDEKJABD },
+            |m: &mut PMNHMAMHGAI| { &mut m.EOENDEKJABD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PMNHMAMHGAI>(
             "PMNHMAMHGAI",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for PMNHMAMHGAI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.ICPHOOMNDKA = is.read_uint32()?;
+                    self.GNLAPOGLKBL = is.read_uint32()?;
                 },
                 18 => {
-                    self.ENBJCPKGCOL.push(is.read_message()?);
+                    self.wave_stt_list.push(is.read_message()?);
                 },
                 26 => {
-                    self.OOOGLIEOOKI.push(is.read_message()?);
+                    self.EOENDEKJABD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PMNHMAMHGAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ICPHOOMNDKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ICPHOOMNDKA);
+        if self.GNLAPOGLKBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GNLAPOGLKBL);
         }
-        for value in &self.ENBJCPKGCOL {
+        for value in &self.wave_stt_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.OOOGLIEOOKI {
+        for value in &self.EOENDEKJABD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PMNHMAMHGAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ICPHOOMNDKA != 0 {
-            os.write_uint32(1, self.ICPHOOMNDKA)?;
+        if self.GNLAPOGLKBL != 0 {
+            os.write_uint32(1, self.GNLAPOGLKBL)?;
         }
-        for v in &self.ENBJCPKGCOL {
+        for v in &self.wave_stt_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        for v in &self.OOOGLIEOOKI {
+        for v in &self.EOENDEKJABD {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -150,17 +150,17 @@ impl ::protobuf::Message for PMNHMAMHGAI {
     }
 
     fn clear(&mut self) {
-        self.ICPHOOMNDKA = 0;
-        self.ENBJCPKGCOL.clear();
-        self.OOOGLIEOOKI.clear();
+        self.GNLAPOGLKBL = 0;
+        self.wave_stt_list.clear();
+        self.EOENDEKJABD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PMNHMAMHGAI {
         static instance: PMNHMAMHGAI = PMNHMAMHGAI {
-            ICPHOOMNDKA: 0,
-            ENBJCPKGCOL: ::std::vec::Vec::new(),
-            OOOGLIEOOKI: ::std::vec::Vec::new(),
+            GNLAPOGLKBL: 0,
+            wave_stt_list: ::std::vec::Vec::new(),
+            EOENDEKJABD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for PMNHMAMHGAI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PMNHMAMHGAI.proto\x1a\x11DKOOKEJCHGO.proto\x1a\x11MJKIBJLOBKD.prot\
-    o\"\x8f\x01\n\x0bPMNHMAMHGAI\x12\x20\n\x0bICPHOOMNDKA\x18\x01\x20\x01(\r\
-    R\x0bICPHOOMNDKA\x12.\n\x0bENBJCPKGCOL\x18\x02\x20\x03(\x0b2\x0c.MJKIBJL\
-    OBKDR\x0bENBJCPKGCOL\x12.\n\x0bOOOGLIEOOKI\x18\x03\x20\x03(\x0b2\x0c.DKO\
-    OKEJCHGOR\x0bOOOGLIEOOKIb\x06proto3\
+    o\"\x91\x01\n\x0bPMNHMAMHGAI\x12\x20\n\x0bGNLAPOGLKBL\x18\x01\x20\x01(\r\
+    R\x0bGNLAPOGLKBL\x120\n\rwave_stt_list\x18\x02\x20\x03(\x0b2\x0c.MJKIBJL\
+    OBKDR\x0bwaveSttList\x12.\n\x0bEOENDEKJABD\x18\x03\x20\x03(\x0b2\x0c.DKO\
+    OKEJCHGOR\x0bEOENDEKJABDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueAdventureRoomGameplayWolfGunInfo {
     // message oneof groups
-    pub KFELKJLDKEH: ::std::option::Option<rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH>,
+    pub IEICDGGELNE: ::std::option::Option<rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueAdventureRoomGameplayWolfGunInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl RogueAdventureRoomGameplayWolfGunInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueAdventureRoomGameplayWolfGunGameInfo game_info = 7;
+    // .RogueAdventureRoomGameplayWolfGunGameInfo game_info = 15;
 
     pub fn game_info(&self) -> &super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(ref v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(ref v)) => v,
             _ => <super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_game_info(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
     }
 
     pub fn has_game_info(&self) -> bool {
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(..)) => true,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_game_info(&mut self, v: super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo) {
-        self.KFELKJLDKEH = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(v))
+        self.IEICDGGELNE = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_game_info(&mut self) -> &mut super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo {
-        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(_)) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(_)) = self.IEICDGGELNE {
         } else {
-            self.KFELKJLDKEH = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo::new()));
+            self.IEICDGGELNE = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo::new()));
         }
-        match self.KFELKJLDKEH {
-            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(ref mut v)) => v,
+        match self.IEICDGGELNE {
+            ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl RogueAdventureRoomGameplayWolfGunInfo {
     // Take field
     pub fn take_game_info(&mut self) -> super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo {
         if self.has_game_info() {
-            match self.KFELKJLDKEH.take() {
-                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(v)) => v,
+            match self.IEICDGGELNE.take() {
+                ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -104,7 +104,7 @@ impl RogueAdventureRoomGameplayWolfGunInfo {
             RogueAdventureRoomGameplayWolfGunInfo::mut_game_info,
             RogueAdventureRoomGameplayWolfGunInfo::set_game_info,
         ));
-        oneofs.push(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::generated_oneof_descriptor_data());
+        oneofs.push(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueAdventureRoomGameplayWolfGunInfo>(
             "RogueAdventureRoomGameplayWolfGunInfo",
             fields,
@@ -123,8 +123,8 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.KFELKJLDKEH = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(is.read_message()?));
+                122 => {
+                    self.IEICDGGELNE = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,9 +138,9 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(ref v) => {
+                &rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -152,10 +152,10 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.KFELKJLDKEH {
+        if let ::std::option::Option::Some(ref v) = self.IEICDGGELNE {
             match v {
-                &rogue_adventure_room_gameplay_wolf_gun_info::KFELKJLDKEH::GameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &rogue_adventure_room_gameplay_wolf_gun_info::IEICDGGELNE::GameInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -176,13 +176,13 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunInfo {
     }
 
     fn clear(&mut self) {
-        self.KFELKJLDKEH = ::std::option::Option::None;
+        self.IEICDGGELNE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueAdventureRoomGameplayWolfGunInfo {
         static instance: RogueAdventureRoomGameplayWolfGunInfo = RogueAdventureRoomGameplayWolfGunInfo {
-            KFELKJLDKEH: ::std::option::Option::None,
+            IEICDGGELNE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -211,25 +211,25 @@ pub mod rogue_adventure_room_gameplay_wolf_gun_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueAdventureRoomGameplayWolfGunInfo.KFELKJLDKEH)
-    pub enum KFELKJLDKEH {
+    // @@protoc_insertion_point(oneof:RogueAdventureRoomGameplayWolfGunInfo.IEICDGGELNE)
+    pub enum IEICDGGELNE {
         // @@protoc_insertion_point(oneof_field:RogueAdventureRoomGameplayWolfGunInfo.game_info)
         GameInfo(super::super::RogueAdventureRoomGameplayWolfGunGameInfo::RogueAdventureRoomGameplayWolfGunGameInfo),
     }
 
-    impl ::protobuf::Oneof for KFELKJLDKEH {
+    impl ::protobuf::Oneof for IEICDGGELNE {
     }
 
-    impl ::protobuf::OneofFull for KFELKJLDKEH {
+    impl ::protobuf::OneofFull for IEICDGGELNE {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueAdventureRoomGameplayWolfGunInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KFELKJLDKEH").unwrap()).clone()
+            descriptor.get(|| <super::RogueAdventureRoomGameplayWolfGunInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("IEICDGGELNE").unwrap()).clone()
         }
     }
 
-    impl KFELKJLDKEH {
+    impl IEICDGGELNE {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KFELKJLDKEH>("KFELKJLDKEH")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IEICDGGELNE>("IEICDGGELNE")
         }
     }
 }
@@ -237,8 +237,8 @@ pub mod rogue_adventure_room_gameplay_wolf_gun_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+RogueAdventureRoomGameplayWolfGunInfo.proto\x1a/RogueAdventureRoomGam\
     eplayWolfGunGameInfo.proto\"\x81\x01\n%RogueAdventureRoomGameplayWolfGun\
-    Info\x12I\n\tgame_info\x18\x07\x20\x01(\x0b2*.RogueAdventureRoomGameplay\
-    WolfGunGameInfoH\0R\x08gameInfoB\r\n\x0bKFELKJLDKEHb\x06proto3\
+    Info\x12I\n\tgame_info\x18\x0f\x20\x01(\x0b2*.RogueAdventureRoomGameplay\
+    WolfGunGameInfoH\0R\x08gameInfoB\r\n\x0bIEICDGGELNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

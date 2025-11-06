@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicReforgeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicReforgeCsReq.blocked_affix_id)
-    pub blocked_affix_id: u32,
     // @@protoc_insertion_point(field:RelicReforgeCsReq.relic_unique_id)
     pub relic_unique_id: u32,
+    // @@protoc_insertion_point(field:RelicReforgeCsReq.blocked_affix_id)
+    pub blocked_affix_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicReforgeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RelicReforgeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "blocked_affix_id",
-            |m: &RelicReforgeCsReq| { &m.blocked_affix_id },
-            |m: &mut RelicReforgeCsReq| { &mut m.blocked_affix_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "relic_unique_id",
             |m: &RelicReforgeCsReq| { &m.relic_unique_id },
             |m: &mut RelicReforgeCsReq| { &mut m.relic_unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "blocked_affix_id",
+            |m: &RelicReforgeCsReq| { &m.blocked_affix_id },
+            |m: &mut RelicReforgeCsReq| { &mut m.blocked_affix_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicReforgeCsReq>(
             "RelicReforgeCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RelicReforgeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.blocked_affix_id = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.relic_unique_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.blocked_affix_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RelicReforgeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.blocked_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.blocked_affix_id);
-        }
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.relic_unique_id);
+        }
+        if self.blocked_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.blocked_affix_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RelicReforgeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.blocked_affix_id != 0 {
-            os.write_uint32(10, self.blocked_affix_id)?;
-        }
         if self.relic_unique_id != 0 {
-            os.write_uint32(6, self.relic_unique_id)?;
+            os.write_uint32(1, self.relic_unique_id)?;
+        }
+        if self.blocked_affix_id != 0 {
+            os.write_uint32(11, self.blocked_affix_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RelicReforgeCsReq {
     }
 
     fn clear(&mut self) {
-        self.blocked_affix_id = 0;
         self.relic_unique_id = 0;
+        self.blocked_affix_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicReforgeCsReq {
         static instance: RelicReforgeCsReq = RelicReforgeCsReq {
-            blocked_affix_id: 0,
             relic_unique_id: 0,
+            blocked_affix_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicReforgeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17RelicReforgeCsReq.proto\"e\n\x11RelicReforgeCsReq\x12(\n\x10blocke\
-    d_affix_id\x18\n\x20\x01(\rR\x0eblockedAffixId\x12&\n\x0frelic_unique_id\
-    \x18\x06\x20\x01(\rR\rrelicUniqueIdb\x06proto3\
+    \n\x17RelicReforgeCsReq.proto\"e\n\x11RelicReforgeCsReq\x12&\n\x0frelic_\
+    unique_id\x18\x01\x20\x01(\rR\rrelicUniqueId\x12(\n\x10blocked_affix_id\
+    \x18\x0b\x20\x01(\rR\x0eblockedAffixIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

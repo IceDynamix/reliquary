@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonDialogueInfo {
     // message oneof groups
-    pub ACDOBBPLDBG: ::std::option::Option<rogue_common_dialogue_info::ACDOBBPLDBG>,
+    pub AFBLAJKDHHF: ::std::option::Option<rogue_common_dialogue_info::AFBLAJKDHHF>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonDialogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl RogueCommonDialogueInfo {
         ::std::default::Default::default()
     }
 
-    // .RogueCommonDialogueBasicInfo Npc = 14;
+    // .RogueCommonDialogueBasicInfo Npc = 10;
 
     pub fn Npc(&self) -> &super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(ref v)) => v,
             _ => <super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_Npc(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_Npc(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_Npc(&mut self, v: super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_Npc(&mut self) -> &mut super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_Npc(&mut self) -> super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo {
         if self.has_Npc() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,36 +97,36 @@ impl RogueCommonDialogueInfo {
     // .GNJAPOMLLHE ADMAHLAALNH = 8;
 
     pub fn ADMAHLAALNH(&self) -> &super::GNJAPOMLLHE::GNJAPOMLLHE {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(ref v)) => v,
             _ => <super::GNJAPOMLLHE::GNJAPOMLLHE as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ADMAHLAALNH(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_ADMAHLAALNH(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ADMAHLAALNH(&mut self, v: super::GNJAPOMLLHE::GNJAPOMLLHE) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ADMAHLAALNH(&mut self) -> &mut super::GNJAPOMLLHE::GNJAPOMLLHE {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(super::GNJAPOMLLHE::GNJAPOMLLHE::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(super::GNJAPOMLLHE::GNJAPOMLLHE::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_ADMAHLAALNH(&mut self) -> super::GNJAPOMLLHE::GNJAPOMLLHE {
         if self.has_ADMAHLAALNH() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -143,39 +143,39 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .CNHHPDHBMDC ODDGCBPOPLF = 1;
+    // .CNHHPDHBMDC ODDGCBPOPLF = 9;
 
     pub fn ODDGCBPOPLF(&self) -> &super::CNHHPDHBMDC::CNHHPDHBMDC {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(ref v)) => v,
             _ => <super::CNHHPDHBMDC::CNHHPDHBMDC as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_ODDGCBPOPLF(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_ODDGCBPOPLF(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_ODDGCBPOPLF(&mut self, v: super::CNHHPDHBMDC::CNHHPDHBMDC) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_ODDGCBPOPLF(&mut self) -> &mut super::CNHHPDHBMDC::CNHHPDHBMDC {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(super::CNHHPDHBMDC::CNHHPDHBMDC::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(super::CNHHPDHBMDC::CNHHPDHBMDC::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_ODDGCBPOPLF(&mut self) -> super::CNHHPDHBMDC::CNHHPDHBMDC {
         if self.has_ODDGCBPOPLF() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -192,39 +192,39 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .JIEAAFJENLK GMAKHONAEPH = 12;
+    // .JIEAAFJENLK GMAKHONAEPH = 11;
 
     pub fn GMAKHONAEPH(&self) -> &super::JIEAAFJENLK::JIEAAFJENLK {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(ref v)) => v,
             _ => <super::JIEAAFJENLK::JIEAAFJENLK as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_GMAKHONAEPH(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_GMAKHONAEPH(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_GMAKHONAEPH(&mut self, v: super::JIEAAFJENLK::JIEAAFJENLK) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_GMAKHONAEPH(&mut self) -> &mut super::JIEAAFJENLK::JIEAAFJENLK {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(super::JIEAAFJENLK::JIEAAFJENLK::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(super::JIEAAFJENLK::JIEAAFJENLK::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -232,8 +232,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_GMAKHONAEPH(&mut self) -> super::JIEAAFJENLK::JIEAAFJENLK {
         if self.has_GMAKHONAEPH() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -241,39 +241,39 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .HPJLAFHHGJG CACGEKAANKL = 10;
+    // .HPJLAFHHGJG CACGEKAANKL = 5;
 
     pub fn CACGEKAANKL(&self) -> &super::HPJLAFHHGJG::HPJLAFHHGJG {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(ref v)) => v,
             _ => <super::HPJLAFHHGJG::HPJLAFHHGJG as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_CACGEKAANKL(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_CACGEKAANKL(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_CACGEKAANKL(&mut self, v: super::HPJLAFHHGJG::HPJLAFHHGJG) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_CACGEKAANKL(&mut self) -> &mut super::HPJLAFHHGJG::HPJLAFHHGJG {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(super::HPJLAFHHGJG::HPJLAFHHGJG::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(super::HPJLAFHHGJG::HPJLAFHHGJG::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -281,8 +281,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_CACGEKAANKL(&mut self) -> super::HPJLAFHHGJG::HPJLAFHHGJG {
         if self.has_CACGEKAANKL() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -290,39 +290,39 @@ impl RogueCommonDialogueInfo {
         }
     }
 
-    // .AFCCAOACNAK AGGBLHGKPFJ = 6;
+    // .AFCCAOACNAK AGGBLHGKPFJ = 14;
 
     pub fn AGGBLHGKPFJ(&self) -> &super::AFCCAOACNAK::AFCCAOACNAK {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(ref v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(ref v)) => v,
             _ => <super::AFCCAOACNAK::AFCCAOACNAK as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_AGGBLHGKPFJ(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
     }
 
     pub fn has_AGGBLHGKPFJ(&self) -> bool {
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(..)) => true,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_AGGBLHGKPFJ(&mut self, v: super::AFCCAOACNAK::AFCCAOACNAK) {
-        self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(v))
+        self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_AGGBLHGKPFJ(&mut self) -> &mut super::AFCCAOACNAK::AFCCAOACNAK {
-        if let ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(_)) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(_)) = self.AFBLAJKDHHF {
         } else {
-            self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(super::AFCCAOACNAK::AFCCAOACNAK::new()));
+            self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(super::AFCCAOACNAK::AFCCAOACNAK::new()));
         }
-        match self.ACDOBBPLDBG {
-            ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(ref mut v)) => v,
+        match self.AFBLAJKDHHF {
+            ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -330,8 +330,8 @@ impl RogueCommonDialogueInfo {
     // Take field
     pub fn take_AGGBLHGKPFJ(&mut self) -> super::AFCCAOACNAK::AFCCAOACNAK {
         if self.has_AGGBLHGKPFJ() {
-            match self.ACDOBBPLDBG.take() {
-                ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(v)) => v,
+            match self.AFBLAJKDHHF.take() {
+                ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -384,7 +384,7 @@ impl RogueCommonDialogueInfo {
             RogueCommonDialogueInfo::mut_AGGBLHGKPFJ,
             RogueCommonDialogueInfo::set_AGGBLHGKPFJ,
         ));
-        oneofs.push(rogue_common_dialogue_info::ACDOBBPLDBG::generated_oneof_descriptor_data());
+        oneofs.push(rogue_common_dialogue_info::AFBLAJKDHHF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonDialogueInfo>(
             "RogueCommonDialogueInfo",
             fields,
@@ -403,23 +403,23 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::Npc(is.read_message()?));
+                82 => {
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::Npc(is.read_message()?));
                 },
                 66 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(is.read_message()?));
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(is.read_message()?));
                 },
-                10 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(is.read_message()?));
+                74 => {
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(is.read_message()?));
                 },
-                98 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(is.read_message()?));
+                90 => {
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(is.read_message()?));
                 },
-                82 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(is.read_message()?));
+                42 => {
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(is.read_message()?));
                 },
-                50 => {
-                    self.ACDOBBPLDBG = ::std::option::Option::Some(rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(is.read_message()?));
+                114 => {
+                    self.AFBLAJKDHHF = ::std::option::Option::Some(rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -433,29 +433,29 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(ref v) = self.AFBLAJKDHHF {
             match v {
-                &rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::Npc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -467,25 +467,25 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.ACDOBBPLDBG {
+        if let ::std::option::Option::Some(ref v) = self.AFBLAJKDHHF {
             match v {
-                &rogue_common_dialogue_info::ACDOBBPLDBG::Npc(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-                },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::ADMAHLAALNH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::ODDGCBPOPLF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::GMAKHONAEPH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::CACGEKAANKL(ref v) => {
+                &rogue_common_dialogue_info::AFBLAJKDHHF::Npc(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &rogue_common_dialogue_info::ACDOBBPLDBG::AGGBLHGKPFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                &rogue_common_dialogue_info::AFBLAJKDHHF::ADMAHLAALNH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &rogue_common_dialogue_info::AFBLAJKDHHF::ODDGCBPOPLF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &rogue_common_dialogue_info::AFBLAJKDHHF::GMAKHONAEPH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &rogue_common_dialogue_info::AFBLAJKDHHF::CACGEKAANKL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &rogue_common_dialogue_info::AFBLAJKDHHF::AGGBLHGKPFJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -506,18 +506,18 @@ impl ::protobuf::Message for RogueCommonDialogueInfo {
     }
 
     fn clear(&mut self) {
-        self.ACDOBBPLDBG = ::std::option::Option::None;
-        self.ACDOBBPLDBG = ::std::option::Option::None;
-        self.ACDOBBPLDBG = ::std::option::Option::None;
-        self.ACDOBBPLDBG = ::std::option::Option::None;
-        self.ACDOBBPLDBG = ::std::option::Option::None;
-        self.ACDOBBPLDBG = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
+        self.AFBLAJKDHHF = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonDialogueInfo {
         static instance: RogueCommonDialogueInfo = RogueCommonDialogueInfo {
-            ACDOBBPLDBG: ::std::option::Option::None,
+            AFBLAJKDHHF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -546,8 +546,8 @@ pub mod rogue_common_dialogue_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RogueCommonDialogueInfo.ACDOBBPLDBG)
-    pub enum ACDOBBPLDBG {
+    // @@protoc_insertion_point(oneof:RogueCommonDialogueInfo.AFBLAJKDHHF)
+    pub enum AFBLAJKDHHF {
         // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.Npc)
         Npc(super::super::RogueCommonDialogueBasicInfo::RogueCommonDialogueBasicInfo),
         // @@protoc_insertion_point(oneof_field:RogueCommonDialogueInfo.ADMAHLAALNH)
@@ -562,19 +562,19 @@ pub mod rogue_common_dialogue_info {
         AGGBLHGKPFJ(super::super::AFCCAOACNAK::AFCCAOACNAK),
     }
 
-    impl ::protobuf::Oneof for ACDOBBPLDBG {
+    impl ::protobuf::Oneof for AFBLAJKDHHF {
     }
 
-    impl ::protobuf::OneofFull for ACDOBBPLDBG {
+    impl ::protobuf::OneofFull for AFBLAJKDHHF {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RogueCommonDialogueInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("ACDOBBPLDBG").unwrap()).clone()
+            descriptor.get(|| <super::RogueCommonDialogueInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("AFBLAJKDHHF").unwrap()).clone()
         }
     }
 
-    impl ACDOBBPLDBG {
+    impl AFBLAJKDHHF {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<ACDOBBPLDBG>("ACDOBBPLDBG")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<AFBLAJKDHHF>("AFBLAJKDHHF")
         }
     }
 }
@@ -583,14 +583,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueCommonDialogueInfo.proto\x1a\x11AFCCAOACNAK.proto\x1a\x11CNHH\
     PDHBMDC.proto\x1a\x11GNJAPOMLLHE.proto\x1a\x11HPJLAFHHGJG.proto\x1a\x11J\
     IEAAFJENLK.proto\x1a\"RogueCommonDialogueBasicInfo.proto\"\xd5\x02\n\x17\
-    RogueCommonDialogueInfo\x121\n\x03Npc\x18\x0e\x20\x01(\x0b2\x1d.RogueCom\
-    monDialogueBasicInfoH\0R\x03Npc\x120\n\x0bADMAHLAALNH\x18\x08\x20\x01(\
-    \x0b2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\x120\n\x0bODDGCBPOPLF\x18\x01\
-    \x20\x01(\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDGCBPOPLF\x120\n\x0bGMAKHONAEPH\
-    \x18\x0c\x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\x0bGMAKHONAEPH\x120\n\x0bCACG\
-    EKAANKL\x18\n\x20\x01(\x0b2\x0c.HPJLAFHHGJGH\0R\x0bCACGEKAANKL\x120\n\
-    \x0bAGGBLHGKPFJ\x18\x06\x20\x01(\x0b2\x0c.AFCCAOACNAKH\0R\x0bAGGBLHGKPFJ\
-    B\r\n\x0bACDOBBPLDBGb\x06proto3\
+    RogueCommonDialogueInfo\x121\n\x03Npc\x18\n\x20\x01(\x0b2\x1d.RogueCommo\
+    nDialogueBasicInfoH\0R\x03Npc\x120\n\x0bADMAHLAALNH\x18\x08\x20\x01(\x0b\
+    2\x0c.GNJAPOMLLHEH\0R\x0bADMAHLAALNH\x120\n\x0bODDGCBPOPLF\x18\t\x20\x01\
+    (\x0b2\x0c.CNHHPDHBMDCH\0R\x0bODDGCBPOPLF\x120\n\x0bGMAKHONAEPH\x18\x0b\
+    \x20\x01(\x0b2\x0c.JIEAAFJENLKH\0R\x0bGMAKHONAEPH\x120\n\x0bCACGEKAANKL\
+    \x18\x05\x20\x01(\x0b2\x0c.HPJLAFHHGJGH\0R\x0bCACGEKAANKL\x120\n\x0bAGGB\
+    LHGKPFJ\x18\x0e\x20\x01(\x0b2\x0c.AFCCAOACNAKH\0R\x0bAGGBLHGKPFJB\r\n\
+    \x0bAFBLAJKDHHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

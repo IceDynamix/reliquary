@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueEndlessActivityPointRewardScRsp {
     // message fields
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.NNGOBOMGJID)
+    pub NNGOBOMGJID: u32,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.is_over_bonus_reward)
+    pub is_over_bonus_reward: bool,
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.taken_reward_level_list)
+    pub taken_reward_level_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.MDHJKKBNMCF)
-    pub MDHJKKBNMCF: bool,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.JCHCHLMDPEN)
-    pub JCHCHLMDPEN: u32,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.EAHBIKFALLF)
-    pub EAHBIKFALLF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityPointRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueEndlessActivityPointRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl TakeRogueEndlessActivityPointRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NNGOBOMGJID",
+            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.NNGOBOMGJID },
+            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.NNGOBOMGJID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_over_bonus_reward",
+            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.is_over_bonus_reward },
+            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.is_over_bonus_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.level },
             |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.player_return_reward_list },
-            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.player_return_reward_list },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "taken_reward_level_list",
+            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.taken_reward_level_list },
+            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.taken_reward_level_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.retcode },
             |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDHJKKBNMCF",
-            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.MDHJKKBNMCF },
-            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.MDHJKKBNMCF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCHCHLMDPEN",
-            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.JCHCHLMDPEN },
-            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.JCHCHLMDPEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EAHBIKFALLF",
-            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.EAHBIKFALLF },
-            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.EAHBIKFALLF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakeRogueEndlessActivityPointRewardScRsp| { &m.reward },
+            |m: &mut TakeRogueEndlessActivityPointRewardScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueEndlessActivityPointRewardScRsp>(
             "TakeRogueEndlessActivityPointRewardScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.level = is.read_uint32()?;
+                8 => {
+                    self.NNGOBOMGJID = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
-                },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                16 => {
-                    self.MDHJKKBNMCF = is.read_bool()?;
+                40 => {
+                    self.is_over_bonus_reward = is.read_bool()?;
                 },
                 56 => {
-                    self.JCHCHLMDPEN = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EAHBIKFALLF)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.taken_reward_level_list)?;
                 },
-                72 => {
-                    self.EAHBIKFALLF.push(is.read_uint32()?);
+                64 => {
+                    self.taken_reward_level_list.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,45 +140,45 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        if self.NNGOBOMGJID != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NNGOBOMGJID);
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
+        if self.is_over_bonus_reward != false {
+            my_size += 1 + 1;
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.taken_reward_level_list);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.MDHJKKBNMCF != false {
-            my_size += 1 + 1;
-        }
-        if self.JCHCHLMDPEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JCHCHLMDPEN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.EAHBIKFALLF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NNGOBOMGJID != 0 {
+            os.write_uint32(1, self.NNGOBOMGJID)?;
+        }
+        if self.is_over_bonus_reward != false {
+            os.write_bool(5, self.is_over_bonus_reward)?;
+        }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
+        os.write_repeated_packed_uint32(8, &self.taken_reward_level_list)?;
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if self.MDHJKKBNMCF != false {
-            os.write_bool(2, self.MDHJKKBNMCF)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if self.JCHCHLMDPEN != 0 {
-            os.write_uint32(7, self.JCHCHLMDPEN)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.EAHBIKFALLF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,23 +196,23 @@ impl ::protobuf::Message for TakeRogueEndlessActivityPointRewardScRsp {
     }
 
     fn clear(&mut self) {
+        self.NNGOBOMGJID = 0;
+        self.is_over_bonus_reward = false;
         self.level = 0;
-        self.player_return_reward_list.clear();
+        self.taken_reward_level_list.clear();
         self.retcode = 0;
-        self.MDHJKKBNMCF = false;
-        self.JCHCHLMDPEN = 0;
-        self.EAHBIKFALLF.clear();
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueEndlessActivityPointRewardScRsp {
         static instance: TakeRogueEndlessActivityPointRewardScRsp = TakeRogueEndlessActivityPointRewardScRsp {
+            NNGOBOMGJID: 0,
+            is_over_bonus_reward: false,
             level: 0,
-            player_return_reward_list: ::protobuf::MessageField::none(),
+            taken_reward_level_list: ::std::vec::Vec::new(),
             retcode: 0,
-            MDHJKKBNMCF: false,
-            JCHCHLMDPEN: 0,
-            EAHBIKFALLF: ::std::vec::Vec::new(),
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityPointRewardS
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n.TakeRogueEndlessActivityPointRewardScRsp.proto\x1a\x0eItemList.proto\
-    \"\x86\x02\n(TakeRogueEndlessActivityPointRewardScRsp\x12\x14\n\x05level\
-    \x18\x06\x20\x01(\rR\x05level\x12D\n\x19player_return_reward_list\x18\
-    \x0f\x20\x01(\x0b2\t.ItemListR\x16playerReturnRewardList\x12\x18\n\x07re\
-    tcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bMDHJKKBNMCF\x18\x02\x20\
-    \x01(\x08R\x0bMDHJKKBNMCF\x12\x20\n\x0bJCHCHLMDPEN\x18\x07\x20\x01(\rR\
-    \x0bJCHCHLMDPEN\x12\x20\n\x0bEAHBIKFALLF\x18\t\x20\x03(\rR\x0bEAHBIKFALL\
-    Fb\x06proto3\
+    \"\x87\x02\n(TakeRogueEndlessActivityPointRewardScRsp\x12\x20\n\x0bNNGOB\
+    OMGJID\x18\x01\x20\x01(\rR\x0bNNGOBOMGJID\x12/\n\x14is_over_bonus_reward\
+    \x18\x05\x20\x01(\x08R\x11isOverBonusReward\x12\x14\n\x05level\x18\x07\
+    \x20\x01(\rR\x05level\x125\n\x17taken_reward_level_list\x18\x08\x20\x03(\
+    \rR\x14takenRewardLevelList\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07\
+    retcode\x12!\n\x06reward\x18\x0c\x20\x01(\x0b2\t.ItemListR\x06rewardb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

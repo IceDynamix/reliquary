@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PABEMLPNGHB {
     // message fields
-    // @@protoc_insertion_point(field:PABEMLPNGHB.LGOMFKKOGCF)
-    pub LGOMFKKOGCF: ::std::vec::Vec<super::BBALIHOKMMP::BBALIHOKMMP>,
-    // @@protoc_insertion_point(field:PABEMLPNGHB.challenge_peak_id)
-    pub challenge_peak_id: u32,
-    // @@protoc_insertion_point(field:PABEMLPNGHB.KGAEPLCAEFA)
-    pub KGAEPLCAEFA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PABEMLPNGHB.challenge_peak_perfect_clear)
-    pub challenge_peak_perfect_clear: bool,
+    // @@protoc_insertion_point(field:PABEMLPNGHB.LIDMECDCCJF)
+    pub LIDMECDCCJF: ::std::vec::Vec<super::BBALIHOKMMP::BBALIHOKMMP>,
+    // @@protoc_insertion_point(field:PABEMLPNGHB.is_finished)
+    pub is_finished: bool,
     // @@protoc_insertion_point(field:PABEMLPNGHB.peak_target)
     pub peak_target: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PABEMLPNGHB.used_cycle)
     pub used_cycle: u32,
+    // @@protoc_insertion_point(field:PABEMLPNGHB.LHBLFFGCKLF)
+    pub LHBLFFGCKLF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PABEMLPNGHB.challenge_peak_id)
+    pub challenge_peak_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PABEMLPNGHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,14 @@ impl PABEMLPNGHB {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGOMFKKOGCF",
-            |m: &PABEMLPNGHB| { &m.LGOMFKKOGCF },
-            |m: &mut PABEMLPNGHB| { &mut m.LGOMFKKOGCF },
+            "LIDMECDCCJF",
+            |m: &PABEMLPNGHB| { &m.LIDMECDCCJF },
+            |m: &mut PABEMLPNGHB| { &mut m.LIDMECDCCJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_id",
-            |m: &PABEMLPNGHB| { &m.challenge_peak_id },
-            |m: &mut PABEMLPNGHB| { &mut m.challenge_peak_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGAEPLCAEFA",
-            |m: &PABEMLPNGHB| { &m.KGAEPLCAEFA },
-            |m: &mut PABEMLPNGHB| { &mut m.KGAEPLCAEFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_perfect_clear",
-            |m: &PABEMLPNGHB| { &m.challenge_peak_perfect_clear },
-            |m: &mut PABEMLPNGHB| { &mut m.challenge_peak_perfect_clear },
+            "is_finished",
+            |m: &PABEMLPNGHB| { &m.is_finished },
+            |m: &mut PABEMLPNGHB| { &mut m.is_finished },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "peak_target",
@@ -88,6 +78,16 @@ impl PABEMLPNGHB {
             "used_cycle",
             |m: &PABEMLPNGHB| { &m.used_cycle },
             |m: &mut PABEMLPNGHB| { &mut m.used_cycle },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LHBLFFGCKLF",
+            |m: &PABEMLPNGHB| { &m.LHBLFFGCKLF },
+            |m: &mut PABEMLPNGHB| { &mut m.LHBLFFGCKLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_peak_id",
+            |m: &PABEMLPNGHB| { &m.challenge_peak_id },
+            |m: &mut PABEMLPNGHB| { &mut m.challenge_peak_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PABEMLPNGHB>(
             "PABEMLPNGHB",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for PABEMLPNGHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.LGOMFKKOGCF.push(is.read_message()?);
+                18 => {
+                    self.LIDMECDCCJF.push(is.read_message()?);
                 },
-                56 => {
-                    self.challenge_peak_id = is.read_uint32()?;
+                40 => {
+                    self.is_finished = is.read_bool()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KGAEPLCAEFA)?;
-                },
-                104 => {
-                    self.KGAEPLCAEFA.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.challenge_peak_perfect_clear = is.read_bool()?;
-                },
-                114 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
                 },
-                112 => {
+                80 => {
                     self.peak_target.push(is.read_uint32()?);
                 },
-                64 => {
+                88 => {
                     self.used_cycle = is.read_uint32()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LHBLFFGCKLF)?;
+                },
+                96 => {
+                    self.LHBLFFGCKLF.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.challenge_peak_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,20 +143,20 @@ impl ::protobuf::Message for PABEMLPNGHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LGOMFKKOGCF {
+        for value in &self.LIDMECDCCJF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.challenge_peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.challenge_peak_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.KGAEPLCAEFA);
-        if self.challenge_peak_perfect_clear != false {
+        if self.is_finished != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.peak_target);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.peak_target);
         if self.used_cycle != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.used_cycle);
+            my_size += ::protobuf::rt::uint32_size(11, self.used_cycle);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LHBLFFGCKLF);
+        if self.challenge_peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.challenge_peak_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,19 +164,19 @@ impl ::protobuf::Message for PABEMLPNGHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LGOMFKKOGCF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.LIDMECDCCJF {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.challenge_peak_id != 0 {
-            os.write_uint32(7, self.challenge_peak_id)?;
+        if self.is_finished != false {
+            os.write_bool(5, self.is_finished)?;
         }
-        os.write_repeated_packed_uint32(13, &self.KGAEPLCAEFA)?;
-        if self.challenge_peak_perfect_clear != false {
-            os.write_bool(15, self.challenge_peak_perfect_clear)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.peak_target)?;
+        os.write_repeated_packed_uint32(10, &self.peak_target)?;
         if self.used_cycle != 0 {
-            os.write_uint32(8, self.used_cycle)?;
+            os.write_uint32(11, self.used_cycle)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.LHBLFFGCKLF)?;
+        if self.challenge_peak_id != 0 {
+            os.write_uint32(15, self.challenge_peak_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for PABEMLPNGHB {
     }
 
     fn clear(&mut self) {
-        self.LGOMFKKOGCF.clear();
-        self.challenge_peak_id = 0;
-        self.KGAEPLCAEFA.clear();
-        self.challenge_peak_perfect_clear = false;
+        self.LIDMECDCCJF.clear();
+        self.is_finished = false;
         self.peak_target.clear();
         self.used_cycle = 0;
+        self.LHBLFFGCKLF.clear();
+        self.challenge_peak_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PABEMLPNGHB {
         static instance: PABEMLPNGHB = PABEMLPNGHB {
-            LGOMFKKOGCF: ::std::vec::Vec::new(),
-            challenge_peak_id: 0,
-            KGAEPLCAEFA: ::std::vec::Vec::new(),
-            challenge_peak_perfect_clear: false,
+            LIDMECDCCJF: ::std::vec::Vec::new(),
+            is_finished: false,
             peak_target: ::std::vec::Vec::new(),
             used_cycle: 0,
+            LHBLFFGCKLF: ::std::vec::Vec::new(),
+            challenge_peak_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,13 +236,13 @@ impl ::protobuf::reflect::ProtobufValue for PABEMLPNGHB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PABEMLPNGHB.proto\x1a\x11BBALIHOKMMP.proto\"\x8c\x02\n\x0bPABEMLPN\
-    GHB\x12.\n\x0bLGOMFKKOGCF\x18\x03\x20\x03(\x0b2\x0c.BBALIHOKMMPR\x0bLGOM\
-    FKKOGCF\x12*\n\x11challenge_peak_id\x18\x07\x20\x01(\rR\x0fchallengePeak\
-    Id\x12\x20\n\x0bKGAEPLCAEFA\x18\r\x20\x03(\rR\x0bKGAEPLCAEFA\x12?\n\x1cc\
-    hallenge_peak_perfect_clear\x18\x0f\x20\x01(\x08R\x19challengePeakPerfec\
-    tClear\x12\x1f\n\x0bpeak_target\x18\x0e\x20\x03(\rR\npeakTarget\x12\x1d\
-    \n\nused_cycle\x18\x08\x20\x01(\rR\tusedCycleb\x06proto3\
+    \n\x11PABEMLPNGHB.proto\x1a\x11BBALIHOKMMP.proto\"\xec\x01\n\x0bPABEMLPN\
+    GHB\x12.\n\x0bLIDMECDCCJF\x18\x02\x20\x03(\x0b2\x0c.BBALIHOKMMPR\x0bLIDM\
+    ECDCCJF\x12\x1f\n\x0bis_finished\x18\x05\x20\x01(\x08R\nisFinished\x12\
+    \x1f\n\x0bpeak_target\x18\n\x20\x03(\rR\npeakTarget\x12\x1d\n\nused_cycl\
+    e\x18\x0b\x20\x01(\rR\tusedCycle\x12\x20\n\x0bLHBLFFGCKLF\x18\x0c\x20\
+    \x03(\rR\x0bLHBLFFGCKLF\x12*\n\x11challenge_peak_id\x18\x0f\x20\x01(\rR\
+    \x0fchallengePeakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

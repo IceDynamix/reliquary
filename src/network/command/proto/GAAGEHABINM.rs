@@ -30,8 +30,8 @@ pub struct GAAGEHABINM {
     // message fields
     // @@protoc_insertion_point(field:GAAGEHABINM.skill_id)
     pub skill_id: u32,
-    // @@protoc_insertion_point(field:GAAGEHABINM.HGFLPENKIII)
-    pub HGFLPENKIII: f64,
+    // @@protoc_insertion_point(field:GAAGEHABINM.MNDOEKKLIMK)
+    pub MNDOEKKLIMK: f64,
     // @@protoc_insertion_point(field:GAAGEHABINM.battle_target_list)
     pub battle_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GAAGEHABINM.damage)
@@ -61,9 +61,9 @@ impl GAAGEHABINM {
             |m: &mut GAAGEHABINM| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGFLPENKIII",
-            |m: &GAAGEHABINM| { &m.HGFLPENKIII },
-            |m: &mut GAAGEHABINM| { &mut m.HGFLPENKIII },
+            "MNDOEKKLIMK",
+            |m: &GAAGEHABINM| { &m.MNDOEKKLIMK },
+            |m: &mut GAAGEHABINM| { &mut m.MNDOEKKLIMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "battle_target_list",
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GAAGEHABINM {
                     self.skill_id = is.read_uint32()?;
                 },
                 17 => {
-                    self.HGFLPENKIII = is.read_double()?;
+                    self.MNDOEKKLIMK = is.read_double()?;
                 },
                 26 => {
                     is.read_repeated_packed_uint32_into(&mut self.battle_target_list)?;
@@ -123,7 +123,7 @@ impl ::protobuf::Message for GAAGEHABINM {
         if self.skill_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
         }
-        if self.HGFLPENKIII != 0. {
+        if self.MNDOEKKLIMK != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.battle_target_list);
@@ -139,8 +139,8 @@ impl ::protobuf::Message for GAAGEHABINM {
         if self.skill_id != 0 {
             os.write_uint32(1, self.skill_id)?;
         }
-        if self.HGFLPENKIII != 0. {
-            os.write_double(2, self.HGFLPENKIII)?;
+        if self.MNDOEKKLIMK != 0. {
+            os.write_double(2, self.MNDOEKKLIMK)?;
         }
         os.write_repeated_packed_uint32(3, &self.battle_target_list)?;
         if self.damage != 0. {
@@ -164,7 +164,7 @@ impl ::protobuf::Message for GAAGEHABINM {
 
     fn clear(&mut self) {
         self.skill_id = 0;
-        self.HGFLPENKIII = 0.;
+        self.MNDOEKKLIMK = 0.;
         self.battle_target_list.clear();
         self.damage = 0.;
         self.special_fields.clear();
@@ -173,7 +173,7 @@ impl ::protobuf::Message for GAAGEHABINM {
     fn default_instance() -> &'static GAAGEHABINM {
         static instance: GAAGEHABINM = GAAGEHABINM {
             skill_id: 0,
-            HGFLPENKIII: 0.,
+            MNDOEKKLIMK: 0.,
             battle_target_list: ::std::vec::Vec::new(),
             damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,8 +201,8 @@ impl ::protobuf::reflect::ProtobufValue for GAAGEHABINM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GAAGEHABINM.proto\"\x90\x01\n\x0bGAAGEHABINM\x12\x19\n\x08skill_id\
-    \x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bHGFLPENKIII\x18\x02\x20\x01\
-    (\x01R\x0bHGFLPENKIII\x12,\n\x12battle_target_list\x18\x03\x20\x03(\rR\
+    \x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bMNDOEKKLIMK\x18\x02\x20\x01\
+    (\x01R\x0bMNDOEKKLIMK\x12,\n\x12battle_target_list\x18\x03\x20\x03(\rR\
     \x10battleTargetList\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\
     b\x06proto3\
 ";

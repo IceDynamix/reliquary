@@ -30,8 +30,8 @@ pub struct GEOAEOFJOGC {
     // message fields
     // @@protoc_insertion_point(field:GEOAEOFJOGC.entity_id)
     pub entity_id: u32,
-    // @@protoc_insertion_point(field:GEOAEOFJOGC.KFBOAONLDEM)
-    pub KFBOAONLDEM: bool,
+    // @@protoc_insertion_point(field:GEOAEOFJOGC.IMNNKIKBJOC)
+    pub IMNNKIKBJOC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GEOAEOFJOGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GEOAEOFJOGC {
             |m: &mut GEOAEOFJOGC| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFBOAONLDEM",
-            |m: &GEOAEOFJOGC| { &m.KFBOAONLDEM },
-            |m: &mut GEOAEOFJOGC| { &mut m.KFBOAONLDEM },
+            "IMNNKIKBJOC",
+            |m: &GEOAEOFJOGC| { &m.IMNNKIKBJOC },
+            |m: &mut GEOAEOFJOGC| { &mut m.IMNNKIKBJOC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEOAEOFJOGC>(
             "GEOAEOFJOGC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GEOAEOFJOGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.entity_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.KFBOAONLDEM = is.read_bool()?;
+                120 => {
+                    self.IMNNKIKBJOC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GEOAEOFJOGC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.entity_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.entity_id);
         }
-        if self.KFBOAONLDEM != false {
+        if self.IMNNKIKBJOC != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GEOAEOFJOGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entity_id != 0 {
-            os.write_uint32(6, self.entity_id)?;
+            os.write_uint32(5, self.entity_id)?;
         }
-        if self.KFBOAONLDEM != false {
-            os.write_bool(9, self.KFBOAONLDEM)?;
+        if self.IMNNKIKBJOC != false {
+            os.write_bool(15, self.IMNNKIKBJOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GEOAEOFJOGC {
 
     fn clear(&mut self) {
         self.entity_id = 0;
-        self.KFBOAONLDEM = false;
+        self.IMNNKIKBJOC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEOAEOFJOGC {
         static instance: GEOAEOFJOGC = GEOAEOFJOGC {
             entity_id: 0,
-            KFBOAONLDEM: false,
+            IMNNKIKBJOC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GEOAEOFJOGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GEOAEOFJOGC.proto\"L\n\x0bGEOAEOFJOGC\x12\x1b\n\tentity_id\x18\x06\
-    \x20\x01(\rR\x08entityId\x12\x20\n\x0bKFBOAONLDEM\x18\t\x20\x01(\x08R\
-    \x0bKFBOAONLDEMb\x06proto3\
+    \n\x11GEOAEOFJOGC.proto\"L\n\x0bGEOAEOFJOGC\x12\x1b\n\tentity_id\x18\x05\
+    \x20\x01(\rR\x08entityId\x12\x20\n\x0bIMNNKIKBJOC\x18\x0f\x20\x01(\x08R\
+    \x0bIMNNKIKBJOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

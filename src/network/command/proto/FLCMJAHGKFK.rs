@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLCMJAHGKFK {
     // message fields
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.GMALCPNOHBF)
-    pub GMALCPNOHBF: ::std::string::String,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.remark_name)
-    pub remark_name: ::std::string::String,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.platform)
-    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.NPPPHGFENPH)
-    pub NPPPHGFENPH: u32,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.nickname)
-    pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.INNANICLCAE)
-    pub INNANICLCAE: u32,
     // @@protoc_insertion_point(field:FLCMJAHGKFK.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:FLCMJAHGKFK.head_icon)
-    pub head_icon: u32,
     // @@protoc_insertion_point(field:FLCMJAHGKFK.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.head_icon)
+    pub head_icon: u32,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.JPJELHEGFAI)
+    pub JPJELHEGFAI: u32,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.nickname)
+    pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.platform)
+    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.remark_name)
+    pub remark_name: ::std::string::String,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.GBGCDBEBLMB)
+    pub GBGCDBEBLMB: u32,
     // @@protoc_insertion_point(field:FLCMJAHGKFK.current_head_icon_frame)
     pub current_head_icon_frame: ::protobuf::MessageField<super::HeadIconFrame::HeadIconFrame>,
+    // @@protoc_insertion_point(field:FLCMJAHGKFK.KOGFBOMDEEF)
+    pub KOGFBOMDEEF: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FLCMJAHGKFK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,39 +68,14 @@ impl FLCMJAHGKFK {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMALCPNOHBF",
-            |m: &FLCMJAHGKFK| { &m.GMALCPNOHBF },
-            |m: &mut FLCMJAHGKFK| { &mut m.GMALCPNOHBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &FLCMJAHGKFK| { &m.remark_name },
-            |m: &mut FLCMJAHGKFK| { &mut m.remark_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &FLCMJAHGKFK| { &m.platform },
-            |m: &mut FLCMJAHGKFK| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPPPHGFENPH",
-            |m: &FLCMJAHGKFK| { &m.NPPPHGFENPH },
-            |m: &mut FLCMJAHGKFK| { &mut m.NPPPHGFENPH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &FLCMJAHGKFK| { &m.nickname },
-            |m: &mut FLCMJAHGKFK| { &mut m.nickname },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INNANICLCAE",
-            |m: &FLCMJAHGKFK| { &m.INNANICLCAE },
-            |m: &mut FLCMJAHGKFK| { &mut m.INNANICLCAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &FLCMJAHGKFK| { &m.uid },
             |m: &mut FLCMJAHGKFK| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &FLCMJAHGKFK| { &m.level },
+            |m: &mut FLCMJAHGKFK| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "head_icon",
@@ -108,14 +83,39 @@ impl FLCMJAHGKFK {
             |m: &mut FLCMJAHGKFK| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &FLCMJAHGKFK| { &m.level },
-            |m: &mut FLCMJAHGKFK| { &mut m.level },
+            "JPJELHEGFAI",
+            |m: &FLCMJAHGKFK| { &m.JPJELHEGFAI },
+            |m: &mut FLCMJAHGKFK| { &mut m.JPJELHEGFAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &FLCMJAHGKFK| { &m.nickname },
+            |m: &mut FLCMJAHGKFK| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &FLCMJAHGKFK| { &m.platform },
+            |m: &mut FLCMJAHGKFK| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &FLCMJAHGKFK| { &m.remark_name },
+            |m: &mut FLCMJAHGKFK| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GBGCDBEBLMB",
+            |m: &FLCMJAHGKFK| { &m.GBGCDBEBLMB },
+            |m: &mut FLCMJAHGKFK| { &mut m.GBGCDBEBLMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadIconFrame::HeadIconFrame>(
             "current_head_icon_frame",
             |m: &FLCMJAHGKFK| { &m.current_head_icon_frame },
             |m: &mut FLCMJAHGKFK| { &mut m.current_head_icon_frame },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KOGFBOMDEEF",
+            |m: &FLCMJAHGKFK| { &m.KOGFBOMDEEF },
+            |m: &mut FLCMJAHGKFK| { &mut m.KOGFBOMDEEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLCMJAHGKFK>(
             "FLCMJAHGKFK",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for FLCMJAHGKFK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.GMALCPNOHBF = is.read_string()?;
-                },
-                26 => {
-                    self.remark_name = is.read_string()?;
-                },
                 16 => {
-                    self.platform = is.read_enum_or_unknown()?;
-                },
-                88 => {
-                    self.NPPPHGFENPH = is.read_uint32()?;
-                },
-                42 => {
-                    self.nickname = is.read_string()?;
-                },
-                32 => {
-                    self.INNANICLCAE = is.read_uint32()?;
-                },
-                96 => {
                     self.uid = is.read_uint32()?;
                 },
-                104 => {
-                    self.head_icon = is.read_uint32()?;
-                },
-                56 => {
+                24 => {
                     self.level = is.read_uint32()?;
                 },
+                32 => {
+                    self.head_icon = is.read_uint32()?;
+                },
+                40 => {
+                    self.JPJELHEGFAI = is.read_uint32()?;
+                },
                 50 => {
+                    self.nickname = is.read_string()?;
+                },
+                56 => {
+                    self.platform = is.read_enum_or_unknown()?;
+                },
+                82 => {
+                    self.remark_name = is.read_string()?;
+                },
+                88 => {
+                    self.GBGCDBEBLMB = is.read_uint32()?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.current_head_icon_frame)?;
+                },
+                122 => {
+                    self.KOGFBOMDEEF = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,36 +177,36 @@ impl ::protobuf::Message for FLCMJAHGKFK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.GMALCPNOHBF.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.GMALCPNOHBF);
-        }
-        if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.remark_name);
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(2, self.platform.value());
-        }
-        if self.NPPPHGFENPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NPPPHGFENPH);
-        }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.nickname);
-        }
-        if self.INNANICLCAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.INNANICLCAE);
-        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.uid);
-        }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(2, self.uid);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
+        }
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.head_icon);
+        }
+        if self.JPJELHEGFAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JPJELHEGFAI);
+        }
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.nickname);
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(7, self.platform.value());
+        }
+        if !self.remark_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.remark_name);
+        }
+        if self.GBGCDBEBLMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GBGCDBEBLMB);
         }
         if let Some(v) = self.current_head_icon_frame.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.KOGFBOMDEEF.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.KOGFBOMDEEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -214,35 +214,35 @@ impl ::protobuf::Message for FLCMJAHGKFK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.GMALCPNOHBF.is_empty() {
-            os.write_string(8, &self.GMALCPNOHBF)?;
-        }
-        if !self.remark_name.is_empty() {
-            os.write_string(3, &self.remark_name)?;
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.platform))?;
-        }
-        if self.NPPPHGFENPH != 0 {
-            os.write_uint32(11, self.NPPPHGFENPH)?;
-        }
-        if !self.nickname.is_empty() {
-            os.write_string(5, &self.nickname)?;
-        }
-        if self.INNANICLCAE != 0 {
-            os.write_uint32(4, self.INNANICLCAE)?;
-        }
         if self.uid != 0 {
-            os.write_uint32(12, self.uid)?;
-        }
-        if self.head_icon != 0 {
-            os.write_uint32(13, self.head_icon)?;
+            os.write_uint32(2, self.uid)?;
         }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(3, self.level)?;
+        }
+        if self.head_icon != 0 {
+            os.write_uint32(4, self.head_icon)?;
+        }
+        if self.JPJELHEGFAI != 0 {
+            os.write_uint32(5, self.JPJELHEGFAI)?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(6, &self.nickname)?;
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
+        if !self.remark_name.is_empty() {
+            os.write_string(10, &self.remark_name)?;
+        }
+        if self.GBGCDBEBLMB != 0 {
+            os.write_uint32(11, self.GBGCDBEBLMB)?;
         }
         if let Some(v) = self.current_head_icon_frame.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if !self.KOGFBOMDEEF.is_empty() {
+            os.write_string(15, &self.KOGFBOMDEEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -261,31 +261,31 @@ impl ::protobuf::Message for FLCMJAHGKFK {
     }
 
     fn clear(&mut self) {
-        self.GMALCPNOHBF.clear();
-        self.remark_name.clear();
-        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.NPPPHGFENPH = 0;
-        self.nickname.clear();
-        self.INNANICLCAE = 0;
         self.uid = 0;
-        self.head_icon = 0;
         self.level = 0;
+        self.head_icon = 0;
+        self.JPJELHEGFAI = 0;
+        self.nickname.clear();
+        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
+        self.remark_name.clear();
+        self.GBGCDBEBLMB = 0;
         self.current_head_icon_frame.clear();
+        self.KOGFBOMDEEF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLCMJAHGKFK {
         static instance: FLCMJAHGKFK = FLCMJAHGKFK {
-            GMALCPNOHBF: ::std::string::String::new(),
-            remark_name: ::std::string::String::new(),
-            platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            NPPPHGFENPH: 0,
-            nickname: ::std::string::String::new(),
-            INNANICLCAE: 0,
             uid: 0,
-            head_icon: 0,
             level: 0,
+            head_icon: 0,
+            JPJELHEGFAI: 0,
+            nickname: ::std::string::String::new(),
+            platform: ::protobuf::EnumOrUnknown::from_i32(0),
+            remark_name: ::std::string::String::new(),
+            GBGCDBEBLMB: 0,
             current_head_icon_frame: ::protobuf::MessageField::none(),
+            KOGFBOMDEEF: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -311,15 +311,15 @@ impl ::protobuf::reflect::ProtobufValue for FLCMJAHGKFK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLCMJAHGKFK.proto\x1a\x13HeadIconFrame.proto\x1a\x12PlatformType.p\
-    roto\"\xe7\x02\n\x0bFLCMJAHGKFK\x12\x20\n\x0bGMALCPNOHBF\x18\x08\x20\x01\
-    (\tR\x0bGMALCPNOHBF\x12\x1f\n\x0bremark_name\x18\x03\x20\x01(\tR\nremark\
-    Name\x12)\n\x08platform\x18\x02\x20\x01(\x0e2\r.PlatformTypeR\x08platfor\
-    m\x12\x20\n\x0bNPPPHGFENPH\x18\x0b\x20\x01(\rR\x0bNPPPHGFENPH\x12\x1a\n\
-    \x08nickname\x18\x05\x20\x01(\tR\x08nickname\x12\x20\n\x0bINNANICLCAE\
-    \x18\x04\x20\x01(\rR\x0bINNANICLCAE\x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\
-    \x03uid\x12\x1b\n\thead_icon\x18\r\x20\x01(\rR\x08headIcon\x12\x14\n\x05\
-    level\x18\x07\x20\x01(\rR\x05level\x12E\n\x17current_head_icon_frame\x18\
-    \x06\x20\x01(\x0b2\x0e.HeadIconFrameR\x14currentHeadIconFrameb\x06proto3\
+    roto\"\xe7\x02\n\x0bFLCMJAHGKFK\x12\x10\n\x03uid\x18\x02\x20\x01(\rR\x03\
+    uid\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x1b\n\thead_icon\
+    \x18\x04\x20\x01(\rR\x08headIcon\x12\x20\n\x0bJPJELHEGFAI\x18\x05\x20\
+    \x01(\rR\x0bJPJELHEGFAI\x12\x1a\n\x08nickname\x18\x06\x20\x01(\tR\x08nic\
+    kname\x12)\n\x08platform\x18\x07\x20\x01(\x0e2\r.PlatformTypeR\x08platfo\
+    rm\x12\x1f\n\x0bremark_name\x18\n\x20\x01(\tR\nremarkName\x12\x20\n\x0bG\
+    BGCDBEBLMB\x18\x0b\x20\x01(\rR\x0bGBGCDBEBLMB\x12E\n\x17current_head_ico\
+    n_frame\x18\x0c\x20\x01(\x0b2\x0e.HeadIconFrameR\x14currentHeadIconFrame\
+    \x12\x20\n\x0bKOGFBOMDEEF\x18\x0f\x20\x01(\tR\x0bKOGFBOMDEEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

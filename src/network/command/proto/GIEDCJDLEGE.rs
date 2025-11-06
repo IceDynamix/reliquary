@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIEDCJDLEGE {
     // message fields
-    // @@protoc_insertion_point(field:GIEDCJDLEGE.BMALPKEKBEL)
-    pub BMALPKEKBEL: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
-    // @@protoc_insertion_point(field:GIEDCJDLEGE.BLCABEMFACH)
-    pub BLCABEMFACH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GIEDCJDLEGE.MFNAGLKDPNI)
-    pub MFNAGLKDPNI: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
-    // @@protoc_insertion_point(field:GIEDCJDLEGE.OGJOFMCMFPG)
-    pub OGJOFMCMFPG: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
+    // @@protoc_insertion_point(field:GIEDCJDLEGE.AAHEDIMFFME)
+    pub AAHEDIMFFME: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
+    // @@protoc_insertion_point(field:GIEDCJDLEGE.MDFDMDAOEIB)
+    pub MDFDMDAOEIB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GIEDCJDLEGE.IIHAMCDOMPH)
+    pub IIHAMCDOMPH: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
+    // @@protoc_insertion_point(field:GIEDCJDLEGE.DHNFJPPABPD)
+    pub DHNFJPPABPD: ::protobuf::MessageField<super::IIKNGNHDMFI::IIKNGNHDMFI>,
     // special fields
     // @@protoc_insertion_point(special_field:GIEDCJDLEGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GIEDCJDLEGE {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "BMALPKEKBEL",
-            |m: &GIEDCJDLEGE| { &m.BMALPKEKBEL },
-            |m: &mut GIEDCJDLEGE| { &mut m.BMALPKEKBEL },
+            "AAHEDIMFFME",
+            |m: &GIEDCJDLEGE| { &m.AAHEDIMFFME },
+            |m: &mut GIEDCJDLEGE| { &mut m.AAHEDIMFFME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLCABEMFACH",
-            |m: &GIEDCJDLEGE| { &m.BLCABEMFACH },
-            |m: &mut GIEDCJDLEGE| { &mut m.BLCABEMFACH },
+            "MDFDMDAOEIB",
+            |m: &GIEDCJDLEGE| { &m.MDFDMDAOEIB },
+            |m: &mut GIEDCJDLEGE| { &mut m.MDFDMDAOEIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "MFNAGLKDPNI",
-            |m: &GIEDCJDLEGE| { &m.MFNAGLKDPNI },
-            |m: &mut GIEDCJDLEGE| { &mut m.MFNAGLKDPNI },
+            "IIHAMCDOMPH",
+            |m: &GIEDCJDLEGE| { &m.IIHAMCDOMPH },
+            |m: &mut GIEDCJDLEGE| { &mut m.IIHAMCDOMPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIKNGNHDMFI::IIKNGNHDMFI>(
-            "OGJOFMCMFPG",
-            |m: &GIEDCJDLEGE| { &m.OGJOFMCMFPG },
-            |m: &mut GIEDCJDLEGE| { &mut m.OGJOFMCMFPG },
+            "DHNFJPPABPD",
+            |m: &GIEDCJDLEGE| { &m.DHNFJPPABPD },
+            |m: &mut GIEDCJDLEGE| { &mut m.DHNFJPPABPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIEDCJDLEGE>(
             "GIEDCJDLEGE",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GIEDCJDLEGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BMALPKEKBEL)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAHEDIMFFME)?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BLCABEMFACH)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MDFDMDAOEIB)?;
                 },
-                112 => {
-                    self.BLCABEMFACH.push(is.read_uint32()?);
+                56 => {
+                    self.MDFDMDAOEIB.push(is.read_uint32()?);
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFNAGLKDPNI)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIHAMCDOMPH)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OGJOFMCMFPG)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHNFJPPABPD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for GIEDCJDLEGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BMALPKEKBEL.as_ref() {
+        if let Some(v) = self.AAHEDIMFFME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BLCABEMFACH);
-        if let Some(v) = self.MFNAGLKDPNI.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.MDFDMDAOEIB);
+        if let Some(v) = self.IIHAMCDOMPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OGJOFMCMFPG.as_ref() {
+        if let Some(v) = self.DHNFJPPABPD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -139,15 +139,15 @@ impl ::protobuf::Message for GIEDCJDLEGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BMALPKEKBEL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.AAHEDIMFFME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.BLCABEMFACH)?;
-        if let Some(v) = self.MFNAGLKDPNI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        os.write_repeated_packed_uint32(7, &self.MDFDMDAOEIB)?;
+        if let Some(v) = self.IIHAMCDOMPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.OGJOFMCMFPG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.DHNFJPPABPD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for GIEDCJDLEGE {
     }
 
     fn clear(&mut self) {
-        self.BMALPKEKBEL.clear();
-        self.BLCABEMFACH.clear();
-        self.MFNAGLKDPNI.clear();
-        self.OGJOFMCMFPG.clear();
+        self.AAHEDIMFFME.clear();
+        self.MDFDMDAOEIB.clear();
+        self.IIHAMCDOMPH.clear();
+        self.DHNFJPPABPD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIEDCJDLEGE {
         static instance: GIEDCJDLEGE = GIEDCJDLEGE {
-            BMALPKEKBEL: ::protobuf::MessageField::none(),
-            BLCABEMFACH: ::std::vec::Vec::new(),
-            MFNAGLKDPNI: ::protobuf::MessageField::none(),
-            OGJOFMCMFPG: ::protobuf::MessageField::none(),
+            AAHEDIMFFME: ::protobuf::MessageField::none(),
+            MDFDMDAOEIB: ::std::vec::Vec::new(),
+            IIHAMCDOMPH: ::protobuf::MessageField::none(),
+            DHNFJPPABPD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for GIEDCJDLEGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIEDCJDLEGE.proto\x1a\x11IIKNGNHDMFI.proto\"\xbf\x01\n\x0bGIEDCJDL\
-    EGE\x12.\n\x0bBMALPKEKBEL\x18\x0b\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bBMAL\
-    PKEKBEL\x12\x20\n\x0bBLCABEMFACH\x18\x0e\x20\x03(\rR\x0bBLCABEMFACH\x12.\
-    \n\x0bMFNAGLKDPNI\x18\n\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bMFNAGLKDPNI\
-    \x12.\n\x0bOGJOFMCMFPG\x18\x01\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bOGJOFMC\
-    MFPGb\x06proto3\
+    EGE\x12.\n\x0bAAHEDIMFFME\x18\x04\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bAAHE\
+    DIMFFME\x12\x20\n\x0bMDFDMDAOEIB\x18\x07\x20\x03(\rR\x0bMDFDMDAOEIB\x12.\
+    \n\x0bIIHAMCDOMPH\x18\x08\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bIIHAMCDOMPH\
+    \x12.\n\x0bDHNFJPPABPD\x18\r\x20\x01(\x0b2\x0c.IIKNGNHDMFIR\x0bDHNFJPPAB\
+    PDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

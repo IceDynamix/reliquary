@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGLBNLJHBFJ {
     // message fields
-    // @@protoc_insertion_point(field:EGLBNLJHBFJ.AIMGDMFAAHH)
-    pub AIMGDMFAAHH: ::protobuf::MessageField<super::NFKDAAGBMPJ::NFKDAAGBMPJ>,
+    // @@protoc_insertion_point(field:EGLBNLJHBFJ.EAEOIHMHAIH)
+    pub EAEOIHMHAIH: ::protobuf::MessageField<super::NFKDAAGBMPJ::NFKDAAGBMPJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EGLBNLJHBFJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EGLBNLJHBFJ {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFKDAAGBMPJ::NFKDAAGBMPJ>(
-            "AIMGDMFAAHH",
-            |m: &EGLBNLJHBFJ| { &m.AIMGDMFAAHH },
-            |m: &mut EGLBNLJHBFJ| { &mut m.AIMGDMFAAHH },
+            "EAEOIHMHAIH",
+            |m: &EGLBNLJHBFJ| { &m.EAEOIHMHAIH },
+            |m: &mut EGLBNLJHBFJ| { &mut m.EAEOIHMHAIH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGLBNLJHBFJ>(
             "EGLBNLJHBFJ",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for EGLBNLJHBFJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIMGDMFAAHH)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EAEOIHMHAIH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for EGLBNLJHBFJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AIMGDMFAAHH.as_ref() {
+        if let Some(v) = self.EAEOIHMHAIH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for EGLBNLJHBFJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AIMGDMFAAHH.as_ref() {
+        if let Some(v) = self.EAEOIHMHAIH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EGLBNLJHBFJ {
     }
 
     fn clear(&mut self) {
-        self.AIMGDMFAAHH.clear();
+        self.EAEOIHMHAIH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGLBNLJHBFJ {
         static instance: EGLBNLJHBFJ = EGLBNLJHBFJ {
-            AIMGDMFAAHH: ::protobuf::MessageField::none(),
+            EAEOIHMHAIH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EGLBNLJHBFJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EGLBNLJHBFJ.proto\x1a\x11NFKDAAGBMPJ.proto\"=\n\x0bEGLBNLJHBFJ\x12\
-    .\n\x0bAIMGDMFAAHH\x18\x07\x20\x01(\x0b2\x0c.NFKDAAGBMPJR\x0bAIMGDMFAAHH\
+    .\n\x0bEAEOIHMHAIH\x18\x07\x20\x01(\x0b2\x0c.NFKDAAGBMPJR\x0bEAEOIHMHAIH\
     b\x06proto3\
 ";
 

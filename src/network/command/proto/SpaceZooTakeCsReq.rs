@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooTakeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooTakeCsReq.HLNMAJIDIFD)
-    pub HLNMAJIDIFD: u32,
+    // @@protoc_insertion_point(field:SpaceZooTakeCsReq.IAAABCLGCBG)
+    pub IAAABCLGCBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooTakeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SpaceZooTakeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLNMAJIDIFD",
-            |m: &SpaceZooTakeCsReq| { &m.HLNMAJIDIFD },
-            |m: &mut SpaceZooTakeCsReq| { &mut m.HLNMAJIDIFD },
+            "IAAABCLGCBG",
+            |m: &SpaceZooTakeCsReq| { &m.IAAABCLGCBG },
+            |m: &mut SpaceZooTakeCsReq| { &mut m.IAAABCLGCBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooTakeCsReq>(
             "SpaceZooTakeCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SpaceZooTakeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.HLNMAJIDIFD = is.read_uint32()?;
+                32 => {
+                    self.IAAABCLGCBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SpaceZooTakeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLNMAJIDIFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HLNMAJIDIFD);
+        if self.IAAABCLGCBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IAAABCLGCBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SpaceZooTakeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLNMAJIDIFD != 0 {
-            os.write_uint32(5, self.HLNMAJIDIFD)?;
+        if self.IAAABCLGCBG != 0 {
+            os.write_uint32(4, self.IAAABCLGCBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SpaceZooTakeCsReq {
     }
 
     fn clear(&mut self) {
-        self.HLNMAJIDIFD = 0;
+        self.IAAABCLGCBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooTakeCsReq {
         static instance: SpaceZooTakeCsReq = SpaceZooTakeCsReq {
-            HLNMAJIDIFD: 0,
+            IAAABCLGCBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooTakeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SpaceZooTakeCsReq.proto\"5\n\x11SpaceZooTakeCsReq\x12\x20\n\x0bHLN\
-    MAJIDIFD\x18\x05\x20\x01(\rR\x0bHLNMAJIDIFDb\x06proto3\
+    \n\x17SpaceZooTakeCsReq.proto\"5\n\x11SpaceZooTakeCsReq\x12\x20\n\x0bIAA\
+    ABCLGCBG\x18\x04\x20\x01(\rR\x0bIAAABCLGCBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

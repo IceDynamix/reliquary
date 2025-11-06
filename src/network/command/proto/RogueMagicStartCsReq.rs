@@ -93,22 +93,22 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.area_id = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.select_style_type = is.read_uint32()?;
                 },
-                66 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.start_difficulty_id_list)?;
                 },
-                64 => {
+                56 => {
                     self.start_difficulty_id_list.push(is.read_uint32()?);
                 },
-                58 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                56 => {
+                80 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.area_id);
         }
         if self.select_style_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.select_style_type);
+            my_size += ::protobuf::rt::uint32_size(5, self.select_style_type);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.start_difficulty_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.start_difficulty_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,13 +138,13 @@ impl ::protobuf::Message for RogueMagicStartCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(4, self.area_id)?;
+            os.write_uint32(2, self.area_id)?;
         }
         if self.select_style_type != 0 {
-            os.write_uint32(3, self.select_style_type)?;
+            os.write_uint32(5, self.select_style_type)?;
         }
-        os.write_repeated_packed_uint32(8, &self.start_difficulty_id_list)?;
-        os.write_repeated_packed_uint32(7, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.start_difficulty_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMagicStartCsReq.proto\"\xc3\x01\n\x14RogueMagicStartCsReq\x12\
-    \x17\n\x07area_id\x18\x04\x20\x01(\rR\x06areaId\x12*\n\x11select_style_t\
-    ype\x18\x03\x20\x01(\rR\x0fselectStyleType\x127\n\x18start_difficulty_id\
-    _list\x18\x08\x20\x03(\rR\x15startDifficultyIdList\x12-\n\x13base_avatar\
-    _id_list\x18\x07\x20\x03(\rR\x10baseAvatarIdListb\x06proto3\
+    \x17\n\x07area_id\x18\x02\x20\x01(\rR\x06areaId\x12*\n\x11select_style_t\
+    ype\x18\x05\x20\x01(\rR\x0fselectStyleType\x127\n\x18start_difficulty_id\
+    _list\x18\x07\x20\x03(\rR\x15startDifficultyIdList\x12-\n\x13base_avatar\
+    _id_list\x18\n\x20\x03(\rR\x10baseAvatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

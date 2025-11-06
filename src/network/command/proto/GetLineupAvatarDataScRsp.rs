@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLineupAvatarDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetLineupAvatarDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetLineupAvatarDataScRsp.avatar_data_list)
     pub avatar_data_list: ::std::vec::Vec<super::LineupAvatarData::LineupAvatarData>,
+    // @@protoc_insertion_point(field:GetLineupAvatarDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetLineupAvatarDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetLineupAvatarDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetLineupAvatarDataScRsp| { &m.retcode },
-            |m: &mut GetLineupAvatarDataScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_data_list",
             |m: &GetLineupAvatarDataScRsp| { &m.avatar_data_list },
             |m: &mut GetLineupAvatarDataScRsp| { &mut m.avatar_data_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetLineupAvatarDataScRsp| { &m.retcode },
+            |m: &mut GetLineupAvatarDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLineupAvatarDataScRsp>(
             "GetLineupAvatarDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetLineupAvatarDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                26 => {
+                50 => {
                     self.avatar_data_list.push(is.read_message()?);
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetLineupAvatarDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         for value in &self.avatar_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
         for v in &self.avatar_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetLineupAvatarDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.avatar_data_list.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLineupAvatarDataScRsp {
         static instance: GetLineupAvatarDataScRsp = GetLineupAvatarDataScRsp {
-            retcode: 0,
             avatar_data_list: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLineupAvatarDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetLineupAvatarDataScRsp.proto\x1a\x16LineupAvatarData.proto\"q\n\
-    \x18GetLineupAvatarDataScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07r\
-    etcode\x12;\n\x10avatar_data_list\x18\x03\x20\x03(\x0b2\x11.LineupAvatar\
-    DataR\x0eavatarDataListb\x06proto3\
+    \x18GetLineupAvatarDataScRsp\x12;\n\x10avatar_data_list\x18\x06\x20\x03(\
+    \x0b2\x11.LineupAvatarDataR\x0eavatarDataList\x12\x18\n\x07retcode\x18\
+    \x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

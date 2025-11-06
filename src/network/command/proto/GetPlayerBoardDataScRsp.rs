@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlayerBoardDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.signature)
-    pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.own_personal_card_skin)
-    pub own_personal_card_skin: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.current_head_icon_id)
-    pub current_head_icon_id: u32,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.assist_avatar_id_list)
-    pub assist_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.display_avatar_vec)
-    pub display_avatar_vec: ::protobuf::MessageField<super::DisplayAvatarVec::DisplayAvatarVec>,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.cur_personal_card_skin)
-    pub cur_personal_card_skin: u32,
-    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.current_head_icon_frame)
     pub current_head_icon_frame: ::protobuf::MessageField<super::HeadIconFrame::HeadIconFrame>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.cur_personal_card_skin)
+    pub cur_personal_card_skin: u32,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.assist_avatar_id_list)
+    pub assist_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.own_personal_card_skin)
+    pub own_personal_card_skin: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.display_avatar_vec)
+    pub display_avatar_vec: ::protobuf::MessageField<super::DisplayAvatarVec::DisplayAvatarVec>,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.signature)
+    pub signature: ::std::string::String,
+    // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.current_head_icon_id)
+    pub current_head_icon_id: u32,
     // @@protoc_insertion_point(field:GetPlayerBoardDataScRsp.unlocked_head_icon_list)
     pub unlocked_head_icon_list: ::std::vec::Vec<super::HeadIconData::HeadIconData>,
     // special fields
@@ -65,25 +65,30 @@ impl GetPlayerBoardDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "signature",
-            |m: &GetPlayerBoardDataScRsp| { &m.signature },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.signature },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "own_personal_card_skin",
-            |m: &GetPlayerBoardDataScRsp| { &m.own_personal_card_skin },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.own_personal_card_skin },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadIconFrame::HeadIconFrame>(
+            "current_head_icon_frame",
+            |m: &GetPlayerBoardDataScRsp| { &m.current_head_icon_frame },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.current_head_icon_frame },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "current_head_icon_id",
-            |m: &GetPlayerBoardDataScRsp| { &m.current_head_icon_id },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.current_head_icon_id },
+            "retcode",
+            |m: &GetPlayerBoardDataScRsp| { &m.retcode },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_personal_card_skin",
+            |m: &GetPlayerBoardDataScRsp| { &m.cur_personal_card_skin },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.cur_personal_card_skin },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "assist_avatar_id_list",
             |m: &GetPlayerBoardDataScRsp| { &m.assist_avatar_id_list },
             |m: &mut GetPlayerBoardDataScRsp| { &mut m.assist_avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "own_personal_card_skin",
+            |m: &GetPlayerBoardDataScRsp| { &m.own_personal_card_skin },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.own_personal_card_skin },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DisplayAvatarVec::DisplayAvatarVec>(
             "display_avatar_vec",
@@ -91,19 +96,14 @@ impl GetPlayerBoardDataScRsp {
             |m: &mut GetPlayerBoardDataScRsp| { &mut m.display_avatar_vec },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_personal_card_skin",
-            |m: &GetPlayerBoardDataScRsp| { &m.cur_personal_card_skin },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.cur_personal_card_skin },
+            "signature",
+            |m: &GetPlayerBoardDataScRsp| { &m.signature },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.signature },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPlayerBoardDataScRsp| { &m.retcode },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadIconFrame::HeadIconFrame>(
-            "current_head_icon_frame",
-            |m: &GetPlayerBoardDataScRsp| { &m.current_head_icon_frame },
-            |m: &mut GetPlayerBoardDataScRsp| { &mut m.current_head_icon_frame },
+            "current_head_icon_id",
+            |m: &GetPlayerBoardDataScRsp| { &m.current_head_icon_id },
+            |m: &mut GetPlayerBoardDataScRsp| { &mut m.current_head_icon_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unlocked_head_icon_list",
@@ -128,37 +128,37 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.signature = is.read_string()?;
-                },
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.own_personal_card_skin)?;
-                },
-                24 => {
-                    self.own_personal_card_skin.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.current_head_icon_id = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.assist_avatar_id_list)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.current_head_icon_frame)?;
                 },
                 32 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.cur_personal_card_skin = is.read_uint32()?;
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.assist_avatar_id_list)?;
+                },
+                48 => {
                     self.assist_avatar_id_list.push(is.read_uint32()?);
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.own_personal_card_skin)?;
+                },
+                64 => {
+                    self.own_personal_card_skin.push(is.read_uint32()?);
                 },
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_avatar_vec)?;
                 },
-                120 => {
-                    self.cur_personal_card_skin = is.read_uint32()?;
+                98 => {
+                    self.signature = is.read_string()?;
                 },
                 104 => {
-                    self.retcode = is.read_uint32()?;
+                    self.current_head_icon_id = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.current_head_icon_frame)?;
-                },
-                10 => {
+                114 => {
                     self.unlocked_head_icon_list.push(is.read_message()?);
                 },
                 tag => {
@@ -173,27 +173,27 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.signature);
+        if let Some(v) = self.current_head_icon_frame.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.own_personal_card_skin);
-        if self.current_head_icon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.current_head_icon_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.assist_avatar_id_list);
+        if self.cur_personal_card_skin != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.cur_personal_card_skin);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.assist_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.own_personal_card_skin);
         if let Some(v) = self.display_avatar_vec.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cur_personal_card_skin != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cur_personal_card_skin);
+        if !self.signature.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.signature);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if let Some(v) = self.current_head_icon_frame.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.current_head_icon_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.current_head_icon_id);
         }
         for value in &self.unlocked_head_icon_list {
             let len = value.compute_size();
@@ -205,28 +205,28 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.signature.is_empty() {
-            os.write_string(2, &self.signature)?;
+        if let Some(v) = self.current_head_icon_frame.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        os.write_repeated_packed_uint32(3, &self.own_personal_card_skin)?;
-        if self.current_head_icon_id != 0 {
-            os.write_uint32(7, self.current_head_icon_id)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(4, &self.assist_avatar_id_list)?;
+        if self.cur_personal_card_skin != 0 {
+            os.write_uint32(5, self.cur_personal_card_skin)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.assist_avatar_id_list)?;
+        os.write_repeated_packed_uint32(8, &self.own_personal_card_skin)?;
         if let Some(v) = self.display_avatar_vec.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.cur_personal_card_skin != 0 {
-            os.write_uint32(15, self.cur_personal_card_skin)?;
+        if !self.signature.is_empty() {
+            os.write_string(12, &self.signature)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        if let Some(v) = self.current_head_icon_frame.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.current_head_icon_id != 0 {
+            os.write_uint32(13, self.current_head_icon_id)?;
         }
         for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,28 +245,28 @@ impl ::protobuf::Message for GetPlayerBoardDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.signature.clear();
-        self.own_personal_card_skin.clear();
-        self.current_head_icon_id = 0;
-        self.assist_avatar_id_list.clear();
-        self.display_avatar_vec.clear();
-        self.cur_personal_card_skin = 0;
-        self.retcode = 0;
         self.current_head_icon_frame.clear();
+        self.retcode = 0;
+        self.cur_personal_card_skin = 0;
+        self.assist_avatar_id_list.clear();
+        self.own_personal_card_skin.clear();
+        self.display_avatar_vec.clear();
+        self.signature.clear();
+        self.current_head_icon_id = 0;
         self.unlocked_head_icon_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerBoardDataScRsp {
         static instance: GetPlayerBoardDataScRsp = GetPlayerBoardDataScRsp {
-            signature: ::std::string::String::new(),
-            own_personal_card_skin: ::std::vec::Vec::new(),
-            current_head_icon_id: 0,
-            assist_avatar_id_list: ::std::vec::Vec::new(),
-            display_avatar_vec: ::protobuf::MessageField::none(),
-            cur_personal_card_skin: 0,
-            retcode: 0,
             current_head_icon_frame: ::protobuf::MessageField::none(),
+            retcode: 0,
+            cur_personal_card_skin: 0,
+            assist_avatar_id_list: ::std::vec::Vec::new(),
+            own_personal_card_skin: ::std::vec::Vec::new(),
+            display_avatar_vec: ::protobuf::MessageField::none(),
+            signature: ::std::string::String::new(),
+            current_head_icon_id: 0,
             unlocked_head_icon_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -294,16 +294,17 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerBoardDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetPlayerBoardDataScRsp.proto\x1a\x16DisplayAvatarVec.proto\x1a\
     \x12HeadIconData.proto\x1a\x13HeadIconFrame.proto\"\xed\x03\n\x17GetPlay\
-    erBoardDataScRsp\x12\x1c\n\tsignature\x18\x02\x20\x01(\tR\tsignature\x12\
-    3\n\x16own_personal_card_skin\x18\x03\x20\x03(\rR\x13ownPersonalCardSkin\
-    \x12/\n\x14current_head_icon_id\x18\x07\x20\x01(\rR\x11currentHeadIconId\
-    \x121\n\x15assist_avatar_id_list\x18\x04\x20\x03(\rR\x12assistAvatarIdLi\
-    st\x12?\n\x12display_avatar_vec\x18\n\x20\x01(\x0b2\x11.DisplayAvatarVec\
-    R\x10displayAvatarVec\x123\n\x16cur_personal_card_skin\x18\x0f\x20\x01(\
-    \rR\x13curPersonalCardSkin\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07ret\
-    code\x12E\n\x17current_head_icon_frame\x18\x0b\x20\x01(\x0b2\x0e.HeadIco\
-    nFrameR\x14currentHeadIconFrame\x12D\n\x17unlocked_head_icon_list\x18\
-    \x01\x20\x03(\x0b2\r.HeadIconDataR\x14unlockedHeadIconListb\x06proto3\
+    erBoardDataScRsp\x12E\n\x17current_head_icon_frame\x18\x03\x20\x01(\x0b2\
+    \x0e.HeadIconFrameR\x14currentHeadIconFrame\x12\x18\n\x07retcode\x18\x04\
+    \x20\x01(\rR\x07retcode\x123\n\x16cur_personal_card_skin\x18\x05\x20\x01\
+    (\rR\x13curPersonalCardSkin\x121\n\x15assist_avatar_id_list\x18\x06\x20\
+    \x03(\rR\x12assistAvatarIdList\x123\n\x16own_personal_card_skin\x18\x08\
+    \x20\x03(\rR\x13ownPersonalCardSkin\x12?\n\x12display_avatar_vec\x18\n\
+    \x20\x01(\x0b2\x11.DisplayAvatarVecR\x10displayAvatarVec\x12\x1c\n\tsign\
+    ature\x18\x0c\x20\x01(\tR\tsignature\x12/\n\x14current_head_icon_id\x18\
+    \r\x20\x01(\rR\x11currentHeadIconId\x12D\n\x17unlocked_head_icon_list\
+    \x18\x0e\x20\x03(\x0b2\r.HeadIconDataR\x14unlockedHeadIconListb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

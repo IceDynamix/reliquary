@@ -30,8 +30,8 @@ pub struct MMOIBACBPKA {
     // message fields
     // @@protoc_insertion_point(field:MMOIBACBPKA.value)
     pub value: u32,
-    // @@protoc_insertion_point(field:MMOIBACBPKA.PJGBFKNJPNO)
-    pub PJGBFKNJPNO: ::protobuf::EnumOrUnknown<super::HDIJJMDPILE::HDIJJMDPILE>,
+    // @@protoc_insertion_point(field:MMOIBACBPKA.BNFIKOCFKNA)
+    pub BNFIKOCFKNA: ::protobuf::EnumOrUnknown<super::SwordTrainingStatusType::SwordTrainingStatusType>,
     // special fields
     // @@protoc_insertion_point(special_field:MMOIBACBPKA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl MMOIBACBPKA {
             |m: &mut MMOIBACBPKA| { &mut m.value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJGBFKNJPNO",
-            |m: &MMOIBACBPKA| { &m.PJGBFKNJPNO },
-            |m: &mut MMOIBACBPKA| { &mut m.PJGBFKNJPNO },
+            "BNFIKOCFKNA",
+            |m: &MMOIBACBPKA| { &m.BNFIKOCFKNA },
+            |m: &mut MMOIBACBPKA| { &mut m.BNFIKOCFKNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MMOIBACBPKA>(
             "MMOIBACBPKA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MMOIBACBPKA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.value = is.read_uint32()?;
                 },
-                40 => {
-                    self.PJGBFKNJPNO = is.read_enum_or_unknown()?;
+                32 => {
+                    self.BNFIKOCFKNA = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MMOIBACBPKA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.value);
+            my_size += ::protobuf::rt::uint32_size(3, self.value);
         }
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.PJGBFKNJPNO.value());
+        if self.BNFIKOCFKNA != ::protobuf::EnumOrUnknown::new(super::SwordTrainingStatusType::SwordTrainingStatusType::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.BNFIKOCFKNA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MMOIBACBPKA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0 {
-            os.write_uint32(10, self.value)?;
+            os.write_uint32(3, self.value)?;
         }
-        if self.PJGBFKNJPNO != ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PJGBFKNJPNO))?;
+        if self.BNFIKOCFKNA != ::protobuf::EnumOrUnknown::new(super::SwordTrainingStatusType::SwordTrainingStatusType::SWORD_TRAINING_STATUS_TYPE_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BNFIKOCFKNA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MMOIBACBPKA {
 
     fn clear(&mut self) {
         self.value = 0;
-        self.PJGBFKNJPNO = ::protobuf::EnumOrUnknown::new(super::HDIJJMDPILE::HDIJJMDPILE::SWORD_TRAINING_STATUS_TYPE_NONE);
+        self.BNFIKOCFKNA = ::protobuf::EnumOrUnknown::new(super::SwordTrainingStatusType::SwordTrainingStatusType::SWORD_TRAINING_STATUS_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMOIBACBPKA {
         static instance: MMOIBACBPKA = MMOIBACBPKA {
             value: 0,
-            PJGBFKNJPNO: ::protobuf::EnumOrUnknown::from_i32(0),
+            BNFIKOCFKNA: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for MMOIBACBPKA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMOIBACBPKA.proto\x1a\x11HDIJJMDPILE.proto\"S\n\x0bMMOIBACBPKA\x12\
-    \x14\n\x05value\x18\n\x20\x01(\rR\x05value\x12.\n\x0bPJGBFKNJPNO\x18\x05\
-    \x20\x01(\x0e2\x0c.HDIJJMDPILER\x0bPJGBFKNJPNOb\x06proto3\
+    \n\x11MMOIBACBPKA.proto\x1a\x1dSwordTrainingStatusType.proto\"_\n\x0bMMO\
+    IBACBPKA\x12\x14\n\x05value\x18\x03\x20\x01(\rR\x05value\x12:\n\x0bBNFIK\
+    OCFKNA\x18\x04\x20\x01(\x0e2\x18.SwordTrainingStatusTypeR\x0bBNFIKOCFKNA\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HDIJJMDPILE::file_descriptor().clone());
+            deps.push(super::SwordTrainingStatusType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MMOIBACBPKA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

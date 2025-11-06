@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAreaInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.IFPOILOPFAG)
-    pub IFPOILOPFAG: u32,
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.is_taken_reward)
-    pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:RogueMagicAreaInfo.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.NPBNMMKHKOP)
-    pub NPBNMMKHKOP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.is_unlocked)
-    pub is_unlocked: bool,
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.CGAIJCCLKBH)
-    pub CGAIJCCLKBH: ::protobuf::MessageField<super::KOIICMIEAEF::KOIICMIEAEF>,
-    // @@protoc_insertion_point(field:RogueMagicAreaInfo.completed)
-    pub completed: bool,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.PCAIMLBLECB)
+    pub PCAIMLBLECB: bool,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.NEOBIENOJKK)
+    pub NEOBIENOJKK: bool,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.EJMJABDEIJK)
+    pub EJMJABDEIJK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.BBMLGDOJEBG)
+    pub BBMLGDOJEBG: u32,
     // @@protoc_insertion_point(field:RogueMagicAreaInfo.record_info)
     pub record_info: ::protobuf::MessageField<super::OLFGBAMEFJI::OLFGBAMEFJI>,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.is_reward_taken)
+    pub is_reward_taken: bool,
+    // @@protoc_insertion_point(field:RogueMagicAreaInfo.MIAFGECLNDA)
+    pub MIAFGECLNDA: ::protobuf::MessageField<super::KOIICMIEAEF::KOIICMIEAEF>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAreaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,44 +64,44 @@ impl RogueMagicAreaInfo {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFPOILOPFAG",
-            |m: &RogueMagicAreaInfo| { &m.IFPOILOPFAG },
-            |m: &mut RogueMagicAreaInfo| { &mut m.IFPOILOPFAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_taken_reward",
-            |m: &RogueMagicAreaInfo| { &m.is_taken_reward },
-            |m: &mut RogueMagicAreaInfo| { &mut m.is_taken_reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &RogueMagicAreaInfo| { &m.area_id },
             |m: &mut RogueMagicAreaInfo| { &mut m.area_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCAIMLBLECB",
+            |m: &RogueMagicAreaInfo| { &m.PCAIMLBLECB },
+            |m: &mut RogueMagicAreaInfo| { &mut m.PCAIMLBLECB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEOBIENOJKK",
+            |m: &RogueMagicAreaInfo| { &m.NEOBIENOJKK },
+            |m: &mut RogueMagicAreaInfo| { &mut m.NEOBIENOJKK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NPBNMMKHKOP",
-            |m: &RogueMagicAreaInfo| { &m.NPBNMMKHKOP },
-            |m: &mut RogueMagicAreaInfo| { &mut m.NPBNMMKHKOP },
+            "EJMJABDEIJK",
+            |m: &RogueMagicAreaInfo| { &m.EJMJABDEIJK },
+            |m: &mut RogueMagicAreaInfo| { &mut m.EJMJABDEIJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlocked",
-            |m: &RogueMagicAreaInfo| { &m.is_unlocked },
-            |m: &mut RogueMagicAreaInfo| { &mut m.is_unlocked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOIICMIEAEF::KOIICMIEAEF>(
-            "CGAIJCCLKBH",
-            |m: &RogueMagicAreaInfo| { &m.CGAIJCCLKBH },
-            |m: &mut RogueMagicAreaInfo| { &mut m.CGAIJCCLKBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "completed",
-            |m: &RogueMagicAreaInfo| { &m.completed },
-            |m: &mut RogueMagicAreaInfo| { &mut m.completed },
+            "BBMLGDOJEBG",
+            |m: &RogueMagicAreaInfo| { &m.BBMLGDOJEBG },
+            |m: &mut RogueMagicAreaInfo| { &mut m.BBMLGDOJEBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLFGBAMEFJI::OLFGBAMEFJI>(
             "record_info",
             |m: &RogueMagicAreaInfo| { &m.record_info },
             |m: &mut RogueMagicAreaInfo| { &mut m.record_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_reward_taken",
+            |m: &RogueMagicAreaInfo| { &m.is_reward_taken },
+            |m: &mut RogueMagicAreaInfo| { &mut m.is_reward_taken },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOIICMIEAEF::KOIICMIEAEF>(
+            "MIAFGECLNDA",
+            |m: &RogueMagicAreaInfo| { &m.MIAFGECLNDA },
+            |m: &mut RogueMagicAreaInfo| { &mut m.MIAFGECLNDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAreaInfo>(
             "RogueMagicAreaInfo",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for RogueMagicAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.IFPOILOPFAG = is.read_uint32()?;
-                },
-                16 => {
-                    self.is_taken_reward = is.read_bool()?;
-                },
-                24 => {
+                8 => {
                     self.area_id = is.read_uint32()?;
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NPBNMMKHKOP)?;
-                },
-                40 => {
-                    self.NPBNMMKHKOP.push(is.read_uint32()?);
+                32 => {
+                    self.PCAIMLBLECB = is.read_bool()?;
                 },
                 48 => {
-                    self.is_unlocked = is.read_bool()?;
+                    self.NEOBIENOJKK = is.read_bool()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CGAIJCCLKBH)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EJMJABDEIJK)?;
                 },
-                120 => {
-                    self.completed = is.read_bool()?;
+                64 => {
+                    self.EJMJABDEIJK.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.BBMLGDOJEBG = is.read_uint32()?;
                 },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
+                },
+                96 => {
+                    self.is_reward_taken = is.read_bool()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIAFGECLNDA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,27 +160,27 @@ impl ::protobuf::Message for RogueMagicAreaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IFPOILOPFAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IFPOILOPFAG);
-        }
-        if self.is_taken_reward != false {
-            my_size += 1 + 1;
-        }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.area_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NPBNMMKHKOP);
-        if self.is_unlocked != false {
+        if self.PCAIMLBLECB != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.CGAIJCCLKBH.as_ref() {
+        if self.NEOBIENOJKK != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EJMJABDEIJK);
+        if self.BBMLGDOJEBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BBMLGDOJEBG);
+        }
+        if let Some(v) = self.record_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.completed != false {
+        if self.is_reward_taken != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.record_info.as_ref() {
+        if let Some(v) = self.MIAFGECLNDA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -190,27 +190,27 @@ impl ::protobuf::Message for RogueMagicAreaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFPOILOPFAG != 0 {
-            os.write_uint32(7, self.IFPOILOPFAG)?;
-        }
-        if self.is_taken_reward != false {
-            os.write_bool(2, self.is_taken_reward)?;
-        }
         if self.area_id != 0 {
-            os.write_uint32(3, self.area_id)?;
+            os.write_uint32(1, self.area_id)?;
         }
-        os.write_repeated_packed_uint32(5, &self.NPBNMMKHKOP)?;
-        if self.is_unlocked != false {
-            os.write_bool(6, self.is_unlocked)?;
+        if self.PCAIMLBLECB != false {
+            os.write_bool(4, self.PCAIMLBLECB)?;
         }
-        if let Some(v) = self.CGAIJCCLKBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.NEOBIENOJKK != false {
+            os.write_bool(6, self.NEOBIENOJKK)?;
         }
-        if self.completed != false {
-            os.write_bool(15, self.completed)?;
+        os.write_repeated_packed_uint32(8, &self.EJMJABDEIJK)?;
+        if self.BBMLGDOJEBG != 0 {
+            os.write_uint32(9, self.BBMLGDOJEBG)?;
         }
         if let Some(v) = self.record_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.is_reward_taken != false {
+            os.write_bool(12, self.is_reward_taken)?;
+        }
+        if let Some(v) = self.MIAFGECLNDA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -229,27 +229,27 @@ impl ::protobuf::Message for RogueMagicAreaInfo {
     }
 
     fn clear(&mut self) {
-        self.IFPOILOPFAG = 0;
-        self.is_taken_reward = false;
         self.area_id = 0;
-        self.NPBNMMKHKOP.clear();
-        self.is_unlocked = false;
-        self.CGAIJCCLKBH.clear();
-        self.completed = false;
+        self.PCAIMLBLECB = false;
+        self.NEOBIENOJKK = false;
+        self.EJMJABDEIJK.clear();
+        self.BBMLGDOJEBG = 0;
         self.record_info.clear();
+        self.is_reward_taken = false;
+        self.MIAFGECLNDA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAreaInfo {
         static instance: RogueMagicAreaInfo = RogueMagicAreaInfo {
-            IFPOILOPFAG: 0,
-            is_taken_reward: false,
             area_id: 0,
-            NPBNMMKHKOP: ::std::vec::Vec::new(),
-            is_unlocked: false,
-            CGAIJCCLKBH: ::protobuf::MessageField::none(),
-            completed: false,
+            PCAIMLBLECB: false,
+            NEOBIENOJKK: false,
+            EJMJABDEIJK: ::std::vec::Vec::new(),
+            BBMLGDOJEBG: 0,
             record_info: ::protobuf::MessageField::none(),
+            is_reward_taken: false,
+            MIAFGECLNDA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -275,14 +275,14 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAreaInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RogueMagicAreaInfo.proto\x1a\x11KOIICMIEAEF.proto\x1a\x11OLFGBAMEF\
-    JI.proto\"\xb7\x02\n\x12RogueMagicAreaInfo\x12\x20\n\x0bIFPOILOPFAG\x18\
-    \x07\x20\x01(\rR\x0bIFPOILOPFAG\x12&\n\x0fis_taken_reward\x18\x02\x20\
-    \x01(\x08R\risTakenReward\x12\x17\n\x07area_id\x18\x03\x20\x01(\rR\x06ar\
-    eaId\x12\x20\n\x0bNPBNMMKHKOP\x18\x05\x20\x03(\rR\x0bNPBNMMKHKOP\x12\x1f\
-    \n\x0bis_unlocked\x18\x06\x20\x01(\x08R\nisUnlocked\x12.\n\x0bCGAIJCCLKB\
-    H\x18\x04\x20\x01(\x0b2\x0c.KOIICMIEAEFR\x0bCGAIJCCLKBH\x12\x1c\n\tcompl\
-    eted\x18\x0f\x20\x01(\x08R\tcompleted\x12-\n\x0brecord_info\x18\x0b\x20\
-    \x01(\x0b2\x0c.OLFGBAMEFJIR\nrecordInfob\x06proto3\
+    JI.proto\"\xbc\x02\n\x12RogueMagicAreaInfo\x12\x17\n\x07area_id\x18\x01\
+    \x20\x01(\rR\x06areaId\x12\x20\n\x0bPCAIMLBLECB\x18\x04\x20\x01(\x08R\
+    \x0bPCAIMLBLECB\x12\x20\n\x0bNEOBIENOJKK\x18\x06\x20\x01(\x08R\x0bNEOBIE\
+    NOJKK\x12\x20\n\x0bEJMJABDEIJK\x18\x08\x20\x03(\rR\x0bEJMJABDEIJK\x12\
+    \x20\n\x0bBBMLGDOJEBG\x18\t\x20\x01(\rR\x0bBBMLGDOJEBG\x12-\n\x0brecord_\
+    info\x18\x0b\x20\x01(\x0b2\x0c.OLFGBAMEFJIR\nrecordInfo\x12&\n\x0fis_rew\
+    ard_taken\x18\x0c\x20\x01(\x08R\risRewardTaken\x12.\n\x0bMIAFGECLNDA\x18\
+    \x0e\x20\x01(\x0b2\x0c.KOIICMIEAEFR\x0bMIAFGECLNDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateBoardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateBoardScNotify.DHDKNMFMGBC)
-    pub DHDKNMFMGBC: ::protobuf::MessageField<super::CellInfo::CellInfo>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateBoardScNotify.LLCBBOALGLI)
+    pub LLCBBOALGLI: ::protobuf::MessageField<super::CellInfo::CellInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateBoardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChessRogueUpdateBoardScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CellInfo::CellInfo>(
-            "DHDKNMFMGBC",
-            |m: &ChessRogueUpdateBoardScNotify| { &m.DHDKNMFMGBC },
-            |m: &mut ChessRogueUpdateBoardScNotify| { &mut m.DHDKNMFMGBC },
+            "LLCBBOALGLI",
+            |m: &ChessRogueUpdateBoardScNotify| { &m.LLCBBOALGLI },
+            |m: &mut ChessRogueUpdateBoardScNotify| { &mut m.LLCBBOALGLI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateBoardScNotify>(
             "ChessRogueUpdateBoardScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHDKNMFMGBC)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLCBBOALGLI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DHDKNMFMGBC.as_ref() {
+        if let Some(v) = self.LLCBBOALGLI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DHDKNMFMGBC.as_ref() {
+        if let Some(v) = self.LLCBBOALGLI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueUpdateBoardScNotify {
     }
 
     fn clear(&mut self) {
-        self.DHDKNMFMGBC.clear();
+        self.LLCBBOALGLI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateBoardScNotify {
         static instance: ChessRogueUpdateBoardScNotify = ChessRogueUpdateBoardScNotify {
-            DHDKNMFMGBC: ::protobuf::MessageField::none(),
+            LLCBBOALGLI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateBoardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ChessRogueUpdateBoardScNotify.proto\x1a\x0eCellInfo.proto\"L\n\x1dChe\
-    ssRogueUpdateBoardScNotify\x12+\n\x0bDHDKNMFMGBC\x18\x0e\x20\x01(\x0b2\t\
-    .CellInfoR\x0bDHDKNMFMGBCb\x06proto3\
+    ssRogueUpdateBoardScNotify\x12+\n\x0bLLCBBOALGLI\x18\x0e\x20\x01(\x0b2\t\
+    .CellInfoR\x0bLLCBBOALGLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ELPLCMOGOGJ {
     // message fields
+    // @@protoc_insertion_point(field:ELPLCMOGOGJ.DJGGCHNJCKJ)
+    pub DJGGCHNJCKJ: u32,
     // @@protoc_insertion_point(field:ELPLCMOGOGJ.progress)
     pub progress: u32,
-    // @@protoc_insertion_point(field:ELPLCMOGOGJ.NJDACJFDOKJ)
-    pub NJDACJFDOKJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ELPLCMOGOGJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ELPLCMOGOGJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJGGCHNJCKJ",
+            |m: &ELPLCMOGOGJ| { &m.DJGGCHNJCKJ },
+            |m: &mut ELPLCMOGOGJ| { &mut m.DJGGCHNJCKJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &ELPLCMOGOGJ| { &m.progress },
             |m: &mut ELPLCMOGOGJ| { &mut m.progress },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJDACJFDOKJ",
-            |m: &ELPLCMOGOGJ| { &m.NJDACJFDOKJ },
-            |m: &mut ELPLCMOGOGJ| { &mut m.NJDACJFDOKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ELPLCMOGOGJ>(
             "ELPLCMOGOGJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ELPLCMOGOGJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.progress = is.read_uint32()?;
+                48 => {
+                    self.DJGGCHNJCKJ = is.read_uint32()?;
                 },
-                24 => {
-                    self.NJDACJFDOKJ = is.read_uint32()?;
+                120 => {
+                    self.progress = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ELPLCMOGOGJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
+        if self.DJGGCHNJCKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DJGGCHNJCKJ);
         }
-        if self.NJDACJFDOKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NJDACJFDOKJ);
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ELPLCMOGOGJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+        if self.DJGGCHNJCKJ != 0 {
+            os.write_uint32(6, self.DJGGCHNJCKJ)?;
         }
-        if self.NJDACJFDOKJ != 0 {
-            os.write_uint32(3, self.NJDACJFDOKJ)?;
+        if self.progress != 0 {
+            os.write_uint32(15, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ELPLCMOGOGJ {
     }
 
     fn clear(&mut self) {
+        self.DJGGCHNJCKJ = 0;
         self.progress = 0;
-        self.NJDACJFDOKJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ELPLCMOGOGJ {
         static instance: ELPLCMOGOGJ = ELPLCMOGOGJ {
+            DJGGCHNJCKJ: 0,
             progress: 0,
-            NJDACJFDOKJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ELPLCMOGOGJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ELPLCMOGOGJ.proto\"K\n\x0bELPLCMOGOGJ\x12\x1a\n\x08progress\x18\
-    \x0b\x20\x01(\rR\x08progress\x12\x20\n\x0bNJDACJFDOKJ\x18\x03\x20\x01(\r\
-    R\x0bNJDACJFDOKJb\x06proto3\
+    \n\x11ELPLCMOGOGJ.proto\"K\n\x0bELPLCMOGOGJ\x12\x20\n\x0bDJGGCHNJCKJ\x18\
+    \x06\x20\x01(\rR\x0bDJGGCHNJCKJ\x12\x1a\n\x08progress\x18\x0f\x20\x01(\r\
+    R\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

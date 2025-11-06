@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NIGCOPGHAMJ {
     // message fields
-    // @@protoc_insertion_point(field:NIGCOPGHAMJ.BGLEHMKMAPG)
-    pub BGLEHMKMAPG: u32,
-    // @@protoc_insertion_point(field:NIGCOPGHAMJ.HHGAPDFINDI)
-    pub HHGAPDFINDI: bool,
+    // @@protoc_insertion_point(field:NIGCOPGHAMJ.story_id)
+    pub story_id: u32,
+    // @@protoc_insertion_point(field:NIGCOPGHAMJ.AHNMAHOMINJ)
+    pub AHNMAHOMINJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:NIGCOPGHAMJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NIGCOPGHAMJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGLEHMKMAPG",
-            |m: &NIGCOPGHAMJ| { &m.BGLEHMKMAPG },
-            |m: &mut NIGCOPGHAMJ| { &mut m.BGLEHMKMAPG },
+            "story_id",
+            |m: &NIGCOPGHAMJ| { &m.story_id },
+            |m: &mut NIGCOPGHAMJ| { &mut m.story_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHGAPDFINDI",
-            |m: &NIGCOPGHAMJ| { &m.HHGAPDFINDI },
-            |m: &mut NIGCOPGHAMJ| { &mut m.HHGAPDFINDI },
+            "AHNMAHOMINJ",
+            |m: &NIGCOPGHAMJ| { &m.AHNMAHOMINJ },
+            |m: &mut NIGCOPGHAMJ| { &mut m.AHNMAHOMINJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIGCOPGHAMJ>(
             "NIGCOPGHAMJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NIGCOPGHAMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BGLEHMKMAPG = is.read_uint32()?;
+                72 => {
+                    self.story_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.HHGAPDFINDI = is.read_bool()?;
+                88 => {
+                    self.AHNMAHOMINJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for NIGCOPGHAMJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BGLEHMKMAPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BGLEHMKMAPG);
+        if self.story_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.story_id);
         }
-        if self.HHGAPDFINDI != false {
+        if self.AHNMAHOMINJ != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NIGCOPGHAMJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BGLEHMKMAPG != 0 {
-            os.write_uint32(2, self.BGLEHMKMAPG)?;
+        if self.story_id != 0 {
+            os.write_uint32(9, self.story_id)?;
         }
-        if self.HHGAPDFINDI != false {
-            os.write_bool(1, self.HHGAPDFINDI)?;
+        if self.AHNMAHOMINJ != false {
+            os.write_bool(11, self.AHNMAHOMINJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NIGCOPGHAMJ {
     }
 
     fn clear(&mut self) {
-        self.BGLEHMKMAPG = 0;
-        self.HHGAPDFINDI = false;
+        self.story_id = 0;
+        self.AHNMAHOMINJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIGCOPGHAMJ {
         static instance: NIGCOPGHAMJ = NIGCOPGHAMJ {
-            BGLEHMKMAPG: 0,
-            HHGAPDFINDI: false,
+            story_id: 0,
+            AHNMAHOMINJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NIGCOPGHAMJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NIGCOPGHAMJ.proto\"Q\n\x0bNIGCOPGHAMJ\x12\x20\n\x0bBGLEHMKMAPG\x18\
-    \x02\x20\x01(\rR\x0bBGLEHMKMAPG\x12\x20\n\x0bHHGAPDFINDI\x18\x01\x20\x01\
-    (\x08R\x0bHHGAPDFINDIb\x06proto3\
+    \n\x11NIGCOPGHAMJ.proto\"J\n\x0bNIGCOPGHAMJ\x12\x19\n\x08story_id\x18\t\
+    \x20\x01(\rR\x07storyId\x12\x20\n\x0bAHNMAHOMINJ\x18\x0b\x20\x01(\x08R\
+    \x0bAHNMAHOMINJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

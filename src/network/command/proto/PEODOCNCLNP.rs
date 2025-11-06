@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEODOCNCLNP {
     // message fields
-    // @@protoc_insertion_point(field:PEODOCNCLNP.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:PEODOCNCLNP.MGOFJKEPGKD)
+    pub MGOFJKEPGKD: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
     // @@protoc_insertion_point(field:PEODOCNCLNP.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:PEODOCNCLNP.BOPAANGKOGH)
-    pub BOPAANGKOGH: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
-    // @@protoc_insertion_point(field:PEODOCNCLNP.AELOIPGFODB)
-    pub AELOIPGFODB: ::protobuf::MessageField<super::JNFELCKIOCM::JNFELCKIOCM>,
+    // @@protoc_insertion_point(field:PEODOCNCLNP.module_id)
+    pub module_id: u32,
+    // @@protoc_insertion_point(field:PEODOCNCLNP.JPOPCNOGGPK)
+    pub JPOPCNOGGPK: ::protobuf::MessageField<super::JNFELCKIOCM::JNFELCKIOCM>,
     // special fields
     // @@protoc_insertion_point(special_field:PEODOCNCLNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl PEODOCNCLNP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &PEODOCNCLNP| { &m.panel_id },
-            |m: &mut PEODOCNCLNP| { &mut m.panel_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OENDAFIAECG::OENDAFIAECG>(
+            "MGOFJKEPGKD",
+            |m: &PEODOCNCLNP| { &m.MGOFJKEPGKD },
+            |m: &mut PEODOCNCLNP| { &mut m.MGOFJKEPGKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &PEODOCNCLNP| { &m.area_id },
             |m: &mut PEODOCNCLNP| { &mut m.area_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OENDAFIAECG::OENDAFIAECG>(
-            "BOPAANGKOGH",
-            |m: &PEODOCNCLNP| { &m.BOPAANGKOGH },
-            |m: &mut PEODOCNCLNP| { &mut m.BOPAANGKOGH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "module_id",
+            |m: &PEODOCNCLNP| { &m.module_id },
+            |m: &mut PEODOCNCLNP| { &mut m.module_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNFELCKIOCM::JNFELCKIOCM>(
-            "AELOIPGFODB",
-            |m: &PEODOCNCLNP| { &m.AELOIPGFODB },
-            |m: &mut PEODOCNCLNP| { &mut m.AELOIPGFODB },
+            "JPOPCNOGGPK",
+            |m: &PEODOCNCLNP| { &m.JPOPCNOGGPK },
+            |m: &mut PEODOCNCLNP| { &mut m.JPOPCNOGGPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEODOCNCLNP>(
             "PEODOCNCLNP",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PEODOCNCLNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.panel_id = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGOFJKEPGKD)?;
                 },
-                104 => {
+                40 => {
                     self.area_id = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOPAANGKOGH)?;
+                48 => {
+                    self.module_id = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AELOIPGFODB)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPOPCNOGGPK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for PEODOCNCLNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
-        }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
-        }
-        if let Some(v) = self.BOPAANGKOGH.as_ref() {
+        if let Some(v) = self.MGOFJKEPGKD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.AELOIPGFODB.as_ref() {
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.area_id);
+        }
+        if self.module_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.module_id);
+        }
+        if let Some(v) = self.JPOPCNOGGPK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for PEODOCNCLNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(12, self.panel_id)?;
+        if let Some(v) = self.MGOFJKEPGKD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(13, self.area_id)?;
+            os.write_uint32(5, self.area_id)?;
         }
-        if let Some(v) = self.BOPAANGKOGH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.module_id != 0 {
+            os.write_uint32(6, self.module_id)?;
         }
-        if let Some(v) = self.AELOIPGFODB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.JPOPCNOGGPK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for PEODOCNCLNP {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
+        self.MGOFJKEPGKD.clear();
         self.area_id = 0;
-        self.BOPAANGKOGH.clear();
-        self.AELOIPGFODB.clear();
+        self.module_id = 0;
+        self.JPOPCNOGGPK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEODOCNCLNP {
         static instance: PEODOCNCLNP = PEODOCNCLNP {
-            panel_id: 0,
+            MGOFJKEPGKD: ::protobuf::MessageField::none(),
             area_id: 0,
-            BOPAANGKOGH: ::protobuf::MessageField::none(),
-            AELOIPGFODB: ::protobuf::MessageField::none(),
+            module_id: 0,
+            JPOPCNOGGPK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for PEODOCNCLNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEODOCNCLNP.proto\x1a\x11JNFELCKIOCM.proto\x1a\x11OENDAFIAECG.prot\
-    o\"\xa1\x01\n\x0bPEODOCNCLNP\x12\x19\n\x08panel_id\x18\x0c\x20\x01(\rR\
-    \x07panelId\x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06areaId\x12.\n\x0bB\
-    OPAANGKOGH\x18\x01\x20\x01(\x0b2\x0c.OENDAFIAECGR\x0bBOPAANGKOGH\x12.\n\
-    \x0bAELOIPGFODB\x18\x0f\x20\x01(\x0b2\x0c.JNFELCKIOCMR\x0bAELOIPGFODBb\
-    \x06proto3\
+    o\"\xa3\x01\n\x0bPEODOCNCLNP\x12.\n\x0bMGOFJKEPGKD\x18\x03\x20\x01(\x0b2\
+    \x0c.OENDAFIAECGR\x0bMGOFJKEPGKD\x12\x17\n\x07area_id\x18\x05\x20\x01(\r\
+    R\x06areaId\x12\x1b\n\tmodule_id\x18\x06\x20\x01(\rR\x08moduleId\x12.\n\
+    \x0bJPOPCNOGGPK\x18\n\x20\x01(\x0b2\x0c.JNFELCKIOCMR\x0bJPOPCNOGGPKb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

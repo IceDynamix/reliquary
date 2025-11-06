@@ -30,8 +30,8 @@ pub struct RogueTournEnableSeasonTalentScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueTournEnableSeasonTalentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournEnableSeasonTalentScRsp.LLAOOGCHHDK)
-    pub LLAOOGCHHDK: ::protobuf::MessageField<super::GIGPOFFBIEO::GIGPOFFBIEO>,
+    // @@protoc_insertion_point(field:RogueTournEnableSeasonTalentScRsp.FBJAKKOLCCG)
+    pub FBJAKKOLCCG: ::protobuf::MessageField<super::RogueTournTitanTalentInfo::RogueTournTitanTalentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnableSeasonTalentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl RogueTournEnableSeasonTalentScRsp {
             |m: &RogueTournEnableSeasonTalentScRsp| { &m.retcode },
             |m: &mut RogueTournEnableSeasonTalentScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIGPOFFBIEO::GIGPOFFBIEO>(
-            "LLAOOGCHHDK",
-            |m: &RogueTournEnableSeasonTalentScRsp| { &m.LLAOOGCHHDK },
-            |m: &mut RogueTournEnableSeasonTalentScRsp| { &mut m.LLAOOGCHHDK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueTournTitanTalentInfo::RogueTournTitanTalentInfo>(
+            "FBJAKKOLCCG",
+            |m: &RogueTournEnableSeasonTalentScRsp| { &m.FBJAKKOLCCG },
+            |m: &mut RogueTournEnableSeasonTalentScRsp| { &mut m.FBJAKKOLCCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnableSeasonTalentScRsp>(
             "RogueTournEnableSeasonTalentScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournEnableSeasonTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLAOOGCHHDK)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FBJAKKOLCCG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for RogueTournEnableSeasonTalentScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if let Some(v) = self.LLAOOGCHHDK.as_ref() {
+        if let Some(v) = self.FBJAKKOLCCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueTournEnableSeasonTalentScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        if let Some(v) = self.LLAOOGCHHDK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.FBJAKKOLCCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for RogueTournEnableSeasonTalentScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.LLAOOGCHHDK.clear();
+        self.FBJAKKOLCCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnableSeasonTalentScRsp {
         static instance: RogueTournEnableSeasonTalentScRsp = RogueTournEnableSeasonTalentScRsp {
             retcode: 0,
-            LLAOOGCHHDK: ::protobuf::MessageField::none(),
+            FBJAKKOLCCG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnableSeasonTalentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'RogueTournEnableSeasonTalentScRsp.proto\x1a\x11GIGPOFFBIEO.proto\"m\n\
-    !RogueTournEnableSeasonTalentScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bLLAOOGCHHDK\x18\x01\x20\x01(\x0b2\x0c.GIGPOFFBI\
-    EOR\x0bLLAOOGCHHDKb\x06proto3\
+    \n'RogueTournEnableSeasonTalentScRsp.proto\x1a\x1fRogueTournTitanTalentI\
+    nfo.proto\"{\n!RogueTournEnableSeasonTalentScRsp\x12\x18\n\x07retcode\
+    \x18\r\x20\x01(\rR\x07retcode\x12<\n\x0bFBJAKKOLCCG\x18\x0f\x20\x01(\x0b\
+    2\x1a.RogueTournTitanTalentInfoR\x0bFBJAKKOLCCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GIGPOFFBIEO::file_descriptor().clone());
+            deps.push(super::RogueTournTitanTalentInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournEnableSeasonTalentScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

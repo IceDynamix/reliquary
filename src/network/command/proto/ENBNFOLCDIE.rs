@@ -30,8 +30,8 @@ pub struct ENBNFOLCDIE {
     // message fields
     // @@protoc_insertion_point(field:ENBNFOLCDIE.buff_id)
     pub buff_id: u32,
-    // @@protoc_insertion_point(field:ENBNFOLCDIE.AKAHNMLNEFN)
-    pub AKAHNMLNEFN: u32,
+    // @@protoc_insertion_point(field:ENBNFOLCDIE.FIPOLIICFGH)
+    pub FIPOLIICFGH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ENBNFOLCDIE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ENBNFOLCDIE {
             |m: &mut ENBNFOLCDIE| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKAHNMLNEFN",
-            |m: &ENBNFOLCDIE| { &m.AKAHNMLNEFN },
-            |m: &mut ENBNFOLCDIE| { &mut m.AKAHNMLNEFN },
+            "FIPOLIICFGH",
+            |m: &ENBNFOLCDIE| { &m.FIPOLIICFGH },
+            |m: &mut ENBNFOLCDIE| { &mut m.FIPOLIICFGH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENBNFOLCDIE>(
             "ENBNFOLCDIE",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for ENBNFOLCDIE {
                 8 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.AKAHNMLNEFN = is.read_uint32()?;
+                16 => {
+                    self.FIPOLIICFGH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for ENBNFOLCDIE {
         if self.buff_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.buff_id);
         }
-        if self.AKAHNMLNEFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AKAHNMLNEFN);
+        if self.FIPOLIICFGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FIPOLIICFGH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for ENBNFOLCDIE {
         if self.buff_id != 0 {
             os.write_uint32(1, self.buff_id)?;
         }
-        if self.AKAHNMLNEFN != 0 {
-            os.write_uint32(8, self.AKAHNMLNEFN)?;
+        if self.FIPOLIICFGH != 0 {
+            os.write_uint32(2, self.FIPOLIICFGH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ENBNFOLCDIE {
 
     fn clear(&mut self) {
         self.buff_id = 0;
-        self.AKAHNMLNEFN = 0;
+        self.FIPOLIICFGH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENBNFOLCDIE {
         static instance: ENBNFOLCDIE = ENBNFOLCDIE {
             buff_id: 0,
-            AKAHNMLNEFN: 0,
+            FIPOLIICFGH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ENBNFOLCDIE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENBNFOLCDIE.proto\"H\n\x0bENBNFOLCDIE\x12\x17\n\x07buff_id\x18\x01\
-    \x20\x01(\rR\x06buffId\x12\x20\n\x0bAKAHNMLNEFN\x18\x08\x20\x01(\rR\x0bA\
-    KAHNMLNEFNb\x06proto3\
+    \x20\x01(\rR\x06buffId\x12\x20\n\x0bFIPOLIICFGH\x18\x02\x20\x01(\rR\x0bF\
+    IPOLIICFGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

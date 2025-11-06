@@ -86,13 +86,13 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.entity_motion_list.push(is.read_message()?);
                 },
-                8 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.download_data)?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if let Some(v) = self.download_data.as_ref() {
             let len = v.compute_size();
@@ -125,13 +125,13 @@ impl ::protobuf::Message for SceneEntityMoveScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.entity_motion_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if let Some(v) = self.download_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,10 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEntityMoveScRsp.proto\x1a\x18ClientDownloadData.proto\x1a\x12\
     EntityMotion.proto\"\xa7\x01\n\x14SceneEntityMoveScRsp\x12;\n\x12entity_\
-    motion_list\x18\n\x20\x03(\x0b2\r.EntityMotionR\x10entityMotionList\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x128\n\rdownload_data\
-    \x18\x0b\x20\x01(\x0b2\x13.ClientDownloadDataR\x0cdownloadDatab\x06proto\
-    3\
+    motion_list\x18\x01\x20\x03(\x0b2\r.EntityMotionR\x10entityMotionList\
+    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x128\n\rdownload_data\
+    \x18\n\x20\x01(\x0b2\x13.ClientDownloadDataR\x0cdownloadDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

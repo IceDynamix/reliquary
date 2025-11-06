@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordBattleRecordCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordCsReq.PKCPJJNOALN)
-    pub PKCPJJNOALN: ::protobuf::MessageField<super::PunkLordMonsterKey::PunkLordMonsterKey>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordCsReq.monster_key)
+    pub monster_key: ::protobuf::MessageField<super::PunkLordMonsterKey::PunkLordMonsterKey>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPunkLordBattleRecordCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetPunkLordBattleRecordCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterKey::PunkLordMonsterKey>(
-            "PKCPJJNOALN",
-            |m: &GetPunkLordBattleRecordCsReq| { &m.PKCPJJNOALN },
-            |m: &mut GetPunkLordBattleRecordCsReq| { &mut m.PKCPJJNOALN },
+            "monster_key",
+            |m: &GetPunkLordBattleRecordCsReq| { &m.monster_key },
+            |m: &mut GetPunkLordBattleRecordCsReq| { &mut m.monster_key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPunkLordBattleRecordCsReq>(
             "GetPunkLordBattleRecordCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKCPJJNOALN)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_key)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PKCPJJNOALN.as_ref() {
+        if let Some(v) = self.monster_key.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PKCPJJNOALN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.monster_key.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     }
 
     fn clear(&mut self) {
-        self.PKCPJJNOALN.clear();
+        self.monster_key.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordBattleRecordCsReq {
         static instance: GetPunkLordBattleRecordCsReq = GetPunkLordBattleRecordCsReq {
-            PKCPJJNOALN: ::protobuf::MessageField::none(),
+            monster_key: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordBattleRecordCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetPunkLordBattleRecordCsReq.proto\x1a\x18PunkLordMonsterKey.proto\"\
-    U\n\x1cGetPunkLordBattleRecordCsReq\x125\n\x0bPKCPJJNOALN\x18\x0f\x20\
-    \x01(\x0b2\x13.PunkLordMonsterKeyR\x0bPKCPJJNOALNb\x06proto3\
+    T\n\x1cGetPunkLordBattleRecordCsReq\x124\n\x0bmonster_key\x18\x01\x20\
+    \x01(\x0b2\x13.PunkLordMonsterKeyR\nmonsterKeyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

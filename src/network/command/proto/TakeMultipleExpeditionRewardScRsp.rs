@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMultipleExpeditionRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.reward_list)
-    pub reward_list: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.ILDNLJJDFCI)
+    pub ILDNLJJDFCI: ::std::vec::Vec<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.player_return_reward_list)
-    pub player_return_reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.extra_reward)
     pub extra_reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.PKFHNBBFPLD)
+    pub PKFHNBBFPLD: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.reward_expedition)
     pub reward_expedition: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.extra_reward_list)
-    pub extra_reward_list: ::std::vec::Vec<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMultipleExpeditionRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,9 @@ impl TakeMultipleExpeditionRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "reward_list",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.reward_list },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.reward_list },
+            "ILDNLJJDFCI",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.ILDNLJJDFCI },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.ILDNLJJDFCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -70,24 +70,24 @@ impl TakeMultipleExpeditionRewardScRsp {
             |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "player_return_reward_list",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.player_return_reward_list },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.player_return_reward_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "extra_reward",
             |m: &TakeMultipleExpeditionRewardScRsp| { &m.extra_reward },
             |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.extra_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PKFHNBBFPLD",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.PKFHNBBFPLD },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.PKFHNBBFPLD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.reward },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "reward_expedition",
             |m: &TakeMultipleExpeditionRewardScRsp| { &m.reward_expedition },
             |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.reward_expedition },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "extra_reward_list",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.extra_reward_list },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.extra_reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMultipleExpeditionRewardScRsp>(
             "TakeMultipleExpeditionRewardScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.reward_list.push(is.read_message()?);
+                26 => {
+                    self.ILDNLJJDFCI.push(is.read_message()?);
                 },
-                88 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_return_reward_list)?;
-                },
-                106 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_reward)?;
                 },
-                26 => {
+                82 => {
+                    self.PKFHNBBFPLD.push(is.read_message()?);
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.reward_expedition)?;
                 },
-                24 => {
+                96 => {
                     self.reward_expedition.push(is.read_uint32()?);
-                },
-                34 => {
-                    self.extra_reward_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,48 +140,48 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.reward_list {
+        for value in &self.ILDNLJJDFCI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if let Some(v) = self.extra_reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.reward_expedition);
-        for value in &self.extra_reward_list {
+        for value in &self.PKFHNBBFPLD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.reward.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.reward_expedition);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.reward_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.ILDNLJJDFCI {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if let Some(v) = self.player_return_reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.extra_reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        os.write_repeated_packed_uint32(3, &self.reward_expedition)?;
-        for v in &self.extra_reward_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.PKFHNBBFPLD {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.reward_expedition)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -199,23 +199,23 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward_list.clear();
+        self.ILDNLJJDFCI.clear();
         self.retcode = 0;
-        self.player_return_reward_list.clear();
         self.extra_reward.clear();
+        self.PKFHNBBFPLD.clear();
+        self.reward.clear();
         self.reward_expedition.clear();
-        self.extra_reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMultipleExpeditionRewardScRsp {
         static instance: TakeMultipleExpeditionRewardScRsp = TakeMultipleExpeditionRewardScRsp {
-            reward_list: ::std::vec::Vec::new(),
+            ILDNLJJDFCI: ::std::vec::Vec::new(),
             retcode: 0,
-            player_return_reward_list: ::protobuf::MessageField::none(),
             extra_reward: ::protobuf::MessageField::none(),
+            PKFHNBBFPLD: ::std::vec::Vec::new(),
+            reward: ::protobuf::MessageField::none(),
             reward_expedition: ::std::vec::Vec::new(),
-            extra_reward_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,14 +240,14 @@ impl ::protobuf::reflect::ProtobufValue for TakeMultipleExpeditionRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'TakeMultipleExpeditionRewardScRsp.proto\x1a\x0eItemList.proto\"\xc1\
-    \x02\n!TakeMultipleExpeditionRewardScRsp\x12*\n\x0breward_list\x18\x06\
-    \x20\x03(\x0b2\t.ItemListR\nrewardList\x12\x18\n\x07retcode\x18\x0b\x20\
-    \x01(\rR\x07retcode\x12D\n\x19player_return_reward_list\x18\x0e\x20\x01(\
-    \x0b2\t.ItemListR\x16playerReturnRewardList\x12,\n\x0cextra_reward\x18\r\
-    \x20\x01(\x0b2\t.ItemListR\x0bextraReward\x12+\n\x11reward_expedition\
-    \x18\x03\x20\x03(\rR\x10rewardExpedition\x125\n\x11extra_reward_list\x18\
-    \x04\x20\x03(\x0b2\t.ItemListR\x0fextraRewardListb\x06proto3\
+    \n'TakeMultipleExpeditionRewardScRsp.proto\x1a\x0eItemList.proto\"\x95\
+    \x02\n!TakeMultipleExpeditionRewardScRsp\x12+\n\x0bILDNLJJDFCI\x18\x03\
+    \x20\x03(\x0b2\t.ItemListR\x0bILDNLJJDFCI\x12\x18\n\x07retcode\x18\x06\
+    \x20\x01(\rR\x07retcode\x12,\n\x0cextra_reward\x18\x08\x20\x01(\x0b2\t.I\
+    temListR\x0bextraReward\x12+\n\x0bPKFHNBBFPLD\x18\n\x20\x03(\x0b2\t.Item\
+    ListR\x0bPKFHNBBFPLD\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\
+    \x06reward\x12+\n\x11reward_expedition\x18\x0c\x20\x03(\rR\x10rewardExpe\
+    ditionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

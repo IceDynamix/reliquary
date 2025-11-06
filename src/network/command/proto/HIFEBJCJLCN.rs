@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HIFEBJCJLCN {
     // message fields
-    // @@protoc_insertion_point(field:HIFEBJCJLCN.FMLLHLKOJLJ)
-    pub FMLLHLKOJLJ: ::std::vec::Vec<super::OIEGKNHNIAN::OIEGKNHNIAN>,
+    // @@protoc_insertion_point(field:HIFEBJCJLCN.DFOOLAEFFMB)
+    pub DFOOLAEFFMB: ::std::vec::Vec<super::OIEGKNHNIAN::OIEGKNHNIAN>,
     // special fields
     // @@protoc_insertion_point(special_field:HIFEBJCJLCN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl HIFEBJCJLCN {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMLLHLKOJLJ",
-            |m: &HIFEBJCJLCN| { &m.FMLLHLKOJLJ },
-            |m: &mut HIFEBJCJLCN| { &mut m.FMLLHLKOJLJ },
+            "DFOOLAEFFMB",
+            |m: &HIFEBJCJLCN| { &m.DFOOLAEFFMB },
+            |m: &mut HIFEBJCJLCN| { &mut m.DFOOLAEFFMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HIFEBJCJLCN>(
             "HIFEBJCJLCN",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HIFEBJCJLCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.FMLLHLKOJLJ.push(is.read_message()?);
+                10 => {
+                    self.DFOOLAEFFMB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HIFEBJCJLCN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FMLLHLKOJLJ {
+        for value in &self.DFOOLAEFFMB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HIFEBJCJLCN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FMLLHLKOJLJ {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.DFOOLAEFFMB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HIFEBJCJLCN {
     }
 
     fn clear(&mut self) {
-        self.FMLLHLKOJLJ.clear();
+        self.DFOOLAEFFMB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HIFEBJCJLCN {
         static instance: HIFEBJCJLCN = HIFEBJCJLCN {
-            FMLLHLKOJLJ: ::std::vec::Vec::new(),
+            DFOOLAEFFMB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for HIFEBJCJLCN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HIFEBJCJLCN.proto\x1a\x11OIEGKNHNIAN.proto\"=\n\x0bHIFEBJCJLCN\x12\
-    .\n\x0bFMLLHLKOJLJ\x18\x02\x20\x03(\x0b2\x0c.OIEGKNHNIANR\x0bFMLLHLKOJLJ\
+    .\n\x0bDFOOLAEFFMB\x18\x01\x20\x03(\x0b2\x0c.OIEGKNHNIANR\x0bDFOOLAEFFMB\
     b\x06proto3\
 ";
 

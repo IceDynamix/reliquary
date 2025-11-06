@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EPEGHCGCMHP {
     // message fields
-    // @@protoc_insertion_point(field:EPEGHCGCMHP.BHGGHFJMMBM)
-    pub BHGGHFJMMBM: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:EPEGHCGCMHP.FMOPBFKNLNI)
-    pub FMOPBFKNLNI: bool,
+    // @@protoc_insertion_point(field:EPEGHCGCMHP.GDLLAJBILDK)
+    pub GDLLAJBILDK: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:EPEGHCGCMHP.EIJOCGPKFEN)
+    pub EIJOCGPKFEN: bool,
     // message oneof groups
-    pub GEGMAJGEJFL: ::std::option::Option<epeghcgcmhp::GEGMAJGEJFL>,
+    pub EMAHJGMLBNJ: ::std::option::Option<epeghcgcmhp::EMAHJGMLBNJ>,
     // special fields
     // @@protoc_insertion_point(special_field:EPEGHCGCMHP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,36 +53,36 @@ impl EPEGHCGCMHP {
     // .NJFGJPCANDI DCHDJALLNEC = 1001;
 
     pub fn DCHDJALLNEC(&self) -> &super::NJFGJPCANDI::NJFGJPCANDI {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(ref v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(ref v)) => v,
             _ => <super::NJFGJPCANDI::NJFGJPCANDI as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_DCHDJALLNEC(&mut self) {
-        self.GEGMAJGEJFL = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
     }
 
     pub fn has_DCHDJALLNEC(&self) -> bool {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(..)) => true,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_DCHDJALLNEC(&mut self, v: super::NJFGJPCANDI::NJFGJPCANDI) {
-        self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(v))
+        self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_DCHDJALLNEC(&mut self) -> &mut super::NJFGJPCANDI::NJFGJPCANDI {
-        if let ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(_)) = self.GEGMAJGEJFL {
+        if let ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(_)) = self.EMAHJGMLBNJ {
         } else {
-            self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(super::NJFGJPCANDI::NJFGJPCANDI::new()));
+            self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(super::NJFGJPCANDI::NJFGJPCANDI::new()));
         }
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(ref mut v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl EPEGHCGCMHP {
     // Take field
     pub fn take_DCHDJALLNEC(&mut self) -> super::NJFGJPCANDI::NJFGJPCANDI {
         if self.has_DCHDJALLNEC() {
-            match self.GEGMAJGEJFL.take() {
-                ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(v)) => v,
+            match self.EMAHJGMLBNJ.take() {
+                ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -102,36 +102,36 @@ impl EPEGHCGCMHP {
     // .LCMIFOBKNEN EMBBHNCJDPK = 1002;
 
     pub fn EMBBHNCJDPK(&self) -> &super::LCMIFOBKNEN::LCMIFOBKNEN {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(ref v)) => v,
             _ => <super::LCMIFOBKNEN::LCMIFOBKNEN as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_EMBBHNCJDPK(&mut self) {
-        self.GEGMAJGEJFL = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
     }
 
     pub fn has_EMBBHNCJDPK(&self) -> bool {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(..)) => true,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_EMBBHNCJDPK(&mut self, v: super::LCMIFOBKNEN::LCMIFOBKNEN) {
-        self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(v))
+        self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_EMBBHNCJDPK(&mut self) -> &mut super::LCMIFOBKNEN::LCMIFOBKNEN {
-        if let ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(_)) = self.GEGMAJGEJFL {
+        if let ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(_)) = self.EMAHJGMLBNJ {
         } else {
-            self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(super::LCMIFOBKNEN::LCMIFOBKNEN::new()));
+            self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(super::LCMIFOBKNEN::LCMIFOBKNEN::new()));
         }
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref mut v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -139,8 +139,8 @@ impl EPEGHCGCMHP {
     // Take field
     pub fn take_EMBBHNCJDPK(&mut self) -> super::LCMIFOBKNEN::LCMIFOBKNEN {
         if self.has_EMBBHNCJDPK() {
-            match self.GEGMAJGEJFL.take() {
-                ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(v)) => v,
+            match self.EMAHJGMLBNJ.take() {
+                ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -151,36 +151,36 @@ impl EPEGHCGCMHP {
     // .FDHJBIMPKEK MINKKEJIONE = 1003;
 
     pub fn MINKKEJIONE(&self) -> &super::FDHJBIMPKEK::FDHJBIMPKEK {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(ref v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(ref v)) => v,
             _ => <super::FDHJBIMPKEK::FDHJBIMPKEK as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_MINKKEJIONE(&mut self) {
-        self.GEGMAJGEJFL = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
     }
 
     pub fn has_MINKKEJIONE(&self) -> bool {
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(..)) => true,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_MINKKEJIONE(&mut self, v: super::FDHJBIMPKEK::FDHJBIMPKEK) {
-        self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(v))
+        self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_MINKKEJIONE(&mut self) -> &mut super::FDHJBIMPKEK::FDHJBIMPKEK {
-        if let ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(_)) = self.GEGMAJGEJFL {
+        if let ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(_)) = self.EMAHJGMLBNJ {
         } else {
-            self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(super::FDHJBIMPKEK::FDHJBIMPKEK::new()));
+            self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(super::FDHJBIMPKEK::FDHJBIMPKEK::new()));
         }
-        match self.GEGMAJGEJFL {
-            ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(ref mut v)) => v,
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -188,8 +188,8 @@ impl EPEGHCGCMHP {
     // Take field
     pub fn take_MINKKEJIONE(&mut self) -> super::FDHJBIMPKEK::FDHJBIMPKEK {
         if self.has_MINKKEJIONE() {
-            match self.GEGMAJGEJFL.take() {
-                ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(v)) => v,
+            match self.EMAHJGMLBNJ.take() {
+                ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -197,19 +197,58 @@ impl EPEGHCGCMHP {
         }
     }
 
+    // .PLNNPHLOFHJ KAOMFCKHPNM = 1004;
+
+    pub fn KAOMFCKHPNM(&self) -> &super::PLNNPHLOFHJ::PLNNPHLOFHJ {
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(ref v)) => v,
+            _ => <super::PLNNPHLOFHJ::PLNNPHLOFHJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KAOMFCKHPNM(&mut self) {
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
+    }
+
+    pub fn has_KAOMFCKHPNM(&self) -> bool {
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KAOMFCKHPNM(&mut self, v: super::PLNNPHLOFHJ::PLNNPHLOFHJ) {
+        self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KAOMFCKHPNM(&mut self) -> &mut super::PLNNPHLOFHJ::PLNNPHLOFHJ {
+        if let ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(_)) = self.EMAHJGMLBNJ {
+        } else {
+            self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(super::PLNNPHLOFHJ::PLNNPHLOFHJ::new()));
+        }
+        match self.EMAHJGMLBNJ {
+            ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KAOMFCKHPNM(&mut self) -> super::PLNNPHLOFHJ::PLNNPHLOFHJ {
+        if self.has_KAOMFCKHPNM() {
+            match self.EMAHJGMLBNJ.take() {
+                ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PLNNPHLOFHJ::PLNNPHLOFHJ::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BHGGHFJMMBM",
-            |m: &EPEGHCGCMHP| { &m.BHGGHFJMMBM },
-            |m: &mut EPEGHCGCMHP| { &mut m.BHGGHFJMMBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMOPBFKNLNI",
-            |m: &EPEGHCGCMHP| { &m.FMOPBFKNLNI },
-            |m: &mut EPEGHCGCMHP| { &mut m.FMOPBFKNLNI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NJFGJPCANDI::NJFGJPCANDI>(
             "DCHDJALLNEC",
             EPEGHCGCMHP::has_DCHDJALLNEC,
@@ -231,7 +270,24 @@ impl EPEGHCGCMHP {
             EPEGHCGCMHP::mut_MINKKEJIONE,
             EPEGHCGCMHP::set_MINKKEJIONE,
         ));
-        oneofs.push(epeghcgcmhp::GEGMAJGEJFL::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PLNNPHLOFHJ::PLNNPHLOFHJ>(
+            "KAOMFCKHPNM",
+            EPEGHCGCMHP::has_KAOMFCKHPNM,
+            EPEGHCGCMHP::KAOMFCKHPNM,
+            EPEGHCGCMHP::mut_KAOMFCKHPNM,
+            EPEGHCGCMHP::set_KAOMFCKHPNM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GDLLAJBILDK",
+            |m: &EPEGHCGCMHP| { &m.GDLLAJBILDK },
+            |m: &mut EPEGHCGCMHP| { &mut m.GDLLAJBILDK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIJOCGPKFEN",
+            |m: &EPEGHCGCMHP| { &m.EIJOCGPKFEN },
+            |m: &mut EPEGHCGCMHP| { &mut m.EIJOCGPKFEN },
+        ));
+        oneofs.push(epeghcgcmhp::EMAHJGMLBNJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EPEGHCGCMHP>(
             "EPEGHCGCMHP",
             fields,
@@ -250,20 +306,23 @@ impl ::protobuf::Message for EPEGHCGCMHP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.BHGGHFJMMBM.push(is.read_string()?);
-                },
-                16 => {
-                    self.FMOPBFKNLNI = is.read_bool()?;
-                },
                 8010 => {
-                    self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(is.read_message()?));
+                    self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(is.read_message()?));
                 },
                 8018 => {
-                    self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(is.read_message()?));
+                    self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(is.read_message()?));
                 },
                 8026 => {
-                    self.GEGMAJGEJFL = ::std::option::Option::Some(epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(is.read_message()?));
+                    self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(is.read_message()?));
+                },
+                8034 => {
+                    self.EMAHJGMLBNJ = ::std::option::Option::Some(epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(is.read_message()?));
+                },
+                10 => {
+                    self.GDLLAJBILDK.push(is.read_string()?);
+                },
+                16 => {
+                    self.EIJOCGPKFEN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -277,23 +336,27 @@ impl ::protobuf::Message for EPEGHCGCMHP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BHGGHFJMMBM {
+        for value in &self.GDLLAJBILDK {
             my_size += ::protobuf::rt::string_size(1, &value);
         };
-        if self.FMOPBFKNLNI != false {
+        if self.EIJOCGPKFEN != false {
             my_size += 1 + 1;
         }
-        if let ::std::option::Option::Some(ref v) = self.GEGMAJGEJFL {
+        if let ::std::option::Option::Some(ref v) = self.EMAHJGMLBNJ {
             match v {
-                &epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -305,22 +368,25 @@ impl ::protobuf::Message for EPEGHCGCMHP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BHGGHFJMMBM {
+        for v in &self.GDLLAJBILDK {
             os.write_string(1, &v)?;
         };
-        if self.FMOPBFKNLNI != false {
-            os.write_bool(2, self.FMOPBFKNLNI)?;
+        if self.EIJOCGPKFEN != false {
+            os.write_bool(2, self.EIJOCGPKFEN)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.GEGMAJGEJFL {
+        if let ::std::option::Option::Some(ref v) = self.EMAHJGMLBNJ {
             match v {
-                &epeghcgcmhp::GEGMAJGEJFL::DCHDJALLNEC(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::DCHDJALLNEC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1001, v, os)?;
                 },
-                &epeghcgcmhp::GEGMAJGEJFL::EMBBHNCJDPK(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::EMBBHNCJDPK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1002, v, os)?;
                 },
-                &epeghcgcmhp::GEGMAJGEJFL::MINKKEJIONE(ref v) => {
+                &epeghcgcmhp::EMAHJGMLBNJ::MINKKEJIONE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1003, v, os)?;
+                },
+                &epeghcgcmhp::EMAHJGMLBNJ::KAOMFCKHPNM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1004, v, os)?;
                 },
             };
         }
@@ -341,19 +407,20 @@ impl ::protobuf::Message for EPEGHCGCMHP {
     }
 
     fn clear(&mut self) {
-        self.BHGGHFJMMBM.clear();
-        self.FMOPBFKNLNI = false;
-        self.GEGMAJGEJFL = ::std::option::Option::None;
-        self.GEGMAJGEJFL = ::std::option::Option::None;
-        self.GEGMAJGEJFL = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
+        self.EMAHJGMLBNJ = ::std::option::Option::None;
+        self.GDLLAJBILDK.clear();
+        self.EIJOCGPKFEN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EPEGHCGCMHP {
         static instance: EPEGHCGCMHP = EPEGHCGCMHP {
-            BHGGHFJMMBM: ::std::vec::Vec::new(),
-            FMOPBFKNLNI: false,
-            GEGMAJGEJFL: ::std::option::Option::None,
+            GDLLAJBILDK: ::std::vec::Vec::new(),
+            EIJOCGPKFEN: false,
+            EMAHJGMLBNJ: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -382,42 +449,45 @@ pub mod epeghcgcmhp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:EPEGHCGCMHP.GEGMAJGEJFL)
-    pub enum GEGMAJGEJFL {
+    // @@protoc_insertion_point(oneof:EPEGHCGCMHP.EMAHJGMLBNJ)
+    pub enum EMAHJGMLBNJ {
         // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.DCHDJALLNEC)
         DCHDJALLNEC(super::super::NJFGJPCANDI::NJFGJPCANDI),
         // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.EMBBHNCJDPK)
         EMBBHNCJDPK(super::super::LCMIFOBKNEN::LCMIFOBKNEN),
         // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.MINKKEJIONE)
         MINKKEJIONE(super::super::FDHJBIMPKEK::FDHJBIMPKEK),
+        // @@protoc_insertion_point(oneof_field:EPEGHCGCMHP.KAOMFCKHPNM)
+        KAOMFCKHPNM(super::super::PLNNPHLOFHJ::PLNNPHLOFHJ),
     }
 
-    impl ::protobuf::Oneof for GEGMAJGEJFL {
+    impl ::protobuf::Oneof for EMAHJGMLBNJ {
     }
 
-    impl ::protobuf::OneofFull for GEGMAJGEJFL {
+    impl ::protobuf::OneofFull for EMAHJGMLBNJ {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::EPEGHCGCMHP as ::protobuf::MessageFull>::descriptor().oneof_by_name("GEGMAJGEJFL").unwrap()).clone()
+            descriptor.get(|| <super::EPEGHCGCMHP as ::protobuf::MessageFull>::descriptor().oneof_by_name("EMAHJGMLBNJ").unwrap()).clone()
         }
     }
 
-    impl GEGMAJGEJFL {
+    impl EMAHJGMLBNJ {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GEGMAJGEJFL>("GEGMAJGEJFL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<EMAHJGMLBNJ>("EMAHJGMLBNJ")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPEGHCGCMHP.proto\x1a\x11FDHJBIMPKEK.proto\x1a\x11LCMIFOBKNEN.prot\
-    o\x1a\x11NJFGJPCANDI.proto\"\xf9\x01\n\x0bEPEGHCGCMHP\x12\x20\n\x0bBHGGH\
-    FJMMBM\x18\x01\x20\x03(\tR\x0bBHGGHFJMMBM\x12\x20\n\x0bFMOPBFKNLNI\x18\
-    \x02\x20\x01(\x08R\x0bFMOPBFKNLNI\x121\n\x0bDCHDJALLNEC\x18\xe9\x07\x20\
-    \x01(\x0b2\x0c.NJFGJPCANDIH\0R\x0bDCHDJALLNEC\x121\n\x0bEMBBHNCJDPK\x18\
-    \xea\x07\x20\x01(\x0b2\x0c.LCMIFOBKNENH\0R\x0bEMBBHNCJDPK\x121\n\x0bMINK\
-    KEJIONE\x18\xeb\x07\x20\x01(\x0b2\x0c.FDHJBIMPKEKH\0R\x0bMINKKEJIONEB\r\
-    \n\x0bGEGMAJGEJFLb\x06proto3\
+    o\x1a\x11NJFGJPCANDI.proto\x1a\x11PLNNPHLOFHJ.proto\"\xac\x02\n\x0bEPEGH\
+    CGCMHP\x121\n\x0bDCHDJALLNEC\x18\xe9\x07\x20\x01(\x0b2\x0c.NJFGJPCANDIH\
+    \0R\x0bDCHDJALLNEC\x121\n\x0bEMBBHNCJDPK\x18\xea\x07\x20\x01(\x0b2\x0c.L\
+    CMIFOBKNENH\0R\x0bEMBBHNCJDPK\x121\n\x0bMINKKEJIONE\x18\xeb\x07\x20\x01(\
+    \x0b2\x0c.FDHJBIMPKEKH\0R\x0bMINKKEJIONE\x121\n\x0bKAOMFCKHPNM\x18\xec\
+    \x07\x20\x01(\x0b2\x0c.PLNNPHLOFHJH\0R\x0bKAOMFCKHPNM\x12\x20\n\x0bGDLLA\
+    JBILDK\x18\x01\x20\x03(\tR\x0bGDLLAJBILDK\x12\x20\n\x0bEIJOCGPKFEN\x18\
+    \x02\x20\x01(\x08R\x0bEIJOCGPKFENB\r\n\x0bEMAHJGMLBNJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -434,10 +504,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::FDHJBIMPKEK::file_descriptor().clone());
             deps.push(super::LCMIFOBKNEN::file_descriptor().clone());
             deps.push(super::NJFGJPCANDI::file_descriptor().clone());
+            deps.push(super::PLNNPHLOFHJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EPEGHCGCMHP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

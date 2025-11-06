@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGameBingoFlipCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipCsReq.HCFPOFMDGKN)
-    pub HCFPOFMDGKN: u32,
+    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipCsReq.flip_pos)
+    pub flip_pos: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGameBingoFlipCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesGameBingoFlipCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCFPOFMDGKN",
-            |m: &PlanetFesGameBingoFlipCsReq| { &m.HCFPOFMDGKN },
-            |m: &mut PlanetFesGameBingoFlipCsReq| { &mut m.HCFPOFMDGKN },
+            "flip_pos",
+            |m: &PlanetFesGameBingoFlipCsReq| { &m.flip_pos },
+            |m: &mut PlanetFesGameBingoFlipCsReq| { &mut m.flip_pos },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGameBingoFlipCsReq>(
             "PlanetFesGameBingoFlipCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.HCFPOFMDGKN = is.read_uint32()?;
+                16 => {
+                    self.flip_pos = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCFPOFMDGKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HCFPOFMDGKN);
+        if self.flip_pos != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.flip_pos);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCFPOFMDGKN != 0 {
-            os.write_uint32(11, self.HCFPOFMDGKN)?;
+        if self.flip_pos != 0 {
+            os.write_uint32(2, self.flip_pos)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipCsReq {
     }
 
     fn clear(&mut self) {
-        self.HCFPOFMDGKN = 0;
+        self.flip_pos = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGameBingoFlipCsReq {
         static instance: PlanetFesGameBingoFlipCsReq = PlanetFesGameBingoFlipCsReq {
-            HCFPOFMDGKN: 0,
+            flip_pos: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGameBingoFlipCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PlanetFesGameBingoFlipCsReq.proto\"?\n\x1bPlanetFesGameBingoFlipCsReq\
-    \x12\x20\n\x0bHCFPOFMDGKN\x18\x0b\x20\x01(\rR\x0bHCFPOFMDGKNb\x06proto3\
+    \n!PlanetFesGameBingoFlipCsReq.proto\"8\n\x1bPlanetFesGameBingoFlipCsReq\
+    \x12\x19\n\x08flip_pos\x18\x02\x20\x01(\rR\x07flipPosb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

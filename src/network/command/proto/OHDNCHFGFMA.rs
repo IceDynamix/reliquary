@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OHDNCHFGFMA {
     // message fields
-    // @@protoc_insertion_point(field:OHDNCHFGFMA.BJFBGLBJBNN)
-    pub BJFBGLBJBNN: u32,
-    // @@protoc_insertion_point(field:OHDNCHFGFMA.panel_id)
-    pub panel_id: u32,
-    // @@protoc_insertion_point(field:OHDNCHFGFMA.durability)
-    pub durability: u32,
-    // @@protoc_insertion_point(field:OHDNCHFGFMA.LCLMHEGDGGB)
-    pub LCLMHEGDGGB: u32,
+    // @@protoc_insertion_point(field:OHDNCHFGFMA.JAHOGNLNODO)
+    pub JAHOGNLNODO: u32,
+    // @@protoc_insertion_point(field:OHDNCHFGFMA.LIACJHGKBPD)
+    pub LIACJHGKBPD: u32,
+    // @@protoc_insertion_point(field:OHDNCHFGFMA.PLICFGLAEJK)
+    pub PLICFGLAEJK: u32,
+    // @@protoc_insertion_point(field:OHDNCHFGFMA.module_id)
+    pub module_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OHDNCHFGFMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl OHDNCHFGFMA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJFBGLBJBNN",
-            |m: &OHDNCHFGFMA| { &m.BJFBGLBJBNN },
-            |m: &mut OHDNCHFGFMA| { &mut m.BJFBGLBJBNN },
+            "JAHOGNLNODO",
+            |m: &OHDNCHFGFMA| { &m.JAHOGNLNODO },
+            |m: &mut OHDNCHFGFMA| { &mut m.JAHOGNLNODO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &OHDNCHFGFMA| { &m.panel_id },
-            |m: &mut OHDNCHFGFMA| { &mut m.panel_id },
+            "LIACJHGKBPD",
+            |m: &OHDNCHFGFMA| { &m.LIACJHGKBPD },
+            |m: &mut OHDNCHFGFMA| { &mut m.LIACJHGKBPD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "durability",
-            |m: &OHDNCHFGFMA| { &m.durability },
-            |m: &mut OHDNCHFGFMA| { &mut m.durability },
+            "PLICFGLAEJK",
+            |m: &OHDNCHFGFMA| { &m.PLICFGLAEJK },
+            |m: &mut OHDNCHFGFMA| { &mut m.PLICFGLAEJK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCLMHEGDGGB",
-            |m: &OHDNCHFGFMA| { &m.LCLMHEGDGGB },
-            |m: &mut OHDNCHFGFMA| { &mut m.LCLMHEGDGGB },
+            "module_id",
+            |m: &OHDNCHFGFMA| { &m.module_id },
+            |m: &mut OHDNCHFGFMA| { &mut m.module_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHDNCHFGFMA>(
             "OHDNCHFGFMA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.BJFBGLBJBNN = is.read_uint32()?;
-                },
                 56 => {
-                    self.panel_id = is.read_uint32()?;
+                    self.JAHOGNLNODO = is.read_uint32()?;
                 },
-                104 => {
-                    self.durability = is.read_uint32()?;
+                80 => {
+                    self.LIACJHGKBPD = is.read_uint32()?;
                 },
-                72 => {
-                    self.LCLMHEGDGGB = is.read_uint32()?;
+                96 => {
+                    self.PLICFGLAEJK = is.read_uint32()?;
+                },
+                120 => {
+                    self.module_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BJFBGLBJBNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BJFBGLBJBNN);
+        if self.JAHOGNLNODO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JAHOGNLNODO);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.panel_id);
+        if self.LIACJHGKBPD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LIACJHGKBPD);
         }
-        if self.durability != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.durability);
+        if self.PLICFGLAEJK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PLICFGLAEJK);
         }
-        if self.LCLMHEGDGGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LCLMHEGDGGB);
+        if self.module_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.module_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BJFBGLBJBNN != 0 {
-            os.write_uint32(5, self.BJFBGLBJBNN)?;
+        if self.JAHOGNLNODO != 0 {
+            os.write_uint32(7, self.JAHOGNLNODO)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(7, self.panel_id)?;
+        if self.LIACJHGKBPD != 0 {
+            os.write_uint32(10, self.LIACJHGKBPD)?;
         }
-        if self.durability != 0 {
-            os.write_uint32(13, self.durability)?;
+        if self.PLICFGLAEJK != 0 {
+            os.write_uint32(12, self.PLICFGLAEJK)?;
         }
-        if self.LCLMHEGDGGB != 0 {
-            os.write_uint32(9, self.LCLMHEGDGGB)?;
+        if self.module_id != 0 {
+            os.write_uint32(15, self.module_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for OHDNCHFGFMA {
     }
 
     fn clear(&mut self) {
-        self.BJFBGLBJBNN = 0;
-        self.panel_id = 0;
-        self.durability = 0;
-        self.LCLMHEGDGGB = 0;
+        self.JAHOGNLNODO = 0;
+        self.LIACJHGKBPD = 0;
+        self.PLICFGLAEJK = 0;
+        self.module_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHDNCHFGFMA {
         static instance: OHDNCHFGFMA = OHDNCHFGFMA {
-            BJFBGLBJBNN: 0,
-            panel_id: 0,
-            durability: 0,
-            LCLMHEGDGGB: 0,
+            JAHOGNLNODO: 0,
+            LIACJHGKBPD: 0,
+            PLICFGLAEJK: 0,
+            module_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for OHDNCHFGFMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHDNCHFGFMA.proto\"\x8c\x01\n\x0bOHDNCHFGFMA\x12\x20\n\x0bBJFBGLBJ\
-    BNN\x18\x05\x20\x01(\rR\x0bBJFBGLBJBNN\x12\x19\n\x08panel_id\x18\x07\x20\
-    \x01(\rR\x07panelId\x12\x1e\n\ndurability\x18\r\x20\x01(\rR\ndurability\
-    \x12\x20\n\x0bLCLMHEGDGGB\x18\t\x20\x01(\rR\x0bLCLMHEGDGGBb\x06proto3\
+    \n\x11OHDNCHFGFMA.proto\"\x90\x01\n\x0bOHDNCHFGFMA\x12\x20\n\x0bJAHOGNLN\
+    ODO\x18\x07\x20\x01(\rR\x0bJAHOGNLNODO\x12\x20\n\x0bLIACJHGKBPD\x18\n\
+    \x20\x01(\rR\x0bLIACJHGKBPD\x12\x20\n\x0bPLICFGLAEJK\x18\x0c\x20\x01(\rR\
+    \x0bPLICFGLAEJK\x12\x1b\n\tmodule_id\x18\x0f\x20\x01(\rR\x08moduleIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

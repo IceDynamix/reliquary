@@ -59,6 +59,12 @@ pub enum DevelopmentType {
     DEVELOPMENT_CHALLENGE_PEAK = 14,
     // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN_DIVISION)
     DEVELOPMENT_ROGUE_TOURN_DIVISION = 15,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_DIVISION)
+    DEVELOPMENT_GRID_FIGHT_DIVISION = 16,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_GAMEPLAY)
+    DEVELOPMENT_GRID_FIGHT_GAMEPLAY = 17,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE)
+    DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE = 18,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -86,6 +92,9 @@ impl ::protobuf::Enum for DevelopmentType {
             13 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
             14 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
             15 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
+            16 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION),
+            17 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY),
+            18 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE),
             _ => ::std::option::Option::None
         }
     }
@@ -108,6 +117,9 @@ impl ::protobuf::Enum for DevelopmentType {
             "DEVELOPMENT_ROGUE_MAGIC" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
             "DEVELOPMENT_CHALLENGE_PEAK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
             "DEVELOPMENT_ROGUE_TOURN_DIVISION" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
+            "DEVELOPMENT_GRID_FIGHT_DIVISION" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION),
+            "DEVELOPMENT_GRID_FIGHT_GAMEPLAY" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY),
+            "DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE),
             _ => ::std::option::Option::None
         }
     }
@@ -129,6 +141,9 @@ impl ::protobuf::Enum for DevelopmentType {
         DevelopmentType::DEVELOPMENT_ROGUE_MAGIC,
         DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK,
         DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION,
+        DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION,
+        DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY,
+        DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE,
     ];
 }
 
@@ -157,7 +172,7 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\x88\x04\n\x0fDevelopmentType\x12\x14\n\x10D\
+    \n\x15DevelopmentType.proto*\xff\x04\n\x0fDevelopmentType\x12\x14\n\x10D\
     EVELOPMENT_NONE\x10\0\x12\x1c\n\x18DEVELOPMENT_ROGUE_COSMOS\x10\x01\x12\
     \x1b\n\x17DEVELOPMENT_ROGUE_CHESS\x10\x02\x12\x20\n\x1cDEVELOPMENT_ROGUE\
     _CHESS_NOUS\x10\x03\x12\x20\n\x1cDEVELOPMENT_MEMORY_CHALLENGE\x10\x04\
@@ -168,7 +183,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12\x1b\n\x17DEVELOPMENT_ROGUE_TOURN\x10\x0b\x12\x20\n\x1cDEVELOPMENT_R\
     OGUE_TOURN_WEEK\x10\x0c\x12\x1b\n\x17DEVELOPMENT_ROGUE_MAGIC\x10\r\x12\
     \x1e\n\x1aDEVELOPMENT_CHALLENGE_PEAK\x10\x0e\x12$\n\x20DEVELOPMENT_ROGUE\
-    _TOURN_DIVISION\x10\x0fb\x06proto3\
+    _TOURN_DIVISION\x10\x0f\x12#\n\x1fDEVELOPMENT_GRID_FIGHT_DIVISION\x10\
+    \x10\x12#\n\x1fDEVELOPMENT_GRID_FIGHT_GAMEPLAY\x10\x11\x12+\n'DEVELOPMEN\
+    T_GRID_FIGHT_GAMEPLAY_OC_MODE\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

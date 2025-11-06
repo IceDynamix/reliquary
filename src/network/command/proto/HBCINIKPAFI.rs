@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HBCINIKPAFI {
     // message fields
-    // @@protoc_insertion_point(field:HBCINIKPAFI.FODPDMPBAND)
-    pub FODPDMPBAND: ::std::vec::Vec<super::FPLMDELMJKB::FPLMDELMJKB>,
+    // @@protoc_insertion_point(field:HBCINIKPAFI.GLNKHEILNLL)
+    pub GLNKHEILNLL: ::std::vec::Vec<super::FPLMDELMJKB::FPLMDELMJKB>,
     // special fields
     // @@protoc_insertion_point(special_field:HBCINIKPAFI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl HBCINIKPAFI {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FODPDMPBAND",
-            |m: &HBCINIKPAFI| { &m.FODPDMPBAND },
-            |m: &mut HBCINIKPAFI| { &mut m.FODPDMPBAND },
+            "GLNKHEILNLL",
+            |m: &HBCINIKPAFI| { &m.GLNKHEILNLL },
+            |m: &mut HBCINIKPAFI| { &mut m.GLNKHEILNLL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HBCINIKPAFI>(
             "HBCINIKPAFI",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for HBCINIKPAFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.FODPDMPBAND.push(is.read_message()?);
+                74 => {
+                    self.GLNKHEILNLL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for HBCINIKPAFI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FODPDMPBAND {
+        for value in &self.GLNKHEILNLL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HBCINIKPAFI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FODPDMPBAND {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.GLNKHEILNLL {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for HBCINIKPAFI {
     }
 
     fn clear(&mut self) {
-        self.FODPDMPBAND.clear();
+        self.GLNKHEILNLL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HBCINIKPAFI {
         static instance: HBCINIKPAFI = HBCINIKPAFI {
-            FODPDMPBAND: ::std::vec::Vec::new(),
+            GLNKHEILNLL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for HBCINIKPAFI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HBCINIKPAFI.proto\x1a\x11FPLMDELMJKB.proto\"=\n\x0bHBCINIKPAFI\x12\
-    .\n\x0bFODPDMPBAND\x18\r\x20\x03(\x0b2\x0c.FPLMDELMJKBR\x0bFODPDMPBANDb\
+    .\n\x0bGLNKHEILNLL\x18\t\x20\x03(\x0b2\x0c.FPLMDELMJKBR\x0bGLNKHEILNLLb\
     \x06proto3\
 ";
 

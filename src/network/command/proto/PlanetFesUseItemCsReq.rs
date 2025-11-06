@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesUseItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesUseItemCsReq.DIOOKFOCCMO)
-    pub DIOOKFOCCMO: u32,
+    // @@protoc_insertion_point(field:PlanetFesUseItemCsReq.CMGHDNHBICB)
+    pub CMGHDNHBICB: u32,
     // @@protoc_insertion_point(field:PlanetFesUseItemCsReq.item_id)
     pub item_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl PlanetFesUseItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIOOKFOCCMO",
-            |m: &PlanetFesUseItemCsReq| { &m.DIOOKFOCCMO },
-            |m: &mut PlanetFesUseItemCsReq| { &mut m.DIOOKFOCCMO },
+            "CMGHDNHBICB",
+            |m: &PlanetFesUseItemCsReq| { &m.CMGHDNHBICB },
+            |m: &mut PlanetFesUseItemCsReq| { &mut m.CMGHDNHBICB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.DIOOKFOCCMO = is.read_uint32()?;
+                8 => {
+                    self.CMGHDNHBICB = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DIOOKFOCCMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DIOOKFOCCMO);
+        if self.CMGHDNHBICB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CMGHDNHBICB);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DIOOKFOCCMO != 0 {
-            os.write_uint32(14, self.DIOOKFOCCMO)?;
+        if self.CMGHDNHBICB != 0 {
+            os.write_uint32(1, self.CMGHDNHBICB)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(5, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for PlanetFesUseItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.DIOOKFOCCMO = 0;
+        self.CMGHDNHBICB = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesUseItemCsReq {
         static instance: PlanetFesUseItemCsReq = PlanetFesUseItemCsReq {
-            DIOOKFOCCMO: 0,
+            CMGHDNHBICB: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUseItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesUseItemCsReq.proto\"R\n\x15PlanetFesUseItemCsReq\x12\x20\
-    \n\x0bDIOOKFOCCMO\x18\x0e\x20\x01(\rR\x0bDIOOKFOCCMO\x12\x17\n\x07item_i\
-    d\x18\x05\x20\x01(\rR\x06itemIdb\x06proto3\
+    \n\x0bCMGHDNHBICB\x18\x01\x20\x01(\rR\x0bCMGHDNHBICB\x12\x17\n\x07item_i\
+    d\x18\x0b\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

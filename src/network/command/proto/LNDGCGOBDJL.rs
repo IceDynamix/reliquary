@@ -72,7 +72,7 @@ impl ::protobuf::Message for LNDGCGOBDJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.area_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LNDGCGOBDJL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.area_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for LNDGCGOBDJL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LNDGCGOBDJL.proto\x1a\x11MCLNCBCPAFF.proto\"8\n\x0bLNDGCGOBDJL\x12\
-    )\n\tarea_list\x18\x02\x20\x03(\x0b2\x0c.MCLNCBCPAFFR\x08areaListb\x06pr\
+    )\n\tarea_list\x18\x01\x20\x03(\x0b2\x0c.MCLNCBCPAFFR\x08areaListb\x06pr\
     oto3\
 ";
 

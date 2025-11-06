@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChooseBoxingClubStageOptionalBuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChooseBoxingClubStageOptionalBuffCsReq.FMGMAIEGOFP)
-    pub FMGMAIEGOFP: u32,
+    // @@protoc_insertion_point(field:ChooseBoxingClubStageOptionalBuffCsReq.KNFMHCLKCKE)
+    pub KNFMHCLKCKE: u32,
     // @@protoc_insertion_point(field:ChooseBoxingClubStageOptionalBuffCsReq.challenge_id)
     pub challenge_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ChooseBoxingClubStageOptionalBuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMGMAIEGOFP",
-            |m: &ChooseBoxingClubStageOptionalBuffCsReq| { &m.FMGMAIEGOFP },
-            |m: &mut ChooseBoxingClubStageOptionalBuffCsReq| { &mut m.FMGMAIEGOFP },
+            "KNFMHCLKCKE",
+            |m: &ChooseBoxingClubStageOptionalBuffCsReq| { &m.KNFMHCLKCKE },
+            |m: &mut ChooseBoxingClubStageOptionalBuffCsReq| { &mut m.KNFMHCLKCKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChooseBoxingClubStageOptionalBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FMGMAIEGOFP = is.read_uint32()?;
-                },
                 104 => {
+                    self.KNFMHCLKCKE = is.read_uint32()?;
+                },
+                120 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChooseBoxingClubStageOptionalBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMGMAIEGOFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FMGMAIEGOFP);
+        if self.KNFMHCLKCKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KNFMHCLKCKE);
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChooseBoxingClubStageOptionalBuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMGMAIEGOFP != 0 {
-            os.write_uint32(4, self.FMGMAIEGOFP)?;
+        if self.KNFMHCLKCKE != 0 {
+            os.write_uint32(13, self.KNFMHCLKCKE)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(13, self.challenge_id)?;
+            os.write_uint32(15, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChooseBoxingClubStageOptionalBuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.FMGMAIEGOFP = 0;
+        self.KNFMHCLKCKE = 0;
         self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChooseBoxingClubStageOptionalBuffCsReq {
         static instance: ChooseBoxingClubStageOptionalBuffCsReq = ChooseBoxingClubStageOptionalBuffCsReq {
-            FMGMAIEGOFP: 0,
+            KNFMHCLKCKE: 0,
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChooseBoxingClubStageOptionalBuffCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,ChooseBoxingClubStageOptionalBuffCsReq.proto\"m\n&ChooseBoxingClubSta\
-    geOptionalBuffCsReq\x12\x20\n\x0bFMGMAIEGOFP\x18\x04\x20\x01(\rR\x0bFMGM\
-    AIEGOFP\x12!\n\x0cchallenge_id\x18\r\x20\x01(\rR\x0bchallengeIdb\x06prot\
+    geOptionalBuffCsReq\x12\x20\n\x0bKNFMHCLKCKE\x18\r\x20\x01(\rR\x0bKNFMHC\
+    LKCKE\x12!\n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bchallengeIdb\x06prot\
     o3\
 ";
 

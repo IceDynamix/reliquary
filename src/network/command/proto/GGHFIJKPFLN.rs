@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GGHFIJKPFLN {
     // message fields
-    // @@protoc_insertion_point(field:GGHFIJKPFLN.BPLMPMEFEAM)
-    pub BPLMPMEFEAM: ::protobuf::EnumOrUnknown<super::RogueDialogueResult::RogueDialogueResult>,
-    // @@protoc_insertion_point(field:GGHFIJKPFLN.JJEALOEMMKK)
-    pub JJEALOEMMKK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GGHFIJKPFLN.LABOHFALGKB)
+    pub LABOHFALGKB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GGHFIJKPFLN.ACKOAJGPAKB)
+    pub ACKOAJGPAKB: ::protobuf::EnumOrUnknown<super::RogueDialogueResultType::RogueDialogueResultType>,
     // message oneof groups
-    pub MICMCKAHMPL: ::std::option::Option<gghfijkpfln::MICMCKAHMPL>,
+    pub CCPFABANCNN: ::std::option::Option<gghfijkpfln::CCPFABANCNN>,
     // special fields
     // @@protoc_insertion_point(special_field:GGHFIJKPFLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,48 +50,48 @@ impl GGHFIJKPFLN {
         ::std::default::Default::default()
     }
 
-    // .ItemList JDIJKEGCIBP = 1;
+    // .ItemList item_result = 8;
 
-    pub fn JDIJKEGCIBP(&self) -> &super::ItemList::ItemList {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v)) => v,
+    pub fn item_result(&self) -> &super::ItemList::ItemList {
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(ref v)) => v,
             _ => <super::ItemList::ItemList as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_JDIJKEGCIBP(&mut self) {
-        self.MICMCKAHMPL = ::std::option::Option::None;
+    pub fn clear_item_result(&mut self) {
+        self.CCPFABANCNN = ::std::option::Option::None;
     }
 
-    pub fn has_JDIJKEGCIBP(&self) -> bool {
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(..)) => true,
+    pub fn has_item_result(&self) -> bool {
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JDIJKEGCIBP(&mut self, v: super::ItemList::ItemList) {
-        self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(v))
+    pub fn set_item_result(&mut self, v: super::ItemList::ItemList) {
+        self.CCPFABANCNN = ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_JDIJKEGCIBP(&mut self) -> &mut super::ItemList::ItemList {
-        if let ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(_)) = self.MICMCKAHMPL {
+    pub fn mut_item_result(&mut self) -> &mut super::ItemList::ItemList {
+        if let ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(_)) = self.CCPFABANCNN {
         } else {
-            self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(super::ItemList::ItemList::new()));
+            self.CCPFABANCNN = ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(super::ItemList::ItemList::new()));
         }
-        match self.MICMCKAHMPL {
-            ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref mut v)) => v,
+        match self.CCPFABANCNN {
+            ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_JDIJKEGCIBP(&mut self) -> super::ItemList::ItemList {
-        if self.has_JDIJKEGCIBP() {
-            match self.MICMCKAHMPL.take() {
-                ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(v)) => v,
+    pub fn take_item_result(&mut self) -> super::ItemList::ItemList {
+        if self.has_item_result() {
+            match self.CCPFABANCNN.take() {
+                ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -102,24 +102,24 @@ impl GGHFIJKPFLN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPLMPMEFEAM",
-            |m: &GGHFIJKPFLN| { &m.BPLMPMEFEAM },
-            |m: &mut GGHFIJKPFLN| { &mut m.BPLMPMEFEAM },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ItemList::ItemList>(
+            "item_result",
+            GGHFIJKPFLN::has_item_result,
+            GGHFIJKPFLN::item_result,
+            GGHFIJKPFLN::mut_item_result,
+            GGHFIJKPFLN::set_item_result,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJEALOEMMKK",
-            |m: &GGHFIJKPFLN| { &m.JJEALOEMMKK },
-            |m: &mut GGHFIJKPFLN| { &mut m.JJEALOEMMKK },
+            "LABOHFALGKB",
+            |m: &GGHFIJKPFLN| { &m.LABOHFALGKB },
+            |m: &mut GGHFIJKPFLN| { &mut m.LABOHFALGKB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ItemList::ItemList>(
-            "JDIJKEGCIBP",
-            GGHFIJKPFLN::has_JDIJKEGCIBP,
-            GGHFIJKPFLN::JDIJKEGCIBP,
-            GGHFIJKPFLN::mut_JDIJKEGCIBP,
-            GGHFIJKPFLN::set_JDIJKEGCIBP,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACKOAJGPAKB",
+            |m: &GGHFIJKPFLN| { &m.ACKOAJGPAKB },
+            |m: &mut GGHFIJKPFLN| { &mut m.ACKOAJGPAKB },
         ));
-        oneofs.push(gghfijkpfln::MICMCKAHMPL::generated_oneof_descriptor_data());
+        oneofs.push(gghfijkpfln::CCPFABANCNN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GGHFIJKPFLN>(
             "GGHFIJKPFLN",
             fields,
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.BPLMPMEFEAM = is.read_enum_or_unknown()?;
+                66 => {
+                    self.CCPFABANCNN = ::std::option::Option::Some(gghfijkpfln::CCPFABANCNN::ItemResult(is.read_message()?));
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JJEALOEMMKK)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LABOHFALGKB)?;
                 },
-                16 => {
-                    self.JJEALOEMMKK.push(is.read_uint32()?);
+                56 => {
+                    self.LABOHFALGKB.push(is.read_uint32()?);
                 },
-                10 => {
-                    self.MICMCKAHMPL = ::std::option::Option::Some(gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(is.read_message()?));
+                104 => {
+                    self.ACKOAJGPAKB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -162,13 +162,13 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC) {
-            my_size += ::protobuf::rt::int32_size(6, self.BPLMPMEFEAM.value());
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.LABOHFALGKB);
+        if self.ACKOAJGPAKB != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResultType::RogueDialogueResultType::ROGUE_DIALOGUE_RESULT_SUCC) {
+            my_size += ::protobuf::rt::int32_size(13, self.ACKOAJGPAKB.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JJEALOEMMKK);
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.CCPFABANCNN {
             match v {
-                &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
+                &gghfijkpfln::CCPFABANCNN::ItemResult(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -180,14 +180,14 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BPLMPMEFEAM != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.BPLMPMEFEAM))?;
+        os.write_repeated_packed_uint32(7, &self.LABOHFALGKB)?;
+        if self.ACKOAJGPAKB != ::protobuf::EnumOrUnknown::new(super::RogueDialogueResultType::RogueDialogueResultType::ROGUE_DIALOGUE_RESULT_SUCC) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.ACKOAJGPAKB))?;
         }
-        os.write_repeated_packed_uint32(2, &self.JJEALOEMMKK)?;
-        if let ::std::option::Option::Some(ref v) = self.MICMCKAHMPL {
+        if let ::std::option::Option::Some(ref v) = self.CCPFABANCNN {
             match v {
-                &gghfijkpfln::MICMCKAHMPL::JDIJKEGCIBP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                &gghfijkpfln::CCPFABANCNN::ItemResult(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -208,17 +208,17 @@ impl ::protobuf::Message for GGHFIJKPFLN {
     }
 
     fn clear(&mut self) {
-        self.BPLMPMEFEAM = ::protobuf::EnumOrUnknown::new(super::RogueDialogueResult::RogueDialogueResult::ROGUE_DIALOGUE_RESULT_SUCC);
-        self.JJEALOEMMKK.clear();
-        self.MICMCKAHMPL = ::std::option::Option::None;
+        self.CCPFABANCNN = ::std::option::Option::None;
+        self.LABOHFALGKB.clear();
+        self.ACKOAJGPAKB = ::protobuf::EnumOrUnknown::new(super::RogueDialogueResultType::RogueDialogueResultType::ROGUE_DIALOGUE_RESULT_SUCC);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGHFIJKPFLN {
         static instance: GGHFIJKPFLN = GGHFIJKPFLN {
-            BPLMPMEFEAM: ::protobuf::EnumOrUnknown::from_i32(0),
-            JJEALOEMMKK: ::std::vec::Vec::new(),
-            MICMCKAHMPL: ::std::option::Option::None,
+            LABOHFALGKB: ::std::vec::Vec::new(),
+            ACKOAJGPAKB: ::protobuf::EnumOrUnknown::from_i32(0),
+            CCPFABANCNN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -247,35 +247,36 @@ pub mod gghfijkpfln {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GGHFIJKPFLN.MICMCKAHMPL)
-    pub enum MICMCKAHMPL {
-        // @@protoc_insertion_point(oneof_field:GGHFIJKPFLN.JDIJKEGCIBP)
-        JDIJKEGCIBP(super::super::ItemList::ItemList),
+    // @@protoc_insertion_point(oneof:GGHFIJKPFLN.CCPFABANCNN)
+    pub enum CCPFABANCNN {
+        // @@protoc_insertion_point(oneof_field:GGHFIJKPFLN.item_result)
+        ItemResult(super::super::ItemList::ItemList),
     }
 
-    impl ::protobuf::Oneof for MICMCKAHMPL {
+    impl ::protobuf::Oneof for CCPFABANCNN {
     }
 
-    impl ::protobuf::OneofFull for MICMCKAHMPL {
+    impl ::protobuf::OneofFull for CCPFABANCNN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GGHFIJKPFLN as ::protobuf::MessageFull>::descriptor().oneof_by_name("MICMCKAHMPL").unwrap()).clone()
+            descriptor.get(|| <super::GGHFIJKPFLN as ::protobuf::MessageFull>::descriptor().oneof_by_name("CCPFABANCNN").unwrap()).clone()
         }
     }
 
-    impl MICMCKAHMPL {
+    impl CCPFABANCNN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MICMCKAHMPL>("MICMCKAHMPL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CCPFABANCNN>("CCPFABANCNN")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GGHFIJKPFLN.proto\x1a\x0eItemList.proto\x1a\x19RogueDialogueResult\
-    .proto\"\xa5\x01\n\x0bGGHFIJKPFLN\x126\n\x0bBPLMPMEFEAM\x18\x06\x20\x01(\
-    \x0e2\x14.RogueDialogueResultR\x0bBPLMPMEFEAM\x12\x20\n\x0bJJEALOEMMKK\
-    \x18\x02\x20\x03(\rR\x0bJJEALOEMMKK\x12-\n\x0bJDIJKEGCIBP\x18\x01\x20\
-    \x01(\x0b2\t.ItemListH\0R\x0bJDIJKEGCIBPB\r\n\x0bMICMCKAHMPLb\x06proto3\
+    \n\x11GGHFIJKPFLN.proto\x1a\x0eItemList.proto\x1a\x1dRogueDialogueResult\
+    Type.proto\"\xa8\x01\n\x0bGGHFIJKPFLN\x12,\n\x0bitem_result\x18\x08\x20\
+    \x01(\x0b2\t.ItemListH\0R\nitemResult\x12\x20\n\x0bLABOHFALGKB\x18\x07\
+    \x20\x03(\rR\x0bLABOHFALGKB\x12:\n\x0bACKOAJGPAKB\x18\r\x20\x01(\x0e2\
+    \x18.RogueDialogueResultTypeR\x0bACKOAJGPAKBB\r\n\x0bCCPFABANCNNb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -294,7 +295,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::RogueDialogueResult::file_descriptor().clone());
+            deps.push(super::RogueDialogueResultType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GGHFIJKPFLN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

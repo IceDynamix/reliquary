@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LogisticsScoreRewardSyncInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:LogisticsScoreRewardSyncInfoScNotify.FMJPLHOHBAB)
-    pub FMJPLHOHBAB: ::std::vec::Vec<super::LogisticsScore::LogisticsScore>,
+    // @@protoc_insertion_point(field:LogisticsScoreRewardSyncInfoScNotify.PHFLFFFPOGP)
+    pub PHFLFFFPOGP: ::std::vec::Vec<super::LogisticsScore::LogisticsScore>,
     // special fields
     // @@protoc_insertion_point(special_field:LogisticsScoreRewardSyncInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LogisticsScoreRewardSyncInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMJPLHOHBAB",
-            |m: &LogisticsScoreRewardSyncInfoScNotify| { &m.FMJPLHOHBAB },
-            |m: &mut LogisticsScoreRewardSyncInfoScNotify| { &mut m.FMJPLHOHBAB },
+            "PHFLFFFPOGP",
+            |m: &LogisticsScoreRewardSyncInfoScNotify| { &m.PHFLFFFPOGP },
+            |m: &mut LogisticsScoreRewardSyncInfoScNotify| { &mut m.PHFLFFFPOGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LogisticsScoreRewardSyncInfoScNotify>(
             "LogisticsScoreRewardSyncInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.FMJPLHOHBAB.push(is.read_message()?);
+                34 => {
+                    self.PHFLFFFPOGP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FMJPLHOHBAB {
+        for value in &self.PHFLFFFPOGP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FMJPLHOHBAB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.PHFLFFFPOGP {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for LogisticsScoreRewardSyncInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.FMJPLHOHBAB.clear();
+        self.PHFLFFFPOGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LogisticsScoreRewardSyncInfoScNotify {
         static instance: LogisticsScoreRewardSyncInfoScNotify = LogisticsScoreRewardSyncInfoScNotify {
-            FMJPLHOHBAB: ::std::vec::Vec::new(),
+            PHFLFFFPOGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsScoreRewardSyncInfoScNotify
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*LogisticsScoreRewardSyncInfoScNotify.proto\x1a\x14LogisticsScore.prot\
-    o\"Y\n$LogisticsScoreRewardSyncInfoScNotify\x121\n\x0bFMJPLHOHBAB\x18\
-    \x05\x20\x03(\x0b2\x0f.LogisticsScoreR\x0bFMJPLHOHBABb\x06proto3\
+    o\"Y\n$LogisticsScoreRewardSyncInfoScNotify\x121\n\x0bPHFLFFFPOGP\x18\
+    \x04\x20\x03(\x0b2\x0f.LogisticsScoreR\x0bPHFLFFFPOGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

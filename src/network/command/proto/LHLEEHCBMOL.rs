@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHLEEHCBMOL {
     // message fields
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.skill_list)
-    pub skill_list: ::std::vec::Vec<super::GOCKBLNJIBG::GOCKBLNJIBG>,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.PKIDBDGPILO)
-    pub PKIDBDGPILO: u32,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.CFKPAICDJPJ)
-    pub CFKPAICDJPJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.OAFAAEEMNFB)
-    pub OAFAAEEMNFB: u32,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.MBLFIGHLJOO)
+    pub MBLFIGHLJOO: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.EBLOHLFKGGA)
+    pub EBLOHLFKGGA: u32,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.EMENAKLKDEM)
+    pub EMENAKLKDEM: u32,
     // @@protoc_insertion_point(field:LHLEEHCBMOL.cur_index)
     pub cur_index: u32,
-    // @@protoc_insertion_point(field:LHLEEHCBMOL.KBGDCEHIFFJ)
-    pub KBGDCEHIFFJ: ::std::vec::Vec<super::MAONNNELGCC::MAONNNELGCC>,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.skill_list)
+    pub skill_list: ::std::vec::Vec<super::GOCKBLNJIBG::GOCKBLNJIBG>,
+    // @@protoc_insertion_point(field:LHLEEHCBMOL.PPJEDHNNOKM)
+    pub PPJEDHNNOKM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LHLEEHCBMOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,24 +60,19 @@ impl LHLEEHCBMOL {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "skill_list",
-            |m: &LHLEEHCBMOL| { &m.skill_list },
-            |m: &mut LHLEEHCBMOL| { &mut m.skill_list },
+            "MBLFIGHLJOO",
+            |m: &LHLEEHCBMOL| { &m.MBLFIGHLJOO },
+            |m: &mut LHLEEHCBMOL| { &mut m.MBLFIGHLJOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKIDBDGPILO",
-            |m: &LHLEEHCBMOL| { &m.PKIDBDGPILO },
-            |m: &mut LHLEEHCBMOL| { &mut m.PKIDBDGPILO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFKPAICDJPJ",
-            |m: &LHLEEHCBMOL| { &m.CFKPAICDJPJ },
-            |m: &mut LHLEEHCBMOL| { &mut m.CFKPAICDJPJ },
+            "EBLOHLFKGGA",
+            |m: &LHLEEHCBMOL| { &m.EBLOHLFKGGA },
+            |m: &mut LHLEEHCBMOL| { &mut m.EBLOHLFKGGA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAFAAEEMNFB",
-            |m: &LHLEEHCBMOL| { &m.OAFAAEEMNFB },
-            |m: &mut LHLEEHCBMOL| { &mut m.OAFAAEEMNFB },
+            "EMENAKLKDEM",
+            |m: &LHLEEHCBMOL| { &m.EMENAKLKDEM },
+            |m: &mut LHLEEHCBMOL| { &mut m.EMENAKLKDEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_index",
@@ -85,9 +80,14 @@ impl LHLEEHCBMOL {
             |m: &mut LHLEEHCBMOL| { &mut m.cur_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KBGDCEHIFFJ",
-            |m: &LHLEEHCBMOL| { &m.KBGDCEHIFFJ },
-            |m: &mut LHLEEHCBMOL| { &mut m.KBGDCEHIFFJ },
+            "skill_list",
+            |m: &LHLEEHCBMOL| { &m.skill_list },
+            |m: &mut LHLEEHCBMOL| { &mut m.skill_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPJEDHNNOKM",
+            |m: &LHLEEHCBMOL| { &m.PPJEDHNNOKM },
+            |m: &mut LHLEEHCBMOL| { &mut m.PPJEDHNNOKM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHLEEHCBMOL>(
             "LHLEEHCBMOL",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for LHLEEHCBMOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.skill_list.push(is.read_message()?);
+                18 => {
+                    self.MBLFIGHLJOO.push(is.read_message()?);
                 },
-                112 => {
-                    self.PKIDBDGPILO = is.read_uint32()?;
+                40 => {
+                    self.EBLOHLFKGGA = is.read_uint32()?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CFKPAICDJPJ)?;
+                56 => {
+                    self.EMENAKLKDEM = is.read_uint32()?;
                 },
-                32 => {
-                    self.CFKPAICDJPJ.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.OAFAAEEMNFB = is.read_uint32()?;
-                },
-                88 => {
+                104 => {
                     self.cur_index = is.read_uint32()?;
                 },
+                114 => {
+                    self.skill_list.push(is.read_message()?);
+                },
                 122 => {
-                    self.KBGDCEHIFFJ.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.PPJEDHNNOKM)?;
+                },
+                120 => {
+                    self.PPJEDHNNOKM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,46 +140,46 @@ impl ::protobuf::Message for LHLEEHCBMOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.MBLFIGHLJOO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.EBLOHLFKGGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EBLOHLFKGGA);
+        }
+        if self.EMENAKLKDEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EMENAKLKDEM);
+        }
+        if self.cur_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.cur_index);
+        }
         for value in &self.skill_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PKIDBDGPILO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.PKIDBDGPILO);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CFKPAICDJPJ);
-        if self.OAFAAEEMNFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OAFAAEEMNFB);
-        }
-        if self.cur_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cur_index);
-        }
-        for value in &self.KBGDCEHIFFJ {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.PPJEDHNNOKM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.skill_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.MBLFIGHLJOO {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.PKIDBDGPILO != 0 {
-            os.write_uint32(14, self.PKIDBDGPILO)?;
+        if self.EBLOHLFKGGA != 0 {
+            os.write_uint32(5, self.EBLOHLFKGGA)?;
         }
-        os.write_repeated_packed_uint32(4, &self.CFKPAICDJPJ)?;
-        if self.OAFAAEEMNFB != 0 {
-            os.write_uint32(12, self.OAFAAEEMNFB)?;
+        if self.EMENAKLKDEM != 0 {
+            os.write_uint32(7, self.EMENAKLKDEM)?;
         }
         if self.cur_index != 0 {
-            os.write_uint32(11, self.cur_index)?;
+            os.write_uint32(13, self.cur_index)?;
         }
-        for v in &self.KBGDCEHIFFJ {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.skill_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        os.write_repeated_packed_uint32(15, &self.PPJEDHNNOKM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +197,23 @@ impl ::protobuf::Message for LHLEEHCBMOL {
     }
 
     fn clear(&mut self) {
-        self.skill_list.clear();
-        self.PKIDBDGPILO = 0;
-        self.CFKPAICDJPJ.clear();
-        self.OAFAAEEMNFB = 0;
+        self.MBLFIGHLJOO.clear();
+        self.EBLOHLFKGGA = 0;
+        self.EMENAKLKDEM = 0;
         self.cur_index = 0;
-        self.KBGDCEHIFFJ.clear();
+        self.skill_list.clear();
+        self.PPJEDHNNOKM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHLEEHCBMOL {
         static instance: LHLEEHCBMOL = LHLEEHCBMOL {
-            skill_list: ::std::vec::Vec::new(),
-            PKIDBDGPILO: 0,
-            CFKPAICDJPJ: ::std::vec::Vec::new(),
-            OAFAAEEMNFB: 0,
+            MBLFIGHLJOO: ::std::vec::Vec::new(),
+            EBLOHLFKGGA: 0,
+            EMENAKLKDEM: 0,
             cur_index: 0,
-            KBGDCEHIFFJ: ::std::vec::Vec::new(),
+            skill_list: ::std::vec::Vec::new(),
+            PPJEDHNNOKM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for LHLEEHCBMOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHLEEHCBMOL.proto\x1a\x11GOCKBLNJIBG.proto\x1a\x11MAONNNELGCC.prot\
-    o\"\xed\x01\n\x0bLHLEEHCBMOL\x12+\n\nskill_list\x18\x08\x20\x03(\x0b2\
-    \x0c.GOCKBLNJIBGR\tskillList\x12\x20\n\x0bPKIDBDGPILO\x18\x0e\x20\x01(\r\
-    R\x0bPKIDBDGPILO\x12\x20\n\x0bCFKPAICDJPJ\x18\x04\x20\x03(\rR\x0bCFKPAIC\
-    DJPJ\x12\x20\n\x0bOAFAAEEMNFB\x18\x0c\x20\x01(\rR\x0bOAFAAEEMNFB\x12\x1b\
-    \n\tcur_index\x18\x0b\x20\x01(\rR\x08curIndex\x12.\n\x0bKBGDCEHIFFJ\x18\
-    \x0f\x20\x03(\x0b2\x0c.MAONNNELGCCR\x0bKBGDCEHIFFJb\x06proto3\
+    o\"\xed\x01\n\x0bLHLEEHCBMOL\x12.\n\x0bMBLFIGHLJOO\x18\x02\x20\x03(\x0b2\
+    \x0c.MAONNNELGCCR\x0bMBLFIGHLJOO\x12\x20\n\x0bEBLOHLFKGGA\x18\x05\x20\
+    \x01(\rR\x0bEBLOHLFKGGA\x12\x20\n\x0bEMENAKLKDEM\x18\x07\x20\x01(\rR\x0b\
+    EMENAKLKDEM\x12\x1b\n\tcur_index\x18\r\x20\x01(\rR\x08curIndex\x12+\n\ns\
+    kill_list\x18\x0e\x20\x03(\x0b2\x0c.GOCKBLNJIBGR\tskillList\x12\x20\n\
+    \x0bPPJEDHNNOKM\x18\x0f\x20\x03(\rR\x0bPPJEDHNNOKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

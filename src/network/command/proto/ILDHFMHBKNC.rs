@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ILDHFMHBKNC {
     // message fields
-    // @@protoc_insertion_point(field:ILDHFMHBKNC.INFHIKBLJLA)
-    pub INFHIKBLJLA: u64,
-    // @@protoc_insertion_point(field:ILDHFMHBKNC.NBDLPGBIDLC)
-    pub NBDLPGBIDLC: u32,
-    // @@protoc_insertion_point(field:ILDHFMHBKNC.AHBEMDLGGEO)
-    pub AHBEMDLGGEO: u32,
+    // @@protoc_insertion_point(field:ILDHFMHBKNC.GNCKJOBCNFE)
+    pub GNCKJOBCNFE: u64,
+    // @@protoc_insertion_point(field:ILDHFMHBKNC.MEILIIFGDNE)
+    pub MEILIIFGDNE: u32,
+    // @@protoc_insertion_point(field:ILDHFMHBKNC.OFDIFNNEMOO)
+    pub OFDIFNNEMOO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ILDHFMHBKNC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ILDHFMHBKNC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INFHIKBLJLA",
-            |m: &ILDHFMHBKNC| { &m.INFHIKBLJLA },
-            |m: &mut ILDHFMHBKNC| { &mut m.INFHIKBLJLA },
+            "GNCKJOBCNFE",
+            |m: &ILDHFMHBKNC| { &m.GNCKJOBCNFE },
+            |m: &mut ILDHFMHBKNC| { &mut m.GNCKJOBCNFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBDLPGBIDLC",
-            |m: &ILDHFMHBKNC| { &m.NBDLPGBIDLC },
-            |m: &mut ILDHFMHBKNC| { &mut m.NBDLPGBIDLC },
+            "MEILIIFGDNE",
+            |m: &ILDHFMHBKNC| { &m.MEILIIFGDNE },
+            |m: &mut ILDHFMHBKNC| { &mut m.MEILIIFGDNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHBEMDLGGEO",
-            |m: &ILDHFMHBKNC| { &m.AHBEMDLGGEO },
-            |m: &mut ILDHFMHBKNC| { &mut m.AHBEMDLGGEO },
+            "OFDIFNNEMOO",
+            |m: &ILDHFMHBKNC| { &m.OFDIFNNEMOO },
+            |m: &mut ILDHFMHBKNC| { &mut m.OFDIFNNEMOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ILDHFMHBKNC>(
             "ILDHFMHBKNC",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for ILDHFMHBKNC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.INFHIKBLJLA = is.read_uint64()?;
+                    self.GNCKJOBCNFE = is.read_uint64()?;
                 },
                 16 => {
-                    self.NBDLPGBIDLC = is.read_uint32()?;
+                    self.MEILIIFGDNE = is.read_uint32()?;
                 },
                 24 => {
-                    self.AHBEMDLGGEO = is.read_uint32()?;
+                    self.OFDIFNNEMOO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ILDHFMHBKNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INFHIKBLJLA != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.INFHIKBLJLA);
+        if self.GNCKJOBCNFE != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.GNCKJOBCNFE);
         }
-        if self.NBDLPGBIDLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NBDLPGBIDLC);
+        if self.MEILIIFGDNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MEILIIFGDNE);
         }
-        if self.AHBEMDLGGEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AHBEMDLGGEO);
+        if self.OFDIFNNEMOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OFDIFNNEMOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ILDHFMHBKNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INFHIKBLJLA != 0 {
-            os.write_uint64(1, self.INFHIKBLJLA)?;
+        if self.GNCKJOBCNFE != 0 {
+            os.write_uint64(1, self.GNCKJOBCNFE)?;
         }
-        if self.NBDLPGBIDLC != 0 {
-            os.write_uint32(2, self.NBDLPGBIDLC)?;
+        if self.MEILIIFGDNE != 0 {
+            os.write_uint32(2, self.MEILIIFGDNE)?;
         }
-        if self.AHBEMDLGGEO != 0 {
-            os.write_uint32(3, self.AHBEMDLGGEO)?;
+        if self.OFDIFNNEMOO != 0 {
+            os.write_uint32(3, self.OFDIFNNEMOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ILDHFMHBKNC {
     }
 
     fn clear(&mut self) {
-        self.INFHIKBLJLA = 0;
-        self.NBDLPGBIDLC = 0;
-        self.AHBEMDLGGEO = 0;
+        self.GNCKJOBCNFE = 0;
+        self.MEILIIFGDNE = 0;
+        self.OFDIFNNEMOO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ILDHFMHBKNC {
         static instance: ILDHFMHBKNC = ILDHFMHBKNC {
-            INFHIKBLJLA: 0,
-            NBDLPGBIDLC: 0,
-            AHBEMDLGGEO: 0,
+            GNCKJOBCNFE: 0,
+            MEILIIFGDNE: 0,
+            OFDIFNNEMOO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ILDHFMHBKNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ILDHFMHBKNC.proto\"s\n\x0bILDHFMHBKNC\x12\x20\n\x0bINFHIKBLJLA\x18\
-    \x01\x20\x01(\x04R\x0bINFHIKBLJLA\x12\x20\n\x0bNBDLPGBIDLC\x18\x02\x20\
-    \x01(\rR\x0bNBDLPGBIDLC\x12\x20\n\x0bAHBEMDLGGEO\x18\x03\x20\x01(\rR\x0b\
-    AHBEMDLGGEOb\x06proto3\
+    \n\x11ILDHFMHBKNC.proto\"s\n\x0bILDHFMHBKNC\x12\x20\n\x0bGNCKJOBCNFE\x18\
+    \x01\x20\x01(\x04R\x0bGNCKJOBCNFE\x12\x20\n\x0bMEILIIFGDNE\x18\x02\x20\
+    \x01(\rR\x0bMEILIIFGDNE\x12\x20\n\x0bOFDIFNNEMOO\x18\x03\x20\x01(\rR\x0b\
+    OFDIFNNEMOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

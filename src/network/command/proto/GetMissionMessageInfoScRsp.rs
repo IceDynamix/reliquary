@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionMessageInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.APOLDLGPKOP)
-    pub APOLDLGPKOP: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.MFJONLACNAI)
+    pub MFJONLACNAI: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetMissionMessageInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "APOLDLGPKOP",
-            |m: &GetMissionMessageInfoScRsp| { &m.APOLDLGPKOP },
-            |m: &mut GetMissionMessageInfoScRsp| { &mut m.APOLDLGPKOP },
+            "MFJONLACNAI",
+            |m: &GetMissionMessageInfoScRsp| { &m.MFJONLACNAI },
+            |m: &mut GetMissionMessageInfoScRsp| { &mut m.MFJONLACNAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -92,9 +92,9 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.APOLDLGPKOP.insert(key, value);
+                    self.MFJONLACNAI.insert(key, value);
                 },
-                56 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -109,14 +109,14 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.APOLDLGPKOP {
+        for (k, v) in &self.MFJONLACNAI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,17 +124,17 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.APOLDLGPKOP {
+        for (k, v) in &self.MFJONLACNAI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,7 +153,7 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.APOLDLGPKOP.clear();
+        self.MFJONLACNAI.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionMessageInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetMissionMessageInfoScRsp.proto\"\xc6\x01\n\x1aGetMissionMessageI\
-    nfoScRsp\x12N\n\x0bAPOLDLGPKOP\x18\n\x20\x03(\x0b2,.GetMissionMessageInf\
-    oScRsp.APOLDLGPKOPEntryR\x0bAPOLDLGPKOP\x12\x18\n\x07retcode\x18\x07\x20\
-    \x01(\rR\x07retcode\x1a>\n\x10APOLDLGPKOPEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    nfoScRsp\x12N\n\x0bMFJONLACNAI\x18\x03\x20\x03(\x0b2,.GetMissionMessageI\
+    nfoScRsp.MFJONLACNAIEntryR\x0bMFJONLACNAI\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x1a>\n\x10MFJONLACNAIEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct COIEIHNKCDK {
     // message fields
     // @@protoc_insertion_point(field:COIEIHNKCDK.source)
     pub source: ::protobuf::MessageField<super::EHFOGJKJMEF::EHFOGJKJMEF>,
-    // @@protoc_insertion_point(field:COIEIHNKCDK.DFGDJMPMBLF)
-    pub DFGDJMPMBLF: ::std::collections::HashMap<u32, f64>,
+    // @@protoc_insertion_point(field:COIEIHNKCDK.GDLMOBEPDGK)
+    pub GDLMOBEPDGK: ::std::collections::HashMap<u32, f64>,
     // special fields
     // @@protoc_insertion_point(special_field:COIEIHNKCDK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl COIEIHNKCDK {
             |m: &mut COIEIHNKCDK| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "DFGDJMPMBLF",
-            |m: &COIEIHNKCDK| { &m.DFGDJMPMBLF },
-            |m: &mut COIEIHNKCDK| { &mut m.DFGDJMPMBLF },
+            "GDLMOBEPDGK",
+            |m: &COIEIHNKCDK| { &m.GDLMOBEPDGK },
+            |m: &mut COIEIHNKCDK| { &mut m.GDLMOBEPDGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<COIEIHNKCDK>(
             "COIEIHNKCDK",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for COIEIHNKCDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                66 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -95,7 +95,7 @@ impl ::protobuf::Message for COIEIHNKCDK {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.DFGDJMPMBLF.insert(key, value);
+                    self.GDLMOBEPDGK.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,7 +113,7 @@ impl ::protobuf::Message for COIEIHNKCDK {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for (k, v) in &self.DFGDJMPMBLF {
+        for (k, v) in &self.GDLMOBEPDGK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 8;
@@ -126,13 +126,13 @@ impl ::protobuf::Message for COIEIHNKCDK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        for (k, v) in &self.DFGDJMPMBLF {
+        for (k, v) in &self.GDLMOBEPDGK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 8;
-            os.write_raw_varint32(66)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_double(2, *v)?;
@@ -155,7 +155,7 @@ impl ::protobuf::Message for COIEIHNKCDK {
 
     fn clear(&mut self) {
         self.source.clear();
-        self.DFGDJMPMBLF.clear();
+        self.GDLMOBEPDGK.clear();
         self.special_fields.clear();
     }
 
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for COIEIHNKCDK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11COIEIHNKCDK.proto\x1a\x11EHFOGJKJMEF.proto\"\xb4\x01\n\x0bCOIEIHNK\
-    CDK\x12$\n\x06source\x18\x0b\x20\x01(\x0b2\x0c.EHFOGJKJMEFR\x06source\
-    \x12?\n\x0bDFGDJMPMBLF\x18\x08\x20\x03(\x0b2\x1d.COIEIHNKCDK.DFGDJMPMBLF\
-    EntryR\x0bDFGDJMPMBLF\x1a>\n\x10DFGDJMPMBLFEntry\x12\x10\n\x03key\x18\
-    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x01R\x05valu\
-    e:\x028\x01b\x06proto3\
+    CDK\x12$\n\x06source\x18\x0c\x20\x01(\x0b2\x0c.EHFOGJKJMEFR\x06source\
+    \x12?\n\x0bGDLMOBEPDGK\x18\r\x20\x03(\x0b2\x1d.COIEIHNKCDK.GDLMOBEPDGKEn\
+    tryR\x0bGDLMOBEPDGK\x1a>\n\x10GDLMOBEPDGKEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x01R\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

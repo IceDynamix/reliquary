@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorkbenchComposeMiracleFunc {
     // message fields
-    // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.NFNICIPMJII)
-    pub NFNICIPMJII: ::std::collections::HashMap<u32, bool>,
+    // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.FMCGHFCMCEO)
+    pub FMCGHFCMCEO: ::std::collections::HashMap<u32, bool>,
+    // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.free_reforge_num)
+    pub free_reforge_num: u32,
     // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.int_reforge_num_value)
     pub int_reforge_num_value: i32,
     // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:WorkbenchComposeMiracleFunc.free_reforge_num)
-    pub free_reforge_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WorkbenchComposeMiracleFunc.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,14 @@ impl WorkbenchComposeMiracleFunc {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NFNICIPMJII",
-            |m: &WorkbenchComposeMiracleFunc| { &m.NFNICIPMJII },
-            |m: &mut WorkbenchComposeMiracleFunc| { &mut m.NFNICIPMJII },
+            "FMCGHFCMCEO",
+            |m: &WorkbenchComposeMiracleFunc| { &m.FMCGHFCMCEO },
+            |m: &mut WorkbenchComposeMiracleFunc| { &mut m.FMCGHFCMCEO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "free_reforge_num",
+            |m: &WorkbenchComposeMiracleFunc| { &m.free_reforge_num },
+            |m: &mut WorkbenchComposeMiracleFunc| { &mut m.free_reforge_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "int_reforge_num_value",
@@ -69,11 +74,6 @@ impl WorkbenchComposeMiracleFunc {
             "cost_data",
             |m: &WorkbenchComposeMiracleFunc| { &m.cost_data },
             |m: &mut WorkbenchComposeMiracleFunc| { &mut m.cost_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "free_reforge_num",
-            |m: &WorkbenchComposeMiracleFunc| { &m.free_reforge_num },
-            |m: &mut WorkbenchComposeMiracleFunc| { &mut m.free_reforge_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorkbenchComposeMiracleFunc>(
             "WorkbenchComposeMiracleFunc",
@@ -106,16 +106,16 @@ impl ::protobuf::Message for WorkbenchComposeMiracleFunc {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.NFNICIPMJII.insert(key, value);
+                    self.FMCGHFCMCEO.insert(key, value);
                 },
-                40 => {
+                48 => {
+                    self.free_reforge_num = is.read_uint32()?;
+                },
+                80 => {
                     self.int_reforge_num_value = is.read_int32()?;
                 },
-                50 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
-                },
-                56 => {
-                    self.free_reforge_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,21 +129,21 @@ impl ::protobuf::Message for WorkbenchComposeMiracleFunc {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.NFNICIPMJII {
+        for (k, v) in &self.FMCGHFCMCEO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.free_reforge_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.free_reforge_num);
+        }
         if self.int_reforge_num_value != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.int_reforge_num_value);
+            my_size += ::protobuf::rt::int32_size(10, self.int_reforge_num_value);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.free_reforge_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.free_reforge_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,7 +151,7 @@ impl ::protobuf::Message for WorkbenchComposeMiracleFunc {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.NFNICIPMJII {
+        for (k, v) in &self.FMCGHFCMCEO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
@@ -160,14 +160,14 @@ impl ::protobuf::Message for WorkbenchComposeMiracleFunc {
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
+        if self.free_reforge_num != 0 {
+            os.write_uint32(6, self.free_reforge_num)?;
+        }
         if self.int_reforge_num_value != 0 {
-            os.write_int32(5, self.int_reforge_num_value)?;
+            os.write_int32(10, self.int_reforge_num_value)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.free_reforge_num != 0 {
-            os.write_uint32(7, self.free_reforge_num)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::Message for WorkbenchComposeMiracleFunc {
     }
 
     fn clear(&mut self) {
-        self.NFNICIPMJII.clear();
+        self.FMCGHFCMCEO.clear();
+        self.free_reforge_num = 0;
         self.int_reforge_num_value = 0;
         self.cost_data.clear();
-        self.free_reforge_num = 0;
         self.special_fields.clear();
     }
 
@@ -218,13 +218,13 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchComposeMiracleFunc {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!WorkbenchComposeMiracleFunc.proto\x1a\x12ItemCostData.proto\"\xb7\x02\
-    \n\x1bWorkbenchComposeMiracleFunc\x12O\n\x0bNFNICIPMJII\x18\x04\x20\x03(\
-    \x0b2-.WorkbenchComposeMiracleFunc.NFNICIPMJIIEntryR\x0bNFNICIPMJII\x121\
-    \n\x15int_reforge_num_value\x18\x05\x20\x01(\x05R\x12intReforgeNumValue\
-    \x12*\n\tcost_data\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    (\n\x10free_reforge_num\x18\x07\x20\x01(\rR\x0efreeReforgeNum\x1a>\n\x10\
-    NFNICIPMJIIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
+    \n\x1bWorkbenchComposeMiracleFunc\x12O\n\x0bFMCGHFCMCEO\x18\x04\x20\x03(\
+    \x0b2-.WorkbenchComposeMiracleFunc.FMCGHFCMCEOEntryR\x0bFMCGHFCMCEO\x12(\
+    \n\x10free_reforge_num\x18\x06\x20\x01(\rR\x0efreeReforgeNum\x121\n\x15i\
+    nt_reforge_num_value\x18\n\x20\x01(\x05R\x12intReforgeNumValue\x12*\n\tc\
+    ost_data\x18\r\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x1a>\n\x10FMCGH\
+    FCMCEOEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05val\
+    ue\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

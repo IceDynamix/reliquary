@@ -32,8 +32,8 @@ pub struct RogueTournRenameArchiveScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournRenameArchiveScRsp.name)
     pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueTournRenameArchiveScRsp.max_times)
-    pub max_times: u32,
+    // @@protoc_insertion_point(field:RogueTournRenameArchiveScRsp.slot_index)
+    pub slot_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournRenameArchiveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl RogueTournRenameArchiveScRsp {
             |m: &mut RogueTournRenameArchiveScRsp| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_times",
-            |m: &RogueTournRenameArchiveScRsp| { &m.max_times },
-            |m: &mut RogueTournRenameArchiveScRsp| { &mut m.max_times },
+            "slot_index",
+            |m: &RogueTournRenameArchiveScRsp| { &m.slot_index },
+            |m: &mut RogueTournRenameArchiveScRsp| { &mut m.slot_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournRenameArchiveScRsp>(
             "RogueTournRenameArchiveScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                50 => {
                     self.name = is.read_string()?;
                 },
-                32 => {
-                    self.max_times = is.read_uint32()?;
+                64 => {
+                    self.slot_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.name);
+            my_size += ::protobuf::rt::string_size(6, &self.name);
         }
-        if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.max_times);
+        if self.slot_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.slot_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if !self.name.is_empty() {
-            os.write_string(12, &self.name)?;
+            os.write_string(6, &self.name)?;
         }
-        if self.max_times != 0 {
-            os.write_uint32(4, self.max_times)?;
+        if self.slot_index != 0 {
+            os.write_uint32(8, self.slot_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.name.clear();
-        self.max_times = 0;
+        self.slot_index = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for RogueTournRenameArchiveScRsp {
         static instance: RogueTournRenameArchiveScRsp = RogueTournRenameArchiveScRsp {
             retcode: 0,
             name: ::std::string::String::new(),
-            max_times: 0,
+            slot_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournRenameArchiveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"RogueTournRenameArchiveScRsp.proto\"i\n\x1cRogueTournRenameArchiveSc\
-    Rsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x12\n\x04nam\
-    e\x18\x0c\x20\x01(\tR\x04name\x12\x1b\n\tmax_times\x18\x04\x20\x01(\rR\
-    \x08maxTimesb\x06proto3\
+    \n\"RogueTournRenameArchiveScRsp.proto\"k\n\x1cRogueTournRenameArchiveSc\
+    Rsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x12\n\x04nam\
+    e\x18\x06\x20\x01(\tR\x04name\x12\x1d\n\nslot_index\x18\x08\x20\x01(\rR\
+    \tslotIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

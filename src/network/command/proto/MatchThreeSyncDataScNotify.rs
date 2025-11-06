@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeSyncDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeSyncDataScNotify.MFKJDOEBLIM)
-    pub MFKJDOEBLIM: ::protobuf::MessageField<super::ABGEJNBCDJK::ABGEJNBCDJK>,
+    // @@protoc_insertion_point(field:MatchThreeSyncDataScNotify.EIHADIDCDCK)
+    pub EIHADIDCDCK: ::protobuf::MessageField<super::ABGEJNBCDJK::ABGEJNBCDJK>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeSyncDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MatchThreeSyncDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABGEJNBCDJK::ABGEJNBCDJK>(
-            "MFKJDOEBLIM",
-            |m: &MatchThreeSyncDataScNotify| { &m.MFKJDOEBLIM },
-            |m: &mut MatchThreeSyncDataScNotify| { &mut m.MFKJDOEBLIM },
+            "EIHADIDCDCK",
+            |m: &MatchThreeSyncDataScNotify| { &m.EIHADIDCDCK },
+            |m: &mut MatchThreeSyncDataScNotify| { &mut m.EIHADIDCDCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeSyncDataScNotify>(
             "MatchThreeSyncDataScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFKJDOEBLIM)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIHADIDCDCK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MFKJDOEBLIM.as_ref() {
+        if let Some(v) = self.EIHADIDCDCK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MFKJDOEBLIM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.EIHADIDCDCK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.MFKJDOEBLIM.clear();
+        self.EIHADIDCDCK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeSyncDataScNotify {
         static instance: MatchThreeSyncDataScNotify = MatchThreeSyncDataScNotify {
-            MFKJDOEBLIM: ::protobuf::MessageField::none(),
+            EIHADIDCDCK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeSyncDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MatchThreeSyncDataScNotify.proto\x1a\x11ABGEJNBCDJK.proto\"L\n\x1a\
-    MatchThreeSyncDataScNotify\x12.\n\x0bMFKJDOEBLIM\x18\r\x20\x01(\x0b2\x0c\
-    .ABGEJNBCDJKR\x0bMFKJDOEBLIMb\x06proto3\
+    MatchThreeSyncDataScNotify\x12.\n\x0bEIHADIDCDCK\x18\x07\x20\x01(\x0b2\
+    \x0c.ABGEJNBCDJKR\x0bEIHADIDCDCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AIDOADPOOFG {
     // message fields
-    // @@protoc_insertion_point(field:AIDOADPOOFG.LIPJDJPMOKB)
-    pub LIPJDJPMOKB: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
+    // @@protoc_insertion_point(field:AIDOADPOOFG.DDDJPDDBFIP)
+    pub DDDJPDDBFIP: ::std::vec::Vec<super::CBBDIOMIFHD::CBBDIOMIFHD>,
+    // @@protoc_insertion_point(field:AIDOADPOOFG.KIBGJHMFADD)
+    pub KIBGJHMFADD: ::protobuf::MessageField<super::LKIBPCLPFEB::LKIBPCLPFEB>,
     // special fields
     // @@protoc_insertion_point(special_field:AIDOADPOOFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl AIDOADPOOFG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LIPJDJPMOKB",
-            |m: &AIDOADPOOFG| { &m.LIPJDJPMOKB },
-            |m: &mut AIDOADPOOFG| { &mut m.LIPJDJPMOKB },
+            "DDDJPDDBFIP",
+            |m: &AIDOADPOOFG| { &m.DDDJPDDBFIP },
+            |m: &mut AIDOADPOOFG| { &mut m.DDDJPDDBFIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LKIBPCLPFEB::LKIBPCLPFEB>(
+            "KIBGJHMFADD",
+            |m: &AIDOADPOOFG| { &m.KIBGJHMFADD },
+            |m: &mut AIDOADPOOFG| { &mut m.KIBGJHMFADD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AIDOADPOOFG>(
             "AIDOADPOOFG",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for AIDOADPOOFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.LIPJDJPMOKB.push(is.read_message()?);
+                66 => {
+                    self.DDDJPDDBFIP.push(is.read_message()?);
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIBGJHMFADD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,19 +97,26 @@ impl ::protobuf::Message for AIDOADPOOFG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LIPJDJPMOKB {
+        for value in &self.DDDJPDDBFIP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.KIBGJHMFADD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LIPJDJPMOKB {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.DDDJPDDBFIP {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if let Some(v) = self.KIBGJHMFADD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -117,13 +134,15 @@ impl ::protobuf::Message for AIDOADPOOFG {
     }
 
     fn clear(&mut self) {
-        self.LIPJDJPMOKB.clear();
+        self.DDDJPDDBFIP.clear();
+        self.KIBGJHMFADD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIDOADPOOFG {
         static instance: AIDOADPOOFG = AIDOADPOOFG {
-            LIPJDJPMOKB: ::std::vec::Vec::new(),
+            DDDJPDDBFIP: ::std::vec::Vec::new(),
+            KIBGJHMFADD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for AIDOADPOOFG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIDOADPOOFG.proto\x1a\x11CBBDIOMIFHD.proto\"=\n\x0bAIDOADPOOFG\x12\
-    .\n\x0bLIPJDJPMOKB\x18\x04\x20\x03(\x0b2\x0c.CBBDIOMIFHDR\x0bLIPJDJPMOKB\
-    b\x06proto3\
+    \n\x11AIDOADPOOFG.proto\x1a\x11CBBDIOMIFHD.proto\x1a\x11LKIBPCLPFEB.prot\
+    o\"m\n\x0bAIDOADPOOFG\x12.\n\x0bDDDJPDDBFIP\x18\x08\x20\x03(\x0b2\x0c.CB\
+    BDIOMIFHDR\x0bDDDJPDDBFIP\x12.\n\x0bKIBGJHMFADD\x18\x0c\x20\x01(\x0b2\
+    \x0c.LKIBPCLPFEBR\x0bKIBGJHMFADDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,8 +187,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::CBBDIOMIFHD::file_descriptor().clone());
+            deps.push(super::LKIBPCLPFEB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AIDOADPOOFG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

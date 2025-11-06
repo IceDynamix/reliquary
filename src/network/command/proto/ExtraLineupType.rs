@@ -63,6 +63,8 @@ pub enum ExtraLineupType {
     LINEUP_MAGIC_ROGUE = 17,
     // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_FATE)
     LINEUP_FATE = 18,
+    // @@protoc_insertion_point(enum_value:ExtraLineupType.LINEUP_GRID_FIGHT)
+    LINEUP_GRID_FIGHT = 19,
 }
 
 impl ::protobuf::Enum for ExtraLineupType {
@@ -92,6 +94,7 @@ impl ::protobuf::Enum for ExtraLineupType {
             16 => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
             17 => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
             18 => ::std::option::Option::Some(ExtraLineupType::LINEUP_FATE),
+            19 => ::std::option::Option::Some(ExtraLineupType::LINEUP_GRID_FIGHT),
             _ => ::std::option::Option::None
         }
     }
@@ -116,6 +119,7 @@ impl ::protobuf::Enum for ExtraLineupType {
             "LINEUP_ARCADE_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_ARCADE_ROGUE),
             "LINEUP_MAGIC_ROGUE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_MAGIC_ROGUE),
             "LINEUP_FATE" => ::std::option::Option::Some(ExtraLineupType::LINEUP_FATE),
+            "LINEUP_GRID_FIGHT" => ::std::option::Option::Some(ExtraLineupType::LINEUP_GRID_FIGHT),
             _ => ::std::option::Option::None
         }
     }
@@ -139,6 +143,7 @@ impl ::protobuf::Enum for ExtraLineupType {
         ExtraLineupType::LINEUP_ARCADE_ROGUE,
         ExtraLineupType::LINEUP_MAGIC_ROGUE,
         ExtraLineupType::LINEUP_FATE,
+        ExtraLineupType::LINEUP_GRID_FIGHT,
     ];
 }
 
@@ -168,6 +173,7 @@ impl ::protobuf::EnumFull for ExtraLineupType {
             ExtraLineupType::LINEUP_ARCADE_ROGUE => 15,
             ExtraLineupType::LINEUP_MAGIC_ROGUE => 16,
             ExtraLineupType::LINEUP_FATE => 17,
+            ExtraLineupType::LINEUP_GRID_FIGHT => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -186,7 +192,7 @@ impl ExtraLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ExtraLineupType.proto*\xaf\x03\n\x0fExtraLineupType\x12\x0f\n\x0bL\
+    \n\x15ExtraLineupType.proto*\xc6\x03\n\x0fExtraLineupType\x12\x0f\n\x0bL\
     INEUP_NONE\x10\0\x12\x14\n\x10LINEUP_CHALLENGE\x10\x01\x12\x10\n\x0cLINE\
     UP_ROGUE\x10\x02\x12\x16\n\x12LINEUP_CHALLENGE_2\x10\x03\x12\x16\n\x12LI\
     NEUP_CHALLENGE_3\x10\x04\x12\x1a\n\x16LINEUP_ROGUE_CHALLENGE\x10\x05\x12\
@@ -196,7 +202,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     _CHESS_ROGUE\x10\x0c\x12\x13\n\x0fLINEUP_HELIOBUS\x10\r\x12\x16\n\x12LIN\
     EUP_TOURN_ROGUE\x10\x0e\x12\x16\n\x12LINEUP_RELIC_ROGUE\x10\x0f\x12\x17\
     \n\x13LINEUP_ARCADE_ROGUE\x10\x10\x12\x16\n\x12LINEUP_MAGIC_ROGUE\x10\
-    \x11\x12\x0f\n\x0bLINEUP_FATE\x10\x12b\x06proto3\
+    \x11\x12\x0f\n\x0bLINEUP_FATE\x10\x12\x12\x15\n\x11LINEUP_GRID_FIGHT\x10\
+    \x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

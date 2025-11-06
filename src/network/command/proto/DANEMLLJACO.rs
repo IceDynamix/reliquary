@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DANEMLLJACO {
     // message fields
-    // @@protoc_insertion_point(field:DANEMLLJACO.LECDHDDCEIA)
-    pub LECDHDDCEIA: bool,
-    // @@protoc_insertion_point(field:DANEMLLJACO.BCOLEEDGCPK)
-    pub BCOLEEDGCPK: u32,
+    // @@protoc_insertion_point(field:DANEMLLJACO.OLDGGCOOLIH)
+    pub OLDGGCOOLIH: bool,
+    // @@protoc_insertion_point(field:DANEMLLJACO.NNBOMDIMIAF)
+    pub NNBOMDIMIAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DANEMLLJACO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DANEMLLJACO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LECDHDDCEIA",
-            |m: &DANEMLLJACO| { &m.LECDHDDCEIA },
-            |m: &mut DANEMLLJACO| { &mut m.LECDHDDCEIA },
+            "OLDGGCOOLIH",
+            |m: &DANEMLLJACO| { &m.OLDGGCOOLIH },
+            |m: &mut DANEMLLJACO| { &mut m.OLDGGCOOLIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCOLEEDGCPK",
-            |m: &DANEMLLJACO| { &m.BCOLEEDGCPK },
-            |m: &mut DANEMLLJACO| { &mut m.BCOLEEDGCPK },
+            "NNBOMDIMIAF",
+            |m: &DANEMLLJACO| { &m.NNBOMDIMIAF },
+            |m: &mut DANEMLLJACO| { &mut m.NNBOMDIMIAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DANEMLLJACO>(
             "DANEMLLJACO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DANEMLLJACO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.LECDHDDCEIA = is.read_bool()?;
+                80 => {
+                    self.OLDGGCOOLIH = is.read_bool()?;
                 },
-                104 => {
-                    self.BCOLEEDGCPK = is.read_uint32()?;
+                96 => {
+                    self.NNBOMDIMIAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DANEMLLJACO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LECDHDDCEIA != false {
+        if self.OLDGGCOOLIH != false {
             my_size += 1 + 1;
         }
-        if self.BCOLEEDGCPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BCOLEEDGCPK);
+        if self.NNBOMDIMIAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NNBOMDIMIAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DANEMLLJACO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LECDHDDCEIA != false {
-            os.write_bool(4, self.LECDHDDCEIA)?;
+        if self.OLDGGCOOLIH != false {
+            os.write_bool(10, self.OLDGGCOOLIH)?;
         }
-        if self.BCOLEEDGCPK != 0 {
-            os.write_uint32(13, self.BCOLEEDGCPK)?;
+        if self.NNBOMDIMIAF != 0 {
+            os.write_uint32(12, self.NNBOMDIMIAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DANEMLLJACO {
     }
 
     fn clear(&mut self) {
-        self.LECDHDDCEIA = false;
-        self.BCOLEEDGCPK = 0;
+        self.OLDGGCOOLIH = false;
+        self.NNBOMDIMIAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DANEMLLJACO {
         static instance: DANEMLLJACO = DANEMLLJACO {
-            LECDHDDCEIA: false,
-            BCOLEEDGCPK: 0,
+            OLDGGCOOLIH: false,
+            NNBOMDIMIAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DANEMLLJACO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DANEMLLJACO.proto\"Q\n\x0bDANEMLLJACO\x12\x20\n\x0bLECDHDDCEIA\x18\
-    \x04\x20\x01(\x08R\x0bLECDHDDCEIA\x12\x20\n\x0bBCOLEEDGCPK\x18\r\x20\x01\
-    (\rR\x0bBCOLEEDGCPKb\x06proto3\
+    \n\x11DANEMLLJACO.proto\"Q\n\x0bDANEMLLJACO\x12\x20\n\x0bOLDGGCOOLIH\x18\
+    \n\x20\x01(\x08R\x0bOLDGGCOOLIH\x12\x20\n\x0bNNBOMDIMIAF\x18\x0c\x20\x01\
+    (\rR\x0bNNBOMDIMIAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

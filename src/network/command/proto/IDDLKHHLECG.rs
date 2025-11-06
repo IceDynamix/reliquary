@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IDDLKHHLECG {
     // message fields
-    // @@protoc_insertion_point(field:IDDLKHHLECG.NOIIAOIDGEO)
-    pub NOIIAOIDGEO: ::protobuf::EnumOrUnknown<super::LobbyCharacterType::LobbyCharacterType>,
+    // @@protoc_insertion_point(field:IDDLKHHLECG.HBDBIFCBMID)
+    pub HBDBIFCBMID: ::protobuf::EnumOrUnknown<super::LobbyCharacter::LobbyCharacter>,
     // @@protoc_insertion_point(field:IDDLKHHLECG.status)
     pub status: ::protobuf::EnumOrUnknown<super::LobbyCharacterStatus::LobbyCharacterStatus>,
     // special fields
@@ -52,9 +52,9 @@ impl IDDLKHHLECG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOIIAOIDGEO",
-            |m: &IDDLKHHLECG| { &m.NOIIAOIDGEO },
-            |m: &mut IDDLKHHLECG| { &mut m.NOIIAOIDGEO },
+            "HBDBIFCBMID",
+            |m: &IDDLKHHLECG| { &m.HBDBIFCBMID },
+            |m: &mut IDDLKHHLECG| { &mut m.HBDBIFCBMID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for IDDLKHHLECG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.NOIIAOIDGEO = is.read_enum_or_unknown()?;
+                    self.HBDBIFCBMID = is.read_enum_or_unknown()?;
                 },
                 16 => {
                     self.status = is.read_enum_or_unknown()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for IDDLKHHLECG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOIIAOIDGEO != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterType::LobbyCharacterType::LobbyCharacter_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.NOIIAOIDGEO.value());
+        if self.HBDBIFCBMID != ::protobuf::EnumOrUnknown::new(super::LobbyCharacter::LobbyCharacter::LobbyCharacter_None) {
+            my_size += ::protobuf::rt::int32_size(1, self.HBDBIFCBMID.value());
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None) {
             my_size += ::protobuf::rt::int32_size(2, self.status.value());
@@ -109,8 +109,8 @@ impl ::protobuf::Message for IDDLKHHLECG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOIIAOIDGEO != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterType::LobbyCharacterType::LobbyCharacter_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NOIIAOIDGEO))?;
+        if self.HBDBIFCBMID != ::protobuf::EnumOrUnknown::new(super::LobbyCharacter::LobbyCharacter::LobbyCharacter_None) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.HBDBIFCBMID))?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for IDDLKHHLECG {
     }
 
     fn clear(&mut self) {
-        self.NOIIAOIDGEO = ::protobuf::EnumOrUnknown::new(super::LobbyCharacterType::LobbyCharacterType::LobbyCharacter_None);
+        self.HBDBIFCBMID = ::protobuf::EnumOrUnknown::new(super::LobbyCharacter::LobbyCharacter::LobbyCharacter_None);
         self.status = ::protobuf::EnumOrUnknown::new(super::LobbyCharacterStatus::LobbyCharacterStatus::LobbyCharacterStatus_None);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IDDLKHHLECG {
         static instance: IDDLKHHLECG = IDDLKHHLECG {
-            NOIIAOIDGEO: ::protobuf::EnumOrUnknown::from_i32(0),
+            HBDBIFCBMID: ::protobuf::EnumOrUnknown::from_i32(0),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for IDDLKHHLECG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IDDLKHHLECG.proto\x1a\x1aLobbyCharacterStatus.proto\x1a\x18LobbyCh\
-    aracterType.proto\"s\n\x0bIDDLKHHLECG\x125\n\x0bNOIIAOIDGEO\x18\x01\x20\
-    \x01(\x0e2\x13.LobbyCharacterTypeR\x0bNOIIAOIDGEO\x12-\n\x06status\x18\
-    \x02\x20\x01(\x0e2\x15.LobbyCharacterStatusR\x06statusb\x06proto3\
+    \n\x11IDDLKHHLECG.proto\x1a\x14LobbyCharacter.proto\x1a\x1aLobbyCharacte\
+    rStatus.proto\"o\n\x0bIDDLKHHLECG\x121\n\x0bHBDBIFCBMID\x18\x01\x20\x01(\
+    \x0e2\x0f.LobbyCharacterR\x0bHBDBIFCBMID\x12-\n\x06status\x18\x02\x20\
+    \x01(\x0e2\x15.LobbyCharacterStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,8 +186,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::LobbyCharacter::file_descriptor().clone());
             deps.push(super::LobbyCharacterStatus::file_descriptor().clone());
-            deps.push(super::LobbyCharacterType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IDDLKHHLECG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

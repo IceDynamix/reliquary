@@ -30,8 +30,6 @@ pub struct ActivityRaidPlacingGameScRsp {
     // message fields
     // @@protoc_insertion_point(field:ActivityRaidPlacingGameScRsp.retcode)
     pub retcode: u32,
-    // message oneof groups
-    pub GCOIIOPKJPF: ::std::option::Option<activity_raid_placing_game_sc_rsp::GCOIIOPKJPF>,
     // special fields
     // @@protoc_insertion_point(special_field:ActivityRaidPlacingGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,77 +46,14 @@ impl ActivityRaidPlacingGameScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 CJEMMDPICLJ = 11;
-
-    pub fn CJEMMDPICLJ(&self) -> u32 {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_CJEMMDPICLJ(&mut self) {
-        self.GCOIIOPKJPF = ::std::option::Option::None;
-    }
-
-    pub fn has_CJEMMDPICLJ(&self) -> bool {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CJEMMDPICLJ(&mut self, v: u32) {
-        self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(v))
-    }
-
-    // uint32 FJDABPPANDC = 8;
-
-    pub fn FJDABPPANDC(&self) -> u32 {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_FJDABPPANDC(&mut self) {
-        self.GCOIIOPKJPF = ::std::option::Option::None;
-    }
-
-    pub fn has_FJDABPPANDC(&self) -> bool {
-        match self.GCOIIOPKJPF {
-            ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FJDABPPANDC(&mut self, v: u32) {
-        self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(v))
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
-        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ActivityRaidPlacingGameScRsp| { &m.retcode },
             |m: &mut ActivityRaidPlacingGameScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "CJEMMDPICLJ",
-            ActivityRaidPlacingGameScRsp::has_CJEMMDPICLJ,
-            ActivityRaidPlacingGameScRsp::CJEMMDPICLJ,
-            ActivityRaidPlacingGameScRsp::set_CJEMMDPICLJ,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FJDABPPANDC",
-            ActivityRaidPlacingGameScRsp::has_FJDABPPANDC,
-            ActivityRaidPlacingGameScRsp::FJDABPPANDC,
-            ActivityRaidPlacingGameScRsp::set_FJDABPPANDC,
-        ));
-        oneofs.push(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivityRaidPlacingGameScRsp>(
             "ActivityRaidPlacingGameScRsp",
             fields,
@@ -137,14 +72,8 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
-                    self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(is.read_uint32()?));
-                },
                 64 => {
-                    self.GCOIIOPKJPF = ::std::option::Option::Some(activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(is.read_uint32()?));
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,17 +88,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if let ::std::option::Option::Some(ref v) = self.GCOIIOPKJPF {
-            match v {
-                &activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
-                },
-                &activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
-                },
-            };
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -178,17 +97,7 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if let ::std::option::Option::Some(ref v) = self.GCOIIOPKJPF {
-            match v {
-                &activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::CJEMMDPICLJ(v) => {
-                    os.write_uint32(11, v)?;
-                },
-                &activity_raid_placing_game_sc_rsp::GCOIIOPKJPF::FJDABPPANDC(v) => {
-                    os.write_uint32(8, v)?;
-                },
-            };
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -208,15 +117,12 @@ impl ::protobuf::Message for ActivityRaidPlacingGameScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GCOIIOPKJPF = ::std::option::Option::None;
-        self.GCOIIOPKJPF = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivityRaidPlacingGameScRsp {
         static instance: ActivityRaidPlacingGameScRsp = ActivityRaidPlacingGameScRsp {
             retcode: 0,
-            GCOIIOPKJPF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,41 +146,9 @@ impl ::protobuf::reflect::ProtobufValue for ActivityRaidPlacingGameScRsp {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
-/// Nested message and enums of message `ActivityRaidPlacingGameScRsp`
-pub mod activity_raid_placing_game_sc_rsp {
-
-    #[derive(Clone,PartialEq,Debug)]
-    #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ActivityRaidPlacingGameScRsp.GCOIIOPKJPF)
-    pub enum GCOIIOPKJPF {
-        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.CJEMMDPICLJ)
-        CJEMMDPICLJ(u32),
-        // @@protoc_insertion_point(oneof_field:ActivityRaidPlacingGameScRsp.FJDABPPANDC)
-        FJDABPPANDC(u32),
-    }
-
-    impl ::protobuf::Oneof for GCOIIOPKJPF {
-    }
-
-    impl ::protobuf::OneofFull for GCOIIOPKJPF {
-        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
-            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ActivityRaidPlacingGameScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("GCOIIOPKJPF").unwrap()).clone()
-        }
-    }
-
-    impl GCOIIOPKJPF {
-        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GCOIIOPKJPF>("GCOIIOPKJPF")
-        }
-    }
-}
-
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ActivityRaidPlacingGameScRsp.proto\"\x8f\x01\n\x1cActivityRaidPlacin\
-    gGameScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\"\n\x0b\
-    CJEMMDPICLJ\x18\x0b\x20\x01(\rH\0R\x0bCJEMMDPICLJ\x12\"\n\x0bFJDABPPANDC\
-    \x18\x08\x20\x01(\rH\0R\x0bFJDABPPANDCB\r\n\x0bGCOIIOPKJPFb\x06proto3\
+    \n\"ActivityRaidPlacingGameScRsp.proto\"8\n\x1cActivityRaidPlacingGameSc\
+    Rsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

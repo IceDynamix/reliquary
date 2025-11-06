@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NCBIMLPODON {
     // message fields
-    // @@protoc_insertion_point(field:NCBIMLPODON.IAHOPFNPFLN)
-    pub IAHOPFNPFLN: bool,
+    // @@protoc_insertion_point(field:NCBIMLPODON.MIMGBOPBLMJ)
+    pub MIMGBOPBLMJ: bool,
     // @@protoc_insertion_point(field:NCBIMLPODON.black_list)
     pub black_list: ::protobuf::MessageField<super::MENPBGGOGMC::MENPBGGOGMC>,
     // special fields
@@ -52,9 +52,9 @@ impl NCBIMLPODON {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAHOPFNPFLN",
-            |m: &NCBIMLPODON| { &m.IAHOPFNPFLN },
-            |m: &mut NCBIMLPODON| { &mut m.IAHOPFNPFLN },
+            "MIMGBOPBLMJ",
+            |m: &NCBIMLPODON| { &m.MIMGBOPBLMJ },
+            |m: &mut NCBIMLPODON| { &mut m.MIMGBOPBLMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MENPBGGOGMC::MENPBGGOGMC>(
             "black_list",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for NCBIMLPODON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.IAHOPFNPFLN = is.read_bool()?;
+                24 => {
+                    self.MIMGBOPBLMJ = is.read_bool()?;
                 },
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_list)?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for NCBIMLPODON {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IAHOPFNPFLN != false {
+        if self.MIMGBOPBLMJ != false {
             my_size += 1 + 1;
         }
         if let Some(v) = self.black_list.as_ref() {
@@ -110,11 +110,11 @@ impl ::protobuf::Message for NCBIMLPODON {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IAHOPFNPFLN != false {
-            os.write_bool(14, self.IAHOPFNPFLN)?;
+        if self.MIMGBOPBLMJ != false {
+            os.write_bool(3, self.MIMGBOPBLMJ)?;
         }
         if let Some(v) = self.black_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for NCBIMLPODON {
     }
 
     fn clear(&mut self) {
-        self.IAHOPFNPFLN = false;
+        self.MIMGBOPBLMJ = false;
         self.black_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NCBIMLPODON {
         static instance: NCBIMLPODON = NCBIMLPODON {
-            IAHOPFNPFLN: false,
+            MIMGBOPBLMJ: false,
             black_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NCBIMLPODON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NCBIMLPODON.proto\x1a\x11MENPBGGOGMC.proto\"\\\n\x0bNCBIMLPODON\
-    \x12\x20\n\x0bIAHOPFNPFLN\x18\x0e\x20\x01(\x08R\x0bIAHOPFNPFLN\x12+\n\nb\
-    lack_list\x18\x02\x20\x01(\x0b2\x0c.MENPBGGOGMCR\tblackListb\x06proto3\
+    \x12\x20\n\x0bMIMGBOPBLMJ\x18\x03\x20\x01(\x08R\x0bMIMGBOPBLMJ\x12+\n\nb\
+    lack_list\x18\t\x20\x01(\x0b2\x0c.MENPBGGOGMCR\tblackListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GPNJMEHNDMN {
     // message fields
-    // @@protoc_insertion_point(field:GPNJMEHNDMN.FBJHGPDKBGM)
-    pub FBJHGPDKBGM: bool,
-    // @@protoc_insertion_point(field:GPNJMEHNDMN.JAPDCMJPIEJ)
-    pub JAPDCMJPIEJ: u32,
-    // @@protoc_insertion_point(field:GPNJMEHNDMN.HIPJHPJOLBE)
-    pub HIPJHPJOLBE: u32,
+    // @@protoc_insertion_point(field:GPNJMEHNDMN.BOIHPBFJNMM)
+    pub BOIHPBFJNMM: u32,
+    // @@protoc_insertion_point(field:GPNJMEHNDMN.BFMPIAMOKFG)
+    pub BFMPIAMOKFG: u32,
+    // @@protoc_insertion_point(field:GPNJMEHNDMN.IGNJHJDIIMN)
+    pub IGNJHJDIIMN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GPNJMEHNDMN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GPNJMEHNDMN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBJHGPDKBGM",
-            |m: &GPNJMEHNDMN| { &m.FBJHGPDKBGM },
-            |m: &mut GPNJMEHNDMN| { &mut m.FBJHGPDKBGM },
+            "BOIHPBFJNMM",
+            |m: &GPNJMEHNDMN| { &m.BOIHPBFJNMM },
+            |m: &mut GPNJMEHNDMN| { &mut m.BOIHPBFJNMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAPDCMJPIEJ",
-            |m: &GPNJMEHNDMN| { &m.JAPDCMJPIEJ },
-            |m: &mut GPNJMEHNDMN| { &mut m.JAPDCMJPIEJ },
+            "BFMPIAMOKFG",
+            |m: &GPNJMEHNDMN| { &m.BFMPIAMOKFG },
+            |m: &mut GPNJMEHNDMN| { &mut m.BFMPIAMOKFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIPJHPJOLBE",
-            |m: &GPNJMEHNDMN| { &m.HIPJHPJOLBE },
-            |m: &mut GPNJMEHNDMN| { &mut m.HIPJHPJOLBE },
+            "IGNJHJDIIMN",
+            |m: &GPNJMEHNDMN| { &m.IGNJHJDIIMN },
+            |m: &mut GPNJMEHNDMN| { &mut m.IGNJHJDIIMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GPNJMEHNDMN>(
             "GPNJMEHNDMN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FBJHGPDKBGM = is.read_bool()?;
-                },
-                72 => {
-                    self.JAPDCMJPIEJ = is.read_uint32()?;
-                },
                 48 => {
-                    self.HIPJHPJOLBE = is.read_uint32()?;
+                    self.BOIHPBFJNMM = is.read_uint32()?;
+                },
+                104 => {
+                    self.BFMPIAMOKFG = is.read_uint32()?;
+                },
+                112 => {
+                    self.IGNJHJDIIMN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FBJHGPDKBGM != false {
+        if self.BOIHPBFJNMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BOIHPBFJNMM);
+        }
+        if self.BFMPIAMOKFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BFMPIAMOKFG);
+        }
+        if self.IGNJHJDIIMN != false {
             my_size += 1 + 1;
-        }
-        if self.JAPDCMJPIEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JAPDCMJPIEJ);
-        }
-        if self.HIPJHPJOLBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HIPJHPJOLBE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FBJHGPDKBGM != false {
-            os.write_bool(4, self.FBJHGPDKBGM)?;
+        if self.BOIHPBFJNMM != 0 {
+            os.write_uint32(6, self.BOIHPBFJNMM)?;
         }
-        if self.JAPDCMJPIEJ != 0 {
-            os.write_uint32(9, self.JAPDCMJPIEJ)?;
+        if self.BFMPIAMOKFG != 0 {
+            os.write_uint32(13, self.BFMPIAMOKFG)?;
         }
-        if self.HIPJHPJOLBE != 0 {
-            os.write_uint32(6, self.HIPJHPJOLBE)?;
+        if self.IGNJHJDIIMN != false {
+            os.write_bool(14, self.IGNJHJDIIMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GPNJMEHNDMN {
     }
 
     fn clear(&mut self) {
-        self.FBJHGPDKBGM = false;
-        self.JAPDCMJPIEJ = 0;
-        self.HIPJHPJOLBE = 0;
+        self.BOIHPBFJNMM = 0;
+        self.BFMPIAMOKFG = 0;
+        self.IGNJHJDIIMN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GPNJMEHNDMN {
         static instance: GPNJMEHNDMN = GPNJMEHNDMN {
-            FBJHGPDKBGM: false,
-            JAPDCMJPIEJ: 0,
-            HIPJHPJOLBE: 0,
+            BOIHPBFJNMM: 0,
+            BFMPIAMOKFG: 0,
+            IGNJHJDIIMN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GPNJMEHNDMN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GPNJMEHNDMN.proto\"s\n\x0bGPNJMEHNDMN\x12\x20\n\x0bFBJHGPDKBGM\x18\
-    \x04\x20\x01(\x08R\x0bFBJHGPDKBGM\x12\x20\n\x0bJAPDCMJPIEJ\x18\t\x20\x01\
-    (\rR\x0bJAPDCMJPIEJ\x12\x20\n\x0bHIPJHPJOLBE\x18\x06\x20\x01(\rR\x0bHIPJ\
-    HPJOLBEb\x06proto3\
+    \n\x11GPNJMEHNDMN.proto\"s\n\x0bGPNJMEHNDMN\x12\x20\n\x0bBOIHPBFJNMM\x18\
+    \x06\x20\x01(\rR\x0bBOIHPBFJNMM\x12\x20\n\x0bBFMPIAMOKFG\x18\r\x20\x01(\
+    \rR\x0bBFMPIAMOKFG\x12\x20\n\x0bIGNJHJDIIMN\x18\x0e\x20\x01(\x08R\x0bIGN\
+    JHJDIIMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

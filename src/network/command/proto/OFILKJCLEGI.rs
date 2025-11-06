@@ -30,28 +30,28 @@ pub struct OFILKJCLEGI {
     // message fields
     // @@protoc_insertion_point(field:OFILKJCLEGI.monster_battle_type)
     pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.DBADLNFOPAO)
-    pub DBADLNFOPAO: u64,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.KLHPDAKBMHA)
+    pub KLHPDAKBMHA: u64,
     // @@protoc_insertion_point(field:OFILKJCLEGI.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.NLIBKABFGCC)
-    pub NLIBKABFGCC: u32,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.NLEAIJHAPAP)
-    pub NLEAIJHAPAP: bool,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.IGHLABGGIJE)
-    pub IGHLABGGIJE: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.JFBDCLJMCMF)
+    pub JFBDCLJMCMF: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.OBIHCCODMEG)
+    pub OBIHCCODMEG: bool,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.BMEKFOGNAAD)
+    pub BMEKFOGNAAD: u32,
     // @@protoc_insertion_point(field:OFILKJCLEGI.rank)
     pub rank: u32,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.EKLDPALNLDC)
-    pub EKLDPALNLDC: u64,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.JBLMGNPMADM)
-    pub JBLMGNPMADM: u32,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.CBOIIACBAKF)
-    pub CBOIIACBAKF: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.IOLLKNGGINN)
+    pub IOLLKNGGINN: u64,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.NEPGCJIIPOP)
+    pub NEPGCJIIPOP: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.EOEACJDJJEO)
+    pub EOEACJDJJEO: u32,
     // @@protoc_insertion_point(field:OFILKJCLEGI.buff_list)
     pub buff_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OFILKJCLEGI.DJNMHMPKKKB)
-    pub DJNMHMPKKKB: u32,
+    // @@protoc_insertion_point(field:OFILKJCLEGI.GJJBDKHJGBD)
+    pub GJJBDKHJGBD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OFILKJCLEGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -77,9 +77,9 @@ impl OFILKJCLEGI {
             |m: &mut OFILKJCLEGI| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBADLNFOPAO",
-            |m: &OFILKJCLEGI| { &m.DBADLNFOPAO },
-            |m: &mut OFILKJCLEGI| { &mut m.DBADLNFOPAO },
+            "KLHPDAKBMHA",
+            |m: &OFILKJCLEGI| { &m.KLHPDAKBMHA },
+            |m: &mut OFILKJCLEGI| { &mut m.KLHPDAKBMHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -87,19 +87,19 @@ impl OFILKJCLEGI {
             |m: &mut OFILKJCLEGI| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLIBKABFGCC",
-            |m: &OFILKJCLEGI| { &m.NLIBKABFGCC },
-            |m: &mut OFILKJCLEGI| { &mut m.NLIBKABFGCC },
+            "JFBDCLJMCMF",
+            |m: &OFILKJCLEGI| { &m.JFBDCLJMCMF },
+            |m: &mut OFILKJCLEGI| { &mut m.JFBDCLJMCMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLEAIJHAPAP",
-            |m: &OFILKJCLEGI| { &m.NLEAIJHAPAP },
-            |m: &mut OFILKJCLEGI| { &mut m.NLEAIJHAPAP },
+            "OBIHCCODMEG",
+            |m: &OFILKJCLEGI| { &m.OBIHCCODMEG },
+            |m: &mut OFILKJCLEGI| { &mut m.OBIHCCODMEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGHLABGGIJE",
-            |m: &OFILKJCLEGI| { &m.IGHLABGGIJE },
-            |m: &mut OFILKJCLEGI| { &mut m.IGHLABGGIJE },
+            "BMEKFOGNAAD",
+            |m: &OFILKJCLEGI| { &m.BMEKFOGNAAD },
+            |m: &mut OFILKJCLEGI| { &mut m.BMEKFOGNAAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -107,19 +107,19 @@ impl OFILKJCLEGI {
             |m: &mut OFILKJCLEGI| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKLDPALNLDC",
-            |m: &OFILKJCLEGI| { &m.EKLDPALNLDC },
-            |m: &mut OFILKJCLEGI| { &mut m.EKLDPALNLDC },
+            "IOLLKNGGINN",
+            |m: &OFILKJCLEGI| { &m.IOLLKNGGINN },
+            |m: &mut OFILKJCLEGI| { &mut m.IOLLKNGGINN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBLMGNPMADM",
-            |m: &OFILKJCLEGI| { &m.JBLMGNPMADM },
-            |m: &mut OFILKJCLEGI| { &mut m.JBLMGNPMADM },
+            "NEPGCJIIPOP",
+            |m: &OFILKJCLEGI| { &m.NEPGCJIIPOP },
+            |m: &mut OFILKJCLEGI| { &mut m.NEPGCJIIPOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBOIIACBAKF",
-            |m: &OFILKJCLEGI| { &m.CBOIIACBAKF },
-            |m: &mut OFILKJCLEGI| { &mut m.CBOIIACBAKF },
+            "EOEACJDJJEO",
+            |m: &OFILKJCLEGI| { &m.EOEACJDJJEO },
+            |m: &mut OFILKJCLEGI| { &mut m.EOEACJDJJEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
@@ -127,9 +127,9 @@ impl OFILKJCLEGI {
             |m: &mut OFILKJCLEGI| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJNMHMPKKKB",
-            |m: &OFILKJCLEGI| { &m.DJNMHMPKKKB },
-            |m: &mut OFILKJCLEGI| { &mut m.DJNMHMPKKKB },
+            "GJJBDKHJGBD",
+            |m: &OFILKJCLEGI| { &m.GJJBDKHJGBD },
+            |m: &mut OFILKJCLEGI| { &mut m.GJJBDKHJGBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OFILKJCLEGI>(
             "OFILKJCLEGI",
@@ -153,31 +153,31 @@ impl ::protobuf::Message for OFILKJCLEGI {
                     self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.DBADLNFOPAO = is.read_uint64()?;
+                    self.KLHPDAKBMHA = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.NLIBKABFGCC = is.read_uint32()?;
+                    self.JFBDCLJMCMF = is.read_uint32()?;
                 },
                 40 => {
-                    self.NLEAIJHAPAP = is.read_bool()?;
+                    self.OBIHCCODMEG = is.read_bool()?;
                 },
                 48 => {
-                    self.IGHLABGGIJE = is.read_uint32()?;
+                    self.BMEKFOGNAAD = is.read_uint32()?;
                 },
                 56 => {
                     self.rank = is.read_uint32()?;
                 },
                 64 => {
-                    self.EKLDPALNLDC = is.read_uint64()?;
+                    self.IOLLKNGGINN = is.read_uint64()?;
                 },
                 72 => {
-                    self.JBLMGNPMADM = is.read_uint32()?;
+                    self.NEPGCJIIPOP = is.read_uint32()?;
                 },
                 80 => {
-                    self.CBOIIACBAKF = is.read_uint32()?;
+                    self.EOEACJDJJEO = is.read_uint32()?;
                 },
                 90 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
@@ -186,7 +186,7 @@ impl ::protobuf::Message for OFILKJCLEGI {
                     self.buff_list.push(is.read_uint32()?);
                 },
                 96 => {
-                    self.DJNMHMPKKKB = is.read_uint32()?;
+                    self.GJJBDKHJGBD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -203,36 +203,36 @@ impl ::protobuf::Message for OFILKJCLEGI {
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.DBADLNFOPAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.DBADLNFOPAO);
+        if self.KLHPDAKBMHA != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.KLHPDAKBMHA);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
         }
-        if self.NLIBKABFGCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NLIBKABFGCC);
+        if self.JFBDCLJMCMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JFBDCLJMCMF);
         }
-        if self.NLEAIJHAPAP != false {
+        if self.OBIHCCODMEG != false {
             my_size += 1 + 1;
         }
-        if self.IGHLABGGIJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IGHLABGGIJE);
+        if self.BMEKFOGNAAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BMEKFOGNAAD);
         }
         if self.rank != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.rank);
         }
-        if self.EKLDPALNLDC != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.EKLDPALNLDC);
+        if self.IOLLKNGGINN != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.IOLLKNGGINN);
         }
-        if self.JBLMGNPMADM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JBLMGNPMADM);
+        if self.NEPGCJIIPOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NEPGCJIIPOP);
         }
-        if self.CBOIIACBAKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CBOIIACBAKF);
+        if self.EOEACJDJJEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EOEACJDJJEO);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.buff_list);
-        if self.DJNMHMPKKKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DJNMHMPKKKB);
+        if self.GJJBDKHJGBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GJJBDKHJGBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -243,36 +243,36 @@ impl ::protobuf::Message for OFILKJCLEGI {
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.DBADLNFOPAO != 0 {
-            os.write_uint64(2, self.DBADLNFOPAO)?;
+        if self.KLHPDAKBMHA != 0 {
+            os.write_uint64(2, self.KLHPDAKBMHA)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
         }
-        if self.NLIBKABFGCC != 0 {
-            os.write_uint32(4, self.NLIBKABFGCC)?;
+        if self.JFBDCLJMCMF != 0 {
+            os.write_uint32(4, self.JFBDCLJMCMF)?;
         }
-        if self.NLEAIJHAPAP != false {
-            os.write_bool(5, self.NLEAIJHAPAP)?;
+        if self.OBIHCCODMEG != false {
+            os.write_bool(5, self.OBIHCCODMEG)?;
         }
-        if self.IGHLABGGIJE != 0 {
-            os.write_uint32(6, self.IGHLABGGIJE)?;
+        if self.BMEKFOGNAAD != 0 {
+            os.write_uint32(6, self.BMEKFOGNAAD)?;
         }
         if self.rank != 0 {
             os.write_uint32(7, self.rank)?;
         }
-        if self.EKLDPALNLDC != 0 {
-            os.write_uint64(8, self.EKLDPALNLDC)?;
+        if self.IOLLKNGGINN != 0 {
+            os.write_uint64(8, self.IOLLKNGGINN)?;
         }
-        if self.JBLMGNPMADM != 0 {
-            os.write_uint32(9, self.JBLMGNPMADM)?;
+        if self.NEPGCJIIPOP != 0 {
+            os.write_uint32(9, self.NEPGCJIIPOP)?;
         }
-        if self.CBOIIACBAKF != 0 {
-            os.write_uint32(10, self.CBOIIACBAKF)?;
+        if self.EOEACJDJJEO != 0 {
+            os.write_uint32(10, self.EOEACJDJJEO)?;
         }
         os.write_repeated_packed_uint32(11, &self.buff_list)?;
-        if self.DJNMHMPKKKB != 0 {
-            os.write_uint32(12, self.DJNMHMPKKKB)?;
+        if self.GJJBDKHJGBD != 0 {
+            os.write_uint32(12, self.GJJBDKHJGBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -292,34 +292,34 @@ impl ::protobuf::Message for OFILKJCLEGI {
 
     fn clear(&mut self) {
         self.monster_battle_type = 0;
-        self.DBADLNFOPAO = 0;
+        self.KLHPDAKBMHA = 0;
         self.level_id = 0;
-        self.NLIBKABFGCC = 0;
-        self.NLEAIJHAPAP = false;
-        self.IGHLABGGIJE = 0;
+        self.JFBDCLJMCMF = 0;
+        self.OBIHCCODMEG = false;
+        self.BMEKFOGNAAD = 0;
         self.rank = 0;
-        self.EKLDPALNLDC = 0;
-        self.JBLMGNPMADM = 0;
-        self.CBOIIACBAKF = 0;
+        self.IOLLKNGGINN = 0;
+        self.NEPGCJIIPOP = 0;
+        self.EOEACJDJJEO = 0;
         self.buff_list.clear();
-        self.DJNMHMPKKKB = 0;
+        self.GJJBDKHJGBD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OFILKJCLEGI {
         static instance: OFILKJCLEGI = OFILKJCLEGI {
             monster_battle_type: 0,
-            DBADLNFOPAO: 0,
+            KLHPDAKBMHA: 0,
             level_id: 0,
-            NLIBKABFGCC: 0,
-            NLEAIJHAPAP: false,
-            IGHLABGGIJE: 0,
+            JFBDCLJMCMF: 0,
+            OBIHCCODMEG: false,
+            BMEKFOGNAAD: 0,
             rank: 0,
-            EKLDPALNLDC: 0,
-            JBLMGNPMADM: 0,
-            CBOIIACBAKF: 0,
+            IOLLKNGGINN: 0,
+            NEPGCJIIPOP: 0,
+            EOEACJDJJEO: 0,
             buff_list: ::std::vec::Vec::new(),
-            DJNMHMPKKKB: 0,
+            GJJBDKHJGBD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -345,16 +345,16 @@ impl ::protobuf::reflect::ProtobufValue for OFILKJCLEGI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFILKJCLEGI.proto\"\x99\x03\n\x0bOFILKJCLEGI\x12.\n\x13monster_bat\
-    tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bDBADLNFOP\
-    AO\x18\x02\x20\x01(\x04R\x0bDBADLNFOPAO\x12\x19\n\x08level_id\x18\x03\
-    \x20\x01(\rR\x07levelId\x12\x20\n\x0bNLIBKABFGCC\x18\x04\x20\x01(\rR\x0b\
-    NLIBKABFGCC\x12\x20\n\x0bNLEAIJHAPAP\x18\x05\x20\x01(\x08R\x0bNLEAIJHAPA\
-    P\x12\x20\n\x0bIGHLABGGIJE\x18\x06\x20\x01(\rR\x0bIGHLABGGIJE\x12\x12\n\
-    \x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bEKLDPALNLDC\x18\x08\
-    \x20\x01(\x04R\x0bEKLDPALNLDC\x12\x20\n\x0bJBLMGNPMADM\x18\t\x20\x01(\rR\
-    \x0bJBLMGNPMADM\x12\x20\n\x0bCBOIIACBAKF\x18\n\x20\x01(\rR\x0bCBOIIACBAK\
-    F\x12\x1b\n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bDJNM\
-    HMPKKKB\x18\x0c\x20\x01(\rR\x0bDJNMHMPKKKBb\x06proto3\
+    tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bKLHPDAKBM\
+    HA\x18\x02\x20\x01(\x04R\x0bKLHPDAKBMHA\x12\x19\n\x08level_id\x18\x03\
+    \x20\x01(\rR\x07levelId\x12\x20\n\x0bJFBDCLJMCMF\x18\x04\x20\x01(\rR\x0b\
+    JFBDCLJMCMF\x12\x20\n\x0bOBIHCCODMEG\x18\x05\x20\x01(\x08R\x0bOBIHCCODME\
+    G\x12\x20\n\x0bBMEKFOGNAAD\x18\x06\x20\x01(\rR\x0bBMEKFOGNAAD\x12\x12\n\
+    \x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bIOLLKNGGINN\x18\x08\
+    \x20\x01(\x04R\x0bIOLLKNGGINN\x12\x20\n\x0bNEPGCJIIPOP\x18\t\x20\x01(\rR\
+    \x0bNEPGCJIIPOP\x12\x20\n\x0bEOEACJDJJEO\x18\n\x20\x01(\rR\x0bEOEACJDJJE\
+    O\x12\x1b\n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bGJJB\
+    DKHJGBD\x18\x0c\x20\x01(\rR\x0bGJJBDKHJGBDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

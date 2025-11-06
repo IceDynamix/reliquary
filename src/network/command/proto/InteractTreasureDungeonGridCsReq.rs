@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct InteractTreasureDungeonGridCsReq {
     // message fields
-    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.display_value)
-    pub display_value: u32,
-    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.NLMDEMOHBOO)
-    pub NLMDEMOHBOO: u32,
-    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.HFNHLCFNHKD)
-    pub HFNHLCFNHKD: u32,
+    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.param)
+    pub param: u32,
+    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.NENOHEPGLIJ)
+    pub NENOHEPGLIJ: u32,
+    // @@protoc_insertion_point(field:InteractTreasureDungeonGridCsReq.LACCFDBBEDE)
+    pub LACCFDBBEDE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:InteractTreasureDungeonGridCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl InteractTreasureDungeonGridCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &InteractTreasureDungeonGridCsReq| { &m.display_value },
-            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.display_value },
+            "param",
+            |m: &InteractTreasureDungeonGridCsReq| { &m.param },
+            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLMDEMOHBOO",
-            |m: &InteractTreasureDungeonGridCsReq| { &m.NLMDEMOHBOO },
-            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.NLMDEMOHBOO },
+            "NENOHEPGLIJ",
+            |m: &InteractTreasureDungeonGridCsReq| { &m.NENOHEPGLIJ },
+            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.NENOHEPGLIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFNHLCFNHKD",
-            |m: &InteractTreasureDungeonGridCsReq| { &m.HFNHLCFNHKD },
-            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.HFNHLCFNHKD },
+            "LACCFDBBEDE",
+            |m: &InteractTreasureDungeonGridCsReq| { &m.LACCFDBBEDE },
+            |m: &mut InteractTreasureDungeonGridCsReq| { &mut m.LACCFDBBEDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<InteractTreasureDungeonGridCsReq>(
             "InteractTreasureDungeonGridCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.display_value = is.read_uint32()?;
+                8 => {
+                    self.param = is.read_uint32()?;
                 },
-                56 => {
-                    self.NLMDEMOHBOO = is.read_uint32()?;
+                72 => {
+                    self.NENOHEPGLIJ = is.read_uint32()?;
                 },
-                80 => {
-                    self.HFNHLCFNHKD = is.read_uint32()?;
+                88 => {
+                    self.LACCFDBBEDE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.display_value);
+        if self.param != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.param);
         }
-        if self.NLMDEMOHBOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NLMDEMOHBOO);
+        if self.NENOHEPGLIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NENOHEPGLIJ);
         }
-        if self.HFNHLCFNHKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HFNHLCFNHKD);
+        if self.LACCFDBBEDE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LACCFDBBEDE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.display_value != 0 {
-            os.write_uint32(6, self.display_value)?;
+        if self.param != 0 {
+            os.write_uint32(1, self.param)?;
         }
-        if self.NLMDEMOHBOO != 0 {
-            os.write_uint32(7, self.NLMDEMOHBOO)?;
+        if self.NENOHEPGLIJ != 0 {
+            os.write_uint32(9, self.NENOHEPGLIJ)?;
         }
-        if self.HFNHLCFNHKD != 0 {
-            os.write_uint32(10, self.HFNHLCFNHKD)?;
+        if self.LACCFDBBEDE != 0 {
+            os.write_uint32(11, self.LACCFDBBEDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for InteractTreasureDungeonGridCsReq {
     }
 
     fn clear(&mut self) {
-        self.display_value = 0;
-        self.NLMDEMOHBOO = 0;
-        self.HFNHLCFNHKD = 0;
+        self.param = 0;
+        self.NENOHEPGLIJ = 0;
+        self.LACCFDBBEDE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static InteractTreasureDungeonGridCsReq {
         static instance: InteractTreasureDungeonGridCsReq = InteractTreasureDungeonGridCsReq {
-            display_value: 0,
-            NLMDEMOHBOO: 0,
-            HFNHLCFNHKD: 0,
+            param: 0,
+            NENOHEPGLIJ: 0,
+            LACCFDBBEDE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for InteractTreasureDungeonGridCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&InteractTreasureDungeonGridCsReq.proto\"\x8b\x01\n\x20InteractTreasur\
-    eDungeonGridCsReq\x12#\n\rdisplay_value\x18\x06\x20\x01(\rR\x0cdisplayVa\
-    lue\x12\x20\n\x0bNLMDEMOHBOO\x18\x07\x20\x01(\rR\x0bNLMDEMOHBOO\x12\x20\
-    \n\x0bHFNHLCFNHKD\x18\n\x20\x01(\rR\x0bHFNHLCFNHKDb\x06proto3\
+    \n&InteractTreasureDungeonGridCsReq.proto\"|\n\x20InteractTreasureDungeo\
+    nGridCsReq\x12\x14\n\x05param\x18\x01\x20\x01(\rR\x05param\x12\x20\n\x0b\
+    NENOHEPGLIJ\x18\t\x20\x01(\rR\x0bNENOHEPGLIJ\x12\x20\n\x0bLACCFDBBEDE\
+    \x18\x0b\x20\x01(\rR\x0bLACCFDBBEDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

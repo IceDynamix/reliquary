@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DPNDLHGEMEI {
     // message fields
-    // @@protoc_insertion_point(field:DPNDLHGEMEI.IMCPKLDFDOG)
-    pub IMCPKLDFDOG: u32,
-    // @@protoc_insertion_point(field:DPNDLHGEMEI.AJGEOFIIDDH)
-    pub AJGEOFIIDDH: u32,
-    // @@protoc_insertion_point(field:DPNDLHGEMEI.OMOENBAKMHJ)
-    pub OMOENBAKMHJ: f64,
+    // @@protoc_insertion_point(field:DPNDLHGEMEI.MJMLCFJCEPJ)
+    pub MJMLCFJCEPJ: u32,
+    // @@protoc_insertion_point(field:DPNDLHGEMEI.FNJCBMEKMBB)
+    pub FNJCBMEKMBB: u32,
+    // @@protoc_insertion_point(field:DPNDLHGEMEI.PGMPMODFJKD)
+    pub PGMPMODFJKD: f64,
     // @@protoc_insertion_point(field:DPNDLHGEMEI.wave)
     pub wave: u32,
-    // @@protoc_insertion_point(field:DPNDLHGEMEI.GMLFMPJPEGG)
-    pub GMLFMPJPEGG: u32,
+    // @@protoc_insertion_point(field:DPNDLHGEMEI.PJDDDOOMHBL)
+    pub PJDDDOOMHBL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DPNDLHGEMEI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,19 @@ impl DPNDLHGEMEI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMCPKLDFDOG",
-            |m: &DPNDLHGEMEI| { &m.IMCPKLDFDOG },
-            |m: &mut DPNDLHGEMEI| { &mut m.IMCPKLDFDOG },
+            "MJMLCFJCEPJ",
+            |m: &DPNDLHGEMEI| { &m.MJMLCFJCEPJ },
+            |m: &mut DPNDLHGEMEI| { &mut m.MJMLCFJCEPJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJGEOFIIDDH",
-            |m: &DPNDLHGEMEI| { &m.AJGEOFIIDDH },
-            |m: &mut DPNDLHGEMEI| { &mut m.AJGEOFIIDDH },
+            "FNJCBMEKMBB",
+            |m: &DPNDLHGEMEI| { &m.FNJCBMEKMBB },
+            |m: &mut DPNDLHGEMEI| { &mut m.FNJCBMEKMBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMOENBAKMHJ",
-            |m: &DPNDLHGEMEI| { &m.OMOENBAKMHJ },
-            |m: &mut DPNDLHGEMEI| { &mut m.OMOENBAKMHJ },
+            "PGMPMODFJKD",
+            |m: &DPNDLHGEMEI| { &m.PGMPMODFJKD },
+            |m: &mut DPNDLHGEMEI| { &mut m.PGMPMODFJKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "wave",
@@ -78,9 +78,9 @@ impl DPNDLHGEMEI {
             |m: &mut DPNDLHGEMEI| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMLFMPJPEGG",
-            |m: &DPNDLHGEMEI| { &m.GMLFMPJPEGG },
-            |m: &mut DPNDLHGEMEI| { &mut m.GMLFMPJPEGG },
+            "PJDDDOOMHBL",
+            |m: &DPNDLHGEMEI| { &m.PJDDDOOMHBL },
+            |m: &mut DPNDLHGEMEI| { &mut m.PJDDDOOMHBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DPNDLHGEMEI>(
             "DPNDLHGEMEI",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for DPNDLHGEMEI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.IMCPKLDFDOG = is.read_uint32()?;
+                    self.MJMLCFJCEPJ = is.read_uint32()?;
                 },
                 16 => {
-                    self.AJGEOFIIDDH = is.read_uint32()?;
+                    self.FNJCBMEKMBB = is.read_uint32()?;
                 },
                 25 => {
-                    self.OMOENBAKMHJ = is.read_double()?;
+                    self.PGMPMODFJKD = is.read_double()?;
                 },
                 32 => {
                     self.wave = is.read_uint32()?;
                 },
                 40 => {
-                    self.GMLFMPJPEGG = is.read_uint32()?;
+                    self.PJDDDOOMHBL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for DPNDLHGEMEI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IMCPKLDFDOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IMCPKLDFDOG);
+        if self.MJMLCFJCEPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MJMLCFJCEPJ);
         }
-        if self.AJGEOFIIDDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AJGEOFIIDDH);
+        if self.FNJCBMEKMBB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FNJCBMEKMBB);
         }
-        if self.OMOENBAKMHJ != 0. {
+        if self.PGMPMODFJKD != 0. {
             my_size += 1 + 8;
         }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.wave);
         }
-        if self.GMLFMPJPEGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GMLFMPJPEGG);
+        if self.PJDDDOOMHBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PJDDDOOMHBL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for DPNDLHGEMEI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IMCPKLDFDOG != 0 {
-            os.write_uint32(1, self.IMCPKLDFDOG)?;
+        if self.MJMLCFJCEPJ != 0 {
+            os.write_uint32(1, self.MJMLCFJCEPJ)?;
         }
-        if self.AJGEOFIIDDH != 0 {
-            os.write_uint32(2, self.AJGEOFIIDDH)?;
+        if self.FNJCBMEKMBB != 0 {
+            os.write_uint32(2, self.FNJCBMEKMBB)?;
         }
-        if self.OMOENBAKMHJ != 0. {
-            os.write_double(3, self.OMOENBAKMHJ)?;
+        if self.PGMPMODFJKD != 0. {
+            os.write_double(3, self.PGMPMODFJKD)?;
         }
         if self.wave != 0 {
             os.write_uint32(4, self.wave)?;
         }
-        if self.GMLFMPJPEGG != 0 {
-            os.write_uint32(5, self.GMLFMPJPEGG)?;
+        if self.PJDDDOOMHBL != 0 {
+            os.write_uint32(5, self.PJDDDOOMHBL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for DPNDLHGEMEI {
     }
 
     fn clear(&mut self) {
-        self.IMCPKLDFDOG = 0;
-        self.AJGEOFIIDDH = 0;
-        self.OMOENBAKMHJ = 0.;
+        self.MJMLCFJCEPJ = 0;
+        self.FNJCBMEKMBB = 0;
+        self.PGMPMODFJKD = 0.;
         self.wave = 0;
-        self.GMLFMPJPEGG = 0;
+        self.PJDDDOOMHBL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DPNDLHGEMEI {
         static instance: DPNDLHGEMEI = DPNDLHGEMEI {
-            IMCPKLDFDOG: 0,
-            AJGEOFIIDDH: 0,
-            OMOENBAKMHJ: 0.,
+            MJMLCFJCEPJ: 0,
+            FNJCBMEKMBB: 0,
+            PGMPMODFJKD: 0.,
             wave: 0,
-            GMLFMPJPEGG: 0,
+            PJDDDOOMHBL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for DPNDLHGEMEI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DPNDLHGEMEI.proto\"\xa9\x01\n\x0bDPNDLHGEMEI\x12\x20\n\x0bIMCPKLDF\
-    DOG\x18\x01\x20\x01(\rR\x0bIMCPKLDFDOG\x12\x20\n\x0bAJGEOFIIDDH\x18\x02\
-    \x20\x01(\rR\x0bAJGEOFIIDDH\x12\x20\n\x0bOMOENBAKMHJ\x18\x03\x20\x01(\
-    \x01R\x0bOMOENBAKMHJ\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04wave\x12\
-    \x20\n\x0bGMLFMPJPEGG\x18\x05\x20\x01(\rR\x0bGMLFMPJPEGGb\x06proto3\
+    \n\x11DPNDLHGEMEI.proto\"\xa9\x01\n\x0bDPNDLHGEMEI\x12\x20\n\x0bMJMLCFJC\
+    EPJ\x18\x01\x20\x01(\rR\x0bMJMLCFJCEPJ\x12\x20\n\x0bFNJCBMEKMBB\x18\x02\
+    \x20\x01(\rR\x0bFNJCBMEKMBB\x12\x20\n\x0bPGMPMODFJKD\x18\x03\x20\x01(\
+    \x01R\x0bPGMPMODFJKD\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04wave\x12\
+    \x20\n\x0bPJDDDOOMHBL\x18\x05\x20\x01(\rR\x0bPJDDDOOMHBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

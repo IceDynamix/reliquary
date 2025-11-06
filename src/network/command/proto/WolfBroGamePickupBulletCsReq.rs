@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WolfBroGamePickupBulletCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WolfBroGamePickupBulletCsReq.MIBCFIMMIKG)
-    pub MIBCFIMMIKG: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:WolfBroGamePickupBulletCsReq.AKCEBALFDKN)
+    pub AKCEBALFDKN: ::protobuf::MessageField<super::Vector::Vector>,
     // special fields
     // @@protoc_insertion_point(special_field:WolfBroGamePickupBulletCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl WolfBroGamePickupBulletCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "MIBCFIMMIKG",
-            |m: &WolfBroGamePickupBulletCsReq| { &m.MIBCFIMMIKG },
-            |m: &mut WolfBroGamePickupBulletCsReq| { &mut m.MIBCFIMMIKG },
+            "AKCEBALFDKN",
+            |m: &WolfBroGamePickupBulletCsReq| { &m.AKCEBALFDKN },
+            |m: &mut WolfBroGamePickupBulletCsReq| { &mut m.AKCEBALFDKN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WolfBroGamePickupBulletCsReq>(
             "WolfBroGamePickupBulletCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for WolfBroGamePickupBulletCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MIBCFIMMIKG)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKCEBALFDKN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for WolfBroGamePickupBulletCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MIBCFIMMIKG.as_ref() {
+        if let Some(v) = self.AKCEBALFDKN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for WolfBroGamePickupBulletCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MIBCFIMMIKG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.AKCEBALFDKN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for WolfBroGamePickupBulletCsReq {
     }
 
     fn clear(&mut self) {
-        self.MIBCFIMMIKG.clear();
+        self.AKCEBALFDKN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WolfBroGamePickupBulletCsReq {
         static instance: WolfBroGamePickupBulletCsReq = WolfBroGamePickupBulletCsReq {
-            MIBCFIMMIKG: ::protobuf::MessageField::none(),
+            AKCEBALFDKN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for WolfBroGamePickupBulletCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"WolfBroGamePickupBulletCsReq.proto\x1a\x0cVector.proto\"I\n\x1cWolfB\
-    roGamePickupBulletCsReq\x12)\n\x0bMIBCFIMMIKG\x18\x07\x20\x01(\x0b2\x07.\
-    VectorR\x0bMIBCFIMMIKGb\x06proto3\
+    roGamePickupBulletCsReq\x12)\n\x0bAKCEBALFDKN\x18\x05\x20\x01(\x0b2\x07.\
+    VectorR\x0bAKCEBALFDKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

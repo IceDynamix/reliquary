@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyRogueShopBuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyRogueShopBuffCsReq.interacted_prop_entity_id)
-    pub interacted_prop_entity_id: u32,
     // @@protoc_insertion_point(field:BuyRogueShopBuffCsReq.buff_id_list)
     pub buff_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BuyRogueShopBuffCsReq.verify_server_entity_id)
+    pub verify_server_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyRogueShopBuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BuyRogueShopBuffCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interacted_prop_entity_id",
-            |m: &BuyRogueShopBuffCsReq| { &m.interacted_prop_entity_id },
-            |m: &mut BuyRogueShopBuffCsReq| { &mut m.interacted_prop_entity_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_id_list",
             |m: &BuyRogueShopBuffCsReq| { &m.buff_id_list },
             |m: &mut BuyRogueShopBuffCsReq| { &mut m.buff_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "verify_server_entity_id",
+            |m: &BuyRogueShopBuffCsReq| { &m.verify_server_entity_id },
+            |m: &mut BuyRogueShopBuffCsReq| { &mut m.verify_server_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyRogueShopBuffCsReq>(
             "BuyRogueShopBuffCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.interacted_prop_entity_id = is.read_uint32()?;
-                },
-                122 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_id_list)?;
                 },
-                120 => {
+                8 => {
                     self.buff_id_list.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.verify_server_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.interacted_prop_entity_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.buff_id_list);
+        if self.verify_server_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.verify_server_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.buff_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(8, self.interacted_prop_entity_id)?;
+        os.write_repeated_packed_uint32(1, &self.buff_id_list)?;
+        if self.verify_server_entity_id != 0 {
+            os.write_uint32(10, self.verify_server_entity_id)?;
         }
-        os.write_repeated_packed_uint32(15, &self.buff_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for BuyRogueShopBuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.interacted_prop_entity_id = 0;
         self.buff_id_list.clear();
+        self.verify_server_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyRogueShopBuffCsReq {
         static instance: BuyRogueShopBuffCsReq = BuyRogueShopBuffCsReq {
-            interacted_prop_entity_id: 0,
             buff_id_list: ::std::vec::Vec::new(),
+            verify_server_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopBuffCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bBuyRogueShopBuffCsReq.proto\"t\n\x15BuyRogueShopBuffCsReq\x129\n\
-    \x19interacted_prop_entity_id\x18\x08\x20\x01(\rR\x16interactedPropEntit\
-    yId\x12\x20\n\x0cbuff_id_list\x18\x0f\x20\x03(\rR\nbuffIdListb\x06proto3\
+    \n\x1bBuyRogueShopBuffCsReq.proto\"p\n\x15BuyRogueShopBuffCsReq\x12\x20\
+    \n\x0cbuff_id_list\x18\x01\x20\x03(\rR\nbuffIdList\x125\n\x17verify_serv\
+    er_entity_id\x18\n\x20\x01(\rR\x14verifyServerEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

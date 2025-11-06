@@ -86,13 +86,13 @@ impl ::protobuf::Message for HeliobusEnterBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                24 => {
                     self.event_id = is.read_uint32()?;
                 },
-                8 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for HeliobusEnterBattleScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.event_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for HeliobusEnterBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.event_id != 0 {
-            os.write_uint32(9, self.event_id)?;
+            os.write_uint32(3, self.event_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusEnterBattleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eHeliobusEnterBattleScRsp.proto\x1a\x15SceneBattleInfo.proto\"\x82\
-    \x01\n\x18HeliobusEnterBattleScRsp\x12\x19\n\x08event_id\x18\t\x20\x01(\
-    \rR\x07eventId\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x121\
-    \n\x0bbattle_info\x18\x0b\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\
+    \x01\n\x18HeliobusEnterBattleScRsp\x12\x19\n\x08event_id\x18\x03\x20\x01\
+    (\rR\x07eventId\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x121\
+    \n\x0bbattle_info\x18\x08\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\
     b\x06proto3\
 ";
 

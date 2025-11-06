@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                98 => {
                     self.rogue_tourn_area_info.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueMagicAreaUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.rogue_tourn_area_info {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAreaUpdateScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueMagicAreaUpdateScNotify.proto\x1a\x18RogueMagicAreaInfo.proto\"\
     f\n\x1cRogueMagicAreaUpdateScNotify\x12F\n\x15rogue_tourn_area_info\x18\
-    \x06\x20\x03(\x0b2\x13.RogueMagicAreaInfoR\x12rogueTournAreaInfob\x06pro\
+    \x0c\x20\x03(\x0b2\x13.RogueMagicAreaInfoR\x12rogueTournAreaInfob\x06pro\
     to3\
 ";
 

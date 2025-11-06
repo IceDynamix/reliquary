@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KeywordUnlockValue {
     // message fields
-    // @@protoc_insertion_point(field:KeywordUnlockValue.NFNMBGBOCCL)
-    pub NFNMBGBOCCL: ::std::collections::HashMap<u32, bool>,
+    // @@protoc_insertion_point(field:KeywordUnlockValue.JLHCAJPFDAH)
+    pub JLHCAJPFDAH: ::std::collections::HashMap<u32, bool>,
     // special fields
     // @@protoc_insertion_point(special_field:KeywordUnlockValue.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KeywordUnlockValue {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NFNMBGBOCCL",
-            |m: &KeywordUnlockValue| { &m.NFNMBGBOCCL },
-            |m: &mut KeywordUnlockValue| { &mut m.NFNMBGBOCCL },
+            "JLHCAJPFDAH",
+            |m: &KeywordUnlockValue| { &m.JLHCAJPFDAH },
+            |m: &mut KeywordUnlockValue| { &mut m.JLHCAJPFDAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KeywordUnlockValue>(
             "KeywordUnlockValue",
@@ -72,7 +72,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -85,7 +85,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.NFNMBGBOCCL.insert(key, value);
+                    self.JLHCAJPFDAH.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -99,7 +99,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.NFNMBGBOCCL {
+        for (k, v) in &self.JLHCAJPFDAH {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for KeywordUnlockValue {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.NFNMBGBOCCL {
+        for (k, v) in &self.JLHCAJPFDAH {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(122)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
@@ -137,7 +137,7 @@ impl ::protobuf::Message for KeywordUnlockValue {
     }
 
     fn clear(&mut self) {
-        self.NFNMBGBOCCL.clear();
+        self.JLHCAJPFDAH.clear();
         self.special_fields.clear();
     }
 
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KeywordUnlockValue {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18KeywordUnlockValue.proto\"\x9c\x01\n\x12KeywordUnlockValue\x12F\n\
-    \x0bNFNMBGBOCCL\x18\x0f\x20\x03(\x0b2$.KeywordUnlockValue.NFNMBGBOCCLEnt\
-    ryR\x0bNFNMBGBOCCL\x1a>\n\x10NFNMBGBOCCLEntry\x12\x10\n\x03key\x18\x01\
+    \x0bJLHCAJPFDAH\x18\x03\x20\x03(\x0b2$.KeywordUnlockValue.JLHCAJPFDAHEnt\
+    ryR\x0bJLHCAJPFDAH\x1a>\n\x10JLHCAJPFDAHEntry\x12\x10\n\x03key\x18\x01\
     \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\
     \x028\x01b\x06proto3\
 ";

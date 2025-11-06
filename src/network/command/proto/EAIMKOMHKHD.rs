@@ -30,8 +30,8 @@ pub struct EAIMKOMHKHD {
     // message fields
     // @@protoc_insertion_point(field:EAIMKOMHKHD.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:EAIMKOMHKHD.GGDIIBCDOBB)
-    pub GGDIIBCDOBB: u32,
+    // @@protoc_insertion_point(field:EAIMKOMHKHD.JJPOOMKKLEA)
+    pub JJPOOMKKLEA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EAIMKOMHKHD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl EAIMKOMHKHD {
             |m: &mut EAIMKOMHKHD| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGDIIBCDOBB",
-            |m: &EAIMKOMHKHD| { &m.GGDIIBCDOBB },
-            |m: &mut EAIMKOMHKHD| { &mut m.GGDIIBCDOBB },
+            "JJPOOMKKLEA",
+            |m: &EAIMKOMHKHD| { &m.JJPOOMKKLEA },
+            |m: &mut EAIMKOMHKHD| { &mut m.JJPOOMKKLEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EAIMKOMHKHD>(
             "EAIMKOMHKHD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EAIMKOMHKHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                96 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.GGDIIBCDOBB = is.read_uint32()?;
+                120 => {
+                    self.JJPOOMKKLEA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EAIMKOMHKHD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
         }
-        if self.GGDIIBCDOBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GGDIIBCDOBB);
+        if self.JJPOOMKKLEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JJPOOMKKLEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EAIMKOMHKHD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(7, self.avatar_id)?;
+            os.write_uint32(12, self.avatar_id)?;
         }
-        if self.GGDIIBCDOBB != 0 {
-            os.write_uint32(11, self.GGDIIBCDOBB)?;
+        if self.JJPOOMKKLEA != 0 {
+            os.write_uint32(15, self.JJPOOMKKLEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EAIMKOMHKHD {
 
     fn clear(&mut self) {
         self.avatar_id = 0;
-        self.GGDIIBCDOBB = 0;
+        self.JJPOOMKKLEA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EAIMKOMHKHD {
         static instance: EAIMKOMHKHD = EAIMKOMHKHD {
             avatar_id: 0,
-            GGDIIBCDOBB: 0,
+            JJPOOMKKLEA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EAIMKOMHKHD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EAIMKOMHKHD.proto\"L\n\x0bEAIMKOMHKHD\x12\x1b\n\tavatar_id\x18\x07\
-    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bGGDIIBCDOBB\x18\x0b\x20\x01(\rR\
-    \x0bGGDIIBCDOBBb\x06proto3\
+    \n\x11EAIMKOMHKHD.proto\"L\n\x0bEAIMKOMHKHD\x12\x1b\n\tavatar_id\x18\x0c\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bJJPOOMKKLEA\x18\x0f\x20\x01(\rR\
+    \x0bJJPOOMKKLEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

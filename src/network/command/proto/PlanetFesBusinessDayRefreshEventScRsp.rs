@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesBusinessDayRefreshEventScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventScRsp.NFJLFNBPPPG)
-    pub NFJLFNBPPPG: ::protobuf::MessageField<super::JOFGDAIADBO::JOFGDAIADBO>,
     // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventScRsp.IJBMFNOIEHH)
+    pub IJBMFNOIEHH: ::protobuf::MessageField<super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBusinessDayRefreshEventScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PlanetFesBusinessDayRefreshEventScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JOFGDAIADBO::JOFGDAIADBO>(
-            "NFJLFNBPPPG",
-            |m: &PlanetFesBusinessDayRefreshEventScRsp| { &m.NFJLFNBPPPG },
-            |m: &mut PlanetFesBusinessDayRefreshEventScRsp| { &mut m.NFJLFNBPPPG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesBusinessDayRefreshEventScRsp| { &m.retcode },
             |m: &mut PlanetFesBusinessDayRefreshEventScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlanetFesBusinessEventInfo::PlanetFesBusinessEventInfo>(
+            "IJBMFNOIEHH",
+            |m: &PlanetFesBusinessDayRefreshEventScRsp| { &m.IJBMFNOIEHH },
+            |m: &mut PlanetFesBusinessDayRefreshEventScRsp| { &mut m.IJBMFNOIEHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBusinessDayRefreshEventScRsp>(
             "PlanetFesBusinessDayRefreshEventScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJLFNBPPPG)?;
-                },
                 48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IJBMFNOIEHH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NFJLFNBPPPG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
+        }
+        if let Some(v) = self.IJBMFNOIEHH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventScRsp {
     }
 
     fn clear(&mut self) {
-        self.NFJLFNBPPPG.clear();
         self.retcode = 0;
+        self.IJBMFNOIEHH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBusinessDayRefreshEventScRsp {
         static instance: PlanetFesBusinessDayRefreshEventScRsp = PlanetFesBusinessDayRefreshEventScRsp {
-            NFJLFNBPPPG: ::protobuf::MessageField::none(),
             retcode: 0,
+            IJBMFNOIEHH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBusinessDayRefreshEventScRs
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+PlanetFesBusinessDayRefreshEventScRsp.proto\x1a\x11JOFGDAIADBO.proto\
-    \"q\n%PlanetFesBusinessDayRefreshEventScRsp\x12.\n\x0bNFJLFNBPPPG\x18\t\
-    \x20\x01(\x0b2\x0c.JOFGDAIADBOR\x0bNFJLFNBPPPG\x12\x18\n\x07retcode\x18\
-    \x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n+PlanetFesBusinessDayRefreshEventScRsp.proto\x1a\x20PlanetFesBusinessE\
+    ventInfo.proto\"\x80\x01\n%PlanetFesBusinessDayRefreshEventScRsp\x12\x18\
+    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12=\n\x0bIJBMFNOIEHH\x18\
+    \x0c\x20\x01(\x0b2\x1b.PlanetFesBusinessEventInfoR\x0bIJBMFNOIEHHb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JOFGDAIADBO::file_descriptor().clone());
+            deps.push(super::PlanetFesBusinessEventInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesBusinessDayRefreshEventScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

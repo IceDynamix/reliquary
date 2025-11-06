@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncRogueCommonVirtualItemInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                90 => {
                     self.common_item_info.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncRogueCommonVirtualItemInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.common_item_info {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonVirtualItemInfoScNoti
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,SyncRogueCommonVirtualItemInfoScNotify.proto\x1a\x20RogueCommonVirtua\
     lItemInfo.proto\"o\n&SyncRogueCommonVirtualItemInfoScNotify\x12E\n\x10co\
-    mmon_item_info\x18\x05\x20\x03(\x0b2\x1b.RogueCommonVirtualItemInfoR\x0e\
+    mmon_item_info\x18\x0b\x20\x03(\x0b2\x1b.RogueCommonVirtualItemInfoR\x0e\
     commonItemInfob\x06proto3\
 ";
 

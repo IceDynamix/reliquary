@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorkbenchEnhanceBuffFuncInfo {
     // message fields
-    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.cur_num)
-    pub cur_num: u32,
-    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.HCPACBHCMHN)
-    pub HCPACBHCMHN: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.max_num)
-    pub max_num: u32,
+    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.IGFFKACDEDK)
+    pub IGFFKACDEDK: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.AEJDBMCIJIO)
+    pub AEJDBMCIJIO: u32,
+    // @@protoc_insertion_point(field:WorkbenchEnhanceBuffFuncInfo.CNLPKMHDELE)
+    pub CNLPKMHDELE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WorkbenchEnhanceBuffFuncInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl WorkbenchEnhanceBuffFuncInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_num",
-            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.cur_num },
-            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.cur_num },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "HCPACBHCMHN",
-            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.HCPACBHCMHN },
-            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.HCPACBHCMHN },
+            "IGFFKACDEDK",
+            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.IGFFKACDEDK },
+            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.IGFFKACDEDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_num",
-            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.max_num },
-            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.max_num },
+            "AEJDBMCIJIO",
+            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.AEJDBMCIJIO },
+            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.AEJDBMCIJIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CNLPKMHDELE",
+            |m: &WorkbenchEnhanceBuffFuncInfo| { &m.CNLPKMHDELE },
+            |m: &mut WorkbenchEnhanceBuffFuncInfo| { &mut m.CNLPKMHDELE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorkbenchEnhanceBuffFuncInfo>(
             "WorkbenchEnhanceBuffFuncInfo",
@@ -86,10 +86,7 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.cur_num = is.read_uint32()?;
-                },
-                82 => {
+                18 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -102,10 +99,13 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.HCPACBHCMHN.insert(key, value);
+                    self.IGFFKACDEDK.insert(key, value);
                 },
                 40 => {
-                    self.max_num = is.read_uint32()?;
+                    self.AEJDBMCIJIO = is.read_uint32()?;
+                },
+                112 => {
+                    self.CNLPKMHDELE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,17 +119,17 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.cur_num);
-        }
-        for (k, v) in &self.HCPACBHCMHN {
+        for (k, v) in &self.IGFFKACDEDK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.max_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.max_num);
+        if self.AEJDBMCIJIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AEJDBMCIJIO);
+        }
+        if self.CNLPKMHDELE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CNLPKMHDELE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,20 +137,20 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_num != 0 {
-            os.write_uint32(1, self.cur_num)?;
-        }
-        for (k, v) in &self.HCPACBHCMHN {
+        for (k, v) in &self.IGFFKACDEDK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(18)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.max_num != 0 {
-            os.write_uint32(5, self.max_num)?;
+        if self.AEJDBMCIJIO != 0 {
+            os.write_uint32(5, self.AEJDBMCIJIO)?;
+        }
+        if self.CNLPKMHDELE != 0 {
+            os.write_uint32(14, self.CNLPKMHDELE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::Message for WorkbenchEnhanceBuffFuncInfo {
     }
 
     fn clear(&mut self) {
-        self.cur_num = 0;
-        self.HCPACBHCMHN.clear();
-        self.max_num = 0;
+        self.IGFFKACDEDK.clear();
+        self.AEJDBMCIJIO = 0;
+        self.CNLPKMHDELE = 0;
         self.special_fields.clear();
     }
 
@@ -199,12 +199,13 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchEnhanceBuffFuncInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"WorkbenchEnhanceBuffFuncInfo.proto\"\xe2\x01\n\x1cWorkbenchEnhanceBu\
-    ffFuncInfo\x12\x17\n\x07cur_num\x18\x01\x20\x01(\rR\x06curNum\x12P\n\x0b\
-    HCPACBHCMHN\x18\n\x20\x03(\x0b2..WorkbenchEnhanceBuffFuncInfo.HCPACBHCMH\
-    NEntryR\x0bHCPACBHCMHN\x12\x17\n\x07max_num\x18\x05\x20\x01(\rR\x06maxNu\
-    m\x1a>\n\x10HCPACBHCMHNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
-    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\"WorkbenchEnhanceBuffFuncInfo.proto\"\xf4\x01\n\x1cWorkbenchEnhanceBu\
+    ffFuncInfo\x12P\n\x0bIGFFKACDEDK\x18\x02\x20\x03(\x0b2..WorkbenchEnhance\
+    BuffFuncInfo.IGFFKACDEDKEntryR\x0bIGFFKACDEDK\x12\x20\n\x0bAEJDBMCIJIO\
+    \x18\x05\x20\x01(\rR\x0bAEJDBMCIJIO\x12\x20\n\x0bCNLPKMHDELE\x18\x0e\x20\
+    \x01(\rR\x0bCNLPKMHDELE\x1a>\n\x10IGFFKACDEDKEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

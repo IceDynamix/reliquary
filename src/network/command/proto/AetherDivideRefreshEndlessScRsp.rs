@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideRefreshEndlessScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideRefreshEndlessScRsp.IBCIPIIDCOL)
-    pub IBCIPIIDCOL: u32,
+    // @@protoc_insertion_point(field:AetherDivideRefreshEndlessScRsp.BIFBHDAJILO)
+    pub BIFBHDAJILO: u32,
     // @@protoc_insertion_point(field:AetherDivideRefreshEndlessScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl AetherDivideRefreshEndlessScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBCIPIIDCOL",
-            |m: &AetherDivideRefreshEndlessScRsp| { &m.IBCIPIIDCOL },
-            |m: &mut AetherDivideRefreshEndlessScRsp| { &mut m.IBCIPIIDCOL },
+            "BIFBHDAJILO",
+            |m: &AetherDivideRefreshEndlessScRsp| { &m.BIFBHDAJILO },
+            |m: &mut AetherDivideRefreshEndlessScRsp| { &mut m.BIFBHDAJILO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AetherDivideRefreshEndlessScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IBCIPIIDCOL = is.read_uint32()?;
+                56 => {
+                    self.BIFBHDAJILO = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AetherDivideRefreshEndlessScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IBCIPIIDCOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IBCIPIIDCOL);
+        if self.BIFBHDAJILO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BIFBHDAJILO);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AetherDivideRefreshEndlessScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IBCIPIIDCOL != 0 {
-            os.write_uint32(9, self.IBCIPIIDCOL)?;
+        if self.BIFBHDAJILO != 0 {
+            os.write_uint32(7, self.BIFBHDAJILO)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for AetherDivideRefreshEndlessScRsp {
     }
 
     fn clear(&mut self) {
-        self.IBCIPIIDCOL = 0;
+        self.BIFBHDAJILO = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideRefreshEndlessScRsp {
         static instance: AetherDivideRefreshEndlessScRsp = AetherDivideRefreshEndlessScRsp {
-            IBCIPIIDCOL: 0,
+            BIFBHDAJILO: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideRefreshEndlessScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%AetherDivideRefreshEndlessScRsp.proto\"]\n\x1fAetherDivideRefreshEndl\
-    essScRsp\x12\x20\n\x0bIBCIPIIDCOL\x18\t\x20\x01(\rR\x0bIBCIPIIDCOL\x12\
-    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    essScRsp\x12\x20\n\x0bBIFBHDAJILO\x18\x07\x20\x01(\rR\x0bBIFBHDAJILO\x12\
+    \x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

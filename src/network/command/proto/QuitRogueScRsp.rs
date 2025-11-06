@@ -79,7 +79,7 @@ impl ::protobuf::Message for QuitRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_game_info)?;
                 },
                 104 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for QuitRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.rogue_game_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for QuitRogueScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14QuitRogueScRsp.proto\x1a\x0fRogueInfo.proto\"^\n\x0eQuitRogueScRsp\
-    \x122\n\x0frogue_game_info\x18\x07\x20\x01(\x0b2\n.RogueInfoR\rrogueGame\
+    \x122\n\x0frogue_game_info\x18\x01\x20\x01(\x0b2\n.RogueInfoR\rrogueGame\
     Info\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

@@ -79,7 +79,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.shop_id = is.read_uint32()?;
                 },
                 88 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.shop_id);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.level);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.shop_id != 0 {
-            os.write_uint32(3, self.shop_id)?;
+            os.write_uint32(5, self.shop_id)?;
         }
         if self.level != 0 {
             os.write_uint32(11, self.level)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeCityShopRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeCityShopRewardCsReq.proto\"H\n\x17TakeCityShopRewardCsReq\x12\
-    \x17\n\x07shop_id\x18\x03\x20\x01(\rR\x06shopId\x12\x14\n\x05level\x18\
+    \x17\n\x07shop_id\x18\x05\x20\x01(\rR\x06shopId\x12\x14\n\x05level\x18\
     \x0b\x20\x01(\rR\x05levelb\x06proto3\
 ";
 

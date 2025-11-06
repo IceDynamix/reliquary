@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGCDDLKHFEB {
     // message fields
-    // @@protoc_insertion_point(field:EGCDDLKHFEB.MLPCFGDAFND)
-    pub MLPCFGDAFND: ::protobuf::MessageField<super::MDOHAFBEEPK::MDOHAFBEEPK>,
-    // @@protoc_insertion_point(field:EGCDDLKHFEB.OLKNDFJBDGJ)
-    pub OLKNDFJBDGJ: ::protobuf::EnumOrUnknown<super::BFILLIOBMFN::BFILLIOBMFN>,
+    // @@protoc_insertion_point(field:EGCDDLKHFEB.FMANGLOEHPK)
+    pub FMANGLOEHPK: ::protobuf::MessageField<super::MDOHAFBEEPK::MDOHAFBEEPK>,
+    // @@protoc_insertion_point(field:EGCDDLKHFEB.EJNGEDPJMPK)
+    pub EJNGEDPJMPK: ::protobuf::EnumOrUnknown<super::Match3EventState::Match3EventState>,
     // special fields
     // @@protoc_insertion_point(special_field:EGCDDLKHFEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EGCDDLKHFEB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDOHAFBEEPK::MDOHAFBEEPK>(
-            "MLPCFGDAFND",
-            |m: &EGCDDLKHFEB| { &m.MLPCFGDAFND },
-            |m: &mut EGCDDLKHFEB| { &mut m.MLPCFGDAFND },
+            "FMANGLOEHPK",
+            |m: &EGCDDLKHFEB| { &m.FMANGLOEHPK },
+            |m: &mut EGCDDLKHFEB| { &mut m.FMANGLOEHPK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OLKNDFJBDGJ",
-            |m: &EGCDDLKHFEB| { &m.OLKNDFJBDGJ },
-            |m: &mut EGCDDLKHFEB| { &mut m.OLKNDFJBDGJ },
+            "EJNGEDPJMPK",
+            |m: &EGCDDLKHFEB| { &m.EJNGEDPJMPK },
+            |m: &mut EGCDDLKHFEB| { &mut m.EJNGEDPJMPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGCDDLKHFEB>(
             "EGCDDLKHFEB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EGCDDLKHFEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MLPCFGDAFND)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMANGLOEHPK)?;
                 },
-                96 => {
-                    self.OLKNDFJBDGJ = is.read_enum_or_unknown()?;
+                32 => {
+                    self.EJNGEDPJMPK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EGCDDLKHFEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MLPCFGDAFND.as_ref() {
+        if let Some(v) = self.FMANGLOEHPK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OLKNDFJBDGJ != ::protobuf::EnumOrUnknown::new(super::BFILLIOBMFN::BFILLIOBMFN::EVENT_BEGIN) {
-            my_size += ::protobuf::rt::int32_size(12, self.OLKNDFJBDGJ.value());
+        if self.EJNGEDPJMPK != ::protobuf::EnumOrUnknown::new(super::Match3EventState::Match3EventState::EVENT_BEGIN) {
+            my_size += ::protobuf::rt::int32_size(4, self.EJNGEDPJMPK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EGCDDLKHFEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MLPCFGDAFND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.FMANGLOEHPK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.OLKNDFJBDGJ != ::protobuf::EnumOrUnknown::new(super::BFILLIOBMFN::BFILLIOBMFN::EVENT_BEGIN) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.OLKNDFJBDGJ))?;
+        if self.EJNGEDPJMPK != ::protobuf::EnumOrUnknown::new(super::Match3EventState::Match3EventState::EVENT_BEGIN) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.EJNGEDPJMPK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EGCDDLKHFEB {
     }
 
     fn clear(&mut self) {
-        self.MLPCFGDAFND.clear();
-        self.OLKNDFJBDGJ = ::protobuf::EnumOrUnknown::new(super::BFILLIOBMFN::BFILLIOBMFN::EVENT_BEGIN);
+        self.FMANGLOEHPK.clear();
+        self.EJNGEDPJMPK = ::protobuf::EnumOrUnknown::new(super::Match3EventState::Match3EventState::EVENT_BEGIN);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGCDDLKHFEB {
         static instance: EGCDDLKHFEB = EGCDDLKHFEB {
-            MLPCFGDAFND: ::protobuf::MessageField::none(),
-            OLKNDFJBDGJ: ::protobuf::EnumOrUnknown::from_i32(0),
+            FMANGLOEHPK: ::protobuf::MessageField::none(),
+            EJNGEDPJMPK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EGCDDLKHFEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGCDDLKHFEB.proto\x1a\x11BFILLIOBMFN.proto\x1a\x11MDOHAFBEEPK.prot\
-    o\"m\n\x0bEGCDDLKHFEB\x12.\n\x0bMLPCFGDAFND\x18\x0e\x20\x01(\x0b2\x0c.MD\
-    OHAFBEEPKR\x0bMLPCFGDAFND\x12.\n\x0bOLKNDFJBDGJ\x18\x0c\x20\x01(\x0e2\
-    \x0c.BFILLIOBMFNR\x0bOLKNDFJBDGJb\x06proto3\
+    \n\x11EGCDDLKHFEB.proto\x1a\x11MDOHAFBEEPK.proto\x1a\x16Match3EventState\
+    .proto\"r\n\x0bEGCDDLKHFEB\x12.\n\x0bFMANGLOEHPK\x18\x02\x20\x01(\x0b2\
+    \x0c.MDOHAFBEEPKR\x0bFMANGLOEHPK\x123\n\x0bEJNGEDPJMPK\x18\x04\x20\x01(\
+    \x0e2\x11.Match3EventStateR\x0bEJNGEDPJMPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,8 +187,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BFILLIOBMFN::file_descriptor().clone());
             deps.push(super::MDOHAFBEEPK::file_descriptor().clone());
+            deps.push(super::Match3EventState::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EGCDDLKHFEB::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

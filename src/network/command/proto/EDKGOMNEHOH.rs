@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDKGOMNEHOH {
     // message fields
-    // @@protoc_insertion_point(field:EDKGOMNEHOH.FJOAFFLLEOK)
-    pub FJOAFFLLEOK: ::std::vec::Vec<super::BCMOKFHJMPM::BCMOKFHJMPM>,
+    // @@protoc_insertion_point(field:EDKGOMNEHOH.JEHNHGGPMFJ)
+    pub JEHNHGGPMFJ: ::std::vec::Vec<super::BCMOKFHJMPM::BCMOKFHJMPM>,
     // special fields
     // @@protoc_insertion_point(special_field:EDKGOMNEHOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EDKGOMNEHOH {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJOAFFLLEOK",
-            |m: &EDKGOMNEHOH| { &m.FJOAFFLLEOK },
-            |m: &mut EDKGOMNEHOH| { &mut m.FJOAFFLLEOK },
+            "JEHNHGGPMFJ",
+            |m: &EDKGOMNEHOH| { &m.JEHNHGGPMFJ },
+            |m: &mut EDKGOMNEHOH| { &mut m.JEHNHGGPMFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EDKGOMNEHOH>(
             "EDKGOMNEHOH",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for EDKGOMNEHOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.FJOAFFLLEOK.push(is.read_message()?);
+                90 => {
+                    self.JEHNHGGPMFJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for EDKGOMNEHOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FJOAFFLLEOK {
+        for value in &self.JEHNHGGPMFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EDKGOMNEHOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FJOAFFLLEOK {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.JEHNHGGPMFJ {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EDKGOMNEHOH {
     }
 
     fn clear(&mut self) {
-        self.FJOAFFLLEOK.clear();
+        self.JEHNHGGPMFJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDKGOMNEHOH {
         static instance: EDKGOMNEHOH = EDKGOMNEHOH {
-            FJOAFFLLEOK: ::std::vec::Vec::new(),
+            JEHNHGGPMFJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for EDKGOMNEHOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EDKGOMNEHOH.proto\x1a\x11BCMOKFHJMPM.proto\"=\n\x0bEDKGOMNEHOH\x12\
-    .\n\x0bFJOAFFLLEOK\x18\r\x20\x03(\x0b2\x0c.BCMOKFHJMPMR\x0bFJOAFFLLEOKb\
-    \x06proto3\
+    .\n\x0bJEHNHGGPMFJ\x18\x0b\x20\x03(\x0b2\x0c.BCMOKFHJMPMR\x0bJEHNHGGPMFJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

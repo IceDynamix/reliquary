@@ -79,10 +79,10 @@ impl ::protobuf::Message for SceneNpcInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.npc_id = is.read_uint32()?;
                 },
-                42 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SceneNpcInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.npc_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.npc_id);
         }
         if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SceneNpcInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.npc_id != 0 {
-            os.write_uint32(10, self.npc_id)?;
+            os.write_uint32(3, self.npc_id)?;
         }
         if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SceneNpcInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12SceneNpcInfo.proto\x1a\x12NpcExtraInfo.proto\"S\n\x0cSceneNpcInfo\
-    \x12\x15\n\x06npc_id\x18\n\x20\x01(\rR\x05npcId\x12,\n\nextra_info\x18\
-    \x05\x20\x01(\x0b2\r.NpcExtraInfoR\textraInfob\x06proto3\
+    \x12\x15\n\x06npc_id\x18\x03\x20\x01(\rR\x05npcId\x12,\n\nextra_info\x18\
+    \x0e\x20\x01(\x0b2\r.NpcExtraInfoR\textraInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

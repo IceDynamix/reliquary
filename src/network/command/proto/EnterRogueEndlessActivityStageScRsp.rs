@@ -30,8 +30,8 @@ pub struct EnterRogueEndlessActivityStageScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageScRsp.BOPAANGKOGH)
-    pub BOPAANGKOGH: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
+    // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageScRsp.MGOFJKEPGKD)
+    pub MGOFJKEPGKD: ::protobuf::MessageField<super::OENDAFIAECG::OENDAFIAECG>,
     // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
@@ -59,9 +59,9 @@ impl EnterRogueEndlessActivityStageScRsp {
             |m: &mut EnterRogueEndlessActivityStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OENDAFIAECG::OENDAFIAECG>(
-            "BOPAANGKOGH",
-            |m: &EnterRogueEndlessActivityStageScRsp| { &m.BOPAANGKOGH },
-            |m: &mut EnterRogueEndlessActivityStageScRsp| { &mut m.BOPAANGKOGH },
+            "MGOFJKEPGKD",
+            |m: &EnterRogueEndlessActivityStageScRsp| { &m.MGOFJKEPGKD },
+            |m: &mut EnterRogueEndlessActivityStageScRsp| { &mut m.MGOFJKEPGKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
             "battle_info",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOPAANGKOGH)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGOFJKEPGKD)?;
                 },
-                42 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -108,9 +108,9 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let Some(v) = self.BOPAANGKOGH.as_ref() {
+        if let Some(v) = self.MGOFJKEPGKD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +125,13 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let Some(v) = self.BOPAANGKOGH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.MGOFJKEPGKD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BOPAANGKOGH.clear();
+        self.MGOFJKEPGKD.clear();
         self.battle_info.clear();
         self.special_fields.clear();
     }
@@ -159,7 +159,7 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageScRsp {
     fn default_instance() -> &'static EnterRogueEndlessActivityStageScRsp {
         static instance: EnterRogueEndlessActivityStageScRsp = EnterRogueEndlessActivityStageScRsp {
             retcode: 0,
-            BOPAANGKOGH: ::protobuf::MessageField::none(),
+            MGOFJKEPGKD: ::protobuf::MessageField::none(),
             battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueEndlessActivityStageScRsp 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)EnterRogueEndlessActivityStageScRsp.proto\x1a\x11OENDAFIAECG.proto\
     \x1a\x15SceneBattleInfo.proto\"\xa2\x01\n#EnterRogueEndlessActivityStage\
-    ScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bBOPA\
-    ANGKOGH\x18\n\x20\x01(\x0b2\x0c.OENDAFIAECGR\x0bBOPAANGKOGH\x121\n\x0bba\
-    ttle_info\x18\x05\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfob\x06pro\
-    to3\
+    ScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bMGOF\
+    JKEPGKD\x18\x0b\x20\x01(\x0b2\x0c.OENDAFIAECGR\x0bMGOFJKEPGKD\x121\n\x0b\
+    battle_info\x18\x0c\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfob\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

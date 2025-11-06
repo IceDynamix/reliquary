@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityMoveScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.entity_id)
+    pub entity_id: u32,
+    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.pos_version)
+    pub pos_version: u32,
     // @@protoc_insertion_point(field:SceneEntityMoveScNotify.entry_id)
     pub entry_id: u32,
     // @@protoc_insertion_point(field:SceneEntityMoveScNotify.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.client_pos_version)
-    pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:SceneEntityMoveScNotify.entity_id)
-    pub entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl SceneEntityMoveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entity_id",
+            |m: &SceneEntityMoveScNotify| { &m.entity_id },
+            |m: &mut SceneEntityMoveScNotify| { &mut m.entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos_version",
+            |m: &SceneEntityMoveScNotify| { &m.pos_version },
+            |m: &mut SceneEntityMoveScNotify| { &mut m.pos_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entry_id",
             |m: &SceneEntityMoveScNotify| { &m.entry_id },
             |m: &mut SceneEntityMoveScNotify| { &mut m.entry_id },
@@ -64,16 +74,6 @@ impl SceneEntityMoveScNotify {
             "motion",
             |m: &SceneEntityMoveScNotify| { &m.motion },
             |m: &mut SceneEntityMoveScNotify| { &mut m.motion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &SceneEntityMoveScNotify| { &m.client_pos_version },
-            |m: &mut SceneEntityMoveScNotify| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &SceneEntityMoveScNotify| { &m.entity_id },
-            |m: &mut SceneEntityMoveScNotify| { &mut m.entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveScNotify>(
             "SceneEntityMoveScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                32 => {
+                    self.entity_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.pos_version = is.read_uint32()?;
+                },
                 64 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                58 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
-                },
-                40 => {
-                    self.client_pos_version = is.read_uint32()?;
-                },
-                104 => {
-                    self.entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,6 +117,12 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.entity_id);
+        }
+        if self.pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.pos_version);
+        }
         if self.entry_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.entry_id);
         }
@@ -124,29 +130,23 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.client_pos_version);
-        }
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.entity_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.entity_id != 0 {
+            os.write_uint32(4, self.entity_id)?;
+        }
+        if self.pos_version != 0 {
+            os.write_uint32(6, self.pos_version)?;
+        }
         if self.entry_id != 0 {
             os.write_uint32(8, self.entry_id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.client_pos_version != 0 {
-            os.write_uint32(5, self.client_pos_version)?;
-        }
-        if self.entity_id != 0 {
-            os.write_uint32(13, self.entity_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for SceneEntityMoveScNotify {
     }
 
     fn clear(&mut self) {
+        self.entity_id = 0;
+        self.pos_version = 0;
         self.entry_id = 0;
         self.motion.clear();
-        self.client_pos_version = 0;
-        self.entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityMoveScNotify {
         static instance: SceneEntityMoveScNotify = SceneEntityMoveScNotify {
+            entity_id: 0,
+            pos_version: 0,
             entry_id: 0,
             motion: ::protobuf::MessageField::none(),
-            client_pos_version: 0,
-            entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSceneEntityMoveScNotify.proto\x1a\x10MotionInfo.proto\"\xa4\x01\n\
-    \x17SceneEntityMoveScNotify\x12\x19\n\x08entry_id\x18\x08\x20\x01(\rR\
-    \x07entryId\x12#\n\x06motion\x18\x07\x20\x01(\x0b2\x0b.MotionInfoR\x06mo\
-    tion\x12,\n\x12client_pos_version\x18\x05\x20\x01(\rR\x10clientPosVersio\
-    n\x12\x1b\n\tentity_id\x18\r\x20\x01(\rR\x08entityIdb\x06proto3\
+    \n\x1dSceneEntityMoveScNotify.proto\x1a\x10MotionInfo.proto\"\x97\x01\n\
+    \x17SceneEntityMoveScNotify\x12\x1b\n\tentity_id\x18\x04\x20\x01(\rR\x08\
+    entityId\x12\x1f\n\x0bpos_version\x18\x06\x20\x01(\rR\nposVersion\x12\
+    \x19\n\x08entry_id\x18\x08\x20\x01(\rR\x07entryId\x12#\n\x06motion\x18\
+    \x0b\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

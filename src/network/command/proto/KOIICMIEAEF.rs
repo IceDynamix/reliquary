@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOIICMIEAEF {
     // message fields
-    // @@protoc_insertion_point(field:KOIICMIEAEF.DPPLCDDHBGE)
-    pub DPPLCDDHBGE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KOIICMIEAEF.LGEAEHMFAIF)
+    pub LGEAEHMFAIF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KOIICMIEAEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl KOIICMIEAEF {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DPPLCDDHBGE",
-            |m: &KOIICMIEAEF| { &m.DPPLCDDHBGE },
-            |m: &mut KOIICMIEAEF| { &mut m.DPPLCDDHBGE },
+            "LGEAEHMFAIF",
+            |m: &KOIICMIEAEF| { &m.LGEAEHMFAIF },
+            |m: &mut KOIICMIEAEF| { &mut m.LGEAEHMFAIF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOIICMIEAEF>(
             "KOIICMIEAEF",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for KOIICMIEAEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                6450 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DPPLCDDHBGE)?;
+                9922 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LGEAEHMFAIF)?;
                 },
-                6448 => {
-                    self.DPPLCDDHBGE.push(is.read_uint32()?);
+                9920 => {
+                    self.LGEAEHMFAIF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for KOIICMIEAEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(806, &self.DPPLCDDHBGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1240, &self.LGEAEHMFAIF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(806, &self.DPPLCDDHBGE)?;
+        os.write_repeated_packed_uint32(1240, &self.LGEAEHMFAIF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for KOIICMIEAEF {
     }
 
     fn clear(&mut self) {
-        self.DPPLCDDHBGE.clear();
+        self.LGEAEHMFAIF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOIICMIEAEF {
         static instance: KOIICMIEAEF = KOIICMIEAEF {
-            DPPLCDDHBGE: ::std::vec::Vec::new(),
+            LGEAEHMFAIF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for KOIICMIEAEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KOIICMIEAEF.proto\"0\n\x0bKOIICMIEAEF\x12!\n\x0bDPPLCDDHBGE\x18\
-    \xa6\x06\x20\x03(\rR\x0bDPPLCDDHBGEb\x06proto3\
+    \n\x11KOIICMIEAEF.proto\"0\n\x0bKOIICMIEAEF\x12!\n\x0bLGEAEHMFAIF\x18\
+    \xd8\t\x20\x03(\rR\x0bLGEAEHMFAIFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

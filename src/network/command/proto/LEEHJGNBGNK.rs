@@ -82,7 +82,7 @@ impl ::protobuf::Message for LEEHJGNBGNK {
                 40 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LEEHJGNBGNK {
             my_size += ::protobuf::rt::uint32_size(5, self.queue_position);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for LEEHJGNBGNK {
             os.write_uint32(5, self.queue_position)?;
         }
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(6, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LEEHJGNBGNK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEEHJGNBGNK.proto\"J\n\x0bLEEHJGNBGNK\x12%\n\x0equeue_position\x18\
-    \x05\x20\x01(\rR\rqueuePosition\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05\
-    levelb\x06proto3\
+    \x05\x20\x01(\rR\rqueuePosition\x12\x14\n\x05level\x18\x06\x20\x01(\rR\
+    \x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

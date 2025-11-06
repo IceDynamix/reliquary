@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGuessDrawScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGuessDrawScNotify.JHIIKPEJEIE)
-    pub JHIIKPEJEIE: ::std::vec::Vec<super::ACKNCAAAMJM::ACKNCAAAMJM>,
+    // @@protoc_insertion_point(field:MonopolyGuessDrawScNotify.GODNEBKFKGP)
+    pub GODNEBKFKGP: ::std::vec::Vec<super::ACKNCAAAMJM::ACKNCAAAMJM>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGuessDrawScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyGuessDrawScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JHIIKPEJEIE",
-            |m: &MonopolyGuessDrawScNotify| { &m.JHIIKPEJEIE },
-            |m: &mut MonopolyGuessDrawScNotify| { &mut m.JHIIKPEJEIE },
+            "GODNEBKFKGP",
+            |m: &MonopolyGuessDrawScNotify| { &m.GODNEBKFKGP },
+            |m: &mut MonopolyGuessDrawScNotify| { &mut m.GODNEBKFKGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGuessDrawScNotify>(
             "MonopolyGuessDrawScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyGuessDrawScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.JHIIKPEJEIE.push(is.read_message()?);
+                10 => {
+                    self.GODNEBKFKGP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MonopolyGuessDrawScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JHIIKPEJEIE {
+        for value in &self.GODNEBKFKGP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MonopolyGuessDrawScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JHIIKPEJEIE {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.GODNEBKFKGP {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MonopolyGuessDrawScNotify {
     }
 
     fn clear(&mut self) {
-        self.JHIIKPEJEIE.clear();
+        self.GODNEBKFKGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGuessDrawScNotify {
         static instance: MonopolyGuessDrawScNotify = MonopolyGuessDrawScNotify {
-            JHIIKPEJEIE: ::std::vec::Vec::new(),
+            GODNEBKFKGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGuessDrawScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fMonopolyGuessDrawScNotify.proto\x1a\x11ACKNCAAAMJM.proto\"K\n\x19M\
-    onopolyGuessDrawScNotify\x12.\n\x0bJHIIKPEJEIE\x18\x0e\x20\x03(\x0b2\x0c\
-    .ACKNCAAAMJMR\x0bJHIIKPEJEIEb\x06proto3\
+    onopolyGuessDrawScNotify\x12.\n\x0bGODNEBKFKGP\x18\x01\x20\x03(\x0b2\x0c\
+    .ACKNCAAAMJMR\x0bGODNEBKFKGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

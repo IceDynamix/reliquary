@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMapRotationDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.rogue_map)
-    pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.charger_info)
-    pub charger_info: ::std::vec::Vec<super::ChargerInfo::ChargerInfo>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.rotater_data_list)
-    pub rotater_data_list: ::std::vec::Vec<super::RotaterData::RotaterData>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.era_flipper_region_id)
-    pub era_flipper_region_id: i32,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.NFLBONDJAIE)
-    pub NFLBONDJAIE: u32,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.current_pose_index)
+    pub current_pose_index: u32,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.HENNIJCDAEJ)
+    pub HENNIJCDAEJ: bool,
     // @@protoc_insertion_point(field:GetMapRotationDataScRsp.energy_info)
     pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
-    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.OMEJLLMNPCN)
-    pub OMEJLLMNPCN: bool,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.current_region_index)
+    pub current_region_index: i32,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.rotater_config_list)
+    pub rotater_config_list: ::std::vec::Vec<super::RotaterData::RotaterData>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.charger_config_list)
+    pub charger_config_list: ::std::vec::Vec<super::ChargerData::ChargerData>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
+    // @@protoc_insertion_point(field:GetMapRotationDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMapRotationDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,35 +63,15 @@ impl GetMapRotationDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
-            "rogue_map",
-            |m: &GetMapRotationDataScRsp| { &m.rogue_map },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.rogue_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "charger_info",
-            |m: &GetMapRotationDataScRsp| { &m.charger_info },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.charger_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "rotater_data_list",
-            |m: &GetMapRotationDataScRsp| { &m.rotater_data_list },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.rotater_data_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "current_pose_index",
+            |m: &GetMapRotationDataScRsp| { &m.current_pose_index },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.current_pose_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "era_flipper_region_id",
-            |m: &GetMapRotationDataScRsp| { &m.era_flipper_region_id },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.era_flipper_region_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFLBONDJAIE",
-            |m: &GetMapRotationDataScRsp| { &m.NFLBONDJAIE },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.NFLBONDJAIE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMapRotationDataScRsp| { &m.retcode },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.retcode },
+            "HENNIJCDAEJ",
+            |m: &GetMapRotationDataScRsp| { &m.HENNIJCDAEJ },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.HENNIJCDAEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
             "energy_info",
@@ -99,9 +79,29 @@ impl GetMapRotationDataScRsp {
             |m: &mut GetMapRotationDataScRsp| { &mut m.energy_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMEJLLMNPCN",
-            |m: &GetMapRotationDataScRsp| { &m.OMEJLLMNPCN },
-            |m: &mut GetMapRotationDataScRsp| { &mut m.OMEJLLMNPCN },
+            "current_region_index",
+            |m: &GetMapRotationDataScRsp| { &m.current_region_index },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.current_region_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rotater_config_list",
+            |m: &GetMapRotationDataScRsp| { &m.rotater_config_list },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.rotater_config_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "charger_config_list",
+            |m: &GetMapRotationDataScRsp| { &m.charger_config_list },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.charger_config_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
+            "rogue_map",
+            |m: &GetMapRotationDataScRsp| { &m.rogue_map },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.rogue_map },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetMapRotationDataScRsp| { &m.retcode },
+            |m: &mut GetMapRotationDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMapRotationDataScRsp>(
             "GetMapRotationDataScRsp",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
+                8 => {
+                    self.current_pose_index = is.read_uint32()?;
+                },
+                56 => {
+                    self.HENNIJCDAEJ = is.read_bool()?;
                 },
                 66 => {
-                    self.charger_info.push(is.read_message()?);
-                },
-                10 => {
-                    self.rotater_data_list.push(is.read_message()?);
-                },
-                24 => {
-                    self.era_flipper_region_id = is.read_int32()?;
-                },
-                88 => {
-                    self.NFLBONDJAIE = is.read_uint32()?;
-                },
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
-                40 => {
-                    self.OMEJLLMNPCN = is.read_bool()?;
+                72 => {
+                    self.current_region_index = is.read_int32()?;
+                },
+                90 => {
+                    self.rotater_config_list.push(is.read_message()?);
+                },
+                106 => {
+                    self.charger_config_list.push(is.read_message()?);
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,33 +157,33 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rogue_map.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.current_pose_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.current_pose_index);
         }
-        for value in &self.charger_info {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.rotater_data_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::int32_size(3, self.era_flipper_region_id);
-        }
-        if self.NFLBONDJAIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NFLBONDJAIE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        if self.HENNIJCDAEJ != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OMEJLLMNPCN != false {
-            my_size += 1 + 1;
+        if self.current_region_index != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.current_region_index);
+        }
+        for value in &self.rotater_config_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.charger_config_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.rogue_map.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -191,29 +191,29 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.current_pose_index != 0 {
+            os.write_uint32(1, self.current_pose_index)?;
         }
-        for v in &self.charger_info {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.rotater_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        if self.era_flipper_region_id != 0 {
-            os.write_int32(3, self.era_flipper_region_id)?;
-        }
-        if self.NFLBONDJAIE != 0 {
-            os.write_uint32(11, self.NFLBONDJAIE)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        if self.HENNIJCDAEJ != false {
+            os.write_bool(7, self.HENNIJCDAEJ)?;
         }
         if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.OMEJLLMNPCN != false {
-            os.write_bool(5, self.OMEJLLMNPCN)?;
+        if self.current_region_index != 0 {
+            os.write_int32(9, self.current_region_index)?;
+        }
+        for v in &self.rotater_config_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.charger_config_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -232,27 +232,27 @@ impl ::protobuf::Message for GetMapRotationDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.rogue_map.clear();
-        self.charger_info.clear();
-        self.rotater_data_list.clear();
-        self.era_flipper_region_id = 0;
-        self.NFLBONDJAIE = 0;
-        self.retcode = 0;
+        self.current_pose_index = 0;
+        self.HENNIJCDAEJ = false;
         self.energy_info.clear();
-        self.OMEJLLMNPCN = false;
+        self.current_region_index = 0;
+        self.rotater_config_list.clear();
+        self.charger_config_list.clear();
+        self.rogue_map.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMapRotationDataScRsp {
         static instance: GetMapRotationDataScRsp = GetMapRotationDataScRsp {
-            rogue_map: ::protobuf::MessageField::none(),
-            charger_info: ::std::vec::Vec::new(),
-            rotater_data_list: ::std::vec::Vec::new(),
-            era_flipper_region_id: 0,
-            NFLBONDJAIE: 0,
-            retcode: 0,
+            current_pose_index: 0,
+            HENNIJCDAEJ: false,
             energy_info: ::protobuf::MessageField::none(),
-            OMEJLLMNPCN: false,
+            current_region_index: 0,
+            rotater_config_list: ::std::vec::Vec::new(),
+            charger_config_list: ::std::vec::Vec::new(),
+            rogue_map: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -277,17 +277,17 @@ impl ::protobuf::reflect::ProtobufValue for GetMapRotationDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetMapRotationDataScRsp.proto\x1a\x11ChargerInfo.proto\x1a\x13Rota\
+    \n\x1dGetMapRotationDataScRsp.proto\x1a\x11ChargerData.proto\x1a\x13Rota\
     teMapInfo.proto\x1a\x11RotaterData.proto\x1a\x17RotaterEnergyInfo.proto\
-    \"\xf7\x02\n\x17GetMapRotationDataScRsp\x12+\n\trogue_map\x18\t\x20\x01(\
-    \x0b2\x0e.RotateMapInfoR\x08rogueMap\x12/\n\x0ccharger_info\x18\x08\x20\
-    \x03(\x0b2\x0c.ChargerInfoR\x0bchargerInfo\x128\n\x11rotater_data_list\
-    \x18\x01\x20\x03(\x0b2\x0c.RotaterDataR\x0frotaterDataList\x121\n\x15era\
-    _flipper_region_id\x18\x03\x20\x01(\x05R\x12eraFlipperRegionId\x12\x20\n\
-    \x0bNFLBONDJAIE\x18\x0b\x20\x01(\rR\x0bNFLBONDJAIE\x12\x18\n\x07retcode\
-    \x18\x04\x20\x01(\rR\x07retcode\x123\n\x0benergy_info\x18\x0c\x20\x01(\
-    \x0b2\x12.RotaterEnergyInfoR\nenergyInfo\x12\x20\n\x0bOMEJLLMNPCN\x18\
-    \x05\x20\x01(\x08R\x0bOMEJLLMNPCNb\x06proto3\
+    \"\x93\x03\n\x17GetMapRotationDataScRsp\x12,\n\x12current_pose_index\x18\
+    \x01\x20\x01(\rR\x10currentPoseIndex\x12\x20\n\x0bHENNIJCDAEJ\x18\x07\
+    \x20\x01(\x08R\x0bHENNIJCDAEJ\x123\n\x0benergy_info\x18\x08\x20\x01(\x0b\
+    2\x12.RotaterEnergyInfoR\nenergyInfo\x120\n\x14current_region_index\x18\
+    \t\x20\x01(\x05R\x12currentRegionIndex\x12<\n\x13rotater_config_list\x18\
+    \x0b\x20\x03(\x0b2\x0c.RotaterDataR\x11rotaterConfigList\x12<\n\x13charg\
+    er_config_list\x18\r\x20\x03(\x0b2\x0c.ChargerDataR\x11chargerConfigList\
+    \x12+\n\trogue_map\x18\x0e\x20\x01(\x0b2\x0e.RotateMapInfoR\x08rogueMap\
+    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -305,7 +305,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::ChargerInfo::file_descriptor().clone());
+            deps.push(super::ChargerData::file_descriptor().clone());
             deps.push(super::RotateMapInfo::file_descriptor().clone());
             deps.push(super::RotaterData::file_descriptor().clone());
             deps.push(super::RotaterEnergyInfo::file_descriptor().clone());

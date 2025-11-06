@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.enhanced_id = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.enhanced_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.enhanced_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.enhanced_id);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.enhanced_id != 0 {
-            os.write_uint32(3, self.enhanced_id)?;
+            os.write_uint32(8, self.enhanced_id)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(15, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetAvatarEnhancedIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetAvatarEnhancedIdCsReq.proto\"X\n\x18SetAvatarEnhancedIdCsReq\
-    \x12\x1f\n\x0benhanced_id\x18\x03\x20\x01(\rR\nenhancedId\x12\x1b\n\tava\
-    tar_id\x18\x0f\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \x12\x1f\n\x0benhanced_id\x18\x08\x20\x01(\rR\nenhancedId\x12\x1b\n\tava\
+    tar_id\x18\r\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

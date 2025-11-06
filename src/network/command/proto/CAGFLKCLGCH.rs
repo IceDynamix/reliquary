@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CAGFLKCLGCH {
     // message fields
-    // @@protoc_insertion_point(field:CAGFLKCLGCH.DBGNCIOMIEP)
-    pub DBGNCIOMIEP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CAGFLKCLGCH.BLPIIJAKNGD)
+    pub BLPIIJAKNGD: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:CAGFLKCLGCH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CAGFLKCLGCH {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DBGNCIOMIEP",
-            |m: &CAGFLKCLGCH| { &m.DBGNCIOMIEP },
-            |m: &mut CAGFLKCLGCH| { &mut m.DBGNCIOMIEP },
+            "BLPIIJAKNGD",
+            |m: &CAGFLKCLGCH| { &m.BLPIIJAKNGD },
+            |m: &mut CAGFLKCLGCH| { &mut m.BLPIIJAKNGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CAGFLKCLGCH>(
             "CAGFLKCLGCH",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for CAGFLKCLGCH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DBGNCIOMIEP)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BLPIIJAKNGD)?;
                 },
-                16 => {
-                    self.DBGNCIOMIEP.push(is.read_uint32()?);
+                104 => {
+                    self.BLPIIJAKNGD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for CAGFLKCLGCH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DBGNCIOMIEP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.BLPIIJAKNGD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.DBGNCIOMIEP)?;
+        os.write_repeated_packed_uint32(13, &self.BLPIIJAKNGD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for CAGFLKCLGCH {
     }
 
     fn clear(&mut self) {
-        self.DBGNCIOMIEP.clear();
+        self.BLPIIJAKNGD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CAGFLKCLGCH {
         static instance: CAGFLKCLGCH = CAGFLKCLGCH {
-            DBGNCIOMIEP: ::std::vec::Vec::new(),
+            BLPIIJAKNGD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for CAGFLKCLGCH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CAGFLKCLGCH.proto\"/\n\x0bCAGFLKCLGCH\x12\x20\n\x0bDBGNCIOMIEP\x18\
-    \x02\x20\x03(\rR\x0bDBGNCIOMIEPb\x06proto3\
+    \n\x11CAGFLKCLGCH.proto\"/\n\x0bCAGFLKCLGCH\x12\x20\n\x0bBLPIIJAKNGD\x18\
+    \r\x20\x03(\rR\x0bBLPIIJAKNGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

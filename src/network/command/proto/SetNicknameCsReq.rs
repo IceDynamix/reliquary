@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     self.nickname = is.read_string()?;
                 },
-                24 => {
+                64 => {
                     self.is_modify = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetNicknameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.nickname);
+            my_size += ::protobuf::rt::string_size(5, &self.nickname);
         }
         if self.is_modify != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetNicknameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.nickname.is_empty() {
-            os.write_string(7, &self.nickname)?;
+            os.write_string(5, &self.nickname)?;
         }
         if self.is_modify != false {
-            os.write_bool(3, self.is_modify)?;
+            os.write_bool(8, self.is_modify)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetNicknameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SetNicknameCsReq.proto\"K\n\x10SetNicknameCsReq\x12\x1a\n\x08nickn\
-    ame\x18\x07\x20\x01(\tR\x08nickname\x12\x1b\n\tis_modify\x18\x03\x20\x01\
+    ame\x18\x05\x20\x01(\tR\x08nickname\x12\x1b\n\tis_modify\x18\x08\x20\x01\
     (\x08R\x08isModifyb\x06proto3\
 ";
 

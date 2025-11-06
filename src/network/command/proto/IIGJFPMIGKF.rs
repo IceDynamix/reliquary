@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IIGJFPMIGKF {
     // message fields
-    // @@protoc_insertion_point(field:IIGJFPMIGKF.peak_target)
-    pub peak_target: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IIGJFPMIGKF.peak_hard_mode)
-    pub peak_hard_mode: bool,
-    // @@protoc_insertion_point(field:IIGJFPMIGKF.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::OILPIACENNH::OILPIACENNH>,
-    // @@protoc_insertion_point(field:IIGJFPMIGKF.buff_id)
-    pub buff_id: u32,
     // @@protoc_insertion_point(field:IIGJFPMIGKF.challenge_peak_clear)
     pub challenge_peak_clear: bool,
+    // @@protoc_insertion_point(field:IIGJFPMIGKF.buff_id)
+    pub buff_id: u32,
+    // @@protoc_insertion_point(field:IIGJFPMIGKF.peak_hard_mode)
+    pub peak_hard_mode: bool,
+    // @@protoc_insertion_point(field:IIGJFPMIGKF.peak_target)
+    pub peak_target: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:IIGJFPMIGKF.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::OILPIACENNH::OILPIACENNH>,
     // special fields
     // @@protoc_insertion_point(special_field:IIGJFPMIGKF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,10 @@ impl IIGJFPMIGKF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "peak_target",
-            |m: &IIGJFPMIGKF| { &m.peak_target },
-            |m: &mut IIGJFPMIGKF| { &mut m.peak_target },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_hard_mode",
-            |m: &IIGJFPMIGKF| { &m.peak_hard_mode },
-            |m: &mut IIGJFPMIGKF| { &mut m.peak_hard_mode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &IIGJFPMIGKF| { &m.avatar_list },
-            |m: &mut IIGJFPMIGKF| { &mut m.avatar_list },
+            "challenge_peak_clear",
+            |m: &IIGJFPMIGKF| { &m.challenge_peak_clear },
+            |m: &mut IIGJFPMIGKF| { &mut m.challenge_peak_clear },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -78,9 +68,19 @@ impl IIGJFPMIGKF {
             |m: &mut IIGJFPMIGKF| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_peak_clear",
-            |m: &IIGJFPMIGKF| { &m.challenge_peak_clear },
-            |m: &mut IIGJFPMIGKF| { &mut m.challenge_peak_clear },
+            "peak_hard_mode",
+            |m: &IIGJFPMIGKF| { &m.peak_hard_mode },
+            |m: &mut IIGJFPMIGKF| { &mut m.peak_hard_mode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "peak_target",
+            |m: &IIGJFPMIGKF| { &m.peak_target },
+            |m: &mut IIGJFPMIGKF| { &mut m.peak_target },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &IIGJFPMIGKF| { &m.avatar_list },
+            |m: &mut IIGJFPMIGKF| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IIGJFPMIGKF>(
             "IIGJFPMIGKF",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for IIGJFPMIGKF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
-                },
                 16 => {
-                    self.peak_target.push(is.read_uint32()?);
+                    self.challenge_peak_clear = is.read_bool()?;
                 },
-                24 => {
-                    self.peak_hard_mode = is.read_bool()?;
-                },
-                82 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                64 => {
+                48 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.challenge_peak_clear = is.read_bool()?;
+                56 => {
+                    self.peak_hard_mode = is.read_bool()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.peak_target)?;
+                },
+                96 => {
+                    self.peak_target.push(is.read_uint32()?);
+                },
+                106 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,39 +130,39 @@ impl ::protobuf::Message for IIGJFPMIGKF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.peak_target);
+        if self.challenge_peak_clear != false {
+            my_size += 1 + 1;
+        }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.buff_id);
+        }
         if self.peak_hard_mode != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.peak_target);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
-        }
-        if self.challenge_peak_clear != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.peak_target)?;
-        if self.peak_hard_mode != false {
-            os.write_bool(3, self.peak_hard_mode)?;
-        }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        if self.buff_id != 0 {
-            os.write_uint32(8, self.buff_id)?;
-        }
         if self.challenge_peak_clear != false {
-            os.write_bool(1, self.challenge_peak_clear)?;
+            os.write_bool(2, self.challenge_peak_clear)?;
         }
+        if self.buff_id != 0 {
+            os.write_uint32(6, self.buff_id)?;
+        }
+        if self.peak_hard_mode != false {
+            os.write_bool(7, self.peak_hard_mode)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.peak_target)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -180,21 +180,21 @@ impl ::protobuf::Message for IIGJFPMIGKF {
     }
 
     fn clear(&mut self) {
-        self.peak_target.clear();
-        self.peak_hard_mode = false;
-        self.avatar_list.clear();
-        self.buff_id = 0;
         self.challenge_peak_clear = false;
+        self.buff_id = 0;
+        self.peak_hard_mode = false;
+        self.peak_target.clear();
+        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IIGJFPMIGKF {
         static instance: IIGJFPMIGKF = IIGJFPMIGKF {
-            peak_target: ::std::vec::Vec::new(),
-            peak_hard_mode: false,
-            avatar_list: ::std::vec::Vec::new(),
-            buff_id: 0,
             challenge_peak_clear: false,
+            buff_id: 0,
+            peak_hard_mode: false,
+            peak_target: ::std::vec::Vec::new(),
+            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for IIGJFPMIGKF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IIGJFPMIGKF.proto\x1a\x11OILPIACENNH.proto\"\xce\x01\n\x0bIIGJFPMI\
-    GKF\x12\x1f\n\x0bpeak_target\x18\x02\x20\x03(\rR\npeakTarget\x12$\n\x0ep\
-    eak_hard_mode\x18\x03\x20\x01(\x08R\x0cpeakHardMode\x12-\n\x0bavatar_lis\
-    t\x18\n\x20\x03(\x0b2\x0c.OILPIACENNHR\navatarList\x12\x17\n\x07buff_id\
-    \x18\x08\x20\x01(\rR\x06buffId\x120\n\x14challenge_peak_clear\x18\x01\
-    \x20\x01(\x08R\x12challengePeakClearb\x06proto3\
+    GKF\x120\n\x14challenge_peak_clear\x18\x02\x20\x01(\x08R\x12challengePea\
+    kClear\x12\x17\n\x07buff_id\x18\x06\x20\x01(\rR\x06buffId\x12$\n\x0epeak\
+    _hard_mode\x18\x07\x20\x01(\x08R\x0cpeakHardMode\x12\x1f\n\x0bpeak_targe\
+    t\x18\x0c\x20\x03(\rR\npeakTarget\x12-\n\x0bavatar_list\x18\r\x20\x03(\
+    \x0b2\x0c.OILPIACENNHR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

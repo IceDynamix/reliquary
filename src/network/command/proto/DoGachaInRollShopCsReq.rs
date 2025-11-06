@@ -86,10 +86,10 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.gacha_random = is.read_uint32()?;
                 },
                 104 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.roll_shop_id);
         }
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(12, self.gacha_random);
         }
         if self.gacha_count != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.gacha_count);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.roll_shop_id != 0 {
-            os.write_uint32(2, self.roll_shop_id)?;
+            os.write_uint32(4, self.roll_shop_id)?;
         }
         if self.gacha_random != 0 {
-            os.write_uint32(6, self.gacha_random)?;
+            os.write_uint32(12, self.gacha_random)?;
         }
         if self.gacha_count != 0 {
             os.write_uint32(13, self.gacha_count)?;
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12\
-    \x20\n\x0croll_shop_id\x18\x02\x20\x01(\rR\nrollShopId\x12!\n\x0cgacha_r\
-    andom\x18\x06\x20\x01(\rR\x0bgachaRandom\x12\x1f\n\x0bgacha_count\x18\r\
+    \x20\n\x0croll_shop_id\x18\x04\x20\x01(\rR\nrollShopId\x12!\n\x0cgacha_r\
+    andom\x18\x0c\x20\x01(\rR\x0bgachaRandom\x12\x1f\n\x0bgacha_count\x18\r\
     \x20\x01(\rR\ngachaCountb\x06proto3\
 ";
 

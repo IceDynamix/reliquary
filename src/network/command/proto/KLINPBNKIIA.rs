@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KLINPBNKIIA {
     // message fields
-    // @@protoc_insertion_point(field:KLINPBNKIIA.EIJDEOPOFNB)
-    pub EIJDEOPOFNB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KLINPBNKIIA.DNCBPCENKIF)
-    pub DNCBPCENKIF: ::std::vec::Vec<super::PIIBOJCEJJN::PIIBOJCEJJN>,
-    // @@protoc_insertion_point(field:KLINPBNKIIA.CCLJMNCKECP)
-    pub CCLJMNCKECP: ::protobuf::EnumOrUnknown<super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType>,
+    // @@protoc_insertion_point(field:KLINPBNKIIA.FGCDOMPDGHO)
+    pub FGCDOMPDGHO: ::protobuf::EnumOrUnknown<super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType>,
+    // @@protoc_insertion_point(field:KLINPBNKIIA.GADEOLJCPIF)
+    pub GADEOLJCPIF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KLINPBNKIIA.ICAOINHLJKG)
+    pub ICAOINHLJKG: ::std::vec::Vec<super::PIIBOJCEJJN::PIIBOJCEJJN>,
     // special fields
     // @@protoc_insertion_point(special_field:KLINPBNKIIA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl KLINPBNKIIA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EIJDEOPOFNB",
-            |m: &KLINPBNKIIA| { &m.EIJDEOPOFNB },
-            |m: &mut KLINPBNKIIA| { &mut m.EIJDEOPOFNB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DNCBPCENKIF",
-            |m: &KLINPBNKIIA| { &m.DNCBPCENKIF },
-            |m: &mut KLINPBNKIIA| { &mut m.DNCBPCENKIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCLJMNCKECP",
-            |m: &KLINPBNKIIA| { &m.CCLJMNCKECP },
-            |m: &mut KLINPBNKIIA| { &mut m.CCLJMNCKECP },
+            "FGCDOMPDGHO",
+            |m: &KLINPBNKIIA| { &m.FGCDOMPDGHO },
+            |m: &mut KLINPBNKIIA| { &mut m.FGCDOMPDGHO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GADEOLJCPIF",
+            |m: &KLINPBNKIIA| { &m.GADEOLJCPIF },
+            |m: &mut KLINPBNKIIA| { &mut m.GADEOLJCPIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ICAOINHLJKG",
+            |m: &KLINPBNKIIA| { &m.ICAOINHLJKG },
+            |m: &mut KLINPBNKIIA| { &mut m.ICAOINHLJKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KLINPBNKIIA>(
             "KLINPBNKIIA",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for KLINPBNKIIA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EIJDEOPOFNB)?;
+                16 => {
+                    self.FGCDOMPDGHO = is.read_enum_or_unknown()?;
                 },
-                120 => {
-                    self.EIJDEOPOFNB.push(is.read_uint32()?);
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GADEOLJCPIF)?;
                 },
-                50 => {
-                    self.DNCBPCENKIF.push(is.read_message()?);
+                56 => {
+                    self.GADEOLJCPIF.push(is.read_uint32()?);
                 },
-                88 => {
-                    self.CCLJMNCKECP = is.read_enum_or_unknown()?;
+                74 => {
+                    self.ICAOINHLJKG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for KLINPBNKIIA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.EIJDEOPOFNB);
-        for value in &self.DNCBPCENKIF {
+        if self.FGCDOMPDGHO != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.FGCDOMPDGHO.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GADEOLJCPIF);
+        for value in &self.ICAOINHLJKG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CCLJMNCKECP != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.CCLJMNCKECP.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.EIJDEOPOFNB)?;
-        for v in &self.DNCBPCENKIF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.CCLJMNCKECP != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.CCLJMNCKECP))?;
+        if self.FGCDOMPDGHO != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.FGCDOMPDGHO))?;
         }
+        os.write_repeated_packed_uint32(7, &self.GADEOLJCPIF)?;
+        for v in &self.ICAOINHLJKG {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KLINPBNKIIA {
     }
 
     fn clear(&mut self) {
-        self.EIJDEOPOFNB.clear();
-        self.DNCBPCENKIF.clear();
-        self.CCLJMNCKECP = ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE);
+        self.FGCDOMPDGHO = ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SWORD_TRAINING_DAILY_PHASE_TYPE_NONE);
+        self.GADEOLJCPIF.clear();
+        self.ICAOINHLJKG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KLINPBNKIIA {
         static instance: KLINPBNKIIA = KLINPBNKIIA {
-            EIJDEOPOFNB: ::std::vec::Vec::new(),
-            DNCBPCENKIF: ::std::vec::Vec::new(),
-            CCLJMNCKECP: ::protobuf::EnumOrUnknown::from_i32(0),
+            FGCDOMPDGHO: ::protobuf::EnumOrUnknown::from_i32(0),
+            GADEOLJCPIF: ::std::vec::Vec::new(),
+            ICAOINHLJKG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for KLINPBNKIIA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KLINPBNKIIA.proto\x1a\x11PIIBOJCEJJN.proto\x1a!SwordTrainingDailyP\
-    haseType.proto\"\x9f\x01\n\x0bKLINPBNKIIA\x12\x20\n\x0bEIJDEOPOFNB\x18\
-    \x0f\x20\x03(\rR\x0bEIJDEOPOFNB\x12.\n\x0bDNCBPCENKIF\x18\x06\x20\x03(\
-    \x0b2\x0c.PIIBOJCEJJNR\x0bDNCBPCENKIF\x12>\n\x0bCCLJMNCKECP\x18\x0b\x20\
-    \x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bCCLJMNCKECPb\x06proto3\
+    haseType.proto\"\x9f\x01\n\x0bKLINPBNKIIA\x12>\n\x0bFGCDOMPDGHO\x18\x02\
+    \x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bFGCDOMPDGHO\x12\x20\n\
+    \x0bGADEOLJCPIF\x18\x07\x20\x03(\rR\x0bGADEOLJCPIF\x12.\n\x0bICAOINHLJKG\
+    \x18\t\x20\x03(\x0b2\x0c.PIIBOJCEJJNR\x0bICAOINHLJKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

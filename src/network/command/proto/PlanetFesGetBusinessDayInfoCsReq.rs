@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetBusinessDayInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoCsReq.MKBPDPAFAPK)
-    pub MKBPDPAFAPK: bool,
+    // @@protoc_insertion_point(field:PlanetFesGetBusinessDayInfoCsReq.PPKCMBLBPGD)
+    pub PPKCMBLBPGD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetBusinessDayInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesGetBusinessDayInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKBPDPAFAPK",
-            |m: &PlanetFesGetBusinessDayInfoCsReq| { &m.MKBPDPAFAPK },
-            |m: &mut PlanetFesGetBusinessDayInfoCsReq| { &mut m.MKBPDPAFAPK },
+            "PPKCMBLBPGD",
+            |m: &PlanetFesGetBusinessDayInfoCsReq| { &m.PPKCMBLBPGD },
+            |m: &mut PlanetFesGetBusinessDayInfoCsReq| { &mut m.PPKCMBLBPGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetBusinessDayInfoCsReq>(
             "PlanetFesGetBusinessDayInfoCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.MKBPDPAFAPK = is.read_bool()?;
+                88 => {
+                    self.PPKCMBLBPGD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MKBPDPAFAPK != false {
+        if self.PPKCMBLBPGD != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MKBPDPAFAPK != false {
-            os.write_bool(7, self.MKBPDPAFAPK)?;
+        if self.PPKCMBLBPGD != false {
+            os.write_bool(11, self.PPKCMBLBPGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.MKBPDPAFAPK = false;
+        self.PPKCMBLBPGD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetBusinessDayInfoCsReq {
         static instance: PlanetFesGetBusinessDayInfoCsReq = PlanetFesGetBusinessDayInfoCsReq {
-            MKBPDPAFAPK: false,
+            PPKCMBLBPGD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetBusinessDayInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlanetFesGetBusinessDayInfoCsReq.proto\"D\n\x20PlanetFesGetBusinessDa\
-    yInfoCsReq\x12\x20\n\x0bMKBPDPAFAPK\x18\x07\x20\x01(\x08R\x0bMKBPDPAFAPK\
+    yInfoCsReq\x12\x20\n\x0bPPKCMBLBPGD\x18\x0b\x20\x01(\x08R\x0bPPKCMBLBPGD\
     b\x06proto3\
 ";
 

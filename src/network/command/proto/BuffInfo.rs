@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuffInfo {
     // message fields
-    // @@protoc_insertion_point(field:BuffInfo.base_avatar_id)
-    pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:BuffInfo.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:BuffInfo.count)
-    pub count: u32,
-    // @@protoc_insertion_point(field:BuffInfo.buff_id)
-    pub buff_id: u32,
-    // @@protoc_insertion_point(field:BuffInfo.add_time_ms)
-    pub add_time_ms: u64,
-    // @@protoc_insertion_point(field:BuffInfo.buff_summon_entity_id)
-    pub buff_summon_entity_id: u32,
     // @@protoc_insertion_point(field:BuffInfo.dynamic_values)
     pub dynamic_values: ::std::collections::HashMap<::std::string::String, f32>,
     // @@protoc_insertion_point(field:BuffInfo.life_time)
     pub life_time: f32,
+    // @@protoc_insertion_point(field:BuffInfo.buff_id)
+    pub buff_id: u32,
+    // @@protoc_insertion_point(field:BuffInfo.count)
+    pub count: u32,
+    // @@protoc_insertion_point(field:BuffInfo.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:BuffInfo.base_avatar_id)
+    pub base_avatar_id: u32,
+    // @@protoc_insertion_point(field:BuffInfo.add_time_ms)
+    pub add_time_ms: u64,
+    // @@protoc_insertion_point(field:BuffInfo.buff_summon_entity_id)
+    pub buff_summon_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,15 +63,20 @@ impl BuffInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &BuffInfo| { &m.base_avatar_id },
-            |m: &mut BuffInfo| { &mut m.base_avatar_id },
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "dynamic_values",
+            |m: &BuffInfo| { &m.dynamic_values },
+            |m: &mut BuffInfo| { &mut m.dynamic_values },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &BuffInfo| { &m.level },
-            |m: &mut BuffInfo| { &mut m.level },
+            "life_time",
+            |m: &BuffInfo| { &m.life_time },
+            |m: &mut BuffInfo| { &mut m.life_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_id",
+            |m: &BuffInfo| { &m.buff_id },
+            |m: &mut BuffInfo| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
@@ -79,9 +84,14 @@ impl BuffInfo {
             |m: &mut BuffInfo| { &mut m.count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_id",
-            |m: &BuffInfo| { &m.buff_id },
-            |m: &mut BuffInfo| { &mut m.buff_id },
+            "level",
+            |m: &BuffInfo| { &m.level },
+            |m: &mut BuffInfo| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "base_avatar_id",
+            |m: &BuffInfo| { &m.base_avatar_id },
+            |m: &mut BuffInfo| { &mut m.base_avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "add_time_ms",
@@ -92,16 +102,6 @@ impl BuffInfo {
             "buff_summon_entity_id",
             |m: &BuffInfo| { &m.buff_summon_entity_id },
             |m: &mut BuffInfo| { &mut m.buff_summon_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "dynamic_values",
-            |m: &BuffInfo| { &m.dynamic_values },
-            |m: &mut BuffInfo| { &mut m.dynamic_values },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "life_time",
-            |m: &BuffInfo| { &m.life_time },
-            |m: &mut BuffInfo| { &mut m.life_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuffInfo>(
             "BuffInfo",
@@ -121,25 +121,7 @@ impl ::protobuf::Message for BuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.base_avatar_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.level = is.read_uint32()?;
-                },
-                104 => {
-                    self.count = is.read_uint32()?;
-                },
-                16 => {
-                    self.buff_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.add_time_ms = is.read_uint64()?;
-                },
-                112 => {
-                    self.buff_summon_entity_id = is.read_uint32()?;
-                },
-                82 => {
+                10 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -154,8 +136,26 @@ impl ::protobuf::Message for BuffInfo {
                     is.pop_limit(old_limit);
                     self.dynamic_values.insert(key, value);
                 },
-                45 => {
+                21 => {
                     self.life_time = is.read_float()?;
+                },
+                24 => {
+                    self.buff_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.count = is.read_uint32()?;
+                },
+                48 => {
+                    self.level = is.read_uint32()?;
+                },
+                64 => {
+                    self.base_avatar_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.add_time_ms = is.read_uint64()?;
+                },
+                120 => {
+                    self.buff_summon_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -169,24 +169,6 @@ impl ::protobuf::Message for BuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.base_avatar_id);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
-        }
-        if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.count);
-        }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.buff_id);
-        }
-        if self.add_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.add_time_ms);
-        }
-        if self.buff_summon_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.buff_summon_entity_id);
-        }
         for (k, v) in &self.dynamic_values {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -196,41 +178,59 @@ impl ::protobuf::Message for BuffInfo {
         if self.life_time != 0. {
             my_size += 1 + 4;
         }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
+        }
+        if self.count != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.count);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
+        }
+        if self.base_avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.base_avatar_id);
+        }
+        if self.add_time_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.add_time_ms);
+        }
+        if self.buff_summon_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.buff_summon_entity_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.base_avatar_id != 0 {
-            os.write_uint32(12, self.base_avatar_id)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(8, self.level)?;
-        }
-        if self.count != 0 {
-            os.write_uint32(13, self.count)?;
-        }
-        if self.buff_id != 0 {
-            os.write_uint32(2, self.buff_id)?;
-        }
-        if self.add_time_ms != 0 {
-            os.write_uint64(7, self.add_time_ms)?;
-        }
-        if self.buff_summon_entity_id != 0 {
-            os.write_uint32(14, self.buff_summon_entity_id)?;
-        }
         for (k, v) in &self.dynamic_values {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += 1 + 4;
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_float(2, *v)?;
         };
         if self.life_time != 0. {
-            os.write_float(5, self.life_time)?;
+            os.write_float(2, self.life_time)?;
+        }
+        if self.buff_id != 0 {
+            os.write_uint32(3, self.buff_id)?;
+        }
+        if self.count != 0 {
+            os.write_uint32(5, self.count)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(6, self.level)?;
+        }
+        if self.base_avatar_id != 0 {
+            os.write_uint32(8, self.base_avatar_id)?;
+        }
+        if self.add_time_ms != 0 {
+            os.write_uint64(9, self.add_time_ms)?;
+        }
+        if self.buff_summon_entity_id != 0 {
+            os.write_uint32(15, self.buff_summon_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -249,14 +249,14 @@ impl ::protobuf::Message for BuffInfo {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id = 0;
-        self.level = 0;
-        self.count = 0;
-        self.buff_id = 0;
-        self.add_time_ms = 0;
-        self.buff_summon_entity_id = 0;
         self.dynamic_values.clear();
         self.life_time = 0.;
+        self.buff_id = 0;
+        self.count = 0;
+        self.level = 0;
+        self.base_avatar_id = 0;
+        self.add_time_ms = 0;
+        self.buff_summon_entity_id = 0;
         self.special_fields.clear();
     }
 
@@ -284,16 +284,16 @@ impl ::protobuf::reflect::ProtobufValue for BuffInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eBuffInfo.proto\"\xec\x02\n\x08BuffInfo\x12$\n\x0ebase_avatar_id\
-    \x18\x0c\x20\x01(\rR\x0cbaseAvatarId\x12\x14\n\x05level\x18\x08\x20\x01(\
-    \rR\x05level\x12\x14\n\x05count\x18\r\x20\x01(\rR\x05count\x12\x17\n\x07\
-    buff_id\x18\x02\x20\x01(\rR\x06buffId\x12\x1e\n\x0badd_time_ms\x18\x07\
-    \x20\x01(\x04R\taddTimeMs\x121\n\x15buff_summon_entity_id\x18\x0e\x20\
-    \x01(\rR\x12buffSummonEntityId\x12C\n\x0edynamic_values\x18\n\x20\x03(\
-    \x0b2\x1c.BuffInfo.DynamicValuesEntryR\rdynamicValues\x12\x1b\n\tlife_ti\
-    me\x18\x05\x20\x01(\x02R\x08lifeTime\x1a@\n\x12DynamicValuesEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\x02R\x05value:\x028\x01b\x06proto3\
+    \n\x0eBuffInfo.proto\"\xec\x02\n\x08BuffInfo\x12C\n\x0edynamic_values\
+    \x18\x01\x20\x03(\x0b2\x1c.BuffInfo.DynamicValuesEntryR\rdynamicValues\
+    \x12\x1b\n\tlife_time\x18\x02\x20\x01(\x02R\x08lifeTime\x12\x17\n\x07buf\
+    f_id\x18\x03\x20\x01(\rR\x06buffId\x12\x14\n\x05count\x18\x05\x20\x01(\r\
+    R\x05count\x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05level\x12$\n\x0ebas\
+    e_avatar_id\x18\x08\x20\x01(\rR\x0cbaseAvatarId\x12\x1e\n\x0badd_time_ms\
+    \x18\t\x20\x01(\x04R\taddTimeMs\x121\n\x15buff_summon_entity_id\x18\x0f\
+    \x20\x01(\rR\x12buffSummonEntityId\x1a@\n\x12DynamicValuesEntry\x12\x10\
+    \n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
+    \x02R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

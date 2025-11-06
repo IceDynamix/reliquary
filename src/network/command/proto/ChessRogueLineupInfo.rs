@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueLineupInfo {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueLineupInfo.revive_info)
+    pub revive_info: ::protobuf::MessageField<super::NCCIEJOLNCF::NCCIEJOLNCF>,
     // @@protoc_insertion_point(field:ChessRogueLineupInfo.chess_avatar_list)
     pub chess_avatar_list: ::std::vec::Vec<super::ChessRogueLineupAvatarInfo::ChessRogueLineupAvatarInfo>,
-    // @@protoc_insertion_point(field:ChessRogueLineupInfo.revive_info)
-    pub revive_info: ::protobuf::MessageField<super::RogueAvatarReviveCost::RogueAvatarReviveCost>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueLineupInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChessRogueLineupInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCCIEJOLNCF::NCCIEJOLNCF>(
+            "revive_info",
+            |m: &ChessRogueLineupInfo| { &m.revive_info },
+            |m: &mut ChessRogueLineupInfo| { &mut m.revive_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "chess_avatar_list",
             |m: &ChessRogueLineupInfo| { &m.chess_avatar_list },
             |m: &mut ChessRogueLineupInfo| { &mut m.chess_avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueAvatarReviveCost::RogueAvatarReviveCost>(
-            "revive_info",
-            |m: &ChessRogueLineupInfo| { &m.revive_info },
-            |m: &mut ChessRogueLineupInfo| { &mut m.revive_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueLineupInfo>(
             "ChessRogueLineupInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueLineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.chess_avatar_list.push(is.read_message()?);
-                },
-                98 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_info)?;
+                },
+                74 => {
+                    self.chess_avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for ChessRogueLineupInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.chess_avatar_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.revive_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.chess_avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.chess_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if let Some(v) = self.revive_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
+        for v in &self.chess_avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ChessRogueLineupInfo {
     }
 
     fn clear(&mut self) {
-        self.chess_avatar_list.clear();
         self.revive_info.clear();
+        self.chess_avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueLineupInfo {
         static instance: ChessRogueLineupInfo = ChessRogueLineupInfo {
-            chess_avatar_list: ::std::vec::Vec::new(),
             revive_info: ::protobuf::MessageField::none(),
+            chess_avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,10 +168,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChessRogueLineupInfo.proto\x1a\x20ChessRogueLineupAvatarInfo.proto\
-    \x1a\x1bRogueAvatarReviveCost.proto\"\x98\x01\n\x14ChessRogueLineupInfo\
-    \x12G\n\x11chess_avatar_list\x18\x07\x20\x03(\x0b2\x1b.ChessRogueLineupA\
-    vatarInfoR\x0fchessAvatarList\x127\n\x0brevive_info\x18\x0c\x20\x01(\x0b\
-    2\x16.RogueAvatarReviveCostR\nreviveInfob\x06proto3\
+    \x1a\x11NCCIEJOLNCF.proto\"\x8e\x01\n\x14ChessRogueLineupInfo\x12-\n\x0b\
+    revive_info\x18\x03\x20\x01(\x0b2\x0c.NCCIEJOLNCFR\nreviveInfo\x12G\n\
+    \x11chess_avatar_list\x18\t\x20\x03(\x0b2\x1b.ChessRogueLineupAvatarInfo\
+    R\x0fchessAvatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -190,7 +190,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ChessRogueLineupAvatarInfo::file_descriptor().clone());
-            deps.push(super::RogueAvatarReviveCost::file_descriptor().clone());
+            deps.push(super::NCCIEJOLNCF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueLineupInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

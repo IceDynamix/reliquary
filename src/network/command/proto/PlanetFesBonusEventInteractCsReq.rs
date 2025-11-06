@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesBonusEventInteractCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.HOIOKBKGFDN)
-    pub HOIOKBKGFDN: u32,
-    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.APMODAGOHNA)
-    pub APMODAGOHNA: u32,
+    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.event_type)
+    pub event_type: u32,
+    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.PAKAHLIBMIG)
+    pub PAKAHLIBMIG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBonusEventInteractCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesBonusEventInteractCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOIOKBKGFDN",
-            |m: &PlanetFesBonusEventInteractCsReq| { &m.HOIOKBKGFDN },
-            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.HOIOKBKGFDN },
+            "event_type",
+            |m: &PlanetFesBonusEventInteractCsReq| { &m.event_type },
+            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.event_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APMODAGOHNA",
-            |m: &PlanetFesBonusEventInteractCsReq| { &m.APMODAGOHNA },
-            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.APMODAGOHNA },
+            "PAKAHLIBMIG",
+            |m: &PlanetFesBonusEventInteractCsReq| { &m.PAKAHLIBMIG },
+            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.PAKAHLIBMIG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBonusEventInteractCsReq>(
             "PlanetFesBonusEventInteractCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.HOIOKBKGFDN = is.read_uint32()?;
+                40 => {
+                    self.event_type = is.read_uint32()?;
                 },
-                80 => {
-                    self.APMODAGOHNA = is.read_uint32()?;
+                112 => {
+                    self.PAKAHLIBMIG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOIOKBKGFDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HOIOKBKGFDN);
+        if self.event_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.event_type);
         }
-        if self.APMODAGOHNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.APMODAGOHNA);
+        if self.PAKAHLIBMIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.PAKAHLIBMIG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOIOKBKGFDN != 0 {
-            os.write_uint32(6, self.HOIOKBKGFDN)?;
+        if self.event_type != 0 {
+            os.write_uint32(5, self.event_type)?;
         }
-        if self.APMODAGOHNA != 0 {
-            os.write_uint32(10, self.APMODAGOHNA)?;
+        if self.PAKAHLIBMIG != 0 {
+            os.write_uint32(14, self.PAKAHLIBMIG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     }
 
     fn clear(&mut self) {
-        self.HOIOKBKGFDN = 0;
-        self.APMODAGOHNA = 0;
+        self.event_type = 0;
+        self.PAKAHLIBMIG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBonusEventInteractCsReq {
         static instance: PlanetFesBonusEventInteractCsReq = PlanetFesBonusEventInteractCsReq {
-            HOIOKBKGFDN: 0,
-            APMODAGOHNA: 0,
+            event_type: 0,
+            PAKAHLIBMIG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBonusEventInteractCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&PlanetFesBonusEventInteractCsReq.proto\"f\n\x20PlanetFesBonusEventInt\
-    eractCsReq\x12\x20\n\x0bHOIOKBKGFDN\x18\x06\x20\x01(\rR\x0bHOIOKBKGFDN\
-    \x12\x20\n\x0bAPMODAGOHNA\x18\n\x20\x01(\rR\x0bAPMODAGOHNAb\x06proto3\
+    \n&PlanetFesBonusEventInteractCsReq.proto\"c\n\x20PlanetFesBonusEventInt\
+    eractCsReq\x12\x1d\n\nevent_type\x18\x05\x20\x01(\rR\teventType\x12\x20\
+    \n\x0bPAKAHLIBMIG\x18\x0e\x20\x01(\rR\x0bPAKAHLIBMIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExpeditionDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.JFJPADLALMD)
-    pub JFJPADLALMD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.expedition_info)
-    pub expedition_info: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
     // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.total_expedition_count)
     pub total_expedition_count: u32,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.FNALLOLDGLM)
-    pub FNALLOLDGLM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.activity_expedition_info)
-    pub activity_expedition_info: ::std::vec::Vec<super::ActivityExpedition::ActivityExpedition>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.IHOBFHGBAPD)
+    pub IHOBFHGBAPD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.process_expedition_list)
+    pub process_expedition_list: ::std::vec::Vec<super::ActivityExpeditionData::ActivityExpeditionData>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.AHCBOBHOECH)
+    pub AHCBOBHOECH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ExpeditionDataChangeScNotify.expedition_list)
+    pub expedition_list: ::std::vec::Vec<super::Expedition::Expedition>,
     // special fields
     // @@protoc_insertion_point(special_field:ExpeditionDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl ExpeditionDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JFJPADLALMD",
-            |m: &ExpeditionDataChangeScNotify| { &m.JFJPADLALMD },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.JFJPADLALMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "expedition_info",
-            |m: &ExpeditionDataChangeScNotify| { &m.expedition_info },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.expedition_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_expedition_count",
             |m: &ExpeditionDataChangeScNotify| { &m.total_expedition_count },
             |m: &mut ExpeditionDataChangeScNotify| { &mut m.total_expedition_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FNALLOLDGLM",
-            |m: &ExpeditionDataChangeScNotify| { &m.FNALLOLDGLM },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.FNALLOLDGLM },
+            "IHOBFHGBAPD",
+            |m: &ExpeditionDataChangeScNotify| { &m.IHOBFHGBAPD },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.IHOBFHGBAPD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "activity_expedition_info",
-            |m: &ExpeditionDataChangeScNotify| { &m.activity_expedition_info },
-            |m: &mut ExpeditionDataChangeScNotify| { &mut m.activity_expedition_info },
+            "process_expedition_list",
+            |m: &ExpeditionDataChangeScNotify| { &m.process_expedition_list },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.process_expedition_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AHCBOBHOECH",
+            |m: &ExpeditionDataChangeScNotify| { &m.AHCBOBHOECH },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.AHCBOBHOECH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "expedition_list",
+            |m: &ExpeditionDataChangeScNotify| { &m.expedition_list },
+            |m: &mut ExpeditionDataChangeScNotify| { &mut m.expedition_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ExpeditionDataChangeScNotify>(
             "ExpeditionDataChangeScNotify",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JFJPADLALMD)?;
-                },
-                112 => {
-                    self.JFJPADLALMD.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.expedition_info.push(is.read_message()?);
-                },
-                104 => {
+                8 => {
                     self.total_expedition_count = is.read_uint32()?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FNALLOLDGLM)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IHOBFHGBAPD)?;
                 },
-                16 => {
-                    self.FNALLOLDGLM.push(is.read_uint32()?);
+                48 => {
+                    self.IHOBFHGBAPD.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.activity_expedition_info.push(is.read_message()?);
+                82 => {
+                    self.process_expedition_list.push(is.read_message()?);
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AHCBOBHOECH)?;
+                },
+                96 => {
+                    self.AHCBOBHOECH.push(is.read_uint32()?);
+                },
+                122 => {
+                    self.expedition_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,16 +133,16 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.JFJPADLALMD);
-        for value in &self.expedition_info {
+        if self.total_expedition_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.total_expedition_count);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.IHOBFHGBAPD);
+        for value in &self.process_expedition_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.total_expedition_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.total_expedition_count);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.FNALLOLDGLM);
-        for value in &self.activity_expedition_info {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.AHCBOBHOECH);
+        for value in &self.expedition_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -152,16 +152,16 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.JFJPADLALMD)?;
-        for v in &self.expedition_info {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.total_expedition_count != 0 {
-            os.write_uint32(13, self.total_expedition_count)?;
+            os.write_uint32(1, self.total_expedition_count)?;
         }
-        os.write_repeated_packed_uint32(2, &self.FNALLOLDGLM)?;
-        for v in &self.activity_expedition_info {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        os.write_repeated_packed_uint32(6, &self.IHOBFHGBAPD)?;
+        for v in &self.process_expedition_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        os.write_repeated_packed_uint32(12, &self.AHCBOBHOECH)?;
+        for v in &self.expedition_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ExpeditionDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.JFJPADLALMD.clear();
-        self.expedition_info.clear();
         self.total_expedition_count = 0;
-        self.FNALLOLDGLM.clear();
-        self.activity_expedition_info.clear();
+        self.IHOBFHGBAPD.clear();
+        self.process_expedition_list.clear();
+        self.AHCBOBHOECH.clear();
+        self.expedition_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExpeditionDataChangeScNotify {
         static instance: ExpeditionDataChangeScNotify = ExpeditionDataChangeScNotify {
-            JFJPADLALMD: ::std::vec::Vec::new(),
-            expedition_info: ::std::vec::Vec::new(),
             total_expedition_count: 0,
-            FNALLOLDGLM: ::std::vec::Vec::new(),
-            activity_expedition_info: ::std::vec::Vec::new(),
+            IHOBFHGBAPD: ::std::vec::Vec::new(),
+            process_expedition_list: ::std::vec::Vec::new(),
+            AHCBOBHOECH: ::std::vec::Vec::new(),
+            expedition_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,14 +219,14 @@ impl ::protobuf::reflect::ProtobufValue for ExpeditionDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ExpeditionDataChangeScNotify.proto\x1a\x18ActivityExpedition.proto\
-    \x1a\x14ExpeditionInfo.proto\"\xa1\x02\n\x1cExpeditionDataChangeScNotify\
-    \x12\x20\n\x0bJFJPADLALMD\x18\x0e\x20\x03(\rR\x0bJFJPADLALMD\x128\n\x0fe\
-    xpedition_info\x18\x05\x20\x03(\x0b2\x0f.ExpeditionInfoR\x0eexpeditionIn\
-    fo\x124\n\x16total_expedition_count\x18\r\x20\x01(\rR\x14totalExpedition\
-    Count\x12\x20\n\x0bFNALLOLDGLM\x18\x02\x20\x03(\rR\x0bFNALLOLDGLM\x12M\n\
-    \x18activity_expedition_info\x18\x0b\x20\x03(\x0b2\x13.ActivityExpeditio\
-    nR\x16activityExpeditionInfob\x06proto3\
+    \n\"ExpeditionDataChangeScNotify.proto\x1a\x1cActivityExpeditionData.pro\
+    to\x1a\x10Expedition.proto\"\x9f\x02\n\x1cExpeditionDataChangeScNotify\
+    \x124\n\x16total_expedition_count\x18\x01\x20\x01(\rR\x14totalExpedition\
+    Count\x12\x20\n\x0bIHOBFHGBAPD\x18\x06\x20\x03(\rR\x0bIHOBFHGBAPD\x12O\n\
+    \x17process_expedition_list\x18\n\x20\x03(\x0b2\x17.ActivityExpeditionDa\
+    taR\x15processExpeditionList\x12\x20\n\x0bAHCBOBHOECH\x18\x0c\x20\x03(\r\
+    R\x0bAHCBOBHOECH\x124\n\x0fexpedition_list\x18\x0f\x20\x03(\x0b2\x0b.Exp\
+    editionR\x0eexpeditionListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,8 +244,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ActivityExpedition::file_descriptor().clone());
-            deps.push(super::ExpeditionInfo::file_descriptor().clone());
+            deps.push(super::ActivityExpeditionData::file_descriptor().clone());
+            deps.push(super::Expedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ExpeditionDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

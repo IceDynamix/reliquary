@@ -32,12 +32,12 @@ pub struct MonsterBattleInfo {
     pub entity_id: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.monster_id)
     pub monster_id: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.OAKILFGDACJ)
-    pub OAKILFGDACJ: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.BFPAOANBJON)
-    pub BFPAOANBJON: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.NKCMCMHAFAF)
-    pub NKCMCMHAFAF: ::protobuf::MessageField<super::MonsterProperty::MonsterProperty>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.monster_template_id)
+    pub monster_template_id: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.monster_level)
+    pub monster_level: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.monster_status)
+    pub monster_status: ::protobuf::MessageField<super::MonsterProperty::MonsterProperty>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.total_turns)
     pub total_turns: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.total_damage)
@@ -46,50 +46,50 @@ pub struct MonsterBattleInfo {
     pub total_heal: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.total_damage_taken)
     pub total_damage_taken: f64,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.AKGFCPFAOLP)
-    pub AKGFCPFAOLP: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.total_stance_damage_taken)
+    pub total_stance_damage_taken: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.total_hp_recover)
     pub total_hp_recover: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.stage_id)
     pub stage_id: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.battle_id)
     pub battle_id: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.JBCDLFJJJDG)
-    pub JBCDLFJJJDG: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.monster_type)
+    pub monster_type: u32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.attack_type_damage)
     pub attack_type_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.skill_times)
     pub skill_times: ::std::vec::Vec<super::SkillUseProperty::SkillUseProperty>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.stage_type)
     pub stage_type: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.ACOFIPPJKBI)
-    pub ACOFIPPJKBI: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.total_break_damage_taken)
+    pub total_break_damage_taken: f64,
     // @@protoc_insertion_point(field:MonsterBattleInfo.delay_cumulate)
     pub delay_cumulate: f64,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.FIEDKNKIEBH)
-    pub FIEDKNKIEBH: ::protobuf::EnumOrUnknown<super::DeathSource::DeathSource>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.death_source)
+    pub death_source: ::protobuf::EnumOrUnknown<super::DeathSource::DeathSource>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.wave)
     pub wave: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.JHAOGJJDBHL)
-    pub JHAOGJJDBHL: i32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.index_in_wave)
+    pub index_in_wave: i32,
     // @@protoc_insertion_point(field:MonsterBattleInfo.phase)
     pub phase: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.DCMOHECBOLK)
-    pub DCMOHECBOLK: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.JEDAHLGBIEM)
-    pub JEDAHLGBIEM: ::protobuf::EnumOrUnknown<super::BattleTag::BattleTag>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.max_phase)
+    pub max_phase: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.battle_tag)
+    pub battle_tag: ::protobuf::EnumOrUnknown<super::BattleTag::BattleTag>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.skill_info)
     pub skill_info: ::std::vec::Vec<super::GAAGEHABINM::GAAGEHABINM>,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.LANFCLOLBOF)
-    pub LANFCLOLBOF: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.KFGJBILJGDP)
-    pub KFGJBILJGDP: ::std::vec::Vec<super::MonsterPhaseStt::MonsterPhaseStt>,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.FPKONIKLICA)
-    pub FPKONIKLICA: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.JEEMGAEIFAE)
-    pub JEEMGAEIFAE: u32,
-    // @@protoc_insertion_point(field:MonsterBattleInfo.HBOFDAJJJME)
-    pub HBOFDAJJJME: ::protobuf::EnumOrUnknown<super::HEMBNDJAFDA::HEMBNDJAFDA>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.DMHKCLKFPGD)
+    pub DMHKCLKFPGD: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.monster_phase_stt_list)
+    pub monster_phase_stt_list: ::std::vec::Vec<super::MonsterPhaseStt::MonsterPhaseStt>,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.MHAJPNDDJEH)
+    pub MHAJPNDDJEH: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.BPLPHNGAHGB)
+    pub BPLPHNGAHGB: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.IGFFMLDKCEM)
+    pub IGFFMLDKCEM: ::protobuf::EnumOrUnknown<super::CreateReason::CreateReason>,
     // special fields
     // @@protoc_insertion_point(special_field:MonsterBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -120,19 +120,19 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.monster_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAKILFGDACJ",
-            |m: &MonsterBattleInfo| { &m.OAKILFGDACJ },
-            |m: &mut MonsterBattleInfo| { &mut m.OAKILFGDACJ },
+            "monster_template_id",
+            |m: &MonsterBattleInfo| { &m.monster_template_id },
+            |m: &mut MonsterBattleInfo| { &mut m.monster_template_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFPAOANBJON",
-            |m: &MonsterBattleInfo| { &m.BFPAOANBJON },
-            |m: &mut MonsterBattleInfo| { &mut m.BFPAOANBJON },
+            "monster_level",
+            |m: &MonsterBattleInfo| { &m.monster_level },
+            |m: &mut MonsterBattleInfo| { &mut m.monster_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MonsterProperty::MonsterProperty>(
-            "NKCMCMHAFAF",
-            |m: &MonsterBattleInfo| { &m.NKCMCMHAFAF },
-            |m: &mut MonsterBattleInfo| { &mut m.NKCMCMHAFAF },
+            "monster_status",
+            |m: &MonsterBattleInfo| { &m.monster_status },
+            |m: &mut MonsterBattleInfo| { &mut m.monster_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_turns",
@@ -155,9 +155,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.total_damage_taken },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKGFCPFAOLP",
-            |m: &MonsterBattleInfo| { &m.AKGFCPFAOLP },
-            |m: &mut MonsterBattleInfo| { &mut m.AKGFCPFAOLP },
+            "total_stance_damage_taken",
+            |m: &MonsterBattleInfo| { &m.total_stance_damage_taken },
+            |m: &mut MonsterBattleInfo| { &mut m.total_stance_damage_taken },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_hp_recover",
@@ -175,9 +175,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.battle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBCDLFJJJDG",
-            |m: &MonsterBattleInfo| { &m.JBCDLFJJJDG },
-            |m: &mut MonsterBattleInfo| { &mut m.JBCDLFJJJDG },
+            "monster_type",
+            |m: &MonsterBattleInfo| { &m.monster_type },
+            |m: &mut MonsterBattleInfo| { &mut m.monster_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "attack_type_damage",
@@ -195,9 +195,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.stage_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACOFIPPJKBI",
-            |m: &MonsterBattleInfo| { &m.ACOFIPPJKBI },
-            |m: &mut MonsterBattleInfo| { &mut m.ACOFIPPJKBI },
+            "total_break_damage_taken",
+            |m: &MonsterBattleInfo| { &m.total_break_damage_taken },
+            |m: &mut MonsterBattleInfo| { &mut m.total_break_damage_taken },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "delay_cumulate",
@@ -205,9 +205,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.delay_cumulate },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIEDKNKIEBH",
-            |m: &MonsterBattleInfo| { &m.FIEDKNKIEBH },
-            |m: &mut MonsterBattleInfo| { &mut m.FIEDKNKIEBH },
+            "death_source",
+            |m: &MonsterBattleInfo| { &m.death_source },
+            |m: &mut MonsterBattleInfo| { &mut m.death_source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "wave",
@@ -215,9 +215,9 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHAOGJJDBHL",
-            |m: &MonsterBattleInfo| { &m.JHAOGJJDBHL },
-            |m: &mut MonsterBattleInfo| { &mut m.JHAOGJJDBHL },
+            "index_in_wave",
+            |m: &MonsterBattleInfo| { &m.index_in_wave },
+            |m: &mut MonsterBattleInfo| { &mut m.index_in_wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "phase",
@@ -225,14 +225,14 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.phase },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCMOHECBOLK",
-            |m: &MonsterBattleInfo| { &m.DCMOHECBOLK },
-            |m: &mut MonsterBattleInfo| { &mut m.DCMOHECBOLK },
+            "max_phase",
+            |m: &MonsterBattleInfo| { &m.max_phase },
+            |m: &mut MonsterBattleInfo| { &mut m.max_phase },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEDAHLGBIEM",
-            |m: &MonsterBattleInfo| { &m.JEDAHLGBIEM },
-            |m: &mut MonsterBattleInfo| { &mut m.JEDAHLGBIEM },
+            "battle_tag",
+            |m: &MonsterBattleInfo| { &m.battle_tag },
+            |m: &mut MonsterBattleInfo| { &mut m.battle_tag },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "skill_info",
@@ -240,29 +240,29 @@ impl MonsterBattleInfo {
             |m: &mut MonsterBattleInfo| { &mut m.skill_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LANFCLOLBOF",
-            |m: &MonsterBattleInfo| { &m.LANFCLOLBOF },
-            |m: &mut MonsterBattleInfo| { &mut m.LANFCLOLBOF },
+            "DMHKCLKFPGD",
+            |m: &MonsterBattleInfo| { &m.DMHKCLKFPGD },
+            |m: &mut MonsterBattleInfo| { &mut m.DMHKCLKFPGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KFGJBILJGDP",
-            |m: &MonsterBattleInfo| { &m.KFGJBILJGDP },
-            |m: &mut MonsterBattleInfo| { &mut m.KFGJBILJGDP },
+            "monster_phase_stt_list",
+            |m: &MonsterBattleInfo| { &m.monster_phase_stt_list },
+            |m: &mut MonsterBattleInfo| { &mut m.monster_phase_stt_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPKONIKLICA",
-            |m: &MonsterBattleInfo| { &m.FPKONIKLICA },
-            |m: &mut MonsterBattleInfo| { &mut m.FPKONIKLICA },
+            "MHAJPNDDJEH",
+            |m: &MonsterBattleInfo| { &m.MHAJPNDDJEH },
+            |m: &mut MonsterBattleInfo| { &mut m.MHAJPNDDJEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEEMGAEIFAE",
-            |m: &MonsterBattleInfo| { &m.JEEMGAEIFAE },
-            |m: &mut MonsterBattleInfo| { &mut m.JEEMGAEIFAE },
+            "BPLPHNGAHGB",
+            |m: &MonsterBattleInfo| { &m.BPLPHNGAHGB },
+            |m: &mut MonsterBattleInfo| { &mut m.BPLPHNGAHGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBOFDAJJJME",
-            |m: &MonsterBattleInfo| { &m.HBOFDAJJJME },
-            |m: &mut MonsterBattleInfo| { &mut m.HBOFDAJJJME },
+            "IGFFMLDKCEM",
+            |m: &MonsterBattleInfo| { &m.IGFFMLDKCEM },
+            |m: &mut MonsterBattleInfo| { &mut m.IGFFMLDKCEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonsterBattleInfo>(
             "MonsterBattleInfo",
@@ -289,13 +289,13 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.monster_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.OAKILFGDACJ = is.read_uint32()?;
+                    self.monster_template_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.BFPAOANBJON = is.read_uint32()?;
+                    self.monster_level = is.read_uint32()?;
                 },
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NKCMCMHAFAF)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.monster_status)?;
                 },
                 48 => {
                     self.total_turns = is.read_uint32()?;
@@ -310,7 +310,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.total_damage_taken = is.read_double()?;
                 },
                 81 => {
-                    self.AKGFCPFAOLP = is.read_double()?;
+                    self.total_stance_damage_taken = is.read_double()?;
                 },
                 89 => {
                     self.total_hp_recover = is.read_double()?;
@@ -322,7 +322,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.battle_id = is.read_uint32()?;
                 },
                 112 => {
-                    self.JBCDLFJJJDG = is.read_uint32()?;
+                    self.monster_type = is.read_uint32()?;
                 },
                 122 => {
                     self.attack_type_damage.push(is.read_message()?);
@@ -334,46 +334,46 @@ impl ::protobuf::Message for MonsterBattleInfo {
                     self.stage_type = is.read_uint32()?;
                 },
                 145 => {
-                    self.ACOFIPPJKBI = is.read_double()?;
+                    self.total_break_damage_taken = is.read_double()?;
                 },
                 153 => {
                     self.delay_cumulate = is.read_double()?;
                 },
                 160 => {
-                    self.FIEDKNKIEBH = is.read_enum_or_unknown()?;
+                    self.death_source = is.read_enum_or_unknown()?;
                 },
                 168 => {
                     self.wave = is.read_uint32()?;
                 },
                 176 => {
-                    self.JHAOGJJDBHL = is.read_int32()?;
+                    self.index_in_wave = is.read_int32()?;
                 },
                 184 => {
                     self.phase = is.read_uint32()?;
                 },
                 192 => {
-                    self.DCMOHECBOLK = is.read_uint32()?;
+                    self.max_phase = is.read_uint32()?;
                 },
                 200 => {
-                    self.JEDAHLGBIEM = is.read_enum_or_unknown()?;
+                    self.battle_tag = is.read_enum_or_unknown()?;
                 },
                 210 => {
                     self.skill_info.push(is.read_message()?);
                 },
                 216 => {
-                    self.LANFCLOLBOF = is.read_uint32()?;
+                    self.DMHKCLKFPGD = is.read_uint32()?;
                 },
                 226 => {
-                    self.KFGJBILJGDP.push(is.read_message()?);
+                    self.monster_phase_stt_list.push(is.read_message()?);
                 },
                 232 => {
-                    self.FPKONIKLICA = is.read_uint32()?;
+                    self.MHAJPNDDJEH = is.read_uint32()?;
                 },
                 240 => {
-                    self.JEEMGAEIFAE = is.read_uint32()?;
+                    self.BPLPHNGAHGB = is.read_uint32()?;
                 },
                 248 => {
-                    self.HBOFDAJJJME = is.read_enum_or_unknown()?;
+                    self.IGFFMLDKCEM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -393,13 +393,13 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.monster_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.monster_id);
         }
-        if self.OAKILFGDACJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OAKILFGDACJ);
+        if self.monster_template_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.monster_template_id);
         }
-        if self.BFPAOANBJON != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BFPAOANBJON);
+        if self.monster_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.monster_level);
         }
-        if let Some(v) = self.NKCMCMHAFAF.as_ref() {
+        if let Some(v) = self.monster_status.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -415,7 +415,7 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.total_damage_taken != 0. {
             my_size += 1 + 8;
         }
-        if self.AKGFCPFAOLP != 0. {
+        if self.total_stance_damage_taken != 0. {
             my_size += 1 + 8;
         }
         if self.total_hp_recover != 0. {
@@ -427,8 +427,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.battle_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.battle_id);
         }
-        if self.JBCDLFJJJDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JBCDLFJJJDG);
+        if self.monster_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.monster_type);
         }
         for value in &self.attack_type_damage {
             let len = value.compute_size();
@@ -441,49 +441,49 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.stage_type != 0 {
             my_size += ::protobuf::rt::uint32_size(17, self.stage_type);
         }
-        if self.ACOFIPPJKBI != 0. {
+        if self.total_break_damage_taken != 0. {
             my_size += 2 + 8;
         }
         if self.delay_cumulate != 0. {
             my_size += 2 + 8;
         }
-        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
-            my_size += ::protobuf::rt::int32_size(20, self.FIEDKNKIEBH.value());
+        if self.death_source != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
+            my_size += ::protobuf::rt::int32_size(20, self.death_source.value());
         }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(21, self.wave);
         }
-        if self.JHAOGJJDBHL != 0 {
-            my_size += ::protobuf::rt::int32_size(22, self.JHAOGJJDBHL);
+        if self.index_in_wave != 0 {
+            my_size += ::protobuf::rt::int32_size(22, self.index_in_wave);
         }
         if self.phase != 0 {
             my_size += ::protobuf::rt::uint32_size(23, self.phase);
         }
-        if self.DCMOHECBOLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(24, self.DCMOHECBOLK);
+        if self.max_phase != 0 {
+            my_size += ::protobuf::rt::uint32_size(24, self.max_phase);
         }
-        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
-            my_size += ::protobuf::rt::int32_size(25, self.JEDAHLGBIEM.value());
+        if self.battle_tag != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
+            my_size += ::protobuf::rt::int32_size(25, self.battle_tag.value());
         }
         for value in &self.skill_info {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LANFCLOLBOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(27, self.LANFCLOLBOF);
+        if self.DMHKCLKFPGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(27, self.DMHKCLKFPGD);
         }
-        for value in &self.KFGJBILJGDP {
+        for value in &self.monster_phase_stt_list {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FPKONIKLICA != 0 {
-            my_size += ::protobuf::rt::uint32_size(29, self.FPKONIKLICA);
+        if self.MHAJPNDDJEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(29, self.MHAJPNDDJEH);
         }
-        if self.JEEMGAEIFAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(30, self.JEEMGAEIFAE);
+        if self.BPLPHNGAHGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(30, self.BPLPHNGAHGB);
         }
-        if self.HBOFDAJJJME != ::protobuf::EnumOrUnknown::new(super::HEMBNDJAFDA::HEMBNDJAFDA::NORMAL_CREATE) {
-            my_size += ::protobuf::rt::int32_size(31, self.HBOFDAJJJME.value());
+        if self.IGFFMLDKCEM != ::protobuf::EnumOrUnknown::new(super::CreateReason::CreateReason::NORMAL_CREATE) {
+            my_size += ::protobuf::rt::int32_size(31, self.IGFFMLDKCEM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -497,13 +497,13 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.monster_id != 0 {
             os.write_uint32(2, self.monster_id)?;
         }
-        if self.OAKILFGDACJ != 0 {
-            os.write_uint32(3, self.OAKILFGDACJ)?;
+        if self.monster_template_id != 0 {
+            os.write_uint32(3, self.monster_template_id)?;
         }
-        if self.BFPAOANBJON != 0 {
-            os.write_uint32(4, self.BFPAOANBJON)?;
+        if self.monster_level != 0 {
+            os.write_uint32(4, self.monster_level)?;
         }
-        if let Some(v) = self.NKCMCMHAFAF.as_ref() {
+        if let Some(v) = self.monster_status.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.total_turns != 0 {
@@ -518,8 +518,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.total_damage_taken != 0. {
             os.write_double(9, self.total_damage_taken)?;
         }
-        if self.AKGFCPFAOLP != 0. {
-            os.write_double(10, self.AKGFCPFAOLP)?;
+        if self.total_stance_damage_taken != 0. {
+            os.write_double(10, self.total_stance_damage_taken)?;
         }
         if self.total_hp_recover != 0. {
             os.write_double(11, self.total_hp_recover)?;
@@ -530,8 +530,8 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.battle_id != 0 {
             os.write_uint32(13, self.battle_id)?;
         }
-        if self.JBCDLFJJJDG != 0 {
-            os.write_uint32(14, self.JBCDLFJJJDG)?;
+        if self.monster_type != 0 {
+            os.write_uint32(14, self.monster_type)?;
         }
         for v in &self.attack_type_damage {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -542,47 +542,47 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.stage_type != 0 {
             os.write_uint32(17, self.stage_type)?;
         }
-        if self.ACOFIPPJKBI != 0. {
-            os.write_double(18, self.ACOFIPPJKBI)?;
+        if self.total_break_damage_taken != 0. {
+            os.write_double(18, self.total_break_damage_taken)?;
         }
         if self.delay_cumulate != 0. {
             os.write_double(19, self.delay_cumulate)?;
         }
-        if self.FIEDKNKIEBH != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
-            os.write_enum(20, ::protobuf::EnumOrUnknown::value(&self.FIEDKNKIEBH))?;
+        if self.death_source != ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN) {
+            os.write_enum(20, ::protobuf::EnumOrUnknown::value(&self.death_source))?;
         }
         if self.wave != 0 {
             os.write_uint32(21, self.wave)?;
         }
-        if self.JHAOGJJDBHL != 0 {
-            os.write_int32(22, self.JHAOGJJDBHL)?;
+        if self.index_in_wave != 0 {
+            os.write_int32(22, self.index_in_wave)?;
         }
         if self.phase != 0 {
             os.write_uint32(23, self.phase)?;
         }
-        if self.DCMOHECBOLK != 0 {
-            os.write_uint32(24, self.DCMOHECBOLK)?;
+        if self.max_phase != 0 {
+            os.write_uint32(24, self.max_phase)?;
         }
-        if self.JEDAHLGBIEM != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
-            os.write_enum(25, ::protobuf::EnumOrUnknown::value(&self.JEDAHLGBIEM))?;
+        if self.battle_tag != ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE) {
+            os.write_enum(25, ::protobuf::EnumOrUnknown::value(&self.battle_tag))?;
         }
         for v in &self.skill_info {
             ::protobuf::rt::write_message_field_with_cached_size(26, v, os)?;
         };
-        if self.LANFCLOLBOF != 0 {
-            os.write_uint32(27, self.LANFCLOLBOF)?;
+        if self.DMHKCLKFPGD != 0 {
+            os.write_uint32(27, self.DMHKCLKFPGD)?;
         }
-        for v in &self.KFGJBILJGDP {
+        for v in &self.monster_phase_stt_list {
             ::protobuf::rt::write_message_field_with_cached_size(28, v, os)?;
         };
-        if self.FPKONIKLICA != 0 {
-            os.write_uint32(29, self.FPKONIKLICA)?;
+        if self.MHAJPNDDJEH != 0 {
+            os.write_uint32(29, self.MHAJPNDDJEH)?;
         }
-        if self.JEEMGAEIFAE != 0 {
-            os.write_uint32(30, self.JEEMGAEIFAE)?;
+        if self.BPLPHNGAHGB != 0 {
+            os.write_uint32(30, self.BPLPHNGAHGB)?;
         }
-        if self.HBOFDAJJJME != ::protobuf::EnumOrUnknown::new(super::HEMBNDJAFDA::HEMBNDJAFDA::NORMAL_CREATE) {
-            os.write_enum(31, ::protobuf::EnumOrUnknown::value(&self.HBOFDAJJJME))?;
+        if self.IGFFMLDKCEM != ::protobuf::EnumOrUnknown::new(super::CreateReason::CreateReason::NORMAL_CREATE) {
+            os.write_enum(31, ::protobuf::EnumOrUnknown::value(&self.IGFFMLDKCEM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -603,35 +603,35 @@ impl ::protobuf::Message for MonsterBattleInfo {
     fn clear(&mut self) {
         self.entity_id = 0;
         self.monster_id = 0;
-        self.OAKILFGDACJ = 0;
-        self.BFPAOANBJON = 0;
-        self.NKCMCMHAFAF.clear();
+        self.monster_template_id = 0;
+        self.monster_level = 0;
+        self.monster_status.clear();
         self.total_turns = 0;
         self.total_damage = 0.;
         self.total_heal = 0.;
         self.total_damage_taken = 0.;
-        self.AKGFCPFAOLP = 0.;
+        self.total_stance_damage_taken = 0.;
         self.total_hp_recover = 0.;
         self.stage_id = 0;
         self.battle_id = 0;
-        self.JBCDLFJJJDG = 0;
+        self.monster_type = 0;
         self.attack_type_damage.clear();
         self.skill_times.clear();
         self.stage_type = 0;
-        self.ACOFIPPJKBI = 0.;
+        self.total_break_damage_taken = 0.;
         self.delay_cumulate = 0.;
-        self.FIEDKNKIEBH = ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN);
+        self.death_source = ::protobuf::EnumOrUnknown::new(super::DeathSource::DeathSource::UNKNOWN);
         self.wave = 0;
-        self.JHAOGJJDBHL = 0;
+        self.index_in_wave = 0;
         self.phase = 0;
-        self.DCMOHECBOLK = 0;
-        self.JEDAHLGBIEM = ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE);
+        self.max_phase = 0;
+        self.battle_tag = ::protobuf::EnumOrUnknown::new(super::BattleTag::BattleTag::TAG_NONE);
         self.skill_info.clear();
-        self.LANFCLOLBOF = 0;
-        self.KFGJBILJGDP.clear();
-        self.FPKONIKLICA = 0;
-        self.JEEMGAEIFAE = 0;
-        self.HBOFDAJJJME = ::protobuf::EnumOrUnknown::new(super::HEMBNDJAFDA::HEMBNDJAFDA::NORMAL_CREATE);
+        self.DMHKCLKFPGD = 0;
+        self.monster_phase_stt_list.clear();
+        self.MHAJPNDDJEH = 0;
+        self.BPLPHNGAHGB = 0;
+        self.IGFFMLDKCEM = ::protobuf::EnumOrUnknown::new(super::CreateReason::CreateReason::NORMAL_CREATE);
         self.special_fields.clear();
     }
 
@@ -639,35 +639,35 @@ impl ::protobuf::Message for MonsterBattleInfo {
         static instance: MonsterBattleInfo = MonsterBattleInfo {
             entity_id: 0,
             monster_id: 0,
-            OAKILFGDACJ: 0,
-            BFPAOANBJON: 0,
-            NKCMCMHAFAF: ::protobuf::MessageField::none(),
+            monster_template_id: 0,
+            monster_level: 0,
+            monster_status: ::protobuf::MessageField::none(),
             total_turns: 0,
             total_damage: 0.,
             total_heal: 0.,
             total_damage_taken: 0.,
-            AKGFCPFAOLP: 0.,
+            total_stance_damage_taken: 0.,
             total_hp_recover: 0.,
             stage_id: 0,
             battle_id: 0,
-            JBCDLFJJJDG: 0,
+            monster_type: 0,
             attack_type_damage: ::std::vec::Vec::new(),
             skill_times: ::std::vec::Vec::new(),
             stage_type: 0,
-            ACOFIPPJKBI: 0.,
+            total_break_damage_taken: 0.,
             delay_cumulate: 0.,
-            FIEDKNKIEBH: ::protobuf::EnumOrUnknown::from_i32(0),
+            death_source: ::protobuf::EnumOrUnknown::from_i32(0),
             wave: 0,
-            JHAOGJJDBHL: 0,
+            index_in_wave: 0,
             phase: 0,
-            DCMOHECBOLK: 0,
-            JEDAHLGBIEM: ::protobuf::EnumOrUnknown::from_i32(0),
+            max_phase: 0,
+            battle_tag: ::protobuf::EnumOrUnknown::from_i32(0),
             skill_info: ::std::vec::Vec::new(),
-            LANFCLOLBOF: 0,
-            KFGJBILJGDP: ::std::vec::Vec::new(),
-            FPKONIKLICA: 0,
-            JEEMGAEIFAE: 0,
-            HBOFDAJJJME: ::protobuf::EnumOrUnknown::from_i32(0),
+            DMHKCLKFPGD: 0,
+            monster_phase_stt_list: ::std::vec::Vec::new(),
+            MHAJPNDDJEH: 0,
+            BPLPHNGAHGB: 0,
+            IGFFMLDKCEM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -693,37 +693,38 @@ impl ::protobuf::reflect::ProtobufValue for MonsterBattleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonsterBattleInfo.proto\x1a\x1aAttackDamageProperty.proto\x1a\x0fB\
-    attleTag.proto\x1a\x11DeathSource.proto\x1a\x11GAAGEHABINM.proto\x1a\x11\
-    HEMBNDJAFDA.proto\x1a\x15MonsterPhaseStt.proto\x1a\x15MonsterProperty.pr\
-    oto\x1a\x16SkillUseProperty.proto\"\xa2\t\n\x11MonsterBattleInfo\x12\x1b\
-    \n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\
-    \x02\x20\x01(\rR\tmonsterId\x12\x20\n\x0bOAKILFGDACJ\x18\x03\x20\x01(\rR\
-    \x0bOAKILFGDACJ\x12\x20\n\x0bBFPAOANBJON\x18\x04\x20\x01(\rR\x0bBFPAOANB\
-    JON\x122\n\x0bNKCMCMHAFAF\x18\x05\x20\x01(\x0b2\x10.MonsterPropertyR\x0b\
-    NKCMCMHAFAF\x12\x1f\n\x0btotal_turns\x18\x06\x20\x01(\rR\ntotalTurns\x12\
-    !\n\x0ctotal_damage\x18\x07\x20\x01(\x01R\x0btotalDamage\x12\x1d\n\ntota\
-    l_heal\x18\x08\x20\x01(\x01R\ttotalHeal\x12,\n\x12total_damage_taken\x18\
-    \t\x20\x01(\x01R\x10totalDamageTaken\x12\x20\n\x0bAKGFCPFAOLP\x18\n\x20\
-    \x01(\x01R\x0bAKGFCPFAOLP\x12(\n\x10total_hp_recover\x18\x0b\x20\x01(\
-    \x01R\x0etotalHpRecover\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\rR\x07sta\
-    geId\x12\x1b\n\tbattle_id\x18\r\x20\x01(\rR\x08battleId\x12\x20\n\x0bJBC\
-    DLFJJJDG\x18\x0e\x20\x01(\rR\x0bJBCDLFJJJDG\x12C\n\x12attack_type_damage\
-    \x18\x0f\x20\x03(\x0b2\x15.AttackDamagePropertyR\x10attackTypeDamage\x12\
-    2\n\x0bskill_times\x18\x10\x20\x03(\x0b2\x11.SkillUsePropertyR\nskillTim\
-    es\x12\x1d\n\nstage_type\x18\x11\x20\x01(\rR\tstageType\x12\x20\n\x0bACO\
-    FIPPJKBI\x18\x12\x20\x01(\x01R\x0bACOFIPPJKBI\x12%\n\x0edelay_cumulate\
-    \x18\x13\x20\x01(\x01R\rdelayCumulate\x12.\n\x0bFIEDKNKIEBH\x18\x14\x20\
-    \x01(\x0e2\x0c.DeathSourceR\x0bFIEDKNKIEBH\x12\x12\n\x04wave\x18\x15\x20\
-    \x01(\rR\x04wave\x12\x20\n\x0bJHAOGJJDBHL\x18\x16\x20\x01(\x05R\x0bJHAOG\
-    JJDBHL\x12\x14\n\x05phase\x18\x17\x20\x01(\rR\x05phase\x12\x20\n\x0bDCMO\
-    HECBOLK\x18\x18\x20\x01(\rR\x0bDCMOHECBOLK\x12,\n\x0bJEDAHLGBIEM\x18\x19\
-    \x20\x01(\x0e2\n.BattleTagR\x0bJEDAHLGBIEM\x12+\n\nskill_info\x18\x1a\
-    \x20\x03(\x0b2\x0c.GAAGEHABINMR\tskillInfo\x12\x20\n\x0bLANFCLOLBOF\x18\
-    \x1b\x20\x01(\rR\x0bLANFCLOLBOF\x122\n\x0bKFGJBILJGDP\x18\x1c\x20\x03(\
-    \x0b2\x10.MonsterPhaseSttR\x0bKFGJBILJGDP\x12\x20\n\x0bFPKONIKLICA\x18\
-    \x1d\x20\x01(\rR\x0bFPKONIKLICA\x12\x20\n\x0bJEEMGAEIFAE\x18\x1e\x20\x01\
-    (\rR\x0bJEEMGAEIFAE\x12.\n\x0bHBOFDAJJJME\x18\x1f\x20\x01(\x0e2\x0c.HEMB\
-    NDJAFDAR\x0bHBOFDAJJJMEb\x06proto3\
+    attleTag.proto\x1a\x12CreateReason.proto\x1a\x11DeathSource.proto\x1a\
+    \x11GAAGEHABINM.proto\x1a\x15MonsterPhaseStt.proto\x1a\x15MonsterPropert\
+    y.proto\x1a\x16SkillUseProperty.proto\"\xf8\t\n\x11MonsterBattleInfo\x12\
+    \x1b\n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\
+    \x18\x02\x20\x01(\rR\tmonsterId\x12.\n\x13monster_template_id\x18\x03\
+    \x20\x01(\rR\x11monsterTemplateId\x12#\n\rmonster_level\x18\x04\x20\x01(\
+    \rR\x0cmonsterLevel\x127\n\x0emonster_status\x18\x05\x20\x01(\x0b2\x10.M\
+    onsterPropertyR\rmonsterStatus\x12\x1f\n\x0btotal_turns\x18\x06\x20\x01(\
+    \rR\ntotalTurns\x12!\n\x0ctotal_damage\x18\x07\x20\x01(\x01R\x0btotalDam\
+    age\x12\x1d\n\ntotal_heal\x18\x08\x20\x01(\x01R\ttotalHeal\x12,\n\x12tot\
+    al_damage_taken\x18\t\x20\x01(\x01R\x10totalDamageTaken\x129\n\x19total_\
+    stance_damage_taken\x18\n\x20\x01(\x01R\x16totalStanceDamageTaken\x12(\n\
+    \x10total_hp_recover\x18\x0b\x20\x01(\x01R\x0etotalHpRecover\x12\x19\n\
+    \x08stage_id\x18\x0c\x20\x01(\rR\x07stageId\x12\x1b\n\tbattle_id\x18\r\
+    \x20\x01(\rR\x08battleId\x12!\n\x0cmonster_type\x18\x0e\x20\x01(\rR\x0bm\
+    onsterType\x12C\n\x12attack_type_damage\x18\x0f\x20\x03(\x0b2\x15.Attack\
+    DamagePropertyR\x10attackTypeDamage\x122\n\x0bskill_times\x18\x10\x20\
+    \x03(\x0b2\x11.SkillUsePropertyR\nskillTimes\x12\x1d\n\nstage_type\x18\
+    \x11\x20\x01(\rR\tstageType\x127\n\x18total_break_damage_taken\x18\x12\
+    \x20\x01(\x01R\x15totalBreakDamageTaken\x12%\n\x0edelay_cumulate\x18\x13\
+    \x20\x01(\x01R\rdelayCumulate\x12/\n\x0cdeath_source\x18\x14\x20\x01(\
+    \x0e2\x0c.DeathSourceR\x0bdeathSource\x12\x12\n\x04wave\x18\x15\x20\x01(\
+    \rR\x04wave\x12\"\n\rindex_in_wave\x18\x16\x20\x01(\x05R\x0bindexInWave\
+    \x12\x14\n\x05phase\x18\x17\x20\x01(\rR\x05phase\x12\x1b\n\tmax_phase\
+    \x18\x18\x20\x01(\rR\x08maxPhase\x12)\n\nbattle_tag\x18\x19\x20\x01(\x0e\
+    2\n.BattleTagR\tbattleTag\x12+\n\nskill_info\x18\x1a\x20\x03(\x0b2\x0c.G\
+    AAGEHABINMR\tskillInfo\x12\x20\n\x0bDMHKCLKFPGD\x18\x1b\x20\x01(\rR\x0bD\
+    MHKCLKFPGD\x12E\n\x16monster_phase_stt_list\x18\x1c\x20\x03(\x0b2\x10.Mo\
+    nsterPhaseSttR\x13monsterPhaseSttList\x12\x20\n\x0bMHAJPNDDJEH\x18\x1d\
+    \x20\x01(\rR\x0bMHAJPNDDJEH\x12\x20\n\x0bBPLPHNGAHGB\x18\x1e\x20\x01(\rR\
+    \x0bBPLPHNGAHGB\x12/\n\x0bIGFFMLDKCEM\x18\x1f\x20\x01(\x0e2\r.CreateReas\
+    onR\x0bIGFFMLDKCEMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -743,9 +744,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(8);
             deps.push(super::AttackDamageProperty::file_descriptor().clone());
             deps.push(super::BattleTag::file_descriptor().clone());
+            deps.push(super::CreateReason::file_descriptor().clone());
             deps.push(super::DeathSource::file_descriptor().clone());
             deps.push(super::GAAGEHABINM::file_descriptor().clone());
-            deps.push(super::HEMBNDJAFDA::file_descriptor().clone());
             deps.push(super::MonsterPhaseStt::file_descriptor().clone());
             deps.push(super::MonsterProperty::file_descriptor().clone());
             deps.push(super::SkillUseProperty::file_descriptor().clone());
