@@ -30,51 +30,51 @@ pub enum CmdHeliobusType {
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusTypeNone)
     CmdHeliobusTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusInfoChangedScNotify)
-    CmdHeliobusInfoChangedScNotify = 5869,
+    CmdHeliobusInfoChangedScNotify = 5817,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsCommentScRsp)
-    CmdHeliobusSnsCommentScRsp = 5844,
+    CmdHeliobusSnsCommentScRsp = 5835,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSelectSkillScRsp)
-    CmdHeliobusSelectSkillScRsp = 5868,
+    CmdHeliobusSelectSkillScRsp = 5850,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsReadScRsp)
-    CmdHeliobusSnsReadScRsp = 5865,
+    CmdHeliobusSnsReadScRsp = 5867,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusUpgradeLevelScRsp)
-    CmdHeliobusUpgradeLevelScRsp = 5815,
+    CmdHeliobusUpgradeLevelScRsp = 5846,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsUpdateScNotify)
-    CmdHeliobusSnsUpdateScNotify = 5881,
+    CmdHeliobusSnsUpdateScNotify = 5851,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusUnlockSkillScNotify)
-    CmdHeliobusUnlockSkillScNotify = 5892,
+    CmdHeliobusUnlockSkillScNotify = 5895,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsPostCsReq)
-    CmdHeliobusSnsPostCsReq = 5883,
+    CmdHeliobusSnsPostCsReq = 5862,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusEnterBattleScRsp)
-    CmdHeliobusEnterBattleScRsp = 5805,
+    CmdHeliobusEnterBattleScRsp = 5876,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsPostScRsp)
-    CmdHeliobusSnsPostScRsp = 5886,
+    CmdHeliobusSnsPostScRsp = 5881,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusActivityDataScRsp)
-    CmdHeliobusActivityDataScRsp = 5823,
+    CmdHeliobusActivityDataScRsp = 5811,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsLikeCsReq)
-    CmdHeliobusSnsLikeCsReq = 5894,
+    CmdHeliobusSnsLikeCsReq = 5847,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusEnterBattleCsReq)
-    CmdHeliobusEnterBattleCsReq = 5877,
+    CmdHeliobusEnterBattleCsReq = 5893,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusStartRaidCsReq)
-    CmdHeliobusStartRaidCsReq = 5851,
+    CmdHeliobusStartRaidCsReq = 5861,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusActivityDataCsReq)
-    CmdHeliobusActivityDataCsReq = 5899,
+    CmdHeliobusActivityDataCsReq = 5852,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusChallengeUpdateScNotify)
-    CmdHeliobusChallengeUpdateScNotify = 5838,
+    CmdHeliobusChallengeUpdateScNotify = 5891,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusUpgradeLevelCsReq)
-    CmdHeliobusUpgradeLevelCsReq = 5857,
+    CmdHeliobusUpgradeLevelCsReq = 5809,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsReadCsReq)
-    CmdHeliobusSnsReadCsReq = 5898,
+    CmdHeliobusSnsReadCsReq = 5892,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusLineupUpdateScNotify)
-    CmdHeliobusLineupUpdateScNotify = 5803,
+    CmdHeliobusLineupUpdateScNotify = 5898,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsLikeScRsp)
-    CmdHeliobusSnsLikeScRsp = 5852,
+    CmdHeliobusSnsLikeScRsp = 5820,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusStartRaidScRsp)
-    CmdHeliobusStartRaidScRsp = 5829,
+    CmdHeliobusStartRaidScRsp = 5889,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSnsCommentCsReq)
-    CmdHeliobusSnsCommentCsReq = 5819,
+    CmdHeliobusSnsCommentCsReq = 5845,
     // @@protoc_insertion_point(enum_value:CmdHeliobusType.CmdHeliobusSelectSkillCsReq)
-    CmdHeliobusSelectSkillCsReq = 5837,
+    CmdHeliobusSelectSkillCsReq = 5838,
 }
 
 impl ::protobuf::Enum for CmdHeliobusType {
@@ -87,29 +87,29 @@ impl ::protobuf::Enum for CmdHeliobusType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdHeliobusType> {
         match value {
             0 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusTypeNone),
-            5869 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusInfoChangedScNotify),
-            5844 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsCommentScRsp),
-            5868 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSelectSkillScRsp),
-            5865 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsReadScRsp),
-            5815 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUpgradeLevelScRsp),
-            5881 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsUpdateScNotify),
-            5892 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUnlockSkillScNotify),
-            5883 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsPostCsReq),
-            5805 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusEnterBattleScRsp),
-            5886 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsPostScRsp),
-            5823 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusActivityDataScRsp),
-            5894 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsLikeCsReq),
-            5877 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusEnterBattleCsReq),
-            5851 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusStartRaidCsReq),
-            5899 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusActivityDataCsReq),
-            5838 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusChallengeUpdateScNotify),
-            5857 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUpgradeLevelCsReq),
-            5898 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsReadCsReq),
-            5803 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusLineupUpdateScNotify),
-            5852 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsLikeScRsp),
-            5829 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusStartRaidScRsp),
-            5819 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsCommentCsReq),
-            5837 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSelectSkillCsReq),
+            5817 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusInfoChangedScNotify),
+            5835 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsCommentScRsp),
+            5850 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSelectSkillScRsp),
+            5867 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsReadScRsp),
+            5846 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUpgradeLevelScRsp),
+            5851 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsUpdateScNotify),
+            5895 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUnlockSkillScNotify),
+            5862 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsPostCsReq),
+            5876 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusEnterBattleScRsp),
+            5881 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsPostScRsp),
+            5811 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusActivityDataScRsp),
+            5847 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsLikeCsReq),
+            5893 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusEnterBattleCsReq),
+            5861 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusStartRaidCsReq),
+            5852 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusActivityDataCsReq),
+            5891 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusChallengeUpdateScNotify),
+            5809 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusUpgradeLevelCsReq),
+            5892 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsReadCsReq),
+            5898 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusLineupUpdateScNotify),
+            5820 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsLikeScRsp),
+            5889 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusStartRaidScRsp),
+            5845 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSnsCommentCsReq),
+            5838 => ::std::option::Option::Some(CmdHeliobusType::CmdHeliobusSelectSkillCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -224,21 +224,21 @@ impl CmdHeliobusType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdHeliobusType.proto*\xb0\x06\n\x0fCmdHeliobusType\x12\x17\n\x13C\
     mdHeliobusTypeNone\x10\0\x12#\n\x1eCmdHeliobusInfoChangedScNotify\x10\
-    \xed-\x12\x1f\n\x1aCmdHeliobusSnsCommentScRsp\x10\xd4-\x12\x20\n\x1bCmdH\
-    eliobusSelectSkillScRsp\x10\xec-\x12\x1c\n\x17CmdHeliobusSnsReadScRsp\
-    \x10\xe9-\x12!\n\x1cCmdHeliobusUpgradeLevelScRsp\x10\xb7-\x12!\n\x1cCmdH\
-    eliobusSnsUpdateScNotify\x10\xf9-\x12#\n\x1eCmdHeliobusUnlockSkillScNoti\
-    fy\x10\x84.\x12\x1c\n\x17CmdHeliobusSnsPostCsReq\x10\xfb-\x12\x20\n\x1bC\
-    mdHeliobusEnterBattleScRsp\x10\xad-\x12\x1c\n\x17CmdHeliobusSnsPostScRsp\
-    \x10\xfe-\x12!\n\x1cCmdHeliobusActivityDataScRsp\x10\xbf-\x12\x1c\n\x17C\
-    mdHeliobusSnsLikeCsReq\x10\x86.\x12\x20\n\x1bCmdHeliobusEnterBattleCsReq\
-    \x10\xf5-\x12\x1e\n\x19CmdHeliobusStartRaidCsReq\x10\xdb-\x12!\n\x1cCmdH\
-    eliobusActivityDataCsReq\x10\x8b.\x12'\n\"CmdHeliobusChallengeUpdateScNo\
-    tify\x10\xce-\x12!\n\x1cCmdHeliobusUpgradeLevelCsReq\x10\xe1-\x12\x1c\n\
-    \x17CmdHeliobusSnsReadCsReq\x10\x8a.\x12$\n\x1fCmdHeliobusLineupUpdateSc\
-    Notify\x10\xab-\x12\x1c\n\x17CmdHeliobusSnsLikeScRsp\x10\xdc-\x12\x1e\n\
-    \x19CmdHeliobusStartRaidScRsp\x10\xc5-\x12\x1f\n\x1aCmdHeliobusSnsCommen\
-    tCsReq\x10\xbb-\x12\x20\n\x1bCmdHeliobusSelectSkillCsReq\x10\xcd-b\x06pr\
+    \xb9-\x12\x1f\n\x1aCmdHeliobusSnsCommentScRsp\x10\xcb-\x12\x20\n\x1bCmdH\
+    eliobusSelectSkillScRsp\x10\xda-\x12\x1c\n\x17CmdHeliobusSnsReadScRsp\
+    \x10\xeb-\x12!\n\x1cCmdHeliobusUpgradeLevelScRsp\x10\xd6-\x12!\n\x1cCmdH\
+    eliobusSnsUpdateScNotify\x10\xdb-\x12#\n\x1eCmdHeliobusUnlockSkillScNoti\
+    fy\x10\x87.\x12\x1c\n\x17CmdHeliobusSnsPostCsReq\x10\xe6-\x12\x20\n\x1bC\
+    mdHeliobusEnterBattleScRsp\x10\xf4-\x12\x1c\n\x17CmdHeliobusSnsPostScRsp\
+    \x10\xf9-\x12!\n\x1cCmdHeliobusActivityDataScRsp\x10\xb3-\x12\x1c\n\x17C\
+    mdHeliobusSnsLikeCsReq\x10\xd7-\x12\x20\n\x1bCmdHeliobusEnterBattleCsReq\
+    \x10\x85.\x12\x1e\n\x19CmdHeliobusStartRaidCsReq\x10\xe5-\x12!\n\x1cCmdH\
+    eliobusActivityDataCsReq\x10\xdc-\x12'\n\"CmdHeliobusChallengeUpdateScNo\
+    tify\x10\x83.\x12!\n\x1cCmdHeliobusUpgradeLevelCsReq\x10\xb1-\x12\x1c\n\
+    \x17CmdHeliobusSnsReadCsReq\x10\x84.\x12$\n\x1fCmdHeliobusLineupUpdateSc\
+    Notify\x10\x8a.\x12\x1c\n\x17CmdHeliobusSnsLikeScRsp\x10\xbc-\x12\x1e\n\
+    \x19CmdHeliobusStartRaidScRsp\x10\x81.\x12\x1f\n\x1aCmdHeliobusSnsCommen\
+    tCsReq\x10\xd5-\x12\x20\n\x1bCmdHeliobusSelectSkillCsReq\x10\xce-b\x06pr\
     oto3\
 ";
 

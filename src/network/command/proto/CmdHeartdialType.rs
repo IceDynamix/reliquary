@@ -30,27 +30,27 @@ pub enum CmdHeartdialType {
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialTypeNone)
     CmdHeartdialTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdChangeScriptEmotionCsReq)
-    CmdChangeScriptEmotionCsReq = 6398,
+    CmdChangeScriptEmotionCsReq = 6361,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialScriptChangeScNotify)
-    CmdHeartDialScriptChangeScNotify = 6319,
+    CmdHeartDialScriptChangeScNotify = 6320,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptScRsp)
-    CmdHeartDialTraceScriptScRsp = 6381,
+    CmdHeartDialTraceScriptScRsp = 6351,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdFinishEmotionDialoguePerformanceScRsp)
-    CmdFinishEmotionDialoguePerformanceScRsp = 6352,
+    CmdFinishEmotionDialoguePerformanceScRsp = 6338,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoCsReq)
-    CmdGetHeartDialInfoCsReq = 6399,
+    CmdGetHeartDialInfoCsReq = 6389,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartDialTraceScriptCsReq)
-    CmdHeartDialTraceScriptCsReq = 6344,
+    CmdHeartDialTraceScriptCsReq = 6311,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemScRsp)
-    CmdSubmitEmotionItemScRsp = 6386,
+    CmdSubmitEmotionItemScRsp = 6391,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdSubmitEmotionItemCsReq)
-    CmdSubmitEmotionItemCsReq = 6383,
+    CmdSubmitEmotionItemCsReq = 6347,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdChangeScriptEmotionScRsp)
-    CmdChangeScriptEmotionScRsp = 6365,
+    CmdChangeScriptEmotionScRsp = 6309,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdGetHeartDialInfoScRsp)
-    CmdGetHeartDialInfoScRsp = 6323,
+    CmdGetHeartDialInfoScRsp = 6317,
     // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdFinishEmotionDialoguePerformanceCsReq)
-    CmdFinishEmotionDialoguePerformanceCsReq = 6394,
+    CmdFinishEmotionDialoguePerformanceCsReq = 6395,
 }
 
 impl ::protobuf::Enum for CmdHeartdialType {
@@ -63,17 +63,17 @@ impl ::protobuf::Enum for CmdHeartdialType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdHeartdialType> {
         match value {
             0 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialTypeNone),
-            6398 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionCsReq),
-            6319 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
-            6381 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
-            6352 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp),
-            6399 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
-            6344 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
-            6386 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
-            6383 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
-            6365 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
-            6323 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
-            6394 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq),
+            6361 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionCsReq),
+            6320 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialScriptChangeScNotify),
+            6351 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptScRsp),
+            6338 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceScRsp),
+            6389 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoCsReq),
+            6311 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartDialTraceScriptCsReq),
+            6391 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemScRsp),
+            6347 => ::std::option::Option::Some(CmdHeartdialType::CmdSubmitEmotionItemCsReq),
+            6309 => ::std::option::Option::Some(CmdHeartdialType::CmdChangeScriptEmotionScRsp),
+            6317 => ::std::option::Option::Some(CmdHeartdialType::CmdGetHeartDialInfoScRsp),
+            6395 => ::std::option::Option::Some(CmdHeartdialType::CmdFinishEmotionDialoguePerformanceCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -152,14 +152,14 @@ impl CmdHeartdialType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdHeartdialType.proto*\xb9\x03\n\x10CmdHeartdialType\x12\x18\n\
     \x14CmdHeartdialTypeNone\x10\0\x12\x20\n\x1bCmdChangeScriptEmotionCsReq\
-    \x10\xfe1\x12%\n\x20CmdHeartDialScriptChangeScNotify\x10\xaf1\x12!\n\x1c\
-    CmdHeartDialTraceScriptScRsp\x10\xed1\x12-\n(CmdFinishEmotionDialoguePer\
-    formanceScRsp\x10\xd01\x12\x1d\n\x18CmdGetHeartDialInfoCsReq\x10\xff1\
-    \x12!\n\x1cCmdHeartDialTraceScriptCsReq\x10\xc81\x12\x1e\n\x19CmdSubmitE\
-    motionItemScRsp\x10\xf21\x12\x1e\n\x19CmdSubmitEmotionItemCsReq\x10\xef1\
-    \x12\x20\n\x1bCmdChangeScriptEmotionScRsp\x10\xdd1\x12\x1d\n\x18CmdGetHe\
-    artDialInfoScRsp\x10\xb31\x12-\n(CmdFinishEmotionDialoguePerformanceCsRe\
-    q\x10\xfa1b\x06proto3\
+    \x10\xd91\x12%\n\x20CmdHeartDialScriptChangeScNotify\x10\xb01\x12!\n\x1c\
+    CmdHeartDialTraceScriptScRsp\x10\xcf1\x12-\n(CmdFinishEmotionDialoguePer\
+    formanceScRsp\x10\xc21\x12\x1d\n\x18CmdGetHeartDialInfoCsReq\x10\xf51\
+    \x12!\n\x1cCmdHeartDialTraceScriptCsReq\x10\xa71\x12\x1e\n\x19CmdSubmitE\
+    motionItemScRsp\x10\xf71\x12\x1e\n\x19CmdSubmitEmotionItemCsReq\x10\xcb1\
+    \x12\x20\n\x1bCmdChangeScriptEmotionScRsp\x10\xa51\x12\x1d\n\x18CmdGetHe\
+    artDialInfoScRsp\x10\xad1\x12-\n(CmdFinishEmotionDialoguePerformanceCsRe\
+    q\x10\xfb1b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

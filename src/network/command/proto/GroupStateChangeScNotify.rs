@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GroupStateChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:GroupStateChangeScNotify.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateChangeInfo::GroupStateChangeInfo>,
+    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl GroupStateChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateChangeInfo::GroupStateChangeInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
             "group_state_info",
             |m: &GroupStateChangeScNotify| { &m.group_state_info },
             |m: &mut GroupStateChangeScNotify| { &mut m.group_state_info },
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGroupStateChangeScNotify.proto\x1a\x1aGroupStateChangeInfo.proto\"\
-    [\n\x18GroupStateChangeScNotify\x12?\n\x10group_state_info\x18\x0b\x20\
-    \x01(\x0b2\x15.GroupStateChangeInfoR\x0egroupStateInfob\x06proto3\
+    \n\x1eGroupStateChangeScNotify.proto\x1a\x14GroupStateInfo.proto\"U\n\
+    \x18GroupStateChangeScNotify\x129\n\x10group_state_info\x18\x0b\x20\x01(\
+    \x0b2\x0f.GroupStateInfoR\x0egroupStateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GroupStateChangeInfo::file_descriptor().clone());
+            deps.push(super::GroupStateInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GroupStateChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

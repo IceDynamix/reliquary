@@ -30,175 +30,175 @@ pub enum CmdGridFightType {
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTypeNone)
     CmdGridFightTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetFormationCsReq)
-    CmdGridFightGetFormationCsReq = 8416,
+    CmdGridFightGetFormationCsReq = 8465,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateTraitTrackScRsp)
-    CmdGridFightUpdateTraitTrackScRsp = 8574,
+    CmdGridFightUpdateTraitTrackScRsp = 8577,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbNotify)
-    CmdGridFightUseOrbNotify = 8427,
+    CmdGridFightUseOrbNotify = 8589,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseForgeScRsp)
-    CmdGridFightUseForgeScRsp = 8482,
+    CmdGridFightUseForgeScRsp = 8529,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbScRsp)
-    CmdGridFightUseOrbScRsp = 8527,
+    CmdGridFightUseOrbScRsp = 8512,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipDressScRsp)
-    CmdGridFightEquipDressScRsp = 8596,
+    CmdGridFightEquipDressScRsp = 8424,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipDressCsReq)
-    CmdGridFightEquipDressCsReq = 8562,
+    CmdGridFightEquipDressCsReq = 8595,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightHandlePendingActionScRsp)
-    CmdGridFightHandlePendingActionScRsp = 8490,
+    CmdGridFightHandlePendingActionScRsp = 8466,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightAddFormationCsReq)
-    CmdGridFightAddFormationCsReq = 8534,
+    CmdGridFightAddFormationCsReq = 8441,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBackToPrepareCsReq)
-    CmdGridFightBackToPrepareCsReq = 8453,
+    CmdGridFightBackToPrepareCsReq = 8568,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightFinishTutorialScRsp)
-    CmdGridFightFinishTutorialScRsp = 8472,
+    CmdGridFightFinishTutorialScRsp = 8432,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTakeWeeklyRewardScRsp)
-    CmdGridFightTakeWeeklyRewardScRsp = 8549,
+    CmdGridFightTakeWeeklyRewardScRsp = 8523,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetFormationScRsp)
-    CmdGridFightGetFormationScRsp = 8447,
+    CmdGridFightGetFormationScRsp = 8500,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEndBattleStageNotify)
-    CmdGridFightEndBattleStageNotify = 8440,
+    CmdGridFightEndBattleStageNotify = 8404,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTraitUpdateScRsp)
-    CmdGridFightTraitUpdateScRsp = 8588,
+    CmdGridFightTraitUpdateScRsp = 8563,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEliteBranchSelectScRsp)
-    CmdGridFightUpdateEliteBranchSelectScRsp = 8528,
+    CmdGridFightUpdateEliteBranchSelectScRsp = 8468,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSettleNotify)
-    CmdGridFightSettleNotify = 8561,
+    CmdGridFightSettleNotify = 8567,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackScRsp)
-    CmdGridFightUpdateEquipTrackScRsp = 8589,
+    CmdGridFightUpdateEquipTrackScRsp = 8559,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateTraitTrackCsReq)
-    CmdGridFightUpdateTraitTrackCsReq = 8545,
+    CmdGridFightUpdateTraitTrackCsReq = 8566,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResumeGamePlayCsReq)
-    CmdGridFightResumeGamePlayCsReq = 8495,
+    CmdGridFightResumeGamePlayCsReq = 8453,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncVirtualItemScNotify)
-    CmdGridFightSyncVirtualItemScNotify = 8537,
+    CmdGridFightSyncVirtualItemScNotify = 8545,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightFinishTutorialCsReq)
-    CmdGridFightFinishTutorialCsReq = 8579,
+    CmdGridFightFinishTutorialCsReq = 8506,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyExpCsReq)
-    CmdGridFightBuyExpCsReq = 8449,
+    CmdGridFightBuyExpCsReq = 8527,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncUpdateResultScNotify)
-    CmdGridFightSyncUpdateResultScNotify = 8560,
+    CmdGridFightSyncUpdateResultScNotify = 8557,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackProrityScRsp)
-    CmdGridFightUpdateEquipTrackProrityScRsp = 8573,
+    CmdGridFightUpdateEquipTrackProrityScRsp = 8548,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightStartGamePlayScRsp)
-    CmdGridFightStartGamePlayScRsp = 8470,
+    CmdGridFightStartGamePlayScRsp = 8528,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateFormationCsReq)
-    CmdGridFightUpdateFormationCsReq = 8581,
+    CmdGridFightUpdateFormationCsReq = 8487,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetPermanentTalentScRsp)
-    CmdGridFightResetPermanentTalentScRsp = 8507,
+    CmdGridFightResetPermanentTalentScRsp = 8446,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightAddFormationScRsp)
-    CmdGridFightAddFormationScRsp = 8592,
+    CmdGridFightAddFormationScRsp = 8555,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEliteBranchSelectCsReq)
-    CmdGridFightUpdateEliteBranchSelectCsReq = 8462,
+    CmdGridFightUpdateEliteBranchSelectCsReq = 8505,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackProrityCsReq)
-    CmdGridFightUpdateEquipTrackProrityCsReq = 8426,
+    CmdGridFightUpdateEquipTrackProrityCsReq = 8433,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageCsReq)
-    CmdGridFightEnterBattleStageCsReq = 8544,
+    CmdGridFightEnterBattleStageCsReq = 8431,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataCsReq)
-    CmdGridFightGetDataCsReq = 8511,
+    CmdGridFightGetDataCsReq = 8401,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetPermanentTalentCsReq)
-    CmdGridFightResetPermanentTalentCsReq = 8436,
+    CmdGridFightResetPermanentTalentCsReq = 8597,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipCraftScRsp)
-    CmdGridFightEquipCraftScRsp = 8564,
+    CmdGridFightEquipCraftScRsp = 8588,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRefreshShopCsReq)
-    CmdGridFightRefreshShopCsReq = 8512,
+    CmdGridFightRefreshShopCsReq = 8496,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyGoodsScRsp)
-    CmdGridFightBuyGoodsScRsp = 8459,
+    CmdGridFightBuyGoodsScRsp = 8511,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnablePermanentTalentCsReq)
-    CmdGridFightEnablePermanentTalentCsReq = 8502,
+    CmdGridFightEnablePermanentTalentCsReq = 8438,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTraitUpdateCsReq)
-    CmdGridFightTraitUpdateCsReq = 8466,
+    CmdGridFightTraitUpdateCsReq = 8586,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackCsReq)
-    CmdGridFightUpdateEquipTrackCsReq = 8546,
+    CmdGridFightUpdateEquipTrackCsReq = 8416,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitSettleCsReq)
-    CmdGridFightQuitSettleCsReq = 8541,
+    CmdGridFightQuitSettleCsReq = 8538,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbCsReq)
-    CmdGridFightUseOrbCsReq = 8508,
+    CmdGridFightUseOrbCsReq = 8578,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseConsumableCsReq)
-    CmdGridFightUseConsumableCsReq = 8404,
+    CmdGridFightUseConsumableCsReq = 8576,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightHandlePendingActionCsReq)
-    CmdGridFightHandlePendingActionCsReq = 8437,
+    CmdGridFightHandlePendingActionCsReq = 8406,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipCraftCsReq)
-    CmdGridFightEquipCraftCsReq = 8411,
+    CmdGridFightEquipCraftCsReq = 8599,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnableSeasonTalentCsReq)
-    CmdGridFightEnableSeasonTalentCsReq = 8450,
+    CmdGridFightEnableSeasonTalentCsReq = 8486,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageScRsp)
-    CmdGridFightEnterBattleStageScRsp = 8422,
+    CmdGridFightEnterBattleStageScRsp = 8531,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateGameRefCsReq)
-    CmdGridFightUpdateGameRefCsReq = 8451,
+    CmdGridFightUpdateGameRefCsReq = 8410,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateGameRefScRsp)
-    CmdGridFightUpdateGameRefScRsp = 8577,
+    CmdGridFightUpdateGameRefScRsp = 8474,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDeleteFormationCsReq)
-    CmdGridFightDeleteFormationCsReq = 8486,
+    CmdGridFightDeleteFormationCsReq = 8472,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetSeasonTalentScRsp)
-    CmdGridFightResetSeasonTalentScRsp = 8557,
+    CmdGridFightResetSeasonTalentScRsp = 8485,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnableSeasonTalentScRsp)
-    CmdGridFightEnableSeasonTalentScRsp = 8519,
+    CmdGridFightEnableSeasonTalentScRsp = 8456,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyExpScRsp)
-    CmdGridFightBuyExpScRsp = 8425,
+    CmdGridFightBuyExpScRsp = 8459,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveCsReq)
-    CmdGridFightGetArchiveCsReq = 8492,
+    CmdGridFightGetArchiveCsReq = 8479,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBackToPrepareScRsp)
-    CmdGridFightBackToPrepareScRsp = 8461,
+    CmdGridFightBackToPrepareScRsp = 8550,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDeleteFormationScRsp)
-    CmdGridFightDeleteFormationScRsp = 8463,
+    CmdGridFightDeleteFormationScRsp = 8443,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetSeasonTalentCsReq)
-    CmdGridFightResetSeasonTalentCsReq = 8522,
+    CmdGridFightResetSeasonTalentCsReq = 8413,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleScRsp)
-    CmdGridFightRecycleRoleScRsp = 8510,
+    CmdGridFightRecycleRoleScRsp = 8430,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonHandBookNotify)
-    CmdGridFightSeasonHandBookNotify = 8465,
+    CmdGridFightSeasonHandBookNotify = 8516,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitLeaveGamePlayScRsp)
-    CmdGridFightQuitLeaveGamePlayScRsp = 8593,
+    CmdGridFightQuitLeaveGamePlayScRsp = 8598,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResumeGamePlayScRsp)
-    CmdGridFightResumeGamePlayScRsp = 8455,
+    CmdGridFightResumeGamePlayScRsp = 8440,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnablePermanentTalentScRsp)
-    CmdGridFightEnablePermanentTalentScRsp = 8407,
+    CmdGridFightEnablePermanentTalentScRsp = 8508,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightStartGamePlayCsReq)
-    CmdGridFightStartGamePlayCsReq = 8514,
+    CmdGridFightStartGamePlayCsReq = 8415,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosScRsp)
-    CmdGridFightUpdatePosScRsp = 8558,
+    CmdGridFightUpdatePosScRsp = 8549,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseForgeCsReq)
-    CmdGridFightUseForgeCsReq = 8552,
+    CmdGridFightUseForgeCsReq = 8427,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRefreshShopScRsp)
-    CmdGridFightRefreshShopScRsp = 8530,
+    CmdGridFightRefreshShopScRsp = 8532,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitLeaveGamePlayCsReq)
-    CmdGridFightQuitLeaveGamePlayCsReq = 8413,
+    CmdGridFightQuitLeaveGamePlayCsReq = 8518,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleCsReq)
-    CmdGridFightRecycleRoleCsReq = 8469,
+    CmdGridFightRecycleRoleCsReq = 8507,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetShopRandomRuleCsReq)
-    CmdGridFightGetShopRandomRuleCsReq = 8433,
+    CmdGridFightGetShopRandomRuleCsReq = 8533,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveScRsp)
-    CmdGridFightGetArchiveScRsp = 8516,
+    CmdGridFightGetArchiveScRsp = 8571,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTakeWeeklyRewardCsReq)
-    CmdGridFightTakeWeeklyRewardCsReq = 8485,
+    CmdGridFightTakeWeeklyRewardCsReq = 8445,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightLockShopScRsp)
-    CmdGridFightLockShopScRsp = 8500,
+    CmdGridFightLockShopScRsp = 8575,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseConsumableScRsp)
-    CmdGridFightUseConsumableScRsp = 8523,
+    CmdGridFightUseConsumableScRsp = 8442,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateFormationScRsp)
-    CmdGridFightUpdateFormationScRsp = 8434,
+    CmdGridFightUpdateFormationScRsp = 8448,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataScRsp)
-    CmdGridFightGetDataScRsp = 8445,
+    CmdGridFightGetDataScRsp = 8580,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightApplyFormationCsReq)
-    CmdGridFightApplyFormationCsReq = 8590,
+    CmdGridFightApplyFormationCsReq = 8435,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightLockShopCsReq)
-    CmdGridFightLockShopCsReq = 8491,
+    CmdGridFightLockShopCsReq = 8405,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyGoodsCsReq)
-    CmdGridFightBuyGoodsCsReq = 8576,
+    CmdGridFightBuyGoodsCsReq = 8536,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateWeeklyRewardInfoScNotify)
-    CmdGridFightUpdateWeeklyRewardInfoScNotify = 8586,
+    CmdGridFightUpdateWeeklyRewardInfoScNotify = 8541,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitSettleScRsp)
-    CmdGridFightQuitSettleScRsp = 8476,
+    CmdGridFightQuitSettleScRsp = 8519,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightApplyFormationScRsp)
-    CmdGridFightApplyFormationScRsp = 8571,
+    CmdGridFightApplyFormationScRsp = 8542,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightWeeklyExtraSeasonExpNotify)
-    CmdGridFightWeeklyExtraSeasonExpNotify = 8598,
+    CmdGridFightWeeklyExtraSeasonExpNotify = 8515,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDataScNotify)
-    CmdGridFightDataScNotify = 8412,
+    CmdGridFightDataScNotify = 8407,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetShopRandomRuleScRsp)
-    CmdGridFightGetShopRandomRuleScRsp = 8503,
+    CmdGridFightGetShopRandomRuleScRsp = 8480,
     // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosCsReq)
-    CmdGridFightUpdatePosCsReq = 8518,
+    CmdGridFightUpdatePosCsReq = 8497,
 }
 
 impl ::protobuf::Enum for CmdGridFightType {
@@ -211,91 +211,91 @@ impl ::protobuf::Enum for CmdGridFightType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdGridFightType> {
         match value {
             0 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTypeNone),
-            8416 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationCsReq),
-            8574 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp),
-            8427 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbNotify),
-            8482 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeScRsp),
-            8527 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbScRsp),
-            8596 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressScRsp),
-            8562 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
-            8490 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
-            8534 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationCsReq),
-            8453 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareCsReq),
-            8472 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialScRsp),
-            8549 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp),
-            8447 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationScRsp),
-            8440 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
-            8588 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateScRsp),
-            8528 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp),
-            8561 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
-            8589 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
-            8545 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq),
-            8495 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
-            8537 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemScNotify),
-            8579 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
-            8449 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
-            8560 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
-            8573 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp),
-            8470 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayScRsp),
-            8581 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationCsReq),
-            8507 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentScRsp),
-            8592 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationScRsp),
-            8462 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq),
-            8426 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq),
-            8544 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
-            8511 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
-            8436 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentCsReq),
-            8564 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftScRsp),
-            8512 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
-            8459 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsScRsp),
-            8502 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq),
-            8466 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateCsReq),
-            8546 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
-            8541 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
-            8508 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbCsReq),
-            8404 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
-            8437 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionCsReq),
-            8411 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
-            8450 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq),
-            8422 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
-            8451 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefCsReq),
-            8577 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefScRsp),
-            8486 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationCsReq),
-            8557 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentScRsp),
-            8519 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp),
-            8425 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpScRsp),
-            8492 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
-            8461 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareScRsp),
-            8463 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationScRsp),
-            8522 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentCsReq),
-            8510 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
-            8465 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
-            8593 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp),
-            8455 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayScRsp),
-            8407 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp),
-            8514 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
-            8558 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
-            8552 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
-            8530 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopScRsp),
-            8413 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
-            8469 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
-            8433 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq),
-            8516 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
-            8485 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
-            8500 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopScRsp),
-            8523 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableScRsp),
-            8434 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationScRsp),
-            8445 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
-            8590 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationCsReq),
-            8491 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
-            8576 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
-            8586 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify),
-            8476 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleScRsp),
-            8571 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationScRsp),
-            8598 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify),
-            8412 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDataScNotify),
-            8503 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp),
-            8518 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
+            8465 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationCsReq),
+            8577 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp),
+            8589 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbNotify),
+            8529 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeScRsp),
+            8512 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbScRsp),
+            8424 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressScRsp),
+            8595 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
+            8466 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
+            8441 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationCsReq),
+            8568 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareCsReq),
+            8432 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialScRsp),
+            8523 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp),
+            8500 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationScRsp),
+            8404 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
+            8563 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateScRsp),
+            8468 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp),
+            8567 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
+            8559 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
+            8566 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq),
+            8453 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
+            8545 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemScNotify),
+            8506 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
+            8527 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
+            8557 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
+            8548 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp),
+            8528 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayScRsp),
+            8487 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationCsReq),
+            8446 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentScRsp),
+            8555 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationScRsp),
+            8505 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq),
+            8433 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq),
+            8431 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
+            8401 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
+            8597 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentCsReq),
+            8588 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftScRsp),
+            8496 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
+            8511 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsScRsp),
+            8438 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq),
+            8586 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateCsReq),
+            8416 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
+            8538 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
+            8578 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbCsReq),
+            8576 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
+            8406 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionCsReq),
+            8599 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
+            8486 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq),
+            8531 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
+            8410 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefCsReq),
+            8474 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefScRsp),
+            8472 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationCsReq),
+            8485 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentScRsp),
+            8456 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp),
+            8459 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpScRsp),
+            8479 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
+            8550 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareScRsp),
+            8443 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationScRsp),
+            8413 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentCsReq),
+            8430 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
+            8516 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
+            8598 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp),
+            8440 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayScRsp),
+            8508 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp),
+            8415 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
+            8549 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
+            8427 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
+            8532 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopScRsp),
+            8518 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
+            8507 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
+            8533 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq),
+            8571 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
+            8445 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
+            8575 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopScRsp),
+            8442 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableScRsp),
+            8448 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationScRsp),
+            8580 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
+            8435 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationCsReq),
+            8405 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
+            8536 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
+            8541 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify),
+            8519 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleScRsp),
+            8542 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationScRsp),
+            8515 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify),
+            8407 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDataScNotify),
+            8480 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp),
+            8497 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -596,66 +596,66 @@ impl CmdGridFightType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdGridFightType.proto*\xaa\x19\n\x10CmdGridFightType\x12\x18\n\
     \x14CmdGridFightTypeNone\x10\0\x12\"\n\x1dCmdGridFightGetFormationCsReq\
-    \x10\xe0A\x12&\n!CmdGridFightUpdateTraitTrackScRsp\x10\xfeB\x12\x1d\n\
-    \x18CmdGridFightUseOrbNotify\x10\xebA\x12\x1e\n\x19CmdGridFightUseForgeS\
-    cRsp\x10\xa2B\x12\x1c\n\x17CmdGridFightUseOrbScRsp\x10\xcfB\x12\x20\n\
-    \x1bCmdGridFightEquipDressScRsp\x10\x94C\x12\x20\n\x1bCmdGridFightEquipD\
-    ressCsReq\x10\xf2B\x12)\n$CmdGridFightHandlePendingActionScRsp\x10\xaaB\
-    \x12\"\n\x1dCmdGridFightAddFormationCsReq\x10\xd6B\x12#\n\x1eCmdGridFigh\
-    tBackToPrepareCsReq\x10\x85B\x12$\n\x1fCmdGridFightFinishTutorialScRsp\
-    \x10\x98B\x12&\n!CmdGridFightTakeWeeklyRewardScRsp\x10\xe5B\x12\"\n\x1dC\
-    mdGridFightGetFormationScRsp\x10\xffA\x12%\n\x20CmdGridFightEndBattleSta\
-    geNotify\x10\xf8A\x12!\n\x1cCmdGridFightTraitUpdateScRsp\x10\x8cC\x12-\n\
-    (CmdGridFightUpdateEliteBranchSelectScRsp\x10\xd0B\x12\x1d\n\x18CmdGridF\
-    ightSettleNotify\x10\xf1B\x12&\n!CmdGridFightUpdateEquipTrackScRsp\x10\
-    \x8dC\x12&\n!CmdGridFightUpdateTraitTrackCsReq\x10\xe1B\x12$\n\x1fCmdGri\
-    dFightResumeGamePlayCsReq\x10\xafB\x12(\n#CmdGridFightSyncVirtualItemScN\
-    otify\x10\xd9B\x12$\n\x1fCmdGridFightFinishTutorialCsReq\x10\x83C\x12\
-    \x1c\n\x17CmdGridFightBuyExpCsReq\x10\x81B\x12)\n$CmdGridFightSyncUpdate\
-    ResultScNotify\x10\xf0B\x12-\n(CmdGridFightUpdateEquipTrackProrityScRsp\
-    \x10\xfdB\x12#\n\x1eCmdGridFightStartGamePlayScRsp\x10\x96B\x12%\n\x20Cm\
-    dGridFightUpdateFormationCsReq\x10\x85C\x12*\n%CmdGridFightResetPermanen\
-    tTalentScRsp\x10\xbbB\x12\"\n\x1dCmdGridFightAddFormationScRsp\x10\x90C\
-    \x12-\n(CmdGridFightUpdateEliteBranchSelectCsReq\x10\x8eB\x12-\n(CmdGrid\
-    FightUpdateEquipTrackProrityCsReq\x10\xeaA\x12&\n!CmdGridFightEnterBattl\
-    eStageCsReq\x10\xe0B\x12\x1d\n\x18CmdGridFightGetDataCsReq\x10\xbfB\x12*\
-    \n%CmdGridFightResetPermanentTalentCsReq\x10\xf4A\x12\x20\n\x1bCmdGridFi\
-    ghtEquipCraftScRsp\x10\xf4B\x12!\n\x1cCmdGridFightRefreshShopCsReq\x10\
-    \xc0B\x12\x1e\n\x19CmdGridFightBuyGoodsScRsp\x10\x8bB\x12+\n&CmdGridFigh\
-    tEnablePermanentTalentCsReq\x10\xb6B\x12!\n\x1cCmdGridFightTraitUpdateCs\
-    Req\x10\x92B\x12&\n!CmdGridFightUpdateEquipTrackCsReq\x10\xe2B\x12\x20\n\
-    \x1bCmdGridFightQuitSettleCsReq\x10\xddB\x12\x1c\n\x17CmdGridFightUseOrb\
-    CsReq\x10\xbcB\x12#\n\x1eCmdGridFightUseConsumableCsReq\x10\xd4A\x12)\n$\
-    CmdGridFightHandlePendingActionCsReq\x10\xf5A\x12\x20\n\x1bCmdGridFightE\
-    quipCraftCsReq\x10\xdbA\x12(\n#CmdGridFightEnableSeasonTalentCsReq\x10\
-    \x82B\x12&\n!CmdGridFightEnterBattleStageScRsp\x10\xe6A\x12#\n\x1eCmdGri\
-    dFightUpdateGameRefCsReq\x10\x83B\x12#\n\x1eCmdGridFightUpdateGameRefScR\
-    sp\x10\x81C\x12%\n\x20CmdGridFightDeleteFormationCsReq\x10\xa6B\x12'\n\"\
-    CmdGridFightResetSeasonTalentScRsp\x10\xedB\x12(\n#CmdGridFightEnableSea\
-    sonTalentScRsp\x10\xc7B\x12\x1c\n\x17CmdGridFightBuyExpScRsp\x10\xe9A\
-    \x12\x20\n\x1bCmdGridFightGetArchiveCsReq\x10\xacB\x12#\n\x1eCmdGridFigh\
-    tBackToPrepareScRsp\x10\x8dB\x12%\n\x20CmdGridFightDeleteFormationScRsp\
-    \x10\x8fB\x12'\n\"CmdGridFightResetSeasonTalentCsReq\x10\xcaB\x12!\n\x1c\
-    CmdGridFightRecycleRoleScRsp\x10\xbeB\x12%\n\x20CmdGridFightSeasonHandBo\
-    okNotify\x10\x91B\x12'\n\"CmdGridFightQuitLeaveGamePlayScRsp\x10\x91C\
-    \x12$\n\x1fCmdGridFightResumeGamePlayScRsp\x10\x87B\x12+\n&CmdGridFightE\
-    nablePermanentTalentScRsp\x10\xd7A\x12#\n\x1eCmdGridFightStartGamePlayCs\
-    Req\x10\xc2B\x12\x1f\n\x1aCmdGridFightUpdatePosScRsp\x10\xeeB\x12\x1e\n\
-    \x19CmdGridFightUseForgeCsReq\x10\xe8B\x12!\n\x1cCmdGridFightRefreshShop\
-    ScRsp\x10\xd2B\x12'\n\"CmdGridFightQuitLeaveGamePlayCsReq\x10\xddA\x12!\
-    \n\x1cCmdGridFightRecycleRoleCsReq\x10\x95B\x12'\n\"CmdGridFightGetShopR\
-    andomRuleCsReq\x10\xf1A\x12\x20\n\x1bCmdGridFightGetArchiveScRsp\x10\xc4\
-    B\x12&\n!CmdGridFightTakeWeeklyRewardCsReq\x10\xa5B\x12\x1e\n\x19CmdGrid\
-    FightLockShopScRsp\x10\xb4B\x12#\n\x1eCmdGridFightUseConsumableScRsp\x10\
-    \xcbB\x12%\n\x20CmdGridFightUpdateFormationScRsp\x10\xf2A\x12\x1d\n\x18C\
-    mdGridFightGetDataScRsp\x10\xfdA\x12$\n\x1fCmdGridFightApplyFormationCsR\
-    eq\x10\x8eC\x12\x1e\n\x19CmdGridFightLockShopCsReq\x10\xabB\x12\x1e\n\
-    \x19CmdGridFightBuyGoodsCsReq\x10\x80C\x12/\n*CmdGridFightUpdateWeeklyRe\
-    wardInfoScNotify\x10\x8aC\x12\x20\n\x1bCmdGridFightQuitSettleScRsp\x10\
-    \x9cB\x12$\n\x1fCmdGridFightApplyFormationScRsp\x10\xfbB\x12+\n&CmdGridF\
-    ightWeeklyExtraSeasonExpNotify\x10\x96C\x12\x1d\n\x18CmdGridFightDataScN\
-    otify\x10\xdcA\x12'\n\"CmdGridFightGetShopRandomRuleScRsp\x10\xb7B\x12\
-    \x1f\n\x1aCmdGridFightUpdatePosCsReq\x10\xc6Bb\x06proto3\
+    \x10\x91B\x12&\n!CmdGridFightUpdateTraitTrackScRsp\x10\x81C\x12\x1d\n\
+    \x18CmdGridFightUseOrbNotify\x10\x8dC\x12\x1e\n\x19CmdGridFightUseForgeS\
+    cRsp\x10\xd1B\x12\x1c\n\x17CmdGridFightUseOrbScRsp\x10\xc0B\x12\x20\n\
+    \x1bCmdGridFightEquipDressScRsp\x10\xe8A\x12\x20\n\x1bCmdGridFightEquipD\
+    ressCsReq\x10\x93C\x12)\n$CmdGridFightHandlePendingActionScRsp\x10\x92B\
+    \x12\"\n\x1dCmdGridFightAddFormationCsReq\x10\xf9A\x12#\n\x1eCmdGridFigh\
+    tBackToPrepareCsReq\x10\xf8B\x12$\n\x1fCmdGridFightFinishTutorialScRsp\
+    \x10\xf0A\x12&\n!CmdGridFightTakeWeeklyRewardScRsp\x10\xcbB\x12\"\n\x1dC\
+    mdGridFightGetFormationScRsp\x10\xb4B\x12%\n\x20CmdGridFightEndBattleSta\
+    geNotify\x10\xd4A\x12!\n\x1cCmdGridFightTraitUpdateScRsp\x10\xf3B\x12-\n\
+    (CmdGridFightUpdateEliteBranchSelectScRsp\x10\x94B\x12\x1d\n\x18CmdGridF\
+    ightSettleNotify\x10\xf7B\x12&\n!CmdGridFightUpdateEquipTrackScRsp\x10\
+    \xefB\x12&\n!CmdGridFightUpdateTraitTrackCsReq\x10\xf6B\x12$\n\x1fCmdGri\
+    dFightResumeGamePlayCsReq\x10\x85B\x12(\n#CmdGridFightSyncVirtualItemScN\
+    otify\x10\xe1B\x12$\n\x1fCmdGridFightFinishTutorialCsReq\x10\xbaB\x12\
+    \x1c\n\x17CmdGridFightBuyExpCsReq\x10\xcfB\x12)\n$CmdGridFightSyncUpdate\
+    ResultScNotify\x10\xedB\x12-\n(CmdGridFightUpdateEquipTrackProrityScRsp\
+    \x10\xe4B\x12#\n\x1eCmdGridFightStartGamePlayScRsp\x10\xd0B\x12%\n\x20Cm\
+    dGridFightUpdateFormationCsReq\x10\xa7B\x12*\n%CmdGridFightResetPermanen\
+    tTalentScRsp\x10\xfeA\x12\"\n\x1dCmdGridFightAddFormationScRsp\x10\xebB\
+    \x12-\n(CmdGridFightUpdateEliteBranchSelectCsReq\x10\xb9B\x12-\n(CmdGrid\
+    FightUpdateEquipTrackProrityCsReq\x10\xf1A\x12&\n!CmdGridFightEnterBattl\
+    eStageCsReq\x10\xefA\x12\x1d\n\x18CmdGridFightGetDataCsReq\x10\xd1A\x12*\
+    \n%CmdGridFightResetPermanentTalentCsReq\x10\x95C\x12\x20\n\x1bCmdGridFi\
+    ghtEquipCraftScRsp\x10\x8cC\x12!\n\x1cCmdGridFightRefreshShopCsReq\x10\
+    \xb0B\x12\x1e\n\x19CmdGridFightBuyGoodsScRsp\x10\xbfB\x12+\n&CmdGridFigh\
+    tEnablePermanentTalentCsReq\x10\xf6A\x12!\n\x1cCmdGridFightTraitUpdateCs\
+    Req\x10\x8aC\x12&\n!CmdGridFightUpdateEquipTrackCsReq\x10\xe0A\x12\x20\n\
+    \x1bCmdGridFightQuitSettleCsReq\x10\xdaB\x12\x1c\n\x17CmdGridFightUseOrb\
+    CsReq\x10\x82C\x12#\n\x1eCmdGridFightUseConsumableCsReq\x10\x80C\x12)\n$\
+    CmdGridFightHandlePendingActionCsReq\x10\xd6A\x12\x20\n\x1bCmdGridFightE\
+    quipCraftCsReq\x10\x97C\x12(\n#CmdGridFightEnableSeasonTalentCsReq\x10\
+    \xa6B\x12&\n!CmdGridFightEnterBattleStageScRsp\x10\xd3B\x12#\n\x1eCmdGri\
+    dFightUpdateGameRefCsReq\x10\xdaA\x12#\n\x1eCmdGridFightUpdateGameRefScR\
+    sp\x10\x9aB\x12%\n\x20CmdGridFightDeleteFormationCsReq\x10\x98B\x12'\n\"\
+    CmdGridFightResetSeasonTalentScRsp\x10\xa5B\x12(\n#CmdGridFightEnableSea\
+    sonTalentScRsp\x10\x88B\x12\x1c\n\x17CmdGridFightBuyExpScRsp\x10\x8bB\
+    \x12\x20\n\x1bCmdGridFightGetArchiveCsReq\x10\x9fB\x12#\n\x1eCmdGridFigh\
+    tBackToPrepareScRsp\x10\xe6B\x12%\n\x20CmdGridFightDeleteFormationScRsp\
+    \x10\xfbA\x12'\n\"CmdGridFightResetSeasonTalentCsReq\x10\xddA\x12!\n\x1c\
+    CmdGridFightRecycleRoleScRsp\x10\xeeA\x12%\n\x20CmdGridFightSeasonHandBo\
+    okNotify\x10\xc4B\x12'\n\"CmdGridFightQuitLeaveGamePlayScRsp\x10\x96C\
+    \x12$\n\x1fCmdGridFightResumeGamePlayScRsp\x10\xf8A\x12+\n&CmdGridFightE\
+    nablePermanentTalentScRsp\x10\xbcB\x12#\n\x1eCmdGridFightStartGamePlayCs\
+    Req\x10\xdfA\x12\x1f\n\x1aCmdGridFightUpdatePosScRsp\x10\xe5B\x12\x1e\n\
+    \x19CmdGridFightUseForgeCsReq\x10\xebA\x12!\n\x1cCmdGridFightRefreshShop\
+    ScRsp\x10\xd4B\x12'\n\"CmdGridFightQuitLeaveGamePlayCsReq\x10\xc6B\x12!\
+    \n\x1cCmdGridFightRecycleRoleCsReq\x10\xbbB\x12'\n\"CmdGridFightGetShopR\
+    andomRuleCsReq\x10\xd5B\x12\x20\n\x1bCmdGridFightGetArchiveScRsp\x10\xfb\
+    B\x12&\n!CmdGridFightTakeWeeklyRewardCsReq\x10\xfdA\x12\x1e\n\x19CmdGrid\
+    FightLockShopScRsp\x10\xffB\x12#\n\x1eCmdGridFightUseConsumableScRsp\x10\
+    \xfaA\x12%\n\x20CmdGridFightUpdateFormationScRsp\x10\x80B\x12\x1d\n\x18C\
+    mdGridFightGetDataScRsp\x10\x84C\x12$\n\x1fCmdGridFightApplyFormationCsR\
+    eq\x10\xf3A\x12\x1e\n\x19CmdGridFightLockShopCsReq\x10\xd5A\x12\x1e\n\
+    \x19CmdGridFightBuyGoodsCsReq\x10\xd8B\x12/\n*CmdGridFightUpdateWeeklyRe\
+    wardInfoScNotify\x10\xddB\x12\x20\n\x1bCmdGridFightQuitSettleScRsp\x10\
+    \xc7B\x12$\n\x1fCmdGridFightApplyFormationScRsp\x10\xdeB\x12+\n&CmdGridF\
+    ightWeeklyExtraSeasonExpNotify\x10\xc3B\x12\x1d\n\x18CmdGridFightDataScN\
+    otify\x10\xd7A\x12'\n\"CmdGridFightGetShopRandomRuleScRsp\x10\xa0B\x12\
+    \x1f\n\x1aCmdGridFightUpdatePosCsReq\x10\xb1Bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

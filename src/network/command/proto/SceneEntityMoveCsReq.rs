@@ -32,8 +32,8 @@ pub struct SceneEntityMoveCsReq {
     pub entry_id: u32,
     // @@protoc_insertion_point(field:SceneEntityMoveCsReq.entity_motion_list)
     pub entity_motion_list: ::std::vec::Vec<super::EntityMotion::EntityMotion>,
-    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.client_log)
-    pub client_log: u64,
+    // @@protoc_insertion_point(field:SceneEntityMoveCsReq.LNIMMJLJKLL)
+    pub LNIMMJLJKLL: u64,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityMoveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl SceneEntityMoveCsReq {
             |m: &mut SceneEntityMoveCsReq| { &mut m.entity_motion_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_log",
-            |m: &SceneEntityMoveCsReq| { &m.client_log },
-            |m: &mut SceneEntityMoveCsReq| { &mut m.client_log },
+            "LNIMMJLJKLL",
+            |m: &SceneEntityMoveCsReq| { &m.LNIMMJLJKLL },
+            |m: &mut SceneEntityMoveCsReq| { &mut m.LNIMMJLJKLL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityMoveCsReq>(
             "SceneEntityMoveCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                104 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                82 => {
+                90 => {
                     self.entity_motion_list.push(is.read_message()?);
                 },
-                96 => {
-                    self.client_log = is.read_uint64()?;
+                32 => {
+                    self.LNIMMJLJKLL = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.entry_id);
         }
         for value in &self.entity_motion_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.client_log != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.client_log);
+        if self.LNIMMJLJKLL != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.LNIMMJLJKLL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(3, self.entry_id)?;
+            os.write_uint32(13, self.entry_id)?;
         }
         for v in &self.entity_motion_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if self.client_log != 0 {
-            os.write_uint64(12, self.client_log)?;
+        if self.LNIMMJLJKLL != 0 {
+            os.write_uint64(4, self.LNIMMJLJKLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
     fn clear(&mut self) {
         self.entry_id = 0;
         self.entity_motion_list.clear();
-        self.client_log = 0;
+        self.LNIMMJLJKLL = 0;
         self.special_fields.clear();
     }
 
@@ -159,7 +159,7 @@ impl ::protobuf::Message for SceneEntityMoveCsReq {
         static instance: SceneEntityMoveCsReq = SceneEntityMoveCsReq {
             entry_id: 0,
             entity_motion_list: ::std::vec::Vec::new(),
-            client_log: 0,
+            LNIMMJLJKLL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityMoveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSceneEntityMoveCsReq.proto\x1a\x12EntityMotion.proto\"\x8d\x01\n\
-    \x14SceneEntityMoveCsReq\x12\x19\n\x08entry_id\x18\x03\x20\x01(\rR\x07en\
-    tryId\x12;\n\x12entity_motion_list\x18\n\x20\x03(\x0b2\r.EntityMotionR\
-    \x10entityMotionList\x12\x1d\n\nclient_log\x18\x0c\x20\x01(\x04R\tclient\
-    Logb\x06proto3\
+    \n\x1aSceneEntityMoveCsReq.proto\x1a\x12EntityMotion.proto\"\x90\x01\n\
+    \x14SceneEntityMoveCsReq\x12\x19\n\x08entry_id\x18\r\x20\x01(\rR\x07entr\
+    yId\x12;\n\x12entity_motion_list\x18\x0b\x20\x03(\x0b2\r.EntityMotionR\
+    \x10entityMotionList\x12\x20\n\x0bLNIMMJLJKLL\x18\x04\x20\x01(\x04R\x0bL\
+    NIMMJLJKLLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

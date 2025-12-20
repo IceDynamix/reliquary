@@ -30,13 +30,13 @@ pub enum CmdRecommendType {
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CMD_RECOMMEND_TYPE_NONE)
     CMD_RECOMMEND_TYPE_NONE = 0,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendCsReq)
-    CmdGetBigDataAllRecommendCsReq = 2401,
+    CmdGetBigDataAllRecommendCsReq = 2425,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendCsReq)
-    CmdGetBigDataRecommendCsReq = 2420,
+    CmdGetBigDataRecommendCsReq = 2417,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendScRsp)
-    CmdGetBigDataRecommendScRsp = 2444,
+    CmdGetBigDataRecommendScRsp = 2446,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendScRsp)
-    CmdGetBigDataAllRecommendScRsp = 2445,
+    CmdGetBigDataAllRecommendScRsp = 2431,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
             0 => ::std::option::Option::Some(CmdRecommendType::CMD_RECOMMEND_TYPE_NONE),
-            2401 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
-            2420 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
-            2444 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
-            2445 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
+            2425 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
+            2417 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
+            2446 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
+            2431 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -110,9 +110,9 @@ impl CmdRecommendType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRecommendType.proto*\xbd\x01\n\x10CmdRecommendType\x12\x1b\n\
     \x17CMD_RECOMMEND_TYPE_NONE\x10\0\x12#\n\x1eCmdGetBigDataAllRecommendCsR\
-    eq\x10\xe1\x12\x12\x20\n\x1bCmdGetBigDataRecommendCsReq\x10\xf4\x12\x12\
-    \x20\n\x1bCmdGetBigDataRecommendScRsp\x10\x8c\x13\x12#\n\x1eCmdGetBigDat\
-    aAllRecommendScRsp\x10\x8d\x13b\x06proto3\
+    eq\x10\xf9\x12\x12\x20\n\x1bCmdGetBigDataRecommendCsReq\x10\xf1\x12\x12\
+    \x20\n\x1bCmdGetBigDataRecommendScRsp\x10\x8e\x13\x12#\n\x1eCmdGetBigDat\
+    aAllRecommendScRsp\x10\xff\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

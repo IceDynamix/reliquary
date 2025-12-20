@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.is_batch_op)
-    pub is_batch_op: bool,
-    // @@protoc_insertion_point(field:LockRelicCsReq.relic_unique_id_list)
-    pub relic_unique_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LockRelicCsReq.is_lock)
-    pub is_lock: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.HIIBGFLBKCI)
+    pub HIIBGFLBKCI: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.relic_ids)
+    pub relic_ids: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LockRelicCsReq.is_locked)
+    pub is_locked: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl LockRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_batch_op",
-            |m: &LockRelicCsReq| { &m.is_batch_op },
-            |m: &mut LockRelicCsReq| { &mut m.is_batch_op },
+            "HIIBGFLBKCI",
+            |m: &LockRelicCsReq| { &m.HIIBGFLBKCI },
+            |m: &mut LockRelicCsReq| { &mut m.HIIBGFLBKCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "relic_unique_id_list",
-            |m: &LockRelicCsReq| { &m.relic_unique_id_list },
-            |m: &mut LockRelicCsReq| { &mut m.relic_unique_id_list },
+            "relic_ids",
+            |m: &LockRelicCsReq| { &m.relic_ids },
+            |m: &mut LockRelicCsReq| { &mut m.relic_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_lock",
-            |m: &LockRelicCsReq| { &m.is_lock },
-            |m: &mut LockRelicCsReq| { &mut m.is_lock },
+            "is_locked",
+            |m: &LockRelicCsReq| { &m.is_locked },
+            |m: &mut LockRelicCsReq| { &mut m.is_locked },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicCsReq>(
             "LockRelicCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.is_batch_op = is.read_bool()?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.relic_unique_id_list)?;
-                },
-                56 => {
-                    self.relic_unique_id_list.push(is.read_uint32()?);
-                },
                 80 => {
-                    self.is_lock = is.read_bool()?;
+                    self.HIIBGFLBKCI = is.read_bool()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
+                },
+                40 => {
+                    self.relic_ids.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.is_locked = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_batch_op != false {
+        if self.HIIBGFLBKCI != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.relic_unique_id_list);
-        if self.is_lock != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.relic_ids);
+        if self.is_locked != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,12 +123,12 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_batch_op != false {
-            os.write_bool(1, self.is_batch_op)?;
+        if self.HIIBGFLBKCI != false {
+            os.write_bool(10, self.HIIBGFLBKCI)?;
         }
-        os.write_repeated_packed_uint32(7, &self.relic_unique_id_list)?;
-        if self.is_lock != false {
-            os.write_bool(10, self.is_lock)?;
+        os.write_repeated_packed_uint32(5, &self.relic_ids)?;
+        if self.is_locked != false {
+            os.write_bool(15, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.is_batch_op = false;
-        self.relic_unique_id_list.clear();
-        self.is_lock = false;
+        self.HIIBGFLBKCI = false;
+        self.relic_ids.clear();
+        self.is_locked = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            is_batch_op: false,
-            relic_unique_id_list: ::std::vec::Vec::new(),
-            is_lock: false,
+            HIIBGFLBKCI: false,
+            relic_ids: ::std::vec::Vec::new(),
+            is_locked: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"z\n\x0eLockRelicCsReq\x12\x1e\n\x0bis_batch_\
-    op\x18\x01\x20\x01(\x08R\tisBatchOp\x12/\n\x14relic_unique_id_list\x18\
-    \x07\x20\x03(\rR\x11relicUniqueIdList\x12\x17\n\x07is_lock\x18\n\x20\x01\
-    (\x08R\x06isLockb\x06proto3\
+    \n\x14LockRelicCsReq.proto\"l\n\x0eLockRelicCsReq\x12\x20\n\x0bHIIBGFLBK\
+    CI\x18\n\x20\x01(\x08R\x0bHIIBGFLBKCI\x12\x1b\n\trelic_ids\x18\x05\x20\
+    \x03(\rR\x08relicIds\x12\x1b\n\tis_locked\x18\x0f\x20\x01(\x08R\x08isLoc\
+    kedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,17 +30,17 @@ pub enum CmdFantasticStoryActivityType {
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityTypeNone)
     CmdFantasticStoryActivityTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataScRsp)
-    CmdGetFantasticStoryActivityDataScRsp = 4923,
+    CmdGetFantasticStoryActivityDataScRsp = 4917,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageScRsp)
-    CmdEnterFantasticStoryActivityStageScRsp = 4983,
+    CmdEnterFantasticStoryActivityStageScRsp = 4909,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityBattleEndScNotify)
-    CmdFantasticStoryActivityBattleEndScNotify = 4986,
+    CmdFantasticStoryActivityBattleEndScNotify = 4911,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataCsReq)
-    CmdGetFantasticStoryActivityDataCsReq = 4999,
+    CmdGetFantasticStoryActivityDataCsReq = 4947,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageCsReq)
-    CmdEnterFantasticStoryActivityStageCsReq = 4965,
+    CmdEnterFantasticStoryActivityStageCsReq = 4938,
     // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFinishChapterScNotify)
-    CmdFinishChapterScNotify = 4998,
+    CmdFinishChapterScNotify = 4951,
 }
 
 impl ::protobuf::Enum for CmdFantasticStoryActivityType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdFantasticStoryActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone),
-            4923 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
-            4983 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
-            4986 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
-            4999 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
-            4965 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
-            4998 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
+            4917 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
+            4909 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
+            4911 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
+            4947 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
+            4938 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
+            4951 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -122,11 +122,11 @@ impl CmdFantasticStoryActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#CmdFantasticStoryActivityType.proto*\xcc\x02\n\x1dCmdFantasticStoryAc\
     tivityType\x12%\n!CmdFantasticStoryActivityTypeNone\x10\0\x12*\n%CmdGetF\
-    antasticStoryActivityDataScRsp\x10\xbb&\x12-\n(CmdEnterFantasticStoryAct\
-    ivityStageScRsp\x10\xf7&\x12/\n*CmdFantasticStoryActivityBattleEndScNoti\
-    fy\x10\xfa&\x12*\n%CmdGetFantasticStoryActivityDataCsReq\x10\x87'\x12-\n\
-    (CmdEnterFantasticStoryActivityStageCsReq\x10\xe5&\x12\x1d\n\x18CmdFinis\
-    hChapterScNotify\x10\x86'b\x06proto3\
+    antasticStoryActivityDataScRsp\x10\xb5&\x12-\n(CmdEnterFantasticStoryAct\
+    ivityStageScRsp\x10\xad&\x12/\n*CmdFantasticStoryActivityBattleEndScNoti\
+    fy\x10\xaf&\x12*\n%CmdGetFantasticStoryActivityDataCsReq\x10\xd3&\x12-\n\
+    (CmdEnterFantasticStoryActivityStageCsReq\x10\xca&\x12\x1d\n\x18CmdFinis\
+    hChapterScNotify\x10\xd7&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

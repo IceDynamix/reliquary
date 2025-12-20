@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionMessageInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.MFJONLACNAI)
-    pub MFJONLACNAI: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.LCFNJJHJHKO)
+    pub LCFNJJHJHKO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GetMissionMessageInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetMissionMessageInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "MFJONLACNAI",
-            |m: &GetMissionMessageInfoScRsp| { &m.MFJONLACNAI },
-            |m: &mut GetMissionMessageInfoScRsp| { &mut m.MFJONLACNAI },
+            "LCFNJJHJHKO",
+            |m: &GetMissionMessageInfoScRsp| { &m.LCFNJJHJHKO },
+            |m: &mut GetMissionMessageInfoScRsp| { &mut m.LCFNJJHJHKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -92,9 +92,9 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.MFJONLACNAI.insert(key, value);
+                    self.LCFNJJHJHKO.insert(key, value);
                 },
-                96 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -109,14 +109,14 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.MFJONLACNAI {
+        for (k, v) in &self.LCFNJJHJHKO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,7 +124,7 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.MFJONLACNAI {
+        for (k, v) in &self.LCFNJJHJHKO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -134,7 +134,7 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
             os.write_uint32(2, *v)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -153,7 +153,7 @@ impl ::protobuf::Message for GetMissionMessageInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.MFJONLACNAI.clear();
+        self.LCFNJJHJHKO.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionMessageInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetMissionMessageInfoScRsp.proto\"\xc6\x01\n\x1aGetMissionMessageI\
-    nfoScRsp\x12N\n\x0bMFJONLACNAI\x18\x03\x20\x03(\x0b2,.GetMissionMessageI\
-    nfoScRsp.MFJONLACNAIEntryR\x0bMFJONLACNAI\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcode\x1a>\n\x10MFJONLACNAIEntry\x12\x10\n\x03key\x18\
-    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
-    \x028\x01b\x06proto3\
+    nfoScRsp\x12N\n\x0bLCFNJJHJHKO\x18\x03\x20\x03(\x0b2,.GetMissionMessageI\
+    nfoScRsp.LCFNJJHJHKOEntryR\x0bLCFNJJHJHKO\x12\x18\n\x07retcode\x18\t\x20\
+    \x01(\rR\x07retcode\x1a>\n\x10LCFNJJHJHKOEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
+    8\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

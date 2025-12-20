@@ -30,105 +30,105 @@ pub enum CmdPlanetFesType {
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesTypeNone)
     CmdPlanetFesTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBuyLandCsReq)
-    CmdPlanetFesBuyLandCsReq = 8244,
+    CmdPlanetFesBuyLandCsReq = 8204,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDoGachaScRsp)
-    CmdPlanetFesDoGachaScRsp = 8247,
+    CmdPlanetFesDoGachaScRsp = 8225,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetAvatarStatCsReq)
-    CmdPlanetFesGetAvatarStatCsReq = 8217,
+    CmdPlanetFesGetAvatarStatCsReq = 8211,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBuyLandScRsp)
-    CmdPlanetFesBuyLandScRsp = 8201,
+    CmdPlanetFesBuyLandScRsp = 8221,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesCollectIncomeScRsp)
-    CmdPlanetFesCollectIncomeScRsp = 8205,
+    CmdPlanetFesCollectIncomeScRsp = 8213,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDeliverPamCargoScRsp)
-    CmdPlanetFesDeliverPamCargoScRsp = 8202,
+    CmdPlanetFesDeliverPamCargoScRsp = 8228,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesTakeQuestRewardCsReq)
-    CmdPlanetFesTakeQuestRewardCsReq = 8211,
+    CmdPlanetFesTakeQuestRewardCsReq = 8218,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBusinessDayRefreshEventScRsp)
-    CmdPlanetFesBusinessDayRefreshEventScRsp = 8231,
+    CmdPlanetFesBusinessDayRefreshEventScRsp = 8206,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesClientStatusScRsp)
-    CmdPlanetFesClientStatusScRsp = 8243,
+    CmdPlanetFesClientStatusScRsp = 8230,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetFriendRankingInfoListCsReq)
-    CmdPlanetFesGetFriendRankingInfoListCsReq = 8246,
+    CmdPlanetFesGetFriendRankingInfoListCsReq = 8250,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdGetPlanetFesDataCsReq)
-    CmdGetPlanetFesDataCsReq = 8226,
+    CmdGetPlanetFesDataCsReq = 8201,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesStartMiniGameScRsp)
-    CmdPlanetFesStartMiniGameScRsp = 8216,
+    CmdPlanetFesStartMiniGameScRsp = 8245,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesSetCustomKeyValueCsReq)
-    CmdPlanetFesSetCustomKeyValueCsReq = 8204,
+    CmdPlanetFesSetCustomKeyValueCsReq = 8215,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesAvatarLevelUpCsReq)
-    CmdPlanetFesAvatarLevelUpCsReq = 8233,
+    CmdPlanetFesAvatarLevelUpCsReq = 8243,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesTakeRegionPhaseRewardScRsp)
-    CmdPlanetFesTakeRegionPhaseRewardScRsp = 8209,
+    CmdPlanetFesTakeRegionPhaseRewardScRsp = 8249,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUpgradeFesLevelScRsp)
-    CmdPlanetFesUpgradeFesLevelScRsp = 8239,
+    CmdPlanetFesUpgradeFesLevelScRsp = 8216,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesChooseAvatarEventOptionCsReq)
-    CmdPlanetFesChooseAvatarEventOptionCsReq = 8234,
+    CmdPlanetFesChooseAvatarEventOptionCsReq = 8242,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDeliverPamCargoCsReq)
-    CmdPlanetFesDeliverPamCargoCsReq = 8208,
+    CmdPlanetFesDeliverPamCargoCsReq = 8222,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesClientStatusCsReq)
-    CmdPlanetFesClientStatusCsReq = 8245,
+    CmdPlanetFesClientStatusCsReq = 8227,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetFriendRankingInfoListScRsp)
-    CmdPlanetFesGetFriendRankingInfoListScRsp = 8214,
+    CmdPlanetFesGetFriendRankingInfoListScRsp = 8203,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGameBingoFlipCsReq)
-    CmdPlanetFesGameBingoFlipCsReq = 8241,
+    CmdPlanetFesGameBingoFlipCsReq = 8226,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesTakeQuestRewardScRsp)
-    CmdPlanetFesTakeQuestRewardScRsp = 8229,
+    CmdPlanetFesTakeQuestRewardScRsp = 8247,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDealAvatarEventOptionItemCsReq)
-    CmdPlanetFesDealAvatarEventOptionItemCsReq = 8249,
+    CmdPlanetFesDealAvatarEventOptionItemCsReq = 8219,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetBusinessDayInfoScRsp)
-    CmdPlanetFesGetBusinessDayInfoScRsp = 8212,
+    CmdPlanetFesGetBusinessDayInfoScRsp = 8217,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBusinessDayRefreshEventCsReq)
-    CmdPlanetFesBusinessDayRefreshEventCsReq = 8215,
+    CmdPlanetFesBusinessDayRefreshEventCsReq = 8246,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesChooseAvatarEventOptionScRsp)
-    CmdPlanetFesChooseAvatarEventOptionScRsp = 8206,
+    CmdPlanetFesChooseAvatarEventOptionScRsp = 8235,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBonusEventInteractScRsp)
-    CmdPlanetFesBonusEventInteractScRsp = 8218,
+    CmdPlanetFesBonusEventInteractScRsp = 8210,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUpgradeSkillLevelScRsp)
-    CmdPlanetFesUpgradeSkillLevelScRsp = 8248,
+    CmdPlanetFesUpgradeSkillLevelScRsp = 8208,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesAvatarLevelUpScRsp)
-    CmdPlanetFesAvatarLevelUpScRsp = 8230,
+    CmdPlanetFesAvatarLevelUpScRsp = 8209,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGameBingoFlipScRsp)
-    CmdPlanetFesGameBingoFlipScRsp = 8240,
+    CmdPlanetFesGameBingoFlipScRsp = 8233,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesSetCustomKeyValueScRsp)
-    CmdPlanetFesSetCustomKeyValueScRsp = 8224,
+    CmdPlanetFesSetCustomKeyValueScRsp = 8240,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesSyncChangeScNotify)
-    CmdPlanetFesSyncChangeScNotify = 8221,
+    CmdPlanetFesSyncChangeScNotify = 8224,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUpgradeSkillLevelCsReq)
-    CmdPlanetFesUpgradeSkillLevelCsReq = 8225,
+    CmdPlanetFesUpgradeSkillLevelCsReq = 8212,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesStartMiniGameCsReq)
-    CmdPlanetFesStartMiniGameCsReq = 8222,
+    CmdPlanetFesStartMiniGameCsReq = 8202,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesSetAvatarWorkScRsp)
-    CmdPlanetFesSetAvatarWorkScRsp = 8220,
+    CmdPlanetFesSetAvatarWorkScRsp = 8232,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetBusinessDayInfoCsReq)
-    CmdPlanetFesGetBusinessDayInfoCsReq = 8235,
+    CmdPlanetFesGetBusinessDayInfoCsReq = 8220,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDoGachaCsReq)
-    CmdPlanetFesDoGachaCsReq = 8219,
+    CmdPlanetFesDoGachaCsReq = 8223,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdGetPlanetFesDataScRsp)
-    CmdGetPlanetFesDataScRsp = 8228,
+    CmdGetPlanetFesDataScRsp = 8237,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUseItemScRsp)
-    CmdPlanetFesUseItemScRsp = 8237,
+    CmdPlanetFesUseItemScRsp = 8231,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesGetAvatarStatScRsp)
-    CmdPlanetFesGetAvatarStatScRsp = 8207,
+    CmdPlanetFesGetAvatarStatScRsp = 8238,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesFriendRankingInfoChangeScNotify)
-    CmdPlanetFesFriendRankingInfoChangeScNotify = 8213,
+    CmdPlanetFesFriendRankingInfoChangeScNotify = 8244,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesSetAvatarWorkCsReq)
-    CmdPlanetFesSetAvatarWorkCsReq = 8227,
+    CmdPlanetFesSetAvatarWorkCsReq = 8234,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesBonusEventInteractCsReq)
-    CmdPlanetFesBonusEventInteractCsReq = 8250,
+    CmdPlanetFesBonusEventInteractCsReq = 8241,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUseItemCsReq)
-    CmdPlanetFesUseItemCsReq = 8242,
+    CmdPlanetFesUseItemCsReq = 8205,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesCollectIncomeCsReq)
-    CmdPlanetFesCollectIncomeCsReq = 8238,
+    CmdPlanetFesCollectIncomeCsReq = 8236,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesCollectAllIncomeScRsp)
-    CmdPlanetFesCollectAllIncomeScRsp = 8223,
+    CmdPlanetFesCollectAllIncomeScRsp = 8248,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesTakeRegionPhaseRewardCsReq)
-    CmdPlanetFesTakeRegionPhaseRewardCsReq = 8236,
+    CmdPlanetFesTakeRegionPhaseRewardCsReq = 8207,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesDealAvatarEventOptionItemScRsp)
-    CmdPlanetFesDealAvatarEventOptionItemScRsp = 8232,
+    CmdPlanetFesDealAvatarEventOptionItemScRsp = 8239,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesUpgradeFesLevelCsReq)
-    CmdPlanetFesUpgradeFesLevelCsReq = 8210,
+    CmdPlanetFesUpgradeFesLevelCsReq = 8214,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesCollectAllIncomeCsReq)
-    CmdPlanetFesCollectAllIncomeCsReq = 8203,
+    CmdPlanetFesCollectAllIncomeCsReq = 8229,
 }
 
 impl ::protobuf::Enum for CmdPlanetFesType {
@@ -141,56 +141,56 @@ impl ::protobuf::Enum for CmdPlanetFesType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlanetFesType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTypeNone),
-            8244 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBuyLandCsReq),
-            8247 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDoGachaScRsp),
-            8217 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetAvatarStatCsReq),
-            8201 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBuyLandScRsp),
-            8205 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectIncomeScRsp),
-            8202 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDeliverPamCargoScRsp),
-            8211 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeQuestRewardCsReq),
-            8231 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBusinessDayRefreshEventScRsp),
-            8243 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesClientStatusScRsp),
-            8246 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetFriendRankingInfoListCsReq),
-            8226 => ::std::option::Option::Some(CmdPlanetFesType::CmdGetPlanetFesDataCsReq),
-            8216 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesStartMiniGameScRsp),
-            8204 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetCustomKeyValueCsReq),
-            8233 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesAvatarLevelUpCsReq),
-            8209 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeRegionPhaseRewardScRsp),
-            8239 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeFesLevelScRsp),
-            8234 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesChooseAvatarEventOptionCsReq),
-            8208 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDeliverPamCargoCsReq),
-            8245 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesClientStatusCsReq),
-            8214 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetFriendRankingInfoListScRsp),
-            8241 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGameBingoFlipCsReq),
-            8229 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeQuestRewardScRsp),
-            8249 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDealAvatarEventOptionItemCsReq),
-            8212 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetBusinessDayInfoScRsp),
-            8215 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBusinessDayRefreshEventCsReq),
-            8206 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesChooseAvatarEventOptionScRsp),
-            8218 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBonusEventInteractScRsp),
-            8248 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeSkillLevelScRsp),
-            8230 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesAvatarLevelUpScRsp),
-            8240 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGameBingoFlipScRsp),
-            8224 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetCustomKeyValueScRsp),
-            8221 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSyncChangeScNotify),
-            8225 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeSkillLevelCsReq),
-            8222 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesStartMiniGameCsReq),
-            8220 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetAvatarWorkScRsp),
-            8235 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetBusinessDayInfoCsReq),
-            8219 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDoGachaCsReq),
-            8228 => ::std::option::Option::Some(CmdPlanetFesType::CmdGetPlanetFesDataScRsp),
-            8237 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUseItemScRsp),
-            8207 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetAvatarStatScRsp),
-            8213 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesFriendRankingInfoChangeScNotify),
-            8227 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetAvatarWorkCsReq),
-            8250 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBonusEventInteractCsReq),
-            8242 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUseItemCsReq),
-            8238 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectIncomeCsReq),
-            8223 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectAllIncomeScRsp),
-            8236 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeRegionPhaseRewardCsReq),
-            8232 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDealAvatarEventOptionItemScRsp),
-            8210 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeFesLevelCsReq),
-            8203 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectAllIncomeCsReq),
+            8204 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBuyLandCsReq),
+            8225 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDoGachaScRsp),
+            8211 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetAvatarStatCsReq),
+            8221 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBuyLandScRsp),
+            8213 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectIncomeScRsp),
+            8228 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDeliverPamCargoScRsp),
+            8218 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeQuestRewardCsReq),
+            8206 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBusinessDayRefreshEventScRsp),
+            8230 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesClientStatusScRsp),
+            8250 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetFriendRankingInfoListCsReq),
+            8201 => ::std::option::Option::Some(CmdPlanetFesType::CmdGetPlanetFesDataCsReq),
+            8245 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesStartMiniGameScRsp),
+            8215 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetCustomKeyValueCsReq),
+            8243 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesAvatarLevelUpCsReq),
+            8249 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeRegionPhaseRewardScRsp),
+            8216 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeFesLevelScRsp),
+            8242 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesChooseAvatarEventOptionCsReq),
+            8222 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDeliverPamCargoCsReq),
+            8227 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesClientStatusCsReq),
+            8203 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetFriendRankingInfoListScRsp),
+            8226 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGameBingoFlipCsReq),
+            8247 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeQuestRewardScRsp),
+            8219 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDealAvatarEventOptionItemCsReq),
+            8217 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetBusinessDayInfoScRsp),
+            8246 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBusinessDayRefreshEventCsReq),
+            8235 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesChooseAvatarEventOptionScRsp),
+            8210 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBonusEventInteractScRsp),
+            8208 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeSkillLevelScRsp),
+            8209 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesAvatarLevelUpScRsp),
+            8233 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGameBingoFlipScRsp),
+            8240 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetCustomKeyValueScRsp),
+            8224 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSyncChangeScNotify),
+            8212 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeSkillLevelCsReq),
+            8202 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesStartMiniGameCsReq),
+            8232 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetAvatarWorkScRsp),
+            8220 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetBusinessDayInfoCsReq),
+            8223 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDoGachaCsReq),
+            8237 => ::std::option::Option::Some(CmdPlanetFesType::CmdGetPlanetFesDataScRsp),
+            8231 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUseItemScRsp),
+            8238 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesGetAvatarStatScRsp),
+            8244 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesFriendRankingInfoChangeScNotify),
+            8234 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesSetAvatarWorkCsReq),
+            8241 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesBonusEventInteractCsReq),
+            8205 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUseItemCsReq),
+            8236 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectIncomeCsReq),
+            8248 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectAllIncomeScRsp),
+            8207 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesTakeRegionPhaseRewardCsReq),
+            8239 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesDealAvatarEventOptionItemScRsp),
+            8214 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesUpgradeFesLevelCsReq),
+            8229 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesCollectAllIncomeCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -386,42 +386,42 @@ impl CmdPlanetFesType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdPlanetFesType.proto*\xdd\x0f\n\x10CmdPlanetFesType\x12\x18\n\
     \x14CmdPlanetFesTypeNone\x10\0\x12\x1d\n\x18CmdPlanetFesBuyLandCsReq\x10\
-    \xb4@\x12\x1d\n\x18CmdPlanetFesDoGachaScRsp\x10\xb7@\x12#\n\x1eCmdPlanet\
-    FesGetAvatarStatCsReq\x10\x99@\x12\x1d\n\x18CmdPlanetFesBuyLandScRsp\x10\
-    \x89@\x12#\n\x1eCmdPlanetFesCollectIncomeScRsp\x10\x8d@\x12%\n\x20CmdPla\
-    netFesDeliverPamCargoScRsp\x10\x8a@\x12%\n\x20CmdPlanetFesTakeQuestRewar\
-    dCsReq\x10\x93@\x12-\n(CmdPlanetFesBusinessDayRefreshEventScRsp\x10\xa7@\
-    \x12\"\n\x1dCmdPlanetFesClientStatusScRsp\x10\xb3@\x12.\n)CmdPlanetFesGe\
-    tFriendRankingInfoListCsReq\x10\xb6@\x12\x1d\n\x18CmdGetPlanetFesDataCsR\
-    eq\x10\xa2@\x12#\n\x1eCmdPlanetFesStartMiniGameScRsp\x10\x98@\x12'\n\"Cm\
-    dPlanetFesSetCustomKeyValueCsReq\x10\x8c@\x12#\n\x1eCmdPlanetFesAvatarLe\
-    velUpCsReq\x10\xa9@\x12+\n&CmdPlanetFesTakeRegionPhaseRewardScRsp\x10\
-    \x91@\x12%\n\x20CmdPlanetFesUpgradeFesLevelScRsp\x10\xaf@\x12-\n(CmdPlan\
-    etFesChooseAvatarEventOptionCsReq\x10\xaa@\x12%\n\x20CmdPlanetFesDeliver\
-    PamCargoCsReq\x10\x90@\x12\"\n\x1dCmdPlanetFesClientStatusCsReq\x10\xb5@\
-    \x12.\n)CmdPlanetFesGetFriendRankingInfoListScRsp\x10\x96@\x12#\n\x1eCmd\
-    PlanetFesGameBingoFlipCsReq\x10\xb1@\x12%\n\x20CmdPlanetFesTakeQuestRewa\
-    rdScRsp\x10\xa5@\x12/\n*CmdPlanetFesDealAvatarEventOptionItemCsReq\x10\
-    \xb9@\x12(\n#CmdPlanetFesGetBusinessDayInfoScRsp\x10\x94@\x12-\n(CmdPlan\
-    etFesBusinessDayRefreshEventCsReq\x10\x97@\x12-\n(CmdPlanetFesChooseAvat\
-    arEventOptionScRsp\x10\x8e@\x12(\n#CmdPlanetFesBonusEventInteractScRsp\
-    \x10\x9a@\x12'\n\"CmdPlanetFesUpgradeSkillLevelScRsp\x10\xb8@\x12#\n\x1e\
-    CmdPlanetFesAvatarLevelUpScRsp\x10\xa6@\x12#\n\x1eCmdPlanetFesGameBingoF\
-    lipScRsp\x10\xb0@\x12'\n\"CmdPlanetFesSetCustomKeyValueScRsp\x10\xa0@\
-    \x12#\n\x1eCmdPlanetFesSyncChangeScNotify\x10\x9d@\x12'\n\"CmdPlanetFesU\
-    pgradeSkillLevelCsReq\x10\xa1@\x12#\n\x1eCmdPlanetFesStartMiniGameCsReq\
-    \x10\x9e@\x12#\n\x1eCmdPlanetFesSetAvatarWorkScRsp\x10\x9c@\x12(\n#CmdPl\
-    anetFesGetBusinessDayInfoCsReq\x10\xab@\x12\x1d\n\x18CmdPlanetFesDoGacha\
-    CsReq\x10\x9b@\x12\x1d\n\x18CmdGetPlanetFesDataScRsp\x10\xa4@\x12\x1d\n\
-    \x18CmdPlanetFesUseItemScRsp\x10\xad@\x12#\n\x1eCmdPlanetFesGetAvatarSta\
-    tScRsp\x10\x8f@\x120\n+CmdPlanetFesFriendRankingInfoChangeScNotify\x10\
-    \x95@\x12#\n\x1eCmdPlanetFesSetAvatarWorkCsReq\x10\xa3@\x12(\n#CmdPlanet\
-    FesBonusEventInteractCsReq\x10\xba@\x12\x1d\n\x18CmdPlanetFesUseItemCsRe\
-    q\x10\xb2@\x12#\n\x1eCmdPlanetFesCollectIncomeCsReq\x10\xae@\x12&\n!CmdP\
-    lanetFesCollectAllIncomeScRsp\x10\x9f@\x12+\n&CmdPlanetFesTakeRegionPhas\
-    eRewardCsReq\x10\xac@\x12/\n*CmdPlanetFesDealAvatarEventOptionItemScRsp\
-    \x10\xa8@\x12%\n\x20CmdPlanetFesUpgradeFesLevelCsReq\x10\x92@\x12&\n!Cmd\
-    PlanetFesCollectAllIncomeCsReq\x10\x8b@b\x06proto3\
+    \x8c@\x12\x1d\n\x18CmdPlanetFesDoGachaScRsp\x10\xa1@\x12#\n\x1eCmdPlanet\
+    FesGetAvatarStatCsReq\x10\x93@\x12\x1d\n\x18CmdPlanetFesBuyLandScRsp\x10\
+    \x9d@\x12#\n\x1eCmdPlanetFesCollectIncomeScRsp\x10\x95@\x12%\n\x20CmdPla\
+    netFesDeliverPamCargoScRsp\x10\xa4@\x12%\n\x20CmdPlanetFesTakeQuestRewar\
+    dCsReq\x10\x9a@\x12-\n(CmdPlanetFesBusinessDayRefreshEventScRsp\x10\x8e@\
+    \x12\"\n\x1dCmdPlanetFesClientStatusScRsp\x10\xa6@\x12.\n)CmdPlanetFesGe\
+    tFriendRankingInfoListCsReq\x10\xba@\x12\x1d\n\x18CmdGetPlanetFesDataCsR\
+    eq\x10\x89@\x12#\n\x1eCmdPlanetFesStartMiniGameScRsp\x10\xb5@\x12'\n\"Cm\
+    dPlanetFesSetCustomKeyValueCsReq\x10\x97@\x12#\n\x1eCmdPlanetFesAvatarLe\
+    velUpCsReq\x10\xb3@\x12+\n&CmdPlanetFesTakeRegionPhaseRewardScRsp\x10\
+    \xb9@\x12%\n\x20CmdPlanetFesUpgradeFesLevelScRsp\x10\x98@\x12-\n(CmdPlan\
+    etFesChooseAvatarEventOptionCsReq\x10\xb2@\x12%\n\x20CmdPlanetFesDeliver\
+    PamCargoCsReq\x10\x9e@\x12\"\n\x1dCmdPlanetFesClientStatusCsReq\x10\xa3@\
+    \x12.\n)CmdPlanetFesGetFriendRankingInfoListScRsp\x10\x8b@\x12#\n\x1eCmd\
+    PlanetFesGameBingoFlipCsReq\x10\xa2@\x12%\n\x20CmdPlanetFesTakeQuestRewa\
+    rdScRsp\x10\xb7@\x12/\n*CmdPlanetFesDealAvatarEventOptionItemCsReq\x10\
+    \x9b@\x12(\n#CmdPlanetFesGetBusinessDayInfoScRsp\x10\x99@\x12-\n(CmdPlan\
+    etFesBusinessDayRefreshEventCsReq\x10\xb6@\x12-\n(CmdPlanetFesChooseAvat\
+    arEventOptionScRsp\x10\xab@\x12(\n#CmdPlanetFesBonusEventInteractScRsp\
+    \x10\x92@\x12'\n\"CmdPlanetFesUpgradeSkillLevelScRsp\x10\x90@\x12#\n\x1e\
+    CmdPlanetFesAvatarLevelUpScRsp\x10\x91@\x12#\n\x1eCmdPlanetFesGameBingoF\
+    lipScRsp\x10\xa9@\x12'\n\"CmdPlanetFesSetCustomKeyValueScRsp\x10\xb0@\
+    \x12#\n\x1eCmdPlanetFesSyncChangeScNotify\x10\xa0@\x12'\n\"CmdPlanetFesU\
+    pgradeSkillLevelCsReq\x10\x94@\x12#\n\x1eCmdPlanetFesStartMiniGameCsReq\
+    \x10\x8a@\x12#\n\x1eCmdPlanetFesSetAvatarWorkScRsp\x10\xa8@\x12(\n#CmdPl\
+    anetFesGetBusinessDayInfoCsReq\x10\x9c@\x12\x1d\n\x18CmdPlanetFesDoGacha\
+    CsReq\x10\x9f@\x12\x1d\n\x18CmdGetPlanetFesDataScRsp\x10\xad@\x12\x1d\n\
+    \x18CmdPlanetFesUseItemScRsp\x10\xa7@\x12#\n\x1eCmdPlanetFesGetAvatarSta\
+    tScRsp\x10\xae@\x120\n+CmdPlanetFesFriendRankingInfoChangeScNotify\x10\
+    \xb4@\x12#\n\x1eCmdPlanetFesSetAvatarWorkCsReq\x10\xaa@\x12(\n#CmdPlanet\
+    FesBonusEventInteractCsReq\x10\xb1@\x12\x1d\n\x18CmdPlanetFesUseItemCsRe\
+    q\x10\x8d@\x12#\n\x1eCmdPlanetFesCollectIncomeCsReq\x10\xac@\x12&\n!CmdP\
+    lanetFesCollectAllIncomeScRsp\x10\xb8@\x12+\n&CmdPlanetFesTakeRegionPhas\
+    eRewardCsReq\x10\x8f@\x12/\n*CmdPlanetFesDealAvatarEventOptionItemScRsp\
+    \x10\xaf@\x12%\n\x20CmdPlanetFesUpgradeFesLevelCsReq\x10\x96@\x12&\n!Cmd\
+    PlanetFesCollectAllIncomeCsReq\x10\xa5@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

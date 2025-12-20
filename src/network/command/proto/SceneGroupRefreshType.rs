@@ -33,6 +33,8 @@ pub enum SceneGroupRefreshType {
     SCENE_GROUP_REFRESH_TYPE_LOADED = 1,
     // @@protoc_insertion_point(enum_value:SceneGroupRefreshType.SCENE_GROUP_REFRESH_TYPE_UNLOAD)
     SCENE_GROUP_REFRESH_TYPE_UNLOAD = 2,
+    // @@protoc_insertion_point(enum_value:SceneGroupRefreshType.JNJOEGAACNM_AJJEACFIMNO)
+    JNJOEGAACNM_AJJEACFIMNO = 3,
 }
 
 impl ::protobuf::Enum for SceneGroupRefreshType {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for SceneGroupRefreshType {
             0 => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE),
             1 => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_LOADED),
             2 => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_UNLOAD),
+            3 => ::std::option::Option::Some(SceneGroupRefreshType::JNJOEGAACNM_AJJEACFIMNO),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for SceneGroupRefreshType {
             "SCENE_GROUP_REFRESH_TYPE_NONE" => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE),
             "SCENE_GROUP_REFRESH_TYPE_LOADED" => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_LOADED),
             "SCENE_GROUP_REFRESH_TYPE_UNLOAD" => ::std::option::Option::Some(SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_UNLOAD),
+            "JNJOEGAACNM_AJJEACFIMNO" => ::std::option::Option::Some(SceneGroupRefreshType::JNJOEGAACNM_AJJEACFIMNO),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for SceneGroupRefreshType {
         SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE,
         SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_LOADED,
         SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_UNLOAD,
+        SceneGroupRefreshType::JNJOEGAACNM_AJJEACFIMNO,
     ];
 }
 
@@ -92,10 +97,10 @@ impl SceneGroupRefreshType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSceneGroupRefreshType.proto*\x84\x01\n\x15SceneGroupRefreshType\
+    \n\x1bSceneGroupRefreshType.proto*\xa1\x01\n\x15SceneGroupRefreshType\
     \x12!\n\x1dSCENE_GROUP_REFRESH_TYPE_NONE\x10\0\x12#\n\x1fSCENE_GROUP_REF\
     RESH_TYPE_LOADED\x10\x01\x12#\n\x1fSCENE_GROUP_REFRESH_TYPE_UNLOAD\x10\
-    \x02b\x06proto3\
+    \x02\x12\x1b\n\x17JNJOEGAACNM_AJJEACFIMNO\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

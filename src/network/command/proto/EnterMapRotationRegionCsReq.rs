@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterMapRotationRegionCsReq {
     // message fields
+    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.era_flipper_region_id)
+    pub era_flipper_region_id: u32,
     // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.current_pose_index)
-    pub current_pose_index: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.current_region_index)
-    pub current_region_index: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.LDEKDLHBHHO)
+    pub LDEKDLHBHHO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterMapRotationRegionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EnterMapRotationRegionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "era_flipper_region_id",
+            |m: &EnterMapRotationRegionCsReq| { &m.era_flipper_region_id },
+            |m: &mut EnterMapRotationRegionCsReq| { &mut m.era_flipper_region_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &EnterMapRotationRegionCsReq| { &m.motion },
             |m: &mut EnterMapRotationRegionCsReq| { &mut m.motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "current_pose_index",
-            |m: &EnterMapRotationRegionCsReq| { &m.current_pose_index },
-            |m: &mut EnterMapRotationRegionCsReq| { &mut m.current_pose_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "current_region_index",
-            |m: &EnterMapRotationRegionCsReq| { &m.current_region_index },
-            |m: &mut EnterMapRotationRegionCsReq| { &mut m.current_region_index },
+            "LDEKDLHBHHO",
+            |m: &EnterMapRotationRegionCsReq| { &m.LDEKDLHBHHO },
+            |m: &mut EnterMapRotationRegionCsReq| { &mut m.LDEKDLHBHHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterMapRotationRegionCsReq>(
             "EnterMapRotationRegionCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                120 => {
+                    self.era_flipper_region_id = is.read_uint32()?;
+                },
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                40 => {
-                    self.current_pose_index = is.read_uint32()?;
-                },
-                88 => {
-                    self.current_region_index = is.read_uint32()?;
+                112 => {
+                    self.LDEKDLHBHHO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.era_flipper_region_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.era_flipper_region_id);
+        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.current_pose_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.current_pose_index);
-        }
-        if self.current_region_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.current_region_index);
+        if self.LDEKDLHBHHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LDEKDLHBHHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.era_flipper_region_id != 0 {
+            os.write_uint32(15, self.era_flipper_region_id)?;
+        }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.current_pose_index != 0 {
-            os.write_uint32(5, self.current_pose_index)?;
-        }
-        if self.current_region_index != 0 {
-            os.write_uint32(11, self.current_region_index)?;
+        if self.LDEKDLHBHHO != 0 {
+            os.write_uint32(14, self.LDEKDLHBHHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     }
 
     fn clear(&mut self) {
+        self.era_flipper_region_id = 0;
         self.motion.clear();
-        self.current_pose_index = 0;
-        self.current_region_index = 0;
+        self.LDEKDLHBHHO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterMapRotationRegionCsReq {
         static instance: EnterMapRotationRegionCsReq = EnterMapRotationRegionCsReq {
+            era_flipper_region_id: 0,
             motion: ::protobuf::MessageField::none(),
-            current_pose_index: 0,
-            current_region_index: 0,
+            LDEKDLHBHHO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterMapRotationRegionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!EnterMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\"\xa2\x01\n\
-    \x1bEnterMapRotationRegionCsReq\x12#\n\x06motion\x18\x04\x20\x01(\x0b2\
-    \x0b.MotionInfoR\x06motion\x12,\n\x12current_pose_index\x18\x05\x20\x01(\
-    \rR\x10currentPoseIndex\x120\n\x14current_region_index\x18\x0b\x20\x01(\
-    \rR\x12currentRegionIndexb\x06proto3\
+    \n!EnterMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\"\x97\x01\n\
+    \x1bEnterMapRotationRegionCsReq\x121\n\x15era_flipper_region_id\x18\x0f\
+    \x20\x01(\rR\x12eraFlipperRegionId\x12#\n\x06motion\x18\x06\x20\x01(\x0b\
+    2\x0b.MotionInfoR\x06motion\x12\x20\n\x0bLDEKDLHBHHO\x18\x0e\x20\x01(\rR\
+    \x0bLDEKDLHBHHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

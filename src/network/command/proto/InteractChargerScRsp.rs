@@ -31,7 +31,7 @@ pub struct InteractChargerScRsp {
     // @@protoc_insertion_point(field:InteractChargerScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:InteractChargerScRsp.charger_info)
-    pub charger_info: ::protobuf::MessageField<super::ChargerData::ChargerData>,
+    pub charger_info: ::protobuf::MessageField<super::ChargerInfo::ChargerInfo>,
     // @@protoc_insertion_point(field:InteractChargerScRsp.energy_info)
     pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
     // special fields
@@ -58,7 +58,7 @@ impl InteractChargerScRsp {
             |m: &InteractChargerScRsp| { &m.retcode },
             |m: &mut InteractChargerScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChargerData::ChargerData>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChargerInfo::ChargerInfo>(
             "charger_info",
             |m: &InteractChargerScRsp| { &m.charger_info },
             |m: &mut InteractChargerScRsp| { &mut m.charger_info },
@@ -86,10 +86,10 @@ impl ::protobuf::Message for InteractChargerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.charger_info)?;
                 },
                 90 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for InteractChargerScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if let Some(v) = self.charger_info.as_ref() {
             let len = v.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for InteractChargerScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         if let Some(v) = self.charger_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if let Some(v) = self.energy_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for InteractChargerScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aInteractChargerScRsp.proto\x1a\x11ChargerData.proto\x1a\x17Rotater\
+    \n\x1aInteractChargerScRsp.proto\x1a\x11ChargerInfo.proto\x1a\x17Rotater\
     EnergyInfo.proto\"\x96\x01\n\x14InteractChargerScRsp\x12\x18\n\x07retcod\
-    e\x18\x02\x20\x01(\rR\x07retcode\x12/\n\x0ccharger_info\x18\x07\x20\x01(\
-    \x0b2\x0c.ChargerDataR\x0bchargerInfo\x123\n\x0benergy_info\x18\x0b\x20\
+    e\x18\x03\x20\x01(\rR\x07retcode\x12/\n\x0ccharger_info\x18\x08\x20\x01(\
+    \x0b2\x0c.ChargerInfoR\x0bchargerInfo\x123\n\x0benergy_info\x18\x0b\x20\
     \x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfob\x06proto3\
 ";
 
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ChargerData::file_descriptor().clone());
+            deps.push(super::ChargerInfo::file_descriptor().clone());
             deps.push(super::RotaterEnergyInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(InteractChargerScRsp::generated_message_descriptor_data());

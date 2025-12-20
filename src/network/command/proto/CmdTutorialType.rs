@@ -30,29 +30,29 @@ pub enum CmdTutorialType {
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialTypeNone)
     CmdTutorialTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdGetTutorialGuideScRsp)
-    CmdGetTutorialGuideScRsp = 1665,
+    CmdGetTutorialGuideScRsp = 1638,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdUnlockTutorialGuideCsReq)
-    CmdUnlockTutorialGuideCsReq = 1694,
+    CmdUnlockTutorialGuideCsReq = 1691,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdGetTutorialGuideCsReq)
-    CmdGetTutorialGuideCsReq = 1698,
+    CmdGetTutorialGuideCsReq = 1645,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdFinishTutorialGuideScRsp)
-    CmdFinishTutorialGuideScRsp = 1669,
+    CmdFinishTutorialGuideScRsp = 1661,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdUnlockTutorialGuideScRsp)
-    CmdUnlockTutorialGuideScRsp = 1652,
+    CmdUnlockTutorialGuideScRsp = 1611,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdGetTutorialCsReq)
-    CmdGetTutorialCsReq = 1699,
+    CmdGetTutorialCsReq = 1609,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdFinishTutorialCsReq)
-    CmdFinishTutorialCsReq = 1619,
+    CmdFinishTutorialCsReq = 1689,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdUnlockTutorialCsReq)
-    CmdUnlockTutorialCsReq = 1683,
+    CmdUnlockTutorialCsReq = 1647,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdFinishTutorialScRsp)
-    CmdFinishTutorialScRsp = 1644,
+    CmdFinishTutorialScRsp = 1695,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdGetTutorialScRsp)
-    CmdGetTutorialScRsp = 1623,
+    CmdGetTutorialScRsp = 1620,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdUnlockTutorialScRsp)
-    CmdUnlockTutorialScRsp = 1686,
+    CmdUnlockTutorialScRsp = 1617,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdFinishTutorialGuideCsReq)
-    CmdFinishTutorialGuideCsReq = 1681,
+    CmdFinishTutorialGuideCsReq = 1651,
 }
 
 impl ::protobuf::Enum for CmdTutorialType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdTutorialType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTutorialType> {
         match value {
             0 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialTypeNone),
-            1665 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialGuideScRsp),
-            1694 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialGuideCsReq),
-            1698 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialGuideCsReq),
-            1669 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialGuideScRsp),
-            1652 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialGuideScRsp),
-            1699 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialCsReq),
-            1619 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialCsReq),
-            1683 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialCsReq),
-            1644 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialScRsp),
-            1623 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialScRsp),
-            1686 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialScRsp),
-            1681 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialGuideCsReq),
+            1638 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialGuideScRsp),
+            1691 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialGuideCsReq),
+            1645 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialGuideCsReq),
+            1661 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialGuideScRsp),
+            1611 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialGuideScRsp),
+            1609 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialCsReq),
+            1689 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialCsReq),
+            1647 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialCsReq),
+            1695 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialScRsp),
+            1620 => ::std::option::Option::Some(CmdTutorialType::CmdGetTutorialScRsp),
+            1617 => ::std::option::Option::Some(CmdTutorialType::CmdUnlockTutorialScRsp),
+            1651 => ::std::option::Option::Some(CmdTutorialType::CmdFinishTutorialGuideCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -157,15 +157,15 @@ impl CmdTutorialType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdTutorialType.proto*\x98\x03\n\x0fCmdTutorialType\x12\x17\n\x13C\
-    mdTutorialTypeNone\x10\0\x12\x1d\n\x18CmdGetTutorialGuideScRsp\x10\x81\r\
-    \x12\x20\n\x1bCmdUnlockTutorialGuideCsReq\x10\x9e\r\x12\x1d\n\x18CmdGetT\
-    utorialGuideCsReq\x10\xa2\r\x12\x20\n\x1bCmdFinishTutorialGuideScRsp\x10\
-    \x85\r\x12\x20\n\x1bCmdUnlockTutorialGuideScRsp\x10\xf4\x0c\x12\x18\n\
-    \x13CmdGetTutorialCsReq\x10\xa3\r\x12\x1b\n\x16CmdFinishTutorialCsReq\
-    \x10\xd3\x0c\x12\x1b\n\x16CmdUnlockTutorialCsReq\x10\x93\r\x12\x1b\n\x16\
-    CmdFinishTutorialScRsp\x10\xec\x0c\x12\x18\n\x13CmdGetTutorialScRsp\x10\
-    \xd7\x0c\x12\x1b\n\x16CmdUnlockTutorialScRsp\x10\x96\r\x12\x20\n\x1bCmdF\
-    inishTutorialGuideCsReq\x10\x91\rb\x06proto3\
+    mdTutorialTypeNone\x10\0\x12\x1d\n\x18CmdGetTutorialGuideScRsp\x10\xe6\
+    \x0c\x12\x20\n\x1bCmdUnlockTutorialGuideCsReq\x10\x9b\r\x12\x1d\n\x18Cmd\
+    GetTutorialGuideCsReq\x10\xed\x0c\x12\x20\n\x1bCmdFinishTutorialGuideScR\
+    sp\x10\xfd\x0c\x12\x20\n\x1bCmdUnlockTutorialGuideScRsp\x10\xcb\x0c\x12\
+    \x18\n\x13CmdGetTutorialCsReq\x10\xc9\x0c\x12\x1b\n\x16CmdFinishTutorial\
+    CsReq\x10\x99\r\x12\x1b\n\x16CmdUnlockTutorialCsReq\x10\xef\x0c\x12\x1b\
+    \n\x16CmdFinishTutorialScRsp\x10\x9f\r\x12\x18\n\x13CmdGetTutorialScRsp\
+    \x10\xd4\x0c\x12\x1b\n\x16CmdUnlockTutorialScRsp\x10\xd1\x0c\x12\x20\n\
+    \x1bCmdFinishTutorialGuideCsReq\x10\xf3\x0cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

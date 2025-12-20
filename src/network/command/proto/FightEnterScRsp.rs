@@ -30,14 +30,14 @@ pub struct FightEnterScRsp {
     // message fields
     // @@protoc_insertion_point(field:FightEnterScRsp.server_timestamp_ms)
     pub server_timestamp_ms: u64,
-    // @@protoc_insertion_point(field:FightEnterScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:FightEnterScRsp.is_relay)
-    pub is_relay: bool,
-    // @@protoc_insertion_point(field:FightEnterScRsp.GIECKGDBGON)
-    pub GIECKGDBGON: u32,
     // @@protoc_insertion_point(field:FightEnterScRsp.secret_key_seed)
     pub secret_key_seed: u64,
+    // @@protoc_insertion_point(field:FightEnterScRsp.NKDGCOLOCOM)
+    pub NKDGCOLOCOM: bool,
+    // @@protoc_insertion_point(field:FightEnterScRsp.HHBNHHBMGHP)
+    pub HHBNHHBMGHP: u32,
+    // @@protoc_insertion_point(field:FightEnterScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightEnterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,24 +63,24 @@ impl FightEnterScRsp {
             |m: &mut FightEnterScRsp| { &mut m.server_timestamp_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FightEnterScRsp| { &m.retcode },
-            |m: &mut FightEnterScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_relay",
-            |m: &FightEnterScRsp| { &m.is_relay },
-            |m: &mut FightEnterScRsp| { &mut m.is_relay },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIECKGDBGON",
-            |m: &FightEnterScRsp| { &m.GIECKGDBGON },
-            |m: &mut FightEnterScRsp| { &mut m.GIECKGDBGON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "secret_key_seed",
             |m: &FightEnterScRsp| { &m.secret_key_seed },
             |m: &mut FightEnterScRsp| { &mut m.secret_key_seed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKDGCOLOCOM",
+            |m: &FightEnterScRsp| { &m.NKDGCOLOCOM },
+            |m: &mut FightEnterScRsp| { &mut m.NKDGCOLOCOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHBNHHBMGHP",
+            |m: &FightEnterScRsp| { &m.HHBNHHBMGHP },
+            |m: &mut FightEnterScRsp| { &mut m.HHBNHHBMGHP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FightEnterScRsp| { &m.retcode },
+            |m: &mut FightEnterScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightEnterScRsp>(
             "FightEnterScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.server_timestamp_ms = is.read_uint64()?;
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 64 => {
-                    self.is_relay = is.read_bool()?;
-                },
-                72 => {
-                    self.GIECKGDBGON = is.read_uint32()?;
-                },
-                96 => {
                     self.secret_key_seed = is.read_uint64()?;
+                },
+                8 => {
+                    self.NKDGCOLOCOM = is.read_bool()?;
+                },
+                24 => {
+                    self.HHBNHHBMGHP = is.read_uint32()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for FightEnterScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.server_timestamp_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.server_timestamp_ms);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.is_relay != false {
-            my_size += 1 + 1;
-        }
-        if self.GIECKGDBGON != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GIECKGDBGON);
+            my_size += ::protobuf::rt::uint64_size(15, self.server_timestamp_ms);
         }
         if self.secret_key_seed != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.secret_key_seed);
+            my_size += ::protobuf::rt::uint64_size(8, self.secret_key_seed);
+        }
+        if self.NKDGCOLOCOM != false {
+            my_size += 1 + 1;
+        }
+        if self.HHBNHHBMGHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HHBNHHBMGHP);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for FightEnterScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.server_timestamp_ms != 0 {
-            os.write_uint64(2, self.server_timestamp_ms)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.is_relay != false {
-            os.write_bool(8, self.is_relay)?;
-        }
-        if self.GIECKGDBGON != 0 {
-            os.write_uint32(9, self.GIECKGDBGON)?;
+            os.write_uint64(15, self.server_timestamp_ms)?;
         }
         if self.secret_key_seed != 0 {
-            os.write_uint64(12, self.secret_key_seed)?;
+            os.write_uint64(8, self.secret_key_seed)?;
+        }
+        if self.NKDGCOLOCOM != false {
+            os.write_bool(1, self.NKDGCOLOCOM)?;
+        }
+        if self.HHBNHHBMGHP != 0 {
+            os.write_uint32(3, self.HHBNHHBMGHP)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for FightEnterScRsp {
 
     fn clear(&mut self) {
         self.server_timestamp_ms = 0;
-        self.retcode = 0;
-        self.is_relay = false;
-        self.GIECKGDBGON = 0;
         self.secret_key_seed = 0;
+        self.NKDGCOLOCOM = false;
+        self.HHBNHHBMGHP = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightEnterScRsp {
         static instance: FightEnterScRsp = FightEnterScRsp {
             server_timestamp_ms: 0,
-            retcode: 0,
-            is_relay: false,
-            GIECKGDBGON: 0,
             secret_key_seed: 0,
+            NKDGCOLOCOM: false,
+            HHBNHHBMGHP: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for FightEnterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FightEnterScRsp.proto\"\xc0\x01\n\x0fFightEnterScRsp\x12.\n\x13ser\
-    ver_timestamp_ms\x18\x02\x20\x01(\x04R\x11serverTimestampMs\x12\x18\n\
-    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x19\n\x08is_relay\x18\x08\
-    \x20\x01(\x08R\x07isRelay\x12\x20\n\x0bGIECKGDBGON\x18\t\x20\x01(\rR\x0b\
-    GIECKGDBGON\x12&\n\x0fsecret_key_seed\x18\x0c\x20\x01(\x04R\rsecretKeySe\
-    edb\x06proto3\
+    \n\x15FightEnterScRsp.proto\"\xc7\x01\n\x0fFightEnterScRsp\x12.\n\x13ser\
+    ver_timestamp_ms\x18\x0f\x20\x01(\x04R\x11serverTimestampMs\x12&\n\x0fse\
+    cret_key_seed\x18\x08\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bNKDGCOLO\
+    COM\x18\x01\x20\x01(\x08R\x0bNKDGCOLOCOM\x12\x20\n\x0bHHBNHHBMGHP\x18\
+    \x03\x20\x01(\rR\x0bHHBNHHBMGHP\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

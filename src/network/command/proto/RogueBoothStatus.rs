@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueBoothStatus)
 pub enum RogueBoothStatus {
-    // @@protoc_insertion_point(enum_value:RogueBoothStatus.ROGUE_BOOTH_NONE)
-    ROGUE_BOOTH_NONE = 0,
-    // @@protoc_insertion_point(enum_value:RogueBoothStatus.ROGUE_BOOTH_EMPTY)
-    ROGUE_BOOTH_EMPTY = 1,
-    // @@protoc_insertion_point(enum_value:RogueBoothStatus.ROGUE_BOOTH_DISPLAY)
-    ROGUE_BOOTH_DISPLAY = 2,
+    // @@protoc_insertion_point(enum_value:RogueBoothStatus.RogueBoothStatus_ABIKGKJHBFN)
+    RogueBoothStatus_ABIKGKJHBFN = 0,
+    // @@protoc_insertion_point(enum_value:RogueBoothStatus.RogueBoothStatus_BHPPJGAHECE)
+    RogueBoothStatus_BHPPJGAHECE = 1,
+    // @@protoc_insertion_point(enum_value:RogueBoothStatus.RogueBoothStatus_PHGLHCCEFHP)
+    RogueBoothStatus_PHGLHCCEFHP = 2,
 }
 
 impl ::protobuf::Enum for RogueBoothStatus {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for RogueBoothStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueBoothStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_NONE),
-            1 => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_EMPTY),
-            2 => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_DISPLAY),
+            0 => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_ABIKGKJHBFN),
+            1 => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_BHPPJGAHECE),
+            2 => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_PHGLHCCEFHP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueBoothStatus> {
         match str {
-            "ROGUE_BOOTH_NONE" => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_NONE),
-            "ROGUE_BOOTH_EMPTY" => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_EMPTY),
-            "ROGUE_BOOTH_DISPLAY" => ::std::option::Option::Some(RogueBoothStatus::ROGUE_BOOTH_DISPLAY),
+            "RogueBoothStatus_ABIKGKJHBFN" => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_ABIKGKJHBFN),
+            "RogueBoothStatus_BHPPJGAHECE" => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_BHPPJGAHECE),
+            "RogueBoothStatus_PHGLHCCEFHP" => ::std::option::Option::Some(RogueBoothStatus::RogueBoothStatus_PHGLHCCEFHP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueBoothStatus] = &[
-        RogueBoothStatus::ROGUE_BOOTH_NONE,
-        RogueBoothStatus::ROGUE_BOOTH_EMPTY,
-        RogueBoothStatus::ROGUE_BOOTH_DISPLAY,
+        RogueBoothStatus::RogueBoothStatus_ABIKGKJHBFN,
+        RogueBoothStatus::RogueBoothStatus_BHPPJGAHECE,
+        RogueBoothStatus::RogueBoothStatus_PHGLHCCEFHP,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for RogueBoothStatus {
 
 impl ::std::default::Default for RogueBoothStatus {
     fn default() -> Self {
-        RogueBoothStatus::ROGUE_BOOTH_NONE
+        RogueBoothStatus::RogueBoothStatus_ABIKGKJHBFN
     }
 }
 
@@ -92,9 +92,9 @@ impl RogueBoothStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RogueBoothStatus.proto*X\n\x10RogueBoothStatus\x12\x14\n\x10ROGUE_\
-    BOOTH_NONE\x10\0\x12\x15\n\x11ROGUE_BOOTH_EMPTY\x10\x01\x12\x17\n\x13ROG\
-    UE_BOOTH_DISPLAY\x10\x02b\x06proto3\
+    \n\x16RogueBoothStatus.proto*x\n\x10RogueBoothStatus\x12\x20\n\x1cRogueB\
+    oothStatus_ABIKGKJHBFN\x10\0\x12\x20\n\x1cRogueBoothStatus_BHPPJGAHECE\
+    \x10\x01\x12\x20\n\x1cRogueBoothStatus_PHGLHCCEFHP\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

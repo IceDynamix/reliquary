@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct VirtualLineupTrialAvatarChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.DAHIOCKGIKA)
-    pub DAHIOCKGIKA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.plane_id)
     pub plane_id: u32,
-    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.KEDJOGOAJEB)
-    pub KEDJOGOAJEB: bool,
-    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.KKGNNBPFGGE)
-    pub KKGNNBPFGGE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.MDALNNMNMJJ)
+    pub MDALNNMNMJJ: bool,
+    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.NNLFNPMFDJH)
+    pub NNLFNPMFDJH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:VirtualLineupTrialAvatarChangeScNotify.AGMCNBIHKHF)
+    pub AGMCNBIHKHF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:VirtualLineupTrialAvatarChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl VirtualLineupTrialAvatarChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DAHIOCKGIKA",
-            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.DAHIOCKGIKA },
-            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.DAHIOCKGIKA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
             |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.plane_id },
             |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.plane_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEDJOGOAJEB",
-            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.KEDJOGOAJEB },
-            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.KEDJOGOAJEB },
+            "MDALNNMNMJJ",
+            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.MDALNNMNMJJ },
+            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.MDALNNMNMJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKGNNBPFGGE",
-            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.KKGNNBPFGGE },
-            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.KKGNNBPFGGE },
+            "NNLFNPMFDJH",
+            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.NNLFNPMFDJH },
+            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.NNLFNPMFDJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AGMCNBIHKHF",
+            |m: &VirtualLineupTrialAvatarChangeScNotify| { &m.AGMCNBIHKHF },
+            |m: &mut VirtualLineupTrialAvatarChangeScNotify| { &mut m.AGMCNBIHKHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<VirtualLineupTrialAvatarChangeScNotify>(
             "VirtualLineupTrialAvatarChangeScNotify",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for VirtualLineupTrialAvatarChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DAHIOCKGIKA)?;
-                },
-                8 => {
-                    self.DAHIOCKGIKA.push(is.read_uint32()?);
-                },
-                32 => {
+                104 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.KEDJOGOAJEB = is.read_bool()?;
+                96 => {
+                    self.MDALNNMNMJJ = is.read_bool()?;
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KKGNNBPFGGE)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NNLFNPMFDJH)?;
                 },
-                120 => {
-                    self.KKGNNBPFGGE.push(is.read_uint32()?);
+                48 => {
+                    self.NNLFNPMFDJH.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AGMCNBIHKHF)?;
+                },
+                80 => {
+                    self.AGMCNBIHKHF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for VirtualLineupTrialAvatarChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DAHIOCKGIKA);
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.plane_id);
         }
-        if self.KEDJOGOAJEB != false {
+        if self.MDALNNMNMJJ != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KKGNNBPFGGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.NNLFNPMFDJH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.AGMCNBIHKHF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.DAHIOCKGIKA)?;
         if self.plane_id != 0 {
-            os.write_uint32(4, self.plane_id)?;
+            os.write_uint32(13, self.plane_id)?;
         }
-        if self.KEDJOGOAJEB != false {
-            os.write_bool(11, self.KEDJOGOAJEB)?;
+        if self.MDALNNMNMJJ != false {
+            os.write_bool(12, self.MDALNNMNMJJ)?;
         }
-        os.write_repeated_packed_uint32(15, &self.KKGNNBPFGGE)?;
+        os.write_repeated_packed_uint32(6, &self.NNLFNPMFDJH)?;
+        os.write_repeated_packed_uint32(10, &self.AGMCNBIHKHF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for VirtualLineupTrialAvatarChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.DAHIOCKGIKA.clear();
         self.plane_id = 0;
-        self.KEDJOGOAJEB = false;
-        self.KKGNNBPFGGE.clear();
+        self.MDALNNMNMJJ = false;
+        self.NNLFNPMFDJH.clear();
+        self.AGMCNBIHKHF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static VirtualLineupTrialAvatarChangeScNotify {
         static instance: VirtualLineupTrialAvatarChangeScNotify = VirtualLineupTrialAvatarChangeScNotify {
-            DAHIOCKGIKA: ::std::vec::Vec::new(),
             plane_id: 0,
-            KEDJOGOAJEB: false,
-            KKGNNBPFGGE: ::std::vec::Vec::new(),
+            MDALNNMNMJJ: false,
+            NNLFNPMFDJH: ::std::vec::Vec::new(),
+            AGMCNBIHKHF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for VirtualLineupTrialAvatarChangeScNoti
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,VirtualLineupTrialAvatarChangeScNotify.proto\"\xa9\x01\n&VirtualLineu\
-    pTrialAvatarChangeScNotify\x12\x20\n\x0bDAHIOCKGIKA\x18\x01\x20\x03(\rR\
-    \x0bDAHIOCKGIKA\x12\x19\n\x08plane_id\x18\x04\x20\x01(\rR\x07planeId\x12\
-    \x20\n\x0bKEDJOGOAJEB\x18\x0b\x20\x01(\x08R\x0bKEDJOGOAJEB\x12\x20\n\x0b\
-    KKGNNBPFGGE\x18\x0f\x20\x03(\rR\x0bKKGNNBPFGGEb\x06proto3\
+    pTrialAvatarChangeScNotify\x12\x19\n\x08plane_id\x18\r\x20\x01(\rR\x07pl\
+    aneId\x12\x20\n\x0bMDALNNMNMJJ\x18\x0c\x20\x01(\x08R\x0bMDALNNMNMJJ\x12\
+    \x20\n\x0bNNLFNPMFDJH\x18\x06\x20\x03(\rR\x0bNNLFNPMFDJH\x12\x20\n\x0bAG\
+    MCNBIHKHF\x18\n\x20\x03(\rR\x0bAGMCNBIHKHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

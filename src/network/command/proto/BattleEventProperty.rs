@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleEventProperty {
     // message fields
-    // @@protoc_insertion_point(field:BattleEventProperty.sp)
-    pub sp: ::protobuf::MessageField<super::AmountInfo::AmountInfo>,
+    // @@protoc_insertion_point(field:BattleEventProperty.sp_bar)
+    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleEventProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl BattleEventProperty {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AmountInfo::AmountInfo>(
-            "sp",
-            |m: &BattleEventProperty| { &m.sp },
-            |m: &mut BattleEventProperty| { &mut m.sp },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
+            "sp_bar",
+            |m: &BattleEventProperty| { &m.sp_bar },
+            |m: &mut BattleEventProperty| { &mut m.sp_bar },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleEventProperty>(
             "BattleEventProperty",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for BattleEventProperty {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for BattleEventProperty {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.sp.as_ref() {
+        if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BattleEventProperty {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.sp.as_ref() {
+        if let Some(v) = self.sp_bar.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for BattleEventProperty {
     }
 
     fn clear(&mut self) {
-        self.sp.clear();
+        self.sp_bar.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleEventProperty {
         static instance: BattleEventProperty = BattleEventProperty {
-            sp: ::protobuf::MessageField::none(),
+            sp_bar: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for BattleEventProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19BattleEventProperty.proto\x1a\x10AmountInfo.proto\"2\n\x13BattleEv\
-    entProperty\x12\x1b\n\x02sp\x18\x02\x20\x01(\x0b2\x0b.AmountInfoR\x02spb\
+    \n\x19BattleEventProperty.proto\x1a\x0fSpBarInfo.proto\"8\n\x13BattleEve\
+    ntProperty\x12!\n\x06sp_bar\x18\x02\x20\x01(\x0b2\n.SpBarInfoR\x05spBarb\
     \x06proto3\
 ";
 
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AmountInfo::file_descriptor().clone());
+            deps.push(super::SpBarInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleEventProperty::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

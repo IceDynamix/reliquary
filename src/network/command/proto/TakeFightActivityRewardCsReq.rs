@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeFightActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.difficulty_level)
-    pub difficulty_level: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.DNPOPPIKLML)
+    pub DNPOPPIKLML: u32,
     // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.group_id)
     pub group_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeFightActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "difficulty_level",
-            |m: &TakeFightActivityRewardCsReq| { &m.difficulty_level },
-            |m: &mut TakeFightActivityRewardCsReq| { &mut m.difficulty_level },
+            "DNPOPPIKLML",
+            |m: &TakeFightActivityRewardCsReq| { &m.DNPOPPIKLML },
+            |m: &mut TakeFightActivityRewardCsReq| { &mut m.DNPOPPIKLML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.difficulty_level = is.read_uint32()?;
+                64 => {
+                    self.DNPOPPIKLML = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.difficulty_level);
+        if self.DNPOPPIKLML != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DNPOPPIKLML);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.difficulty_level != 0 {
-            os.write_uint32(3, self.difficulty_level)?;
+        if self.DNPOPPIKLML != 0 {
+            os.write_uint32(8, self.DNPOPPIKLML)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(6, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.difficulty_level = 0;
+        self.DNPOPPIKLML = 0;
         self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeFightActivityRewardCsReq {
         static instance: TakeFightActivityRewardCsReq = TakeFightActivityRewardCsReq {
-            difficulty_level: 0,
+            DNPOPPIKLML: 0,
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeFightActivityRewardCsReq.proto\"d\n\x1cTakeFightActivityRewardCs\
-    Req\x12)\n\x10difficulty_level\x18\x03\x20\x01(\rR\x0fdifficultyLevel\
-    \x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07groupIdb\x06proto3\
+    \n\"TakeFightActivityRewardCsReq.proto\"[\n\x1cTakeFightActivityRewardCs\
+    Req\x12\x20\n\x0bDNPOPPIKLML\x18\x08\x20\x01(\rR\x0bDNPOPPIKLML\x12\x19\
+    \n\x08group_id\x18\x06\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

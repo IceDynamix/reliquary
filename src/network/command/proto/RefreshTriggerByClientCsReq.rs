@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_motion)
-    pub trigger_motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_target_id_list)
-    pub trigger_target_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_name)
     pub trigger_name: ::std::string::String,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_target_id_list)
+    pub trigger_target_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_motion)
+    pub trigger_motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:RefreshTriggerByClientCsReq.trigger_entity_id)
     pub trigger_entity_id: u32,
     // special fields
@@ -55,20 +55,20 @@ impl RefreshTriggerByClientCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "trigger_motion",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_motion },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_motion },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trigger_name",
+            |m: &RefreshTriggerByClientCsReq| { &m.trigger_name },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trigger_target_id_list",
             |m: &RefreshTriggerByClientCsReq| { &m.trigger_target_id_list },
             |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_target_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_name",
-            |m: &RefreshTriggerByClientCsReq| { &m.trigger_name },
-            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_name },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "trigger_motion",
+            |m: &RefreshTriggerByClientCsReq| { &m.trigger_motion },
+            |m: &mut RefreshTriggerByClientCsReq| { &mut m.trigger_motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_entity_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.trigger_motion)?;
+                122 => {
+                    self.trigger_name = is.read_string()?;
                 },
-                26 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                24 => {
+                40 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
                 },
                 34 => {
-                    self.trigger_name = is.read_string()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.trigger_motion)?;
                 },
-                72 => {
+                112 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,16 +120,16 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.trigger_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.trigger_name);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.trigger_target_id_list);
         if let Some(v) = self.trigger_motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.trigger_target_id_list);
-        if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.trigger_name);
-        }
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.trigger_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.trigger_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.trigger_target_id_list)?;
         if !self.trigger_name.is_empty() {
-            os.write_string(4, &self.trigger_name)?;
+            os.write_string(15, &self.trigger_name)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.trigger_target_id_list)?;
+        if let Some(v) = self.trigger_motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(9, self.trigger_entity_id)?;
+            os.write_uint32(14, self.trigger_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for RefreshTriggerByClientCsReq {
     }
 
     fn clear(&mut self) {
-        self.trigger_motion.clear();
-        self.trigger_target_id_list.clear();
         self.trigger_name.clear();
+        self.trigger_target_id_list.clear();
+        self.trigger_motion.clear();
         self.trigger_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientCsReq {
         static instance: RefreshTriggerByClientCsReq = RefreshTriggerByClientCsReq {
-            trigger_motion: ::protobuf::MessageField::none(),
-            trigger_target_id_list: ::std::vec::Vec::new(),
             trigger_name: ::std::string::String::new(),
+            trigger_target_id_list: ::std::vec::Vec::new(),
+            trigger_motion: ::protobuf::MessageField::none(),
             trigger_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientCsReq.proto\x1a\x10MotionInfo.proto\"\xd5\x01\n\
-    \x1bRefreshTriggerByClientCsReq\x122\n\x0etrigger_motion\x18\x01\x20\x01\
-    (\x0b2\x0b.MotionInfoR\rtriggerMotion\x123\n\x16trigger_target_id_list\
-    \x18\x03\x20\x03(\rR\x13triggerTargetIdList\x12!\n\x0ctrigger_name\x18\
-    \x04\x20\x01(\tR\x0btriggerName\x12*\n\x11trigger_entity_id\x18\t\x20\
+    \x1bRefreshTriggerByClientCsReq\x12!\n\x0ctrigger_name\x18\x0f\x20\x01(\
+    \tR\x0btriggerName\x123\n\x16trigger_target_id_list\x18\x05\x20\x03(\rR\
+    \x13triggerTargetIdList\x122\n\x0etrigger_motion\x18\x04\x20\x01(\x0b2\
+    \x0b.MotionInfoR\rtriggerMotion\x12*\n\x11trigger_entity_id\x18\x0e\x20\
     \x01(\rR\x0ftriggerEntityIdb\x06proto3\
 ";
 

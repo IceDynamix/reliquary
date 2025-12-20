@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.JAAGJCGPDDI)
+    pub JAAGJCGPDDI: ::protobuf::MessageField<super::POOKKFPJJAD::POOKKFPJJAD>,
     // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.COOOKCPPJCB)
-    pub COOOKCPPJCB: ::protobuf::MessageField<super::KLBHFHJDBFI::KLBHFHJDBFI>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateGunPlayDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl UpdateGunPlayDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::POOKKFPJJAD::POOKKFPJJAD>(
+            "JAAGJCGPDDI",
+            |m: &UpdateGunPlayDataScRsp| { &m.JAAGJCGPDDI },
+            |m: &mut UpdateGunPlayDataScRsp| { &mut m.JAAGJCGPDDI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &UpdateGunPlayDataScRsp| { &m.retcode },
             |m: &mut UpdateGunPlayDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLBHFHJDBFI::KLBHFHJDBFI>(
-            "COOOKCPPJCB",
-            |m: &UpdateGunPlayDataScRsp| { &m.COOOKCPPJCB },
-            |m: &mut UpdateGunPlayDataScRsp| { &mut m.COOOKCPPJCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateGunPlayDataScRsp>(
             "UpdateGunPlayDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JAAGJCGPDDI)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COOOKCPPJCB)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if let Some(v) = self.COOOKCPPJCB.as_ref() {
+        if let Some(v) = self.JAAGJCGPDDI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+        if let Some(v) = self.JAAGJCGPDDI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.COOOKCPPJCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.JAAGJCGPDDI.clear();
         self.retcode = 0;
-        self.COOOKCPPJCB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataScRsp {
         static instance: UpdateGunPlayDataScRsp = UpdateGunPlayDataScRsp {
+            JAAGJCGPDDI: ::protobuf::MessageField::none(),
             retcode: 0,
-            COOOKCPPJCB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11KLBHFHJDBFI.proto\"b\n\x16Upda\
-    teGunPlayDataScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bCOOOKCPPJCB\x18\r\x20\x01(\x0b2\x0c.KLBHFHJDBFIR\x0bCOOOKCPPJ\
-    CBb\x06proto3\
+    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11POOKKFPJJAD.proto\"b\n\x16Upda\
+    teGunPlayDataScRsp\x12.\n\x0bJAAGJCGPDDI\x18\x0f\x20\x01(\x0b2\x0c.POOKK\
+    FPJJADR\x0bJAAGJCGPDDI\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KLBHFHJDBFI::file_descriptor().clone());
+            deps.push(super::POOKKFPJJAD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateGunPlayDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

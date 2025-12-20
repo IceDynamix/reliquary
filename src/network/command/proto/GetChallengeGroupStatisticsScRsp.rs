@@ -33,7 +33,7 @@ pub struct GetChallengeGroupStatisticsScRsp {
     // @@protoc_insertion_point(field:GetChallengeGroupStatisticsScRsp.retcode)
     pub retcode: u32,
     // message oneof groups
-    pub CGFPDMPPNJF: ::std::option::Option<get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF>,
+    pub OOJBOGCMBJD: ::std::option::Option<get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeGroupStatisticsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,39 +50,39 @@ impl GetChallengeGroupStatisticsScRsp {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 7;
+    // .ChallengeStatistics challenge_default = 10;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(ref v)) => v,
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(ref v)) => v,
             _ => <super::ChallengeStatistics::ChallengeStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_challenge_default(&mut self) {
-        self.CGFPDMPPNJF = ::std::option::Option::None;
+        self.OOJBOGCMBJD = ::std::option::Option::None;
     }
 
     pub fn has_challenge_default(&self) -> bool {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(..)) => true,
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_challenge_default(&mut self, v: super::ChallengeStatistics::ChallengeStatistics) {
-        self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(v))
+        self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_challenge_default(&mut self) -> &mut super::ChallengeStatistics::ChallengeStatistics {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(_)) = self.CGFPDMPPNJF {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(_)) = self.OOJBOGCMBJD {
         } else {
-            self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
+            self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
         }
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(ref mut v)) => v,
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl GetChallengeGroupStatisticsScRsp {
     // Take field
     pub fn take_challenge_default(&mut self) -> super::ChallengeStatistics::ChallengeStatistics {
         if self.has_challenge_default() {
-            match self.CGFPDMPPNJF.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(v)) => v,
+            match self.OOJBOGCMBJD.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -99,128 +99,107 @@ impl GetChallengeGroupStatisticsScRsp {
         }
     }
 
-    // .LAAIGBDPLJC AJGCMALNLEN = 4;
+    // .ChallengeStoryStatistics challenge_story = 3;
 
-    pub fn AJGCMALNLEN(&self) -> &super::LAAIGBDPLJC::LAAIGBDPLJC {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(ref v)) => v,
-            _ => <super::LAAIGBDPLJC::LAAIGBDPLJC as ::protobuf::Message>::default_instance(),
+    pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(ref v)) => v,
+            _ => <super::ChallengeStoryStatistics::ChallengeStoryStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_AJGCMALNLEN(&mut self) {
-        self.CGFPDMPPNJF = ::std::option::Option::None;
+    pub fn clear_challenge_story(&mut self) {
+        self.OOJBOGCMBJD = ::std::option::Option::None;
     }
 
-    pub fn has_AJGCMALNLEN(&self) -> bool {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(..)) => true,
+    pub fn has_challenge_story(&self) -> bool {
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_AJGCMALNLEN(&mut self, v: super::LAAIGBDPLJC::LAAIGBDPLJC) {
-        self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(v))
+    pub fn set_challenge_story(&mut self, v: super::ChallengeStoryStatistics::ChallengeStoryStatistics) {
+        self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_AJGCMALNLEN(&mut self) -> &mut super::LAAIGBDPLJC::LAAIGBDPLJC {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(_)) = self.CGFPDMPPNJF {
+    pub fn mut_challenge_story(&mut self) -> &mut super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(_)) = self.OOJBOGCMBJD {
         } else {
-            self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(super::LAAIGBDPLJC::LAAIGBDPLJC::new()));
+            self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()));
         }
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(ref mut v)) => v,
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_AJGCMALNLEN(&mut self) -> super::LAAIGBDPLJC::LAAIGBDPLJC {
-        if self.has_AJGCMALNLEN() {
-            match self.CGFPDMPPNJF.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(v)) => v,
+    pub fn take_challenge_story(&mut self) -> super::ChallengeStoryStatistics::ChallengeStoryStatistics {
+        if self.has_challenge_story() {
+            match self.OOJBOGCMBJD.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LAAIGBDPLJC::LAAIGBDPLJC::new()
+            super::ChallengeStoryStatistics::ChallengeStoryStatistics::new()
         }
     }
 
-    // .LGNMPMCPOPF BMCKMGINCIA = 2;
+    // .ChallengeBossStatistics challenge_boss = 4;
 
-    pub fn BMCKMGINCIA(&self) -> &super::LGNMPMCPOPF::LGNMPMCPOPF {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(ref v)) => v,
-            _ => <super::LGNMPMCPOPF::LGNMPMCPOPF as ::protobuf::Message>::default_instance(),
+    pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(ref v)) => v,
+            _ => <super::ChallengeBossStatistics::ChallengeBossStatistics as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BMCKMGINCIA(&mut self) {
-        self.CGFPDMPPNJF = ::std::option::Option::None;
+    pub fn clear_challenge_boss(&mut self) {
+        self.OOJBOGCMBJD = ::std::option::Option::None;
     }
 
-    pub fn has_BMCKMGINCIA(&self) -> bool {
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(..)) => true,
+    pub fn has_challenge_boss(&self) -> bool {
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BMCKMGINCIA(&mut self, v: super::LGNMPMCPOPF::LGNMPMCPOPF) {
-        self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(v))
+    pub fn set_challenge_boss(&mut self, v: super::ChallengeBossStatistics::ChallengeBossStatistics) {
+        self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BMCKMGINCIA(&mut self) -> &mut super::LGNMPMCPOPF::LGNMPMCPOPF {
-        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(_)) = self.CGFPDMPPNJF {
+    pub fn mut_challenge_boss(&mut self) -> &mut super::ChallengeBossStatistics::ChallengeBossStatistics {
+        if let ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(_)) = self.OOJBOGCMBJD {
         } else {
-            self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(super::LGNMPMCPOPF::LGNMPMCPOPF::new()));
+            self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(super::ChallengeBossStatistics::ChallengeBossStatistics::new()));
         }
-        match self.CGFPDMPPNJF {
-            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(ref mut v)) => v,
+        match self.OOJBOGCMBJD {
+            ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BMCKMGINCIA(&mut self) -> super::LGNMPMCPOPF::LGNMPMCPOPF {
-        if self.has_BMCKMGINCIA() {
-            match self.CGFPDMPPNJF.take() {
-                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(v)) => v,
+    pub fn take_challenge_boss(&mut self) -> super::ChallengeBossStatistics::ChallengeBossStatistics {
+        if self.has_challenge_boss() {
+            match self.OOJBOGCMBJD.take() {
+                ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LGNMPMCPOPF::LGNMPMCPOPF::new()
+            super::ChallengeBossStatistics::ChallengeBossStatistics::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
-            "challenge_default",
-            GetChallengeGroupStatisticsScRsp::has_challenge_default,
-            GetChallengeGroupStatisticsScRsp::challenge_default,
-            GetChallengeGroupStatisticsScRsp::mut_challenge_default,
-            GetChallengeGroupStatisticsScRsp::set_challenge_default,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LAAIGBDPLJC::LAAIGBDPLJC>(
-            "AJGCMALNLEN",
-            GetChallengeGroupStatisticsScRsp::has_AJGCMALNLEN,
-            GetChallengeGroupStatisticsScRsp::AJGCMALNLEN,
-            GetChallengeGroupStatisticsScRsp::mut_AJGCMALNLEN,
-            GetChallengeGroupStatisticsScRsp::set_AJGCMALNLEN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LGNMPMCPOPF::LGNMPMCPOPF>(
-            "BMCKMGINCIA",
-            GetChallengeGroupStatisticsScRsp::has_BMCKMGINCIA,
-            GetChallengeGroupStatisticsScRsp::BMCKMGINCIA,
-            GetChallengeGroupStatisticsScRsp::mut_BMCKMGINCIA,
-            GetChallengeGroupStatisticsScRsp::set_BMCKMGINCIA,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &GetChallengeGroupStatisticsScRsp| { &m.group_id },
@@ -231,7 +210,28 @@ impl GetChallengeGroupStatisticsScRsp {
             |m: &GetChallengeGroupStatisticsScRsp| { &m.retcode },
             |m: &mut GetChallengeGroupStatisticsScRsp| { &mut m.retcode },
         ));
-        oneofs.push(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
+            "challenge_default",
+            GetChallengeGroupStatisticsScRsp::has_challenge_default,
+            GetChallengeGroupStatisticsScRsp::challenge_default,
+            GetChallengeGroupStatisticsScRsp::mut_challenge_default,
+            GetChallengeGroupStatisticsScRsp::set_challenge_default,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryStatistics::ChallengeStoryStatistics>(
+            "challenge_story",
+            GetChallengeGroupStatisticsScRsp::has_challenge_story,
+            GetChallengeGroupStatisticsScRsp::challenge_story,
+            GetChallengeGroupStatisticsScRsp::mut_challenge_story,
+            GetChallengeGroupStatisticsScRsp::set_challenge_story,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeBossStatistics::ChallengeBossStatistics>(
+            "challenge_boss",
+            GetChallengeGroupStatisticsScRsp::has_challenge_boss,
+            GetChallengeGroupStatisticsScRsp::challenge_boss,
+            GetChallengeGroupStatisticsScRsp::mut_challenge_boss,
+            GetChallengeGroupStatisticsScRsp::set_challenge_boss,
+        ));
+        oneofs.push(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeGroupStatisticsScRsp>(
             "GetChallengeGroupStatisticsScRsp",
             fields,
@@ -250,20 +250,20 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(is.read_message()?));
-                },
-                34 => {
-                    self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(is.read_message()?));
-                },
-                18 => {
-                    self.CGFPDMPPNJF = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(is.read_message()?));
-                },
-                24 => {
+                112 => {
                     self.group_id = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(is.read_message()?));
+                },
+                26 => {
+                    self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(is.read_message()?));
+                },
+                34 => {
+                    self.OOJBOGCMBJD = ::std::option::Option::Some(get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -278,22 +278,22 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.CGFPDMPPNJF {
+        if let ::std::option::Option::Some(ref v) = self.OOJBOGCMBJD {
             match v {
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -306,21 +306,21 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(3, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.CGFPDMPPNJF {
+        if let ::std::option::Option::Some(ref v) = self.OOJBOGCMBJD {
             match v {
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeDefault(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::AJGCMALNLEN(ref v) => {
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeStory(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &get_challenge_group_statistics_sc_rsp::OOJBOGCMBJD::ChallengeBoss(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-                },
-                &get_challenge_group_statistics_sc_rsp::CGFPDMPPNJF::BMCKMGINCIA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -341,11 +341,11 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
     }
 
     fn clear(&mut self) {
-        self.CGFPDMPPNJF = ::std::option::Option::None;
-        self.CGFPDMPPNJF = ::std::option::Option::None;
-        self.CGFPDMPPNJF = ::std::option::Option::None;
         self.group_id = 0;
         self.retcode = 0;
+        self.OOJBOGCMBJD = ::std::option::Option::None;
+        self.OOJBOGCMBJD = ::std::option::Option::None;
+        self.OOJBOGCMBJD = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -353,7 +353,7 @@ impl ::protobuf::Message for GetChallengeGroupStatisticsScRsp {
         static instance: GetChallengeGroupStatisticsScRsp = GetChallengeGroupStatisticsScRsp {
             group_id: 0,
             retcode: 0,
-            CGFPDMPPNJF: ::std::option::Option::None,
+            OOJBOGCMBJD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -382,42 +382,43 @@ pub mod get_challenge_group_statistics_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GetChallengeGroupStatisticsScRsp.CGFPDMPPNJF)
-    pub enum CGFPDMPPNJF {
+    // @@protoc_insertion_point(oneof:GetChallengeGroupStatisticsScRsp.OOJBOGCMBJD)
+    pub enum OOJBOGCMBJD {
         // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.challenge_default)
         ChallengeDefault(super::super::ChallengeStatistics::ChallengeStatistics),
-        // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.AJGCMALNLEN)
-        AJGCMALNLEN(super::super::LAAIGBDPLJC::LAAIGBDPLJC),
-        // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.BMCKMGINCIA)
-        BMCKMGINCIA(super::super::LGNMPMCPOPF::LGNMPMCPOPF),
+        // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.challenge_story)
+        ChallengeStory(super::super::ChallengeStoryStatistics::ChallengeStoryStatistics),
+        // @@protoc_insertion_point(oneof_field:GetChallengeGroupStatisticsScRsp.challenge_boss)
+        ChallengeBoss(super::super::ChallengeBossStatistics::ChallengeBossStatistics),
     }
 
-    impl ::protobuf::Oneof for CGFPDMPPNJF {
+    impl ::protobuf::Oneof for OOJBOGCMBJD {
     }
 
-    impl ::protobuf::OneofFull for CGFPDMPPNJF {
+    impl ::protobuf::OneofFull for OOJBOGCMBJD {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GetChallengeGroupStatisticsScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("CGFPDMPPNJF").unwrap()).clone()
+            descriptor.get(|| <super::GetChallengeGroupStatisticsScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("OOJBOGCMBJD").unwrap()).clone()
         }
     }
 
-    impl CGFPDMPPNJF {
+    impl OOJBOGCMBJD {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CGFPDMPPNJF>("CGFPDMPPNJF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OOJBOGCMBJD>("OOJBOGCMBJD")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x19ChallengeStatistics.pro\
-    to\x1a\x11LAAIGBDPLJC.proto\x1a\x11LGNMPMCPOPF.proto\"\x8f\x02\n\x20GetC\
-    hallengeGroupStatisticsScRsp\x12C\n\x11challenge_default\x18\x07\x20\x01\
-    (\x0b2\x14.ChallengeStatisticsH\0R\x10challengeDefault\x120\n\x0bAJGCMAL\
-    NLEN\x18\x04\x20\x01(\x0b2\x0c.LAAIGBDPLJCH\0R\x0bAJGCMALNLEN\x120\n\x0b\
-    BMCKMGINCIA\x18\x02\x20\x01(\x0b2\x0c.LGNMPMCPOPFH\0R\x0bBMCKMGINCIA\x12\
-    \x19\n\x08group_id\x18\x03\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\
-    \x18\x06\x20\x01(\rR\x07retcodeB\r\n\x0bCGFPDMPPNJFb\x06proto3\
+    \n&GetChallengeGroupStatisticsScRsp.proto\x1a\x1dChallengeBossStatistics\
+    .proto\x1a\x19ChallengeStatistics.proto\x1a\x1eChallengeStoryStatistics.\
+    proto\"\xb4\x02\n\x20GetChallengeGroupStatisticsScRsp\x12\x19\n\x08group\
+    _id\x18\x0e\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x0b\x20\x01(\
+    \rR\x07retcode\x12C\n\x11challenge_default\x18\n\x20\x01(\x0b2\x14.Chall\
+    engeStatisticsH\0R\x10challengeDefault\x12D\n\x0fchallenge_story\x18\x03\
+    \x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallengeStory\x12A\n\
+    \x0echallenge_boss\x18\x04\x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\
+    \rchallengeBossB\r\n\x0bOOJBOGCMBJDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -435,9 +436,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::ChallengeBossStatistics::file_descriptor().clone());
             deps.push(super::ChallengeStatistics::file_descriptor().clone());
-            deps.push(super::LAAIGBDPLJC::file_descriptor().clone());
-            deps.push(super::LGNMPMCPOPF::file_descriptor().clone());
+            deps.push(super::ChallengeStoryStatistics::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChallengeGroupStatisticsScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

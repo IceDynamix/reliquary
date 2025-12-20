@@ -30,10 +30,10 @@ pub struct PlayerHeartBeatCsReq {
     // message fields
     // @@protoc_insertion_point(field:PlayerHeartBeatCsReq.client_time_ms)
     pub client_time_ms: u64,
-    // @@protoc_insertion_point(field:PlayerHeartBeatCsReq.upload_data)
-    pub upload_data: ::protobuf::MessageField<super::ClientUploadData::ClientUploadData>,
-    // @@protoc_insertion_point(field:PlayerHeartBeatCsReq.upload_version)
-    pub upload_version: u32,
+    // @@protoc_insertion_point(field:PlayerHeartBeatCsReq.NMBBCCGINJN)
+    pub NMBBCCGINJN: ::protobuf::MessageField<super::ClientUploadData::ClientUploadData>,
+    // @@protoc_insertion_point(field:PlayerHeartBeatCsReq.MGMBOGMDNJI)
+    pub MGMBOGMDNJI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerHeartBeatCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl PlayerHeartBeatCsReq {
             |m: &mut PlayerHeartBeatCsReq| { &mut m.client_time_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClientUploadData::ClientUploadData>(
-            "upload_data",
-            |m: &PlayerHeartBeatCsReq| { &m.upload_data },
-            |m: &mut PlayerHeartBeatCsReq| { &mut m.upload_data },
+            "NMBBCCGINJN",
+            |m: &PlayerHeartBeatCsReq| { &m.NMBBCCGINJN },
+            |m: &mut PlayerHeartBeatCsReq| { &mut m.NMBBCCGINJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "upload_version",
-            |m: &PlayerHeartBeatCsReq| { &m.upload_version },
-            |m: &mut PlayerHeartBeatCsReq| { &mut m.upload_version },
+            "MGMBOGMDNJI",
+            |m: &PlayerHeartBeatCsReq| { &m.MGMBOGMDNJI },
+            |m: &mut PlayerHeartBeatCsReq| { &mut m.MGMBOGMDNJI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerHeartBeatCsReq>(
             "PlayerHeartBeatCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlayerHeartBeatCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.upload_data)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMBBCCGINJN)?;
                 },
-                112 => {
-                    self.upload_version = is.read_uint32()?;
+                72 => {
+                    self.MGMBOGMDNJI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PlayerHeartBeatCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.client_time_ms);
+            my_size += ::protobuf::rt::uint64_size(1, self.client_time_ms);
         }
-        if let Some(v) = self.upload_data.as_ref() {
+        if let Some(v) = self.NMBBCCGINJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.upload_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.upload_version);
+        if self.MGMBOGMDNJI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MGMBOGMDNJI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlayerHeartBeatCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_time_ms != 0 {
-            os.write_uint64(3, self.client_time_ms)?;
+            os.write_uint64(1, self.client_time_ms)?;
         }
-        if let Some(v) = self.upload_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.NMBBCCGINJN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.upload_version != 0 {
-            os.write_uint32(14, self.upload_version)?;
+        if self.MGMBOGMDNJI != 0 {
+            os.write_uint32(9, self.MGMBOGMDNJI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for PlayerHeartBeatCsReq {
 
     fn clear(&mut self) {
         self.client_time_ms = 0;
-        self.upload_data.clear();
-        self.upload_version = 0;
+        self.NMBBCCGINJN.clear();
+        self.MGMBOGMDNJI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerHeartBeatCsReq {
         static instance: PlayerHeartBeatCsReq = PlayerHeartBeatCsReq {
             client_time_ms: 0,
-            upload_data: ::protobuf::MessageField::none(),
-            upload_version: 0,
+            NMBBCCGINJN: ::protobuf::MessageField::none(),
+            MGMBOGMDNJI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for PlayerHeartBeatCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPlayerHeartBeatCsReq.proto\x1a\x16ClientUploadData.proto\"\x97\x01\
-    \n\x14PlayerHeartBeatCsReq\x12$\n\x0eclient_time_ms\x18\x03\x20\x01(\x04\
-    R\x0cclientTimeMs\x122\n\x0bupload_data\x18\n\x20\x01(\x0b2\x11.ClientUp\
-    loadDataR\nuploadData\x12%\n\x0eupload_version\x18\x0e\x20\x01(\rR\ruplo\
-    adVersionb\x06proto3\
+    \n\x1aPlayerHeartBeatCsReq.proto\x1a\x16ClientUploadData.proto\"\x93\x01\
+    \n\x14PlayerHeartBeatCsReq\x12$\n\x0eclient_time_ms\x18\x01\x20\x01(\x04\
+    R\x0cclientTimeMs\x123\n\x0bNMBBCCGINJN\x18\x05\x20\x01(\x0b2\x11.Client\
+    UploadDataR\x0bNMBBCCGINJN\x12\x20\n\x0bMGMBOGMDNJI\x18\t\x20\x01(\rR\
+    \x0bMGMBOGMDNJIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

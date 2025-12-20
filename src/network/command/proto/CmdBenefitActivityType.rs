@@ -30,17 +30,17 @@ pub enum CmdBenefitActivityType {
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdBenefitActivityTypeNone)
     CmdBenefitActivityTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdJoinBenefitActivityScRsp)
-    CmdJoinBenefitActivityScRsp = 4877,
+    CmdJoinBenefitActivityScRsp = 4852,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdGetBenefitActivityInfoScRsp)
-    CmdGetBenefitActivityInfoScRsp = 4878,
+    CmdGetBenefitActivityInfoScRsp = 4869,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdTakeBenefitActivityRewardScRsp)
-    CmdTakeBenefitActivityRewardScRsp = 4888,
+    CmdTakeBenefitActivityRewardScRsp = 4883,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdGetBenefitActivityInfoCsReq)
-    CmdGetBenefitActivityInfoCsReq = 4876,
+    CmdGetBenefitActivityInfoCsReq = 4855,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdJoinBenefitActivityCsReq)
-    CmdJoinBenefitActivityCsReq = 4855,
+    CmdJoinBenefitActivityCsReq = 4898,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CmdTakeBenefitActivityRewardCsReq)
-    CmdTakeBenefitActivityRewardCsReq = 4871,
+    CmdTakeBenefitActivityRewardCsReq = 4885,
 }
 
 impl ::protobuf::Enum for CmdBenefitActivityType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdBenefitActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBenefitActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdBenefitActivityType::CmdBenefitActivityTypeNone),
-            4877 => ::std::option::Option::Some(CmdBenefitActivityType::CmdJoinBenefitActivityScRsp),
-            4878 => ::std::option::Option::Some(CmdBenefitActivityType::CmdGetBenefitActivityInfoScRsp),
-            4888 => ::std::option::Option::Some(CmdBenefitActivityType::CmdTakeBenefitActivityRewardScRsp),
-            4876 => ::std::option::Option::Some(CmdBenefitActivityType::CmdGetBenefitActivityInfoCsReq),
-            4855 => ::std::option::Option::Some(CmdBenefitActivityType::CmdJoinBenefitActivityCsReq),
-            4871 => ::std::option::Option::Some(CmdBenefitActivityType::CmdTakeBenefitActivityRewardCsReq),
+            4852 => ::std::option::Option::Some(CmdBenefitActivityType::CmdJoinBenefitActivityScRsp),
+            4869 => ::std::option::Option::Some(CmdBenefitActivityType::CmdGetBenefitActivityInfoScRsp),
+            4883 => ::std::option::Option::Some(CmdBenefitActivityType::CmdTakeBenefitActivityRewardScRsp),
+            4855 => ::std::option::Option::Some(CmdBenefitActivityType::CmdGetBenefitActivityInfoCsReq),
+            4898 => ::std::option::Option::Some(CmdBenefitActivityType::CmdJoinBenefitActivityCsReq),
+            4885 => ::std::option::Option::Some(CmdBenefitActivityType::CmdTakeBenefitActivityRewardCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -122,10 +122,10 @@ impl CmdBenefitActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdBenefitActivityType.proto*\x96\x02\n\x16CmdBenefitActivityType\
     \x12\x1e\n\x1aCmdBenefitActivityTypeNone\x10\0\x12\x20\n\x1bCmdJoinBenef\
-    itActivityScRsp\x10\x8d&\x12#\n\x1eCmdGetBenefitActivityInfoScRsp\x10\
-    \x8e&\x12&\n!CmdTakeBenefitActivityRewardScRsp\x10\x98&\x12#\n\x1eCmdGet\
-    BenefitActivityInfoCsReq\x10\x8c&\x12\x20\n\x1bCmdJoinBenefitActivityCsR\
-    eq\x10\xf7%\x12&\n!CmdTakeBenefitActivityRewardCsReq\x10\x87&b\x06proto3\
+    itActivityScRsp\x10\xf4%\x12#\n\x1eCmdGetBenefitActivityInfoScRsp\x10\
+    \x85&\x12&\n!CmdTakeBenefitActivityRewardScRsp\x10\x93&\x12#\n\x1eCmdGet\
+    BenefitActivityInfoCsReq\x10\xf7%\x12\x20\n\x1bCmdJoinBenefitActivityCsR\
+    eq\x10\xa2&\x12&\n!CmdTakeBenefitActivityRewardCsReq\x10\x95&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

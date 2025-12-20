@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEnterStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEnterStageCsReq.rebattle_type)
-    pub rebattle_type: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.PKHECOGKACH)
+    pub PKHECOGKACH: bool,
     // @@protoc_insertion_point(field:SceneEnterStageCsReq.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:SceneEnterStageCsReq.CAILAKJGKIP)
-    pub CAILAKJGKIP: bool,
+    // @@protoc_insertion_point(field:SceneEnterStageCsReq.rebattle_type)
+    pub rebattle_type: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEnterStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SceneEnterStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rebattle_type",
-            |m: &SceneEnterStageCsReq| { &m.rebattle_type },
-            |m: &mut SceneEnterStageCsReq| { &mut m.rebattle_type },
+            "PKHECOGKACH",
+            |m: &SceneEnterStageCsReq| { &m.PKHECOGKACH },
+            |m: &mut SceneEnterStageCsReq| { &mut m.PKHECOGKACH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
@@ -64,9 +64,9 @@ impl SceneEnterStageCsReq {
             |m: &mut SceneEnterStageCsReq| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAILAKJGKIP",
-            |m: &SceneEnterStageCsReq| { &m.CAILAKJGKIP },
-            |m: &mut SceneEnterStageCsReq| { &mut m.CAILAKJGKIP },
+            "rebattle_type",
+            |m: &SceneEnterStageCsReq| { &m.rebattle_type },
+            |m: &mut SceneEnterStageCsReq| { &mut m.rebattle_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEnterStageCsReq>(
             "SceneEnterStageCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.rebattle_type = is.read_enum_or_unknown()?;
+                88 => {
+                    self.PKHECOGKACH = is.read_bool()?;
                 },
-                96 => {
+                64 => {
                     self.event_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.CAILAKJGKIP = is.read_bool()?;
+                96 => {
+                    self.rebattle_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.rebattle_type.value());
+        if self.PKHECOGKACH != false {
+            my_size += 1 + 1;
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
         }
-        if self.CAILAKJGKIP != false {
-            my_size += 1 + 1;
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(12, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+        if self.PKHECOGKACH != false {
+            os.write_bool(11, self.PKHECOGKACH)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(12, self.event_id)?;
+            os.write_uint32(8, self.event_id)?;
         }
-        if self.CAILAKJGKIP != false {
-            os.write_bool(14, self.CAILAKJGKIP)?;
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SceneEnterStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.rebattle_type = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE);
+        self.PKHECOGKACH = false;
         self.event_id = 0;
-        self.CAILAKJGKIP = false;
+        self.rebattle_type = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEnterStageCsReq {
         static instance: SceneEnterStageCsReq = SceneEnterStageCsReq {
-            rebattle_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            PKHECOGKACH: false,
             event_id: 0,
-            CAILAKJGKIP: false,
+            rebattle_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneEnterStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSceneEnterStageCsReq.proto\x1a\x12RebattleType.proto\"\x87\x01\n\
-    \x14SceneEnterStageCsReq\x122\n\rrebattle_type\x18\x08\x20\x01(\x0e2\r.R\
-    ebattleTypeR\x0crebattleType\x12\x19\n\x08event_id\x18\x0c\x20\x01(\rR\
-    \x07eventId\x12\x20\n\x0bCAILAKJGKIP\x18\x0e\x20\x01(\x08R\x0bCAILAKJGKI\
-    Pb\x06proto3\
+    \x14SceneEnterStageCsReq\x12\x20\n\x0bPKHECOGKACH\x18\x0b\x20\x01(\x08R\
+    \x0bPKHECOGKACH\x12\x19\n\x08event_id\x18\x08\x20\x01(\rR\x07eventId\x12\
+    2\n\rrebattle_type\x18\x0c\x20\x01(\x0e2\r.RebattleTypeR\x0crebattleType\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

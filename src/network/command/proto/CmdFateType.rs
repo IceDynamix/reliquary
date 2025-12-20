@@ -30,57 +30,57 @@ pub enum CmdFateType {
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTypeNone)
     CmdFateTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateQueryCsReq)
-    CmdFateQueryCsReq = 5976,
+    CmdFateQueryCsReq = 5977,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLeaveScRsp)
-    CmdFateShopLeaveScRsp = 5961,
+    CmdFateShopLeaveScRsp = 5998,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopBuyGoodsCsReq)
-    CmdFateShopBuyGoodsCsReq = 5951,
+    CmdFateShopBuyGoodsCsReq = 5967,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLeaveCsReq)
-    CmdFateShopLeaveCsReq = 5980,
+    CmdFateShopLeaveCsReq = 5975,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateQueryScRsp)
-    CmdFateQueryScRsp = 5978,
+    CmdFateQueryScRsp = 5985,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopSellBuffScRsp)
-    CmdFateShopSellBuffScRsp = 5953,
+    CmdFateShopSellBuffScRsp = 5981,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLockGoodsCsReq)
-    CmdFateShopLockGoodsCsReq = 5997,
+    CmdFateShopLockGoodsCsReq = 5984,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleScNotify)
-    CmdFateSettleScNotify = 5952,
+    CmdFateSettleScNotify = 5986,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateBattleStartCsReq)
-    CmdFateBattleStartCsReq = 5955,
+    CmdFateBattleStartCsReq = 5957,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleCsReq)
-    CmdFateSettleCsReq = 5981,
+    CmdFateSettleCsReq = 5969,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLockGoodsScRsp)
-    CmdFateShopLockGoodsScRsp = 5983,
+    CmdFateShopLockGoodsScRsp = 5960,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopBuyGoodsScRsp)
-    CmdFateShopBuyGoodsScRsp = 5995,
+    CmdFateShopBuyGoodsScRsp = 5955,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateHandlePendingActionCsReq)
-    CmdFateHandlePendingActionCsReq = 5979,
+    CmdFateHandlePendingActionCsReq = 6000,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateBattleStartScRsp)
-    CmdFateBattleStartScRsp = 5977,
+    CmdFateBattleStartScRsp = 5952,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateChangeLineupScRsp)
-    CmdFateChangeLineupScRsp = 5994,
+    CmdFateChangeLineupScRsp = 5983,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopRefreshGoodsScRsp)
-    CmdFateShopRefreshGoodsScRsp = 5969,
+    CmdFateShopRefreshGoodsScRsp = 5996,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSyncPendingActionScNotify)
-    CmdFateSyncPendingActionScNotify = 5965,
+    CmdFateSyncPendingActionScNotify = 5993,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTakeExpRewardScRsp)
-    CmdFateTakeExpRewardScRsp = 5956,
+    CmdFateTakeExpRewardScRsp = 5974,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateStartScRsp)
-    CmdFateStartScRsp = 5988,
+    CmdFateStartScRsp = 5962,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateChangeLineupCsReq)
-    CmdFateChangeLineupCsReq = 5970,
+    CmdFateChangeLineupCsReq = 5963,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSyncActionResultScNotify)
-    CmdFateSyncActionResultScNotify = 5962,
+    CmdFateSyncActionResultScNotify = 5966,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateStartCsReq)
-    CmdFateStartCsReq = 5971,
+    CmdFateStartCsReq = 5964,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopSellBuffCsReq)
-    CmdFateShopSellBuffCsReq = 5993,
+    CmdFateShopSellBuffCsReq = 5970,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTakeExpRewardCsReq)
-    CmdFateTakeExpRewardCsReq = 5984,
+    CmdFateTakeExpRewardCsReq = 5990,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleScRsp)
-    CmdFateSettleScRsp = 5958,
+    CmdFateSettleScRsp = 5976,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateHandlePendingActionScRsp)
-    CmdFateHandlePendingActionScRsp = 5985,
+    CmdFateHandlePendingActionScRsp = 5959,
     // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopRefreshGoodsCsReq)
     CmdFateShopRefreshGoodsCsReq = 5973,
 }
@@ -95,32 +95,32 @@ impl ::protobuf::Enum for CmdFateType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFateType> {
         match value {
             0 => ::std::option::Option::Some(CmdFateType::CmdFateTypeNone),
-            5976 => ::std::option::Option::Some(CmdFateType::CmdFateQueryCsReq),
-            5961 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveScRsp),
-            5951 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsCsReq),
-            5980 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveCsReq),
-            5978 => ::std::option::Option::Some(CmdFateType::CmdFateQueryScRsp),
-            5953 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffScRsp),
-            5997 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsCsReq),
-            5952 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScNotify),
-            5955 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartCsReq),
-            5981 => ::std::option::Option::Some(CmdFateType::CmdFateSettleCsReq),
-            5983 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsScRsp),
-            5995 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsScRsp),
-            5979 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionCsReq),
-            5977 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartScRsp),
-            5994 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupScRsp),
-            5969 => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsScRsp),
-            5965 => ::std::option::Option::Some(CmdFateType::CmdFateSyncPendingActionScNotify),
-            5956 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardScRsp),
-            5988 => ::std::option::Option::Some(CmdFateType::CmdFateStartScRsp),
-            5970 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupCsReq),
-            5962 => ::std::option::Option::Some(CmdFateType::CmdFateSyncActionResultScNotify),
-            5971 => ::std::option::Option::Some(CmdFateType::CmdFateStartCsReq),
-            5993 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffCsReq),
-            5984 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardCsReq),
-            5958 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScRsp),
-            5985 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionScRsp),
+            5977 => ::std::option::Option::Some(CmdFateType::CmdFateQueryCsReq),
+            5998 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveScRsp),
+            5967 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsCsReq),
+            5975 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveCsReq),
+            5985 => ::std::option::Option::Some(CmdFateType::CmdFateQueryScRsp),
+            5981 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffScRsp),
+            5984 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsCsReq),
+            5986 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScNotify),
+            5957 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartCsReq),
+            5969 => ::std::option::Option::Some(CmdFateType::CmdFateSettleCsReq),
+            5960 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsScRsp),
+            5955 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsScRsp),
+            6000 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionCsReq),
+            5952 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartScRsp),
+            5983 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupScRsp),
+            5996 => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsScRsp),
+            5993 => ::std::option::Option::Some(CmdFateType::CmdFateSyncPendingActionScNotify),
+            5974 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardScRsp),
+            5962 => ::std::option::Option::Some(CmdFateType::CmdFateStartScRsp),
+            5963 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupCsReq),
+            5966 => ::std::option::Option::Some(CmdFateType::CmdFateSyncActionResultScNotify),
+            5964 => ::std::option::Option::Some(CmdFateType::CmdFateStartCsReq),
+            5970 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffCsReq),
+            5990 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardCsReq),
+            5976 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScRsp),
+            5959 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionScRsp),
             5973 => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsCsReq),
             _ => ::std::option::Option::None
         }
@@ -247,23 +247,23 @@ impl CmdFateType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdFateType.proto*\xdd\x06\n\x0bCmdFateType\x12\x13\n\x0fCmdFateTy\
-    peNone\x10\0\x12\x16\n\x11CmdFateQueryCsReq\x10\xd8.\x12\x1a\n\x15CmdFat\
-    eShopLeaveScRsp\x10\xc9.\x12\x1d\n\x18CmdFateShopBuyGoodsCsReq\x10\xbf.\
-    \x12\x1a\n\x15CmdFateShopLeaveCsReq\x10\xdc.\x12\x16\n\x11CmdFateQuerySc\
-    Rsp\x10\xda.\x12\x1d\n\x18CmdFateShopSellBuffScRsp\x10\xc1.\x12\x1e\n\
-    \x19CmdFateShopLockGoodsCsReq\x10\xed.\x12\x1a\n\x15CmdFateSettleScNotif\
-    y\x10\xc0.\x12\x1c\n\x17CmdFateBattleStartCsReq\x10\xc3.\x12\x17\n\x12Cm\
-    dFateSettleCsReq\x10\xdd.\x12\x1e\n\x19CmdFateShopLockGoodsScRsp\x10\xdf\
-    .\x12\x1d\n\x18CmdFateShopBuyGoodsScRsp\x10\xeb.\x12$\n\x1fCmdFateHandle\
-    PendingActionCsReq\x10\xdb.\x12\x1c\n\x17CmdFateBattleStartScRsp\x10\xd9\
-    .\x12\x1d\n\x18CmdFateChangeLineupScRsp\x10\xea.\x12!\n\x1cCmdFateShopRe\
-    freshGoodsScRsp\x10\xd1.\x12%\n\x20CmdFateSyncPendingActionScNotify\x10\
-    \xcd.\x12\x1e\n\x19CmdFateTakeExpRewardScRsp\x10\xc4.\x12\x16\n\x11CmdFa\
-    teStartScRsp\x10\xe4.\x12\x1d\n\x18CmdFateChangeLineupCsReq\x10\xd2.\x12\
-    $\n\x1fCmdFateSyncActionResultScNotify\x10\xca.\x12\x16\n\x11CmdFateStar\
-    tCsReq\x10\xd3.\x12\x1d\n\x18CmdFateShopSellBuffCsReq\x10\xe9.\x12\x1e\n\
-    \x19CmdFateTakeExpRewardCsReq\x10\xe0.\x12\x17\n\x12CmdFateSettleScRsp\
-    \x10\xc6.\x12$\n\x1fCmdFateHandlePendingActionScRsp\x10\xe1.\x12!\n\x1cC\
+    peNone\x10\0\x12\x16\n\x11CmdFateQueryCsReq\x10\xd9.\x12\x1a\n\x15CmdFat\
+    eShopLeaveScRsp\x10\xee.\x12\x1d\n\x18CmdFateShopBuyGoodsCsReq\x10\xcf.\
+    \x12\x1a\n\x15CmdFateShopLeaveCsReq\x10\xd7.\x12\x16\n\x11CmdFateQuerySc\
+    Rsp\x10\xe1.\x12\x1d\n\x18CmdFateShopSellBuffScRsp\x10\xdd.\x12\x1e\n\
+    \x19CmdFateShopLockGoodsCsReq\x10\xe0.\x12\x1a\n\x15CmdFateSettleScNotif\
+    y\x10\xe2.\x12\x1c\n\x17CmdFateBattleStartCsReq\x10\xc5.\x12\x17\n\x12Cm\
+    dFateSettleCsReq\x10\xd1.\x12\x1e\n\x19CmdFateShopLockGoodsScRsp\x10\xc8\
+    .\x12\x1d\n\x18CmdFateShopBuyGoodsScRsp\x10\xc3.\x12$\n\x1fCmdFateHandle\
+    PendingActionCsReq\x10\xf0.\x12\x1c\n\x17CmdFateBattleStartScRsp\x10\xc0\
+    .\x12\x1d\n\x18CmdFateChangeLineupScRsp\x10\xdf.\x12!\n\x1cCmdFateShopRe\
+    freshGoodsScRsp\x10\xec.\x12%\n\x20CmdFateSyncPendingActionScNotify\x10\
+    \xe9.\x12\x1e\n\x19CmdFateTakeExpRewardScRsp\x10\xd6.\x12\x16\n\x11CmdFa\
+    teStartScRsp\x10\xca.\x12\x1d\n\x18CmdFateChangeLineupCsReq\x10\xcb.\x12\
+    $\n\x1fCmdFateSyncActionResultScNotify\x10\xce.\x12\x16\n\x11CmdFateStar\
+    tCsReq\x10\xcc.\x12\x1d\n\x18CmdFateShopSellBuffCsReq\x10\xd2.\x12\x1e\n\
+    \x19CmdFateTakeExpRewardCsReq\x10\xe6.\x12\x17\n\x12CmdFateSettleScRsp\
+    \x10\xd8.\x12$\n\x1fCmdFateHandlePendingActionScRsp\x10\xc7.\x12!\n\x1cC\
     mdFateShopRefreshGoodsCsReq\x10\xd5.b\x06proto3\
 ";
 

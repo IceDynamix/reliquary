@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChestInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChestInfo.PPAFHCLMCNI)
-    pub PPAFHCLMCNI: u32,
     // @@protoc_insertion_point(field:ChestInfo.chest_type)
-    pub chest_type: ::protobuf::EnumOrUnknown<super::MapInfoChestType::MapInfoChestType>,
-    // @@protoc_insertion_point(field:ChestInfo.LPLKNCIHCHJ)
-    pub LPLKNCIHCHJ: u32,
+    pub chest_type: ::protobuf::EnumOrUnknown<super::ChestType::ChestType>,
+    // @@protoc_insertion_point(field:ChestInfo.exist_num)
+    pub exist_num: u32,
+    // @@protoc_insertion_point(field:ChestInfo.opened_num)
+    pub opened_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChestInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ChestInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPAFHCLMCNI",
-            |m: &ChestInfo| { &m.PPAFHCLMCNI },
-            |m: &mut ChestInfo| { &mut m.PPAFHCLMCNI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "chest_type",
             |m: &ChestInfo| { &m.chest_type },
             |m: &mut ChestInfo| { &mut m.chest_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLKNCIHCHJ",
-            |m: &ChestInfo| { &m.LPLKNCIHCHJ },
-            |m: &mut ChestInfo| { &mut m.LPLKNCIHCHJ },
+            "exist_num",
+            |m: &ChestInfo| { &m.exist_num },
+            |m: &mut ChestInfo| { &mut m.exist_num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "opened_num",
+            |m: &ChestInfo| { &m.opened_num },
+            |m: &mut ChestInfo| { &mut m.opened_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChestInfo>(
             "ChestInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChestInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PPAFHCLMCNI = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.chest_type = is.read_enum_or_unknown()?;
                 },
-                112 => {
-                    self.LPLKNCIHCHJ = is.read_uint32()?;
+                120 => {
+                    self.exist_num = is.read_uint32()?;
+                },
+                48 => {
+                    self.opened_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ChestInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PPAFHCLMCNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PPAFHCLMCNI);
+        if self.chest_type != ::protobuf::EnumOrUnknown::new(super::ChestType::ChestType::MAP_INFO_CHEST_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.chest_type.value());
         }
-        if self.chest_type != ::protobuf::EnumOrUnknown::new(super::MapInfoChestType::MapInfoChestType::MAP_INFO_CHEST_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.chest_type.value());
+        if self.exist_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.exist_num);
         }
-        if self.LPLKNCIHCHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LPLKNCIHCHJ);
+        if self.opened_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.opened_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ChestInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PPAFHCLMCNI != 0 {
-            os.write_uint32(4, self.PPAFHCLMCNI)?;
+        if self.chest_type != ::protobuf::EnumOrUnknown::new(super::ChestType::ChestType::MAP_INFO_CHEST_TYPE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.chest_type))?;
         }
-        if self.chest_type != ::protobuf::EnumOrUnknown::new(super::MapInfoChestType::MapInfoChestType::MAP_INFO_CHEST_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.chest_type))?;
+        if self.exist_num != 0 {
+            os.write_uint32(15, self.exist_num)?;
         }
-        if self.LPLKNCIHCHJ != 0 {
-            os.write_uint32(14, self.LPLKNCIHCHJ)?;
+        if self.opened_num != 0 {
+            os.write_uint32(6, self.opened_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ChestInfo {
     }
 
     fn clear(&mut self) {
-        self.PPAFHCLMCNI = 0;
-        self.chest_type = ::protobuf::EnumOrUnknown::new(super::MapInfoChestType::MapInfoChestType::MAP_INFO_CHEST_TYPE_NONE);
-        self.LPLKNCIHCHJ = 0;
+        self.chest_type = ::protobuf::EnumOrUnknown::new(super::ChestType::ChestType::MAP_INFO_CHEST_TYPE_NONE);
+        self.exist_num = 0;
+        self.opened_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChestInfo {
         static instance: ChestInfo = ChestInfo {
-            PPAFHCLMCNI: 0,
             chest_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            LPLKNCIHCHJ: 0,
+            exist_num: 0,
+            opened_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ChestInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fChestInfo.proto\x1a\x16MapInfoChestType.proto\"\x81\x01\n\tChestIn\
-    fo\x12\x20\n\x0bPPAFHCLMCNI\x18\x04\x20\x01(\rR\x0bPPAFHCLMCNI\x120\n\nc\
-    hest_type\x18\x05\x20\x01(\x0e2\x11.MapInfoChestTypeR\tchestType\x12\x20\
-    \n\x0bLPLKNCIHCHJ\x18\x0e\x20\x01(\rR\x0bLPLKNCIHCHJb\x06proto3\
+    \n\x0fChestInfo.proto\x1a\x0fChestType.proto\"r\n\tChestInfo\x12)\n\nche\
+    st_type\x18\x01\x20\x01(\x0e2\n.ChestTypeR\tchestType\x12\x1b\n\texist_n\
+    um\x18\x0f\x20\x01(\rR\x08existNum\x12\x1d\n\nopened_num\x18\x06\x20\x01\
+    (\rR\topenedNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,7 +204,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MapInfoChestType::file_descriptor().clone());
+            deps.push(super::ChestType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChestInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

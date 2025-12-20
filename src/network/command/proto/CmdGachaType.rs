@@ -30,27 +30,27 @@ pub enum CmdGachaType {
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGachaTypeNone)
     CmdGachaTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaCeilingCsReq)
-    CmdGetGachaCeilingCsReq = 1983,
+    CmdGetGachaCeilingCsReq = 1951,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGachaDecideItemChangeScNotify)
-    CmdGachaDecideItemChangeScNotify = 1981,
+    CmdGachaDecideItemChangeScNotify = 1961,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingScRsp)
-    CmdExchangeGachaCeilingScRsp = 1952,
+    CmdExchangeGachaCeilingScRsp = 1947,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdSetGachaDecideItemCsReq)
-    CmdSetGachaDecideItemCsReq = 1919,
+    CmdSetGachaDecideItemCsReq = 1938,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdSetGachaDecideItemScRsp)
-    CmdSetGachaDecideItemScRsp = 1944,
+    CmdSetGachaDecideItemScRsp = 1909,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaCeilingScRsp)
-    CmdGetGachaCeilingScRsp = 1986,
+    CmdGetGachaCeilingScRsp = 1920,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaScRsp)
-    CmdDoGachaScRsp = 1965,
+    CmdDoGachaScRsp = 1911,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoScRsp)
-    CmdGetGachaInfoScRsp = 1923,
+    CmdGetGachaInfoScRsp = 1995,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdGetGachaInfoCsReq)
-    CmdGetGachaInfoCsReq = 1999,
+    CmdGetGachaInfoCsReq = 1991,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdDoGachaCsReq)
-    CmdDoGachaCsReq = 1998,
+    CmdDoGachaCsReq = 1989,
     // @@protoc_insertion_point(enum_value:CmdGachaType.CmdExchangeGachaCeilingCsReq)
-    CmdExchangeGachaCeilingCsReq = 1994,
+    CmdExchangeGachaCeilingCsReq = 1917,
 }
 
 impl ::protobuf::Enum for CmdGachaType {
@@ -63,17 +63,17 @@ impl ::protobuf::Enum for CmdGachaType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdGachaType> {
         match value {
             0 => ::std::option::Option::Some(CmdGachaType::CmdGachaTypeNone),
-            1983 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
-            1981 => ::std::option::Option::Some(CmdGachaType::CmdGachaDecideItemChangeScNotify),
-            1952 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingScRsp),
-            1919 => ::std::option::Option::Some(CmdGachaType::CmdSetGachaDecideItemCsReq),
-            1944 => ::std::option::Option::Some(CmdGachaType::CmdSetGachaDecideItemScRsp),
-            1986 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingScRsp),
-            1965 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
-            1923 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoScRsp),
-            1999 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoCsReq),
-            1998 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaCsReq),
-            1994 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
+            1951 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingCsReq),
+            1961 => ::std::option::Option::Some(CmdGachaType::CmdGachaDecideItemChangeScNotify),
+            1947 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingScRsp),
+            1938 => ::std::option::Option::Some(CmdGachaType::CmdSetGachaDecideItemCsReq),
+            1909 => ::std::option::Option::Some(CmdGachaType::CmdSetGachaDecideItemScRsp),
+            1920 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaCeilingScRsp),
+            1911 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaScRsp),
+            1995 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoScRsp),
+            1991 => ::std::option::Option::Some(CmdGachaType::CmdGetGachaInfoCsReq),
+            1989 => ::std::option::Option::Some(CmdGachaType::CmdDoGachaCsReq),
+            1917 => ::std::option::Option::Some(CmdGachaType::CmdExchangeGachaCeilingCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -151,14 +151,14 @@ impl CmdGachaType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdGachaType.proto*\xf1\x02\n\x0cCmdGachaType\x12\x14\n\x10CmdGach\
-    aTypeNone\x10\0\x12\x1c\n\x17CmdGetGachaCeilingCsReq\x10\xbf\x0f\x12%\n\
-    \x20CmdGachaDecideItemChangeScNotify\x10\xbd\x0f\x12!\n\x1cCmdExchangeGa\
-    chaCeilingScRsp\x10\xa0\x0f\x12\x1f\n\x1aCmdSetGachaDecideItemCsReq\x10\
-    \xff\x0e\x12\x1f\n\x1aCmdSetGachaDecideItemScRsp\x10\x98\x0f\x12\x1c\n\
-    \x17CmdGetGachaCeilingScRsp\x10\xc2\x0f\x12\x14\n\x0fCmdDoGachaScRsp\x10\
-    \xad\x0f\x12\x19\n\x14CmdGetGachaInfoScRsp\x10\x83\x0f\x12\x19\n\x14CmdG\
-    etGachaInfoCsReq\x10\xcf\x0f\x12\x14\n\x0fCmdDoGachaCsReq\x10\xce\x0f\
-    \x12!\n\x1cCmdExchangeGachaCeilingCsReq\x10\xca\x0fb\x06proto3\
+    aTypeNone\x10\0\x12\x1c\n\x17CmdGetGachaCeilingCsReq\x10\x9f\x0f\x12%\n\
+    \x20CmdGachaDecideItemChangeScNotify\x10\xa9\x0f\x12!\n\x1cCmdExchangeGa\
+    chaCeilingScRsp\x10\x9b\x0f\x12\x1f\n\x1aCmdSetGachaDecideItemCsReq\x10\
+    \x92\x0f\x12\x1f\n\x1aCmdSetGachaDecideItemScRsp\x10\xf5\x0e\x12\x1c\n\
+    \x17CmdGetGachaCeilingScRsp\x10\x80\x0f\x12\x14\n\x0fCmdDoGachaScRsp\x10\
+    \xf7\x0e\x12\x19\n\x14CmdGetGachaInfoScRsp\x10\xcb\x0f\x12\x19\n\x14CmdG\
+    etGachaInfoCsReq\x10\xc7\x0f\x12\x14\n\x0fCmdDoGachaCsReq\x10\xc5\x0f\
+    \x12!\n\x1cCmdExchangeGachaCeilingCsReq\x10\xfd\x0eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

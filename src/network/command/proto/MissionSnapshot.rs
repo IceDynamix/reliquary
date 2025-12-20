@@ -34,6 +34,12 @@ pub struct MissionSnapshot {
     pub client_mcv_list: ::std::vec::Vec<super::MainMissionMcvSnapshot::MainMissionMcvSnapshot>,
     // @@protoc_insertion_point(field:MissionSnapshot.tracking_main_mission)
     pub tracking_main_mission: ::protobuf::MessageField<super::MainMissionSnapshot::MainMissionSnapshot>,
+    // @@protoc_insertion_point(field:MissionSnapshot.has_mission_audio_snapshot)
+    pub has_mission_audio_snapshot: bool,
+    // @@protoc_insertion_point(field:MissionSnapshot.cur_audio_emotion_state)
+    pub cur_audio_emotion_state: ::std::string::String,
+    // @@protoc_insertion_point(field:MissionSnapshot.cur_sound_effect_state)
+    pub cur_sound_effect_state: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MissionSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +57,7 @@ impl MissionSnapshot {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "server_mcv_list",
@@ -67,6 +73,21 @@ impl MissionSnapshot {
             "tracking_main_mission",
             |m: &MissionSnapshot| { &m.tracking_main_mission },
             |m: &mut MissionSnapshot| { &mut m.tracking_main_mission },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "has_mission_audio_snapshot",
+            |m: &MissionSnapshot| { &m.has_mission_audio_snapshot },
+            |m: &mut MissionSnapshot| { &mut m.has_mission_audio_snapshot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_audio_emotion_state",
+            |m: &MissionSnapshot| { &m.cur_audio_emotion_state },
+            |m: &mut MissionSnapshot| { &mut m.cur_audio_emotion_state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_sound_effect_state",
+            |m: &MissionSnapshot| { &m.cur_sound_effect_state },
+            |m: &mut MissionSnapshot| { &mut m.cur_sound_effect_state },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionSnapshot>(
             "MissionSnapshot",
@@ -95,6 +116,15 @@ impl ::protobuf::Message for MissionSnapshot {
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tracking_main_mission)?;
                 },
+                32 => {
+                    self.has_mission_audio_snapshot = is.read_bool()?;
+                },
+                42 => {
+                    self.cur_audio_emotion_state = is.read_string()?;
+                },
+                50 => {
+                    self.cur_sound_effect_state = is.read_string()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -119,6 +149,15 @@ impl ::protobuf::Message for MissionSnapshot {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.has_mission_audio_snapshot != false {
+            my_size += 1 + 1;
+        }
+        if !self.cur_audio_emotion_state.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.cur_audio_emotion_state);
+        }
+        if !self.cur_sound_effect_state.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.cur_sound_effect_state);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -133,6 +172,15 @@ impl ::protobuf::Message for MissionSnapshot {
         };
         if let Some(v) = self.tracking_main_mission.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.has_mission_audio_snapshot != false {
+            os.write_bool(4, self.has_mission_audio_snapshot)?;
+        }
+        if !self.cur_audio_emotion_state.is_empty() {
+            os.write_string(5, &self.cur_audio_emotion_state)?;
+        }
+        if !self.cur_sound_effect_state.is_empty() {
+            os.write_string(6, &self.cur_sound_effect_state)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -154,6 +202,9 @@ impl ::protobuf::Message for MissionSnapshot {
         self.server_mcv_list.clear();
         self.client_mcv_list.clear();
         self.tracking_main_mission.clear();
+        self.has_mission_audio_snapshot = false;
+        self.cur_audio_emotion_state.clear();
+        self.cur_sound_effect_state.clear();
         self.special_fields.clear();
     }
 
@@ -162,6 +213,9 @@ impl ::protobuf::Message for MissionSnapshot {
             server_mcv_list: ::std::vec::Vec::new(),
             client_mcv_list: ::std::vec::Vec::new(),
             tracking_main_mission: ::protobuf::MessageField::none(),
+            has_mission_audio_snapshot: false,
+            cur_audio_emotion_state: ::std::string::String::new(),
+            cur_sound_effect_state: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +241,15 @@ impl ::protobuf::reflect::ProtobufValue for MissionSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MissionSnapshot.proto\x1a\x1cMainMissionMcvSnapshot.proto\x1a\x19M\
-    ainMissionSnapshot.proto\"\xdd\x01\n\x0fMissionSnapshot\x12?\n\x0fserver\
+    ainMissionSnapshot.proto\"\x86\x03\n\x0fMissionSnapshot\x12?\n\x0fserver\
     _mcv_list\x18\x01\x20\x03(\x0b2\x17.MainMissionMcvSnapshotR\rserverMcvLi\
     st\x12?\n\x0fclient_mcv_list\x18\x02\x20\x03(\x0b2\x17.MainMissionMcvSna\
     pshotR\rclientMcvList\x12H\n\x15tracking_main_mission\x18\x03\x20\x01(\
-    \x0b2\x14.MainMissionSnapshotR\x13trackingMainMissionb\x06proto3\
+    \x0b2\x14.MainMissionSnapshotR\x13trackingMainMission\x12;\n\x1ahas_miss\
+    ion_audio_snapshot\x18\x04\x20\x01(\x08R\x17hasMissionAudioSnapshot\x125\
+    \n\x17cur_audio_emotion_state\x18\x05\x20\x01(\tR\x14curAudioEmotionStat\
+    e\x123\n\x16cur_sound_effect_state\x18\x06\x20\x01(\tR\x13curSoundEffect\
+    Stateb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

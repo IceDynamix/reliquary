@@ -72,10 +72,10 @@ impl ::protobuf::Message for GetMainMissionCustomValueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.main_mission_id_list)?;
                 },
-                96 => {
+                112 => {
                     self.main_mission_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetMainMissionCustomValueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.main_mission_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.main_mission_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.main_mission_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for GetMainMissionCustomValueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetMainMissionCustomValueCsReq.proto\"Q\n\x1eGetMainMissionCustomValu\
-    eCsReq\x12/\n\x14main_mission_id_list\x18\x0c\x20\x03(\rR\x11mainMission\
+    eCsReq\x12/\n\x14main_mission_id_list\x18\x0e\x20\x03(\rR\x11mainMission\
     IdListb\x06proto3\
 ";
 

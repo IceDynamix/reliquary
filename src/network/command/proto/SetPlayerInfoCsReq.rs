@@ -92,7 +92,7 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
                 82 => {
                     self.nickname = is.read_string()?;
                 },
-                120 => {
+                88 => {
                     self.is_modify = is.read_bool()?;
                 },
                 tag => {
@@ -129,7 +129,7 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
             os.write_string(10, &self.nickname)?;
         }
         if self.is_modify != false {
-            os.write_bool(15, self.is_modify)?;
+            os.write_bool(11, self.is_modify)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,7 +186,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetPlayerInfoCsReq.proto\x1a\x0cGender.proto\"n\n\x12SetPlayerInfo\
     CsReq\x12\x1f\n\x06gender\x18\x08\x20\x01(\x0e2\x07.GenderR\x06gender\
     \x12\x1a\n\x08nickname\x18\n\x20\x01(\tR\x08nickname\x12\x1b\n\tis_modif\
-    y\x18\x0f\x20\x01(\x08R\x08isModifyb\x06proto3\
+    y\x18\x0b\x20\x01(\x08R\x08isModifyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

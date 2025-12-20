@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePsnSettingsInfoCsReq {
     // message oneof groups
-    pub DDBNLHJNANE: ::std::option::Option<update_psn_settings_info_cs_req::DDBNLHJNANE>,
+    pub KDMLFBAJFPI: ::std::option::Option<update_psn_settings_info_cs_req::KDMLFBAJFPI>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePsnSettingsInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,122 +45,122 @@ impl UpdatePsnSettingsInfoCsReq {
         ::std::default::Default::default()
     }
 
-    // .NCBIMLPODON DOOCPLCLDPD = 1499;
+    // .CGFIMBNLOHP PIDOELDKGID = 856;
 
-    pub fn DOOCPLCLDPD(&self) -> &super::NCBIMLPODON::NCBIMLPODON {
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v)) => v,
-            _ => <super::NCBIMLPODON::NCBIMLPODON as ::protobuf::Message>::default_instance(),
+    pub fn PIDOELDKGID(&self) -> &super::CGFIMBNLOHP::CGFIMBNLOHP {
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(ref v)) => v,
+            _ => <super::CGFIMBNLOHP::CGFIMBNLOHP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DOOCPLCLDPD(&mut self) {
-        self.DDBNLHJNANE = ::std::option::Option::None;
+    pub fn clear_PIDOELDKGID(&mut self) {
+        self.KDMLFBAJFPI = ::std::option::Option::None;
     }
 
-    pub fn has_DOOCPLCLDPD(&self) -> bool {
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(..)) => true,
+    pub fn has_PIDOELDKGID(&self) -> bool {
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DOOCPLCLDPD(&mut self, v: super::NCBIMLPODON::NCBIMLPODON) {
-        self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(v))
+    pub fn set_PIDOELDKGID(&mut self, v: super::CGFIMBNLOHP::CGFIMBNLOHP) {
+        self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DOOCPLCLDPD(&mut self) -> &mut super::NCBIMLPODON::NCBIMLPODON {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(_)) = self.DDBNLHJNANE {
+    pub fn mut_PIDOELDKGID(&mut self) -> &mut super::CGFIMBNLOHP::CGFIMBNLOHP {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(_)) = self.KDMLFBAJFPI {
         } else {
-            self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(super::NCBIMLPODON::NCBIMLPODON::new()));
+            self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(super::CGFIMBNLOHP::CGFIMBNLOHP::new()));
         }
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref mut v)) => v,
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DOOCPLCLDPD(&mut self) -> super::NCBIMLPODON::NCBIMLPODON {
-        if self.has_DOOCPLCLDPD() {
-            match self.DDBNLHJNANE.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(v)) => v,
+    pub fn take_PIDOELDKGID(&mut self) -> super::CGFIMBNLOHP::CGFIMBNLOHP {
+        if self.has_PIDOELDKGID() {
+            match self.KDMLFBAJFPI.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NCBIMLPODON::NCBIMLPODON::new()
+            super::CGFIMBNLOHP::CGFIMBNLOHP::new()
         }
     }
 
-    // .CJAKIBDIMMJ INHLDIDJGHA = 2039;
+    // .GFCMPLGMAOF IBMDJGHEHNA = 1532;
 
-    pub fn INHLDIDJGHA(&self) -> &super::CJAKIBDIMMJ::CJAKIBDIMMJ {
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v)) => v,
-            _ => <super::CJAKIBDIMMJ::CJAKIBDIMMJ as ::protobuf::Message>::default_instance(),
+    pub fn IBMDJGHEHNA(&self) -> &super::GFCMPLGMAOF::GFCMPLGMAOF {
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(ref v)) => v,
+            _ => <super::GFCMPLGMAOF::GFCMPLGMAOF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_INHLDIDJGHA(&mut self) {
-        self.DDBNLHJNANE = ::std::option::Option::None;
+    pub fn clear_IBMDJGHEHNA(&mut self) {
+        self.KDMLFBAJFPI = ::std::option::Option::None;
     }
 
-    pub fn has_INHLDIDJGHA(&self) -> bool {
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(..)) => true,
+    pub fn has_IBMDJGHEHNA(&self) -> bool {
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_INHLDIDJGHA(&mut self, v: super::CJAKIBDIMMJ::CJAKIBDIMMJ) {
-        self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(v))
+    pub fn set_IBMDJGHEHNA(&mut self, v: super::GFCMPLGMAOF::GFCMPLGMAOF) {
+        self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_INHLDIDJGHA(&mut self) -> &mut super::CJAKIBDIMMJ::CJAKIBDIMMJ {
-        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(_)) = self.DDBNLHJNANE {
+    pub fn mut_IBMDJGHEHNA(&mut self) -> &mut super::GFCMPLGMAOF::GFCMPLGMAOF {
+        if let ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(_)) = self.KDMLFBAJFPI {
         } else {
-            self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(super::CJAKIBDIMMJ::CJAKIBDIMMJ::new()));
+            self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(super::GFCMPLGMAOF::GFCMPLGMAOF::new()));
         }
-        match self.DDBNLHJNANE {
-            ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref mut v)) => v,
+        match self.KDMLFBAJFPI {
+            ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_INHLDIDJGHA(&mut self) -> super::CJAKIBDIMMJ::CJAKIBDIMMJ {
-        if self.has_INHLDIDJGHA() {
-            match self.DDBNLHJNANE.take() {
-                ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(v)) => v,
+    pub fn take_IBMDJGHEHNA(&mut self) -> super::GFCMPLGMAOF::GFCMPLGMAOF {
+        if self.has_IBMDJGHEHNA() {
+            match self.KDMLFBAJFPI.take() {
+                ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CJAKIBDIMMJ::CJAKIBDIMMJ::new()
+            super::GFCMPLGMAOF::GFCMPLGMAOF::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NCBIMLPODON::NCBIMLPODON>(
-            "DOOCPLCLDPD",
-            UpdatePsnSettingsInfoCsReq::has_DOOCPLCLDPD,
-            UpdatePsnSettingsInfoCsReq::DOOCPLCLDPD,
-            UpdatePsnSettingsInfoCsReq::mut_DOOCPLCLDPD,
-            UpdatePsnSettingsInfoCsReq::set_DOOCPLCLDPD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CGFIMBNLOHP::CGFIMBNLOHP>(
+            "PIDOELDKGID",
+            UpdatePsnSettingsInfoCsReq::has_PIDOELDKGID,
+            UpdatePsnSettingsInfoCsReq::PIDOELDKGID,
+            UpdatePsnSettingsInfoCsReq::mut_PIDOELDKGID,
+            UpdatePsnSettingsInfoCsReq::set_PIDOELDKGID,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CJAKIBDIMMJ::CJAKIBDIMMJ>(
-            "INHLDIDJGHA",
-            UpdatePsnSettingsInfoCsReq::has_INHLDIDJGHA,
-            UpdatePsnSettingsInfoCsReq::INHLDIDJGHA,
-            UpdatePsnSettingsInfoCsReq::mut_INHLDIDJGHA,
-            UpdatePsnSettingsInfoCsReq::set_INHLDIDJGHA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GFCMPLGMAOF::GFCMPLGMAOF>(
+            "IBMDJGHEHNA",
+            UpdatePsnSettingsInfoCsReq::has_IBMDJGHEHNA,
+            UpdatePsnSettingsInfoCsReq::IBMDJGHEHNA,
+            UpdatePsnSettingsInfoCsReq::mut_IBMDJGHEHNA,
+            UpdatePsnSettingsInfoCsReq::set_IBMDJGHEHNA,
         ));
-        oneofs.push(update_psn_settings_info_cs_req::DDBNLHJNANE::generated_oneof_descriptor_data());
+        oneofs.push(update_psn_settings_info_cs_req::KDMLFBAJFPI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePsnSettingsInfoCsReq>(
             "UpdatePsnSettingsInfoCsReq",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                11994 => {
-                    self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(is.read_message()?));
+                6850 => {
+                    self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(is.read_message()?));
                 },
-                16314 => {
-                    self.DDBNLHJNANE = ::std::option::Option::Some(update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(is.read_message()?));
+                12258 => {
+                    self.KDMLFBAJFPI = ::std::option::Option::Some(update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.DDBNLHJNANE {
+        if let ::std::option::Option::Some(ref v) = self.KDMLFBAJFPI {
             match v {
-                &update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v) => {
+                &update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v) => {
+                &update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.DDBNLHJNANE {
+        if let ::std::option::Option::Some(ref v) = self.KDMLFBAJFPI {
             match v {
-                &update_psn_settings_info_cs_req::DDBNLHJNANE::DOOCPLCLDPD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1499, v, os)?;
+                &update_psn_settings_info_cs_req::KDMLFBAJFPI::PIDOELDKGID(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(856, v, os)?;
                 },
-                &update_psn_settings_info_cs_req::DDBNLHJNANE::INHLDIDJGHA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2039, v, os)?;
+                &update_psn_settings_info_cs_req::KDMLFBAJFPI::IBMDJGHEHNA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1532, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for UpdatePsnSettingsInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.DDBNLHJNANE = ::std::option::Option::None;
-        self.DDBNLHJNANE = ::std::option::Option::None;
+        self.KDMLFBAJFPI = ::std::option::Option::None;
+        self.KDMLFBAJFPI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePsnSettingsInfoCsReq {
         static instance: UpdatePsnSettingsInfoCsReq = UpdatePsnSettingsInfoCsReq {
-            DDBNLHJNANE: ::std::option::Option::None,
+            KDMLFBAJFPI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,37 +278,37 @@ pub mod update_psn_settings_info_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.DDBNLHJNANE)
-    pub enum DDBNLHJNANE {
-        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.DOOCPLCLDPD)
-        DOOCPLCLDPD(super::super::NCBIMLPODON::NCBIMLPODON),
-        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.INHLDIDJGHA)
-        INHLDIDJGHA(super::super::CJAKIBDIMMJ::CJAKIBDIMMJ),
+    // @@protoc_insertion_point(oneof:UpdatePsnSettingsInfoCsReq.KDMLFBAJFPI)
+    pub enum KDMLFBAJFPI {
+        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.PIDOELDKGID)
+        PIDOELDKGID(super::super::CGFIMBNLOHP::CGFIMBNLOHP),
+        // @@protoc_insertion_point(oneof_field:UpdatePsnSettingsInfoCsReq.IBMDJGHEHNA)
+        IBMDJGHEHNA(super::super::GFCMPLGMAOF::GFCMPLGMAOF),
     }
 
-    impl ::protobuf::Oneof for DDBNLHJNANE {
+    impl ::protobuf::Oneof for KDMLFBAJFPI {
     }
 
-    impl ::protobuf::OneofFull for DDBNLHJNANE {
+    impl ::protobuf::OneofFull for KDMLFBAJFPI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DDBNLHJNANE").unwrap()).clone()
+            descriptor.get(|| <super::UpdatePsnSettingsInfoCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("KDMLFBAJFPI").unwrap()).clone()
         }
     }
 
-    impl DDBNLHJNANE {
+    impl KDMLFBAJFPI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DDBNLHJNANE>("DDBNLHJNANE")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KDMLFBAJFPI>("KDMLFBAJFPI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11CJAKIBDIMMJ.proto\x1a\x11N\
-    CBIMLPODON.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bDOO\
-    CPLCLDPD\x18\xdb\x0b\x20\x01(\x0b2\x0c.NCBIMLPODONH\0R\x0bDOOCPLCLDPD\
-    \x121\n\x0bINHLDIDJGHA\x18\xf7\x0f\x20\x01(\x0b2\x0c.CJAKIBDIMMJH\0R\x0b\
-    INHLDIDJGHAB\r\n\x0bDDBNLHJNANEb\x06proto3\
+    \n\x20UpdatePsnSettingsInfoCsReq.proto\x1a\x11CGFIMBNLOHP.proto\x1a\x11G\
+    FCMPLGMAOF.proto\"\x91\x01\n\x1aUpdatePsnSettingsInfoCsReq\x121\n\x0bPID\
+    OELDKGID\x18\xd8\x06\x20\x01(\x0b2\x0c.CGFIMBNLOHPH\0R\x0bPIDOELDKGID\
+    \x121\n\x0bIBMDJGHEHNA\x18\xfc\x0b\x20\x01(\x0b2\x0c.GFCMPLGMAOFH\0R\x0b\
+    IBMDJGHEHNAB\r\n\x0bKDMLFBAJFPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -326,8 +326,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CJAKIBDIMMJ::file_descriptor().clone());
-            deps.push(super::NCBIMLPODON::file_descriptor().clone());
+            deps.push(super::CGFIMBNLOHP::file_descriptor().clone());
+            deps.push(super::GFCMPLGMAOF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePsnSettingsInfoCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

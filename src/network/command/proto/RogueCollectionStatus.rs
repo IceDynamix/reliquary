@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueCollectionStatus)
 pub enum RogueCollectionStatus {
-    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.ROGUE_COLLECTION_NONE)
-    ROGUE_COLLECTION_NONE = 0,
-    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.ROGUE_COLLECTION_UNLOCKED)
-    ROGUE_COLLECTION_UNLOCKED = 1,
-    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.ROGUE_COLLECTION_DISPLAY)
-    ROGUE_COLLECTION_DISPLAY = 2,
+    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.RogueCollectionStatus_IBBIDELDKKM)
+    RogueCollectionStatus_IBBIDELDKKM = 0,
+    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.RogueCollectionStatus_KFJPBOHGKJK)
+    RogueCollectionStatus_KFJPBOHGKJK = 1,
+    // @@protoc_insertion_point(enum_value:RogueCollectionStatus.RogueCollectionStatus_LMIJIKCPADO)
+    RogueCollectionStatus_LMIJIKCPADO = 2,
 }
 
 impl ::protobuf::Enum for RogueCollectionStatus {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for RogueCollectionStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueCollectionStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_NONE),
-            1 => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_UNLOCKED),
-            2 => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_DISPLAY),
+            0 => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_IBBIDELDKKM),
+            1 => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_KFJPBOHGKJK),
+            2 => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_LMIJIKCPADO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueCollectionStatus> {
         match str {
-            "ROGUE_COLLECTION_NONE" => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_NONE),
-            "ROGUE_COLLECTION_UNLOCKED" => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_UNLOCKED),
-            "ROGUE_COLLECTION_DISPLAY" => ::std::option::Option::Some(RogueCollectionStatus::ROGUE_COLLECTION_DISPLAY),
+            "RogueCollectionStatus_IBBIDELDKKM" => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_IBBIDELDKKM),
+            "RogueCollectionStatus_KFJPBOHGKJK" => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_KFJPBOHGKJK),
+            "RogueCollectionStatus_LMIJIKCPADO" => ::std::option::Option::Some(RogueCollectionStatus::RogueCollectionStatus_LMIJIKCPADO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueCollectionStatus] = &[
-        RogueCollectionStatus::ROGUE_COLLECTION_NONE,
-        RogueCollectionStatus::ROGUE_COLLECTION_UNLOCKED,
-        RogueCollectionStatus::ROGUE_COLLECTION_DISPLAY,
+        RogueCollectionStatus::RogueCollectionStatus_IBBIDELDKKM,
+        RogueCollectionStatus::RogueCollectionStatus_KFJPBOHGKJK,
+        RogueCollectionStatus::RogueCollectionStatus_LMIJIKCPADO,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for RogueCollectionStatus {
 
 impl ::std::default::Default for RogueCollectionStatus {
     fn default() -> Self {
-        RogueCollectionStatus::ROGUE_COLLECTION_NONE
+        RogueCollectionStatus::RogueCollectionStatus_IBBIDELDKKM
     }
 }
 
@@ -92,9 +92,10 @@ impl RogueCollectionStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueCollectionStatus.proto*o\n\x15RogueCollectionStatus\x12\x19\n\
-    \x15ROGUE_COLLECTION_NONE\x10\0\x12\x1d\n\x19ROGUE_COLLECTION_UNLOCKED\
-    \x10\x01\x12\x1c\n\x18ROGUE_COLLECTION_DISPLAY\x10\x02b\x06proto3\
+    \n\x1bRogueCollectionStatus.proto*\x8c\x01\n\x15RogueCollectionStatus\
+    \x12%\n!RogueCollectionStatus_IBBIDELDKKM\x10\0\x12%\n!RogueCollectionSt\
+    atus_KFJPBOHGKJK\x10\x01\x12%\n!RogueCollectionStatus_LMIJIKCPADO\x10\
+    \x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

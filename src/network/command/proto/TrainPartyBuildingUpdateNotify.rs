@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildingUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildingUpdateNotify.PAPIDLEAHAA)
-    pub PAPIDLEAHAA: ::std::vec::Vec<super::PPKGJKIFELK::PPKGJKIFELK>,
+    // @@protoc_insertion_point(field:TrainPartyBuildingUpdateNotify.EDHCGAGMIMK)
+    pub EDHCGAGMIMK: ::std::vec::Vec<super::BJPGBGCAFEJ::BJPGBGCAFEJ>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildingUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartyBuildingUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAPIDLEAHAA",
-            |m: &TrainPartyBuildingUpdateNotify| { &m.PAPIDLEAHAA },
-            |m: &mut TrainPartyBuildingUpdateNotify| { &mut m.PAPIDLEAHAA },
+            "EDHCGAGMIMK",
+            |m: &TrainPartyBuildingUpdateNotify| { &m.EDHCGAGMIMK },
+            |m: &mut TrainPartyBuildingUpdateNotify| { &mut m.EDHCGAGMIMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildingUpdateNotify>(
             "TrainPartyBuildingUpdateNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.PAPIDLEAHAA.push(is.read_message()?);
+                82 => {
+                    self.EDHCGAGMIMK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PAPIDLEAHAA {
+        for value in &self.EDHCGAGMIMK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PAPIDLEAHAA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.EDHCGAGMIMK {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrainPartyBuildingUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.PAPIDLEAHAA.clear();
+        self.EDHCGAGMIMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildingUpdateNotify {
         static instance: TrainPartyBuildingUpdateNotify = TrainPartyBuildingUpdateNotify {
-            PAPIDLEAHAA: ::std::vec::Vec::new(),
+            EDHCGAGMIMK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildingUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$TrainPartyBuildingUpdateNotify.proto\x1a\x11PPKGJKIFELK.proto\"P\n\
-    \x1eTrainPartyBuildingUpdateNotify\x12.\n\x0bPAPIDLEAHAA\x18\r\x20\x03(\
-    \x0b2\x0c.PPKGJKIFELKR\x0bPAPIDLEAHAAb\x06proto3\
+    \n$TrainPartyBuildingUpdateNotify.proto\x1a\x11BJPGBGCAFEJ.proto\"P\n\
+    \x1eTrainPartyBuildingUpdateNotify\x12.\n\x0bEDHCGAGMIMK\x18\n\x20\x03(\
+    \x0b2\x0c.BJPGBGCAFEJR\x0bEDHCGAGMIMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PPKGJKIFELK::file_descriptor().clone());
+            deps.push(super::BJPGBGCAFEJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyBuildingUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

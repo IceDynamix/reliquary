@@ -30,8 +30,8 @@ pub struct TrainPartyPassengerInfo {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyPassengerInfo.passenger_info_list)
     pub passenger_info_list: ::std::vec::Vec<super::TrainPartyPassenger::TrainPartyPassenger>,
-    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.KMIOFBLDJOO)
-    pub KMIOFBLDJOO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.PJKNGBFBIPH)
+    pub PJKNGBFBIPH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyPassengerInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl TrainPartyPassengerInfo {
             |m: &mut TrainPartyPassengerInfo| { &mut m.passenger_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KMIOFBLDJOO",
-            |m: &TrainPartyPassengerInfo| { &m.KMIOFBLDJOO },
-            |m: &mut TrainPartyPassengerInfo| { &mut m.KMIOFBLDJOO },
+            "PJKNGBFBIPH",
+            |m: &TrainPartyPassengerInfo| { &m.PJKNGBFBIPH },
+            |m: &mut TrainPartyPassengerInfo| { &mut m.PJKNGBFBIPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyPassengerInfo>(
             "TrainPartyPassengerInfo",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                122 => {
                     self.passenger_info_list.push(is.read_message()?);
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KMIOFBLDJOO)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PJKNGBFBIPH)?;
                 },
-                72 => {
-                    self.KMIOFBLDJOO.push(is.read_uint32()?);
+                8 => {
+                    self.PJKNGBFBIPH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -104,7 +104,7 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.KMIOFBLDJOO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PJKNGBFBIPH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.passenger_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        os.write_repeated_packed_uint32(9, &self.KMIOFBLDJOO)?;
+        os.write_repeated_packed_uint32(1, &self.PJKNGBFBIPH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
 
     fn clear(&mut self) {
         self.passenger_info_list.clear();
-        self.KMIOFBLDJOO.clear();
+        self.PJKNGBFBIPH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassengerInfo {
         static instance: TrainPartyPassengerInfo = TrainPartyPassengerInfo {
             passenger_info_list: ::std::vec::Vec::new(),
-            KMIOFBLDJOO: ::std::vec::Vec::new(),
+            PJKNGBFBIPH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPassengerInfo.proto\x1a\x19TrainPartyPassenger.proto\"\
     \x81\x01\n\x17TrainPartyPassengerInfo\x12D\n\x13passenger_info_list\x18\
-    \x06\x20\x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoList\x12\x20\
-    \n\x0bKMIOFBLDJOO\x18\t\x20\x03(\rR\x0bKMIOFBLDJOOb\x06proto3\
+    \x0f\x20\x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoList\x12\x20\
+    \n\x0bPJKNGBFBIPH\x18\x01\x20\x03(\rR\x0bPJKNGBFBIPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

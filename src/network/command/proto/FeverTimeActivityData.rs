@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeverTimeActivityData {
     // message fields
-    // @@protoc_insertion_point(field:FeverTimeActivityData.PAIBJJFEJBH)
-    pub PAIBJJFEJBH: u32,
-    // @@protoc_insertion_point(field:FeverTimeActivityData.PGLILHBDNNB)
-    pub PGLILHBDNNB: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
-    // @@protoc_insertion_point(field:FeverTimeActivityData.KOLOBBKOLHH)
-    pub KOLOBBKOLHH: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityData.BGGBJACGAIC)
+    pub BGGBJACGAIC: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityData.HAHKIAAGFIE)
+    pub HAHKIAAGFIE: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityData.OKMAIJHGIMP)
+    pub OKMAIJHGIMP: ::protobuf::EnumOrUnknown<super::NMIMBJMPHOH::NMIMBJMPHOH>,
     // special fields
     // @@protoc_insertion_point(special_field:FeverTimeActivityData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl FeverTimeActivityData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PAIBJJFEJBH",
-            |m: &FeverTimeActivityData| { &m.PAIBJJFEJBH },
-            |m: &mut FeverTimeActivityData| { &mut m.PAIBJJFEJBH },
+            "BGGBJACGAIC",
+            |m: &FeverTimeActivityData| { &m.BGGBJACGAIC },
+            |m: &mut FeverTimeActivityData| { &mut m.BGGBJACGAIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGLILHBDNNB",
-            |m: &FeverTimeActivityData| { &m.PGLILHBDNNB },
-            |m: &mut FeverTimeActivityData| { &mut m.PGLILHBDNNB },
+            "HAHKIAAGFIE",
+            |m: &FeverTimeActivityData| { &m.HAHKIAAGFIE },
+            |m: &mut FeverTimeActivityData| { &mut m.HAHKIAAGFIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KOLOBBKOLHH",
-            |m: &FeverTimeActivityData| { &m.KOLOBBKOLHH },
-            |m: &mut FeverTimeActivityData| { &mut m.KOLOBBKOLHH },
+            "OKMAIJHGIMP",
+            |m: &FeverTimeActivityData| { &m.OKMAIJHGIMP },
+            |m: &mut FeverTimeActivityData| { &mut m.OKMAIJHGIMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FeverTimeActivityData>(
             "FeverTimeActivityData",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FeverTimeActivityData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.PAIBJJFEJBH = is.read_uint32()?;
+                64 => {
+                    self.BGGBJACGAIC = is.read_uint32()?;
                 },
-                56 => {
-                    self.PGLILHBDNNB = is.read_enum_or_unknown()?;
+                32 => {
+                    self.HAHKIAAGFIE = is.read_uint32()?;
                 },
-                88 => {
-                    self.KOLOBBKOLHH = is.read_uint32()?;
+                96 => {
+                    self.OKMAIJHGIMP = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FeverTimeActivityData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PAIBJJFEJBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PAIBJJFEJBH);
+        if self.BGGBJACGAIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BGGBJACGAIC);
         }
-        if self.PGLILHBDNNB != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            my_size += ::protobuf::rt::int32_size(7, self.PGLILHBDNNB.value());
+        if self.HAHKIAAGFIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HAHKIAAGFIE);
         }
-        if self.KOLOBBKOLHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KOLOBBKOLHH);
+        if self.OKMAIJHGIMP != ::protobuf::EnumOrUnknown::new(super::NMIMBJMPHOH::NMIMBJMPHOH::NMIMBJMPHOH_MNBKNJBGGKO) {
+            my_size += ::protobuf::rt::int32_size(12, self.OKMAIJHGIMP.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FeverTimeActivityData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PAIBJJFEJBH != 0 {
-            os.write_uint32(3, self.PAIBJJFEJBH)?;
+        if self.BGGBJACGAIC != 0 {
+            os.write_uint32(8, self.BGGBJACGAIC)?;
         }
-        if self.PGLILHBDNNB != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.PGLILHBDNNB))?;
+        if self.HAHKIAAGFIE != 0 {
+            os.write_uint32(4, self.HAHKIAAGFIE)?;
         }
-        if self.KOLOBBKOLHH != 0 {
-            os.write_uint32(11, self.KOLOBBKOLHH)?;
+        if self.OKMAIJHGIMP != ::protobuf::EnumOrUnknown::new(super::NMIMBJMPHOH::NMIMBJMPHOH::NMIMBJMPHOH_MNBKNJBGGKO) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.OKMAIJHGIMP))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FeverTimeActivityData {
     }
 
     fn clear(&mut self) {
-        self.PAIBJJFEJBH = 0;
-        self.PGLILHBDNNB = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FEVER_TIME_BATTLE_RANK_C);
-        self.KOLOBBKOLHH = 0;
+        self.BGGBJACGAIC = 0;
+        self.HAHKIAAGFIE = 0;
+        self.OKMAIJHGIMP = ::protobuf::EnumOrUnknown::new(super::NMIMBJMPHOH::NMIMBJMPHOH::NMIMBJMPHOH_MNBKNJBGGKO);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeverTimeActivityData {
         static instance: FeverTimeActivityData = FeverTimeActivityData {
-            PAIBJJFEJBH: 0,
-            PGLILHBDNNB: ::protobuf::EnumOrUnknown::from_i32(0),
-            KOLOBBKOLHH: 0,
+            BGGBJACGAIC: 0,
+            HAHKIAAGFIE: 0,
+            OKMAIJHGIMP: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for FeverTimeActivityData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bFeverTimeActivityData.proto\x1a\x19FeverTimeBattleRank.proto\"\x93\
-    \x01\n\x15FeverTimeActivityData\x12\x20\n\x0bPAIBJJFEJBH\x18\x03\x20\x01\
-    (\rR\x0bPAIBJJFEJBH\x126\n\x0bPGLILHBDNNB\x18\x07\x20\x01(\x0e2\x14.Feve\
-    rTimeBattleRankR\x0bPGLILHBDNNB\x12\x20\n\x0bKOLOBBKOLHH\x18\x0b\x20\x01\
-    (\rR\x0bKOLOBBKOLHHb\x06proto3\
+    \n\x1bFeverTimeActivityData.proto\x1a\x11NMIMBJMPHOH.proto\"\x8b\x01\n\
+    \x15FeverTimeActivityData\x12\x20\n\x0bBGGBJACGAIC\x18\x08\x20\x01(\rR\
+    \x0bBGGBJACGAIC\x12\x20\n\x0bHAHKIAAGFIE\x18\x04\x20\x01(\rR\x0bHAHKIAAG\
+    FIE\x12.\n\x0bOKMAIJHGIMP\x18\x0c\x20\x01(\x0e2\x0c.NMIMBJMPHOHR\x0bOKMA\
+    IJHGIMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FeverTimeBattleRank::file_descriptor().clone());
+            deps.push(super::NMIMBJMPHOH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FeverTimeActivityData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

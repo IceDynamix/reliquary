@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournAreaInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournAreaInfo.is_reward_taken)
-    pub is_reward_taken: bool,
-    // @@protoc_insertion_point(field:RogueTournAreaInfo.PCAIMLBLECB)
-    pub PCAIMLBLECB: bool,
-    // @@protoc_insertion_point(field:RogueTournAreaInfo.JFJFGJGPMNN)
-    pub JFJFGJGPMNN: bool,
-    // @@protoc_insertion_point(field:RogueTournAreaInfo.NEOBIENOJKK)
-    pub NEOBIENOJKK: bool,
+    // @@protoc_insertion_point(field:RogueTournAreaInfo.EBEOBMCOMPC)
+    pub EBEOBMCOMPC: bool,
+    // @@protoc_insertion_point(field:RogueTournAreaInfo.is_taken_reward)
+    pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:RogueTournAreaInfo.MAGPFBDDFGJ)
+    pub MAGPFBDDFGJ: bool,
     // @@protoc_insertion_point(field:RogueTournAreaInfo.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:RogueTournAreaInfo.completed)
+    pub completed: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournAreaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl RogueTournAreaInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_reward_taken",
-            |m: &RogueTournAreaInfo| { &m.is_reward_taken },
-            |m: &mut RogueTournAreaInfo| { &mut m.is_reward_taken },
+            "EBEOBMCOMPC",
+            |m: &RogueTournAreaInfo| { &m.EBEOBMCOMPC },
+            |m: &mut RogueTournAreaInfo| { &mut m.EBEOBMCOMPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PCAIMLBLECB",
-            |m: &RogueTournAreaInfo| { &m.PCAIMLBLECB },
-            |m: &mut RogueTournAreaInfo| { &mut m.PCAIMLBLECB },
+            "is_taken_reward",
+            |m: &RogueTournAreaInfo| { &m.is_taken_reward },
+            |m: &mut RogueTournAreaInfo| { &mut m.is_taken_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFJFGJGPMNN",
-            |m: &RogueTournAreaInfo| { &m.JFJFGJGPMNN },
-            |m: &mut RogueTournAreaInfo| { &mut m.JFJFGJGPMNN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEOBIENOJKK",
-            |m: &RogueTournAreaInfo| { &m.NEOBIENOJKK },
-            |m: &mut RogueTournAreaInfo| { &mut m.NEOBIENOJKK },
+            "MAGPFBDDFGJ",
+            |m: &RogueTournAreaInfo| { &m.MAGPFBDDFGJ },
+            |m: &mut RogueTournAreaInfo| { &mut m.MAGPFBDDFGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &RogueTournAreaInfo| { &m.area_id },
             |m: &mut RogueTournAreaInfo| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "completed",
+            |m: &RogueTournAreaInfo| { &m.completed },
+            |m: &mut RogueTournAreaInfo| { &mut m.completed },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournAreaInfo>(
             "RogueTournAreaInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueTournAreaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_reward_taken = is.read_bool()?;
+                64 => {
+                    self.EBEOBMCOMPC = is.read_bool()?;
                 },
-                40 => {
-                    self.PCAIMLBLECB = is.read_bool()?;
+                56 => {
+                    self.is_taken_reward = is.read_bool()?;
+                },
+                112 => {
+                    self.MAGPFBDDFGJ = is.read_bool()?;
+                },
+                24 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 72 => {
-                    self.JFJFGJGPMNN = is.read_bool()?;
-                },
-                80 => {
-                    self.NEOBIENOJKK = is.read_bool()?;
-                },
-                104 => {
-                    self.area_id = is.read_uint32()?;
+                    self.completed = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for RogueTournAreaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_reward_taken != false {
+        if self.EBEOBMCOMPC != false {
             my_size += 1 + 1;
         }
-        if self.PCAIMLBLECB != false {
+        if self.is_taken_reward != false {
             my_size += 1 + 1;
         }
-        if self.JFJFGJGPMNN != false {
-            my_size += 1 + 1;
-        }
-        if self.NEOBIENOJKK != false {
+        if self.MAGPFBDDFGJ != false {
             my_size += 1 + 1;
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
+        }
+        if self.completed != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for RogueTournAreaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_reward_taken != false {
-            os.write_bool(3, self.is_reward_taken)?;
+        if self.EBEOBMCOMPC != false {
+            os.write_bool(8, self.EBEOBMCOMPC)?;
         }
-        if self.PCAIMLBLECB != false {
-            os.write_bool(5, self.PCAIMLBLECB)?;
+        if self.is_taken_reward != false {
+            os.write_bool(7, self.is_taken_reward)?;
         }
-        if self.JFJFGJGPMNN != false {
-            os.write_bool(9, self.JFJFGJGPMNN)?;
-        }
-        if self.NEOBIENOJKK != false {
-            os.write_bool(10, self.NEOBIENOJKK)?;
+        if self.MAGPFBDDFGJ != false {
+            os.write_bool(14, self.MAGPFBDDFGJ)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(13, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
+        }
+        if self.completed != false {
+            os.write_bool(9, self.completed)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for RogueTournAreaInfo {
     }
 
     fn clear(&mut self) {
-        self.is_reward_taken = false;
-        self.PCAIMLBLECB = false;
-        self.JFJFGJGPMNN = false;
-        self.NEOBIENOJKK = false;
+        self.EBEOBMCOMPC = false;
+        self.is_taken_reward = false;
+        self.MAGPFBDDFGJ = false;
         self.area_id = 0;
+        self.completed = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournAreaInfo {
         static instance: RogueTournAreaInfo = RogueTournAreaInfo {
-            is_reward_taken: false,
-            PCAIMLBLECB: false,
-            JFJFGJGPMNN: false,
-            NEOBIENOJKK: false,
+            EBEOBMCOMPC: false,
+            is_taken_reward: false,
+            MAGPFBDDFGJ: false,
             area_id: 0,
+            completed: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournAreaInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RogueTournAreaInfo.proto\"\xbb\x01\n\x12RogueTournAreaInfo\x12&\n\
-    \x0fis_reward_taken\x18\x03\x20\x01(\x08R\risRewardTaken\x12\x20\n\x0bPC\
-    AIMLBLECB\x18\x05\x20\x01(\x08R\x0bPCAIMLBLECB\x12\x20\n\x0bJFJFGJGPMNN\
-    \x18\t\x20\x01(\x08R\x0bJFJFGJGPMNN\x12\x20\n\x0bNEOBIENOJKK\x18\n\x20\
-    \x01(\x08R\x0bNEOBIENOJKK\x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06area\
-    Idb\x06proto3\
+    \n\x18RogueTournAreaInfo.proto\"\xb7\x01\n\x12RogueTournAreaInfo\x12\x20\
+    \n\x0bEBEOBMCOMPC\x18\x08\x20\x01(\x08R\x0bEBEOBMCOMPC\x12&\n\x0fis_take\
+    n_reward\x18\x07\x20\x01(\x08R\risTakenReward\x12\x20\n\x0bMAGPFBDDFGJ\
+    \x18\x0e\x20\x01(\x08R\x0bMAGPFBDDFGJ\x12\x17\n\x07area_id\x18\x03\x20\
+    \x01(\rR\x06areaId\x12\x1c\n\tcompleted\x18\t\x20\x01(\x08R\tcompletedb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

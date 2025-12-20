@@ -36,12 +36,12 @@ pub struct GamecoreConfig {
     pub is_auto_fight: bool,
     // @@protoc_insertion_point(field:GamecoreConfig.csv_path)
     pub csv_path: ::std::string::String,
-    // @@protoc_insertion_point(field:GamecoreConfig.is_battle_simulator_auto_fight)
-    pub is_battle_simulator_auto_fight: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.FJKKJGGAFIA)
-    pub FJKKJGGAFIA: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.JFBIBFGIDME)
-    pub JFBIBFGIDME: u32,
+    // @@protoc_insertion_point(field:GamecoreConfig.LPJHGFOFJFI)
+    pub LPJHGFOFJFI: bool,
+    // @@protoc_insertion_point(field:GamecoreConfig.EDECGMHAIKE)
+    pub EDECGMHAIKE: bool,
+    // @@protoc_insertion_point(field:GamecoreConfig.OIIMNMNCKMH)
+    pub OIIMNMNCKMH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GamecoreConfig.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -82,19 +82,19 @@ impl GamecoreConfig {
             |m: &mut GamecoreConfig| { &mut m.csv_path },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_battle_simulator_auto_fight",
-            |m: &GamecoreConfig| { &m.is_battle_simulator_auto_fight },
-            |m: &mut GamecoreConfig| { &mut m.is_battle_simulator_auto_fight },
+            "LPJHGFOFJFI",
+            |m: &GamecoreConfig| { &m.LPJHGFOFJFI },
+            |m: &mut GamecoreConfig| { &mut m.LPJHGFOFJFI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJKKJGGAFIA",
-            |m: &GamecoreConfig| { &m.FJKKJGGAFIA },
-            |m: &mut GamecoreConfig| { &mut m.FJKKJGGAFIA },
+            "EDECGMHAIKE",
+            |m: &GamecoreConfig| { &m.EDECGMHAIKE },
+            |m: &mut GamecoreConfig| { &mut m.EDECGMHAIKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFBIBFGIDME",
-            |m: &GamecoreConfig| { &m.JFBIBFGIDME },
-            |m: &mut GamecoreConfig| { &mut m.JFBIBFGIDME },
+            "OIIMNMNCKMH",
+            |m: &GamecoreConfig| { &m.OIIMNMNCKMH },
+            |m: &mut GamecoreConfig| { &mut m.OIIMNMNCKMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GamecoreConfig>(
             "GamecoreConfig",
@@ -127,13 +127,13 @@ impl ::protobuf::Message for GamecoreConfig {
                     self.csv_path = is.read_string()?;
                 },
                 40 => {
-                    self.is_battle_simulator_auto_fight = is.read_bool()?;
+                    self.LPJHGFOFJFI = is.read_bool()?;
                 },
                 48 => {
-                    self.FJKKJGGAFIA = is.read_bool()?;
+                    self.EDECGMHAIKE = is.read_bool()?;
                 },
                 56 => {
-                    self.JFBIBFGIDME = is.read_uint32()?;
+                    self.OIIMNMNCKMH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,14 +159,14 @@ impl ::protobuf::Message for GamecoreConfig {
         if !self.csv_path.is_empty() {
             my_size += ::protobuf::rt::string_size(4, &self.csv_path);
         }
-        if self.is_battle_simulator_auto_fight != false {
+        if self.LPJHGFOFJFI != false {
             my_size += 1 + 1;
         }
-        if self.FJKKJGGAFIA != false {
+        if self.EDECGMHAIKE != false {
             my_size += 1 + 1;
         }
-        if self.JFBIBFGIDME != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JFBIBFGIDME);
+        if self.OIIMNMNCKMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.OIIMNMNCKMH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -186,14 +186,14 @@ impl ::protobuf::Message for GamecoreConfig {
         if !self.csv_path.is_empty() {
             os.write_string(4, &self.csv_path)?;
         }
-        if self.is_battle_simulator_auto_fight != false {
-            os.write_bool(5, self.is_battle_simulator_auto_fight)?;
+        if self.LPJHGFOFJFI != false {
+            os.write_bool(5, self.LPJHGFOFJFI)?;
         }
-        if self.FJKKJGGAFIA != false {
-            os.write_bool(6, self.FJKKJGGAFIA)?;
+        if self.EDECGMHAIKE != false {
+            os.write_bool(6, self.EDECGMHAIKE)?;
         }
-        if self.JFBIBFGIDME != 0 {
-            os.write_uint32(7, self.JFBIBFGIDME)?;
+        if self.OIIMNMNCKMH != 0 {
+            os.write_uint32(7, self.OIIMNMNCKMH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -216,9 +216,9 @@ impl ::protobuf::Message for GamecoreConfig {
         self.max_turn_cnt = 0;
         self.is_auto_fight = false;
         self.csv_path.clear();
-        self.is_battle_simulator_auto_fight = false;
-        self.FJKKJGGAFIA = false;
-        self.JFBIBFGIDME = 0;
+        self.LPJHGFOFJFI = false;
+        self.EDECGMHAIKE = false;
+        self.OIIMNMNCKMH = 0;
         self.special_fields.clear();
     }
 
@@ -228,9 +228,9 @@ impl ::protobuf::Message for GamecoreConfig {
             max_turn_cnt: 0,
             is_auto_fight: false,
             csv_path: ::std::string::String::new(),
-            is_battle_simulator_auto_fight: false,
-            FJKKJGGAFIA: false,
-            JFBIBFGIDME: 0,
+            LPJHGFOFJFI: false,
+            EDECGMHAIKE: false,
+            OIIMNMNCKMH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,14 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for GamecoreConfig {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14GamecoreConfig.proto\"\x9f\x02\n\x0eGamecoreConfig\x12$\n\x0eis_sk\
+    \n\x14GamecoreConfig.proto\"\xfd\x01\n\x0eGamecoreConfig\x12$\n\x0eis_sk\
     ip_verify\x18\x01\x20\x01(\x08R\x0cisSkipVerify\x12\x20\n\x0cmax_turn_cn\
     t\x18\x02\x20\x01(\rR\nmaxTurnCnt\x12\"\n\ris_auto_fight\x18\x03\x20\x01\
     (\x08R\x0bisAutoFight\x12\x19\n\x08csv_path\x18\x04\x20\x01(\tR\x07csvPa\
-    th\x12B\n\x1eis_battle_simulator_auto_fight\x18\x05\x20\x01(\x08R\x1aisB\
-    attleSimulatorAutoFight\x12\x20\n\x0bFJKKJGGAFIA\x18\x06\x20\x01(\x08R\
-    \x0bFJKKJGGAFIA\x12\x20\n\x0bJFBIBFGIDME\x18\x07\x20\x01(\rR\x0bJFBIBFGI\
-    DMEb\x06proto3\
+    th\x12\x20\n\x0bLPJHGFOFJFI\x18\x05\x20\x01(\x08R\x0bLPJHGFOFJFI\x12\x20\
+    \n\x0bEDECGMHAIKE\x18\x06\x20\x01(\x08R\x0bEDECGMHAIKE\x12\x20\n\x0bOIIM\
+    NMNCKMH\x18\x07\x20\x01(\rR\x0bOIIMNMNCKMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

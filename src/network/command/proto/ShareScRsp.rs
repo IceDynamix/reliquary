@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ShareScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ShareScRsp.share_data)
-    pub share_data: ::protobuf::MessageField<super::ShareData::ShareData>,
     // @@protoc_insertion_point(field:ShareScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ShareScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ShareScRsp.OBJDJBJCJBI)
+    pub OBJDJBJCJBI: ::protobuf::MessageField<super::OMBDCIHGFDA::OMBDCIHGFDA>,
     // special fields
     // @@protoc_insertion_point(special_field:ShareScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl ShareScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ShareData::ShareData>(
-            "share_data",
-            |m: &ShareScRsp| { &m.share_data },
-            |m: &mut ShareScRsp| { &mut m.share_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &ShareScRsp| { &m.reward },
@@ -67,6 +62,11 @@ impl ShareScRsp {
             "retcode",
             |m: &ShareScRsp| { &m.retcode },
             |m: &mut ShareScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMBDCIHGFDA::OMBDCIHGFDA>(
+            "OBJDJBJCJBI",
+            |m: &ShareScRsp| { &m.OBJDJBJCJBI },
+            |m: &mut ShareScRsp| { &mut m.OBJDJBJCJBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ShareScRsp>(
             "ShareScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ShareScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.share_data)?;
-                },
-                34 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OBJDJBJCJBI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for ShareScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.share_data.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if let Some(v) = self.OBJDJBJCJBI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ShareScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.share_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if let Some(v) = self.OBJDJBJCJBI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ShareScRsp {
     }
 
     fn clear(&mut self) {
-        self.share_data.clear();
         self.reward.clear();
         self.retcode = 0;
+        self.OBJDJBJCJBI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ShareScRsp {
         static instance: ShareScRsp = ShareScRsp {
-            share_data: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
             retcode: 0,
+            OBJDJBJCJBI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for ShareScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10ShareScRsp.proto\x1a\x0eItemList.proto\x1a\x0fShareData.proto\"t\n\
-    \nShareScRsp\x12)\n\nshare_data\x18\x02\x20\x01(\x0b2\n.ShareDataR\tshar\
-    eData\x12!\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x10ShareScRsp.proto\x1a\x0eItemList.proto\x1a\x11OMBDCIHGFDA.proto\"y\
+    \n\nShareScRsp\x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06rew\
+    ard\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bOBJDJBJC\
+    JBI\x18\r\x20\x01(\x0b2\x0c.OMBDCIHGFDAR\x0bOBJDJBJCJBIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::ShareData::file_descriptor().clone());
+            deps.push(super::OMBDCIHGFDA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ShareScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

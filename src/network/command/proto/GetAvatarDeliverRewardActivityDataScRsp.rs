@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDeliverRewardActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDeliverRewardActivityDataScRsp.is_reward_taken)
-    pub is_reward_taken: bool,
-    // @@protoc_insertion_point(field:GetAvatarDeliverRewardActivityDataScRsp.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:GetAvatarDeliverRewardActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAvatarDeliverRewardActivityDataScRsp.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:GetAvatarDeliverRewardActivityDataScRsp.is_taken_reward)
+    pub is_taken_reward: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetAvatarDeliverRewardActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl GetAvatarDeliverRewardActivityDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_reward_taken",
-            |m: &GetAvatarDeliverRewardActivityDataScRsp| { &m.is_reward_taken },
-            |m: &mut GetAvatarDeliverRewardActivityDataScRsp| { &mut m.is_reward_taken },
+            "retcode",
+            |m: &GetAvatarDeliverRewardActivityDataScRsp| { &m.retcode },
+            |m: &mut GetAvatarDeliverRewardActivityDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -64,9 +64,9 @@ impl GetAvatarDeliverRewardActivityDataScRsp {
             |m: &mut GetAvatarDeliverRewardActivityDataScRsp| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetAvatarDeliverRewardActivityDataScRsp| { &m.retcode },
-            |m: &mut GetAvatarDeliverRewardActivityDataScRsp| { &mut m.retcode },
+            "is_taken_reward",
+            |m: &GetAvatarDeliverRewardActivityDataScRsp| { &m.is_taken_reward },
+            |m: &mut GetAvatarDeliverRewardActivityDataScRsp| { &mut m.is_taken_reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAvatarDeliverRewardActivityDataScRsp>(
             "GetAvatarDeliverRewardActivityDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetAvatarDeliverRewardActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.is_reward_taken = is.read_bool()?;
-                },
                 88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                40 => {
+                    self.is_taken_reward = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetAvatarDeliverRewardActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_reward_taken != false {
-            my_size += 1 + 1;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        if self.is_taken_reward != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GetAvatarDeliverRewardActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_reward_taken != false {
-            os.write_bool(3, self.is_reward_taken)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(11, self.avatar_id)?;
+            os.write_uint32(10, self.avatar_id)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.is_taken_reward != false {
+            os.write_bool(5, self.is_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GetAvatarDeliverRewardActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_reward_taken = false;
-        self.avatar_id = 0;
         self.retcode = 0;
+        self.avatar_id = 0;
+        self.is_taken_reward = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDeliverRewardActivityDataScRsp {
         static instance: GetAvatarDeliverRewardActivityDataScRsp = GetAvatarDeliverRewardActivityDataScRsp {
-            is_reward_taken: false,
-            avatar_id: 0,
             retcode: 0,
+            avatar_id: 0,
+            is_taken_reward: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDeliverRewardActivityDataSc
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-GetAvatarDeliverRewardActivityDataScRsp.proto\"\x88\x01\n'GetAvatarDe\
-    liverRewardActivityDataScRsp\x12&\n\x0fis_reward_taken\x18\x03\x20\x01(\
-    \x08R\risRewardTaken\x12\x1b\n\tavatar_id\x18\x0b\x20\x01(\rR\x08avatarI\
-    d\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    liverRewardActivityDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
+    \x07retcode\x12\x1b\n\tavatar_id\x18\n\x20\x01(\rR\x08avatarId\x12&\n\
+    \x0fis_taken_reward\x18\x05\x20\x01(\x08R\risTakenRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

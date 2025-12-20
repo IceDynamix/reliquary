@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyMoveScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.MCLMDMIHJLC)
-    pub MCLMDMIHJLC: ::std::vec::Vec<super::KKNLMCJIGAF::KKNLMCJIGAF>,
-    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.HEEIELNPNPO)
-    pub HEEIELNPNPO: u32,
+    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.BLEPADAPKLI)
+    pub BLEPADAPKLI: ::std::vec::Vec<super::PLIPEGEPEJB::PLIPEGEPEJB>,
+    // @@protoc_insertion_point(field:TrainPartyMoveScNotify.NCKDPLDIACB)
+    pub NCKDPLDIACB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainPartyMoveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MCLMDMIHJLC",
-            |m: &TrainPartyMoveScNotify| { &m.MCLMDMIHJLC },
-            |m: &mut TrainPartyMoveScNotify| { &mut m.MCLMDMIHJLC },
+            "BLEPADAPKLI",
+            |m: &TrainPartyMoveScNotify| { &m.BLEPADAPKLI },
+            |m: &mut TrainPartyMoveScNotify| { &mut m.BLEPADAPKLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEEIELNPNPO",
-            |m: &TrainPartyMoveScNotify| { &m.HEEIELNPNPO },
-            |m: &mut TrainPartyMoveScNotify| { &mut m.HEEIELNPNPO },
+            "NCKDPLDIACB",
+            |m: &TrainPartyMoveScNotify| { &m.NCKDPLDIACB },
+            |m: &mut TrainPartyMoveScNotify| { &mut m.NCKDPLDIACB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyMoveScNotify>(
             "TrainPartyMoveScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.MCLMDMIHJLC.push(is.read_message()?);
+                58 => {
+                    self.BLEPADAPKLI.push(is.read_message()?);
                 },
-                96 => {
-                    self.HEEIELNPNPO = is.read_uint32()?;
+                16 => {
+                    self.NCKDPLDIACB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MCLMDMIHJLC {
+        for value in &self.BLEPADAPKLI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HEEIELNPNPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HEEIELNPNPO);
+        if self.NCKDPLDIACB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NCKDPLDIACB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MCLMDMIHJLC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.BLEPADAPKLI {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.HEEIELNPNPO != 0 {
-            os.write_uint32(12, self.HEEIELNPNPO)?;
+        if self.NCKDPLDIACB != 0 {
+            os.write_uint32(2, self.NCKDPLDIACB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TrainPartyMoveScNotify {
     }
 
     fn clear(&mut self) {
-        self.MCLMDMIHJLC.clear();
-        self.HEEIELNPNPO = 0;
+        self.BLEPADAPKLI.clear();
+        self.NCKDPLDIACB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyMoveScNotify {
         static instance: TrainPartyMoveScNotify = TrainPartyMoveScNotify {
-            MCLMDMIHJLC: ::std::vec::Vec::new(),
-            HEEIELNPNPO: 0,
+            BLEPADAPKLI: ::std::vec::Vec::new(),
+            NCKDPLDIACB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyMoveScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTrainPartyMoveScNotify.proto\x1a\x11KKNLMCJIGAF.proto\"j\n\x16Trai\
-    nPartyMoveScNotify\x12.\n\x0bMCLMDMIHJLC\x18\x06\x20\x03(\x0b2\x0c.KKNLM\
-    CJIGAFR\x0bMCLMDMIHJLC\x12\x20\n\x0bHEEIELNPNPO\x18\x0c\x20\x01(\rR\x0bH\
-    EEIELNPNPOb\x06proto3\
+    \n\x1cTrainPartyMoveScNotify.proto\x1a\x11PLIPEGEPEJB.proto\"j\n\x16Trai\
+    nPartyMoveScNotify\x12.\n\x0bBLEPADAPKLI\x18\x07\x20\x03(\x0b2\x0c.PLIPE\
+    GEPEJBR\x0bBLEPADAPKLI\x12\x20\n\x0bNCKDPLDIACB\x18\x02\x20\x01(\rR\x0bN\
+    CKDPLDIACBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KKNLMCJIGAF::file_descriptor().clone());
+            deps.push(super::PLIPEGEPEJB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyMoveScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EntityBuffInfo {
     // message fields
-    // @@protoc_insertion_point(field:EntityBuffInfo.entity_id)
-    pub entity_id: u32,
     // @@protoc_insertion_point(field:EntityBuffInfo.buff_list)
     pub buff_list: ::std::vec::Vec<super::BuffInfo::BuffInfo>,
+    // @@protoc_insertion_point(field:EntityBuffInfo.entity_id)
+    pub entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EntityBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EntityBuffInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &EntityBuffInfo| { &m.entity_id },
-            |m: &mut EntityBuffInfo| { &mut m.entity_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &EntityBuffInfo| { &m.buff_list },
             |m: &mut EntityBuffInfo| { &mut m.buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entity_id",
+            |m: &EntityBuffInfo| { &m.entity_id },
+            |m: &mut EntityBuffInfo| { &mut m.entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EntityBuffInfo>(
             "EntityBuffInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EntityBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                114 => {
+                    self.buff_list.push(is.read_message()?);
+                },
                 96 => {
                     self.entity_id = is.read_uint32()?;
-                },
-                106 => {
-                    self.buff_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for EntityBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.entity_id);
-        }
         for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.entity_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         if self.entity_id != 0 {
             os.write_uint32(12, self.entity_id)?;
         }
-        for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EntityBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.entity_id = 0;
         self.buff_list.clear();
+        self.entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EntityBuffInfo {
         static instance: EntityBuffInfo = EntityBuffInfo {
-            entity_id: 0,
             buff_list: ::std::vec::Vec::new(),
+            entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EntityBuffInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14EntityBuffInfo.proto\x1a\x0eBuffInfo.proto\"U\n\x0eEntityBuffInfo\
-    \x12\x1b\n\tentity_id\x18\x0c\x20\x01(\rR\x08entityId\x12&\n\tbuff_list\
-    \x18\r\x20\x03(\x0b2\t.BuffInfoR\x08buffListb\x06proto3\
+    \x12&\n\tbuff_list\x18\x0e\x20\x03(\x0b2\t.BuffInfoR\x08buffList\x12\x1b\
+    \n\tentity_id\x18\x0c\x20\x01(\rR\x08entityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

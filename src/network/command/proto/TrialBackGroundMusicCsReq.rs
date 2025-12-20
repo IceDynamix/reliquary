@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrialBackGroundMusicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrialBackGroundMusicCsReq.trial_music_id)
-    pub trial_music_id: u32,
+    // @@protoc_insertion_point(field:TrialBackGroundMusicCsReq.AFLNJLKBEMO)
+    pub AFLNJLKBEMO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrialBackGroundMusicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrialBackGroundMusicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trial_music_id",
-            |m: &TrialBackGroundMusicCsReq| { &m.trial_music_id },
-            |m: &mut TrialBackGroundMusicCsReq| { &mut m.trial_music_id },
+            "AFLNJLKBEMO",
+            |m: &TrialBackGroundMusicCsReq| { &m.AFLNJLKBEMO },
+            |m: &mut TrialBackGroundMusicCsReq| { &mut m.AFLNJLKBEMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrialBackGroundMusicCsReq>(
             "TrialBackGroundMusicCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrialBackGroundMusicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.trial_music_id = is.read_uint32()?;
+                16 => {
+                    self.AFLNJLKBEMO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TrialBackGroundMusicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.trial_music_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.trial_music_id);
+        if self.AFLNJLKBEMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AFLNJLKBEMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TrialBackGroundMusicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.trial_music_id != 0 {
-            os.write_uint32(11, self.trial_music_id)?;
+        if self.AFLNJLKBEMO != 0 {
+            os.write_uint32(2, self.AFLNJLKBEMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TrialBackGroundMusicCsReq {
     }
 
     fn clear(&mut self) {
-        self.trial_music_id = 0;
+        self.AFLNJLKBEMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrialBackGroundMusicCsReq {
         static instance: TrialBackGroundMusicCsReq = TrialBackGroundMusicCsReq {
-            trial_music_id: 0,
+            AFLNJLKBEMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for TrialBackGroundMusicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fTrialBackGroundMusicCsReq.proto\"A\n\x19TrialBackGroundMusicCsReq\
-    \x12$\n\x0etrial_music_id\x18\x0b\x20\x01(\rR\x0ctrialMusicIdb\x06proto3\
+    \n\x1fTrialBackGroundMusicCsReq.proto\"=\n\x19TrialBackGroundMusicCsReq\
+    \x12\x20\n\x0bAFLNJLKBEMO\x18\x02\x20\x01(\rR\x0bAFLNJLKBEMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

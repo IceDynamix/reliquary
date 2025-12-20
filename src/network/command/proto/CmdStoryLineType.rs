@@ -30,15 +30,15 @@ pub enum CmdStoryLineType {
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineTypeNone)
     CmdStoryLineTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineTrialAvatarChangeScNotify)
-    CmdStoryLineTrialAvatarChangeScNotify = 6294,
+    CmdStoryLineTrialAvatarChangeScNotify = 6238,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdGetStoryLineInfoCsReq)
-    CmdGetStoryLineInfoCsReq = 6299,
+    CmdGetStoryLineInfoCsReq = 6247,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdChangeStoryLineFinishScNotify)
-    CmdChangeStoryLineFinishScNotify = 6286,
+    CmdChangeStoryLineFinishScNotify = 6289,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdStoryLineInfoScNotify)
-    CmdStoryLineInfoScNotify = 6298,
+    CmdStoryLineInfoScNotify = 6209,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.CmdGetStoryLineInfoScRsp)
-    CmdGetStoryLineInfoScRsp = 6223,
+    CmdGetStoryLineInfoScRsp = 6211,
 }
 
 impl ::protobuf::Enum for CmdStoryLineType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdStoryLineType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdStoryLineType> {
         match value {
             0 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTypeNone),
-            6294 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify),
-            6299 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoCsReq),
-            6286 => ::std::option::Option::Some(CmdStoryLineType::CmdChangeStoryLineFinishScNotify),
-            6298 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
-            6223 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
+            6238 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineTrialAvatarChangeScNotify),
+            6247 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoCsReq),
+            6289 => ::std::option::Option::Some(CmdStoryLineType::CmdChangeStoryLineFinishScNotify),
+            6209 => ::std::option::Option::Some(CmdStoryLineType::CmdStoryLineInfoScNotify),
+            6211 => ::std::option::Option::Some(CmdStoryLineType::CmdGetStoryLineInfoScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -116,9 +116,9 @@ impl CmdStoryLineType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdStoryLineType.proto*\xdc\x01\n\x10CmdStoryLineType\x12\x18\n\
     \x14CmdStoryLineTypeNone\x10\0\x12*\n%CmdStoryLineTrialAvatarChangeScNot\
-    ify\x10\x961\x12\x1d\n\x18CmdGetStoryLineInfoCsReq\x10\x9b1\x12%\n\x20Cm\
-    dChangeStoryLineFinishScNotify\x10\x8e1\x12\x1d\n\x18CmdStoryLineInfoScN\
-    otify\x10\x9a1\x12\x1d\n\x18CmdGetStoryLineInfoScRsp\x10\xcf0b\x06proto3\
+    ify\x10\xde0\x12\x1d\n\x18CmdGetStoryLineInfoCsReq\x10\xe70\x12%\n\x20Cm\
+    dChangeStoryLineFinishScNotify\x10\x911\x12\x1d\n\x18CmdStoryLineInfoScN\
+    otify\x10\xc10\x12\x1d\n\x18CmdGetStoryLineInfoScRsp\x10\xc30b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

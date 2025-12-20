@@ -30,47 +30,47 @@ pub enum CmdLobbyType {
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyTypeNone)
     CmdLobbyTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyStartFightScRsp)
-    CmdLobbyStartFightScRsp = 7377,
+    CmdLobbyStartFightScRsp = 7385,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInteractScNotify)
-    CmdLobbyInteractScNotify = 7362,
+    CmdLobbyInteractScNotify = 7393,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteScNotify)
-    CmdLobbyInviteScNotify = 7383,
+    CmdLobbyInviteScNotify = 7360,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyQuitCsReq)
-    CmdLobbyQuitCsReq = 7369,
+    CmdLobbyQuitCsReq = 7355,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteCsReq)
-    CmdLobbyInviteCsReq = 7353,
+    CmdLobbyInviteCsReq = 7357,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInteractCsReq)
-    CmdLobbyInteractCsReq = 7379,
+    CmdLobbyInteractCsReq = 7383,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoScRsp)
-    CmdLobbyGetInfoScRsp = 7361,
+    CmdLobbyGetInfoScRsp = 7400,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyQuitScRsp)
-    CmdLobbyQuitScRsp = 7397,
+    CmdLobbyQuitScRsp = 7363,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyCreateCsReq)
-    CmdLobbyCreateCsReq = 7376,
+    CmdLobbyCreateCsReq = 7359,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInviteScRsp)
-    CmdLobbyInviteScRsp = 7373,
+    CmdLobbyInviteScRsp = 7367,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyGetInfoCsReq)
-    CmdLobbyGetInfoCsReq = 7380,
+    CmdLobbyGetInfoCsReq = 7390,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyInteractScRsp)
-    CmdLobbyInteractScRsp = 7385,
+    CmdLobbyInteractScRsp = 7396,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinCsReq)
-    CmdLobbyJoinCsReq = 7371,
+    CmdLobbyJoinCsReq = 7362,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyStartFightCsReq)
-    CmdLobbyStartFightCsReq = 7355,
+    CmdLobbyStartFightCsReq = 7352,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbySyncInfoScNotify)
-    CmdLobbySyncInfoScNotify = 7393,
+    CmdLobbySyncInfoScNotify = 7377,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoScRsp)
-    CmdLobbyModifyPlayerInfoScRsp = 7394,
+    CmdLobbyModifyPlayerInfoScRsp = 7398,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyKickOutScRsp)
-    CmdLobbyKickOutScRsp = 7395,
+    CmdLobbyKickOutScRsp = 7384,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyJoinScRsp)
-    CmdLobbyJoinScRsp = 7388,
+    CmdLobbyJoinScRsp = 7369,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyKickOutCsReq)
-    CmdLobbyKickOutCsReq = 7351,
+    CmdLobbyKickOutCsReq = 7370,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyCreateScRsp)
-    CmdLobbyCreateScRsp = 7378,
+    CmdLobbyCreateScRsp = 7375,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.CmdLobbyModifyPlayerInfoCsReq)
-    CmdLobbyModifyPlayerInfoCsReq = 7370,
+    CmdLobbyModifyPlayerInfoCsReq = 7381,
 }
 
 impl ::protobuf::Enum for CmdLobbyType {
@@ -83,27 +83,27 @@ impl ::protobuf::Enum for CmdLobbyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdLobbyType> {
         match value {
             0 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyTypeNone),
-            7377 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyStartFightScRsp),
-            7362 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractScNotify),
-            7383 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
-            7369 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
-            7353 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteCsReq),
-            7379 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractCsReq),
-            7361 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
-            7397 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
-            7376 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
-            7373 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
-            7380 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
-            7385 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractScRsp),
-            7371 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
-            7355 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyStartFightCsReq),
-            7393 => ::std::option::Option::Some(CmdLobbyType::CmdLobbySyncInfoScNotify),
-            7394 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
-            7395 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
-            7388 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
-            7351 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
-            7378 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateScRsp),
-            7370 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
+            7385 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyStartFightScRsp),
+            7393 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractScNotify),
+            7360 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScNotify),
+            7355 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitCsReq),
+            7357 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteCsReq),
+            7383 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractCsReq),
+            7400 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoScRsp),
+            7363 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyQuitScRsp),
+            7359 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateCsReq),
+            7367 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInviteScRsp),
+            7390 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyGetInfoCsReq),
+            7396 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyInteractScRsp),
+            7362 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinCsReq),
+            7352 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyStartFightCsReq),
+            7377 => ::std::option::Option::Some(CmdLobbyType::CmdLobbySyncInfoScNotify),
+            7398 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoScRsp),
+            7384 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutScRsp),
+            7369 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyJoinScRsp),
+            7370 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyKickOutCsReq),
+            7375 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyCreateScRsp),
+            7381 => ::std::option::Option::Some(CmdLobbyType::CmdLobbyModifyPlayerInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -211,20 +211,20 @@ impl CmdLobbyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdLobbyType.proto*\xef\x04\n\x0cCmdLobbyType\x12\x14\n\x10CmdLobb\
-    yTypeNone\x10\0\x12\x1c\n\x17CmdLobbyStartFightScRsp\x10\xd19\x12\x1d\n\
-    \x18CmdLobbyInteractScNotify\x10\xc29\x12\x1b\n\x16CmdLobbyInviteScNotif\
-    y\x10\xd79\x12\x16\n\x11CmdLobbyQuitCsReq\x10\xc99\x12\x18\n\x13CmdLobby\
-    InviteCsReq\x10\xb99\x12\x1a\n\x15CmdLobbyInteractCsReq\x10\xd39\x12\x19\
-    \n\x14CmdLobbyGetInfoScRsp\x10\xc19\x12\x16\n\x11CmdLobbyQuitScRsp\x10\
-    \xe59\x12\x18\n\x13CmdLobbyCreateCsReq\x10\xd09\x12\x18\n\x13CmdLobbyInv\
-    iteScRsp\x10\xcd9\x12\x19\n\x14CmdLobbyGetInfoCsReq\x10\xd49\x12\x1a\n\
-    \x15CmdLobbyInteractScRsp\x10\xd99\x12\x16\n\x11CmdLobbyJoinCsReq\x10\
-    \xcb9\x12\x1c\n\x17CmdLobbyStartFightCsReq\x10\xbb9\x12\x1d\n\x18CmdLobb\
-    ySyncInfoScNotify\x10\xe19\x12\"\n\x1dCmdLobbyModifyPlayerInfoScRsp\x10\
-    \xe29\x12\x19\n\x14CmdLobbyKickOutScRsp\x10\xe39\x12\x16\n\x11CmdLobbyJo\
-    inScRsp\x10\xdc9\x12\x19\n\x14CmdLobbyKickOutCsReq\x10\xb79\x12\x18\n\
-    \x13CmdLobbyCreateScRsp\x10\xd29\x12\"\n\x1dCmdLobbyModifyPlayerInfoCsRe\
-    q\x10\xca9b\x06proto3\
+    yTypeNone\x10\0\x12\x1c\n\x17CmdLobbyStartFightScRsp\x10\xd99\x12\x1d\n\
+    \x18CmdLobbyInteractScNotify\x10\xe19\x12\x1b\n\x16CmdLobbyInviteScNotif\
+    y\x10\xc09\x12\x16\n\x11CmdLobbyQuitCsReq\x10\xbb9\x12\x18\n\x13CmdLobby\
+    InviteCsReq\x10\xbd9\x12\x1a\n\x15CmdLobbyInteractCsReq\x10\xd79\x12\x19\
+    \n\x14CmdLobbyGetInfoScRsp\x10\xe89\x12\x16\n\x11CmdLobbyQuitScRsp\x10\
+    \xc39\x12\x18\n\x13CmdLobbyCreateCsReq\x10\xbf9\x12\x18\n\x13CmdLobbyInv\
+    iteScRsp\x10\xc79\x12\x19\n\x14CmdLobbyGetInfoCsReq\x10\xde9\x12\x1a\n\
+    \x15CmdLobbyInteractScRsp\x10\xe49\x12\x16\n\x11CmdLobbyJoinCsReq\x10\
+    \xc29\x12\x1c\n\x17CmdLobbyStartFightCsReq\x10\xb89\x12\x1d\n\x18CmdLobb\
+    ySyncInfoScNotify\x10\xd19\x12\"\n\x1dCmdLobbyModifyPlayerInfoScRsp\x10\
+    \xe69\x12\x19\n\x14CmdLobbyKickOutScRsp\x10\xd89\x12\x16\n\x11CmdLobbyJo\
+    inScRsp\x10\xc99\x12\x19\n\x14CmdLobbyKickOutCsReq\x10\xca9\x12\x18\n\
+    \x13CmdLobbyCreateScRsp\x10\xcf9\x12\"\n\x1dCmdLobbyModifyPlayerInfoCsRe\
+    q\x10\xd59b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for FriendApplyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
-                112 => {
+                120 => {
                     self.apply_time = is.read_int64()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for FriendApplyInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.apply_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.apply_time);
+            my_size += ::protobuf::rt::int64_size(15, self.apply_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FriendApplyInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.apply_time != 0 {
-            os.write_int64(14, self.apply_time)?;
+            os.write_int64(15, self.apply_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FriendApplyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15FriendApplyInfo.proto\x1a\x16PlayerSimpleInfo.proto\"d\n\x0fFriend\
-    ApplyInfo\x122\n\x0bplayer_info\x18\x01\x20\x01(\x0b2\x11.PlayerSimpleIn\
-    foR\nplayerInfo\x12\x1d\n\napply_time\x18\x0e\x20\x01(\x03R\tapplyTimeb\
+    ApplyInfo\x122\n\x0bplayer_info\x18\x0e\x20\x01(\x0b2\x11.PlayerSimpleIn\
+    foR\nplayerInfo\x12\x1d\n\napply_time\x18\x0f\x20\x01(\x03R\tapplyTimeb\
     \x06proto3\
 ";
 

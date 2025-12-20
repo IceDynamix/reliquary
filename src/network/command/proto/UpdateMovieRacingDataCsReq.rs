@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMovieRacingDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMovieRacingDataCsReq.movie_racing_data)
-    pub movie_racing_data: ::protobuf::MessageField<super::MovieRacingData::MovieRacingData>,
+    // @@protoc_insertion_point(field:UpdateMovieRacingDataCsReq.INHLGFAFAAJ)
+    pub INHLGFAFAAJ: ::protobuf::MessageField<super::KKFNKKDHLPB::KKFNKKDHLPB>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateMovieRacingDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl UpdateMovieRacingDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MovieRacingData::MovieRacingData>(
-            "movie_racing_data",
-            |m: &UpdateMovieRacingDataCsReq| { &m.movie_racing_data },
-            |m: &mut UpdateMovieRacingDataCsReq| { &mut m.movie_racing_data },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKFNKKDHLPB::KKFNKKDHLPB>(
+            "INHLGFAFAAJ",
+            |m: &UpdateMovieRacingDataCsReq| { &m.INHLGFAFAAJ },
+            |m: &mut UpdateMovieRacingDataCsReq| { &mut m.INHLGFAFAAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateMovieRacingDataCsReq>(
             "UpdateMovieRacingDataCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for UpdateMovieRacingDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.movie_racing_data)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.INHLGFAFAAJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for UpdateMovieRacingDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.movie_racing_data.as_ref() {
+        if let Some(v) = self.INHLGFAFAAJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for UpdateMovieRacingDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.movie_racing_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.INHLGFAFAAJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for UpdateMovieRacingDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.movie_racing_data.clear();
+        self.INHLGFAFAAJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMovieRacingDataCsReq {
         static instance: UpdateMovieRacingDataCsReq = UpdateMovieRacingDataCsReq {
-            movie_racing_data: ::protobuf::MessageField::none(),
+            INHLGFAFAAJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMovieRacingDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20UpdateMovieRacingDataCsReq.proto\x1a\x15MovieRacingData.proto\"Z\n\
-    \x1aUpdateMovieRacingDataCsReq\x12<\n\x11movie_racing_data\x18\r\x20\x01\
-    (\x0b2\x10.MovieRacingDataR\x0fmovieRacingDatab\x06proto3\
+    \n\x20UpdateMovieRacingDataCsReq.proto\x1a\x11KKFNKKDHLPB.proto\"L\n\x1a\
+    UpdateMovieRacingDataCsReq\x12.\n\x0bINHLGFAFAAJ\x18\x07\x20\x01(\x0b2\
+    \x0c.KKFNKKDHLPBR\x0bINHLGFAFAAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MovieRacingData::file_descriptor().clone());
+            deps.push(super::KKFNKKDHLPB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateMovieRacingDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

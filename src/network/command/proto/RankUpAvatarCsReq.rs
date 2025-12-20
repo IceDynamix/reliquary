@@ -86,13 +86,13 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                56 => {
                     self.rank = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                66 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.rank);
+            my_size += ::protobuf::rt::uint32_size(7, self.rank);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rank != 0 {
-            os.write_uint32(4, self.rank)?;
+            os.write_uint32(7, self.rank)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(5, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for RankUpAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RankUpAvatarCsReq.proto\x1a\x12ItemCostData.proto\"p\n\x11RankUpAv\
-    atarCsReq\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x1b\n\tavata\
-    r_id\x18\x05\x20\x01(\rR\x08avatarId\x12*\n\tcost_data\x18\x08\x20\x01(\
+    atarCsReq\x12\x12\n\x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x1b\n\tavata\
+    r_id\x18\r\x20\x01(\rR\x08avatarId\x12*\n\tcost_data\x18\x04\x20\x01(\
     \x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 

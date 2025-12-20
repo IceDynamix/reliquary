@@ -30,51 +30,51 @@ pub enum CmdPunkLordType {
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordTypeNone)
     CmdPunkLordTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakePunkLordPointRewardScRsp)
-    CmdTakePunkLordPointRewardScRsp = 3215,
+    CmdTakePunkLordPointRewardScRsp = 3217,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordRaidTimeOutScNotify)
-    CmdPunkLordRaidTimeOutScNotify = 3280,
+    CmdPunkLordRaidTimeOutScNotify = 3210,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordDataScRsp)
-    CmdGetPunkLordDataScRsp = 3268,
+    CmdGetPunkLordDataScRsp = 3298,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakePunkLordPointRewardCsReq)
-    CmdTakePunkLordPointRewardCsReq = 3257,
+    CmdTakePunkLordPointRewardCsReq = 3213,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordBattleRecordScRsp)
-    CmdGetPunkLordBattleRecordScRsp = 3260,
+    CmdGetPunkLordBattleRecordScRsp = 3211,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordBattleResultScNotify)
-    CmdPunkLordBattleResultScNotify = 3229,
+    CmdPunkLordBattleResultScNotify = 3257,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordMonsterDataScRsp)
-    CmdGetPunkLordMonsterDataScRsp = 3223,
+    CmdGetPunkLordMonsterDataScRsp = 3273,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordDataChangeNotify)
-    CmdPunkLordDataChangeNotify = 3255,
+    CmdPunkLordDataChangeNotify = 3293,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordMonsterDataCsReq)
-    CmdGetPunkLordMonsterDataCsReq = 3299,
+    CmdGetPunkLordMonsterDataCsReq = 3276,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordBattleRecordCsReq)
-    CmdGetPunkLordBattleRecordCsReq = 3250,
+    CmdGetPunkLordBattleRecordCsReq = 3252,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSummonPunkLordMonsterCsReq)
-    CmdSummonPunkLordMonsterCsReq = 3294,
+    CmdSummonPunkLordMonsterCsReq = 3270,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakeKilledPunkLordMonsterScoreScRsp)
-    CmdTakeKilledPunkLordMonsterScoreScRsp = 3297,
+    CmdTakeKilledPunkLordMonsterScoreScRsp = 3220,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordDataCsReq)
-    CmdGetPunkLordDataCsReq = 3237,
+    CmdGetPunkLordDataCsReq = 3201,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdStartPunkLordRaidCsReq)
-    CmdStartPunkLordRaidCsReq = 3298,
+    CmdStartPunkLordRaidCsReq = 3215,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSummonPunkLordMonsterScRsp)
-    CmdSummonPunkLordMonsterScRsp = 3252,
+    CmdSummonPunkLordMonsterScRsp = 3251,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetKilledPunkLordMonsterDataScRsp)
-    CmdGetKilledPunkLordMonsterDataScRsp = 3203,
+    CmdGetKilledPunkLordMonsterDataScRsp = 3281,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSharePunkLordMonsterScRsp)
-    CmdSharePunkLordMonsterScRsp = 3286,
+    CmdSharePunkLordMonsterScRsp = 3246,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdStartPunkLordRaidScRsp)
-    CmdStartPunkLordRaidScRsp = 3265,
+    CmdStartPunkLordRaidScRsp = 3292,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSharePunkLordMonsterCsReq)
-    CmdSharePunkLordMonsterCsReq = 3283,
+    CmdSharePunkLordMonsterCsReq = 3250,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetKilledPunkLordMonsterDataCsReq)
-    CmdGetKilledPunkLordMonsterDataCsReq = 3238,
+    CmdGetKilledPunkLordMonsterDataCsReq = 3209,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakeKilledPunkLordMonsterScoreCsReq)
-    CmdTakeKilledPunkLordMonsterScoreCsReq = 3222,
+    CmdTakeKilledPunkLordMonsterScoreCsReq = 3247,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordMonsterInfoScNotify)
-    CmdPunkLordMonsterInfoScNotify = 3292,
+    CmdPunkLordMonsterInfoScNotify = 3238,
     // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordMonsterKilledNotify)
-    CmdPunkLordMonsterKilledNotify = 3259,
+    CmdPunkLordMonsterKilledNotify = 3289,
 }
 
 impl ::protobuf::Enum for CmdPunkLordType {
@@ -87,29 +87,29 @@ impl ::protobuf::Enum for CmdPunkLordType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPunkLordType> {
         match value {
             0 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordTypeNone),
-            3215 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardScRsp),
-            3280 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify),
-            3268 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataScRsp),
-            3257 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardCsReq),
-            3260 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp),
-            3229 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordBattleResultScNotify),
-            3223 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp),
-            3255 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordDataChangeNotify),
-            3299 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq),
-            3250 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq),
-            3294 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterCsReq),
-            3297 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp),
-            3237 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataCsReq),
-            3298 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidCsReq),
-            3252 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterScRsp),
-            3203 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp),
-            3286 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterScRsp),
-            3265 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidScRsp),
-            3283 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterCsReq),
-            3238 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq),
-            3222 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq),
-            3292 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterInfoScNotify),
-            3259 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterKilledNotify),
+            3217 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardScRsp),
+            3210 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify),
+            3298 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataScRsp),
+            3213 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardCsReq),
+            3211 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp),
+            3257 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordBattleResultScNotify),
+            3273 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp),
+            3293 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordDataChangeNotify),
+            3276 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq),
+            3252 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq),
+            3270 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterCsReq),
+            3220 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp),
+            3201 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataCsReq),
+            3215 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidCsReq),
+            3251 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterScRsp),
+            3281 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp),
+            3246 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterScRsp),
+            3292 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidScRsp),
+            3250 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterCsReq),
+            3209 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq),
+            3247 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq),
+            3238 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterInfoScNotify),
+            3289 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterKilledNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -224,23 +224,23 @@ impl CmdPunkLordType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdPunkLordType.proto*\xfd\x06\n\x0fCmdPunkLordType\x12\x17\n\x13C\
     mdPunkLordTypeNone\x10\0\x12$\n\x1fCmdTakePunkLordPointRewardScRsp\x10\
-    \x8f\x19\x12#\n\x1eCmdPunkLordRaidTimeOutScNotify\x10\xd0\x19\x12\x1c\n\
-    \x17CmdGetPunkLordDataScRsp\x10\xc4\x19\x12$\n\x1fCmdTakePunkLordPointRe\
-    wardCsReq\x10\xb9\x19\x12$\n\x1fCmdGetPunkLordBattleRecordScRsp\x10\xbc\
-    \x19\x12$\n\x1fCmdPunkLordBattleResultScNotify\x10\x9d\x19\x12#\n\x1eCmd\
-    GetPunkLordMonsterDataScRsp\x10\x97\x19\x12\x20\n\x1bCmdPunkLordDataChan\
-    geNotify\x10\xb7\x19\x12#\n\x1eCmdGetPunkLordMonsterDataCsReq\x10\xe3\
-    \x19\x12$\n\x1fCmdGetPunkLordBattleRecordCsReq\x10\xb2\x19\x12\"\n\x1dCm\
-    dSummonPunkLordMonsterCsReq\x10\xde\x19\x12+\n&CmdTakeKilledPunkLordMons\
-    terScoreScRsp\x10\xe1\x19\x12\x1c\n\x17CmdGetPunkLordDataCsReq\x10\xa5\
-    \x19\x12\x1e\n\x19CmdStartPunkLordRaidCsReq\x10\xe2\x19\x12\"\n\x1dCmdSu\
-    mmonPunkLordMonsterScRsp\x10\xb4\x19\x12)\n$CmdGetKilledPunkLordMonsterD\
-    ataScRsp\x10\x83\x19\x12!\n\x1cCmdSharePunkLordMonsterScRsp\x10\xd6\x19\
-    \x12\x1e\n\x19CmdStartPunkLordRaidScRsp\x10\xc1\x19\x12!\n\x1cCmdSharePu\
-    nkLordMonsterCsReq\x10\xd3\x19\x12)\n$CmdGetKilledPunkLordMonsterDataCsR\
-    eq\x10\xa6\x19\x12+\n&CmdTakeKilledPunkLordMonsterScoreCsReq\x10\x96\x19\
-    \x12#\n\x1eCmdPunkLordMonsterInfoScNotify\x10\xdc\x19\x12#\n\x1eCmdPunkL\
-    ordMonsterKilledNotify\x10\xbb\x19b\x06proto3\
+    \x91\x19\x12#\n\x1eCmdPunkLordRaidTimeOutScNotify\x10\x8a\x19\x12\x1c\n\
+    \x17CmdGetPunkLordDataScRsp\x10\xe2\x19\x12$\n\x1fCmdTakePunkLordPointRe\
+    wardCsReq\x10\x8d\x19\x12$\n\x1fCmdGetPunkLordBattleRecordScRsp\x10\x8b\
+    \x19\x12$\n\x1fCmdPunkLordBattleResultScNotify\x10\xb9\x19\x12#\n\x1eCmd\
+    GetPunkLordMonsterDataScRsp\x10\xc9\x19\x12\x20\n\x1bCmdPunkLordDataChan\
+    geNotify\x10\xdd\x19\x12#\n\x1eCmdGetPunkLordMonsterDataCsReq\x10\xcc\
+    \x19\x12$\n\x1fCmdGetPunkLordBattleRecordCsReq\x10\xb4\x19\x12\"\n\x1dCm\
+    dSummonPunkLordMonsterCsReq\x10\xc6\x19\x12+\n&CmdTakeKilledPunkLordMons\
+    terScoreScRsp\x10\x94\x19\x12\x1c\n\x17CmdGetPunkLordDataCsReq\x10\x81\
+    \x19\x12\x1e\n\x19CmdStartPunkLordRaidCsReq\x10\x8f\x19\x12\"\n\x1dCmdSu\
+    mmonPunkLordMonsterScRsp\x10\xb3\x19\x12)\n$CmdGetKilledPunkLordMonsterD\
+    ataScRsp\x10\xd1\x19\x12!\n\x1cCmdSharePunkLordMonsterScRsp\x10\xae\x19\
+    \x12\x1e\n\x19CmdStartPunkLordRaidScRsp\x10\xdc\x19\x12!\n\x1cCmdSharePu\
+    nkLordMonsterCsReq\x10\xb2\x19\x12)\n$CmdGetKilledPunkLordMonsterDataCsR\
+    eq\x10\x89\x19\x12+\n&CmdTakeKilledPunkLordMonsterScoreCsReq\x10\xaf\x19\
+    \x12#\n\x1eCmdPunkLordMonsterInfoScNotify\x10\xa6\x19\x12#\n\x1eCmdPunkL\
+    ordMonsterKilledNotify\x10\xd9\x19b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

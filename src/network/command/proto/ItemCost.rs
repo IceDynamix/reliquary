@@ -45,7 +45,7 @@ impl ItemCost {
         ::std::default::Default::default()
     }
 
-    // .PileItem pile_item = 3;
+    // .PileItem pile_item = 15;
 
     pub fn pile_item(&self) -> &super::PileItem::PileItem {
         match self.item {
@@ -94,8 +94,58 @@ impl ItemCost {
         }
     }
 
+    // uint32 equipment_unique_id = 14;
+
+    pub fn equipment_unique_id(&self) -> u32 {
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_equipment_unique_id(&mut self) {
+        self.item = ::std::option::Option::None;
+    }
+
+    pub fn has_equipment_unique_id(&self) -> bool {
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_equipment_unique_id(&mut self, v: u32) {
+        self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(v))
+    }
+
+    // uint32 relic_unique_id = 13;
+
+    pub fn relic_unique_id(&self) -> u32 {
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::RelicUniqueId(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_relic_unique_id(&mut self) {
+        self.item = ::std::option::Option::None;
+    }
+
+    pub fn has_relic_unique_id(&self) -> bool {
+        match self.item {
+            ::std::option::Option::Some(item_cost::Item::RelicUniqueId(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_relic_unique_id(&mut self, v: u32) {
+        self.item = ::std::option::Option::Some(item_cost::Item::RelicUniqueId(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PileItem::PileItem>(
             "pile_item",
@@ -103,6 +153,18 @@ impl ItemCost {
             ItemCost::pile_item,
             ItemCost::mut_pile_item,
             ItemCost::set_pile_item,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "equipment_unique_id",
+            ItemCost::has_equipment_unique_id,
+            ItemCost::equipment_unique_id,
+            ItemCost::set_equipment_unique_id,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "relic_unique_id",
+            ItemCost::has_relic_unique_id,
+            ItemCost::relic_unique_id,
+            ItemCost::set_relic_unique_id,
         ));
         oneofs.push(item_cost::Item::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ItemCost>(
@@ -123,8 +185,14 @@ impl ::protobuf::Message for ItemCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                122 => {
                     self.item = ::std::option::Option::Some(item_cost::Item::PileItem(is.read_message()?));
+                },
+                112 => {
+                    self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(is.read_uint32()?));
+                },
+                104 => {
+                    self.item = ::std::option::Option::Some(item_cost::Item::RelicUniqueId(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -144,6 +212,12 @@ impl ::protobuf::Message for ItemCost {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &item_cost::Item::EquipmentUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(14, v);
+                },
+                &item_cost::Item::RelicUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(13, v);
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -155,7 +229,13 @@ impl ::protobuf::Message for ItemCost {
         if let ::std::option::Option::Some(ref v) = self.item {
             match v {
                 &item_cost::Item::PileItem(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                },
+                &item_cost::Item::EquipmentUniqueId(v) => {
+                    os.write_uint32(14, v)?;
+                },
+                &item_cost::Item::RelicUniqueId(v) => {
+                    os.write_uint32(13, v)?;
                 },
             };
         }
@@ -176,6 +256,8 @@ impl ::protobuf::Message for ItemCost {
     }
 
     fn clear(&mut self) {
+        self.item = ::std::option::Option::None;
+        self.item = ::std::option::Option::None;
         self.item = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -215,6 +297,10 @@ pub mod item_cost {
     pub enum Item {
         // @@protoc_insertion_point(oneof_field:ItemCost.pile_item)
         PileItem(super::super::PileItem::PileItem),
+        // @@protoc_insertion_point(oneof_field:ItemCost.equipment_unique_id)
+        EquipmentUniqueId(u32),
+        // @@protoc_insertion_point(oneof_field:ItemCost.relic_unique_id)
+        RelicUniqueId(u32),
     }
 
     impl ::protobuf::Oneof for Item {
@@ -235,9 +321,11 @@ pub mod item_cost {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"<\n\x08ItemCost\x12(\n\tpile\
-    _item\x18\x03\x20\x01(\x0b2\t.PileItemH\0R\x08pileItemB\x06\n\x04itemb\
-    \x06proto3\
+    \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\x98\x01\n\x08ItemCost\x12(\
+    \n\tpile_item\x18\x0f\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\
+    \x13equipment_unique_id\x18\x0e\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\
+    \n\x0frelic_unique_id\x18\r\x20\x01(\rH\0R\rrelicUniqueIdB\x06\n\x04item\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

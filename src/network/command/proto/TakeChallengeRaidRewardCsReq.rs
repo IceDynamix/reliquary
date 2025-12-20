@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChallengeRaidRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeChallengeRaidRewardCsReq.reward_id)
-    pub reward_id: u32,
+    // @@protoc_insertion_point(field:TakeChallengeRaidRewardCsReq.JNPDAMBCPKD)
+    pub JNPDAMBCPKD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeChallengeRaidRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TakeChallengeRaidRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reward_id",
-            |m: &TakeChallengeRaidRewardCsReq| { &m.reward_id },
-            |m: &mut TakeChallengeRaidRewardCsReq| { &mut m.reward_id },
+            "JNPDAMBCPKD",
+            |m: &TakeChallengeRaidRewardCsReq| { &m.JNPDAMBCPKD },
+            |m: &mut TakeChallengeRaidRewardCsReq| { &mut m.JNPDAMBCPKD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeChallengeRaidRewardCsReq>(
             "TakeChallengeRaidRewardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TakeChallengeRaidRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.reward_id = is.read_uint32()?;
+                104 => {
+                    self.JNPDAMBCPKD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TakeChallengeRaidRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.reward_id);
+        if self.JNPDAMBCPKD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JNPDAMBCPKD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TakeChallengeRaidRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.reward_id != 0 {
-            os.write_uint32(15, self.reward_id)?;
+        if self.JNPDAMBCPKD != 0 {
+            os.write_uint32(13, self.JNPDAMBCPKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TakeChallengeRaidRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.reward_id = 0;
+        self.JNPDAMBCPKD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChallengeRaidRewardCsReq {
         static instance: TakeChallengeRaidRewardCsReq = TakeChallengeRaidRewardCsReq {
-            reward_id: 0,
+            JNPDAMBCPKD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengeRaidRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TakeChallengeRaidRewardCsReq.proto\";\n\x1cTakeChallengeRaidRewardCs\
-    Req\x12\x1b\n\treward_id\x18\x0f\x20\x01(\rR\x08rewardIdb\x06proto3\
+    \n\"TakeChallengeRaidRewardCsReq.proto\"@\n\x1cTakeChallengeRaidRewardCs\
+    Req\x12\x20\n\x0bJNPDAMBCPKD\x18\r\x20\x01(\rR\x0bJNPDAMBCPKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -38,8 +38,8 @@ pub struct ClientTurnSnapshot {
     pub snapshot_list: ::std::vec::Vec<super::CharacterSnapshot::CharacterSnapshot>,
     // @@protoc_insertion_point(field:ClientTurnSnapshot.anim_event_list)
     pub anim_event_list: ::std::vec::Vec<super::AnimEventSnapshot::AnimEventSnapshot>,
-    // @@protoc_insertion_point(field:ClientTurnSnapshot.LIFBJPEAMMM)
-    pub LIFBJPEAMMM: u32,
+    // @@protoc_insertion_point(field:ClientTurnSnapshot.GBCIINPHFNE)
+    pub GBCIINPHFNE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClientTurnSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,9 +85,9 @@ impl ClientTurnSnapshot {
             |m: &mut ClientTurnSnapshot| { &mut m.anim_event_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIFBJPEAMMM",
-            |m: &ClientTurnSnapshot| { &m.LIFBJPEAMMM },
-            |m: &mut ClientTurnSnapshot| { &mut m.LIFBJPEAMMM },
+            "GBCIINPHFNE",
+            |m: &ClientTurnSnapshot| { &m.GBCIINPHFNE },
+            |m: &mut ClientTurnSnapshot| { &mut m.GBCIINPHFNE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientTurnSnapshot>(
             "ClientTurnSnapshot",
@@ -123,7 +123,7 @@ impl ::protobuf::Message for ClientTurnSnapshot {
                     self.anim_event_list.push(is.read_message()?);
                 },
                 48 => {
-                    self.LIFBJPEAMMM = is.read_uint32()?;
+                    self.GBCIINPHFNE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -154,8 +154,8 @@ impl ::protobuf::Message for ClientTurnSnapshot {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LIFBJPEAMMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LIFBJPEAMMM);
+        if self.GBCIINPHFNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GBCIINPHFNE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -178,8 +178,8 @@ impl ::protobuf::Message for ClientTurnSnapshot {
         for v in &self.anim_event_list {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.LIFBJPEAMMM != 0 {
-            os.write_uint32(6, self.LIFBJPEAMMM)?;
+        if self.GBCIINPHFNE != 0 {
+            os.write_uint32(6, self.GBCIINPHFNE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,7 +203,7 @@ impl ::protobuf::Message for ClientTurnSnapshot {
         self.anim_event_counter = 0;
         self.snapshot_list.clear();
         self.anim_event_list.clear();
-        self.LIFBJPEAMMM = 0;
+        self.GBCIINPHFNE = 0;
         self.special_fields.clear();
     }
 
@@ -214,7 +214,7 @@ impl ::protobuf::Message for ClientTurnSnapshot {
             anim_event_counter: 0,
             snapshot_list: ::std::vec::Vec::new(),
             anim_event_list: ::std::vec::Vec::new(),
-            LIFBJPEAMMM: 0,
+            GBCIINPHFNE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -245,8 +245,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x02\x20\x01(\rR\rrandomCounter\x12,\n\x12anim_event_counter\x18\x03\x20\
     \x01(\rR\x10animEventCounter\x127\n\rsnapshot_list\x18\x04\x20\x03(\x0b2\
     \x12.CharacterSnapshotR\x0csnapshotList\x12:\n\x0fanim_event_list\x18\
-    \x05\x20\x03(\x0b2\x12.AnimEventSnapshotR\ranimEventList\x12\x20\n\x0bLI\
-    FBJPEAMMM\x18\x06\x20\x01(\rR\x0bLIFBJPEAMMMb\x06proto3\
+    \x05\x20\x03(\x0b2\x12.AnimEventSnapshotR\ranimEventList\x12\x20\n\x0bGB\
+    CIINPHFNE\x18\x06\x20\x01(\rR\x0bGBCIINPHFNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

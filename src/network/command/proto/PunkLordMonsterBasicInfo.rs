@@ -44,8 +44,8 @@ pub struct PunkLordMonsterBasicInfo {
     pub attacker_num: u32,
     // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.share_type)
     pub share_type: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.is_gen_by_system)
-    pub is_gen_by_system: bool,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.NJEKDBPOALK)
+    pub NJEKDBPOALK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordMonsterBasicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -106,9 +106,9 @@ impl PunkLordMonsterBasicInfo {
             |m: &mut PunkLordMonsterBasicInfo| { &mut m.share_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_gen_by_system",
-            |m: &PunkLordMonsterBasicInfo| { &m.is_gen_by_system },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.is_gen_by_system },
+            "NJEKDBPOALK",
+            |m: &PunkLordMonsterBasicInfo| { &m.NJEKDBPOALK },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.NJEKDBPOALK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordMonsterBasicInfo>(
             "PunkLordMonsterBasicInfo",
@@ -153,7 +153,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
                     self.share_type = is.read_enum_or_unknown()?;
                 },
                 72 => {
-                    self.is_gen_by_system = is.read_bool()?;
+                    self.NJEKDBPOALK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -191,7 +191,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
             my_size += ::protobuf::rt::int32_size(8, self.share_type.value());
         }
-        if self.is_gen_by_system != false {
+        if self.NJEKDBPOALK != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -224,8 +224,8 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.share_type))?;
         }
-        if self.is_gen_by_system != false {
-            os.write_bool(9, self.is_gen_by_system)?;
+        if self.NJEKDBPOALK != false {
+            os.write_bool(9, self.NJEKDBPOALK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -252,7 +252,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
         self.left_hp = 0;
         self.attacker_num = 0;
         self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::PUNK_LORD_SHARE_TYPE_NONE);
-        self.is_gen_by_system = false;
+        self.NJEKDBPOALK = false;
         self.special_fields.clear();
     }
 
@@ -266,7 +266,7 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
             left_hp: 0,
             attacker_num: 0,
             share_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            is_gen_by_system: false,
+            NJEKDBPOALK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,14 +292,14 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordMonsterBasicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordMonsterBasicInfo.proto\x1a\x17PunkLordShareType.proto\"\
-    \xc2\x02\n\x18PunkLordMonsterBasicInfo\x12\x10\n\x03uid\x18\x01\x20\x01(\
+    \xbb\x02\n\x18PunkLordMonsterBasicInfo\x12\x10\n\x03uid\x18\x01\x20\x01(\
     \rR\x03uid\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tmonsterId\x12\x1b\
     \n\tconfig_id\x18\x03\x20\x01(\rR\x08configId\x12\x1f\n\x0bworld_level\
     \x18\x04\x20\x01(\rR\nworldLevel\x12\x1f\n\x0bcreate_time\x18\x05\x20\
     \x01(\x03R\ncreateTime\x12\x17\n\x07left_hp\x18\x06\x20\x01(\rR\x06leftH\
     p\x12!\n\x0cattacker_num\x18\x07\x20\x01(\rR\x0battackerNum\x121\n\nshar\
-    e_type\x18\x08\x20\x01(\x0e2\x12.PunkLordShareTypeR\tshareType\x12'\n\
-    \x10is_gen_by_system\x18\t\x20\x01(\x08R\risGenBySystemb\x06proto3\
+    e_type\x18\x08\x20\x01(\x0e2\x12.PunkLordShareTypeR\tshareType\x12\x20\n\
+    \x0bNJEKDBPOALK\x18\t\x20\x01(\x08R\x0bNJEKDBPOALKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdStrongChallengeActivityType)
 pub enum CmdStrongChallengeActivityType {
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdStrongChallengeActivityTypeNone)
-    CmdStrongChallengeActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdStrongChallengeActivityBattleEndScNotify)
-    CmdStrongChallengeActivityBattleEndScNotify = 6683,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdGetStrongChallengeActivityDataScRsp)
-    CmdGetStrongChallengeActivityDataScRsp = 6623,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageScRsp)
-    CmdEnterStrongChallengeActivityStageScRsp = 6665,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdEnterStrongChallengeActivityStageCsReq)
-    CmdEnterStrongChallengeActivityStageCsReq = 6698,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.CmdGetStrongChallengeActivityDataCsReq)
-    CmdGetStrongChallengeActivityDataCsReq = 6699,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_ALOCMFAKBKP)
+    DJDELOKEJFK_ALOCMFAKBKP = 0,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_DJNPDHENMKI)
+    DJDELOKEJFK_DJNPDHENMKI = 6638,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_DEFGHJAAJBC)
+    DJDELOKEJFK_DEFGHJAAJBC = 6651,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_FPKLDGHIKNE)
+    DJDELOKEJFK_FPKLDGHIKNE = 6609,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_EPPPPMJHION)
+    DJDELOKEJFK_EPPPPMJHION = 6647,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_GNFJFNOJAHF)
+    DJDELOKEJFK_GNFJFNOJAHF = 6617,
 }
 
 impl ::protobuf::Enum for CmdStrongChallengeActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone),
-            6683 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify),
-            6623 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
-            6665 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
-            6698 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
-            6699 => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq),
+            0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP),
+            6638 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI),
+            6651 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC),
+            6609 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE),
+            6647 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION),
+            6617 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match str {
-            "CmdStrongChallengeActivityTypeNone" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone),
-            "CmdStrongChallengeActivityBattleEndScNotify" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify),
-            "CmdGetStrongChallengeActivityDataScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp),
-            "CmdEnterStrongChallengeActivityStageScRsp" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp),
-            "CmdEnterStrongChallengeActivityStageCsReq" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq),
-            "CmdGetStrongChallengeActivityDataCsReq" => ::std::option::Option::Some(CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq),
+            "DJDELOKEJFK_ALOCMFAKBKP" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP),
+            "DJDELOKEJFK_DJNPDHENMKI" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI),
+            "DJDELOKEJFK_DEFGHJAAJBC" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC),
+            "DJDELOKEJFK_FPKLDGHIKNE" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE),
+            "DJDELOKEJFK_EPPPPMJHION" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION),
+            "DJDELOKEJFK_GNFJFNOJAHF" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdStrongChallengeActivityType] = &[
-        CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone,
-        CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify,
-        CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp,
-        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp,
-        CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq,
-        CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION,
+        CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone => 0,
-            CmdStrongChallengeActivityType::CmdStrongChallengeActivityBattleEndScNotify => 1,
-            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataScRsp => 2,
-            CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageScRsp => 3,
-            CmdStrongChallengeActivityType::CmdEnterStrongChallengeActivityStageCsReq => 4,
-            CmdStrongChallengeActivityType::CmdGetStrongChallengeActivityDataCsReq => 5,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP => 0,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI => 1,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC => 2,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE => 3,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION => 4,
+            CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
 
 impl ::std::default::Default for CmdStrongChallengeActivityType {
     fn default() -> Self {
-        CmdStrongChallengeActivityType::CmdStrongChallengeActivityTypeNone
+        CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP
     }
 }
 
@@ -114,12 +114,12 @@ impl CmdStrongChallengeActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$CmdStrongChallengeActivityType.proto*\xb4\x02\n\x1eCmdStrongChallenge\
-    ActivityType\x12&\n\"CmdStrongChallengeActivityTypeNone\x10\0\x120\n+Cmd\
-    StrongChallengeActivityBattleEndScNotify\x10\x9b4\x12+\n&CmdGetStrongCha\
-    llengeActivityDataScRsp\x10\xdf3\x12.\n)CmdEnterStrongChallengeActivityS\
-    tageScRsp\x10\x894\x12.\n)CmdEnterStrongChallengeActivityStageCsReq\x10\
-    \xaa4\x12+\n&CmdGetStrongChallengeActivityDataCsReq\x10\xab4b\x06proto3\
+    \n$CmdStrongChallengeActivityType.proto*\xd3\x01\n\x1eCmdStrongChallenge\
+    ActivityType\x12\x1b\n\x17DJDELOKEJFK_ALOCMFAKBKP\x10\0\x12\x1c\n\x17DJD\
+    ELOKEJFK_DJNPDHENMKI\x10\xee3\x12\x1c\n\x17DJDELOKEJFK_DEFGHJAAJBC\x10\
+    \xfb3\x12\x1c\n\x17DJDELOKEJFK_FPKLDGHIKNE\x10\xd13\x12\x1c\n\x17DJDELOK\
+    EJFK_EPPPPMJHION\x10\xf73\x12\x1c\n\x17DJDELOKEJFK_GNFJFNOJAHF\x10\xd93b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

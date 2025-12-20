@@ -30,81 +30,81 @@ pub enum CmdMiscModuleType {
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMiscModuleTypeNone)
     CmdMiscModuleTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSecurityReportCsReq)
-    CmdSecurityReportCsReq = 4181,
+    CmdSecurityReportCsReq = 4106,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTakePictureScRsp)
-    CmdTakePictureScRsp = 4186,
+    CmdTakePictureScRsp = 4170,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMazeKillDirectScRsp)
-    CmdMazeKillDirectScRsp = 4171,
+    CmdMazeKillDirectScRsp = 4150,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentUpdateDataCsReq)
-    CmdDifficultyAdjustmentUpdateDataCsReq = 4155,
+    CmdDifficultyAdjustmentUpdateDataCsReq = 4181,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetMovieRacingDataScRsp)
-    CmdGetMovieRacingDataScRsp = 4151,
+    CmdGetMovieRacingDataScRsp = 4113,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetSwitchMascotDataScRsp)
-    CmdGetSwitchMascotDataScRsp = 4121,
+    CmdGetSwitchMascotDataScRsp = 4147,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdShareScRsp)
-    CmdShareScRsp = 4123,
+    CmdShareScRsp = 4138,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateMovieRacingDataCsReq)
-    CmdUpdateMovieRacingDataCsReq = 4129,
+    CmdUpdateMovieRacingDataCsReq = 4191,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSubmitOrigamiItemScRsp)
-    CmdSubmitOrigamiItemScRsp = 4137,
+    CmdSubmitOrigamiItemScRsp = 4119,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetMovieRacingDataCsReq)
-    CmdGetMovieRacingDataCsReq = 4105,
+    CmdGetMovieRacingDataCsReq = 4109,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetGunPlayDataCsReq)
-    CmdGetGunPlayDataCsReq = 4103,
+    CmdGetGunPlayDataCsReq = 4151,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentGetDataScRsp)
-    CmdDifficultyAdjustmentGetDataScRsp = 4197,
+    CmdDifficultyAdjustmentGetDataScRsp = 4135,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelDirectDeliveryNoticeScRsp)
-    CmdCancelDirectDeliveryNoticeScRsp = 4116,
+    CmdCancelDirectDeliveryNoticeScRsp = 4162,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetOrigamiPropInfoCsReq)
-    CmdGetOrigamiPropInfoCsReq = 4168,
+    CmdGetOrigamiPropInfoCsReq = 4103,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMazeKillDirectCsReq)
-    CmdMazeKillDirectCsReq = 4160,
+    CmdMazeKillDirectCsReq = 4126,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateGunPlayDataScRsp)
-    CmdUpdateGunPlayDataScRsp = 4159,
+    CmdUpdateGunPlayDataScRsp = 4152,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDirectDeliveryScNotify)
-    CmdDirectDeliveryScNotify = 4135,
+    CmdDirectDeliveryScNotify = 4155,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSubmitOrigamiItemCsReq)
-    CmdSubmitOrigamiItemCsReq = 4192,
+    CmdSubmitOrigamiItemCsReq = 4161,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateGunPlayDataCsReq)
-    CmdUpdateGunPlayDataCsReq = 4162,
+    CmdUpdateGunPlayDataCsReq = 4192,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentGetDataCsReq)
-    CmdDifficultyAdjustmentGetDataCsReq = 4122,
+    CmdDifficultyAdjustmentGetDataCsReq = 4114,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdShareCsReq)
-    CmdShareCsReq = 4199,
+    CmdShareCsReq = 4130,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTakePictureCsReq)
-    CmdTakePictureCsReq = 4183,
+    CmdTakePictureCsReq = 4111,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetShareDataScRsp)
-    CmdGetShareDataScRsp = 4165,
+    CmdGetShareDataScRsp = 4177,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelCacheNotifyCsReq)
-    CmdCancelCacheNotifyCsReq = 4119,
+    CmdCancelCacheNotifyCsReq = 4188,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentUpdateDataScRsp)
-    CmdDifficultyAdjustmentUpdateDataScRsp = 4150,
+    CmdDifficultyAdjustmentUpdateDataScRsp = 4146,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelCacheNotifyScRsp)
-    CmdCancelCacheNotifyScRsp = 4144,
+    CmdCancelCacheNotifyScRsp = 4195,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetGunPlayDataScRsp)
-    CmdGetGunPlayDataScRsp = 4109,
+    CmdGetGunPlayDataScRsp = 4169,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetUnreleasedBlockInfoScRsp)
-    CmdGetUnreleasedBlockInfoScRsp = 4142,
+    CmdGetUnreleasedBlockInfoScRsp = 4101,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTriggerVoiceScRsp)
-    CmdTriggerVoiceScRsp = 4115,
+    CmdTriggerVoiceScRsp = 4149,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTriggerVoiceCsReq)
-    CmdTriggerVoiceCsReq = 4157,
+    CmdTriggerVoiceCsReq = 4176,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateMovieRacingDataScRsp)
-    CmdUpdateMovieRacingDataScRsp = 4138,
+    CmdUpdateMovieRacingDataScRsp = 4145,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelDirectDeliveryNoticeCsReq)
-    CmdCancelDirectDeliveryNoticeCsReq = 4174,
+    CmdCancelDirectDeliveryNoticeCsReq = 4117,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetSwitchMascotDataCsReq)
-    CmdGetSwitchMascotDataCsReq = 4156,
+    CmdGetSwitchMascotDataCsReq = 4115,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetOrigamiPropInfoScRsp)
-    CmdGetOrigamiPropInfoScRsp = 4149,
+    CmdGetOrigamiPropInfoScRsp = 4173,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSecurityReportScRsp)
-    CmdSecurityReportScRsp = 4169,
+    CmdSecurityReportScRsp = 4137,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetShareDataCsReq)
-    CmdGetShareDataCsReq = 4198,
+    CmdGetShareDataCsReq = 4193,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetUnreleasedBlockInfoCsReq)
-    CmdGetUnreleasedBlockInfoCsReq = 4153,
+    CmdGetUnreleasedBlockInfoCsReq = 4198,
     // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSwitchMascotUpdateScNotify)
-    CmdSwitchMascotUpdateScNotify = 4110,
+    CmdSwitchMascotUpdateScNotify = 4157,
 }
 
 impl ::protobuf::Enum for CmdMiscModuleType {
@@ -117,44 +117,44 @@ impl ::protobuf::Enum for CmdMiscModuleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMiscModuleType> {
         match value {
             0 => ::std::option::Option::Some(CmdMiscModuleType::CmdMiscModuleTypeNone),
-            4181 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportCsReq),
-            4186 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureScRsp),
-            4171 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectScRsp),
-            4155 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq),
-            4151 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataScRsp),
-            4121 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataScRsp),
-            4123 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareScRsp),
-            4129 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq),
-            4137 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemScRsp),
-            4105 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataCsReq),
-            4103 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataCsReq),
-            4197 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp),
-            4116 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp),
-            4168 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq),
-            4160 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectCsReq),
-            4159 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataScRsp),
-            4135 => ::std::option::Option::Some(CmdMiscModuleType::CmdDirectDeliveryScNotify),
-            4192 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemCsReq),
-            4162 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataCsReq),
-            4122 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq),
-            4199 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareCsReq),
-            4183 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureCsReq),
-            4165 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataScRsp),
-            4119 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyCsReq),
-            4150 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp),
-            4144 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyScRsp),
-            4109 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataScRsp),
-            4142 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp),
-            4115 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceScRsp),
-            4157 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceCsReq),
-            4138 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp),
-            4174 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq),
-            4156 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataCsReq),
-            4149 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp),
-            4169 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportScRsp),
-            4198 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataCsReq),
-            4153 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq),
-            4110 => ::std::option::Option::Some(CmdMiscModuleType::CmdSwitchMascotUpdateScNotify),
+            4106 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportCsReq),
+            4170 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureScRsp),
+            4150 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectScRsp),
+            4181 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq),
+            4113 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataScRsp),
+            4147 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataScRsp),
+            4138 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareScRsp),
+            4191 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq),
+            4119 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemScRsp),
+            4109 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataCsReq),
+            4151 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataCsReq),
+            4135 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp),
+            4162 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp),
+            4103 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq),
+            4126 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectCsReq),
+            4152 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataScRsp),
+            4155 => ::std::option::Option::Some(CmdMiscModuleType::CmdDirectDeliveryScNotify),
+            4161 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemCsReq),
+            4192 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataCsReq),
+            4114 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq),
+            4130 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareCsReq),
+            4111 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureCsReq),
+            4177 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataScRsp),
+            4188 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyCsReq),
+            4146 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp),
+            4195 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyScRsp),
+            4169 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataScRsp),
+            4101 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp),
+            4149 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceScRsp),
+            4176 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceCsReq),
+            4145 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp),
+            4117 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq),
+            4115 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataCsReq),
+            4173 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp),
+            4137 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportScRsp),
+            4193 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataCsReq),
+            4198 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq),
+            4157 => ::std::option::Option::Some(CmdMiscModuleType::CmdSwitchMascotUpdateScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -314,33 +314,33 @@ impl CmdMiscModuleType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdMiscModuleType.proto*\x82\n\n\x11CmdMiscModuleType\x12\x19\n\
     \x15CmdMiscModuleTypeNone\x10\0\x12\x1b\n\x16CmdSecurityReportCsReq\x10\
-    \xd5\x20\x12\x18\n\x13CmdTakePictureScRsp\x10\xda\x20\x12\x1b\n\x16CmdMa\
-    zeKillDirectScRsp\x10\xcb\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataCs\
-    Req\x10\xbb\x20\x12\x1f\n\x1aCmdGetMovieRacingDataScRsp\x10\xb7\x20\x12\
-    \x20\n\x1bCmdGetSwitchMascotDataScRsp\x10\x99\x20\x12\x12\n\rCmdShareScR\
-    sp\x10\x9b\x20\x12\"\n\x1dCmdUpdateMovieRacingDataCsReq\x10\xa1\x20\x12\
-    \x1e\n\x19CmdSubmitOrigamiItemScRsp\x10\xa9\x20\x12\x1f\n\x1aCmdGetMovie\
-    RacingDataCsReq\x10\x89\x20\x12\x1b\n\x16CmdGetGunPlayDataCsReq\x10\x87\
-    \x20\x12(\n#CmdDifficultyAdjustmentGetDataScRsp\x10\xe5\x20\x12'\n\"CmdC\
-    ancelDirectDeliveryNoticeScRsp\x10\x94\x20\x12\x1f\n\x1aCmdGetOrigamiPro\
-    pInfoCsReq\x10\xc8\x20\x12\x1b\n\x16CmdMazeKillDirectCsReq\x10\xc0\x20\
-    \x12\x1e\n\x19CmdUpdateGunPlayDataScRsp\x10\xbf\x20\x12\x1e\n\x19CmdDire\
-    ctDeliveryScNotify\x10\xa7\x20\x12\x1e\n\x19CmdSubmitOrigamiItemCsReq\
-    \x10\xe0\x20\x12\x1e\n\x19CmdUpdateGunPlayDataCsReq\x10\xc2\x20\x12(\n#C\
-    mdDifficultyAdjustmentGetDataCsReq\x10\x9a\x20\x12\x12\n\rCmdShareCsReq\
-    \x10\xe7\x20\x12\x18\n\x13CmdTakePictureCsReq\x10\xd7\x20\x12\x19\n\x14C\
-    mdGetShareDataScRsp\x10\xc5\x20\x12\x1e\n\x19CmdCancelCacheNotifyCsReq\
-    \x10\x97\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataScRsp\x10\xb6\x20\
-    \x12\x1e\n\x19CmdCancelCacheNotifyScRsp\x10\xb0\x20\x12\x1b\n\x16CmdGetG\
-    unPlayDataScRsp\x10\x8d\x20\x12#\n\x1eCmdGetUnreleasedBlockInfoScRsp\x10\
-    \xae\x20\x12\x19\n\x14CmdTriggerVoiceScRsp\x10\x93\x20\x12\x19\n\x14CmdT\
-    riggerVoiceCsReq\x10\xbd\x20\x12\"\n\x1dCmdUpdateMovieRacingDataScRsp\
-    \x10\xaa\x20\x12'\n\"CmdCancelDirectDeliveryNoticeCsReq\x10\xce\x20\x12\
-    \x20\n\x1bCmdGetSwitchMascotDataCsReq\x10\xbc\x20\x12\x1f\n\x1aCmdGetOri\
-    gamiPropInfoScRsp\x10\xb5\x20\x12\x1b\n\x16CmdSecurityReportScRsp\x10\
-    \xc9\x20\x12\x19\n\x14CmdGetShareDataCsReq\x10\xe6\x20\x12#\n\x1eCmdGetU\
-    nreleasedBlockInfoCsReq\x10\xb9\x20\x12\"\n\x1dCmdSwitchMascotUpdateScNo\
-    tify\x10\x8e\x20b\x06proto3\
+    \x8a\x20\x12\x18\n\x13CmdTakePictureScRsp\x10\xca\x20\x12\x1b\n\x16CmdMa\
+    zeKillDirectScRsp\x10\xb6\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataCs\
+    Req\x10\xd5\x20\x12\x1f\n\x1aCmdGetMovieRacingDataScRsp\x10\x91\x20\x12\
+    \x20\n\x1bCmdGetSwitchMascotDataScRsp\x10\xb3\x20\x12\x12\n\rCmdShareScR\
+    sp\x10\xaa\x20\x12\"\n\x1dCmdUpdateMovieRacingDataCsReq\x10\xdf\x20\x12\
+    \x1e\n\x19CmdSubmitOrigamiItemScRsp\x10\x97\x20\x12\x1f\n\x1aCmdGetMovie\
+    RacingDataCsReq\x10\x8d\x20\x12\x1b\n\x16CmdGetGunPlayDataCsReq\x10\xb7\
+    \x20\x12(\n#CmdDifficultyAdjustmentGetDataScRsp\x10\xa7\x20\x12'\n\"CmdC\
+    ancelDirectDeliveryNoticeScRsp\x10\xc2\x20\x12\x1f\n\x1aCmdGetOrigamiPro\
+    pInfoCsReq\x10\x87\x20\x12\x1b\n\x16CmdMazeKillDirectCsReq\x10\x9e\x20\
+    \x12\x1e\n\x19CmdUpdateGunPlayDataScRsp\x10\xb8\x20\x12\x1e\n\x19CmdDire\
+    ctDeliveryScNotify\x10\xbb\x20\x12\x1e\n\x19CmdSubmitOrigamiItemCsReq\
+    \x10\xc1\x20\x12\x1e\n\x19CmdUpdateGunPlayDataCsReq\x10\xe0\x20\x12(\n#C\
+    mdDifficultyAdjustmentGetDataCsReq\x10\x92\x20\x12\x12\n\rCmdShareCsReq\
+    \x10\xa2\x20\x12\x18\n\x13CmdTakePictureCsReq\x10\x8f\x20\x12\x19\n\x14C\
+    mdGetShareDataScRsp\x10\xd1\x20\x12\x1e\n\x19CmdCancelCacheNotifyCsReq\
+    \x10\xdc\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataScRsp\x10\xb2\x20\
+    \x12\x1e\n\x19CmdCancelCacheNotifyScRsp\x10\xe3\x20\x12\x1b\n\x16CmdGetG\
+    unPlayDataScRsp\x10\xc9\x20\x12#\n\x1eCmdGetUnreleasedBlockInfoScRsp\x10\
+    \x85\x20\x12\x19\n\x14CmdTriggerVoiceScRsp\x10\xb5\x20\x12\x19\n\x14CmdT\
+    riggerVoiceCsReq\x10\xd0\x20\x12\"\n\x1dCmdUpdateMovieRacingDataScRsp\
+    \x10\xb1\x20\x12'\n\"CmdCancelDirectDeliveryNoticeCsReq\x10\x95\x20\x12\
+    \x20\n\x1bCmdGetSwitchMascotDataCsReq\x10\x93\x20\x12\x1f\n\x1aCmdGetOri\
+    gamiPropInfoScRsp\x10\xcd\x20\x12\x1b\n\x16CmdSecurityReportScRsp\x10\
+    \xa9\x20\x12\x19\n\x14CmdGetShareDataCsReq\x10\xe1\x20\x12#\n\x1eCmdGetU\
+    nreleasedBlockInfoCsReq\x10\xe6\x20\x12\"\n\x1dCmdSwitchMascotUpdateScNo\
+    tify\x10\xbd\x20b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

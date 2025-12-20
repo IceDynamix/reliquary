@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStageTertinggi {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeStageTertinggi.MGOOILPEKBC)
-    pub MGOOILPEKBC: u32,
-    // @@protoc_insertion_point(field:ChallengeStageTertinggi.ADKBIBGEAMO)
-    pub ADKBIBGEAMO: u32,
     // @@protoc_insertion_point(field:ChallengeStageTertinggi.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:ChallengeStageTertinggi.round_count)
+    pub round_count: u32,
     // @@protoc_insertion_point(field:ChallengeStageTertinggi.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::EIOAFODNCOJ::EIOAFODNCOJ>,
+    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
+    // @@protoc_insertion_point(field:ChallengeStageTertinggi.PCLMHKDNEEF)
+    pub PCLMHKDNEEF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeStageTertinggi.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl ChallengeStageTertinggi {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGOOILPEKBC",
-            |m: &ChallengeStageTertinggi| { &m.MGOOILPEKBC },
-            |m: &mut ChallengeStageTertinggi| { &mut m.MGOOILPEKBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ADKBIBGEAMO",
-            |m: &ChallengeStageTertinggi| { &m.ADKBIBGEAMO },
-            |m: &mut ChallengeStageTertinggi| { &mut m.ADKBIBGEAMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &ChallengeStageTertinggi| { &m.level },
             |m: &mut ChallengeStageTertinggi| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "round_count",
+            |m: &ChallengeStageTertinggi| { &m.round_count },
+            |m: &mut ChallengeStageTertinggi| { &mut m.round_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
             |m: &ChallengeStageTertinggi| { &m.lineup_list },
             |m: &mut ChallengeStageTertinggi| { &mut m.lineup_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCLMHKDNEEF",
+            |m: &ChallengeStageTertinggi| { &m.PCLMHKDNEEF },
+            |m: &mut ChallengeStageTertinggi| { &mut m.PCLMHKDNEEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeStageTertinggi>(
             "ChallengeStageTertinggi",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.MGOOILPEKBC = is.read_uint32()?;
-                },
-                56 => {
-                    self.ADKBIBGEAMO = is.read_uint32()?;
-                },
-                80 => {
+                112 => {
                     self.level = is.read_uint32()?;
                 },
-                114 => {
+                48 => {
+                    self.round_count = is.read_uint32()?;
+                },
+                58 => {
                     self.lineup_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.PCLMHKDNEEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MGOOILPEKBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MGOOILPEKBC);
-        }
-        if self.ADKBIBGEAMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ADKBIBGEAMO);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        }
+        if self.round_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.round_count);
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.PCLMHKDNEEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PCLMHKDNEEF);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MGOOILPEKBC != 0 {
-            os.write_uint32(5, self.MGOOILPEKBC)?;
-        }
-        if self.ADKBIBGEAMO != 0 {
-            os.write_uint32(7, self.ADKBIBGEAMO)?;
-        }
         if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(14, self.level)?;
+        }
+        if self.round_count != 0 {
+            os.write_uint32(6, self.round_count)?;
         }
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.PCLMHKDNEEF != 0 {
+            os.write_uint32(10, self.PCLMHKDNEEF)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ChallengeStageTertinggi {
     }
 
     fn clear(&mut self) {
-        self.MGOOILPEKBC = 0;
-        self.ADKBIBGEAMO = 0;
         self.level = 0;
+        self.round_count = 0;
         self.lineup_list.clear();
+        self.PCLMHKDNEEF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeStageTertinggi {
         static instance: ChallengeStageTertinggi = ChallengeStageTertinggi {
-            MGOOILPEKBC: 0,
-            ADKBIBGEAMO: 0,
             level: 0,
+            round_count: 0,
             lineup_list: ::std::vec::Vec::new(),
+            PCLMHKDNEEF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStageTertinggi {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChallengeStageTertinggi.proto\x1a\x11EIOAFODNCOJ.proto\"\xa2\x01\n\
-    \x17ChallengeStageTertinggi\x12\x20\n\x0bMGOOILPEKBC\x18\x05\x20\x01(\rR\
-    \x0bMGOOILPEKBC\x12\x20\n\x0bADKBIBGEAMO\x18\x07\x20\x01(\rR\x0bADKBIBGE\
-    AMO\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12-\n\x0blineup_list\
-    \x18\x0e\x20\x03(\x0b2\x0c.EIOAFODNCOJR\nlineupListb\x06proto3\
+    \n\x1dChallengeStageTertinggi.proto\x1a\x19ChallengeLineupList.proto\"\
+    \xa9\x01\n\x17ChallengeStageTertinggi\x12\x14\n\x05level\x18\x0e\x20\x01\
+    (\rR\x05level\x12\x1f\n\x0bround_count\x18\x06\x20\x01(\rR\nroundCount\
+    \x125\n\x0blineup_list\x18\x07\x20\x03(\x0b2\x14.ChallengeLineupListR\nl\
+    ineupList\x12\x20\n\x0bPCLMHKDNEEF\x18\n\x20\x01(\rR\x0bPCLMHKDNEEFb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EIOAFODNCOJ::file_descriptor().clone());
+            deps.push(super::ChallengeLineupList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeStageTertinggi::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

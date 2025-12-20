@@ -30,41 +30,41 @@ pub enum CmdPlanetFesExtType {
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtTypeNone)
     CmdPlanetFesExtTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesApplyCardPieceScRsp)
-    CmdPlanetFesApplyCardPieceScRsp = 8334,
+    CmdPlanetFesApplyCardPieceScRsp = 8324,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetFriendCardPieceCsReq)
-    CmdPlanetFesGetFriendCardPieceCsReq = 8311,
+    CmdPlanetFesGetFriendCardPieceCsReq = 8323,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesHandleCardPieceApplyScRsp)
-    CmdPlanetFesHandleCardPieceApplyScRsp = 8335,
+    CmdPlanetFesHandleCardPieceApplyScRsp = 8333,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesApplyCardPieceCsReq)
-    CmdPlanetFesApplyCardPieceCsReq = 8310,
+    CmdPlanetFesApplyCardPieceCsReq = 8309,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesHandleCardPieceApplyCsReq)
-    CmdPlanetFesHandleCardPieceApplyCsReq = 8291,
+    CmdPlanetFesHandleCardPieceApplyCsReq = 8317,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetExtraCardPieceInfoCsReq)
-    CmdPlanetFesGetExtraCardPieceInfoCsReq = 8316,
+    CmdPlanetFesGetExtraCardPieceInfoCsReq = 8325,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesLargeBonusInteractScRsp)
-    CmdPlanetFesLargeBonusInteractScRsp = 8323,
+    CmdPlanetFesLargeBonusInteractScRsp = 8338,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGiveCardPieceCsReq)
-    CmdPlanetFesGiveCardPieceCsReq = 8313,
+    CmdPlanetFesGiveCardPieceCsReq = 8315,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetExtraCardPieceInfoScRsp)
-    CmdPlanetFesGetExtraCardPieceInfoScRsp = 8318,
+    CmdPlanetFesGetExtraCardPieceInfoScRsp = 8295,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesEnterNextBusinessDayCsReq)
-    CmdPlanetFesEnterNextBusinessDayCsReq = 8320,
+    CmdPlanetFesEnterNextBusinessDayCsReq = 8310,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesChangeCardPieceApplyPermissionCsReq)
-    CmdPlanetFesChangeCardPieceApplyPermissionCsReq = 8295,
+    CmdPlanetFesChangeCardPieceApplyPermissionCsReq = 8307,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesChangeCardPieceApplyPermissionScRsp)
-    CmdPlanetFesChangeCardPieceApplyPermissionScRsp = 8317,
+    CmdPlanetFesChangeCardPieceApplyPermissionScRsp = 8297,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGiveCardPieceScRsp)
-    CmdPlanetFesGiveCardPieceScRsp = 8309,
+    CmdPlanetFesGiveCardPieceScRsp = 8302,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesEnterNextBusinessDayScRsp)
-    CmdPlanetFesEnterNextBusinessDayScRsp = 8301,
+    CmdPlanetFesEnterNextBusinessDayScRsp = 8303,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetOfferedCardPieceScRsp)
-    CmdPlanetFesGetOfferedCardPieceScRsp = 8293,
+    CmdPlanetFesGetOfferedCardPieceScRsp = 8336,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetOfferedCardPieceCsReq)
-    CmdPlanetFesGetOfferedCardPieceCsReq = 8333,
+    CmdPlanetFesGetOfferedCardPieceCsReq = 8321,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetFriendCardPieceScRsp)
-    CmdPlanetFesGetFriendCardPieceScRsp = 8328,
+    CmdPlanetFesGetFriendCardPieceScRsp = 8299,
     // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesLargeBonusInteractCsReq)
-    CmdPlanetFesLargeBonusInteractCsReq = 8337,
+    CmdPlanetFesLargeBonusInteractCsReq = 8292,
 }
 
 impl ::protobuf::Enum for CmdPlanetFesExtType {
@@ -77,24 +77,24 @@ impl ::protobuf::Enum for CmdPlanetFesExtType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlanetFesExtType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtTypeNone),
-            8334 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp),
-            8311 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq),
-            8335 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp),
-            8310 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq),
-            8291 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq),
-            8316 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq),
-            8323 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp),
-            8313 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq),
-            8318 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp),
-            8320 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq),
-            8295 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq),
-            8317 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp),
-            8309 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp),
-            8301 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp),
-            8293 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp),
-            8333 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq),
-            8328 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp),
-            8337 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq),
+            8324 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp),
+            8323 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq),
+            8333 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp),
+            8309 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq),
+            8317 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq),
+            8325 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq),
+            8338 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp),
+            8315 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq),
+            8295 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp),
+            8310 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq),
+            8307 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq),
+            8297 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp),
+            8302 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp),
+            8303 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp),
+            8336 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp),
+            8321 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq),
+            8299 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp),
+            8292 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -194,20 +194,20 @@ impl CmdPlanetFesExtType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdPlanetFesExtType.proto*\xbc\x06\n\x13CmdPlanetFesExtType\x12\
     \x1b\n\x17CmdPlanetFesExtTypeNone\x10\0\x12$\n\x1fCmdPlanetFesApplyCardP\
-    ieceScRsp\x10\x8eA\x12(\n#CmdPlanetFesGetFriendCardPieceCsReq\x10\xf7@\
-    \x12*\n%CmdPlanetFesHandleCardPieceApplyScRsp\x10\x8fA\x12$\n\x1fCmdPlan\
-    etFesApplyCardPieceCsReq\x10\xf6@\x12*\n%CmdPlanetFesHandleCardPieceAppl\
-    yCsReq\x10\xe3@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoCsReq\x10\xfc@\
-    \x12(\n#CmdPlanetFesLargeBonusInteractScRsp\x10\x83A\x12#\n\x1eCmdPlanet\
-    FesGiveCardPieceCsReq\x10\xf9@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoS\
-    cRsp\x10\xfe@\x12*\n%CmdPlanetFesEnterNextBusinessDayCsReq\x10\x80A\x124\
-    \n/CmdPlanetFesChangeCardPieceApplyPermissionCsReq\x10\xe7@\x124\n/CmdPl\
-    anetFesChangeCardPieceApplyPermissionScRsp\x10\xfd@\x12#\n\x1eCmdPlanetF\
-    esGiveCardPieceScRsp\x10\xf5@\x12*\n%CmdPlanetFesEnterNextBusinessDayScR\
-    sp\x10\xed@\x12)\n$CmdPlanetFesGetOfferedCardPieceScRsp\x10\xe5@\x12)\n$\
-    CmdPlanetFesGetOfferedCardPieceCsReq\x10\x8dA\x12(\n#CmdPlanetFesGetFrie\
-    ndCardPieceScRsp\x10\x88A\x12(\n#CmdPlanetFesLargeBonusInteractCsReq\x10\
-    \x91Ab\x06proto3\
+    ieceScRsp\x10\x84A\x12(\n#CmdPlanetFesGetFriendCardPieceCsReq\x10\x83A\
+    \x12*\n%CmdPlanetFesHandleCardPieceApplyScRsp\x10\x8dA\x12$\n\x1fCmdPlan\
+    etFesApplyCardPieceCsReq\x10\xf5@\x12*\n%CmdPlanetFesHandleCardPieceAppl\
+    yCsReq\x10\xfd@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoCsReq\x10\x85A\
+    \x12(\n#CmdPlanetFesLargeBonusInteractScRsp\x10\x92A\x12#\n\x1eCmdPlanet\
+    FesGiveCardPieceCsReq\x10\xfb@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoS\
+    cRsp\x10\xe7@\x12*\n%CmdPlanetFesEnterNextBusinessDayCsReq\x10\xf6@\x124\
+    \n/CmdPlanetFesChangeCardPieceApplyPermissionCsReq\x10\xf3@\x124\n/CmdPl\
+    anetFesChangeCardPieceApplyPermissionScRsp\x10\xe9@\x12#\n\x1eCmdPlanetF\
+    esGiveCardPieceScRsp\x10\xee@\x12*\n%CmdPlanetFesEnterNextBusinessDayScR\
+    sp\x10\xef@\x12)\n$CmdPlanetFesGetOfferedCardPieceScRsp\x10\x90A\x12)\n$\
+    CmdPlanetFesGetOfferedCardPieceCsReq\x10\x81A\x12(\n#CmdPlanetFesGetFrie\
+    ndCardPieceScRsp\x10\xeb@\x12(\n#CmdPlanetFesLargeBonusInteractCsReq\x10\
+    \xe4@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,15 +30,15 @@ pub enum CmdElationActivityType {
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdElationActivityTypeNone)
     CmdElationActivityTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdEnterElationActivityStageScRsp)
-    CmdEnterElationActivityStageScRsp = 9109,
+    CmdEnterElationActivityStageScRsp = 9101,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdElationActivityBattleEndScNotify)
-    CmdElationActivityBattleEndScNotify = 9110,
+    CmdElationActivityBattleEndScNotify = 9103,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdGetElationActivityDataCsReq)
-    CmdGetElationActivityDataCsReq = 9106,
+    CmdGetElationActivityDataCsReq = 9107,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdGetElationActivityDataScRsp)
-    CmdGetElationActivityDataScRsp = 9107,
+    CmdGetElationActivityDataScRsp = 9102,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdEnterElationActivityStageCsReq)
-    CmdEnterElationActivityStageCsReq = 9104,
+    CmdEnterElationActivityStageCsReq = 9110,
 }
 
 impl ::protobuf::Enum for CmdElationActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdElationActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdElationActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdElationActivityType::CmdElationActivityTypeNone),
-            9109 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageScRsp),
-            9110 => ::std::option::Option::Some(CmdElationActivityType::CmdElationActivityBattleEndScNotify),
-            9106 => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataCsReq),
-            9107 => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataScRsp),
-            9104 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageCsReq),
+            9101 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageScRsp),
+            9103 => ::std::option::Option::Some(CmdElationActivityType::CmdElationActivityBattleEndScNotify),
+            9107 => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataCsReq),
+            9102 => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataScRsp),
+            9110 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -116,10 +116,10 @@ impl CmdElationActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdElationActivityType.proto*\xfc\x01\n\x16CmdElationActivityType\
     \x12\x1e\n\x1aCmdElationActivityTypeNone\x10\0\x12&\n!CmdEnterElationAct\
-    ivityStageScRsp\x10\x95G\x12(\n#CmdElationActivityBattleEndScNotify\x10\
-    \x96G\x12#\n\x1eCmdGetElationActivityDataCsReq\x10\x92G\x12#\n\x1eCmdGet\
-    ElationActivityDataScRsp\x10\x93G\x12&\n!CmdEnterElationActivityStageCsR\
-    eq\x10\x90Gb\x06proto3\
+    ivityStageScRsp\x10\x8dG\x12(\n#CmdElationActivityBattleEndScNotify\x10\
+    \x8fG\x12#\n\x1eCmdGetElationActivityDataCsReq\x10\x93G\x12#\n\x1eCmdGet\
+    ElationActivityDataScRsp\x10\x8eG\x12&\n!CmdEnterElationActivityStageCsR\
+    eq\x10\x96Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,80 +27,80 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSwordTrainingType)
 pub enum CmdSwordTrainingType {
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTypeNone)
-    CmdSwordTrainingTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmCsReq)
-    CmdSwordTrainingExamResultConfirmCsReq = 7492,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmScRsp)
-    CmdSwordTrainingStoryConfirmScRsp = 7462,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingUnlockSyncScNotify)
-    CmdSwordTrainingUnlockSyncScNotify = 7484,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameCsReq)
-    CmdSwordTrainingRestoreGameCsReq = 7459,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingActionTurnSettleScNotify)
-    CmdSwordTrainingActionTurnSettleScNotify = 7466,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSettleScNotify)
-    CmdSwordTrainingGameSettleScNotify = 7452,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameCsReq)
-    CmdSwordTrainingStartGameCsReq = 7461,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceCsReq)
-    CmdSwordTrainingSetSkillTraceCsReq = 7474,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataCsReq)
-    CmdGetSwordTrainingDataCsReq = 7478,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillScRsp)
-    CmdSwordTrainingLearnSkillScRsp = 7480,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingResumeGameCsReq)
-    CmdSwordTrainingResumeGameCsReq = 7496,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingExamResultConfirmScRsp)
-    CmdSwordTrainingExamResultConfirmScRsp = 7487,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingLearnSkillCsReq)
-    CmdSwordTrainingLearnSkillCsReq = 7483,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryConfirmCsReq)
-    CmdSwordTrainingStoryConfirmCsReq = 7485,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSetSkillTraceScRsp)
-    CmdSwordTrainingSetSkillTraceScRsp = 7460,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDialogueSelectOptionCsReq)
-    CmdSwordTrainingDialogueSelectOptionCsReq = 7494,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingScRsp)
-    CmdSwordTrainingSelectEndingScRsp = 7475,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingRestoreGameScRsp)
-    CmdSwordTrainingRestoreGameScRsp = 7472,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleCsReq)
-    CmdSwordTrainingStoryBattleCsReq = 7500,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmScRsp)
-    CmdSwordTrainingDailyPhaseConfirmScRsp = 7470,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedCsReq)
-    CmdSwordTrainingMarkEndingViewedCsReq = 7489,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStoryBattleScRsp)
-    CmdSwordTrainingStoryBattleScRsp = 7468,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionCsReq)
-    CmdSwordTrainingTurnActionCsReq = 7488,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingStartGameScRsp)
-    CmdSwordTrainingStartGameScRsp = 7479,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGiveUpGameScRsp)
-    CmdSwordTrainingGiveUpGameScRsp = 7481,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdEnterSwordTrainingExamCsReq)
-    CmdEnterSwordTrainingExamCsReq = 7469,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGiveUpGameCsReq)
-    CmdSwordTrainingGiveUpGameCsReq = 7465,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdEnterSwordTrainingExamScRsp)
-    CmdEnterSwordTrainingExamScRsp = 7497,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdGetSwordTrainingDataScRsp)
-    CmdGetSwordTrainingDataScRsp = 7471,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDialogueSelectOptionScRsp)
-    CmdSwordTrainingDialogueSelectOptionScRsp = 7451,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingSelectEndingCsReq)
-    CmdSwordTrainingSelectEndingCsReq = 7482,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingResumeGameScRsp)
-    CmdSwordTrainingResumeGameScRsp = 7464,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingGameSyncChangeScNotify)
-    CmdSwordTrainingGameSyncChangeScNotify = 7476,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingTurnActionScRsp)
-    CmdSwordTrainingTurnActionScRsp = 7455,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingMarkEndingViewedScRsp)
-    CmdSwordTrainingMarkEndingViewedScRsp = 7467,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.CmdSwordTrainingDailyPhaseConfirmCsReq)
-    CmdSwordTrainingDailyPhaseConfirmCsReq = 7477,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_ALOCMFAKBKP)
+    HLADHLLGCBM_ALOCMFAKBKP = 0,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BFDPOGEKJIB)
+    HLADHLLGCBM_BFDPOGEKJIB = 7474,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IPHOBIAMEGN)
+    HLADHLLGCBM_IPHOBIAMEGN = 7457,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NINFFIOMNKF)
+    HLADHLLGCBM_NINFFIOMNKF = 7477,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GOBKDMAPGCL)
+    HLADHLLGCBM_GOBKDMAPGCL = 7471,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BMGKCCLHCOD)
+    HLADHLLGCBM_BMGKCCLHCOD = 7487,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GALIHAGGFJP)
+    HLADHLLGCBM_GALIHAGGFJP = 7496,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CEHCBLILJPJ)
+    HLADHLLGCBM_CEHCBLILJPJ = 7454,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CLBPNHGPOOB)
+    HLADHLLGCBM_CLBPNHGPOOB = 7490,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GPHMOAMKKLA)
+    HLADHLLGCBM_GPHMOAMKKLA = 7480,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GIAKLCLJCJL)
+    HLADHLLGCBM_GIAKLCLJCJL = 7483,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MONDOCLCPAE)
+    HLADHLLGCBM_MONDOCLCPAE = 7478,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_FDGBJOGPJBP)
+    HLADHLLGCBM_FDGBJOGPJBP = 7473,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MPKINCGHIKF)
+    HLADHLLGCBM_MPKINCGHIKF = 7481,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_EFCFDPJGMON)
+    HLADHLLGCBM_EFCFDPJGMON = 7486,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GGMECECPHMG)
+    HLADHLLGCBM_GGMECECPHMG = 7497,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_FCDKLPMBCHD)
+    HLADHLLGCBM_FCDKLPMBCHD = 7455,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NOALPKMILBG)
+    HLADHLLGCBM_NOALPKMILBG = 7485,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NLIDNIEALBD)
+    HLADHLLGCBM_NLIDNIEALBD = 7453,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NOGDGLGALEF)
+    HLADHLLGCBM_NOGDGLGALEF = 7476,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_PBLCOKMGDPI)
+    HLADHLLGCBM_PBLCOKMGDPI = 7495,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_PCCDPCOKFCJ)
+    HLADHLLGCBM_PCCDPCOKFCJ = 7498,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NBAKFGGKOGC)
+    HLADHLLGCBM_NBAKFGGKOGC = 7470,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IIHABPJDEAJ)
+    HLADHLLGCBM_IIHABPJDEAJ = 7482,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_EALBCMCIOOI)
+    HLADHLLGCBM_EALBCMCIOOI = 7484,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MKAANOIOAPE)
+    HLADHLLGCBM_MKAANOIOAPE = 7458,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CLKPIDCIHGA)
+    HLADHLLGCBM_CLKPIDCIHGA = 7451,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GDBHONBFOOE)
+    HLADHLLGCBM_GDBHONBFOOE = 7500,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NFGKEJPDIOJ)
+    HLADHLLGCBM_NFGKEJPDIOJ = 7491,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BLHMDMEKACK)
+    HLADHLLGCBM_BLHMDMEKACK = 7475,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NEECHJFLGEH)
+    HLADHLLGCBM_NEECHJFLGEH = 7479,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MIGEDGMEMCI)
+    HLADHLLGCBM_MIGEDGMEMCI = 7460,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_POAMLPPFHEO)
+    HLADHLLGCBM_POAMLPPFHEO = 7494,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IHBPMPDNJFB)
+    HLADHLLGCBM_IHBPMPDNJFB = 7493,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IGPHOOKDCGJ)
+    HLADHLLGCBM_IGPHOOKDCGJ = 7452,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_ELLDPGHEEGG)
+    HLADHLLGCBM_ELLDPGHEEGG = 7456,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_OBBBKBAAGIE)
+    HLADHLLGCBM_OBBBKBAAGIE = 7469,
 }
 
 impl ::protobuf::Enum for CmdSwordTrainingType {
@@ -112,128 +112,128 @@ impl ::protobuf::Enum for CmdSwordTrainingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSwordTrainingType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTypeNone),
-            7492 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
-            7462 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
-            7484 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
-            7459 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
-            7466 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
-            7452 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
-            7461 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
-            7474 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
-            7478 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
-            7480 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
-            7496 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
-            7487 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
-            7483 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
-            7485 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
-            7460 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
-            7494 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
-            7475 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
-            7472 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
-            7500 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
-            7470 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
-            7489 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
-            7468 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
-            7488 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
-            7479 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
-            7481 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp),
-            7469 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
-            7465 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq),
-            7497 => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
-            7471 => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
-            7451 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp),
-            7482 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
-            7464 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp),
-            7476 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
-            7455 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
-            7467 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
-            7477 => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
+            0 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP),
+            7474 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB),
+            7457 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN),
+            7477 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF),
+            7471 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL),
+            7487 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD),
+            7496 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP),
+            7454 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ),
+            7490 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB),
+            7480 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA),
+            7483 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL),
+            7478 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE),
+            7473 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP),
+            7481 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF),
+            7486 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON),
+            7497 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG),
+            7455 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD),
+            7485 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG),
+            7453 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD),
+            7476 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF),
+            7495 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI),
+            7498 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ),
+            7470 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC),
+            7482 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ),
+            7484 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI),
+            7458 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE),
+            7451 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA),
+            7500 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE),
+            7491 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ),
+            7475 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK),
+            7479 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH),
+            7460 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI),
+            7494 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO),
+            7493 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB),
+            7452 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ),
+            7456 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG),
+            7469 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSwordTrainingType> {
         match str {
-            "CmdSwordTrainingTypeNone" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTypeNone),
-            "CmdSwordTrainingExamResultConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq),
-            "CmdSwordTrainingStoryConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp),
-            "CmdSwordTrainingUnlockSyncScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify),
-            "CmdSwordTrainingRestoreGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq),
-            "CmdSwordTrainingActionTurnSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify),
-            "CmdSwordTrainingGameSettleScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify),
-            "CmdSwordTrainingStartGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq),
-            "CmdSwordTrainingSetSkillTraceCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq),
-            "CmdGetSwordTrainingDataCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq),
-            "CmdSwordTrainingLearnSkillScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp),
-            "CmdSwordTrainingResumeGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq),
-            "CmdSwordTrainingExamResultConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp),
-            "CmdSwordTrainingLearnSkillCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq),
-            "CmdSwordTrainingStoryConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq),
-            "CmdSwordTrainingSetSkillTraceScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp),
-            "CmdSwordTrainingDialogueSelectOptionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq),
-            "CmdSwordTrainingSelectEndingScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp),
-            "CmdSwordTrainingRestoreGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp),
-            "CmdSwordTrainingStoryBattleCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq),
-            "CmdSwordTrainingDailyPhaseConfirmScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp),
-            "CmdSwordTrainingMarkEndingViewedCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq),
-            "CmdSwordTrainingStoryBattleScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp),
-            "CmdSwordTrainingTurnActionCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq),
-            "CmdSwordTrainingStartGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp),
-            "CmdSwordTrainingGiveUpGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp),
-            "CmdEnterSwordTrainingExamCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq),
-            "CmdSwordTrainingGiveUpGameCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq),
-            "CmdEnterSwordTrainingExamScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp),
-            "CmdGetSwordTrainingDataScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp),
-            "CmdSwordTrainingDialogueSelectOptionScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp),
-            "CmdSwordTrainingSelectEndingCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq),
-            "CmdSwordTrainingResumeGameScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp),
-            "CmdSwordTrainingGameSyncChangeScNotify" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify),
-            "CmdSwordTrainingTurnActionScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp),
-            "CmdSwordTrainingMarkEndingViewedScRsp" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp),
-            "CmdSwordTrainingDailyPhaseConfirmCsReq" => ::std::option::Option::Some(CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq),
+            "HLADHLLGCBM_ALOCMFAKBKP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP),
+            "HLADHLLGCBM_BFDPOGEKJIB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB),
+            "HLADHLLGCBM_IPHOBIAMEGN" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN),
+            "HLADHLLGCBM_NINFFIOMNKF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF),
+            "HLADHLLGCBM_GOBKDMAPGCL" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL),
+            "HLADHLLGCBM_BMGKCCLHCOD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD),
+            "HLADHLLGCBM_GALIHAGGFJP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP),
+            "HLADHLLGCBM_CEHCBLILJPJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ),
+            "HLADHLLGCBM_CLBPNHGPOOB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB),
+            "HLADHLLGCBM_GPHMOAMKKLA" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA),
+            "HLADHLLGCBM_GIAKLCLJCJL" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL),
+            "HLADHLLGCBM_MONDOCLCPAE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE),
+            "HLADHLLGCBM_FDGBJOGPJBP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP),
+            "HLADHLLGCBM_MPKINCGHIKF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF),
+            "HLADHLLGCBM_EFCFDPJGMON" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON),
+            "HLADHLLGCBM_GGMECECPHMG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG),
+            "HLADHLLGCBM_FCDKLPMBCHD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD),
+            "HLADHLLGCBM_NOALPKMILBG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG),
+            "HLADHLLGCBM_NLIDNIEALBD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD),
+            "HLADHLLGCBM_NOGDGLGALEF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF),
+            "HLADHLLGCBM_PBLCOKMGDPI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI),
+            "HLADHLLGCBM_PCCDPCOKFCJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ),
+            "HLADHLLGCBM_NBAKFGGKOGC" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC),
+            "HLADHLLGCBM_IIHABPJDEAJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ),
+            "HLADHLLGCBM_EALBCMCIOOI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI),
+            "HLADHLLGCBM_MKAANOIOAPE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE),
+            "HLADHLLGCBM_CLKPIDCIHGA" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA),
+            "HLADHLLGCBM_GDBHONBFOOE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE),
+            "HLADHLLGCBM_NFGKEJPDIOJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ),
+            "HLADHLLGCBM_BLHMDMEKACK" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK),
+            "HLADHLLGCBM_NEECHJFLGEH" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH),
+            "HLADHLLGCBM_MIGEDGMEMCI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI),
+            "HLADHLLGCBM_POAMLPPFHEO" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO),
+            "HLADHLLGCBM_IHBPMPDNJFB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB),
+            "HLADHLLGCBM_IGPHOOKDCGJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ),
+            "HLADHLLGCBM_ELLDPGHEEGG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG),
+            "HLADHLLGCBM_OBBBKBAAGIE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSwordTrainingType] = &[
-        CmdSwordTrainingType::CmdSwordTrainingTypeNone,
-        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq,
-        CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp,
-        CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq,
-        CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp,
-        CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq,
-        CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify,
-        CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp,
-        CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq,
+        CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP,
+        CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB,
+        CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN,
+        CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF,
+        CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL,
+        CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD,
+        CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP,
+        CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ,
+        CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB,
+        CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA,
+        CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL,
+        CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE,
+        CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP,
+        CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF,
+        CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON,
+        CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG,
+        CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD,
+        CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG,
+        CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD,
+        CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF,
+        CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI,
+        CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ,
+        CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC,
+        CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ,
+        CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI,
+        CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE,
+        CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA,
+        CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE,
+        CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ,
+        CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK,
+        CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH,
+        CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI,
+        CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO,
+        CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB,
+        CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ,
+        CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG,
+        CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE,
     ];
 }
 
@@ -245,43 +245,43 @@ impl ::protobuf::EnumFull for CmdSwordTrainingType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSwordTrainingType::CmdSwordTrainingTypeNone => 0,
-            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmCsReq => 1,
-            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmScRsp => 2,
-            CmdSwordTrainingType::CmdSwordTrainingUnlockSyncScNotify => 3,
-            CmdSwordTrainingType::CmdSwordTrainingRestoreGameCsReq => 4,
-            CmdSwordTrainingType::CmdSwordTrainingActionTurnSettleScNotify => 5,
-            CmdSwordTrainingType::CmdSwordTrainingGameSettleScNotify => 6,
-            CmdSwordTrainingType::CmdSwordTrainingStartGameCsReq => 7,
-            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceCsReq => 8,
-            CmdSwordTrainingType::CmdGetSwordTrainingDataCsReq => 9,
-            CmdSwordTrainingType::CmdSwordTrainingLearnSkillScRsp => 10,
-            CmdSwordTrainingType::CmdSwordTrainingResumeGameCsReq => 11,
-            CmdSwordTrainingType::CmdSwordTrainingExamResultConfirmScRsp => 12,
-            CmdSwordTrainingType::CmdSwordTrainingLearnSkillCsReq => 13,
-            CmdSwordTrainingType::CmdSwordTrainingStoryConfirmCsReq => 14,
-            CmdSwordTrainingType::CmdSwordTrainingSetSkillTraceScRsp => 15,
-            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionCsReq => 16,
-            CmdSwordTrainingType::CmdSwordTrainingSelectEndingScRsp => 17,
-            CmdSwordTrainingType::CmdSwordTrainingRestoreGameScRsp => 18,
-            CmdSwordTrainingType::CmdSwordTrainingStoryBattleCsReq => 19,
-            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmScRsp => 20,
-            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedCsReq => 21,
-            CmdSwordTrainingType::CmdSwordTrainingStoryBattleScRsp => 22,
-            CmdSwordTrainingType::CmdSwordTrainingTurnActionCsReq => 23,
-            CmdSwordTrainingType::CmdSwordTrainingStartGameScRsp => 24,
-            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameScRsp => 25,
-            CmdSwordTrainingType::CmdEnterSwordTrainingExamCsReq => 26,
-            CmdSwordTrainingType::CmdSwordTrainingGiveUpGameCsReq => 27,
-            CmdSwordTrainingType::CmdEnterSwordTrainingExamScRsp => 28,
-            CmdSwordTrainingType::CmdGetSwordTrainingDataScRsp => 29,
-            CmdSwordTrainingType::CmdSwordTrainingDialogueSelectOptionScRsp => 30,
-            CmdSwordTrainingType::CmdSwordTrainingSelectEndingCsReq => 31,
-            CmdSwordTrainingType::CmdSwordTrainingResumeGameScRsp => 32,
-            CmdSwordTrainingType::CmdSwordTrainingGameSyncChangeScNotify => 33,
-            CmdSwordTrainingType::CmdSwordTrainingTurnActionScRsp => 34,
-            CmdSwordTrainingType::CmdSwordTrainingMarkEndingViewedScRsp => 35,
-            CmdSwordTrainingType::CmdSwordTrainingDailyPhaseConfirmCsReq => 36,
+            CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP => 0,
+            CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB => 1,
+            CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN => 2,
+            CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF => 3,
+            CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL => 4,
+            CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD => 5,
+            CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP => 6,
+            CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ => 7,
+            CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB => 8,
+            CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA => 9,
+            CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL => 10,
+            CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE => 11,
+            CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP => 12,
+            CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF => 13,
+            CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON => 14,
+            CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG => 15,
+            CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD => 16,
+            CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG => 17,
+            CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD => 18,
+            CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF => 19,
+            CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI => 20,
+            CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ => 21,
+            CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC => 22,
+            CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ => 23,
+            CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI => 24,
+            CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE => 25,
+            CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA => 26,
+            CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE => 27,
+            CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ => 28,
+            CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK => 29,
+            CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH => 30,
+            CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI => 31,
+            CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO => 32,
+            CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB => 33,
+            CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ => 34,
+            CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG => 35,
+            CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE => 36,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -289,7 +289,7 @@ impl ::protobuf::EnumFull for CmdSwordTrainingType {
 
 impl ::std::default::Default for CmdSwordTrainingType {
     fn default() -> Self {
-        CmdSwordTrainingType::CmdSwordTrainingTypeNone
+        CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP
     }
 }
 
@@ -300,34 +300,31 @@ impl CmdSwordTrainingType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdSwordTrainingType.proto*\xe6\x0b\n\x14CmdSwordTrainingType\x12\
-    \x1c\n\x18CmdSwordTrainingTypeNone\x10\0\x12+\n&CmdSwordTrainingExamResu\
-    ltConfirmCsReq\x10\xc4:\x12&\n!CmdSwordTrainingStoryConfirmScRsp\x10\xa6\
-    :\x12'\n\"CmdSwordTrainingUnlockSyncScNotify\x10\xbc:\x12%\n\x20CmdSword\
-    TrainingRestoreGameCsReq\x10\xa3:\x12-\n(CmdSwordTrainingActionTurnSettl\
-    eScNotify\x10\xaa:\x12'\n\"CmdSwordTrainingGameSettleScNotify\x10\x9c:\
-    \x12#\n\x1eCmdSwordTrainingStartGameCsReq\x10\xa5:\x12'\n\"CmdSwordTrain\
-    ingSetSkillTraceCsReq\x10\xb2:\x12!\n\x1cCmdGetSwordTrainingDataCsReq\
-    \x10\xb6:\x12$\n\x1fCmdSwordTrainingLearnSkillScRsp\x10\xb8:\x12$\n\x1fC\
-    mdSwordTrainingResumeGameCsReq\x10\xc8:\x12+\n&CmdSwordTrainingExamResul\
-    tConfirmScRsp\x10\xbf:\x12$\n\x1fCmdSwordTrainingLearnSkillCsReq\x10\xbb\
-    :\x12&\n!CmdSwordTrainingStoryConfirmCsReq\x10\xbd:\x12'\n\"CmdSwordTrai\
-    ningSetSkillTraceScRsp\x10\xa4:\x12.\n)CmdSwordTrainingDialogueSelectOpt\
-    ionCsReq\x10\xc6:\x12&\n!CmdSwordTrainingSelectEndingScRsp\x10\xb3:\x12%\
-    \n\x20CmdSwordTrainingRestoreGameScRsp\x10\xb0:\x12%\n\x20CmdSwordTraini\
-    ngStoryBattleCsReq\x10\xcc:\x12+\n&CmdSwordTrainingDailyPhaseConfirmScRs\
-    p\x10\xae:\x12*\n%CmdSwordTrainingMarkEndingViewedCsReq\x10\xc1:\x12%\n\
-    \x20CmdSwordTrainingStoryBattleScRsp\x10\xac:\x12$\n\x1fCmdSwordTraining\
-    TurnActionCsReq\x10\xc0:\x12#\n\x1eCmdSwordTrainingStartGameScRsp\x10\
-    \xb7:\x12$\n\x1fCmdSwordTrainingGiveUpGameScRsp\x10\xb9:\x12#\n\x1eCmdEn\
-    terSwordTrainingExamCsReq\x10\xad:\x12$\n\x1fCmdSwordTrainingGiveUpGameC\
-    sReq\x10\xa9:\x12#\n\x1eCmdEnterSwordTrainingExamScRsp\x10\xc9:\x12!\n\
-    \x1cCmdGetSwordTrainingDataScRsp\x10\xaf:\x12.\n)CmdSwordTrainingDialogu\
-    eSelectOptionScRsp\x10\x9b:\x12&\n!CmdSwordTrainingSelectEndingCsReq\x10\
-    \xba:\x12$\n\x1fCmdSwordTrainingResumeGameScRsp\x10\xa8:\x12+\n&CmdSword\
-    TrainingGameSyncChangeScNotify\x10\xb4:\x12$\n\x1fCmdSwordTrainingTurnAc\
-    tionScRsp\x10\x9f:\x12*\n%CmdSwordTrainingMarkEndingViewedScRsp\x10\xab:\
-    \x12+\n&CmdSwordTrainingDailyPhaseConfirmCsReq\x10\xb5:b\x06proto3\
+    \n\x1aCmdSwordTrainingType.proto*\xeb\x08\n\x14CmdSwordTrainingType\x12\
+    \x1b\n\x17HLADHLLGCBM_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HLADHLLGCBM_BFDPOGE\
+    KJIB\x10\xb2:\x12\x1c\n\x17HLADHLLGCBM_IPHOBIAMEGN\x10\xa1:\x12\x1c\n\
+    \x17HLADHLLGCBM_NINFFIOMNKF\x10\xb5:\x12\x1c\n\x17HLADHLLGCBM_GOBKDMAPGC\
+    L\x10\xaf:\x12\x1c\n\x17HLADHLLGCBM_BMGKCCLHCOD\x10\xbf:\x12\x1c\n\x17HL\
+    ADHLLGCBM_GALIHAGGFJP\x10\xc8:\x12\x1c\n\x17HLADHLLGCBM_CEHCBLILJPJ\x10\
+    \x9e:\x12\x1c\n\x17HLADHLLGCBM_CLBPNHGPOOB\x10\xc2:\x12\x1c\n\x17HLADHLL\
+    GCBM_GPHMOAMKKLA\x10\xb8:\x12\x1c\n\x17HLADHLLGCBM_GIAKLCLJCJL\x10\xbb:\
+    \x12\x1c\n\x17HLADHLLGCBM_MONDOCLCPAE\x10\xb6:\x12\x1c\n\x17HLADHLLGCBM_\
+    FDGBJOGPJBP\x10\xb1:\x12\x1c\n\x17HLADHLLGCBM_MPKINCGHIKF\x10\xb9:\x12\
+    \x1c\n\x17HLADHLLGCBM_EFCFDPJGMON\x10\xbe:\x12\x1c\n\x17HLADHLLGCBM_GGME\
+    CECPHMG\x10\xc9:\x12\x1c\n\x17HLADHLLGCBM_FCDKLPMBCHD\x10\x9f:\x12\x1c\n\
+    \x17HLADHLLGCBM_NOALPKMILBG\x10\xbd:\x12\x1c\n\x17HLADHLLGCBM_NLIDNIEALB\
+    D\x10\x9d:\x12\x1c\n\x17HLADHLLGCBM_NOGDGLGALEF\x10\xb4:\x12\x1c\n\x17HL\
+    ADHLLGCBM_PBLCOKMGDPI\x10\xc7:\x12\x1c\n\x17HLADHLLGCBM_PCCDPCOKFCJ\x10\
+    \xca:\x12\x1c\n\x17HLADHLLGCBM_NBAKFGGKOGC\x10\xae:\x12\x1c\n\x17HLADHLL\
+    GCBM_IIHABPJDEAJ\x10\xba:\x12\x1c\n\x17HLADHLLGCBM_EALBCMCIOOI\x10\xbc:\
+    \x12\x1c\n\x17HLADHLLGCBM_MKAANOIOAPE\x10\xa2:\x12\x1c\n\x17HLADHLLGCBM_\
+    CLKPIDCIHGA\x10\x9b:\x12\x1c\n\x17HLADHLLGCBM_GDBHONBFOOE\x10\xcc:\x12\
+    \x1c\n\x17HLADHLLGCBM_NFGKEJPDIOJ\x10\xc3:\x12\x1c\n\x17HLADHLLGCBM_BLHM\
+    DMEKACK\x10\xb3:\x12\x1c\n\x17HLADHLLGCBM_NEECHJFLGEH\x10\xb7:\x12\x1c\n\
+    \x17HLADHLLGCBM_MIGEDGMEMCI\x10\xa4:\x12\x1c\n\x17HLADHLLGCBM_POAMLPPFHE\
+    O\x10\xc6:\x12\x1c\n\x17HLADHLLGCBM_IHBPMPDNJFB\x10\xc5:\x12\x1c\n\x17HL\
+    ADHLLGCBM_IGPHOOKDCGJ\x10\x9c:\x12\x1c\n\x17HLADHLLGCBM_ELLDPGHEEGG\x10\
+    \xa0:\x12\x1c\n\x17HLADHLLGCBM_OBBBKBAAGIE\x10\xad:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

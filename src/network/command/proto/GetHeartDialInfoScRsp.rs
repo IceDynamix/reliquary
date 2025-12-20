@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetHeartDialInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.script_info_list)
-    pub script_info_list: ::std::vec::Vec<super::HeartDialScriptInfo::HeartDialScriptInfo>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.unlock_status)
+    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockStatus::HeartDialUnlockStatus>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.JONOFHIOHCK)
+    pub JONOFHIOHCK: ::std::vec::Vec<super::OBHECAOLBNN::OBHECAOLBNN>,
     // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.dialogue_info_list)
     pub dialogue_info_list: ::std::vec::Vec<super::HeartDialDialogueInfo::HeartDialDialogueInfo>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.HCCPFLHOBGM)
-    pub HCCPFLHOBGM: ::std::vec::Vec<super::MMEINFMDJFG::MMEINFMDJFG>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.unlock_status)
-    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockSatus::HeartDialUnlockSatus>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.script_info_list)
+    pub script_info_list: ::std::vec::Vec<super::HeartDialScriptInfo::HeartDialScriptInfo>,
     // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -57,10 +57,15 @@ impl GetHeartDialInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlock_status",
+            |m: &GetHeartDialInfoScRsp| { &m.unlock_status },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.unlock_status },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "script_info_list",
-            |m: &GetHeartDialInfoScRsp| { &m.script_info_list },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.script_info_list },
+            "JONOFHIOHCK",
+            |m: &GetHeartDialInfoScRsp| { &m.JONOFHIOHCK },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.JONOFHIOHCK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "dialogue_info_list",
@@ -68,14 +73,9 @@ impl GetHeartDialInfoScRsp {
             |m: &mut GetHeartDialInfoScRsp| { &mut m.dialogue_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HCCPFLHOBGM",
-            |m: &GetHeartDialInfoScRsp| { &m.HCCPFLHOBGM },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.HCCPFLHOBGM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_status",
-            |m: &GetHeartDialInfoScRsp| { &m.unlock_status },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.unlock_status },
+            "script_info_list",
+            |m: &GetHeartDialInfoScRsp| { &m.script_info_list },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.script_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,17 +100,17 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.script_info_list.push(is.read_message()?);
+                48 => {
+                    self.unlock_status = is.read_enum_or_unknown()?;
                 },
-                66 => {
+                58 => {
+                    self.JONOFHIOHCK.push(is.read_message()?);
+                },
+                42 => {
                     self.dialogue_info_list.push(is.read_message()?);
                 },
-                74 => {
-                    self.HCCPFLHOBGM.push(is.read_message()?);
-                },
-                80 => {
-                    self.unlock_status = is.read_enum_or_unknown()?;
+                122 => {
+                    self.script_info_list.push(is.read_message()?);
                 },
                 104 => {
                     self.retcode = is.read_uint32()?;
@@ -127,7 +127,10 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.script_info_list {
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(6, self.unlock_status.value());
+        }
+        for value in &self.JONOFHIOHCK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -135,13 +138,10 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HCCPFLHOBGM {
+        for value in &self.script_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(10, self.unlock_status.value());
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
@@ -151,18 +151,18 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.script_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
+        }
+        for v in &self.JONOFHIOHCK {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.dialogue_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        for v in &self.HCCPFLHOBGM {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.script_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
-        }
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
         }
@@ -183,20 +183,20 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.script_info_list.clear();
+        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.JONOFHIOHCK.clear();
         self.dialogue_info_list.clear();
-        self.HCCPFLHOBGM.clear();
-        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockSatus::HeartDialUnlockSatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.script_info_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetHeartDialInfoScRsp {
         static instance: GetHeartDialInfoScRsp = GetHeartDialInfoScRsp {
-            script_info_list: ::std::vec::Vec::new(),
-            dialogue_info_list: ::std::vec::Vec::new(),
-            HCCPFLHOBGM: ::std::vec::Vec::new(),
             unlock_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            JONOFHIOHCK: ::std::vec::Vec::new(),
+            dialogue_info_list: ::std::vec::Vec::new(),
+            script_info_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for GetHeartDialInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetHeartDialInfoScRsp.proto\x1a\x1bHeartDialDialogueInfo.proto\x1a\
-    \x19HeartDialScriptInfo.proto\x1a\x1aHeartDialUnlockSatus.proto\x1a\x11M\
-    MEINFMDJFG.proto\"\xa3\x02\n\x15GetHeartDialInfoScRsp\x12>\n\x10script_i\
-    nfo_list\x18\x02\x20\x03(\x0b2\x14.HeartDialScriptInfoR\x0escriptInfoLis\
-    t\x12D\n\x12dialogue_info_list\x18\x08\x20\x03(\x0b2\x16.HeartDialDialog\
-    ueInfoR\x10dialogueInfoList\x12.\n\x0bHCCPFLHOBGM\x18\t\x20\x03(\x0b2\
-    \x0c.MMEINFMDJFGR\x0bHCCPFLHOBGM\x12:\n\runlock_status\x18\n\x20\x01(\
-    \x0e2\x15.HeartDialUnlockSatusR\x0cunlockStatus\x12\x18\n\x07retcode\x18\
-    \r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x19HeartDialScriptInfo.proto\x1a\x1bHeartDialUnlockStatus.proto\x1a\x11\
+    OBHECAOLBNN.proto\"\xa4\x02\n\x15GetHeartDialInfoScRsp\x12;\n\runlock_st\
+    atus\x18\x06\x20\x01(\x0e2\x16.HeartDialUnlockStatusR\x0cunlockStatus\
+    \x12.\n\x0bJONOFHIOHCK\x18\x07\x20\x03(\x0b2\x0c.OBHECAOLBNNR\x0bJONOFHI\
+    OHCK\x12D\n\x12dialogue_info_list\x18\x05\x20\x03(\x0b2\x16.HeartDialDia\
+    logueInfoR\x10dialogueInfoList\x12>\n\x10script_info_list\x18\x0f\x20\
+    \x03(\x0b2\x14.HeartDialScriptInfoR\x0escriptInfoList\x12\x18\n\x07retco\
+    de\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -250,8 +250,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::HeartDialDialogueInfo::file_descriptor().clone());
             deps.push(super::HeartDialScriptInfo::file_descriptor().clone());
-            deps.push(super::HeartDialUnlockSatus::file_descriptor().clone());
-            deps.push(super::MMEINFMDJFG::file_descriptor().clone());
+            deps.push(super::HeartDialUnlockStatus::file_descriptor().clone());
+            deps.push(super::OBHECAOLBNN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetHeartDialInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

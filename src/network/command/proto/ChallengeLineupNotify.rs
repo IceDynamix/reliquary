@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                96 => {
                     self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.extra_lineup_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.extra_lineup_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ChallengeLineupNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeLineupNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeLineupNotify.proto\x1a\x15ExtraLineupType.proto\"U\n\x15C\
-    hallengeLineupNotify\x12<\n\x11extra_lineup_type\x18\x0e\x20\x01(\x0e2\
+    hallengeLineupNotify\x12<\n\x11extra_lineup_type\x18\x0c\x20\x01(\x0e2\
     \x10.ExtraLineupTypeR\x0fextraLineupTypeb\x06proto3\
 ";
 

@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerLoginScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.bs_bin_version)
-    pub bs_bin_version: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.is_relay)
-    pub is_relay: bool,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.server_timestamp_ms)
-    pub server_timestamp_ms: u64,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.basic_info)
-    pub basic_info: ::protobuf::MessageField<super::PlayerBasicInfo::PlayerBasicInfo>,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.cur_timezone)
-    pub cur_timezone: i32,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.is_new_player)
-    pub is_new_player: bool,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.stamina)
-    pub stamina: u32,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.ILLFKHPDFDD)
+    pub ILLFKHPDFDD: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerLoginScRsp.login_random)
     pub login_random: u64,
-    // @@protoc_insertion_point(field:PlayerLoginScRsp.register_cps)
-    pub register_cps: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.cur_timezone)
+    pub cur_timezone: i32,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.NKDGCOLOCOM)
+    pub NKDGCOLOCOM: bool,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.MDHPBBJECGD)
+    pub MDHPBBJECGD: bool,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.basic_info)
+    pub basic_info: ::protobuf::MessageField<super::PlayerBasicInfo::PlayerBasicInfo>,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.stamina)
+    pub stamina: u32,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.NEDEKOAEBAP)
+    pub NEDEKOAEBAP: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginScRsp.server_timestamp_ms)
+    pub server_timestamp_ms: u64,
     // @@protoc_insertion_point(field:PlayerLoginScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -68,39 +68,9 @@ impl PlayerLoginScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "bs_bin_version",
-            |m: &PlayerLoginScRsp| { &m.bs_bin_version },
-            |m: &mut PlayerLoginScRsp| { &mut m.bs_bin_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_relay",
-            |m: &PlayerLoginScRsp| { &m.is_relay },
-            |m: &mut PlayerLoginScRsp| { &mut m.is_relay },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "server_timestamp_ms",
-            |m: &PlayerLoginScRsp| { &m.server_timestamp_ms },
-            |m: &mut PlayerLoginScRsp| { &mut m.server_timestamp_ms },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerBasicInfo::PlayerBasicInfo>(
-            "basic_info",
-            |m: &PlayerLoginScRsp| { &m.basic_info },
-            |m: &mut PlayerLoginScRsp| { &mut m.basic_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_timezone",
-            |m: &PlayerLoginScRsp| { &m.cur_timezone },
-            |m: &mut PlayerLoginScRsp| { &mut m.cur_timezone },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_new_player",
-            |m: &PlayerLoginScRsp| { &m.is_new_player },
-            |m: &mut PlayerLoginScRsp| { &mut m.is_new_player },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stamina",
-            |m: &PlayerLoginScRsp| { &m.stamina },
-            |m: &mut PlayerLoginScRsp| { &mut m.stamina },
+            "ILLFKHPDFDD",
+            |m: &PlayerLoginScRsp| { &m.ILLFKHPDFDD },
+            |m: &mut PlayerLoginScRsp| { &mut m.ILLFKHPDFDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "login_random",
@@ -108,9 +78,39 @@ impl PlayerLoginScRsp {
             |m: &mut PlayerLoginScRsp| { &mut m.login_random },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "register_cps",
-            |m: &PlayerLoginScRsp| { &m.register_cps },
-            |m: &mut PlayerLoginScRsp| { &mut m.register_cps },
+            "cur_timezone",
+            |m: &PlayerLoginScRsp| { &m.cur_timezone },
+            |m: &mut PlayerLoginScRsp| { &mut m.cur_timezone },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NKDGCOLOCOM",
+            |m: &PlayerLoginScRsp| { &m.NKDGCOLOCOM },
+            |m: &mut PlayerLoginScRsp| { &mut m.NKDGCOLOCOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MDHPBBJECGD",
+            |m: &PlayerLoginScRsp| { &m.MDHPBBJECGD },
+            |m: &mut PlayerLoginScRsp| { &mut m.MDHPBBJECGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerBasicInfo::PlayerBasicInfo>(
+            "basic_info",
+            |m: &PlayerLoginScRsp| { &m.basic_info },
+            |m: &mut PlayerLoginScRsp| { &mut m.basic_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stamina",
+            |m: &PlayerLoginScRsp| { &m.stamina },
+            |m: &mut PlayerLoginScRsp| { &mut m.stamina },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEDEKOAEBAP",
+            |m: &PlayerLoginScRsp| { &m.NEDEKOAEBAP },
+            |m: &mut PlayerLoginScRsp| { &mut m.NEDEKOAEBAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "server_timestamp_ms",
+            |m: &PlayerLoginScRsp| { &m.server_timestamp_ms },
+            |m: &mut PlayerLoginScRsp| { &mut m.server_timestamp_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -135,34 +135,34 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.bs_bin_version = is.read_string()?;
+                122 => {
+                    self.ILLFKHPDFDD = is.read_string()?;
                 },
-                16 => {
-                    self.is_relay = is.read_bool()?;
-                },
-                32 => {
-                    self.server_timestamp_ms = is.read_uint64()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
-                },
-                48 => {
-                    self.cur_timezone = is.read_int32()?;
-                },
-                64 => {
-                    self.is_new_player = is.read_bool()?;
-                },
-                80 => {
-                    self.stamina = is.read_uint32()?;
-                },
-                96 => {
+                112 => {
                     self.login_random = is.read_uint64()?;
                 },
-                114 => {
-                    self.register_cps = is.read_string()?;
+                8 => {
+                    self.cur_timezone = is.read_int32()?;
                 },
-                120 => {
+                16 => {
+                    self.NKDGCOLOCOM = is.read_bool()?;
+                },
+                88 => {
+                    self.MDHPBBJECGD = is.read_bool()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
+                },
+                64 => {
+                    self.stamina = is.read_uint32()?;
+                },
+                58 => {
+                    self.NEDEKOAEBAP = is.read_string()?;
+                },
+                48 => {
+                    self.server_timestamp_ms = is.read_uint64()?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -177,36 +177,36 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.bs_bin_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.bs_bin_version);
+        if !self.ILLFKHPDFDD.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.ILLFKHPDFDD);
         }
-        if self.is_relay != false {
+        if self.login_random != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.login_random);
+        }
+        if self.cur_timezone != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.cur_timezone);
+        }
+        if self.NKDGCOLOCOM != false {
             my_size += 1 + 1;
         }
-        if self.server_timestamp_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.server_timestamp_ms);
+        if self.MDHPBBJECGD != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.basic_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cur_timezone != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.cur_timezone);
-        }
-        if self.is_new_player != false {
-            my_size += 1 + 1;
-        }
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(8, self.stamina);
         }
-        if self.login_random != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.login_random);
+        if !self.NEDEKOAEBAP.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.NEDEKOAEBAP);
         }
-        if !self.register_cps.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.register_cps);
+        if self.server_timestamp_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.server_timestamp_ms);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -214,35 +214,35 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.bs_bin_version.is_empty() {
-            os.write_string(1, &self.bs_bin_version)?;
-        }
-        if self.is_relay != false {
-            os.write_bool(2, self.is_relay)?;
-        }
-        if self.server_timestamp_ms != 0 {
-            os.write_uint64(4, self.server_timestamp_ms)?;
-        }
-        if let Some(v) = self.basic_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.cur_timezone != 0 {
-            os.write_int32(6, self.cur_timezone)?;
-        }
-        if self.is_new_player != false {
-            os.write_bool(8, self.is_new_player)?;
-        }
-        if self.stamina != 0 {
-            os.write_uint32(10, self.stamina)?;
+        if !self.ILLFKHPDFDD.is_empty() {
+            os.write_string(15, &self.ILLFKHPDFDD)?;
         }
         if self.login_random != 0 {
-            os.write_uint64(12, self.login_random)?;
+            os.write_uint64(14, self.login_random)?;
         }
-        if !self.register_cps.is_empty() {
-            os.write_string(14, &self.register_cps)?;
+        if self.cur_timezone != 0 {
+            os.write_int32(1, self.cur_timezone)?;
+        }
+        if self.NKDGCOLOCOM != false {
+            os.write_bool(2, self.NKDGCOLOCOM)?;
+        }
+        if self.MDHPBBJECGD != false {
+            os.write_bool(11, self.MDHPBBJECGD)?;
+        }
+        if let Some(v) = self.basic_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.stamina != 0 {
+            os.write_uint32(8, self.stamina)?;
+        }
+        if !self.NEDEKOAEBAP.is_empty() {
+            os.write_string(7, &self.NEDEKOAEBAP)?;
+        }
+        if self.server_timestamp_ms != 0 {
+            os.write_uint64(6, self.server_timestamp_ms)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -261,30 +261,30 @@ impl ::protobuf::Message for PlayerLoginScRsp {
     }
 
     fn clear(&mut self) {
-        self.bs_bin_version.clear();
-        self.is_relay = false;
-        self.server_timestamp_ms = 0;
-        self.basic_info.clear();
-        self.cur_timezone = 0;
-        self.is_new_player = false;
-        self.stamina = 0;
+        self.ILLFKHPDFDD.clear();
         self.login_random = 0;
-        self.register_cps.clear();
+        self.cur_timezone = 0;
+        self.NKDGCOLOCOM = false;
+        self.MDHPBBJECGD = false;
+        self.basic_info.clear();
+        self.stamina = 0;
+        self.NEDEKOAEBAP.clear();
+        self.server_timestamp_ms = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerLoginScRsp {
         static instance: PlayerLoginScRsp = PlayerLoginScRsp {
-            bs_bin_version: ::std::string::String::new(),
-            is_relay: false,
-            server_timestamp_ms: 0,
-            basic_info: ::protobuf::MessageField::none(),
-            cur_timezone: 0,
-            is_new_player: false,
-            stamina: 0,
+            ILLFKHPDFDD: ::std::string::String::new(),
             login_random: 0,
-            register_cps: ::std::string::String::new(),
+            cur_timezone: 0,
+            NKDGCOLOCOM: false,
+            MDHPBBJECGD: false,
+            basic_info: ::protobuf::MessageField::none(),
+            stamina: 0,
+            NEDEKOAEBAP: ::std::string::String::new(),
+            server_timestamp_ms: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -311,15 +311,15 @@ impl ::protobuf::reflect::ProtobufValue for PlayerLoginScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerLoginScRsp.proto\x1a\x15PlayerBasicInfo.proto\"\xf5\x02\n\
-    \x10PlayerLoginScRsp\x12$\n\x0ebs_bin_version\x18\x01\x20\x01(\tR\x0cbsB\
-    inVersion\x12\x19\n\x08is_relay\x18\x02\x20\x01(\x08R\x07isRelay\x12.\n\
-    \x13server_timestamp_ms\x18\x04\x20\x01(\x04R\x11serverTimestampMs\x12/\
-    \n\nbasic_info\x18\x05\x20\x01(\x0b2\x10.PlayerBasicInfoR\tbasicInfo\x12\
-    !\n\x0ccur_timezone\x18\x06\x20\x01(\x05R\x0bcurTimezone\x12\"\n\ris_new\
-    _player\x18\x08\x20\x01(\x08R\x0bisNewPlayer\x12\x18\n\x07stamina\x18\n\
-    \x20\x01(\rR\x07stamina\x12!\n\x0clogin_random\x18\x0c\x20\x01(\x04R\x0b\
-    loginRandom\x12!\n\x0cregister_cps\x18\x0e\x20\x01(\tR\x0bregisterCps\
-    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x10PlayerLoginScRsp\x12\x20\n\x0bILLFKHPDFDD\x18\x0f\x20\x01(\tR\x0bILL\
+    FKHPDFDD\x12!\n\x0clogin_random\x18\x0e\x20\x01(\x04R\x0bloginRandom\x12\
+    !\n\x0ccur_timezone\x18\x01\x20\x01(\x05R\x0bcurTimezone\x12\x20\n\x0bNK\
+    DGCOLOCOM\x18\x02\x20\x01(\x08R\x0bNKDGCOLOCOM\x12\x20\n\x0bMDHPBBJECGD\
+    \x18\x0b\x20\x01(\x08R\x0bMDHPBBJECGD\x12/\n\nbasic_info\x18\t\x20\x01(\
+    \x0b2\x10.PlayerBasicInfoR\tbasicInfo\x12\x18\n\x07stamina\x18\x08\x20\
+    \x01(\rR\x07stamina\x12\x20\n\x0bNEDEKOAEBAP\x18\x07\x20\x01(\tR\x0bNEDE\
+    KOAEBAP\x12.\n\x13server_timestamp_ms\x18\x06\x20\x01(\x04R\x11serverTim\
+    estampMs\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

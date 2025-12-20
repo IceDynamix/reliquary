@@ -39,10 +39,8 @@ pub mod proto {
     pub mod DoGachaScRsp;
     pub mod EquipRelic;
     pub mod Equipment;
-    pub mod ExpiredMaterial;
+    pub mod GachaCeiling;
     pub mod GachaCeilingAvatar;
-    pub mod GachaCeilingInfo;
-    pub mod GachaDecideInfo;
     pub mod GachaInfo;
     pub mod GachaItem;
     pub mod GetAvatarDataScRsp;
@@ -50,22 +48,21 @@ pub mod proto {
     pub mod GetGachaInfoScRsp;
     pub mod GroupStatus;
     pub mod GrowthTargetFunctionType;
+    pub mod HeadFrameInfo;
     pub mod HeadIconData;
-    pub mod HeadIconFrame;
     pub mod Item;
     pub mod ItemList;
-    pub mod MainMissionSync;
     pub mod Material;
     pub mod MessageGroupStatus;
     pub mod MessageSectionStatus;
     pub mod Mission;
     pub mod MissionCustomValue;
+    pub mod MissionCustomValueList;
     pub mod MissionStatus;
     pub mod MissionSync;
-    pub mod MissionSyncRecordType;
+    pub mod MissionSyncRecord;
     pub mod MultiPathAvatarInfo;
     pub mod MultiPathAvatarType;
-    pub mod PetModuleSync;
     pub mod PileItem;
     pub mod PlayerBasicInfo;
     pub mod PlayerBoardModuleSync;
@@ -74,6 +71,7 @@ pub mod proto {
     pub mod PlayerSyncScNotify;
     pub mod Quest;
     pub mod QuestStatus;
+    pub mod RecycleMaterial;
     pub mod Relic;
     pub mod RelicAffix;
     pub mod SectionStatus;
@@ -83,13 +81,15 @@ pub mod proto {
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod BAHLPCDDJGG;
-    pub mod GKDIHIFFHFD;
-    pub mod GNIEJGNKKGG;
-    pub mod IKAMMKLBOCO;
-    pub mod JLEHFBOHNIE;
-    pub mod KHOCCHABNMN;
-    pub mod NKDOHHODNNH;
+    pub mod AOEOIAOCLJF;
+    pub mod EEAFFOIMNAC;
+    pub mod ELKCLIGPPMB;
+    pub mod EMGGICLPMAM;
+    pub mod HCDNJAIBBJO;
+    pub mod IMLJEHIIMLF;
+    pub mod IMMBIPNMNOB;
+    pub mod MDNFFONDBOK;
+    pub mod MIFPNAIJHOM;
 }
 
 /// Game command header.

@@ -82,7 +82,7 @@ impl ::protobuf::Message for SectionStatus {
                 8 => {
                     self.section_id = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
                     self.section_status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SectionStatus {
             my_size += ::protobuf::rt::uint32_size(1, self.section_id);
         }
         if self.section_status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.section_status.value());
+            my_size += ::protobuf::rt::int32_size(3, self.section_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SectionStatus {
             os.write_uint32(1, self.section_id)?;
         }
         if self.section_status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.section_status))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.section_status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SectionStatus {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SectionStatus.proto\x1a\x1aMessageSectionStatus.proto\"l\n\rSectio\
     nStatus\x12\x1d\n\nsection_id\x18\x01\x20\x01(\rR\tsectionId\x12<\n\x0es\
-    ection_status\x18\t\x20\x01(\x0e2\x15.MessageSectionStatusR\rsectionStat\
-    usb\x06proto3\
+    ection_status\x18\x03\x20\x01(\x0e2\x15.MessageSectionStatusR\rsectionSt\
+    atusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

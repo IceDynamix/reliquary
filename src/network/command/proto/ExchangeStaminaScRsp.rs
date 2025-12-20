@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ExchangeStaminaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ExchangeStaminaScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ExchangeStaminaScRsp.stamina_add)
-    pub stamina_add: u32,
     // @@protoc_insertion_point(field:ExchangeStaminaScRsp.exchange_times)
     pub exchange_times: u32,
     // @@protoc_insertion_point(field:ExchangeStaminaScRsp.item_cost_list)
     pub item_cost_list: ::std::vec::Vec<super::ItemCost::ItemCost>,
+    // @@protoc_insertion_point(field:ExchangeStaminaScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ExchangeStaminaScRsp.stamina_add)
+    pub stamina_add: u32,
     // @@protoc_insertion_point(field:ExchangeStaminaScRsp.last_recover_time)
     pub last_recover_time: i64,
     // special fields
@@ -58,16 +58,6 @@ impl ExchangeStaminaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ExchangeStaminaScRsp| { &m.retcode },
-            |m: &mut ExchangeStaminaScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stamina_add",
-            |m: &ExchangeStaminaScRsp| { &m.stamina_add },
-            |m: &mut ExchangeStaminaScRsp| { &mut m.stamina_add },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exchange_times",
             |m: &ExchangeStaminaScRsp| { &m.exchange_times },
             |m: &mut ExchangeStaminaScRsp| { &mut m.exchange_times },
@@ -76,6 +66,16 @@ impl ExchangeStaminaScRsp {
             "item_cost_list",
             |m: &ExchangeStaminaScRsp| { &m.item_cost_list },
             |m: &mut ExchangeStaminaScRsp| { &mut m.item_cost_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ExchangeStaminaScRsp| { &m.retcode },
+            |m: &mut ExchangeStaminaScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stamina_add",
+            |m: &ExchangeStaminaScRsp| { &m.stamina_add },
+            |m: &mut ExchangeStaminaScRsp| { &mut m.stamina_add },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "last_recover_time",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for ExchangeStaminaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                64 => {
-                    self.stamina_add = is.read_uint32()?;
-                },
                 72 => {
                     self.exchange_times = is.read_uint32()?;
                 },
-                98 => {
+                58 => {
                     self.item_cost_list.push(is.read_message()?);
                 },
-                104 => {
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.stamina_add = is.read_uint32()?;
+                },
+                64 => {
                     self.last_recover_time = is.read_int64()?;
                 },
                 tag => {
@@ -127,12 +127,6 @@ impl ::protobuf::Message for ExchangeStaminaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        if self.stamina_add != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.stamina_add);
-        }
         if self.exchange_times != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.exchange_times);
         }
@@ -140,8 +134,14 @@ impl ::protobuf::Message for ExchangeStaminaScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.stamina_add != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.stamina_add);
+        }
         if self.last_recover_time != 0 {
-            my_size += ::protobuf::rt::int64_size(13, self.last_recover_time);
+            my_size += ::protobuf::rt::int64_size(8, self.last_recover_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for ExchangeStaminaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        if self.stamina_add != 0 {
-            os.write_uint32(8, self.stamina_add)?;
-        }
         if self.exchange_times != 0 {
             os.write_uint32(9, self.exchange_times)?;
         }
         for v in &self.item_cost_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.stamina_add != 0 {
+            os.write_uint32(15, self.stamina_add)?;
+        }
         if self.last_recover_time != 0 {
-            os.write_int64(13, self.last_recover_time)?;
+            os.write_int64(8, self.last_recover_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for ExchangeStaminaScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.stamina_add = 0;
         self.exchange_times = 0;
         self.item_cost_list.clear();
+        self.retcode = 0;
+        self.stamina_add = 0;
         self.last_recover_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ExchangeStaminaScRsp {
         static instance: ExchangeStaminaScRsp = ExchangeStaminaScRsp {
-            retcode: 0,
-            stamina_add: 0,
             exchange_times: 0,
             item_cost_list: ::std::vec::Vec::new(),
+            retcode: 0,
+            stamina_add: 0,
             last_recover_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ExchangeStaminaScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aExchangeStaminaScRsp.proto\x1a\x0eItemCost.proto\"\xd5\x01\n\x14Ex\
-    changeStaminaScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\
-    \x12\x1f\n\x0bstamina_add\x18\x08\x20\x01(\rR\nstaminaAdd\x12%\n\x0eexch\
-    ange_times\x18\t\x20\x01(\rR\rexchangeTimes\x12/\n\x0eitem_cost_list\x18\
-    \x0c\x20\x03(\x0b2\t.ItemCostR\x0citemCostList\x12*\n\x11last_recover_ti\
-    me\x18\r\x20\x01(\x03R\x0flastRecoverTimeb\x06proto3\
+    changeStaminaScRsp\x12%\n\x0eexchange_times\x18\t\x20\x01(\rR\rexchangeT\
+    imes\x12/\n\x0eitem_cost_list\x18\x07\x20\x03(\x0b2\t.ItemCostR\x0citemC\
+    ostList\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x1f\n\
+    \x0bstamina_add\x18\x0f\x20\x01(\rR\nstaminaAdd\x12*\n\x11last_recover_t\
+    ime\x18\x08\x20\x01(\x03R\x0flastRecoverTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

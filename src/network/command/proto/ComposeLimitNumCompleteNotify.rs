@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ComposeLimitNumCompleteNotify {
     // message fields
-    // @@protoc_insertion_point(field:ComposeLimitNumCompleteNotify.compose_limit_list)
-    pub compose_limit_list: ::std::vec::Vec<super::ComposeLimit::ComposeLimit>,
+    // @@protoc_insertion_point(field:ComposeLimitNumCompleteNotify.BHPFEGGDEPN)
+    pub BHPFEGGDEPN: ::std::vec::Vec<super::MMDPANJMOLH::MMDPANJMOLH>,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeLimitNumCompleteNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ComposeLimitNumCompleteNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "compose_limit_list",
-            |m: &ComposeLimitNumCompleteNotify| { &m.compose_limit_list },
-            |m: &mut ComposeLimitNumCompleteNotify| { &mut m.compose_limit_list },
+            "BHPFEGGDEPN",
+            |m: &ComposeLimitNumCompleteNotify| { &m.BHPFEGGDEPN },
+            |m: &mut ComposeLimitNumCompleteNotify| { &mut m.BHPFEGGDEPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeLimitNumCompleteNotify>(
             "ComposeLimitNumCompleteNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ComposeLimitNumCompleteNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.compose_limit_list.push(is.read_message()?);
+                106 => {
+                    self.BHPFEGGDEPN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ComposeLimitNumCompleteNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.compose_limit_list {
+        for value in &self.BHPFEGGDEPN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ComposeLimitNumCompleteNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.compose_limit_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.BHPFEGGDEPN {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ComposeLimitNumCompleteNotify {
     }
 
     fn clear(&mut self) {
-        self.compose_limit_list.clear();
+        self.BHPFEGGDEPN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeLimitNumCompleteNotify {
         static instance: ComposeLimitNumCompleteNotify = ComposeLimitNumCompleteNotify {
-            compose_limit_list: ::std::vec::Vec::new(),
+            BHPFEGGDEPN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ComposeLimitNumCompleteNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#ComposeLimitNumCompleteNotify.proto\x1a\x12ComposeLimit.proto\"\\\n\
-    \x1dComposeLimitNumCompleteNotify\x12;\n\x12compose_limit_list\x18\n\x20\
-    \x03(\x0b2\r.ComposeLimitR\x10composeLimitListb\x06proto3\
+    \n#ComposeLimitNumCompleteNotify.proto\x1a\x11MMDPANJMOLH.proto\"O\n\x1d\
+    ComposeLimitNumCompleteNotify\x12.\n\x0bBHPFEGGDEPN\x18\r\x20\x03(\x0b2\
+    \x0c.MMDPANJMOLHR\x0bBHPFEGGDEPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ComposeLimit::file_descriptor().clone());
+            deps.push(super::MMDPANJMOLH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ComposeLimitNumCompleteNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

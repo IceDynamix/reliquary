@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMailCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMailCsReq.KDPNMJKMLCI)
-    pub KDPNMJKMLCI: u32,
-    // @@protoc_insertion_point(field:GetMailCsReq.LHNJBGMNNOP)
-    pub LHNJBGMNNOP: u32,
+    // @@protoc_insertion_point(field:GetMailCsReq.GOPEBCPGDIK)
+    pub GOPEBCPGDIK: u32,
+    // @@protoc_insertion_point(field:GetMailCsReq.JLOJLHFJAKF)
+    pub JLOJLHFJAKF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMailCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetMailCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDPNMJKMLCI",
-            |m: &GetMailCsReq| { &m.KDPNMJKMLCI },
-            |m: &mut GetMailCsReq| { &mut m.KDPNMJKMLCI },
+            "GOPEBCPGDIK",
+            |m: &GetMailCsReq| { &m.GOPEBCPGDIK },
+            |m: &mut GetMailCsReq| { &mut m.GOPEBCPGDIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHNJBGMNNOP",
-            |m: &GetMailCsReq| { &m.LHNJBGMNNOP },
-            |m: &mut GetMailCsReq| { &mut m.LHNJBGMNNOP },
+            "JLOJLHFJAKF",
+            |m: &GetMailCsReq| { &m.JLOJLHFJAKF },
+            |m: &mut GetMailCsReq| { &mut m.JLOJLHFJAKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMailCsReq>(
             "GetMailCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetMailCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.KDPNMJKMLCI = is.read_uint32()?;
+                40 => {
+                    self.GOPEBCPGDIK = is.read_uint32()?;
                 },
-                88 => {
-                    self.LHNJBGMNNOP = is.read_uint32()?;
+                48 => {
+                    self.JLOJLHFJAKF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetMailCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDPNMJKMLCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KDPNMJKMLCI);
+        if self.GOPEBCPGDIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GOPEBCPGDIK);
         }
-        if self.LHNJBGMNNOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LHNJBGMNNOP);
+        if self.JLOJLHFJAKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JLOJLHFJAKF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDPNMJKMLCI != 0 {
-            os.write_uint32(10, self.KDPNMJKMLCI)?;
+        if self.GOPEBCPGDIK != 0 {
+            os.write_uint32(5, self.GOPEBCPGDIK)?;
         }
-        if self.LHNJBGMNNOP != 0 {
-            os.write_uint32(11, self.LHNJBGMNNOP)?;
+        if self.JLOJLHFJAKF != 0 {
+            os.write_uint32(6, self.JLOJLHFJAKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn clear(&mut self) {
-        self.KDPNMJKMLCI = 0;
-        self.LHNJBGMNNOP = 0;
+        self.GOPEBCPGDIK = 0;
+        self.JLOJLHFJAKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMailCsReq {
         static instance: GetMailCsReq = GetMailCsReq {
-            KDPNMJKMLCI: 0,
-            LHNJBGMNNOP: 0,
+            GOPEBCPGDIK: 0,
+            JLOJLHFJAKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetMailCsReq.proto\"R\n\x0cGetMailCsReq\x12\x20\n\x0bKDPNMJKMLCI\
-    \x18\n\x20\x01(\rR\x0bKDPNMJKMLCI\x12\x20\n\x0bLHNJBGMNNOP\x18\x0b\x20\
-    \x01(\rR\x0bLHNJBGMNNOPb\x06proto3\
+    \n\x12GetMailCsReq.proto\"R\n\x0cGetMailCsReq\x12\x20\n\x0bGOPEBCPGDIK\
+    \x18\x05\x20\x01(\rR\x0bGOPEBCPGDIK\x12\x20\n\x0bJLOJLHFJAKF\x18\x06\x20\
+    \x01(\rR\x0bJLOJLHFJAKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

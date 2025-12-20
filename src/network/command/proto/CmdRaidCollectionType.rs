@@ -30,15 +30,15 @@ pub enum CmdRaidCollectionType {
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionTypeNone)
     CmdRaidCollectionTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidScRsp)
-    CmdRaidCollectionEnterNextRaidScRsp = 6943,
+    CmdRaidCollectionEnterNextRaidScRsp = 6946,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataCsReq)
-    CmdRaidCollectionDataCsReq = 6947,
+    CmdRaidCollectionDataCsReq = 6953,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScRsp)
-    CmdRaidCollectionDataScRsp = 6941,
+    CmdRaidCollectionDataScRsp = 6945,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScNotify)
-    CmdRaidCollectionDataScNotify = 6953,
+    CmdRaidCollectionDataScNotify = 6949,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidCsReq)
-    CmdRaidCollectionEnterNextRaidCsReq = 6959,
+    CmdRaidCollectionEnterNextRaidCsReq = 6954,
 }
 
 impl ::protobuf::Enum for CmdRaidCollectionType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidCollectionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionTypeNone),
-            6943 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
-            6947 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
-            6941 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
-            6953 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
-            6959 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
+            6946 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
+            6953 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
+            6945 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
+            6949 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScNotify),
+            6954 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -116,10 +116,10 @@ impl CmdRaidCollectionType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdRaidCollectionType.proto*\xf0\x01\n\x15CmdRaidCollectionType\
     \x12\x1d\n\x19CmdRaidCollectionTypeNone\x10\0\x12(\n#CmdRaidCollectionEn\
-    terNextRaidScRsp\x10\x9f6\x12\x1f\n\x1aCmdRaidCollectionDataCsReq\x10\
-    \xa36\x12\x1f\n\x1aCmdRaidCollectionDataScRsp\x10\x9d6\x12\"\n\x1dCmdRai\
-    dCollectionDataScNotify\x10\xa96\x12(\n#CmdRaidCollectionEnterNextRaidCs\
-    Req\x10\xaf6b\x06proto3\
+    terNextRaidScRsp\x10\xa26\x12\x1f\n\x1aCmdRaidCollectionDataCsReq\x10\
+    \xa96\x12\x1f\n\x1aCmdRaidCollectionDataScRsp\x10\xa16\x12\"\n\x1dCmdRai\
+    dCollectionDataScNotify\x10\xa56\x12(\n#CmdRaidCollectionEnterNextRaidCs\
+    Req\x10\xaa6b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

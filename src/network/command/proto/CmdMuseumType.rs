@@ -30,63 +30,63 @@ pub enum CmdMuseumType {
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTypeNone)
     CmdMuseumTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumInfoChangedScNotify)
-    CmdMuseumInfoChangedScNotify = 4368,
+    CmdMuseumInfoChangedScNotify = 4367,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTakeCollectRewardCsReq)
-    CmdMuseumTakeCollectRewardCsReq = 4359,
+    CmdMuseumTakeCollectRewardCsReq = 4337,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetStuffScNotify)
-    CmdGetStuffScNotify = 4319,
+    CmdGetStuffScNotify = 4381,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetMuseumInfoScRsp)
-    CmdGetMuseumInfoScRsp = 4323,
+    CmdGetMuseumInfoScRsp = 4362,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdRemoveStuffFromAreaScRsp)
-    CmdRemoveStuffFromAreaScRsp = 4352,
+    CmdRemoveStuffFromAreaScRsp = 4320,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaStatScRsp)
-    CmdUpgradeAreaStatScRsp = 4337,
+    CmdUpgradeAreaStatScRsp = 4315,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaScRsp)
-    CmdUpgradeAreaScRsp = 4315,
+    CmdUpgradeAreaScRsp = 4389,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTargetStartNotify)
-    CmdMuseumTargetStartNotify = 4303,
+    CmdMuseumTargetStartNotify = 4314,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumDispatchFinishedScNotify)
-    CmdMuseumDispatchFinishedScNotify = 4338,
+    CmdMuseumDispatchFinishedScNotify = 4352,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventSelectScRsp)
-    CmdMuseumRandomEventSelectScRsp = 4329,
+    CmdMuseumRandomEventSelectScRsp = 4357,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumFundsChangedScNotify)
-    CmdMuseumFundsChangedScNotify = 4349,
+    CmdMuseumFundsChangedScNotify = 4347,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdFinishCurTurnScRsp)
-    CmdFinishCurTurnScRsp = 4369,
+    CmdFinishCurTurnScRsp = 4391,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSetStuffToAreaCsReq)
-    CmdSetStuffToAreaCsReq = 4383,
+    CmdSetStuffToAreaCsReq = 4361,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSetStuffToAreaScRsp)
-    CmdSetStuffToAreaScRsp = 4386,
+    CmdSetStuffToAreaScRsp = 4392,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdRemoveStuffFromAreaCsReq)
-    CmdRemoveStuffFromAreaCsReq = 4394,
+    CmdRemoveStuffFromAreaCsReq = 4351,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTakeCollectRewardScRsp)
-    CmdMuseumTakeCollectRewardScRsp = 4322,
+    CmdMuseumTakeCollectRewardScRsp = 4338,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTargetMissionFinishNotify)
-    CmdMuseumTargetMissionFinishNotify = 4309,
+    CmdMuseumTargetMissionFinishNotify = 4398,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetExhibitScNotify)
-    CmdGetExhibitScNotify = 4344,
+    CmdGetExhibitScNotify = 4335,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaStatCsReq)
-    CmdUpgradeAreaStatCsReq = 4392,
+    CmdUpgradeAreaStatCsReq = 4326,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventSelectCsReq)
-    CmdMuseumRandomEventSelectCsReq = 4351,
+    CmdMuseumRandomEventSelectCsReq = 4395,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdFinishCurTurnCsReq)
-    CmdFinishCurTurnCsReq = 4381,
+    CmdFinishCurTurnCsReq = 4345,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventQueryCsReq)
-    CmdMuseumRandomEventQueryCsReq = 4377,
+    CmdMuseumRandomEventQueryCsReq = 4317,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumTargetRewardNotify)
-    CmdMuseumTargetRewardNotify = 4362,
+    CmdMuseumTargetRewardNotify = 4310,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventQueryScRsp)
-    CmdMuseumRandomEventQueryScRsp = 4305,
+    CmdMuseumRandomEventQueryScRsp = 4350,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventStartScNotify)
-    CmdMuseumRandomEventStartScNotify = 4380,
+    CmdMuseumRandomEventStartScNotify = 4311,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdBuyNpcStuffScRsp)
-    CmdBuyNpcStuffScRsp = 4365,
+    CmdBuyNpcStuffScRsp = 4309,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdBuyNpcStuffCsReq)
-    CmdBuyNpcStuffCsReq = 4398,
+    CmdBuyNpcStuffCsReq = 4393,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetMuseumInfoCsReq)
-    CmdGetMuseumInfoCsReq = 4399,
+    CmdGetMuseumInfoCsReq = 4376,
     // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaCsReq)
-    CmdUpgradeAreaCsReq = 4357,
+    CmdUpgradeAreaCsReq = 4346,
 }
 
 impl ::protobuf::Enum for CmdMuseumType {
@@ -99,35 +99,35 @@ impl ::protobuf::Enum for CmdMuseumType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMuseumType> {
         match value {
             0 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTypeNone),
-            4368 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumInfoChangedScNotify),
-            4359 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTakeCollectRewardCsReq),
-            4319 => ::std::option::Option::Some(CmdMuseumType::CmdGetStuffScNotify),
-            4323 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoScRsp),
-            4352 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaScRsp),
-            4337 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatScRsp),
-            4315 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaScRsp),
-            4303 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetStartNotify),
-            4338 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumDispatchFinishedScNotify),
-            4329 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectScRsp),
-            4349 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumFundsChangedScNotify),
-            4369 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnScRsp),
-            4383 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaCsReq),
-            4386 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaScRsp),
-            4394 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaCsReq),
-            4322 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTakeCollectRewardScRsp),
-            4309 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetMissionFinishNotify),
-            4344 => ::std::option::Option::Some(CmdMuseumType::CmdGetExhibitScNotify),
-            4392 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatCsReq),
-            4351 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectCsReq),
-            4381 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnCsReq),
-            4377 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryCsReq),
-            4362 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetRewardNotify),
-            4305 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryScRsp),
-            4380 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventStartScNotify),
-            4365 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffScRsp),
-            4398 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffCsReq),
-            4399 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoCsReq),
-            4357 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaCsReq),
+            4367 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumInfoChangedScNotify),
+            4337 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTakeCollectRewardCsReq),
+            4381 => ::std::option::Option::Some(CmdMuseumType::CmdGetStuffScNotify),
+            4362 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoScRsp),
+            4320 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaScRsp),
+            4315 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatScRsp),
+            4389 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaScRsp),
+            4314 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetStartNotify),
+            4352 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumDispatchFinishedScNotify),
+            4357 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectScRsp),
+            4347 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumFundsChangedScNotify),
+            4391 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnScRsp),
+            4361 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaCsReq),
+            4392 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaScRsp),
+            4351 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaCsReq),
+            4338 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTakeCollectRewardScRsp),
+            4398 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetMissionFinishNotify),
+            4335 => ::std::option::Option::Some(CmdMuseumType::CmdGetExhibitScNotify),
+            4326 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatCsReq),
+            4395 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectCsReq),
+            4345 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnCsReq),
+            4317 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryCsReq),
+            4310 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumTargetRewardNotify),
+            4350 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryScRsp),
+            4311 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventStartScNotify),
+            4309 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffScRsp),
+            4393 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffCsReq),
+            4376 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoCsReq),
+            4346 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -259,26 +259,26 @@ impl CmdMuseumType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdMuseumType.proto*\xd3\x07\n\rCmdMuseumType\x12\x15\n\x11CmdMuse\
-    umTypeNone\x10\0\x12!\n\x1cCmdMuseumInfoChangedScNotify\x10\x90\"\x12$\n\
-    \x1fCmdMuseumTakeCollectRewardCsReq\x10\x87\"\x12\x18\n\x13CmdGetStuffSc\
-    Notify\x10\xdf!\x12\x1a\n\x15CmdGetMuseumInfoScRsp\x10\xe3!\x12\x20\n\
-    \x1bCmdRemoveStuffFromAreaScRsp\x10\x80\"\x12\x1c\n\x17CmdUpgradeAreaSta\
-    tScRsp\x10\xf1!\x12\x18\n\x13CmdUpgradeAreaScRsp\x10\xdb!\x12\x1f\n\x1aC\
-    mdMuseumTargetStartNotify\x10\xcf!\x12&\n!CmdMuseumDispatchFinishedScNot\
-    ify\x10\xf2!\x12$\n\x1fCmdMuseumRandomEventSelectScRsp\x10\xe9!\x12\"\n\
-    \x1dCmdMuseumFundsChangedScNotify\x10\xfd!\x12\x1a\n\x15CmdFinishCurTurn\
-    ScRsp\x10\x91\"\x12\x1b\n\x16CmdSetStuffToAreaCsReq\x10\x9f\"\x12\x1b\n\
-    \x16CmdSetStuffToAreaScRsp\x10\xa2\"\x12\x20\n\x1bCmdRemoveStuffFromArea\
-    CsReq\x10\xaa\"\x12$\n\x1fCmdMuseumTakeCollectRewardScRsp\x10\xe2!\x12'\
-    \n\"CmdMuseumTargetMissionFinishNotify\x10\xd5!\x12\x1a\n\x15CmdGetExhib\
-    itScNotify\x10\xf8!\x12\x1c\n\x17CmdUpgradeAreaStatCsReq\x10\xa8\"\x12$\
-    \n\x1fCmdMuseumRandomEventSelectCsReq\x10\xff!\x12\x1a\n\x15CmdFinishCur\
-    TurnCsReq\x10\x9d\"\x12#\n\x1eCmdMuseumRandomEventQueryCsReq\x10\x99\"\
-    \x12\x20\n\x1bCmdMuseumTargetRewardNotify\x10\x8a\"\x12#\n\x1eCmdMuseumR\
-    andomEventQueryScRsp\x10\xd1!\x12&\n!CmdMuseumRandomEventStartScNotify\
-    \x10\x9c\"\x12\x18\n\x13CmdBuyNpcStuffScRsp\x10\x8d\"\x12\x18\n\x13CmdBu\
-    yNpcStuffCsReq\x10\xae\"\x12\x1a\n\x15CmdGetMuseumInfoCsReq\x10\xaf\"\
-    \x12\x18\n\x13CmdUpgradeAreaCsReq\x10\x85\"b\x06proto3\
+    umTypeNone\x10\0\x12!\n\x1cCmdMuseumInfoChangedScNotify\x10\x8f\"\x12$\n\
+    \x1fCmdMuseumTakeCollectRewardCsReq\x10\xf1!\x12\x18\n\x13CmdGetStuffScN\
+    otify\x10\x9d\"\x12\x1a\n\x15CmdGetMuseumInfoScRsp\x10\x8a\"\x12\x20\n\
+    \x1bCmdRemoveStuffFromAreaScRsp\x10\xe0!\x12\x1c\n\x17CmdUpgradeAreaStat\
+    ScRsp\x10\xdb!\x12\x18\n\x13CmdUpgradeAreaScRsp\x10\xa5\"\x12\x1f\n\x1aC\
+    mdMuseumTargetStartNotify\x10\xda!\x12&\n!CmdMuseumDispatchFinishedScNot\
+    ify\x10\x80\"\x12$\n\x1fCmdMuseumRandomEventSelectScRsp\x10\x85\"\x12\"\
+    \n\x1dCmdMuseumFundsChangedScNotify\x10\xfb!\x12\x1a\n\x15CmdFinishCurTu\
+    rnScRsp\x10\xa7\"\x12\x1b\n\x16CmdSetStuffToAreaCsReq\x10\x89\"\x12\x1b\
+    \n\x16CmdSetStuffToAreaScRsp\x10\xa8\"\x12\x20\n\x1bCmdRemoveStuffFromAr\
+    eaCsReq\x10\xff!\x12$\n\x1fCmdMuseumTakeCollectRewardScRsp\x10\xf2!\x12'\
+    \n\"CmdMuseumTargetMissionFinishNotify\x10\xae\"\x12\x1a\n\x15CmdGetExhi\
+    bitScNotify\x10\xef!\x12\x1c\n\x17CmdUpgradeAreaStatCsReq\x10\xe6!\x12$\
+    \n\x1fCmdMuseumRandomEventSelectCsReq\x10\xab\"\x12\x1a\n\x15CmdFinishCu\
+    rTurnCsReq\x10\xf9!\x12#\n\x1eCmdMuseumRandomEventQueryCsReq\x10\xdd!\
+    \x12\x20\n\x1bCmdMuseumTargetRewardNotify\x10\xd6!\x12#\n\x1eCmdMuseumRa\
+    ndomEventQueryScRsp\x10\xfe!\x12&\n!CmdMuseumRandomEventStartScNotify\
+    \x10\xd7!\x12\x18\n\x13CmdBuyNpcStuffScRsp\x10\xd5!\x12\x18\n\x13CmdBuyN\
+    pcStuffCsReq\x10\xa9\"\x12\x1a\n\x15CmdGetMuseumInfoCsReq\x10\x98\"\x12\
+    \x18\n\x13CmdUpgradeAreaCsReq\x10\xfa!b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

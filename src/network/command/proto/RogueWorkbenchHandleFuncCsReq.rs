@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchHandleFuncCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.prop_entity_id)
-    pub prop_entity_id: u32,
-    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.workbench_content)
-    pub workbench_content: ::protobuf::MessageField<super::RogueWorkbenchContentInfo::RogueWorkbenchContentInfo>,
+    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.JEJDBCOJDDJ)
+    pub JEJDBCOJDDJ: ::protobuf::MessageField<super::RogueWorkbenchContentInfo::RogueWorkbenchContentInfo>,
     // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.func_id)
     pub func_id: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncCsReq.prop_entity_id)
+    pub prop_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchHandleFuncCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueWorkbenchHandleFuncCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_entity_id",
-            |m: &RogueWorkbenchHandleFuncCsReq| { &m.prop_entity_id },
-            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.prop_entity_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueWorkbenchContentInfo::RogueWorkbenchContentInfo>(
-            "workbench_content",
-            |m: &RogueWorkbenchHandleFuncCsReq| { &m.workbench_content },
-            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.workbench_content },
+            "JEJDBCOJDDJ",
+            |m: &RogueWorkbenchHandleFuncCsReq| { &m.JEJDBCOJDDJ },
+            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.JEJDBCOJDDJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "func_id",
             |m: &RogueWorkbenchHandleFuncCsReq| { &m.func_id },
             |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.func_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "prop_entity_id",
+            |m: &RogueWorkbenchHandleFuncCsReq| { &m.prop_entity_id },
+            |m: &mut RogueWorkbenchHandleFuncCsReq| { &mut m.prop_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchHandleFuncCsReq>(
             "RogueWorkbenchHandleFuncCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.prop_entity_id = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JEJDBCOJDDJ)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.workbench_content)?;
-                },
-                112 => {
+                40 => {
                     self.func_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.prop_entity_id);
-        }
-        if let Some(v) = self.workbench_content.as_ref() {
+        if let Some(v) = self.JEJDBCOJDDJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.func_id);
+        }
+        if self.prop_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.prop_entity_id != 0 {
-            os.write_uint32(6, self.prop_entity_id)?;
-        }
-        if let Some(v) = self.workbench_content.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.JEJDBCOJDDJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.func_id != 0 {
-            os.write_uint32(14, self.func_id)?;
+            os.write_uint32(5, self.func_id)?;
+        }
+        if self.prop_entity_id != 0 {
+            os.write_uint32(11, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncCsReq {
     }
 
     fn clear(&mut self) {
-        self.prop_entity_id = 0;
-        self.workbench_content.clear();
+        self.JEJDBCOJDDJ.clear();
         self.func_id = 0;
+        self.prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchHandleFuncCsReq {
         static instance: RogueWorkbenchHandleFuncCsReq = RogueWorkbenchHandleFuncCsReq {
-            prop_entity_id: 0,
-            workbench_content: ::protobuf::MessageField::none(),
+            JEJDBCOJDDJ: ::protobuf::MessageField::none(),
             func_id: 0,
+            prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchHandleFuncCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueWorkbenchHandleFuncCsReq.proto\x1a\x1fRogueWorkbenchContentInfo.\
-    proto\"\xa7\x01\n\x1dRogueWorkbenchHandleFuncCsReq\x12$\n\x0eprop_entity\
-    _id\x18\x06\x20\x01(\rR\x0cpropEntityId\x12G\n\x11workbench_content\x18\
-    \r\x20\x01(\x0b2\x1a.RogueWorkbenchContentInfoR\x10workbenchContent\x12\
-    \x17\n\x07func_id\x18\x0e\x20\x01(\rR\x06funcIdb\x06proto3\
+    proto\"\x9c\x01\n\x1dRogueWorkbenchHandleFuncCsReq\x12<\n\x0bJEJDBCOJDDJ\
+    \x18\x01\x20\x01(\x0b2\x1a.RogueWorkbenchContentInfoR\x0bJEJDBCOJDDJ\x12\
+    \x17\n\x07func_id\x18\x05\x20\x01(\rR\x06funcId\x12$\n\x0eprop_entity_id\
+    \x18\x0b\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

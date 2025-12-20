@@ -30,12 +30,12 @@ pub struct ComposeItemScRsp {
     // message fields
     // @@protoc_insertion_point(field:ComposeItemScRsp.count)
     pub count: u32,
+    // @@protoc_insertion_point(field:ComposeItemScRsp.compose_id)
+    pub compose_id: u32,
     // @@protoc_insertion_point(field:ComposeItemScRsp.return_item_list)
     pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ComposeItemScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ComposeItemScRsp.compose_id)
-    pub compose_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ComposeItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl ComposeItemScRsp {
             |m: &ComposeItemScRsp| { &m.count },
             |m: &mut ComposeItemScRsp| { &mut m.count },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "compose_id",
+            |m: &ComposeItemScRsp| { &m.compose_id },
+            |m: &mut ComposeItemScRsp| { &mut m.compose_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "return_item_list",
             |m: &ComposeItemScRsp| { &m.return_item_list },
@@ -69,11 +74,6 @@ impl ComposeItemScRsp {
             "retcode",
             |m: &ComposeItemScRsp| { &m.retcode },
             |m: &mut ComposeItemScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "compose_id",
-            |m: &ComposeItemScRsp| { &m.compose_id },
-            |m: &mut ComposeItemScRsp| { &mut m.compose_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ComposeItemScRsp>(
             "ComposeItemScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ComposeItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                104 => {
                     self.count = is.read_uint32()?;
                 },
-                90 => {
+                8 => {
+                    self.compose_id = is.read_uint32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
-                104 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
-                },
-                120 => {
-                    self.compose_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for ComposeItemScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.count);
+            my_size += ::protobuf::rt::uint32_size(13, self.count);
+        }
+        if self.compose_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.compose_id);
         }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.compose_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.compose_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ComposeItemScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(7, self.count)?;
-        }
-        if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(13, self.count)?;
         }
         if self.compose_id != 0 {
-            os.write_uint32(15, self.compose_id)?;
+            os.write_uint32(1, self.compose_id)?;
+        }
+        if let Some(v) = self.return_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for ComposeItemScRsp {
 
     fn clear(&mut self) {
         self.count = 0;
+        self.compose_id = 0;
         self.return_item_list.clear();
         self.retcode = 0;
-        self.compose_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ComposeItemScRsp {
         static instance: ComposeItemScRsp = ComposeItemScRsp {
             count: 0,
+            compose_id: 0,
             return_item_list: ::protobuf::MessageField::none(),
             retcode: 0,
-            compose_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ComposeItemScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ComposeItemScRsp.proto\x1a\x0eItemList.proto\"\x96\x01\n\x10Compos\
-    eItemScRsp\x12\x14\n\x05count\x18\x07\x20\x01(\rR\x05count\x123\n\x10ret\
-    urn_item_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x1d\n\ncompose_id\x18\
-    \x0f\x20\x01(\rR\tcomposeIdb\x06proto3\
+    eItemScRsp\x12\x14\n\x05count\x18\r\x20\x01(\rR\x05count\x12\x1d\n\ncomp\
+    ose_id\x18\x01\x20\x01(\rR\tcomposeId\x123\n\x10return_item_list\x18\x04\
+    \x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\x18\n\x07retcode\x18\n\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

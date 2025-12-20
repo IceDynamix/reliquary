@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTalkRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.talk_event_id)
-    pub talk_event_id: u32,
+    // @@protoc_insertion_point(field:TakeTalkRewardScRsp.NHDBBMECINK)
+    pub NHDBBMECINK: u32,
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeTalkRewardScRsp.retcode)
@@ -54,9 +54,9 @@ impl TakeTalkRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talk_event_id",
-            |m: &TakeTalkRewardScRsp| { &m.talk_event_id },
-            |m: &mut TakeTalkRewardScRsp| { &mut m.talk_event_id },
+            "NHDBBMECINK",
+            |m: &TakeTalkRewardScRsp| { &m.NHDBBMECINK },
+            |m: &mut TakeTalkRewardScRsp| { &mut m.NHDBBMECINK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -86,10 +86,10 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.talk_event_id = is.read_uint32()?;
+                48 => {
+                    self.NHDBBMECINK = is.read_uint32()?;
                 },
-                58 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 80 => {
@@ -107,8 +107,8 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.talk_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.talk_event_id);
+        if self.NHDBBMECINK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NHDBBMECINK);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -123,11 +123,11 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.talk_event_id != 0 {
-            os.write_uint32(3, self.talk_event_id)?;
+        if self.NHDBBMECINK != 0 {
+            os.write_uint32(6, self.NHDBBMECINK)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.talk_event_id = 0;
+        self.NHDBBMECINK = 0;
         self.reward.clear();
         self.retcode = 0;
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for TakeTalkRewardScRsp {
 
     fn default_instance() -> &'static TakeTalkRewardScRsp {
         static instance: TakeTalkRewardScRsp = TakeTalkRewardScRsp {
-            talk_event_id: 0,
+            NHDBBMECINK: 0,
             reward: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19TakeTalkRewardScRsp.proto\x1a\x0eItemList.proto\"v\n\x13TakeTalkRe\
-    wardScRsp\x12\"\n\rtalk_event_id\x18\x03\x20\x01(\rR\x0btalkEventId\x12!\
-    \n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07re\
-    tcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x19TakeTalkRewardScRsp.proto\x1a\x0eItemList.proto\"t\n\x13TakeTalkRe\
+    wardScRsp\x12\x20\n\x0bNHDBBMECINK\x18\x06\x20\x01(\rR\x0bNHDBBMECINK\
+    \x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\
+    \x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

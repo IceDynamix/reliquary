@@ -79,10 +79,10 @@ impl ::protobuf::Message for QuitBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                104 => {
+                112 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for QuitBattleCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.rebattle_type.value());
+            my_size += ::protobuf::rt::int32_size(14, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for QuitBattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for QuitBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15QuitBattleCsReq.proto\x1a\x16BattleStatistics.proto\x1a\x12Rebattl\
-    eType.proto\"j\n\x0fQuitBattleCsReq\x12#\n\x03stt\x18\x05\x20\x01(\x0b2\
-    \x11.BattleStatisticsR\x03stt\x122\n\rrebattle_type\x18\r\x20\x01(\x0e2\
-    \r.RebattleTypeR\x0crebattleTypeb\x06proto3\
+    eType.proto\"j\n\x0fQuitBattleCsReq\x12#\n\x03stt\x18\x0f\x20\x01(\x0b2\
+    \x11.BattleStatisticsR\x03stt\x122\n\rrebattle_type\x18\x0e\x20\x01(\x0e\
+    2\r.RebattleTypeR\x0crebattleTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

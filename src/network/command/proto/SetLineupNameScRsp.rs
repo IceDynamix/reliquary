@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     self.name = is.read_string()?;
                 },
                 72 => {
                     self.index = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.name);
+            my_size += ::protobuf::rt::string_size(1, &self.name);
         }
         if self.index != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.index);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetLineupNameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.name.is_empty() {
-            os.write_string(4, &self.name)?;
+            os.write_string(1, &self.name)?;
         }
         if self.index != 0 {
             os.write_uint32(9, self.index)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SetLineupNameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetLineupNameScRsp.proto\"X\n\x12SetLineupNameScRsp\x12\x12\n\x04n\
-    ame\x18\x04\x20\x01(\tR\x04name\x12\x14\n\x05index\x18\t\x20\x01(\rR\x05\
-    index\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    ame\x18\x01\x20\x01(\tR\x04name\x12\x14\n\x05index\x18\t\x20\x01(\rR\x05\
+    index\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

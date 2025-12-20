@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GateServerScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GateServerScNotify.res_str)
-    pub res_str: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServerScNotify.EAGAMLMNIFI)
+    pub EAGAMLMNIFI: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GateServerScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GateServerScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "res_str",
-            |m: &GateServerScNotify| { &m.res_str },
-            |m: &mut GateServerScNotify| { &mut m.res_str },
+            "EAGAMLMNIFI",
+            |m: &GateServerScNotify| { &m.EAGAMLMNIFI },
+            |m: &mut GateServerScNotify| { &mut m.EAGAMLMNIFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GateServerScNotify>(
             "GateServerScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GateServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.res_str = is.read_string()?;
+                114 => {
+                    self.EAGAMLMNIFI = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GateServerScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.res_str.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.res_str);
+        if !self.EAGAMLMNIFI.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.EAGAMLMNIFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GateServerScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.res_str.is_empty() {
-            os.write_string(2, &self.res_str)?;
+        if !self.EAGAMLMNIFI.is_empty() {
+            os.write_string(14, &self.EAGAMLMNIFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GateServerScNotify {
     }
 
     fn clear(&mut self) {
-        self.res_str.clear();
+        self.EAGAMLMNIFI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GateServerScNotify {
         static instance: GateServerScNotify = GateServerScNotify {
-            res_str: ::std::string::String::new(),
+            EAGAMLMNIFI: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GateServerScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GateServerScNotify.proto\"-\n\x12GateServerScNotify\x12\x17\n\x07r\
-    es_str\x18\x02\x20\x01(\tR\x06resStrb\x06proto3\
+    \n\x18GateServerScNotify.proto\"6\n\x12GateServerScNotify\x12\x20\n\x0bE\
+    AGAMLMNIFI\x18\x0e\x20\x01(\tR\x0bEAGAMLMNIFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

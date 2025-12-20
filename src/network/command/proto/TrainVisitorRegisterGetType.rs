@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TrainVisitorRegisterGetType)
 pub enum TrainVisitorRegisterGetType {
-    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TRAIN_VISITOR_REGISTER_GET_TYPE_NONE)
-    TRAIN_VISITOR_REGISTER_GET_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO)
-    TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO = 1,
-    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL)
-    TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL = 2,
+    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TrainVisitorRegisterGetType_ALOCMFAKBKP)
+    TrainVisitorRegisterGetType_ALOCMFAKBKP = 0,
+    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TrainVisitorRegisterGetType_LPIPNOJDMBD)
+    TrainVisitorRegisterGetType_LPIPNOJDMBD = 1,
+    // @@protoc_insertion_point(enum_value:TrainVisitorRegisterGetType.TrainVisitorRegisterGetType_HOKPFJCDICB)
+    TrainVisitorRegisterGetType_HOKPFJCDICB = 2,
 }
 
 impl ::protobuf::Enum for TrainVisitorRegisterGetType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for TrainVisitorRegisterGetType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TrainVisitorRegisterGetType> {
         match value {
-            0 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE),
-            1 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO),
-            2 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL),
+            0 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP),
+            1 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_LPIPNOJDMBD),
+            2 => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_HOKPFJCDICB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TrainVisitorRegisterGetType> {
         match str {
-            "TRAIN_VISITOR_REGISTER_GET_TYPE_NONE" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE),
-            "TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO),
-            "TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL),
+            "TrainVisitorRegisterGetType_ALOCMFAKBKP" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP),
+            "TrainVisitorRegisterGetType_LPIPNOJDMBD" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_LPIPNOJDMBD),
+            "TrainVisitorRegisterGetType_HOKPFJCDICB" => ::std::option::Option::Some(TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_HOKPFJCDICB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TrainVisitorRegisterGetType] = &[
-        TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE,
-        TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_AUTO,
-        TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_MANUAL,
+        TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP,
+        TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_LPIPNOJDMBD,
+        TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_HOKPFJCDICB,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for TrainVisitorRegisterGetType {
 
 impl ::std::default::Default for TrainVisitorRegisterGetType {
     fn default() -> Self {
-        TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE
+        TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP
     }
 }
 
@@ -92,10 +92,10 @@ impl TrainVisitorRegisterGetType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!TrainVisitorRegisterGetType.proto*\x9d\x01\n\x1bTrainVisitorRegisterG\
-    etType\x12(\n$TRAIN_VISITOR_REGISTER_GET_TYPE_NONE\x10\0\x12(\n$TRAIN_VI\
-    SITOR_REGISTER_GET_TYPE_AUTO\x10\x01\x12*\n&TRAIN_VISITOR_REGISTER_GET_T\
-    YPE_MANUAL\x10\x02b\x06proto3\
+    \n!TrainVisitorRegisterGetType.proto*\xa4\x01\n\x1bTrainVisitorRegisterG\
+    etType\x12+\n'TrainVisitorRegisterGetType_ALOCMFAKBKP\x10\0\x12+\n'Train\
+    VisitorRegisterGetType_LPIPNOJDMBD\x10\x01\x12+\n'TrainVisitorRegisterGe\
+    tType_HOKPFJCDICB\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

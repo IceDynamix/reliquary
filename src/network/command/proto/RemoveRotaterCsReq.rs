@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveRotaterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RemoveRotaterCsReq.rotater_config)
-    pub rotater_config: ::protobuf::MessageField<super::RotaterData::RotaterData>,
+    // @@protoc_insertion_point(field:RemoveRotaterCsReq.rotater_data)
+    pub rotater_data: ::protobuf::MessageField<super::RotaterData::RotaterData>,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveRotaterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RemoveRotaterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterData::RotaterData>(
-            "rotater_config",
-            |m: &RemoveRotaterCsReq| { &m.rotater_config },
-            |m: &mut RemoveRotaterCsReq| { &mut m.rotater_config },
+            "rotater_data",
+            |m: &RemoveRotaterCsReq| { &m.rotater_data },
+            |m: &mut RemoveRotaterCsReq| { &mut m.rotater_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveRotaterCsReq>(
             "RemoveRotaterCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_config)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rotater_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rotater_config.as_ref() {
+        if let Some(v) = self.rotater_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rotater_config.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.rotater_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RemoveRotaterCsReq {
     }
 
     fn clear(&mut self) {
-        self.rotater_config.clear();
+        self.rotater_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveRotaterCsReq {
         static instance: RemoveRotaterCsReq = RemoveRotaterCsReq {
-            rotater_config: ::protobuf::MessageField::none(),
+            rotater_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RemoveRotaterCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RemoveRotaterCsReq.proto\x1a\x11RotaterData.proto\"I\n\x12RemoveRo\
-    taterCsReq\x123\n\x0erotater_config\x18\x06\x20\x01(\x0b2\x0c.RotaterDat\
-    aR\rrotaterConfigb\x06proto3\
+    \n\x18RemoveRotaterCsReq.proto\x1a\x11RotaterData.proto\"E\n\x12RemoveRo\
+    taterCsReq\x12/\n\x0crotater_data\x18\x08\x20\x01(\x0b2\x0c.RotaterDataR\
+    \x0brotaterDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

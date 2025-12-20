@@ -30,17 +30,17 @@ pub enum CmdServerPrefsType {
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdServerPrefsTypeNone)
     CmdServerPrefsTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataCsReq)
-    CmdGetServerPrefsDataCsReq = 6198,
+    CmdGetServerPrefsDataCsReq = 6117,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataCsReq)
-    CmdUpdateServerPrefsDataCsReq = 6183,
+    CmdUpdateServerPrefsDataCsReq = 6147,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataCsReq)
-    CmdGetAllServerPrefsDataCsReq = 6199,
+    CmdGetAllServerPrefsDataCsReq = 6111,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataScRsp)
-    CmdGetAllServerPrefsDataScRsp = 6123,
+    CmdGetAllServerPrefsDataScRsp = 6138,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataScRsp)
-    CmdUpdateServerPrefsDataScRsp = 6186,
+    CmdUpdateServerPrefsDataScRsp = 6151,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataScRsp)
-    CmdGetServerPrefsDataScRsp = 6165,
+    CmdGetServerPrefsDataScRsp = 6109,
 }
 
 impl ::protobuf::Enum for CmdServerPrefsType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdServerPrefsType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdServerPrefsType> {
         match value {
             0 => ::std::option::Option::Some(CmdServerPrefsType::CmdServerPrefsTypeNone),
-            6198 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
-            6183 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
-            6199 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
-            6123 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
-            6186 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
-            6165 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
+            6117 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
+            6147 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
+            6111 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
+            6138 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
+            6151 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
+            6109 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -122,10 +122,10 @@ impl CmdServerPrefsType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdServerPrefsType.proto*\x82\x02\n\x12CmdServerPrefsType\x12\x1a\
     \n\x16CmdServerPrefsTypeNone\x10\0\x12\x1f\n\x1aCmdGetServerPrefsDataCsR\
-    eq\x10\xb60\x12\"\n\x1dCmdUpdateServerPrefsDataCsReq\x10\xa70\x12\"\n\
-    \x1dCmdGetAllServerPrefsDataCsReq\x10\xb70\x12\"\n\x1dCmdGetAllServerPre\
-    fsDataScRsp\x10\xeb/\x12\"\n\x1dCmdUpdateServerPrefsDataScRsp\x10\xaa0\
-    \x12\x1f\n\x1aCmdGetServerPrefsDataScRsp\x10\x950b\x06proto3\
+    eq\x10\xe5/\x12\"\n\x1dCmdUpdateServerPrefsDataCsReq\x10\x830\x12\"\n\
+    \x1dCmdGetAllServerPrefsDataCsReq\x10\xdf/\x12\"\n\x1dCmdGetAllServerPre\
+    fsDataScRsp\x10\xfa/\x12\"\n\x1dCmdUpdateServerPrefsDataScRsp\x10\x870\
+    \x12\x1f\n\x1aCmdGetServerPrefsDataScRsp\x10\xdd/b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

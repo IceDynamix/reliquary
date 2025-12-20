@@ -30,8 +30,8 @@ pub struct MechanismBarInfo {
     // message fields
     // @@protoc_insertion_point(field:MechanismBarInfo.value)
     pub value: u32,
-    // @@protoc_insertion_point(field:MechanismBarInfo.mechainsm_bar_id)
-    pub mechainsm_bar_id: u32,
+    // @@protoc_insertion_point(field:MechanismBarInfo.DBGBMKNHHPP)
+    pub DBGBMKNHHPP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MechanismBarInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl MechanismBarInfo {
             |m: &mut MechanismBarInfo| { &mut m.value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "mechainsm_bar_id",
-            |m: &MechanismBarInfo| { &m.mechainsm_bar_id },
-            |m: &mut MechanismBarInfo| { &mut m.mechainsm_bar_id },
+            "DBGBMKNHHPP",
+            |m: &MechanismBarInfo| { &m.DBGBMKNHHPP },
+            |m: &mut MechanismBarInfo| { &mut m.DBGBMKNHHPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MechanismBarInfo>(
             "MechanismBarInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MechanismBarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.value = is.read_uint32()?;
                 },
-                56 => {
-                    self.mechainsm_bar_id = is.read_uint32()?;
+                96 => {
+                    self.DBGBMKNHHPP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MechanismBarInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.value);
+            my_size += ::protobuf::rt::uint32_size(6, self.value);
         }
-        if self.mechainsm_bar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.mechainsm_bar_id);
+        if self.DBGBMKNHHPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DBGBMKNHHPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MechanismBarInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.value != 0 {
-            os.write_uint32(3, self.value)?;
+            os.write_uint32(6, self.value)?;
         }
-        if self.mechainsm_bar_id != 0 {
-            os.write_uint32(7, self.mechainsm_bar_id)?;
+        if self.DBGBMKNHHPP != 0 {
+            os.write_uint32(12, self.DBGBMKNHHPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MechanismBarInfo {
 
     fn clear(&mut self) {
         self.value = 0;
-        self.mechainsm_bar_id = 0;
+        self.DBGBMKNHHPP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MechanismBarInfo {
         static instance: MechanismBarInfo = MechanismBarInfo {
             value: 0,
-            mechainsm_bar_id: 0,
+            DBGBMKNHHPP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MechanismBarInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16MechanismBarInfo.proto\"R\n\x10MechanismBarInfo\x12\x14\n\x05value\
-    \x18\x03\x20\x01(\rR\x05value\x12(\n\x10mechainsm_bar_id\x18\x07\x20\x01\
-    (\rR\x0emechainsmBarIdb\x06proto3\
+    \n\x16MechanismBarInfo.proto\"J\n\x10MechanismBarInfo\x12\x14\n\x05value\
+    \x18\x06\x20\x01(\rR\x05value\x12\x20\n\x0bDBGBMKNHHPP\x18\x0c\x20\x01(\
+    \rR\x0bDBGBMKNHHPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

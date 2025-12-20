@@ -29,18 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdContentPackageType {
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageTypeNone)
     CmdContentPackageTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageUnlockCsReq)
-    CmdContentPackageUnlockCsReq = 7538,
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageTransferScNotify)
-    CmdContentPackageTransferScNotify = 7527,
+    CmdContentPackageTransferScNotify = 7502,
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageGetDataCsReq)
-    CmdContentPackageGetDataCsReq = 7526,
+    CmdContentPackageGetDataCsReq = 7533,
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageSyncDataScNotify)
-    CmdContentPackageSyncDataScNotify = 7521,
-    // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageUnlockScRsp)
-    CmdContentPackageUnlockScRsp = 7505,
+    CmdContentPackageSyncDataScNotify = 7548,
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.CmdContentPackageGetDataScRsp)
-    CmdContentPackageGetDataScRsp = 7528,
+    CmdContentPackageGetDataScRsp = 7519,
 }
 
 impl ::protobuf::Enum for CmdContentPackageType {
@@ -53,12 +49,10 @@ impl ::protobuf::Enum for CmdContentPackageType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdContentPackageType> {
         match value {
             0 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageTypeNone),
-            7538 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageUnlockCsReq),
-            7527 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageTransferScNotify),
-            7526 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataCsReq),
-            7521 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageSyncDataScNotify),
-            7505 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageUnlockScRsp),
-            7528 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataScRsp),
+            7502 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageTransferScNotify),
+            7533 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataCsReq),
+            7548 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageSyncDataScNotify),
+            7519 => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -66,11 +60,9 @@ impl ::protobuf::Enum for CmdContentPackageType {
     fn from_str(str: &str) -> ::std::option::Option<CmdContentPackageType> {
         match str {
             "CmdContentPackageTypeNone" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageTypeNone),
-            "CmdContentPackageUnlockCsReq" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageUnlockCsReq),
             "CmdContentPackageTransferScNotify" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageTransferScNotify),
             "CmdContentPackageGetDataCsReq" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataCsReq),
             "CmdContentPackageSyncDataScNotify" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageSyncDataScNotify),
-            "CmdContentPackageUnlockScRsp" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageUnlockScRsp),
             "CmdContentPackageGetDataScRsp" => ::std::option::Option::Some(CmdContentPackageType::CmdContentPackageGetDataScRsp),
             _ => ::std::option::Option::None
         }
@@ -78,11 +70,9 @@ impl ::protobuf::Enum for CmdContentPackageType {
 
     const VALUES: &'static [CmdContentPackageType] = &[
         CmdContentPackageType::CmdContentPackageTypeNone,
-        CmdContentPackageType::CmdContentPackageUnlockCsReq,
         CmdContentPackageType::CmdContentPackageTransferScNotify,
         CmdContentPackageType::CmdContentPackageGetDataCsReq,
         CmdContentPackageType::CmdContentPackageSyncDataScNotify,
-        CmdContentPackageType::CmdContentPackageUnlockScRsp,
         CmdContentPackageType::CmdContentPackageGetDataScRsp,
     ];
 }
@@ -96,12 +86,10 @@ impl ::protobuf::EnumFull for CmdContentPackageType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdContentPackageType::CmdContentPackageTypeNone => 0,
-            CmdContentPackageType::CmdContentPackageUnlockCsReq => 1,
-            CmdContentPackageType::CmdContentPackageTransferScNotify => 2,
-            CmdContentPackageType::CmdContentPackageGetDataCsReq => 3,
-            CmdContentPackageType::CmdContentPackageSyncDataScNotify => 4,
-            CmdContentPackageType::CmdContentPackageUnlockScRsp => 5,
-            CmdContentPackageType::CmdContentPackageGetDataScRsp => 6,
+            CmdContentPackageType::CmdContentPackageTransferScNotify => 1,
+            CmdContentPackageType::CmdContentPackageGetDataCsReq => 2,
+            CmdContentPackageType::CmdContentPackageSyncDataScNotify => 3,
+            CmdContentPackageType::CmdContentPackageGetDataScRsp => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -120,12 +108,11 @@ impl CmdContentPackageType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdContentPackageType.proto*\x94\x02\n\x15CmdContentPackageType\
-    \x12\x1d\n\x19CmdContentPackageTypeNone\x10\0\x12!\n\x1cCmdContentPackag\
-    eUnlockCsReq\x10\xf2:\x12&\n!CmdContentPackageTransferScNotify\x10\xe7:\
-    \x12\"\n\x1dCmdContentPackageGetDataCsReq\x10\xe6:\x12&\n!CmdContentPack\
-    ageSyncDataScNotify\x10\xe1:\x12!\n\x1cCmdContentPackageUnlockScRsp\x10\
-    \xd1:\x12\"\n\x1dCmdContentPackageGetDataScRsp\x10\xe8:b\x06proto3\
+    \n\x1bCmdContentPackageType.proto*\xce\x01\n\x15CmdContentPackageType\
+    \x12\x1d\n\x19CmdContentPackageTypeNone\x10\0\x12&\n!CmdContentPackageTr\
+    ansferScNotify\x10\xce:\x12\"\n\x1dCmdContentPackageGetDataCsReq\x10\xed\
+    :\x12&\n!CmdContentPackageSyncDataScNotify\x10\xfc:\x12\"\n\x1dCmdConten\
+    tPackageGetDataScRsp\x10\xdf:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

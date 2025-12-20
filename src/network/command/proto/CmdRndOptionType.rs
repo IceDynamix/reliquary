@@ -30,13 +30,13 @@ pub enum CmdRndOptionType {
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdRndOptionTypeNone)
     CmdRndOptionTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionCsReq)
-    CmdGetRndOptionCsReq = 3499,
+    CmdGetRndOptionCsReq = 3417,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamCsReq)
-    CmdDailyFirstMeetPamCsReq = 3498,
+    CmdDailyFirstMeetPamCsReq = 3447,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionScRsp)
-    CmdGetRndOptionScRsp = 3423,
+    CmdGetRndOptionScRsp = 3438,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamScRsp)
-    CmdDailyFirstMeetPamScRsp = 3465,
+    CmdDailyFirstMeetPamScRsp = 3409,
 }
 
 impl ::protobuf::Enum for CmdRndOptionType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdRndOptionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRndOptionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRndOptionType::CmdRndOptionTypeNone),
-            3499 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
-            3498 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
-            3423 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
-            3465 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamScRsp),
+            3417 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
+            3447 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
+            3438 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionScRsp),
+            3409 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -109,10 +109,10 @@ impl CmdRndOptionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRndOptionType.proto*\xa2\x01\n\x10CmdRndOptionType\x12\x18\n\
-    \x14CmdRndOptionTypeNone\x10\0\x12\x19\n\x14CmdGetRndOptionCsReq\x10\xab\
-    \x1b\x12\x1e\n\x19CmdDailyFirstMeetPamCsReq\x10\xaa\x1b\x12\x19\n\x14Cmd\
-    GetRndOptionScRsp\x10\xdf\x1a\x12\x1e\n\x19CmdDailyFirstMeetPamScRsp\x10\
-    \x89\x1bb\x06proto3\
+    \x14CmdRndOptionTypeNone\x10\0\x12\x19\n\x14CmdGetRndOptionCsReq\x10\xd9\
+    \x1a\x12\x1e\n\x19CmdDailyFirstMeetPamCsReq\x10\xf7\x1a\x12\x19\n\x14Cmd\
+    GetRndOptionScRsp\x10\xee\x1a\x12\x1e\n\x19CmdDailyFirstMeetPamScRsp\x10\
+    \xd1\x1ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyUseCardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.IEHPIJFHANL)
-    pub IEHPIJFHANL: u32,
     // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.KEDFLGJEBJJ)
+    pub KEDFLGJEBJJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyUseCardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainPartyUseCardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEHPIJFHANL",
-            |m: &TrainPartyUseCardScRsp| { &m.IEHPIJFHANL },
-            |m: &mut TrainPartyUseCardScRsp| { &mut m.IEHPIJFHANL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrainPartyUseCardScRsp| { &m.retcode },
             |m: &mut TrainPartyUseCardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KEDFLGJEBJJ",
+            |m: &TrainPartyUseCardScRsp| { &m.KEDFLGJEBJJ },
+            |m: &mut TrainPartyUseCardScRsp| { &mut m.KEDFLGJEBJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyUseCardScRsp>(
             "TrainPartyUseCardScRsp",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.IEHPIJFHANL = is.read_uint32()?;
-                },
-                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.KEDFLGJEBJJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEHPIJFHANL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IEHPIJFHANL);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.KEDFLGJEBJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KEDFLGJEBJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEHPIJFHANL != 0 {
-            os.write_uint32(2, self.IEHPIJFHANL)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.KEDFLGJEBJJ != 0 {
+            os.write_uint32(14, self.KEDFLGJEBJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
     }
 
     fn clear(&mut self) {
-        self.IEHPIJFHANL = 0;
         self.retcode = 0;
+        self.KEDFLGJEBJJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyUseCardScRsp {
         static instance: TrainPartyUseCardScRsp = TrainPartyUseCardScRsp {
-            IEHPIJFHANL: 0,
             retcode: 0,
+            KEDFLGJEBJJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyUseCardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyUseCardScRsp.proto\"T\n\x16TrainPartyUseCardScRsp\x12\
-    \x20\n\x0bIEHPIJFHANL\x18\x02\x20\x01(\rR\x0bIEHPIJFHANL\x12\x18\n\x07re\
-    tcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bKEDFLGJEBJ\
+    J\x18\x0e\x20\x01(\rR\x0bKEDFLGJEBJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

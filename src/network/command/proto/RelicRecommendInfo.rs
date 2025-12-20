@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicRecommendInfo {
     // message fields
-    // @@protoc_insertion_point(field:RelicRecommendInfo.ELJALACLDPJ)
-    pub ELJALACLDPJ: u32,
-    // @@protoc_insertion_point(field:RelicRecommendInfo.JPJIDHBKLAP)
-    pub JPJIDHBKLAP: u32,
-    // @@protoc_insertion_point(field:RelicRecommendInfo.EDFIEJNCFDB)
-    pub EDFIEJNCFDB: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.FNMHMEJONHA)
+    pub FNMHMEJONHA: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.HKNINEFBNOB)
+    pub HKNINEFBNOB: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.MDIDIIAHCHC)
+    pub MDIDIIAHCHC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicRecommendInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RelicRecommendInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELJALACLDPJ",
-            |m: &RelicRecommendInfo| { &m.ELJALACLDPJ },
-            |m: &mut RelicRecommendInfo| { &mut m.ELJALACLDPJ },
+            "FNMHMEJONHA",
+            |m: &RelicRecommendInfo| { &m.FNMHMEJONHA },
+            |m: &mut RelicRecommendInfo| { &mut m.FNMHMEJONHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPJIDHBKLAP",
-            |m: &RelicRecommendInfo| { &m.JPJIDHBKLAP },
-            |m: &mut RelicRecommendInfo| { &mut m.JPJIDHBKLAP },
+            "HKNINEFBNOB",
+            |m: &RelicRecommendInfo| { &m.HKNINEFBNOB },
+            |m: &mut RelicRecommendInfo| { &mut m.HKNINEFBNOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EDFIEJNCFDB",
-            |m: &RelicRecommendInfo| { &m.EDFIEJNCFDB },
-            |m: &mut RelicRecommendInfo| { &mut m.EDFIEJNCFDB },
+            "MDIDIIAHCHC",
+            |m: &RelicRecommendInfo| { &m.MDIDIIAHCHC },
+            |m: &mut RelicRecommendInfo| { &mut m.MDIDIIAHCHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicRecommendInfo>(
             "RelicRecommendInfo",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for RelicRecommendInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.ELJALACLDPJ = is.read_uint32()?;
+                    self.FNMHMEJONHA = is.read_uint32()?;
                 },
-                88 => {
-                    self.JPJIDHBKLAP = is.read_uint32()?;
+                112 => {
+                    self.HKNINEFBNOB = is.read_uint32()?;
                 },
-                104 => {
-                    self.EDFIEJNCFDB = is.read_uint32()?;
+                80 => {
+                    self.MDIDIIAHCHC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RelicRecommendInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ELJALACLDPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ELJALACLDPJ);
+        if self.FNMHMEJONHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FNMHMEJONHA);
         }
-        if self.JPJIDHBKLAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JPJIDHBKLAP);
+        if self.HKNINEFBNOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HKNINEFBNOB);
         }
-        if self.EDFIEJNCFDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EDFIEJNCFDB);
+        if self.MDIDIIAHCHC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MDIDIIAHCHC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RelicRecommendInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ELJALACLDPJ != 0 {
-            os.write_uint32(2, self.ELJALACLDPJ)?;
+        if self.FNMHMEJONHA != 0 {
+            os.write_uint32(2, self.FNMHMEJONHA)?;
         }
-        if self.JPJIDHBKLAP != 0 {
-            os.write_uint32(11, self.JPJIDHBKLAP)?;
+        if self.HKNINEFBNOB != 0 {
+            os.write_uint32(14, self.HKNINEFBNOB)?;
         }
-        if self.EDFIEJNCFDB != 0 {
-            os.write_uint32(13, self.EDFIEJNCFDB)?;
+        if self.MDIDIIAHCHC != 0 {
+            os.write_uint32(10, self.MDIDIIAHCHC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RelicRecommendInfo {
     }
 
     fn clear(&mut self) {
-        self.ELJALACLDPJ = 0;
-        self.JPJIDHBKLAP = 0;
-        self.EDFIEJNCFDB = 0;
+        self.FNMHMEJONHA = 0;
+        self.HKNINEFBNOB = 0;
+        self.MDIDIIAHCHC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicRecommendInfo {
         static instance: RelicRecommendInfo = RelicRecommendInfo {
-            ELJALACLDPJ: 0,
-            JPJIDHBKLAP: 0,
-            EDFIEJNCFDB: 0,
+            FNMHMEJONHA: 0,
+            HKNINEFBNOB: 0,
+            MDIDIIAHCHC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RelicRecommendInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RelicRecommendInfo.proto\"z\n\x12RelicRecommendInfo\x12\x20\n\x0bE\
-    LJALACLDPJ\x18\x02\x20\x01(\rR\x0bELJALACLDPJ\x12\x20\n\x0bJPJIDHBKLAP\
-    \x18\x0b\x20\x01(\rR\x0bJPJIDHBKLAP\x12\x20\n\x0bEDFIEJNCFDB\x18\r\x20\
-    \x01(\rR\x0bEDFIEJNCFDBb\x06proto3\
+    \n\x18RelicRecommendInfo.proto\"z\n\x12RelicRecommendInfo\x12\x20\n\x0bF\
+    NMHMEJONHA\x18\x02\x20\x01(\rR\x0bFNMHMEJONHA\x12\x20\n\x0bHKNINEFBNOB\
+    \x18\x0e\x20\x01(\rR\x0bHKNINEFBNOB\x12\x20\n\x0bMDIDIIAHCHC\x18\n\x20\
+    \x01(\rR\x0bMDIDIIAHCHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

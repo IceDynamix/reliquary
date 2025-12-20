@@ -30,8 +30,8 @@ pub struct GetNpcStatusScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetNpcStatusScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetNpcStatusScRsp.message_status_list)
-    pub message_status_list: ::std::vec::Vec<super::NpcStatus::NpcStatus>,
+    // @@protoc_insertion_point(field:GetNpcStatusScRsp.npc_status_list)
+    pub npc_status_list: ::std::vec::Vec<super::NpcStatus::NpcStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:GetNpcStatusScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetNpcStatusScRsp {
             |m: &mut GetNpcStatusScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "message_status_list",
-            |m: &GetNpcStatusScRsp| { &m.message_status_list },
-            |m: &mut GetNpcStatusScRsp| { &mut m.message_status_list },
+            "npc_status_list",
+            |m: &GetNpcStatusScRsp| { &m.npc_status_list },
+            |m: &mut GetNpcStatusScRsp| { &mut m.npc_status_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetNpcStatusScRsp>(
             "GetNpcStatusScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    self.message_status_list.push(is.read_message()?);
+                82 => {
+                    self.npc_status_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        for value in &self.message_status_list {
+        for value in &self.npc_status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        for v in &self.message_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.npc_status_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetNpcStatusScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.message_status_list.clear();
+        self.npc_status_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetNpcStatusScRsp {
         static instance: GetNpcStatusScRsp = GetNpcStatusScRsp {
             retcode: 0,
-            message_status_list: ::std::vec::Vec::new(),
+            npc_status_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetNpcStatusScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetNpcStatusScRsp.proto\x1a\x0fNpcStatus.proto\"i\n\x11GetNpcStatu\
-    sScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12:\n\x13mes\
-    sage_status_list\x18\x0f\x20\x03(\x0b2\n.NpcStatusR\x11messageStatusList\
-    b\x06proto3\
+    \n\x17GetNpcStatusScRsp.proto\x1a\x0fNpcStatus.proto\"a\n\x11GetNpcStatu\
+    sScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x122\n\x0fnpc\
+    _status_list\x18\n\x20\x03(\x0b2\n.NpcStatusR\rnpcStatusListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

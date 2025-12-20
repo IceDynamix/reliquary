@@ -31,7 +31,7 @@ pub struct StartRaidScRsp {
     // @@protoc_insertion_point(field:StartRaidScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:StartRaidScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::FNLGPLNCPCL::FNLGPLNCPCL>,
+    pub scene: ::protobuf::MessageField<super::GBHIHPKNBCA::GBHIHPKNBCA>,
     // special fields
     // @@protoc_insertion_point(special_field:StartRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl StartRaidScRsp {
             |m: &StartRaidScRsp| { &m.retcode },
             |m: &mut StartRaidScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FNLGPLNCPCL::FNLGPLNCPCL>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GBHIHPKNBCA::GBHIHPKNBCA>(
             "scene",
             |m: &StartRaidScRsp| { &m.scene },
             |m: &mut StartRaidScRsp| { &mut m.scene },
@@ -82,7 +82,7 @@ impl ::protobuf::Message for StartRaidScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for StartRaidScRsp {
             os.write_uint32(2, self.retcode)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StartRaidScRsp.proto\x1a\x11FNLGPLNCPCL.proto\"N\n\x0eStartRaidScR\
+    \n\x14StartRaidScRsp.proto\x1a\x11GBHIHPKNBCA.proto\"N\n\x0eStartRaidScR\
     sp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\"\n\x05scene\
-    \x18\x0e\x20\x01(\x0b2\x0c.FNLGPLNCPCLR\x05sceneb\x06proto3\
+    \x18\x08\x20\x01(\x0b2\x0c.GBHIHPKNBCAR\x05sceneb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FNLGPLNCPCL::file_descriptor().clone());
+            deps.push(super::GBHIHPKNBCA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

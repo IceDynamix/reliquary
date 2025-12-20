@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetAssistListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     self.assist_list.push(is.read_message()?);
                 },
-                112 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetAssistListScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetAssistListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.assist_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAssistListScRsp.proto\x1a\x16PlayerAssistInfo.proto\"b\n\x12Get\
-    AssistListScRsp\x122\n\x0bassist_list\x18\n\x20\x03(\x0b2\x11.PlayerAssi\
-    stInfoR\nassistList\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    AssistListScRsp\x122\n\x0bassist_list\x18\x06\x20\x03(\x0b2\x11.PlayerAs\
+    sistInfoR\nassistList\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcod\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,37 +30,37 @@ pub enum CmdClockParkType {
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkTypeNone)
     CmdClockParkTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUseBuffScRsp)
-    CmdClockParkUseBuffScRsp = 7235,
+    CmdClockParkUseBuffScRsp = 7250,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetInfoCsReq)
-    CmdClockParkGetInfoCsReq = 7226,
+    CmdClockParkGetInfoCsReq = 7246,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetOngoingScriptInfoCsReq)
-    CmdClockParkGetOngoingScriptInfoCsReq = 7201,
+    CmdClockParkGetOngoingScriptInfoCsReq = 7240,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetInfoScRsp)
-    CmdClockParkGetInfoScRsp = 7228,
+    CmdClockParkGetInfoScRsp = 7219,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkQuitScriptCsReq)
-    CmdClockParkQuitScriptCsReq = 7223,
+    CmdClockParkQuitScriptCsReq = 7231,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUnlockTalentCsReq)
-    CmdClockParkUnlockTalentCsReq = 7205,
+    CmdClockParkUnlockTalentCsReq = 7217,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkBattleEndScNotify)
-    CmdClockParkBattleEndScNotify = 7230,
+    CmdClockParkBattleEndScNotify = 7212,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkStartScriptCsReq)
-    CmdClockParkStartScriptCsReq = 7220,
+    CmdClockParkStartScriptCsReq = 7207,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUseBuffCsReq)
-    CmdClockParkUseBuffCsReq = 7229,
+    CmdClockParkUseBuffCsReq = 7225,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkHandleWaitOperationScRsp)
-    CmdClockParkHandleWaitOperationScRsp = 7203,
+    CmdClockParkHandleWaitOperationScRsp = 7213,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkQuitScriptScRsp)
-    CmdClockParkQuitScriptScRsp = 7219,
+    CmdClockParkQuitScriptScRsp = 7243,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkFinishScriptScNotify)
-    CmdClockParkFinishScriptScNotify = 7212,
+    CmdClockParkFinishScriptScNotify = 7233,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetOngoingScriptInfoScRsp)
-    CmdClockParkGetOngoingScriptInfoScRsp = 7245,
+    CmdClockParkGetOngoingScriptInfoScRsp = 7235,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkStartScriptScRsp)
-    CmdClockParkStartScriptScRsp = 7244,
+    CmdClockParkStartScriptScRsp = 7209,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUnlockTalentScRsp)
-    CmdClockParkUnlockTalentScRsp = 7227,
+    CmdClockParkUnlockTalentScRsp = 7210,
     // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkHandleWaitOperationCsReq)
-    CmdClockParkHandleWaitOperationCsReq = 7243,
+    CmdClockParkHandleWaitOperationCsReq = 7202,
 }
 
 impl ::protobuf::Enum for CmdClockParkType {
@@ -73,22 +73,22 @@ impl ::protobuf::Enum for CmdClockParkType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdClockParkType> {
         match value {
             0 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkTypeNone),
-            7235 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffScRsp),
-            7226 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoCsReq),
-            7201 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq),
-            7228 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoScRsp),
-            7223 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptCsReq),
-            7205 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentCsReq),
-            7230 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkBattleEndScNotify),
-            7220 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptCsReq),
-            7229 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffCsReq),
-            7203 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationScRsp),
-            7219 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptScRsp),
-            7212 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkFinishScriptScNotify),
-            7245 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp),
-            7244 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptScRsp),
-            7227 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentScRsp),
-            7243 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationCsReq),
+            7250 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffScRsp),
+            7246 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoCsReq),
+            7240 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq),
+            7219 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoScRsp),
+            7231 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptCsReq),
+            7217 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentCsReq),
+            7212 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkBattleEndScNotify),
+            7207 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptCsReq),
+            7225 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffCsReq),
+            7213 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationScRsp),
+            7243 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptScRsp),
+            7233 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkFinishScriptScNotify),
+            7235 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp),
+            7209 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptScRsp),
+            7210 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentScRsp),
+            7202 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -182,17 +182,17 @@ impl CmdClockParkType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdClockParkType.proto*\xf3\x04\n\x10CmdClockParkType\x12\x18\n\
     \x14CmdClockParkTypeNone\x10\0\x12\x1d\n\x18CmdClockParkUseBuffScRsp\x10\
-    \xc38\x12\x1d\n\x18CmdClockParkGetInfoCsReq\x10\xba8\x12*\n%CmdClockPark\
-    GetOngoingScriptInfoCsReq\x10\xa18\x12\x1d\n\x18CmdClockParkGetInfoScRsp\
-    \x10\xbc8\x12\x20\n\x1bCmdClockParkQuitScriptCsReq\x10\xb78\x12\"\n\x1dC\
-    mdClockParkUnlockTalentCsReq\x10\xa58\x12\"\n\x1dCmdClockParkBattleEndSc\
-    Notify\x10\xbe8\x12!\n\x1cCmdClockParkStartScriptCsReq\x10\xb48\x12\x1d\
-    \n\x18CmdClockParkUseBuffCsReq\x10\xbd8\x12)\n$CmdClockParkHandleWaitOpe\
-    rationScRsp\x10\xa38\x12\x20\n\x1bCmdClockParkQuitScriptScRsp\x10\xb38\
-    \x12%\n\x20CmdClockParkFinishScriptScNotify\x10\xac8\x12*\n%CmdClockPark\
-    GetOngoingScriptInfoScRsp\x10\xcd8\x12!\n\x1cCmdClockParkStartScriptScRs\
-    p\x10\xcc8\x12\"\n\x1dCmdClockParkUnlockTalentScRsp\x10\xbb8\x12)\n$CmdC\
-    lockParkHandleWaitOperationCsReq\x10\xcb8b\x06proto3\
+    \xd28\x12\x1d\n\x18CmdClockParkGetInfoCsReq\x10\xce8\x12*\n%CmdClockPark\
+    GetOngoingScriptInfoCsReq\x10\xc88\x12\x1d\n\x18CmdClockParkGetInfoScRsp\
+    \x10\xb38\x12\x20\n\x1bCmdClockParkQuitScriptCsReq\x10\xbf8\x12\"\n\x1dC\
+    mdClockParkUnlockTalentCsReq\x10\xb18\x12\"\n\x1dCmdClockParkBattleEndSc\
+    Notify\x10\xac8\x12!\n\x1cCmdClockParkStartScriptCsReq\x10\xa78\x12\x1d\
+    \n\x18CmdClockParkUseBuffCsReq\x10\xb98\x12)\n$CmdClockParkHandleWaitOpe\
+    rationScRsp\x10\xad8\x12\x20\n\x1bCmdClockParkQuitScriptScRsp\x10\xcb8\
+    \x12%\n\x20CmdClockParkFinishScriptScNotify\x10\xc18\x12*\n%CmdClockPark\
+    GetOngoingScriptInfoScRsp\x10\xc38\x12!\n\x1cCmdClockParkStartScriptScRs\
+    p\x10\xa98\x12\"\n\x1dCmdClockParkUnlockTalentScRsp\x10\xaa8\x12)\n$CmdC\
+    lockParkHandleWaitOperationCsReq\x10\xa28b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

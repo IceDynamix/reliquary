@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchGetInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.NIBFGBONNGK)
+    pub NIBFGBONNGK: ::std::collections::HashMap<u32, super::WorkbenchFuncInfo::WorkbenchFuncInfo>,
     // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.JJFEPFKPHNF)
-    pub JJFEPFKPHNF: ::std::collections::HashMap<u32, super::WorkbenchFuncInfo::WorkbenchFuncInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchGetInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueWorkbenchGetInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NIBFGBONNGK",
+            |m: &RogueWorkbenchGetInfoScRsp| { &m.NIBFGBONNGK },
+            |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.NIBFGBONNGK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueWorkbenchGetInfoScRsp| { &m.retcode },
             |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "JJFEPFKPHNF",
-            |m: &RogueWorkbenchGetInfoScRsp| { &m.JJFEPFKPHNF },
-            |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.JJFEPFKPHNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchGetInfoScRsp>(
             "RogueWorkbenchGetInfoScRsp",
@@ -79,10 +79,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                42 => {
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -95,7 +92,10 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.JJFEPFKPHNF.insert(key, value);
+                    self.NIBFGBONNGK.insert(key, value);
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,35 +109,35 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        for (k, v) in &self.JJFEPFKPHNF {
+        for (k, v) in &self.NIBFGBONNGK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.compute_size();
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        for (k, v) in &self.JJFEPFKPHNF {
+        for (k, v) in &self.NIBFGBONNGK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -155,8 +155,8 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.NIBFGBONNGK.clear();
         self.retcode = 0;
-        self.JJFEPFKPHNF.clear();
         self.special_fields.clear();
     }
 
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchGetInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueWorkbenchGetInfoScRsp.proto\x1a\x17WorkbenchFuncInfo.proto\"\
-    \xda\x01\n\x1aRogueWorkbenchGetInfoScRsp\x12\x18\n\x07retcode\x18\x02\
-    \x20\x01(\rR\x07retcode\x12N\n\x0bJJFEPFKPHNF\x18\x05\x20\x03(\x0b2,.Rog\
-    ueWorkbenchGetInfoScRsp.JJFEPFKPHNFEntryR\x0bJJFEPFKPHNF\x1aR\n\x10JJFEP\
-    FKPHNFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12(\n\x05value\
+    \xda\x01\n\x1aRogueWorkbenchGetInfoScRsp\x12N\n\x0bNIBFGBONNGK\x18\x0e\
+    \x20\x03(\x0b2,.RogueWorkbenchGetInfoScRsp.NIBFGBONNGKEntryR\x0bNIBFGBON\
+    NGK\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x1aR\n\x10NIBFGB\
+    ONNGKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12(\n\x05value\
     \x18\x02\x20\x01(\x0b2\x12.WorkbenchFuncInfoR\x05value:\x028\x01b\x06pro\
     to3\
 ";

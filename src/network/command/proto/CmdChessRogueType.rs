@@ -30,161 +30,161 @@ pub enum CmdChessRogueType {
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueTypeNone)
     CmdChessRogueTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdEnhanceChessRogueBuffScRsp)
-    CmdEnhanceChessRogueBuffScRsp = 5458,
+    CmdEnhanceChessRogueBuffScRsp = 5529,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSelectChessRogueSubStoryScRsp)
-    CmdSelectChessRogueSubStoryScRsp = 5452,
+    CmdSelectChessRogueSubStoryScRsp = 5515,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueChangeyAeonDimensionNotify)
-    CmdChessRogueChangeyAeonDimensionNotify = 5491,
+    CmdChessRogueChangeyAeonDimensionNotify = 5571,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSyncChessRogueNousSubStoryScNotify)
-    CmdSyncChessRogueNousSubStoryScNotify = 5537,
+    CmdSyncChessRogueNousSubStoryScNotify = 5573,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousDiceUpdateNotify)
-    CmdChessRogueNousDiceUpdateNotify = 5443,
+    CmdChessRogueNousDiceUpdateNotify = 5431,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterNextLayerCsReq)
-    CmdChessRogueEnterNextLayerCsReq = 5551,
+    CmdChessRogueEnterNextLayerCsReq = 5598,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueCheatRollScRsp)
-    CmdChessRogueCheatRollScRsp = 5588,
+    CmdChessRogueCheatRollScRsp = 5460,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueGiveUpRollScRsp)
-    CmdChessRogueGiveUpRollScRsp = 5482,
+    CmdChessRogueGiveUpRollScRsp = 5427,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueStoryAeonTalkInfoCsReq)
-    CmdGetChessRogueStoryAeonTalkInfoCsReq = 5521,
+    CmdGetChessRogueStoryAeonTalkInfoCsReq = 5545,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueStoryInfoScRsp)
-    CmdGetChessRogueStoryInfoScRsp = 5536,
+    CmdGetChessRogueStoryInfoScRsp = 5577,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueReviveAvatarCsReq)
-    CmdChessRogueReviveAvatarCsReq = 5433,
+    CmdChessRogueReviveAvatarCsReq = 5536,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQueryAeonDimensionsScRsp)
-    CmdChessRogueQueryAeonDimensionsScRsp = 5530,
+    CmdChessRogueQueryAeonDimensionsScRsp = 5434,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueGiveUpRollCsReq)
-    CmdChessRogueGiveUpRollCsReq = 5552,
+    CmdChessRogueGiveUpRollCsReq = 5477,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQueryScRsp)
-    CmdChessRogueQueryScRsp = 5596,
+    CmdChessRogueQueryScRsp = 5455,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueRollDiceScRsp)
-    CmdChessRogueRollDiceScRsp = 5473,
+    CmdChessRogueRollDiceScRsp = 5579,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdFinishChessRogueSubStoryCsReq)
-    CmdFinishChessRogueSubStoryCsReq = 5478,
+    CmdFinishChessRogueSubStoryCsReq = 5588,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueReviveAvatarScRsp)
-    CmdChessRogueReviveAvatarScRsp = 5503,
+    CmdChessRogueReviveAvatarScRsp = 5569,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQueryAeonDimensionsCsReq)
-    CmdChessRogueQueryAeonDimensionsCsReq = 5512,
+    CmdChessRogueQueryAeonDimensionsCsReq = 5453,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterScRsp)
-    CmdChessRogueEnterScRsp = 5564,
+    CmdChessRogueEnterScRsp = 5580,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSyncChessRogueMainStoryFinishScNotify)
-    CmdSyncChessRogueMainStoryFinishScNotify = 5423,
+    CmdSyncChessRogueMainStoryFinishScNotify = 5546,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousEditDiceScRsp)
-    CmdChessRogueNousEditDiceScRsp = 5594,
+    CmdChessRogueNousEditDiceScRsp = 5538,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousDiceSurfaceUnlockNotify)
-    CmdChessRogueNousDiceSurfaceUnlockNotify = 5403,
+    CmdChessRogueNousDiceSurfaceUnlockNotify = 5504,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterNextLayerScRsp)
-    CmdChessRogueEnterNextLayerScRsp = 5547,
+    CmdChessRogueEnterNextLayerScRsp = 5402,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueSelectCellScRsp)
-    CmdChessRogueSelectCellScRsp = 5576,
+    CmdChessRogueSelectCellScRsp = 5472,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSelectChessRogueSubStoryCsReq)
-    CmdSelectChessRogueSubStoryCsReq = 5553,
+    CmdSelectChessRogueSubStoryCsReq = 5527,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQueryCsReq)
-    CmdChessRogueQueryCsReq = 5562,
+    CmdChessRogueQueryCsReq = 5490,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueBuffEnhanceInfoScRsp)
-    CmdGetChessRogueBuffEnhanceInfoScRsp = 5587,
+    CmdGetChessRogueBuffEnhanceInfoScRsp = 5459,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueStoryAeonTalkInfoScRsp)
-    CmdGetChessRogueStoryAeonTalkInfoScRsp = 5446,
+    CmdGetChessRogueStoryAeonTalkInfoScRsp = 5572,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueBuffEnhanceInfoCsReq)
-    CmdGetChessRogueBuffEnhanceInfoCsReq = 5421,
+    CmdGetChessRogueBuffEnhanceInfoCsReq = 5451,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQuestFinishNotify)
-    CmdChessRogueQuestFinishNotify = 5567,
+    CmdChessRogueQuestFinishNotify = 5575,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueSkipTeachingLevelCsReq)
-    CmdChessRogueSkipTeachingLevelCsReq = 5529,
+    CmdChessRogueSkipTeachingLevelCsReq = 5466,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueReRollDiceCsReq)
-    CmdChessRogueReRollDiceCsReq = 5440,
+    CmdChessRogueReRollDiceCsReq = 5555,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateLevelBaseInfoScNotify)
-    CmdChessRogueUpdateLevelBaseInfoScNotify = 5560,
+    CmdChessRogueUpdateLevelBaseInfoScNotify = 5468,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueGiveUpScRsp)
-    CmdChessRogueGiveUpScRsp = 5425,
+    CmdChessRogueGiveUpScRsp = 5549,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueSelectCellCsReq)
-    CmdChessRogueSelectCellCsReq = 5500,
+    CmdChessRogueSelectCellCsReq = 5479,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueNousStoryInfoCsReq)
-    CmdGetChessRogueNousStoryInfoCsReq = 5554,
+    CmdGetChessRogueNousStoryInfoCsReq = 5499,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateBoardScNotify)
-    CmdChessRogueUpdateBoardScNotify = 5474,
+    CmdChessRogueUpdateBoardScNotify = 5406,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueRollDiceCsReq)
-    CmdChessRogueRollDiceCsReq = 5412,
+    CmdChessRogueRollDiceCsReq = 5435,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateAeonModifierValueScNotify)
-    CmdChessRogueUpdateAeonModifierValueScNotify = 5548,
+    CmdChessRogueUpdateAeonModifierValueScNotify = 5591,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateDicePassiveAccumulateValueScNotify)
-    CmdChessRogueUpdateDicePassiveAccumulateValueScNotify = 5580,
+    CmdChessRogueUpdateDicePassiveAccumulateValueScNotify = 5454,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueStartCsReq)
-    CmdChessRogueStartCsReq = 5511,
+    CmdChessRogueStartCsReq = 5532,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousEnableRogueTalentCsReq)
-    CmdChessRogueNousEnableRogueTalentCsReq = 5465,
+    CmdChessRogueNousEnableRogueTalentCsReq = 5566,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateMoneyInfoScNotify)
-    CmdChessRogueUpdateMoneyInfoScNotify = 5437,
+    CmdChessRogueUpdateMoneyInfoScNotify = 5452,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateActionPointScNotify)
-    CmdChessRogueUpdateActionPointScNotify = 5545,
+    CmdChessRogueUpdateActionPointScNotify = 5535,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueCheatRollCsReq)
-    CmdChessRogueCheatRollCsReq = 5466,
+    CmdChessRogueCheatRollCsReq = 5465,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueReRollDiceScRsp)
-    CmdChessRogueReRollDiceScRsp = 5513,
+    CmdChessRogueReRollDiceScRsp = 5552,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterCellScRsp)
-    CmdChessRogueEnterCellScRsp = 5510,
+    CmdChessRogueEnterCellScRsp = 5502,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousGetRogueTalentInfoCsReq)
-    CmdChessRogueNousGetRogueTalentInfoCsReq = 5522,
+    CmdChessRogueNousGetRogueTalentInfoCsReq = 5478,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdEnterChessRogueAeonRoomCsReq)
-    CmdEnterChessRogueAeonRoomCsReq = 5504,
+    CmdEnterChessRogueAeonRoomCsReq = 5543,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQuitCsReq)
-    CmdChessRogueQuitCsReq = 5524,
+    CmdChessRogueQuitCsReq = 5404,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueQuitScRsp)
-    CmdChessRogueQuitScRsp = 5441,
+    CmdChessRogueQuitScRsp = 5540,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdEnhanceChessRogueBuffCsReq)
-    CmdEnhanceChessRogueBuffCsReq = 5475,
+    CmdEnhanceChessRogueBuffCsReq = 5492,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueCellUpdateNotify)
-    CmdChessRogueCellUpdateNotify = 5561,
+    CmdChessRogueCellUpdateNotify = 5565,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueLayerAccountInfoNotify)
-    CmdChessRogueLayerAccountInfoNotify = 5422,
+    CmdChessRogueLayerAccountInfoNotify = 5506,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueNousStoryInfoScRsp)
-    CmdGetChessRogueNousStoryInfoScRsp = 5585,
+    CmdGetChessRogueNousStoryInfoScRsp = 5425,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousGetRogueTalentInfoScRsp)
-    CmdChessRogueNousGetRogueTalentInfoScRsp = 5557,
+    CmdChessRogueNousGetRogueTalentInfoScRsp = 5525,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousEditDiceCsReq)
-    CmdChessRogueNousEditDiceCsReq = 5556,
+    CmdChessRogueNousEditDiceCsReq = 5497,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterCellCsReq)
-    CmdChessRogueEnterCellCsReq = 5469,
+    CmdChessRogueEnterCellCsReq = 5584,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSyncChessRogueNousValueScNotify)
-    CmdSyncChessRogueNousValueScNotify = 5499,
+    CmdSyncChessRogueNousValueScNotify = 5585,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdSyncChessRogueNousMainStoryScNotify)
-    CmdSyncChessRogueNousMainStoryScNotify = 5507,
+    CmdSyncChessRogueNousMainStoryScNotify = 5405,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueGiveUpCsReq)
-    CmdChessRogueGiveUpCsReq = 5449,
+    CmdChessRogueGiveUpCsReq = 5514,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRoguePickAvatarScRsp)
-    CmdChessRoguePickAvatarScRsp = 5527,
+    CmdChessRoguePickAvatarScRsp = 5562,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateUnlockLevelScNotify)
-    CmdChessRogueUpdateUnlockLevelScNotify = 5456,
+    CmdChessRogueUpdateUnlockLevelScNotify = 5403,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdGetChessRogueStoryInfoCsReq)
-    CmdGetChessRogueStoryInfoCsReq = 5419,
+    CmdGetChessRogueStoryInfoCsReq = 5559,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueSkipTeachingLevelScRsp)
-    CmdChessRogueSkipTeachingLevelScRsp = 5533,
+    CmdChessRogueSkipTeachingLevelScRsp = 5429,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdFinishChessRogueSubStoryScRsp)
-    CmdFinishChessRogueSubStoryScRsp = 5402,
+    CmdFinishChessRogueSubStoryScRsp = 5440,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRoguePickAvatarCsReq)
-    CmdChessRoguePickAvatarCsReq = 5508,
+    CmdChessRoguePickAvatarCsReq = 5482,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdEnterChessRogueAeonRoomScRsp)
-    CmdEnterChessRogueAeonRoomScRsp = 5471,
+    CmdEnterChessRogueAeonRoomScRsp = 5433,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueConfirmRollScRsp)
-    CmdChessRogueConfirmRollScRsp = 5489,
+    CmdChessRogueConfirmRollScRsp = 5595,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueLeaveScRsp)
-    CmdChessRogueLeaveScRsp = 5523,
+    CmdChessRogueLeaveScRsp = 5592,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueConfirmRollCsReq)
-    CmdChessRogueConfirmRollCsReq = 5525,
+    CmdChessRogueConfirmRollCsReq = 5594,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueLeaveCsReq)
-    CmdChessRogueLeaveCsReq = 5404,
+    CmdChessRogueLeaveCsReq = 5596,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateDiceInfoScNotify)
-    CmdChessRogueUpdateDiceInfoScNotify = 5490,
+    CmdChessRogueUpdateDiceInfoScNotify = 5576,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueNousEnableRogueTalentScRsp)
-    CmdChessRogueNousEnableRogueTalentScRsp = 5598,
+    CmdChessRogueNousEnableRogueTalentScRsp = 5597,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateAllowedSelectCellScNotify)
-    CmdChessRogueUpdateAllowedSelectCellScNotify = 5570,
+    CmdChessRogueUpdateAllowedSelectCellScNotify = 5541,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueUpdateReviveInfoScNotify)
-    CmdChessRogueUpdateReviveInfoScNotify = 5574,
+    CmdChessRogueUpdateReviveInfoScNotify = 5589,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueStartScRsp)
-    CmdChessRogueStartScRsp = 5445,
+    CmdChessRogueStartScRsp = 5508,
     // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueEnterCsReq)
-    CmdChessRogueEnterCsReq = 5411,
+    CmdChessRogueEnterCsReq = 5530,
 }
 
 impl ::protobuf::Enum for CmdChessRogueType {
@@ -197,84 +197,84 @@ impl ::protobuf::Enum for CmdChessRogueType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChessRogueType> {
         match value {
             0 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueTypeNone),
-            5458 => ::std::option::Option::Some(CmdChessRogueType::CmdEnhanceChessRogueBuffScRsp),
-            5452 => ::std::option::Option::Some(CmdChessRogueType::CmdSelectChessRogueSubStoryScRsp),
-            5491 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueChangeyAeonDimensionNotify),
-            5537 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousSubStoryScNotify),
-            5443 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousDiceUpdateNotify),
-            5551 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterNextLayerCsReq),
-            5588 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCheatRollScRsp),
-            5482 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpRollScRsp),
-            5521 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryAeonTalkInfoCsReq),
-            5536 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryInfoScRsp),
-            5433 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReviveAvatarCsReq),
-            5530 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryAeonDimensionsScRsp),
-            5552 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpRollCsReq),
-            5596 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryScRsp),
-            5473 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueRollDiceScRsp),
-            5478 => ::std::option::Option::Some(CmdChessRogueType::CmdFinishChessRogueSubStoryCsReq),
-            5503 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReviveAvatarScRsp),
-            5512 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryAeonDimensionsCsReq),
-            5564 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterScRsp),
-            5423 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueMainStoryFinishScNotify),
-            5594 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEditDiceScRsp),
-            5403 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousDiceSurfaceUnlockNotify),
-            5547 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterNextLayerScRsp),
-            5576 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSelectCellScRsp),
-            5553 => ::std::option::Option::Some(CmdChessRogueType::CmdSelectChessRogueSubStoryCsReq),
-            5562 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryCsReq),
-            5587 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueBuffEnhanceInfoScRsp),
-            5446 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryAeonTalkInfoScRsp),
-            5421 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueBuffEnhanceInfoCsReq),
-            5567 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuestFinishNotify),
-            5529 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSkipTeachingLevelCsReq),
-            5440 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReRollDiceCsReq),
-            5560 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateLevelBaseInfoScNotify),
-            5425 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpScRsp),
-            5500 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSelectCellCsReq),
-            5554 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueNousStoryInfoCsReq),
-            5474 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateBoardScNotify),
-            5412 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueRollDiceCsReq),
-            5548 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateAeonModifierValueScNotify),
-            5580 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateDicePassiveAccumulateValueScNotify),
-            5511 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueStartCsReq),
-            5465 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEnableRogueTalentCsReq),
-            5437 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateMoneyInfoScNotify),
-            5545 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateActionPointScNotify),
-            5466 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCheatRollCsReq),
-            5513 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReRollDiceScRsp),
-            5510 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCellScRsp),
-            5522 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousGetRogueTalentInfoCsReq),
-            5504 => ::std::option::Option::Some(CmdChessRogueType::CmdEnterChessRogueAeonRoomCsReq),
-            5524 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuitCsReq),
-            5441 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuitScRsp),
-            5475 => ::std::option::Option::Some(CmdChessRogueType::CmdEnhanceChessRogueBuffCsReq),
-            5561 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCellUpdateNotify),
-            5422 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLayerAccountInfoNotify),
-            5585 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueNousStoryInfoScRsp),
-            5557 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousGetRogueTalentInfoScRsp),
-            5556 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEditDiceCsReq),
-            5469 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCellCsReq),
-            5499 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousValueScNotify),
-            5507 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousMainStoryScNotify),
-            5449 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpCsReq),
-            5527 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRoguePickAvatarScRsp),
-            5456 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateUnlockLevelScNotify),
-            5419 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryInfoCsReq),
-            5533 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSkipTeachingLevelScRsp),
-            5402 => ::std::option::Option::Some(CmdChessRogueType::CmdFinishChessRogueSubStoryScRsp),
-            5508 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRoguePickAvatarCsReq),
-            5471 => ::std::option::Option::Some(CmdChessRogueType::CmdEnterChessRogueAeonRoomScRsp),
-            5489 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueConfirmRollScRsp),
-            5523 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLeaveScRsp),
-            5525 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueConfirmRollCsReq),
-            5404 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLeaveCsReq),
-            5490 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateDiceInfoScNotify),
-            5598 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEnableRogueTalentScRsp),
-            5570 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateAllowedSelectCellScNotify),
-            5574 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateReviveInfoScNotify),
-            5445 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueStartScRsp),
-            5411 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCsReq),
+            5529 => ::std::option::Option::Some(CmdChessRogueType::CmdEnhanceChessRogueBuffScRsp),
+            5515 => ::std::option::Option::Some(CmdChessRogueType::CmdSelectChessRogueSubStoryScRsp),
+            5571 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueChangeyAeonDimensionNotify),
+            5573 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousSubStoryScNotify),
+            5431 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousDiceUpdateNotify),
+            5598 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterNextLayerCsReq),
+            5460 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCheatRollScRsp),
+            5427 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpRollScRsp),
+            5545 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryAeonTalkInfoCsReq),
+            5577 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryInfoScRsp),
+            5536 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReviveAvatarCsReq),
+            5434 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryAeonDimensionsScRsp),
+            5477 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpRollCsReq),
+            5455 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryScRsp),
+            5579 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueRollDiceScRsp),
+            5588 => ::std::option::Option::Some(CmdChessRogueType::CmdFinishChessRogueSubStoryCsReq),
+            5569 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReviveAvatarScRsp),
+            5453 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryAeonDimensionsCsReq),
+            5580 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterScRsp),
+            5546 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueMainStoryFinishScNotify),
+            5538 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEditDiceScRsp),
+            5504 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousDiceSurfaceUnlockNotify),
+            5402 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterNextLayerScRsp),
+            5472 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSelectCellScRsp),
+            5527 => ::std::option::Option::Some(CmdChessRogueType::CmdSelectChessRogueSubStoryCsReq),
+            5490 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQueryCsReq),
+            5459 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueBuffEnhanceInfoScRsp),
+            5572 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryAeonTalkInfoScRsp),
+            5451 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueBuffEnhanceInfoCsReq),
+            5575 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuestFinishNotify),
+            5466 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSkipTeachingLevelCsReq),
+            5555 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReRollDiceCsReq),
+            5468 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateLevelBaseInfoScNotify),
+            5549 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpScRsp),
+            5479 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSelectCellCsReq),
+            5499 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueNousStoryInfoCsReq),
+            5406 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateBoardScNotify),
+            5435 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueRollDiceCsReq),
+            5591 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateAeonModifierValueScNotify),
+            5454 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateDicePassiveAccumulateValueScNotify),
+            5532 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueStartCsReq),
+            5566 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEnableRogueTalentCsReq),
+            5452 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateMoneyInfoScNotify),
+            5535 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateActionPointScNotify),
+            5465 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCheatRollCsReq),
+            5552 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueReRollDiceScRsp),
+            5502 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCellScRsp),
+            5478 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousGetRogueTalentInfoCsReq),
+            5543 => ::std::option::Option::Some(CmdChessRogueType::CmdEnterChessRogueAeonRoomCsReq),
+            5404 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuitCsReq),
+            5540 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueQuitScRsp),
+            5492 => ::std::option::Option::Some(CmdChessRogueType::CmdEnhanceChessRogueBuffCsReq),
+            5565 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueCellUpdateNotify),
+            5506 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLayerAccountInfoNotify),
+            5425 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueNousStoryInfoScRsp),
+            5525 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousGetRogueTalentInfoScRsp),
+            5497 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEditDiceCsReq),
+            5584 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCellCsReq),
+            5585 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousValueScNotify),
+            5405 => ::std::option::Option::Some(CmdChessRogueType::CmdSyncChessRogueNousMainStoryScNotify),
+            5514 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueGiveUpCsReq),
+            5562 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRoguePickAvatarScRsp),
+            5403 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateUnlockLevelScNotify),
+            5559 => ::std::option::Option::Some(CmdChessRogueType::CmdGetChessRogueStoryInfoCsReq),
+            5429 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueSkipTeachingLevelScRsp),
+            5440 => ::std::option::Option::Some(CmdChessRogueType::CmdFinishChessRogueSubStoryScRsp),
+            5482 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRoguePickAvatarCsReq),
+            5433 => ::std::option::Option::Some(CmdChessRogueType::CmdEnterChessRogueAeonRoomScRsp),
+            5595 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueConfirmRollScRsp),
+            5592 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLeaveScRsp),
+            5594 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueConfirmRollCsReq),
+            5596 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueLeaveCsReq),
+            5576 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateDiceInfoScNotify),
+            5597 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueNousEnableRogueTalentScRsp),
+            5541 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateAllowedSelectCellScNotify),
+            5589 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueUpdateReviveInfoScNotify),
+            5508 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueStartScRsp),
+            5530 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueEnterCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -554,62 +554,62 @@ impl CmdChessRogueType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdChessRogueType.proto*\x80\x18\n\x11CmdChessRogueType\x12\x19\n\
     \x15CmdChessRogueTypeNone\x10\0\x12\"\n\x1dCmdEnhanceChessRogueBuffScRsp\
-    \x10\xd2*\x12%\n\x20CmdSelectChessRogueSubStoryScRsp\x10\xcc*\x12,\n'Cmd\
-    ChessRogueChangeyAeonDimensionNotify\x10\xf3*\x12*\n%CmdSyncChessRogueNo\
-    usSubStoryScNotify\x10\xa1+\x12&\n!CmdChessRogueNousDiceUpdateNotify\x10\
-    \xc3*\x12%\n\x20CmdChessRogueEnterNextLayerCsReq\x10\xaf+\x12\x20\n\x1bC\
-    mdChessRogueCheatRollScRsp\x10\xd4+\x12!\n\x1cCmdChessRogueGiveUpRollScR\
-    sp\x10\xea*\x12+\n&CmdGetChessRogueStoryAeonTalkInfoCsReq\x10\x91+\x12#\
-    \n\x1eCmdGetChessRogueStoryInfoScRsp\x10\xa0+\x12#\n\x1eCmdChessRogueRev\
-    iveAvatarCsReq\x10\xb9*\x12*\n%CmdChessRogueQueryAeonDimensionsScRsp\x10\
-    \x9a+\x12!\n\x1cCmdChessRogueGiveUpRollCsReq\x10\xb0+\x12\x1c\n\x17CmdCh\
-    essRogueQueryScRsp\x10\xdc+\x12\x1f\n\x1aCmdChessRogueRollDiceScRsp\x10\
-    \xe1*\x12%\n\x20CmdFinishChessRogueSubStoryCsReq\x10\xe6*\x12#\n\x1eCmdC\
-    hessRogueReviveAvatarScRsp\x10\xff*\x12*\n%CmdChessRogueQueryAeonDimensi\
-    onsCsReq\x10\x88+\x12\x1c\n\x17CmdChessRogueEnterScRsp\x10\xbc+\x12-\n(C\
-    mdSyncChessRogueMainStoryFinishScNotify\x10\xaf*\x12#\n\x1eCmdChessRogue\
-    NousEditDiceScRsp\x10\xda+\x12-\n(CmdChessRogueNousDiceSurfaceUnlockNoti\
-    fy\x10\x9b*\x12%\n\x20CmdChessRogueEnterNextLayerScRsp\x10\xab+\x12!\n\
-    \x1cCmdChessRogueSelectCellScRsp\x10\xc8+\x12%\n\x20CmdSelectChessRogueS\
-    ubStoryCsReq\x10\xb1+\x12\x1c\n\x17CmdChessRogueQueryCsReq\x10\xba+\x12)\
-    \n$CmdGetChessRogueBuffEnhanceInfoScRsp\x10\xd3+\x12+\n&CmdGetChessRogue\
-    StoryAeonTalkInfoScRsp\x10\xc6*\x12)\n$CmdGetChessRogueBuffEnhanceInfoCs\
-    Req\x10\xad*\x12#\n\x1eCmdChessRogueQuestFinishNotify\x10\xbf+\x12(\n#Cm\
-    dChessRogueSkipTeachingLevelCsReq\x10\x99+\x12!\n\x1cCmdChessRogueReRoll\
-    DiceCsReq\x10\xc0*\x12-\n(CmdChessRogueUpdateLevelBaseInfoScNotify\x10\
-    \xb8+\x12\x1d\n\x18CmdChessRogueGiveUpScRsp\x10\xb1*\x12!\n\x1cCmdChessR\
-    ogueSelectCellCsReq\x10\xfc*\x12'\n\"CmdGetChessRogueNousStoryInfoCsReq\
-    \x10\xb2+\x12%\n\x20CmdChessRogueUpdateBoardScNotify\x10\xe2*\x12\x1f\n\
-    \x1aCmdChessRogueRollDiceCsReq\x10\xa4*\x121\n,CmdChessRogueUpdateAeonMo\
-    difierValueScNotify\x10\xac+\x12:\n5CmdChessRogueUpdateDicePassiveAccumu\
-    lateValueScNotify\x10\xcc+\x12\x1c\n\x17CmdChessRogueStartCsReq\x10\x87+\
-    \x12,\n'CmdChessRogueNousEnableRogueTalentCsReq\x10\xd9*\x12)\n$CmdChess\
-    RogueUpdateMoneyInfoScNotify\x10\xbd*\x12+\n&CmdChessRogueUpdateActionPo\
-    intScNotify\x10\xa9+\x12\x20\n\x1bCmdChessRogueCheatRollCsReq\x10\xda*\
-    \x12!\n\x1cCmdChessRogueReRollDiceScRsp\x10\x89+\x12\x20\n\x1bCmdChessRo\
-    gueEnterCellScRsp\x10\x86+\x12-\n(CmdChessRogueNousGetRogueTalentInfoCsR\
-    eq\x10\x92+\x12$\n\x1fCmdEnterChessRogueAeonRoomCsReq\x10\x80+\x12\x1b\n\
-    \x16CmdChessRogueQuitCsReq\x10\x94+\x12\x1b\n\x16CmdChessRogueQuitScRsp\
-    \x10\xc1*\x12\"\n\x1dCmdEnhanceChessRogueBuffCsReq\x10\xe3*\x12\"\n\x1dC\
-    mdChessRogueCellUpdateNotify\x10\xb9+\x12(\n#CmdChessRogueLayerAccountIn\
-    foNotify\x10\xae*\x12'\n\"CmdGetChessRogueNousStoryInfoScRsp\x10\xd1+\
-    \x12-\n(CmdChessRogueNousGetRogueTalentInfoScRsp\x10\xb5+\x12#\n\x1eCmdC\
-    hessRogueNousEditDiceCsReq\x10\xb4+\x12\x20\n\x1bCmdChessRogueEnterCellC\
-    sReq\x10\xdd*\x12'\n\"CmdSyncChessRogueNousValueScNotify\x10\xfb*\x12+\n\
-    &CmdSyncChessRogueNousMainStoryScNotify\x10\x83+\x12\x1d\n\x18CmdChessRo\
-    gueGiveUpCsReq\x10\xc9*\x12!\n\x1cCmdChessRoguePickAvatarScRsp\x10\x97+\
-    \x12+\n&CmdChessRogueUpdateUnlockLevelScNotify\x10\xd0*\x12#\n\x1eCmdGet\
-    ChessRogueStoryInfoCsReq\x10\xab*\x12(\n#CmdChessRogueSkipTeachingLevelS\
-    cRsp\x10\x9d+\x12%\n\x20CmdFinishChessRogueSubStoryScRsp\x10\x9a*\x12!\n\
-    \x1cCmdChessRoguePickAvatarCsReq\x10\x84+\x12$\n\x1fCmdEnterChessRogueAe\
-    onRoomScRsp\x10\xdf*\x12\"\n\x1dCmdChessRogueConfirmRollScRsp\x10\xf1*\
-    \x12\x1c\n\x17CmdChessRogueLeaveScRsp\x10\x93+\x12\"\n\x1dCmdChessRogueC\
-    onfirmRollCsReq\x10\x95+\x12\x1c\n\x17CmdChessRogueLeaveCsReq\x10\x9c*\
-    \x12(\n#CmdChessRogueUpdateDiceInfoScNotify\x10\xf2*\x12,\n'CmdChessRogu\
-    eNousEnableRogueTalentScRsp\x10\xde+\x121\n,CmdChessRogueUpdateAllowedSe\
-    lectCellScNotify\x10\xc2+\x12*\n%CmdChessRogueUpdateReviveInfoScNotify\
-    \x10\xc6+\x12\x1c\n\x17CmdChessRogueStartScRsp\x10\xc5*\x12\x1c\n\x17Cmd\
-    ChessRogueEnterCsReq\x10\xa3*b\x06proto3\
+    \x10\x99+\x12%\n\x20CmdSelectChessRogueSubStoryScRsp\x10\x8b+\x12,\n'Cmd\
+    ChessRogueChangeyAeonDimensionNotify\x10\xc3+\x12*\n%CmdSyncChessRogueNo\
+    usSubStoryScNotify\x10\xc5+\x12&\n!CmdChessRogueNousDiceUpdateNotify\x10\
+    \xb7*\x12%\n\x20CmdChessRogueEnterNextLayerCsReq\x10\xde+\x12\x20\n\x1bC\
+    mdChessRogueCheatRollScRsp\x10\xd4*\x12!\n\x1cCmdChessRogueGiveUpRollScR\
+    sp\x10\xb3*\x12+\n&CmdGetChessRogueStoryAeonTalkInfoCsReq\x10\xa9+\x12#\
+    \n\x1eCmdGetChessRogueStoryInfoScRsp\x10\xc9+\x12#\n\x1eCmdChessRogueRev\
+    iveAvatarCsReq\x10\xa0+\x12*\n%CmdChessRogueQueryAeonDimensionsScRsp\x10\
+    \xba*\x12!\n\x1cCmdChessRogueGiveUpRollCsReq\x10\xe5*\x12\x1c\n\x17CmdCh\
+    essRogueQueryScRsp\x10\xcf*\x12\x1f\n\x1aCmdChessRogueRollDiceScRsp\x10\
+    \xcb+\x12%\n\x20CmdFinishChessRogueSubStoryCsReq\x10\xd4+\x12#\n\x1eCmdC\
+    hessRogueReviveAvatarScRsp\x10\xc1+\x12*\n%CmdChessRogueQueryAeonDimensi\
+    onsCsReq\x10\xcd*\x12\x1c\n\x17CmdChessRogueEnterScRsp\x10\xcc+\x12-\n(C\
+    mdSyncChessRogueMainStoryFinishScNotify\x10\xaa+\x12#\n\x1eCmdChessRogue\
+    NousEditDiceScRsp\x10\xa2+\x12-\n(CmdChessRogueNousDiceSurfaceUnlockNoti\
+    fy\x10\x80+\x12%\n\x20CmdChessRogueEnterNextLayerScRsp\x10\x9a*\x12!\n\
+    \x1cCmdChessRogueSelectCellScRsp\x10\xe0*\x12%\n\x20CmdSelectChessRogueS\
+    ubStoryCsReq\x10\x97+\x12\x1c\n\x17CmdChessRogueQueryCsReq\x10\xf2*\x12)\
+    \n$CmdGetChessRogueBuffEnhanceInfoScRsp\x10\xd3*\x12+\n&CmdGetChessRogue\
+    StoryAeonTalkInfoScRsp\x10\xc4+\x12)\n$CmdGetChessRogueBuffEnhanceInfoCs\
+    Req\x10\xcb*\x12#\n\x1eCmdChessRogueQuestFinishNotify\x10\xc7+\x12(\n#Cm\
+    dChessRogueSkipTeachingLevelCsReq\x10\xda*\x12!\n\x1cCmdChessRogueReRoll\
+    DiceCsReq\x10\xb3+\x12-\n(CmdChessRogueUpdateLevelBaseInfoScNotify\x10\
+    \xdc*\x12\x1d\n\x18CmdChessRogueGiveUpScRsp\x10\xad+\x12!\n\x1cCmdChessR\
+    ogueSelectCellCsReq\x10\xe7*\x12'\n\"CmdGetChessRogueNousStoryInfoCsReq\
+    \x10\xfb*\x12%\n\x20CmdChessRogueUpdateBoardScNotify\x10\x9e*\x12\x1f\n\
+    \x1aCmdChessRogueRollDiceCsReq\x10\xbb*\x121\n,CmdChessRogueUpdateAeonMo\
+    difierValueScNotify\x10\xd7+\x12:\n5CmdChessRogueUpdateDicePassiveAccumu\
+    lateValueScNotify\x10\xce*\x12\x1c\n\x17CmdChessRogueStartCsReq\x10\x9c+\
+    \x12,\n'CmdChessRogueNousEnableRogueTalentCsReq\x10\xbe+\x12)\n$CmdChess\
+    RogueUpdateMoneyInfoScNotify\x10\xcc*\x12+\n&CmdChessRogueUpdateActionPo\
+    intScNotify\x10\x9f+\x12\x20\n\x1bCmdChessRogueCheatRollCsReq\x10\xd9*\
+    \x12!\n\x1cCmdChessRogueReRollDiceScRsp\x10\xb0+\x12\x20\n\x1bCmdChessRo\
+    gueEnterCellScRsp\x10\xfe*\x12-\n(CmdChessRogueNousGetRogueTalentInfoCsR\
+    eq\x10\xe6*\x12$\n\x1fCmdEnterChessRogueAeonRoomCsReq\x10\xa7+\x12\x1b\n\
+    \x16CmdChessRogueQuitCsReq\x10\x9c*\x12\x1b\n\x16CmdChessRogueQuitScRsp\
+    \x10\xa4+\x12\"\n\x1dCmdEnhanceChessRogueBuffCsReq\x10\xf4*\x12\"\n\x1dC\
+    mdChessRogueCellUpdateNotify\x10\xbd+\x12(\n#CmdChessRogueLayerAccountIn\
+    foNotify\x10\x82+\x12'\n\"CmdGetChessRogueNousStoryInfoScRsp\x10\xb1*\
+    \x12-\n(CmdChessRogueNousGetRogueTalentInfoScRsp\x10\x95+\x12#\n\x1eCmdC\
+    hessRogueNousEditDiceCsReq\x10\xf9*\x12\x20\n\x1bCmdChessRogueEnterCellC\
+    sReq\x10\xd0+\x12'\n\"CmdSyncChessRogueNousValueScNotify\x10\xd1+\x12+\n\
+    &CmdSyncChessRogueNousMainStoryScNotify\x10\x9d*\x12\x1d\n\x18CmdChessRo\
+    gueGiveUpCsReq\x10\x8a+\x12!\n\x1cCmdChessRoguePickAvatarScRsp\x10\xba+\
+    \x12+\n&CmdChessRogueUpdateUnlockLevelScNotify\x10\x9b*\x12#\n\x1eCmdGet\
+    ChessRogueStoryInfoCsReq\x10\xb7+\x12(\n#CmdChessRogueSkipTeachingLevelS\
+    cRsp\x10\xb5*\x12%\n\x20CmdFinishChessRogueSubStoryScRsp\x10\xc0*\x12!\n\
+    \x1cCmdChessRoguePickAvatarCsReq\x10\xea*\x12$\n\x1fCmdEnterChessRogueAe\
+    onRoomScRsp\x10\xb9*\x12\"\n\x1dCmdChessRogueConfirmRollScRsp\x10\xdb+\
+    \x12\x1c\n\x17CmdChessRogueLeaveScRsp\x10\xd8+\x12\"\n\x1dCmdChessRogueC\
+    onfirmRollCsReq\x10\xda+\x12\x1c\n\x17CmdChessRogueLeaveCsReq\x10\xdc+\
+    \x12(\n#CmdChessRogueUpdateDiceInfoScNotify\x10\xc8+\x12,\n'CmdChessRogu\
+    eNousEnableRogueTalentScRsp\x10\xdd+\x121\n,CmdChessRogueUpdateAllowedSe\
+    lectCellScNotify\x10\xa5+\x12*\n%CmdChessRogueUpdateReviveInfoScNotify\
+    \x10\xd5+\x12\x1c\n\x17CmdChessRogueStartScRsp\x10\x84+\x12\x1c\n\x17Cmd\
+    ChessRogueEnterCsReq\x10\x9a+b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

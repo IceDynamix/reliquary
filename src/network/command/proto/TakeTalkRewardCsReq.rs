@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTalkRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.talk_event_id)
-    pub talk_event_id: u32,
-    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.npc_location)
-    pub npc_location: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.NHDBBMECINK)
+    pub NHDBBMECINK: u32,
+    // @@protoc_insertion_point(field:TakeTalkRewardCsReq.LHCLAMGNKGE)
+    pub LHCLAMGNKGE: ::protobuf::MessageField<super::Vector::Vector>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTalkRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeTalkRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talk_event_id",
-            |m: &TakeTalkRewardCsReq| { &m.talk_event_id },
-            |m: &mut TakeTalkRewardCsReq| { &mut m.talk_event_id },
+            "NHDBBMECINK",
+            |m: &TakeTalkRewardCsReq| { &m.NHDBBMECINK },
+            |m: &mut TakeTalkRewardCsReq| { &mut m.NHDBBMECINK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "npc_location",
-            |m: &TakeTalkRewardCsReq| { &m.npc_location },
-            |m: &mut TakeTalkRewardCsReq| { &mut m.npc_location },
+            "LHCLAMGNKGE",
+            |m: &TakeTalkRewardCsReq| { &m.LHCLAMGNKGE },
+            |m: &mut TakeTalkRewardCsReq| { &mut m.LHCLAMGNKGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTalkRewardCsReq>(
             "TakeTalkRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.talk_event_id = is.read_uint32()?;
+                16 => {
+                    self.NHDBBMECINK = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.npc_location)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHCLAMGNKGE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.talk_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.talk_event_id);
+        if self.NHDBBMECINK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NHDBBMECINK);
         }
-        if let Some(v) = self.npc_location.as_ref() {
+        if let Some(v) = self.LHCLAMGNKGE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.talk_event_id != 0 {
-            os.write_uint32(4, self.talk_event_id)?;
+        if self.NHDBBMECINK != 0 {
+            os.write_uint32(2, self.NHDBBMECINK)?;
         }
-        if let Some(v) = self.npc_location.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.LHCLAMGNKGE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeTalkRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.talk_event_id = 0;
-        self.npc_location.clear();
+        self.NHDBBMECINK = 0;
+        self.LHCLAMGNKGE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTalkRewardCsReq {
         static instance: TakeTalkRewardCsReq = TakeTalkRewardCsReq {
-            talk_event_id: 0,
-            npc_location: ::protobuf::MessageField::none(),
+            NHDBBMECINK: 0,
+            LHCLAMGNKGE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeTalkRewardCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19TakeTalkRewardCsReq.proto\x1a\x0cVector.proto\"e\n\x13TakeTalkRewa\
-    rdCsReq\x12\"\n\rtalk_event_id\x18\x04\x20\x01(\rR\x0btalkEventId\x12*\n\
-    \x0cnpc_location\x18\r\x20\x01(\x0b2\x07.VectorR\x0bnpcLocationb\x06prot\
-    o3\
+    \n\x19TakeTalkRewardCsReq.proto\x1a\x0cVector.proto\"b\n\x13TakeTalkRewa\
+    rdCsReq\x12\x20\n\x0bNHDBBMECINK\x18\x02\x20\x01(\rR\x0bNHDBBMECINK\x12)\
+    \n\x0bLHCLAMGNKGE\x18\x06\x20\x01(\x0b2\x07.VectorR\x0bLHCLAMGNKGEb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

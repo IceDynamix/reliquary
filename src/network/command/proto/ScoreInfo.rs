@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ScoreInfo {
     // message fields
+    // @@protoc_insertion_point(field:ScoreInfo.LBKMCGILHMO)
+    pub LBKMCGILHMO: u32,
     // @@protoc_insertion_point(field:ScoreInfo.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:ScoreInfo.score)
-    pub score: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ScoreInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ScoreInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LBKMCGILHMO",
+            |m: &ScoreInfo| { &m.LBKMCGILHMO },
+            |m: &mut ScoreInfo| { &mut m.LBKMCGILHMO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &ScoreInfo| { &m.score_id },
             |m: &mut ScoreInfo| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score",
-            |m: &ScoreInfo| { &m.score },
-            |m: &mut ScoreInfo| { &mut m.score },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ScoreInfo>(
             "ScoreInfo",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ScoreInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.score_id = is.read_uint32()?;
+                    self.LBKMCGILHMO = is.read_uint32()?;
                 },
                 16 => {
-                    self.score = is.read_uint32()?;
+                    self.score_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ScoreInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.score_id);
+        if self.LBKMCGILHMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LBKMCGILHMO);
         }
-        if self.score != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.score);
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ScoreInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(1, self.score_id)?;
+        if self.LBKMCGILHMO != 0 {
+            os.write_uint32(1, self.LBKMCGILHMO)?;
         }
-        if self.score != 0 {
-            os.write_uint32(2, self.score)?;
+        if self.score_id != 0 {
+            os.write_uint32(2, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ScoreInfo {
     }
 
     fn clear(&mut self) {
+        self.LBKMCGILHMO = 0;
         self.score_id = 0;
-        self.score = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ScoreInfo {
         static instance: ScoreInfo = ScoreInfo {
+            LBKMCGILHMO: 0,
             score_id: 0,
-            score: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ScoreInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fScoreInfo.proto\"<\n\tScoreInfo\x12\x19\n\x08score_id\x18\x01\x20\
-    \x01(\rR\x07scoreId\x12\x14\n\x05score\x18\x02\x20\x01(\rR\x05scoreb\x06\
-    proto3\
+    \n\x0fScoreInfo.proto\"H\n\tScoreInfo\x12\x20\n\x0bLBKMCGILHMO\x18\x01\
+    \x20\x01(\rR\x0bLBKMCGILHMO\x12\x19\n\x08score_id\x18\x02\x20\x01(\rR\
+    \x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

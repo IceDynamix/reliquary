@@ -30,23 +30,23 @@ pub enum CmdEraFlipperType {
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperTypeNone)
     CmdEraFlipperTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEnterEraFlipperRegionScRsp)
-    CmdEnterEraFlipperRegionScRsp = 6575,
+    CmdEnterEraFlipperRegionScRsp = 6557,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdChangeEraFlipperDataCsReq)
-    CmdChangeEraFlipperDataCsReq = 6563,
+    CmdChangeEraFlipperDataCsReq = 6570,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdGetEraFlipperDataCsReq)
-    CmdGetEraFlipperDataCsReq = 6558,
+    CmdGetEraFlipperDataCsReq = 6574,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdGetEraFlipperDataScRsp)
-    CmdGetEraFlipperDataScRsp = 6551,
+    CmdGetEraFlipperDataScRsp = 6562,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdResetEraFlipperDataScRsp)
-    CmdResetEraFlipperDataScRsp = 6565,
+    CmdResetEraFlipperDataScRsp = 6572,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdChangeEraFlipperDataScRsp)
-    CmdChangeEraFlipperDataScRsp = 6566,
+    CmdChangeEraFlipperDataScRsp = 6568,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEnterEraFlipperRegionCsReq)
-    CmdEnterEraFlipperRegionCsReq = 6553,
+    CmdEnterEraFlipperRegionCsReq = 6555,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperDataChangeScNotify)
-    CmdEraFlipperDataChangeScNotify = 6556,
+    CmdEraFlipperDataChangeScNotify = 6559,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdResetEraFlipperDataCsReq)
-    CmdResetEraFlipperDataCsReq = 6568,
+    CmdResetEraFlipperDataCsReq = 6567,
 }
 
 impl ::protobuf::Enum for CmdEraFlipperType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdEraFlipperType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdEraFlipperType> {
         match value {
             0 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperTypeNone),
-            6575 => ::std::option::Option::Some(CmdEraFlipperType::CmdEnterEraFlipperRegionScRsp),
-            6563 => ::std::option::Option::Some(CmdEraFlipperType::CmdChangeEraFlipperDataCsReq),
-            6558 => ::std::option::Option::Some(CmdEraFlipperType::CmdGetEraFlipperDataCsReq),
-            6551 => ::std::option::Option::Some(CmdEraFlipperType::CmdGetEraFlipperDataScRsp),
-            6565 => ::std::option::Option::Some(CmdEraFlipperType::CmdResetEraFlipperDataScRsp),
-            6566 => ::std::option::Option::Some(CmdEraFlipperType::CmdChangeEraFlipperDataScRsp),
-            6553 => ::std::option::Option::Some(CmdEraFlipperType::CmdEnterEraFlipperRegionCsReq),
-            6556 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperDataChangeScNotify),
-            6568 => ::std::option::Option::Some(CmdEraFlipperType::CmdResetEraFlipperDataCsReq),
+            6557 => ::std::option::Option::Some(CmdEraFlipperType::CmdEnterEraFlipperRegionScRsp),
+            6570 => ::std::option::Option::Some(CmdEraFlipperType::CmdChangeEraFlipperDataCsReq),
+            6574 => ::std::option::Option::Some(CmdEraFlipperType::CmdGetEraFlipperDataCsReq),
+            6562 => ::std::option::Option::Some(CmdEraFlipperType::CmdGetEraFlipperDataScRsp),
+            6572 => ::std::option::Option::Some(CmdEraFlipperType::CmdResetEraFlipperDataScRsp),
+            6568 => ::std::option::Option::Some(CmdEraFlipperType::CmdChangeEraFlipperDataScRsp),
+            6555 => ::std::option::Option::Some(CmdEraFlipperType::CmdEnterEraFlipperRegionCsReq),
+            6559 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperDataChangeScNotify),
+            6567 => ::std::option::Option::Some(CmdEraFlipperType::CmdResetEraFlipperDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -140,12 +140,12 @@ impl CmdEraFlipperType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdEraFlipperType.proto*\xe6\x02\n\x11CmdEraFlipperType\x12\x19\n\
     \x15CmdEraFlipperTypeNone\x10\0\x12\"\n\x1dCmdEnterEraFlipperRegionScRsp\
-    \x10\xaf3\x12!\n\x1cCmdChangeEraFlipperDataCsReq\x10\xa33\x12\x1e\n\x19C\
-    mdGetEraFlipperDataCsReq\x10\x9e3\x12\x1e\n\x19CmdGetEraFlipperDataScRsp\
-    \x10\x973\x12\x20\n\x1bCmdResetEraFlipperDataScRsp\x10\xa53\x12!\n\x1cCm\
-    dChangeEraFlipperDataScRsp\x10\xa63\x12\"\n\x1dCmdEnterEraFlipperRegionC\
-    sReq\x10\x993\x12$\n\x1fCmdEraFlipperDataChangeScNotify\x10\x9c3\x12\x20\
-    \n\x1bCmdResetEraFlipperDataCsReq\x10\xa83b\x06proto3\
+    \x10\x9d3\x12!\n\x1cCmdChangeEraFlipperDataCsReq\x10\xaa3\x12\x1e\n\x19C\
+    mdGetEraFlipperDataCsReq\x10\xae3\x12\x1e\n\x19CmdGetEraFlipperDataScRsp\
+    \x10\xa23\x12\x20\n\x1bCmdResetEraFlipperDataScRsp\x10\xac3\x12!\n\x1cCm\
+    dChangeEraFlipperDataScRsp\x10\xa83\x12\"\n\x1dCmdEnterEraFlipperRegionC\
+    sReq\x10\x9b3\x12$\n\x1fCmdEraFlipperDataChangeScNotify\x10\x9f3\x12\x20\
+    \n\x1bCmdResetEraFlipperDataCsReq\x10\xa73b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

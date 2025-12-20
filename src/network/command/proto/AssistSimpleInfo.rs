@@ -96,13 +96,13 @@ impl ::protobuf::Message for AssistSimpleInfo {
                 24 => {
                     self.pos = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                64 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.dressed_skin_id = is.read_uint32()?;
                 },
                 tag => {
@@ -121,13 +121,13 @@ impl ::protobuf::Message for AssistSimpleInfo {
             my_size += ::protobuf::rt::uint32_size(3, self.pos);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         if self.dressed_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.dressed_skin_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.dressed_skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,13 +139,13 @@ impl ::protobuf::Message for AssistSimpleInfo {
             os.write_uint32(3, self.pos)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
         if self.dressed_skin_id != 0 {
-            os.write_uint32(9, self.dressed_skin_id)?;
+            os.write_uint32(13, self.dressed_skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for AssistSimpleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AssistSimpleInfo.proto\"\x7f\n\x10AssistSimpleInfo\x12\x10\n\x03po\
-    s\x18\x03\x20\x01(\rR\x03pos\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\
-    \x08avatarId\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12&\n\x0fd\
-    ressed_skin_id\x18\t\x20\x01(\rR\rdressedSkinIdb\x06proto3\
+    s\x18\x03\x20\x01(\rR\x03pos\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\rR\
+    \x08avatarId\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12&\n\x0fd\
+    ressed_skin_id\x18\r\x20\x01(\rR\rdressedSkinIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

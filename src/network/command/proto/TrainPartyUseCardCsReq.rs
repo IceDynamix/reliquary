@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyUseCardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyUseCardCsReq.IEHPIJFHANL)
-    pub IEHPIJFHANL: u32,
+    // @@protoc_insertion_point(field:TrainPartyUseCardCsReq.KEDFLGJEBJJ)
+    pub KEDFLGJEBJJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyUseCardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartyUseCardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEHPIJFHANL",
-            |m: &TrainPartyUseCardCsReq| { &m.IEHPIJFHANL },
-            |m: &mut TrainPartyUseCardCsReq| { &mut m.IEHPIJFHANL },
+            "KEDFLGJEBJJ",
+            |m: &TrainPartyUseCardCsReq| { &m.KEDFLGJEBJJ },
+            |m: &mut TrainPartyUseCardCsReq| { &mut m.KEDFLGJEBJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyUseCardCsReq>(
             "TrainPartyUseCardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartyUseCardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.IEHPIJFHANL = is.read_uint32()?;
+                80 => {
+                    self.KEDFLGJEBJJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TrainPartyUseCardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEHPIJFHANL != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IEHPIJFHANL);
+        if self.KEDFLGJEBJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KEDFLGJEBJJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TrainPartyUseCardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEHPIJFHANL != 0 {
-            os.write_uint32(6, self.IEHPIJFHANL)?;
+        if self.KEDFLGJEBJJ != 0 {
+            os.write_uint32(10, self.KEDFLGJEBJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TrainPartyUseCardCsReq {
     }
 
     fn clear(&mut self) {
-        self.IEHPIJFHANL = 0;
+        self.KEDFLGJEBJJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyUseCardCsReq {
         static instance: TrainPartyUseCardCsReq = TrainPartyUseCardCsReq {
-            IEHPIJFHANL: 0,
+            KEDFLGJEBJJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyUseCardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyUseCardCsReq.proto\":\n\x16TrainPartyUseCardCsReq\x12\
-    \x20\n\x0bIEHPIJFHANL\x18\x06\x20\x01(\rR\x0bIEHPIJFHANLb\x06proto3\
+    \x20\n\x0bKEDFLGJEBJJ\x18\n\x20\x01(\rR\x0bKEDFLGJEBJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

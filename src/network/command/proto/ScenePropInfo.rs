@@ -30,16 +30,16 @@ pub struct ScenePropInfo {
     // message fields
     // @@protoc_insertion_point(field:ScenePropInfo.create_time_ms)
     pub create_time_ms: u64,
+    // @@protoc_insertion_point(field:ScenePropInfo.extra_info)
+    pub extra_info: ::protobuf::MessageField<super::PropExtraInfo::PropExtraInfo>,
+    // @@protoc_insertion_point(field:ScenePropInfo.prop_state)
+    pub prop_state: u32,
+    // @@protoc_insertion_point(field:ScenePropInfo.prop_id)
+    pub prop_id: u32,
     // @@protoc_insertion_point(field:ScenePropInfo.life_time_ms)
     pub life_time_ms: u32,
     // @@protoc_insertion_point(field:ScenePropInfo.trigger_name_list)
     pub trigger_name_list: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:ScenePropInfo.prop_id)
-    pub prop_id: u32,
-    // @@protoc_insertion_point(field:ScenePropInfo.prop_state)
-    pub prop_state: u32,
-    // @@protoc_insertion_point(field:ScenePropInfo.extra_info)
-    pub extra_info: ::protobuf::MessageField<super::JNEOBOCBFFG::JNEOBOCBFFG>,
     // special fields
     // @@protoc_insertion_point(special_field:ScenePropInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,6 +64,21 @@ impl ScenePropInfo {
             |m: &ScenePropInfo| { &m.create_time_ms },
             |m: &mut ScenePropInfo| { &mut m.create_time_ms },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropExtraInfo::PropExtraInfo>(
+            "extra_info",
+            |m: &ScenePropInfo| { &m.extra_info },
+            |m: &mut ScenePropInfo| { &mut m.extra_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "prop_state",
+            |m: &ScenePropInfo| { &m.prop_state },
+            |m: &mut ScenePropInfo| { &mut m.prop_state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "prop_id",
+            |m: &ScenePropInfo| { &m.prop_id },
+            |m: &mut ScenePropInfo| { &mut m.prop_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "life_time_ms",
             |m: &ScenePropInfo| { &m.life_time_ms },
@@ -73,21 +88,6 @@ impl ScenePropInfo {
             "trigger_name_list",
             |m: &ScenePropInfo| { &m.trigger_name_list },
             |m: &mut ScenePropInfo| { &mut m.trigger_name_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_id",
-            |m: &ScenePropInfo| { &m.prop_id },
-            |m: &mut ScenePropInfo| { &mut m.prop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "prop_state",
-            |m: &ScenePropInfo| { &m.prop_state },
-            |m: &mut ScenePropInfo| { &mut m.prop_state },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNEOBOCBFFG::JNEOBOCBFFG>(
-            "extra_info",
-            |m: &ScenePropInfo| { &m.extra_info },
-            |m: &mut ScenePropInfo| { &mut m.extra_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ScenePropInfo>(
             "ScenePropInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for ScenePropInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                104 => {
                     self.create_time_ms = is.read_uint64()?;
                 },
-                24 => {
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
+                },
+                96 => {
+                    self.prop_state = is.read_uint32()?;
+                },
+                56 => {
+                    self.prop_id = is.read_uint32()?;
+                },
+                32 => {
                     self.life_time_ms = is.read_uint32()?;
                 },
                 42 => {
                     self.trigger_name_list.push(is.read_string()?);
-                },
-                64 => {
-                    self.prop_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.prop_state = is.read_uint32()?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,24 +138,24 @@ impl ::protobuf::Message for ScenePropInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.create_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.create_time_ms);
-        }
-        if self.life_time_ms != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.life_time_ms);
-        }
-        for value in &self.trigger_name_list {
-            my_size += ::protobuf::rt::string_size(5, &value);
-        };
-        if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.prop_id);
-        }
-        if self.prop_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.prop_state);
+            my_size += ::protobuf::rt::uint64_size(13, self.create_time_ms);
         }
         if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.prop_state != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.prop_state);
+        }
+        if self.prop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.prop_id);
+        }
+        if self.life_time_ms != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.life_time_ms);
+        }
+        for value in &self.trigger_name_list {
+            my_size += ::protobuf::rt::string_size(5, &value);
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -163,23 +163,23 @@ impl ::protobuf::Message for ScenePropInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.create_time_ms != 0 {
-            os.write_uint64(2, self.create_time_ms)?;
+            os.write_uint64(13, self.create_time_ms)?;
+        }
+        if let Some(v) = self.extra_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.prop_state != 0 {
+            os.write_uint32(12, self.prop_state)?;
+        }
+        if self.prop_id != 0 {
+            os.write_uint32(7, self.prop_id)?;
         }
         if self.life_time_ms != 0 {
-            os.write_uint32(3, self.life_time_ms)?;
+            os.write_uint32(4, self.life_time_ms)?;
         }
         for v in &self.trigger_name_list {
             os.write_string(5, &v)?;
         };
-        if self.prop_id != 0 {
-            os.write_uint32(8, self.prop_id)?;
-        }
-        if self.prop_state != 0 {
-            os.write_uint32(11, self.prop_state)?;
-        }
-        if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,22 +198,22 @@ impl ::protobuf::Message for ScenePropInfo {
 
     fn clear(&mut self) {
         self.create_time_ms = 0;
+        self.extra_info.clear();
+        self.prop_state = 0;
+        self.prop_id = 0;
         self.life_time_ms = 0;
         self.trigger_name_list.clear();
-        self.prop_id = 0;
-        self.prop_state = 0;
-        self.extra_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ScenePropInfo {
         static instance: ScenePropInfo = ScenePropInfo {
             create_time_ms: 0,
+            extra_info: ::protobuf::MessageField::none(),
+            prop_state: 0,
+            prop_id: 0,
             life_time_ms: 0,
             trigger_name_list: ::std::vec::Vec::new(),
-            prop_id: 0,
-            prop_state: 0,
-            extra_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for ScenePropInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13ScenePropInfo.proto\x1a\x11JNEOBOCBFFG.proto\"\xe8\x01\n\rScenePro\
-    pInfo\x12$\n\x0ecreate_time_ms\x18\x02\x20\x01(\x04R\x0ccreateTimeMs\x12\
-    \x20\n\x0clife_time_ms\x18\x03\x20\x01(\rR\nlifeTimeMs\x12*\n\x11trigger\
-    _name_list\x18\x05\x20\x03(\tR\x0ftriggerNameList\x12\x17\n\x07prop_id\
-    \x18\x08\x20\x01(\rR\x06propId\x12\x1d\n\nprop_state\x18\x0b\x20\x01(\rR\
-    \tpropState\x12+\n\nextra_info\x18\x0c\x20\x01(\x0b2\x0c.JNEOBOCBFFGR\te\
-    xtraInfob\x06proto3\
+    \n\x13ScenePropInfo.proto\x1a\x13PropExtraInfo.proto\"\xea\x01\n\rSceneP\
+    ropInfo\x12$\n\x0ecreate_time_ms\x18\r\x20\x01(\x04R\x0ccreateTimeMs\x12\
+    -\n\nextra_info\x18\x0e\x20\x01(\x0b2\x0e.PropExtraInfoR\textraInfo\x12\
+    \x1d\n\nprop_state\x18\x0c\x20\x01(\rR\tpropState\x12\x17\n\x07prop_id\
+    \x18\x07\x20\x01(\rR\x06propId\x12\x20\n\x0clife_time_ms\x18\x04\x20\x01\
+    (\rR\nlifeTimeMs\x12*\n\x11trigger_name_list\x18\x05\x20\x03(\tR\x0ftrig\
+    gerNameListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,7 +262,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JNEOBOCBFFG::file_descriptor().clone());
+            deps.push(super::PropExtraInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ScenePropInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

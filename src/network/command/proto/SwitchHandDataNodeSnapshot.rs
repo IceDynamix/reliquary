@@ -35,7 +35,7 @@ pub struct SwitchHandDataNodeSnapshot {
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_state)
     pub hand_state: u32,
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_param)
-    pub hand_param: ::std::vec::Vec<u8>,
+    pub hand_param: ::std::string::String,
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.get_coin_count)
     pub get_coin_count: u32,
     // special fields
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
                     self.hand_state = is.read_uint32()?;
                 },
                 34 => {
-                    self.hand_param = is.read_bytes()?;
+                    self.hand_param = is.read_string()?;
                 },
                 40 => {
                     self.get_coin_count = is.read_uint32()?;
@@ -138,7 +138,7 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
             my_size += ::protobuf::rt::uint32_size(3, self.hand_state);
         }
         if !self.hand_param.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(4, &self.hand_param);
+            my_size += ::protobuf::rt::string_size(4, &self.hand_param);
         }
         if self.get_coin_count != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.get_coin_count);
@@ -159,7 +159,7 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
             os.write_uint32(3, self.hand_state)?;
         }
         if !self.hand_param.is_empty() {
-            os.write_bytes(4, &self.hand_param)?;
+            os.write_string(4, &self.hand_param)?;
         }
         if self.get_coin_count != 0 {
             os.write_uint32(5, self.get_coin_count)?;
@@ -194,7 +194,7 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
             config_id: 0,
             hand_transform: ::protobuf::MessageField::none(),
             hand_state: 0,
-            hand_param: ::std::vec::Vec::new(),
+            hand_param: ::std::string::String::new(),
             get_coin_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -224,9 +224,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \xd9\x01\n\x1aSwitchHandDataNodeSnapshot\x12\x1b\n\tconfig_id\x18\x01\
     \x20\x01(\rR\x08configId\x12:\n\x0ehand_transform\x18\x02\x20\x01(\x0b2\
     \x13.MotionInfoSnapshotR\rhandTransform\x12\x1d\n\nhand_state\x18\x03\
-    \x20\x01(\rR\thandState\x12\x1d\n\nhand_param\x18\x04\x20\x01(\x0cR\than\
-    dParam\x12$\n\x0eget_coin_count\x18\x05\x20\x01(\rR\x0cgetCoinCountb\x06\
-    proto3\
+    \x20\x01(\rR\thandState\x12\x1d\n\nhand_param\x18\x04\x20\x01(\tR\thandP\
+    aram\x12$\n\x0eget_coin_count\x18\x05\x20\x01(\rR\x0cgetCoinCountb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

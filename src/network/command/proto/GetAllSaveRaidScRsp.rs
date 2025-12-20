@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                114 => {
                     self.raid_data_list.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetAllSaveRaidScRsp {
             os.write_uint32(9, self.retcode)?;
         }
         for v in &self.raid_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for GetAllSaveRaidScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetAllSaveRaidScRsp.proto\x1a\x0eRaidData.proto\"`\n\x13GetAllSave\
     RaidScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12/\n\x0era\
-    id_data_list\x18\r\x20\x03(\x0b2\t.RaidDataR\x0craidDataListb\x06proto3\
+    id_data_list\x18\x0e\x20\x03(\x0b2\t.RaidDataR\x0craidDataListb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

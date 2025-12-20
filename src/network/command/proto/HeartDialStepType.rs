@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:HeartDialStepType)
 pub enum HeartDialStepType {
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_MISSING)
-    HEART_DIAL_STEP_TYPE_MISSING = 0,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_FULL)
-    HEART_DIAL_STEP_TYPE_FULL = 1,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_LOCK)
-    HEART_DIAL_STEP_TYPE_LOCK = 2,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_UNLOCK)
-    HEART_DIAL_STEP_TYPE_UNLOCK = 3,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_NORMAL)
-    HEART_DIAL_STEP_TYPE_NORMAL = 4,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HEART_DIAL_STEP_TYPE_CONTROL)
-    HEART_DIAL_STEP_TYPE_CONTROL = 5,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_INKFEHJCAPK)
+    GPHNNFGILHI_INKFEHJCAPK = 0,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GCPKNDBEIKF)
+    GPHNNFGILHI_GCPKNDBEIKF = 1,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GBCMPODODMC)
+    GPHNNFGILHI_GBCMPODODMC = 2,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_DICADJMAIFE)
+    GPHNNFGILHI_DICADJMAIFE = 3,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GMBGHBPIBML)
+    GPHNNFGILHI_GMBGHBPIBML = 4,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_PHABOLBKOIC)
+    GPHNNFGILHI_PHABOLBKOIC = 5,
 }
 
 impl ::protobuf::Enum for HeartDialStepType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for HeartDialStepType {
 
     fn from_i32(value: i32) -> ::std::option::Option<HeartDialStepType> {
         match value {
-            0 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_MISSING),
-            1 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_FULL),
-            2 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_LOCK),
-            3 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_UNLOCK),
-            4 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_NORMAL),
-            5 => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_CONTROL),
+            0 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK),
+            1 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF),
+            2 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GBCMPODODMC),
+            3 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_DICADJMAIFE),
+            4 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML),
+            5 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<HeartDialStepType> {
         match str {
-            "HEART_DIAL_STEP_TYPE_MISSING" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_MISSING),
-            "HEART_DIAL_STEP_TYPE_FULL" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_FULL),
-            "HEART_DIAL_STEP_TYPE_LOCK" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_LOCK),
-            "HEART_DIAL_STEP_TYPE_UNLOCK" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_UNLOCK),
-            "HEART_DIAL_STEP_TYPE_NORMAL" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_NORMAL),
-            "HEART_DIAL_STEP_TYPE_CONTROL" => ::std::option::Option::Some(HeartDialStepType::HEART_DIAL_STEP_TYPE_CONTROL),
+            "GPHNNFGILHI_INKFEHJCAPK" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK),
+            "GPHNNFGILHI_GCPKNDBEIKF" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF),
+            "GPHNNFGILHI_GBCMPODODMC" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GBCMPODODMC),
+            "GPHNNFGILHI_DICADJMAIFE" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_DICADJMAIFE),
+            "GPHNNFGILHI_GMBGHBPIBML" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML),
+            "GPHNNFGILHI_PHABOLBKOIC" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [HeartDialStepType] = &[
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_MISSING,
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_FULL,
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_LOCK,
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_UNLOCK,
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_NORMAL,
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_CONTROL,
+        HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK,
+        HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF,
+        HeartDialStepType::GPHNNFGILHI_GBCMPODODMC,
+        HeartDialStepType::GPHNNFGILHI_DICADJMAIFE,
+        HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML,
+        HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for HeartDialStepType {
 
 impl ::std::default::Default for HeartDialStepType {
     fn default() -> Self {
-        HeartDialStepType::HEART_DIAL_STEP_TYPE_MISSING
+        HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK
     }
 }
 
@@ -107,12 +107,11 @@ impl HeartDialStepType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HeartDialStepType.proto*\xd7\x01\n\x11HeartDialStepType\x12\x20\n\
-    \x1cHEART_DIAL_STEP_TYPE_MISSING\x10\0\x12\x1d\n\x19HEART_DIAL_STEP_TYPE\
-    _FULL\x10\x01\x12\x1d\n\x19HEART_DIAL_STEP_TYPE_LOCK\x10\x02\x12\x1f\n\
-    \x1bHEART_DIAL_STEP_TYPE_UNLOCK\x10\x03\x12\x1f\n\x1bHEART_DIAL_STEP_TYP\
-    E_NORMAL\x10\x04\x12\x20\n\x1cHEART_DIAL_STEP_TYPE_CONTROL\x10\x05b\x06p\
-    roto3\
+    \n\x17HeartDialStepType.proto*\xc1\x01\n\x11HeartDialStepType\x12\x1b\n\
+    \x17GPHNNFGILHI_INKFEHJCAPK\x10\0\x12\x1b\n\x17GPHNNFGILHI_GCPKNDBEIKF\
+    \x10\x01\x12\x1b\n\x17GPHNNFGILHI_GBCMPODODMC\x10\x02\x12\x1b\n\x17GPHNN\
+    FGILHI_DICADJMAIFE\x10\x03\x12\x1b\n\x17GPHNNFGILHI_GMBGHBPIBML\x10\x04\
+    \x12\x1b\n\x17GPHNNFGILHI_PHABOLBKOIC\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

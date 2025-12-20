@@ -197,6 +197,10 @@ pub enum FeatureSwitchType {
     FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT = 85,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF)
     FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF = 86,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.JJAEEPFJMCF_CKGCEFBIHNM)
+    JJAEEPFJMCF_CKGCEFBIHNM = 87,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.JJAEEPFJMCF_IBDJHLFFIAJ)
+    JJAEEPFJMCF_IBDJHLFFIAJ = 88,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -293,6 +297,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             84 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY),
             85 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT),
             86 => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF),
+            87 => ::std::option::Option::Some(FeatureSwitchType::JJAEEPFJMCF_CKGCEFBIHNM),
+            88 => ::std::option::Option::Some(FeatureSwitchType::JJAEEPFJMCF_IBDJHLFFIAJ),
             _ => ::std::option::Option::None
         }
     }
@@ -384,6 +390,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY),
             "FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT),
             "FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF" => ::std::option::Option::Some(FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF),
+            "JJAEEPFJMCF_CKGCEFBIHNM" => ::std::option::Option::Some(FeatureSwitchType::JJAEEPFJMCF_CKGCEFBIHNM),
+            "JJAEEPFJMCF_IBDJHLFFIAJ" => ::std::option::Option::Some(FeatureSwitchType::JJAEEPFJMCF_IBDJHLFFIAJ),
             _ => ::std::option::Option::None
         }
     }
@@ -474,6 +482,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY,
         FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT,
         FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF,
+        FeatureSwitchType::JJAEEPFJMCF_CKGCEFBIHNM,
+        FeatureSwitchType::JJAEEPFJMCF_IBDJHLFFIAJ,
     ];
 }
 
@@ -570,6 +580,8 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY => 82,
             FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_AUGMENT => 83,
             FeatureSwitchType::FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_BUFF => 84,
+            FeatureSwitchType::JJAEEPFJMCF_CKGCEFBIHNM => 85,
+            FeatureSwitchType::JJAEEPFJMCF_IBDJHLFFIAJ => 86,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -588,7 +600,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\x82\x18\n\x11FeatureSwitchType\x12\x17\n\
+    \n\x17FeatureSwitchType.proto*\xbc\x18\n\x11FeatureSwitchType\x12\x17\n\
     \x13FEATURE_SWITCH_NONE\x10\0\x12\x17\n\x13FEATURE_SWITCH_SHOP\x10\x01\
     \x12\x1e\n\x1aFEATURE_SWITCH_LINEUP_NAME\x10\x02\x12\x20\n\x1cFEATURE_SW\
     ITCH_RECHARGE_SHOP\x10\x03\x12\x1b\n\x17FEATURE_SWITCH_NICKNAME\x10\x04\
@@ -645,7 +657,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     ITCH_GRID_FIGHT_REF\x10R\x12\x1c\n\x18FEATURE_SWITCH_RELIC_BOX\x10S\x12-\
     \n)FEATURE_SWITCH_GRID_FIGHT_START_GAME_PLAY\x10T\x12)\n%FEATURE_SWITCH_\
     GRID_FIGHT_BAN_AUGMENT\x10U\x12-\n)FEATURE_SWITCH_GRID_FIGHT_BAN_PORTAL_\
-    BUFF\x10Vb\x06proto3\
+    BUFF\x10V\x12\x1b\n\x17JJAEEPFJMCF_CKGCEFBIHNM\x10W\x12\x1b\n\x17JJAEEPF\
+    JMCF_IBDJHLFFIAJ\x10Xb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

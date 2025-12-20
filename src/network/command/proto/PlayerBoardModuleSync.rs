@@ -30,14 +30,14 @@ pub struct PlayerBoardModuleSync {
     // message fields
     // @@protoc_insertion_point(field:PlayerBoardModuleSync.unlocked_head_icon_list)
     pub unlocked_head_icon_list: ::std::vec::Vec<super::HeadIconData::HeadIconData>,
+    // @@protoc_insertion_point(field:PlayerBoardModuleSync.MHJEDLCDHAA)
+    pub MHJEDLCDHAA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlayerBoardModuleSync.JMAKDNIPMAH)
+    pub JMAKDNIPMAH: bool,
     // @@protoc_insertion_point(field:PlayerBoardModuleSync.signature)
     pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerBoardModuleSync.BDOBKFHDEOI)
-    pub BDOBKFHDEOI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlayerBoardModuleSync.current_head_icon_frame)
-    pub current_head_icon_frame: ::protobuf::MessageField<super::HeadIconFrame::HeadIconFrame>,
-    // @@protoc_insertion_point(field:PlayerBoardModuleSync.is_signature_modified)
-    pub is_signature_modified: bool,
+    // @@protoc_insertion_point(field:PlayerBoardModuleSync.head_frame_info)
+    pub head_frame_info: ::protobuf::MessageField<super::HeadFrameInfo::HeadFrameInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerBoardModuleSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,25 +62,25 @@ impl PlayerBoardModuleSync {
             |m: &PlayerBoardModuleSync| { &m.unlocked_head_icon_list },
             |m: &mut PlayerBoardModuleSync| { &mut m.unlocked_head_icon_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MHJEDLCDHAA",
+            |m: &PlayerBoardModuleSync| { &m.MHJEDLCDHAA },
+            |m: &mut PlayerBoardModuleSync| { &mut m.MHJEDLCDHAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JMAKDNIPMAH",
+            |m: &PlayerBoardModuleSync| { &m.JMAKDNIPMAH },
+            |m: &mut PlayerBoardModuleSync| { &mut m.JMAKDNIPMAH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "signature",
             |m: &PlayerBoardModuleSync| { &m.signature },
             |m: &mut PlayerBoardModuleSync| { &mut m.signature },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BDOBKFHDEOI",
-            |m: &PlayerBoardModuleSync| { &m.BDOBKFHDEOI },
-            |m: &mut PlayerBoardModuleSync| { &mut m.BDOBKFHDEOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadIconFrame::HeadIconFrame>(
-            "current_head_icon_frame",
-            |m: &PlayerBoardModuleSync| { &m.current_head_icon_frame },
-            |m: &mut PlayerBoardModuleSync| { &mut m.current_head_icon_frame },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_signature_modified",
-            |m: &PlayerBoardModuleSync| { &m.is_signature_modified },
-            |m: &mut PlayerBoardModuleSync| { &mut m.is_signature_modified },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadFrameInfo::HeadFrameInfo>(
+            "head_frame_info",
+            |m: &PlayerBoardModuleSync| { &m.head_frame_info },
+            |m: &mut PlayerBoardModuleSync| { &mut m.head_frame_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerBoardModuleSync>(
             "PlayerBoardModuleSync",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for PlayerBoardModuleSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                114 => {
                     self.unlocked_head_icon_list.push(is.read_message()?);
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MHJEDLCDHAA)?;
+                },
+                8 => {
+                    self.MHJEDLCDHAA.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.JMAKDNIPMAH = is.read_bool()?;
                 },
                 18 => {
                     self.signature = is.read_string()?;
                 },
                 42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BDOBKFHDEOI)?;
-                },
-                40 => {
-                    self.BDOBKFHDEOI.push(is.read_uint32()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.current_head_icon_frame)?;
-                },
-                96 => {
-                    self.is_signature_modified = is.read_bool()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.head_frame_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,16 +134,16 @@ impl ::protobuf::Message for PlayerBoardModuleSync {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MHJEDLCDHAA);
+        if self.JMAKDNIPMAH != false {
+            my_size += 1 + 1;
+        }
         if !self.signature.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.signature);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.BDOBKFHDEOI);
-        if let Some(v) = self.current_head_icon_frame.as_ref() {
+        if let Some(v) = self.head_frame_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.is_signature_modified != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,17 +152,17 @@ impl ::protobuf::Message for PlayerBoardModuleSync {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.unlocked_head_icon_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        os.write_repeated_packed_uint32(1, &self.MHJEDLCDHAA)?;
+        if self.JMAKDNIPMAH != false {
+            os.write_bool(8, self.JMAKDNIPMAH)?;
+        }
         if !self.signature.is_empty() {
             os.write_string(2, &self.signature)?;
         }
-        os.write_repeated_packed_uint32(5, &self.BDOBKFHDEOI)?;
-        if let Some(v) = self.current_head_icon_frame.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.is_signature_modified != false {
-            os.write_bool(12, self.is_signature_modified)?;
+        if let Some(v) = self.head_frame_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for PlayerBoardModuleSync {
 
     fn clear(&mut self) {
         self.unlocked_head_icon_list.clear();
+        self.MHJEDLCDHAA.clear();
+        self.JMAKDNIPMAH = false;
         self.signature.clear();
-        self.BDOBKFHDEOI.clear();
-        self.current_head_icon_frame.clear();
-        self.is_signature_modified = false;
+        self.head_frame_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerBoardModuleSync {
         static instance: PlayerBoardModuleSync = PlayerBoardModuleSync {
             unlocked_head_icon_list: ::std::vec::Vec::new(),
+            MHJEDLCDHAA: ::std::vec::Vec::new(),
+            JMAKDNIPMAH: false,
             signature: ::std::string::String::new(),
-            BDOBKFHDEOI: ::std::vec::Vec::new(),
-            current_head_icon_frame: ::protobuf::MessageField::none(),
-            is_signature_modified: false,
+            head_frame_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,14 +220,13 @@ impl ::protobuf::reflect::ProtobufValue for PlayerBoardModuleSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerBoardModuleSync.proto\x1a\x12HeadIconData.proto\x1a\x13HeadI\
-    conFrame.proto\"\x98\x02\n\x15PlayerBoardModuleSync\x12D\n\x17unlocked_h\
-    ead_icon_list\x18\x01\x20\x03(\x0b2\r.HeadIconDataR\x14unlockedHeadIconL\
-    ist\x12\x1c\n\tsignature\x18\x02\x20\x01(\tR\tsignature\x12\x20\n\x0bBDO\
-    BKFHDEOI\x18\x05\x20\x03(\rR\x0bBDOBKFHDEOI\x12E\n\x17current_head_icon_\
-    frame\x18\n\x20\x01(\x0b2\x0e.HeadIconFrameR\x14currentHeadIconFrame\x12\
-    2\n\x15is_signature_modified\x18\x0c\x20\x01(\x08R\x13isSignatureModifie\
-    db\x06proto3\
+    \n\x1bPlayerBoardModuleSync.proto\x1a\x13HeadFrameInfo.proto\x1a\x12Head\
+    IconData.proto\"\xf7\x01\n\x15PlayerBoardModuleSync\x12D\n\x17unlocked_h\
+    ead_icon_list\x18\x0e\x20\x03(\x0b2\r.HeadIconDataR\x14unlockedHeadIconL\
+    ist\x12\x20\n\x0bMHJEDLCDHAA\x18\x01\x20\x03(\rR\x0bMHJEDLCDHAA\x12\x20\
+    \n\x0bJMAKDNIPMAH\x18\x08\x20\x01(\x08R\x0bJMAKDNIPMAH\x12\x1c\n\tsignat\
+    ure\x18\x02\x20\x01(\tR\tsignature\x126\n\x0fhead_frame_info\x18\x05\x20\
+    \x01(\x0b2\x0e.HeadFrameInfoR\rheadFrameInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,8 +244,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::HeadFrameInfo::file_descriptor().clone());
             deps.push(super::HeadIconData::file_descriptor().clone());
-            deps.push(super::HeadIconFrame::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerBoardModuleSync::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

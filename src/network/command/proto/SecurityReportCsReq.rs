@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SecurityReportCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SecurityReportCsReq.report_information)
-    pub report_information: ::std::string::String,
+    // @@protoc_insertion_point(field:SecurityReportCsReq.MDHMONNFEOC)
+    pub MDHMONNFEOC: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SecurityReportCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SecurityReportCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "report_information",
-            |m: &SecurityReportCsReq| { &m.report_information },
-            |m: &mut SecurityReportCsReq| { &mut m.report_information },
+            "MDHMONNFEOC",
+            |m: &SecurityReportCsReq| { &m.MDHMONNFEOC },
+            |m: &mut SecurityReportCsReq| { &mut m.MDHMONNFEOC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SecurityReportCsReq>(
             "SecurityReportCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.report_information = is.read_string()?;
+                114 => {
+                    self.MDHMONNFEOC = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.report_information.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.report_information);
+        if !self.MDHMONNFEOC.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.MDHMONNFEOC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SecurityReportCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.report_information.is_empty() {
-            os.write_string(11, &self.report_information)?;
+        if !self.MDHMONNFEOC.is_empty() {
+            os.write_string(14, &self.MDHMONNFEOC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SecurityReportCsReq {
     }
 
     fn clear(&mut self) {
-        self.report_information.clear();
+        self.MDHMONNFEOC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SecurityReportCsReq {
         static instance: SecurityReportCsReq = SecurityReportCsReq {
-            report_information: ::std::string::String::new(),
+            MDHMONNFEOC: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for SecurityReportCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SecurityReportCsReq.proto\"D\n\x13SecurityReportCsReq\x12-\n\x12re\
-    port_information\x18\x0b\x20\x01(\tR\x11reportInformationb\x06proto3\
+    \n\x19SecurityReportCsReq.proto\"7\n\x13SecurityReportCsReq\x12\x20\n\
+    \x0bMDHMONNFEOC\x18\x0e\x20\x01(\tR\x0bMDHMONNFEOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

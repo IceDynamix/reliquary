@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.type_.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP) {
+            my_size += ::protobuf::rt::int32_size(3, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,7 +116,7 @@ impl ::protobuf::Message for GetTrainVisitorRegisterCsReq {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TRAIN_VISITOR_REGISTER_GET_TYPE_NONE);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType::TrainVisitorRegisterGetType_ALOCMFAKBKP);
         self.special_fields.clear();
     }
 
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetTrainVisitorRegisterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetTrainVisitorRegisterCsReq.proto\x1a!TrainVisitorRegisterGetType.p\
-    roto\"P\n\x1cGetTrainVisitorRegisterCsReq\x120\n\x04type\x18\x04\x20\x01\
+    roto\"P\n\x1cGetTrainVisitorRegisterCsReq\x120\n\x04type\x18\x03\x20\x01\
     (\x0e2\x1c.TrainVisitorRegisterGetTypeR\x04typeb\x06proto3\
 ";
 

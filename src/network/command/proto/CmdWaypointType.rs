@@ -30,23 +30,23 @@ pub enum CmdWaypointType {
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointTypeNone)
     CmdWaypointTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdGetChapterScRsp)
-    CmdGetChapterScRsp = 486,
+    CmdGetChapterScRsp = 495,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdGetWaypointCsReq)
-    CmdGetWaypointCsReq = 499,
+    CmdGetWaypointCsReq = 489,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdGetChapterCsReq)
-    CmdGetChapterCsReq = 483,
+    CmdGetChapterCsReq = 409,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointShowNewCsNotify)
-    CmdWaypointShowNewCsNotify = 494,
+    CmdWaypointShowNewCsNotify = 417,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdTakeChapterRewardScRsp)
-    CmdTakeChapterRewardScRsp = 419,
+    CmdTakeChapterRewardScRsp = 451,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdSetCurWaypointScRsp)
-    CmdSetCurWaypointScRsp = 465,
+    CmdSetCurWaypointScRsp = 420,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdTakeChapterRewardCsReq)
-    CmdTakeChapterRewardCsReq = 452,
+    CmdTakeChapterRewardCsReq = 411,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdGetWaypointScRsp)
-    CmdGetWaypointScRsp = 423,
+    CmdGetWaypointScRsp = 447,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdSetCurWaypointCsReq)
-    CmdSetCurWaypointCsReq = 498,
+    CmdSetCurWaypointCsReq = 438,
 }
 
 impl ::protobuf::Enum for CmdWaypointType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdWaypointType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdWaypointType> {
         match value {
             0 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointTypeNone),
-            486 => ::std::option::Option::Some(CmdWaypointType::CmdGetChapterScRsp),
-            499 => ::std::option::Option::Some(CmdWaypointType::CmdGetWaypointCsReq),
-            483 => ::std::option::Option::Some(CmdWaypointType::CmdGetChapterCsReq),
-            494 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointShowNewCsNotify),
-            419 => ::std::option::Option::Some(CmdWaypointType::CmdTakeChapterRewardScRsp),
-            465 => ::std::option::Option::Some(CmdWaypointType::CmdSetCurWaypointScRsp),
-            452 => ::std::option::Option::Some(CmdWaypointType::CmdTakeChapterRewardCsReq),
-            423 => ::std::option::Option::Some(CmdWaypointType::CmdGetWaypointScRsp),
-            498 => ::std::option::Option::Some(CmdWaypointType::CmdSetCurWaypointCsReq),
+            495 => ::std::option::Option::Some(CmdWaypointType::CmdGetChapterScRsp),
+            489 => ::std::option::Option::Some(CmdWaypointType::CmdGetWaypointCsReq),
+            409 => ::std::option::Option::Some(CmdWaypointType::CmdGetChapterCsReq),
+            417 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointShowNewCsNotify),
+            451 => ::std::option::Option::Some(CmdWaypointType::CmdTakeChapterRewardScRsp),
+            420 => ::std::option::Option::Some(CmdWaypointType::CmdSetCurWaypointScRsp),
+            411 => ::std::option::Option::Some(CmdWaypointType::CmdTakeChapterRewardCsReq),
+            447 => ::std::option::Option::Some(CmdWaypointType::CmdGetWaypointScRsp),
+            438 => ::std::option::Option::Some(CmdWaypointType::CmdSetCurWaypointCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -139,13 +139,13 @@ impl CmdWaypointType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdWaypointType.proto*\xab\x02\n\x0fCmdWaypointType\x12\x17\n\x13C\
-    mdWaypointTypeNone\x10\0\x12\x17\n\x12CmdGetChapterScRsp\x10\xe6\x03\x12\
-    \x18\n\x13CmdGetWaypointCsReq\x10\xf3\x03\x12\x17\n\x12CmdGetChapterCsRe\
-    q\x10\xe3\x03\x12\x1f\n\x1aCmdWaypointShowNewCsNotify\x10\xee\x03\x12\
-    \x1e\n\x19CmdTakeChapterRewardScRsp\x10\xa3\x03\x12\x1b\n\x16CmdSetCurWa\
-    ypointScRsp\x10\xd1\x03\x12\x1e\n\x19CmdTakeChapterRewardCsReq\x10\xc4\
-    \x03\x12\x18\n\x13CmdGetWaypointScRsp\x10\xa7\x03\x12\x1b\n\x16CmdSetCur\
-    WaypointCsReq\x10\xf2\x03b\x06proto3\
+    mdWaypointTypeNone\x10\0\x12\x17\n\x12CmdGetChapterScRsp\x10\xef\x03\x12\
+    \x18\n\x13CmdGetWaypointCsReq\x10\xe9\x03\x12\x17\n\x12CmdGetChapterCsRe\
+    q\x10\x99\x03\x12\x1f\n\x1aCmdWaypointShowNewCsNotify\x10\xa1\x03\x12\
+    \x1e\n\x19CmdTakeChapterRewardScRsp\x10\xc3\x03\x12\x1b\n\x16CmdSetCurWa\
+    ypointScRsp\x10\xa4\x03\x12\x1e\n\x19CmdTakeChapterRewardCsReq\x10\x9b\
+    \x03\x12\x18\n\x13CmdGetWaypointScRsp\x10\xbf\x03\x12\x1b\n\x16CmdSetCur\
+    WaypointCsReq\x10\xb6\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

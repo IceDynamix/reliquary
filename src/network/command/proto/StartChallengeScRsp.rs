@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.cur_challenge)
-    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
-    // @@protoc_insertion_point(field:StartChallengeScRsp.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::PGKDOAEPBEC::PGKDOAEPBEC>,
     // @@protoc_insertion_point(field:StartChallengeScRsp.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::ChallengeStageInfo::ChallengeStageInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:StartChallengeScRsp.cur_challenge)
+    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
     // special fields
     // @@protoc_insertion_point(special_field:StartChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl StartChallengeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartChallengeScRsp| { &m.retcode },
-            |m: &mut StartChallengeScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &StartChallengeScRsp| { &m.scene },
+            |m: &mut StartChallengeScRsp| { &mut m.scene },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeStageInfo::ChallengeStageInfo>(
+            "stage_info",
+            |m: &StartChallengeScRsp| { &m.stage_info },
+            |m: &mut StartChallengeScRsp| { &mut m.stage_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
             |m: &StartChallengeScRsp| { &m.lineup_list },
             |m: &mut StartChallengeScRsp| { &mut m.lineup_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartChallengeScRsp| { &m.retcode },
+            |m: &mut StartChallengeScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurChallenge::CurChallenge>(
             "cur_challenge",
             |m: &StartChallengeScRsp| { &m.cur_challenge },
             |m: &mut StartChallengeScRsp| { &mut m.cur_challenge },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGKDOAEPBEC::PGKDOAEPBEC>(
-            "stage_info",
-            |m: &StartChallengeScRsp| { &m.stage_info },
-            |m: &mut StartChallengeScRsp| { &mut m.stage_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &StartChallengeScRsp| { &m.scene },
-            |m: &mut StartChallengeScRsp| { &mut m.scene },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartChallengeScRsp>(
             "StartChallengeScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.retcode = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 58 => {
-                    self.lineup_list.push(is.read_message()?);
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
-                },
-                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
+                26 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,14 +127,7 @@ impl ::protobuf::Message for StartChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        for value in &self.lineup_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.cur_challenge.as_ref() {
+        if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -142,7 +135,14 @@ impl ::protobuf::Message for StartChallengeScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.scene.as_ref() {
+        for value in &self.lineup_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if let Some(v) = self.cur_challenge.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,20 +152,20 @@ impl ::protobuf::Message for StartChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if let Some(v) = self.cur_challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
+        if let Some(v) = self.cur_challenge.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for StartChallengeScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.lineup_list.clear();
-        self.cur_challenge.clear();
-        self.stage_info.clear();
         self.scene.clear();
+        self.stage_info.clear();
+        self.lineup_list.clear();
+        self.retcode = 0;
+        self.cur_challenge.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengeScRsp {
         static instance: StartChallengeScRsp = StartChallengeScRsp {
-            retcode: 0,
-            lineup_list: ::std::vec::Vec::new(),
-            cur_challenge: ::protobuf::MessageField::none(),
-            stage_info: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
+            lineup_list: ::std::vec::Vec::new(),
+            retcode: 0,
+            cur_challenge: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19StartChallengeScRsp.proto\x1a\x12CurChallenge.proto\x1a\x10LineupI\
-    nfo.proto\x1a\x11PGKDOAEPBEC.proto\x1a\x0fSceneInfo.proto\"\xe0\x01\n\
-    \x13StartChallengeScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retc\
-    ode\x12,\n\x0blineup_list\x18\x07\x20\x03(\x0b2\x0b.LineupInfoR\nlineupL\
-    ist\x122\n\rcur_challenge\x18\x08\x20\x01(\x0b2\r.CurChallengeR\x0ccurCh\
-    allenge\x12+\n\nstage_info\x18\r\x20\x01(\x0b2\x0c.PGKDOAEPBECR\tstageIn\
-    fo\x12\x20\n\x05scene\x18\x0f\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06pr\
-    oto3\
+    \n\x19StartChallengeScRsp.proto\x1a\x18ChallengeStageInfo.proto\x1a\x12C\
+    urChallenge.proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\xe7\
+    \x01\n\x13StartChallengeScRsp\x12\x20\n\x05scene\x18\x0e\x20\x01(\x0b2\n\
+    .SceneInfoR\x05scene\x122\n\nstage_info\x18\x07\x20\x01(\x0b2\x13.Challe\
+    ngeStageInfoR\tstageInfo\x12,\n\x0blineup_list\x18\x03\x20\x03(\x0b2\x0b\
+    .LineupInfoR\nlineupList\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07ret\
+    code\x122\n\rcur_challenge\x18\x0c\x20\x01(\x0b2\r.CurChallengeR\x0ccurC\
+    hallengeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -248,9 +248,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::ChallengeStageInfo::file_descriptor().clone());
             deps.push(super::CurChallenge::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::PGKDOAEPBEC::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartChallengeScRsp::generated_message_descriptor_data());

@@ -30,25 +30,25 @@ pub enum CmdMarbleType {
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleTypeNone)
     CmdMarbleTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUnlockSealScNotify)
-    CmdMarbleUnlockSealScNotify = 8278,
+    CmdMarbleUnlockSealScNotify = 8275,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUpdateShownSealCsReq)
-    CmdMarbleUpdateShownSealCsReq = 8280,
+    CmdMarbleUpdateShownSealCsReq = 8287,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleShopBuyCsReq)
-    CmdMarbleShopBuyCsReq = 8273,
+    CmdMarbleShopBuyCsReq = 8274,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleGetDataScRsp)
-    CmdMarbleGetDataScRsp = 8271,
+    CmdMarbleGetDataScRsp = 8276,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleLevelFinishCsReq)
-    CmdMarbleLevelFinishCsReq = 8283,
+    CmdMarbleLevelFinishCsReq = 8273,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUpdateShownSealScRsp)
-    CmdMarbleUpdateShownSealScRsp = 8286,
+    CmdMarbleUpdateShownSealScRsp = 8282,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleLevelFinishScRsp)
-    CmdMarbleLevelFinishScRsp = 8289,
+    CmdMarbleLevelFinishScRsp = 8279,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleGetDataCsReq)
-    CmdMarbleGetDataCsReq = 8277,
+    CmdMarbleGetDataCsReq = 8271,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleShopBuyScRsp)
-    CmdMarbleShopBuyScRsp = 8285,
+    CmdMarbleShopBuyScRsp = 8283,
     // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarblePvpDataUpdateScNotify)
-    CmdMarblePvpDataUpdateScNotify = 8281,
+    CmdMarblePvpDataUpdateScNotify = 8284,
 }
 
 impl ::protobuf::Enum for CmdMarbleType {
@@ -61,16 +61,16 @@ impl ::protobuf::Enum for CmdMarbleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarbleType> {
         match value {
             0 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleTypeNone),
-            8278 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUnlockSealScNotify),
-            8280 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealCsReq),
-            8273 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyCsReq),
-            8271 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataScRsp),
-            8283 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleLevelFinishCsReq),
-            8286 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealScRsp),
-            8289 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleLevelFinishScRsp),
-            8277 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataCsReq),
-            8285 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyScRsp),
-            8281 => ::std::option::Option::Some(CmdMarbleType::CmdMarblePvpDataUpdateScNotify),
+            8275 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUnlockSealScNotify),
+            8287 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealCsReq),
+            8274 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyCsReq),
+            8276 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataScRsp),
+            8273 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleLevelFinishCsReq),
+            8282 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealScRsp),
+            8279 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleLevelFinishScRsp),
+            8271 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataCsReq),
+            8283 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyScRsp),
+            8284 => ::std::option::Option::Some(CmdMarbleType::CmdMarblePvpDataUpdateScNotify),
             _ => ::std::option::Option::None
         }
     }
@@ -145,13 +145,13 @@ impl CmdMarbleType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdMarbleType.proto*\xe5\x02\n\rCmdMarbleType\x12\x15\n\x11CmdMarb\
-    leTypeNone\x10\0\x12\x20\n\x1bCmdMarbleUnlockSealScNotify\x10\xd6@\x12\"\
-    \n\x1dCmdMarbleUpdateShownSealCsReq\x10\xd8@\x12\x1a\n\x15CmdMarbleShopB\
-    uyCsReq\x10\xd1@\x12\x1a\n\x15CmdMarbleGetDataScRsp\x10\xcf@\x12\x1e\n\
-    \x19CmdMarbleLevelFinishCsReq\x10\xdb@\x12\"\n\x1dCmdMarbleUpdateShownSe\
-    alScRsp\x10\xde@\x12\x1e\n\x19CmdMarbleLevelFinishScRsp\x10\xe1@\x12\x1a\
-    \n\x15CmdMarbleGetDataCsReq\x10\xd5@\x12\x1a\n\x15CmdMarbleShopBuyScRsp\
-    \x10\xdd@\x12#\n\x1eCmdMarblePvpDataUpdateScNotify\x10\xd9@b\x06proto3\
+    leTypeNone\x10\0\x12\x20\n\x1bCmdMarbleUnlockSealScNotify\x10\xd3@\x12\"\
+    \n\x1dCmdMarbleUpdateShownSealCsReq\x10\xdf@\x12\x1a\n\x15CmdMarbleShopB\
+    uyCsReq\x10\xd2@\x12\x1a\n\x15CmdMarbleGetDataScRsp\x10\xd4@\x12\x1e\n\
+    \x19CmdMarbleLevelFinishCsReq\x10\xd1@\x12\"\n\x1dCmdMarbleUpdateShownSe\
+    alScRsp\x10\xda@\x12\x1e\n\x19CmdMarbleLevelFinishScRsp\x10\xd7@\x12\x1a\
+    \n\x15CmdMarbleGetDataCsReq\x10\xcf@\x12\x1a\n\x15CmdMarbleShopBuyScRsp\
+    \x10\xdb@\x12#\n\x1eCmdMarblePvpDataUpdateScNotify\x10\xdc@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishTutorialCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishTutorialCsReq.DNAPCOALDPH)
-    pub DNAPCOALDPH: ::protobuf::EnumOrUnknown<super::TutorialFinishType::TutorialFinishType>,
+    // @@protoc_insertion_point(field:FinishTutorialCsReq.KANHAFONJLM)
+    pub KANHAFONJLM: ::protobuf::EnumOrUnknown<super::KNIKLALGADK::KNIKLALGADK>,
     // @@protoc_insertion_point(field:FinishTutorialCsReq.tutorial_id)
     pub tutorial_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FinishTutorialCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNAPCOALDPH",
-            |m: &FinishTutorialCsReq| { &m.DNAPCOALDPH },
-            |m: &mut FinishTutorialCsReq| { &mut m.DNAPCOALDPH },
+            "KANHAFONJLM",
+            |m: &FinishTutorialCsReq| { &m.KANHAFONJLM },
+            |m: &mut FinishTutorialCsReq| { &mut m.KANHAFONJLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tutorial_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DNAPCOALDPH = is.read_enum_or_unknown()?;
+                40 => {
+                    self.KANHAFONJLM = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                96 => {
                     self.tutorial_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNAPCOALDPH != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.DNAPCOALDPH.value());
+        if self.KANHAFONJLM != ::protobuf::EnumOrUnknown::new(super::KNIKLALGADK::KNIKLALGADK::KNIKLALGADK_ALOCMFAKBKP) {
+            my_size += ::protobuf::rt::int32_size(5, self.KANHAFONJLM.value());
         }
         if self.tutorial_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.tutorial_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.tutorial_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNAPCOALDPH != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DNAPCOALDPH))?;
+        if self.KANHAFONJLM != ::protobuf::EnumOrUnknown::new(super::KNIKLALGADK::KNIKLALGADK::KNIKLALGADK_ALOCMFAKBKP) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.KANHAFONJLM))?;
         }
         if self.tutorial_id != 0 {
-            os.write_uint32(10, self.tutorial_id)?;
+            os.write_uint32(12, self.tutorial_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNAPCOALDPH = ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::TUTORIAL_FINISH_TYPE_NONE);
+        self.KANHAFONJLM = ::protobuf::EnumOrUnknown::new(super::KNIKLALGADK::KNIKLALGADK::KNIKLALGADK_ALOCMFAKBKP);
         self.tutorial_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishTutorialCsReq {
         static instance: FinishTutorialCsReq = FinishTutorialCsReq {
-            DNAPCOALDPH: ::protobuf::EnumOrUnknown::from_i32(0),
+            KANHAFONJLM: ::protobuf::EnumOrUnknown::from_i32(0),
             tutorial_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FinishTutorialCsReq.proto\x1a\x18TutorialFinishType.proto\"m\n\x13\
-    FinishTutorialCsReq\x125\n\x0bDNAPCOALDPH\x18\x04\x20\x01(\x0e2\x13.Tuto\
-    rialFinishTypeR\x0bDNAPCOALDPH\x12\x1f\n\x0btutorial_id\x18\n\x20\x01(\r\
-    R\ntutorialIdb\x06proto3\
+    \n\x19FinishTutorialCsReq.proto\x1a\x11KNIKLALGADK.proto\"f\n\x13FinishT\
+    utorialCsReq\x12.\n\x0bKANHAFONJLM\x18\x05\x20\x01(\x0e2\x0c.KNIKLALGADK\
+    R\x0bKANHAFONJLM\x12\x1f\n\x0btutorial_id\x18\x0c\x20\x01(\rR\ntutorialI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::TutorialFinishType::file_descriptor().clone());
+            deps.push(super::KNIKLALGADK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FinishTutorialCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

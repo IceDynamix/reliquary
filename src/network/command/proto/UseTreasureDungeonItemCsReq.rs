@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UseTreasureDungeonItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.LACCFDBBEDE)
-    pub LACCFDBBEDE: u32,
-    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.NENOHEPGLIJ)
-    pub NENOHEPGLIJ: u32,
+    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.JEAHAOPFFAE)
+    pub JEAHAOPFFAE: u32,
+    // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.FHEIGFFEDHO)
+    pub FHEIGFFEDHO: u32,
     // @@protoc_insertion_point(field:UseTreasureDungeonItemCsReq.item_id)
     pub item_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl UseTreasureDungeonItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LACCFDBBEDE",
-            |m: &UseTreasureDungeonItemCsReq| { &m.LACCFDBBEDE },
-            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.LACCFDBBEDE },
+            "JEAHAOPFFAE",
+            |m: &UseTreasureDungeonItemCsReq| { &m.JEAHAOPFFAE },
+            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.JEAHAOPFFAE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NENOHEPGLIJ",
-            |m: &UseTreasureDungeonItemCsReq| { &m.NENOHEPGLIJ },
-            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.NENOHEPGLIJ },
+            "FHEIGFFEDHO",
+            |m: &UseTreasureDungeonItemCsReq| { &m.FHEIGFFEDHO },
+            |m: &mut UseTreasureDungeonItemCsReq| { &mut m.FHEIGFFEDHO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.LACCFDBBEDE = is.read_uint32()?;
+                24 => {
+                    self.JEAHAOPFFAE = is.read_uint32()?;
                 },
-                88 => {
-                    self.NENOHEPGLIJ = is.read_uint32()?;
+                40 => {
+                    self.FHEIGFFEDHO = is.read_uint32()?;
                 },
-                96 => {
+                32 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LACCFDBBEDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LACCFDBBEDE);
+        if self.JEAHAOPFFAE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JEAHAOPFFAE);
         }
-        if self.NENOHEPGLIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NENOHEPGLIJ);
+        if self.FHEIGFFEDHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FHEIGFFEDHO);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LACCFDBBEDE != 0 {
-            os.write_uint32(10, self.LACCFDBBEDE)?;
+        if self.JEAHAOPFFAE != 0 {
+            os.write_uint32(3, self.JEAHAOPFFAE)?;
         }
-        if self.NENOHEPGLIJ != 0 {
-            os.write_uint32(11, self.NENOHEPGLIJ)?;
+        if self.FHEIGFFEDHO != 0 {
+            os.write_uint32(5, self.FHEIGFFEDHO)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(12, self.item_id)?;
+            os.write_uint32(4, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for UseTreasureDungeonItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.LACCFDBBEDE = 0;
-        self.NENOHEPGLIJ = 0;
+        self.JEAHAOPFFAE = 0;
+        self.FHEIGFFEDHO = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UseTreasureDungeonItemCsReq {
         static instance: UseTreasureDungeonItemCsReq = UseTreasureDungeonItemCsReq {
-            LACCFDBBEDE: 0,
-            NENOHEPGLIJ: 0,
+            JEAHAOPFFAE: 0,
+            FHEIGFFEDHO: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for UseTreasureDungeonItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UseTreasureDungeonItemCsReq.proto\"z\n\x1bUseTreasureDungeonItemCsReq\
-    \x12\x20\n\x0bLACCFDBBEDE\x18\n\x20\x01(\rR\x0bLACCFDBBEDE\x12\x20\n\x0b\
-    NENOHEPGLIJ\x18\x0b\x20\x01(\rR\x0bNENOHEPGLIJ\x12\x17\n\x07item_id\x18\
-    \x0c\x20\x01(\rR\x06itemIdb\x06proto3\
+    \x12\x20\n\x0bJEAHAOPFFAE\x18\x03\x20\x01(\rR\x0bJEAHAOPFFAE\x12\x20\n\
+    \x0bFHEIGFFEDHO\x18\x05\x20\x01(\rR\x0bFHEIGFFEDHO\x12\x17\n\x07item_id\
+    \x18\x04\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplayInfo {
     // message fields
-    // @@protoc_insertion_point(field:ReplayInfo.replay_unique_id)
-    pub replay_unique_id: u64,
+    // @@protoc_insertion_point(field:ReplayInfo.GLBNKGNBOOG)
+    pub GLBNKGNBOOG: u64,
     // @@protoc_insertion_point(field:ReplayInfo.replay_type)
     pub replay_type: ::protobuf::EnumOrUnknown<super::ReplayType::ReplayType>,
     // @@protoc_insertion_point(field:ReplayInfo.stage_id)
@@ -44,10 +44,10 @@ pub struct ReplayInfo {
     pub replay_name: ::std::string::String,
     // @@protoc_insertion_point(field:ReplayInfo.create_time)
     pub create_time: u64,
-    // @@protoc_insertion_point(field:ReplayInfo.game_core_version)
-    pub game_core_version: u32,
-    // @@protoc_insertion_point(field:ReplayInfo.design_version)
-    pub design_version: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.BCCLFAEMJIJ)
+    pub BCCLFAEMJIJ: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.IKEBDBCCIMB)
+    pub IKEBDBCCIMB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReplayInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,9 +68,9 @@ impl ReplayInfo {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "replay_unique_id",
-            |m: &ReplayInfo| { &m.replay_unique_id },
-            |m: &mut ReplayInfo| { &mut m.replay_unique_id },
+            "GLBNKGNBOOG",
+            |m: &ReplayInfo| { &m.GLBNKGNBOOG },
+            |m: &mut ReplayInfo| { &mut m.GLBNKGNBOOG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "replay_type",
@@ -108,14 +108,14 @@ impl ReplayInfo {
             |m: &mut ReplayInfo| { &mut m.create_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_core_version",
-            |m: &ReplayInfo| { &m.game_core_version },
-            |m: &mut ReplayInfo| { &mut m.game_core_version },
+            "BCCLFAEMJIJ",
+            |m: &ReplayInfo| { &m.BCCLFAEMJIJ },
+            |m: &mut ReplayInfo| { &mut m.BCCLFAEMJIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "design_version",
-            |m: &ReplayInfo| { &m.design_version },
-            |m: &mut ReplayInfo| { &mut m.design_version },
+            "IKEBDBCCIMB",
+            |m: &ReplayInfo| { &m.IKEBDBCCIMB },
+            |m: &mut ReplayInfo| { &mut m.IKEBDBCCIMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplayInfo>(
             "ReplayInfo",
@@ -136,7 +136,7 @@ impl ::protobuf::Message for ReplayInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.replay_unique_id = is.read_uint64()?;
+                    self.GLBNKGNBOOG = is.read_uint64()?;
                 },
                 16 => {
                     self.replay_type = is.read_enum_or_unknown()?;
@@ -160,10 +160,10 @@ impl ::protobuf::Message for ReplayInfo {
                     self.create_time = is.read_uint64()?;
                 },
                 72 => {
-                    self.game_core_version = is.read_uint32()?;
+                    self.BCCLFAEMJIJ = is.read_uint32()?;
                 },
                 80 => {
-                    self.design_version = is.read_uint32()?;
+                    self.IKEBDBCCIMB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,8 +177,8 @@ impl ::protobuf::Message for ReplayInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.replay_unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.replay_unique_id);
+        if self.GLBNKGNBOOG != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.GLBNKGNBOOG);
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE) {
             my_size += ::protobuf::rt::int32_size(2, self.replay_type.value());
@@ -201,11 +201,11 @@ impl ::protobuf::Message for ReplayInfo {
         if self.create_time != 0 {
             my_size += ::protobuf::rt::uint64_size(8, self.create_time);
         }
-        if self.game_core_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.game_core_version);
+        if self.BCCLFAEMJIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BCCLFAEMJIJ);
         }
-        if self.design_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.design_version);
+        if self.IKEBDBCCIMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IKEBDBCCIMB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -213,8 +213,8 @@ impl ::protobuf::Message for ReplayInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.replay_unique_id != 0 {
-            os.write_uint64(1, self.replay_unique_id)?;
+        if self.GLBNKGNBOOG != 0 {
+            os.write_uint64(1, self.GLBNKGNBOOG)?;
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.replay_type))?;
@@ -237,11 +237,11 @@ impl ::protobuf::Message for ReplayInfo {
         if self.create_time != 0 {
             os.write_uint64(8, self.create_time)?;
         }
-        if self.game_core_version != 0 {
-            os.write_uint32(9, self.game_core_version)?;
+        if self.BCCLFAEMJIJ != 0 {
+            os.write_uint32(9, self.BCCLFAEMJIJ)?;
         }
-        if self.design_version != 0 {
-            os.write_uint32(10, self.design_version)?;
+        if self.IKEBDBCCIMB != 0 {
+            os.write_uint32(10, self.IKEBDBCCIMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -260,7 +260,7 @@ impl ::protobuf::Message for ReplayInfo {
     }
 
     fn clear(&mut self) {
-        self.replay_unique_id = 0;
+        self.GLBNKGNBOOG = 0;
         self.replay_type = ::protobuf::EnumOrUnknown::new(super::ReplayType::ReplayType::REPLAY_TYPE_NONE);
         self.stage_id = 0;
         self.uid = 0;
@@ -268,14 +268,14 @@ impl ::protobuf::Message for ReplayInfo {
         self.head_icon = 0;
         self.replay_name.clear();
         self.create_time = 0;
-        self.game_core_version = 0;
-        self.design_version = 0;
+        self.BCCLFAEMJIJ = 0;
+        self.IKEBDBCCIMB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplayInfo {
         static instance: ReplayInfo = ReplayInfo {
-            replay_unique_id: 0,
+            GLBNKGNBOOG: 0,
             replay_type: ::protobuf::EnumOrUnknown::from_i32(0),
             stage_id: 0,
             uid: 0,
@@ -283,8 +283,8 @@ impl ::protobuf::Message for ReplayInfo {
             head_icon: 0,
             replay_name: ::std::string::String::new(),
             create_time: 0,
-            game_core_version: 0,
-            design_version: 0,
+            BCCLFAEMJIJ: 0,
+            IKEBDBCCIMB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -309,16 +309,16 @@ impl ::protobuf::reflect::ProtobufValue for ReplayInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10ReplayInfo.proto\x1a\x10ReplayType.proto\"\xdf\x02\n\nReplayInfo\
-    \x12(\n\x10replay_unique_id\x18\x01\x20\x01(\x04R\x0ereplayUniqueId\x12,\
-    \n\x0breplay_type\x18\x02\x20\x01(\x0e2\x0b.ReplayTypeR\nreplayType\x12\
+    \n\x10ReplayInfo.proto\x1a\x10ReplayType.proto\"\xc8\x02\n\nReplayInfo\
+    \x12\x20\n\x0bGLBNKGNBOOG\x18\x01\x20\x01(\x04R\x0bGLBNKGNBOOG\x12,\n\
+    \x0breplay_type\x18\x02\x20\x01(\x0e2\x0b.ReplayTypeR\nreplayType\x12\
     \x19\n\x08stage_id\x18\x03\x20\x01(\rR\x07stageId\x12\x10\n\x03uid\x18\
     \x04\x20\x01(\rR\x03uid\x12\x1a\n\x08nickname\x18\x05\x20\x01(\tR\x08nic\
     kname\x12\x1b\n\thead_icon\x18\x06\x20\x01(\rR\x08headIcon\x12\x1f\n\x0b\
     replay_name\x18\x07\x20\x01(\tR\nreplayName\x12\x1f\n\x0bcreate_time\x18\
-    \x08\x20\x01(\x04R\ncreateTime\x12*\n\x11game_core_version\x18\t\x20\x01\
-    (\rR\x0fgameCoreVersion\x12%\n\x0edesign_version\x18\n\x20\x01(\rR\rdesi\
-    gnVersionb\x06proto3\
+    \x08\x20\x01(\x04R\ncreateTime\x12\x20\n\x0bBCCLFAEMJIJ\x18\t\x20\x01(\r\
+    R\x0bBCCLFAEMJIJ\x12\x20\n\x0bIKEBDBCCIMB\x18\n\x20\x01(\rR\x0bIKEBDBCCI\
+    MBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

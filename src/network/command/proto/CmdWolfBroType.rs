@@ -27,46 +27,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdWolfBroType)
 pub enum CmdWolfBroType {
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroTypeNone)
-    CmdWolfBroTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletCsReq)
-    CmdWolfBroGamePickupBulletCsReq = 6519,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameCsReq)
-    CmdStartWolfBroGameCsReq = 6526,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameScRsp)
-    CmdQuitWolfBroGameScRsp = 6544,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGamePickupBulletScRsp)
-    CmdWolfBroGamePickupBulletScRsp = 6547,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameUseBulletCsReq)
-    CmdWolfBroGameUseBulletCsReq = 6503,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletScRsp)
-    CmdWolfBroGameActivateBulletScRsp = 6530,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameCsReq)
-    CmdArchiveWolfBroGameCsReq = 6521,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdStartWolfBroGameScRsp)
-    CmdStartWolfBroGameScRsp = 6528,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdRestoreWolfBroGameArchiveCsReq)
-    CmdRestoreWolfBroGameArchiveCsReq = 6505,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameUseBulletScRsp)
-    CmdWolfBroGameUseBulletScRsp = 6523,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdGetWolfBroGameDataScRsp)
-    CmdGetWolfBroGameDataScRsp = 6545,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdRestoreWolfBroGameArchiveScRsp)
-    CmdRestoreWolfBroGameArchiveScRsp = 6527,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdGetWolfBroGameDataCsReq)
-    CmdGetWolfBroGameDataCsReq = 6501,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdArchiveWolfBroGameScRsp)
-    CmdArchiveWolfBroGameScRsp = 6538,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameDataChangeScNotify)
-    CmdWolfBroGameDataChangeScNotify = 6543,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameActivateBulletCsReq)
-    CmdWolfBroGameActivateBulletCsReq = 6533,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdQuitWolfBroGameCsReq)
-    CmdQuitWolfBroGameCsReq = 6520,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterCsReq)
-    CmdWolfBroGameExplodeMonsterCsReq = 6511,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.CmdWolfBroGameExplodeMonsterScRsp)
-    CmdWolfBroGameExplodeMonsterScRsp = 6529,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_ALOCMFAKBKP)
+    LNGFBPFJEJG_ALOCMFAKBKP = 0,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_ALLJMIMFCEO)
+    LNGFBPFJEJG_ALLJMIMFCEO = 6509,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_OKNMDJPIFOD)
+    LNGFBPFJEJG_OKNMDJPIFOD = 6513,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_KHFNOGHJONH)
+    LNGFBPFJEJG_KHFNOGHJONH = 6531,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_BGNEOJDNCDO)
+    LNGFBPFJEJG_BGNEOJDNCDO = 6517,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_JIKPPBILMMO)
+    LNGFBPFJEJG_JIKPPBILMMO = 6548,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_CABNHJBNANF)
+    LNGFBPFJEJG_CABNHJBNANF = 6543,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_GNNBKLALJGD)
+    LNGFBPFJEJG_GNNBKLALJGD = 6527,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_LBBMOMDFLIF)
+    LNGFBPFJEJG_LBBMOMDFLIF = 6512,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_PHIAHEEAHIH)
+    LNGFBPFJEJG_PHIAHEEAHIH = 6535,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_CINLPEGHEAE)
+    LNGFBPFJEJG_CINLPEGHEAE = 6519,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_PGBFDHEOCLG)
+    LNGFBPFJEJG_PGBFDHEOCLG = 6525,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_JPKFBLKGCJG)
+    LNGFBPFJEJG_JPKFBLKGCJG = 6533,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_FEHKAIPNOOI)
+    LNGFBPFJEJG_FEHKAIPNOOI = 6505,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_JBAMAOLDHJH)
+    LNGFBPFJEJG_JBAMAOLDHJH = 6546,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_KIDPHAMDDLB)
+    LNGFBPFJEJG_KIDPHAMDDLB = 6534,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_CDLJBGKGLDE)
+    LNGFBPFJEJG_CDLJBGKGLDE = 6510,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_HABEOEOKLFK)
+    LNGFBPFJEJG_HABEOEOKLFK = 6520,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_OFFDPODKIOK)
+    LNGFBPFJEJG_OFFDPODKIOK = 6502,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.LNGFBPFJEJG_KKEINMEAHII)
+    LNGFBPFJEJG_KKEINMEAHII = 6507,
 }
 
 impl ::protobuf::Enum for CmdWolfBroType {
@@ -78,77 +78,77 @@ impl ::protobuf::Enum for CmdWolfBroType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdWolfBroType> {
         match value {
-            0 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroTypeNone),
-            6519 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
-            6526 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
-            6544 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
-            6547 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
-            6503 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletCsReq),
-            6530 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
-            6521 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
-            6528 => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
-            6505 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
-            6523 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
-            6545 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataScRsp),
-            6527 => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp),
-            6501 => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
-            6538 => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
-            6543 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
-            6533 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
-            6520 => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
-            6511 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
-            6529 => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
+            0 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_ALOCMFAKBKP),
+            6509 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_ALLJMIMFCEO),
+            6513 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_OKNMDJPIFOD),
+            6531 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KHFNOGHJONH),
+            6517 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_BGNEOJDNCDO),
+            6548 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JIKPPBILMMO),
+            6543 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CABNHJBNANF),
+            6527 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_GNNBKLALJGD),
+            6512 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_LBBMOMDFLIF),
+            6535 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_PHIAHEEAHIH),
+            6519 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CINLPEGHEAE),
+            6525 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_PGBFDHEOCLG),
+            6533 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JPKFBLKGCJG),
+            6505 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_FEHKAIPNOOI),
+            6546 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JBAMAOLDHJH),
+            6534 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KIDPHAMDDLB),
+            6510 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CDLJBGKGLDE),
+            6520 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_HABEOEOKLFK),
+            6502 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_OFFDPODKIOK),
+            6507 => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KKEINMEAHII),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdWolfBroType> {
         match str {
-            "CmdWolfBroTypeNone" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroTypeNone),
-            "CmdWolfBroGamePickupBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq),
-            "CmdStartWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameCsReq),
-            "CmdQuitWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameScRsp),
-            "CmdWolfBroGamePickupBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp),
-            "CmdWolfBroGameUseBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletCsReq),
-            "CmdWolfBroGameActivateBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp),
-            "CmdArchiveWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameCsReq),
-            "CmdStartWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdStartWolfBroGameScRsp),
-            "CmdRestoreWolfBroGameArchiveCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq),
-            "CmdWolfBroGameUseBulletScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameUseBulletScRsp),
-            "CmdGetWolfBroGameDataScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataScRsp),
-            "CmdRestoreWolfBroGameArchiveScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp),
-            "CmdGetWolfBroGameDataCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdGetWolfBroGameDataCsReq),
-            "CmdArchiveWolfBroGameScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdArchiveWolfBroGameScRsp),
-            "CmdWolfBroGameDataChangeScNotify" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameDataChangeScNotify),
-            "CmdWolfBroGameActivateBulletCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq),
-            "CmdQuitWolfBroGameCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdQuitWolfBroGameCsReq),
-            "CmdWolfBroGameExplodeMonsterCsReq" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq),
-            "CmdWolfBroGameExplodeMonsterScRsp" => ::std::option::Option::Some(CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp),
+            "LNGFBPFJEJG_ALOCMFAKBKP" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_ALOCMFAKBKP),
+            "LNGFBPFJEJG_ALLJMIMFCEO" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_ALLJMIMFCEO),
+            "LNGFBPFJEJG_OKNMDJPIFOD" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_OKNMDJPIFOD),
+            "LNGFBPFJEJG_KHFNOGHJONH" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KHFNOGHJONH),
+            "LNGFBPFJEJG_BGNEOJDNCDO" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_BGNEOJDNCDO),
+            "LNGFBPFJEJG_JIKPPBILMMO" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JIKPPBILMMO),
+            "LNGFBPFJEJG_CABNHJBNANF" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CABNHJBNANF),
+            "LNGFBPFJEJG_GNNBKLALJGD" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_GNNBKLALJGD),
+            "LNGFBPFJEJG_LBBMOMDFLIF" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_LBBMOMDFLIF),
+            "LNGFBPFJEJG_PHIAHEEAHIH" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_PHIAHEEAHIH),
+            "LNGFBPFJEJG_CINLPEGHEAE" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CINLPEGHEAE),
+            "LNGFBPFJEJG_PGBFDHEOCLG" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_PGBFDHEOCLG),
+            "LNGFBPFJEJG_JPKFBLKGCJG" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JPKFBLKGCJG),
+            "LNGFBPFJEJG_FEHKAIPNOOI" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_FEHKAIPNOOI),
+            "LNGFBPFJEJG_JBAMAOLDHJH" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_JBAMAOLDHJH),
+            "LNGFBPFJEJG_KIDPHAMDDLB" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KIDPHAMDDLB),
+            "LNGFBPFJEJG_CDLJBGKGLDE" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_CDLJBGKGLDE),
+            "LNGFBPFJEJG_HABEOEOKLFK" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_HABEOEOKLFK),
+            "LNGFBPFJEJG_OFFDPODKIOK" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_OFFDPODKIOK),
+            "LNGFBPFJEJG_KKEINMEAHII" => ::std::option::Option::Some(CmdWolfBroType::LNGFBPFJEJG_KKEINMEAHII),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWolfBroType] = &[
-        CmdWolfBroType::CmdWolfBroTypeNone,
-        CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq,
-        CmdWolfBroType::CmdStartWolfBroGameCsReq,
-        CmdWolfBroType::CmdQuitWolfBroGameScRsp,
-        CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp,
-        CmdWolfBroType::CmdWolfBroGameUseBulletCsReq,
-        CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp,
-        CmdWolfBroType::CmdArchiveWolfBroGameCsReq,
-        CmdWolfBroType::CmdStartWolfBroGameScRsp,
-        CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq,
-        CmdWolfBroType::CmdWolfBroGameUseBulletScRsp,
-        CmdWolfBroType::CmdGetWolfBroGameDataScRsp,
-        CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp,
-        CmdWolfBroType::CmdGetWolfBroGameDataCsReq,
-        CmdWolfBroType::CmdArchiveWolfBroGameScRsp,
-        CmdWolfBroType::CmdWolfBroGameDataChangeScNotify,
-        CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq,
-        CmdWolfBroType::CmdQuitWolfBroGameCsReq,
-        CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq,
-        CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp,
+        CmdWolfBroType::LNGFBPFJEJG_ALOCMFAKBKP,
+        CmdWolfBroType::LNGFBPFJEJG_ALLJMIMFCEO,
+        CmdWolfBroType::LNGFBPFJEJG_OKNMDJPIFOD,
+        CmdWolfBroType::LNGFBPFJEJG_KHFNOGHJONH,
+        CmdWolfBroType::LNGFBPFJEJG_BGNEOJDNCDO,
+        CmdWolfBroType::LNGFBPFJEJG_JIKPPBILMMO,
+        CmdWolfBroType::LNGFBPFJEJG_CABNHJBNANF,
+        CmdWolfBroType::LNGFBPFJEJG_GNNBKLALJGD,
+        CmdWolfBroType::LNGFBPFJEJG_LBBMOMDFLIF,
+        CmdWolfBroType::LNGFBPFJEJG_PHIAHEEAHIH,
+        CmdWolfBroType::LNGFBPFJEJG_CINLPEGHEAE,
+        CmdWolfBroType::LNGFBPFJEJG_PGBFDHEOCLG,
+        CmdWolfBroType::LNGFBPFJEJG_JPKFBLKGCJG,
+        CmdWolfBroType::LNGFBPFJEJG_FEHKAIPNOOI,
+        CmdWolfBroType::LNGFBPFJEJG_JBAMAOLDHJH,
+        CmdWolfBroType::LNGFBPFJEJG_KIDPHAMDDLB,
+        CmdWolfBroType::LNGFBPFJEJG_CDLJBGKGLDE,
+        CmdWolfBroType::LNGFBPFJEJG_HABEOEOKLFK,
+        CmdWolfBroType::LNGFBPFJEJG_OFFDPODKIOK,
+        CmdWolfBroType::LNGFBPFJEJG_KKEINMEAHII,
     ];
 }
 
@@ -160,26 +160,26 @@ impl ::protobuf::EnumFull for CmdWolfBroType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdWolfBroType::CmdWolfBroTypeNone => 0,
-            CmdWolfBroType::CmdWolfBroGamePickupBulletCsReq => 1,
-            CmdWolfBroType::CmdStartWolfBroGameCsReq => 2,
-            CmdWolfBroType::CmdQuitWolfBroGameScRsp => 3,
-            CmdWolfBroType::CmdWolfBroGamePickupBulletScRsp => 4,
-            CmdWolfBroType::CmdWolfBroGameUseBulletCsReq => 5,
-            CmdWolfBroType::CmdWolfBroGameActivateBulletScRsp => 6,
-            CmdWolfBroType::CmdArchiveWolfBroGameCsReq => 7,
-            CmdWolfBroType::CmdStartWolfBroGameScRsp => 8,
-            CmdWolfBroType::CmdRestoreWolfBroGameArchiveCsReq => 9,
-            CmdWolfBroType::CmdWolfBroGameUseBulletScRsp => 10,
-            CmdWolfBroType::CmdGetWolfBroGameDataScRsp => 11,
-            CmdWolfBroType::CmdRestoreWolfBroGameArchiveScRsp => 12,
-            CmdWolfBroType::CmdGetWolfBroGameDataCsReq => 13,
-            CmdWolfBroType::CmdArchiveWolfBroGameScRsp => 14,
-            CmdWolfBroType::CmdWolfBroGameDataChangeScNotify => 15,
-            CmdWolfBroType::CmdWolfBroGameActivateBulletCsReq => 16,
-            CmdWolfBroType::CmdQuitWolfBroGameCsReq => 17,
-            CmdWolfBroType::CmdWolfBroGameExplodeMonsterCsReq => 18,
-            CmdWolfBroType::CmdWolfBroGameExplodeMonsterScRsp => 19,
+            CmdWolfBroType::LNGFBPFJEJG_ALOCMFAKBKP => 0,
+            CmdWolfBroType::LNGFBPFJEJG_ALLJMIMFCEO => 1,
+            CmdWolfBroType::LNGFBPFJEJG_OKNMDJPIFOD => 2,
+            CmdWolfBroType::LNGFBPFJEJG_KHFNOGHJONH => 3,
+            CmdWolfBroType::LNGFBPFJEJG_BGNEOJDNCDO => 4,
+            CmdWolfBroType::LNGFBPFJEJG_JIKPPBILMMO => 5,
+            CmdWolfBroType::LNGFBPFJEJG_CABNHJBNANF => 6,
+            CmdWolfBroType::LNGFBPFJEJG_GNNBKLALJGD => 7,
+            CmdWolfBroType::LNGFBPFJEJG_LBBMOMDFLIF => 8,
+            CmdWolfBroType::LNGFBPFJEJG_PHIAHEEAHIH => 9,
+            CmdWolfBroType::LNGFBPFJEJG_CINLPEGHEAE => 10,
+            CmdWolfBroType::LNGFBPFJEJG_PGBFDHEOCLG => 11,
+            CmdWolfBroType::LNGFBPFJEJG_JPKFBLKGCJG => 12,
+            CmdWolfBroType::LNGFBPFJEJG_FEHKAIPNOOI => 13,
+            CmdWolfBroType::LNGFBPFJEJG_JBAMAOLDHJH => 14,
+            CmdWolfBroType::LNGFBPFJEJG_KIDPHAMDDLB => 15,
+            CmdWolfBroType::LNGFBPFJEJG_CDLJBGKGLDE => 16,
+            CmdWolfBroType::LNGFBPFJEJG_HABEOEOKLFK => 17,
+            CmdWolfBroType::LNGFBPFJEJG_OFFDPODKIOK => 18,
+            CmdWolfBroType::LNGFBPFJEJG_KKEINMEAHII => 19,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -187,7 +187,7 @@ impl ::protobuf::EnumFull for CmdWolfBroType {
 
 impl ::std::default::Default for CmdWolfBroType {
     fn default() -> Self {
-        CmdWolfBroType::CmdWolfBroTypeNone
+        CmdWolfBroType::LNGFBPFJEJG_ALOCMFAKBKP
     }
 }
 
@@ -198,21 +198,20 @@ impl CmdWolfBroType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdWolfBroType.proto*\xcf\x05\n\x0eCmdWolfBroType\x12\x16\n\x12Cmd\
-    WolfBroTypeNone\x10\0\x12$\n\x1fCmdWolfBroGamePickupBulletCsReq\x10\xf72\
-    \x12\x1d\n\x18CmdStartWolfBroGameCsReq\x10\xfe2\x12\x1c\n\x17CmdQuitWolf\
-    BroGameScRsp\x10\x903\x12$\n\x1fCmdWolfBroGamePickupBulletScRsp\x10\x933\
-    \x12!\n\x1cCmdWolfBroGameUseBulletCsReq\x10\xe72\x12&\n!CmdWolfBroGameAc\
-    tivateBulletScRsp\x10\x823\x12\x1f\n\x1aCmdArchiveWolfBroGameCsReq\x10\
-    \xf92\x12\x1d\n\x18CmdStartWolfBroGameScRsp\x10\x803\x12&\n!CmdRestoreWo\
-    lfBroGameArchiveCsReq\x10\xe92\x12!\n\x1cCmdWolfBroGameUseBulletScRsp\
-    \x10\xfb2\x12\x1f\n\x1aCmdGetWolfBroGameDataScRsp\x10\x913\x12&\n!CmdRes\
-    toreWolfBroGameArchiveScRsp\x10\xff2\x12\x1f\n\x1aCmdGetWolfBroGameDataC\
-    sReq\x10\xe52\x12\x1f\n\x1aCmdArchiveWolfBroGameScRsp\x10\x8a3\x12%\n\
-    \x20CmdWolfBroGameDataChangeScNotify\x10\x8f3\x12&\n!CmdWolfBroGameActiv\
-    ateBulletCsReq\x10\x853\x12\x1c\n\x17CmdQuitWolfBroGameCsReq\x10\xf82\
-    \x12&\n!CmdWolfBroGameExplodeMonsterCsReq\x10\xef2\x12&\n!CmdWolfBroGame\
-    ExplodeMonsterScRsp\x10\x813b\x06proto3\
+    \n\x14CmdWolfBroType.proto*\xe7\x04\n\x0eCmdWolfBroType\x12\x1b\n\x17LNG\
+    FBPFJEJG_ALOCMFAKBKP\x10\0\x12\x1c\n\x17LNGFBPFJEJG_ALLJMIMFCEO\x10\xed2\
+    \x12\x1c\n\x17LNGFBPFJEJG_OKNMDJPIFOD\x10\xf12\x12\x1c\n\x17LNGFBPFJEJG_\
+    KHFNOGHJONH\x10\x833\x12\x1c\n\x17LNGFBPFJEJG_BGNEOJDNCDO\x10\xf52\x12\
+    \x1c\n\x17LNGFBPFJEJG_JIKPPBILMMO\x10\x943\x12\x1c\n\x17LNGFBPFJEJG_CABN\
+    HJBNANF\x10\x8f3\x12\x1c\n\x17LNGFBPFJEJG_GNNBKLALJGD\x10\xff2\x12\x1c\n\
+    \x17LNGFBPFJEJG_LBBMOMDFLIF\x10\xf02\x12\x1c\n\x17LNGFBPFJEJG_PHIAHEEAHI\
+    H\x10\x873\x12\x1c\n\x17LNGFBPFJEJG_CINLPEGHEAE\x10\xf72\x12\x1c\n\x17LN\
+    GFBPFJEJG_PGBFDHEOCLG\x10\xfd2\x12\x1c\n\x17LNGFBPFJEJG_JPKFBLKGCJG\x10\
+    \x853\x12\x1c\n\x17LNGFBPFJEJG_FEHKAIPNOOI\x10\xe92\x12\x1c\n\x17LNGFBPF\
+    JEJG_JBAMAOLDHJH\x10\x923\x12\x1c\n\x17LNGFBPFJEJG_KIDPHAMDDLB\x10\x863\
+    \x12\x1c\n\x17LNGFBPFJEJG_CDLJBGKGLDE\x10\xee2\x12\x1c\n\x17LNGFBPFJEJG_\
+    HABEOEOKLFK\x10\xf82\x12\x1c\n\x17LNGFBPFJEJG_OFFDPODKIOK\x10\xe62\x12\
+    \x1c\n\x17LNGFBPFJEJG_KKEINMEAHII\x10\xeb2b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

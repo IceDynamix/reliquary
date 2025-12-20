@@ -30,111 +30,111 @@ pub enum CmdRogueType {
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdRogueTypeNone)
     CmdRogueTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdQuitRogueScRsp)
-    CmdQuitRogueScRsp = 1860,
+    CmdQuitRogueScRsp = 1893,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueBuffEnhanceInfoScRsp)
     CmdGetRogueBuffEnhanceInfoScRsp = 1838,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdStartRogueCsReq)
-    CmdStartRogueCsReq = 1898,
+    CmdStartRogueCsReq = 1860,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueAeonInfoCsReq)
-    CmdGetRogueAeonInfoCsReq = 1891,
+    CmdGetRogueAeonInfoCsReq = 1850,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueScoreRewardInfoScRsp)
-    CmdGetRogueScoreRewardInfoScRsp = 1824,
+    CmdGetRogueScoreRewardInfoScRsp = 1888,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdPickRogueAvatarScRsp)
-    CmdPickRogueAvatarScRsp = 1868,
+    CmdPickRogueAvatarScRsp = 1882,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdOpenRogueChestScRsp)
-    CmdOpenRogueChestScRsp = 1840,
+    CmdOpenRogueChestScRsp = 1823,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRoguePickAvatarInfoScNotify)
-    CmdSyncRoguePickAvatarInfoScNotify = 1834,
+    CmdSyncRoguePickAvatarInfoScNotify = 1881,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnterRogueCsReq)
-    CmdEnterRogueCsReq = 1883,
+    CmdEnterRogueCsReq = 1867,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueRewardInfoScNotify)
-    CmdSyncRogueRewardInfoScNotify = 1878,
+    CmdSyncRogueRewardInfoScNotify = 1847,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueSeasonFinishScNotify)
-    CmdSyncRogueSeasonFinishScNotify = 1874,
+    CmdSyncRogueSeasonFinishScNotify = 1810,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueAeonLevelUpRewardScNotify)
-    CmdSyncRogueAeonLevelUpRewardScNotify = 1831,
+    CmdSyncRogueAeonLevelUpRewardScNotify = 1863,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdTakeRogueAeonLevelRewardScRsp)
     CmdTakeRogueAeonLevelRewardScRsp = 1864,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueExploreWinScNotify)
-    CmdSyncRogueExploreWinScNotify = 1835,
+    CmdSyncRogueExploreWinScNotify = 1890,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueTalentInfoCsReq)
-    CmdGetRogueTalentInfoCsReq = 1887,
+    CmdGetRogueTalentInfoCsReq = 1840,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnterRogueMapRoomScRsp)
-    CmdEnterRogueMapRoomScRsp = 1810,
+    CmdEnterRogueMapRoomScRsp = 1848,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdReviveRogueAvatarCsReq)
-    CmdReviveRogueAvatarCsReq = 1880,
+    CmdReviveRogueAvatarCsReq = 1894,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnableRogueTalentCsReq)
-    CmdEnableRogueTalentCsReq = 1836,
+    CmdEnableRogueTalentCsReq = 1875,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueScoreRewardInfoCsReq)
-    CmdGetRogueScoreRewardInfoCsReq = 1808,
+    CmdGetRogueScoreRewardInfoCsReq = 1846,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdQuitRogueCsReq)
-    CmdQuitRogueCsReq = 1850,
+    CmdQuitRogueCsReq = 1842,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdFinishAeonDialogueGroupScRsp)
-    CmdFinishAeonDialogueGroupScRsp = 1813,
+    CmdFinishAeonDialogueGroupScRsp = 1830,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdPickRogueAvatarCsReq)
-    CmdPickRogueAvatarCsReq = 1837,
+    CmdPickRogueAvatarCsReq = 1889,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnterRogueMapRoomCsReq)
-    CmdEnterRogueMapRoomCsReq = 1821,
+    CmdEnterRogueMapRoomCsReq = 1817,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdTakeRogueScoreRewardCsReq)
-    CmdTakeRogueScoreRewardCsReq = 1805,
+    CmdTakeRogueScoreRewardCsReq = 1833,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdExchangeRogueRewardKeyCsReq)
-    CmdExchangeRogueRewardKeyCsReq = 1866,
+    CmdExchangeRogueRewardKeyCsReq = 1801,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnableRogueTalentScRsp)
-    CmdEnableRogueTalentScRsp = 1848,
+    CmdEnableRogueTalentScRsp = 1809,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueTalentInfoScRsp)
-    CmdGetRogueTalentInfoScRsp = 1900,
+    CmdGetRogueTalentInfoScRsp = 1870,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnterRogueScRsp)
-    CmdEnterRogueScRsp = 1886,
+    CmdEnterRogueScRsp = 1828,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueStatusScNotify)
-    CmdSyncRogueStatusScNotify = 1820,
+    CmdSyncRogueStatusScNotify = 1877,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnhanceRogueBuffScRsp)
-    CmdEnhanceRogueBuffScRsp = 1809,
+    CmdEnhanceRogueBuffScRsp = 1820,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdFinishAeonDialogueGroupCsReq)
-    CmdFinishAeonDialogueGroupCsReq = 1890,
+    CmdFinishAeonDialogueGroupCsReq = 1819,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueMapRoomScNotify)
-    CmdSyncRogueMapRoomScNotify = 1870,
+    CmdSyncRogueMapRoomScNotify = 1874,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueInfoCsReq)
-    CmdGetRogueInfoCsReq = 1899,
+    CmdGetRogueInfoCsReq = 1854,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdOpenRogueChestCsReq)
-    CmdOpenRogueChestCsReq = 1872,
+    CmdOpenRogueChestCsReq = 1886,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueReviveInfoScNotify)
-    CmdSyncRogueReviveInfoScNotify = 1855,
+    CmdSyncRogueReviveInfoScNotify = 1816,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueAreaUnlockScNotify)
-    CmdSyncRogueAreaUnlockScNotify = 1876,
+    CmdSyncRogueAreaUnlockScNotify = 1835,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdExchangeRogueRewardKeyScRsp)
-    CmdExchangeRogueRewardKeyScRsp = 1839,
+    CmdExchangeRogueRewardKeyScRsp = 1814,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdLeaveRogueScRsp)
-    CmdLeaveRogueScRsp = 1852,
+    CmdLeaveRogueScRsp = 1855,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueInfoScRsp)
-    CmdGetRogueInfoScRsp = 1823,
+    CmdGetRogueInfoScRsp = 1811,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdLeaveRogueCsReq)
-    CmdLeaveRogueCsReq = 1894,
+    CmdLeaveRogueCsReq = 1803,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueAeonInfoScRsp)
-    CmdGetRogueAeonInfoScRsp = 1873,
+    CmdGetRogueAeonInfoScRsp = 1862,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueGetItemScNotify)
-    CmdSyncRogueGetItemScNotify = 1882,
+    CmdSyncRogueGetItemScNotify = 1898,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdTakeRogueAeonLevelRewardCsReq)
-    CmdTakeRogueAeonLevelRewardCsReq = 1875,
+    CmdTakeRogueAeonLevelRewardCsReq = 1813,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdReviveRogueAvatarScRsp)
-    CmdReviveRogueAvatarScRsp = 1877,
+    CmdReviveRogueAvatarScRsp = 1865,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdStartRogueScRsp)
-    CmdStartRogueScRsp = 1865,
+    CmdStartRogueScRsp = 1879,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdTakeRogueScoreRewardScRsp)
-    CmdTakeRogueScoreRewardScRsp = 1851,
+    CmdTakeRogueScoreRewardScRsp = 1892,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueInitialScoreCsReq)
-    CmdGetRogueInitialScoreCsReq = 1853,
+    CmdGetRogueInitialScoreCsReq = 1872,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueVirtualItemInfoScNotify)
-    CmdSyncRogueVirtualItemInfoScNotify = 1847,
+    CmdSyncRogueVirtualItemInfoScNotify = 1899,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueAeonScNotify)
-    CmdSyncRogueAeonScNotify = 1833,
+    CmdSyncRogueAeonScNotify = 1856,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdEnhanceRogueBuffCsReq)
-    CmdEnhanceRogueBuffCsReq = 1803,
+    CmdEnhanceRogueBuffCsReq = 1851,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdSyncRogueFinishScNotify)
-    CmdSyncRogueFinishScNotify = 1892,
+    CmdSyncRogueFinishScNotify = 1887,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueBuffEnhanceInfoCsReq)
-    CmdGetRogueBuffEnhanceInfoCsReq = 1829,
+    CmdGetRogueBuffEnhanceInfoCsReq = 1808,
     // @@protoc_insertion_point(enum_value:CmdRogueType.CmdGetRogueInitialScoreScRsp)
-    CmdGetRogueInitialScoreScRsp = 1842,
+    CmdGetRogueInitialScoreScRsp = 1839,
 }
 
 impl ::protobuf::Enum for CmdRogueType {
@@ -147,59 +147,59 @@ impl ::protobuf::Enum for CmdRogueType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueType::CmdRogueTypeNone),
-            1860 => ::std::option::Option::Some(CmdRogueType::CmdQuitRogueScRsp),
+            1893 => ::std::option::Option::Some(CmdRogueType::CmdQuitRogueScRsp),
             1838 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueBuffEnhanceInfoScRsp),
-            1898 => ::std::option::Option::Some(CmdRogueType::CmdStartRogueCsReq),
-            1891 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueAeonInfoCsReq),
-            1824 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueScoreRewardInfoScRsp),
-            1868 => ::std::option::Option::Some(CmdRogueType::CmdPickRogueAvatarScRsp),
-            1840 => ::std::option::Option::Some(CmdRogueType::CmdOpenRogueChestScRsp),
-            1834 => ::std::option::Option::Some(CmdRogueType::CmdSyncRoguePickAvatarInfoScNotify),
-            1883 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueCsReq),
-            1878 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueRewardInfoScNotify),
-            1874 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueSeasonFinishScNotify),
-            1831 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAeonLevelUpRewardScNotify),
+            1860 => ::std::option::Option::Some(CmdRogueType::CmdStartRogueCsReq),
+            1850 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueAeonInfoCsReq),
+            1888 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueScoreRewardInfoScRsp),
+            1882 => ::std::option::Option::Some(CmdRogueType::CmdPickRogueAvatarScRsp),
+            1823 => ::std::option::Option::Some(CmdRogueType::CmdOpenRogueChestScRsp),
+            1881 => ::std::option::Option::Some(CmdRogueType::CmdSyncRoguePickAvatarInfoScNotify),
+            1867 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueCsReq),
+            1847 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueRewardInfoScNotify),
+            1810 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueSeasonFinishScNotify),
+            1863 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAeonLevelUpRewardScNotify),
             1864 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueAeonLevelRewardScRsp),
-            1835 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueExploreWinScNotify),
-            1887 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueTalentInfoCsReq),
-            1810 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueMapRoomScRsp),
-            1880 => ::std::option::Option::Some(CmdRogueType::CmdReviveRogueAvatarCsReq),
-            1836 => ::std::option::Option::Some(CmdRogueType::CmdEnableRogueTalentCsReq),
-            1808 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueScoreRewardInfoCsReq),
-            1850 => ::std::option::Option::Some(CmdRogueType::CmdQuitRogueCsReq),
-            1813 => ::std::option::Option::Some(CmdRogueType::CmdFinishAeonDialogueGroupScRsp),
-            1837 => ::std::option::Option::Some(CmdRogueType::CmdPickRogueAvatarCsReq),
-            1821 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueMapRoomCsReq),
-            1805 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueScoreRewardCsReq),
-            1866 => ::std::option::Option::Some(CmdRogueType::CmdExchangeRogueRewardKeyCsReq),
-            1848 => ::std::option::Option::Some(CmdRogueType::CmdEnableRogueTalentScRsp),
-            1900 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueTalentInfoScRsp),
-            1886 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueScRsp),
-            1820 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueStatusScNotify),
-            1809 => ::std::option::Option::Some(CmdRogueType::CmdEnhanceRogueBuffScRsp),
-            1890 => ::std::option::Option::Some(CmdRogueType::CmdFinishAeonDialogueGroupCsReq),
-            1870 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueMapRoomScNotify),
-            1899 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInfoCsReq),
-            1872 => ::std::option::Option::Some(CmdRogueType::CmdOpenRogueChestCsReq),
-            1855 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueReviveInfoScNotify),
-            1876 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAreaUnlockScNotify),
-            1839 => ::std::option::Option::Some(CmdRogueType::CmdExchangeRogueRewardKeyScRsp),
-            1852 => ::std::option::Option::Some(CmdRogueType::CmdLeaveRogueScRsp),
-            1823 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInfoScRsp),
-            1894 => ::std::option::Option::Some(CmdRogueType::CmdLeaveRogueCsReq),
-            1873 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueAeonInfoScRsp),
-            1882 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueGetItemScNotify),
-            1875 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueAeonLevelRewardCsReq),
-            1877 => ::std::option::Option::Some(CmdRogueType::CmdReviveRogueAvatarScRsp),
-            1865 => ::std::option::Option::Some(CmdRogueType::CmdStartRogueScRsp),
-            1851 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueScoreRewardScRsp),
-            1853 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInitialScoreCsReq),
-            1847 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueVirtualItemInfoScNotify),
-            1833 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAeonScNotify),
-            1803 => ::std::option::Option::Some(CmdRogueType::CmdEnhanceRogueBuffCsReq),
-            1892 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueFinishScNotify),
-            1829 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueBuffEnhanceInfoCsReq),
-            1842 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInitialScoreScRsp),
+            1890 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueExploreWinScNotify),
+            1840 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueTalentInfoCsReq),
+            1848 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueMapRoomScRsp),
+            1894 => ::std::option::Option::Some(CmdRogueType::CmdReviveRogueAvatarCsReq),
+            1875 => ::std::option::Option::Some(CmdRogueType::CmdEnableRogueTalentCsReq),
+            1846 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueScoreRewardInfoCsReq),
+            1842 => ::std::option::Option::Some(CmdRogueType::CmdQuitRogueCsReq),
+            1830 => ::std::option::Option::Some(CmdRogueType::CmdFinishAeonDialogueGroupScRsp),
+            1889 => ::std::option::Option::Some(CmdRogueType::CmdPickRogueAvatarCsReq),
+            1817 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueMapRoomCsReq),
+            1833 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueScoreRewardCsReq),
+            1801 => ::std::option::Option::Some(CmdRogueType::CmdExchangeRogueRewardKeyCsReq),
+            1809 => ::std::option::Option::Some(CmdRogueType::CmdEnableRogueTalentScRsp),
+            1870 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueTalentInfoScRsp),
+            1828 => ::std::option::Option::Some(CmdRogueType::CmdEnterRogueScRsp),
+            1877 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueStatusScNotify),
+            1820 => ::std::option::Option::Some(CmdRogueType::CmdEnhanceRogueBuffScRsp),
+            1819 => ::std::option::Option::Some(CmdRogueType::CmdFinishAeonDialogueGroupCsReq),
+            1874 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueMapRoomScNotify),
+            1854 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInfoCsReq),
+            1886 => ::std::option::Option::Some(CmdRogueType::CmdOpenRogueChestCsReq),
+            1816 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueReviveInfoScNotify),
+            1835 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAreaUnlockScNotify),
+            1814 => ::std::option::Option::Some(CmdRogueType::CmdExchangeRogueRewardKeyScRsp),
+            1855 => ::std::option::Option::Some(CmdRogueType::CmdLeaveRogueScRsp),
+            1811 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInfoScRsp),
+            1803 => ::std::option::Option::Some(CmdRogueType::CmdLeaveRogueCsReq),
+            1862 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueAeonInfoScRsp),
+            1898 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueGetItemScNotify),
+            1813 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueAeonLevelRewardCsReq),
+            1865 => ::std::option::Option::Some(CmdRogueType::CmdReviveRogueAvatarScRsp),
+            1879 => ::std::option::Option::Some(CmdRogueType::CmdStartRogueScRsp),
+            1892 => ::std::option::Option::Some(CmdRogueType::CmdTakeRogueScoreRewardScRsp),
+            1872 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInitialScoreCsReq),
+            1899 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueVirtualItemInfoScNotify),
+            1856 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueAeonScNotify),
+            1851 => ::std::option::Option::Some(CmdRogueType::CmdEnhanceRogueBuffCsReq),
+            1887 => ::std::option::Option::Some(CmdRogueType::CmdSyncRogueFinishScNotify),
+            1808 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueBuffEnhanceInfoCsReq),
+            1839 => ::std::option::Option::Some(CmdRogueType::CmdGetRogueInitialScoreScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -403,44 +403,44 @@ impl CmdRogueType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdRogueType.proto*\xfb\r\n\x0cCmdRogueType\x12\x14\n\x10CmdRogueT\
-    ypeNone\x10\0\x12\x16\n\x11CmdQuitRogueScRsp\x10\xc4\x0e\x12$\n\x1fCmdGe\
+    ypeNone\x10\0\x12\x16\n\x11CmdQuitRogueScRsp\x10\xe5\x0e\x12$\n\x1fCmdGe\
     tRogueBuffEnhanceInfoScRsp\x10\xae\x0e\x12\x17\n\x12CmdStartRogueCsReq\
-    \x10\xea\x0e\x12\x1d\n\x18CmdGetRogueAeonInfoCsReq\x10\xe3\x0e\x12$\n\
-    \x1fCmdGetRogueScoreRewardInfoScRsp\x10\xa0\x0e\x12\x1c\n\x17CmdPickRogu\
-    eAvatarScRsp\x10\xcc\x0e\x12\x1b\n\x16CmdOpenRogueChestScRsp\x10\xb0\x0e\
-    \x12'\n\"CmdSyncRoguePickAvatarInfoScNotify\x10\xaa\x0e\x12\x17\n\x12Cmd\
-    EnterRogueCsReq\x10\xdb\x0e\x12#\n\x1eCmdSyncRogueRewardInfoScNotify\x10\
-    \xd6\x0e\x12%\n\x20CmdSyncRogueSeasonFinishScNotify\x10\xd2\x0e\x12*\n%C\
-    mdSyncRogueAeonLevelUpRewardScNotify\x10\xa7\x0e\x12%\n\x20CmdTakeRogueA\
+    \x10\xc4\x0e\x12\x1d\n\x18CmdGetRogueAeonInfoCsReq\x10\xba\x0e\x12$\n\
+    \x1fCmdGetRogueScoreRewardInfoScRsp\x10\xe0\x0e\x12\x1c\n\x17CmdPickRogu\
+    eAvatarScRsp\x10\xda\x0e\x12\x1b\n\x16CmdOpenRogueChestScRsp\x10\x9f\x0e\
+    \x12'\n\"CmdSyncRoguePickAvatarInfoScNotify\x10\xd9\x0e\x12\x17\n\x12Cmd\
+    EnterRogueCsReq\x10\xcb\x0e\x12#\n\x1eCmdSyncRogueRewardInfoScNotify\x10\
+    \xb7\x0e\x12%\n\x20CmdSyncRogueSeasonFinishScNotify\x10\x92\x0e\x12*\n%C\
+    mdSyncRogueAeonLevelUpRewardScNotify\x10\xc7\x0e\x12%\n\x20CmdTakeRogueA\
     eonLevelRewardScRsp\x10\xc8\x0e\x12#\n\x1eCmdSyncRogueExploreWinScNotify\
-    \x10\xab\x0e\x12\x1f\n\x1aCmdGetRogueTalentInfoCsReq\x10\xdf\x0e\x12\x1e\
-    \n\x19CmdEnterRogueMapRoomScRsp\x10\x92\x0e\x12\x1e\n\x19CmdReviveRogueA\
-    vatarCsReq\x10\xd8\x0e\x12\x1e\n\x19CmdEnableRogueTalentCsReq\x10\xac\
-    \x0e\x12$\n\x1fCmdGetRogueScoreRewardInfoCsReq\x10\x90\x0e\x12\x16\n\x11\
-    CmdQuitRogueCsReq\x10\xba\x0e\x12$\n\x1fCmdFinishAeonDialogueGroupScRsp\
-    \x10\x95\x0e\x12\x1c\n\x17CmdPickRogueAvatarCsReq\x10\xad\x0e\x12\x1e\n\
-    \x19CmdEnterRogueMapRoomCsReq\x10\x9d\x0e\x12!\n\x1cCmdTakeRogueScoreRew\
-    ardCsReq\x10\x8d\x0e\x12#\n\x1eCmdExchangeRogueRewardKeyCsReq\x10\xca\
-    \x0e\x12\x1e\n\x19CmdEnableRogueTalentScRsp\x10\xb8\x0e\x12\x1f\n\x1aCmd\
-    GetRogueTalentInfoScRsp\x10\xec\x0e\x12\x17\n\x12CmdEnterRogueScRsp\x10\
-    \xde\x0e\x12\x1f\n\x1aCmdSyncRogueStatusScNotify\x10\x9c\x0e\x12\x1d\n\
-    \x18CmdEnhanceRogueBuffScRsp\x10\x91\x0e\x12$\n\x1fCmdFinishAeonDialogue\
-    GroupCsReq\x10\xe2\x0e\x12\x20\n\x1bCmdSyncRogueMapRoomScNotify\x10\xce\
-    \x0e\x12\x19\n\x14CmdGetRogueInfoCsReq\x10\xeb\x0e\x12\x1b\n\x16CmdOpenR\
-    ogueChestCsReq\x10\xd0\x0e\x12#\n\x1eCmdSyncRogueReviveInfoScNotify\x10\
-    \xbf\x0e\x12#\n\x1eCmdSyncRogueAreaUnlockScNotify\x10\xd4\x0e\x12#\n\x1e\
-    CmdExchangeRogueRewardKeyScRsp\x10\xaf\x0e\x12\x17\n\x12CmdLeaveRogueScR\
-    sp\x10\xbc\x0e\x12\x19\n\x14CmdGetRogueInfoScRsp\x10\x9f\x0e\x12\x17\n\
-    \x12CmdLeaveRogueCsReq\x10\xe6\x0e\x12\x1d\n\x18CmdGetRogueAeonInfoScRsp\
-    \x10\xd1\x0e\x12\x20\n\x1bCmdSyncRogueGetItemScNotify\x10\xda\x0e\x12%\n\
-    \x20CmdTakeRogueAeonLevelRewardCsReq\x10\xd3\x0e\x12\x1e\n\x19CmdReviveR\
-    ogueAvatarScRsp\x10\xd5\x0e\x12\x17\n\x12CmdStartRogueScRsp\x10\xc9\x0e\
-    \x12!\n\x1cCmdTakeRogueScoreRewardScRsp\x10\xbb\x0e\x12!\n\x1cCmdGetRogu\
-    eInitialScoreCsReq\x10\xbd\x0e\x12(\n#CmdSyncRogueVirtualItemInfoScNotif\
-    y\x10\xb7\x0e\x12\x1d\n\x18CmdSyncRogueAeonScNotify\x10\xa9\x0e\x12\x1d\
-    \n\x18CmdEnhanceRogueBuffCsReq\x10\x8b\x0e\x12\x1f\n\x1aCmdSyncRogueFini\
-    shScNotify\x10\xe4\x0e\x12$\n\x1fCmdGetRogueBuffEnhanceInfoCsReq\x10\xa5\
-    \x0e\x12!\n\x1cCmdGetRogueInitialScoreScRsp\x10\xb2\x0eb\x06proto3\
+    \x10\xe2\x0e\x12\x1f\n\x1aCmdGetRogueTalentInfoCsReq\x10\xb0\x0e\x12\x1e\
+    \n\x19CmdEnterRogueMapRoomScRsp\x10\xb8\x0e\x12\x1e\n\x19CmdReviveRogueA\
+    vatarCsReq\x10\xe6\x0e\x12\x1e\n\x19CmdEnableRogueTalentCsReq\x10\xd3\
+    \x0e\x12$\n\x1fCmdGetRogueScoreRewardInfoCsReq\x10\xb6\x0e\x12\x16\n\x11\
+    CmdQuitRogueCsReq\x10\xb2\x0e\x12$\n\x1fCmdFinishAeonDialogueGroupScRsp\
+    \x10\xa6\x0e\x12\x1c\n\x17CmdPickRogueAvatarCsReq\x10\xe1\x0e\x12\x1e\n\
+    \x19CmdEnterRogueMapRoomCsReq\x10\x99\x0e\x12!\n\x1cCmdTakeRogueScoreRew\
+    ardCsReq\x10\xa9\x0e\x12#\n\x1eCmdExchangeRogueRewardKeyCsReq\x10\x89\
+    \x0e\x12\x1e\n\x19CmdEnableRogueTalentScRsp\x10\x91\x0e\x12\x1f\n\x1aCmd\
+    GetRogueTalentInfoScRsp\x10\xce\x0e\x12\x17\n\x12CmdEnterRogueScRsp\x10\
+    \xa4\x0e\x12\x1f\n\x1aCmdSyncRogueStatusScNotify\x10\xd5\x0e\x12\x1d\n\
+    \x18CmdEnhanceRogueBuffScRsp\x10\x9c\x0e\x12$\n\x1fCmdFinishAeonDialogue\
+    GroupCsReq\x10\x9b\x0e\x12\x20\n\x1bCmdSyncRogueMapRoomScNotify\x10\xd2\
+    \x0e\x12\x19\n\x14CmdGetRogueInfoCsReq\x10\xbe\x0e\x12\x1b\n\x16CmdOpenR\
+    ogueChestCsReq\x10\xde\x0e\x12#\n\x1eCmdSyncRogueReviveInfoScNotify\x10\
+    \x98\x0e\x12#\n\x1eCmdSyncRogueAreaUnlockScNotify\x10\xab\x0e\x12#\n\x1e\
+    CmdExchangeRogueRewardKeyScRsp\x10\x96\x0e\x12\x17\n\x12CmdLeaveRogueScR\
+    sp\x10\xbf\x0e\x12\x19\n\x14CmdGetRogueInfoScRsp\x10\x93\x0e\x12\x17\n\
+    \x12CmdLeaveRogueCsReq\x10\x8b\x0e\x12\x1d\n\x18CmdGetRogueAeonInfoScRsp\
+    \x10\xc6\x0e\x12\x20\n\x1bCmdSyncRogueGetItemScNotify\x10\xea\x0e\x12%\n\
+    \x20CmdTakeRogueAeonLevelRewardCsReq\x10\x95\x0e\x12\x1e\n\x19CmdReviveR\
+    ogueAvatarScRsp\x10\xc9\x0e\x12\x17\n\x12CmdStartRogueScRsp\x10\xd7\x0e\
+    \x12!\n\x1cCmdTakeRogueScoreRewardScRsp\x10\xe4\x0e\x12!\n\x1cCmdGetRogu\
+    eInitialScoreCsReq\x10\xd0\x0e\x12(\n#CmdSyncRogueVirtualItemInfoScNotif\
+    y\x10\xeb\x0e\x12\x1d\n\x18CmdSyncRogueAeonScNotify\x10\xc0\x0e\x12\x1d\
+    \n\x18CmdEnhanceRogueBuffCsReq\x10\xbb\x0e\x12\x1f\n\x1aCmdSyncRogueFini\
+    shScNotify\x10\xdf\x0e\x12$\n\x1fCmdGetRogueBuffEnhanceInfoCsReq\x10\x90\
+    \x0e\x12!\n\x1cCmdGetRogueInitialScoreScRsp\x10\xaf\x0eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,29 +30,29 @@ pub enum CmdAdventureType {
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureTypeNone)
     CmdAdventureTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartCocoonStageCsReq)
-    CmdQuickStartCocoonStageCsReq = 1383,
+    CmdQuickStartCocoonStageCsReq = 1317,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoCsReq)
-    CmdGetFarmStageGachaInfoCsReq = 1398,
+    CmdGetFarmStageGachaInfoCsReq = 1347,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartFarmElementCsReq)
-    CmdQuickStartFarmElementCsReq = 1394,
+    CmdQuickStartFarmElementCsReq = 1351,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoScRsp)
-    CmdGetFarmStageGachaInfoScRsp = 1365,
+    CmdGetFarmStageGachaInfoScRsp = 1309,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdCocoonSweepScRsp)
-    CmdCocoonSweepScRsp = 1344,
+    CmdCocoonSweepScRsp = 1395,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureScRsp)
-    CmdEnterAdventureScRsp = 1323,
+    CmdEnterAdventureScRsp = 1338,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdFarmElementSweepScRsp)
-    CmdFarmElementSweepScRsp = 1369,
+    CmdFarmElementSweepScRsp = 1391,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdCocoonSweepCsReq)
-    CmdCocoonSweepCsReq = 1319,
+    CmdCocoonSweepCsReq = 1311,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureCsReq)
-    CmdEnterAdventureCsReq = 1399,
+    CmdEnterAdventureCsReq = 1320,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartCocoonStageScRsp)
-    CmdQuickStartCocoonStageScRsp = 1386,
+    CmdQuickStartCocoonStageScRsp = 1389,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdFarmElementSweepCsReq)
-    CmdFarmElementSweepCsReq = 1381,
+    CmdFarmElementSweepCsReq = 1361,
     // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartFarmElementScRsp)
-    CmdQuickStartFarmElementScRsp = 1352,
+    CmdQuickStartFarmElementScRsp = 1345,
 }
 
 impl ::protobuf::Enum for CmdAdventureType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdAdventureType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdAdventureType> {
         match value {
             0 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureTypeNone),
-            1383 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageCsReq),
-            1398 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
-            1394 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementCsReq),
-            1365 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
-            1344 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepScRsp),
-            1323 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
-            1369 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepScRsp),
-            1319 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepCsReq),
-            1399 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
-            1386 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageScRsp),
-            1381 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepCsReq),
-            1352 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementScRsp),
+            1317 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageCsReq),
+            1347 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
+            1351 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementCsReq),
+            1309 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
+            1395 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepScRsp),
+            1338 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
+            1391 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepScRsp),
+            1311 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepCsReq),
+            1320 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
+            1389 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageScRsp),
+            1361 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepCsReq),
+            1345 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -158,14 +158,14 @@ impl CmdAdventureType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdAdventureType.proto*\xb0\x03\n\x10CmdAdventureType\x12\x18\n\
     \x14CmdAdventureTypeNone\x10\0\x12\"\n\x1dCmdQuickStartCocoonStageCsReq\
-    \x10\xe7\n\x12\"\n\x1dCmdGetFarmStageGachaInfoCsReq\x10\xf6\n\x12\"\n\
-    \x1dCmdQuickStartFarmElementCsReq\x10\xf2\n\x12\"\n\x1dCmdGetFarmStageGa\
-    chaInfoScRsp\x10\xd5\n\x12\x18\n\x13CmdCocoonSweepScRsp\x10\xc0\n\x12\
-    \x1b\n\x16CmdEnterAdventureScRsp\x10\xab\n\x12\x1d\n\x18CmdFarmElementSw\
-    eepScRsp\x10\xd9\n\x12\x18\n\x13CmdCocoonSweepCsReq\x10\xa7\n\x12\x1b\n\
-    \x16CmdEnterAdventureCsReq\x10\xf7\n\x12\"\n\x1dCmdQuickStartCocoonStage\
-    ScRsp\x10\xea\n\x12\x1d\n\x18CmdFarmElementSweepCsReq\x10\xe5\n\x12\"\n\
-    \x1dCmdQuickStartFarmElementScRsp\x10\xc8\nb\x06proto3\
+    \x10\xa5\n\x12\"\n\x1dCmdGetFarmStageGachaInfoCsReq\x10\xc3\n\x12\"\n\
+    \x1dCmdQuickStartFarmElementCsReq\x10\xc7\n\x12\"\n\x1dCmdGetFarmStageGa\
+    chaInfoScRsp\x10\x9d\n\x12\x18\n\x13CmdCocoonSweepScRsp\x10\xf3\n\x12\
+    \x1b\n\x16CmdEnterAdventureScRsp\x10\xba\n\x12\x1d\n\x18CmdFarmElementSw\
+    eepScRsp\x10\xef\n\x12\x18\n\x13CmdCocoonSweepCsReq\x10\x9f\n\x12\x1b\n\
+    \x16CmdEnterAdventureCsReq\x10\xa8\n\x12\"\n\x1dCmdQuickStartCocoonStage\
+    ScRsp\x10\xed\n\x12\x1d\n\x18CmdFarmElementSweepCsReq\x10\xd1\n\x12\"\n\
+    \x1dCmdQuickStartFarmElementScRsp\x10\xc1\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

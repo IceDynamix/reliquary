@@ -30,19 +30,19 @@ pub enum CmdFightActivityType {
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdFightActivityTypeNone)
     CmdFightActivityTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardScRsp)
-    CmdTakeFightActivityRewardScRsp = 3694,
+    CmdTakeFightActivityRewardScRsp = 3617,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageScRsp)
-    CmdEnterFightActivityStageScRsp = 3683,
+    CmdEnterFightActivityStageScRsp = 3611,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdFightActivityDataChangeScNotify)
-    CmdFightActivityDataChangeScNotify = 3698,
+    CmdFightActivityDataChangeScNotify = 3609,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageCsReq)
-    CmdEnterFightActivityStageCsReq = 3665,
+    CmdEnterFightActivityStageCsReq = 3647,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataScRsp)
-    CmdGetFightActivityDataScRsp = 3623,
+    CmdGetFightActivityDataScRsp = 3651,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardCsReq)
-    CmdTakeFightActivityRewardCsReq = 3686,
+    CmdTakeFightActivityRewardCsReq = 3689,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataCsReq)
-    CmdGetFightActivityDataCsReq = 3699,
+    CmdGetFightActivityDataCsReq = 3638,
 }
 
 impl ::protobuf::Enum for CmdFightActivityType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdFightActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityTypeNone),
-            3694 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
-            3683 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
-            3698 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
-            3665 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
-            3623 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
-            3686 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
-            3699 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
+            3617 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
+            3611 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
+            3609 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
+            3647 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
+            3651 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
+            3689 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
+            3638 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -128,11 +128,11 @@ impl CmdFightActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdFightActivityType.proto*\xbb\x02\n\x14CmdFightActivityType\x12\
     \x1c\n\x18CmdFightActivityTypeNone\x10\0\x12$\n\x1fCmdTakeFightActivityR\
-    ewardScRsp\x10\xee\x1c\x12$\n\x1fCmdEnterFightActivityStageScRsp\x10\xe3\
-    \x1c\x12'\n\"CmdFightActivityDataChangeScNotify\x10\xf2\x1c\x12$\n\x1fCm\
-    dEnterFightActivityStageCsReq\x10\xd1\x1c\x12!\n\x1cCmdGetFightActivityD\
-    ataScRsp\x10\xa7\x1c\x12$\n\x1fCmdTakeFightActivityRewardCsReq\x10\xe6\
-    \x1c\x12!\n\x1cCmdGetFightActivityDataCsReq\x10\xf3\x1cb\x06proto3\
+    ewardScRsp\x10\xa1\x1c\x12$\n\x1fCmdEnterFightActivityStageScRsp\x10\x9b\
+    \x1c\x12'\n\"CmdFightActivityDataChangeScNotify\x10\x99\x1c\x12$\n\x1fCm\
+    dEnterFightActivityStageCsReq\x10\xbf\x1c\x12!\n\x1cCmdGetFightActivityD\
+    ataScRsp\x10\xc3\x1c\x12$\n\x1fCmdTakeFightActivityRewardCsReq\x10\xe9\
+    \x1c\x12!\n\x1cCmdGetFightActivityDataCsReq\x10\xb6\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

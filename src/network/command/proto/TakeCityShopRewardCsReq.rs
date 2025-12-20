@@ -82,7 +82,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
                 40 => {
                     self.shop_id = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
             my_size += ::protobuf::rt::uint32_size(5, self.shop_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
             os.write_uint32(5, self.shop_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(12, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeCityShopRewardCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeCityShopRewardCsReq.proto\"H\n\x17TakeCityShopRewardCsReq\x12\
     \x17\n\x07shop_id\x18\x05\x20\x01(\rR\x06shopId\x12\x14\n\x05level\x18\
-    \x0b\x20\x01(\rR\x05levelb\x06proto3\
+    \x0c\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

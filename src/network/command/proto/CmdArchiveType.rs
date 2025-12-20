@@ -30,13 +30,13 @@ pub enum CmdArchiveType {
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveTypeNone)
     CmdArchiveTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetArchiveDataCsReq)
-    CmdGetArchiveDataCsReq = 2399,
+    CmdGetArchiveDataCsReq = 2309,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetUpdatedArchiveDataCsReq)
-    CmdGetUpdatedArchiveDataCsReq = 2398,
+    CmdGetUpdatedArchiveDataCsReq = 2317,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetUpdatedArchiveDataScRsp)
-    CmdGetUpdatedArchiveDataScRsp = 2365,
+    CmdGetUpdatedArchiveDataScRsp = 2338,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdGetArchiveDataScRsp)
-    CmdGetArchiveDataScRsp = 2323,
+    CmdGetArchiveDataScRsp = 2347,
 }
 
 impl ::protobuf::Enum for CmdArchiveType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdArchiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdArchiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveTypeNone),
-            2399 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataCsReq),
-            2398 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
-            2365 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataScRsp),
-            2323 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
+            2309 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataCsReq),
+            2317 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataCsReq),
+            2338 => ::std::option::Option::Some(CmdArchiveType::CmdGetUpdatedArchiveDataScRsp),
+            2347 => ::std::option::Option::Some(CmdArchiveType::CmdGetArchiveDataScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -109,10 +109,10 @@ impl CmdArchiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdArchiveType.proto*\xaa\x01\n\x0eCmdArchiveType\x12\x16\n\x12Cmd\
-    ArchiveTypeNone\x10\0\x12\x1b\n\x16CmdGetArchiveDataCsReq\x10\xdf\x12\
-    \x12\"\n\x1dCmdGetUpdatedArchiveDataCsReq\x10\xde\x12\x12\"\n\x1dCmdGetU\
-    pdatedArchiveDataScRsp\x10\xbd\x12\x12\x1b\n\x16CmdGetArchiveDataScRsp\
-    \x10\x93\x12b\x06proto3\
+    ArchiveTypeNone\x10\0\x12\x1b\n\x16CmdGetArchiveDataCsReq\x10\x85\x12\
+    \x12\"\n\x1dCmdGetUpdatedArchiveDataCsReq\x10\x8d\x12\x12\"\n\x1dCmdGetU\
+    pdatedArchiveDataScRsp\x10\xa2\x12\x12\x1b\n\x16CmdGetArchiveDataScRsp\
+    \x10\xab\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

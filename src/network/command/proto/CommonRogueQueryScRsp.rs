@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CommonRogueQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:CommonRogueQueryScRsp.system_info)
-    pub system_info: ::protobuf::MessageField<super::LGJMDNNMPPE::LGJMDNNMPPE>,
     // @@protoc_insertion_point(field:CommonRogueQueryScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:CommonRogueQueryScRsp.JMLJELDNBMA)
-    pub JMLJELDNBMA: u32,
+    // @@protoc_insertion_point(field:CommonRogueQueryScRsp.ADHDALLKGPG)
+    pub ADHDALLKGPG: u32,
+    // @@protoc_insertion_point(field:CommonRogueQueryScRsp.rogue_get_info)
+    pub rogue_get_info: ::std::vec::Vec<super::BJEGLFAJKHA::BJEGLFAJKHA>,
     // special fields
     // @@protoc_insertion_point(special_field:CommonRogueQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl CommonRogueQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGJMDNNMPPE::LGJMDNNMPPE>(
-            "system_info",
-            |m: &CommonRogueQueryScRsp| { &m.system_info },
-            |m: &mut CommonRogueQueryScRsp| { &mut m.system_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &CommonRogueQueryScRsp| { &m.retcode },
             |m: &mut CommonRogueQueryScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMLJELDNBMA",
-            |m: &CommonRogueQueryScRsp| { &m.JMLJELDNBMA },
-            |m: &mut CommonRogueQueryScRsp| { &mut m.JMLJELDNBMA },
+            "ADHDALLKGPG",
+            |m: &CommonRogueQueryScRsp| { &m.ADHDALLKGPG },
+            |m: &mut CommonRogueQueryScRsp| { &mut m.ADHDALLKGPG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "rogue_get_info",
+            |m: &CommonRogueQueryScRsp| { &m.rogue_get_info },
+            |m: &mut CommonRogueQueryScRsp| { &mut m.rogue_get_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueQueryScRsp>(
             "CommonRogueQueryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CommonRogueQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.system_info)?;
-                },
-                88 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.JMLJELDNBMA = is.read_uint32()?;
+                104 => {
+                    self.ADHDALLKGPG = is.read_uint32()?;
+                },
+                122 => {
+                    self.rogue_get_info.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for CommonRogueQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.system_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.JMLJELDNBMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JMLJELDNBMA);
+        if self.ADHDALLKGPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ADHDALLKGPG);
         }
+        for value in &self.rogue_get_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.system_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.JMLJELDNBMA != 0 {
-            os.write_uint32(14, self.JMLJELDNBMA)?;
+        if self.ADHDALLKGPG != 0 {
+            os.write_uint32(13, self.ADHDALLKGPG)?;
         }
+        for v in &self.rogue_get_info {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for CommonRogueQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.system_info.clear();
         self.retcode = 0;
-        self.JMLJELDNBMA = 0;
+        self.ADHDALLKGPG = 0;
+        self.rogue_get_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CommonRogueQueryScRsp {
         static instance: CommonRogueQueryScRsp = CommonRogueQueryScRsp {
-            system_info: ::protobuf::MessageField::none(),
             retcode: 0,
-            JMLJELDNBMA: 0,
+            ADHDALLKGPG: 0,
+            rogue_get_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for CommonRogueQueryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCommonRogueQueryScRsp.proto\x1a\x11LGJMDNNMPPE.proto\"\x82\x01\n\
-    \x15CommonRogueQueryScRsp\x12-\n\x0bsystem_info\x18\x05\x20\x01(\x0b2\
-    \x0c.LGJMDNNMPPER\nsystemInfo\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\
-    \x07retcode\x12\x20\n\x0bJMLJELDNBMA\x18\x0e\x20\x01(\rR\x0bJMLJELDNBMAb\
-    \x06proto3\
+    \n\x1bCommonRogueQueryScRsp.proto\x1a\x11BJEGLFAJKHA.proto\"\x87\x01\n\
+    \x15CommonRogueQueryScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07re\
+    tcode\x12\x20\n\x0bADHDALLKGPG\x18\r\x20\x01(\rR\x0bADHDALLKGPG\x122\n\
+    \x0erogue_get_info\x18\x0f\x20\x03(\x0b2\x0c.BJEGLFAJKHAR\x0crogueGetInf\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LGJMDNNMPPE::file_descriptor().clone());
+            deps.push(super::BJEGLFAJKHA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CommonRogueQueryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

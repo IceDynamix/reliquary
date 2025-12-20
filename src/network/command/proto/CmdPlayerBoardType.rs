@@ -30,35 +30,35 @@ pub enum CmdPlayerBoardType {
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardTypeNone)
     CmdPlayerBoardTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetDisplayAvatarCsReq)
-    CmdSetDisplayAvatarCsReq = 2883,
+    CmdSetDisplayAvatarCsReq = 2820,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetAssistAvatarCsReq)
-    CmdSetAssistAvatarCsReq = 2869,
+    CmdSetAssistAvatarCsReq = 2838,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdUnlockHeadIconScNotify)
-    CmdUnlockHeadIconScNotify = 2819,
+    CmdUnlockHeadIconScNotify = 2851,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetSignatureCsReq)
-    CmdSetSignatureCsReq = 2844,
+    CmdSetSignatureCsReq = 2861,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdGetPlayerBoardDataCsReq)
-    CmdGetPlayerBoardDataCsReq = 2899,
+    CmdGetPlayerBoardDataCsReq = 2891,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetAssistAvatarScRsp)
-    CmdSetAssistAvatarScRsp = 2857,
+    CmdSetAssistAvatarScRsp = 2809,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetSignatureScRsp)
-    CmdSetSignatureScRsp = 2881,
+    CmdSetSignatureScRsp = 2852,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetHeadIconCsReq)
-    CmdSetHeadIconCsReq = 2898,
+    CmdSetHeadIconCsReq = 2876,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetPersonalCardScRsp)
-    CmdSetPersonalCardScRsp = 2892,
+    CmdSetPersonalCardScRsp = 2895,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetPersonalCardCsReq)
-    CmdSetPersonalCardCsReq = 2815,
+    CmdSetPersonalCardCsReq = 2847,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetHeadIconScRsp)
-    CmdSetHeadIconScRsp = 2865,
+    CmdSetHeadIconScRsp = 2850,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetIsDisplayAvatarInfoScRsp)
-    CmdSetIsDisplayAvatarInfoScRsp = 2852,
+    CmdSetIsDisplayAvatarInfoScRsp = 2811,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetIsDisplayAvatarInfoCsReq)
-    CmdSetIsDisplayAvatarInfoCsReq = 2894,
+    CmdSetIsDisplayAvatarInfoCsReq = 2845,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdGetPlayerBoardDataScRsp)
-    CmdGetPlayerBoardDataScRsp = 2823,
+    CmdGetPlayerBoardDataScRsp = 2817,
     // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdSetDisplayAvatarScRsp)
-    CmdSetDisplayAvatarScRsp = 2886,
+    CmdSetDisplayAvatarScRsp = 2889,
 }
 
 impl ::protobuf::Enum for CmdPlayerBoardType {
@@ -71,21 +71,21 @@ impl ::protobuf::Enum for CmdPlayerBoardType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerBoardType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardTypeNone),
-            2883 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetDisplayAvatarCsReq),
-            2869 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetAssistAvatarCsReq),
-            2819 => ::std::option::Option::Some(CmdPlayerBoardType::CmdUnlockHeadIconScNotify),
-            2844 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetSignatureCsReq),
-            2899 => ::std::option::Option::Some(CmdPlayerBoardType::CmdGetPlayerBoardDataCsReq),
-            2857 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetAssistAvatarScRsp),
-            2881 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetSignatureScRsp),
-            2898 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetHeadIconCsReq),
-            2892 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetPersonalCardScRsp),
-            2815 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetPersonalCardCsReq),
-            2865 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetHeadIconScRsp),
-            2852 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetIsDisplayAvatarInfoScRsp),
-            2894 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetIsDisplayAvatarInfoCsReq),
-            2823 => ::std::option::Option::Some(CmdPlayerBoardType::CmdGetPlayerBoardDataScRsp),
-            2886 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetDisplayAvatarScRsp),
+            2820 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetDisplayAvatarCsReq),
+            2838 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetAssistAvatarCsReq),
+            2851 => ::std::option::Option::Some(CmdPlayerBoardType::CmdUnlockHeadIconScNotify),
+            2861 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetSignatureCsReq),
+            2891 => ::std::option::Option::Some(CmdPlayerBoardType::CmdGetPlayerBoardDataCsReq),
+            2809 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetAssistAvatarScRsp),
+            2852 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetSignatureScRsp),
+            2876 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetHeadIconCsReq),
+            2895 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetPersonalCardScRsp),
+            2847 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetPersonalCardCsReq),
+            2850 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetHeadIconScRsp),
+            2811 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetIsDisplayAvatarInfoScRsp),
+            2845 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetIsDisplayAvatarInfoCsReq),
+            2817 => ::std::option::Option::Some(CmdPlayerBoardType::CmdGetPlayerBoardDataScRsp),
+            2889 => ::std::option::Option::Some(CmdPlayerBoardType::CmdSetDisplayAvatarScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -176,16 +176,16 @@ impl CmdPlayerBoardType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdPlayerBoardType.proto*\xfc\x03\n\x12CmdPlayerBoardType\x12\x1a\
     \n\x16CmdPlayerBoardTypeNone\x10\0\x12\x1d\n\x18CmdSetDisplayAvatarCsReq\
-    \x10\xc3\x16\x12\x1c\n\x17CmdSetAssistAvatarCsReq\x10\xb5\x16\x12\x1e\n\
-    \x19CmdUnlockHeadIconScNotify\x10\x83\x16\x12\x19\n\x14CmdSetSignatureCs\
-    Req\x10\x9c\x16\x12\x1f\n\x1aCmdGetPlayerBoardDataCsReq\x10\xd3\x16\x12\
-    \x1c\n\x17CmdSetAssistAvatarScRsp\x10\xa9\x16\x12\x19\n\x14CmdSetSignatu\
-    reScRsp\x10\xc1\x16\x12\x18\n\x13CmdSetHeadIconCsReq\x10\xd2\x16\x12\x1c\
-    \n\x17CmdSetPersonalCardScRsp\x10\xcc\x16\x12\x1c\n\x17CmdSetPersonalCar\
-    dCsReq\x10\xff\x15\x12\x18\n\x13CmdSetHeadIconScRsp\x10\xb1\x16\x12#\n\
-    \x1eCmdSetIsDisplayAvatarInfoScRsp\x10\xa4\x16\x12#\n\x1eCmdSetIsDisplay\
-    AvatarInfoCsReq\x10\xce\x16\x12\x1f\n\x1aCmdGetPlayerBoardDataScRsp\x10\
-    \x87\x16\x12\x1d\n\x18CmdSetDisplayAvatarScRsp\x10\xc6\x16b\x06proto3\
+    \x10\x84\x16\x12\x1c\n\x17CmdSetAssistAvatarCsReq\x10\x96\x16\x12\x1e\n\
+    \x19CmdUnlockHeadIconScNotify\x10\xa3\x16\x12\x19\n\x14CmdSetSignatureCs\
+    Req\x10\xad\x16\x12\x1f\n\x1aCmdGetPlayerBoardDataCsReq\x10\xcb\x16\x12\
+    \x1c\n\x17CmdSetAssistAvatarScRsp\x10\xf9\x15\x12\x19\n\x14CmdSetSignatu\
+    reScRsp\x10\xa4\x16\x12\x18\n\x13CmdSetHeadIconCsReq\x10\xbc\x16\x12\x1c\
+    \n\x17CmdSetPersonalCardScRsp\x10\xcf\x16\x12\x1c\n\x17CmdSetPersonalCar\
+    dCsReq\x10\x9f\x16\x12\x18\n\x13CmdSetHeadIconScRsp\x10\xa2\x16\x12#\n\
+    \x1eCmdSetIsDisplayAvatarInfoScRsp\x10\xfb\x15\x12#\n\x1eCmdSetIsDisplay\
+    AvatarInfoCsReq\x10\x9d\x16\x12\x1f\n\x1aCmdGetPlayerBoardDataScRsp\x10\
+    \x81\x16\x12\x1d\n\x18CmdSetDisplayAvatarScRsp\x10\xc9\x16b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

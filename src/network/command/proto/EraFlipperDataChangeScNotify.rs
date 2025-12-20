@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct EraFlipperDataChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.data)
-    pub data: ::protobuf::MessageField<super::KKEAENNDMKB::KKEAENNDMKB>,
+    pub data: ::protobuf::MessageField<super::KAODJLBGPML::KAODJLBGPML>,
     // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.floor_id)
     pub floor_id: u32,
     // special fields
@@ -51,7 +51,7 @@ impl EraFlipperDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KKEAENNDMKB::KKEAENNDMKB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KAODJLBGPML::KAODJLBGPML>(
             "data",
             |m: &EraFlipperDataChangeScNotify| { &m.data },
             |m: &mut EraFlipperDataChangeScNotify| { &mut m.data },
@@ -79,7 +79,7 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 72 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.floor_id != 0 {
             os.write_uint32(9, self.floor_id)?;
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EraFlipperDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"EraFlipperDataChangeScNotify.proto\x1a\x11KKEAENNDMKB.proto\"[\n\x1c\
-    EraFlipperDataChangeScNotify\x12\x20\n\x04data\x18\x04\x20\x01(\x0b2\x0c\
-    .KKEAENNDMKBR\x04data\x12\x19\n\x08floor_id\x18\t\x20\x01(\rR\x07floorId\
+    \n\"EraFlipperDataChangeScNotify.proto\x1a\x11KAODJLBGPML.proto\"[\n\x1c\
+    EraFlipperDataChangeScNotify\x12\x20\n\x04data\x18\x02\x20\x01(\x0b2\x0c\
+    .KAODJLBGPMLR\x04data\x12\x19\n\x08floor_id\x18\t\x20\x01(\rR\x07floorId\
     b\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KKEAENNDMKB::file_descriptor().clone());
+            deps.push(super::KAODJLBGPML::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EraFlipperDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

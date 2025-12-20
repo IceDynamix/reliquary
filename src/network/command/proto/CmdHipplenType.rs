@@ -30,41 +30,41 @@ pub enum CmdHipplenType {
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenTypeNone)
     CmdHipplenTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdOpenHipplenCycleCsReq)
-    CmdOpenHipplenCycleCsReq = 9043,
+    CmdOpenHipplenCycleCsReq = 9002,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenAgendaScRsp)
-    CmdSetHipplenAgendaScRsp = 9027,
+    CmdSetHipplenAgendaScRsp = 9012,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenOutfitCsReq)
-    CmdSetHipplenOutfitCsReq = 9023,
+    CmdSetHipplenOutfitCsReq = 9025,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdTakeHipplenEndingRewardCsReq)
-    CmdTakeHipplenEndingRewardCsReq = 9011,
+    CmdTakeHipplenEndingRewardCsReq = 9043,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdTakeHipplenEndingRewardScRsp)
-    CmdTakeHipplenEndingRewardScRsp = 9029,
+    CmdTakeHipplenEndingRewardScRsp = 9013,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenDataScRsp)
-    CmdGetHipplenDataScRsp = 9028,
+    CmdGetHipplenDataScRsp = 9035,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenInheritScRsp)
-    CmdGetHipplenInheritScRsp = 9038,
+    CmdGetHipplenInheritScRsp = 9017,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenChangeScNotify)
-    CmdHipplenChangeScNotify = 9035,
+    CmdHipplenChangeScNotify = 9048,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenInheritCsReq)
-    CmdGetHipplenInheritCsReq = 9021,
+    CmdGetHipplenInheritCsReq = 9007,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSettleHipplenWorkScRsp)
-    CmdSettleHipplenWorkScRsp = 9044,
+    CmdSettleHipplenWorkScRsp = 9005,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenOutfitScRsp)
-    CmdSetHipplenOutfitScRsp = 9019,
+    CmdSetHipplenOutfitScRsp = 9050,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenAgendaResultScNotify)
-    CmdHipplenAgendaResultScNotify = 9001,
+    CmdHipplenAgendaResultScNotify = 9019,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenTraitUnlockScNotify)
-    CmdHipplenTraitUnlockScNotify = 9030,
+    CmdHipplenTraitUnlockScNotify = 9033,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenDataCsReq)
-    CmdGetHipplenDataCsReq = 9026,
+    CmdGetHipplenDataCsReq = 9046,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenAgendaCsReq)
-    CmdSetHipplenAgendaCsReq = 9005,
+    CmdSetHipplenAgendaCsReq = 9031,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSettleHipplenWorkCsReq)
-    CmdSettleHipplenWorkCsReq = 9020,
+    CmdSettleHipplenWorkCsReq = 9009,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenCycleResultScNotify)
-    CmdHipplenCycleResultScNotify = 9045,
+    CmdHipplenCycleResultScNotify = 9010,
     // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdOpenHipplenCycleScRsp)
-    CmdOpenHipplenCycleScRsp = 9003,
+    CmdOpenHipplenCycleScRsp = 9027,
 }
 
 impl ::protobuf::Enum for CmdHipplenType {
@@ -77,24 +77,24 @@ impl ::protobuf::Enum for CmdHipplenType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdHipplenType> {
         match value {
             0 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTypeNone),
-            9043 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleCsReq),
-            9027 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaScRsp),
-            9023 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitCsReq),
-            9011 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardCsReq),
-            9029 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardScRsp),
-            9028 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataScRsp),
-            9038 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritScRsp),
-            9035 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenChangeScNotify),
-            9021 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritCsReq),
-            9044 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkScRsp),
-            9019 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitScRsp),
-            9001 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenAgendaResultScNotify),
-            9030 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTraitUnlockScNotify),
-            9026 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataCsReq),
-            9005 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaCsReq),
-            9020 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkCsReq),
-            9045 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenCycleResultScNotify),
-            9003 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleScRsp),
+            9002 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleCsReq),
+            9012 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaScRsp),
+            9025 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitCsReq),
+            9043 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardCsReq),
+            9013 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardScRsp),
+            9035 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataScRsp),
+            9017 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritScRsp),
+            9048 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenChangeScNotify),
+            9007 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritCsReq),
+            9005 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkScRsp),
+            9050 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitScRsp),
+            9019 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenAgendaResultScNotify),
+            9033 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTraitUnlockScNotify),
+            9046 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataCsReq),
+            9031 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaCsReq),
+            9009 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkCsReq),
+            9010 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenCycleResultScNotify),
+            9027 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -193,19 +193,19 @@ impl CmdHipplenType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdHipplenType.proto*\xf4\x04\n\x0eCmdHipplenType\x12\x16\n\x12Cmd\
-    HipplenTypeNone\x10\0\x12\x1d\n\x18CmdOpenHipplenCycleCsReq\x10\xd3F\x12\
-    \x1d\n\x18CmdSetHipplenAgendaScRsp\x10\xc3F\x12\x1d\n\x18CmdSetHipplenOu\
-    tfitCsReq\x10\xbfF\x12$\n\x1fCmdTakeHipplenEndingRewardCsReq\x10\xb3F\
-    \x12$\n\x1fCmdTakeHipplenEndingRewardScRsp\x10\xc5F\x12\x1b\n\x16CmdGetH\
-    ipplenDataScRsp\x10\xc4F\x12\x1e\n\x19CmdGetHipplenInheritScRsp\x10\xceF\
-    \x12\x1d\n\x18CmdHipplenChangeScNotify\x10\xcbF\x12\x1e\n\x19CmdGetHippl\
-    enInheritCsReq\x10\xbdF\x12\x1e\n\x19CmdSettleHipplenWorkScRsp\x10\xd4F\
-    \x12\x1d\n\x18CmdSetHipplenOutfitScRsp\x10\xbbF\x12#\n\x1eCmdHipplenAgen\
-    daResultScNotify\x10\xa9F\x12\"\n\x1dCmdHipplenTraitUnlockScNotify\x10\
-    \xc6F\x12\x1b\n\x16CmdGetHipplenDataCsReq\x10\xc2F\x12\x1d\n\x18CmdSetHi\
-    pplenAgendaCsReq\x10\xadF\x12\x1e\n\x19CmdSettleHipplenWorkCsReq\x10\xbc\
-    F\x12\"\n\x1dCmdHipplenCycleResultScNotify\x10\xd5F\x12\x1d\n\x18CmdOpen\
-    HipplenCycleScRsp\x10\xabFb\x06proto3\
+    HipplenTypeNone\x10\0\x12\x1d\n\x18CmdOpenHipplenCycleCsReq\x10\xaaF\x12\
+    \x1d\n\x18CmdSetHipplenAgendaScRsp\x10\xb4F\x12\x1d\n\x18CmdSetHipplenOu\
+    tfitCsReq\x10\xc1F\x12$\n\x1fCmdTakeHipplenEndingRewardCsReq\x10\xd3F\
+    \x12$\n\x1fCmdTakeHipplenEndingRewardScRsp\x10\xb5F\x12\x1b\n\x16CmdGetH\
+    ipplenDataScRsp\x10\xcbF\x12\x1e\n\x19CmdGetHipplenInheritScRsp\x10\xb9F\
+    \x12\x1d\n\x18CmdHipplenChangeScNotify\x10\xd8F\x12\x1e\n\x19CmdGetHippl\
+    enInheritCsReq\x10\xafF\x12\x1e\n\x19CmdSettleHipplenWorkScRsp\x10\xadF\
+    \x12\x1d\n\x18CmdSetHipplenOutfitScRsp\x10\xdaF\x12#\n\x1eCmdHipplenAgen\
+    daResultScNotify\x10\xbbF\x12\"\n\x1dCmdHipplenTraitUnlockScNotify\x10\
+    \xc9F\x12\x1b\n\x16CmdGetHipplenDataCsReq\x10\xd6F\x12\x1d\n\x18CmdSetHi\
+    pplenAgendaCsReq\x10\xc7F\x12\x1e\n\x19CmdSettleHipplenWorkCsReq\x10\xb1\
+    F\x12\"\n\x1dCmdHipplenCycleResultScNotify\x10\xb2F\x12\x1d\n\x18CmdOpen\
+    HipplenCycleScRsp\x10\xc3Fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

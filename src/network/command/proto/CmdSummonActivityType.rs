@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSummonActivityType)
 pub enum CmdSummonActivityType {
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityTypeNone)
-    CmdSummonActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdEnterSummonActivityStageCsReq)
-    CmdEnterSummonActivityStageCsReq = 7564,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityBattleEndScNotify)
-    CmdSummonActivityBattleEndScNotify = 7570,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdEnterSummonActivityStageScRsp)
-    CmdEnterSummonActivityStageScRsp = 7569,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataScRsp)
-    CmdGetSummonActivityDataScRsp = 7567,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdGetSummonActivityDataCsReq)
-    CmdGetSummonActivityDataCsReq = 7566,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_ALOCMFAKBKP)
+    HPJEINEJAJO_ALOCMFAKBKP = 0,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_FBKHNNBHCOJ)
+    HPJEINEJAJO_FBKHNNBHCOJ = 7561,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_DCEFLIBABFI)
+    HPJEINEJAJO_DCEFLIBABFI = 7567,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_OIDDFPEIILB)
+    HPJEINEJAJO_OIDDFPEIILB = 7562,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_MHKMBMBIGLN)
+    HPJEINEJAJO_MHKMBMBIGLN = 7570,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_HJPKMLGCCDF)
+    HPJEINEJAJO_HJPKMLGCCDF = 7563,
 }
 
 impl ::protobuf::Enum for CmdSummonActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdSummonActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSummonActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityTypeNone),
-            7564 => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageCsReq),
-            7570 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityBattleEndScNotify),
-            7569 => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageScRsp),
-            7567 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
-            7566 => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
+            0 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP),
+            7561 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ),
+            7567 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI),
+            7562 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB),
+            7570 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN),
+            7563 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSummonActivityType> {
         match str {
-            "CmdSummonActivityTypeNone" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityTypeNone),
-            "CmdEnterSummonActivityStageCsReq" => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageCsReq),
-            "CmdSummonActivityBattleEndScNotify" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityBattleEndScNotify),
-            "CmdEnterSummonActivityStageScRsp" => ::std::option::Option::Some(CmdSummonActivityType::CmdEnterSummonActivityStageScRsp),
-            "CmdGetSummonActivityDataScRsp" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataScRsp),
-            "CmdGetSummonActivityDataCsReq" => ::std::option::Option::Some(CmdSummonActivityType::CmdGetSummonActivityDataCsReq),
+            "HPJEINEJAJO_ALOCMFAKBKP" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP),
+            "HPJEINEJAJO_FBKHNNBHCOJ" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ),
+            "HPJEINEJAJO_DCEFLIBABFI" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI),
+            "HPJEINEJAJO_OIDDFPEIILB" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB),
+            "HPJEINEJAJO_MHKMBMBIGLN" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN),
+            "HPJEINEJAJO_HJPKMLGCCDF" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSummonActivityType] = &[
-        CmdSummonActivityType::CmdSummonActivityTypeNone,
-        CmdSummonActivityType::CmdEnterSummonActivityStageCsReq,
-        CmdSummonActivityType::CmdSummonActivityBattleEndScNotify,
-        CmdSummonActivityType::CmdEnterSummonActivityStageScRsp,
-        CmdSummonActivityType::CmdGetSummonActivityDataScRsp,
-        CmdSummonActivityType::CmdGetSummonActivityDataCsReq,
+        CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP,
+        CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ,
+        CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI,
+        CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB,
+        CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN,
+        CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSummonActivityType::CmdSummonActivityTypeNone => 0,
-            CmdSummonActivityType::CmdEnterSummonActivityStageCsReq => 1,
-            CmdSummonActivityType::CmdSummonActivityBattleEndScNotify => 2,
-            CmdSummonActivityType::CmdEnterSummonActivityStageScRsp => 3,
-            CmdSummonActivityType::CmdGetSummonActivityDataScRsp => 4,
-            CmdSummonActivityType::CmdGetSummonActivityDataCsReq => 5,
+            CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP => 0,
+            CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ => 1,
+            CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI => 2,
+            CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB => 3,
+            CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN => 4,
+            CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
 impl ::std::default::Default for CmdSummonActivityType {
     fn default() -> Self {
-        CmdSummonActivityType::CmdSummonActivityTypeNone
+        CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP
     }
 }
 
@@ -114,12 +114,11 @@ impl CmdSummonActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdSummonActivityType.proto*\xf5\x01\n\x15CmdSummonActivityType\
-    \x12\x1d\n\x19CmdSummonActivityTypeNone\x10\0\x12%\n\x20CmdEnterSummonAc\
-    tivityStageCsReq\x10\x8c;\x12'\n\"CmdSummonActivityBattleEndScNotify\x10\
-    \x92;\x12%\n\x20CmdEnterSummonActivityStageScRsp\x10\x91;\x12\"\n\x1dCmd\
-    GetSummonActivityDataScRsp\x10\x8f;\x12\"\n\x1dCmdGetSummonActivityDataC\
-    sReq\x10\x8e;b\x06proto3\
+    \n\x1bCmdSummonActivityType.proto*\xca\x01\n\x15CmdSummonActivityType\
+    \x12\x1b\n\x17HPJEINEJAJO_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HPJEINEJAJO_FBK\
+    HNNBHCOJ\x10\x89;\x12\x1c\n\x17HPJEINEJAJO_DCEFLIBABFI\x10\x8f;\x12\x1c\
+    \n\x17HPJEINEJAJO_OIDDFPEIILB\x10\x8a;\x12\x1c\n\x17HPJEINEJAJO_MHKMBMBI\
+    GLN\x10\x92;\x12\x1c\n\x17HPJEINEJAJO_HJPKMLGCCDF\x10\x8b;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

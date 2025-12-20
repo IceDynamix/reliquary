@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetStageLineupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetStageLineupScRsp.stage_lineup_list)
-    pub stage_lineup_list: ::std::vec::Vec<super::StageLineup::StageLineup>,
+    // @@protoc_insertion_point(field:GetStageLineupScRsp.IGCLEAAPFPC)
+    pub IGCLEAAPFPC: ::std::vec::Vec<super::AFACFJMDBDJ::AFACFJMDBDJ>,
     // @@protoc_insertion_point(field:GetStageLineupScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetStageLineupScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "stage_lineup_list",
-            |m: &GetStageLineupScRsp| { &m.stage_lineup_list },
-            |m: &mut GetStageLineupScRsp| { &mut m.stage_lineup_list },
+            "IGCLEAAPFPC",
+            |m: &GetStageLineupScRsp| { &m.IGCLEAAPFPC },
+            |m: &mut GetStageLineupScRsp| { &mut m.IGCLEAAPFPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetStageLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.stage_lineup_list.push(is.read_message()?);
+                90 => {
+                    self.IGCLEAAPFPC.push(is.read_message()?);
                 },
-                120 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetStageLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.stage_lineup_list {
+        for value in &self.IGCLEAAPFPC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetStageLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.stage_lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.IGCLEAAPFPC {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetStageLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.stage_lineup_list.clear();
+        self.IGCLEAAPFPC.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetStageLineupScRsp {
         static instance: GetStageLineupScRsp = GetStageLineupScRsp {
-            stage_lineup_list: ::std::vec::Vec::new(),
+            IGCLEAAPFPC: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetStageLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetStageLineupScRsp.proto\x1a\x11StageLineup.proto\"i\n\x13GetStag\
-    eLineupScRsp\x128\n\x11stage_lineup_list\x18\x01\x20\x03(\x0b2\x0c.Stage\
-    LineupR\x0fstageLineupList\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x19GetStageLineupScRsp.proto\x1a\x11AFACFJMDBDJ.proto\"_\n\x13GetStag\
+    eLineupScRsp\x12.\n\x0bIGCLEAAPFPC\x18\x0b\x20\x03(\x0b2\x0c.AFACFJMDBDJ\
+    R\x0bIGCLEAAPFPC\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::StageLineup::file_descriptor().clone());
+            deps.push(super::AFACFJMDBDJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetStageLineupScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

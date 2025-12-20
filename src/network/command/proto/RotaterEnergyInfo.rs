@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotaterEnergyInfo {
     // message fields
-    // @@protoc_insertion_point(field:RotaterEnergyInfo.AEJDBMCIJIO)
-    pub AEJDBMCIJIO: u32,
-    // @@protoc_insertion_point(field:RotaterEnergyInfo.CNLPKMHDELE)
-    pub CNLPKMHDELE: u32,
+    // @@protoc_insertion_point(field:RotaterEnergyInfo.cur_num)
+    pub cur_num: u32,
+    // @@protoc_insertion_point(field:RotaterEnergyInfo.max_num)
+    pub max_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RotaterEnergyInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RotaterEnergyInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEJDBMCIJIO",
-            |m: &RotaterEnergyInfo| { &m.AEJDBMCIJIO },
-            |m: &mut RotaterEnergyInfo| { &mut m.AEJDBMCIJIO },
+            "cur_num",
+            |m: &RotaterEnergyInfo| { &m.cur_num },
+            |m: &mut RotaterEnergyInfo| { &mut m.cur_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CNLPKMHDELE",
-            |m: &RotaterEnergyInfo| { &m.CNLPKMHDELE },
-            |m: &mut RotaterEnergyInfo| { &mut m.CNLPKMHDELE },
+            "max_num",
+            |m: &RotaterEnergyInfo| { &m.max_num },
+            |m: &mut RotaterEnergyInfo| { &mut m.max_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RotaterEnergyInfo>(
             "RotaterEnergyInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.AEJDBMCIJIO = is.read_uint32()?;
+                32 => {
+                    self.cur_num = is.read_uint32()?;
                 },
-                120 => {
-                    self.CNLPKMHDELE = is.read_uint32()?;
+                16 => {
+                    self.max_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AEJDBMCIJIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AEJDBMCIJIO);
+        if self.cur_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_num);
         }
-        if self.CNLPKMHDELE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CNLPKMHDELE);
+        if self.max_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.max_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AEJDBMCIJIO != 0 {
-            os.write_uint32(6, self.AEJDBMCIJIO)?;
+        if self.cur_num != 0 {
+            os.write_uint32(4, self.cur_num)?;
         }
-        if self.CNLPKMHDELE != 0 {
-            os.write_uint32(15, self.CNLPKMHDELE)?;
+        if self.max_num != 0 {
+            os.write_uint32(2, self.max_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     }
 
     fn clear(&mut self) {
-        self.AEJDBMCIJIO = 0;
-        self.CNLPKMHDELE = 0;
+        self.cur_num = 0;
+        self.max_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotaterEnergyInfo {
         static instance: RotaterEnergyInfo = RotaterEnergyInfo {
-            AEJDBMCIJIO: 0,
-            CNLPKMHDELE: 0,
+            cur_num: 0,
+            max_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RotaterEnergyInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17RotaterEnergyInfo.proto\"W\n\x11RotaterEnergyInfo\x12\x20\n\x0bAEJ\
-    DBMCIJIO\x18\x06\x20\x01(\rR\x0bAEJDBMCIJIO\x12\x20\n\x0bCNLPKMHDELE\x18\
-    \x0f\x20\x01(\rR\x0bCNLPKMHDELEb\x06proto3\
+    \n\x17RotaterEnergyInfo.proto\"E\n\x11RotaterEnergyInfo\x12\x17\n\x07cur\
+    _num\x18\x04\x20\x01(\rR\x06curNum\x12\x17\n\x07max_num\x18\x02\x20\x01(\
+    \rR\x06maxNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

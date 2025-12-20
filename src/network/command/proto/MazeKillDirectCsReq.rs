@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeKillDirectCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MazeKillDirectCsReq.source_type)
-    pub source_type: ::protobuf::EnumOrUnknown<super::MazeKillSource::MazeKillSource>,
+    // @@protoc_insertion_point(field:MazeKillDirectCsReq.PHKOPCBNOCC)
+    pub PHKOPCBNOCC: ::protobuf::EnumOrUnknown<super::JAPNONNGHIA::JAPNONNGHIA>,
+    // @@protoc_insertion_point(field:MazeKillDirectCsReq.PKNBNHFICDI)
+    pub PKNBNHFICDI: u32,
     // @@protoc_insertion_point(field:MazeKillDirectCsReq.entity_list)
     pub entity_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MazeKillDirectCsReq.source_id)
-    pub source_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MazeKillDirectCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MazeKillDirectCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_type",
-            |m: &MazeKillDirectCsReq| { &m.source_type },
-            |m: &mut MazeKillDirectCsReq| { &mut m.source_type },
+            "PHKOPCBNOCC",
+            |m: &MazeKillDirectCsReq| { &m.PHKOPCBNOCC },
+            |m: &mut MazeKillDirectCsReq| { &mut m.PHKOPCBNOCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PKNBNHFICDI",
+            |m: &MazeKillDirectCsReq| { &m.PKNBNHFICDI },
+            |m: &mut MazeKillDirectCsReq| { &mut m.PKNBNHFICDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "entity_list",
             |m: &MazeKillDirectCsReq| { &m.entity_list },
             |m: &mut MazeKillDirectCsReq| { &mut m.entity_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source_id",
-            |m: &MazeKillDirectCsReq| { &m.source_id },
-            |m: &mut MazeKillDirectCsReq| { &mut m.source_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MazeKillDirectCsReq>(
             "MazeKillDirectCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for MazeKillDirectCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.source_type = is.read_enum_or_unknown()?;
+                88 => {
+                    self.PHKOPCBNOCC = is.read_enum_or_unknown()?;
                 },
-                82 => {
+                40 => {
+                    self.PKNBNHFICDI = is.read_uint32()?;
+                },
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.entity_list)?;
                 },
-                80 => {
+                16 => {
                     self.entity_list.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.source_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for MazeKillDirectCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::MazeKillSource::MazeKillSource::MAZE_KILL_SOURCE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.source_type.value());
+        if self.PHKOPCBNOCC != ::protobuf::EnumOrUnknown::new(super::JAPNONNGHIA::JAPNONNGHIA::JAPNONNGHIA_ECJNFNMCFOM) {
+            my_size += ::protobuf::rt::int32_size(11, self.PHKOPCBNOCC.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.entity_list);
-        if self.source_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.source_id);
+        if self.PKNBNHFICDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PKNBNHFICDI);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.entity_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::MazeKillSource::MazeKillSource::MAZE_KILL_SOURCE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
+        if self.PHKOPCBNOCC != ::protobuf::EnumOrUnknown::new(super::JAPNONNGHIA::JAPNONNGHIA::JAPNONNGHIA_ECJNFNMCFOM) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.PHKOPCBNOCC))?;
         }
-        os.write_repeated_packed_uint32(10, &self.entity_list)?;
-        if self.source_id != 0 {
-            os.write_uint32(14, self.source_id)?;
+        if self.PKNBNHFICDI != 0 {
+            os.write_uint32(5, self.PKNBNHFICDI)?;
         }
+        os.write_repeated_packed_uint32(2, &self.entity_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for MazeKillDirectCsReq {
     }
 
     fn clear(&mut self) {
-        self.source_type = ::protobuf::EnumOrUnknown::new(super::MazeKillSource::MazeKillSource::MAZE_KILL_SOURCE_NONE);
+        self.PHKOPCBNOCC = ::protobuf::EnumOrUnknown::new(super::JAPNONNGHIA::JAPNONNGHIA::JAPNONNGHIA_ECJNFNMCFOM);
+        self.PKNBNHFICDI = 0;
         self.entity_list.clear();
-        self.source_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MazeKillDirectCsReq {
         static instance: MazeKillDirectCsReq = MazeKillDirectCsReq {
-            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            PHKOPCBNOCC: ::protobuf::EnumOrUnknown::from_i32(0),
+            PKNBNHFICDI: 0,
             entity_list: ::std::vec::Vec::new(),
-            source_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,11 +182,11 @@ impl ::protobuf::reflect::ProtobufValue for MazeKillDirectCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19MazeKillDirectCsReq.proto\x1a\x14MazeKillSource.proto\"\x85\x01\n\
-    \x13MazeKillDirectCsReq\x120\n\x0bsource_type\x18\x01\x20\x01(\x0e2\x0f.\
-    MazeKillSourceR\nsourceType\x12\x1f\n\x0bentity_list\x18\n\x20\x03(\rR\n\
-    entityList\x12\x1b\n\tsource_id\x18\x0e\x20\x01(\rR\x08sourceIdb\x06prot\
-    o3\
+    \n\x19MazeKillDirectCsReq.proto\x1a\x11JAPNONNGHIA.proto\"\x88\x01\n\x13\
+    MazeKillDirectCsReq\x12.\n\x0bPHKOPCBNOCC\x18\x0b\x20\x01(\x0e2\x0c.JAPN\
+    ONNGHIAR\x0bPHKOPCBNOCC\x12\x20\n\x0bPKNBNHFICDI\x18\x05\x20\x01(\rR\x0b\
+    PKNBNHFICDI\x12\x1f\n\x0bentity_list\x18\x02\x20\x03(\rR\nentityListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,7 +204,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MazeKillSource::file_descriptor().clone());
+            deps.push(super::JAPNONNGHIA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MazeKillDirectCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.system_info)
-    pub system_info: ::protobuf::MessageField<super::PBBEDPIIPEK::PBBEDPIIPEK>,
-    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.rogue_tourn_cur_info)
-    pub rogue_tourn_cur_info: ::protobuf::MessageField<super::AAPKBPEGGBH::AAPKBPEGGBH>,
     // @@protoc_insertion_point(field:RogueMagicQueryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.rogue_tourn_cur_info)
+    pub rogue_tourn_cur_info: ::protobuf::MessageField<super::KGOKJGBOJEI::KGOKJGBOJEI>,
+    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.rogue_get_info)
+    pub rogue_get_info: ::protobuf::MessageField<super::PBGFMHMKFMN::PBGFMHMKFMN>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueMagicQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBBEDPIIPEK::PBBEDPIIPEK>(
-            "system_info",
-            |m: &RogueMagicQueryScRsp| { &m.system_info },
-            |m: &mut RogueMagicQueryScRsp| { &mut m.system_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAPKBPEGGBH::AAPKBPEGGBH>(
-            "rogue_tourn_cur_info",
-            |m: &RogueMagicQueryScRsp| { &m.rogue_tourn_cur_info },
-            |m: &mut RogueMagicQueryScRsp| { &mut m.rogue_tourn_cur_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicQueryScRsp| { &m.retcode },
             |m: &mut RogueMagicQueryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGOKJGBOJEI::KGOKJGBOJEI>(
+            "rogue_tourn_cur_info",
+            |m: &RogueMagicQueryScRsp| { &m.rogue_tourn_cur_info },
+            |m: &mut RogueMagicQueryScRsp| { &mut m.rogue_tourn_cur_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBGFMHMKFMN::PBGFMHMKFMN>(
+            "rogue_get_info",
+            |m: &RogueMagicQueryScRsp| { &m.rogue_get_info },
+            |m: &mut RogueMagicQueryScRsp| { &mut m.rogue_get_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicQueryScRsp>(
             "RogueMagicQueryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.system_info)?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_tourn_cur_info)?;
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.system_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if let Some(v) = self.rogue_get_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.system_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.rogue_tourn_cur_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if let Some(v) = self.rogue_get_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.system_info.clear();
-        self.rogue_tourn_cur_info.clear();
         self.retcode = 0;
+        self.rogue_tourn_cur_info.clear();
+        self.rogue_get_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicQueryScRsp {
         static instance: RogueMagicQueryScRsp = RogueMagicQueryScRsp {
-            system_info: ::protobuf::MessageField::none(),
-            rogue_tourn_cur_info: ::protobuf::MessageField::none(),
             retcode: 0,
+            rogue_tourn_cur_info: ::protobuf::MessageField::none(),
+            rogue_get_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicQueryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueMagicQueryScRsp.proto\x1a\x11AAPKBPEGGBH.proto\x1a\x11PBBEDPI\
-    IPEK.proto\"\x9e\x01\n\x14RogueMagicQueryScRsp\x12-\n\x0bsystem_info\x18\
-    \x01\x20\x01(\x0b2\x0c.PBBEDPIIPEKR\nsystemInfo\x12=\n\x14rogue_tourn_cu\
-    r_info\x18\x07\x20\x01(\x0b2\x0c.AAPKBPEGGBHR\x11rogueTournCurInfo\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1aRogueMagicQueryScRsp.proto\x1a\x11KGOKJGBOJEI.proto\x1a\x11PBGFMHM\
+    KFMN.proto\"\xa3\x01\n\x14RogueMagicQueryScRsp\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcode\x12=\n\x14rogue_tourn_cur_info\x18\t\x20\x01\
+    (\x0b2\x0c.KGOKJGBOJEIR\x11rogueTournCurInfo\x122\n\x0erogue_get_info\
+    \x18\r\x20\x01(\x0b2\x0c.PBGFMHMKFMNR\x0crogueGetInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AAPKBPEGGBH::file_descriptor().clone());
-            deps.push(super::PBBEDPIIPEK::file_descriptor().clone());
+            deps.push(super::KGOKJGBOJEI::file_descriptor().clone());
+            deps.push(super::PBGFMHMKFMN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicQueryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

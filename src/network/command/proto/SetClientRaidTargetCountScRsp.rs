@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.CJDINAOMDLK)
+    pub CJDINAOMDLK: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.progress)
     pub progress: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.GHAGIJGCPBN)
-    pub GHAGIJGCPBN: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientRaidTargetCountScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SetClientRaidTargetCountScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetClientRaidTargetCountScRsp| { &m.retcode },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.retcode },
+            "CJDINAOMDLK",
+            |m: &SetClientRaidTargetCountScRsp| { &m.CJDINAOMDLK },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.CJDINAOMDLK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -64,9 +64,9 @@ impl SetClientRaidTargetCountScRsp {
             |m: &mut SetClientRaidTargetCountScRsp| { &mut m.progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHAGIJGCPBN",
-            |m: &SetClientRaidTargetCountScRsp| { &m.GHAGIJGCPBN },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.GHAGIJGCPBN },
+            "retcode",
+            |m: &SetClientRaidTargetCountScRsp| { &m.retcode },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientRaidTargetCountScRsp>(
             "SetClientRaidTargetCountScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 72 => {
+                    self.CJDINAOMDLK = is.read_uint32()?;
+                },
+                32 => {
                     self.progress = is.read_uint32()?;
                 },
-                88 => {
-                    self.GHAGIJGCPBN = is.read_uint32()?;
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.CJDINAOMDLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CJDINAOMDLK);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.progress);
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
-        if self.GHAGIJGCPBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GHAGIJGCPBN);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.CJDINAOMDLK != 0 {
+            os.write_uint32(9, self.CJDINAOMDLK)?;
         }
         if self.progress != 0 {
-            os.write_uint32(9, self.progress)?;
+            os.write_uint32(4, self.progress)?;
         }
-        if self.GHAGIJGCPBN != 0 {
-            os.write_uint32(11, self.GHAGIJGCPBN)?;
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.CJDINAOMDLK = 0;
         self.progress = 0;
-        self.GHAGIJGCPBN = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountScRsp {
         static instance: SetClientRaidTargetCountScRsp = SetClientRaidTargetCountScRsp {
-            retcode: 0,
+            CJDINAOMDLK: 0,
             progress: 0,
-            GHAGIJGCPBN: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountScRsp.proto\"w\n\x1dSetClientRaidTargetCountS\
-    cRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x1a\n\x08pr\
-    ogress\x18\t\x20\x01(\rR\x08progress\x12\x20\n\x0bGHAGIJGCPBN\x18\x0b\
-    \x20\x01(\rR\x0bGHAGIJGCPBNb\x06proto3\
+    cRsp\x12\x20\n\x0bCJDINAOMDLK\x18\t\x20\x01(\rR\x0bCJDINAOMDLK\x12\x1a\n\
+    \x08progress\x18\x04\x20\x01(\rR\x08progress\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

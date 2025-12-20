@@ -30,15 +30,15 @@ pub enum CmdFeverTimeActivityType {
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdFeverTimeActivityTypeNone)
     CmdFeverTimeActivityTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdFeverTimeActivityBattleEndScNotify)
-    CmdFeverTimeActivityBattleEndScNotify = 7154,
+    CmdFeverTimeActivityBattleEndScNotify = 7157,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdGetFeverTimeActivityDataScRsp)
-    CmdGetFeverTimeActivityDataScRsp = 7160,
+    CmdGetFeverTimeActivityDataScRsp = 7151,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdEnterFeverTimeActivityStageScRsp)
-    CmdEnterFeverTimeActivityStageScRsp = 7157,
+    CmdEnterFeverTimeActivityStageScRsp = 7160,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdEnterFeverTimeActivityStageCsReq)
-    CmdEnterFeverTimeActivityStageCsReq = 7156,
+    CmdEnterFeverTimeActivityStageCsReq = 7153,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdGetFeverTimeActivityDataCsReq)
-    CmdGetFeverTimeActivityDataCsReq = 7159,
+    CmdGetFeverTimeActivityDataCsReq = 7152,
 }
 
 impl ::protobuf::Enum for CmdFeverTimeActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdFeverTimeActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFeverTimeActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone),
-            7154 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify),
-            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp),
-            7157 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp),
-            7156 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq),
-            7159 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq),
+            7157 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify),
+            7151 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp),
+            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp),
+            7153 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq),
+            7152 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -116,10 +116,10 @@ impl CmdFeverTimeActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCmdFeverTimeActivityType.proto*\x8a\x02\n\x18CmdFeverTimeActivityT\
     ype\x12\x20\n\x1cCmdFeverTimeActivityTypeNone\x10\0\x12*\n%CmdFeverTimeA\
-    ctivityBattleEndScNotify\x10\xf27\x12%\n\x20CmdGetFeverTimeActivityDataS\
-    cRsp\x10\xf87\x12(\n#CmdEnterFeverTimeActivityStageScRsp\x10\xf57\x12(\n\
-    #CmdEnterFeverTimeActivityStageCsReq\x10\xf47\x12%\n\x20CmdGetFeverTimeA\
-    ctivityDataCsReq\x10\xf77b\x06proto3\
+    ctivityBattleEndScNotify\x10\xf57\x12%\n\x20CmdGetFeverTimeActivityDataS\
+    cRsp\x10\xef7\x12(\n#CmdEnterFeverTimeActivityStageScRsp\x10\xf87\x12(\n\
+    #CmdEnterFeverTimeActivityStageCsReq\x10\xf17\x12%\n\x20CmdGetFeverTimeA\
+    ctivityDataCsReq\x10\xf07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

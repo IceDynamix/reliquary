@@ -30,45 +30,45 @@ pub enum CmdChallengePeakType {
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdChallengePeakTypeNone)
     CmdChallengePeakTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakBossHardModeCsReq)
-    CmdSetChallengePeakBossHardModeCsReq = 8923,
+    CmdSetChallengePeakBossHardModeCsReq = 8910,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakBossHardModeScRsp)
-    CmdSetChallengePeakBossHardModeScRsp = 8919,
+    CmdSetChallengePeakBossHardModeScRsp = 8905,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdLeaveChallengePeakScRsp)
-    CmdLeaveChallengePeakScRsp = 8927,
+    CmdLeaveChallengePeakScRsp = 8902,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdStartChallengePeakCsReq)
-    CmdStartChallengePeakCsReq = 8921,
+    CmdStartChallengePeakCsReq = 8943,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdLeaveChallengePeakCsReq)
-    CmdLeaveChallengePeakCsReq = 8905,
+    CmdLeaveChallengePeakCsReq = 8934,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdChallengePeakSettleScNotify)
-    CmdChallengePeakSettleScNotify = 8920,
+    CmdChallengePeakSettleScNotify = 8931,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdReStartChallengePeakScRsp)
     CmdReStartChallengePeakScRsp = 8933,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdStartChallengePeakScRsp)
-    CmdStartChallengePeakScRsp = 8938,
+    CmdStartChallengePeakScRsp = 8916,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdTakeChallengePeakRewardCsReq)
-    CmdTakeChallengePeakRewardCsReq = 8901,
+    CmdTakeChallengePeakRewardCsReq = 8913,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdTakeChallengePeakRewardScRsp)
-    CmdTakeChallengePeakRewardScRsp = 8945,
+    CmdTakeChallengePeakRewardScRsp = 8923,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetChallengePeakDataCsReq)
-    CmdGetChallengePeakDataCsReq = 8926,
+    CmdGetChallengePeakDataCsReq = 8920,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdReStartChallengePeakCsReq)
-    CmdReStartChallengePeakCsReq = 8947,
+    CmdReStartChallengePeakCsReq = 8935,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakMobLineupAvatarScRsp)
-    CmdSetChallengePeakMobLineupAvatarScRsp = 8935,
+    CmdSetChallengePeakMobLineupAvatarScRsp = 8925,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdConfirmChallengePeakSettleCsReq)
-    CmdConfirmChallengePeakSettleCsReq = 8931,
+    CmdConfirmChallengePeakSettleCsReq = 8912,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdConfirmChallengePeakSettleScRsp)
-    CmdConfirmChallengePeakSettleScRsp = 8908,
+    CmdConfirmChallengePeakSettleScRsp = 8946,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetChallengePeakDataScRsp)
-    CmdGetChallengePeakDataScRsp = 8928,
+    CmdGetChallengePeakDataScRsp = 8950,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdChallengePeakGroupDataUpdateScNotify)
-    CmdChallengePeakGroupDataUpdateScNotify = 8944,
+    CmdChallengePeakGroupDataUpdateScNotify = 8919,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetCurChallengePeakCsReq)
-    CmdGetCurChallengePeakCsReq = 8943,
+    CmdGetCurChallengePeakCsReq = 8948,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakMobLineupAvatarCsReq)
-    CmdSetChallengePeakMobLineupAvatarCsReq = 8929,
+    CmdSetChallengePeakMobLineupAvatarCsReq = 8909,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetCurChallengePeakScRsp)
-    CmdGetCurChallengePeakScRsp = 8903,
+    CmdGetCurChallengePeakScRsp = 8917,
 }
 
 impl ::protobuf::Enum for CmdChallengePeakType {
@@ -81,26 +81,26 @@ impl ::protobuf::Enum for CmdChallengePeakType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChallengePeakType> {
         match value {
             0 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakTypeNone),
-            8923 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq),
-            8919 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp),
-            8927 => ::std::option::Option::Some(CmdChallengePeakType::CmdLeaveChallengePeakScRsp),
-            8921 => ::std::option::Option::Some(CmdChallengePeakType::CmdStartChallengePeakCsReq),
-            8905 => ::std::option::Option::Some(CmdChallengePeakType::CmdLeaveChallengePeakCsReq),
-            8920 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakSettleScNotify),
+            8910 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq),
+            8905 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp),
+            8902 => ::std::option::Option::Some(CmdChallengePeakType::CmdLeaveChallengePeakScRsp),
+            8943 => ::std::option::Option::Some(CmdChallengePeakType::CmdStartChallengePeakCsReq),
+            8934 => ::std::option::Option::Some(CmdChallengePeakType::CmdLeaveChallengePeakCsReq),
+            8931 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakSettleScNotify),
             8933 => ::std::option::Option::Some(CmdChallengePeakType::CmdReStartChallengePeakScRsp),
-            8938 => ::std::option::Option::Some(CmdChallengePeakType::CmdStartChallengePeakScRsp),
-            8901 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq),
-            8945 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp),
-            8926 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataCsReq),
-            8947 => ::std::option::Option::Some(CmdChallengePeakType::CmdReStartChallengePeakCsReq),
-            8935 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakMobLineupAvatarScRsp),
-            8931 => ::std::option::Option::Some(CmdChallengePeakType::CmdConfirmChallengePeakSettleCsReq),
-            8908 => ::std::option::Option::Some(CmdChallengePeakType::CmdConfirmChallengePeakSettleScRsp),
-            8928 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataScRsp),
-            8944 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify),
-            8943 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakCsReq),
-            8929 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakMobLineupAvatarCsReq),
-            8903 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakScRsp),
+            8916 => ::std::option::Option::Some(CmdChallengePeakType::CmdStartChallengePeakScRsp),
+            8913 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq),
+            8923 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp),
+            8920 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataCsReq),
+            8935 => ::std::option::Option::Some(CmdChallengePeakType::CmdReStartChallengePeakCsReq),
+            8925 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakMobLineupAvatarScRsp),
+            8912 => ::std::option::Option::Some(CmdChallengePeakType::CmdConfirmChallengePeakSettleCsReq),
+            8946 => ::std::option::Option::Some(CmdChallengePeakType::CmdConfirmChallengePeakSettleScRsp),
+            8950 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataScRsp),
+            8919 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify),
+            8948 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakCsReq),
+            8909 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakMobLineupAvatarCsReq),
+            8917 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakScRsp),
             _ => ::std::option::Option::None
         }
     }
@@ -206,20 +206,20 @@ impl CmdChallengePeakType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdChallengePeakType.proto*\xab\x06\n\x14CmdChallengePeakType\x12\
     \x1c\n\x18CmdChallengePeakTypeNone\x10\0\x12)\n$CmdSetChallengePeakBossH\
-    ardModeCsReq\x10\xdbE\x12)\n$CmdSetChallengePeakBossHardModeScRsp\x10\
-    \xd7E\x12\x1f\n\x1aCmdLeaveChallengePeakScRsp\x10\xdfE\x12\x1f\n\x1aCmdS\
-    tartChallengePeakCsReq\x10\xd9E\x12\x1f\n\x1aCmdLeaveChallengePeakCsReq\
-    \x10\xc9E\x12#\n\x1eCmdChallengePeakSettleScNotify\x10\xd8E\x12!\n\x1cCm\
+    ardModeCsReq\x10\xceE\x12)\n$CmdSetChallengePeakBossHardModeScRsp\x10\
+    \xc9E\x12\x1f\n\x1aCmdLeaveChallengePeakScRsp\x10\xc6E\x12\x1f\n\x1aCmdS\
+    tartChallengePeakCsReq\x10\xefE\x12\x1f\n\x1aCmdLeaveChallengePeakCsReq\
+    \x10\xe6E\x12#\n\x1eCmdChallengePeakSettleScNotify\x10\xe3E\x12!\n\x1cCm\
     dReStartChallengePeakScRsp\x10\xe5E\x12\x1f\n\x1aCmdStartChallengePeakSc\
-    Rsp\x10\xeaE\x12$\n\x1fCmdTakeChallengePeakRewardCsReq\x10\xc5E\x12$\n\
-    \x1fCmdTakeChallengePeakRewardScRsp\x10\xf1E\x12!\n\x1cCmdGetChallengePe\
-    akDataCsReq\x10\xdeE\x12!\n\x1cCmdReStartChallengePeakCsReq\x10\xf3E\x12\
-    ,\n'CmdSetChallengePeakMobLineupAvatarScRsp\x10\xe7E\x12'\n\"CmdConfirmC\
-    hallengePeakSettleCsReq\x10\xe3E\x12'\n\"CmdConfirmChallengePeakSettleSc\
-    Rsp\x10\xccE\x12!\n\x1cCmdGetChallengePeakDataScRsp\x10\xe0E\x12,\n'CmdC\
-    hallengePeakGroupDataUpdateScNotify\x10\xf0E\x12\x20\n\x1bCmdGetCurChall\
-    engePeakCsReq\x10\xefE\x12,\n'CmdSetChallengePeakMobLineupAvatarCsReq\
-    \x10\xe1E\x12\x20\n\x1bCmdGetCurChallengePeakScRsp\x10\xc7Eb\x06proto3\
+    Rsp\x10\xd4E\x12$\n\x1fCmdTakeChallengePeakRewardCsReq\x10\xd1E\x12$\n\
+    \x1fCmdTakeChallengePeakRewardScRsp\x10\xdbE\x12!\n\x1cCmdGetChallengePe\
+    akDataCsReq\x10\xd8E\x12!\n\x1cCmdReStartChallengePeakCsReq\x10\xe7E\x12\
+    ,\n'CmdSetChallengePeakMobLineupAvatarScRsp\x10\xddE\x12'\n\"CmdConfirmC\
+    hallengePeakSettleCsReq\x10\xd0E\x12'\n\"CmdConfirmChallengePeakSettleSc\
+    Rsp\x10\xf2E\x12!\n\x1cCmdGetChallengePeakDataScRsp\x10\xf6E\x12,\n'CmdC\
+    hallengePeakGroupDataUpdateScNotify\x10\xd7E\x12\x20\n\x1bCmdGetCurChall\
+    engePeakCsReq\x10\xf4E\x12,\n'CmdSetChallengePeakMobLineupAvatarCsReq\
+    \x10\xcdE\x12\x20\n\x1bCmdGetCurChallengePeakScRsp\x10\xd5Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,7 +31,7 @@ pub struct GetBoxingClubInfoScRsp {
     // @@protoc_insertion_point(field:GetBoxingClubInfoScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetBoxingClubInfoScRsp.challenge_list)
-    pub challenge_list: ::std::vec::Vec<super::BoxingClubInfo::BoxingClubInfo>,
+    pub challenge_list: ::std::vec::Vec<super::HMHECIGCHKG::HMHECIGCHKG>,
     // special fields
     // @@protoc_insertion_point(special_field:GetBoxingClubInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetBoxingClubInfoScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                58 => {
                     self.challenge_list.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetBoxingClubInfoScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetBoxingClubInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGetBoxingClubInfoScRsp.proto\x1a\x14BoxingClubInfo.proto\"j\n\x16G\
-    etBoxingClubInfoScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcod\
-    e\x126\n\x0echallenge_list\x18\x0c\x20\x03(\x0b2\x0f.BoxingClubInfoR\rch\
-    allengeListb\x06proto3\
+    \n\x1cGetBoxingClubInfoScRsp.proto\x1a\x11HMHECIGCHKG.proto\"g\n\x16GetB\
+    oxingClubInfoScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
+    \x123\n\x0echallenge_list\x18\x07\x20\x03(\x0b2\x0c.HMHECIGCHKGR\rchalle\
+    ngeListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BoxingClubInfo::file_descriptor().clone());
+            deps.push(super::HMHECIGCHKG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetBoxingClubInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

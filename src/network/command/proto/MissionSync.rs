@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionSync {
     // message fields
-    // @@protoc_insertion_point(field:MissionSync.MPOIAHLHBBN)
-    pub MPOIAHLHBBN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionSync.DJFNCPEEJAI)
-    pub DJFNCPEEJAI: ::std::vec::Vec<super::IKAMMKLBOCO::IKAMMKLBOCO>,
-    // @@protoc_insertion_point(field:MissionSync.FJIPINGAPFL)
-    pub FJIPINGAPFL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MissionSync.INILDCBPELG)
-    pub INILDCBPELG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionSync.GGOKGCIFPBK)
+    pub GGOKGCIFPBK: ::std::vec::Vec<super::MIFPNAIJHOM::MIFPNAIJHOM>,
+    // @@protoc_insertion_point(field:MissionSync.JHGBFAKLLEB)
+    pub JHGBFAKLLEB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionSync.finished_main_mission_id_list)
     pub finished_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MissionSync.KMPPJHJHDPM)
+    pub KMPPJHJHDPM: ::std::vec::Vec<super::IMMBIPNMNOB::IMMBIPNMNOB>,
+    // @@protoc_insertion_point(field:MissionSync.IDAPHOICMMM)
+    pub IDAPHOICMMM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MissionSync.mission_list)
     pub mission_list: ::std::vec::Vec<super::Mission::Mission>,
-    // @@protoc_insertion_point(field:MissionSync.HOCGBNAJLHF)
-    pub HOCGBNAJLHF: ::std::vec::Vec<super::MainMissionSync::MainMissionSync>,
+    // @@protoc_insertion_point(field:MissionSync.KJIOFKAOJDK)
+    pub KJIOFKAOJDK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MissionSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,24 +62,14 @@ impl MissionSync {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MPOIAHLHBBN",
-            |m: &MissionSync| { &m.MPOIAHLHBBN },
-            |m: &mut MissionSync| { &mut m.MPOIAHLHBBN },
+            "GGOKGCIFPBK",
+            |m: &MissionSync| { &m.GGOKGCIFPBK },
+            |m: &mut MissionSync| { &mut m.GGOKGCIFPBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DJFNCPEEJAI",
-            |m: &MissionSync| { &m.DJFNCPEEJAI },
-            |m: &mut MissionSync| { &mut m.DJFNCPEEJAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJIPINGAPFL",
-            |m: &MissionSync| { &m.FJIPINGAPFL },
-            |m: &mut MissionSync| { &mut m.FJIPINGAPFL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "INILDCBPELG",
-            |m: &MissionSync| { &m.INILDCBPELG },
-            |m: &mut MissionSync| { &mut m.INILDCBPELG },
+            "JHGBFAKLLEB",
+            |m: &MissionSync| { &m.JHGBFAKLLEB },
+            |m: &mut MissionSync| { &mut m.JHGBFAKLLEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_main_mission_id_list",
@@ -87,14 +77,24 @@ impl MissionSync {
             |m: &mut MissionSync| { &mut m.finished_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KMPPJHJHDPM",
+            |m: &MissionSync| { &m.KMPPJHJHDPM },
+            |m: &mut MissionSync| { &mut m.KMPPJHJHDPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IDAPHOICMMM",
+            |m: &MissionSync| { &m.IDAPHOICMMM },
+            |m: &mut MissionSync| { &mut m.IDAPHOICMMM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "mission_list",
             |m: &MissionSync| { &m.mission_list },
             |m: &mut MissionSync| { &mut m.mission_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HOCGBNAJLHF",
-            |m: &MissionSync| { &m.HOCGBNAJLHF },
-            |m: &mut MissionSync| { &mut m.HOCGBNAJLHF },
+            "KJIOFKAOJDK",
+            |m: &MissionSync| { &m.KJIOFKAOJDK },
+            |m: &mut MissionSync| { &mut m.KJIOFKAOJDK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionSync>(
             "MissionSync",
@@ -114,38 +114,38 @@ impl ::protobuf::Message for MissionSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MPOIAHLHBBN)?;
+                66 => {
+                    self.GGOKGCIFPBK.push(is.read_message()?);
                 },
-                8 => {
-                    self.MPOIAHLHBBN.push(is.read_uint32()?);
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JHGBFAKLLEB)?;
                 },
-                18 => {
-                    self.DJFNCPEEJAI.push(is.read_message()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJIPINGAPFL)?;
-                },
-                24 => {
-                    self.FJIPINGAPFL.push(is.read_uint32()?);
+                56 => {
+                    self.JHGBFAKLLEB.push(is.read_uint32()?);
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.INILDCBPELG)?;
-                },
-                32 => {
-                    self.INILDCBPELG.push(is.read_uint32()?);
-                },
-                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_main_mission_id_list)?;
                 },
-                80 => {
+                32 => {
                     self.finished_main_mission_id_list.push(is.read_uint32()?);
                 },
                 90 => {
-                    self.mission_list.push(is.read_message()?);
+                    self.KMPPJHJHDPM.push(is.read_message()?);
                 },
                 122 => {
-                    self.HOCGBNAJLHF.push(is.read_message()?);
+                    is.read_repeated_packed_uint32_into(&mut self.IDAPHOICMMM)?;
+                },
+                120 => {
+                    self.IDAPHOICMMM.push(is.read_uint32()?);
+                },
+                42 => {
+                    self.mission_list.push(is.read_message()?);
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KJIOFKAOJDK)?;
+                },
+                8 => {
+                    self.KJIOFKAOJDK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,41 +159,41 @@ impl ::protobuf::Message for MissionSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MPOIAHLHBBN);
-        for value in &self.DJFNCPEEJAI {
+        for value in &self.GGOKGCIFPBK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FJIPINGAPFL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.INILDCBPELG);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.finished_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JHGBFAKLLEB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.finished_main_mission_id_list);
+        for value in &self.KMPPJHJHDPM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IDAPHOICMMM);
         for value in &self.mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HOCGBNAJLHF {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KJIOFKAOJDK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.MPOIAHLHBBN)?;
-        for v in &self.DJFNCPEEJAI {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.GGOKGCIFPBK {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        os.write_repeated_packed_uint32(3, &self.FJIPINGAPFL)?;
-        os.write_repeated_packed_uint32(4, &self.INILDCBPELG)?;
-        os.write_repeated_packed_uint32(10, &self.finished_main_mission_id_list)?;
-        for v in &self.mission_list {
+        os.write_repeated_packed_uint32(7, &self.JHGBFAKLLEB)?;
+        os.write_repeated_packed_uint32(4, &self.finished_main_mission_id_list)?;
+        for v in &self.KMPPJHJHDPM {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        for v in &self.HOCGBNAJLHF {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        os.write_repeated_packed_uint32(15, &self.IDAPHOICMMM)?;
+        for v in &self.mission_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        os.write_repeated_packed_uint32(1, &self.KJIOFKAOJDK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -211,25 +211,25 @@ impl ::protobuf::Message for MissionSync {
     }
 
     fn clear(&mut self) {
-        self.MPOIAHLHBBN.clear();
-        self.DJFNCPEEJAI.clear();
-        self.FJIPINGAPFL.clear();
-        self.INILDCBPELG.clear();
+        self.GGOKGCIFPBK.clear();
+        self.JHGBFAKLLEB.clear();
         self.finished_main_mission_id_list.clear();
+        self.KMPPJHJHDPM.clear();
+        self.IDAPHOICMMM.clear();
         self.mission_list.clear();
-        self.HOCGBNAJLHF.clear();
+        self.KJIOFKAOJDK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionSync {
         static instance: MissionSync = MissionSync {
-            MPOIAHLHBBN: ::std::vec::Vec::new(),
-            DJFNCPEEJAI: ::std::vec::Vec::new(),
-            FJIPINGAPFL: ::std::vec::Vec::new(),
-            INILDCBPELG: ::std::vec::Vec::new(),
+            GGOKGCIFPBK: ::std::vec::Vec::new(),
+            JHGBFAKLLEB: ::std::vec::Vec::new(),
             finished_main_mission_id_list: ::std::vec::Vec::new(),
+            KMPPJHJHDPM: ::std::vec::Vec::new(),
+            IDAPHOICMMM: ::std::vec::Vec::new(),
             mission_list: ::std::vec::Vec::new(),
-            HOCGBNAJLHF: ::std::vec::Vec::new(),
+            KJIOFKAOJDK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -254,15 +254,15 @@ impl ::protobuf::reflect::ProtobufValue for MissionSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MissionSync.proto\x1a\x11IKAMMKLBOCO.proto\x1a\x15MainMissionSync.\
-    proto\x1a\rMission.proto\"\xc6\x02\n\x0bMissionSync\x12\x20\n\x0bMPOIAHL\
-    HBBN\x18\x01\x20\x03(\rR\x0bMPOIAHLHBBN\x12.\n\x0bDJFNCPEEJAI\x18\x02\
-    \x20\x03(\x0b2\x0c.IKAMMKLBOCOR\x0bDJFNCPEEJAI\x12\x20\n\x0bFJIPINGAPFL\
-    \x18\x03\x20\x03(\rR\x0bFJIPINGAPFL\x12\x20\n\x0bINILDCBPELG\x18\x04\x20\
-    \x03(\rR\x0bINILDCBPELG\x12@\n\x1dfinished_main_mission_id_list\x18\n\
-    \x20\x03(\rR\x19finishedMainMissionIdList\x12+\n\x0cmission_list\x18\x0b\
-    \x20\x03(\x0b2\x08.MissionR\x0bmissionList\x122\n\x0bHOCGBNAJLHF\x18\x0f\
-    \x20\x03(\x0b2\x10.MainMissionSyncR\x0bHOCGBNAJLHFb\x06proto3\
+    \n\x11MissionSync.proto\x1a\x11IMMBIPNMNOB.proto\x1a\x11MIFPNAIJHOM.prot\
+    o\x1a\rMission.proto\"\xc2\x02\n\x0bMissionSync\x12.\n\x0bGGOKGCIFPBK\
+    \x18\x08\x20\x03(\x0b2\x0c.MIFPNAIJHOMR\x0bGGOKGCIFPBK\x12\x20\n\x0bJHGB\
+    FAKLLEB\x18\x07\x20\x03(\rR\x0bJHGBFAKLLEB\x12@\n\x1dfinished_main_missi\
+    on_id_list\x18\x04\x20\x03(\rR\x19finishedMainMissionIdList\x12.\n\x0bKM\
+    PPJHJHDPM\x18\x0b\x20\x03(\x0b2\x0c.IMMBIPNMNOBR\x0bKMPPJHJHDPM\x12\x20\
+    \n\x0bIDAPHOICMMM\x18\x0f\x20\x03(\rR\x0bIDAPHOICMMM\x12+\n\x0cmission_l\
+    ist\x18\x05\x20\x03(\x0b2\x08.MissionR\x0bmissionList\x12\x20\n\x0bKJIOF\
+    KAOJDK\x18\x01\x20\x03(\rR\x0bKJIOFKAOJDKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -280,8 +280,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::IKAMMKLBOCO::file_descriptor().clone());
-            deps.push(super::MainMissionSync::file_descriptor().clone());
+            deps.push(super::IMMBIPNMNOB::file_descriptor().clone());
+            deps.push(super::MIFPNAIJHOM::file_descriptor().clone());
             deps.push(super::Mission::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MissionSync::generated_message_descriptor_data());

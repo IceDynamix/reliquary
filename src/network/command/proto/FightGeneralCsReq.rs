@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightGeneralCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FightGeneralCsReq.FNKHOPGCKEE)
-    pub FNKHOPGCKEE: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:FightGeneralCsReq.JPACODMICFF)
-    pub JPACODMICFF: u32,
+    // @@protoc_insertion_point(field:FightGeneralCsReq.NAFFAFEHPFK)
+    pub NAFFAFEHPFK: u32,
+    // @@protoc_insertion_point(field:FightGeneralCsReq.AHLHKGLPHFM)
+    pub AHLHKGLPHFM: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FightGeneralCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FightGeneralCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNKHOPGCKEE",
-            |m: &FightGeneralCsReq| { &m.FNKHOPGCKEE },
-            |m: &mut FightGeneralCsReq| { &mut m.FNKHOPGCKEE },
+            "NAFFAFEHPFK",
+            |m: &FightGeneralCsReq| { &m.NAFFAFEHPFK },
+            |m: &mut FightGeneralCsReq| { &mut m.NAFFAFEHPFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPACODMICFF",
-            |m: &FightGeneralCsReq| { &m.JPACODMICFF },
-            |m: &mut FightGeneralCsReq| { &mut m.JPACODMICFF },
+            "AHLHKGLPHFM",
+            |m: &FightGeneralCsReq| { &m.AHLHKGLPHFM },
+            |m: &mut FightGeneralCsReq| { &mut m.AHLHKGLPHFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightGeneralCsReq>(
             "FightGeneralCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FightGeneralCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.FNKHOPGCKEE = is.read_bytes()?;
+                104 => {
+                    self.NAFFAFEHPFK = is.read_uint32()?;
                 },
-                64 => {
-                    self.JPACODMICFF = is.read_uint32()?;
+                26 => {
+                    self.AHLHKGLPHFM = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FightGeneralCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.FNKHOPGCKEE.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(4, &self.FNKHOPGCKEE);
+        if self.NAFFAFEHPFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.NAFFAFEHPFK);
         }
-        if self.JPACODMICFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JPACODMICFF);
+        if !self.AHLHKGLPHFM.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.AHLHKGLPHFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FightGeneralCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.FNKHOPGCKEE.is_empty() {
-            os.write_bytes(4, &self.FNKHOPGCKEE)?;
+        if self.NAFFAFEHPFK != 0 {
+            os.write_uint32(13, self.NAFFAFEHPFK)?;
         }
-        if self.JPACODMICFF != 0 {
-            os.write_uint32(8, self.JPACODMICFF)?;
+        if !self.AHLHKGLPHFM.is_empty() {
+            os.write_string(3, &self.AHLHKGLPHFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FightGeneralCsReq {
     }
 
     fn clear(&mut self) {
-        self.FNKHOPGCKEE.clear();
-        self.JPACODMICFF = 0;
+        self.NAFFAFEHPFK = 0;
+        self.AHLHKGLPHFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightGeneralCsReq {
         static instance: FightGeneralCsReq = FightGeneralCsReq {
-            FNKHOPGCKEE: ::std::vec::Vec::new(),
-            JPACODMICFF: 0,
+            NAFFAFEHPFK: 0,
+            AHLHKGLPHFM: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FightGeneralCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FightGeneralCsReq.proto\"W\n\x11FightGeneralCsReq\x12\x20\n\x0bFNK\
-    HOPGCKEE\x18\x04\x20\x01(\x0cR\x0bFNKHOPGCKEE\x12\x20\n\x0bJPACODMICFF\
-    \x18\x08\x20\x01(\rR\x0bJPACODMICFFb\x06proto3\
+    \n\x17FightGeneralCsReq.proto\"W\n\x11FightGeneralCsReq\x12\x20\n\x0bNAF\
+    FAFEHPFK\x18\r\x20\x01(\rR\x0bNAFFAFEHPFK\x12\x20\n\x0bAHLHKGLPHFM\x18\
+    \x03\x20\x01(\tR\x0bAHLHKGLPHFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterChallengeNextPhaseScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterChallengeNextPhaseScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:EnterChallengeNextPhaseScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterChallengeNextPhaseScRsp.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterChallengeNextPhaseScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EnterChallengeNextPhaseScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
-            "scene",
-            |m: &EnterChallengeNextPhaseScRsp| { &m.scene },
-            |m: &mut EnterChallengeNextPhaseScRsp| { &mut m.scene },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnterChallengeNextPhaseScRsp| { &m.retcode },
             |m: &mut EnterChallengeNextPhaseScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
+            "scene",
+            |m: &EnterChallengeNextPhaseScRsp| { &m.scene },
+            |m: &mut EnterChallengeNextPhaseScRsp| { &mut m.scene },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterChallengeNextPhaseScRsp>(
             "EnterChallengeNextPhaseScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
-                },
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EnterChallengeNextPhaseScRsp {
     }
 
     fn clear(&mut self) {
-        self.scene.clear();
         self.retcode = 0;
+        self.scene.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterChallengeNextPhaseScRsp {
         static instance: EnterChallengeNextPhaseScRsp = EnterChallengeNextPhaseScRsp {
-            scene: ::protobuf::MessageField::none(),
             retcode: 0,
+            scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterChallengeNextPhaseScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"EnterChallengeNextPhaseScRsp.proto\x1a\x0fSceneInfo.proto\"Z\n\x1cEn\
-    terChallengeNextPhaseScRsp\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.Scen\
-    eInfoR\x05scene\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06pr\
-    oto3\
+    terChallengeNextPhaseScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07ret\
+    code\x12\x20\n\x05scene\x18\x08\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

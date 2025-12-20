@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendAssistListScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.assist_list)
-    pub assist_list: ::std::vec::Vec<super::PlayerAssistInfo::PlayerAssistInfo>,
     // @@protoc_insertion_point(field:GetFriendAssistListScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendAssistListScRsp.assist_list)
+    pub assist_list: ::std::vec::Vec<super::PlayerAssistInfo::PlayerAssistInfo>,
     // @@protoc_insertion_point(field:GetFriendAssistListScRsp.target_side)
     pub target_side: u32,
     // special fields
@@ -53,15 +53,15 @@ impl GetFriendAssistListScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "assist_list",
-            |m: &GetFriendAssistListScRsp| { &m.assist_list },
-            |m: &mut GetFriendAssistListScRsp| { &mut m.assist_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendAssistListScRsp| { &m.retcode },
             |m: &mut GetFriendAssistListScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "assist_list",
+            |m: &GetFriendAssistListScRsp| { &m.assist_list },
+            |m: &mut GetFriendAssistListScRsp| { &mut m.assist_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "target_side",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.assist_list.push(is.read_message()?);
-                },
-                72 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                106 => {
+                    self.assist_list.push(is.read_message()?);
+                },
+                48 => {
                     self.target_side = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         for value in &self.assist_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.target_side);
+            my_size += ::protobuf::rt::uint32_size(6, self.target_side);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.assist_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        for v in &self.assist_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         if self.target_side != 0 {
-            os.write_uint32(10, self.target_side)?;
+            os.write_uint32(6, self.target_side)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetFriendAssistListScRsp {
     }
 
     fn clear(&mut self) {
-        self.assist_list.clear();
         self.retcode = 0;
+        self.assist_list.clear();
         self.target_side = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendAssistListScRsp {
         static instance: GetFriendAssistListScRsp = GetFriendAssistListScRsp {
-            assist_list: ::std::vec::Vec::new(),
             retcode: 0,
+            assist_list: ::std::vec::Vec::new(),
             target_side: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendAssistListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetFriendAssistListScRsp.proto\x1a\x16PlayerAssistInfo.proto\"\x89\
-    \x01\n\x18GetFriendAssistListScRsp\x122\n\x0bassist_list\x18\x06\x20\x03\
-    (\x0b2\x11.PlayerAssistInfoR\nassistList\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcode\x12\x1f\n\x0btarget_side\x18\n\x20\x01(\rR\ntargetSi\
-    deb\x06proto3\
+    \x01\n\x18GetFriendAssistListScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\r\
+    R\x07retcode\x122\n\x0bassist_list\x18\r\x20\x03(\x0b2\x11.PlayerAssistI\
+    nfoR\nassistList\x12\x1f\n\x0btarget_side\x18\x06\x20\x01(\rR\ntargetSid\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

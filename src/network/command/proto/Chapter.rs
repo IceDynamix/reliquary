@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Chapter {
     // message fields
-    // @@protoc_insertion_point(field:Chapter.waypoint_list)
-    pub waypoint_list: ::std::vec::Vec<super::Waypoint::Waypoint>,
-    // @@protoc_insertion_point(field:Chapter.brief_info)
-    pub brief_info: ::protobuf::MessageField<super::ChapterBrief::ChapterBrief>,
+    // @@protoc_insertion_point(field:Chapter.BGPBGGEHDLG)
+    pub BGPBGGEHDLG: ::std::vec::Vec<super::Waypoint::Waypoint>,
+    // @@protoc_insertion_point(field:Chapter.OEFAPEJBIGF)
+    pub OEFAPEJBIGF: ::protobuf::MessageField<super::ChapterBrief::ChapterBrief>,
     // special fields
     // @@protoc_insertion_point(special_field:Chapter.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl Chapter {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "waypoint_list",
-            |m: &Chapter| { &m.waypoint_list },
-            |m: &mut Chapter| { &mut m.waypoint_list },
+            "BGPBGGEHDLG",
+            |m: &Chapter| { &m.BGPBGGEHDLG },
+            |m: &mut Chapter| { &mut m.BGPBGGEHDLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChapterBrief::ChapterBrief>(
-            "brief_info",
-            |m: &Chapter| { &m.brief_info },
-            |m: &mut Chapter| { &mut m.brief_info },
+            "OEFAPEJBIGF",
+            |m: &Chapter| { &m.OEFAPEJBIGF },
+            |m: &mut Chapter| { &mut m.OEFAPEJBIGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Chapter>(
             "Chapter",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for Chapter {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.waypoint_list.push(is.read_message()?);
+                106 => {
+                    self.BGPBGGEHDLG.push(is.read_message()?);
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.brief_info)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEFAPEJBIGF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for Chapter {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.waypoint_list {
+        for value in &self.BGPBGGEHDLG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.brief_info.as_ref() {
+        if let Some(v) = self.OEFAPEJBIGF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for Chapter {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.waypoint_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.BGPBGGEHDLG {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if let Some(v) = self.brief_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.OEFAPEJBIGF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for Chapter {
     }
 
     fn clear(&mut self) {
-        self.waypoint_list.clear();
-        self.brief_info.clear();
+        self.BGPBGGEHDLG.clear();
+        self.OEFAPEJBIGF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Chapter {
         static instance: Chapter = Chapter {
-            waypoint_list: ::std::vec::Vec::new(),
-            brief_info: ::protobuf::MessageField::none(),
+            BGPBGGEHDLG: ::std::vec::Vec::new(),
+            OEFAPEJBIGF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for Chapter {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\rChapter.proto\x1a\x12ChapterBrief.proto\x1a\x0eWaypoint.proto\"g\n\
-    \x07Chapter\x12.\n\rwaypoint_list\x18\t\x20\x03(\x0b2\t.WaypointR\x0cway\
-    pointList\x12,\n\nbrief_info\x18\x0b\x20\x01(\x0b2\r.ChapterBriefR\tbrie\
-    fInfob\x06proto3\
+    \x07Chapter\x12+\n\x0bBGPBGGEHDLG\x18\r\x20\x03(\x0b2\t.WaypointR\x0bBGP\
+    BGGEHDLG\x12/\n\x0bOEFAPEJBIGF\x18\x0f\x20\x01(\x0b2\r.ChapterBriefR\x0b\
+    OEFAPEJBIGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

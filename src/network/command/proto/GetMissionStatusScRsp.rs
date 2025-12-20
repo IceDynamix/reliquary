@@ -30,18 +30,18 @@ pub struct GetMissionStatusScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMissionStatusScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMissionStatusScRsp.unfinished_main_mission_id_list)
+    pub unfinished_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusScRsp.finished_main_mission_id_list)
+    pub finished_main_mission_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetMissionStatusScRsp.sub_mission_status_list)
     pub sub_mission_status_list: ::std::vec::Vec<super::Mission::Mission>,
     // @@protoc_insertion_point(field:GetMissionStatusScRsp.disabled_main_mission_id_list)
     pub disabled_main_mission_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMissionStatusScRsp.main_mission_mcv_list)
-    pub main_mission_mcv_list: ::std::vec::Vec<super::MainMissionMcv::MainMissionMcv>,
-    // @@protoc_insertion_point(field:GetMissionStatusScRsp.unfinished_main_mission_id_list)
-    pub unfinished_main_mission_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetMissionStatusScRsp.curversion_finished_main_mission_id_list)
     pub curversion_finished_main_mission_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMissionStatusScRsp.finished_main_mission_id_list)
-    pub finished_main_mission_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionStatusScRsp.main_mission_mcv_list)
+    pub main_mission_mcv_list: ::std::vec::Vec<super::MainMissionCustomValue::MainMissionCustomValue>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionStatusScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,6 +67,16 @@ impl GetMissionStatusScRsp {
             |m: &mut GetMissionStatusScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unfinished_main_mission_id_list",
+            |m: &GetMissionStatusScRsp| { &m.unfinished_main_mission_id_list },
+            |m: &mut GetMissionStatusScRsp| { &mut m.unfinished_main_mission_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_main_mission_id_list",
+            |m: &GetMissionStatusScRsp| { &m.finished_main_mission_id_list },
+            |m: &mut GetMissionStatusScRsp| { &mut m.finished_main_mission_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "sub_mission_status_list",
             |m: &GetMissionStatusScRsp| { &m.sub_mission_status_list },
             |m: &mut GetMissionStatusScRsp| { &mut m.sub_mission_status_list },
@@ -77,24 +87,14 @@ impl GetMissionStatusScRsp {
             |m: &mut GetMissionStatusScRsp| { &mut m.disabled_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "main_mission_mcv_list",
-            |m: &GetMissionStatusScRsp| { &m.main_mission_mcv_list },
-            |m: &mut GetMissionStatusScRsp| { &mut m.main_mission_mcv_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unfinished_main_mission_id_list",
-            |m: &GetMissionStatusScRsp| { &m.unfinished_main_mission_id_list },
-            |m: &mut GetMissionStatusScRsp| { &mut m.unfinished_main_mission_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "curversion_finished_main_mission_id_list",
             |m: &GetMissionStatusScRsp| { &m.curversion_finished_main_mission_id_list },
             |m: &mut GetMissionStatusScRsp| { &mut m.curversion_finished_main_mission_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_main_mission_id_list",
-            |m: &GetMissionStatusScRsp| { &m.finished_main_mission_id_list },
-            |m: &mut GetMissionStatusScRsp| { &mut m.finished_main_mission_id_list },
+            "main_mission_mcv_list",
+            |m: &GetMissionStatusScRsp| { &m.main_mission_mcv_list },
+            |m: &mut GetMissionStatusScRsp| { &mut m.main_mission_mcv_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionStatusScRsp>(
             "GetMissionStatusScRsp",
@@ -114,38 +114,38 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    self.sub_mission_status_list.push(is.read_message()?);
-                },
                 42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.disabled_main_mission_id_list)?;
-                },
-                40 => {
-                    self.disabled_main_mission_id_list.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.main_mission_mcv_list.push(is.read_message()?);
-                },
-                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_main_mission_id_list)?;
                 },
-                72 => {
+                40 => {
                     self.unfinished_main_mission_id_list.push(is.read_uint32()?);
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.curversion_finished_main_mission_id_list)?;
-                },
-                88 => {
-                    self.curversion_finished_main_mission_id_list.push(is.read_uint32()?);
-                },
-                98 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_main_mission_id_list)?;
                 },
-                96 => {
+                16 => {
                     self.finished_main_mission_id_list.push(is.read_uint32()?);
+                },
+                10 => {
+                    self.sub_mission_status_list.push(is.read_message()?);
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.disabled_main_mission_id_list)?;
+                },
+                72 => {
+                    self.disabled_main_mission_id_list.push(is.read_uint32()?);
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.curversion_finished_main_mission_id_list)?;
+                },
+                32 => {
+                    self.curversion_finished_main_mission_id_list.push(is.read_uint32()?);
+                },
+                82 => {
+                    self.main_mission_mcv_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,20 +160,20 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.unfinished_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.finished_main_mission_id_list);
         for value in &self.sub_mission_status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.disabled_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.disabled_main_mission_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.curversion_finished_main_mission_id_list);
         for value in &self.main_mission_mcv_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.unfinished_main_mission_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.curversion_finished_main_mission_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.finished_main_mission_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -181,18 +181,18 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(5, &self.unfinished_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(2, &self.finished_main_mission_id_list)?;
         for v in &self.sub_mission_status_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.disabled_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(9, &self.disabled_main_mission_id_list)?;
+        os.write_repeated_packed_uint32(4, &self.curversion_finished_main_mission_id_list)?;
         for v in &self.main_mission_mcv_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        os.write_repeated_packed_uint32(9, &self.unfinished_main_mission_id_list)?;
-        os.write_repeated_packed_uint32(11, &self.curversion_finished_main_mission_id_list)?;
-        os.write_repeated_packed_uint32(12, &self.finished_main_mission_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -211,24 +211,24 @@ impl ::protobuf::Message for GetMissionStatusScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.unfinished_main_mission_id_list.clear();
+        self.finished_main_mission_id_list.clear();
         self.sub_mission_status_list.clear();
         self.disabled_main_mission_id_list.clear();
-        self.main_mission_mcv_list.clear();
-        self.unfinished_main_mission_id_list.clear();
         self.curversion_finished_main_mission_id_list.clear();
-        self.finished_main_mission_id_list.clear();
+        self.main_mission_mcv_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionStatusScRsp {
         static instance: GetMissionStatusScRsp = GetMissionStatusScRsp {
             retcode: 0,
+            unfinished_main_mission_id_list: ::std::vec::Vec::new(),
+            finished_main_mission_id_list: ::std::vec::Vec::new(),
             sub_mission_status_list: ::std::vec::Vec::new(),
             disabled_main_mission_id_list: ::std::vec::Vec::new(),
-            main_mission_mcv_list: ::std::vec::Vec::new(),
-            unfinished_main_mission_id_list: ::std::vec::Vec::new(),
             curversion_finished_main_mission_id_list: ::std::vec::Vec::new(),
-            finished_main_mission_id_list: ::std::vec::Vec::new(),
+            main_mission_mcv_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -253,17 +253,17 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionStatusScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetMissionStatusScRsp.proto\x1a\x14MainMissionMcv.proto\x1a\rMissi\
-    on.proto\"\xd7\x03\n\x15GetMissionStatusScRsp\x12\x18\n\x07retcode\x18\
-    \x01\x20\x01(\rR\x07retcode\x12?\n\x17sub_mission_status_list\x18\x02\
-    \x20\x03(\x0b2\x08.MissionR\x14subMissionStatusList\x12@\n\x1ddisabled_m\
-    ain_mission_id_list\x18\x05\x20\x03(\rR\x19disabledMainMissionIdList\x12\
-    B\n\x15main_mission_mcv_list\x18\x08\x20\x03(\x0b2\x0f.MainMissionMcvR\
-    \x12mainMissionMcvList\x12D\n\x1funfinished_main_mission_id_list\x18\t\
-    \x20\x03(\rR\x1bunfinishedMainMissionIdList\x12U\n(curversion_finished_m\
-    ain_mission_id_list\x18\x0b\x20\x03(\rR#curversionFinishedMainMissionIdL\
-    ist\x12@\n\x1dfinished_main_mission_id_list\x18\x0c\x20\x03(\rR\x19finis\
-    hedMainMissionIdListb\x06proto3\
+    \n\x1bGetMissionStatusScRsp.proto\x1a\x1cMainMissionCustomValue.proto\
+    \x1a\rMission.proto\"\xdf\x03\n\x15GetMissionStatusScRsp\x12\x18\n\x07re\
+    tcode\x18\x03\x20\x01(\rR\x07retcode\x12D\n\x1funfinished_main_mission_i\
+    d_list\x18\x05\x20\x03(\rR\x1bunfinishedMainMissionIdList\x12@\n\x1dfini\
+    shed_main_mission_id_list\x18\x02\x20\x03(\rR\x19finishedMainMissionIdLi\
+    st\x12?\n\x17sub_mission_status_list\x18\x01\x20\x03(\x0b2\x08.MissionR\
+    \x14subMissionStatusList\x12@\n\x1ddisabled_main_mission_id_list\x18\t\
+    \x20\x03(\rR\x19disabledMainMissionIdList\x12U\n(curversion_finished_mai\
+    n_mission_id_list\x18\x04\x20\x03(\rR#curversionFinishedMainMissionIdLis\
+    t\x12J\n\x15main_mission_mcv_list\x18\n\x20\x03(\x0b2\x17.MainMissionCus\
+    tomValueR\x12mainMissionMcvListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -281,7 +281,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MainMissionMcv::file_descriptor().clone());
+            deps.push(super::MainMissionCustomValue::file_descriptor().clone());
             deps.push(super::Mission::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMissionStatusScRsp::generated_message_descriptor_data());

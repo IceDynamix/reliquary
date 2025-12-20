@@ -30,16 +30,16 @@ pub struct OfferingInfo {
     // message fields
     // @@protoc_insertion_point(field:OfferingInfo.has_taken_reward_id_list)
     pub has_taken_reward_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OfferingInfo.offering_level)
+    pub offering_level: u32,
     // @@protoc_insertion_point(field:OfferingInfo.offering_state)
     pub offering_state: ::protobuf::EnumOrUnknown<super::OfferingState::OfferingState>,
-    // @@protoc_insertion_point(field:OfferingInfo.LPINHKFKBCP)
-    pub LPINHKFKBCP: u32,
-    // @@protoc_insertion_point(field:OfferingInfo.PLCCDJCHALL)
-    pub PLCCDJCHALL: u32,
-    // @@protoc_insertion_point(field:OfferingInfo.AIKLCGBDBEC)
-    pub AIKLCGBDBEC: u32,
-    // @@protoc_insertion_point(field:OfferingInfo.GMPHJLOENHO)
-    pub GMPHJLOENHO: u32,
+    // @@protoc_insertion_point(field:OfferingInfo.total_exp)
+    pub total_exp: u32,
+    // @@protoc_insertion_point(field:OfferingInfo.offering_id)
+    pub offering_id: u32,
+    // @@protoc_insertion_point(field:OfferingInfo.level_exp)
+    pub level_exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OfferingInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,29 +65,29 @@ impl OfferingInfo {
             |m: &mut OfferingInfo| { &mut m.has_taken_reward_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "offering_level",
+            |m: &OfferingInfo| { &m.offering_level },
+            |m: &mut OfferingInfo| { &mut m.offering_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "offering_state",
             |m: &OfferingInfo| { &m.offering_state },
             |m: &mut OfferingInfo| { &mut m.offering_state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPINHKFKBCP",
-            |m: &OfferingInfo| { &m.LPINHKFKBCP },
-            |m: &mut OfferingInfo| { &mut m.LPINHKFKBCP },
+            "total_exp",
+            |m: &OfferingInfo| { &m.total_exp },
+            |m: &mut OfferingInfo| { &mut m.total_exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLCCDJCHALL",
-            |m: &OfferingInfo| { &m.PLCCDJCHALL },
-            |m: &mut OfferingInfo| { &mut m.PLCCDJCHALL },
+            "offering_id",
+            |m: &OfferingInfo| { &m.offering_id },
+            |m: &mut OfferingInfo| { &mut m.offering_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIKLCGBDBEC",
-            |m: &OfferingInfo| { &m.AIKLCGBDBEC },
-            |m: &mut OfferingInfo| { &mut m.AIKLCGBDBEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMPHJLOENHO",
-            |m: &OfferingInfo| { &m.GMPHJLOENHO },
-            |m: &mut OfferingInfo| { &mut m.GMPHJLOENHO },
+            "level_exp",
+            |m: &OfferingInfo| { &m.level_exp },
+            |m: &mut OfferingInfo| { &mut m.level_exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OfferingInfo>(
             "OfferingInfo",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for OfferingInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.has_taken_reward_id_list)?;
                 },
-                32 => {
+                64 => {
                     self.has_taken_reward_id_list.push(is.read_uint32()?);
                 },
-                40 => {
-                    self.offering_state = is.read_enum_or_unknown()?;
+                72 => {
+                    self.offering_level = is.read_uint32()?;
                 },
                 48 => {
-                    self.LPINHKFKBCP = is.read_uint32()?;
+                    self.offering_state = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.PLCCDJCHALL = is.read_uint32()?;
+                40 => {
+                    self.total_exp = is.read_uint32()?;
                 },
-                112 => {
-                    self.AIKLCGBDBEC = is.read_uint32()?;
+                80 => {
+                    self.offering_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.GMPHJLOENHO = is.read_uint32()?;
+                24 => {
+                    self.level_exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for OfferingInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.has_taken_reward_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.has_taken_reward_id_list);
+        if self.offering_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.offering_level);
+        }
         if self.offering_state != ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.offering_state.value());
+            my_size += ::protobuf::rt::int32_size(6, self.offering_state.value());
         }
-        if self.LPINHKFKBCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LPINHKFKBCP);
+        if self.total_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.total_exp);
         }
-        if self.PLCCDJCHALL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PLCCDJCHALL);
+        if self.offering_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.offering_id);
         }
-        if self.AIKLCGBDBEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AIKLCGBDBEC);
-        }
-        if self.GMPHJLOENHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GMPHJLOENHO);
+        if self.level_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level_exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for OfferingInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.has_taken_reward_id_list)?;
+        os.write_repeated_packed_uint32(8, &self.has_taken_reward_id_list)?;
+        if self.offering_level != 0 {
+            os.write_uint32(9, self.offering_level)?;
+        }
         if self.offering_state != ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.offering_state))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.offering_state))?;
         }
-        if self.LPINHKFKBCP != 0 {
-            os.write_uint32(6, self.LPINHKFKBCP)?;
+        if self.total_exp != 0 {
+            os.write_uint32(5, self.total_exp)?;
         }
-        if self.PLCCDJCHALL != 0 {
-            os.write_uint32(9, self.PLCCDJCHALL)?;
+        if self.offering_id != 0 {
+            os.write_uint32(10, self.offering_id)?;
         }
-        if self.AIKLCGBDBEC != 0 {
-            os.write_uint32(14, self.AIKLCGBDBEC)?;
-        }
-        if self.GMPHJLOENHO != 0 {
-            os.write_uint32(15, self.GMPHJLOENHO)?;
+        if self.level_exp != 0 {
+            os.write_uint32(3, self.level_exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,22 +196,22 @@ impl ::protobuf::Message for OfferingInfo {
 
     fn clear(&mut self) {
         self.has_taken_reward_id_list.clear();
+        self.offering_level = 0;
         self.offering_state = ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE);
-        self.LPINHKFKBCP = 0;
-        self.PLCCDJCHALL = 0;
-        self.AIKLCGBDBEC = 0;
-        self.GMPHJLOENHO = 0;
+        self.total_exp = 0;
+        self.offering_id = 0;
+        self.level_exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OfferingInfo {
         static instance: OfferingInfo = OfferingInfo {
             has_taken_reward_id_list: ::std::vec::Vec::new(),
+            offering_level: 0,
             offering_state: ::protobuf::EnumOrUnknown::from_i32(0),
-            LPINHKFKBCP: 0,
-            PLCCDJCHALL: 0,
-            AIKLCGBDBEC: 0,
-            GMPHJLOENHO: 0,
+            total_exp: 0,
+            offering_id: 0,
+            level_exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,13 +236,13 @@ impl ::protobuf::reflect::ProtobufValue for OfferingInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12OfferingInfo.proto\x1a\x13OfferingState.proto\"\x85\x02\n\x0cOffer\
-    ingInfo\x126\n\x18has_taken_reward_id_list\x18\x04\x20\x03(\rR\x14hasTak\
-    enRewardIdList\x125\n\x0eoffering_state\x18\x05\x20\x01(\x0e2\x0e.Offeri\
-    ngStateR\rofferingState\x12\x20\n\x0bLPINHKFKBCP\x18\x06\x20\x01(\rR\x0b\
-    LPINHKFKBCP\x12\x20\n\x0bPLCCDJCHALL\x18\t\x20\x01(\rR\x0bPLCCDJCHALL\
-    \x12\x20\n\x0bAIKLCGBDBEC\x18\x0e\x20\x01(\rR\x0bAIKLCGBDBEC\x12\x20\n\
-    \x0bGMPHJLOENHO\x18\x0f\x20\x01(\rR\x0bGMPHJLOENHOb\x06proto3\
+    \n\x12OfferingInfo.proto\x1a\x13OfferingState.proto\"\xff\x01\n\x0cOffer\
+    ingInfo\x126\n\x18has_taken_reward_id_list\x18\x08\x20\x03(\rR\x14hasTak\
+    enRewardIdList\x12%\n\x0eoffering_level\x18\t\x20\x01(\rR\rofferingLevel\
+    \x125\n\x0eoffering_state\x18\x06\x20\x01(\x0e2\x0e.OfferingStateR\roffe\
+    ringState\x12\x1b\n\ttotal_exp\x18\x05\x20\x01(\rR\x08totalExp\x12\x1f\n\
+    \x0boffering_id\x18\n\x20\x01(\rR\nofferingId\x12\x1b\n\tlevel_exp\x18\
+    \x03\x20\x01(\rR\x08levelExpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

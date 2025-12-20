@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultiPathAvatarInfo {
     // message fields
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.equip_relic_list)
+    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.avatar_id)
+    pub avatar_id: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.path_equipment_id)
+    pub path_equipment_id: u32,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.multipath_skilltree_list)
     pub multipath_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.skilltree_version)
     pub skilltree_version: u32,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.HPAHMNFHAHN)
-    pub HPAHMNFHAHN: u64,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.FPLKLHAFLEJ)
-    pub FPLKLHAFLEJ: u32,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.equip_relic_list)
-    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:MultiPathAvatarInfo.avatar_id)
-    pub avatar_id: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:MultiPathAvatarInfo.DEADHPICKBO)
+    pub DEADHPICKBO: u64,
     // @@protoc_insertion_point(field:MultiPathAvatarInfo.dressed_skin_id)
     pub dressed_skin_id: u32,
     // special fields
@@ -64,6 +64,26 @@ impl MultiPathAvatarInfo {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equip_relic_list",
+            |m: &MultiPathAvatarInfo| { &m.equip_relic_list },
+            |m: &mut MultiPathAvatarInfo| { &mut m.equip_relic_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &MultiPathAvatarInfo| { &m.avatar_id },
+            |m: &mut MultiPathAvatarInfo| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &MultiPathAvatarInfo| { &m.rank },
+            |m: &mut MultiPathAvatarInfo| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "path_equipment_id",
+            |m: &MultiPathAvatarInfo| { &m.path_equipment_id },
+            |m: &mut MultiPathAvatarInfo| { &mut m.path_equipment_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "multipath_skilltree_list",
             |m: &MultiPathAvatarInfo| { &m.multipath_skilltree_list },
             |m: &mut MultiPathAvatarInfo| { &mut m.multipath_skilltree_list },
@@ -74,29 +94,9 @@ impl MultiPathAvatarInfo {
             |m: &mut MultiPathAvatarInfo| { &mut m.skilltree_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPAHMNFHAHN",
-            |m: &MultiPathAvatarInfo| { &m.HPAHMNFHAHN },
-            |m: &mut MultiPathAvatarInfo| { &mut m.HPAHMNFHAHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPLKLHAFLEJ",
-            |m: &MultiPathAvatarInfo| { &m.FPLKLHAFLEJ },
-            |m: &mut MultiPathAvatarInfo| { &mut m.FPLKLHAFLEJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equip_relic_list",
-            |m: &MultiPathAvatarInfo| { &m.equip_relic_list },
-            |m: &mut MultiPathAvatarInfo| { &mut m.equip_relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &MultiPathAvatarInfo| { &m.rank },
-            |m: &mut MultiPathAvatarInfo| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &MultiPathAvatarInfo| { &m.avatar_id },
-            |m: &mut MultiPathAvatarInfo| { &mut m.avatar_id },
+            "DEADHPICKBO",
+            |m: &MultiPathAvatarInfo| { &m.DEADHPICKBO },
+            |m: &mut MultiPathAvatarInfo| { &mut m.DEADHPICKBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dressed_skin_id",
@@ -121,28 +121,28 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.multipath_skilltree_list.push(is.read_message()?);
-                },
-                32 => {
-                    self.skilltree_version = is.read_uint32()?;
-                },
-                48 => {
-                    self.HPAHMNFHAHN = is.read_uint64()?;
-                },
-                64 => {
-                    self.FPLKLHAFLEJ = is.read_uint32()?;
-                },
-                74 => {
+                106 => {
                     self.equip_relic_list.push(is.read_message()?);
                 },
-                80 => {
-                    self.rank = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.avatar_id = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                8 => {
+                    self.rank = is.read_uint32()?;
+                },
+                120 => {
+                    self.path_equipment_id = is.read_uint32()?;
+                },
+                114 => {
+                    self.multipath_skilltree_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.skilltree_version = is.read_uint32()?;
+                },
+                64 => {
+                    self.DEADHPICKBO = is.read_uint64()?;
+                },
+                24 => {
                     self.dressed_skin_id = is.read_uint32()?;
                 },
                 tag => {
@@ -157,31 +157,31 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.equip_relic_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(4, self.avatar_id.value());
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.rank);
+        }
+        if self.path_equipment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.path_equipment_id);
+        }
         for value in &self.multipath_skilltree_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.skilltree_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.skilltree_version);
+            my_size += ::protobuf::rt::uint32_size(10, self.skilltree_version);
         }
-        if self.HPAHMNFHAHN != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.HPAHMNFHAHN);
-        }
-        if self.FPLKLHAFLEJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FPLKLHAFLEJ);
-        }
-        for value in &self.equip_relic_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.rank);
-        }
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(12, self.avatar_id.value());
+        if self.DEADHPICKBO != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.DEADHPICKBO);
         }
         if self.dressed_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.dressed_skin_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.dressed_skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,29 +189,29 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.equip_relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(1, self.rank)?;
+        }
+        if self.path_equipment_id != 0 {
+            os.write_uint32(15, self.path_equipment_id)?;
+        }
         for v in &self.multipath_skilltree_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.skilltree_version != 0 {
-            os.write_uint32(4, self.skilltree_version)?;
+            os.write_uint32(10, self.skilltree_version)?;
         }
-        if self.HPAHMNFHAHN != 0 {
-            os.write_uint64(6, self.HPAHMNFHAHN)?;
-        }
-        if self.FPLKLHAFLEJ != 0 {
-            os.write_uint32(8, self.FPLKLHAFLEJ)?;
-        }
-        for v in &self.equip_relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if self.rank != 0 {
-            os.write_uint32(10, self.rank)?;
-        }
-        if self.avatar_id != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.avatar_id))?;
+        if self.DEADHPICKBO != 0 {
+            os.write_uint64(8, self.DEADHPICKBO)?;
         }
         if self.dressed_skin_id != 0 {
-            os.write_uint32(13, self.dressed_skin_id)?;
+            os.write_uint32(3, self.dressed_skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,26 +230,26 @@ impl ::protobuf::Message for MultiPathAvatarInfo {
     }
 
     fn clear(&mut self) {
+        self.equip_relic_list.clear();
+        self.avatar_id = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.rank = 0;
+        self.path_equipment_id = 0;
         self.multipath_skilltree_list.clear();
         self.skilltree_version = 0;
-        self.HPAHMNFHAHN = 0;
-        self.FPLKLHAFLEJ = 0;
-        self.equip_relic_list.clear();
-        self.rank = 0;
-        self.avatar_id = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
+        self.DEADHPICKBO = 0;
         self.dressed_skin_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultiPathAvatarInfo {
         static instance: MultiPathAvatarInfo = MultiPathAvatarInfo {
+            equip_relic_list: ::std::vec::Vec::new(),
+            avatar_id: ::protobuf::EnumOrUnknown::from_i32(0),
+            rank: 0,
+            path_equipment_id: 0,
             multipath_skilltree_list: ::std::vec::Vec::new(),
             skilltree_version: 0,
-            HPAHMNFHAHN: 0,
-            FPLKLHAFLEJ: 0,
-            equip_relic_list: ::std::vec::Vec::new(),
-            rank: 0,
-            avatar_id: ::protobuf::EnumOrUnknown::from_i32(0),
+            DEADHPICKBO: 0,
             dressed_skin_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -276,16 +276,16 @@ impl ::protobuf::reflect::ProtobufValue for MultiPathAvatarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19MultiPathAvatarInfo.proto\x1a\x15AvatarSkillTree.proto\x1a\x10Equi\
-    pRelic.proto\x1a\x19MultiPathAvatarType.proto\"\xf8\x02\n\x13MultiPathAv\
-    atarInfo\x12J\n\x18multipath_skilltree_list\x18\x03\x20\x03(\x0b2\x10.Av\
-    atarSkillTreeR\x16multipathSkilltreeList\x12+\n\x11skilltree_version\x18\
-    \x04\x20\x01(\rR\x10skilltreeVersion\x12\x20\n\x0bHPAHMNFHAHN\x18\x06\
-    \x20\x01(\x04R\x0bHPAHMNFHAHN\x12\x20\n\x0bFPLKLHAFLEJ\x18\x08\x20\x01(\
-    \rR\x0bFPLKLHAFLEJ\x125\n\x10equip_relic_list\x18\t\x20\x03(\x0b2\x0b.Eq\
-    uipRelicR\x0eequipRelicList\x12\x12\n\x04rank\x18\n\x20\x01(\rR\x04rank\
-    \x121\n\tavatar_id\x18\x0c\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x08ava\
-    tarId\x12&\n\x0fdressed_skin_id\x18\r\x20\x01(\rR\rdressedSkinIdb\x06pro\
-    to3\
+    pRelic.proto\x1a\x19MultiPathAvatarType.proto\"\x82\x03\n\x13MultiPathAv\
+    atarInfo\x125\n\x10equip_relic_list\x18\r\x20\x03(\x0b2\x0b.EquipRelicR\
+    \x0eequipRelicList\x121\n\tavatar_id\x18\x04\x20\x01(\x0e2\x14.MultiPath\
+    AvatarTypeR\x08avatarId\x12\x12\n\x04rank\x18\x01\x20\x01(\rR\x04rank\
+    \x12*\n\x11path_equipment_id\x18\x0f\x20\x01(\rR\x0fpathEquipmentId\x12J\
+    \n\x18multipath_skilltree_list\x18\x0e\x20\x03(\x0b2\x10.AvatarSkillTree\
+    R\x16multipathSkilltreeList\x12+\n\x11skilltree_version\x18\n\x20\x01(\r\
+    R\x10skilltreeVersion\x12\x20\n\x0bDEADHPICKBO\x18\x08\x20\x01(\x04R\x0b\
+    DEADHPICKBO\x12&\n\x0fdressed_skin_id\x18\x03\x20\x01(\rR\rdressedSkinId\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

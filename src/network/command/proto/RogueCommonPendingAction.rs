@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueCommonPendingAction {
     // message fields
+    // @@protoc_insertion_point(field:RogueCommonPendingAction.JMBFILJLCEF)
+    pub JMBFILJLCEF: ::protobuf::MessageField<super::FDBJAPKONCN::FDBJAPKONCN>,
     // @@protoc_insertion_point(field:RogueCommonPendingAction.queue_position)
     pub queue_position: u32,
-    // @@protoc_insertion_point(field:RogueCommonPendingAction.rogue_action)
-    pub rogue_action: ::protobuf::MessageField<super::EIOHAGHELOA::EIOHAGHELOA>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueCommonPendingAction.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueCommonPendingAction {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FDBJAPKONCN::FDBJAPKONCN>(
+            "JMBFILJLCEF",
+            |m: &RogueCommonPendingAction| { &m.JMBFILJLCEF },
+            |m: &mut RogueCommonPendingAction| { &mut m.JMBFILJLCEF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
             |m: &RogueCommonPendingAction| { &m.queue_position },
             |m: &mut RogueCommonPendingAction| { &mut m.queue_position },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIOHAGHELOA::EIOHAGHELOA>(
-            "rogue_action",
-            |m: &RogueCommonPendingAction| { &m.rogue_action },
-            |m: &mut RogueCommonPendingAction| { &mut m.rogue_action },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueCommonPendingAction>(
             "RogueCommonPendingAction",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.queue_position = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMBFILJLCEF)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_action)?;
+                88 => {
+                    self.queue_position = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
-        }
-        if let Some(v) = self.rogue_action.as_ref() {
+        if let Some(v) = self.JMBFILJLCEF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.queue_position != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.queue_position != 0 {
-            os.write_uint32(13, self.queue_position)?;
+        if let Some(v) = self.JMBFILJLCEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.rogue_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.queue_position != 0 {
+            os.write_uint32(11, self.queue_position)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueCommonPendingAction {
     }
 
     fn clear(&mut self) {
+        self.JMBFILJLCEF.clear();
         self.queue_position = 0;
-        self.rogue_action.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueCommonPendingAction {
         static instance: RogueCommonPendingAction = RogueCommonPendingAction {
+            JMBFILJLCEF: ::protobuf::MessageField::none(),
             queue_position: 0,
-            rogue_action: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueCommonPendingAction {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eRogueCommonPendingAction.proto\x1a\x11EIOHAGHELOA.proto\"r\n\x18Ro\
-    gueCommonPendingAction\x12%\n\x0equeue_position\x18\r\x20\x01(\rR\rqueue\
-    Position\x12/\n\x0crogue_action\x18\x0f\x20\x01(\x0b2\x0c.EIOHAGHELOAR\
-    \x0brogueActionb\x06proto3\
+    \n\x1eRogueCommonPendingAction.proto\x1a\x11FDBJAPKONCN.proto\"q\n\x18Ro\
+    gueCommonPendingAction\x12.\n\x0bJMBFILJLCEF\x18\x03\x20\x01(\x0b2\x0c.F\
+    DBJAPKONCNR\x0bJMBFILJLCEF\x12%\n\x0equeue_position\x18\x0b\x20\x01(\rR\
+    \rqueuePositionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EIOHAGHELOA::file_descriptor().clone());
+            deps.push(super::FDBJAPKONCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueCommonPendingAction::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

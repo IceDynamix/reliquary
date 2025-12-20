@@ -30,13 +30,13 @@ pub enum CmdReplayType {
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayTypeNone)
     CmdReplayTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
-    CmdGetReplayTokenScRsp = 3523,
+    CmdGetReplayTokenScRsp = 3538,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoScRsp)
-    CmdGetPlayerReplayInfoScRsp = 3565,
+    CmdGetPlayerReplayInfoScRsp = 3547,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoCsReq)
-    CmdGetPlayerReplayInfoCsReq = 3598,
+    CmdGetPlayerReplayInfoCsReq = 3509,
     // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
-    CmdGetReplayTokenCsReq = 3599,
+    CmdGetReplayTokenCsReq = 3517,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
             0 => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
-            3523 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            3565 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
-            3598 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
-            3599 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            3538 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
+            3547 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
+            3509 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
+            3517 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -109,10 +109,10 @@ impl CmdReplayType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x15\n\x11CmdRepl\
-    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenScRsp\x10\xc3\x1b\x12\x20\
-    \n\x1bCmdGetPlayerReplayInfoScRsp\x10\xed\x1b\x12\x20\n\x1bCmdGetPlayerR\
-    eplayInfoCsReq\x10\x8e\x1c\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\x8f\
-    \x1cb\x06proto3\
+    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenScRsp\x10\xd2\x1b\x12\x20\
+    \n\x1bCmdGetPlayerReplayInfoScRsp\x10\xdb\x1b\x12\x20\n\x1bCmdGetPlayerR\
+    eplayInfoCsReq\x10\xb5\x1b\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\xbd\
+    \x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

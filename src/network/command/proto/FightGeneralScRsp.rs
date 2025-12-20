@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightGeneralScRsp {
     // message fields
+    // @@protoc_insertion_point(field:FightGeneralScRsp.NAFFAFEHPFK)
+    pub NAFFAFEHPFK: u32,
     // @@protoc_insertion_point(field:FightGeneralScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FightGeneralScRsp.FNKHOPGCKEE)
-    pub FNKHOPGCKEE: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:FightGeneralScRsp.JPACODMICFF)
-    pub JPACODMICFF: u32,
+    // @@protoc_insertion_point(field:FightGeneralScRsp.AHLHKGLPHFM)
+    pub AHLHKGLPHFM: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FightGeneralScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl FightGeneralScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NAFFAFEHPFK",
+            |m: &FightGeneralScRsp| { &m.NAFFAFEHPFK },
+            |m: &mut FightGeneralScRsp| { &mut m.NAFFAFEHPFK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FightGeneralScRsp| { &m.retcode },
             |m: &mut FightGeneralScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNKHOPGCKEE",
-            |m: &FightGeneralScRsp| { &m.FNKHOPGCKEE },
-            |m: &mut FightGeneralScRsp| { &mut m.FNKHOPGCKEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPACODMICFF",
-            |m: &FightGeneralScRsp| { &m.JPACODMICFF },
-            |m: &mut FightGeneralScRsp| { &mut m.JPACODMICFF },
+            "AHLHKGLPHFM",
+            |m: &FightGeneralScRsp| { &m.AHLHKGLPHFM },
+            |m: &mut FightGeneralScRsp| { &mut m.AHLHKGLPHFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightGeneralScRsp>(
             "FightGeneralScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FightGeneralScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                112 => {
+                    self.NAFFAFEHPFK = is.read_uint32()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
-                    self.FNKHOPGCKEE = is.read_bytes()?;
-                },
-                96 => {
-                    self.JPACODMICFF = is.read_uint32()?;
+                98 => {
+                    self.AHLHKGLPHFM = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FightGeneralScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NAFFAFEHPFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NAFFAFEHPFK);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if !self.FNKHOPGCKEE.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(5, &self.FNKHOPGCKEE);
-        }
-        if self.JPACODMICFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JPACODMICFF);
+        if !self.AHLHKGLPHFM.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.AHLHKGLPHFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FightGeneralScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NAFFAFEHPFK != 0 {
+            os.write_uint32(14, self.NAFFAFEHPFK)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if !self.FNKHOPGCKEE.is_empty() {
-            os.write_bytes(5, &self.FNKHOPGCKEE)?;
-        }
-        if self.JPACODMICFF != 0 {
-            os.write_uint32(12, self.JPACODMICFF)?;
+        if !self.AHLHKGLPHFM.is_empty() {
+            os.write_string(12, &self.AHLHKGLPHFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FightGeneralScRsp {
     }
 
     fn clear(&mut self) {
+        self.NAFFAFEHPFK = 0;
         self.retcode = 0;
-        self.FNKHOPGCKEE.clear();
-        self.JPACODMICFF = 0;
+        self.AHLHKGLPHFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightGeneralScRsp {
         static instance: FightGeneralScRsp = FightGeneralScRsp {
+            NAFFAFEHPFK: 0,
             retcode: 0,
-            FNKHOPGCKEE: ::std::vec::Vec::new(),
-            JPACODMICFF: 0,
+            AHLHKGLPHFM: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FightGeneralScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FightGeneralScRsp.proto\"q\n\x11FightGeneralScRsp\x12\x18\n\x07ret\
-    code\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bFNKHOPGCKEE\x18\x05\x20\
-    \x01(\x0cR\x0bFNKHOPGCKEE\x12\x20\n\x0bJPACODMICFF\x18\x0c\x20\x01(\rR\
-    \x0bJPACODMICFFb\x06proto3\
+    \n\x17FightGeneralScRsp.proto\"q\n\x11FightGeneralScRsp\x12\x20\n\x0bNAF\
+    FAFEHPFK\x18\x0e\x20\x01(\rR\x0bNAFFAFEHPFK\x12\x18\n\x07retcode\x18\x02\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bAHLHKGLPHFM\x18\x0c\x20\x01(\tR\x0b\
+    AHLHKGLPHFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

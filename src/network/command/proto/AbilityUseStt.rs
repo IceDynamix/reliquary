@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AbilityUseStt {
     // message fields
-    // @@protoc_insertion_point(field:AbilityUseStt.FKBNCKMEBGJ)
-    pub FKBNCKMEBGJ: ::std::string::String,
+    // @@protoc_insertion_point(field:AbilityUseStt.BOKMABDJOPJ)
+    pub BOKMABDJOPJ: ::std::string::String,
     // @@protoc_insertion_point(field:AbilityUseStt.count)
     pub count: u32,
     // @@protoc_insertion_point(field:AbilityUseStt.total_damage)
@@ -54,9 +54,9 @@ impl AbilityUseStt {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKBNCKMEBGJ",
-            |m: &AbilityUseStt| { &m.FKBNCKMEBGJ },
-            |m: &mut AbilityUseStt| { &mut m.FKBNCKMEBGJ },
+            "BOKMABDJOPJ",
+            |m: &AbilityUseStt| { &m.BOKMABDJOPJ },
+            |m: &mut AbilityUseStt| { &mut m.BOKMABDJOPJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for AbilityUseStt {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.FKBNCKMEBGJ = is.read_string()?;
+                    self.BOKMABDJOPJ = is.read_string()?;
                 },
                 16 => {
                     self.count = is.read_uint32()?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for AbilityUseStt {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.FKBNCKMEBGJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.FKBNCKMEBGJ);
+        if !self.BOKMABDJOPJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.BOKMABDJOPJ);
         }
         if self.count != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.count);
@@ -122,8 +122,8 @@ impl ::protobuf::Message for AbilityUseStt {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.FKBNCKMEBGJ.is_empty() {
-            os.write_string(1, &self.FKBNCKMEBGJ)?;
+        if !self.BOKMABDJOPJ.is_empty() {
+            os.write_string(1, &self.BOKMABDJOPJ)?;
         }
         if self.count != 0 {
             os.write_uint32(2, self.count)?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for AbilityUseStt {
     }
 
     fn clear(&mut self) {
-        self.FKBNCKMEBGJ.clear();
+        self.BOKMABDJOPJ.clear();
         self.count = 0;
         self.total_damage = 0.;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for AbilityUseStt {
 
     fn default_instance() -> &'static AbilityUseStt {
         static instance: AbilityUseStt = AbilityUseStt {
-            FKBNCKMEBGJ: ::std::string::String::new(),
+            BOKMABDJOPJ: ::std::string::String::new(),
             count: 0,
             total_damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for AbilityUseStt {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13AbilityUseStt.proto\"j\n\rAbilityUseStt\x12\x20\n\x0bFKBNCKMEBGJ\
-    \x18\x01\x20\x01(\tR\x0bFKBNCKMEBGJ\x12\x14\n\x05count\x18\x02\x20\x01(\
+    \n\x13AbilityUseStt.proto\"j\n\rAbilityUseStt\x12\x20\n\x0bBOKMABDJOPJ\
+    \x18\x01\x20\x01(\tR\x0bBOKMABDJOPJ\x12\x14\n\x05count\x18\x02\x20\x01(\
     \rR\x05count\x12!\n\x0ctotal_damage\x18\x03\x20\x01(\x01R\x0btotalDamage\
     b\x06proto3\
 ";

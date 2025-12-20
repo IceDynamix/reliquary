@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DressRelicAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DressRelicAvatarCsReq.param_list)
-    pub param_list: ::std::vec::Vec<super::DressRelicParam::DressRelicParam>,
+    // @@protoc_insertion_point(field:DressRelicAvatarCsReq.switch_list)
+    pub switch_list: ::std::vec::Vec<super::DressRelicParam::DressRelicParam>,
     // @@protoc_insertion_point(field:DressRelicAvatarCsReq.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DressRelicAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "param_list",
-            |m: &DressRelicAvatarCsReq| { &m.param_list },
-            |m: &mut DressRelicAvatarCsReq| { &mut m.param_list },
+            "switch_list",
+            |m: &DressRelicAvatarCsReq| { &m.switch_list },
+            |m: &mut DressRelicAvatarCsReq| { &mut m.switch_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.param_list.push(is.read_message()?);
+                90 => {
+                    self.switch_list.push(is.read_message()?);
                 },
-                96 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.param_list {
+        for value in &self.switch_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.param_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.switch_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         if self.avatar_id != 0 {
-            os.write_uint32(12, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for DressRelicAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.param_list.clear();
+        self.switch_list.clear();
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DressRelicAvatarCsReq {
         static instance: DressRelicAvatarCsReq = DressRelicAvatarCsReq {
-            param_list: ::std::vec::Vec::new(),
+            switch_list: ::std::vec::Vec::new(),
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for DressRelicAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bDressRelicAvatarCsReq.proto\x1a\x15DressRelicParam.proto\"e\n\x15D\
-    ressRelicAvatarCsReq\x12/\n\nparam_list\x18\x03\x20\x03(\x0b2\x10.DressR\
-    elicParamR\tparamList\x12\x1b\n\tavatar_id\x18\x0c\x20\x01(\rR\x08avatar\
-    Idb\x06proto3\
+    \n\x1bDressRelicAvatarCsReq.proto\x1a\x15DressRelicParam.proto\"g\n\x15D\
+    ressRelicAvatarCsReq\x121\n\x0bswitch_list\x18\x0b\x20\x03(\x0b2\x10.Dre\
+    ssRelicParamR\nswitchList\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\rR\x08av\
+    atarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

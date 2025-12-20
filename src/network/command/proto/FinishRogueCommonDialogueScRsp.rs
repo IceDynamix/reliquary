@@ -79,7 +79,7 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                40 => {
                     self.event_unique_id = is.read_uint32()?;
                 },
                 104 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.event_unique_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.event_unique_id);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FinishRogueCommonDialogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.event_unique_id != 0 {
-            os.write_uint32(8, self.event_unique_id)?;
+            os.write_uint32(5, self.event_unique_id)?;
         }
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishRogueCommonDialogueScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$FinishRogueCommonDialogueScRsp.proto\"b\n\x1eFinishRogueCommonDialogu\
-    eScRsp\x12&\n\x0fevent_unique_id\x18\x08\x20\x01(\rR\reventUniqueId\x12\
+    eScRsp\x12&\n\x0fevent_unique_id\x18\x05\x20\x01(\rR\reventUniqueId\x12\
     \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

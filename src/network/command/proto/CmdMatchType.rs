@@ -30,19 +30,19 @@ pub enum CmdMatchType {
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdMatchTypeNone)
     CmdMatchTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdStartMatchCsReq)
-    CmdStartMatchCsReq = 7326,
+    CmdStartMatchCsReq = 7305,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdCancelMatchScRsp)
-    CmdCancelMatchScRsp = 7338,
+    CmdCancelMatchScRsp = 7302,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdGetCrossInfoScRsp)
-    CmdGetCrossInfoScRsp = 7320,
+    CmdGetCrossInfoScRsp = 7348,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdStartMatchScRsp)
-    CmdStartMatchScRsp = 7328,
+    CmdStartMatchScRsp = 7331,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdCancelMatchCsReq)
-    CmdCancelMatchCsReq = 7321,
+    CmdCancelMatchCsReq = 7333,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdMatchResultScNotify)
-    CmdMatchResultScNotify = 7305,
+    CmdMatchResultScNotify = 7319,
     // @@protoc_insertion_point(enum_value:CmdMatchType.CmdGetCrossInfoCsReq)
-    CmdGetCrossInfoCsReq = 7327,
+    CmdGetCrossInfoCsReq = 7335,
 }
 
 impl ::protobuf::Enum for CmdMatchType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdMatchType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMatchType> {
         match value {
             0 => ::std::option::Option::Some(CmdMatchType::CmdMatchTypeNone),
-            7326 => ::std::option::Option::Some(CmdMatchType::CmdStartMatchCsReq),
-            7338 => ::std::option::Option::Some(CmdMatchType::CmdCancelMatchScRsp),
-            7320 => ::std::option::Option::Some(CmdMatchType::CmdGetCrossInfoScRsp),
-            7328 => ::std::option::Option::Some(CmdMatchType::CmdStartMatchScRsp),
-            7321 => ::std::option::Option::Some(CmdMatchType::CmdCancelMatchCsReq),
-            7305 => ::std::option::Option::Some(CmdMatchType::CmdMatchResultScNotify),
-            7327 => ::std::option::Option::Some(CmdMatchType::CmdGetCrossInfoCsReq),
+            7305 => ::std::option::Option::Some(CmdMatchType::CmdStartMatchCsReq),
+            7302 => ::std::option::Option::Some(CmdMatchType::CmdCancelMatchScRsp),
+            7348 => ::std::option::Option::Some(CmdMatchType::CmdGetCrossInfoScRsp),
+            7331 => ::std::option::Option::Some(CmdMatchType::CmdStartMatchScRsp),
+            7333 => ::std::option::Option::Some(CmdMatchType::CmdCancelMatchCsReq),
+            7319 => ::std::option::Option::Some(CmdMatchType::CmdMatchResultScNotify),
+            7335 => ::std::option::Option::Some(CmdMatchType::CmdGetCrossInfoCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -127,11 +127,11 @@ impl CmdMatchType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdMatchType.proto*\xdd\x01\n\x0cCmdMatchType\x12\x14\n\x10CmdMatc\
-    hTypeNone\x10\0\x12\x17\n\x12CmdStartMatchCsReq\x10\x9e9\x12\x18\n\x13Cm\
-    dCancelMatchScRsp\x10\xaa9\x12\x19\n\x14CmdGetCrossInfoScRsp\x10\x989\
-    \x12\x17\n\x12CmdStartMatchScRsp\x10\xa09\x12\x18\n\x13CmdCancelMatchCsR\
-    eq\x10\x999\x12\x1b\n\x16CmdMatchResultScNotify\x10\x899\x12\x19\n\x14Cm\
-    dGetCrossInfoCsReq\x10\x9f9b\x06proto3\
+    hTypeNone\x10\0\x12\x17\n\x12CmdStartMatchCsReq\x10\x899\x12\x18\n\x13Cm\
+    dCancelMatchScRsp\x10\x869\x12\x19\n\x14CmdGetCrossInfoScRsp\x10\xb49\
+    \x12\x17\n\x12CmdStartMatchScRsp\x10\xa39\x12\x18\n\x13CmdCancelMatchCsR\
+    eq\x10\xa59\x12\x1b\n\x16CmdMatchResultScNotify\x10\x979\x12\x19\n\x14Cm\
+    dGetCrossInfoCsReq\x10\xa79b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptActivityExpeditionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AcceptActivityExpeditionScRsp.process_expedition)
-    pub process_expedition: ::protobuf::MessageField<super::ActivityExpeditionData::ActivityExpeditionData>,
+    // @@protoc_insertion_point(field:AcceptActivityExpeditionScRsp.IGGGCKFLDMA)
+    pub IGGGCKFLDMA: ::protobuf::MessageField<super::ActivityExpedition::ActivityExpedition>,
     // @@protoc_insertion_point(field:AcceptActivityExpeditionScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl AcceptActivityExpeditionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ActivityExpeditionData::ActivityExpeditionData>(
-            "process_expedition",
-            |m: &AcceptActivityExpeditionScRsp| { &m.process_expedition },
-            |m: &mut AcceptActivityExpeditionScRsp| { &mut m.process_expedition },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ActivityExpedition::ActivityExpedition>(
+            "IGGGCKFLDMA",
+            |m: &AcceptActivityExpeditionScRsp| { &m.IGGGCKFLDMA },
+            |m: &mut AcceptActivityExpeditionScRsp| { &mut m.IGGGCKFLDMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.process_expedition)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IGGGCKFLDMA)?;
                 },
-                96 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.process_expedition.as_ref() {
+        if let Some(v) = self.IGGGCKFLDMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.process_expedition.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.IGGGCKFLDMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for AcceptActivityExpeditionScRsp {
     }
 
     fn clear(&mut self) {
-        self.process_expedition.clear();
+        self.IGGGCKFLDMA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptActivityExpeditionScRsp {
         static instance: AcceptActivityExpeditionScRsp = AcceptActivityExpeditionScRsp {
-            process_expedition: ::protobuf::MessageField::none(),
+            IGGGCKFLDMA: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for AcceptActivityExpeditionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#AcceptActivityExpeditionScRsp.proto\x1a\x1cActivityExpeditionData.pro\
-    to\"\x81\x01\n\x1dAcceptActivityExpeditionScRsp\x12F\n\x12process_expedi\
-    tion\x18\x07\x20\x01(\x0b2\x17.ActivityExpeditionDataR\x11processExpedit\
-    ion\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n#AcceptActivityExpeditionScRsp.proto\x1a\x18ActivityExpedition.proto\"\
+    p\n\x1dAcceptActivityExpeditionScRsp\x125\n\x0bIGGGCKFLDMA\x18\x0c\x20\
+    \x01(\x0b2\x13.ActivityExpeditionR\x0bIGGGCKFLDMA\x12\x18\n\x07retcode\
+    \x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ActivityExpeditionData::file_descriptor().clone());
+            deps.push(super::ActivityExpedition::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AcceptActivityExpeditionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

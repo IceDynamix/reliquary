@@ -30,8 +30,8 @@ pub struct RogueMagicReviveAvatarScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueMagicReviveAvatarScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueMagicReviveAvatarScRsp.revive_avatar_cost_items)
-    pub revive_avatar_cost_items: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:RogueMagicReviveAvatarScRsp.rogue_revive_cost)
+    pub rogue_revive_cost: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicReviveAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl RogueMagicReviveAvatarScRsp {
             |m: &mut RogueMagicReviveAvatarScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "revive_avatar_cost_items",
-            |m: &RogueMagicReviveAvatarScRsp| { &m.revive_avatar_cost_items },
-            |m: &mut RogueMagicReviveAvatarScRsp| { &mut m.revive_avatar_cost_items },
+            "rogue_revive_cost",
+            |m: &RogueMagicReviveAvatarScRsp| { &m.rogue_revive_cost },
+            |m: &mut RogueMagicReviveAvatarScRsp| { &mut m.rogue_revive_cost },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicReviveAvatarScRsp>(
             "RogueMagicReviveAvatarScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicReviveAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.revive_avatar_cost_items)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_revive_cost)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for RogueMagicReviveAvatarScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
+        if let Some(v) = self.rogue_revive_cost.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueMagicReviveAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let Some(v) = self.revive_avatar_cost_items.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.rogue_revive_cost.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for RogueMagicReviveAvatarScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.revive_avatar_cost_items.clear();
+        self.rogue_revive_cost.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicReviveAvatarScRsp {
         static instance: RogueMagicReviveAvatarScRsp = RogueMagicReviveAvatarScRsp {
             retcode: 0,
-            revive_avatar_cost_items: ::protobuf::MessageField::none(),
+            rogue_revive_cost: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicReviveAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!RogueMagicReviveAvatarScRsp.proto\x1a\x12ItemCostData.proto\"\x7f\n\
-    \x1bRogueMagicReviveAvatarScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\
-    \x07retcode\x12F\n\x18revive_avatar_cost_items\x18\x06\x20\x01(\x0b2\r.I\
-    temCostDataR\x15reviveAvatarCostItemsb\x06proto3\
+    \n!RogueMagicReviveAvatarScRsp.proto\x1a\x12ItemCostData.proto\"r\n\x1bR\
+    ogueMagicReviveAvatarScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07r\
+    etcode\x129\n\x11rogue_revive_cost\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\
+    \x0frogueReviveCostb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

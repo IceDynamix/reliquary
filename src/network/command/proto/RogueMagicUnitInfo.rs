@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicUnitInfo {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicUnitInfo.CLNDIDNIEEJ)
+    pub CLNDIDNIEEJ: u32,
     // @@protoc_insertion_point(field:RogueMagicUnitInfo.magic_unit_id)
     pub magic_unit_id: u32,
-    // @@protoc_insertion_point(field:RogueMagicUnitInfo.OFGHDKFOGFI)
-    pub OFGHDKFOGFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicUnitInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueMagicUnitInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLNDIDNIEEJ",
+            |m: &RogueMagicUnitInfo| { &m.CLNDIDNIEEJ },
+            |m: &mut RogueMagicUnitInfo| { &mut m.CLNDIDNIEEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "magic_unit_id",
             |m: &RogueMagicUnitInfo| { &m.magic_unit_id },
             |m: &mut RogueMagicUnitInfo| { &mut m.magic_unit_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFGHDKFOGFI",
-            |m: &RogueMagicUnitInfo| { &m.OFGHDKFOGFI },
-            |m: &mut RogueMagicUnitInfo| { &mut m.OFGHDKFOGFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicUnitInfo>(
             "RogueMagicUnitInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                112 => {
+                    self.CLNDIDNIEEJ = is.read_uint32()?;
+                },
                 56 => {
                     self.magic_unit_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.OFGHDKFOGFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CLNDIDNIEEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CLNDIDNIEEJ);
+        }
         if self.magic_unit_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.magic_unit_id);
-        }
-        if self.OFGHDKFOGFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OFGHDKFOGFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.CLNDIDNIEEJ != 0 {
+            os.write_uint32(14, self.CLNDIDNIEEJ)?;
+        }
         if self.magic_unit_id != 0 {
             os.write_uint32(7, self.magic_unit_id)?;
-        }
-        if self.OFGHDKFOGFI != 0 {
-            os.write_uint32(10, self.OFGHDKFOGFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueMagicUnitInfo {
     }
 
     fn clear(&mut self) {
+        self.CLNDIDNIEEJ = 0;
         self.magic_unit_id = 0;
-        self.OFGHDKFOGFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicUnitInfo {
         static instance: RogueMagicUnitInfo = RogueMagicUnitInfo {
+            CLNDIDNIEEJ: 0,
             magic_unit_id: 0,
-            OFGHDKFOGFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicUnitInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RogueMagicUnitInfo.proto\"Z\n\x12RogueMagicUnitInfo\x12\"\n\rmagic\
-    _unit_id\x18\x07\x20\x01(\rR\x0bmagicUnitId\x12\x20\n\x0bOFGHDKFOGFI\x18\
-    \n\x20\x01(\rR\x0bOFGHDKFOGFIb\x06proto3\
+    \n\x18RogueMagicUnitInfo.proto\"Z\n\x12RogueMagicUnitInfo\x12\x20\n\x0bC\
+    LNDIDNIEEJ\x18\x0e\x20\x01(\rR\x0bCLNDIDNIEEJ\x12\"\n\rmagic_unit_id\x18\
+    \x07\x20\x01(\rR\x0bmagicUnitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

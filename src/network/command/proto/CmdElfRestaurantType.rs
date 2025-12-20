@@ -30,71 +30,71 @@ pub enum CmdElfRestaurantType {
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantTypeNone)
     CmdElfRestaurantTypeNone = 0,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantSetFarmManagerScRsp)
-    CmdElfRestaurantSetFarmManagerScRsp = 2583,
+    CmdElfRestaurantSetFarmManagerScRsp = 2595,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyFieldCsReq)
     CmdElfRestaurantBuyFieldCsReq = 2570,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantClientStatusScRsp)
-    CmdElfRestaurantClientStatusScRsp = 2572,
+    CmdElfRestaurantClientStatusScRsp = 2557,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdGetElfRestaurantDataCsReq)
-    CmdGetElfRestaurantDataCsReq = 2576,
+    CmdGetElfRestaurantDataCsReq = 2573,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeRecipeLevelCsReq)
-    CmdElfRestaurantUpgradeRecipeLevelCsReq = 2562,
+    CmdElfRestaurantUpgradeRecipeLevelCsReq = 2577,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeEmployeeLevelCsReq)
-    CmdElfRestaurantUpgradeEmployeeLevelCsReq = 2580,
+    CmdElfRestaurantUpgradeEmployeeLevelCsReq = 2600,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyShopItemCsReq)
-    CmdElfRestaurantBuyShopItemCsReq = 2552,
+    CmdElfRestaurantBuyShopItemCsReq = 2594,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdGetElfRestaurantDataScRsp)
-    CmdGetElfRestaurantDataScRsp = 2578,
+    CmdGetElfRestaurantDataScRsp = 2559,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantTakeVillagerRewardScRsp)
-    CmdElfRestaurantTakeVillagerRewardScRsp = 2575,
+    CmdElfRestaurantTakeVillagerRewardScRsp = 2569,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantPlantSeedCsReq)
-    CmdElfRestaurantPlantSeedCsReq = 2551,
+    CmdElfRestaurantPlantSeedCsReq = 2590,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyShopItemScRsp)
-    CmdElfRestaurantBuyShopItemScRsp = 2584,
+    CmdElfRestaurantBuyShopItemScRsp = 2596,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantFinishTradeOrderScRsp)
-    CmdElfRestaurantFinishTradeOrderScRsp = 2599,
+    CmdElfRestaurantFinishTradeOrderScRsp = 2555,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantRecycleSeedScRsp)
-    CmdElfRestaurantRecycleSeedScRsp = 2569,
+    CmdElfRestaurantRecycleSeedScRsp = 2574,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeFacilityLevelScRsp)
-    CmdElfRestaurantUpgradeFacilityLevelScRsp = 2585,
+    CmdElfRestaurantUpgradeFacilityLevelScRsp = 2551,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdEnterElfRestaurantNextDayCsReq)
-    CmdEnterElfRestaurantNextDayCsReq = 2571,
+    CmdEnterElfRestaurantNextDayCsReq = 2579,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeFacilityLevelCsReq)
-    CmdElfRestaurantUpgradeFacilityLevelCsReq = 2579,
+    CmdElfRestaurantUpgradeFacilityLevelCsReq = 2560,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantFinishTradeOrderCsReq)
-    CmdElfRestaurantFinishTradeOrderCsReq = 2556,
+    CmdElfRestaurantFinishTradeOrderCsReq = 2562,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantPlantSeedScRsp)
-    CmdElfRestaurantPlantSeedScRsp = 2595,
+    CmdElfRestaurantPlantSeedScRsp = 2561,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSettleElfRestaurantPlayScRsp)
-    CmdSettleElfRestaurantPlayScRsp = 2558,
+    CmdSettleElfRestaurantPlayScRsp = 2576,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantClientStatusCsReq)
-    CmdElfRestaurantClientStatusCsReq = 2559,
+    CmdElfRestaurantClientStatusCsReq = 2581,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantRecycleSeedCsReq)
-    CmdElfRestaurantRecycleSeedCsReq = 2573,
+    CmdElfRestaurantRecycleSeedCsReq = 2563,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantTakeVillagerRewardCsReq)
-    CmdElfRestaurantTakeVillagerRewardCsReq = 2582,
+    CmdElfRestaurantTakeVillagerRewardCsReq = 2593,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeEmployeeLevelScRsp)
-    CmdElfRestaurantUpgradeEmployeeLevelScRsp = 2561,
+    CmdElfRestaurantUpgradeEmployeeLevelScRsp = 2584,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantDataChangeNotify)
-    CmdElfRestaurantDataChangeNotify = 2577,
+    CmdElfRestaurantDataChangeNotify = 2598,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSettleElfRestaurantPlayCsReq)
-    CmdSettleElfRestaurantPlayCsReq = 2581,
+    CmdSettleElfRestaurantPlayCsReq = 2568,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdEnterElfRestaurantNextDayScRsp)
-    CmdEnterElfRestaurantNextDayScRsp = 2588,
+    CmdEnterElfRestaurantNextDayScRsp = 2575,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantSetFarmManagerCsReq)
-    CmdElfRestaurantSetFarmManagerCsReq = 2597,
+    CmdElfRestaurantSetFarmManagerCsReq = 2589,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyFieldScRsp)
-    CmdElfRestaurantBuyFieldScRsp = 2594,
+    CmdElfRestaurantBuyFieldScRsp = 2566,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSetElfRestaurantPlayRecipeScRsp)
-    CmdSetElfRestaurantPlayRecipeScRsp = 2586,
+    CmdSetElfRestaurantPlayRecipeScRsp = 2567,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeRecipeLevelScRsp)
-    CmdElfRestaurantUpgradeRecipeLevelScRsp = 2565,
+    CmdElfRestaurantUpgradeRecipeLevelScRsp = 2564,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantHarvestCropScRsp)
-    CmdElfRestaurantHarvestCropScRsp = 2553,
+    CmdElfRestaurantHarvestCropScRsp = 2586,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantHarvestCropCsReq)
-    CmdElfRestaurantHarvestCropCsReq = 2593,
+    CmdElfRestaurantHarvestCropCsReq = 2552,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSetElfRestaurantPlayRecipeCsReq)
-    CmdSetElfRestaurantPlayRecipeCsReq = 2598,
+    CmdSetElfRestaurantPlayRecipeCsReq = 2583,
 }
 
 impl ::protobuf::Enum for CmdElfRestaurantType {
@@ -107,39 +107,39 @@ impl ::protobuf::Enum for CmdElfRestaurantType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdElfRestaurantType> {
         match value {
             0 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTypeNone),
-            2583 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantSetFarmManagerScRsp),
+            2595 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantSetFarmManagerScRsp),
             2570 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyFieldCsReq),
-            2572 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusScRsp),
-            2576 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq),
-            2562 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq),
-            2580 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq),
-            2552 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq),
-            2578 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp),
-            2575 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp),
-            2551 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq),
-            2584 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp),
-            2599 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp),
-            2569 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp),
-            2585 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelScRsp),
-            2571 => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq),
-            2579 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq),
-            2556 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq),
-            2595 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp),
-            2558 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayScRsp),
-            2559 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq),
-            2573 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq),
-            2582 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq),
-            2561 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelScRsp),
-            2577 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify),
-            2581 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq),
-            2588 => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayScRsp),
-            2597 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantSetFarmManagerCsReq),
-            2594 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyFieldScRsp),
-            2586 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeScRsp),
-            2565 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelScRsp),
-            2553 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp),
-            2593 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq),
-            2598 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq),
+            2557 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusScRsp),
+            2573 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq),
+            2577 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq),
+            2600 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq),
+            2594 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq),
+            2559 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp),
+            2569 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp),
+            2590 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq),
+            2596 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp),
+            2555 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp),
+            2574 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp),
+            2551 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelScRsp),
+            2579 => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq),
+            2560 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq),
+            2562 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq),
+            2561 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp),
+            2576 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayScRsp),
+            2581 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq),
+            2563 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq),
+            2593 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq),
+            2584 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelScRsp),
+            2598 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify),
+            2568 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq),
+            2575 => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayScRsp),
+            2589 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantSetFarmManagerCsReq),
+            2566 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyFieldScRsp),
+            2567 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeScRsp),
+            2564 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelScRsp),
+            2586 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp),
+            2552 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq),
+            2583 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq),
             _ => ::std::option::Option::None
         }
     }
@@ -284,32 +284,32 @@ impl CmdElfRestaurantType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdElfRestaurantType.proto*\xff\n\n\x14CmdElfRestaurantType\x12\
     \x1c\n\x18CmdElfRestaurantTypeNone\x10\0\x12(\n#CmdElfRestaurantSetFarmM\
-    anagerScRsp\x10\x97\x14\x12\"\n\x1dCmdElfRestaurantBuyFieldCsReq\x10\x8a\
-    \x14\x12&\n!CmdElfRestaurantClientStatusScRsp\x10\x8c\x14\x12!\n\x1cCmdG\
-    etElfRestaurantDataCsReq\x10\x90\x14\x12,\n'CmdElfRestaurantUpgradeRecip\
-    eLevelCsReq\x10\x82\x14\x12.\n)CmdElfRestaurantUpgradeEmployeeLevelCsReq\
-    \x10\x94\x14\x12%\n\x20CmdElfRestaurantBuyShopItemCsReq\x10\xf8\x13\x12!\
-    \n\x1cCmdGetElfRestaurantDataScRsp\x10\x92\x14\x12,\n'CmdElfRestaurantTa\
-    keVillagerRewardScRsp\x10\x8f\x14\x12#\n\x1eCmdElfRestaurantPlantSeedCsR\
-    eq\x10\xf7\x13\x12%\n\x20CmdElfRestaurantBuyShopItemScRsp\x10\x98\x14\
-    \x12*\n%CmdElfRestaurantFinishTradeOrderScRsp\x10\xa7\x14\x12%\n\x20CmdE\
-    lfRestaurantRecycleSeedScRsp\x10\x89\x14\x12.\n)CmdElfRestaurantUpgradeF\
-    acilityLevelScRsp\x10\x99\x14\x12&\n!CmdEnterElfRestaurantNextDayCsReq\
-    \x10\x8b\x14\x12.\n)CmdElfRestaurantUpgradeFacilityLevelCsReq\x10\x93\
-    \x14\x12*\n%CmdElfRestaurantFinishTradeOrderCsReq\x10\xfc\x13\x12#\n\x1e\
-    CmdElfRestaurantPlantSeedScRsp\x10\xa3\x14\x12$\n\x1fCmdSettleElfRestaur\
-    antPlayScRsp\x10\xfe\x13\x12&\n!CmdElfRestaurantClientStatusCsReq\x10\
-    \xff\x13\x12%\n\x20CmdElfRestaurantRecycleSeedCsReq\x10\x8d\x14\x12,\n'C\
-    mdElfRestaurantTakeVillagerRewardCsReq\x10\x96\x14\x12.\n)CmdElfRestaura\
-    ntUpgradeEmployeeLevelScRsp\x10\x81\x14\x12%\n\x20CmdElfRestaurantDataCh\
-    angeNotify\x10\x91\x14\x12$\n\x1fCmdSettleElfRestaurantPlayCsReq\x10\x95\
-    \x14\x12&\n!CmdEnterElfRestaurantNextDayScRsp\x10\x9c\x14\x12(\n#CmdElfR\
-    estaurantSetFarmManagerCsReq\x10\xa5\x14\x12\"\n\x1dCmdElfRestaurantBuyF\
-    ieldScRsp\x10\xa2\x14\x12'\n\"CmdSetElfRestaurantPlayRecipeScRsp\x10\x9a\
-    \x14\x12,\n'CmdElfRestaurantUpgradeRecipeLevelScRsp\x10\x85\x14\x12%\n\
-    \x20CmdElfRestaurantHarvestCropScRsp\x10\xf9\x13\x12%\n\x20CmdElfRestaur\
-    antHarvestCropCsReq\x10\xa1\x14\x12'\n\"CmdSetElfRestaurantPlayRecipeCsR\
-    eq\x10\xa6\x14b\x06proto3\
+    anagerScRsp\x10\xa3\x14\x12\"\n\x1dCmdElfRestaurantBuyFieldCsReq\x10\x8a\
+    \x14\x12&\n!CmdElfRestaurantClientStatusScRsp\x10\xfd\x13\x12!\n\x1cCmdG\
+    etElfRestaurantDataCsReq\x10\x8d\x14\x12,\n'CmdElfRestaurantUpgradeRecip\
+    eLevelCsReq\x10\x91\x14\x12.\n)CmdElfRestaurantUpgradeEmployeeLevelCsReq\
+    \x10\xa8\x14\x12%\n\x20CmdElfRestaurantBuyShopItemCsReq\x10\xa2\x14\x12!\
+    \n\x1cCmdGetElfRestaurantDataScRsp\x10\xff\x13\x12,\n'CmdElfRestaurantTa\
+    keVillagerRewardScRsp\x10\x89\x14\x12#\n\x1eCmdElfRestaurantPlantSeedCsR\
+    eq\x10\x9e\x14\x12%\n\x20CmdElfRestaurantBuyShopItemScRsp\x10\xa4\x14\
+    \x12*\n%CmdElfRestaurantFinishTradeOrderScRsp\x10\xfb\x13\x12%\n\x20CmdE\
+    lfRestaurantRecycleSeedScRsp\x10\x8e\x14\x12.\n)CmdElfRestaurantUpgradeF\
+    acilityLevelScRsp\x10\xf7\x13\x12&\n!CmdEnterElfRestaurantNextDayCsReq\
+    \x10\x93\x14\x12.\n)CmdElfRestaurantUpgradeFacilityLevelCsReq\x10\x80\
+    \x14\x12*\n%CmdElfRestaurantFinishTradeOrderCsReq\x10\x82\x14\x12#\n\x1e\
+    CmdElfRestaurantPlantSeedScRsp\x10\x81\x14\x12$\n\x1fCmdSettleElfRestaur\
+    antPlayScRsp\x10\x90\x14\x12&\n!CmdElfRestaurantClientStatusCsReq\x10\
+    \x95\x14\x12%\n\x20CmdElfRestaurantRecycleSeedCsReq\x10\x83\x14\x12,\n'C\
+    mdElfRestaurantTakeVillagerRewardCsReq\x10\xa1\x14\x12.\n)CmdElfRestaura\
+    ntUpgradeEmployeeLevelScRsp\x10\x98\x14\x12%\n\x20CmdElfRestaurantDataCh\
+    angeNotify\x10\xa6\x14\x12$\n\x1fCmdSettleElfRestaurantPlayCsReq\x10\x88\
+    \x14\x12&\n!CmdEnterElfRestaurantNextDayScRsp\x10\x8f\x14\x12(\n#CmdElfR\
+    estaurantSetFarmManagerCsReq\x10\x9d\x14\x12\"\n\x1dCmdElfRestaurantBuyF\
+    ieldScRsp\x10\x86\x14\x12'\n\"CmdSetElfRestaurantPlayRecipeScRsp\x10\x87\
+    \x14\x12,\n'CmdElfRestaurantUpgradeRecipeLevelScRsp\x10\x84\x14\x12%\n\
+    \x20CmdElfRestaurantHarvestCropScRsp\x10\x9a\x14\x12%\n\x20CmdElfRestaur\
+    antHarvestCropCsReq\x10\xf8\x13\x12'\n\"CmdSetElfRestaurantPlayRecipeCsR\
+    eq\x10\x97\x14b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

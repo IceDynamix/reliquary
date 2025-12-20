@@ -72,7 +72,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                48 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.rebattle_type.value());
+            my_size += ::protobuf::rt::int32_size(6, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneReviveAfterRebattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SceneReviveAfterRebattleCsReq.proto\x1a\x12RebattleType.proto\"S\n\
-    \x1dSceneReviveAfterRebattleCsReq\x122\n\rrebattle_type\x18\x05\x20\x01(\
+    \x1dSceneReviveAfterRebattleCsReq\x122\n\rrebattle_type\x18\x06\x20\x01(\
     \x0e2\r.RebattleTypeR\x0crebattleTypeb\x06proto3\
 ";
 

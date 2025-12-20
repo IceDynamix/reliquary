@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendLoginInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.JNJJFJMOALE)
-    pub JNJJFJMOALE: bool,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.MKHBPINAJCH)
-    pub MKHBPINAJCH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.IAFOPFDBKNH)
-    pub IAFOPFDBKNH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.ODDOFGCCGEE)
-    pub ODDOFGCCGEE: bool,
     // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.MGFNLGAMKFH)
+    pub MGFNLGAMKFH: bool,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.CMCILIFAGEB)
+    pub CMCILIFAGEB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.GDDMGCALKHC)
+    pub GDDMGCALKHC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.GHPNNBPCDJJ)
+    pub GHPNNBPCDJJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendLoginInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl GetFriendLoginInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNJJFJMOALE",
-            |m: &GetFriendLoginInfoScRsp| { &m.JNJJFJMOALE },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.JNJJFJMOALE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MKHBPINAJCH",
-            |m: &GetFriendLoginInfoScRsp| { &m.MKHBPINAJCH },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.MKHBPINAJCH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IAFOPFDBKNH",
-            |m: &GetFriendLoginInfoScRsp| { &m.IAFOPFDBKNH },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.IAFOPFDBKNH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODDOFGCCGEE",
-            |m: &GetFriendLoginInfoScRsp| { &m.ODDOFGCCGEE },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.ODDOFGCCGEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendLoginInfoScRsp| { &m.retcode },
             |m: &mut GetFriendLoginInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MGFNLGAMKFH",
+            |m: &GetFriendLoginInfoScRsp| { &m.MGFNLGAMKFH },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.MGFNLGAMKFH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CMCILIFAGEB",
+            |m: &GetFriendLoginInfoScRsp| { &m.CMCILIFAGEB },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.CMCILIFAGEB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GDDMGCALKHC",
+            |m: &GetFriendLoginInfoScRsp| { &m.GDDMGCALKHC },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.GDDMGCALKHC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GHPNNBPCDJJ",
+            |m: &GetFriendLoginInfoScRsp| { &m.GHPNNBPCDJJ },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.GHPNNBPCDJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendLoginInfoScRsp>(
             "GetFriendLoginInfoScRsp",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JNJJFJMOALE = is.read_bool()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MKHBPINAJCH)?;
-                },
-                48 => {
-                    self.MKHBPINAJCH.push(is.read_uint32()?);
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IAFOPFDBKNH)?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 64 => {
-                    self.IAFOPFDBKNH.push(is.read_uint32()?);
+                    self.MGFNLGAMKFH = is.read_bool()?;
                 },
-                72 => {
-                    self.ODDOFGCCGEE = is.read_bool()?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CMCILIFAGEB)?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                32 => {
+                    self.CMCILIFAGEB.push(is.read_uint32()?);
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GDDMGCALKHC)?;
+                },
+                120 => {
+                    self.GDDMGCALKHC.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.GHPNNBPCDJJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,16 +133,16 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JNJJFJMOALE != false {
-            my_size += 1 + 1;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.MKHBPINAJCH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.IAFOPFDBKNH);
-        if self.ODDOFGCCGEE != false {
-            my_size += 1 + 1;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.MGFNLGAMKFH != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CMCILIFAGEB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.GDDMGCALKHC);
+        if self.GHPNNBPCDJJ != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JNJJFJMOALE != false {
-            os.write_bool(1, self.JNJJFJMOALE)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.MKHBPINAJCH)?;
-        os.write_repeated_packed_uint32(8, &self.IAFOPFDBKNH)?;
-        if self.ODDOFGCCGEE != false {
-            os.write_bool(9, self.ODDOFGCCGEE)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.MGFNLGAMKFH != false {
+            os.write_bool(8, self.MGFNLGAMKFH)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.CMCILIFAGEB)?;
+        os.write_repeated_packed_uint32(15, &self.GDDMGCALKHC)?;
+        if self.GHPNNBPCDJJ != false {
+            os.write_bool(11, self.GHPNNBPCDJJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -178,21 +178,21 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.JNJJFJMOALE = false;
-        self.MKHBPINAJCH.clear();
-        self.IAFOPFDBKNH.clear();
-        self.ODDOFGCCGEE = false;
         self.retcode = 0;
+        self.MGFNLGAMKFH = false;
+        self.CMCILIFAGEB.clear();
+        self.GDDMGCALKHC.clear();
+        self.GHPNNBPCDJJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendLoginInfoScRsp {
         static instance: GetFriendLoginInfoScRsp = GetFriendLoginInfoScRsp {
-            JNJJFJMOALE: false,
-            MKHBPINAJCH: ::std::vec::Vec::new(),
-            IAFOPFDBKNH: ::std::vec::Vec::new(),
-            ODDOFGCCGEE: false,
             retcode: 0,
+            MGFNLGAMKFH: false,
+            CMCILIFAGEB: ::std::vec::Vec::new(),
+            GDDMGCALKHC: ::std::vec::Vec::new(),
+            GHPNNBPCDJJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendLoginInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetFriendLoginInfoScRsp.proto\"\xbb\x01\n\x17GetFriendLoginInfoScR\
-    sp\x12\x20\n\x0bJNJJFJMOALE\x18\x01\x20\x01(\x08R\x0bJNJJFJMOALE\x12\x20\
-    \n\x0bMKHBPINAJCH\x18\x06\x20\x03(\rR\x0bMKHBPINAJCH\x12\x20\n\x0bIAFOPF\
-    DBKNH\x18\x08\x20\x03(\rR\x0bIAFOPFDBKNH\x12\x20\n\x0bODDOFGCCGEE\x18\t\
-    \x20\x01(\x08R\x0bODDOFGCCGEE\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    sp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bMGFN\
+    LGAMKFH\x18\x08\x20\x01(\x08R\x0bMGFNLGAMKFH\x12\x20\n\x0bCMCILIFAGEB\
+    \x18\x04\x20\x03(\rR\x0bCMCILIFAGEB\x12\x20\n\x0bGDDMGCALKHC\x18\x0f\x20\
+    \x03(\rR\x0bGDDMGCALKHC\x12\x20\n\x0bGHPNNBPCDJJ\x18\x0b\x20\x01(\x08R\
+    \x0bGHPNNBPCDJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

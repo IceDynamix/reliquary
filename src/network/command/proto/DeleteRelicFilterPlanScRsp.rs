@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.slot_index_list)
-    pub slot_index_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.is_batch_op)
-    pub is_batch_op: bool,
     // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.ABACAMPELEJ)
+    pub ABACAMPELEJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteRelicFilterPlanScRsp.HIIBGFLBKCI)
+    pub HIIBGFLBKCI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl DeleteRelicFilterPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "slot_index_list",
-            |m: &DeleteRelicFilterPlanScRsp| { &m.slot_index_list },
-            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.slot_index_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_batch_op",
-            |m: &DeleteRelicFilterPlanScRsp| { &m.is_batch_op },
-            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.is_batch_op },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DeleteRelicFilterPlanScRsp| { &m.retcode },
             |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ABACAMPELEJ",
+            |m: &DeleteRelicFilterPlanScRsp| { &m.ABACAMPELEJ },
+            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.ABACAMPELEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HIIBGFLBKCI",
+            |m: &DeleteRelicFilterPlanScRsp| { &m.HIIBGFLBKCI },
+            |m: &mut DeleteRelicFilterPlanScRsp| { &mut m.HIIBGFLBKCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteRelicFilterPlanScRsp>(
             "DeleteRelicFilterPlanScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.slot_index_list)?;
-                },
-                24 => {
-                    self.slot_index_list.push(is.read_uint32()?);
-                },
-                56 => {
-                    self.is_batch_op = is.read_bool()?;
-                },
-                80 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ABACAMPELEJ)?;
+                },
+                72 => {
+                    self.ABACAMPELEJ.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.HIIBGFLBKCI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.slot_index_list);
-        if self.is_batch_op != false {
-            my_size += 1 + 1;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ABACAMPELEJ);
+        if self.HIIBGFLBKCI != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.slot_index_list)?;
-        if self.is_batch_op != false {
-            os.write_bool(7, self.is_batch_op)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.ABACAMPELEJ)?;
+        if self.HIIBGFLBKCI != false {
+            os.write_bool(6, self.HIIBGFLBKCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for DeleteRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.slot_index_list.clear();
-        self.is_batch_op = false;
         self.retcode = 0;
+        self.ABACAMPELEJ.clear();
+        self.HIIBGFLBKCI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteRelicFilterPlanScRsp {
         static instance: DeleteRelicFilterPlanScRsp = DeleteRelicFilterPlanScRsp {
-            slot_index_list: ::std::vec::Vec::new(),
-            is_batch_op: false,
             retcode: 0,
+            ABACAMPELEJ: ::std::vec::Vec::new(),
+            HIIBGFLBKCI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for DeleteRelicFilterPlanScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20DeleteRelicFilterPlanScRsp.proto\"~\n\x1aDeleteRelicFilterPlanScRs\
-    p\x12&\n\x0fslot_index_list\x18\x03\x20\x03(\rR\rslotIndexList\x12\x1e\n\
-    \x0bis_batch_op\x18\x07\x20\x01(\x08R\tisBatchOp\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x20DeleteRelicFilterPlanScRsp.proto\"z\n\x1aDeleteRelicFilterPlanScRs\
+    p\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bABACA\
+    MPELEJ\x18\t\x20\x03(\rR\x0bABACAMPELEJ\x12\x20\n\x0bHIIBGFLBKCI\x18\x06\
+    \x20\x01(\x08R\x0bHIIBGFLBKCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
