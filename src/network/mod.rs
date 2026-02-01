@@ -27,16 +27,21 @@
 //! let mut sniffer = GameSniffer::new();
 //! for packet in packets {
 //!     match sniffer.receive_packet(packet) {
-//!         Some(GamePacket::Connection(ConnectionPacket::Disconnected)) => {
-//!             println!("Disconnected!");
-//!             break;
-//!         }
-//!         Some(GamePacket::Commands(commands)) => {
-//!             for command in commands {
-//!                 println!("{:?}", command.get_command_name());
+//!         Ok(packets) => {
+//!             for pkt in packets {
+//!                 match pkt {
+//!                     GamePacket::Connection(ConnectionPacket::Disconnected) => {
+//!                         println!("Disconnected!");
+//!                         break;
+//!                     }
+//!                     GamePacket::Commands { conv_id, result: Ok(command) } => {
+//!                         println!("[{}] {:?}", conv_id, command.get_command_name());
+//!                     }
+//!                     _ => {}
+//!                 }
 //!             }
 //!         }
-//!         _ => {}
+//!         Err(e) => eprintln!("Error: {}", e),
 //!     }
 //! }
 //! ```
@@ -85,14 +90,17 @@ pub enum NetworkError {
 /// Top-level packet sent by the game
 pub enum GamePacket {
     Connection(ConnectionPacket),
-    Commands(Result<GameCommand, GameCommandError>),
+    Commands {
+        conv_id: u32,
+        result: Result<GameCommand, GameCommandError>,
+    },
 }
 
 /// Packet for connection management
 pub enum ConnectionPacket {
     HandshakeRequested,
     Disconnected,
-    HandshakeEstablished,
+    HandshakeEstablished { conv_id: u32 },
     SegmentData(PacketDirection, Vec<u8>),
 }
 
@@ -102,12 +110,12 @@ pub enum PacketDirection {
     Received,
 }
 
-#[derive(Default)]
-pub struct GameSniffer {
-    sent_kcp: Option<KcpSniffer>,
-    recv_kcp: Option<KcpSniffer>,
+/// Per-conversation state for KCP and command handling
+struct ConversationSniffer {
+    conv_id: u32,
+    sent_kcp: KcpSniffer,
+    recv_kcp: KcpSniffer,
     key: Option<Vec<u8>>,
-    initial_keys: HashMap<u32, Vec<u8>>,
     // Commands sent by client that couldn't be decrypted due to a version mismatch.
     // We buffer the raw command bytes and retry after we learn the new session key
     // from PlayerGetTokenScRsp.
@@ -117,53 +125,15 @@ pub struct GameSniffer {
     deferred_commands: Vec<GameCommand>,
 }
 
-impl GameSniffer {
-    pub fn new() -> Self {
-        Self::default()
-    }
-
-    pub fn set_initial_keys(mut self, initial_keys: HashMap<u32, Vec<u8>>) -> Self {
-        self.initial_keys = initial_keys;
-        self
-    }
-
-    #[instrument(skip_all, fields(len = bytes.len()))]
-    pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Result<Vec<GamePacket>, NetworkError> {
-        let packet = parse_connection_packet(&PORTS, bytes)?;
-
-        match packet {
-            ConnectionPacket::HandshakeRequested => {
-                info!("handshake requested, resetting state");
-                self.recv_kcp = None;
-                self.sent_kcp = None;
-                self.key = None;
-                self.pending_sent.clear();
-                self.deferred_commands.clear();
-                Ok(vec![GamePacket::Connection(packet)])
-            }
-
-            ConnectionPacket::HandshakeEstablished | ConnectionPacket::Disconnected => {
-                Ok(vec![GamePacket::Connection(packet)])
-            }
-
-            ConnectionPacket::SegmentData(direction, kcp_seg) => {
-                let mut commands: Vec<GamePacket> = self
-                    .receive_kcp_segment(direction, &kcp_seg)?
-                    .into_iter()
-                    .map(GamePacket::Commands)
-                    .collect();
-
-                // If processing this segment resulted in learning a new key (via
-                // PlayerGetTokenScRsp), we may have retried previously buffered
-                // sent commands. Emit those now as part of this packet's output.
-                if !self.deferred_commands.is_empty() {
-                    for cmd in self.deferred_commands.drain(..) {
-                        commands.push(GamePacket::Commands(Ok(cmd)));
-                    }
-                }
-
-                Ok(commands)
-            }
+impl ConversationSniffer {
+    fn new(conv_id: u32) -> Self {
+        Self {
+            conv_id,
+            sent_kcp: KcpSniffer::new(conv_id),
+            recv_kcp: KcpSniffer::new(conv_id),
+            key: None,
+            pending_sent: VecDeque::new(),
+            deferred_commands: Vec::new(),
         }
     }
 
@@ -171,33 +141,28 @@ impl GameSniffer {
         &mut self,
         direction: PacketDirection,
         kcp_seg: &[u8],
+        initial_keys: &HashMap<u32, Vec<u8>>,
     ) -> Result<Vec<Result<GameCommand, GameCommandError>>, KcpError> {
         let kcp = match direction {
             PacketDirection::Sent => &mut self.sent_kcp,
             PacketDirection::Received => &mut self.recv_kcp,
         };
 
-        if let None = kcp {
-            let new_kcp = KcpSniffer::try_new(&kcp_seg)?;
-            *kcp = Some(new_kcp);
-        }
-
-        kcp.as_mut()
-            .ok_or(KcpError::ClientNotConstructed)
-            .and_then(|kcp| kcp.receive_segments(kcp_seg))
+        kcp.receive_segments(kcp_seg)
             .map(|segments| {
                 segments
                     .into_iter()
-                    .map(|data| self.receive_command(direction, data))
+                    .map(|data| self.receive_command(direction, data, initial_keys))
                     .collect()
             })
     }
 
-    #[instrument(skip_all, fields(len = data.len()))]
+    #[instrument(skip_all, fields(conv_id = self.conv_id, len = data.len()))]
     fn receive_command(
         &mut self,
         direction: PacketDirection,
         mut data: Vec<u8>,
+        initial_keys: &HashMap<u32, Vec<u8>>,
     ) -> Result<GameCommand, GameCommandError> {
         // Keep original bytes in case we need to buffer on version mismatch (client-sent only)
         let original_data = if matches!(direction, PacketDirection::Sent) {
@@ -208,7 +173,7 @@ impl GameSniffer {
 
         let key = match self.key.as_ref() {
             Some(key) => key,
-            None => match lookup_initial_key(&self.initial_keys, get_game_version(&data)) {
+            None => match lookup_initial_key(initial_keys, get_game_version(&data)) {
                 Some(key) => {
                     self.key = Some(key);
                     self.key.as_ref().unwrap()
@@ -251,7 +216,7 @@ impl GameSniffer {
             // Now that we have the new session key, retry any buffered client-sent
             // commands that previously failed with VersionMismatch.
             while let Some(bytes) = self.pending_sent.pop_front() {
-                match self.receive_command(PacketDirection::Sent, bytes.clone()) {
+                match self.receive_command(PacketDirection::Sent, bytes.clone(), initial_keys) {
                     Ok(cmd) => {
                         // Defer emission to receive_packet so we can include
                         // these in the same output batch.
@@ -273,5 +238,70 @@ impl GameSniffer {
         }
 
         Ok(command)
+    }
+
+    fn take_deferred_commands(&mut self) -> Vec<GameCommand> {
+        std::mem::take(&mut self.deferred_commands)
+    }
+}
+
+#[derive(Default)]
+pub struct GameSniffer {
+    conversations: HashMap<u32, ConversationSniffer>,
+    initial_keys: HashMap<u32, Vec<u8>>,
+}
+
+impl GameSniffer {
+    pub fn new() -> Self {
+        Self::default()
+    }
+
+    pub fn set_initial_keys(mut self, initial_keys: HashMap<u32, Vec<u8>>) -> Self {
+        self.initial_keys = initial_keys;
+        self
+    }
+
+    #[instrument(skip_all, fields(len = bytes.len()))]
+    pub fn receive_packet(&mut self, bytes: Vec<u8>) -> Result<Vec<GamePacket>, NetworkError> {
+        let packet = parse_connection_packet(&PORTS, bytes)?;
+
+        match packet {
+            ConnectionPacket::HandshakeRequested => {
+                info!("handshake requested");
+                Ok(vec![GamePacket::Connection(packet)])
+            }
+
+            ConnectionPacket::HandshakeEstablished { conv_id } => {
+                info!(conv_id, "handshake established, creating new conversation");
+                self.conversations.insert(conv_id, ConversationSniffer::new(conv_id));
+                Ok(vec![GamePacket::Connection(packet)])
+            }
+
+            ConnectionPacket::Disconnected => {
+                Ok(vec![GamePacket::Connection(packet)])
+            }
+
+            ConnectionPacket::SegmentData(direction, kcp_seg) => {
+                let conv_id = kcp::validate_kcp_segment(&kcp_seg)?;
+                
+                // Get or create conversation
+                let conversation = self.conversations
+                    .entry(conv_id)
+                    .or_insert_with(|| ConversationSniffer::new(conv_id));
+
+                let mut commands: Vec<GamePacket> = conversation
+                    .receive_kcp_segment(direction, &kcp_seg, &self.initial_keys)?
+                    .into_iter()
+                    .map(|result| GamePacket::Commands { conv_id, result })
+                    .collect();
+
+                // Emit any deferred commands from key update
+                for cmd in conversation.take_deferred_commands() {
+                    commands.push(GamePacket::Commands { conv_id, result: Ok(cmd) });
+                }
+
+                Ok(commands)
+            }
+        }
     }
 }

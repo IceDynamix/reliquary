@@ -16,6 +16,20 @@ pub enum KcpError {
         "kcp packet does not belong to expected conversation (expected {expected}, was {actual})"
     )]
     PacketDoesNotBelongToConversation { expected: u32, actual: u32 },
+    #[error("segment at offset {offset} is too short (need at least {min_size} bytes, but only {remaining} bytes remain)")]
+    SegmentTooShort {
+        offset: usize,
+        min_size: usize,
+        remaining: usize,
+    },
+    #[error("segment content length {content_len} at offset {offset} exceeds remaining data (only {remaining} bytes remain)")]
+    ContentLengthExceedsData {
+        offset: usize,
+        content_len: usize,
+        remaining: usize,
+    },
+    #[error("invalid segment header at offset {offset}")]
+    InvalidSegmentHeader { offset: usize },
     #[error(transparent)]
     InnerKcpError(#[from] kcp::Error),
 }
@@ -27,13 +41,8 @@ pub(crate) struct KcpSniffer {
 }
 
 impl KcpSniffer {
-    #[instrument(skip(segment))]
-    pub fn try_new(segment: &[u8]) -> Result<KcpSniffer, KcpError> {
-        validate_kcp_segment(segment).map(Self::new)
-    }
-
     #[instrument]
-    fn new(conv_id: u32) -> Self {
+    pub(crate) fn new(conv_id: u32) -> Self {
         info!("new connection, created new kcp instance");
 
         KcpSniffer {
@@ -47,11 +56,10 @@ impl KcpSniffer {
     pub fn receive_segments(&mut self, segments: &[u8]) -> Result<Vec<Vec<u8>>, KcpError> {
         let conv_id = validate_kcp_segment(segments)?;
 
-        trace!("message data: {}", bytes_as_hex(segments));
-
         if conv_id != self.conv_id {
             warn!(
                 expected = self.conv_id,
+                actual = conv_id,
                 "packet did not belong to conversation"
             );
             return Err(KcpError::PacketDoesNotBelongToConversation {
@@ -60,9 +68,11 @@ impl KcpSniffer {
             });
         }
 
+        trace!("message data: {}", bytes_as_hex(segments));
+
         // game uses special format which adds 4 bytes at index 4,
         // reprocess to discard bytes 4..8 of every segment
-        let segments = reformat_kcp_segments(segments);
+        let segments = reformat_kcp_segments(segments)?;
 
         self.kcp.input(&segments)?;
 
@@ -105,7 +115,7 @@ fn new_kcp(conv_id: u32) -> Kcp<Vec<u8>> {
     kcp
 }
 
-fn validate_kcp_segment(payload: &[u8]) -> Result<u32, KcpError> {
+pub(crate) fn validate_kcp_segment(payload: &[u8]) -> Result<u32, KcpError> {
     if payload.len() <= KCP_OVERHEAD {
         warn!(
             len = payload.len(),
@@ -121,7 +131,7 @@ fn validate_kcp_segment(payload: &[u8]) -> Result<u32, KcpError> {
 }
 
 // reformat to skip bytes 4..8
-fn reformat_kcp_segments(data: &[u8]) -> Vec<u8> {
+fn reformat_kcp_segments(data: &[u8]) -> Result<Vec<u8>, KcpError> {
     let span = span!(Level::TRACE, "split");
     let _enter = span.enter();
 
@@ -131,12 +141,49 @@ fn reformat_kcp_segments(data: &[u8]) -> Vec<u8> {
 
     let mut i = 0;
     while i < data.len() {
+        let remaining = data.len() - i;
+
+        // Need at least 28 bytes for the header (conv_id[4] + skip[4] + remaining_header[20])
+        if remaining < 28 {
+            warn!(
+                offset = i,
+                remaining = remaining,
+                "segment header too short"
+            );
+            return Err(KcpError::SegmentTooShort {
+                offset: i,
+                min_size: 28,
+                remaining,
+            });
+        }
+
         let conv_id = &data[i..i + 4];
 
         let _ = &data[i + 4..i + 8]; // skip
 
         let remaining_header = &data[i + 8..i + 28];
-        let content_len = u32::from_le_bytes(data[i + 24..i + 28].try_into().unwrap()) as usize;
+
+        // Extract content length from bytes 24..28
+        let content_len_bytes: [u8; 4] = data[i + 24..i + 28]
+            .try_into()
+            .map_err(|_| KcpError::InvalidSegmentHeader { offset: i })?;
+        let content_len = u32::from_le_bytes(content_len_bytes) as usize;
+
+        // Check if we have enough data for the content
+        if remaining < 28 + content_len {
+            warn!(
+                offset = i,
+                content_len = content_len,
+                remaining = remaining,
+                "segment content length exceeds remaining data"
+            );
+            return Err(KcpError::ContentLengthExceedsData {
+                offset: i,
+                content_len,
+                remaining: remaining - 28,
+            });
+        }
+
         let content = &data[i + 28..i + 28 + content_len];
 
         for b in conv_id.iter().chain(remaining_header).chain(content) {
@@ -148,5 +195,5 @@ fn reformat_kcp_segments(data: &[u8]) -> Vec<u8> {
 
     trace!(" after split: {}", bytes_as_hex(&reformatted_bytes));
 
-    reformatted_bytes
+    Ok(reformatted_bytes)
 }
