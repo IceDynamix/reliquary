@@ -32,8 +32,8 @@ pub struct TakeQuestRewardScRsp {
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeQuestRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeQuestRewardScRsp.LOIJHKMLHNM)
-    pub LOIJHKMLHNM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeQuestRewardScRsp.BLCCOGIPIOJ)
+    pub BLCCOGIPIOJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeQuestRewardScRsp.succ_quest_id_list)
     pub succ_quest_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -66,9 +66,9 @@ impl TakeQuestRewardScRsp {
             |m: &mut TakeQuestRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LOIJHKMLHNM",
-            |m: &TakeQuestRewardScRsp| { &m.LOIJHKMLHNM },
-            |m: &mut TakeQuestRewardScRsp| { &mut m.LOIJHKMLHNM },
+            "BLCCOGIPIOJ",
+            |m: &TakeQuestRewardScRsp| { &m.BLCCOGIPIOJ },
+            |m: &mut TakeQuestRewardScRsp| { &mut m.BLCCOGIPIOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "succ_quest_id_list",
@@ -96,19 +96,19 @@ impl ::protobuf::Message for TakeQuestRewardScRsp {
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                40 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LOIJHKMLHNM)?;
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BLCCOGIPIOJ)?;
                 },
-                88 => {
-                    self.LOIJHKMLHNM.push(is.read_uint32()?);
+                32 => {
+                    self.BLCCOGIPIOJ.push(is.read_uint32()?);
                 },
-                10 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.succ_quest_id_list)?;
                 },
-                8 => {
+                120 => {
                     self.succ_quest_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -128,10 +128,10 @@ impl ::protobuf::Message for TakeQuestRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.LOIJHKMLHNM);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.succ_quest_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.BLCCOGIPIOJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.succ_quest_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -142,10 +142,10 @@ impl ::protobuf::Message for TakeQuestRewardScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(11, &self.LOIJHKMLHNM)?;
-        os.write_repeated_packed_uint32(1, &self.succ_quest_id_list)?;
+        os.write_repeated_packed_uint32(4, &self.BLCCOGIPIOJ)?;
+        os.write_repeated_packed_uint32(15, &self.succ_quest_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,7 +165,7 @@ impl ::protobuf::Message for TakeQuestRewardScRsp {
     fn clear(&mut self) {
         self.reward.clear();
         self.retcode = 0;
-        self.LOIJHKMLHNM.clear();
+        self.BLCCOGIPIOJ.clear();
         self.succ_quest_id_list.clear();
         self.special_fields.clear();
     }
@@ -174,7 +174,7 @@ impl ::protobuf::Message for TakeQuestRewardScRsp {
         static instance: TakeQuestRewardScRsp = TakeQuestRewardScRsp {
             reward: ::protobuf::MessageField::none(),
             retcode: 0,
-            LOIJHKMLHNM: ::std::vec::Vec::new(),
+            BLCCOGIPIOJ: ::std::vec::Vec::new(),
             succ_quest_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aTakeQuestRewardScRsp.proto\x1a\x0eItemList.proto\"\xa2\x01\n\x14Ta\
     keQuestRewardScRsp\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\x06r\
-    eward\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bL\
-    OIJHKMLHNM\x18\x0b\x20\x03(\rR\x0bLOIJHKMLHNM\x12+\n\x12succ_quest_id_li\
-    st\x18\x01\x20\x03(\rR\x0fsuccQuestIdListb\x06proto3\
+    eward\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bB\
+    LCCOGIPIOJ\x18\x04\x20\x03(\rR\x0bBLCCOGIPIOJ\x12+\n\x12succ_quest_id_li\
+    st\x18\x0f\x20\x03(\rR\x0fsuccQuestIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

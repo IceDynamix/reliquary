@@ -30,10 +30,10 @@ pub struct BattleCollegeDataChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.BMJIOFKGFJP)
-    pub BMJIOFKGFJP: u32,
     // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.finished_college_id_list)
     pub finished_college_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleCollegeDataChangeScNotify.CJJPPKHHGBI)
+    pub CJJPPKHHGBI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleCollegeDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BattleCollegeDataChangeScNotify {
             |m: &BattleCollegeDataChangeScNotify| { &m.reward },
             |m: &mut BattleCollegeDataChangeScNotify| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMJIOFKGFJP",
-            |m: &BattleCollegeDataChangeScNotify| { &m.BMJIOFKGFJP },
-            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.BMJIOFKGFJP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_college_id_list",
             |m: &BattleCollegeDataChangeScNotify| { &m.finished_college_id_list },
             |m: &mut BattleCollegeDataChangeScNotify| { &mut m.finished_college_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJJPPKHHGBI",
+            |m: &BattleCollegeDataChangeScNotify| { &m.CJJPPKHHGBI },
+            |m: &mut BattleCollegeDataChangeScNotify| { &mut m.CJJPPKHHGBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleCollegeDataChangeScNotify>(
             "BattleCollegeDataChangeScNotify",
@@ -89,14 +89,14 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
                 114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                104 => {
-                    self.BMJIOFKGFJP = is.read_uint32()?;
-                },
-                18 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_college_id_list)?;
                 },
-                16 => {
+                104 => {
                     self.finished_college_id_list.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.CJJPPKHHGBI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BMJIOFKGFJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BMJIOFKGFJP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.finished_college_id_list);
+        if self.CJJPPKHHGBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CJJPPKHHGBI);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.finished_college_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -127,10 +127,10 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.BMJIOFKGFJP != 0 {
-            os.write_uint32(13, self.BMJIOFKGFJP)?;
+        os.write_repeated_packed_uint32(13, &self.finished_college_id_list)?;
+        if self.CJJPPKHHGBI != 0 {
+            os.write_uint32(2, self.CJJPPKHHGBI)?;
         }
-        os.write_repeated_packed_uint32(2, &self.finished_college_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BattleCollegeDataChangeScNotify {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.BMJIOFKGFJP = 0;
         self.finished_college_id_list.clear();
+        self.CJJPPKHHGBI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleCollegeDataChangeScNotify {
         static instance: BattleCollegeDataChangeScNotify = BattleCollegeDataChangeScNotify {
             reward: ::protobuf::MessageField::none(),
-            BMJIOFKGFJP: 0,
             finished_college_id_list: ::std::vec::Vec::new(),
+            CJJPPKHHGBI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BattleCollegeDataChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%BattleCollegeDataChangeScNotify.proto\x1a\x0eItemList.proto\"\x9f\x01\
     \n\x1fBattleCollegeDataChangeScNotify\x12!\n\x06reward\x18\x0e\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x12\x20\n\x0bBMJIOFKGFJP\x18\r\x20\x01(\rR\
-    \x0bBMJIOFKGFJP\x127\n\x18finished_college_id_list\x18\x02\x20\x03(\rR\
-    \x15finishedCollegeIdListb\x06proto3\
+    \x0b2\t.ItemListR\x06reward\x127\n\x18finished_college_id_list\x18\r\x20\
+    \x03(\rR\x15finishedCollegeIdList\x12\x20\n\x0bCJJPPKHHGBI\x18\x02\x20\
+    \x01(\rR\x0bCJJPPKHHGBIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

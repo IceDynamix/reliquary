@@ -79,10 +79,10 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.extra_id = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.is_remove_id = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.extra_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.extra_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.extra_id);
         }
         if self.is_remove_id != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MarkChatEmojiCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.extra_id != 0 {
-            os.write_uint32(10, self.extra_id)?;
+            os.write_uint32(3, self.extra_id)?;
         }
         if self.is_remove_id != false {
-            os.write_bool(1, self.is_remove_id)?;
+            os.write_bool(10, self.is_remove_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MarkChatEmojiCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18MarkChatEmojiCsReq.proto\"Q\n\x12MarkChatEmojiCsReq\x12\x19\n\x08e\
-    xtra_id\x18\n\x20\x01(\rR\x07extraId\x12\x20\n\x0cis_remove_id\x18\x01\
+    xtra_id\x18\x03\x20\x01(\rR\x07extraId\x12\x20\n\x0cis_remove_id\x18\n\
     \x20\x01(\x08R\nisRemoveIdb\x06proto3\
 ";
 

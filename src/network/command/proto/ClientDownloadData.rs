@@ -34,8 +34,8 @@ pub struct ClientDownloadData {
     pub time: i64,
     // @@protoc_insertion_point(field:ClientDownloadData.data)
     pub data: ::std::string::String,
-    // @@protoc_insertion_point(field:ClientDownloadData.BFAJPPKEMBM)
-    pub BFAJPPKEMBM: u32,
+    // @@protoc_insertion_point(field:ClientDownloadData.LMBBPGKGPFI)
+    pub LMBBPGKGPFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClientDownloadData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl ClientDownloadData {
             |m: &mut ClientDownloadData| { &mut m.data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFAJPPKEMBM",
-            |m: &ClientDownloadData| { &m.BFAJPPKEMBM },
-            |m: &mut ClientDownloadData| { &mut m.BFAJPPKEMBM },
+            "LMBBPGKGPFI",
+            |m: &ClientDownloadData| { &m.LMBBPGKGPFI },
+            |m: &mut ClientDownloadData| { &mut m.LMBBPGKGPFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientDownloadData>(
             "ClientDownloadData",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for ClientDownloadData {
                     self.data = is.read_string()?;
                 },
                 32 => {
-                    self.BFAJPPKEMBM = is.read_uint32()?;
+                    self.LMBBPGKGPFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,8 +126,8 @@ impl ::protobuf::Message for ClientDownloadData {
         if !self.data.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.data);
         }
-        if self.BFAJPPKEMBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BFAJPPKEMBM);
+        if self.LMBBPGKGPFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LMBBPGKGPFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -144,8 +144,8 @@ impl ::protobuf::Message for ClientDownloadData {
         if !self.data.is_empty() {
             os.write_string(3, &self.data)?;
         }
-        if self.BFAJPPKEMBM != 0 {
-            os.write_uint32(4, self.BFAJPPKEMBM)?;
+        if self.LMBBPGKGPFI != 0 {
+            os.write_uint32(4, self.LMBBPGKGPFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::Message for ClientDownloadData {
         self.version = 0;
         self.time = 0;
         self.data.clear();
-        self.BFAJPPKEMBM = 0;
+        self.LMBBPGKGPFI = 0;
         self.special_fields.clear();
     }
 
@@ -176,7 +176,7 @@ impl ::protobuf::Message for ClientDownloadData {
             version: 0,
             time: 0,
             data: ::std::string::String::new(),
-            BFAJPPKEMBM: 0,
+            LMBBPGKGPFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,7 +204,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ClientDownloadData.proto\"x\n\x12ClientDownloadData\x12\x18\n\x07v\
     ersion\x18\x01\x20\x01(\rR\x07version\x12\x12\n\x04time\x18\x02\x20\x01(\
     \x03R\x04time\x12\x12\n\x04data\x18\x03\x20\x01(\tR\x04data\x12\x20\n\
-    \x0bBFAJPPKEMBM\x18\x04\x20\x01(\rR\x0bBFAJPPKEMBMb\x06proto3\
+    \x0bLMBBPGKGPFI\x18\x04\x20\x01(\rR\x0bLMBBPGKGPFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

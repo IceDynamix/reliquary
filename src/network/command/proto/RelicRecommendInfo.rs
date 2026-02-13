@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicRecommendInfo {
     // message fields
-    // @@protoc_insertion_point(field:RelicRecommendInfo.FNMHMEJONHA)
-    pub FNMHMEJONHA: u32,
-    // @@protoc_insertion_point(field:RelicRecommendInfo.HKNINEFBNOB)
-    pub HKNINEFBNOB: u32,
-    // @@protoc_insertion_point(field:RelicRecommendInfo.MDIDIIAHCHC)
-    pub MDIDIIAHCHC: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.PFAIJPBEDFK)
+    pub PFAIJPBEDFK: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.DKPPJHDJGLM)
+    pub DKPPJHDJGLM: u32,
+    // @@protoc_insertion_point(field:RelicRecommendInfo.KIPENLLDHFK)
+    pub KIPENLLDHFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicRecommendInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RelicRecommendInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNMHMEJONHA",
-            |m: &RelicRecommendInfo| { &m.FNMHMEJONHA },
-            |m: &mut RelicRecommendInfo| { &mut m.FNMHMEJONHA },
+            "PFAIJPBEDFK",
+            |m: &RelicRecommendInfo| { &m.PFAIJPBEDFK },
+            |m: &mut RelicRecommendInfo| { &mut m.PFAIJPBEDFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKNINEFBNOB",
-            |m: &RelicRecommendInfo| { &m.HKNINEFBNOB },
-            |m: &mut RelicRecommendInfo| { &mut m.HKNINEFBNOB },
+            "DKPPJHDJGLM",
+            |m: &RelicRecommendInfo| { &m.DKPPJHDJGLM },
+            |m: &mut RelicRecommendInfo| { &mut m.DKPPJHDJGLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDIDIIAHCHC",
-            |m: &RelicRecommendInfo| { &m.MDIDIIAHCHC },
-            |m: &mut RelicRecommendInfo| { &mut m.MDIDIIAHCHC },
+            "KIPENLLDHFK",
+            |m: &RelicRecommendInfo| { &m.KIPENLLDHFK },
+            |m: &mut RelicRecommendInfo| { &mut m.KIPENLLDHFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicRecommendInfo>(
             "RelicRecommendInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RelicRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                32 => {
+                    self.PFAIJPBEDFK = is.read_uint32()?;
+                },
+                96 => {
+                    self.DKPPJHDJGLM = is.read_uint32()?;
+                },
                 16 => {
-                    self.FNMHMEJONHA = is.read_uint32()?;
-                },
-                112 => {
-                    self.HKNINEFBNOB = is.read_uint32()?;
-                },
-                80 => {
-                    self.MDIDIIAHCHC = is.read_uint32()?;
+                    self.KIPENLLDHFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RelicRecommendInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FNMHMEJONHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FNMHMEJONHA);
+        if self.PFAIJPBEDFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PFAIJPBEDFK);
         }
-        if self.HKNINEFBNOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HKNINEFBNOB);
+        if self.DKPPJHDJGLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DKPPJHDJGLM);
         }
-        if self.MDIDIIAHCHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MDIDIIAHCHC);
+        if self.KIPENLLDHFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KIPENLLDHFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RelicRecommendInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FNMHMEJONHA != 0 {
-            os.write_uint32(2, self.FNMHMEJONHA)?;
+        if self.PFAIJPBEDFK != 0 {
+            os.write_uint32(4, self.PFAIJPBEDFK)?;
         }
-        if self.HKNINEFBNOB != 0 {
-            os.write_uint32(14, self.HKNINEFBNOB)?;
+        if self.DKPPJHDJGLM != 0 {
+            os.write_uint32(12, self.DKPPJHDJGLM)?;
         }
-        if self.MDIDIIAHCHC != 0 {
-            os.write_uint32(10, self.MDIDIIAHCHC)?;
+        if self.KIPENLLDHFK != 0 {
+            os.write_uint32(2, self.KIPENLLDHFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RelicRecommendInfo {
     }
 
     fn clear(&mut self) {
-        self.FNMHMEJONHA = 0;
-        self.HKNINEFBNOB = 0;
-        self.MDIDIIAHCHC = 0;
+        self.PFAIJPBEDFK = 0;
+        self.DKPPJHDJGLM = 0;
+        self.KIPENLLDHFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicRecommendInfo {
         static instance: RelicRecommendInfo = RelicRecommendInfo {
-            FNMHMEJONHA: 0,
-            HKNINEFBNOB: 0,
-            MDIDIIAHCHC: 0,
+            PFAIJPBEDFK: 0,
+            DKPPJHDJGLM: 0,
+            KIPENLLDHFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RelicRecommendInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RelicRecommendInfo.proto\"z\n\x12RelicRecommendInfo\x12\x20\n\x0bF\
-    NMHMEJONHA\x18\x02\x20\x01(\rR\x0bFNMHMEJONHA\x12\x20\n\x0bHKNINEFBNOB\
-    \x18\x0e\x20\x01(\rR\x0bHKNINEFBNOB\x12\x20\n\x0bMDIDIIAHCHC\x18\n\x20\
-    \x01(\rR\x0bMDIDIIAHCHCb\x06proto3\
+    \n\x18RelicRecommendInfo.proto\"z\n\x12RelicRecommendInfo\x12\x20\n\x0bP\
+    FAIJPBEDFK\x18\x04\x20\x01(\rR\x0bPFAIJPBEDFK\x12\x20\n\x0bDKPPJHDJGLM\
+    \x18\x0c\x20\x01(\rR\x0bDKPPJHDJGLM\x12\x20\n\x0bKIPENLLDHFK\x18\x02\x20\
+    \x01(\rR\x0bKIPENLLDHFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

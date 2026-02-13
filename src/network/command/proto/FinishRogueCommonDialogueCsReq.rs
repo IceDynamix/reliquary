@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishRogueCommonDialogueCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishRogueCommonDialogueCsReq.event_unique_id)
-    pub event_unique_id: u32,
+    // @@protoc_insertion_point(field:FinishRogueCommonDialogueCsReq.AKCFOGNELLE)
+    pub AKCFOGNELLE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishRogueCommonDialogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishRogueCommonDialogueCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_unique_id",
-            |m: &FinishRogueCommonDialogueCsReq| { &m.event_unique_id },
-            |m: &mut FinishRogueCommonDialogueCsReq| { &mut m.event_unique_id },
+            "AKCFOGNELLE",
+            |m: &FinishRogueCommonDialogueCsReq| { &m.AKCFOGNELLE },
+            |m: &mut FinishRogueCommonDialogueCsReq| { &mut m.AKCFOGNELLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishRogueCommonDialogueCsReq>(
             "FinishRogueCommonDialogueCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.event_unique_id = is.read_uint32()?;
+                48 => {
+                    self.AKCFOGNELLE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.event_unique_id);
+        if self.AKCFOGNELLE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AKCFOGNELLE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.event_unique_id != 0 {
-            os.write_uint32(1, self.event_unique_id)?;
+        if self.AKCFOGNELLE != 0 {
+            os.write_uint32(6, self.AKCFOGNELLE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     }
 
     fn clear(&mut self) {
-        self.event_unique_id = 0;
+        self.AKCFOGNELLE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishRogueCommonDialogueCsReq {
         static instance: FinishRogueCommonDialogueCsReq = FinishRogueCommonDialogueCsReq {
-            event_unique_id: 0,
+            AKCFOGNELLE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishRogueCommonDialogueCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$FinishRogueCommonDialogueCsReq.proto\"H\n\x1eFinishRogueCommonDialogu\
-    eCsReq\x12&\n\x0fevent_unique_id\x18\x01\x20\x01(\rR\reventUniqueIdb\x06\
-    proto3\
+    \n$FinishRogueCommonDialogueCsReq.proto\"B\n\x1eFinishRogueCommonDialogu\
+    eCsReq\x12\x20\n\x0bAKCFOGNELLE\x18\x06\x20\x01(\rR\x0bAKCFOGNELLEb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

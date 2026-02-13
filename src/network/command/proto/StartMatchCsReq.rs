@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartMatchCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartMatchCsReq.GCLCCOGIDOA)
-    pub GCLCCOGIDOA: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:StartMatchCsReq.EHGOGIIBAON)
-    pub EHGOGIIBAON: ::protobuf::MessageField<super::BBLMKDKFBKN::BBLMKDKFBKN>,
+    // @@protoc_insertion_point(field:StartMatchCsReq.IIPLMDEFCFK)
+    pub IIPLMDEFCFK: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
+    // @@protoc_insertion_point(field:StartMatchCsReq.OKKFCINADIE)
+    pub OKKFCINADIE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:StartMatchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl StartMatchCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCLCCOGIDOA",
-            |m: &StartMatchCsReq| { &m.GCLCCOGIDOA },
-            |m: &mut StartMatchCsReq| { &mut m.GCLCCOGIDOA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
+            "IIPLMDEFCFK",
+            |m: &StartMatchCsReq| { &m.IIPLMDEFCFK },
+            |m: &mut StartMatchCsReq| { &mut m.IIPLMDEFCFK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBLMKDKFBKN::BBLMKDKFBKN>(
-            "EHGOGIIBAON",
-            |m: &StartMatchCsReq| { &m.EHGOGIIBAON },
-            |m: &mut StartMatchCsReq| { &mut m.EHGOGIIBAON },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKKFCINADIE",
+            |m: &StartMatchCsReq| { &m.OKKFCINADIE },
+            |m: &mut StartMatchCsReq| { &mut m.OKKFCINADIE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartMatchCsReq>(
             "StartMatchCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.GCLCCOGIDOA = is.read_enum_or_unknown()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIPLMDEFCFK)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHGOGIIBAON)?;
+                8 => {
+                    self.OKKFCINADIE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for StartMatchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCLCCOGIDOA != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.GCLCCOGIDOA.value());
-        }
-        if let Some(v) = self.EHGOGIIBAON.as_ref() {
+        if let Some(v) = self.IIPLMDEFCFK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
+            my_size += ::protobuf::rt::int32_size(1, self.OKKFCINADIE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCLCCOGIDOA != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.GCLCCOGIDOA))?;
+        if let Some(v) = self.IIPLMDEFCFK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.EHGOGIIBAON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.OKKFCINADIE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCLCCOGIDOA = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
-        self.EHGOGIIBAON.clear();
+        self.IIPLMDEFCFK.clear();
+        self.OKKFCINADIE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartMatchCsReq {
         static instance: StartMatchCsReq = StartMatchCsReq {
-            GCLCCOGIDOA: ::protobuf::EnumOrUnknown::from_i32(0),
-            EHGOGIIBAON: ::protobuf::MessageField::none(),
+            IIPLMDEFCFK: ::protobuf::MessageField::none(),
+            OKKFCINADIE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for StartMatchCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15StartMatchCsReq.proto\x1a\x11BBLMKDKFBKN.proto\x1a\x13FightGameMod\
-    e.proto\"s\n\x0fStartMatchCsReq\x120\n\x0bGCLCCOGIDOA\x18\x0c\x20\x01(\
-    \x0e2\x0e.FightGameModeR\x0bGCLCCOGIDOA\x12.\n\x0bEHGOGIIBAON\x18\x0f\
-    \x20\x01(\x0b2\x0c.BBLMKDKFBKNR\x0bEHGOGIIBAONb\x06proto3\
+    \n\x15StartMatchCsReq.proto\x1a\x13FightGameMode.proto\x1a\x16LobbyGameE\
+    xtInfo.proto\"x\n\x0fStartMatchCsReq\x123\n\x0bIIPLMDEFCFK\x18\x08\x20\
+    \x01(\x0b2\x11.LobbyGameExtInfoR\x0bIIPLMDEFCFK\x120\n\x0bOKKFCINADIE\
+    \x18\x01\x20\x01(\x0e2\x0e.FightGameModeR\x0bOKKFCINADIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,8 +187,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BBLMKDKFBKN::file_descriptor().clone());
             deps.push(super::FightGameMode::file_descriptor().clone());
+            deps.push(super::LobbyGameExtInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartMatchCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

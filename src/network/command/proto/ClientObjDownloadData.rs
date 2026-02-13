@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjDownloadData {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjDownloadData.LIMLHJPIEOC)
-    pub LIMLHJPIEOC: ::std::string::String,
+    // @@protoc_insertion_point(field:ClientObjDownloadData.sc_info)
+    pub sc_info: ::std::string::String,
     // @@protoc_insertion_point(field:ClientObjDownloadData.client_obj_download_data)
     pub client_obj_download_data: ::protobuf::MessageField<super::ClientDownloadData::ClientDownloadData>,
-    // @@protoc_insertion_point(field:ClientObjDownloadData.HGJOOEPCBKM)
-    pub HGJOOEPCBKM: ::std::vec::Vec<super::ClientDownloadData::ClientDownloadData>,
+    // @@protoc_insertion_point(field:ClientObjDownloadData.dyn_code)
+    pub dyn_code: ::std::vec::Vec<super::ClientDownloadData::ClientDownloadData>,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjDownloadData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ClientObjDownloadData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIMLHJPIEOC",
-            |m: &ClientObjDownloadData| { &m.LIMLHJPIEOC },
-            |m: &mut ClientObjDownloadData| { &mut m.LIMLHJPIEOC },
+            "sc_info",
+            |m: &ClientObjDownloadData| { &m.sc_info },
+            |m: &mut ClientObjDownloadData| { &mut m.sc_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ClientDownloadData::ClientDownloadData>(
             "client_obj_download_data",
@@ -64,9 +64,9 @@ impl ClientObjDownloadData {
             |m: &mut ClientObjDownloadData| { &mut m.client_obj_download_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGJOOEPCBKM",
-            |m: &ClientObjDownloadData| { &m.HGJOOEPCBKM },
-            |m: &mut ClientObjDownloadData| { &mut m.HGJOOEPCBKM },
+            "dyn_code",
+            |m: &ClientObjDownloadData| { &m.dyn_code },
+            |m: &mut ClientObjDownloadData| { &mut m.dyn_code },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjDownloadData>(
             "ClientObjDownloadData",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for ClientObjDownloadData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.LIMLHJPIEOC = is.read_string()?;
+                    self.sc_info = is.read_string()?;
                 },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.client_obj_download_data)?;
                 },
                 26 => {
-                    self.HGJOOEPCBKM.push(is.read_message()?);
+                    self.dyn_code.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ClientObjDownloadData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.LIMLHJPIEOC.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.LIMLHJPIEOC);
+        if !self.sc_info.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.sc_info);
         }
         if let Some(v) = self.client_obj_download_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.HGJOOEPCBKM {
+        for value in &self.dyn_code {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ClientObjDownloadData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.LIMLHJPIEOC.is_empty() {
-            os.write_string(1, &self.LIMLHJPIEOC)?;
+        if !self.sc_info.is_empty() {
+            os.write_string(1, &self.sc_info)?;
         }
         if let Some(v) = self.client_obj_download_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        for v in &self.HGJOOEPCBKM {
+        for v in &self.dyn_code {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ClientObjDownloadData {
     }
 
     fn clear(&mut self) {
-        self.LIMLHJPIEOC.clear();
+        self.sc_info.clear();
         self.client_obj_download_data.clear();
-        self.HGJOOEPCBKM.clear();
+        self.dyn_code.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjDownloadData {
         static instance: ClientObjDownloadData = ClientObjDownloadData {
-            LIMLHJPIEOC: ::std::string::String::new(),
+            sc_info: ::std::string::String::new(),
             client_obj_download_data: ::protobuf::MessageField::none(),
-            HGJOOEPCBKM: ::std::vec::Vec::new(),
+            dyn_code: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,12 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjDownloadData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bClientObjDownloadData.proto\x1a\x18ClientDownloadData.proto\"\xbe\
-    \x01\n\x15ClientObjDownloadData\x12\x20\n\x0bLIMLHJPIEOC\x18\x01\x20\x01\
-    (\tR\x0bLIMLHJPIEOC\x12L\n\x18client_obj_download_data\x18\x02\x20\x01(\
-    \x0b2\x13.ClientDownloadDataR\x15clientObjDownloadData\x125\n\x0bHGJOOEP\
-    CBKM\x18\x03\x20\x03(\x0b2\x13.ClientDownloadDataR\x0bHGJOOEPCBKMb\x06pr\
-    oto3\
+    \n\x1bClientObjDownloadData.proto\x1a\x18ClientDownloadData.proto\"\xae\
+    \x01\n\x15ClientObjDownloadData\x12\x17\n\x07sc_info\x18\x01\x20\x01(\tR\
+    \x06scInfo\x12L\n\x18client_obj_download_data\x18\x02\x20\x01(\x0b2\x13.\
+    ClientDownloadDataR\x15clientObjDownloadData\x12.\n\x08dyn_code\x18\x03\
+    \x20\x03(\x0b2\x13.ClientDownloadDataR\x07dynCodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

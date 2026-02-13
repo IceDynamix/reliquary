@@ -79,10 +79,10 @@ impl ::protobuf::Message for PropTimelineInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                34 => {
                     self.timeline_byte_value = is.read_string()?;
                 },
-                40 => {
+                24 => {
                     self.timeline_bool_value = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PropTimelineInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.timeline_byte_value.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.timeline_byte_value);
+            my_size += ::protobuf::rt::string_size(4, &self.timeline_byte_value);
         }
         if self.timeline_bool_value != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PropTimelineInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.timeline_byte_value.is_empty() {
-            os.write_string(2, &self.timeline_byte_value)?;
+            os.write_string(4, &self.timeline_byte_value)?;
         }
         if self.timeline_bool_value != false {
-            os.write_bool(5, self.timeline_bool_value)?;
+            os.write_bool(3, self.timeline_bool_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PropTimelineInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PropTimelineInfo.proto\"r\n\x10PropTimelineInfo\x12.\n\x13timeline\
-    _byte_value\x18\x02\x20\x01(\tR\x11timelineByteValue\x12.\n\x13timeline_\
-    bool_value\x18\x05\x20\x01(\x08R\x11timelineBoolValueb\x06proto3\
+    _byte_value\x18\x04\x20\x01(\tR\x11timelineByteValue\x12.\n\x13timeline_\
+    bool_value\x18\x03\x20\x01(\x08R\x11timelineBoolValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,40 +28,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerSimpleInfo {
     // message fields
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.assist_simple_info_list)
-    pub assist_simple_info_list: ::std::vec::Vec<super::AssistSimpleInfo::AssistSimpleInfo>,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.chat_bubble_id)
-    pub chat_bubble_id: u32,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.nickname)
-    pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.gender)
-    pub gender: u32,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.last_active_time)
-    pub last_active_time: i64,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.platform_nick)
-    pub platform_nick: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.head_frame_info)
-    pub head_frame_info: ::protobuf::MessageField<super::HeadFrameInfo::HeadFrameInfo>,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.platform)
-    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
     // @@protoc_insertion_point(field:PlayerSimpleInfo.online_status)
     pub online_status: ::protobuf::EnumOrUnknown<super::FriendOnlineStatus::FriendOnlineStatus>,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.is_banned)
-    pub is_banned: bool,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.personal_card)
-    pub personal_card: u32,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.gender)
+    pub gender: u32,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.assist_simple_info_list)
+    pub assist_simple_info_list: ::std::vec::Vec<super::AssistSimpleInfo::AssistSimpleInfo>,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.head_frame_info)
+    pub head_frame_info: ::protobuf::MessageField<super::HeadFrameInfo::HeadFrameInfo>,
     // @@protoc_insertion_point(field:PlayerSimpleInfo.signature)
     pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:PlayerSimpleInfo.player_outfit_data)
-    pub player_outfit_data: ::protobuf::MessageField<super::EEAFFOIMNAC::EEAFFOIMNAC>,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:PlayerSimpleInfo.head_icon)
     pub head_icon: u32,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.personal_card)
+    pub personal_card: u32,
     // @@protoc_insertion_point(field:PlayerSimpleInfo.platform_uuid)
     pub platform_uuid: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.last_active_time)
+    pub last_active_time: i64,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.is_banned)
+    pub is_banned: bool,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.platform)
+    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.platform_nick)
+    pub platform_nick: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.player_outfit_data)
+    pub player_outfit_data: ::protobuf::MessageField<super::EINFBMJPDAH::EINFBMJPDAH>,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.nickname)
+    pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.chat_bubble_id)
+    pub chat_bubble_id: u32,
+    // @@protoc_insertion_point(field:PlayerSimpleInfo.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerSimpleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -81,35 +81,20 @@ impl PlayerSimpleInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(17);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "assist_simple_info_list",
-            |m: &PlayerSimpleInfo| { &m.assist_simple_info_list },
-            |m: &mut PlayerSimpleInfo| { &mut m.assist_simple_info_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "chat_bubble_id",
-            |m: &PlayerSimpleInfo| { &m.chat_bubble_id },
-            |m: &mut PlayerSimpleInfo| { &mut m.chat_bubble_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &PlayerSimpleInfo| { &m.nickname },
-            |m: &mut PlayerSimpleInfo| { &mut m.nickname },
+            "online_status",
+            |m: &PlayerSimpleInfo| { &m.online_status },
+            |m: &mut PlayerSimpleInfo| { &mut m.online_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gender",
             |m: &PlayerSimpleInfo| { &m.gender },
             |m: &mut PlayerSimpleInfo| { &mut m.gender },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "last_active_time",
-            |m: &PlayerSimpleInfo| { &m.last_active_time },
-            |m: &mut PlayerSimpleInfo| { &mut m.last_active_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform_nick",
-            |m: &PlayerSimpleInfo| { &m.platform_nick },
-            |m: &mut PlayerSimpleInfo| { &mut m.platform_nick },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "assist_simple_info_list",
+            |m: &PlayerSimpleInfo| { &m.assist_simple_info_list },
+            |m: &mut PlayerSimpleInfo| { &mut m.assist_simple_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HeadFrameInfo::HeadFrameInfo>(
             "head_frame_info",
@@ -117,44 +102,14 @@ impl PlayerSimpleInfo {
             |m: &mut PlayerSimpleInfo| { &mut m.head_frame_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &PlayerSimpleInfo| { &m.uid },
-            |m: &mut PlayerSimpleInfo| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &PlayerSimpleInfo| { &m.platform },
-            |m: &mut PlayerSimpleInfo| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "online_status",
-            |m: &PlayerSimpleInfo| { &m.online_status },
-            |m: &mut PlayerSimpleInfo| { &mut m.online_status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_banned",
-            |m: &PlayerSimpleInfo| { &m.is_banned },
-            |m: &mut PlayerSimpleInfo| { &mut m.is_banned },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "personal_card",
-            |m: &PlayerSimpleInfo| { &m.personal_card },
-            |m: &mut PlayerSimpleInfo| { &mut m.personal_card },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "signature",
             |m: &PlayerSimpleInfo| { &m.signature },
             |m: &mut PlayerSimpleInfo| { &mut m.signature },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &PlayerSimpleInfo| { &m.level },
-            |m: &mut PlayerSimpleInfo| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEAFFOIMNAC::EEAFFOIMNAC>(
-            "player_outfit_data",
-            |m: &PlayerSimpleInfo| { &m.player_outfit_data },
-            |m: &mut PlayerSimpleInfo| { &mut m.player_outfit_data },
+            "uid",
+            |m: &PlayerSimpleInfo| { &m.uid },
+            |m: &mut PlayerSimpleInfo| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "head_icon",
@@ -162,9 +117,54 @@ impl PlayerSimpleInfo {
             |m: &mut PlayerSimpleInfo| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "personal_card",
+            |m: &PlayerSimpleInfo| { &m.personal_card },
+            |m: &mut PlayerSimpleInfo| { &mut m.personal_card },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "platform_uuid",
             |m: &PlayerSimpleInfo| { &m.platform_uuid },
             |m: &mut PlayerSimpleInfo| { &mut m.platform_uuid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "last_active_time",
+            |m: &PlayerSimpleInfo| { &m.last_active_time },
+            |m: &mut PlayerSimpleInfo| { &mut m.last_active_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_banned",
+            |m: &PlayerSimpleInfo| { &m.is_banned },
+            |m: &mut PlayerSimpleInfo| { &mut m.is_banned },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &PlayerSimpleInfo| { &m.platform },
+            |m: &mut PlayerSimpleInfo| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform_nick",
+            |m: &PlayerSimpleInfo| { &m.platform_nick },
+            |m: &mut PlayerSimpleInfo| { &mut m.platform_nick },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EINFBMJPDAH::EINFBMJPDAH>(
+            "player_outfit_data",
+            |m: &PlayerSimpleInfo| { &m.player_outfit_data },
+            |m: &mut PlayerSimpleInfo| { &mut m.player_outfit_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &PlayerSimpleInfo| { &m.nickname },
+            |m: &mut PlayerSimpleInfo| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "chat_bubble_id",
+            |m: &PlayerSimpleInfo| { &m.chat_bubble_id },
+            |m: &mut PlayerSimpleInfo| { &mut m.chat_bubble_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &PlayerSimpleInfo| { &m.level },
+            |m: &mut PlayerSimpleInfo| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerSimpleInfo>(
             "PlayerSimpleInfo",
@@ -184,56 +184,56 @@ impl ::protobuf::Message for PlayerSimpleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.assist_simple_info_list.push(is.read_message()?);
-                },
-                96 => {
-                    self.chat_bubble_id = is.read_uint32()?;
-                },
-                42 => {
-                    self.nickname = is.read_string()?;
-                },
-                3408 => {
-                    self.gender = is.read_uint32()?;
-                },
-                64 => {
-                    self.last_active_time = is.read_int64()?;
-                },
-                122 => {
-                    self.platform_nick = is.read_string()?;
-                },
-                11410 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.head_frame_info)?;
-                },
-                104 => {
-                    self.uid = is.read_uint32()?;
-                },
-                72 => {
-                    self.platform = is.read_enum_or_unknown()?;
-                },
-                32 => {
+                48 => {
                     self.online_status = is.read_enum_or_unknown()?;
                 },
-                112 => {
-                    self.is_banned = is.read_bool()?;
+                7720 => {
+                    self.gender = is.read_uint32()?;
                 },
-                16 => {
-                    self.personal_card = is.read_uint32()?;
+                58 => {
+                    self.assist_simple_info_list.push(is.read_message()?);
                 },
-                50 => {
+                8058 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.head_frame_info)?;
+                },
+                106 => {
                     self.signature = is.read_string()?;
                 },
-                56 => {
-                    self.level = is.read_uint32()?;
+                80 => {
+                    self.uid = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_outfit_data)?;
-                },
-                24 => {
+                64 => {
                     self.head_icon = is.read_uint32()?;
                 },
-                90 => {
+                96 => {
+                    self.personal_card = is.read_uint32()?;
+                },
+                74 => {
                     self.platform_uuid = is.read_string()?;
+                },
+                40 => {
+                    self.last_active_time = is.read_int64()?;
+                },
+                88 => {
+                    self.is_banned = is.read_bool()?;
+                },
+                32 => {
+                    self.platform = is.read_enum_or_unknown()?;
+                },
+                10 => {
+                    self.platform_nick = is.read_string()?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_outfit_data)?;
+                },
+                122 => {
+                    self.nickname = is.read_string()?;
+                },
+                112 => {
+                    self.chat_bubble_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -247,59 +247,59 @@ impl ::protobuf::Message for PlayerSimpleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
+            my_size += ::protobuf::rt::int32_size(6, self.online_status.value());
+        }
+        if self.gender != 0 {
+            my_size += ::protobuf::rt::uint32_size(965, self.gender);
+        }
         for value in &self.assist_simple_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.chat_bubble_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.chat_bubble_id);
-        }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.nickname);
-        }
-        if self.gender != 0 {
-            my_size += ::protobuf::rt::uint32_size(426, self.gender);
-        }
-        if self.last_active_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.last_active_time);
-        }
-        if !self.platform_nick.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.platform_nick);
-        }
         if let Some(v) = self.head_frame_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if !self.signature.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.signature);
+        }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(9, self.platform.value());
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.head_icon);
         }
-        if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
-            my_size += ::protobuf::rt::int32_size(4, self.online_status.value());
+        if self.personal_card != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.personal_card);
+        }
+        if !self.platform_uuid.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.platform_uuid);
+        }
+        if self.last_active_time != 0 {
+            my_size += ::protobuf::rt::int64_size(5, self.last_active_time);
         }
         if self.is_banned != false {
             my_size += 1 + 1;
         }
-        if self.personal_card != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.personal_card);
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(4, self.platform.value());
         }
-        if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.signature);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+        if !self.platform_nick.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.platform_nick);
         }
         if let Some(v) = self.player_outfit_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.head_icon);
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.nickname);
         }
-        if !self.platform_uuid.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.platform_uuid);
+        if self.chat_bubble_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.chat_bubble_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -307,56 +307,56 @@ impl ::protobuf::Message for PlayerSimpleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.assist_simple_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        if self.chat_bubble_id != 0 {
-            os.write_uint32(12, self.chat_bubble_id)?;
-        }
-        if !self.nickname.is_empty() {
-            os.write_string(5, &self.nickname)?;
+        if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.online_status))?;
         }
         if self.gender != 0 {
-            os.write_uint32(426, self.gender)?;
+            os.write_uint32(965, self.gender)?;
         }
-        if self.last_active_time != 0 {
-            os.write_int64(8, self.last_active_time)?;
-        }
-        if !self.platform_nick.is_empty() {
-            os.write_string(15, &self.platform_nick)?;
-        }
+        for v in &self.assist_simple_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         if let Some(v) = self.head_frame_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1426, v, os)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(13, self.uid)?;
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.platform))?;
-        }
-        if self.online_status != ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.online_status))?;
-        }
-        if self.is_banned != false {
-            os.write_bool(14, self.is_banned)?;
-        }
-        if self.personal_card != 0 {
-            os.write_uint32(2, self.personal_card)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1007, v, os)?;
         }
         if !self.signature.is_empty() {
-            os.write_string(6, &self.signature)?;
+            os.write_string(13, &self.signature)?;
         }
-        if self.level != 0 {
-            os.write_uint32(7, self.level)?;
-        }
-        if let Some(v) = self.player_outfit_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.uid != 0 {
+            os.write_uint32(10, self.uid)?;
         }
         if self.head_icon != 0 {
-            os.write_uint32(3, self.head_icon)?;
+            os.write_uint32(8, self.head_icon)?;
+        }
+        if self.personal_card != 0 {
+            os.write_uint32(12, self.personal_card)?;
         }
         if !self.platform_uuid.is_empty() {
-            os.write_string(11, &self.platform_uuid)?;
+            os.write_string(9, &self.platform_uuid)?;
+        }
+        if self.last_active_time != 0 {
+            os.write_int64(5, self.last_active_time)?;
+        }
+        if self.is_banned != false {
+            os.write_bool(11, self.is_banned)?;
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
+        if !self.platform_nick.is_empty() {
+            os.write_string(1, &self.platform_nick)?;
+        }
+        if let Some(v) = self.player_outfit_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(15, &self.nickname)?;
+        }
+        if self.chat_bubble_id != 0 {
+            os.write_uint32(14, self.chat_bubble_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(3, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -375,45 +375,45 @@ impl ::protobuf::Message for PlayerSimpleInfo {
     }
 
     fn clear(&mut self) {
-        self.assist_simple_info_list.clear();
-        self.chat_bubble_id = 0;
-        self.nickname.clear();
-        self.gender = 0;
-        self.last_active_time = 0;
-        self.platform_nick.clear();
-        self.head_frame_info.clear();
-        self.uid = 0;
-        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
         self.online_status = ::protobuf::EnumOrUnknown::new(super::FriendOnlineStatus::FriendOnlineStatus::FRIEND_ONLINE_STATUS_OFFLINE);
-        self.is_banned = false;
-        self.personal_card = 0;
+        self.gender = 0;
+        self.assist_simple_info_list.clear();
+        self.head_frame_info.clear();
         self.signature.clear();
-        self.level = 0;
-        self.player_outfit_data.clear();
+        self.uid = 0;
         self.head_icon = 0;
+        self.personal_card = 0;
         self.platform_uuid.clear();
+        self.last_active_time = 0;
+        self.is_banned = false;
+        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
+        self.platform_nick.clear();
+        self.player_outfit_data.clear();
+        self.nickname.clear();
+        self.chat_bubble_id = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerSimpleInfo {
         static instance: PlayerSimpleInfo = PlayerSimpleInfo {
-            assist_simple_info_list: ::std::vec::Vec::new(),
-            chat_bubble_id: 0,
-            nickname: ::std::string::String::new(),
-            gender: 0,
-            last_active_time: 0,
-            platform_nick: ::std::string::String::new(),
-            head_frame_info: ::protobuf::MessageField::none(),
-            uid: 0,
-            platform: ::protobuf::EnumOrUnknown::from_i32(0),
             online_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            is_banned: false,
-            personal_card: 0,
+            gender: 0,
+            assist_simple_info_list: ::std::vec::Vec::new(),
+            head_frame_info: ::protobuf::MessageField::none(),
             signature: ::std::string::String::new(),
-            level: 0,
-            player_outfit_data: ::protobuf::MessageField::none(),
+            uid: 0,
             head_icon: 0,
+            personal_card: 0,
             platform_uuid: ::std::string::String::new(),
+            last_active_time: 0,
+            is_banned: false,
+            platform: ::protobuf::EnumOrUnknown::from_i32(0),
+            platform_nick: ::std::string::String::new(),
+            player_outfit_data: ::protobuf::MessageField::none(),
+            nickname: ::std::string::String::new(),
+            chat_bubble_id: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -438,25 +438,25 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSimpleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16PlayerSimpleInfo.proto\x1a\x16AssistSimpleInfo.proto\x1a\x11EEAFFO\
-    IMNAC.proto\x1a\x18FriendOnlineStatus.proto\x1a\x13HeadFrameInfo.proto\
-    \x1a\x12PlatformType.proto\"\xaa\x05\n\x10PlayerSimpleInfo\x12H\n\x17ass\
-    ist_simple_info_list\x18\n\x20\x03(\x0b2\x11.AssistSimpleInfoR\x14assist\
-    SimpleInfoList\x12$\n\x0echat_bubble_id\x18\x0c\x20\x01(\rR\x0cchatBubbl\
-    eId\x12\x1a\n\x08nickname\x18\x05\x20\x01(\tR\x08nickname\x12\x17\n\x06g\
-    ender\x18\xaa\x03\x20\x01(\rR\x06gender\x12(\n\x10last_active_time\x18\
-    \x08\x20\x01(\x03R\x0elastActiveTime\x12#\n\rplatform_nick\x18\x0f\x20\
-    \x01(\tR\x0cplatformNick\x127\n\x0fhead_frame_info\x18\x92\x0b\x20\x01(\
-    \x0b2\x0e.HeadFrameInfoR\rheadFrameInfo\x12\x10\n\x03uid\x18\r\x20\x01(\
-    \rR\x03uid\x12)\n\x08platform\x18\t\x20\x01(\x0e2\r.PlatformTypeR\x08pla\
-    tform\x128\n\ronline_status\x18\x04\x20\x01(\x0e2\x13.FriendOnlineStatus\
-    R\x0conlineStatus\x12\x1b\n\tis_banned\x18\x0e\x20\x01(\x08R\x08isBanned\
-    \x12#\n\rpersonal_card\x18\x02\x20\x01(\rR\x0cpersonalCard\x12\x1c\n\tsi\
-    gnature\x18\x06\x20\x01(\tR\tsignature\x12\x14\n\x05level\x18\x07\x20\
-    \x01(\rR\x05level\x12:\n\x12player_outfit_data\x18\x01\x20\x01(\x0b2\x0c\
-    .EEAFFOIMNACR\x10playerOutfitData\x12\x1b\n\thead_icon\x18\x03\x20\x01(\
-    \rR\x08headIcon\x12#\n\rplatform_uuid\x18\x0b\x20\x01(\tR\x0cplatformUui\
-    db\x06proto3\
+    \n\x16PlayerSimpleInfo.proto\x1a\x16AssistSimpleInfo.proto\x1a\x11EINFBM\
+    JPDAH.proto\x1a\x18FriendOnlineStatus.proto\x1a\x13HeadFrameInfo.proto\
+    \x1a\x12PlatformType.proto\"\xaa\x05\n\x10PlayerSimpleInfo\x128\n\ronlin\
+    e_status\x18\x06\x20\x01(\x0e2\x13.FriendOnlineStatusR\x0conlineStatus\
+    \x12\x17\n\x06gender\x18\xc5\x07\x20\x01(\rR\x06gender\x12H\n\x17assist_\
+    simple_info_list\x18\x07\x20\x03(\x0b2\x11.AssistSimpleInfoR\x14assistSi\
+    mpleInfoList\x127\n\x0fhead_frame_info\x18\xef\x07\x20\x01(\x0b2\x0e.Hea\
+    dFrameInfoR\rheadFrameInfo\x12\x1c\n\tsignature\x18\r\x20\x01(\tR\tsigna\
+    ture\x12\x10\n\x03uid\x18\n\x20\x01(\rR\x03uid\x12\x1b\n\thead_icon\x18\
+    \x08\x20\x01(\rR\x08headIcon\x12#\n\rpersonal_card\x18\x0c\x20\x01(\rR\
+    \x0cpersonalCard\x12#\n\rplatform_uuid\x18\t\x20\x01(\tR\x0cplatformUuid\
+    \x12(\n\x10last_active_time\x18\x05\x20\x01(\x03R\x0elastActiveTime\x12\
+    \x1b\n\tis_banned\x18\x0b\x20\x01(\x08R\x08isBanned\x12)\n\x08platform\
+    \x18\x04\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12#\n\rplatform_nick\
+    \x18\x01\x20\x01(\tR\x0cplatformNick\x12:\n\x12player_outfit_data\x18\
+    \x02\x20\x01(\x0b2\x0c.EINFBMJPDAHR\x10playerOutfitData\x12\x1a\n\x08nic\
+    kname\x18\x0f\x20\x01(\tR\x08nickname\x12$\n\x0echat_bubble_id\x18\x0e\
+    \x20\x01(\rR\x0cchatBubbleId\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05l\
+    evelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -475,7 +475,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::AssistSimpleInfo::file_descriptor().clone());
-            deps.push(super::EEAFFOIMNAC::file_descriptor().clone());
+            deps.push(super::EINFBMJPDAH::file_descriptor().clone());
             deps.push(super::FriendOnlineStatus::file_descriptor().clone());
             deps.push(super::HeadFrameInfo::file_descriptor().clone());
             deps.push(super::PlatformType::file_descriptor().clone());

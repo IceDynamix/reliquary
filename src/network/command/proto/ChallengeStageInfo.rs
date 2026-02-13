@@ -72,7 +72,7 @@ impl ::protobuf::Message for ChallengeStageInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChallengeStageInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStageInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChallengeStageInfo.proto\x1a\x17ChallengeBossInfo.proto\"E\n\x12Ch\
-    allengeStageInfo\x12/\n\tboss_info\x18\x0f\x20\x01(\x0b2\x12.ChallengeBo\
-    ssInfoR\x08bossInfob\x06proto3\
+    allengeStageInfo\x12/\n\tboss_info\x18\t\x20\x01(\x0b2\x12.ChallengeBoss\
+    InfoR\x08bossInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

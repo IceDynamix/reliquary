@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ArchiveData {
     // message fields
-    // @@protoc_insertion_point(field:ArchiveData.archive_equipment_id_list)
-    pub archive_equipment_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ArchiveData.relic_list)
     pub relic_list: ::std::vec::Vec<super::RelicList::RelicList>,
-    // @@protoc_insertion_point(field:ArchiveData.kill_monster_list)
-    pub kill_monster_list: ::std::vec::Vec<super::MonsterList::MonsterList>,
+    // @@protoc_insertion_point(field:ArchiveData.archive_equipment_id_list)
+    pub archive_equipment_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ArchiveData.archive_avatar_id_list)
     pub archive_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ArchiveData.kill_monster_list)
+    pub kill_monster_list: ::std::vec::Vec<super::MonsterList::MonsterList>,
     // @@protoc_insertion_point(field:ArchiveData.archive_missing_equipment_id_list)
     pub archive_missing_equipment_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -58,24 +58,24 @@ impl ArchiveData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "archive_equipment_id_list",
-            |m: &ArchiveData| { &m.archive_equipment_id_list },
-            |m: &mut ArchiveData| { &mut m.archive_equipment_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_list",
             |m: &ArchiveData| { &m.relic_list },
             |m: &mut ArchiveData| { &mut m.relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "kill_monster_list",
-            |m: &ArchiveData| { &m.kill_monster_list },
-            |m: &mut ArchiveData| { &mut m.kill_monster_list },
+            "archive_equipment_id_list",
+            |m: &ArchiveData| { &m.archive_equipment_id_list },
+            |m: &mut ArchiveData| { &mut m.archive_equipment_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "archive_avatar_id_list",
             |m: &ArchiveData| { &m.archive_avatar_id_list },
             |m: &mut ArchiveData| { &mut m.archive_avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "kill_monster_list",
+            |m: &ArchiveData| { &m.kill_monster_list },
+            |m: &mut ArchiveData| { &mut m.kill_monster_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "archive_missing_equipment_id_list",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for ArchiveData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.archive_equipment_id_list)?;
-                },
-                8 => {
-                    self.archive_equipment_id_list.push(is.read_uint32()?);
-                },
-                114 => {
+                58 => {
                     self.relic_list.push(is.read_message()?);
                 },
-                90 => {
-                    self.kill_monster_list.push(is.read_message()?);
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.archive_equipment_id_list)?;
                 },
-                98 => {
+                40 => {
+                    self.archive_equipment_id_list.push(is.read_uint32()?);
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.archive_avatar_id_list)?;
                 },
-                96 => {
+                104 => {
                     self.archive_avatar_id_list.push(is.read_uint32()?);
+                },
+                98 => {
+                    self.kill_monster_list.push(is.read_message()?);
                 },
                 122 => {
                     is.read_repeated_packed_uint32_into(&mut self.archive_missing_equipment_id_list)?;
@@ -136,16 +136,16 @@ impl ::protobuf::Message for ArchiveData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.archive_equipment_id_list);
         for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.archive_equipment_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.archive_avatar_id_list);
         for value in &self.kill_monster_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.archive_avatar_id_list);
         my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.archive_missing_equipment_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,14 +153,14 @@ impl ::protobuf::Message for ArchiveData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.archive_equipment_id_list)?;
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        os.write_repeated_packed_uint32(5, &self.archive_equipment_id_list)?;
+        os.write_repeated_packed_uint32(13, &self.archive_avatar_id_list)?;
         for v in &self.kill_monster_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        os.write_repeated_packed_uint32(12, &self.archive_avatar_id_list)?;
         os.write_repeated_packed_uint32(15, &self.archive_missing_equipment_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,20 +179,20 @@ impl ::protobuf::Message for ArchiveData {
     }
 
     fn clear(&mut self) {
-        self.archive_equipment_id_list.clear();
         self.relic_list.clear();
-        self.kill_monster_list.clear();
+        self.archive_equipment_id_list.clear();
         self.archive_avatar_id_list.clear();
+        self.kill_monster_list.clear();
         self.archive_missing_equipment_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ArchiveData {
         static instance: ArchiveData = ArchiveData {
-            archive_equipment_id_list: ::std::vec::Vec::new(),
             relic_list: ::std::vec::Vec::new(),
-            kill_monster_list: ::std::vec::Vec::new(),
+            archive_equipment_id_list: ::std::vec::Vec::new(),
             archive_avatar_id_list: ::std::vec::Vec::new(),
+            kill_monster_list: ::std::vec::Vec::new(),
             archive_missing_equipment_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,13 +219,13 @@ impl ::protobuf::reflect::ProtobufValue for ArchiveData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ArchiveData.proto\x1a\x11MonsterList.proto\x1a\x0fRelicList.proto\
-    \"\xac\x02\n\x0bArchiveData\x129\n\x19archive_equipment_id_list\x18\x01\
-    \x20\x03(\rR\x16archiveEquipmentIdList\x12)\n\nrelic_list\x18\x0e\x20\
-    \x03(\x0b2\n.RelicListR\trelicList\x128\n\x11kill_monster_list\x18\x0b\
-    \x20\x03(\x0b2\x0c.MonsterListR\x0fkillMonsterList\x123\n\x16archive_ava\
-    tar_id_list\x18\x0c\x20\x03(\rR\x13archiveAvatarIdList\x12H\n!archive_mi\
-    ssing_equipment_id_list\x18\x0f\x20\x03(\rR\x1darchiveMissingEquipmentId\
-    Listb\x06proto3\
+    \"\xac\x02\n\x0bArchiveData\x12)\n\nrelic_list\x18\x07\x20\x03(\x0b2\n.R\
+    elicListR\trelicList\x129\n\x19archive_equipment_id_list\x18\x05\x20\x03\
+    (\rR\x16archiveEquipmentIdList\x123\n\x16archive_avatar_id_list\x18\r\
+    \x20\x03(\rR\x13archiveAvatarIdList\x128\n\x11kill_monster_list\x18\x0c\
+    \x20\x03(\x0b2\x0c.MonsterListR\x0fkillMonsterList\x12H\n!archive_missin\
+    g_equipment_id_list\x18\x0f\x20\x03(\rR\x1darchiveMissingEquipmentIdList\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

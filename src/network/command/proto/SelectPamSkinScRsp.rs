@@ -86,13 +86,13 @@ impl ::protobuf::Message for SelectPamSkinScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                80 => {
                     self.cur_skin = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.set_skin = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SelectPamSkinScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_skin != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.cur_skin);
+            my_size += ::protobuf::rt::uint32_size(10, self.cur_skin);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.set_skin != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.set_skin);
+            my_size += ::protobuf::rt::uint32_size(11, self.set_skin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SelectPamSkinScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_skin != 0 {
-            os.write_uint32(9, self.cur_skin)?;
+            os.write_uint32(10, self.cur_skin)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.set_skin != 0 {
-            os.write_uint32(14, self.set_skin)?;
+            os.write_uint32(11, self.set_skin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SelectPamSkinScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SelectPamSkinScRsp.proto\"d\n\x12SelectPamSkinScRsp\x12\x19\n\x08c\
-    ur_skin\x18\t\x20\x01(\rR\x07curSkin\x12\x18\n\x07retcode\x18\x0b\x20\
-    \x01(\rR\x07retcode\x12\x19\n\x08set_skin\x18\x0e\x20\x01(\rR\x07setSkin\
-    b\x06proto3\
+    ur_skin\x18\n\x20\x01(\rR\x07curSkin\x12\x18\n\x07retcode\x18\t\x20\x01(\
+    \rR\x07retcode\x12\x19\n\x08set_skin\x18\x0b\x20\x01(\rR\x07setSkinb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

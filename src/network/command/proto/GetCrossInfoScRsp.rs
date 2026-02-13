@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCrossInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetCrossInfoScRsp.CIJOALFEOIB)
+    pub CIJOALFEOIB: u64,
     // @@protoc_insertion_point(field:GetCrossInfoScRsp.room_id)
     pub room_id: u64,
-    // @@protoc_insertion_point(field:GetCrossInfoScRsp.GCLCCOGIDOA)
-    pub GCLCCOGIDOA: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:GetCrossInfoScRsp.AFDFFAIHAFL)
-    pub AFDFFAIHAFL: u64,
+    // @@protoc_insertion_point(field:GetCrossInfoScRsp.OKKFCINADIE)
+    pub OKKFCINADIE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:GetCrossInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -56,19 +56,19 @@ impl GetCrossInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIJOALFEOIB",
+            |m: &GetCrossInfoScRsp| { &m.CIJOALFEOIB },
+            |m: &mut GetCrossInfoScRsp| { &mut m.CIJOALFEOIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &GetCrossInfoScRsp| { &m.room_id },
             |m: &mut GetCrossInfoScRsp| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCLCCOGIDOA",
-            |m: &GetCrossInfoScRsp| { &m.GCLCCOGIDOA },
-            |m: &mut GetCrossInfoScRsp| { &mut m.GCLCCOGIDOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFDFFAIHAFL",
-            |m: &GetCrossInfoScRsp| { &m.AFDFFAIHAFL },
-            |m: &mut GetCrossInfoScRsp| { &mut m.AFDFFAIHAFL },
+            "OKKFCINADIE",
+            |m: &GetCrossInfoScRsp| { &m.OKKFCINADIE },
+            |m: &mut GetCrossInfoScRsp| { &mut m.OKKFCINADIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.CIJOALFEOIB = is.read_uint64()?;
+                },
                 32 => {
                     self.room_id = is.read_uint64()?;
                 },
-                40 => {
-                    self.GCLCCOGIDOA = is.read_enum_or_unknown()?;
+                8 => {
+                    self.OKKFCINADIE = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.AFDFFAIHAFL = is.read_uint64()?;
-                },
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CIJOALFEOIB != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.CIJOALFEOIB);
+        }
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint64_size(4, self.room_id);
         }
-        if self.GCLCCOGIDOA != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.GCLCCOGIDOA.value());
-        }
-        if self.AFDFFAIHAFL != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.AFDFFAIHAFL);
+        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
+            my_size += ::protobuf::rt::int32_size(1, self.OKKFCINADIE.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.CIJOALFEOIB != 0 {
+            os.write_uint64(3, self.CIJOALFEOIB)?;
+        }
         if self.room_id != 0 {
             os.write_uint64(4, self.room_id)?;
         }
-        if self.GCLCCOGIDOA != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.GCLCCOGIDOA))?;
-        }
-        if self.AFDFFAIHAFL != 0 {
-            os.write_uint64(11, self.AFDFFAIHAFL)?;
+        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.OKKFCINADIE))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for GetCrossInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.CIJOALFEOIB = 0;
         self.room_id = 0;
-        self.GCLCCOGIDOA = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FIGHT_GAME_MODE_NONE);
-        self.AFDFFAIHAFL = 0;
+        self.OKKFCINADIE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG);
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCrossInfoScRsp {
         static instance: GetCrossInfoScRsp = GetCrossInfoScRsp {
+            CIJOALFEOIB: 0,
             room_id: 0,
-            GCLCCOGIDOA: ::protobuf::EnumOrUnknown::from_i32(0),
-            AFDFFAIHAFL: 0,
+            OKKFCINADIE: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCrossInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetCrossInfoScRsp.proto\x1a\x13FightGameMode.proto\"\x9a\x01\n\x11\
-    GetCrossInfoScRsp\x12\x17\n\x07room_id\x18\x04\x20\x01(\x04R\x06roomId\
-    \x120\n\x0bGCLCCOGIDOA\x18\x05\x20\x01(\x0e2\x0e.FightGameModeR\x0bGCLCC\
-    OGIDOA\x12\x20\n\x0bAFDFFAIHAFL\x18\x0b\x20\x01(\x04R\x0bAFDFFAIHAFL\x12\
-    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    GetCrossInfoScRsp\x12\x20\n\x0bCIJOALFEOIB\x18\x03\x20\x01(\x04R\x0bCIJO\
+    ALFEOIB\x12\x17\n\x07room_id\x18\x04\x20\x01(\x04R\x06roomId\x120\n\x0bO\
+    KKFCINADIE\x18\x01\x20\x01(\x0e2\x0e.FightGameModeR\x0bOKKFCINADIE\x12\
+    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

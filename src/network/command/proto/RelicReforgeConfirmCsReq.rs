@@ -79,10 +79,10 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                104 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.is_cancel = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.relic_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.relic_unique_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.relic_unique_id);
         }
         if self.is_cancel != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RelicReforgeConfirmCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.relic_unique_id != 0 {
-            os.write_uint32(15, self.relic_unique_id)?;
+            os.write_uint32(13, self.relic_unique_id)?;
         }
         if self.is_cancel != false {
-            os.write_bool(7, self.is_cancel)?;
+            os.write_bool(4, self.is_cancel)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicReforgeConfirmCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRelicReforgeConfirmCsReq.proto\"_\n\x18RelicReforgeConfirmCsReq\
-    \x12&\n\x0frelic_unique_id\x18\x0f\x20\x01(\rR\rrelicUniqueId\x12\x1b\n\
-    \tis_cancel\x18\x07\x20\x01(\x08R\x08isCancelb\x06proto3\
+    \x12&\n\x0frelic_unique_id\x18\r\x20\x01(\rR\rrelicUniqueId\x12\x1b\n\ti\
+    s_cancel\x18\x04\x20\x01(\x08R\x08isCancelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

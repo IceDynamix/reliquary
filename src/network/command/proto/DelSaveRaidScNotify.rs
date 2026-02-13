@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DelSaveRaidScNotify {
     // message fields
-    // @@protoc_insertion_point(field:DelSaveRaidScNotify.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:DelSaveRaidScNotify.raid_id)
     pub raid_id: u32,
+    // @@protoc_insertion_point(field:DelSaveRaidScNotify.world_level)
+    pub world_level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DelSaveRaidScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DelSaveRaidScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &DelSaveRaidScNotify| { &m.world_level },
-            |m: &mut DelSaveRaidScNotify| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
             |m: &DelSaveRaidScNotify| { &m.raid_id },
             |m: &mut DelSaveRaidScNotify| { &mut m.raid_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &DelSaveRaidScNotify| { &m.world_level },
+            |m: &mut DelSaveRaidScNotify| { &mut m.world_level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DelSaveRaidScNotify>(
             "DelSaveRaidScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                88 => {
+                120 => {
                     self.raid_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.world_level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.world_level);
-        }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.raid_id);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.world_level != 0 {
-            os.write_uint32(12, self.world_level)?;
-        }
         if self.raid_id != 0 {
-            os.write_uint32(11, self.raid_id)?;
+            os.write_uint32(15, self.raid_id)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(7, self.world_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DelSaveRaidScNotify {
     }
 
     fn clear(&mut self) {
-        self.world_level = 0;
         self.raid_id = 0;
+        self.world_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DelSaveRaidScNotify {
         static instance: DelSaveRaidScNotify = DelSaveRaidScNotify {
-            world_level: 0,
             raid_id: 0,
+            world_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DelSaveRaidScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19DelSaveRaidScNotify.proto\"O\n\x13DelSaveRaidScNotify\x12\x1f\n\
-    \x0bworld_level\x18\x0c\x20\x01(\rR\nworldLevel\x12\x17\n\x07raid_id\x18\
-    \x0b\x20\x01(\rR\x06raidIdb\x06proto3\
+    \n\x19DelSaveRaidScNotify.proto\"O\n\x13DelSaveRaidScNotify\x12\x17\n\
+    \x07raid_id\x18\x0f\x20\x01(\rR\x06raidId\x12\x1f\n\x0bworld_level\x18\
+    \x07\x20\x01(\rR\nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

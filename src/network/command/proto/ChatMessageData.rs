@@ -30,16 +30,20 @@ pub struct ChatMessageData {
     // message fields
     // @@protoc_insertion_point(field:ChatMessageData.message_type)
     pub message_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
-    // @@protoc_insertion_point(field:ChatMessageData.create_time)
-    pub create_time: u64,
-    // @@protoc_insertion_point(field:ChatMessageData.extra_id)
-    pub extra_id: u32,
-    // @@protoc_insertion_point(field:ChatMessageData.sender_id)
-    pub sender_id: u32,
-    // @@protoc_insertion_point(field:ChatMessageData.DIJGJPGFFLG)
-    pub DIJGJPGFFLG: ::protobuf::MessageField<super::AJEMANPKNHC::AJEMANPKNHC>,
     // @@protoc_insertion_point(field:ChatMessageData.content)
     pub content: ::std::string::String,
+    // @@protoc_insertion_point(field:ChatMessageData.sender_id)
+    pub sender_id: u32,
+    // @@protoc_insertion_point(field:ChatMessageData.extra_id)
+    pub extra_id: u32,
+    // @@protoc_insertion_point(field:ChatMessageData.chat_data)
+    pub chat_data: ::protobuf::MessageField<super::ChatData::ChatData>,
+    // @@protoc_insertion_point(field:ChatMessageData.create_time)
+    pub create_time: u64,
+    // @@protoc_insertion_point(field:ChatMessageData.message_data)
+    pub message_data: ::protobuf::MessageField<super::MessageChatData::MessageChatData>,
+    // @@protoc_insertion_point(field:ChatMessageData.BOFJJHIKIJL)
+    pub BOFJJHIKIJL: ::protobuf::MessageField<super::DABBFCOAFJG::DABBFCOAFJG>,
     // special fields
     // @@protoc_insertion_point(special_field:ChatMessageData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,7 +61,7 @@ impl ChatMessageData {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "message_type",
@@ -65,29 +69,39 @@ impl ChatMessageData {
             |m: &mut ChatMessageData| { &mut m.message_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "create_time",
-            |m: &ChatMessageData| { &m.create_time },
-            |m: &mut ChatMessageData| { &mut m.create_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_id",
-            |m: &ChatMessageData| { &m.extra_id },
-            |m: &mut ChatMessageData| { &mut m.extra_id },
+            "content",
+            |m: &ChatMessageData| { &m.content },
+            |m: &mut ChatMessageData| { &mut m.content },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "sender_id",
             |m: &ChatMessageData| { &m.sender_id },
             |m: &mut ChatMessageData| { &mut m.sender_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AJEMANPKNHC::AJEMANPKNHC>(
-            "DIJGJPGFFLG",
-            |m: &ChatMessageData| { &m.DIJGJPGFFLG },
-            |m: &mut ChatMessageData| { &mut m.DIJGJPGFFLG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_id",
+            |m: &ChatMessageData| { &m.extra_id },
+            |m: &mut ChatMessageData| { &mut m.extra_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChatData::ChatData>(
+            "chat_data",
+            |m: &ChatMessageData| { &m.chat_data },
+            |m: &mut ChatMessageData| { &mut m.chat_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content",
-            |m: &ChatMessageData| { &m.content },
-            |m: &mut ChatMessageData| { &mut m.content },
+            "create_time",
+            |m: &ChatMessageData| { &m.create_time },
+            |m: &mut ChatMessageData| { &mut m.create_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MessageChatData::MessageChatData>(
+            "message_data",
+            |m: &ChatMessageData| { &m.message_data },
+            |m: &mut ChatMessageData| { &mut m.message_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DABBFCOAFJG::DABBFCOAFJG>(
+            "BOFJJHIKIJL",
+            |m: &ChatMessageData| { &m.BOFJJHIKIJL },
+            |m: &mut ChatMessageData| { &mut m.BOFJJHIKIJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChatMessageData>(
             "ChatMessageData",
@@ -107,23 +121,29 @@ impl ::protobuf::Message for ChatMessageData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.message_type = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.create_time = is.read_uint64()?;
+                18 => {
+                    self.content = is.read_string()?;
                 },
-                64 => {
-                    self.extra_id = is.read_uint32()?;
-                },
-                104 => {
+                24 => {
                     self.sender_id = is.read_uint32()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DIJGJPGFFLG)?;
+                40 => {
+                    self.extra_id = is.read_uint32()?;
                 },
-                74 => {
-                    self.content = is.read_string()?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.chat_data)?;
+                },
+                32 => {
+                    self.create_time = is.read_uint64()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.message_data)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOFJJHIKIJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,23 +158,31 @@ impl ::protobuf::Message for ChatMessageData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.message_type.value());
+            my_size += ::protobuf::rt::int32_size(1, self.message_type.value());
         }
-        if self.create_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.create_time);
-        }
-        if self.extra_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.extra_id);
+        if !self.content.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.content);
         }
         if self.sender_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.sender_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.sender_id);
         }
-        if let Some(v) = self.DIJGJPGFFLG.as_ref() {
+        if self.extra_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.extra_id);
+        }
+        if let Some(v) = self.chat_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.content.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.content);
+        if self.create_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.create_time);
+        }
+        if let Some(v) = self.message_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.BOFJJHIKIJL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +191,28 @@ impl ::protobuf::Message for ChatMessageData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.message_type))?;
-        }
-        if self.create_time != 0 {
-            os.write_uint64(7, self.create_time)?;
-        }
-        if self.extra_id != 0 {
-            os.write_uint32(8, self.extra_id)?;
-        }
-        if self.sender_id != 0 {
-            os.write_uint32(13, self.sender_id)?;
-        }
-        if let Some(v) = self.DIJGJPGFFLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.message_type))?;
         }
         if !self.content.is_empty() {
-            os.write_string(9, &self.content)?;
+            os.write_string(2, &self.content)?;
+        }
+        if self.sender_id != 0 {
+            os.write_uint32(3, self.sender_id)?;
+        }
+        if self.extra_id != 0 {
+            os.write_uint32(5, self.extra_id)?;
+        }
+        if let Some(v) = self.chat_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.create_time != 0 {
+            os.write_uint64(4, self.create_time)?;
+        }
+        if let Some(v) = self.message_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.BOFJJHIKIJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +232,26 @@ impl ::protobuf::Message for ChatMessageData {
 
     fn clear(&mut self) {
         self.message_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
-        self.create_time = 0;
-        self.extra_id = 0;
-        self.sender_id = 0;
-        self.DIJGJPGFFLG.clear();
         self.content.clear();
+        self.sender_id = 0;
+        self.extra_id = 0;
+        self.chat_data.clear();
+        self.create_time = 0;
+        self.message_data.clear();
+        self.BOFJJHIKIJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChatMessageData {
         static instance: ChatMessageData = ChatMessageData {
             message_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            create_time: 0,
-            extra_id: 0,
-            sender_id: 0,
-            DIJGJPGFFLG: ::protobuf::MessageField::none(),
             content: ::std::string::String::new(),
+            sender_id: 0,
+            extra_id: 0,
+            chat_data: ::protobuf::MessageField::none(),
+            create_time: 0,
+            message_data: ::protobuf::MessageField::none(),
+            BOFJJHIKIJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +276,16 @@ impl ::protobuf::reflect::ProtobufValue for ChatMessageData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15ChatMessageData.proto\x1a\x11AJEMANPKNHC.proto\x1a\rMsgType.proto\
-    \"\xe1\x01\n\x0fChatMessageData\x12+\n\x0cmessage_type\x18\x0c\x20\x01(\
-    \x0e2\x08.MsgTypeR\x0bmessageType\x12\x1f\n\x0bcreate_time\x18\x07\x20\
-    \x01(\x04R\ncreateTime\x12\x19\n\x08extra_id\x18\x08\x20\x01(\rR\x07extr\
-    aId\x12\x1b\n\tsender_id\x18\r\x20\x01(\rR\x08senderId\x12.\n\x0bDIJGJPG\
-    FFLG\x18\x0f\x20\x01(\x0b2\x0c.AJEMANPKNHCR\x0bDIJGJPGFFLG\x12\x18\n\x07\
-    content\x18\t\x20\x01(\tR\x07contentb\x06proto3\
+    \n\x15ChatMessageData.proto\x1a\x0eChatData.proto\x1a\x11DABBFCOAFJG.pro\
+    to\x1a\x15MessageChatData.proto\x1a\rMsgType.proto\"\xbe\x02\n\x0fChatMe\
+    ssageData\x12+\n\x0cmessage_type\x18\x01\x20\x01(\x0e2\x08.MsgTypeR\x0bm\
+    essageType\x12\x18\n\x07content\x18\x02\x20\x01(\tR\x07content\x12\x1b\n\
+    \tsender_id\x18\x03\x20\x01(\rR\x08senderId\x12\x19\n\x08extra_id\x18\
+    \x05\x20\x01(\rR\x07extraId\x12&\n\tchat_data\x18\x06\x20\x01(\x0b2\t.Ch\
+    atDataR\x08chatData\x12\x1f\n\x0bcreate_time\x18\x04\x20\x01(\x04R\ncrea\
+    teTime\x123\n\x0cmessage_data\x18\x07\x20\x01(\x0b2\x10.MessageChatDataR\
+    \x0bmessageData\x12.\n\x0bBOFJJHIKIJL\x18\x08\x20\x01(\x0b2\x0c.DABBFCOA\
+    FJGR\x0bBOFJJHIKIJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -261,8 +302,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AJEMANPKNHC::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::ChatData::file_descriptor().clone());
+            deps.push(super::DABBFCOAFJG::file_descriptor().clone());
+            deps.push(super::MessageChatData::file_descriptor().clone());
             deps.push(super::MsgType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChatMessageData::generated_message_descriptor_data());

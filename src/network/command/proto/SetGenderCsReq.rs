@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetGenderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.gender = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SetGenderCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(12, self.gender.value());
+            my_size += ::protobuf::rt::int32_size(7, self.gender.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetGenderCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.gender))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SetGenderCsReq.proto\x1a\x0cGender.proto\"1\n\x0eSetGenderCsReq\
-    \x12\x1f\n\x06gender\x18\x0c\x20\x01(\x0e2\x07.GenderR\x06genderb\x06pro\
+    \x12\x1f\n\x06gender\x18\x07\x20\x01(\x0e2\x07.GenderR\x06genderb\x06pro\
     to3\
 ";
 

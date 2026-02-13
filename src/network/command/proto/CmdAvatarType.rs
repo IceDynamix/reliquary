@@ -27,104 +27,104 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdAvatarType)
 pub enum CmdAvatarType {
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarTypeNone)
-    CmdAvatarTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAddMultiPathAvatarScNotify)
-    CmdAddMultiPathAvatarScNotify = 381,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentScRsp)
-    CmdTakeOffEquipmentScRsp = 310,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpCsReq)
-    CmdAvatarExpUpCsReq = 337,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarScRsp)
-    CmdDressAvatarScRsp = 395,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarCsReq)
-    CmdDressAvatarCsReq = 376,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeCsReq)
-    CmdUnlockSkilltreeCsReq = 333,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetAvatarEnhancedIdCsReq)
-    CmdSetAvatarEnhancedIdCsReq = 347,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetPreAvatarActivityListCsReq)
-    CmdGetPreAvatarActivityListCsReq = 330,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetPreAvatarGrowthInfoScRsp)
-    CmdGetPreAvatarGrowthInfoScRsp = 311,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetPlayerOutfitCsReq)
-    CmdSetPlayerOutfitCsReq = 313,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGrowthTargetAvatarChangedScNotify)
-    CmdGrowthTargetAvatarChangedScNotify = 362,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetPreAvatarActivityListScRsp)
-    CmdGetPreAvatarActivityListScRsp = 320,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffEquipmentCsReq)
-    CmdTakeOffEquipmentCsReq = 338,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardCsReq)
-    CmdTakePromotionRewardCsReq = 398,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressRelicAvatarScRsp)
-    CmdDressRelicAvatarScRsp = 388,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetPreAvatarGrowthInfoCsReq)
-    CmdGetPreAvatarGrowthInfoCsReq = 389,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarCsReq)
-    CmdRankUpAvatarCsReq = 366,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetAvatarPathScRsp)
-    CmdSetAvatarPathScRsp = 352,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffRelicScRsp)
-    CmdTakeOffRelicScRsp = 325,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetGrowthTargetAvatarCsReq)
-    CmdSetGrowthTargetAvatarCsReq = 391,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarExpUpScRsp)
-    CmdAvatarExpUpScRsp = 369,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffRelicCsReq)
-    CmdTakeOffRelicCsReq = 345,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetAvatarEnhancedIdScRsp)
-    CmdSetAvatarEnhancedIdScRsp = 367,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdMarkAvatarScRsp)
-    CmdMarkAvatarScRsp = 335,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinScRsp)
-    CmdTakeOffAvatarSkinScRsp = 370,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinScRsp)
-    CmdDressAvatarSkinScRsp = 307,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockAvatarPathScRsp)
-    CmdUnlockAvatarPathScRsp = 317,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetGrowthTargetAvatarScRsp)
-    CmdSetGrowthTargetAvatarScRsp = 392,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetMultipleAvatarPathsScRsp)
-    CmdSetMultipleAvatarPathsScRsp = 351,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdMarkAvatarCsReq)
-    CmdMarkAvatarCsReq = 309,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetAvatarDataCsReq)
-    CmdGetAvatarDataCsReq = 314,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockAvatarPathCsReq)
-    CmdUnlockAvatarPathCsReq = 397,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockAvatarSkinScNotify)
-    CmdUnlockAvatarSkinScNotify = 306,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarCsReq)
-    CmdPromoteAvatarCsReq = 349,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressRelicAvatarCsReq)
-    CmdDressRelicAvatarCsReq = 301,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAddAvatarScNotify)
-    CmdAddAvatarScNotify = 393,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarPathChangedNotify)
-    CmdAvatarPathChangedNotify = 373,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdAvatarSpecialSkilltreeUnlockScNotify)
-    CmdAvatarSpecialSkilltreeUnlockScNotify = 357,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetPlayerOutfitScRsp)
-    CmdSetPlayerOutfitScRsp = 346,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetAvatarPathCsReq)
-    CmdSetAvatarPathCsReq = 350,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakeOffAvatarSkinCsReq)
-    CmdTakeOffAvatarSkinCsReq = 385,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdSetMultipleAvatarPathsCsReq)
-    CmdSetMultipleAvatarPathsCsReq = 326,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdPromoteAvatarScRsp)
-    CmdPromoteAvatarScRsp = 303,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdGetAvatarDataScRsp)
-    CmdGetAvatarDataScRsp = 336,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdRankUpAvatarScRsp)
-    CmdRankUpAvatarScRsp = 315,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdDressAvatarSkinCsReq)
-    CmdDressAvatarSkinCsReq = 361,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdTakePromotionRewardScRsp)
-    CmdTakePromotionRewardScRsp = 332,
-    // @@protoc_insertion_point(enum_value:CmdAvatarType.CmdUnlockSkilltreeScRsp)
-    CmdUnlockSkilltreeScRsp = 355,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GKJBAODJMJG)
+    HPGFDCKOCJN_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_PJDNMHADCDG)
+    HPGFDCKOCJN_PJDNMHADCDG = 385,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_OMHFJDLEMND)
+    HPGFDCKOCJN_OMHFJDLEMND = 341,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GAMMJLOEFPH)
+    HPGFDCKOCJN_GAMMJLOEFPH = 313,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GNKONADEFLH)
+    HPGFDCKOCJN_GNKONADEFLH = 370,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CEGHFLFNMDH)
+    HPGFDCKOCJN_CEGHFLFNMDH = 321,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_HCKHEBGHBEJ)
+    HPGFDCKOCJN_HCKHEBGHBEJ = 332,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_MMAKKMIHCAP)
+    HPGFDCKOCJN_MMAKKMIHCAP = 350,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_AGOGIMBIJHP)
+    HPGFDCKOCJN_AGOGIMBIJHP = 330,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_EIMNJPDMCNO)
+    HPGFDCKOCJN_EIMNJPDMCNO = 337,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GDHPIMMAHCH)
+    HPGFDCKOCJN_GDHPIMMAHCH = 356,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_BBGBEPNLLLI)
+    HPGFDCKOCJN_BBGBEPNLLLI = 386,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GCAIHLKMOJK)
+    HPGFDCKOCJN_GCAIHLKMOJK = 305,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_JFDLBFHNDDN)
+    HPGFDCKOCJN_JFDLBFHNDDN = 338,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CHGOJPONFKF)
+    HPGFDCKOCJN_CHGOJPONFKF = 377,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_KMNOEJMDBKK)
+    HPGFDCKOCJN_KMNOEJMDBKK = 369,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_MONAIJPFLKC)
+    HPGFDCKOCJN_MONAIJPFLKC = 376,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_HOPEAHBHODN)
+    HPGFDCKOCJN_HOPEAHBHODN = 328,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_IFONHONIHEJ)
+    HPGFDCKOCJN_IFONHONIHEJ = 351,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_KFFIAOPIOCA)
+    HPGFDCKOCJN_KFFIAOPIOCA = 312,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_FHOLFJPEJNI)
+    HPGFDCKOCJN_FHOLFJPEJNI = 389,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_JMEDCMBLGDK)
+    HPGFDCKOCJN_JMEDCMBLGDK = 396,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_IDDOLJGOBJK)
+    HPGFDCKOCJN_IDDOLJGOBJK = 357,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_AEMMJPHIMIJ)
+    HPGFDCKOCJN_AEMMJPHIMIJ = 334,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_AFKHKPCNODE)
+    HPGFDCKOCJN_AFKHKPCNODE = 382,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_EOLOJNAFMGD)
+    HPGFDCKOCJN_EOLOJNAFMGD = 379,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_HNOJHCBJIPM)
+    HPGFDCKOCJN_HNOJHCBJIPM = 326,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CEOFCAKIGMB)
+    HPGFDCKOCJN_CEOFCAKIGMB = 388,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_LCIICBIFBFA)
+    HPGFDCKOCJN_LCIICBIFBFA = 383,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_IOABLACIMBO)
+    HPGFDCKOCJN_IOABLACIMBO = 309,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_ELMCFMPADHA)
+    HPGFDCKOCJN_ELMCFMPADHA = 347,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_OGOGENPHOJI)
+    HPGFDCKOCJN_OGOGENPHOJI = 301,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CKJJBBAGIPG)
+    HPGFDCKOCJN_CKJJBBAGIPG = 352,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_PDLOLPGAIHD)
+    HPGFDCKOCJN_PDLOLPGAIHD = 378,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_BFGLAPBJKEL)
+    HPGFDCKOCJN_BFGLAPBJKEL = 362,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_GPGOLICJGJE)
+    HPGFDCKOCJN_GPGOLICJGJE = 311,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_HFCBFIOFFEB)
+    HPGFDCKOCJN_HFCBFIOFFEB = 375,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_KAPDEIAEFGC)
+    HPGFDCKOCJN_KAPDEIAEFGC = 345,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_KAJMCJABELL)
+    HPGFDCKOCJN_KAJMCJABELL = 392,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_JFADEEDDLOD)
+    HPGFDCKOCJN_JFADEEDDLOD = 395,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_MPLKPBHMGKG)
+    HPGFDCKOCJN_MPLKPBHMGKG = 399,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_JIMDDDPLMIL)
+    HPGFDCKOCJN_JIMDDDPLMIL = 393,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CDHMBBMLGLI)
+    HPGFDCKOCJN_CDHMBBMLGLI = 380,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_PLIJFKPBOGA)
+    HPGFDCKOCJN_PLIJFKPBOGA = 308,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_KDMCANGPEKH)
+    HPGFDCKOCJN_KDMCANGPEKH = 355,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_CDMGNDINNEI)
+    HPGFDCKOCJN_CDMGNDINNEI = 366,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_DFCOKLBMDKE)
+    HPGFDCKOCJN_DFCOKLBMDKE = 314,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_BPJGMEBDNAC)
+    HPGFDCKOCJN_BPJGMEBDNAC = 320,
+    // @@protoc_insertion_point(enum_value:CmdAvatarType.HPGFDCKOCJN_OOIIINLNLLH)
+    HPGFDCKOCJN_OOIIINLNLLH = 318,
 }
 
 impl ::protobuf::Enum for CmdAvatarType {
@@ -136,164 +136,164 @@ impl ::protobuf::Enum for CmdAvatarType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdAvatarType> {
         match value {
-            0 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarTypeNone),
-            381 => ::std::option::Option::Some(CmdAvatarType::CmdAddMultiPathAvatarScNotify),
-            310 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
-            337 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
-            395 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
-            376 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
-            333 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
-            347 => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarEnhancedIdCsReq),
-            330 => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarActivityListCsReq),
-            311 => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarGrowthInfoScRsp),
-            313 => ::std::option::Option::Some(CmdAvatarType::CmdSetPlayerOutfitCsReq),
-            362 => ::std::option::Option::Some(CmdAvatarType::CmdGrowthTargetAvatarChangedScNotify),
-            320 => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarActivityListScRsp),
-            338 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
-            398 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
-            388 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarScRsp),
-            389 => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarGrowthInfoCsReq),
-            366 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
-            352 => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarPathScRsp),
-            325 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicScRsp),
-            391 => ::std::option::Option::Some(CmdAvatarType::CmdSetGrowthTargetAvatarCsReq),
-            369 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
-            345 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
-            367 => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarEnhancedIdScRsp),
-            335 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
-            370 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
-            307 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
-            317 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarPathScRsp),
-            392 => ::std::option::Option::Some(CmdAvatarType::CmdSetGrowthTargetAvatarScRsp),
-            351 => ::std::option::Option::Some(CmdAvatarType::CmdSetMultipleAvatarPathsScRsp),
-            309 => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarCsReq),
-            314 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataCsReq),
-            397 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarPathCsReq),
-            306 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
-            349 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
-            301 => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
-            393 => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
-            373 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarPathChangedNotify),
-            357 => ::std::option::Option::Some(CmdAvatarType::CmdAvatarSpecialSkilltreeUnlockScNotify),
-            346 => ::std::option::Option::Some(CmdAvatarType::CmdSetPlayerOutfitScRsp),
-            350 => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarPathCsReq),
-            385 => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
-            326 => ::std::option::Option::Some(CmdAvatarType::CmdSetMultipleAvatarPathsCsReq),
-            303 => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
-            336 => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
-            315 => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
-            361 => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
-            332 => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
-            355 => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
+            0 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GKJBAODJMJG),
+            385 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PJDNMHADCDG),
+            341 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OMHFJDLEMND),
+            313 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GAMMJLOEFPH),
+            370 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GNKONADEFLH),
+            321 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CEGHFLFNMDH),
+            332 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HCKHEBGHBEJ),
+            350 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MMAKKMIHCAP),
+            330 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AGOGIMBIJHP),
+            337 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_EIMNJPDMCNO),
+            356 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GDHPIMMAHCH),
+            386 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BBGBEPNLLLI),
+            305 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GCAIHLKMOJK),
+            338 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JFDLBFHNDDN),
+            377 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CHGOJPONFKF),
+            369 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KMNOEJMDBKK),
+            376 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MONAIJPFLKC),
+            328 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HOPEAHBHODN),
+            351 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IFONHONIHEJ),
+            312 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KFFIAOPIOCA),
+            389 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_FHOLFJPEJNI),
+            396 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JMEDCMBLGDK),
+            357 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IDDOLJGOBJK),
+            334 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AEMMJPHIMIJ),
+            382 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AFKHKPCNODE),
+            379 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_EOLOJNAFMGD),
+            326 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HNOJHCBJIPM),
+            388 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CEOFCAKIGMB),
+            383 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_LCIICBIFBFA),
+            309 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IOABLACIMBO),
+            347 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_ELMCFMPADHA),
+            301 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OGOGENPHOJI),
+            352 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CKJJBBAGIPG),
+            378 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PDLOLPGAIHD),
+            362 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BFGLAPBJKEL),
+            311 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GPGOLICJGJE),
+            375 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HFCBFIOFFEB),
+            345 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KAPDEIAEFGC),
+            392 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KAJMCJABELL),
+            395 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JFADEEDDLOD),
+            399 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MPLKPBHMGKG),
+            393 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JIMDDDPLMIL),
+            380 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CDHMBBMLGLI),
+            308 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PLIJFKPBOGA),
+            355 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KDMCANGPEKH),
+            366 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CDMGNDINNEI),
+            314 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_DFCOKLBMDKE),
+            320 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BPJGMEBDNAC),
+            318 => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OOIIINLNLLH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdAvatarType> {
         match str {
-            "CmdAvatarTypeNone" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarTypeNone),
-            "CmdAddMultiPathAvatarScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAddMultiPathAvatarScNotify),
-            "CmdTakeOffEquipmentScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentScRsp),
-            "CmdAvatarExpUpCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpCsReq),
-            "CmdDressAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarScRsp),
-            "CmdDressAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarCsReq),
-            "CmdUnlockSkilltreeCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeCsReq),
-            "CmdSetAvatarEnhancedIdCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarEnhancedIdCsReq),
-            "CmdGetPreAvatarActivityListCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarActivityListCsReq),
-            "CmdGetPreAvatarGrowthInfoScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarGrowthInfoScRsp),
-            "CmdSetPlayerOutfitCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdSetPlayerOutfitCsReq),
-            "CmdGrowthTargetAvatarChangedScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdGrowthTargetAvatarChangedScNotify),
-            "CmdGetPreAvatarActivityListScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarActivityListScRsp),
-            "CmdTakeOffEquipmentCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffEquipmentCsReq),
-            "CmdTakePromotionRewardCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardCsReq),
-            "CmdDressRelicAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarScRsp),
-            "CmdGetPreAvatarGrowthInfoCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdGetPreAvatarGrowthInfoCsReq),
-            "CmdRankUpAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarCsReq),
-            "CmdSetAvatarPathScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarPathScRsp),
-            "CmdTakeOffRelicScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicScRsp),
-            "CmdSetGrowthTargetAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdSetGrowthTargetAvatarCsReq),
-            "CmdAvatarExpUpScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarExpUpScRsp),
-            "CmdTakeOffRelicCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffRelicCsReq),
-            "CmdSetAvatarEnhancedIdScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarEnhancedIdScRsp),
-            "CmdMarkAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarScRsp),
-            "CmdTakeOffAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinScRsp),
-            "CmdDressAvatarSkinScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinScRsp),
-            "CmdUnlockAvatarPathScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarPathScRsp),
-            "CmdSetGrowthTargetAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdSetGrowthTargetAvatarScRsp),
-            "CmdSetMultipleAvatarPathsScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdSetMultipleAvatarPathsScRsp),
-            "CmdMarkAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdMarkAvatarCsReq),
-            "CmdGetAvatarDataCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataCsReq),
-            "CmdUnlockAvatarPathCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarPathCsReq),
-            "CmdUnlockAvatarSkinScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockAvatarSkinScNotify),
-            "CmdPromoteAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarCsReq),
-            "CmdDressRelicAvatarCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressRelicAvatarCsReq),
-            "CmdAddAvatarScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAddAvatarScNotify),
-            "CmdAvatarPathChangedNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarPathChangedNotify),
-            "CmdAvatarSpecialSkilltreeUnlockScNotify" => ::std::option::Option::Some(CmdAvatarType::CmdAvatarSpecialSkilltreeUnlockScNotify),
-            "CmdSetPlayerOutfitScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdSetPlayerOutfitScRsp),
-            "CmdSetAvatarPathCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdSetAvatarPathCsReq),
-            "CmdTakeOffAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdTakeOffAvatarSkinCsReq),
-            "CmdSetMultipleAvatarPathsCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdSetMultipleAvatarPathsCsReq),
-            "CmdPromoteAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdPromoteAvatarScRsp),
-            "CmdGetAvatarDataScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdGetAvatarDataScRsp),
-            "CmdRankUpAvatarScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdRankUpAvatarScRsp),
-            "CmdDressAvatarSkinCsReq" => ::std::option::Option::Some(CmdAvatarType::CmdDressAvatarSkinCsReq),
-            "CmdTakePromotionRewardScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdTakePromotionRewardScRsp),
-            "CmdUnlockSkilltreeScRsp" => ::std::option::Option::Some(CmdAvatarType::CmdUnlockSkilltreeScRsp),
+            "HPGFDCKOCJN_GKJBAODJMJG" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GKJBAODJMJG),
+            "HPGFDCKOCJN_PJDNMHADCDG" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PJDNMHADCDG),
+            "HPGFDCKOCJN_OMHFJDLEMND" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OMHFJDLEMND),
+            "HPGFDCKOCJN_GAMMJLOEFPH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GAMMJLOEFPH),
+            "HPGFDCKOCJN_GNKONADEFLH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GNKONADEFLH),
+            "HPGFDCKOCJN_CEGHFLFNMDH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CEGHFLFNMDH),
+            "HPGFDCKOCJN_HCKHEBGHBEJ" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HCKHEBGHBEJ),
+            "HPGFDCKOCJN_MMAKKMIHCAP" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MMAKKMIHCAP),
+            "HPGFDCKOCJN_AGOGIMBIJHP" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AGOGIMBIJHP),
+            "HPGFDCKOCJN_EIMNJPDMCNO" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_EIMNJPDMCNO),
+            "HPGFDCKOCJN_GDHPIMMAHCH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GDHPIMMAHCH),
+            "HPGFDCKOCJN_BBGBEPNLLLI" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BBGBEPNLLLI),
+            "HPGFDCKOCJN_GCAIHLKMOJK" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GCAIHLKMOJK),
+            "HPGFDCKOCJN_JFDLBFHNDDN" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JFDLBFHNDDN),
+            "HPGFDCKOCJN_CHGOJPONFKF" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CHGOJPONFKF),
+            "HPGFDCKOCJN_KMNOEJMDBKK" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KMNOEJMDBKK),
+            "HPGFDCKOCJN_MONAIJPFLKC" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MONAIJPFLKC),
+            "HPGFDCKOCJN_HOPEAHBHODN" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HOPEAHBHODN),
+            "HPGFDCKOCJN_IFONHONIHEJ" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IFONHONIHEJ),
+            "HPGFDCKOCJN_KFFIAOPIOCA" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KFFIAOPIOCA),
+            "HPGFDCKOCJN_FHOLFJPEJNI" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_FHOLFJPEJNI),
+            "HPGFDCKOCJN_JMEDCMBLGDK" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JMEDCMBLGDK),
+            "HPGFDCKOCJN_IDDOLJGOBJK" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IDDOLJGOBJK),
+            "HPGFDCKOCJN_AEMMJPHIMIJ" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AEMMJPHIMIJ),
+            "HPGFDCKOCJN_AFKHKPCNODE" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_AFKHKPCNODE),
+            "HPGFDCKOCJN_EOLOJNAFMGD" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_EOLOJNAFMGD),
+            "HPGFDCKOCJN_HNOJHCBJIPM" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HNOJHCBJIPM),
+            "HPGFDCKOCJN_CEOFCAKIGMB" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CEOFCAKIGMB),
+            "HPGFDCKOCJN_LCIICBIFBFA" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_LCIICBIFBFA),
+            "HPGFDCKOCJN_IOABLACIMBO" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_IOABLACIMBO),
+            "HPGFDCKOCJN_ELMCFMPADHA" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_ELMCFMPADHA),
+            "HPGFDCKOCJN_OGOGENPHOJI" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OGOGENPHOJI),
+            "HPGFDCKOCJN_CKJJBBAGIPG" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CKJJBBAGIPG),
+            "HPGFDCKOCJN_PDLOLPGAIHD" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PDLOLPGAIHD),
+            "HPGFDCKOCJN_BFGLAPBJKEL" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BFGLAPBJKEL),
+            "HPGFDCKOCJN_GPGOLICJGJE" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_GPGOLICJGJE),
+            "HPGFDCKOCJN_HFCBFIOFFEB" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_HFCBFIOFFEB),
+            "HPGFDCKOCJN_KAPDEIAEFGC" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KAPDEIAEFGC),
+            "HPGFDCKOCJN_KAJMCJABELL" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KAJMCJABELL),
+            "HPGFDCKOCJN_JFADEEDDLOD" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JFADEEDDLOD),
+            "HPGFDCKOCJN_MPLKPBHMGKG" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_MPLKPBHMGKG),
+            "HPGFDCKOCJN_JIMDDDPLMIL" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_JIMDDDPLMIL),
+            "HPGFDCKOCJN_CDHMBBMLGLI" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CDHMBBMLGLI),
+            "HPGFDCKOCJN_PLIJFKPBOGA" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_PLIJFKPBOGA),
+            "HPGFDCKOCJN_KDMCANGPEKH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_KDMCANGPEKH),
+            "HPGFDCKOCJN_CDMGNDINNEI" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_CDMGNDINNEI),
+            "HPGFDCKOCJN_DFCOKLBMDKE" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_DFCOKLBMDKE),
+            "HPGFDCKOCJN_BPJGMEBDNAC" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_BPJGMEBDNAC),
+            "HPGFDCKOCJN_OOIIINLNLLH" => ::std::option::Option::Some(CmdAvatarType::HPGFDCKOCJN_OOIIINLNLLH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAvatarType] = &[
-        CmdAvatarType::CmdAvatarTypeNone,
-        CmdAvatarType::CmdAddMultiPathAvatarScNotify,
-        CmdAvatarType::CmdTakeOffEquipmentScRsp,
-        CmdAvatarType::CmdAvatarExpUpCsReq,
-        CmdAvatarType::CmdDressAvatarScRsp,
-        CmdAvatarType::CmdDressAvatarCsReq,
-        CmdAvatarType::CmdUnlockSkilltreeCsReq,
-        CmdAvatarType::CmdSetAvatarEnhancedIdCsReq,
-        CmdAvatarType::CmdGetPreAvatarActivityListCsReq,
-        CmdAvatarType::CmdGetPreAvatarGrowthInfoScRsp,
-        CmdAvatarType::CmdSetPlayerOutfitCsReq,
-        CmdAvatarType::CmdGrowthTargetAvatarChangedScNotify,
-        CmdAvatarType::CmdGetPreAvatarActivityListScRsp,
-        CmdAvatarType::CmdTakeOffEquipmentCsReq,
-        CmdAvatarType::CmdTakePromotionRewardCsReq,
-        CmdAvatarType::CmdDressRelicAvatarScRsp,
-        CmdAvatarType::CmdGetPreAvatarGrowthInfoCsReq,
-        CmdAvatarType::CmdRankUpAvatarCsReq,
-        CmdAvatarType::CmdSetAvatarPathScRsp,
-        CmdAvatarType::CmdTakeOffRelicScRsp,
-        CmdAvatarType::CmdSetGrowthTargetAvatarCsReq,
-        CmdAvatarType::CmdAvatarExpUpScRsp,
-        CmdAvatarType::CmdTakeOffRelicCsReq,
-        CmdAvatarType::CmdSetAvatarEnhancedIdScRsp,
-        CmdAvatarType::CmdMarkAvatarScRsp,
-        CmdAvatarType::CmdTakeOffAvatarSkinScRsp,
-        CmdAvatarType::CmdDressAvatarSkinScRsp,
-        CmdAvatarType::CmdUnlockAvatarPathScRsp,
-        CmdAvatarType::CmdSetGrowthTargetAvatarScRsp,
-        CmdAvatarType::CmdSetMultipleAvatarPathsScRsp,
-        CmdAvatarType::CmdMarkAvatarCsReq,
-        CmdAvatarType::CmdGetAvatarDataCsReq,
-        CmdAvatarType::CmdUnlockAvatarPathCsReq,
-        CmdAvatarType::CmdUnlockAvatarSkinScNotify,
-        CmdAvatarType::CmdPromoteAvatarCsReq,
-        CmdAvatarType::CmdDressRelicAvatarCsReq,
-        CmdAvatarType::CmdAddAvatarScNotify,
-        CmdAvatarType::CmdAvatarPathChangedNotify,
-        CmdAvatarType::CmdAvatarSpecialSkilltreeUnlockScNotify,
-        CmdAvatarType::CmdSetPlayerOutfitScRsp,
-        CmdAvatarType::CmdSetAvatarPathCsReq,
-        CmdAvatarType::CmdTakeOffAvatarSkinCsReq,
-        CmdAvatarType::CmdSetMultipleAvatarPathsCsReq,
-        CmdAvatarType::CmdPromoteAvatarScRsp,
-        CmdAvatarType::CmdGetAvatarDataScRsp,
-        CmdAvatarType::CmdRankUpAvatarScRsp,
-        CmdAvatarType::CmdDressAvatarSkinCsReq,
-        CmdAvatarType::CmdTakePromotionRewardScRsp,
-        CmdAvatarType::CmdUnlockSkilltreeScRsp,
+        CmdAvatarType::HPGFDCKOCJN_GKJBAODJMJG,
+        CmdAvatarType::HPGFDCKOCJN_PJDNMHADCDG,
+        CmdAvatarType::HPGFDCKOCJN_OMHFJDLEMND,
+        CmdAvatarType::HPGFDCKOCJN_GAMMJLOEFPH,
+        CmdAvatarType::HPGFDCKOCJN_GNKONADEFLH,
+        CmdAvatarType::HPGFDCKOCJN_CEGHFLFNMDH,
+        CmdAvatarType::HPGFDCKOCJN_HCKHEBGHBEJ,
+        CmdAvatarType::HPGFDCKOCJN_MMAKKMIHCAP,
+        CmdAvatarType::HPGFDCKOCJN_AGOGIMBIJHP,
+        CmdAvatarType::HPGFDCKOCJN_EIMNJPDMCNO,
+        CmdAvatarType::HPGFDCKOCJN_GDHPIMMAHCH,
+        CmdAvatarType::HPGFDCKOCJN_BBGBEPNLLLI,
+        CmdAvatarType::HPGFDCKOCJN_GCAIHLKMOJK,
+        CmdAvatarType::HPGFDCKOCJN_JFDLBFHNDDN,
+        CmdAvatarType::HPGFDCKOCJN_CHGOJPONFKF,
+        CmdAvatarType::HPGFDCKOCJN_KMNOEJMDBKK,
+        CmdAvatarType::HPGFDCKOCJN_MONAIJPFLKC,
+        CmdAvatarType::HPGFDCKOCJN_HOPEAHBHODN,
+        CmdAvatarType::HPGFDCKOCJN_IFONHONIHEJ,
+        CmdAvatarType::HPGFDCKOCJN_KFFIAOPIOCA,
+        CmdAvatarType::HPGFDCKOCJN_FHOLFJPEJNI,
+        CmdAvatarType::HPGFDCKOCJN_JMEDCMBLGDK,
+        CmdAvatarType::HPGFDCKOCJN_IDDOLJGOBJK,
+        CmdAvatarType::HPGFDCKOCJN_AEMMJPHIMIJ,
+        CmdAvatarType::HPGFDCKOCJN_AFKHKPCNODE,
+        CmdAvatarType::HPGFDCKOCJN_EOLOJNAFMGD,
+        CmdAvatarType::HPGFDCKOCJN_HNOJHCBJIPM,
+        CmdAvatarType::HPGFDCKOCJN_CEOFCAKIGMB,
+        CmdAvatarType::HPGFDCKOCJN_LCIICBIFBFA,
+        CmdAvatarType::HPGFDCKOCJN_IOABLACIMBO,
+        CmdAvatarType::HPGFDCKOCJN_ELMCFMPADHA,
+        CmdAvatarType::HPGFDCKOCJN_OGOGENPHOJI,
+        CmdAvatarType::HPGFDCKOCJN_CKJJBBAGIPG,
+        CmdAvatarType::HPGFDCKOCJN_PDLOLPGAIHD,
+        CmdAvatarType::HPGFDCKOCJN_BFGLAPBJKEL,
+        CmdAvatarType::HPGFDCKOCJN_GPGOLICJGJE,
+        CmdAvatarType::HPGFDCKOCJN_HFCBFIOFFEB,
+        CmdAvatarType::HPGFDCKOCJN_KAPDEIAEFGC,
+        CmdAvatarType::HPGFDCKOCJN_KAJMCJABELL,
+        CmdAvatarType::HPGFDCKOCJN_JFADEEDDLOD,
+        CmdAvatarType::HPGFDCKOCJN_MPLKPBHMGKG,
+        CmdAvatarType::HPGFDCKOCJN_JIMDDDPLMIL,
+        CmdAvatarType::HPGFDCKOCJN_CDHMBBMLGLI,
+        CmdAvatarType::HPGFDCKOCJN_PLIJFKPBOGA,
+        CmdAvatarType::HPGFDCKOCJN_KDMCANGPEKH,
+        CmdAvatarType::HPGFDCKOCJN_CDMGNDINNEI,
+        CmdAvatarType::HPGFDCKOCJN_DFCOKLBMDKE,
+        CmdAvatarType::HPGFDCKOCJN_BPJGMEBDNAC,
+        CmdAvatarType::HPGFDCKOCJN_OOIIINLNLLH,
     ];
 }
 
@@ -305,55 +305,55 @@ impl ::protobuf::EnumFull for CmdAvatarType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdAvatarType::CmdAvatarTypeNone => 0,
-            CmdAvatarType::CmdAddMultiPathAvatarScNotify => 1,
-            CmdAvatarType::CmdTakeOffEquipmentScRsp => 2,
-            CmdAvatarType::CmdAvatarExpUpCsReq => 3,
-            CmdAvatarType::CmdDressAvatarScRsp => 4,
-            CmdAvatarType::CmdDressAvatarCsReq => 5,
-            CmdAvatarType::CmdUnlockSkilltreeCsReq => 6,
-            CmdAvatarType::CmdSetAvatarEnhancedIdCsReq => 7,
-            CmdAvatarType::CmdGetPreAvatarActivityListCsReq => 8,
-            CmdAvatarType::CmdGetPreAvatarGrowthInfoScRsp => 9,
-            CmdAvatarType::CmdSetPlayerOutfitCsReq => 10,
-            CmdAvatarType::CmdGrowthTargetAvatarChangedScNotify => 11,
-            CmdAvatarType::CmdGetPreAvatarActivityListScRsp => 12,
-            CmdAvatarType::CmdTakeOffEquipmentCsReq => 13,
-            CmdAvatarType::CmdTakePromotionRewardCsReq => 14,
-            CmdAvatarType::CmdDressRelicAvatarScRsp => 15,
-            CmdAvatarType::CmdGetPreAvatarGrowthInfoCsReq => 16,
-            CmdAvatarType::CmdRankUpAvatarCsReq => 17,
-            CmdAvatarType::CmdSetAvatarPathScRsp => 18,
-            CmdAvatarType::CmdTakeOffRelicScRsp => 19,
-            CmdAvatarType::CmdSetGrowthTargetAvatarCsReq => 20,
-            CmdAvatarType::CmdAvatarExpUpScRsp => 21,
-            CmdAvatarType::CmdTakeOffRelicCsReq => 22,
-            CmdAvatarType::CmdSetAvatarEnhancedIdScRsp => 23,
-            CmdAvatarType::CmdMarkAvatarScRsp => 24,
-            CmdAvatarType::CmdTakeOffAvatarSkinScRsp => 25,
-            CmdAvatarType::CmdDressAvatarSkinScRsp => 26,
-            CmdAvatarType::CmdUnlockAvatarPathScRsp => 27,
-            CmdAvatarType::CmdSetGrowthTargetAvatarScRsp => 28,
-            CmdAvatarType::CmdSetMultipleAvatarPathsScRsp => 29,
-            CmdAvatarType::CmdMarkAvatarCsReq => 30,
-            CmdAvatarType::CmdGetAvatarDataCsReq => 31,
-            CmdAvatarType::CmdUnlockAvatarPathCsReq => 32,
-            CmdAvatarType::CmdUnlockAvatarSkinScNotify => 33,
-            CmdAvatarType::CmdPromoteAvatarCsReq => 34,
-            CmdAvatarType::CmdDressRelicAvatarCsReq => 35,
-            CmdAvatarType::CmdAddAvatarScNotify => 36,
-            CmdAvatarType::CmdAvatarPathChangedNotify => 37,
-            CmdAvatarType::CmdAvatarSpecialSkilltreeUnlockScNotify => 38,
-            CmdAvatarType::CmdSetPlayerOutfitScRsp => 39,
-            CmdAvatarType::CmdSetAvatarPathCsReq => 40,
-            CmdAvatarType::CmdTakeOffAvatarSkinCsReq => 41,
-            CmdAvatarType::CmdSetMultipleAvatarPathsCsReq => 42,
-            CmdAvatarType::CmdPromoteAvatarScRsp => 43,
-            CmdAvatarType::CmdGetAvatarDataScRsp => 44,
-            CmdAvatarType::CmdRankUpAvatarScRsp => 45,
-            CmdAvatarType::CmdDressAvatarSkinCsReq => 46,
-            CmdAvatarType::CmdTakePromotionRewardScRsp => 47,
-            CmdAvatarType::CmdUnlockSkilltreeScRsp => 48,
+            CmdAvatarType::HPGFDCKOCJN_GKJBAODJMJG => 0,
+            CmdAvatarType::HPGFDCKOCJN_PJDNMHADCDG => 1,
+            CmdAvatarType::HPGFDCKOCJN_OMHFJDLEMND => 2,
+            CmdAvatarType::HPGFDCKOCJN_GAMMJLOEFPH => 3,
+            CmdAvatarType::HPGFDCKOCJN_GNKONADEFLH => 4,
+            CmdAvatarType::HPGFDCKOCJN_CEGHFLFNMDH => 5,
+            CmdAvatarType::HPGFDCKOCJN_HCKHEBGHBEJ => 6,
+            CmdAvatarType::HPGFDCKOCJN_MMAKKMIHCAP => 7,
+            CmdAvatarType::HPGFDCKOCJN_AGOGIMBIJHP => 8,
+            CmdAvatarType::HPGFDCKOCJN_EIMNJPDMCNO => 9,
+            CmdAvatarType::HPGFDCKOCJN_GDHPIMMAHCH => 10,
+            CmdAvatarType::HPGFDCKOCJN_BBGBEPNLLLI => 11,
+            CmdAvatarType::HPGFDCKOCJN_GCAIHLKMOJK => 12,
+            CmdAvatarType::HPGFDCKOCJN_JFDLBFHNDDN => 13,
+            CmdAvatarType::HPGFDCKOCJN_CHGOJPONFKF => 14,
+            CmdAvatarType::HPGFDCKOCJN_KMNOEJMDBKK => 15,
+            CmdAvatarType::HPGFDCKOCJN_MONAIJPFLKC => 16,
+            CmdAvatarType::HPGFDCKOCJN_HOPEAHBHODN => 17,
+            CmdAvatarType::HPGFDCKOCJN_IFONHONIHEJ => 18,
+            CmdAvatarType::HPGFDCKOCJN_KFFIAOPIOCA => 19,
+            CmdAvatarType::HPGFDCKOCJN_FHOLFJPEJNI => 20,
+            CmdAvatarType::HPGFDCKOCJN_JMEDCMBLGDK => 21,
+            CmdAvatarType::HPGFDCKOCJN_IDDOLJGOBJK => 22,
+            CmdAvatarType::HPGFDCKOCJN_AEMMJPHIMIJ => 23,
+            CmdAvatarType::HPGFDCKOCJN_AFKHKPCNODE => 24,
+            CmdAvatarType::HPGFDCKOCJN_EOLOJNAFMGD => 25,
+            CmdAvatarType::HPGFDCKOCJN_HNOJHCBJIPM => 26,
+            CmdAvatarType::HPGFDCKOCJN_CEOFCAKIGMB => 27,
+            CmdAvatarType::HPGFDCKOCJN_LCIICBIFBFA => 28,
+            CmdAvatarType::HPGFDCKOCJN_IOABLACIMBO => 29,
+            CmdAvatarType::HPGFDCKOCJN_ELMCFMPADHA => 30,
+            CmdAvatarType::HPGFDCKOCJN_OGOGENPHOJI => 31,
+            CmdAvatarType::HPGFDCKOCJN_CKJJBBAGIPG => 32,
+            CmdAvatarType::HPGFDCKOCJN_PDLOLPGAIHD => 33,
+            CmdAvatarType::HPGFDCKOCJN_BFGLAPBJKEL => 34,
+            CmdAvatarType::HPGFDCKOCJN_GPGOLICJGJE => 35,
+            CmdAvatarType::HPGFDCKOCJN_HFCBFIOFFEB => 36,
+            CmdAvatarType::HPGFDCKOCJN_KAPDEIAEFGC => 37,
+            CmdAvatarType::HPGFDCKOCJN_KAJMCJABELL => 38,
+            CmdAvatarType::HPGFDCKOCJN_JFADEEDDLOD => 39,
+            CmdAvatarType::HPGFDCKOCJN_MPLKPBHMGKG => 40,
+            CmdAvatarType::HPGFDCKOCJN_JIMDDDPLMIL => 41,
+            CmdAvatarType::HPGFDCKOCJN_CDHMBBMLGLI => 42,
+            CmdAvatarType::HPGFDCKOCJN_PLIJFKPBOGA => 43,
+            CmdAvatarType::HPGFDCKOCJN_KDMCANGPEKH => 44,
+            CmdAvatarType::HPGFDCKOCJN_CDMGNDINNEI => 45,
+            CmdAvatarType::HPGFDCKOCJN_DFCOKLBMDKE => 46,
+            CmdAvatarType::HPGFDCKOCJN_BPJGMEBDNAC => 47,
+            CmdAvatarType::HPGFDCKOCJN_OOIIINLNLLH => 48,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -361,7 +361,7 @@ impl ::protobuf::EnumFull for CmdAvatarType {
 
 impl ::std::default::Default for CmdAvatarType {
     fn default() -> Self {
-        CmdAvatarType::CmdAvatarTypeNone
+        CmdAvatarType::HPGFDCKOCJN_GKJBAODJMJG
     }
 }
 
@@ -372,41 +372,41 @@ impl CmdAvatarType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdAvatarType.proto*\x8f\x0c\n\rCmdAvatarType\x12\x15\n\x11CmdAvat\
-    arTypeNone\x10\0\x12\"\n\x1dCmdAddMultiPathAvatarScNotify\x10\xfd\x02\
-    \x12\x1d\n\x18CmdTakeOffEquipmentScRsp\x10\xb6\x02\x12\x18\n\x13CmdAvata\
-    rExpUpCsReq\x10\xd1\x02\x12\x18\n\x13CmdDressAvatarScRsp\x10\x8b\x03\x12\
-    \x18\n\x13CmdDressAvatarCsReq\x10\xf8\x02\x12\x1c\n\x17CmdUnlockSkilltre\
-    eCsReq\x10\xcd\x02\x12\x20\n\x1bCmdSetAvatarEnhancedIdCsReq\x10\xdb\x02\
-    \x12%\n\x20CmdGetPreAvatarActivityListCsReq\x10\xca\x02\x12#\n\x1eCmdGet\
-    PreAvatarGrowthInfoScRsp\x10\xb7\x02\x12\x1c\n\x17CmdSetPlayerOutfitCsRe\
-    q\x10\xb9\x02\x12)\n$CmdGrowthTargetAvatarChangedScNotify\x10\xea\x02\
-    \x12%\n\x20CmdGetPreAvatarActivityListScRsp\x10\xc0\x02\x12\x1d\n\x18Cmd\
-    TakeOffEquipmentCsReq\x10\xd2\x02\x12\x20\n\x1bCmdTakePromotionRewardCsR\
-    eq\x10\x8e\x03\x12\x1d\n\x18CmdDressRelicAvatarScRsp\x10\x84\x03\x12#\n\
-    \x1eCmdGetPreAvatarGrowthInfoCsReq\x10\x85\x03\x12\x19\n\x14CmdRankUpAva\
-    tarCsReq\x10\xee\x02\x12\x1a\n\x15CmdSetAvatarPathScRsp\x10\xe0\x02\x12\
-    \x19\n\x14CmdTakeOffRelicScRsp\x10\xc5\x02\x12\"\n\x1dCmdSetGrowthTarget\
-    AvatarCsReq\x10\x87\x03\x12\x18\n\x13CmdAvatarExpUpScRsp\x10\xf1\x02\x12\
-    \x19\n\x14CmdTakeOffRelicCsReq\x10\xd9\x02\x12\x20\n\x1bCmdSetAvatarEnha\
-    ncedIdScRsp\x10\xef\x02\x12\x17\n\x12CmdMarkAvatarScRsp\x10\xcf\x02\x12\
-    \x1e\n\x19CmdTakeOffAvatarSkinScRsp\x10\xf2\x02\x12\x1c\n\x17CmdDressAva\
-    tarSkinScRsp\x10\xb3\x02\x12\x1d\n\x18CmdUnlockAvatarPathScRsp\x10\xbd\
-    \x02\x12\"\n\x1dCmdSetGrowthTargetAvatarScRsp\x10\x88\x03\x12#\n\x1eCmdS\
-    etMultipleAvatarPathsScRsp\x10\xdf\x02\x12\x17\n\x12CmdMarkAvatarCsReq\
-    \x10\xb5\x02\x12\x1a\n\x15CmdGetAvatarDataCsReq\x10\xba\x02\x12\x1d\n\
-    \x18CmdUnlockAvatarPathCsReq\x10\x8d\x03\x12\x20\n\x1bCmdUnlockAvatarSki\
-    nScNotify\x10\xb2\x02\x12\x1a\n\x15CmdPromoteAvatarCsReq\x10\xdd\x02\x12\
-    \x1d\n\x18CmdDressRelicAvatarCsReq\x10\xad\x02\x12\x19\n\x14CmdAddAvatar\
-    ScNotify\x10\x89\x03\x12\x1f\n\x1aCmdAvatarPathChangedNotify\x10\xf5\x02\
-    \x12,\n'CmdAvatarSpecialSkilltreeUnlockScNotify\x10\xe5\x02\x12\x1c\n\
-    \x17CmdSetPlayerOutfitScRsp\x10\xda\x02\x12\x1a\n\x15CmdSetAvatarPathCsR\
-    eq\x10\xde\x02\x12\x1e\n\x19CmdTakeOffAvatarSkinCsReq\x10\x81\x03\x12#\n\
-    \x1eCmdSetMultipleAvatarPathsCsReq\x10\xc6\x02\x12\x1a\n\x15CmdPromoteAv\
-    atarScRsp\x10\xaf\x02\x12\x1a\n\x15CmdGetAvatarDataScRsp\x10\xd0\x02\x12\
-    \x19\n\x14CmdRankUpAvatarScRsp\x10\xbb\x02\x12\x1c\n\x17CmdDressAvatarSk\
-    inCsReq\x10\xe9\x02\x12\x20\n\x1bCmdTakePromotionRewardScRsp\x10\xcc\x02\
-    \x12\x1c\n\x17CmdUnlockSkilltreeScRsp\x10\xe3\x02b\x06proto3\
+    \n\x13CmdAvatarType.proto*\xcc\x0b\n\rCmdAvatarType\x12\x1b\n\x17HPGFDCK\
+    OCJN_GKJBAODJMJG\x10\0\x12\x1c\n\x17HPGFDCKOCJN_PJDNMHADCDG\x10\x81\x03\
+    \x12\x1c\n\x17HPGFDCKOCJN_OMHFJDLEMND\x10\xd5\x02\x12\x1c\n\x17HPGFDCKOC\
+    JN_GAMMJLOEFPH\x10\xb9\x02\x12\x1c\n\x17HPGFDCKOCJN_GNKONADEFLH\x10\xf2\
+    \x02\x12\x1c\n\x17HPGFDCKOCJN_CEGHFLFNMDH\x10\xc1\x02\x12\x1c\n\x17HPGFD\
+    CKOCJN_HCKHEBGHBEJ\x10\xcc\x02\x12\x1c\n\x17HPGFDCKOCJN_MMAKKMIHCAP\x10\
+    \xde\x02\x12\x1c\n\x17HPGFDCKOCJN_AGOGIMBIJHP\x10\xca\x02\x12\x1c\n\x17H\
+    PGFDCKOCJN_EIMNJPDMCNO\x10\xd1\x02\x12\x1c\n\x17HPGFDCKOCJN_GDHPIMMAHCH\
+    \x10\xe4\x02\x12\x1c\n\x17HPGFDCKOCJN_BBGBEPNLLLI\x10\x82\x03\x12\x1c\n\
+    \x17HPGFDCKOCJN_GCAIHLKMOJK\x10\xb1\x02\x12\x1c\n\x17HPGFDCKOCJN_JFDLBFH\
+    NDDN\x10\xd2\x02\x12\x1c\n\x17HPGFDCKOCJN_CHGOJPONFKF\x10\xf9\x02\x12\
+    \x1c\n\x17HPGFDCKOCJN_KMNOEJMDBKK\x10\xf1\x02\x12\x1c\n\x17HPGFDCKOCJN_M\
+    ONAIJPFLKC\x10\xf8\x02\x12\x1c\n\x17HPGFDCKOCJN_HOPEAHBHODN\x10\xc8\x02\
+    \x12\x1c\n\x17HPGFDCKOCJN_IFONHONIHEJ\x10\xdf\x02\x12\x1c\n\x17HPGFDCKOC\
+    JN_KFFIAOPIOCA\x10\xb8\x02\x12\x1c\n\x17HPGFDCKOCJN_FHOLFJPEJNI\x10\x85\
+    \x03\x12\x1c\n\x17HPGFDCKOCJN_JMEDCMBLGDK\x10\x8c\x03\x12\x1c\n\x17HPGFD\
+    CKOCJN_IDDOLJGOBJK\x10\xe5\x02\x12\x1c\n\x17HPGFDCKOCJN_AEMMJPHIMIJ\x10\
+    \xce\x02\x12\x1c\n\x17HPGFDCKOCJN_AFKHKPCNODE\x10\xfe\x02\x12\x1c\n\x17H\
+    PGFDCKOCJN_EOLOJNAFMGD\x10\xfb\x02\x12\x1c\n\x17HPGFDCKOCJN_HNOJHCBJIPM\
+    \x10\xc6\x02\x12\x1c\n\x17HPGFDCKOCJN_CEOFCAKIGMB\x10\x84\x03\x12\x1c\n\
+    \x17HPGFDCKOCJN_LCIICBIFBFA\x10\xff\x02\x12\x1c\n\x17HPGFDCKOCJN_IOABLAC\
+    IMBO\x10\xb5\x02\x12\x1c\n\x17HPGFDCKOCJN_ELMCFMPADHA\x10\xdb\x02\x12\
+    \x1c\n\x17HPGFDCKOCJN_OGOGENPHOJI\x10\xad\x02\x12\x1c\n\x17HPGFDCKOCJN_C\
+    KJJBBAGIPG\x10\xe0\x02\x12\x1c\n\x17HPGFDCKOCJN_PDLOLPGAIHD\x10\xfa\x02\
+    \x12\x1c\n\x17HPGFDCKOCJN_BFGLAPBJKEL\x10\xea\x02\x12\x1c\n\x17HPGFDCKOC\
+    JN_GPGOLICJGJE\x10\xb7\x02\x12\x1c\n\x17HPGFDCKOCJN_HFCBFIOFFEB\x10\xf7\
+    \x02\x12\x1c\n\x17HPGFDCKOCJN_KAPDEIAEFGC\x10\xd9\x02\x12\x1c\n\x17HPGFD\
+    CKOCJN_KAJMCJABELL\x10\x88\x03\x12\x1c\n\x17HPGFDCKOCJN_JFADEEDDLOD\x10\
+    \x8b\x03\x12\x1c\n\x17HPGFDCKOCJN_MPLKPBHMGKG\x10\x8f\x03\x12\x1c\n\x17H\
+    PGFDCKOCJN_JIMDDDPLMIL\x10\x89\x03\x12\x1c\n\x17HPGFDCKOCJN_CDHMBBMLGLI\
+    \x10\xfc\x02\x12\x1c\n\x17HPGFDCKOCJN_PLIJFKPBOGA\x10\xb4\x02\x12\x1c\n\
+    \x17HPGFDCKOCJN_KDMCANGPEKH\x10\xe3\x02\x12\x1c\n\x17HPGFDCKOCJN_CDMGNDI\
+    NNEI\x10\xee\x02\x12\x1c\n\x17HPGFDCKOCJN_DFCOKLBMDKE\x10\xba\x02\x12\
+    \x1c\n\x17HPGFDCKOCJN_BPJGMEBDNAC\x10\xc0\x02\x12\x1c\n\x17HPGFDCKOCJN_O\
+    OIIINLNLLH\x10\xbe\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

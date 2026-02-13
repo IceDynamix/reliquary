@@ -31,7 +31,7 @@ pub struct GetFriendRecommendLineupCsReq {
     // @@protoc_insertion_point(field:GetFriendRecommendLineupCsReq.key)
     pub key: u32,
     // @@protoc_insertion_point(field:GetFriendRecommendLineupCsReq.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::LDPGCFIGHFD::LDPGCFIGHFD>,
+    pub type_: ::protobuf::EnumOrUnknown<super::AJLJOLEJLAC::AJLJOLEJLAC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRecommendLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.key = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.key);
+            my_size += ::protobuf::rt::uint32_size(2, self.key);
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP) {
-            my_size += ::protobuf::rt::int32_size(7, self.type_.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
+            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(11, self.key)?;
+            os.write_uint32(2, self.key)?;
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,7 +133,7 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
 
     fn clear(&mut self) {
         self.key = 0;
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG);
         self.special_fields.clear();
     }
 
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendLineupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendRecommendLineupCsReq.proto\x1a\x11LDPGCFIGHFD.proto\"S\n\x1d\
-    GetFriendRecommendLineupCsReq\x12\x10\n\x03key\x18\x0b\x20\x01(\rR\x03ke\
-    y\x12\x20\n\x04type\x18\x07\x20\x01(\x0e2\x0c.LDPGCFIGHFDR\x04typeb\x06p\
-    roto3\
+    \n#GetFriendRecommendLineupCsReq.proto\x1a\x11AJLJOLEJLAC.proto\"S\n\x1d\
+    GetFriendRecommendLineupCsReq\x12\x10\n\x03key\x18\x02\x20\x01(\rR\x03ke\
+    y\x12\x20\n\x04type\x18\t\x20\x01(\x0e2\x0c.AJLJOLEJLACR\x04typeb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LDPGCFIGHFD::file_descriptor().clone());
+            deps.push(super::AJLJOLEJLAC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendRecommendLineupCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

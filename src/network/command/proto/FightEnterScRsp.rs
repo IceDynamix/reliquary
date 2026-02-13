@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightEnterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightEnterScRsp.server_timestamp_ms)
-    pub server_timestamp_ms: u64,
     // @@protoc_insertion_point(field:FightEnterScRsp.secret_key_seed)
     pub secret_key_seed: u64,
-    // @@protoc_insertion_point(field:FightEnterScRsp.NKDGCOLOCOM)
-    pub NKDGCOLOCOM: bool,
-    // @@protoc_insertion_point(field:FightEnterScRsp.HHBNHHBMGHP)
-    pub HHBNHHBMGHP: u32,
+    // @@protoc_insertion_point(field:FightEnterScRsp.server_timestamp_ms)
+    pub server_timestamp_ms: u64,
+    // @@protoc_insertion_point(field:FightEnterScRsp.DMNILMHEJEH)
+    pub DMNILMHEJEH: bool,
+    // @@protoc_insertion_point(field:FightEnterScRsp.NDKHEEBMLLD)
+    pub NDKHEEBMLLD: u32,
     // @@protoc_insertion_point(field:FightEnterScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -58,24 +58,24 @@ impl FightEnterScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "server_timestamp_ms",
-            |m: &FightEnterScRsp| { &m.server_timestamp_ms },
-            |m: &mut FightEnterScRsp| { &mut m.server_timestamp_ms },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "secret_key_seed",
             |m: &FightEnterScRsp| { &m.secret_key_seed },
             |m: &mut FightEnterScRsp| { &mut m.secret_key_seed },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKDGCOLOCOM",
-            |m: &FightEnterScRsp| { &m.NKDGCOLOCOM },
-            |m: &mut FightEnterScRsp| { &mut m.NKDGCOLOCOM },
+            "server_timestamp_ms",
+            |m: &FightEnterScRsp| { &m.server_timestamp_ms },
+            |m: &mut FightEnterScRsp| { &mut m.server_timestamp_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHBNHHBMGHP",
-            |m: &FightEnterScRsp| { &m.HHBNHHBMGHP },
-            |m: &mut FightEnterScRsp| { &mut m.HHBNHHBMGHP },
+            "DMNILMHEJEH",
+            |m: &FightEnterScRsp| { &m.DMNILMHEJEH },
+            |m: &mut FightEnterScRsp| { &mut m.DMNILMHEJEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDKHEEBMLLD",
+            |m: &FightEnterScRsp| { &m.NDKHEEBMLLD },
+            |m: &mut FightEnterScRsp| { &mut m.NDKHEEBMLLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for FightEnterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.server_timestamp_ms = is.read_uint64()?;
-                },
-                64 => {
+                8 => {
                     self.secret_key_seed = is.read_uint64()?;
                 },
-                8 => {
-                    self.NKDGCOLOCOM = is.read_bool()?;
+                32 => {
+                    self.server_timestamp_ms = is.read_uint64()?;
                 },
-                24 => {
-                    self.HHBNHHBMGHP = is.read_uint32()?;
+                16 => {
+                    self.DMNILMHEJEH = is.read_bool()?;
                 },
-                56 => {
+                88 => {
+                    self.NDKHEEBMLLD = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.server_timestamp_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.server_timestamp_ms);
-        }
         if self.secret_key_seed != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.secret_key_seed);
+            my_size += ::protobuf::rt::uint64_size(1, self.secret_key_seed);
         }
-        if self.NKDGCOLOCOM != false {
+        if self.server_timestamp_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(4, self.server_timestamp_ms);
+        }
+        if self.DMNILMHEJEH != false {
             my_size += 1 + 1;
         }
-        if self.HHBNHHBMGHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HHBNHHBMGHP);
+        if self.NDKHEEBMLLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NDKHEEBMLLD);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.server_timestamp_ms != 0 {
-            os.write_uint64(15, self.server_timestamp_ms)?;
-        }
         if self.secret_key_seed != 0 {
-            os.write_uint64(8, self.secret_key_seed)?;
+            os.write_uint64(1, self.secret_key_seed)?;
         }
-        if self.NKDGCOLOCOM != false {
-            os.write_bool(1, self.NKDGCOLOCOM)?;
+        if self.server_timestamp_ms != 0 {
+            os.write_uint64(4, self.server_timestamp_ms)?;
         }
-        if self.HHBNHHBMGHP != 0 {
-            os.write_uint32(3, self.HHBNHHBMGHP)?;
+        if self.DMNILMHEJEH != false {
+            os.write_bool(2, self.DMNILMHEJEH)?;
+        }
+        if self.NDKHEEBMLLD != 0 {
+            os.write_uint32(11, self.NDKHEEBMLLD)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for FightEnterScRsp {
     }
 
     fn clear(&mut self) {
-        self.server_timestamp_ms = 0;
         self.secret_key_seed = 0;
-        self.NKDGCOLOCOM = false;
-        self.HHBNHHBMGHP = 0;
+        self.server_timestamp_ms = 0;
+        self.DMNILMHEJEH = false;
+        self.NDKHEEBMLLD = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightEnterScRsp {
         static instance: FightEnterScRsp = FightEnterScRsp {
-            server_timestamp_ms: 0,
             secret_key_seed: 0,
-            NKDGCOLOCOM: false,
-            HHBNHHBMGHP: 0,
+            server_timestamp_ms: 0,
+            DMNILMHEJEH: false,
+            NDKHEEBMLLD: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for FightEnterScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15FightEnterScRsp.proto\"\xc7\x01\n\x0fFightEnterScRsp\x12.\n\x13ser\
-    ver_timestamp_ms\x18\x0f\x20\x01(\x04R\x11serverTimestampMs\x12&\n\x0fse\
-    cret_key_seed\x18\x08\x20\x01(\x04R\rsecretKeySeed\x12\x20\n\x0bNKDGCOLO\
-    COM\x18\x01\x20\x01(\x08R\x0bNKDGCOLOCOM\x12\x20\n\x0bHHBNHHBMGHP\x18\
-    \x03\x20\x01(\rR\x0bHHBNHHBMGHP\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
+    \n\x15FightEnterScRsp.proto\"\xc7\x01\n\x0fFightEnterScRsp\x12&\n\x0fsec\
+    ret_key_seed\x18\x01\x20\x01(\x04R\rsecretKeySeed\x12.\n\x13server_times\
+    tamp_ms\x18\x04\x20\x01(\x04R\x11serverTimestampMs\x12\x20\n\x0bDMNILMHE\
+    JEH\x18\x02\x20\x01(\x08R\x0bDMNILMHEJEH\x12\x20\n\x0bNDKHEEBMLLD\x18\
+    \x0b\x20\x01(\rR\x0bNDKHEEBMLLD\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

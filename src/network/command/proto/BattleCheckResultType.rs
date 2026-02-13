@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleCheckResultType)
 pub enum BattleCheckResultType {
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BATTLE_CHECK_RESULT_SUCC)
-    BATTLE_CHECK_RESULT_SUCC = 0,
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BATTLE_CHECK_RESULT_FAIL)
-    BATTLE_CHECK_RESULT_FAIL = 1,
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BATTLE_CHECK_RESULT_PASS)
-    BATTLE_CHECK_RESULT_PASS = 2,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_NEMALLPHDCC)
+    BattleCheckResultType_NEMALLPHDCC = 0,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_ONFLEKKNKBK)
+    BattleCheckResultType_ONFLEKKNKBK = 1,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_MHMNOBLJOJI)
+    BattleCheckResultType_MHMNOBLJOJI = 2,
 }
 
 impl ::protobuf::Enum for BattleCheckResultType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for BattleCheckResultType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleCheckResultType> {
         match value {
-            0 => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC),
-            1 => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_FAIL),
-            2 => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_PASS),
+            0 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC),
+            1 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK),
+            2 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleCheckResultType> {
         match str {
-            "BATTLE_CHECK_RESULT_SUCC" => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC),
-            "BATTLE_CHECK_RESULT_FAIL" => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_FAIL),
-            "BATTLE_CHECK_RESULT_PASS" => ::std::option::Option::Some(BattleCheckResultType::BATTLE_CHECK_RESULT_PASS),
+            "BattleCheckResultType_NEMALLPHDCC" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC),
+            "BattleCheckResultType_ONFLEKKNKBK" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK),
+            "BattleCheckResultType_MHMNOBLJOJI" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleCheckResultType] = &[
-        BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC,
-        BattleCheckResultType::BATTLE_CHECK_RESULT_FAIL,
-        BattleCheckResultType::BATTLE_CHECK_RESULT_PASS,
+        BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC,
+        BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK,
+        BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for BattleCheckResultType {
 
 impl ::std::default::Default for BattleCheckResultType {
     fn default() -> Self {
-        BattleCheckResultType::BATTLE_CHECK_RESULT_SUCC
+        BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC
     }
 }
 
@@ -92,9 +92,10 @@ impl BattleCheckResultType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bBattleCheckResultType.proto*q\n\x15BattleCheckResultType\x12\x1c\n\
-    \x18BATTLE_CHECK_RESULT_SUCC\x10\0\x12\x1c\n\x18BATTLE_CHECK_RESULT_FAIL\
-    \x10\x01\x12\x1c\n\x18BATTLE_CHECK_RESULT_PASS\x10\x02b\x06proto3\
+    \n\x1bBattleCheckResultType.proto*\x8c\x01\n\x15BattleCheckResultType\
+    \x12%\n!BattleCheckResultType_NEMALLPHDCC\x10\0\x12%\n!BattleCheckResult\
+    Type_ONFLEKKNKBK\x10\x01\x12%\n!BattleCheckResultType_MHMNOBLJOJI\x10\
+    \x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

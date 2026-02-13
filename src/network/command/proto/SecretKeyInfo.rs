@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SecretKeyInfo {
     // message fields
-    // @@protoc_insertion_point(field:SecretKeyInfo.secret_key)
-    pub secret_key: ::std::string::String,
     // @@protoc_insertion_point(field:SecretKeyInfo.type)
     pub type_: ::protobuf::EnumOrUnknown<super::SecretKeyType::SecretKeyType>,
+    // @@protoc_insertion_point(field:SecretKeyInfo.secret_key)
+    pub secret_key: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SecretKeyInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SecretKeyInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "secret_key",
-            |m: &SecretKeyInfo| { &m.secret_key },
-            |m: &mut SecretKeyInfo| { &mut m.secret_key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &SecretKeyInfo| { &m.type_ },
             |m: &mut SecretKeyInfo| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "secret_key",
+            |m: &SecretKeyInfo| { &m.secret_key },
+            |m: &mut SecretKeyInfo| { &mut m.secret_key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SecretKeyInfo>(
             "SecretKeyInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SecretKeyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.secret_key = is.read_string()?;
-                },
-                112 => {
+                104 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    self.secret_key = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SecretKeyInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.secret_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.secret_key);
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::SecretKeyType::SecretKeyType::SECRET_KEY_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(13, self.type_.value());
+        }
+        if !self.secret_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.secret_key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SecretKeyInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.secret_key.is_empty() {
-            os.write_string(15, &self.secret_key)?;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::SecretKeyType::SecretKeyType::SECRET_KEY_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if !self.secret_key.is_empty() {
+            os.write_string(11, &self.secret_key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SecretKeyInfo {
     }
 
     fn clear(&mut self) {
-        self.secret_key.clear();
         self.type_ = ::protobuf::EnumOrUnknown::new(super::SecretKeyType::SecretKeyType::SECRET_KEY_NONE);
+        self.secret_key.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SecretKeyInfo {
         static instance: SecretKeyInfo = SecretKeyInfo {
-            secret_key: ::std::string::String::new(),
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            secret_key: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SecretKeyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SecretKeyInfo.proto\x1a\x13SecretKeyType.proto\"R\n\rSecretKeyInfo\
-    \x12\x1d\n\nsecret_key\x18\x0f\x20\x01(\tR\tsecretKey\x12\"\n\x04type\
-    \x18\x0e\x20\x01(\x0e2\x0e.SecretKeyTypeR\x04typeb\x06proto3\
+    \x12\"\n\x04type\x18\r\x20\x01(\x0e2\x0e.SecretKeyTypeR\x04type\x12\x1d\
+    \n\nsecret_key\x18\x0b\x20\x01(\tR\tsecretKeyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

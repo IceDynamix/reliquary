@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Vector {
     // message fields
-    // @@protoc_insertion_point(field:Vector.z)
-    pub z: i32,
     // @@protoc_insertion_point(field:Vector.x)
     pub x: i32,
+    // @@protoc_insertion_point(field:Vector.z)
+    pub z: i32,
     // @@protoc_insertion_point(field:Vector.y)
     pub y: i32,
     // special fields
@@ -54,14 +54,14 @@ impl Vector {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "z",
-            |m: &Vector| { &m.z },
-            |m: &mut Vector| { &mut m.z },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "x",
             |m: &Vector| { &m.x },
             |m: &mut Vector| { &mut m.x },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "z",
+            |m: &Vector| { &m.z },
+            |m: &mut Vector| { &mut m.z },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "y",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for Vector {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.z = is.read_sint32()?;
-                },
-                112 => {
+                120 => {
                     self.x = is.read_sint32()?;
                 },
-                120 => {
+                88 => {
+                    self.z = is.read_sint32()?;
+                },
+                40 => {
                     self.y = is.read_sint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for Vector {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.z != 0 {
-            my_size += ::protobuf::rt::sint32_size(5, self.z);
-        }
         if self.x != 0 {
-            my_size += ::protobuf::rt::sint32_size(14, self.x);
+            my_size += ::protobuf::rt::sint32_size(15, self.x);
+        }
+        if self.z != 0 {
+            my_size += ::protobuf::rt::sint32_size(11, self.z);
         }
         if self.y != 0 {
-            my_size += ::protobuf::rt::sint32_size(15, self.y);
+            my_size += ::protobuf::rt::sint32_size(5, self.y);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for Vector {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.z != 0 {
-            os.write_sint32(5, self.z)?;
-        }
         if self.x != 0 {
-            os.write_sint32(14, self.x)?;
+            os.write_sint32(15, self.x)?;
+        }
+        if self.z != 0 {
+            os.write_sint32(11, self.z)?;
         }
         if self.y != 0 {
-            os.write_sint32(15, self.y)?;
+            os.write_sint32(5, self.y)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for Vector {
     }
 
     fn clear(&mut self) {
-        self.z = 0;
         self.x = 0;
+        self.z = 0;
         self.y = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Vector {
         static instance: Vector = Vector {
-            z: 0,
             x: 0,
+            z: 0,
             y: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for Vector {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0cVector.proto\"2\n\x06Vector\x12\x0c\n\x01z\x18\x05\x20\x01(\x11R\
-    \x01z\x12\x0c\n\x01x\x18\x0e\x20\x01(\x11R\x01x\x12\x0c\n\x01y\x18\x0f\
+    \n\x0cVector.proto\"2\n\x06Vector\x12\x0c\n\x01x\x18\x0f\x20\x01(\x11R\
+    \x01x\x12\x0c\n\x01z\x18\x0b\x20\x01(\x11R\x01z\x12\x0c\n\x01y\x18\x05\
     \x20\x01(\x11R\x01yb\x06proto3\
 ";
 

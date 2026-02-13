@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRechargeGiftType)
 pub enum CmdRechargeGiftType {
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftTypeNone)
-    CmdRechargeGiftTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardScRsp)
-    CmdTakeRechargeGiftRewardScRsp = 8377,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdSyncRechargeBenefitInfoScNotify)
-    CmdSyncRechargeBenefitInfoScNotify = 8373,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeGiftInfoCsReq)
-    CmdGetRechargeGiftInfoCsReq = 8374,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoCsReq)
-    CmdGetRechargeBenefitInfoCsReq = 8366,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeBenefitInfoScRsp)
-    CmdGetRechargeBenefitInfoScRsp = 8372,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdGetRechargeGiftInfoScRsp)
-    CmdGetRechargeGiftInfoScRsp = 8369,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardScRsp)
-    CmdTakeRechargeBenefitRewardScRsp = 8364,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeBenefitRewardCsReq)
-    CmdTakeRechargeBenefitRewardCsReq = 8365,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdTakeRechargeGiftRewardCsReq)
-    CmdTakeRechargeGiftRewardCsReq = 8363,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_GKJBAODJMJG)
+    DEJKLPPPCFL_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_FFCANGMFDAJ)
+    DEJKLPPPCFL_FFCANGMFDAJ = 8380,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_KMCOBJHMCHI)
+    DEJKLPPPCFL_KMCOBJHMCHI = 8361,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_LPLMEKHNLBF)
+    DEJKLPPPCFL_LPLMEKHNLBF = 8370,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_HNEGFBLAPCI)
+    DEJKLPPPCFL_HNEGFBLAPCI = 8375,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_OFCOAOLFJBB)
+    DEJKLPPPCFL_OFCOAOLFJBB = 8371,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_FNIOCKEGOPE)
+    DEJKLPPPCFL_FNIOCKEGOPE = 8372,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_EEEOHBKJLFP)
+    DEJKLPPPCFL_EEEOHBKJLFP = 8376,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_JCHHGNALFJD)
+    DEJKLPPPCFL_JCHHGNALFJD = 8366,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_EKCLFOIKNIA)
+    DEJKLPPPCFL_EKCLFOIKNIA = 8364,
 }
 
 impl ::protobuf::Enum for CmdRechargeGiftType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRechargeGiftType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftTypeNone),
-            8377 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
-            8373 => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
-            8374 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq),
-            8366 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
-            8372 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
-            8369 => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp),
-            8364 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
-            8365 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
-            8363 => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
+            0 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG),
+            8380 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ),
+            8361 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI),
+            8370 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF),
+            8375 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI),
+            8371 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB),
+            8372 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE),
+            8376 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP),
+            8366 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD),
+            8364 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRechargeGiftType> {
         match str {
-            "CmdRechargeGiftTypeNone" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftTypeNone),
-            "CmdTakeRechargeGiftRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp),
-            "CmdSyncRechargeBenefitInfoScNotify" => ::std::option::Option::Some(CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify),
-            "CmdGetRechargeGiftInfoCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq),
-            "CmdGetRechargeBenefitInfoCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq),
-            "CmdGetRechargeBenefitInfoScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp),
-            "CmdGetRechargeGiftInfoScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp),
-            "CmdTakeRechargeBenefitRewardScRsp" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp),
-            "CmdTakeRechargeBenefitRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq),
-            "CmdTakeRechargeGiftRewardCsReq" => ::std::option::Option::Some(CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq),
+            "DEJKLPPPCFL_GKJBAODJMJG" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG),
+            "DEJKLPPPCFL_FFCANGMFDAJ" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ),
+            "DEJKLPPPCFL_KMCOBJHMCHI" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI),
+            "DEJKLPPPCFL_LPLMEKHNLBF" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF),
+            "DEJKLPPPCFL_HNEGFBLAPCI" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI),
+            "DEJKLPPPCFL_OFCOAOLFJBB" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB),
+            "DEJKLPPPCFL_FNIOCKEGOPE" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE),
+            "DEJKLPPPCFL_EEEOHBKJLFP" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP),
+            "DEJKLPPPCFL_JCHHGNALFJD" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD),
+            "DEJKLPPPCFL_EKCLFOIKNIA" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRechargeGiftType] = &[
-        CmdRechargeGiftType::CmdRechargeGiftTypeNone,
-        CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp,
-        CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify,
-        CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq,
-        CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq,
-        CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp,
-        CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp,
-        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp,
-        CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq,
-        CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq,
+        CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG,
+        CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ,
+        CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI,
+        CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF,
+        CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI,
+        CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB,
+        CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE,
+        CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP,
+        CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD,
+        CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRechargeGiftType::CmdRechargeGiftTypeNone => 0,
-            CmdRechargeGiftType::CmdTakeRechargeGiftRewardScRsp => 1,
-            CmdRechargeGiftType::CmdSyncRechargeBenefitInfoScNotify => 2,
-            CmdRechargeGiftType::CmdGetRechargeGiftInfoCsReq => 3,
-            CmdRechargeGiftType::CmdGetRechargeBenefitInfoCsReq => 4,
-            CmdRechargeGiftType::CmdGetRechargeBenefitInfoScRsp => 5,
-            CmdRechargeGiftType::CmdGetRechargeGiftInfoScRsp => 6,
-            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardScRsp => 7,
-            CmdRechargeGiftType::CmdTakeRechargeBenefitRewardCsReq => 8,
-            CmdRechargeGiftType::CmdTakeRechargeGiftRewardCsReq => 9,
+            CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG => 0,
+            CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ => 1,
+            CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI => 2,
+            CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF => 3,
+            CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI => 4,
+            CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB => 5,
+            CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE => 6,
+            CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP => 7,
+            CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD => 8,
+            CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
 
 impl ::std::default::Default for CmdRechargeGiftType {
     fn default() -> Self {
-        CmdRechargeGiftType::CmdRechargeGiftTypeNone
+        CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG
     }
 }
 
@@ -138,15 +138,14 @@ impl CmdRechargeGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdRechargeGiftType.proto*\x83\x03\n\x13CmdRechargeGiftType\x12\
-    \x1b\n\x17CmdRechargeGiftTypeNone\x10\0\x12#\n\x1eCmdTakeRechargeGiftRew\
-    ardScRsp\x10\xb9A\x12'\n\"CmdSyncRechargeBenefitInfoScNotify\x10\xb5A\
-    \x12\x20\n\x1bCmdGetRechargeGiftInfoCsReq\x10\xb6A\x12#\n\x1eCmdGetRecha\
-    rgeBenefitInfoCsReq\x10\xaeA\x12#\n\x1eCmdGetRechargeBenefitInfoScRsp\
-    \x10\xb4A\x12\x20\n\x1bCmdGetRechargeGiftInfoScRsp\x10\xb1A\x12&\n!CmdTa\
-    keRechargeBenefitRewardScRsp\x10\xacA\x12&\n!CmdTakeRechargeBenefitRewar\
-    dCsReq\x10\xadA\x12#\n\x1eCmdTakeRechargeGiftRewardCsReq\x10\xabAb\x06pr\
-    oto3\
+    \n\x19CmdRechargeGiftType.proto*\xc0\x02\n\x13CmdRechargeGiftType\x12\
+    \x1b\n\x17DEJKLPPPCFL_GKJBAODJMJG\x10\0\x12\x1c\n\x17DEJKLPPPCFL_FFCANGM\
+    FDAJ\x10\xbcA\x12\x1c\n\x17DEJKLPPPCFL_KMCOBJHMCHI\x10\xa9A\x12\x1c\n\
+    \x17DEJKLPPPCFL_LPLMEKHNLBF\x10\xb2A\x12\x1c\n\x17DEJKLPPPCFL_HNEGFBLAPC\
+    I\x10\xb7A\x12\x1c\n\x17DEJKLPPPCFL_OFCOAOLFJBB\x10\xb3A\x12\x1c\n\x17DE\
+    JKLPPPCFL_FNIOCKEGOPE\x10\xb4A\x12\x1c\n\x17DEJKLPPPCFL_EEEOHBKJLFP\x10\
+    \xb8A\x12\x1c\n\x17DEJKLPPPCFL_JCHHGNALFJD\x10\xaeA\x12\x1c\n\x17DEJKLPP\
+    PCFL_EKCLFOIKNIA\x10\xacAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

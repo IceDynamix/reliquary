@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRollShopType)
 pub enum CmdRollShopType {
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdRollShopTypeNone)
-    CmdRollShopTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoCsReq)
-    CmdGetRollShopInfoCsReq = 6905,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoScRsp)
-    CmdGetRollShopInfoScRsp = 6913,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopScRsp)
-    CmdDoGachaInRollShopScRsp = 6909,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopCsReq)
-    CmdDoGachaInRollShopCsReq = 6906,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardScRsp)
-    CmdTakeRollShopRewardScRsp = 6904,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardCsReq)
-    CmdTakeRollShopRewardCsReq = 6914,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_GKJBAODJMJG)
+    AFIENJHNJAN_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_MKBNFPGEIOC)
+    AFIENJHNJAN_MKBNFPGEIOC = 6910,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_LICBKJIKODK)
+    AFIENJHNJAN_LICBKJIKODK = 6901,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_KMJAKNKGMFG)
+    AFIENJHNJAN_KMJAKNKGMFG = 6906,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_KGJHNMDALBJ)
+    AFIENJHNJAN_KGJHNMDALBJ = 6904,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_PNHCENHLCPM)
+    AFIENJHNJAN_PNHCENHLCPM = 6912,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.AFIENJHNJAN_GBOPEIPICJJ)
+    AFIENJHNJAN_GBOPEIPICJJ = 6911,
 }
 
 impl ::protobuf::Enum for CmdRollShopType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdRollShopType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRollShopType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRollShopType::CmdRollShopTypeNone),
-            6905 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            6913 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            6909 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
-            6906 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            6904 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
-            6914 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            0 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_GKJBAODJMJG),
+            6910 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_MKBNFPGEIOC),
+            6901 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_LICBKJIKODK),
+            6906 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_KMJAKNKGMFG),
+            6904 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_KGJHNMDALBJ),
+            6912 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_PNHCENHLCPM),
+            6911 => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_GBOPEIPICJJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRollShopType> {
         match str {
-            "CmdRollShopTypeNone" => ::std::option::Option::Some(CmdRollShopType::CmdRollShopTypeNone),
-            "CmdGetRollShopInfoCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            "CmdGetRollShopInfoScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            "CmdDoGachaInRollShopScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
-            "CmdDoGachaInRollShopCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            "CmdTakeRollShopRewardScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
-            "CmdTakeRollShopRewardCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            "AFIENJHNJAN_GKJBAODJMJG" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_GKJBAODJMJG),
+            "AFIENJHNJAN_MKBNFPGEIOC" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_MKBNFPGEIOC),
+            "AFIENJHNJAN_LICBKJIKODK" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_LICBKJIKODK),
+            "AFIENJHNJAN_KMJAKNKGMFG" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_KMJAKNKGMFG),
+            "AFIENJHNJAN_KGJHNMDALBJ" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_KGJHNMDALBJ),
+            "AFIENJHNJAN_PNHCENHLCPM" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_PNHCENHLCPM),
+            "AFIENJHNJAN_GBOPEIPICJJ" => ::std::option::Option::Some(CmdRollShopType::AFIENJHNJAN_GBOPEIPICJJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRollShopType] = &[
-        CmdRollShopType::CmdRollShopTypeNone,
-        CmdRollShopType::CmdGetRollShopInfoCsReq,
-        CmdRollShopType::CmdGetRollShopInfoScRsp,
-        CmdRollShopType::CmdDoGachaInRollShopScRsp,
-        CmdRollShopType::CmdDoGachaInRollShopCsReq,
-        CmdRollShopType::CmdTakeRollShopRewardScRsp,
-        CmdRollShopType::CmdTakeRollShopRewardCsReq,
+        CmdRollShopType::AFIENJHNJAN_GKJBAODJMJG,
+        CmdRollShopType::AFIENJHNJAN_MKBNFPGEIOC,
+        CmdRollShopType::AFIENJHNJAN_LICBKJIKODK,
+        CmdRollShopType::AFIENJHNJAN_KMJAKNKGMFG,
+        CmdRollShopType::AFIENJHNJAN_KGJHNMDALBJ,
+        CmdRollShopType::AFIENJHNJAN_PNHCENHLCPM,
+        CmdRollShopType::AFIENJHNJAN_GBOPEIPICJJ,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdRollShopType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRollShopType::CmdRollShopTypeNone => 0,
-            CmdRollShopType::CmdGetRollShopInfoCsReq => 1,
-            CmdRollShopType::CmdGetRollShopInfoScRsp => 2,
-            CmdRollShopType::CmdDoGachaInRollShopScRsp => 3,
-            CmdRollShopType::CmdDoGachaInRollShopCsReq => 4,
-            CmdRollShopType::CmdTakeRollShopRewardScRsp => 5,
-            CmdRollShopType::CmdTakeRollShopRewardCsReq => 6,
+            CmdRollShopType::AFIENJHNJAN_GKJBAODJMJG => 0,
+            CmdRollShopType::AFIENJHNJAN_MKBNFPGEIOC => 1,
+            CmdRollShopType::AFIENJHNJAN_LICBKJIKODK => 2,
+            CmdRollShopType::AFIENJHNJAN_KMJAKNKGMFG => 3,
+            CmdRollShopType::AFIENJHNJAN_KGJHNMDALBJ => 4,
+            CmdRollShopType::AFIENJHNJAN_PNHCENHLCPM => 5,
+            CmdRollShopType::AFIENJHNJAN_GBOPEIPICJJ => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdRollShopType {
 
 impl ::std::default::Default for CmdRollShopType {
     fn default() -> Self {
-        CmdRollShopType::CmdRollShopTypeNone
+        CmdRollShopType::AFIENJHNJAN_GKJBAODJMJG
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdRollShopType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdRollShopType.proto*\xe8\x01\n\x0fCmdRollShopType\x12\x17\n\x13C\
-    mdRollShopTypeNone\x10\0\x12\x1c\n\x17CmdGetRollShopInfoCsReq\x10\xf95\
-    \x12\x1c\n\x17CmdGetRollShopInfoScRsp\x10\x816\x12\x1e\n\x19CmdDoGachaIn\
-    RollShopScRsp\x10\xfd5\x12\x1e\n\x19CmdDoGachaInRollShopCsReq\x10\xfa5\
-    \x12\x1f\n\x1aCmdTakeRollShopRewardScRsp\x10\xf85\x12\x1f\n\x1aCmdTakeRo\
-    llShopRewardCsReq\x10\x826b\x06proto3\
+    \n\x15CmdRollShopType.proto*\xe2\x01\n\x0fCmdRollShopType\x12\x1b\n\x17A\
+    FIENJHNJAN_GKJBAODJMJG\x10\0\x12\x1c\n\x17AFIENJHNJAN_MKBNFPGEIOC\x10\
+    \xfe5\x12\x1c\n\x17AFIENJHNJAN_LICBKJIKODK\x10\xf55\x12\x1c\n\x17AFIENJH\
+    NJAN_KMJAKNKGMFG\x10\xfa5\x12\x1c\n\x17AFIENJHNJAN_KGJHNMDALBJ\x10\xf85\
+    \x12\x1c\n\x17AFIENJHNJAN_PNHCENHLCPM\x10\x806\x12\x1c\n\x17AFIENJHNJAN_\
+    GBOPEIPICJJ\x10\xff5b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

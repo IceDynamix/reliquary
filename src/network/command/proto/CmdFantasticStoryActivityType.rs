@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFantasticStoryActivityType)
 pub enum CmdFantasticStoryActivityType {
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityTypeNone)
-    CmdFantasticStoryActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataScRsp)
-    CmdGetFantasticStoryActivityDataScRsp = 4917,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageScRsp)
-    CmdEnterFantasticStoryActivityStageScRsp = 4909,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityBattleEndScNotify)
-    CmdFantasticStoryActivityBattleEndScNotify = 4911,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdGetFantasticStoryActivityDataCsReq)
-    CmdGetFantasticStoryActivityDataCsReq = 4947,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdEnterFantasticStoryActivityStageCsReq)
-    CmdEnterFantasticStoryActivityStageCsReq = 4938,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFinishChapterScNotify)
-    CmdFinishChapterScNotify = 4951,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_GKJBAODJMJG)
+    FEPBJHIOECG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KHHNJPOEHEB)
+    FEPBJHIOECG_KHHNJPOEHEB = 4928,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_FEHNLOLMPLG)
+    FEPBJHIOECG_FEHNLOLMPLG = 4962,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KBEDHOHFFFA)
+    FEPBJHIOECG_KBEDHOHFFFA = 4957,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KALDLHHJPOD)
+    FEPBJHIOECG_KALDLHHJPOD = 4975,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_OMPPIAHGCLH)
+    FEPBJHIOECG_OMPPIAHGCLH = 4938,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_IEDECILIHAE)
+    FEPBJHIOECG_IEDECILIHAE = 4955,
 }
 
 impl ::protobuf::Enum for CmdFantasticStoryActivityType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdFantasticStoryActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone),
-            4917 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
-            4909 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
-            4911 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
-            4947 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
-            4938 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
-            4951 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
+            0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG),
+            4928 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB),
+            4962 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG),
+            4957 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA),
+            4975 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD),
+            4938 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH),
+            4955 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match str {
-            "CmdFantasticStoryActivityTypeNone" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone),
-            "CmdGetFantasticStoryActivityDataScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp),
-            "CmdEnterFantasticStoryActivityStageScRsp" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp),
-            "CmdFantasticStoryActivityBattleEndScNotify" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify),
-            "CmdGetFantasticStoryActivityDataCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq),
-            "CmdEnterFantasticStoryActivityStageCsReq" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq),
-            "CmdFinishChapterScNotify" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFinishChapterScNotify),
+            "FEPBJHIOECG_GKJBAODJMJG" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG),
+            "FEPBJHIOECG_KHHNJPOEHEB" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB),
+            "FEPBJHIOECG_FEHNLOLMPLG" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG),
+            "FEPBJHIOECG_KBEDHOHFFFA" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA),
+            "FEPBJHIOECG_KALDLHHJPOD" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD),
+            "FEPBJHIOECG_OMPPIAHGCLH" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH),
+            "FEPBJHIOECG_IEDECILIHAE" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFantasticStoryActivityType] = &[
-        CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone,
-        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp,
-        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp,
-        CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify,
-        CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq,
-        CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq,
-        CmdFantasticStoryActivityType::CmdFinishChapterScNotify,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH,
+        CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdFantasticStoryActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone => 0,
-            CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataScRsp => 1,
-            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageScRsp => 2,
-            CmdFantasticStoryActivityType::CmdFantasticStoryActivityBattleEndScNotify => 3,
-            CmdFantasticStoryActivityType::CmdGetFantasticStoryActivityDataCsReq => 4,
-            CmdFantasticStoryActivityType::CmdEnterFantasticStoryActivityStageCsReq => 5,
-            CmdFantasticStoryActivityType::CmdFinishChapterScNotify => 6,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG => 0,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB => 1,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG => 2,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA => 3,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD => 4,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH => 5,
+            CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdFantasticStoryActivityType {
 
 impl ::std::default::Default for CmdFantasticStoryActivityType {
     fn default() -> Self {
-        CmdFantasticStoryActivityType::CmdFantasticStoryActivityTypeNone
+        CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG
     }
 }
 
@@ -120,13 +120,12 @@ impl CmdFantasticStoryActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#CmdFantasticStoryActivityType.proto*\xcc\x02\n\x1dCmdFantasticStoryAc\
-    tivityType\x12%\n!CmdFantasticStoryActivityTypeNone\x10\0\x12*\n%CmdGetF\
-    antasticStoryActivityDataScRsp\x10\xb5&\x12-\n(CmdEnterFantasticStoryAct\
-    ivityStageScRsp\x10\xad&\x12/\n*CmdFantasticStoryActivityBattleEndScNoti\
-    fy\x10\xaf&\x12*\n%CmdGetFantasticStoryActivityDataCsReq\x10\xd3&\x12-\n\
-    (CmdEnterFantasticStoryActivityStageCsReq\x10\xca&\x12\x1d\n\x18CmdFinis\
-    hChapterScNotify\x10\xd7&b\x06proto3\
+    \n#CmdFantasticStoryActivityType.proto*\xf0\x01\n\x1dCmdFantasticStoryAc\
+    tivityType\x12\x1b\n\x17FEPBJHIOECG_GKJBAODJMJG\x10\0\x12\x1c\n\x17FEPBJ\
+    HIOECG_KHHNJPOEHEB\x10\xc0&\x12\x1c\n\x17FEPBJHIOECG_FEHNLOLMPLG\x10\xe2\
+    &\x12\x1c\n\x17FEPBJHIOECG_KBEDHOHFFFA\x10\xdd&\x12\x1c\n\x17FEPBJHIOECG\
+    _KALDLHHJPOD\x10\xef&\x12\x1c\n\x17FEPBJHIOECG_OMPPIAHGCLH\x10\xca&\x12\
+    \x1c\n\x17FEPBJHIOECG_IEDECILIHAE\x10\xdb&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

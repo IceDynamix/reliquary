@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:HeartDialStepType)
 pub enum HeartDialStepType {
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_INKFEHJCAPK)
-    GPHNNFGILHI_INKFEHJCAPK = 0,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GCPKNDBEIKF)
-    GPHNNFGILHI_GCPKNDBEIKF = 1,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GBCMPODODMC)
-    GPHNNFGILHI_GBCMPODODMC = 2,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_DICADJMAIFE)
-    GPHNNFGILHI_DICADJMAIFE = 3,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_GMBGHBPIBML)
-    GPHNNFGILHI_GMBGHBPIBML = 4,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.GPHNNFGILHI_PHABOLBKOIC)
-    GPHNNFGILHI_PHABOLBKOIC = 5,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_CNJDNHCJIHJ)
+    HeartDialStepType_CNJDNHCJIHJ = 0,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_EBLFNEAHMEC)
+    HeartDialStepType_EBLFNEAHMEC = 1,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_IPDFMNINJHN)
+    HeartDialStepType_IPDFMNINJHN = 2,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_OEIGCGBJEOL)
+    HeartDialStepType_OEIGCGBJEOL = 3,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_JMINJCHEKDA)
+    HeartDialStepType_JMINJCHEKDA = 4,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_HLCDHMJBDBJ)
+    HeartDialStepType_HLCDHMJBDBJ = 5,
 }
 
 impl ::protobuf::Enum for HeartDialStepType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for HeartDialStepType {
 
     fn from_i32(value: i32) -> ::std::option::Option<HeartDialStepType> {
         match value {
-            0 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK),
-            1 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF),
-            2 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GBCMPODODMC),
-            3 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_DICADJMAIFE),
-            4 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML),
-            5 => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC),
+            0 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ),
+            1 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_EBLFNEAHMEC),
+            2 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_IPDFMNINJHN),
+            3 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_OEIGCGBJEOL),
+            4 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_JMINJCHEKDA),
+            5 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<HeartDialStepType> {
         match str {
-            "GPHNNFGILHI_INKFEHJCAPK" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK),
-            "GPHNNFGILHI_GCPKNDBEIKF" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF),
-            "GPHNNFGILHI_GBCMPODODMC" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GBCMPODODMC),
-            "GPHNNFGILHI_DICADJMAIFE" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_DICADJMAIFE),
-            "GPHNNFGILHI_GMBGHBPIBML" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML),
-            "GPHNNFGILHI_PHABOLBKOIC" => ::std::option::Option::Some(HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC),
+            "HeartDialStepType_CNJDNHCJIHJ" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ),
+            "HeartDialStepType_EBLFNEAHMEC" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_EBLFNEAHMEC),
+            "HeartDialStepType_IPDFMNINJHN" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_IPDFMNINJHN),
+            "HeartDialStepType_OEIGCGBJEOL" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_OEIGCGBJEOL),
+            "HeartDialStepType_JMINJCHEKDA" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_JMINJCHEKDA),
+            "HeartDialStepType_HLCDHMJBDBJ" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [HeartDialStepType] = &[
-        HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK,
-        HeartDialStepType::GPHNNFGILHI_GCPKNDBEIKF,
-        HeartDialStepType::GPHNNFGILHI_GBCMPODODMC,
-        HeartDialStepType::GPHNNFGILHI_DICADJMAIFE,
-        HeartDialStepType::GPHNNFGILHI_GMBGHBPIBML,
-        HeartDialStepType::GPHNNFGILHI_PHABOLBKOIC,
+        HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ,
+        HeartDialStepType::HeartDialStepType_EBLFNEAHMEC,
+        HeartDialStepType::HeartDialStepType_IPDFMNINJHN,
+        HeartDialStepType::HeartDialStepType_OEIGCGBJEOL,
+        HeartDialStepType::HeartDialStepType_JMINJCHEKDA,
+        HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for HeartDialStepType {
 
 impl ::std::default::Default for HeartDialStepType {
     fn default() -> Self {
-        HeartDialStepType::GPHNNFGILHI_INKFEHJCAPK
+        HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ
     }
 }
 
@@ -107,11 +107,11 @@ impl HeartDialStepType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HeartDialStepType.proto*\xc1\x01\n\x11HeartDialStepType\x12\x1b\n\
-    \x17GPHNNFGILHI_INKFEHJCAPK\x10\0\x12\x1b\n\x17GPHNNFGILHI_GCPKNDBEIKF\
-    \x10\x01\x12\x1b\n\x17GPHNNFGILHI_GBCMPODODMC\x10\x02\x12\x1b\n\x17GPHNN\
-    FGILHI_DICADJMAIFE\x10\x03\x12\x1b\n\x17GPHNNFGILHI_GMBGHBPIBML\x10\x04\
-    \x12\x1b\n\x17GPHNNFGILHI_PHABOLBKOIC\x10\x05b\x06proto3\
+    \n\x17HeartDialStepType.proto*\xe5\x01\n\x11HeartDialStepType\x12!\n\x1d\
+    HeartDialStepType_CNJDNHCJIHJ\x10\0\x12!\n\x1dHeartDialStepType_EBLFNEAH\
+    MEC\x10\x01\x12!\n\x1dHeartDialStepType_IPDFMNINJHN\x10\x02\x12!\n\x1dHe\
+    artDialStepType_OEIGCGBJEOL\x10\x03\x12!\n\x1dHeartDialStepType_JMINJCHE\
+    KDA\x10\x04\x12!\n\x1dHeartDialStepType_HLCDHMJBDBJ\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

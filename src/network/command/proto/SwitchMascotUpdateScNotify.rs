@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchMascotUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SwitchMascotUpdateScNotify.ODELDCGMALD)
-    pub ODELDCGMALD: ::std::vec::Vec<super::FJPJPNIAAAK::FJPJPNIAAAK>,
-    // @@protoc_insertion_point(field:SwitchMascotUpdateScNotify.LCOHCJFNENK)
-    pub LCOHCJFNENK: bool,
+    // @@protoc_insertion_point(field:SwitchMascotUpdateScNotify.GOJMLBAEPOB)
+    pub GOJMLBAEPOB: ::std::vec::Vec<super::HBHPKHHGPHL::HBHPKHHGPHL>,
+    // @@protoc_insertion_point(field:SwitchMascotUpdateScNotify.OMFDCEBEHLH)
+    pub OMFDCEBEHLH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchMascotUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SwitchMascotUpdateScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ODELDCGMALD",
-            |m: &SwitchMascotUpdateScNotify| { &m.ODELDCGMALD },
-            |m: &mut SwitchMascotUpdateScNotify| { &mut m.ODELDCGMALD },
+            "GOJMLBAEPOB",
+            |m: &SwitchMascotUpdateScNotify| { &m.GOJMLBAEPOB },
+            |m: &mut SwitchMascotUpdateScNotify| { &mut m.GOJMLBAEPOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCOHCJFNENK",
-            |m: &SwitchMascotUpdateScNotify| { &m.LCOHCJFNENK },
-            |m: &mut SwitchMascotUpdateScNotify| { &mut m.LCOHCJFNENK },
+            "OMFDCEBEHLH",
+            |m: &SwitchMascotUpdateScNotify| { &m.OMFDCEBEHLH },
+            |m: &mut SwitchMascotUpdateScNotify| { &mut m.OMFDCEBEHLH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchMascotUpdateScNotify>(
             "SwitchMascotUpdateScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.ODELDCGMALD.push(is.read_message()?);
+                74 => {
+                    self.GOJMLBAEPOB.push(is.read_message()?);
                 },
-                48 => {
-                    self.LCOHCJFNENK = is.read_bool()?;
+                56 => {
+                    self.OMFDCEBEHLH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ODELDCGMALD {
+        for value in &self.GOJMLBAEPOB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LCOHCJFNENK != false {
+        if self.OMFDCEBEHLH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ODELDCGMALD {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.GOJMLBAEPOB {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.LCOHCJFNENK != false {
-            os.write_bool(6, self.LCOHCJFNENK)?;
+        if self.OMFDCEBEHLH != false {
+            os.write_bool(7, self.OMFDCEBEHLH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.ODELDCGMALD.clear();
-        self.LCOHCJFNENK = false;
+        self.GOJMLBAEPOB.clear();
+        self.OMFDCEBEHLH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchMascotUpdateScNotify {
         static instance: SwitchMascotUpdateScNotify = SwitchMascotUpdateScNotify {
-            ODELDCGMALD: ::std::vec::Vec::new(),
-            LCOHCJFNENK: false,
+            GOJMLBAEPOB: ::std::vec::Vec::new(),
+            OMFDCEBEHLH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SwitchMascotUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20SwitchMascotUpdateScNotify.proto\x1a\x11FJPJPNIAAAK.proto\"n\n\x1a\
-    SwitchMascotUpdateScNotify\x12.\n\x0bODELDCGMALD\x18\x01\x20\x03(\x0b2\
-    \x0c.FJPJPNIAAAKR\x0bODELDCGMALD\x12\x20\n\x0bLCOHCJFNENK\x18\x06\x20\
-    \x01(\x08R\x0bLCOHCJFNENKb\x06proto3\
+    \n\x20SwitchMascotUpdateScNotify.proto\x1a\x11HBHPKHHGPHL.proto\"n\n\x1a\
+    SwitchMascotUpdateScNotify\x12.\n\x0bGOJMLBAEPOB\x18\t\x20\x03(\x0b2\x0c\
+    .HBHPKHHGPHLR\x0bGOJMLBAEPOB\x12\x20\n\x0bOMFDCEBEHLH\x18\x07\x20\x01(\
+    \x08R\x0bOMFDCEBEHLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FJPJPNIAAAK::file_descriptor().clone());
+            deps.push(super::HBHPKHHGPHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SwitchMascotUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

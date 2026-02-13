@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyArea {
     // message fields
+    // @@protoc_insertion_point(field:TrainPartyArea.progress)
+    pub progress: u32,
+    // @@protoc_insertion_point(field:TrainPartyArea.step_id_list)
+    pub step_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyArea.area_step_info)
     pub area_step_info: ::protobuf::MessageField<super::AreaStepInfo::AreaStepInfo>,
-    // @@protoc_insertion_point(field:TrainPartyArea.static_prop_id_list)
-    pub static_prop_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyArea.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyArea.static_prop_id_list)
+    pub static_prop_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyArea.dynamic_info)
     pub dynamic_info: ::std::vec::Vec<super::AreaDynamicInfo::AreaDynamicInfo>,
     // @@protoc_insertion_point(field:TrainPartyArea.verify_step_id_list)
     pub verify_step_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TrainPartyArea.step_id_list)
-    pub step_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TrainPartyArea.progress)
-    pub progress: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyArea.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,30 @@ impl TrainPartyArea {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &TrainPartyArea| { &m.progress },
+            |m: &mut TrainPartyArea| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "step_id_list",
+            |m: &TrainPartyArea| { &m.step_id_list },
+            |m: &mut TrainPartyArea| { &mut m.step_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AreaStepInfo::AreaStepInfo>(
             "area_step_info",
             |m: &TrainPartyArea| { &m.area_step_info },
             |m: &mut TrainPartyArea| { &mut m.area_step_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "static_prop_id_list",
-            |m: &TrainPartyArea| { &m.static_prop_id_list },
-            |m: &mut TrainPartyArea| { &mut m.static_prop_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &TrainPartyArea| { &m.area_id },
             |m: &mut TrainPartyArea| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "static_prop_id_list",
+            |m: &TrainPartyArea| { &m.static_prop_id_list },
+            |m: &mut TrainPartyArea| { &mut m.static_prop_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "dynamic_info",
@@ -85,16 +95,6 @@ impl TrainPartyArea {
             "verify_step_id_list",
             |m: &TrainPartyArea| { &m.verify_step_id_list },
             |m: &mut TrainPartyArea| { &mut m.verify_step_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "step_id_list",
-            |m: &TrainPartyArea| { &m.step_id_list },
-            |m: &mut TrainPartyArea| { &mut m.step_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &TrainPartyArea| { &m.progress },
-            |m: &mut TrainPartyArea| { &mut m.progress },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyArea>(
             "TrainPartyArea",
@@ -114,35 +114,35 @@ impl ::protobuf::Message for TrainPartyArea {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.area_step_info)?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.static_prop_id_list)?;
-                },
                 56 => {
-                    self.static_prop_id_list.push(is.read_uint32()?);
+                    self.progress = is.read_uint32()?;
                 },
-                120 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                98 => {
-                    self.dynamic_info.push(is.read_message()?);
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.verify_step_id_list)?;
-                },
-                72 => {
-                    self.verify_step_id_list.push(is.read_uint32()?);
-                },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.step_id_list)?;
                 },
-                48 => {
+                64 => {
                     self.step_id_list.push(is.read_uint32()?);
                 },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.area_step_info)?;
+                },
                 32 => {
-                    self.progress = is.read_uint32()?;
+                    self.area_id = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.static_prop_id_list)?;
+                },
+                24 => {
+                    self.static_prop_id_list.push(is.read_uint32()?);
+                },
+                74 => {
+                    self.dynamic_info.push(is.read_message()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.verify_step_id_list)?;
+                },
+                48 => {
+                    self.verify_step_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -156,44 +156,44 @@ impl ::protobuf::Message for TrainPartyArea {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.progress);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.step_id_list);
         if let Some(v) = self.area_step_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.static_prop_id_list);
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.static_prop_id_list);
         for value in &self.dynamic_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.verify_step_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.step_id_list);
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.progress);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.verify_step_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.area_step_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.static_prop_id_list)?;
-        if self.area_id != 0 {
-            os.write_uint32(15, self.area_id)?;
-        }
-        for v in &self.dynamic_info {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        os.write_repeated_packed_uint32(9, &self.verify_step_id_list)?;
-        os.write_repeated_packed_uint32(6, &self.step_id_list)?;
         if self.progress != 0 {
-            os.write_uint32(4, self.progress)?;
+            os.write_uint32(7, self.progress)?;
         }
+        os.write_repeated_packed_uint32(8, &self.step_id_list)?;
+        if let Some(v) = self.area_step_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(4, self.area_id)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.static_prop_id_list)?;
+        for v in &self.dynamic_info {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        os.write_repeated_packed_uint32(6, &self.verify_step_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -211,25 +211,25 @@ impl ::protobuf::Message for TrainPartyArea {
     }
 
     fn clear(&mut self) {
+        self.progress = 0;
+        self.step_id_list.clear();
         self.area_step_info.clear();
-        self.static_prop_id_list.clear();
         self.area_id = 0;
+        self.static_prop_id_list.clear();
         self.dynamic_info.clear();
         self.verify_step_id_list.clear();
-        self.step_id_list.clear();
-        self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyArea {
         static instance: TrainPartyArea = TrainPartyArea {
+            progress: 0,
+            step_id_list: ::std::vec::Vec::new(),
             area_step_info: ::protobuf::MessageField::none(),
-            static_prop_id_list: ::std::vec::Vec::new(),
             area_id: 0,
+            static_prop_id_list: ::std::vec::Vec::new(),
             dynamic_info: ::std::vec::Vec::new(),
             verify_step_id_list: ::std::vec::Vec::new(),
-            step_id_list: ::std::vec::Vec::new(),
-            progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,14 +255,14 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyArea {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14TrainPartyArea.proto\x1a\x15AreaDynamicInfo.proto\x1a\x12AreaStepI\
-    nfo.proto\"\xaf\x02\n\x0eTrainPartyArea\x123\n\x0earea_step_info\x18\x0b\
-    \x20\x01(\x0b2\r.AreaStepInfoR\x0careaStepInfo\x12-\n\x13static_prop_id_\
-    list\x18\x07\x20\x03(\rR\x10staticPropIdList\x12\x17\n\x07area_id\x18\
-    \x0f\x20\x01(\rR\x06areaId\x123\n\x0cdynamic_info\x18\x0c\x20\x03(\x0b2\
-    \x10.AreaDynamicInfoR\x0bdynamicInfo\x12-\n\x13verify_step_id_list\x18\t\
-    \x20\x03(\rR\x10verifyStepIdList\x12\x20\n\x0cstep_id_list\x18\x06\x20\
-    \x03(\rR\nstepIdList\x12\x1a\n\x08progress\x18\x04\x20\x01(\rR\x08progre\
-    ssb\x06proto3\
+    nfo.proto\"\xaf\x02\n\x0eTrainPartyArea\x12\x1a\n\x08progress\x18\x07\
+    \x20\x01(\rR\x08progress\x12\x20\n\x0cstep_id_list\x18\x08\x20\x03(\rR\n\
+    stepIdList\x123\n\x0earea_step_info\x18\x0c\x20\x01(\x0b2\r.AreaStepInfo\
+    R\x0careaStepInfo\x12\x17\n\x07area_id\x18\x04\x20\x01(\rR\x06areaId\x12\
+    -\n\x13static_prop_id_list\x18\x03\x20\x03(\rR\x10staticPropIdList\x123\
+    \n\x0cdynamic_info\x18\t\x20\x03(\x0b2\x10.AreaDynamicInfoR\x0bdynamicIn\
+    fo\x12-\n\x13verify_step_id_list\x18\x06\x20\x03(\rR\x10verifyStepIdList\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

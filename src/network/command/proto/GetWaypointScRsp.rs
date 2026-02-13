@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetWaypointScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetWaypointScRsp.FMHGGMIHLAP)
-    pub FMHGGMIHLAP: ::protobuf::MessageField<super::Chapter::Chapter>,
+    // @@protoc_insertion_point(field:GetWaypointScRsp.HLHMMPMLPLA)
+    pub HLHMMPMLPLA: ::protobuf::MessageField<super::Chapter::Chapter>,
+    // @@protoc_insertion_point(field:GetWaypointScRsp.CACPHHKDKLN)
+    pub CACPHHKDKLN: u32,
     // @@protoc_insertion_point(field:GetWaypointScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetWaypointScRsp.DCMNEBAIMDK)
-    pub DCMNEBAIMDK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetWaypointScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GetWaypointScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Chapter::Chapter>(
-            "FMHGGMIHLAP",
-            |m: &GetWaypointScRsp| { &m.FMHGGMIHLAP },
-            |m: &mut GetWaypointScRsp| { &mut m.FMHGGMIHLAP },
+            "HLHMMPMLPLA",
+            |m: &GetWaypointScRsp| { &m.HLHMMPMLPLA },
+            |m: &mut GetWaypointScRsp| { &mut m.HLHMMPMLPLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CACPHHKDKLN",
+            |m: &GetWaypointScRsp| { &m.CACPHHKDKLN },
+            |m: &mut GetWaypointScRsp| { &mut m.CACPHHKDKLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetWaypointScRsp| { &m.retcode },
             |m: &mut GetWaypointScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCMNEBAIMDK",
-            |m: &GetWaypointScRsp| { &m.DCMNEBAIMDK },
-            |m: &mut GetWaypointScRsp| { &mut m.DCMNEBAIMDK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetWaypointScRsp>(
             "GetWaypointScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMHGGMIHLAP)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLHMMPMLPLA)?;
                 },
-                16 => {
+                32 => {
+                    self.CACPHHKDKLN = is.read_uint32()?;
+                },
+                40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.DCMNEBAIMDK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetWaypointScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FMHGGMIHLAP.as_ref() {
+        if let Some(v) = self.HLHMMPMLPLA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        if self.CACPHHKDKLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CACPHHKDKLN);
         }
-        if self.DCMNEBAIMDK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DCMNEBAIMDK);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetWaypointScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FMHGGMIHLAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.HLHMMPMLPLA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.CACPHHKDKLN != 0 {
+            os.write_uint32(4, self.CACPHHKDKLN)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if self.DCMNEBAIMDK != 0 {
-            os.write_uint32(3, self.DCMNEBAIMDK)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetWaypointScRsp {
     }
 
     fn clear(&mut self) {
-        self.FMHGGMIHLAP.clear();
+        self.HLHMMPMLPLA.clear();
+        self.CACPHHKDKLN = 0;
         self.retcode = 0;
-        self.DCMNEBAIMDK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetWaypointScRsp {
         static instance: GetWaypointScRsp = GetWaypointScRsp {
-            FMHGGMIHLAP: ::protobuf::MessageField::none(),
+            HLHMMPMLPLA: ::protobuf::MessageField::none(),
+            CACPHHKDKLN: 0,
             retcode: 0,
-            DCMNEBAIMDK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetWaypointScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetWaypointScRsp.proto\x1a\rChapter.proto\"z\n\x10GetWaypointScRsp\
-    \x12*\n\x0bFMHGGMIHLAP\x18\x07\x20\x01(\x0b2\x08.ChapterR\x0bFMHGGMIHLAP\
-    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bDCMNEB\
-    AIMDK\x18\x03\x20\x01(\rR\x0bDCMNEBAIMDKb\x06proto3\
+    \x12*\n\x0bHLHMMPMLPLA\x18\x0f\x20\x01(\x0b2\x08.ChapterR\x0bHLHMMPMLPLA\
+    \x12\x20\n\x0bCACPHHKDKLN\x18\x04\x20\x01(\rR\x0bCACPHHKDKLN\x12\x18\n\
+    \x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

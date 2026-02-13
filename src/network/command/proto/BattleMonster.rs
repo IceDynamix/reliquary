@@ -35,7 +35,7 @@ pub struct BattleMonster {
     // @@protoc_insertion_point(field:BattleMonster.max_hp)
     pub max_hp: u32,
     // @@protoc_insertion_point(field:BattleMonster.extra_info)
-    pub extra_info: ::protobuf::MessageField<super::EPGDFEMPBKI::EPGDFEMPBKI>,
+    pub extra_info: ::protobuf::MessageField<super::LCBPDDFBPLE::LCBPDDFBPLE>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleMonster.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,7 +70,7 @@ impl BattleMonster {
             |m: &BattleMonster| { &m.max_hp },
             |m: &mut BattleMonster| { &mut m.max_hp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPGDFEMPBKI::EPGDFEMPBKI>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCBPDDFBPLE::LCBPDDFBPLE>(
             "extra_info",
             |m: &BattleMonster| { &m.extra_info },
             |m: &mut BattleMonster| { &mut m.extra_info },
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleMonster {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13BattleMonster.proto\x1a\x11EPGDFEMPBKI.proto\"\x89\x01\n\rBattleMo\
+    \n\x13BattleMonster.proto\x1a\x11LCBPDDFBPLE.proto\"\x89\x01\n\rBattleMo\
     nster\x12\x1d\n\nmonster_id\x18\x01\x20\x01(\rR\tmonsterId\x12\x15\n\x06\
     cur_hp\x18\x02\x20\x01(\rR\x05curHp\x12\x15\n\x06max_hp\x18\x03\x20\x01(\
-    \rR\x05maxHp\x12+\n\nextra_info\x18\x04\x20\x01(\x0b2\x0c.EPGDFEMPBKIR\t\
+    \rR\x05maxHp\x12+\n\nextra_info\x18\x04\x20\x01(\x0b2\x0c.LCBPDDFBPLER\t\
     extraInfob\x06proto3\
 ";
 
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EPGDFEMPBKI::file_descriptor().clone());
+            deps.push(super::LCBPDDFBPLE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleMonster::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

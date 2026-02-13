@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightCakeRaceType)
 pub enum CmdFightCakeRaceType {
-    // @@protoc_insertion_point(enum_value:CmdFightCakeRaceType.CmdFightCakeRaceTypeNone)
-    CmdFightCakeRaceTypeNone = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightCakeRaceType.MMHPDCOONBI_GKJBAODJMJG)
+    MMHPDCOONBI_GKJBAODJMJG = 0,
 }
 
 impl ::protobuf::Enum for CmdFightCakeRaceType {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for CmdFightCakeRaceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightCakeRaceType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightCakeRaceType::CmdFightCakeRaceTypeNone),
+            0 => ::std::option::Option::Some(CmdFightCakeRaceType::MMHPDCOONBI_GKJBAODJMJG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightCakeRaceType> {
         match str {
-            "CmdFightCakeRaceTypeNone" => ::std::option::Option::Some(CmdFightCakeRaceType::CmdFightCakeRaceTypeNone),
+            "MMHPDCOONBI_GKJBAODJMJG" => ::std::option::Option::Some(CmdFightCakeRaceType::MMHPDCOONBI_GKJBAODJMJG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightCakeRaceType] = &[
-        CmdFightCakeRaceType::CmdFightCakeRaceTypeNone,
+        CmdFightCakeRaceType::MMHPDCOONBI_GKJBAODJMJG,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for CmdFightCakeRaceType {
 
 impl ::std::default::Default for CmdFightCakeRaceType {
     fn default() -> Self {
-        CmdFightCakeRaceType::CmdFightCakeRaceTypeNone
+        CmdFightCakeRaceType::MMHPDCOONBI_GKJBAODJMJG
     }
 }
 
@@ -82,8 +82,8 @@ impl CmdFightCakeRaceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdFightCakeRaceType.proto*4\n\x14CmdFightCakeRaceType\x12\x1c\n\
-    \x18CmdFightCakeRaceTypeNone\x10\0b\x06proto3\
+    \n\x1aCmdFightCakeRaceType.proto*3\n\x14CmdFightCakeRaceType\x12\x1b\n\
+    \x17MMHPDCOONBI_GKJBAODJMJG\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildRoomScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildRoomScNotify.JCCGGFIAHMN)
-    pub JCCGGFIAHMN: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
+    // @@protoc_insertion_point(field:TrainPartyBuildRoomScNotify.KJCAJDCIBLM)
+    pub KJCAJDCIBLM: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyBuildRoomScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartyBuildRoomScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyInfo::TrainPartyInfo>(
-            "JCCGGFIAHMN",
-            |m: &TrainPartyBuildRoomScNotify| { &m.JCCGGFIAHMN },
-            |m: &mut TrainPartyBuildRoomScNotify| { &mut m.JCCGGFIAHMN },
+            "KJCAJDCIBLM",
+            |m: &TrainPartyBuildRoomScNotify| { &m.KJCAJDCIBLM },
+            |m: &mut TrainPartyBuildRoomScNotify| { &mut m.KJCAJDCIBLM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyBuildRoomScNotify>(
             "TrainPartyBuildRoomScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCCGGFIAHMN)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCAJDCIBLM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JCCGGFIAHMN.as_ref() {
+        if let Some(v) = self.KJCAJDCIBLM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JCCGGFIAHMN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.KJCAJDCIBLM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
     }
 
     fn clear(&mut self) {
-        self.JCCGGFIAHMN.clear();
+        self.KJCAJDCIBLM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildRoomScNotify {
         static instance: TrainPartyBuildRoomScNotify = TrainPartyBuildRoomScNotify {
-            JCCGGFIAHMN: ::protobuf::MessageField::none(),
+            KJCAJDCIBLM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildRoomScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!TrainPartyBuildRoomScNotify.proto\x1a\x14TrainPartyInfo.proto\"P\n\
-    \x1bTrainPartyBuildRoomScNotify\x121\n\x0bJCCGGFIAHMN\x18\n\x20\x01(\x0b\
-    2\x0f.TrainPartyInfoR\x0bJCCGGFIAHMNb\x06proto3\
+    \x1bTrainPartyBuildRoomScNotify\x121\n\x0bKJCAJDCIBLM\x18\x0e\x20\x01(\
+    \x0b2\x0f.TrainPartyInfoR\x0bKJCAJDCIBLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

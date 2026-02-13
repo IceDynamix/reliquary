@@ -30,8 +30,8 @@ pub struct TrainPartyUseCardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.KEDFLGJEBJJ)
-    pub KEDFLGJEBJJ: u32,
+    // @@protoc_insertion_point(field:TrainPartyUseCardScRsp.HODNGKCBBOJ)
+    pub HODNGKCBBOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyUseCardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl TrainPartyUseCardScRsp {
             |m: &mut TrainPartyUseCardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEDFLGJEBJJ",
-            |m: &TrainPartyUseCardScRsp| { &m.KEDFLGJEBJJ },
-            |m: &mut TrainPartyUseCardScRsp| { &mut m.KEDFLGJEBJJ },
+            "HODNGKCBBOJ",
+            |m: &TrainPartyUseCardScRsp| { &m.HODNGKCBBOJ },
+            |m: &mut TrainPartyUseCardScRsp| { &mut m.HODNGKCBBOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyUseCardScRsp>(
             "TrainPartyUseCardScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.KEDFLGJEBJJ = is.read_uint32()?;
+                80 => {
+                    self.HODNGKCBBOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.KEDFLGJEBJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KEDFLGJEBJJ);
+        if self.HODNGKCBBOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HODNGKCBBOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.KEDFLGJEBJJ != 0 {
-            os.write_uint32(14, self.KEDFLGJEBJJ)?;
+        if self.HODNGKCBBOJ != 0 {
+            os.write_uint32(10, self.HODNGKCBBOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TrainPartyUseCardScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.KEDFLGJEBJJ = 0;
+        self.HODNGKCBBOJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyUseCardScRsp {
         static instance: TrainPartyUseCardScRsp = TrainPartyUseCardScRsp {
             retcode: 0,
-            KEDFLGJEBJJ: 0,
+            HODNGKCBBOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyUseCardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyUseCardScRsp.proto\"T\n\x16TrainPartyUseCardScRsp\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bKEDFLGJEBJ\
-    J\x18\x0e\x20\x01(\rR\x0bKEDFLGJEBJJb\x06proto3\
+    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bHODNGKCBBO\
+    J\x18\n\x20\x01(\rR\x0bHODNGKCBBOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ScoreInfo {
     // message fields
-    // @@protoc_insertion_point(field:ScoreInfo.LBKMCGILHMO)
-    pub LBKMCGILHMO: u32,
+    // @@protoc_insertion_point(field:ScoreInfo.CDEFDCABGLA)
+    pub CDEFDCABGLA: u32,
     // @@protoc_insertion_point(field:ScoreInfo.score_id)
     pub score_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ScoreInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LBKMCGILHMO",
-            |m: &ScoreInfo| { &m.LBKMCGILHMO },
-            |m: &mut ScoreInfo| { &mut m.LBKMCGILHMO },
+            "CDEFDCABGLA",
+            |m: &ScoreInfo| { &m.CDEFDCABGLA },
+            |m: &mut ScoreInfo| { &mut m.CDEFDCABGLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for ScoreInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.LBKMCGILHMO = is.read_uint32()?;
+                    self.CDEFDCABGLA = is.read_uint32()?;
                 },
                 16 => {
                     self.score_id = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ScoreInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LBKMCGILHMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LBKMCGILHMO);
+        if self.CDEFDCABGLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CDEFDCABGLA);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.score_id);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for ScoreInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LBKMCGILHMO != 0 {
-            os.write_uint32(1, self.LBKMCGILHMO)?;
+        if self.CDEFDCABGLA != 0 {
+            os.write_uint32(1, self.CDEFDCABGLA)?;
         }
         if self.score_id != 0 {
             os.write_uint32(2, self.score_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ScoreInfo {
     }
 
     fn clear(&mut self) {
-        self.LBKMCGILHMO = 0;
+        self.CDEFDCABGLA = 0;
         self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ScoreInfo {
         static instance: ScoreInfo = ScoreInfo {
-            LBKMCGILHMO: 0,
+            CDEFDCABGLA: 0,
             score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ScoreInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fScoreInfo.proto\"H\n\tScoreInfo\x12\x20\n\x0bLBKMCGILHMO\x18\x01\
-    \x20\x01(\rR\x0bLBKMCGILHMO\x12\x19\n\x08score_id\x18\x02\x20\x01(\rR\
+    \n\x0fScoreInfo.proto\"H\n\tScoreInfo\x12\x20\n\x0bCDEFDCABGLA\x18\x01\
+    \x20\x01(\rR\x0bCDEFDCABGLA\x12\x19\n\x08score_id\x18\x02\x20\x01(\rR\
     \x07scoreIdb\x06proto3\
 ";
 

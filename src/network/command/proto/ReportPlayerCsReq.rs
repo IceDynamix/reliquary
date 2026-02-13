@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReportPlayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.BMFFLFNHOOI)
-    pub BMFFLFNHOOI: u32,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.EBECGOHGLAO)
+    pub EBECGOHGLAO: u32,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.CAGLMBADLDF)
+    pub CAGLMBADLDF: ::std::string::String,
     // @@protoc_insertion_point(field:ReportPlayerCsReq.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.FGEDHPHBDJL)
-    pub FGEDHPHBDJL: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:ReportPlayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ReportPlayerCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMFFLFNHOOI",
-            |m: &ReportPlayerCsReq| { &m.BMFFLFNHOOI },
-            |m: &mut ReportPlayerCsReq| { &mut m.BMFFLFNHOOI },
+            "EBECGOHGLAO",
+            |m: &ReportPlayerCsReq| { &m.EBECGOHGLAO },
+            |m: &mut ReportPlayerCsReq| { &mut m.EBECGOHGLAO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CAGLMBADLDF",
+            |m: &ReportPlayerCsReq| { &m.CAGLMBADLDF },
+            |m: &mut ReportPlayerCsReq| { &mut m.CAGLMBADLDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &ReportPlayerCsReq| { &m.uid },
             |m: &mut ReportPlayerCsReq| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGEDHPHBDJL",
-            |m: &ReportPlayerCsReq| { &m.FGEDHPHBDJL },
-            |m: &mut ReportPlayerCsReq| { &mut m.FGEDHPHBDJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReportPlayerCsReq>(
             "ReportPlayerCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.BMFFLFNHOOI = is.read_uint32()?;
+                72 => {
+                    self.EBECGOHGLAO = is.read_uint32()?;
                 },
-                40 => {
+                42 => {
+                    self.CAGLMBADLDF = is.read_string()?;
+                },
+                64 => {
                     self.uid = is.read_uint32()?;
-                },
-                82 => {
-                    self.FGEDHPHBDJL = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BMFFLFNHOOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BMFFLFNHOOI);
+        if self.EBECGOHGLAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EBECGOHGLAO);
+        }
+        if !self.CAGLMBADLDF.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.CAGLMBADLDF);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.uid);
-        }
-        if !self.FGEDHPHBDJL.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.FGEDHPHBDJL);
+            my_size += ::protobuf::rt::uint32_size(8, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BMFFLFNHOOI != 0 {
-            os.write_uint32(6, self.BMFFLFNHOOI)?;
+        if self.EBECGOHGLAO != 0 {
+            os.write_uint32(9, self.EBECGOHGLAO)?;
+        }
+        if !self.CAGLMBADLDF.is_empty() {
+            os.write_string(5, &self.CAGLMBADLDF)?;
         }
         if self.uid != 0 {
-            os.write_uint32(5, self.uid)?;
-        }
-        if !self.FGEDHPHBDJL.is_empty() {
-            os.write_string(10, &self.FGEDHPHBDJL)?;
+            os.write_uint32(8, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.BMFFLFNHOOI = 0;
+        self.EBECGOHGLAO = 0;
+        self.CAGLMBADLDF.clear();
         self.uid = 0;
-        self.FGEDHPHBDJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReportPlayerCsReq {
         static instance: ReportPlayerCsReq = ReportPlayerCsReq {
-            BMFFLFNHOOI: 0,
+            EBECGOHGLAO: 0,
+            CAGLMBADLDF: ::std::string::String::new(),
             uid: 0,
-            FGEDHPHBDJL: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ReportPlayerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17ReportPlayerCsReq.proto\"i\n\x11ReportPlayerCsReq\x12\x20\n\x0bBMF\
-    FLFNHOOI\x18\x06\x20\x01(\rR\x0bBMFFLFNHOOI\x12\x10\n\x03uid\x18\x05\x20\
-    \x01(\rR\x03uid\x12\x20\n\x0bFGEDHPHBDJL\x18\n\x20\x01(\tR\x0bFGEDHPHBDJ\
-    Lb\x06proto3\
+    \n\x17ReportPlayerCsReq.proto\"i\n\x11ReportPlayerCsReq\x12\x20\n\x0bEBE\
+    CGOHGLAO\x18\t\x20\x01(\rR\x0bEBECGOHGLAO\x12\x20\n\x0bCAGLMBADLDF\x18\
+    \x05\x20\x01(\tR\x0bCAGLMBADLDF\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03\
+    uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

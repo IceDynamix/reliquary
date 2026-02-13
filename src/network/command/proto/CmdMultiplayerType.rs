@@ -27,38 +27,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMultiplayerType)
 pub enum CmdMultiplayerType {
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerTypeNone)
-    CmdMultiplayerTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateCsReq)
-    CmdMultiplayerGetFightGateCsReq = 1011,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetFightGateScRsp)
-    CmdMultiplayerGetFightGateScRsp = 1038,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpCsReq)
-    CmdMultiplayerFightGiveUpCsReq = 1076,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetMatchPlayDataScRsp)
-    CmdMultiplayerGetMatchPlayDataScRsp = 1051,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetMatchPlayDataCsReq)
-    CmdMultiplayerGetMatchPlayDataCsReq = 1050,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp)
-    CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp = 1095,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq)
-    CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq = 1045,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify)
-    CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify = 1061,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGiveUpScRsp)
-    CmdMultiplayerFightGiveUpScRsp = 1089,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStateCsReq)
-    CmdMultiplayerFightGameStateCsReq = 1047,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStartScNotify)
-    CmdMultiplayerFightGameStartScNotify = 1091,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameFinishScNotify)
-    CmdMultiplayerFightGameFinishScNotify = 1009,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerFightGameStateScRsp)
-    CmdMultiplayerFightGameStateScRsp = 1017,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerMatch3FinishScNotify)
-    CmdMultiplayerMatch3FinishScNotify = 1020,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerMatchPlayDataChangeScNotify)
-    CmdMultiplayerMatchPlayDataChangeScNotify = 1052,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_GKJBAODJMJG)
+    DIFPKKEBMPH_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_NLHONKBJOCM)
+    DIFPKKEBMPH_NLHONKBJOCM = 1028,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MDHACFGKFHE)
+    DIFPKKEBMPH_MDHACFGKFHE = 1038,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_EOALPKJJBHN)
+    DIFPKKEBMPH_EOALPKJJBHN = 1062,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_FHJFKHHNEDL)
+    DIFPKKEBMPH_FHJFKHHNEDL = 1026,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_HOAIMFKDGCN)
+    DIFPKKEBMPH_HOAIMFKDGCN = 1047,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MFFBFIINGHJ)
+    DIFPKKEBMPH_MFFBFIINGHJ = 1020,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_IBOJJEKCKBL)
+    DIFPKKEBMPH_IBOJJEKCKBL = 1069,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_GIKLGHBDOCF)
+    DIFPKKEBMPH_GIKLGHBDOCF = 1079,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_OBMHEFJAHDP)
+    DIFPKKEBMPH_OBMHEFJAHDP = 1037,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_KJADONCOHMK)
+    DIFPKKEBMPH_KJADONCOHMK = 1045,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_DDGJNCJNHHE)
+    DIFPKKEBMPH_DDGJNCJNHHE = 1055,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_FEABGDAAPAP)
+    DIFPKKEBMPH_FEABGDAAPAP = 1075,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_AEDBKFKBGFF)
+    DIFPKKEBMPH_AEDBKFKBGFF = 1066,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_PDIDIMAANLK)
+    DIFPKKEBMPH_PDIDIMAANLK = 1005,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MBLGEBIPGFL)
+    DIFPKKEBMPH_MBLGEBIPGFL = 1057,
 }
 
 impl ::protobuf::Enum for CmdMultiplayerType {
@@ -70,65 +70,65 @@ impl ::protobuf::Enum for CmdMultiplayerType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultiplayerType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerTypeNone),
-            1011 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
-            1038 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
-            1076 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
-            1051 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataScRsp),
-            1050 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataCsReq),
-            1095 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp),
-            1045 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq),
-            1061 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify),
-            1089 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
-            1047 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq),
-            1091 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
-            1009 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify),
-            1017 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp),
-            1020 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify),
-            1052 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatchPlayDataChangeScNotify),
+            0 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG),
+            1028 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM),
+            1038 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE),
+            1062 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN),
+            1026 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL),
+            1047 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN),
+            1020 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ),
+            1069 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL),
+            1079 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF),
+            1037 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP),
+            1045 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK),
+            1055 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE),
+            1075 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP),
+            1066 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF),
+            1005 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK),
+            1057 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMultiplayerType> {
         match str {
-            "CmdMultiplayerTypeNone" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerTypeNone),
-            "CmdMultiplayerGetFightGateCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq),
-            "CmdMultiplayerGetFightGateScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp),
-            "CmdMultiplayerFightGiveUpCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq),
-            "CmdMultiplayerGetMatchPlayDataScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataScRsp),
-            "CmdMultiplayerGetMatchPlayDataCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataCsReq),
-            "CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp),
-            "CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq),
-            "CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify),
-            "CmdMultiplayerFightGiveUpScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp),
-            "CmdMultiplayerFightGameStateCsReq" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq),
-            "CmdMultiplayerFightGameStartScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify),
-            "CmdMultiplayerFightGameFinishScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify),
-            "CmdMultiplayerFightGameStateScRsp" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp),
-            "CmdMultiplayerMatch3FinishScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify),
-            "CmdMultiplayerMatchPlayDataChangeScNotify" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerMatchPlayDataChangeScNotify),
+            "DIFPKKEBMPH_GKJBAODJMJG" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG),
+            "DIFPKKEBMPH_NLHONKBJOCM" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM),
+            "DIFPKKEBMPH_MDHACFGKFHE" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE),
+            "DIFPKKEBMPH_EOALPKJJBHN" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN),
+            "DIFPKKEBMPH_FHJFKHHNEDL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL),
+            "DIFPKKEBMPH_HOAIMFKDGCN" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN),
+            "DIFPKKEBMPH_MFFBFIINGHJ" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ),
+            "DIFPKKEBMPH_IBOJJEKCKBL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL),
+            "DIFPKKEBMPH_GIKLGHBDOCF" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF),
+            "DIFPKKEBMPH_OBMHEFJAHDP" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP),
+            "DIFPKKEBMPH_KJADONCOHMK" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK),
+            "DIFPKKEBMPH_DDGJNCJNHHE" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE),
+            "DIFPKKEBMPH_FEABGDAAPAP" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP),
+            "DIFPKKEBMPH_AEDBKFKBGFF" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF),
+            "DIFPKKEBMPH_PDIDIMAANLK" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK),
+            "DIFPKKEBMPH_MBLGEBIPGFL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMultiplayerType] = &[
-        CmdMultiplayerType::CmdMultiplayerTypeNone,
-        CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq,
-        CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp,
-        CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq,
-        CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataScRsp,
-        CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataCsReq,
-        CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp,
-        CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq,
-        CmdMultiplayerType::CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify,
-        CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp,
-        CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq,
-        CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify,
-        CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify,
-        CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp,
-        CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify,
-        CmdMultiplayerType::CmdMultiplayerMatchPlayDataChangeScNotify,
+        CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG,
+        CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM,
+        CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE,
+        CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN,
+        CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL,
+        CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN,
+        CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ,
+        CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL,
+        CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF,
+        CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP,
+        CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK,
+        CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE,
+        CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP,
+        CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF,
+        CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK,
+        CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL,
     ];
 }
 
@@ -140,22 +140,22 @@ impl ::protobuf::EnumFull for CmdMultiplayerType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMultiplayerType::CmdMultiplayerTypeNone => 0,
-            CmdMultiplayerType::CmdMultiplayerGetFightGateCsReq => 1,
-            CmdMultiplayerType::CmdMultiplayerGetFightGateScRsp => 2,
-            CmdMultiplayerType::CmdMultiplayerFightGiveUpCsReq => 3,
-            CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataScRsp => 4,
-            CmdMultiplayerType::CmdMultiplayerGetMatchPlayDataCsReq => 5,
-            CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoScRsp => 6,
-            CmdMultiplayerType::CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq => 7,
-            CmdMultiplayerType::CmdMultiplayerMatchPlayFriendRankingInfoChangeScNotify => 8,
-            CmdMultiplayerType::CmdMultiplayerFightGiveUpScRsp => 9,
-            CmdMultiplayerType::CmdMultiplayerFightGameStateCsReq => 10,
-            CmdMultiplayerType::CmdMultiplayerFightGameStartScNotify => 11,
-            CmdMultiplayerType::CmdMultiplayerFightGameFinishScNotify => 12,
-            CmdMultiplayerType::CmdMultiplayerFightGameStateScRsp => 13,
-            CmdMultiplayerType::CmdMultiplayerMatch3FinishScNotify => 14,
-            CmdMultiplayerType::CmdMultiplayerMatchPlayDataChangeScNotify => 15,
+            CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG => 0,
+            CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM => 1,
+            CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE => 2,
+            CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN => 3,
+            CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL => 4,
+            CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN => 5,
+            CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ => 6,
+            CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL => 7,
+            CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF => 8,
+            CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP => 9,
+            CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK => 10,
+            CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE => 11,
+            CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP => 12,
+            CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF => 13,
+            CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK => 14,
+            CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,7 +163,7 @@ impl ::protobuf::EnumFull for CmdMultiplayerType {
 
 impl ::std::default::Default for CmdMultiplayerType {
     fn default() -> Self {
-        CmdMultiplayerType::CmdMultiplayerTypeNone
+        CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG
     }
 }
 
@@ -174,20 +174,18 @@ impl CmdMultiplayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdMultiplayerType.proto*\xc5\x05\n\x12CmdMultiplayerType\x12\x1a\
-    \n\x16CmdMultiplayerTypeNone\x10\0\x12$\n\x1fCmdMultiplayerGetFightGateC\
-    sReq\x10\xf3\x07\x12$\n\x1fCmdMultiplayerGetFightGateScRsp\x10\x8e\x08\
-    \x12#\n\x1eCmdMultiplayerFightGiveUpCsReq\x10\xb4\x08\x12(\n#CmdMultipla\
-    yerGetMatchPlayDataScRsp\x10\x9b\x08\x12(\n#CmdMultiplayerGetMatchPlayDa\
-    taCsReq\x10\x9a\x08\x125\n0CmdMultiplayerGetMatchPlayFriendRankingInfoSc\
-    Rsp\x10\xc7\x08\x125\n0CmdMultiplayerGetMatchPlayFriendRankingInfoCsReq\
-    \x10\x95\x08\x12;\n6CmdMultiplayerMatchPlayFriendRankingInfoChangeScNoti\
-    fy\x10\xa5\x08\x12#\n\x1eCmdMultiplayerFightGiveUpScRsp\x10\xc1\x08\x12&\
-    \n!CmdMultiplayerFightGameStateCsReq\x10\x97\x08\x12)\n$CmdMultiplayerFi\
-    ghtGameStartScNotify\x10\xc3\x08\x12*\n%CmdMultiplayerFightGameFinishScN\
-    otify\x10\xf1\x07\x12&\n!CmdMultiplayerFightGameStateScRsp\x10\xf9\x07\
-    \x12'\n\"CmdMultiplayerMatch3FinishScNotify\x10\xfc\x07\x12.\n)CmdMultip\
-    layerMatchPlayDataChangeScNotify\x10\x9c\x08b\x06proto3\
+    \n\x18CmdMultiplayerType.proto*\xf3\x03\n\x12CmdMultiplayerType\x12\x1b\
+    \n\x17DIFPKKEBMPH_GKJBAODJMJG\x10\0\x12\x1c\n\x17DIFPKKEBMPH_NLHONKBJOCM\
+    \x10\x84\x08\x12\x1c\n\x17DIFPKKEBMPH_MDHACFGKFHE\x10\x8e\x08\x12\x1c\n\
+    \x17DIFPKKEBMPH_EOALPKJJBHN\x10\xa6\x08\x12\x1c\n\x17DIFPKKEBMPH_FHJFKHH\
+    NEDL\x10\x82\x08\x12\x1c\n\x17DIFPKKEBMPH_HOAIMFKDGCN\x10\x97\x08\x12\
+    \x1c\n\x17DIFPKKEBMPH_MFFBFIINGHJ\x10\xfc\x07\x12\x1c\n\x17DIFPKKEBMPH_I\
+    BOJJEKCKBL\x10\xad\x08\x12\x1c\n\x17DIFPKKEBMPH_GIKLGHBDOCF\x10\xb7\x08\
+    \x12\x1c\n\x17DIFPKKEBMPH_OBMHEFJAHDP\x10\x8d\x08\x12\x1c\n\x17DIFPKKEBM\
+    PH_KJADONCOHMK\x10\x95\x08\x12\x1c\n\x17DIFPKKEBMPH_DDGJNCJNHHE\x10\x9f\
+    \x08\x12\x1c\n\x17DIFPKKEBMPH_FEABGDAAPAP\x10\xb3\x08\x12\x1c\n\x17DIFPK\
+    KEBMPH_AEDBKFKBGFF\x10\xaa\x08\x12\x1c\n\x17DIFPKKEBMPH_PDIDIMAANLK\x10\
+    \xed\x07\x12\x1c\n\x17DIFPKKEBMPH_MBLGEBIPGFL\x10\xa1\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

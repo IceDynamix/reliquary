@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengePeakBossFriendLineupRecommendation {
     // message fields
-    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.buff_id)
-    pub buff_id: u32,
-    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.hard_mode_has_passed)
-    pub hard_mode_has_passed: bool,
-    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::DMKNGHMFJPH::DMKNGHMFJPH>,
-    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.is_hard_mode)
-    pub is_hard_mode: bool,
     // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.finished_target_list)
     pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.buff_id)
+    pub buff_id: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.is_hard_mode)
+    pub is_hard_mode: bool,
+    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::POMJPOGJNIK::POMJPOGJNIK>,
+    // @@protoc_insertion_point(field:ChallengePeakBossFriendLineupRecommendation.hard_mode_has_passed)
+    pub hard_mode_has_passed: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengePeakBossFriendLineupRecommendation.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl ChallengePeakBossFriendLineupRecommendation {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.finished_target_list },
+            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.finished_target_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
             |m: &ChallengePeakBossFriendLineupRecommendation| { &m.buff_id },
             |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.buff_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hard_mode_has_passed",
-            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.hard_mode_has_passed },
-            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.hard_mode_has_passed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.avatar_list },
-            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_hard_mode",
@@ -78,9 +73,14 @@ impl ChallengePeakBossFriendLineupRecommendation {
             |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.is_hard_mode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.finished_target_list },
-            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.finished_target_list },
+            "avatar_list",
+            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.avatar_list },
+            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hard_mode_has_passed",
+            |m: &ChallengePeakBossFriendLineupRecommendation| { &m.hard_mode_has_passed },
+            |m: &mut ChallengePeakBossFriendLineupRecommendation| { &mut m.hard_mode_has_passed },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengePeakBossFriendLineupRecommendation>(
             "ChallengePeakBossFriendLineupRecommendation",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for ChallengePeakBossFriendLineupRecommendation {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                },
+                56 => {
+                    self.finished_target_list.push(is.read_uint32()?);
+                },
+                72 => {
                     self.buff_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.is_hard_mode = is.read_bool()?;
+                },
+                82 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 88 => {
                     self.hard_mode_has_passed = is.read_bool()?;
-                },
-                58 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                32 => {
-                    self.is_hard_mode = is.read_bool()?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
-                },
-                120 => {
-                    self.finished_target_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,39 +130,39 @@ impl ::protobuf::Message for ChallengePeakBossFriendLineupRecommendation {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.finished_target_list);
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.buff_id);
         }
-        if self.hard_mode_has_passed != false {
+        if self.is_hard_mode != false {
             my_size += 1 + 1;
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.is_hard_mode != false {
+        if self.hard_mode_has_passed != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(7, &self.finished_target_list)?;
         if self.buff_id != 0 {
-            os.write_uint32(3, self.buff_id)?;
+            os.write_uint32(9, self.buff_id)?;
         }
+        if self.is_hard_mode != false {
+            os.write_bool(5, self.is_hard_mode)?;
+        }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         if self.hard_mode_has_passed != false {
             os.write_bool(11, self.hard_mode_has_passed)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.is_hard_mode != false {
-            os.write_bool(4, self.is_hard_mode)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ChallengePeakBossFriendLineupRecommendation {
     }
 
     fn clear(&mut self) {
-        self.buff_id = 0;
-        self.hard_mode_has_passed = false;
-        self.avatar_list.clear();
-        self.is_hard_mode = false;
         self.finished_target_list.clear();
+        self.buff_id = 0;
+        self.is_hard_mode = false;
+        self.avatar_list.clear();
+        self.hard_mode_has_passed = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakBossFriendLineupRecommendation {
         static instance: ChallengePeakBossFriendLineupRecommendation = ChallengePeakBossFriendLineupRecommendation {
-            buff_id: 0,
-            hard_mode_has_passed: false,
-            avatar_list: ::std::vec::Vec::new(),
-            is_hard_mode: false,
             finished_target_list: ::std::vec::Vec::new(),
+            buff_id: 0,
+            is_hard_mode: false,
+            avatar_list: ::std::vec::Vec::new(),
+            hard_mode_has_passed: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,13 +219,13 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakBossFriendLineupRecomme
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n1ChallengePeakBossFriendLineupRecommendation.proto\x1a\x11DMKNGHMFJPH.\
-    proto\"\xfa\x01\n+ChallengePeakBossFriendLineupRecommendation\x12\x17\n\
-    \x07buff_id\x18\x03\x20\x01(\rR\x06buffId\x12/\n\x14hard_mode_has_passed\
-    \x18\x0b\x20\x01(\x08R\x11hardModeHasPassed\x12-\n\x0bavatar_list\x18\
-    \x07\x20\x03(\x0b2\x0c.DMKNGHMFJPHR\navatarList\x12\x20\n\x0cis_hard_mod\
-    e\x18\x04\x20\x01(\x08R\nisHardMode\x120\n\x14finished_target_list\x18\
-    \x0f\x20\x03(\rR\x12finishedTargetListb\x06proto3\
+    \n1ChallengePeakBossFriendLineupRecommendation.proto\x1a\x11POMJPOGJNIK.\
+    proto\"\xfa\x01\n+ChallengePeakBossFriendLineupRecommendation\x120\n\x14\
+    finished_target_list\x18\x07\x20\x03(\rR\x12finishedTargetList\x12\x17\n\
+    \x07buff_id\x18\t\x20\x01(\rR\x06buffId\x12\x20\n\x0cis_hard_mode\x18\
+    \x05\x20\x01(\x08R\nisHardMode\x12-\n\x0bavatar_list\x18\n\x20\x03(\x0b2\
+    \x0c.POMJPOGJNIKR\navatarList\x12/\n\x14hard_mode_has_passed\x18\x0b\x20\
+    \x01(\x08R\x11hardModeHasPassedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -243,7 +243,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DMKNGHMFJPH::file_descriptor().clone());
+            deps.push(super::POMJPOGJNIK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengePeakBossFriendLineupRecommendation::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

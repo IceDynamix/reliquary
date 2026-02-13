@@ -2313,40 +2313,64 @@ pub enum Retcode {
     RET_RELICBOX_OPEN_TARGET_CONFLICT = 7065,
     // @@protoc_insertion_point(enum_value:Retcode.RET_RELICBOX_RELIC_TYPE_INVALID)
     RET_RELICBOX_RELIC_TYPE_INVALID = 7066,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_OLPANLOPCJC)
-    ICDIGIEKFLA_OLPANLOPCJC = 7101,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_DENGBOAGECC)
-    ICDIGIEKFLA_DENGBOAGECC = 7102,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_KLINPACJGGK)
-    ICDIGIEKFLA_KLINPACJGGK = 7103,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_DLBPOFIJHJI)
-    ICDIGIEKFLA_DLBPOFIJHJI = 7104,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_GFNACHMKLNE)
-    ICDIGIEKFLA_GFNACHMKLNE = 7105,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_APFADBGCJAP)
-    ICDIGIEKFLA_APFADBGCJAP = 7106,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_KMMEKBKDOKP)
-    ICDIGIEKFLA_KMMEKBKDOKP = 7107,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_OGJEGMDEBCL)
-    ICDIGIEKFLA_OGJEGMDEBCL = 7108,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_OJNIECELOAA)
-    ICDIGIEKFLA_OJNIECELOAA = 7109,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_JACFMKDEKEC)
-    ICDIGIEKFLA_JACFMKDEKEC = 7110,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_NBKDNOIKMEI)
-    ICDIGIEKFLA_NBKDNOIKMEI = 7111,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_FBIBMANPNBC)
-    ICDIGIEKFLA_FBIBMANPNBC = 7112,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_JEEABDJGFHD)
-    ICDIGIEKFLA_JEEABDJGFHD = 7113,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_MEJEFBBGOIO)
-    ICDIGIEKFLA_MEJEFBBGOIO = 7114,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_OGHGNNFOCCM)
-    ICDIGIEKFLA_OGHGNNFOCCM = 7115,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_NHCBNJHFKHN)
-    ICDIGIEKFLA_NHCBNJHFKHN = 7116,
-    // @@protoc_insertion_point(enum_value:Retcode.ICDIGIEKFLA_PHKJIMNJCHM)
-    ICDIGIEKFLA_PHKJIMNJCHM = 7117,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_MBCABOJAPNF)
+    Retcode_MBCABOJAPNF = 7101,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_PJJKJLFAJMD)
+    Retcode_PJJKJLFAJMD = 7102,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_JMOAEJMMLFK)
+    Retcode_JMOAEJMMLFK = 7103,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_OGAKNDBOHIK)
+    Retcode_OGAKNDBOHIK = 7104,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_NLNCPEKBKBG)
+    Retcode_NLNCPEKBKBG = 7105,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_CNIOINHAGJI)
+    Retcode_CNIOINHAGJI = 7106,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_OKAMEKOLPDB)
+    Retcode_OKAMEKOLPDB = 7107,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_NBICFEMBGEB)
+    Retcode_NBICFEMBGEB = 7108,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_GFBENDMKGMN)
+    Retcode_GFBENDMKGMN = 7109,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_DFJINCHMDBH)
+    Retcode_DFJINCHMDBH = 7110,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_FDCKOELBPFF)
+    Retcode_FDCKOELBPFF = 7111,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_JHLELIFPINJ)
+    Retcode_JHLELIFPINJ = 7112,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_HKGAOKDKFKC)
+    Retcode_HKGAOKDKFKC = 7113,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_MIIGHHKMGHM)
+    Retcode_MIIGHHKMGHM = 7114,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_AGEIOBENCMJ)
+    Retcode_AGEIOBENCMJ = 7115,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_CBPGALLJEPD)
+    Retcode_CBPGALLJEPD = 7116,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_LFJCDIGAPNK)
+    Retcode_LFJCDIGAPNK = 7117,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_NHBDPKEMHJC)
+    Retcode_NHBDPKEMHJC = 7118,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_EFBLJHOPKNH)
+    Retcode_EFBLJHOPKNH = 7201,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_DCJIIAHBEAG)
+    Retcode_DCJIIAHBEAG = 7202,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_KEMIBMAFOMD)
+    Retcode_KEMIBMAFOMD = 7203,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_FGFMKAFHIOH)
+    Retcode_FGFMKAFHIOH = 7204,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_JDHMBJEKFEG)
+    Retcode_JDHMBJEKFEG = 7205,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_PBPLIBBEKCE)
+    Retcode_PBPLIBBEKCE = 7206,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_ONFIDLGNKCA)
+    Retcode_ONFIDLGNKCA = 7207,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_AELGHBIMHAO)
+    Retcode_AELGHBIMHAO = 7208,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_BFELLHHPKFO)
+    Retcode_BFELLHHPKFO = 7301,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_CABLNLCHHLP)
+    Retcode_CABLNLCHHLP = 7302,
+    // @@protoc_insertion_point(enum_value:Retcode.Retcode_DBBIPGKBKDH)
+    Retcode_DBBIPGKBKDH = 7303,
 }
 
 impl ::protobuf::Enum for Retcode {
@@ -3501,23 +3525,35 @@ impl ::protobuf::Enum for Retcode {
             7064 => ::std::option::Option::Some(Retcode::RET_RELICBOX_RELIC_IN_BOX),
             7065 => ::std::option::Option::Some(Retcode::RET_RELICBOX_OPEN_TARGET_CONFLICT),
             7066 => ::std::option::Option::Some(Retcode::RET_RELICBOX_RELIC_TYPE_INVALID),
-            7101 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OLPANLOPCJC),
-            7102 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_DENGBOAGECC),
-            7103 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_KLINPACJGGK),
-            7104 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_DLBPOFIJHJI),
-            7105 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_GFNACHMKLNE),
-            7106 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_APFADBGCJAP),
-            7107 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_KMMEKBKDOKP),
-            7108 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OGJEGMDEBCL),
-            7109 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OJNIECELOAA),
-            7110 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_JACFMKDEKEC),
-            7111 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_NBKDNOIKMEI),
-            7112 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_FBIBMANPNBC),
-            7113 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_JEEABDJGFHD),
-            7114 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_MEJEFBBGOIO),
-            7115 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OGHGNNFOCCM),
-            7116 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_NHCBNJHFKHN),
-            7117 => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_PHKJIMNJCHM),
+            7101 => ::std::option::Option::Some(Retcode::Retcode_MBCABOJAPNF),
+            7102 => ::std::option::Option::Some(Retcode::Retcode_PJJKJLFAJMD),
+            7103 => ::std::option::Option::Some(Retcode::Retcode_JMOAEJMMLFK),
+            7104 => ::std::option::Option::Some(Retcode::Retcode_OGAKNDBOHIK),
+            7105 => ::std::option::Option::Some(Retcode::Retcode_NLNCPEKBKBG),
+            7106 => ::std::option::Option::Some(Retcode::Retcode_CNIOINHAGJI),
+            7107 => ::std::option::Option::Some(Retcode::Retcode_OKAMEKOLPDB),
+            7108 => ::std::option::Option::Some(Retcode::Retcode_NBICFEMBGEB),
+            7109 => ::std::option::Option::Some(Retcode::Retcode_GFBENDMKGMN),
+            7110 => ::std::option::Option::Some(Retcode::Retcode_DFJINCHMDBH),
+            7111 => ::std::option::Option::Some(Retcode::Retcode_FDCKOELBPFF),
+            7112 => ::std::option::Option::Some(Retcode::Retcode_JHLELIFPINJ),
+            7113 => ::std::option::Option::Some(Retcode::Retcode_HKGAOKDKFKC),
+            7114 => ::std::option::Option::Some(Retcode::Retcode_MIIGHHKMGHM),
+            7115 => ::std::option::Option::Some(Retcode::Retcode_AGEIOBENCMJ),
+            7116 => ::std::option::Option::Some(Retcode::Retcode_CBPGALLJEPD),
+            7117 => ::std::option::Option::Some(Retcode::Retcode_LFJCDIGAPNK),
+            7118 => ::std::option::Option::Some(Retcode::Retcode_NHBDPKEMHJC),
+            7201 => ::std::option::Option::Some(Retcode::Retcode_EFBLJHOPKNH),
+            7202 => ::std::option::Option::Some(Retcode::Retcode_DCJIIAHBEAG),
+            7203 => ::std::option::Option::Some(Retcode::Retcode_KEMIBMAFOMD),
+            7204 => ::std::option::Option::Some(Retcode::Retcode_FGFMKAFHIOH),
+            7205 => ::std::option::Option::Some(Retcode::Retcode_JDHMBJEKFEG),
+            7206 => ::std::option::Option::Some(Retcode::Retcode_PBPLIBBEKCE),
+            7207 => ::std::option::Option::Some(Retcode::Retcode_ONFIDLGNKCA),
+            7208 => ::std::option::Option::Some(Retcode::Retcode_AELGHBIMHAO),
+            7301 => ::std::option::Option::Some(Retcode::Retcode_BFELLHHPKFO),
+            7302 => ::std::option::Option::Some(Retcode::Retcode_CABLNLCHHLP),
+            7303 => ::std::option::Option::Some(Retcode::Retcode_DBBIPGKBKDH),
             _ => ::std::option::Option::None
         }
     }
@@ -4667,23 +4703,35 @@ impl ::protobuf::Enum for Retcode {
             "RET_RELICBOX_RELIC_IN_BOX" => ::std::option::Option::Some(Retcode::RET_RELICBOX_RELIC_IN_BOX),
             "RET_RELICBOX_OPEN_TARGET_CONFLICT" => ::std::option::Option::Some(Retcode::RET_RELICBOX_OPEN_TARGET_CONFLICT),
             "RET_RELICBOX_RELIC_TYPE_INVALID" => ::std::option::Option::Some(Retcode::RET_RELICBOX_RELIC_TYPE_INVALID),
-            "ICDIGIEKFLA_OLPANLOPCJC" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OLPANLOPCJC),
-            "ICDIGIEKFLA_DENGBOAGECC" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_DENGBOAGECC),
-            "ICDIGIEKFLA_KLINPACJGGK" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_KLINPACJGGK),
-            "ICDIGIEKFLA_DLBPOFIJHJI" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_DLBPOFIJHJI),
-            "ICDIGIEKFLA_GFNACHMKLNE" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_GFNACHMKLNE),
-            "ICDIGIEKFLA_APFADBGCJAP" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_APFADBGCJAP),
-            "ICDIGIEKFLA_KMMEKBKDOKP" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_KMMEKBKDOKP),
-            "ICDIGIEKFLA_OGJEGMDEBCL" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OGJEGMDEBCL),
-            "ICDIGIEKFLA_OJNIECELOAA" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OJNIECELOAA),
-            "ICDIGIEKFLA_JACFMKDEKEC" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_JACFMKDEKEC),
-            "ICDIGIEKFLA_NBKDNOIKMEI" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_NBKDNOIKMEI),
-            "ICDIGIEKFLA_FBIBMANPNBC" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_FBIBMANPNBC),
-            "ICDIGIEKFLA_JEEABDJGFHD" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_JEEABDJGFHD),
-            "ICDIGIEKFLA_MEJEFBBGOIO" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_MEJEFBBGOIO),
-            "ICDIGIEKFLA_OGHGNNFOCCM" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_OGHGNNFOCCM),
-            "ICDIGIEKFLA_NHCBNJHFKHN" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_NHCBNJHFKHN),
-            "ICDIGIEKFLA_PHKJIMNJCHM" => ::std::option::Option::Some(Retcode::ICDIGIEKFLA_PHKJIMNJCHM),
+            "Retcode_MBCABOJAPNF" => ::std::option::Option::Some(Retcode::Retcode_MBCABOJAPNF),
+            "Retcode_PJJKJLFAJMD" => ::std::option::Option::Some(Retcode::Retcode_PJJKJLFAJMD),
+            "Retcode_JMOAEJMMLFK" => ::std::option::Option::Some(Retcode::Retcode_JMOAEJMMLFK),
+            "Retcode_OGAKNDBOHIK" => ::std::option::Option::Some(Retcode::Retcode_OGAKNDBOHIK),
+            "Retcode_NLNCPEKBKBG" => ::std::option::Option::Some(Retcode::Retcode_NLNCPEKBKBG),
+            "Retcode_CNIOINHAGJI" => ::std::option::Option::Some(Retcode::Retcode_CNIOINHAGJI),
+            "Retcode_OKAMEKOLPDB" => ::std::option::Option::Some(Retcode::Retcode_OKAMEKOLPDB),
+            "Retcode_NBICFEMBGEB" => ::std::option::Option::Some(Retcode::Retcode_NBICFEMBGEB),
+            "Retcode_GFBENDMKGMN" => ::std::option::Option::Some(Retcode::Retcode_GFBENDMKGMN),
+            "Retcode_DFJINCHMDBH" => ::std::option::Option::Some(Retcode::Retcode_DFJINCHMDBH),
+            "Retcode_FDCKOELBPFF" => ::std::option::Option::Some(Retcode::Retcode_FDCKOELBPFF),
+            "Retcode_JHLELIFPINJ" => ::std::option::Option::Some(Retcode::Retcode_JHLELIFPINJ),
+            "Retcode_HKGAOKDKFKC" => ::std::option::Option::Some(Retcode::Retcode_HKGAOKDKFKC),
+            "Retcode_MIIGHHKMGHM" => ::std::option::Option::Some(Retcode::Retcode_MIIGHHKMGHM),
+            "Retcode_AGEIOBENCMJ" => ::std::option::Option::Some(Retcode::Retcode_AGEIOBENCMJ),
+            "Retcode_CBPGALLJEPD" => ::std::option::Option::Some(Retcode::Retcode_CBPGALLJEPD),
+            "Retcode_LFJCDIGAPNK" => ::std::option::Option::Some(Retcode::Retcode_LFJCDIGAPNK),
+            "Retcode_NHBDPKEMHJC" => ::std::option::Option::Some(Retcode::Retcode_NHBDPKEMHJC),
+            "Retcode_EFBLJHOPKNH" => ::std::option::Option::Some(Retcode::Retcode_EFBLJHOPKNH),
+            "Retcode_DCJIIAHBEAG" => ::std::option::Option::Some(Retcode::Retcode_DCJIIAHBEAG),
+            "Retcode_KEMIBMAFOMD" => ::std::option::Option::Some(Retcode::Retcode_KEMIBMAFOMD),
+            "Retcode_FGFMKAFHIOH" => ::std::option::Option::Some(Retcode::Retcode_FGFMKAFHIOH),
+            "Retcode_JDHMBJEKFEG" => ::std::option::Option::Some(Retcode::Retcode_JDHMBJEKFEG),
+            "Retcode_PBPLIBBEKCE" => ::std::option::Option::Some(Retcode::Retcode_PBPLIBBEKCE),
+            "Retcode_ONFIDLGNKCA" => ::std::option::Option::Some(Retcode::Retcode_ONFIDLGNKCA),
+            "Retcode_AELGHBIMHAO" => ::std::option::Option::Some(Retcode::Retcode_AELGHBIMHAO),
+            "Retcode_BFELLHHPKFO" => ::std::option::Option::Some(Retcode::Retcode_BFELLHHPKFO),
+            "Retcode_CABLNLCHHLP" => ::std::option::Option::Some(Retcode::Retcode_CABLNLCHHLP),
+            "Retcode_DBBIPGKBKDH" => ::std::option::Option::Some(Retcode::Retcode_DBBIPGKBKDH),
             _ => ::std::option::Option::None
         }
     }
@@ -5832,23 +5880,35 @@ impl ::protobuf::Enum for Retcode {
         Retcode::RET_RELICBOX_RELIC_IN_BOX,
         Retcode::RET_RELICBOX_OPEN_TARGET_CONFLICT,
         Retcode::RET_RELICBOX_RELIC_TYPE_INVALID,
-        Retcode::ICDIGIEKFLA_OLPANLOPCJC,
-        Retcode::ICDIGIEKFLA_DENGBOAGECC,
-        Retcode::ICDIGIEKFLA_KLINPACJGGK,
-        Retcode::ICDIGIEKFLA_DLBPOFIJHJI,
-        Retcode::ICDIGIEKFLA_GFNACHMKLNE,
-        Retcode::ICDIGIEKFLA_APFADBGCJAP,
-        Retcode::ICDIGIEKFLA_KMMEKBKDOKP,
-        Retcode::ICDIGIEKFLA_OGJEGMDEBCL,
-        Retcode::ICDIGIEKFLA_OJNIECELOAA,
-        Retcode::ICDIGIEKFLA_JACFMKDEKEC,
-        Retcode::ICDIGIEKFLA_NBKDNOIKMEI,
-        Retcode::ICDIGIEKFLA_FBIBMANPNBC,
-        Retcode::ICDIGIEKFLA_JEEABDJGFHD,
-        Retcode::ICDIGIEKFLA_MEJEFBBGOIO,
-        Retcode::ICDIGIEKFLA_OGHGNNFOCCM,
-        Retcode::ICDIGIEKFLA_NHCBNJHFKHN,
-        Retcode::ICDIGIEKFLA_PHKJIMNJCHM,
+        Retcode::Retcode_MBCABOJAPNF,
+        Retcode::Retcode_PJJKJLFAJMD,
+        Retcode::Retcode_JMOAEJMMLFK,
+        Retcode::Retcode_OGAKNDBOHIK,
+        Retcode::Retcode_NLNCPEKBKBG,
+        Retcode::Retcode_CNIOINHAGJI,
+        Retcode::Retcode_OKAMEKOLPDB,
+        Retcode::Retcode_NBICFEMBGEB,
+        Retcode::Retcode_GFBENDMKGMN,
+        Retcode::Retcode_DFJINCHMDBH,
+        Retcode::Retcode_FDCKOELBPFF,
+        Retcode::Retcode_JHLELIFPINJ,
+        Retcode::Retcode_HKGAOKDKFKC,
+        Retcode::Retcode_MIIGHHKMGHM,
+        Retcode::Retcode_AGEIOBENCMJ,
+        Retcode::Retcode_CBPGALLJEPD,
+        Retcode::Retcode_LFJCDIGAPNK,
+        Retcode::Retcode_NHBDPKEMHJC,
+        Retcode::Retcode_EFBLJHOPKNH,
+        Retcode::Retcode_DCJIIAHBEAG,
+        Retcode::Retcode_KEMIBMAFOMD,
+        Retcode::Retcode_FGFMKAFHIOH,
+        Retcode::Retcode_JDHMBJEKFEG,
+        Retcode::Retcode_PBPLIBBEKCE,
+        Retcode::Retcode_ONFIDLGNKCA,
+        Retcode::Retcode_AELGHBIMHAO,
+        Retcode::Retcode_BFELLHHPKFO,
+        Retcode::Retcode_CABLNLCHHLP,
+        Retcode::Retcode_DBBIPGKBKDH,
     ];
 }
 
@@ -7003,23 +7063,35 @@ impl ::protobuf::EnumFull for Retcode {
             Retcode::RET_RELICBOX_RELIC_IN_BOX => 1140,
             Retcode::RET_RELICBOX_OPEN_TARGET_CONFLICT => 1141,
             Retcode::RET_RELICBOX_RELIC_TYPE_INVALID => 1142,
-            Retcode::ICDIGIEKFLA_OLPANLOPCJC => 1143,
-            Retcode::ICDIGIEKFLA_DENGBOAGECC => 1144,
-            Retcode::ICDIGIEKFLA_KLINPACJGGK => 1145,
-            Retcode::ICDIGIEKFLA_DLBPOFIJHJI => 1146,
-            Retcode::ICDIGIEKFLA_GFNACHMKLNE => 1147,
-            Retcode::ICDIGIEKFLA_APFADBGCJAP => 1148,
-            Retcode::ICDIGIEKFLA_KMMEKBKDOKP => 1149,
-            Retcode::ICDIGIEKFLA_OGJEGMDEBCL => 1150,
-            Retcode::ICDIGIEKFLA_OJNIECELOAA => 1151,
-            Retcode::ICDIGIEKFLA_JACFMKDEKEC => 1152,
-            Retcode::ICDIGIEKFLA_NBKDNOIKMEI => 1153,
-            Retcode::ICDIGIEKFLA_FBIBMANPNBC => 1154,
-            Retcode::ICDIGIEKFLA_JEEABDJGFHD => 1155,
-            Retcode::ICDIGIEKFLA_MEJEFBBGOIO => 1156,
-            Retcode::ICDIGIEKFLA_OGHGNNFOCCM => 1157,
-            Retcode::ICDIGIEKFLA_NHCBNJHFKHN => 1158,
-            Retcode::ICDIGIEKFLA_PHKJIMNJCHM => 1159,
+            Retcode::Retcode_MBCABOJAPNF => 1143,
+            Retcode::Retcode_PJJKJLFAJMD => 1144,
+            Retcode::Retcode_JMOAEJMMLFK => 1145,
+            Retcode::Retcode_OGAKNDBOHIK => 1146,
+            Retcode::Retcode_NLNCPEKBKBG => 1147,
+            Retcode::Retcode_CNIOINHAGJI => 1148,
+            Retcode::Retcode_OKAMEKOLPDB => 1149,
+            Retcode::Retcode_NBICFEMBGEB => 1150,
+            Retcode::Retcode_GFBENDMKGMN => 1151,
+            Retcode::Retcode_DFJINCHMDBH => 1152,
+            Retcode::Retcode_FDCKOELBPFF => 1153,
+            Retcode::Retcode_JHLELIFPINJ => 1154,
+            Retcode::Retcode_HKGAOKDKFKC => 1155,
+            Retcode::Retcode_MIIGHHKMGHM => 1156,
+            Retcode::Retcode_AGEIOBENCMJ => 1157,
+            Retcode::Retcode_CBPGALLJEPD => 1158,
+            Retcode::Retcode_LFJCDIGAPNK => 1159,
+            Retcode::Retcode_NHBDPKEMHJC => 1160,
+            Retcode::Retcode_EFBLJHOPKNH => 1161,
+            Retcode::Retcode_DCJIIAHBEAG => 1162,
+            Retcode::Retcode_KEMIBMAFOMD => 1163,
+            Retcode::Retcode_FGFMKAFHIOH => 1164,
+            Retcode::Retcode_JDHMBJEKFEG => 1165,
+            Retcode::Retcode_PBPLIBBEKCE => 1166,
+            Retcode::Retcode_ONFIDLGNKCA => 1167,
+            Retcode::Retcode_AELGHBIMHAO => 1168,
+            Retcode::Retcode_BFELLHHPKFO => 1169,
+            Retcode::Retcode_CABLNLCHHLP => 1170,
+            Retcode::Retcode_DBBIPGKBKDH => 1171,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -7038,7 +7110,7 @@ impl Retcode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rRetcode.proto*\xa0\xd1\x02\n\x07Retcode\x12\x0c\n\x08RET_SUCC\x10\0\
+    \n\rRetcode.proto*\x94\xd3\x02\n\x07Retcode\x12\x0c\n\x08RET_SUCC\x10\0\
     \x12\x0c\n\x08RET_FAIL\x10\x01\x12\x1d\n\x19RET_SERVER_INTERNAL_ERROR\
     \x10\x02\x12\x0f\n\x0bRET_TIMEOUT\x10\x03\x12\x14\n\x10RET_REPEATED_REQ\
     \x10\x04\x12\x18\n\x14RET_REQ_PARA_INVALID\x10\x05\x12\x19\n\x15RET_PLAY\
@@ -7863,18 +7935,24 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     '\n\"RET_RELICBOX_CUSTOM_AVATAR_INVALID\x10\x967\x12*\n%RET_RELICBOX_CUS\
     TOM_RELIC_SET_INVALID\x10\x977\x12\x1e\n\x19RET_RELICBOX_RELIC_IN_BOX\
     \x10\x987\x12&\n!RET_RELICBOX_OPEN_TARGET_CONFLICT\x10\x997\x12$\n\x1fRE\
-    T_RELICBOX_RELIC_TYPE_INVALID\x10\x9a7\x12\x1c\n\x17ICDIGIEKFLA_OLPANLOP\
-    CJC\x10\xbd7\x12\x1c\n\x17ICDIGIEKFLA_DENGBOAGECC\x10\xbe7\x12\x1c\n\x17\
-    ICDIGIEKFLA_KLINPACJGGK\x10\xbf7\x12\x1c\n\x17ICDIGIEKFLA_DLBPOFIJHJI\
-    \x10\xc07\x12\x1c\n\x17ICDIGIEKFLA_GFNACHMKLNE\x10\xc17\x12\x1c\n\x17ICD\
-    IGIEKFLA_APFADBGCJAP\x10\xc27\x12\x1c\n\x17ICDIGIEKFLA_KMMEKBKDOKP\x10\
-    \xc37\x12\x1c\n\x17ICDIGIEKFLA_OGJEGMDEBCL\x10\xc47\x12\x1c\n\x17ICDIGIE\
-    KFLA_OJNIECELOAA\x10\xc57\x12\x1c\n\x17ICDIGIEKFLA_JACFMKDEKEC\x10\xc67\
-    \x12\x1c\n\x17ICDIGIEKFLA_NBKDNOIKMEI\x10\xc77\x12\x1c\n\x17ICDIGIEKFLA_\
-    FBIBMANPNBC\x10\xc87\x12\x1c\n\x17ICDIGIEKFLA_JEEABDJGFHD\x10\xc97\x12\
-    \x1c\n\x17ICDIGIEKFLA_MEJEFBBGOIO\x10\xca7\x12\x1c\n\x17ICDIGIEKFLA_OGHG\
-    NNFOCCM\x10\xcb7\x12\x1c\n\x17ICDIGIEKFLA_NHCBNJHFKHN\x10\xcc7\x12\x1c\n\
-    \x17ICDIGIEKFLA_PHKJIMNJCHM\x10\xcd7b\x06proto3\
+    T_RELICBOX_RELIC_TYPE_INVALID\x10\x9a7\x12\x18\n\x13Retcode_MBCABOJAPNF\
+    \x10\xbd7\x12\x18\n\x13Retcode_PJJKJLFAJMD\x10\xbe7\x12\x18\n\x13Retcode\
+    _JMOAEJMMLFK\x10\xbf7\x12\x18\n\x13Retcode_OGAKNDBOHIK\x10\xc07\x12\x18\
+    \n\x13Retcode_NLNCPEKBKBG\x10\xc17\x12\x18\n\x13Retcode_CNIOINHAGJI\x10\
+    \xc27\x12\x18\n\x13Retcode_OKAMEKOLPDB\x10\xc37\x12\x18\n\x13Retcode_NBI\
+    CFEMBGEB\x10\xc47\x12\x18\n\x13Retcode_GFBENDMKGMN\x10\xc57\x12\x18\n\
+    \x13Retcode_DFJINCHMDBH\x10\xc67\x12\x18\n\x13Retcode_FDCKOELBPFF\x10\
+    \xc77\x12\x18\n\x13Retcode_JHLELIFPINJ\x10\xc87\x12\x18\n\x13Retcode_HKG\
+    AOKDKFKC\x10\xc97\x12\x18\n\x13Retcode_MIIGHHKMGHM\x10\xca7\x12\x18\n\
+    \x13Retcode_AGEIOBENCMJ\x10\xcb7\x12\x18\n\x13Retcode_CBPGALLJEPD\x10\
+    \xcc7\x12\x18\n\x13Retcode_LFJCDIGAPNK\x10\xcd7\x12\x18\n\x13Retcode_NHB\
+    DPKEMHJC\x10\xce7\x12\x18\n\x13Retcode_EFBLJHOPKNH\x10\xa18\x12\x18\n\
+    \x13Retcode_DCJIIAHBEAG\x10\xa28\x12\x18\n\x13Retcode_KEMIBMAFOMD\x10\
+    \xa38\x12\x18\n\x13Retcode_FGFMKAFHIOH\x10\xa48\x12\x18\n\x13Retcode_JDH\
+    MBJEKFEG\x10\xa58\x12\x18\n\x13Retcode_PBPLIBBEKCE\x10\xa68\x12\x18\n\
+    \x13Retcode_ONFIDLGNKCA\x10\xa78\x12\x18\n\x13Retcode_AELGHBIMHAO\x10\
+    \xa88\x12\x18\n\x13Retcode_BFELLHHPKFO\x10\x859\x12\x18\n\x13Retcode_CAB\
+    LNLCHHLP\x10\x869\x12\x18\n\x13Retcode_DBBIPGKBKDH\x10\x879b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.group_id = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.is_played = is.read_bool()?;
                 },
-                112 => {
+                64 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MusicData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
         }
         if self.is_played != false {
             my_size += 1 + 1;
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+            os.write_uint32(5, self.group_id)?;
         }
         if self.is_played != false {
-            os.write_bool(6, self.is_played)?;
+            os.write_bool(3, self.is_played)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(8, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fMusicData.proto\"S\n\tMusicData\x12\x19\n\x08group_id\x18\x04\x20\
-    \x01(\rR\x07groupId\x12\x1b\n\tis_played\x18\x06\x20\x01(\x08R\x08isPlay\
-    ed\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\x02idb\x06proto3\
+    \n\x0fMusicData.proto\"S\n\tMusicData\x12\x19\n\x08group_id\x18\x05\x20\
+    \x01(\rR\x07groupId\x12\x1b\n\tis_played\x18\x03\x20\x01(\x08R\x08isPlay\
+    ed\x12\x0e\n\x02id\x18\x08\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

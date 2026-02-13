@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRedDotType)
 pub enum CmdRedDotType {
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotTypeNone)
-    CmdRedDotTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupCsReq)
-    CmdGetSingleRedDotParamGroupCsReq = 5935,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetSingleRedDotParamGroupScRsp)
-    CmdGetSingleRedDotParamGroupScRsp = 5902,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdUpdateRedDotDataScRsp)
-    CmdUpdateRedDotDataScRsp = 5933,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetAllRedDotDataScRsp)
-    CmdGetAllRedDotDataScRsp = 5919,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdGetAllRedDotDataCsReq)
-    CmdGetAllRedDotDataCsReq = 5948,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdUpdateRedDotDataCsReq)
-    CmdUpdateRedDotDataCsReq = 5905,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_GKJBAODJMJG)
+    MJFPAECGOJJ_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_DLHNPOBPJNB)
+    MJFPAECGOJJ_DLHNPOBPJNB = 5933,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_IOHCGMBNLFL)
+    MJFPAECGOJJ_IOHCGMBNLFL = 5924,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_EDLCMPALBKF)
+    MJFPAECGOJJ_EDLCMPALBKF = 5939,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_JBCMBHCFJCM)
+    MJFPAECGOJJ_JBCMBHCFJCM = 5949,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_NJAPHKFHEPD)
+    MJFPAECGOJJ_NJAPHKFHEPD = 5907,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_PAJLDJGLGAD)
+    MJFPAECGOJJ_PAJLDJGLGAD = 5950,
 }
 
 impl ::protobuf::Enum for CmdRedDotType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdRedDotType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRedDotType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotTypeNone),
-            5935 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
-            5902 => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp),
-            5933 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
-            5919 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataScRsp),
-            5948 => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataCsReq),
-            5905 => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataCsReq),
+            0 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG),
+            5933 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB),
+            5924 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL),
+            5939 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF),
+            5949 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM),
+            5907 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD),
+            5950 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRedDotType> {
         match str {
-            "CmdRedDotTypeNone" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotTypeNone),
-            "CmdGetSingleRedDotParamGroupCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq),
-            "CmdGetSingleRedDotParamGroupScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp),
-            "CmdUpdateRedDotDataScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataScRsp),
-            "CmdGetAllRedDotDataScRsp" => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataScRsp),
-            "CmdGetAllRedDotDataCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdGetAllRedDotDataCsReq),
-            "CmdUpdateRedDotDataCsReq" => ::std::option::Option::Some(CmdRedDotType::CmdUpdateRedDotDataCsReq),
+            "MJFPAECGOJJ_GKJBAODJMJG" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG),
+            "MJFPAECGOJJ_DLHNPOBPJNB" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB),
+            "MJFPAECGOJJ_IOHCGMBNLFL" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL),
+            "MJFPAECGOJJ_EDLCMPALBKF" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF),
+            "MJFPAECGOJJ_JBCMBHCFJCM" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM),
+            "MJFPAECGOJJ_NJAPHKFHEPD" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD),
+            "MJFPAECGOJJ_PAJLDJGLGAD" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRedDotType] = &[
-        CmdRedDotType::CmdRedDotTypeNone,
-        CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq,
-        CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp,
-        CmdRedDotType::CmdUpdateRedDotDataScRsp,
-        CmdRedDotType::CmdGetAllRedDotDataScRsp,
-        CmdRedDotType::CmdGetAllRedDotDataCsReq,
-        CmdRedDotType::CmdUpdateRedDotDataCsReq,
+        CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG,
+        CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB,
+        CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL,
+        CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF,
+        CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM,
+        CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD,
+        CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdRedDotType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRedDotType::CmdRedDotTypeNone => 0,
-            CmdRedDotType::CmdGetSingleRedDotParamGroupCsReq => 1,
-            CmdRedDotType::CmdGetSingleRedDotParamGroupScRsp => 2,
-            CmdRedDotType::CmdUpdateRedDotDataScRsp => 3,
-            CmdRedDotType::CmdGetAllRedDotDataScRsp => 4,
-            CmdRedDotType::CmdGetAllRedDotDataCsReq => 5,
-            CmdRedDotType::CmdUpdateRedDotDataCsReq => 6,
+            CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG => 0,
+            CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB => 1,
+            CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL => 2,
+            CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF => 3,
+            CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM => 4,
+            CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD => 5,
+            CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdRedDotType {
 
 impl ::std::default::Default for CmdRedDotType {
     fn default() -> Self {
-        CmdRedDotType::CmdRedDotTypeNone
+        CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdRedDotType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdRedDotType.proto*\xf2\x01\n\rCmdRedDotType\x12\x15\n\x11CmdRedD\
-    otTypeNone\x10\0\x12&\n!CmdGetSingleRedDotParamGroupCsReq\x10\xaf.\x12&\
-    \n!CmdGetSingleRedDotParamGroupScRsp\x10\x8e.\x12\x1d\n\x18CmdUpdateRedD\
-    otDataScRsp\x10\xad.\x12\x1d\n\x18CmdGetAllRedDotDataScRsp\x10\x9f.\x12\
-    \x1d\n\x18CmdGetAllRedDotDataCsReq\x10\xbc.\x12\x1d\n\x18CmdUpdateRedDot\
-    DataCsReq\x10\x91.b\x06proto3\
+    \n\x13CmdRedDotType.proto*\xe0\x01\n\rCmdRedDotType\x12\x1b\n\x17MJFPAEC\
+    GOJJ_GKJBAODJMJG\x10\0\x12\x1c\n\x17MJFPAECGOJJ_DLHNPOBPJNB\x10\xad.\x12\
+    \x1c\n\x17MJFPAECGOJJ_IOHCGMBNLFL\x10\xa4.\x12\x1c\n\x17MJFPAECGOJJ_EDLC\
+    MPALBKF\x10\xb3.\x12\x1c\n\x17MJFPAECGOJJ_JBCMBHCFJCM\x10\xbd.\x12\x1c\n\
+    \x17MJFPAECGOJJ_NJAPHKFHEPD\x10\x93.\x12\x1c\n\x17MJFPAECGOJJ_PAJLDJGLGA\
+    D\x10\xbe.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

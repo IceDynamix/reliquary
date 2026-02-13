@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChallengeGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                112 => {
                     self.group_id = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.taken_stars_count_reward = is.read_uint64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChallengeGroup {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         if self.taken_stars_count_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.taken_stars_count_reward);
+            my_size += ::protobuf::rt::uint64_size(2, self.taken_stars_count_reward);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChallengeGroup {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(14, self.group_id)?;
         }
         if self.taken_stars_count_reward != 0 {
-            os.write_uint64(6, self.taken_stars_count_reward)?;
+            os.write_uint64(2, self.taken_stars_count_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeGroup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14ChallengeGroup.proto\"d\n\x0eChallengeGroup\x12\x19\n\x08group_id\
-    \x18\x0c\x20\x01(\rR\x07groupId\x127\n\x18taken_stars_count_reward\x18\
-    \x06\x20\x01(\x04R\x15takenStarsCountRewardb\x06proto3\
+    \x18\x0e\x20\x01(\rR\x07groupId\x127\n\x18taken_stars_count_reward\x18\
+    \x02\x20\x01(\x04R\x15takenStarsCountRewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

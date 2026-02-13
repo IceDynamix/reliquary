@@ -72,7 +72,7 @@ impl ::protobuf::Message for RelicRecommend {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                26 => {
                     self.recommend_relic_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RelicRecommend {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.recommend_relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RelicRecommend {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RelicRecommend.proto\x1a\x18RelicRecommendInfo.proto\"W\n\x0eRelic\
-    Recommend\x12E\n\x14recommend_relic_list\x18\x05\x20\x03(\x0b2\x13.Relic\
+    Recommend\x12E\n\x14recommend_relic_list\x18\x03\x20\x03(\x0b2\x13.Relic\
     RecommendInfoR\x12recommendRelicListb\x06proto3\
 ";
 

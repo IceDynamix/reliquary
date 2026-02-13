@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AvatarSync {
     // message fields
+    // @@protoc_insertion_point(field:AvatarSync.avatar_path_data_info_list)
+    pub avatar_path_data_info_list: ::std::vec::Vec<super::AvatarPathData::AvatarPathData>,
     // @@protoc_insertion_point(field:AvatarSync.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::Avatar::Avatar>,
     // special fields
@@ -47,8 +49,13 @@ impl AvatarSync {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_path_data_info_list",
+            |m: &AvatarSync| { &m.avatar_path_data_info_list },
+            |m: &mut AvatarSync| { &mut m.avatar_path_data_info_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &AvatarSync| { &m.avatar_list },
@@ -72,7 +79,10 @@ impl ::protobuf::Message for AvatarSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
+                    self.avatar_path_data_info_list.push(is.read_message()?);
+                },
+                90 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -87,6 +97,10 @@ impl ::protobuf::Message for AvatarSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.avatar_path_data_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -97,8 +111,11 @@ impl ::protobuf::Message for AvatarSync {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.avatar_path_data_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +134,14 @@ impl ::protobuf::Message for AvatarSync {
     }
 
     fn clear(&mut self) {
+        self.avatar_path_data_info_list.clear();
         self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarSync {
         static instance: AvatarSync = AvatarSync {
+            avatar_path_data_info_list: ::std::vec::Vec::new(),
             avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -148,8 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for AvatarSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10AvatarSync.proto\x1a\x0cAvatar.proto\"6\n\nAvatarSync\x12(\n\x0bav\
-    atar_list\x18\x06\x20\x03(\x0b2\x07.AvatarR\navatarListb\x06proto3\
+    \n\x10AvatarSync.proto\x1a\x0cAvatar.proto\x1a\x14AvatarPathData.proto\"\
+    \x83\x01\n\nAvatarSync\x12K\n\x1aavatar_path_data_info_list\x18\x07\x20\
+    \x03(\x0b2\x0f.AvatarPathDataR\x16avatarPathDataInfoList\x12(\n\x0bavata\
+    r_list\x18\x0b\x20\x03(\x0b2\x07.AvatarR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -166,8 +187,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::Avatar::file_descriptor().clone());
+            deps.push(super::AvatarPathData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AvatarSync::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchMascotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.ODELDCGMALD)
-    pub ODELDCGMALD: ::std::vec::Vec<super::FJPJPNIAAAK::FJPJPNIAAAK>,
+    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.GOJMLBAEPOB)
+    pub GOJMLBAEPOB: ::std::vec::Vec<super::HBHPKHHGPHL::HBHPKHHGPHL>,
+    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.KAABLCLNLFG)
+    pub KAABLCLNLFG: u32,
     // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.HLPAIKPCLCC)
-    pub HLPAIKPCLCC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSwitchMascotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GetSwitchMascotDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ODELDCGMALD",
-            |m: &GetSwitchMascotDataScRsp| { &m.ODELDCGMALD },
-            |m: &mut GetSwitchMascotDataScRsp| { &mut m.ODELDCGMALD },
+            "GOJMLBAEPOB",
+            |m: &GetSwitchMascotDataScRsp| { &m.GOJMLBAEPOB },
+            |m: &mut GetSwitchMascotDataScRsp| { &mut m.GOJMLBAEPOB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KAABLCLNLFG",
+            |m: &GetSwitchMascotDataScRsp| { &m.KAABLCLNLFG },
+            |m: &mut GetSwitchMascotDataScRsp| { &mut m.KAABLCLNLFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwitchMascotDataScRsp| { &m.retcode },
             |m: &mut GetSwitchMascotDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLPAIKPCLCC",
-            |m: &GetSwitchMascotDataScRsp| { &m.HLPAIKPCLCC },
-            |m: &mut GetSwitchMascotDataScRsp| { &mut m.HLPAIKPCLCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSwitchMascotDataScRsp>(
             "GetSwitchMascotDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.ODELDCGMALD.push(is.read_message()?);
+                106 => {
+                    self.GOJMLBAEPOB.push(is.read_message()?);
                 },
-                64 => {
+                88 => {
+                    self.KAABLCLNLFG = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
-                },
-                48 => {
-                    self.HLPAIKPCLCC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ODELDCGMALD {
+        for value in &self.GOJMLBAEPOB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.KAABLCLNLFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KAABLCLNLFG);
         }
-        if self.HLPAIKPCLCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HLPAIKPCLCC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ODELDCGMALD {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.GOJMLBAEPOB {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.KAABLCLNLFG != 0 {
+            os.write_uint32(11, self.KAABLCLNLFG)?;
         }
-        if self.HLPAIKPCLCC != 0 {
-            os.write_uint32(6, self.HLPAIKPCLCC)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ODELDCGMALD.clear();
+        self.GOJMLBAEPOB.clear();
+        self.KAABLCLNLFG = 0;
         self.retcode = 0;
-        self.HLPAIKPCLCC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchMascotDataScRsp {
         static instance: GetSwitchMascotDataScRsp = GetSwitchMascotDataScRsp {
-            ODELDCGMALD: ::std::vec::Vec::new(),
+            GOJMLBAEPOB: ::std::vec::Vec::new(),
+            KAABLCLNLFG: 0,
             retcode: 0,
-            HLPAIKPCLCC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchMascotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetSwitchMascotDataScRsp.proto\x1a\x11FJPJPNIAAAK.proto\"\x86\x01\
-    \n\x18GetSwitchMascotDataScRsp\x12.\n\x0bODELDCGMALD\x18\x02\x20\x03(\
-    \x0b2\x0c.FJPJPNIAAAKR\x0bODELDCGMALD\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bHLPAIKPCLCC\x18\x06\x20\x01(\rR\x0bHLPA\
-    IKPCLCCb\x06proto3\
+    \n\x1eGetSwitchMascotDataScRsp.proto\x1a\x11HBHPKHHGPHL.proto\"\x86\x01\
+    \n\x18GetSwitchMascotDataScRsp\x12.\n\x0bGOJMLBAEPOB\x18\r\x20\x03(\x0b2\
+    \x0c.HBHPKHHGPHLR\x0bGOJMLBAEPOB\x12\x20\n\x0bKAABLCLNLFG\x18\x0b\x20\
+    \x01(\rR\x0bKAABLCLNLFG\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retc\
+    odeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FJPJPNIAAAK::file_descriptor().clone());
+            deps.push(super::HBHPKHHGPHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSwitchMascotDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

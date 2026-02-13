@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSummonActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.MAOKKOPFEMN)
-    pub MAOKKOPFEMN: ::std::vec::Vec<super::LFHDAKEMLFG::LFHDAKEMLFG>,
+    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.DFCFMHGLDLA)
+    pub DFCFMHGLDLA: ::std::vec::Vec<super::NONKKOLHOAA::NONKKOLHOAA>,
     // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetSummonActivityDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MAOKKOPFEMN",
-            |m: &GetSummonActivityDataScRsp| { &m.MAOKKOPFEMN },
-            |m: &mut GetSummonActivityDataScRsp| { &mut m.MAOKKOPFEMN },
+            "DFCFMHGLDLA",
+            |m: &GetSummonActivityDataScRsp| { &m.DFCFMHGLDLA },
+            |m: &mut GetSummonActivityDataScRsp| { &mut m.DFCFMHGLDLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.MAOKKOPFEMN.push(is.read_message()?);
+                66 => {
+                    self.DFCFMHGLDLA.push(is.read_message()?);
                 },
                 56 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MAOKKOPFEMN {
+        for value in &self.DFCFMHGLDLA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -110,8 +110,8 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MAOKKOPFEMN {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.DFCFMHGLDLA {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(7, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.MAOKKOPFEMN.clear();
+        self.DFCFMHGLDLA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSummonActivityDataScRsp {
         static instance: GetSummonActivityDataScRsp = GetSummonActivityDataScRsp {
-            MAOKKOPFEMN: ::std::vec::Vec::new(),
+            DFCFMHGLDLA: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSummonActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetSummonActivityDataScRsp.proto\x1a\x11LFHDAKEMLFG.proto\"f\n\x1a\
-    GetSummonActivityDataScRsp\x12.\n\x0bMAOKKOPFEMN\x18\x0c\x20\x03(\x0b2\
-    \x0c.LFHDAKEMLFGR\x0bMAOKKOPFEMN\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
+    \n\x20GetSummonActivityDataScRsp.proto\x1a\x11NONKKOLHOAA.proto\"f\n\x1a\
+    GetSummonActivityDataScRsp\x12.\n\x0bDFCFMHGLDLA\x18\x08\x20\x03(\x0b2\
+    \x0c.NONKKOLHOAAR\x0bDFCFMHGLDLA\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
     R\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LFHDAKEMLFG::file_descriptor().clone());
+            deps.push(super::NONKKOLHOAA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSummonActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

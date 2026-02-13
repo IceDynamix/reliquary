@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdServerPrefsType)
 pub enum CmdServerPrefsType {
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdServerPrefsTypeNone)
-    CmdServerPrefsTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataCsReq)
-    CmdGetServerPrefsDataCsReq = 6117,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataCsReq)
-    CmdUpdateServerPrefsDataCsReq = 6147,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataCsReq)
-    CmdGetAllServerPrefsDataCsReq = 6111,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetAllServerPrefsDataScRsp)
-    CmdGetAllServerPrefsDataScRsp = 6138,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdUpdateServerPrefsDataScRsp)
-    CmdUpdateServerPrefsDataScRsp = 6151,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.CmdGetServerPrefsDataScRsp)
-    CmdGetServerPrefsDataScRsp = 6109,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_GKJBAODJMJG)
+    FJMDHEOIDJD_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_JJFNPGDLAGE)
+    FJMDHEOIDJD_JJFNPGDLAGE = 6138,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_GGHGPCAJMEE)
+    FJMDHEOIDJD_GGHGPCAJMEE = 6155,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_HCIJLMDDGGM)
+    FJMDHEOIDJD_HCIJLMDDGGM = 6128,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_FNKHGBDBNJK)
+    FJMDHEOIDJD_FNKHGBDBNJK = 6175,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_PHACHIFPAJP)
+    FJMDHEOIDJD_PHACHIFPAJP = 6157,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.FJMDHEOIDJD_CEAEEFPHFIF)
+    FJMDHEOIDJD_CEAEEFPHFIF = 6162,
 }
 
 impl ::protobuf::Enum for CmdServerPrefsType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdServerPrefsType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdServerPrefsType> {
         match value {
-            0 => ::std::option::Option::Some(CmdServerPrefsType::CmdServerPrefsTypeNone),
-            6117 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
-            6147 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
-            6111 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
-            6138 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
-            6151 => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
-            6109 => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
+            0 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_GKJBAODJMJG),
+            6138 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_JJFNPGDLAGE),
+            6155 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_GGHGPCAJMEE),
+            6128 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_HCIJLMDDGGM),
+            6175 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_FNKHGBDBNJK),
+            6157 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_PHACHIFPAJP),
+            6162 => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_CEAEEFPHFIF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdServerPrefsType> {
         match str {
-            "CmdServerPrefsTypeNone" => ::std::option::Option::Some(CmdServerPrefsType::CmdServerPrefsTypeNone),
-            "CmdGetServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataCsReq),
-            "CmdUpdateServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq),
-            "CmdGetAllServerPrefsDataCsReq" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq),
-            "CmdGetAllServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp),
-            "CmdUpdateServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp),
-            "CmdGetServerPrefsDataScRsp" => ::std::option::Option::Some(CmdServerPrefsType::CmdGetServerPrefsDataScRsp),
+            "FJMDHEOIDJD_GKJBAODJMJG" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_GKJBAODJMJG),
+            "FJMDHEOIDJD_JJFNPGDLAGE" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_JJFNPGDLAGE),
+            "FJMDHEOIDJD_GGHGPCAJMEE" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_GGHGPCAJMEE),
+            "FJMDHEOIDJD_HCIJLMDDGGM" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_HCIJLMDDGGM),
+            "FJMDHEOIDJD_FNKHGBDBNJK" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_FNKHGBDBNJK),
+            "FJMDHEOIDJD_PHACHIFPAJP" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_PHACHIFPAJP),
+            "FJMDHEOIDJD_CEAEEFPHFIF" => ::std::option::Option::Some(CmdServerPrefsType::FJMDHEOIDJD_CEAEEFPHFIF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdServerPrefsType] = &[
-        CmdServerPrefsType::CmdServerPrefsTypeNone,
-        CmdServerPrefsType::CmdGetServerPrefsDataCsReq,
-        CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq,
-        CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq,
-        CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp,
-        CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp,
-        CmdServerPrefsType::CmdGetServerPrefsDataScRsp,
+        CmdServerPrefsType::FJMDHEOIDJD_GKJBAODJMJG,
+        CmdServerPrefsType::FJMDHEOIDJD_JJFNPGDLAGE,
+        CmdServerPrefsType::FJMDHEOIDJD_GGHGPCAJMEE,
+        CmdServerPrefsType::FJMDHEOIDJD_HCIJLMDDGGM,
+        CmdServerPrefsType::FJMDHEOIDJD_FNKHGBDBNJK,
+        CmdServerPrefsType::FJMDHEOIDJD_PHACHIFPAJP,
+        CmdServerPrefsType::FJMDHEOIDJD_CEAEEFPHFIF,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdServerPrefsType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdServerPrefsType::CmdServerPrefsTypeNone => 0,
-            CmdServerPrefsType::CmdGetServerPrefsDataCsReq => 1,
-            CmdServerPrefsType::CmdUpdateServerPrefsDataCsReq => 2,
-            CmdServerPrefsType::CmdGetAllServerPrefsDataCsReq => 3,
-            CmdServerPrefsType::CmdGetAllServerPrefsDataScRsp => 4,
-            CmdServerPrefsType::CmdUpdateServerPrefsDataScRsp => 5,
-            CmdServerPrefsType::CmdGetServerPrefsDataScRsp => 6,
+            CmdServerPrefsType::FJMDHEOIDJD_GKJBAODJMJG => 0,
+            CmdServerPrefsType::FJMDHEOIDJD_JJFNPGDLAGE => 1,
+            CmdServerPrefsType::FJMDHEOIDJD_GGHGPCAJMEE => 2,
+            CmdServerPrefsType::FJMDHEOIDJD_HCIJLMDDGGM => 3,
+            CmdServerPrefsType::FJMDHEOIDJD_FNKHGBDBNJK => 4,
+            CmdServerPrefsType::FJMDHEOIDJD_PHACHIFPAJP => 5,
+            CmdServerPrefsType::FJMDHEOIDJD_CEAEEFPHFIF => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdServerPrefsType {
 
 impl ::std::default::Default for CmdServerPrefsType {
     fn default() -> Self {
-        CmdServerPrefsType::CmdServerPrefsTypeNone
+        CmdServerPrefsType::FJMDHEOIDJD_GKJBAODJMJG
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdServerPrefsType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdServerPrefsType.proto*\x82\x02\n\x12CmdServerPrefsType\x12\x1a\
-    \n\x16CmdServerPrefsTypeNone\x10\0\x12\x1f\n\x1aCmdGetServerPrefsDataCsR\
-    eq\x10\xe5/\x12\"\n\x1dCmdUpdateServerPrefsDataCsReq\x10\x830\x12\"\n\
-    \x1dCmdGetAllServerPrefsDataCsReq\x10\xdf/\x12\"\n\x1dCmdGetAllServerPre\
-    fsDataScRsp\x10\xfa/\x12\"\n\x1dCmdUpdateServerPrefsDataScRsp\x10\x870\
-    \x12\x1f\n\x1aCmdGetServerPrefsDataScRsp\x10\xdd/b\x06proto3\
+    \n\x18CmdServerPrefsType.proto*\xe5\x01\n\x12CmdServerPrefsType\x12\x1b\
+    \n\x17FJMDHEOIDJD_GKJBAODJMJG\x10\0\x12\x1c\n\x17FJMDHEOIDJD_JJFNPGDLAGE\
+    \x10\xfa/\x12\x1c\n\x17FJMDHEOIDJD_GGHGPCAJMEE\x10\x8b0\x12\x1c\n\x17FJM\
+    DHEOIDJD_HCIJLMDDGGM\x10\xf0/\x12\x1c\n\x17FJMDHEOIDJD_FNKHGBDBNJK\x10\
+    \x9f0\x12\x1c\n\x17FJMDHEOIDJD_PHACHIFPAJP\x10\x8d0\x12\x1c\n\x17FJMDHEO\
+    IDJD_CEAEEFPHFIF\x10\x920b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

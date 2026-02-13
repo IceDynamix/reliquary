@@ -27,54 +27,54 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPunkLordType)
 pub enum CmdPunkLordType {
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordTypeNone)
-    CmdPunkLordTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakePunkLordPointRewardScRsp)
-    CmdTakePunkLordPointRewardScRsp = 3217,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordRaidTimeOutScNotify)
-    CmdPunkLordRaidTimeOutScNotify = 3210,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordDataScRsp)
-    CmdGetPunkLordDataScRsp = 3298,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakePunkLordPointRewardCsReq)
-    CmdTakePunkLordPointRewardCsReq = 3213,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordBattleRecordScRsp)
-    CmdGetPunkLordBattleRecordScRsp = 3211,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordBattleResultScNotify)
-    CmdPunkLordBattleResultScNotify = 3257,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordMonsterDataScRsp)
-    CmdGetPunkLordMonsterDataScRsp = 3273,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordDataChangeNotify)
-    CmdPunkLordDataChangeNotify = 3293,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordMonsterDataCsReq)
-    CmdGetPunkLordMonsterDataCsReq = 3276,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordBattleRecordCsReq)
-    CmdGetPunkLordBattleRecordCsReq = 3252,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSummonPunkLordMonsterCsReq)
-    CmdSummonPunkLordMonsterCsReq = 3270,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakeKilledPunkLordMonsterScoreScRsp)
-    CmdTakeKilledPunkLordMonsterScoreScRsp = 3220,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetPunkLordDataCsReq)
-    CmdGetPunkLordDataCsReq = 3201,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdStartPunkLordRaidCsReq)
-    CmdStartPunkLordRaidCsReq = 3215,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSummonPunkLordMonsterScRsp)
-    CmdSummonPunkLordMonsterScRsp = 3251,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetKilledPunkLordMonsterDataScRsp)
-    CmdGetKilledPunkLordMonsterDataScRsp = 3281,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSharePunkLordMonsterScRsp)
-    CmdSharePunkLordMonsterScRsp = 3246,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdStartPunkLordRaidScRsp)
-    CmdStartPunkLordRaidScRsp = 3292,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdSharePunkLordMonsterCsReq)
-    CmdSharePunkLordMonsterCsReq = 3250,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdGetKilledPunkLordMonsterDataCsReq)
-    CmdGetKilledPunkLordMonsterDataCsReq = 3209,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdTakeKilledPunkLordMonsterScoreCsReq)
-    CmdTakeKilledPunkLordMonsterScoreCsReq = 3247,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordMonsterInfoScNotify)
-    CmdPunkLordMonsterInfoScNotify = 3238,
-    // @@protoc_insertion_point(enum_value:CmdPunkLordType.CmdPunkLordMonsterKilledNotify)
-    CmdPunkLordMonsterKilledNotify = 3289,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_GKJBAODJMJG)
+    LCLOAOEHABM_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_PCDKANKIKFG)
+    LCLOAOEHABM_PCDKANKIKFG = 3255,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_LIJAJDIOANK)
+    LCLOAOEHABM_LIJAJDIOANK = 3283,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_JKMFBNMFBCO)
+    LCLOAOEHABM_JKMFBNMFBCO = 3247,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_OEKBPDHKJBB)
+    LCLOAOEHABM_OEKBPDHKJBB = 3214,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_PHPNCEBNPJJ)
+    LCLOAOEHABM_PHPNCEBNPJJ = 3228,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_GMLOHGKDJHO)
+    LCLOAOEHABM_GMLOHGKDJHO = 3238,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_CILGGILKLMB)
+    LCLOAOEHABM_CILGGILKLMB = 3293,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_CIHGPMHBNAD)
+    LCLOAOEHABM_CIHGPMHBNAD = 3280,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_KJOJOKAGDNK)
+    LCLOAOEHABM_KJOJOKAGDNK = 3277,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_DJEENMCNCPP)
+    LCLOAOEHABM_DJEENMCNCPP = 3262,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_INCAIAJNOFE)
+    LCLOAOEHABM_INCAIAJNOFE = 3285,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_LKEDJLFJJKM)
+    LCLOAOEHABM_LKEDJLFJJKM = 3211,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_GKBCCMGMGED)
+    LCLOAOEHABM_GKBCCMGMGED = 3220,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_LLIBPOHIHLB)
+    LCLOAOEHABM_LLIBPOHIHLB = 3245,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_PCNGGCCEKMF)
+    LCLOAOEHABM_PCNGGCCEKMF = 3279,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_BIHLEGOMCPK)
+    LCLOAOEHABM_BIHLEGOMCPK = 3278,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_OJOAPPOFPOE)
+    LCLOAOEHABM_OJOAPPOFPOE = 3209,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_DOHDNPOMJOF)
+    LCLOAOEHABM_DOHDNPOMJOF = 3275,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_GDNMGFNINCB)
+    LCLOAOEHABM_GDNMGFNINCB = 3213,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_NFHNCCOLMHL)
+    LCLOAOEHABM_NFHNCCOLMHL = 3257,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_OMKIOIMMFHD)
+    LCLOAOEHABM_OMKIOIMMFHD = 3266,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_FBJADFGIKHN)
+    LCLOAOEHABM_FBJADFGIKHN = 3295,
+    // @@protoc_insertion_point(enum_value:CmdPunkLordType.LCLOAOEHABM_DLLGFLGBCML)
+    LCLOAOEHABM_DLLGFLGBCML = 3286,
 }
 
 impl ::protobuf::Enum for CmdPunkLordType {
@@ -86,89 +86,89 @@ impl ::protobuf::Enum for CmdPunkLordType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPunkLordType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordTypeNone),
-            3217 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardScRsp),
-            3210 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify),
-            3298 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataScRsp),
-            3213 => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardCsReq),
-            3211 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp),
-            3257 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordBattleResultScNotify),
-            3273 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp),
-            3293 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordDataChangeNotify),
-            3276 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq),
-            3252 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq),
-            3270 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterCsReq),
-            3220 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp),
-            3201 => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataCsReq),
-            3215 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidCsReq),
-            3251 => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterScRsp),
-            3281 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp),
-            3246 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterScRsp),
-            3292 => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidScRsp),
-            3250 => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterCsReq),
-            3209 => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq),
-            3247 => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq),
-            3238 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterInfoScNotify),
-            3289 => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterKilledNotify),
+            0 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GKJBAODJMJG),
+            3255 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PCDKANKIKFG),
+            3283 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LIJAJDIOANK),
+            3247 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_JKMFBNMFBCO),
+            3214 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OEKBPDHKJBB),
+            3228 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PHPNCEBNPJJ),
+            3238 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GMLOHGKDJHO),
+            3293 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_CILGGILKLMB),
+            3280 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_CIHGPMHBNAD),
+            3277 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_KJOJOKAGDNK),
+            3262 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DJEENMCNCPP),
+            3285 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_INCAIAJNOFE),
+            3211 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LKEDJLFJJKM),
+            3220 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GKBCCMGMGED),
+            3245 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LLIBPOHIHLB),
+            3279 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PCNGGCCEKMF),
+            3278 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_BIHLEGOMCPK),
+            3209 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OJOAPPOFPOE),
+            3275 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DOHDNPOMJOF),
+            3213 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GDNMGFNINCB),
+            3257 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_NFHNCCOLMHL),
+            3266 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OMKIOIMMFHD),
+            3295 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_FBJADFGIKHN),
+            3286 => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DLLGFLGBCML),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPunkLordType> {
         match str {
-            "CmdPunkLordTypeNone" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordTypeNone),
-            "CmdTakePunkLordPointRewardScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardScRsp),
-            "CmdPunkLordRaidTimeOutScNotify" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify),
-            "CmdGetPunkLordDataScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataScRsp),
-            "CmdTakePunkLordPointRewardCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdTakePunkLordPointRewardCsReq),
-            "CmdGetPunkLordBattleRecordScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp),
-            "CmdPunkLordBattleResultScNotify" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordBattleResultScNotify),
-            "CmdGetPunkLordMonsterDataScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp),
-            "CmdPunkLordDataChangeNotify" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordDataChangeNotify),
-            "CmdGetPunkLordMonsterDataCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq),
-            "CmdGetPunkLordBattleRecordCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq),
-            "CmdSummonPunkLordMonsterCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterCsReq),
-            "CmdTakeKilledPunkLordMonsterScoreScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp),
-            "CmdGetPunkLordDataCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdGetPunkLordDataCsReq),
-            "CmdStartPunkLordRaidCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidCsReq),
-            "CmdSummonPunkLordMonsterScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdSummonPunkLordMonsterScRsp),
-            "CmdGetKilledPunkLordMonsterDataScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp),
-            "CmdSharePunkLordMonsterScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterScRsp),
-            "CmdStartPunkLordRaidScRsp" => ::std::option::Option::Some(CmdPunkLordType::CmdStartPunkLordRaidScRsp),
-            "CmdSharePunkLordMonsterCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdSharePunkLordMonsterCsReq),
-            "CmdGetKilledPunkLordMonsterDataCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq),
-            "CmdTakeKilledPunkLordMonsterScoreCsReq" => ::std::option::Option::Some(CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq),
-            "CmdPunkLordMonsterInfoScNotify" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterInfoScNotify),
-            "CmdPunkLordMonsterKilledNotify" => ::std::option::Option::Some(CmdPunkLordType::CmdPunkLordMonsterKilledNotify),
+            "LCLOAOEHABM_GKJBAODJMJG" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GKJBAODJMJG),
+            "LCLOAOEHABM_PCDKANKIKFG" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PCDKANKIKFG),
+            "LCLOAOEHABM_LIJAJDIOANK" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LIJAJDIOANK),
+            "LCLOAOEHABM_JKMFBNMFBCO" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_JKMFBNMFBCO),
+            "LCLOAOEHABM_OEKBPDHKJBB" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OEKBPDHKJBB),
+            "LCLOAOEHABM_PHPNCEBNPJJ" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PHPNCEBNPJJ),
+            "LCLOAOEHABM_GMLOHGKDJHO" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GMLOHGKDJHO),
+            "LCLOAOEHABM_CILGGILKLMB" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_CILGGILKLMB),
+            "LCLOAOEHABM_CIHGPMHBNAD" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_CIHGPMHBNAD),
+            "LCLOAOEHABM_KJOJOKAGDNK" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_KJOJOKAGDNK),
+            "LCLOAOEHABM_DJEENMCNCPP" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DJEENMCNCPP),
+            "LCLOAOEHABM_INCAIAJNOFE" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_INCAIAJNOFE),
+            "LCLOAOEHABM_LKEDJLFJJKM" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LKEDJLFJJKM),
+            "LCLOAOEHABM_GKBCCMGMGED" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GKBCCMGMGED),
+            "LCLOAOEHABM_LLIBPOHIHLB" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_LLIBPOHIHLB),
+            "LCLOAOEHABM_PCNGGCCEKMF" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_PCNGGCCEKMF),
+            "LCLOAOEHABM_BIHLEGOMCPK" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_BIHLEGOMCPK),
+            "LCLOAOEHABM_OJOAPPOFPOE" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OJOAPPOFPOE),
+            "LCLOAOEHABM_DOHDNPOMJOF" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DOHDNPOMJOF),
+            "LCLOAOEHABM_GDNMGFNINCB" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_GDNMGFNINCB),
+            "LCLOAOEHABM_NFHNCCOLMHL" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_NFHNCCOLMHL),
+            "LCLOAOEHABM_OMKIOIMMFHD" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_OMKIOIMMFHD),
+            "LCLOAOEHABM_FBJADFGIKHN" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_FBJADFGIKHN),
+            "LCLOAOEHABM_DLLGFLGBCML" => ::std::option::Option::Some(CmdPunkLordType::LCLOAOEHABM_DLLGFLGBCML),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPunkLordType] = &[
-        CmdPunkLordType::CmdPunkLordTypeNone,
-        CmdPunkLordType::CmdTakePunkLordPointRewardScRsp,
-        CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify,
-        CmdPunkLordType::CmdGetPunkLordDataScRsp,
-        CmdPunkLordType::CmdTakePunkLordPointRewardCsReq,
-        CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp,
-        CmdPunkLordType::CmdPunkLordBattleResultScNotify,
-        CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp,
-        CmdPunkLordType::CmdPunkLordDataChangeNotify,
-        CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq,
-        CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq,
-        CmdPunkLordType::CmdSummonPunkLordMonsterCsReq,
-        CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp,
-        CmdPunkLordType::CmdGetPunkLordDataCsReq,
-        CmdPunkLordType::CmdStartPunkLordRaidCsReq,
-        CmdPunkLordType::CmdSummonPunkLordMonsterScRsp,
-        CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp,
-        CmdPunkLordType::CmdSharePunkLordMonsterScRsp,
-        CmdPunkLordType::CmdStartPunkLordRaidScRsp,
-        CmdPunkLordType::CmdSharePunkLordMonsterCsReq,
-        CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq,
-        CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq,
-        CmdPunkLordType::CmdPunkLordMonsterInfoScNotify,
-        CmdPunkLordType::CmdPunkLordMonsterKilledNotify,
+        CmdPunkLordType::LCLOAOEHABM_GKJBAODJMJG,
+        CmdPunkLordType::LCLOAOEHABM_PCDKANKIKFG,
+        CmdPunkLordType::LCLOAOEHABM_LIJAJDIOANK,
+        CmdPunkLordType::LCLOAOEHABM_JKMFBNMFBCO,
+        CmdPunkLordType::LCLOAOEHABM_OEKBPDHKJBB,
+        CmdPunkLordType::LCLOAOEHABM_PHPNCEBNPJJ,
+        CmdPunkLordType::LCLOAOEHABM_GMLOHGKDJHO,
+        CmdPunkLordType::LCLOAOEHABM_CILGGILKLMB,
+        CmdPunkLordType::LCLOAOEHABM_CIHGPMHBNAD,
+        CmdPunkLordType::LCLOAOEHABM_KJOJOKAGDNK,
+        CmdPunkLordType::LCLOAOEHABM_DJEENMCNCPP,
+        CmdPunkLordType::LCLOAOEHABM_INCAIAJNOFE,
+        CmdPunkLordType::LCLOAOEHABM_LKEDJLFJJKM,
+        CmdPunkLordType::LCLOAOEHABM_GKBCCMGMGED,
+        CmdPunkLordType::LCLOAOEHABM_LLIBPOHIHLB,
+        CmdPunkLordType::LCLOAOEHABM_PCNGGCCEKMF,
+        CmdPunkLordType::LCLOAOEHABM_BIHLEGOMCPK,
+        CmdPunkLordType::LCLOAOEHABM_OJOAPPOFPOE,
+        CmdPunkLordType::LCLOAOEHABM_DOHDNPOMJOF,
+        CmdPunkLordType::LCLOAOEHABM_GDNMGFNINCB,
+        CmdPunkLordType::LCLOAOEHABM_NFHNCCOLMHL,
+        CmdPunkLordType::LCLOAOEHABM_OMKIOIMMFHD,
+        CmdPunkLordType::LCLOAOEHABM_FBJADFGIKHN,
+        CmdPunkLordType::LCLOAOEHABM_DLLGFLGBCML,
     ];
 }
 
@@ -180,30 +180,30 @@ impl ::protobuf::EnumFull for CmdPunkLordType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPunkLordType::CmdPunkLordTypeNone => 0,
-            CmdPunkLordType::CmdTakePunkLordPointRewardScRsp => 1,
-            CmdPunkLordType::CmdPunkLordRaidTimeOutScNotify => 2,
-            CmdPunkLordType::CmdGetPunkLordDataScRsp => 3,
-            CmdPunkLordType::CmdTakePunkLordPointRewardCsReq => 4,
-            CmdPunkLordType::CmdGetPunkLordBattleRecordScRsp => 5,
-            CmdPunkLordType::CmdPunkLordBattleResultScNotify => 6,
-            CmdPunkLordType::CmdGetPunkLordMonsterDataScRsp => 7,
-            CmdPunkLordType::CmdPunkLordDataChangeNotify => 8,
-            CmdPunkLordType::CmdGetPunkLordMonsterDataCsReq => 9,
-            CmdPunkLordType::CmdGetPunkLordBattleRecordCsReq => 10,
-            CmdPunkLordType::CmdSummonPunkLordMonsterCsReq => 11,
-            CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreScRsp => 12,
-            CmdPunkLordType::CmdGetPunkLordDataCsReq => 13,
-            CmdPunkLordType::CmdStartPunkLordRaidCsReq => 14,
-            CmdPunkLordType::CmdSummonPunkLordMonsterScRsp => 15,
-            CmdPunkLordType::CmdGetKilledPunkLordMonsterDataScRsp => 16,
-            CmdPunkLordType::CmdSharePunkLordMonsterScRsp => 17,
-            CmdPunkLordType::CmdStartPunkLordRaidScRsp => 18,
-            CmdPunkLordType::CmdSharePunkLordMonsterCsReq => 19,
-            CmdPunkLordType::CmdGetKilledPunkLordMonsterDataCsReq => 20,
-            CmdPunkLordType::CmdTakeKilledPunkLordMonsterScoreCsReq => 21,
-            CmdPunkLordType::CmdPunkLordMonsterInfoScNotify => 22,
-            CmdPunkLordType::CmdPunkLordMonsterKilledNotify => 23,
+            CmdPunkLordType::LCLOAOEHABM_GKJBAODJMJG => 0,
+            CmdPunkLordType::LCLOAOEHABM_PCDKANKIKFG => 1,
+            CmdPunkLordType::LCLOAOEHABM_LIJAJDIOANK => 2,
+            CmdPunkLordType::LCLOAOEHABM_JKMFBNMFBCO => 3,
+            CmdPunkLordType::LCLOAOEHABM_OEKBPDHKJBB => 4,
+            CmdPunkLordType::LCLOAOEHABM_PHPNCEBNPJJ => 5,
+            CmdPunkLordType::LCLOAOEHABM_GMLOHGKDJHO => 6,
+            CmdPunkLordType::LCLOAOEHABM_CILGGILKLMB => 7,
+            CmdPunkLordType::LCLOAOEHABM_CIHGPMHBNAD => 8,
+            CmdPunkLordType::LCLOAOEHABM_KJOJOKAGDNK => 9,
+            CmdPunkLordType::LCLOAOEHABM_DJEENMCNCPP => 10,
+            CmdPunkLordType::LCLOAOEHABM_INCAIAJNOFE => 11,
+            CmdPunkLordType::LCLOAOEHABM_LKEDJLFJJKM => 12,
+            CmdPunkLordType::LCLOAOEHABM_GKBCCMGMGED => 13,
+            CmdPunkLordType::LCLOAOEHABM_LLIBPOHIHLB => 14,
+            CmdPunkLordType::LCLOAOEHABM_PCNGGCCEKMF => 15,
+            CmdPunkLordType::LCLOAOEHABM_BIHLEGOMCPK => 16,
+            CmdPunkLordType::LCLOAOEHABM_OJOAPPOFPOE => 17,
+            CmdPunkLordType::LCLOAOEHABM_DOHDNPOMJOF => 18,
+            CmdPunkLordType::LCLOAOEHABM_GDNMGFNINCB => 19,
+            CmdPunkLordType::LCLOAOEHABM_NFHNCCOLMHL => 20,
+            CmdPunkLordType::LCLOAOEHABM_OMKIOIMMFHD => 21,
+            CmdPunkLordType::LCLOAOEHABM_FBJADFGIKHN => 22,
+            CmdPunkLordType::LCLOAOEHABM_DLLGFLGBCML => 23,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -211,7 +211,7 @@ impl ::protobuf::EnumFull for CmdPunkLordType {
 
 impl ::std::default::Default for CmdPunkLordType {
     fn default() -> Self {
-        CmdPunkLordType::CmdPunkLordTypeNone
+        CmdPunkLordType::LCLOAOEHABM_GKJBAODJMJG
     }
 }
 
@@ -222,25 +222,24 @@ impl CmdPunkLordType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdPunkLordType.proto*\xfd\x06\n\x0fCmdPunkLordType\x12\x17\n\x13C\
-    mdPunkLordTypeNone\x10\0\x12$\n\x1fCmdTakePunkLordPointRewardScRsp\x10\
-    \x91\x19\x12#\n\x1eCmdPunkLordRaidTimeOutScNotify\x10\x8a\x19\x12\x1c\n\
-    \x17CmdGetPunkLordDataScRsp\x10\xe2\x19\x12$\n\x1fCmdTakePunkLordPointRe\
-    wardCsReq\x10\x8d\x19\x12$\n\x1fCmdGetPunkLordBattleRecordScRsp\x10\x8b\
-    \x19\x12$\n\x1fCmdPunkLordBattleResultScNotify\x10\xb9\x19\x12#\n\x1eCmd\
-    GetPunkLordMonsterDataScRsp\x10\xc9\x19\x12\x20\n\x1bCmdPunkLordDataChan\
-    geNotify\x10\xdd\x19\x12#\n\x1eCmdGetPunkLordMonsterDataCsReq\x10\xcc\
-    \x19\x12$\n\x1fCmdGetPunkLordBattleRecordCsReq\x10\xb4\x19\x12\"\n\x1dCm\
-    dSummonPunkLordMonsterCsReq\x10\xc6\x19\x12+\n&CmdTakeKilledPunkLordMons\
-    terScoreScRsp\x10\x94\x19\x12\x1c\n\x17CmdGetPunkLordDataCsReq\x10\x81\
-    \x19\x12\x1e\n\x19CmdStartPunkLordRaidCsReq\x10\x8f\x19\x12\"\n\x1dCmdSu\
-    mmonPunkLordMonsterScRsp\x10\xb3\x19\x12)\n$CmdGetKilledPunkLordMonsterD\
-    ataScRsp\x10\xd1\x19\x12!\n\x1cCmdSharePunkLordMonsterScRsp\x10\xae\x19\
-    \x12\x1e\n\x19CmdStartPunkLordRaidScRsp\x10\xdc\x19\x12!\n\x1cCmdSharePu\
-    nkLordMonsterCsReq\x10\xb2\x19\x12)\n$CmdGetKilledPunkLordMonsterDataCsR\
-    eq\x10\x89\x19\x12+\n&CmdTakeKilledPunkLordMonsterScoreCsReq\x10\xaf\x19\
-    \x12#\n\x1eCmdPunkLordMonsterInfoScNotify\x10\xa6\x19\x12#\n\x1eCmdPunkL\
-    ordMonsterKilledNotify\x10\xd9\x19b\x06proto3\
+    \n\x15CmdPunkLordType.proto*\xe0\x05\n\x0fCmdPunkLordType\x12\x1b\n\x17L\
+    CLOAOEHABM_GKJBAODJMJG\x10\0\x12\x1c\n\x17LCLOAOEHABM_PCDKANKIKFG\x10\
+    \xb7\x19\x12\x1c\n\x17LCLOAOEHABM_LIJAJDIOANK\x10\xd3\x19\x12\x1c\n\x17L\
+    CLOAOEHABM_JKMFBNMFBCO\x10\xaf\x19\x12\x1c\n\x17LCLOAOEHABM_OEKBPDHKJBB\
+    \x10\x8e\x19\x12\x1c\n\x17LCLOAOEHABM_PHPNCEBNPJJ\x10\x9c\x19\x12\x1c\n\
+    \x17LCLOAOEHABM_GMLOHGKDJHO\x10\xa6\x19\x12\x1c\n\x17LCLOAOEHABM_CILGGIL\
+    KLMB\x10\xdd\x19\x12\x1c\n\x17LCLOAOEHABM_CIHGPMHBNAD\x10\xd0\x19\x12\
+    \x1c\n\x17LCLOAOEHABM_KJOJOKAGDNK\x10\xcd\x19\x12\x1c\n\x17LCLOAOEHABM_D\
+    JEENMCNCPP\x10\xbe\x19\x12\x1c\n\x17LCLOAOEHABM_INCAIAJNOFE\x10\xd5\x19\
+    \x12\x1c\n\x17LCLOAOEHABM_LKEDJLFJJKM\x10\x8b\x19\x12\x1c\n\x17LCLOAOEHA\
+    BM_GKBCCMGMGED\x10\x94\x19\x12\x1c\n\x17LCLOAOEHABM_LLIBPOHIHLB\x10\xad\
+    \x19\x12\x1c\n\x17LCLOAOEHABM_PCNGGCCEKMF\x10\xcf\x19\x12\x1c\n\x17LCLOA\
+    OEHABM_BIHLEGOMCPK\x10\xce\x19\x12\x1c\n\x17LCLOAOEHABM_OJOAPPOFPOE\x10\
+    \x89\x19\x12\x1c\n\x17LCLOAOEHABM_DOHDNPOMJOF\x10\xcb\x19\x12\x1c\n\x17L\
+    CLOAOEHABM_GDNMGFNINCB\x10\x8d\x19\x12\x1c\n\x17LCLOAOEHABM_NFHNCCOLMHL\
+    \x10\xb9\x19\x12\x1c\n\x17LCLOAOEHABM_OMKIOIMMFHD\x10\xc2\x19\x12\x1c\n\
+    \x17LCLOAOEHABM_FBJADFGIKHN\x10\xdf\x19\x12\x1c\n\x17LCLOAOEHABM_DLLGFLG\
+    BCML\x10\xd6\x19b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

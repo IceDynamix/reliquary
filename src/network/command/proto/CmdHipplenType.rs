@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdHipplenType)
 pub enum CmdHipplenType {
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenTypeNone)
-    CmdHipplenTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdOpenHipplenCycleCsReq)
-    CmdOpenHipplenCycleCsReq = 9002,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenAgendaScRsp)
-    CmdSetHipplenAgendaScRsp = 9012,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenOutfitCsReq)
-    CmdSetHipplenOutfitCsReq = 9025,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdTakeHipplenEndingRewardCsReq)
-    CmdTakeHipplenEndingRewardCsReq = 9043,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdTakeHipplenEndingRewardScRsp)
-    CmdTakeHipplenEndingRewardScRsp = 9013,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenDataScRsp)
-    CmdGetHipplenDataScRsp = 9035,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenInheritScRsp)
-    CmdGetHipplenInheritScRsp = 9017,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenChangeScNotify)
-    CmdHipplenChangeScNotify = 9048,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenInheritCsReq)
-    CmdGetHipplenInheritCsReq = 9007,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSettleHipplenWorkScRsp)
-    CmdSettleHipplenWorkScRsp = 9005,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenOutfitScRsp)
-    CmdSetHipplenOutfitScRsp = 9050,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenAgendaResultScNotify)
-    CmdHipplenAgendaResultScNotify = 9019,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenTraitUnlockScNotify)
-    CmdHipplenTraitUnlockScNotify = 9033,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdGetHipplenDataCsReq)
-    CmdGetHipplenDataCsReq = 9046,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSetHipplenAgendaCsReq)
-    CmdSetHipplenAgendaCsReq = 9031,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdSettleHipplenWorkCsReq)
-    CmdSettleHipplenWorkCsReq = 9009,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdHipplenCycleResultScNotify)
-    CmdHipplenCycleResultScNotify = 9010,
-    // @@protoc_insertion_point(enum_value:CmdHipplenType.CmdOpenHipplenCycleScRsp)
-    CmdOpenHipplenCycleScRsp = 9027,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_GKJBAODJMJG)
+    HBPANKALIGJ_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_ACKOMCNFFHA)
+    HBPANKALIGJ_ACKOMCNFFHA = 9047,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_NFCPBMJLFHH)
+    HBPANKALIGJ_NFCPBMJLFHH = 9003,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_MPGMCCBBPHH)
+    HBPANKALIGJ_MPGMCCBBPHH = 9043,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_GFFGHHDLEJE)
+    HBPANKALIGJ_GFFGHHDLEJE = 9050,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_GMPFHKHCNHK)
+    HBPANKALIGJ_GMPFHKHCNHK = 9024,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_BAIHACIMCJC)
+    HBPANKALIGJ_BAIHACIMCJC = 9008,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_NOHAGJNAPMF)
+    HBPANKALIGJ_NOHAGJNAPMF = 9029,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_JLCCJBAHADL)
+    HBPANKALIGJ_JLCCJBAHADL = 9038,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_BCBIPCHBIFD)
+    HBPANKALIGJ_BCBIPCHBIFD = 9020,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_ANHAFDDPDAK)
+    HBPANKALIGJ_ANHAFDDPDAK = 9006,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_LOPHJDCFDPK)
+    HBPANKALIGJ_LOPHJDCFDPK = 9011,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_PMCEKLPMCNL)
+    HBPANKALIGJ_PMCEKLPMCNL = 9007,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_INLFPIGKPLI)
+    HBPANKALIGJ_INLFPIGKPLI = 9049,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_LFJHKPCEMBA)
+    HBPANKALIGJ_LFJHKPCEMBA = 9035,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_LLCHDFBACBD)
+    HBPANKALIGJ_LLCHDFBACBD = 9031,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_AKAGLHHEFCE)
+    HBPANKALIGJ_AKAGLHHEFCE = 9033,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_NAAICFJLMOM)
+    HBPANKALIGJ_NAAICFJLMOM = 9001,
+    // @@protoc_insertion_point(enum_value:CmdHipplenType.HBPANKALIGJ_DLJEMDHGHIB)
+    HBPANKALIGJ_DLJEMDHGHIB = 9039,
 }
 
 impl ::protobuf::Enum for CmdHipplenType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for CmdHipplenType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdHipplenType> {
         match value {
-            0 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTypeNone),
-            9002 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleCsReq),
-            9012 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaScRsp),
-            9025 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitCsReq),
-            9043 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardCsReq),
-            9013 => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardScRsp),
-            9035 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataScRsp),
-            9017 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritScRsp),
-            9048 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenChangeScNotify),
-            9007 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritCsReq),
-            9005 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkScRsp),
-            9050 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitScRsp),
-            9019 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenAgendaResultScNotify),
-            9033 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTraitUnlockScNotify),
-            9046 => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataCsReq),
-            9031 => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaCsReq),
-            9009 => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkCsReq),
-            9010 => ::std::option::Option::Some(CmdHipplenType::CmdHipplenCycleResultScNotify),
-            9027 => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleScRsp),
+            0 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GKJBAODJMJG),
+            9047 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_ACKOMCNFFHA),
+            9003 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NFCPBMJLFHH),
+            9043 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_MPGMCCBBPHH),
+            9050 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GFFGHHDLEJE),
+            9024 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GMPFHKHCNHK),
+            9008 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_BAIHACIMCJC),
+            9029 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NOHAGJNAPMF),
+            9038 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_JLCCJBAHADL),
+            9020 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_BCBIPCHBIFD),
+            9006 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_ANHAFDDPDAK),
+            9011 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LOPHJDCFDPK),
+            9007 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_PMCEKLPMCNL),
+            9049 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_INLFPIGKPLI),
+            9035 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LFJHKPCEMBA),
+            9031 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LLCHDFBACBD),
+            9033 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_AKAGLHHEFCE),
+            9001 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NAAICFJLMOM),
+            9039 => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_DLJEMDHGHIB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdHipplenType> {
         match str {
-            "CmdHipplenTypeNone" => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTypeNone),
-            "CmdOpenHipplenCycleCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleCsReq),
-            "CmdSetHipplenAgendaScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaScRsp),
-            "CmdSetHipplenOutfitCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitCsReq),
-            "CmdTakeHipplenEndingRewardCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardCsReq),
-            "CmdTakeHipplenEndingRewardScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdTakeHipplenEndingRewardScRsp),
-            "CmdGetHipplenDataScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataScRsp),
-            "CmdGetHipplenInheritScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritScRsp),
-            "CmdHipplenChangeScNotify" => ::std::option::Option::Some(CmdHipplenType::CmdHipplenChangeScNotify),
-            "CmdGetHipplenInheritCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenInheritCsReq),
-            "CmdSettleHipplenWorkScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkScRsp),
-            "CmdSetHipplenOutfitScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenOutfitScRsp),
-            "CmdHipplenAgendaResultScNotify" => ::std::option::Option::Some(CmdHipplenType::CmdHipplenAgendaResultScNotify),
-            "CmdHipplenTraitUnlockScNotify" => ::std::option::Option::Some(CmdHipplenType::CmdHipplenTraitUnlockScNotify),
-            "CmdGetHipplenDataCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdGetHipplenDataCsReq),
-            "CmdSetHipplenAgendaCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdSetHipplenAgendaCsReq),
-            "CmdSettleHipplenWorkCsReq" => ::std::option::Option::Some(CmdHipplenType::CmdSettleHipplenWorkCsReq),
-            "CmdHipplenCycleResultScNotify" => ::std::option::Option::Some(CmdHipplenType::CmdHipplenCycleResultScNotify),
-            "CmdOpenHipplenCycleScRsp" => ::std::option::Option::Some(CmdHipplenType::CmdOpenHipplenCycleScRsp),
+            "HBPANKALIGJ_GKJBAODJMJG" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GKJBAODJMJG),
+            "HBPANKALIGJ_ACKOMCNFFHA" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_ACKOMCNFFHA),
+            "HBPANKALIGJ_NFCPBMJLFHH" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NFCPBMJLFHH),
+            "HBPANKALIGJ_MPGMCCBBPHH" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_MPGMCCBBPHH),
+            "HBPANKALIGJ_GFFGHHDLEJE" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GFFGHHDLEJE),
+            "HBPANKALIGJ_GMPFHKHCNHK" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_GMPFHKHCNHK),
+            "HBPANKALIGJ_BAIHACIMCJC" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_BAIHACIMCJC),
+            "HBPANKALIGJ_NOHAGJNAPMF" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NOHAGJNAPMF),
+            "HBPANKALIGJ_JLCCJBAHADL" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_JLCCJBAHADL),
+            "HBPANKALIGJ_BCBIPCHBIFD" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_BCBIPCHBIFD),
+            "HBPANKALIGJ_ANHAFDDPDAK" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_ANHAFDDPDAK),
+            "HBPANKALIGJ_LOPHJDCFDPK" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LOPHJDCFDPK),
+            "HBPANKALIGJ_PMCEKLPMCNL" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_PMCEKLPMCNL),
+            "HBPANKALIGJ_INLFPIGKPLI" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_INLFPIGKPLI),
+            "HBPANKALIGJ_LFJHKPCEMBA" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LFJHKPCEMBA),
+            "HBPANKALIGJ_LLCHDFBACBD" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_LLCHDFBACBD),
+            "HBPANKALIGJ_AKAGLHHEFCE" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_AKAGLHHEFCE),
+            "HBPANKALIGJ_NAAICFJLMOM" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_NAAICFJLMOM),
+            "HBPANKALIGJ_DLJEMDHGHIB" => ::std::option::Option::Some(CmdHipplenType::HBPANKALIGJ_DLJEMDHGHIB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdHipplenType] = &[
-        CmdHipplenType::CmdHipplenTypeNone,
-        CmdHipplenType::CmdOpenHipplenCycleCsReq,
-        CmdHipplenType::CmdSetHipplenAgendaScRsp,
-        CmdHipplenType::CmdSetHipplenOutfitCsReq,
-        CmdHipplenType::CmdTakeHipplenEndingRewardCsReq,
-        CmdHipplenType::CmdTakeHipplenEndingRewardScRsp,
-        CmdHipplenType::CmdGetHipplenDataScRsp,
-        CmdHipplenType::CmdGetHipplenInheritScRsp,
-        CmdHipplenType::CmdHipplenChangeScNotify,
-        CmdHipplenType::CmdGetHipplenInheritCsReq,
-        CmdHipplenType::CmdSettleHipplenWorkScRsp,
-        CmdHipplenType::CmdSetHipplenOutfitScRsp,
-        CmdHipplenType::CmdHipplenAgendaResultScNotify,
-        CmdHipplenType::CmdHipplenTraitUnlockScNotify,
-        CmdHipplenType::CmdGetHipplenDataCsReq,
-        CmdHipplenType::CmdSetHipplenAgendaCsReq,
-        CmdHipplenType::CmdSettleHipplenWorkCsReq,
-        CmdHipplenType::CmdHipplenCycleResultScNotify,
-        CmdHipplenType::CmdOpenHipplenCycleScRsp,
+        CmdHipplenType::HBPANKALIGJ_GKJBAODJMJG,
+        CmdHipplenType::HBPANKALIGJ_ACKOMCNFFHA,
+        CmdHipplenType::HBPANKALIGJ_NFCPBMJLFHH,
+        CmdHipplenType::HBPANKALIGJ_MPGMCCBBPHH,
+        CmdHipplenType::HBPANKALIGJ_GFFGHHDLEJE,
+        CmdHipplenType::HBPANKALIGJ_GMPFHKHCNHK,
+        CmdHipplenType::HBPANKALIGJ_BAIHACIMCJC,
+        CmdHipplenType::HBPANKALIGJ_NOHAGJNAPMF,
+        CmdHipplenType::HBPANKALIGJ_JLCCJBAHADL,
+        CmdHipplenType::HBPANKALIGJ_BCBIPCHBIFD,
+        CmdHipplenType::HBPANKALIGJ_ANHAFDDPDAK,
+        CmdHipplenType::HBPANKALIGJ_LOPHJDCFDPK,
+        CmdHipplenType::HBPANKALIGJ_PMCEKLPMCNL,
+        CmdHipplenType::HBPANKALIGJ_INLFPIGKPLI,
+        CmdHipplenType::HBPANKALIGJ_LFJHKPCEMBA,
+        CmdHipplenType::HBPANKALIGJ_LLCHDFBACBD,
+        CmdHipplenType::HBPANKALIGJ_AKAGLHHEFCE,
+        CmdHipplenType::HBPANKALIGJ_NAAICFJLMOM,
+        CmdHipplenType::HBPANKALIGJ_DLJEMDHGHIB,
     ];
 }
 
@@ -155,25 +155,25 @@ impl ::protobuf::EnumFull for CmdHipplenType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdHipplenType::CmdHipplenTypeNone => 0,
-            CmdHipplenType::CmdOpenHipplenCycleCsReq => 1,
-            CmdHipplenType::CmdSetHipplenAgendaScRsp => 2,
-            CmdHipplenType::CmdSetHipplenOutfitCsReq => 3,
-            CmdHipplenType::CmdTakeHipplenEndingRewardCsReq => 4,
-            CmdHipplenType::CmdTakeHipplenEndingRewardScRsp => 5,
-            CmdHipplenType::CmdGetHipplenDataScRsp => 6,
-            CmdHipplenType::CmdGetHipplenInheritScRsp => 7,
-            CmdHipplenType::CmdHipplenChangeScNotify => 8,
-            CmdHipplenType::CmdGetHipplenInheritCsReq => 9,
-            CmdHipplenType::CmdSettleHipplenWorkScRsp => 10,
-            CmdHipplenType::CmdSetHipplenOutfitScRsp => 11,
-            CmdHipplenType::CmdHipplenAgendaResultScNotify => 12,
-            CmdHipplenType::CmdHipplenTraitUnlockScNotify => 13,
-            CmdHipplenType::CmdGetHipplenDataCsReq => 14,
-            CmdHipplenType::CmdSetHipplenAgendaCsReq => 15,
-            CmdHipplenType::CmdSettleHipplenWorkCsReq => 16,
-            CmdHipplenType::CmdHipplenCycleResultScNotify => 17,
-            CmdHipplenType::CmdOpenHipplenCycleScRsp => 18,
+            CmdHipplenType::HBPANKALIGJ_GKJBAODJMJG => 0,
+            CmdHipplenType::HBPANKALIGJ_ACKOMCNFFHA => 1,
+            CmdHipplenType::HBPANKALIGJ_NFCPBMJLFHH => 2,
+            CmdHipplenType::HBPANKALIGJ_MPGMCCBBPHH => 3,
+            CmdHipplenType::HBPANKALIGJ_GFFGHHDLEJE => 4,
+            CmdHipplenType::HBPANKALIGJ_GMPFHKHCNHK => 5,
+            CmdHipplenType::HBPANKALIGJ_BAIHACIMCJC => 6,
+            CmdHipplenType::HBPANKALIGJ_NOHAGJNAPMF => 7,
+            CmdHipplenType::HBPANKALIGJ_JLCCJBAHADL => 8,
+            CmdHipplenType::HBPANKALIGJ_BCBIPCHBIFD => 9,
+            CmdHipplenType::HBPANKALIGJ_ANHAFDDPDAK => 10,
+            CmdHipplenType::HBPANKALIGJ_LOPHJDCFDPK => 11,
+            CmdHipplenType::HBPANKALIGJ_PMCEKLPMCNL => 12,
+            CmdHipplenType::HBPANKALIGJ_INLFPIGKPLI => 13,
+            CmdHipplenType::HBPANKALIGJ_LFJHKPCEMBA => 14,
+            CmdHipplenType::HBPANKALIGJ_LLCHDFBACBD => 15,
+            CmdHipplenType::HBPANKALIGJ_AKAGLHHEFCE => 16,
+            CmdHipplenType::HBPANKALIGJ_NAAICFJLMOM => 17,
+            CmdHipplenType::HBPANKALIGJ_DLJEMDHGHIB => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,7 +181,7 @@ impl ::protobuf::EnumFull for CmdHipplenType {
 
 impl ::std::default::Default for CmdHipplenType {
     fn default() -> Self {
-        CmdHipplenType::CmdHipplenTypeNone
+        CmdHipplenType::HBPANKALIGJ_GKJBAODJMJG
     }
 }
 
@@ -192,20 +192,20 @@ impl CmdHipplenType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdHipplenType.proto*\xf4\x04\n\x0eCmdHipplenType\x12\x16\n\x12Cmd\
-    HipplenTypeNone\x10\0\x12\x1d\n\x18CmdOpenHipplenCycleCsReq\x10\xaaF\x12\
-    \x1d\n\x18CmdSetHipplenAgendaScRsp\x10\xb4F\x12\x1d\n\x18CmdSetHipplenOu\
-    tfitCsReq\x10\xc1F\x12$\n\x1fCmdTakeHipplenEndingRewardCsReq\x10\xd3F\
-    \x12$\n\x1fCmdTakeHipplenEndingRewardScRsp\x10\xb5F\x12\x1b\n\x16CmdGetH\
-    ipplenDataScRsp\x10\xcbF\x12\x1e\n\x19CmdGetHipplenInheritScRsp\x10\xb9F\
-    \x12\x1d\n\x18CmdHipplenChangeScNotify\x10\xd8F\x12\x1e\n\x19CmdGetHippl\
-    enInheritCsReq\x10\xafF\x12\x1e\n\x19CmdSettleHipplenWorkScRsp\x10\xadF\
-    \x12\x1d\n\x18CmdSetHipplenOutfitScRsp\x10\xdaF\x12#\n\x1eCmdHipplenAgen\
-    daResultScNotify\x10\xbbF\x12\"\n\x1dCmdHipplenTraitUnlockScNotify\x10\
-    \xc9F\x12\x1b\n\x16CmdGetHipplenDataCsReq\x10\xd6F\x12\x1d\n\x18CmdSetHi\
-    pplenAgendaCsReq\x10\xc7F\x12\x1e\n\x19CmdSettleHipplenWorkCsReq\x10\xb1\
-    F\x12\"\n\x1dCmdHipplenCycleResultScNotify\x10\xb2F\x12\x1d\n\x18CmdOpen\
-    HipplenCycleScRsp\x10\xc3Fb\x06proto3\
+    \n\x14CmdHipplenType.proto*\xc9\x04\n\x0eCmdHipplenType\x12\x1b\n\x17HBP\
+    ANKALIGJ_GKJBAODJMJG\x10\0\x12\x1c\n\x17HBPANKALIGJ_ACKOMCNFFHA\x10\xd7F\
+    \x12\x1c\n\x17HBPANKALIGJ_NFCPBMJLFHH\x10\xabF\x12\x1c\n\x17HBPANKALIGJ_\
+    MPGMCCBBPHH\x10\xd3F\x12\x1c\n\x17HBPANKALIGJ_GFFGHHDLEJE\x10\xdaF\x12\
+    \x1c\n\x17HBPANKALIGJ_GMPFHKHCNHK\x10\xc0F\x12\x1c\n\x17HBPANKALIGJ_BAIH\
+    ACIMCJC\x10\xb0F\x12\x1c\n\x17HBPANKALIGJ_NOHAGJNAPMF\x10\xc5F\x12\x1c\n\
+    \x17HBPANKALIGJ_JLCCJBAHADL\x10\xceF\x12\x1c\n\x17HBPANKALIGJ_BCBIPCHBIF\
+    D\x10\xbcF\x12\x1c\n\x17HBPANKALIGJ_ANHAFDDPDAK\x10\xaeF\x12\x1c\n\x17HB\
+    PANKALIGJ_LOPHJDCFDPK\x10\xb3F\x12\x1c\n\x17HBPANKALIGJ_PMCEKLPMCNL\x10\
+    \xafF\x12\x1c\n\x17HBPANKALIGJ_INLFPIGKPLI\x10\xd9F\x12\x1c\n\x17HBPANKA\
+    LIGJ_LFJHKPCEMBA\x10\xcbF\x12\x1c\n\x17HBPANKALIGJ_LLCHDFBACBD\x10\xc7F\
+    \x12\x1c\n\x17HBPANKALIGJ_AKAGLHHEFCE\x10\xc9F\x12\x1c\n\x17HBPANKALIGJ_\
+    NAAICFJLMOM\x10\xa9F\x12\x1c\n\x17HBPANKALIGJ_DLJEMDHGHIB\x10\xcfFb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

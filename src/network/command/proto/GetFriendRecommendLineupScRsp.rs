@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRecommendLineupScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.challenge_recommend_list)
+    pub challenge_recommend_list: ::std::vec::Vec<super::KJPBNGDCDJK::KJPBNGDCDJK>,
     // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.key)
     pub key: u32,
-    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.LKFHEGKMLKI)
-    pub LKFHEGKMLKI: bool,
+    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.IBOBLIKAPNM)
+    pub IBOBLIKAPNM: bool,
+    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::AJLJOLEJLAC::AJLJOLEJLAC>,
     // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.challenge_recommend_list)
-    pub challenge_recommend_list: ::std::vec::Vec<super::KOCLBBLEILB::KOCLBBLEILB>,
-    // @@protoc_insertion_point(field:GetFriendRecommendLineupScRsp.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::LDPGCFIGHFD::LDPGCFIGHFD>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRecommendLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl GetFriendRecommendLineupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &GetFriendRecommendLineupScRsp| { &m.key },
-            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKFHEGKMLKI",
-            |m: &GetFriendRecommendLineupScRsp| { &m.LKFHEGKMLKI },
-            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.LKFHEGKMLKI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFriendRecommendLineupScRsp| { &m.retcode },
-            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "challenge_recommend_list",
             |m: &GetFriendRecommendLineupScRsp| { &m.challenge_recommend_list },
             |m: &mut GetFriendRecommendLineupScRsp| { &mut m.challenge_recommend_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "key",
+            |m: &GetFriendRecommendLineupScRsp| { &m.key },
+            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBOBLIKAPNM",
+            |m: &GetFriendRecommendLineupScRsp| { &m.IBOBLIKAPNM },
+            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.IBOBLIKAPNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &GetFriendRecommendLineupScRsp| { &m.type_ },
             |m: &mut GetFriendRecommendLineupScRsp| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetFriendRecommendLineupScRsp| { &m.retcode },
+            |m: &mut GetFriendRecommendLineupScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendRecommendLineupScRsp>(
             "GetFriendRecommendLineupScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetFriendRecommendLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.key = is.read_uint32()?;
-                },
-                24 => {
-                    self.LKFHEGKMLKI = is.read_bool()?;
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                90 => {
+                42 => {
                     self.challenge_recommend_list.push(is.read_message()?);
                 },
+                64 => {
+                    self.key = is.read_uint32()?;
+                },
                 120 => {
+                    self.IBOBLIKAPNM = is.read_bool()?;
+                },
+                56 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for GetFriendRecommendLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.key);
-        }
-        if self.LKFHEGKMLKI != false {
-            my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         for value in &self.challenge_recommend_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP) {
-            my_size += ::protobuf::rt::int32_size(15, self.type_.value());
+        if self.key != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.key);
+        }
+        if self.IBOBLIKAPNM != false {
+            my_size += 1 + 1;
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
+            my_size += ::protobuf::rt::int32_size(7, self.type_.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for GetFriendRecommendLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.challenge_recommend_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         if self.key != 0 {
-            os.write_uint32(10, self.key)?;
+            os.write_uint32(8, self.key)?;
         }
-        if self.LKFHEGKMLKI != false {
-            os.write_bool(3, self.LKFHEGKMLKI)?;
+        if self.IBOBLIKAPNM != false {
+            os.write_bool(15, self.IBOBLIKAPNM)?;
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        for v in &self.challenge_recommend_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GetFriendRecommendLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.key = 0;
-        self.LKFHEGKMLKI = false;
-        self.retcode = 0;
         self.challenge_recommend_list.clear();
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::LDPGCFIGHFD::LDPGCFIGHFD::LDPGCFIGHFD_ALOCMFAKBKP);
+        self.key = 0;
+        self.IBOBLIKAPNM = false;
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG);
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRecommendLineupScRsp {
         static instance: GetFriendRecommendLineupScRsp = GetFriendRecommendLineupScRsp {
-            key: 0,
-            LKFHEGKMLKI: false,
-            retcode: 0,
             challenge_recommend_list: ::std::vec::Vec::new(),
+            key: 0,
+            IBOBLIKAPNM: false,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,13 +220,13 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendRecommendLineupScRsp.proto\x1a\x11KOCLBBLEILB.proto\x1a\x11L\
-    DPGCFIGHFD.proto\"\xd7\x01\n\x1dGetFriendRecommendLineupScRsp\x12\x10\n\
-    \x03key\x18\n\x20\x01(\rR\x03key\x12\x20\n\x0bLKFHEGKMLKI\x18\x03\x20\
-    \x01(\x08R\x0bLKFHEGKMLKI\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retc\
-    ode\x12F\n\x18challenge_recommend_list\x18\x0b\x20\x03(\x0b2\x0c.KOCLBBL\
-    EILBR\x16challengeRecommendList\x12\x20\n\x04type\x18\x0f\x20\x01(\x0e2\
-    \x0c.LDPGCFIGHFDR\x04typeb\x06proto3\
+    \n#GetFriendRecommendLineupScRsp.proto\x1a\x11AJLJOLEJLAC.proto\x1a\x11K\
+    JPBNGDCDJK.proto\"\xd7\x01\n\x1dGetFriendRecommendLineupScRsp\x12F\n\x18\
+    challenge_recommend_list\x18\x05\x20\x03(\x0b2\x0c.KJPBNGDCDJKR\x16chall\
+    engeRecommendList\x12\x10\n\x03key\x18\x08\x20\x01(\rR\x03key\x12\x20\n\
+    \x0bIBOBLIKAPNM\x18\x0f\x20\x01(\x08R\x0bIBOBLIKAPNM\x12\x20\n\x04type\
+    \x18\x07\x20\x01(\x0e2\x0c.AJLJOLEJLACR\x04type\x12\x18\n\x07retcode\x18\
+    \r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,8 +244,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KOCLBBLEILB::file_descriptor().clone());
-            deps.push(super::LDPGCFIGHFD::file_descriptor().clone());
+            deps.push(super::AJLJOLEJLAC::file_descriptor().clone());
+            deps.push(super::KJPBNGDCDJK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendRecommendLineupScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

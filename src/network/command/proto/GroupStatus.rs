@@ -30,10 +30,10 @@ pub struct GroupStatus {
     // message fields
     // @@protoc_insertion_point(field:GroupStatus.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:GroupStatus.refresh_time)
-    pub refresh_time: i64,
     // @@protoc_insertion_point(field:GroupStatus.group_status)
     pub group_status: ::protobuf::EnumOrUnknown<super::MessageGroupStatus::MessageGroupStatus>,
+    // @@protoc_insertion_point(field:GroupStatus.refresh_time)
+    pub refresh_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStatus.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GroupStatus {
             |m: &mut GroupStatus| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "refresh_time",
-            |m: &GroupStatus| { &m.refresh_time },
-            |m: &mut GroupStatus| { &mut m.refresh_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_status",
             |m: &GroupStatus| { &m.group_status },
             |m: &mut GroupStatus| { &mut m.group_status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "refresh_time",
+            |m: &GroupStatus| { &m.refresh_time },
+            |m: &mut GroupStatus| { &mut m.refresh_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupStatus>(
             "GroupStatus",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for GroupStatus {
                 24 => {
                     self.group_id = is.read_uint32()?;
                 },
-                96 => {
-                    self.refresh_time = is.read_int64()?;
-                },
-                48 => {
+                120 => {
                     self.group_status = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.refresh_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GroupStatus {
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.group_id);
         }
-        if self.refresh_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.refresh_time);
-        }
         if self.group_status != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(6, self.group_status.value());
+            my_size += ::protobuf::rt::int32_size(15, self.group_status.value());
+        }
+        if self.refresh_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.refresh_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for GroupStatus {
         if self.group_id != 0 {
             os.write_uint32(3, self.group_id)?;
         }
-        if self.refresh_time != 0 {
-            os.write_int64(12, self.refresh_time)?;
-        }
         if self.group_status != ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.group_status))?;
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.group_status))?;
+        }
+        if self.refresh_time != 0 {
+            os.write_int64(8, self.refresh_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GroupStatus {
 
     fn clear(&mut self) {
         self.group_id = 0;
-        self.refresh_time = 0;
         self.group_status = ::protobuf::EnumOrUnknown::new(super::MessageGroupStatus::MessageGroupStatus::MESSAGE_GROUP_NONE);
+        self.refresh_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStatus {
         static instance: GroupStatus = GroupStatus {
             group_id: 0,
-            refresh_time: 0,
             group_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            refresh_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GroupStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GroupStatus.proto\x1a\x18MessageGroupStatus.proto\"\x83\x01\n\x0bG\
-    roupStatus\x12\x19\n\x08group_id\x18\x03\x20\x01(\rR\x07groupId\x12!\n\
-    \x0crefresh_time\x18\x0c\x20\x01(\x03R\x0brefreshTime\x126\n\x0cgroup_st\
-    atus\x18\x06\x20\x01(\x0e2\x13.MessageGroupStatusR\x0bgroupStatusb\x06pr\
+    roupStatus\x12\x19\n\x08group_id\x18\x03\x20\x01(\rR\x07groupId\x126\n\
+    \x0cgroup_status\x18\x0f\x20\x01(\x0e2\x13.MessageGroupStatusR\x0bgroupS\
+    tatus\x12!\n\x0crefresh_time\x18\x08\x20\x01(\x03R\x0brefreshTimeb\x06pr\
     oto3\
 ";
 

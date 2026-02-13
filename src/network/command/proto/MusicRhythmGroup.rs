@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmGroup {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmGroup.FKMKMPIPBGN)
-    pub FKMKMPIPBGN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:MusicRhythmGroup.HLALBHCHJKD)
-    pub HLALBHCHJKD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MusicRhythmGroup.AFIFICFFKOF)
+    pub AFIFICFFKOF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MusicRhythmGroup.LKJGNOMGOMG)
+    pub LKJGNOMGOMG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MusicRhythmGroup.music_group_phase)
     pub music_group_phase: u32,
     // @@protoc_insertion_point(field:MusicRhythmGroup.music_group_id)
@@ -56,14 +56,14 @@ impl MusicRhythmGroup {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FKMKMPIPBGN",
-            |m: &MusicRhythmGroup| { &m.FKMKMPIPBGN },
-            |m: &mut MusicRhythmGroup| { &mut m.FKMKMPIPBGN },
+            "AFIFICFFKOF",
+            |m: &MusicRhythmGroup| { &m.AFIFICFFKOF },
+            |m: &mut MusicRhythmGroup| { &mut m.AFIFICFFKOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HLALBHCHJKD",
-            |m: &MusicRhythmGroup| { &m.HLALBHCHJKD },
-            |m: &mut MusicRhythmGroup| { &mut m.HLALBHCHJKD },
+            "LKJGNOMGOMG",
+            |m: &MusicRhythmGroup| { &m.LKJGNOMGOMG },
+            |m: &mut MusicRhythmGroup| { &mut m.LKJGNOMGOMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "music_group_phase",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for MusicRhythmGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FKMKMPIPBGN)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AFIFICFFKOF)?;
                 },
-                48 => {
-                    self.FKMKMPIPBGN.push(is.read_uint32()?);
+                88 => {
+                    self.AFIFICFFKOF.push(is.read_uint32()?);
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HLALBHCHJKD)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LKJGNOMGOMG)?;
                 },
-                56 => {
-                    self.HLALBHCHJKD.push(is.read_uint32()?);
+                104 => {
+                    self.LKJGNOMGOMG.push(is.read_uint32()?);
                 },
-                72 => {
+                64 => {
                     self.music_group_phase = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.music_group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicRhythmGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FKMKMPIPBGN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.HLALBHCHJKD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.AFIFICFFKOF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LKJGNOMGOMG);
         if self.music_group_phase != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.music_group_phase);
+            my_size += ::protobuf::rt::uint32_size(8, self.music_group_phase);
         }
         if self.music_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.music_group_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.music_group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for MusicRhythmGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.FKMKMPIPBGN)?;
-        os.write_repeated_packed_uint32(7, &self.HLALBHCHJKD)?;
+        os.write_repeated_packed_uint32(11, &self.AFIFICFFKOF)?;
+        os.write_repeated_packed_uint32(13, &self.LKJGNOMGOMG)?;
         if self.music_group_phase != 0 {
-            os.write_uint32(9, self.music_group_phase)?;
+            os.write_uint32(8, self.music_group_phase)?;
         }
         if self.music_group_id != 0 {
-            os.write_uint32(4, self.music_group_id)?;
+            os.write_uint32(2, self.music_group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,8 +162,8 @@ impl ::protobuf::Message for MusicRhythmGroup {
     }
 
     fn clear(&mut self) {
-        self.FKMKMPIPBGN.clear();
-        self.HLALBHCHJKD.clear();
+        self.AFIFICFFKOF.clear();
+        self.LKJGNOMGOMG.clear();
         self.music_group_phase = 0;
         self.music_group_id = 0;
         self.special_fields.clear();
@@ -171,8 +171,8 @@ impl ::protobuf::Message for MusicRhythmGroup {
 
     fn default_instance() -> &'static MusicRhythmGroup {
         static instance: MusicRhythmGroup = MusicRhythmGroup {
-            FKMKMPIPBGN: ::std::vec::Vec::new(),
-            HLALBHCHJKD: ::std::vec::Vec::new(),
+            AFIFICFFKOF: ::std::vec::Vec::new(),
+            LKJGNOMGOMG: ::std::vec::Vec::new(),
             music_group_phase: 0,
             music_group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,9 +200,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmGroup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16MusicRhythmGroup.proto\"\xa8\x01\n\x10MusicRhythmGroup\x12\x20\n\
-    \x0bFKMKMPIPBGN\x18\x06\x20\x03(\rR\x0bFKMKMPIPBGN\x12\x20\n\x0bHLALBHCH\
-    JKD\x18\x07\x20\x03(\rR\x0bHLALBHCHJKD\x12*\n\x11music_group_phase\x18\t\
-    \x20\x01(\rR\x0fmusicGroupPhase\x12$\n\x0emusic_group_id\x18\x04\x20\x01\
+    \x0bAFIFICFFKOF\x18\x0b\x20\x03(\rR\x0bAFIFICFFKOF\x12\x20\n\x0bLKJGNOMG\
+    OMG\x18\r\x20\x03(\rR\x0bLKJGNOMGOMG\x12*\n\x11music_group_phase\x18\x08\
+    \x20\x01(\rR\x0fmusicGroupPhase\x12$\n\x0emusic_group_id\x18\x02\x20\x01\
     (\rR\x0cmusicGroupIdb\x06proto3\
 ";
 

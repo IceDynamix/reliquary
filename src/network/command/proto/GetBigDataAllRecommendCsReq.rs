@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetBigDataAllRecommendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.big_data_recommend_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetBigDataAllRecommendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.big_data_recommend_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.big_data_recommend_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetBigDataAllRecommendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for GetBigDataAllRecommendCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetBigDataAllRecommendCsReq.proto\x1a\x1aBigDataRecommendType.proto\"\
     k\n\x1bGetBigDataAllRecommendCsReq\x12L\n\x17big_data_recommend_type\x18\
-    \n\x20\x01(\x0e2\x15.BigDataRecommendTypeR\x14bigDataRecommendTypeb\x06p\
-    roto3\
+    \x08\x20\x01(\x0e2\x15.BigDataRecommendTypeR\x14bigDataRecommendTypeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

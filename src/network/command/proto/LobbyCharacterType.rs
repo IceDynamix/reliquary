@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyCharacterType)
 pub enum LobbyCharacterType {
-    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacter_None)
-    LobbyCharacter_None = 0,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacter_Leader)
-    LobbyCharacter_Leader = 1,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacter_Member)
-    LobbyCharacter_Member = 2,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacter_Watcher)
-    LobbyCharacter_Watcher = 3,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacterType_GMHDCNJBFAD)
+    LobbyCharacterType_GMHDCNJBFAD = 0,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacterType_HCHNLHHEMEE)
+    LobbyCharacterType_HCHNLHHEMEE = 1,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacterType_HFHHHKHLJCG)
+    LobbyCharacterType_HFHHHKHLJCG = 2,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterType.LobbyCharacterType_KBMPNMLOBOC)
+    LobbyCharacterType_KBMPNMLOBOC = 3,
 }
 
 impl ::protobuf::Enum for LobbyCharacterType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for LobbyCharacterType {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyCharacterType> {
         match value {
-            0 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_None),
-            1 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Leader),
-            2 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Member),
-            3 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Watcher),
+            0 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_GMHDCNJBFAD),
+            1 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_HCHNLHHEMEE),
+            2 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_HFHHHKHLJCG),
+            3 => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_KBMPNMLOBOC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyCharacterType> {
         match str {
-            "LobbyCharacter_None" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_None),
-            "LobbyCharacter_Leader" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Leader),
-            "LobbyCharacter_Member" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Member),
-            "LobbyCharacter_Watcher" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacter_Watcher),
+            "LobbyCharacterType_GMHDCNJBFAD" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_GMHDCNJBFAD),
+            "LobbyCharacterType_HCHNLHHEMEE" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_HCHNLHHEMEE),
+            "LobbyCharacterType_HFHHHKHLJCG" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_HFHHHKHLJCG),
+            "LobbyCharacterType_KBMPNMLOBOC" => ::std::option::Option::Some(LobbyCharacterType::LobbyCharacterType_KBMPNMLOBOC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyCharacterType] = &[
-        LobbyCharacterType::LobbyCharacter_None,
-        LobbyCharacterType::LobbyCharacter_Leader,
-        LobbyCharacterType::LobbyCharacter_Member,
-        LobbyCharacterType::LobbyCharacter_Watcher,
+        LobbyCharacterType::LobbyCharacterType_GMHDCNJBFAD,
+        LobbyCharacterType::LobbyCharacterType_HCHNLHHEMEE,
+        LobbyCharacterType::LobbyCharacterType_HFHHHKHLJCG,
+        LobbyCharacterType::LobbyCharacterType_KBMPNMLOBOC,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for LobbyCharacterType {
 
 impl ::std::default::Default for LobbyCharacterType {
     fn default() -> Self {
-        LobbyCharacterType::LobbyCharacter_None
+        LobbyCharacterType::LobbyCharacterType_GMHDCNJBFAD
     }
 }
 
@@ -97,10 +97,10 @@ impl LobbyCharacterType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18LobbyCharacterType.proto*\x7f\n\x12LobbyCharacterType\x12\x17\n\
-    \x13LobbyCharacter_None\x10\0\x12\x19\n\x15LobbyCharacter_Leader\x10\x01\
-    \x12\x19\n\x15LobbyCharacter_Member\x10\x02\x12\x1a\n\x16LobbyCharacter_\
-    Watcher\x10\x03b\x06proto3\
+    \n\x18LobbyCharacterType.proto*\xa4\x01\n\x12LobbyCharacterType\x12\"\n\
+    \x1eLobbyCharacterType_GMHDCNJBFAD\x10\0\x12\"\n\x1eLobbyCharacterType_H\
+    CHNLHHEMEE\x10\x01\x12\"\n\x1eLobbyCharacterType_HFHHHKHLJCG\x10\x02\x12\
+    \"\n\x1eLobbyCharacterType_KBMPNMLOBOC\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

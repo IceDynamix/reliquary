@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectChatBubbleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.IJOLGIEHKFN)
-    pub IJOLGIEHKFN: u32,
-    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.cur_chat_bubble)
-    pub cur_chat_bubble: u32,
     // @@protoc_insertion_point(field:SelectChatBubbleScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.cur_chat_bubble)
+    pub cur_chat_bubble: u32,
+    // @@protoc_insertion_point(field:SelectChatBubbleScRsp.PBNMNBPPJBB)
+    pub PBNMNBPPJBB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectChatBubbleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SelectChatBubbleScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJOLGIEHKFN",
-            |m: &SelectChatBubbleScRsp| { &m.IJOLGIEHKFN },
-            |m: &mut SelectChatBubbleScRsp| { &mut m.IJOLGIEHKFN },
+            "retcode",
+            |m: &SelectChatBubbleScRsp| { &m.retcode },
+            |m: &mut SelectChatBubbleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_chat_bubble",
@@ -64,9 +64,9 @@ impl SelectChatBubbleScRsp {
             |m: &mut SelectChatBubbleScRsp| { &mut m.cur_chat_bubble },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SelectChatBubbleScRsp| { &m.retcode },
-            |m: &mut SelectChatBubbleScRsp| { &mut m.retcode },
+            "PBNMNBPPJBB",
+            |m: &SelectChatBubbleScRsp| { &m.PBNMNBPPJBB },
+            |m: &mut SelectChatBubbleScRsp| { &mut m.PBNMNBPPJBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectChatBubbleScRsp>(
             "SelectChatBubbleScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.IJOLGIEHKFN = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.cur_chat_bubble = is.read_uint32()?;
                 },
                 32 => {
-                    self.retcode = is.read_uint32()?;
+                    self.PBNMNBPPJBB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IJOLGIEHKFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IJOLGIEHKFN);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.cur_chat_bubble != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.cur_chat_bubble);
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_chat_bubble);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        if self.PBNMNBPPJBB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PBNMNBPPJBB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IJOLGIEHKFN != 0 {
-            os.write_uint32(15, self.IJOLGIEHKFN)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         if self.cur_chat_bubble != 0 {
-            os.write_uint32(7, self.cur_chat_bubble)?;
+            os.write_uint32(11, self.cur_chat_bubble)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        if self.PBNMNBPPJBB != 0 {
+            os.write_uint32(4, self.PBNMNBPPJBB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SelectChatBubbleScRsp {
     }
 
     fn clear(&mut self) {
-        self.IJOLGIEHKFN = 0;
-        self.cur_chat_bubble = 0;
         self.retcode = 0;
+        self.cur_chat_bubble = 0;
+        self.PBNMNBPPJBB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectChatBubbleScRsp {
         static instance: SelectChatBubbleScRsp = SelectChatBubbleScRsp {
-            IJOLGIEHKFN: 0,
-            cur_chat_bubble: 0,
             retcode: 0,
+            cur_chat_bubble: 0,
+            PBNMNBPPJBB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for SelectChatBubbleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bSelectChatBubbleScRsp.proto\"{\n\x15SelectChatBubbleScRsp\x12\x20\
-    \n\x0bIJOLGIEHKFN\x18\x0f\x20\x01(\rR\x0bIJOLGIEHKFN\x12&\n\x0fcur_chat_\
-    bubble\x18\x07\x20\x01(\rR\rcurChatBubble\x12\x18\n\x07retcode\x18\x04\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bSelectChatBubbleScRsp.proto\"{\n\x15SelectChatBubbleScRsp\x12\x18\
+    \n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12&\n\x0fcur_chat_bubble\
+    \x18\x0b\x20\x01(\rR\rcurChatBubble\x12\x20\n\x0bPBNMNBPPJBB\x18\x04\x20\
+    \x01(\rR\x0bPBNMNBPPJBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

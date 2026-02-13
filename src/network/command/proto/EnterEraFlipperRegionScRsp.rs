@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterEraFlipperRegionScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EnterEraFlipperRegionScRsp.FILJJBCHFMG)
+    pub FILJJBCHFMG: u32,
     // @@protoc_insertion_point(field:EnterEraFlipperRegionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterEraFlipperRegionScRsp.era_flipper_region_id)
-    pub era_flipper_region_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterEraFlipperRegionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EnterEraFlipperRegionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FILJJBCHFMG",
+            |m: &EnterEraFlipperRegionScRsp| { &m.FILJJBCHFMG },
+            |m: &mut EnterEraFlipperRegionScRsp| { &mut m.FILJJBCHFMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnterEraFlipperRegionScRsp| { &m.retcode },
             |m: &mut EnterEraFlipperRegionScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "era_flipper_region_id",
-            |m: &EnterEraFlipperRegionScRsp| { &m.era_flipper_region_id },
-            |m: &mut EnterEraFlipperRegionScRsp| { &mut m.era_flipper_region_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterEraFlipperRegionScRsp>(
             "EnterEraFlipperRegionScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                120 => {
+                    self.FILJJBCHFMG = is.read_uint32()?;
                 },
-                88 => {
-                    self.era_flipper_region_id = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.FILJJBCHFMG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.FILJJBCHFMG);
         }
-        if self.era_flipper_region_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.era_flipper_region_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.FILJJBCHFMG != 0 {
+            os.write_uint32(15, self.FILJJBCHFMG)?;
         }
-        if self.era_flipper_region_id != 0 {
-            os.write_uint32(11, self.era_flipper_region_id)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EnterEraFlipperRegionScRsp {
     }
 
     fn clear(&mut self) {
+        self.FILJJBCHFMG = 0;
         self.retcode = 0;
-        self.era_flipper_region_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterEraFlipperRegionScRsp {
         static instance: EnterEraFlipperRegionScRsp = EnterEraFlipperRegionScRsp {
+            FILJJBCHFMG: 0,
             retcode: 0,
-            era_flipper_region_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EnterEraFlipperRegionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EnterEraFlipperRegionScRsp.proto\"i\n\x1aEnterEraFlipperRegionScRs\
-    p\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x121\n\x15era_flip\
-    per_region_id\x18\x0b\x20\x01(\rR\x12eraFlipperRegionIdb\x06proto3\
+    \n\x20EnterEraFlipperRegionScRsp.proto\"X\n\x1aEnterEraFlipperRegionScRs\
+    p\x12\x20\n\x0bFILJJBCHFMG\x18\x0f\x20\x01(\rR\x0bFILJJBCHFMG\x12\x18\n\
+    \x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

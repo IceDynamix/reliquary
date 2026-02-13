@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMovieRacingDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMovieRacingDataScRsp.HFANOLHMDEO)
-    pub HFANOLHMDEO: ::std::vec::Vec<super::KKFNKKDHLPB::KKFNKKDHLPB>,
+    // @@protoc_insertion_point(field:GetMovieRacingDataScRsp.IMLACCEHDBM)
+    pub IMLACCEHDBM: ::std::vec::Vec<super::LPEBDIFIEDA::LPEBDIFIEDA>,
     // @@protoc_insertion_point(field:GetMovieRacingDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetMovieRacingDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFANOLHMDEO",
-            |m: &GetMovieRacingDataScRsp| { &m.HFANOLHMDEO },
-            |m: &mut GetMovieRacingDataScRsp| { &mut m.HFANOLHMDEO },
+            "IMLACCEHDBM",
+            |m: &GetMovieRacingDataScRsp| { &m.IMLACCEHDBM },
+            |m: &mut GetMovieRacingDataScRsp| { &mut m.IMLACCEHDBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.HFANOLHMDEO.push(is.read_message()?);
+                34 => {
+                    self.IMLACCEHDBM.push(is.read_message()?);
                 },
-                72 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HFANOLHMDEO {
+        for value in &self.IMLACCEHDBM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HFANOLHMDEO {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.IMLACCEHDBM {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetMovieRacingDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.HFANOLHMDEO.clear();
+        self.IMLACCEHDBM.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMovieRacingDataScRsp {
         static instance: GetMovieRacingDataScRsp = GetMovieRacingDataScRsp {
-            HFANOLHMDEO: ::std::vec::Vec::new(),
+            IMLACCEHDBM: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMovieRacingDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetMovieRacingDataScRsp.proto\x1a\x11KKFNKKDHLPB.proto\"c\n\x17Get\
-    MovieRacingDataScRsp\x12.\n\x0bHFANOLHMDEO\x18\x05\x20\x03(\x0b2\x0c.KKF\
-    NKKDHLPBR\x0bHFANOLHMDEO\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retco\
-    deb\x06proto3\
+    \n\x1dGetMovieRacingDataScRsp.proto\x1a\x11LPEBDIFIEDA.proto\"c\n\x17Get\
+    MovieRacingDataScRsp\x12.\n\x0bIMLACCEHDBM\x18\x04\x20\x03(\x0b2\x0c.LPE\
+    BDIFIEDAR\x0bIMLACCEHDBM\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07ret\
+    codeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KKFNKKDHLPB::file_descriptor().clone());
+            deps.push(super::LPEBDIFIEDA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMovieRacingDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

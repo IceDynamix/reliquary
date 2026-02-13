@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.apply_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncApplyFriendScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.apply_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncApplyFriendScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncApplyFriendScNotify.proto\x1a\x15FriendApplyInfo.proto\"J\n\
-    \x17SyncApplyFriendScNotify\x12/\n\napply_info\x18\t\x20\x01(\x0b2\x10.F\
-    riendApplyInfoR\tapplyInfob\x06proto3\
+    \x17SyncApplyFriendScNotify\x12/\n\napply_info\x18\x0b\x20\x01(\x0b2\x10\
+    .FriendApplyInfoR\tapplyInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

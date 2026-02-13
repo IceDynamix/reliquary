@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GrowthTargetFunctionType)
 pub enum GrowthTargetFunctionType {
-    // @@protoc_insertion_point(enum_value:GrowthTargetFunctionType.GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE)
-    GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE = 0,
+    // @@protoc_insertion_point(enum_value:GrowthTargetFunctionType.NFDEKCMFMDB_LFLAJBNNJMD)
+    NFDEKCMFMDB_LFLAJBNNJMD = 0,
 }
 
 impl ::protobuf::Enum for GrowthTargetFunctionType {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for GrowthTargetFunctionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GrowthTargetFunctionType> {
         match value {
-            0 => ::std::option::Option::Some(GrowthTargetFunctionType::GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE),
+            0 => ::std::option::Option::Some(GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GrowthTargetFunctionType> {
         match str {
-            "GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE" => ::std::option::Option::Some(GrowthTargetFunctionType::GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE),
+            "NFDEKCMFMDB_LFLAJBNNJMD" => ::std::option::Option::Some(GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GrowthTargetFunctionType] = &[
-        GrowthTargetFunctionType::GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE,
+        GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for GrowthTargetFunctionType {
 
 impl ::std::default::Default for GrowthTargetFunctionType {
     fn default() -> Self {
-        GrowthTargetFunctionType::GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE
+        GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD
     }
 }
 
@@ -82,8 +82,8 @@ impl GrowthTargetFunctionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGrowthTargetFunctionType.proto*Q\n\x18GrowthTargetFunctionType\x12\
-    5\n1GROWTH_TARGET_FUNCTION_TYPE_INCLUDE_ALL_SKILLTREE\x10\0b\x06proto3\
+    \n\x1eGrowthTargetFunctionType.proto*7\n\x18GrowthTargetFunctionType\x12\
+    \x1b\n\x17NFDEKCMFMDB_LFLAJBNNJMD\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

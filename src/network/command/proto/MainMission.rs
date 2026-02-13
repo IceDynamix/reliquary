@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MainMission {
     // message fields
-    // @@protoc_insertion_point(field:MainMission.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:MainMission.custom_value_list)
     pub custom_value_list: ::std::vec::Vec<super::MissionCustomValue::MissionCustomValue>,
+    // @@protoc_insertion_point(field:MainMission.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:MainMission.status)
     pub status: ::protobuf::EnumOrUnknown<super::MissionStatus::MissionStatus>,
     // special fields
@@ -53,15 +53,15 @@ impl MainMission {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &MainMission| { &m.id },
-            |m: &mut MainMission| { &mut m.id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "custom_value_list",
             |m: &MainMission| { &m.custom_value_list },
             |m: &mut MainMission| { &mut m.custom_value_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &MainMission| { &m.id },
+            |m: &mut MainMission| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for MainMission {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.id = is.read_uint32()?;
-                },
-                90 => {
+                66 => {
                     self.custom_value_list.push(is.read_message()?);
+                },
+                96 => {
+                    self.id = is.read_uint32()?;
                 },
                 112 => {
                     self.status = is.read_enum_or_unknown()?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for MainMission {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
-        }
         for value in &self.custom_value_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.id);
+        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
             my_size += ::protobuf::rt::int32_size(14, self.status.value());
         }
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MainMission {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(7, self.id)?;
-        }
         for v in &self.custom_value_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.id != 0 {
+            os.write_uint32(12, self.id)?;
+        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE) {
             os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MainMission {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.custom_value_list.clear();
+        self.id = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::MissionStatus::MissionStatus::MISSION_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MainMission {
         static instance: MainMission = MainMission {
-            id: 0,
             custom_value_list: ::std::vec::Vec::new(),
+            id: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MainMission {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MainMission.proto\x1a\x18MissionCustomValue.proto\x1a\x13MissionSt\
-    atus.proto\"\x86\x01\n\x0bMainMission\x12\x0e\n\x02id\x18\x07\x20\x01(\r\
-    R\x02id\x12?\n\x11custom_value_list\x18\x0b\x20\x03(\x0b2\x13.MissionCus\
-    tomValueR\x0fcustomValueList\x12&\n\x06status\x18\x0e\x20\x01(\x0e2\x0e.\
-    MissionStatusR\x06statusb\x06proto3\
+    atus.proto\"\x86\x01\n\x0bMainMission\x12?\n\x11custom_value_list\x18\
+    \x08\x20\x03(\x0b2\x13.MissionCustomValueR\x0fcustomValueList\x12\x0e\n\
+    \x02id\x18\x0c\x20\x01(\rR\x02id\x12&\n\x06status\x18\x0e\x20\x01(\x0e2\
+    \x0e.MissionStatusR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

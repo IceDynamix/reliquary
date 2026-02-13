@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFeverTimeActivityType)
 pub enum CmdFeverTimeActivityType {
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdFeverTimeActivityTypeNone)
-    CmdFeverTimeActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdFeverTimeActivityBattleEndScNotify)
-    CmdFeverTimeActivityBattleEndScNotify = 7157,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdGetFeverTimeActivityDataScRsp)
-    CmdGetFeverTimeActivityDataScRsp = 7151,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdEnterFeverTimeActivityStageScRsp)
-    CmdEnterFeverTimeActivityStageScRsp = 7160,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdEnterFeverTimeActivityStageCsReq)
-    CmdEnterFeverTimeActivityStageCsReq = 7153,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.CmdGetFeverTimeActivityDataCsReq)
-    CmdGetFeverTimeActivityDataCsReq = 7152,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_GKJBAODJMJG)
+    MBJBFCEKDFN_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_KNFCJMFCCHB)
+    MBJBFCEKDFN_KNFCJMFCCHB = 7155,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_KBACGFMKCCD)
+    MBJBFCEKDFN_KBACGFMKCCD = 7159,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_COKPLNAGJGJ)
+    MBJBFCEKDFN_COKPLNAGJGJ = 7154,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_NGEAIOKGLJF)
+    MBJBFCEKDFN_NGEAIOKGLJF = 7158,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.MBJBFCEKDFN_IJNDFAAEGPB)
+    MBJBFCEKDFN_IJNDFAAEGPB = 7160,
 }
 
 impl ::protobuf::Enum for CmdFeverTimeActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdFeverTimeActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFeverTimeActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone),
-            7157 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify),
-            7151 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp),
-            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp),
-            7153 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq),
-            7152 => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq),
+            0 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_GKJBAODJMJG),
+            7155 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_KNFCJMFCCHB),
+            7159 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_KBACGFMKCCD),
+            7154 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_COKPLNAGJGJ),
+            7158 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_NGEAIOKGLJF),
+            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_IJNDFAAEGPB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFeverTimeActivityType> {
         match str {
-            "CmdFeverTimeActivityTypeNone" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone),
-            "CmdFeverTimeActivityBattleEndScNotify" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify),
-            "CmdGetFeverTimeActivityDataScRsp" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp),
-            "CmdEnterFeverTimeActivityStageScRsp" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp),
-            "CmdEnterFeverTimeActivityStageCsReq" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq),
-            "CmdGetFeverTimeActivityDataCsReq" => ::std::option::Option::Some(CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq),
+            "MBJBFCEKDFN_GKJBAODJMJG" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_GKJBAODJMJG),
+            "MBJBFCEKDFN_KNFCJMFCCHB" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_KNFCJMFCCHB),
+            "MBJBFCEKDFN_KBACGFMKCCD" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_KBACGFMKCCD),
+            "MBJBFCEKDFN_COKPLNAGJGJ" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_COKPLNAGJGJ),
+            "MBJBFCEKDFN_NGEAIOKGLJF" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_NGEAIOKGLJF),
+            "MBJBFCEKDFN_IJNDFAAEGPB" => ::std::option::Option::Some(CmdFeverTimeActivityType::MBJBFCEKDFN_IJNDFAAEGPB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFeverTimeActivityType] = &[
-        CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone,
-        CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify,
-        CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp,
-        CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp,
-        CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq,
-        CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_GKJBAODJMJG,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_KNFCJMFCCHB,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_KBACGFMKCCD,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_COKPLNAGJGJ,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_NGEAIOKGLJF,
+        CmdFeverTimeActivityType::MBJBFCEKDFN_IJNDFAAEGPB,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdFeverTimeActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone => 0,
-            CmdFeverTimeActivityType::CmdFeverTimeActivityBattleEndScNotify => 1,
-            CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataScRsp => 2,
-            CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageScRsp => 3,
-            CmdFeverTimeActivityType::CmdEnterFeverTimeActivityStageCsReq => 4,
-            CmdFeverTimeActivityType::CmdGetFeverTimeActivityDataCsReq => 5,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_GKJBAODJMJG => 0,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_KNFCJMFCCHB => 1,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_KBACGFMKCCD => 2,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_COKPLNAGJGJ => 3,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_NGEAIOKGLJF => 4,
+            CmdFeverTimeActivityType::MBJBFCEKDFN_IJNDFAAEGPB => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdFeverTimeActivityType {
 
 impl ::std::default::Default for CmdFeverTimeActivityType {
     fn default() -> Self {
-        CmdFeverTimeActivityType::CmdFeverTimeActivityTypeNone
+        CmdFeverTimeActivityType::MBJBFCEKDFN_GKJBAODJMJG
     }
 }
 
@@ -114,12 +114,12 @@ impl CmdFeverTimeActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eCmdFeverTimeActivityType.proto*\x8a\x02\n\x18CmdFeverTimeActivityT\
-    ype\x12\x20\n\x1cCmdFeverTimeActivityTypeNone\x10\0\x12*\n%CmdFeverTimeA\
-    ctivityBattleEndScNotify\x10\xf57\x12%\n\x20CmdGetFeverTimeActivityDataS\
-    cRsp\x10\xef7\x12(\n#CmdEnterFeverTimeActivityStageScRsp\x10\xf87\x12(\n\
-    #CmdEnterFeverTimeActivityStageCsReq\x10\xf17\x12%\n\x20CmdGetFeverTimeA\
-    ctivityDataCsReq\x10\xf07b\x06proto3\
+    \n\x1eCmdFeverTimeActivityType.proto*\xcd\x01\n\x18CmdFeverTimeActivityT\
+    ype\x12\x1b\n\x17MBJBFCEKDFN_GKJBAODJMJG\x10\0\x12\x1c\n\x17MBJBFCEKDFN_\
+    KNFCJMFCCHB\x10\xf37\x12\x1c\n\x17MBJBFCEKDFN_KBACGFMKCCD\x10\xf77\x12\
+    \x1c\n\x17MBJBFCEKDFN_COKPLNAGJGJ\x10\xf27\x12\x1c\n\x17MBJBFCEKDFN_NGEA\
+    IOKGLJF\x10\xf67\x12\x1c\n\x17MBJBFCEKDFN_IJNDFAAEGPB\x10\xf87b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

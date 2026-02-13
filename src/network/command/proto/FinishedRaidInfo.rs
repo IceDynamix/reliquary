@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishedRaidInfo {
     // message fields
-    // @@protoc_insertion_point(field:FinishedRaidInfo.PJMNDLGCDEL)
-    pub PJMNDLGCDEL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FinishedRaidInfo.DHPFHGICGNJ)
+    pub DHPFHGICGNJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FinishedRaidInfo.world_level)
     pub world_level: u32,
     // @@protoc_insertion_point(field:FinishedRaidInfo.raid_id)
@@ -54,9 +54,9 @@ impl FinishedRaidInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PJMNDLGCDEL",
-            |m: &FinishedRaidInfo| { &m.PJMNDLGCDEL },
-            |m: &mut FinishedRaidInfo| { &mut m.PJMNDLGCDEL },
+            "DHPFHGICGNJ",
+            |m: &FinishedRaidInfo| { &m.DHPFHGICGNJ },
+            |m: &mut FinishedRaidInfo| { &mut m.DHPFHGICGNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for FinishedRaidInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PJMNDLGCDEL)?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DHPFHGICGNJ)?;
                 },
-                96 => {
-                    self.PJMNDLGCDEL.push(is.read_uint32()?);
+                112 => {
+                    self.DHPFHGICGNJ.push(is.read_uint32()?);
                 },
                 120 => {
                     self.world_level = is.read_uint32()?;
                 },
-                8 => {
+                72 => {
                     self.raid_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for FinishedRaidInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.PJMNDLGCDEL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.DHPFHGICGNJ);
         if self.world_level != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.world_level);
         }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.raid_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for FinishedRaidInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.PJMNDLGCDEL)?;
+        os.write_repeated_packed_uint32(14, &self.DHPFHGICGNJ)?;
         if self.world_level != 0 {
             os.write_uint32(15, self.world_level)?;
         }
         if self.raid_id != 0 {
-            os.write_uint32(1, self.raid_id)?;
+            os.write_uint32(9, self.raid_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::Message for FinishedRaidInfo {
     }
 
     fn clear(&mut self) {
-        self.PJMNDLGCDEL.clear();
+        self.DHPFHGICGNJ.clear();
         self.world_level = 0;
         self.raid_id = 0;
         self.special_fields.clear();
@@ -155,7 +155,7 @@ impl ::protobuf::Message for FinishedRaidInfo {
 
     fn default_instance() -> &'static FinishedRaidInfo {
         static instance: FinishedRaidInfo = FinishedRaidInfo {
-            PJMNDLGCDEL: ::std::vec::Vec::new(),
+            DHPFHGICGNJ: ::std::vec::Vec::new(),
             world_level: 0,
             raid_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishedRaidInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FinishedRaidInfo.proto\"n\n\x10FinishedRaidInfo\x12\x20\n\x0bPJMND\
-    LGCDEL\x18\x0c\x20\x03(\rR\x0bPJMNDLGCDEL\x12\x1f\n\x0bworld_level\x18\
-    \x0f\x20\x01(\rR\nworldLevel\x12\x17\n\x07raid_id\x18\x01\x20\x01(\rR\
-    \x06raidIdb\x06proto3\
+    \n\x16FinishedRaidInfo.proto\"n\n\x10FinishedRaidInfo\x12\x20\n\x0bDHPFH\
+    GICGNJ\x18\x0e\x20\x03(\rR\x0bDHPFHGICGNJ\x12\x1f\n\x0bworld_level\x18\
+    \x0f\x20\x01(\rR\nworldLevel\x12\x17\n\x07raid_id\x18\t\x20\x01(\rR\x06r\
+    aidIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

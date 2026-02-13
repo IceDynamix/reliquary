@@ -28,62 +28,62 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerLoginCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.rogue_get_info)
-    pub rogue_get_info: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.FBMIGAEJNLP)
-    pub FBMIGAEJNLP: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.CADBAJGHNFA)
-    pub CADBAJGHNFA: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.OJEEBHFDIGB)
-    pub OJEEBHFDIGB: bool,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.MBFGDABCJKH)
-    pub MBFGDABCJKH: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.PNNFPKPOBEL)
-    pub PNNFPKPOBEL: ::protobuf::MessageField<super::CCBODEGCNDC::CCBODEGCNDC>,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.AJBGAEOLNBF)
-    pub AJBGAEOLNBF: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.BFAJPPKEMBM)
-    pub BFAJPPKEMBM: u32,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.NLJMLCHGMPJ)
-    pub NLJMLCHGMPJ: u32,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.KAPHEPPJCEA)
-    pub KAPHEPPJCEA: ::protobuf::MessageField<super::EOELKFEOFKN::EOELKFEOFKN>,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.EOGMKAHHAHO)
-    pub EOGMKAHHAHO: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.login_random)
-    pub login_random: u64,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.HOJBIKBJFCJ)
-    pub HOJBIKBJFCJ: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.platform)
-    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.DOLKNDAIOJK)
-    pub DOLKNDAIOJK: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.MJMFEEPMIPB)
-    pub MJMFEEPMIPB: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.OOHNIECMBPL)
-    pub OOHNIECMBPL: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.client_res_version)
-    pub client_res_version: u32,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.DNNKCBPBEOJ)
-    pub DNNKCBPBEOJ: bool,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.MLBHGOBEHKM)
-    pub MLBHGOBEHKM: u32,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.JNDKKNHLHNF)
-    pub JNDKKNHLHNF: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.CAELGDIFDBJ)
-    pub CAELGDIFDBJ: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.MBKGCFAHGMD)
-    pub MBKGCFAHGMD: u32,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.HDOFAALCKKJ)
-    pub HDOFAALCKKJ: ::protobuf::EnumOrUnknown<super::LanguageType::LanguageType>,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.client_version)
-    pub client_version: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.CHMIEPHMKAK)
-    pub CHMIEPHMKAK: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.ACDJHMKNINK)
+    pub ACDJHMKNINK: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.OFGHIMGPGPG)
+    pub OFGHIMGPGPG: u32,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.OBLOFPPKFAI)
+    pub OBLOFPPKFAI: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerLoginCsReq.signature)
     pub signature: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerLoginCsReq.EHJPMKNAFBP)
-    pub EHJPMKNAFBP: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.client_res_version)
+    pub client_res_version: u32,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.HGIEKCONPMC)
+    pub HGIEKCONPMC: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.OMIKEJHOPCJ)
+    pub OMIKEJHOPCJ: bool,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.client_version)
+    pub client_version: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.FCODKFNONBA)
+    pub FCODKFNONBA: bool,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.platform)
+    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.IAKJFCGPLNB)
+    pub IAKJFCGPLNB: u32,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.DOFBNHBLIKC)
+    pub DOFBNHBLIKC: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.KMJOIKPAPKO)
+    pub KMJOIKPAPKO: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.HMAGFPOADBP)
+    pub HMAGFPOADBP: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.AJPJBPKONND)
+    pub AJPJBPKONND: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.LMBBPGKGPFI)
+    pub LMBBPGKGPFI: u32,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.JKBOGKHCAPB)
+    pub JKBOGKHCAPB: u32,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.MEOICGBAIIF)
+    pub MEOICGBAIIF: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.HBKBKNGEEIG)
+    pub HBKBKNGEEIG: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.login_random)
+    pub login_random: u64,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.POCCKMKANJB)
+    pub POCCKMKANJB: ::protobuf::EnumOrUnknown<super::LanguageType::LanguageType>,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.NHIODBFICFA)
+    pub NHIODBFICFA: ::protobuf::MessageField<super::DBHMICGFGPO::DBHMICGFGPO>,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.COABLFMMNHO)
+    pub COABLFMMNHO: ::protobuf::MessageField<super::MMGJIHLNIAB::MMGJIHLNIAB>,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.FOPMKFCNMKN)
+    pub FOPMKFCNMKN: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.IDINFFIDJKL)
+    pub IDINFFIDJKL: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.rogue_get_info)
+    pub rogue_get_info: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.KBJHEBEDMON)
+    pub KBJHEBEDMON: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerLoginCsReq.CHMLHANDGBF)
+    pub CHMLHANDGBF: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerLoginCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -104,134 +104,19 @@ impl PlayerLoginCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(28);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_get_info",
-            |m: &PlayerLoginCsReq| { &m.rogue_get_info },
-            |m: &mut PlayerLoginCsReq| { &mut m.rogue_get_info },
+            "ACDJHMKNINK",
+            |m: &PlayerLoginCsReq| { &m.ACDJHMKNINK },
+            |m: &mut PlayerLoginCsReq| { &mut m.ACDJHMKNINK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBMIGAEJNLP",
-            |m: &PlayerLoginCsReq| { &m.FBMIGAEJNLP },
-            |m: &mut PlayerLoginCsReq| { &mut m.FBMIGAEJNLP },
+            "OFGHIMGPGPG",
+            |m: &PlayerLoginCsReq| { &m.OFGHIMGPGPG },
+            |m: &mut PlayerLoginCsReq| { &mut m.OFGHIMGPGPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CADBAJGHNFA",
-            |m: &PlayerLoginCsReq| { &m.CADBAJGHNFA },
-            |m: &mut PlayerLoginCsReq| { &mut m.CADBAJGHNFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJEEBHFDIGB",
-            |m: &PlayerLoginCsReq| { &m.OJEEBHFDIGB },
-            |m: &mut PlayerLoginCsReq| { &mut m.OJEEBHFDIGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBFGDABCJKH",
-            |m: &PlayerLoginCsReq| { &m.MBFGDABCJKH },
-            |m: &mut PlayerLoginCsReq| { &mut m.MBFGDABCJKH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CCBODEGCNDC::CCBODEGCNDC>(
-            "PNNFPKPOBEL",
-            |m: &PlayerLoginCsReq| { &m.PNNFPKPOBEL },
-            |m: &mut PlayerLoginCsReq| { &mut m.PNNFPKPOBEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJBGAEOLNBF",
-            |m: &PlayerLoginCsReq| { &m.AJBGAEOLNBF },
-            |m: &mut PlayerLoginCsReq| { &mut m.AJBGAEOLNBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFAJPPKEMBM",
-            |m: &PlayerLoginCsReq| { &m.BFAJPPKEMBM },
-            |m: &mut PlayerLoginCsReq| { &mut m.BFAJPPKEMBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NLJMLCHGMPJ",
-            |m: &PlayerLoginCsReq| { &m.NLJMLCHGMPJ },
-            |m: &mut PlayerLoginCsReq| { &mut m.NLJMLCHGMPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EOELKFEOFKN::EOELKFEOFKN>(
-            "KAPHEPPJCEA",
-            |m: &PlayerLoginCsReq| { &m.KAPHEPPJCEA },
-            |m: &mut PlayerLoginCsReq| { &mut m.KAPHEPPJCEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOGMKAHHAHO",
-            |m: &PlayerLoginCsReq| { &m.EOGMKAHHAHO },
-            |m: &mut PlayerLoginCsReq| { &mut m.EOGMKAHHAHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "login_random",
-            |m: &PlayerLoginCsReq| { &m.login_random },
-            |m: &mut PlayerLoginCsReq| { &mut m.login_random },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOJBIKBJFCJ",
-            |m: &PlayerLoginCsReq| { &m.HOJBIKBJFCJ },
-            |m: &mut PlayerLoginCsReq| { &mut m.HOJBIKBJFCJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &PlayerLoginCsReq| { &m.platform },
-            |m: &mut PlayerLoginCsReq| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOLKNDAIOJK",
-            |m: &PlayerLoginCsReq| { &m.DOLKNDAIOJK },
-            |m: &mut PlayerLoginCsReq| { &mut m.DOLKNDAIOJK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJMFEEPMIPB",
-            |m: &PlayerLoginCsReq| { &m.MJMFEEPMIPB },
-            |m: &mut PlayerLoginCsReq| { &mut m.MJMFEEPMIPB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOHNIECMBPL",
-            |m: &PlayerLoginCsReq| { &m.OOHNIECMBPL },
-            |m: &mut PlayerLoginCsReq| { &mut m.OOHNIECMBPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_res_version",
-            |m: &PlayerLoginCsReq| { &m.client_res_version },
-            |m: &mut PlayerLoginCsReq| { &mut m.client_res_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNNKCBPBEOJ",
-            |m: &PlayerLoginCsReq| { &m.DNNKCBPBEOJ },
-            |m: &mut PlayerLoginCsReq| { &mut m.DNNKCBPBEOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLBHGOBEHKM",
-            |m: &PlayerLoginCsReq| { &m.MLBHGOBEHKM },
-            |m: &mut PlayerLoginCsReq| { &mut m.MLBHGOBEHKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNDKKNHLHNF",
-            |m: &PlayerLoginCsReq| { &m.JNDKKNHLHNF },
-            |m: &mut PlayerLoginCsReq| { &mut m.JNDKKNHLHNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAELGDIFDBJ",
-            |m: &PlayerLoginCsReq| { &m.CAELGDIFDBJ },
-            |m: &mut PlayerLoginCsReq| { &mut m.CAELGDIFDBJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBKGCFAHGMD",
-            |m: &PlayerLoginCsReq| { &m.MBKGCFAHGMD },
-            |m: &mut PlayerLoginCsReq| { &mut m.MBKGCFAHGMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HDOFAALCKKJ",
-            |m: &PlayerLoginCsReq| { &m.HDOFAALCKKJ },
-            |m: &mut PlayerLoginCsReq| { &mut m.HDOFAALCKKJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_version",
-            |m: &PlayerLoginCsReq| { &m.client_version },
-            |m: &mut PlayerLoginCsReq| { &mut m.client_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHMIEPHMKAK",
-            |m: &PlayerLoginCsReq| { &m.CHMIEPHMKAK },
-            |m: &mut PlayerLoginCsReq| { &mut m.CHMIEPHMKAK },
+            "OBLOFPPKFAI",
+            |m: &PlayerLoginCsReq| { &m.OBLOFPPKFAI },
+            |m: &mut PlayerLoginCsReq| { &mut m.OBLOFPPKFAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "signature",
@@ -239,9 +124,124 @@ impl PlayerLoginCsReq {
             |m: &mut PlayerLoginCsReq| { &mut m.signature },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHJPMKNAFBP",
-            |m: &PlayerLoginCsReq| { &m.EHJPMKNAFBP },
-            |m: &mut PlayerLoginCsReq| { &mut m.EHJPMKNAFBP },
+            "client_res_version",
+            |m: &PlayerLoginCsReq| { &m.client_res_version },
+            |m: &mut PlayerLoginCsReq| { &mut m.client_res_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGIEKCONPMC",
+            |m: &PlayerLoginCsReq| { &m.HGIEKCONPMC },
+            |m: &mut PlayerLoginCsReq| { &mut m.HGIEKCONPMC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMIKEJHOPCJ",
+            |m: &PlayerLoginCsReq| { &m.OMIKEJHOPCJ },
+            |m: &mut PlayerLoginCsReq| { &mut m.OMIKEJHOPCJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_version",
+            |m: &PlayerLoginCsReq| { &m.client_version },
+            |m: &mut PlayerLoginCsReq| { &mut m.client_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FCODKFNONBA",
+            |m: &PlayerLoginCsReq| { &m.FCODKFNONBA },
+            |m: &mut PlayerLoginCsReq| { &mut m.FCODKFNONBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &PlayerLoginCsReq| { &m.platform },
+            |m: &mut PlayerLoginCsReq| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAKJFCGPLNB",
+            |m: &PlayerLoginCsReq| { &m.IAKJFCGPLNB },
+            |m: &mut PlayerLoginCsReq| { &mut m.IAKJFCGPLNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOFBNHBLIKC",
+            |m: &PlayerLoginCsReq| { &m.DOFBNHBLIKC },
+            |m: &mut PlayerLoginCsReq| { &mut m.DOFBNHBLIKC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KMJOIKPAPKO",
+            |m: &PlayerLoginCsReq| { &m.KMJOIKPAPKO },
+            |m: &mut PlayerLoginCsReq| { &mut m.KMJOIKPAPKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HMAGFPOADBP",
+            |m: &PlayerLoginCsReq| { &m.HMAGFPOADBP },
+            |m: &mut PlayerLoginCsReq| { &mut m.HMAGFPOADBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AJPJBPKONND",
+            |m: &PlayerLoginCsReq| { &m.AJPJBPKONND },
+            |m: &mut PlayerLoginCsReq| { &mut m.AJPJBPKONND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMBBPGKGPFI",
+            |m: &PlayerLoginCsReq| { &m.LMBBPGKGPFI },
+            |m: &mut PlayerLoginCsReq| { &mut m.LMBBPGKGPFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JKBOGKHCAPB",
+            |m: &PlayerLoginCsReq| { &m.JKBOGKHCAPB },
+            |m: &mut PlayerLoginCsReq| { &mut m.JKBOGKHCAPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MEOICGBAIIF",
+            |m: &PlayerLoginCsReq| { &m.MEOICGBAIIF },
+            |m: &mut PlayerLoginCsReq| { &mut m.MEOICGBAIIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBKBKNGEEIG",
+            |m: &PlayerLoginCsReq| { &m.HBKBKNGEEIG },
+            |m: &mut PlayerLoginCsReq| { &mut m.HBKBKNGEEIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "login_random",
+            |m: &PlayerLoginCsReq| { &m.login_random },
+            |m: &mut PlayerLoginCsReq| { &mut m.login_random },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "POCCKMKANJB",
+            |m: &PlayerLoginCsReq| { &m.POCCKMKANJB },
+            |m: &mut PlayerLoginCsReq| { &mut m.POCCKMKANJB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DBHMICGFGPO::DBHMICGFGPO>(
+            "NHIODBFICFA",
+            |m: &PlayerLoginCsReq| { &m.NHIODBFICFA },
+            |m: &mut PlayerLoginCsReq| { &mut m.NHIODBFICFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MMGJIHLNIAB::MMGJIHLNIAB>(
+            "COABLFMMNHO",
+            |m: &PlayerLoginCsReq| { &m.COABLFMMNHO },
+            |m: &mut PlayerLoginCsReq| { &mut m.COABLFMMNHO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FOPMKFCNMKN",
+            |m: &PlayerLoginCsReq| { &m.FOPMKFCNMKN },
+            |m: &mut PlayerLoginCsReq| { &mut m.FOPMKFCNMKN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IDINFFIDJKL",
+            |m: &PlayerLoginCsReq| { &m.IDINFFIDJKL },
+            |m: &mut PlayerLoginCsReq| { &mut m.IDINFFIDJKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_get_info",
+            |m: &PlayerLoginCsReq| { &m.rogue_get_info },
+            |m: &mut PlayerLoginCsReq| { &mut m.rogue_get_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBJHEBEDMON",
+            |m: &PlayerLoginCsReq| { &m.KBJHEBEDMON },
+            |m: &mut PlayerLoginCsReq| { &mut m.KBJHEBEDMON },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHMLHANDGBF",
+            |m: &PlayerLoginCsReq| { &m.CHMLHANDGBF },
+            |m: &mut PlayerLoginCsReq| { &mut m.CHMLHANDGBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerLoginCsReq>(
             "PlayerLoginCsReq",
@@ -261,89 +261,89 @@ impl ::protobuf::Message for PlayerLoginCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.rogue_get_info = is.read_string()?;
+                26 => {
+                    self.ACDJHMKNINK = is.read_string()?;
                 },
-                114 => {
-                    self.FBMIGAEJNLP = is.read_string()?;
+                11128 => {
+                    self.OFGHIMGPGPG = is.read_uint32()?;
                 },
-                82 => {
-                    self.CADBAJGHNFA = is.read_string()?;
-                },
-                4176 => {
-                    self.OJEEBHFDIGB = is.read_bool()?;
+                10 => {
+                    self.OBLOFPPKFAI = is.read_string()?;
                 },
                 50 => {
-                    self.MBFGDABCJKH = is.read_string()?;
-                },
-                6306 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PNNFPKPOBEL)?;
-                },
-                15234 => {
-                    self.AJBGAEOLNBF = is.read_string()?;
-                },
-                15528 => {
-                    self.BFAJPPKEMBM = is.read_uint32()?;
-                },
-                8464 => {
-                    self.NLJMLCHGMPJ = is.read_uint32()?;
-                },
-                6018 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KAPHEPPJCEA)?;
-                },
-                3474 => {
-                    self.EOGMKAHHAHO = is.read_string()?;
-                },
-                8 => {
-                    self.login_random = is.read_uint64()?;
-                },
-                4978 => {
-                    self.HOJBIKBJFCJ = is.read_string()?;
-                },
-                64 => {
-                    self.platform = is.read_enum_or_unknown()?;
-                },
-                8386 => {
-                    self.DOLKNDAIOJK = is.read_string()?;
-                },
-                16138 => {
-                    self.MJMFEEPMIPB = is.read_string()?;
-                },
-                18 => {
-                    self.OOHNIECMBPL = is.read_string()?;
-                },
-                104 => {
-                    self.client_res_version = is.read_uint32()?;
-                },
-                10056 => {
-                    self.DNNKCBPBEOJ = is.read_bool()?;
-                },
-                24 => {
-                    self.MLBHGOBEHKM = is.read_uint32()?;
-                },
-                8338 => {
-                    self.JNDKKNHLHNF = is.read_string()?;
-                },
-                74 => {
-                    self.CAELGDIFDBJ = is.read_string()?;
-                },
-                4896 => {
-                    self.MBKGCFAHGMD = is.read_uint32()?;
-                },
-                56 => {
-                    self.HDOFAALCKKJ = is.read_enum_or_unknown()?;
-                },
-                98 => {
-                    self.client_version = is.read_string()?;
-                },
-                34 => {
-                    self.CHMIEPHMKAK = is.read_string()?;
-                },
-                42 => {
                     self.signature = is.read_string()?;
                 },
-                122 => {
-                    self.EHJPMKNAFBP = is.read_string()?;
+                56 => {
+                    self.client_res_version = is.read_uint32()?;
+                },
+                66 => {
+                    self.HGIEKCONPMC = is.read_string()?;
+                },
+                13256 => {
+                    self.OMIKEJHOPCJ = is.read_bool()?;
+                },
+                82 => {
+                    self.client_version = is.read_string()?;
+                },
+                14640 => {
+                    self.FCODKFNONBA = is.read_bool()?;
+                },
+                32 => {
+                    self.platform = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.IAKJFCGPLNB = is.read_uint32()?;
+                },
+                4490 => {
+                    self.DOFBNHBLIKC = is.read_string()?;
+                },
+                90 => {
+                    self.KMJOIKPAPKO = is.read_string()?;
+                },
+                18 => {
+                    self.HMAGFPOADBP = is.read_string()?;
+                },
+                14298 => {
+                    self.AJPJBPKONND = is.read_string()?;
+                },
+                6688 => {
+                    self.LMBBPGKGPFI = is.read_uint32()?;
+                },
+                15392 => {
+                    self.JKBOGKHCAPB = is.read_uint32()?;
+                },
+                114 => {
+                    self.MEOICGBAIIF = is.read_string()?;
+                },
+                4922 => {
+                    self.HBKBKNGEEIG = is.read_string()?;
+                },
+                40 => {
+                    self.login_random = is.read_uint64()?;
+                },
+                120 => {
+                    self.POCCKMKANJB = is.read_enum_or_unknown()?;
+                },
+                7346 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NHIODBFICFA)?;
+                },
+                1810 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COABLFMMNHO)?;
+                },
+                3970 => {
+                    self.FOPMKFCNMKN = is.read_string()?;
+                },
+                98 => {
+                    self.IDINFFIDJKL = is.read_string()?;
+                },
+                74 => {
+                    self.rogue_get_info = is.read_string()?;
+                },
+                3802 => {
+                    self.KBJHEBEDMON = is.read_string()?;
+                },
+                13778 => {
+                    self.CHMLHANDGBF = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -357,91 +357,91 @@ impl ::protobuf::Message for PlayerLoginCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.rogue_get_info.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.rogue_get_info);
+        if !self.ACDJHMKNINK.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.ACDJHMKNINK);
         }
-        if !self.FBMIGAEJNLP.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.FBMIGAEJNLP);
+        if self.OFGHIMGPGPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1391, self.OFGHIMGPGPG);
         }
-        if !self.CADBAJGHNFA.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.CADBAJGHNFA);
-        }
-        if self.OJEEBHFDIGB != false {
-            my_size += 2 + 1;
-        }
-        if !self.MBFGDABCJKH.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.MBFGDABCJKH);
-        }
-        if let Some(v) = self.PNNFPKPOBEL.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.AJBGAEOLNBF.is_empty() {
-            my_size += ::protobuf::rt::string_size(1904, &self.AJBGAEOLNBF);
-        }
-        if self.BFAJPPKEMBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1941, self.BFAJPPKEMBM);
-        }
-        if self.NLJMLCHGMPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1058, self.NLJMLCHGMPJ);
-        }
-        if let Some(v) = self.KAPHEPPJCEA.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.EOGMKAHHAHO.is_empty() {
-            my_size += ::protobuf::rt::string_size(434, &self.EOGMKAHHAHO);
-        }
-        if self.login_random != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.login_random);
-        }
-        if !self.HOJBIKBJFCJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(622, &self.HOJBIKBJFCJ);
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(8, self.platform.value());
-        }
-        if !self.DOLKNDAIOJK.is_empty() {
-            my_size += ::protobuf::rt::string_size(1048, &self.DOLKNDAIOJK);
-        }
-        if !self.MJMFEEPMIPB.is_empty() {
-            my_size += ::protobuf::rt::string_size(2017, &self.MJMFEEPMIPB);
-        }
-        if !self.OOHNIECMBPL.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.OOHNIECMBPL);
-        }
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.client_res_version);
-        }
-        if self.DNNKCBPBEOJ != false {
-            my_size += 2 + 1;
-        }
-        if self.MLBHGOBEHKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MLBHGOBEHKM);
-        }
-        if !self.JNDKKNHLHNF.is_empty() {
-            my_size += ::protobuf::rt::string_size(1042, &self.JNDKKNHLHNF);
-        }
-        if !self.CAELGDIFDBJ.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.CAELGDIFDBJ);
-        }
-        if self.MBKGCFAHGMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(612, self.MBKGCFAHGMD);
-        }
-        if self.HDOFAALCKKJ != ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE) {
-            my_size += ::protobuf::rt::int32_size(7, self.HDOFAALCKKJ.value());
-        }
-        if !self.client_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.client_version);
-        }
-        if !self.CHMIEPHMKAK.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.CHMIEPHMKAK);
+        if !self.OBLOFPPKFAI.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.OBLOFPPKFAI);
         }
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.signature);
+            my_size += ::protobuf::rt::string_size(6, &self.signature);
         }
-        if !self.EHJPMKNAFBP.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.EHJPMKNAFBP);
+        if self.client_res_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.client_res_version);
+        }
+        if !self.HGIEKCONPMC.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.HGIEKCONPMC);
+        }
+        if self.OMIKEJHOPCJ != false {
+            my_size += 2 + 1;
+        }
+        if !self.client_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.client_version);
+        }
+        if self.FCODKFNONBA != false {
+            my_size += 2 + 1;
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(4, self.platform.value());
+        }
+        if self.IAKJFCGPLNB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IAKJFCGPLNB);
+        }
+        if !self.DOFBNHBLIKC.is_empty() {
+            my_size += ::protobuf::rt::string_size(561, &self.DOFBNHBLIKC);
+        }
+        if !self.KMJOIKPAPKO.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.KMJOIKPAPKO);
+        }
+        if !self.HMAGFPOADBP.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.HMAGFPOADBP);
+        }
+        if !self.AJPJBPKONND.is_empty() {
+            my_size += ::protobuf::rt::string_size(1787, &self.AJPJBPKONND);
+        }
+        if self.LMBBPGKGPFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(836, self.LMBBPGKGPFI);
+        }
+        if self.JKBOGKHCAPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1924, self.JKBOGKHCAPB);
+        }
+        if !self.MEOICGBAIIF.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.MEOICGBAIIF);
+        }
+        if !self.HBKBKNGEEIG.is_empty() {
+            my_size += ::protobuf::rt::string_size(615, &self.HBKBKNGEEIG);
+        }
+        if self.login_random != 0 {
+            my_size += ::protobuf::rt::uint64_size(5, self.login_random);
+        }
+        if self.POCCKMKANJB != ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.POCCKMKANJB.value());
+        }
+        if let Some(v) = self.NHIODBFICFA.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.COABLFMMNHO.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.FOPMKFCNMKN.is_empty() {
+            my_size += ::protobuf::rt::string_size(496, &self.FOPMKFCNMKN);
+        }
+        if !self.IDINFFIDJKL.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.IDINFFIDJKL);
+        }
+        if !self.rogue_get_info.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.rogue_get_info);
+        }
+        if !self.KBJHEBEDMON.is_empty() {
+            my_size += ::protobuf::rt::string_size(475, &self.KBJHEBEDMON);
+        }
+        if !self.CHMLHANDGBF.is_empty() {
+            my_size += ::protobuf::rt::string_size(1722, &self.CHMLHANDGBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -449,89 +449,89 @@ impl ::protobuf::Message for PlayerLoginCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.rogue_get_info.is_empty() {
-            os.write_string(11, &self.rogue_get_info)?;
+        if !self.ACDJHMKNINK.is_empty() {
+            os.write_string(3, &self.ACDJHMKNINK)?;
         }
-        if !self.FBMIGAEJNLP.is_empty() {
-            os.write_string(14, &self.FBMIGAEJNLP)?;
+        if self.OFGHIMGPGPG != 0 {
+            os.write_uint32(1391, self.OFGHIMGPGPG)?;
         }
-        if !self.CADBAJGHNFA.is_empty() {
-            os.write_string(10, &self.CADBAJGHNFA)?;
-        }
-        if self.OJEEBHFDIGB != false {
-            os.write_bool(522, self.OJEEBHFDIGB)?;
-        }
-        if !self.MBFGDABCJKH.is_empty() {
-            os.write_string(6, &self.MBFGDABCJKH)?;
-        }
-        if let Some(v) = self.PNNFPKPOBEL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(788, v, os)?;
-        }
-        if !self.AJBGAEOLNBF.is_empty() {
-            os.write_string(1904, &self.AJBGAEOLNBF)?;
-        }
-        if self.BFAJPPKEMBM != 0 {
-            os.write_uint32(1941, self.BFAJPPKEMBM)?;
-        }
-        if self.NLJMLCHGMPJ != 0 {
-            os.write_uint32(1058, self.NLJMLCHGMPJ)?;
-        }
-        if let Some(v) = self.KAPHEPPJCEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(752, v, os)?;
-        }
-        if !self.EOGMKAHHAHO.is_empty() {
-            os.write_string(434, &self.EOGMKAHHAHO)?;
-        }
-        if self.login_random != 0 {
-            os.write_uint64(1, self.login_random)?;
-        }
-        if !self.HOJBIKBJFCJ.is_empty() {
-            os.write_string(622, &self.HOJBIKBJFCJ)?;
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.platform))?;
-        }
-        if !self.DOLKNDAIOJK.is_empty() {
-            os.write_string(1048, &self.DOLKNDAIOJK)?;
-        }
-        if !self.MJMFEEPMIPB.is_empty() {
-            os.write_string(2017, &self.MJMFEEPMIPB)?;
-        }
-        if !self.OOHNIECMBPL.is_empty() {
-            os.write_string(2, &self.OOHNIECMBPL)?;
-        }
-        if self.client_res_version != 0 {
-            os.write_uint32(13, self.client_res_version)?;
-        }
-        if self.DNNKCBPBEOJ != false {
-            os.write_bool(1257, self.DNNKCBPBEOJ)?;
-        }
-        if self.MLBHGOBEHKM != 0 {
-            os.write_uint32(3, self.MLBHGOBEHKM)?;
-        }
-        if !self.JNDKKNHLHNF.is_empty() {
-            os.write_string(1042, &self.JNDKKNHLHNF)?;
-        }
-        if !self.CAELGDIFDBJ.is_empty() {
-            os.write_string(9, &self.CAELGDIFDBJ)?;
-        }
-        if self.MBKGCFAHGMD != 0 {
-            os.write_uint32(612, self.MBKGCFAHGMD)?;
-        }
-        if self.HDOFAALCKKJ != ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.HDOFAALCKKJ))?;
-        }
-        if !self.client_version.is_empty() {
-            os.write_string(12, &self.client_version)?;
-        }
-        if !self.CHMIEPHMKAK.is_empty() {
-            os.write_string(4, &self.CHMIEPHMKAK)?;
+        if !self.OBLOFPPKFAI.is_empty() {
+            os.write_string(1, &self.OBLOFPPKFAI)?;
         }
         if !self.signature.is_empty() {
-            os.write_string(5, &self.signature)?;
+            os.write_string(6, &self.signature)?;
         }
-        if !self.EHJPMKNAFBP.is_empty() {
-            os.write_string(15, &self.EHJPMKNAFBP)?;
+        if self.client_res_version != 0 {
+            os.write_uint32(7, self.client_res_version)?;
+        }
+        if !self.HGIEKCONPMC.is_empty() {
+            os.write_string(8, &self.HGIEKCONPMC)?;
+        }
+        if self.OMIKEJHOPCJ != false {
+            os.write_bool(1657, self.OMIKEJHOPCJ)?;
+        }
+        if !self.client_version.is_empty() {
+            os.write_string(10, &self.client_version)?;
+        }
+        if self.FCODKFNONBA != false {
+            os.write_bool(1830, self.FCODKFNONBA)?;
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
+        if self.IAKJFCGPLNB != 0 {
+            os.write_uint32(13, self.IAKJFCGPLNB)?;
+        }
+        if !self.DOFBNHBLIKC.is_empty() {
+            os.write_string(561, &self.DOFBNHBLIKC)?;
+        }
+        if !self.KMJOIKPAPKO.is_empty() {
+            os.write_string(11, &self.KMJOIKPAPKO)?;
+        }
+        if !self.HMAGFPOADBP.is_empty() {
+            os.write_string(2, &self.HMAGFPOADBP)?;
+        }
+        if !self.AJPJBPKONND.is_empty() {
+            os.write_string(1787, &self.AJPJBPKONND)?;
+        }
+        if self.LMBBPGKGPFI != 0 {
+            os.write_uint32(836, self.LMBBPGKGPFI)?;
+        }
+        if self.JKBOGKHCAPB != 0 {
+            os.write_uint32(1924, self.JKBOGKHCAPB)?;
+        }
+        if !self.MEOICGBAIIF.is_empty() {
+            os.write_string(14, &self.MEOICGBAIIF)?;
+        }
+        if !self.HBKBKNGEEIG.is_empty() {
+            os.write_string(615, &self.HBKBKNGEEIG)?;
+        }
+        if self.login_random != 0 {
+            os.write_uint64(5, self.login_random)?;
+        }
+        if self.POCCKMKANJB != ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.POCCKMKANJB))?;
+        }
+        if let Some(v) = self.NHIODBFICFA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(918, v, os)?;
+        }
+        if let Some(v) = self.COABLFMMNHO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(226, v, os)?;
+        }
+        if !self.FOPMKFCNMKN.is_empty() {
+            os.write_string(496, &self.FOPMKFCNMKN)?;
+        }
+        if !self.IDINFFIDJKL.is_empty() {
+            os.write_string(12, &self.IDINFFIDJKL)?;
+        }
+        if !self.rogue_get_info.is_empty() {
+            os.write_string(9, &self.rogue_get_info)?;
+        }
+        if !self.KBJHEBEDMON.is_empty() {
+            os.write_string(475, &self.KBJHEBEDMON)?;
+        }
+        if !self.CHMLHANDGBF.is_empty() {
+            os.write_string(1722, &self.CHMLHANDGBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -550,67 +550,67 @@ impl ::protobuf::Message for PlayerLoginCsReq {
     }
 
     fn clear(&mut self) {
-        self.rogue_get_info.clear();
-        self.FBMIGAEJNLP.clear();
-        self.CADBAJGHNFA.clear();
-        self.OJEEBHFDIGB = false;
-        self.MBFGDABCJKH.clear();
-        self.PNNFPKPOBEL.clear();
-        self.AJBGAEOLNBF.clear();
-        self.BFAJPPKEMBM = 0;
-        self.NLJMLCHGMPJ = 0;
-        self.KAPHEPPJCEA.clear();
-        self.EOGMKAHHAHO.clear();
-        self.login_random = 0;
-        self.HOJBIKBJFCJ.clear();
-        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.DOLKNDAIOJK.clear();
-        self.MJMFEEPMIPB.clear();
-        self.OOHNIECMBPL.clear();
-        self.client_res_version = 0;
-        self.DNNKCBPBEOJ = false;
-        self.MLBHGOBEHKM = 0;
-        self.JNDKKNHLHNF.clear();
-        self.CAELGDIFDBJ.clear();
-        self.MBKGCFAHGMD = 0;
-        self.HDOFAALCKKJ = ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE);
-        self.client_version.clear();
-        self.CHMIEPHMKAK.clear();
+        self.ACDJHMKNINK.clear();
+        self.OFGHIMGPGPG = 0;
+        self.OBLOFPPKFAI.clear();
         self.signature.clear();
-        self.EHJPMKNAFBP.clear();
+        self.client_res_version = 0;
+        self.HGIEKCONPMC.clear();
+        self.OMIKEJHOPCJ = false;
+        self.client_version.clear();
+        self.FCODKFNONBA = false;
+        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
+        self.IAKJFCGPLNB = 0;
+        self.DOFBNHBLIKC.clear();
+        self.KMJOIKPAPKO.clear();
+        self.HMAGFPOADBP.clear();
+        self.AJPJBPKONND.clear();
+        self.LMBBPGKGPFI = 0;
+        self.JKBOGKHCAPB = 0;
+        self.MEOICGBAIIF.clear();
+        self.HBKBKNGEEIG.clear();
+        self.login_random = 0;
+        self.POCCKMKANJB = ::protobuf::EnumOrUnknown::new(super::LanguageType::LanguageType::LANGUAGE_NONE);
+        self.NHIODBFICFA.clear();
+        self.COABLFMMNHO.clear();
+        self.FOPMKFCNMKN.clear();
+        self.IDINFFIDJKL.clear();
+        self.rogue_get_info.clear();
+        self.KBJHEBEDMON.clear();
+        self.CHMLHANDGBF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerLoginCsReq {
         static instance: PlayerLoginCsReq = PlayerLoginCsReq {
-            rogue_get_info: ::std::string::String::new(),
-            FBMIGAEJNLP: ::std::string::String::new(),
-            CADBAJGHNFA: ::std::string::String::new(),
-            OJEEBHFDIGB: false,
-            MBFGDABCJKH: ::std::string::String::new(),
-            PNNFPKPOBEL: ::protobuf::MessageField::none(),
-            AJBGAEOLNBF: ::std::string::String::new(),
-            BFAJPPKEMBM: 0,
-            NLJMLCHGMPJ: 0,
-            KAPHEPPJCEA: ::protobuf::MessageField::none(),
-            EOGMKAHHAHO: ::std::string::String::new(),
-            login_random: 0,
-            HOJBIKBJFCJ: ::std::string::String::new(),
-            platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            DOLKNDAIOJK: ::std::string::String::new(),
-            MJMFEEPMIPB: ::std::string::String::new(),
-            OOHNIECMBPL: ::std::string::String::new(),
-            client_res_version: 0,
-            DNNKCBPBEOJ: false,
-            MLBHGOBEHKM: 0,
-            JNDKKNHLHNF: ::std::string::String::new(),
-            CAELGDIFDBJ: ::std::string::String::new(),
-            MBKGCFAHGMD: 0,
-            HDOFAALCKKJ: ::protobuf::EnumOrUnknown::from_i32(0),
-            client_version: ::std::string::String::new(),
-            CHMIEPHMKAK: ::std::string::String::new(),
+            ACDJHMKNINK: ::std::string::String::new(),
+            OFGHIMGPGPG: 0,
+            OBLOFPPKFAI: ::std::string::String::new(),
             signature: ::std::string::String::new(),
-            EHJPMKNAFBP: ::std::string::String::new(),
+            client_res_version: 0,
+            HGIEKCONPMC: ::std::string::String::new(),
+            OMIKEJHOPCJ: false,
+            client_version: ::std::string::String::new(),
+            FCODKFNONBA: false,
+            platform: ::protobuf::EnumOrUnknown::from_i32(0),
+            IAKJFCGPLNB: 0,
+            DOFBNHBLIKC: ::std::string::String::new(),
+            KMJOIKPAPKO: ::std::string::String::new(),
+            HMAGFPOADBP: ::std::string::String::new(),
+            AJPJBPKONND: ::std::string::String::new(),
+            LMBBPGKGPFI: 0,
+            JKBOGKHCAPB: 0,
+            MEOICGBAIIF: ::std::string::String::new(),
+            HBKBKNGEEIG: ::std::string::String::new(),
+            login_random: 0,
+            POCCKMKANJB: ::protobuf::EnumOrUnknown::from_i32(0),
+            NHIODBFICFA: ::protobuf::MessageField::none(),
+            COABLFMMNHO: ::protobuf::MessageField::none(),
+            FOPMKFCNMKN: ::std::string::String::new(),
+            IDINFFIDJKL: ::std::string::String::new(),
+            rogue_get_info: ::std::string::String::new(),
+            KBJHEBEDMON: ::std::string::String::new(),
+            CHMLHANDGBF: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -635,34 +635,34 @@ impl ::protobuf::reflect::ProtobufValue for PlayerLoginCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16PlayerLoginCsReq.proto\x1a\x11CCBODEGCNDC.proto\x1a\x11EOELKFEOFKN\
-    .proto\x1a\x12LanguageType.proto\x1a\x12PlatformType.proto\"\x9d\x08\n\
-    \x10PlayerLoginCsReq\x12$\n\x0erogue_get_info\x18\x0b\x20\x01(\tR\x0crog\
-    ueGetInfo\x12\x20\n\x0bFBMIGAEJNLP\x18\x0e\x20\x01(\tR\x0bFBMIGAEJNLP\
-    \x12\x20\n\x0bCADBAJGHNFA\x18\n\x20\x01(\tR\x0bCADBAJGHNFA\x12!\n\x0bOJE\
-    EBHFDIGB\x18\x8a\x04\x20\x01(\x08R\x0bOJEEBHFDIGB\x12\x20\n\x0bMBFGDABCJ\
-    KH\x18\x06\x20\x01(\tR\x0bMBFGDABCJKH\x12/\n\x0bPNNFPKPOBEL\x18\x94\x06\
-    \x20\x01(\x0b2\x0c.CCBODEGCNDCR\x0bPNNFPKPOBEL\x12!\n\x0bAJBGAEOLNBF\x18\
-    \xf0\x0e\x20\x01(\tR\x0bAJBGAEOLNBF\x12!\n\x0bBFAJPPKEMBM\x18\x95\x0f\
-    \x20\x01(\rR\x0bBFAJPPKEMBM\x12!\n\x0bNLJMLCHGMPJ\x18\xa2\x08\x20\x01(\r\
-    R\x0bNLJMLCHGMPJ\x12/\n\x0bKAPHEPPJCEA\x18\xf0\x05\x20\x01(\x0b2\x0c.EOE\
-    LKFEOFKNR\x0bKAPHEPPJCEA\x12!\n\x0bEOGMKAHHAHO\x18\xb2\x03\x20\x01(\tR\
-    \x0bEOGMKAHHAHO\x12!\n\x0clogin_random\x18\x01\x20\x01(\x04R\x0bloginRan\
-    dom\x12!\n\x0bHOJBIKBJFCJ\x18\xee\x04\x20\x01(\tR\x0bHOJBIKBJFCJ\x12)\n\
-    \x08platform\x18\x08\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12!\n\
-    \x0bDOLKNDAIOJK\x18\x98\x08\x20\x01(\tR\x0bDOLKNDAIOJK\x12!\n\x0bMJMFEEP\
-    MIPB\x18\xe1\x0f\x20\x01(\tR\x0bMJMFEEPMIPB\x12\x20\n\x0bOOHNIECMBPL\x18\
-    \x02\x20\x01(\tR\x0bOOHNIECMBPL\x12,\n\x12client_res_version\x18\r\x20\
-    \x01(\rR\x10clientResVersion\x12!\n\x0bDNNKCBPBEOJ\x18\xe9\t\x20\x01(\
-    \x08R\x0bDNNKCBPBEOJ\x12\x20\n\x0bMLBHGOBEHKM\x18\x03\x20\x01(\rR\x0bMLB\
-    HGOBEHKM\x12!\n\x0bJNDKKNHLHNF\x18\x92\x08\x20\x01(\tR\x0bJNDKKNHLHNF\
-    \x12\x20\n\x0bCAELGDIFDBJ\x18\t\x20\x01(\tR\x0bCAELGDIFDBJ\x12!\n\x0bMBK\
-    GCFAHGMD\x18\xe4\x04\x20\x01(\rR\x0bMBKGCFAHGMD\x12/\n\x0bHDOFAALCKKJ\
-    \x18\x07\x20\x01(\x0e2\r.LanguageTypeR\x0bHDOFAALCKKJ\x12%\n\x0eclient_v\
-    ersion\x18\x0c\x20\x01(\tR\rclientVersion\x12\x20\n\x0bCHMIEPHMKAK\x18\
-    \x04\x20\x01(\tR\x0bCHMIEPHMKAK\x12\x1c\n\tsignature\x18\x05\x20\x01(\tR\
-    \tsignature\x12\x20\n\x0bEHJPMKNAFBP\x18\x0f\x20\x01(\tR\x0bEHJPMKNAFBPb\
-    \x06proto3\
+    \n\x16PlayerLoginCsReq.proto\x1a\x11DBHMICGFGPO.proto\x1a\x12LanguageTyp\
+    e.proto\x1a\x11MMGJIHLNIAB.proto\x1a\x12PlatformType.proto\"\x9d\x08\n\
+    \x10PlayerLoginCsReq\x12\x20\n\x0bACDJHMKNINK\x18\x03\x20\x01(\tR\x0bACD\
+    JHMKNINK\x12!\n\x0bOFGHIMGPGPG\x18\xef\n\x20\x01(\rR\x0bOFGHIMGPGPG\x12\
+    \x20\n\x0bOBLOFPPKFAI\x18\x01\x20\x01(\tR\x0bOBLOFPPKFAI\x12\x1c\n\tsign\
+    ature\x18\x06\x20\x01(\tR\tsignature\x12,\n\x12client_res_version\x18\
+    \x07\x20\x01(\rR\x10clientResVersion\x12\x20\n\x0bHGIEKCONPMC\x18\x08\
+    \x20\x01(\tR\x0bHGIEKCONPMC\x12!\n\x0bOMIKEJHOPCJ\x18\xf9\x0c\x20\x01(\
+    \x08R\x0bOMIKEJHOPCJ\x12%\n\x0eclient_version\x18\n\x20\x01(\tR\rclientV\
+    ersion\x12!\n\x0bFCODKFNONBA\x18\xa6\x0e\x20\x01(\x08R\x0bFCODKFNONBA\
+    \x12)\n\x08platform\x18\x04\x20\x01(\x0e2\r.PlatformTypeR\x08platform\
+    \x12\x20\n\x0bIAKJFCGPLNB\x18\r\x20\x01(\rR\x0bIAKJFCGPLNB\x12!\n\x0bDOF\
+    BNHBLIKC\x18\xb1\x04\x20\x01(\tR\x0bDOFBNHBLIKC\x12\x20\n\x0bKMJOIKPAPKO\
+    \x18\x0b\x20\x01(\tR\x0bKMJOIKPAPKO\x12\x20\n\x0bHMAGFPOADBP\x18\x02\x20\
+    \x01(\tR\x0bHMAGFPOADBP\x12!\n\x0bAJPJBPKONND\x18\xfb\r\x20\x01(\tR\x0bA\
+    JPJBPKONND\x12!\n\x0bLMBBPGKGPFI\x18\xc4\x06\x20\x01(\rR\x0bLMBBPGKGPFI\
+    \x12!\n\x0bJKBOGKHCAPB\x18\x84\x0f\x20\x01(\rR\x0bJKBOGKHCAPB\x12\x20\n\
+    \x0bMEOICGBAIIF\x18\x0e\x20\x01(\tR\x0bMEOICGBAIIF\x12!\n\x0bHBKBKNGEEIG\
+    \x18\xe7\x04\x20\x01(\tR\x0bHBKBKNGEEIG\x12!\n\x0clogin_random\x18\x05\
+    \x20\x01(\x04R\x0bloginRandom\x12/\n\x0bPOCCKMKANJB\x18\x0f\x20\x01(\x0e\
+    2\r.LanguageTypeR\x0bPOCCKMKANJB\x12/\n\x0bNHIODBFICFA\x18\x96\x07\x20\
+    \x01(\x0b2\x0c.DBHMICGFGPOR\x0bNHIODBFICFA\x12/\n\x0bCOABLFMMNHO\x18\xe2\
+    \x01\x20\x01(\x0b2\x0c.MMGJIHLNIABR\x0bCOABLFMMNHO\x12!\n\x0bFOPMKFCNMKN\
+    \x18\xf0\x03\x20\x01(\tR\x0bFOPMKFCNMKN\x12\x20\n\x0bIDINFFIDJKL\x18\x0c\
+    \x20\x01(\tR\x0bIDINFFIDJKL\x12$\n\x0erogue_get_info\x18\t\x20\x01(\tR\
+    \x0crogueGetInfo\x12!\n\x0bKBJHEBEDMON\x18\xdb\x03\x20\x01(\tR\x0bKBJHEB\
+    EDMON\x12!\n\x0bCHMLHANDGBF\x18\xba\r\x20\x01(\tR\x0bCHMLHANDGBFb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -680,9 +680,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::CCBODEGCNDC::file_descriptor().clone());
-            deps.push(super::EOELKFEOFKN::file_descriptor().clone());
+            deps.push(super::DBHMICGFGPO::file_descriptor().clone());
             deps.push(super::LanguageType::file_descriptor().clone());
+            deps.push(super::MMGJIHLNIAB::file_descriptor().clone());
             deps.push(super::PlatformType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerLoginCsReq::generated_message_descriptor_data());

@@ -35,7 +35,7 @@ pub struct EntitySnapshot {
     // @@protoc_insertion_point(field:EntitySnapshot.motion_info)
     pub motion_info: ::protobuf::MessageField<super::MotionInfoSnapshot::MotionInfoSnapshot>,
     // @@protoc_insertion_point(field:EntitySnapshot.map_object_type)
-    pub map_object_type: ::protobuf::EnumOrUnknown<super::ECKDOLOPPAL::ECKDOLOPPAL>,
+    pub map_object_type: ::protobuf::EnumOrUnknown<super::LDCADCBBMIM::LDCADCBBMIM>,
     // @@protoc_insertion_point(field:EntitySnapshot.prop)
     pub prop: ::protobuf::MessageField<super::PropInfoSnapshot::PropInfoSnapshot>,
     // special fields
@@ -137,7 +137,7 @@ impl ::protobuf::Message for EntitySnapshot {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::ECKDOLOPPAL::ECKDOLOPPAL::ECKDOLOPPAL_OBKDMOABJII) {
+        if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::LDCADCBBMIM::LDCADCBBMIM::LDCADCBBMIM_LAGFIADIDPH) {
             my_size += ::protobuf::rt::int32_size(4, self.map_object_type.value());
         }
         if let Some(v) = self.prop.as_ref() {
@@ -159,7 +159,7 @@ impl ::protobuf::Message for EntitySnapshot {
         if let Some(v) = self.motion_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::ECKDOLOPPAL::ECKDOLOPPAL::ECKDOLOPPAL_OBKDMOABJII) {
+        if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::LDCADCBBMIM::LDCADCBBMIM::LDCADCBBMIM_LAGFIADIDPH) {
             os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.map_object_type))?;
         }
         if let Some(v) = self.prop.as_ref() {
@@ -185,7 +185,7 @@ impl ::protobuf::Message for EntitySnapshot {
         self.entity_id = 0;
         self.instance_id = 0;
         self.motion_info.clear();
-        self.map_object_type = ::protobuf::EnumOrUnknown::new(super::ECKDOLOPPAL::ECKDOLOPPAL::ECKDOLOPPAL_OBKDMOABJII);
+        self.map_object_type = ::protobuf::EnumOrUnknown::new(super::LDCADCBBMIM::LDCADCBBMIM::LDCADCBBMIM_LAGFIADIDPH);
         self.prop.clear();
         self.special_fields.clear();
     }
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for EntitySnapshot {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14EntitySnapshot.proto\x1a\x11ECKDOLOPPAL.proto\x1a\x18MotionInfoSna\
+    \n\x14EntitySnapshot.proto\x1a\x11LDCADCBBMIM.proto\x1a\x18MotionInfoSna\
     pshot.proto\x1a\x16PropInfoSnapshot.proto\"\xe1\x01\n\x0eEntitySnapshot\
     \x12\x1b\n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1f\n\x0binsta\
     nce_id\x18\x02\x20\x01(\rR\ninstanceId\x124\n\x0bmotion_info\x18\x03\x20\
     \x01(\x0b2\x13.MotionInfoSnapshotR\nmotionInfo\x124\n\x0fmap_object_type\
-    \x18\x04\x20\x01(\x0e2\x0c.ECKDOLOPPALR\rmapObjectType\x12%\n\x04prop\
+    \x18\x04\x20\x01(\x0e2\x0c.LDCADCBBMIMR\rmapObjectType\x12%\n\x04prop\
     \x18\x05\x20\x01(\x0b2\x11.PropInfoSnapshotR\x04propb\x06proto3\
 ";
 
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ECKDOLOPPAL::file_descriptor().clone());
+            deps.push(super::LDCADCBBMIM::file_descriptor().clone());
             deps.push(super::MotionInfoSnapshot::file_descriptor().clone());
             deps.push(super::PropInfoSnapshot::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneMapInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneMapInfo.floor_id)
-    pub floor_id: u32,
-    // @@protoc_insertion_point(field:SceneMapInfo.maze_group_list)
-    pub maze_group_list: ::std::vec::Vec<super::MazeGroup::MazeGroup>,
-    // @@protoc_insertion_point(field:SceneMapInfo.maze_prop_list)
-    pub maze_prop_list: ::std::vec::Vec<super::MazePropState::MazePropState>,
-    // @@protoc_insertion_point(field:SceneMapInfo.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SceneMapInfo.unlock_teleport_list)
     pub unlock_teleport_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneMapInfo.entry_id)
-    pub entry_id: u32,
-    // @@protoc_insertion_point(field:SceneMapInfo.chest_list)
-    pub chest_list: ::std::vec::Vec<super::ChestInfo::ChestInfo>,
-    // @@protoc_insertion_point(field:SceneMapInfo.floor_saved_data)
-    pub floor_saved_data: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:SceneMapInfo.maze_group_list)
+    pub maze_group_list: ::std::vec::Vec<super::MazeGroup::MazeGroup>,
     // @@protoc_insertion_point(field:SceneMapInfo.lighten_section_list)
     pub lighten_section_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneMapInfo.PJJNMANPNKE)
-    pub PJJNMANPNKE: ::std::vec::Vec<super::KEHGNHFFFEO::KEHGNHFFFEO>,
-    // @@protoc_insertion_point(field:SceneMapInfo.maze_prop_extra_state_list)
-    pub maze_prop_extra_state_list: ::std::vec::Vec<super::MazePropExtraState::MazePropExtraState>,
     // @@protoc_insertion_point(field:SceneMapInfo.cur_map_entry_id)
     pub cur_map_entry_id: u32,
+    // @@protoc_insertion_point(field:SceneMapInfo.chest_monster_list)
+    pub chest_monster_list: ::std::vec::Vec<super::HAHOPEPNBFO::HAHOPEPNBFO>,
+    // @@protoc_insertion_point(field:SceneMapInfo.chest_list)
+    pub chest_list: ::std::vec::Vec<super::ChestInfo::ChestInfo>,
+    // @@protoc_insertion_point(field:SceneMapInfo.floor_id)
+    pub floor_id: u32,
+    // @@protoc_insertion_point(field:SceneMapInfo.floor_saved_data)
+    pub floor_saved_data: ::std::collections::HashMap<::std::string::String, i32>,
     // @@protoc_insertion_point(field:SceneMapInfo.dimension_id)
     pub dimension_id: u32,
+    // @@protoc_insertion_point(field:SceneMapInfo.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SceneMapInfo.client_group_mission_info)
+    pub client_group_mission_info: ::protobuf::MessageField<super::MissionStatusBySceneInfo::MissionStatusBySceneInfo>,
+    // @@protoc_insertion_point(field:SceneMapInfo.maze_prop_list)
+    pub maze_prop_list: ::std::vec::Vec<super::MazePropState::MazePropState>,
+    // @@protoc_insertion_point(field:SceneMapInfo.entry_id)
+    pub entry_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneMapInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,10 +73,10 @@ impl SceneMapInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &SceneMapInfo| { &m.floor_id },
-            |m: &mut SceneMapInfo| { &mut m.floor_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "unlock_teleport_list",
+            |m: &SceneMapInfo| { &m.unlock_teleport_list },
+            |m: &mut SceneMapInfo| { &mut m.unlock_teleport_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "maze_group_list",
@@ -84,59 +84,59 @@ impl SceneMapInfo {
             |m: &mut SceneMapInfo| { &mut m.maze_group_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_prop_list",
-            |m: &SceneMapInfo| { &m.maze_prop_list },
-            |m: &mut SceneMapInfo| { &mut m.maze_prop_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SceneMapInfo| { &m.retcode },
-            |m: &mut SceneMapInfo| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlock_teleport_list",
-            |m: &SceneMapInfo| { &m.unlock_teleport_list },
-            |m: &mut SceneMapInfo| { &mut m.unlock_teleport_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &SceneMapInfo| { &m.entry_id },
-            |m: &mut SceneMapInfo| { &mut m.entry_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "chest_list",
-            |m: &SceneMapInfo| { &m.chest_list },
-            |m: &mut SceneMapInfo| { &mut m.chest_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "floor_saved_data",
-            |m: &SceneMapInfo| { &m.floor_saved_data },
-            |m: &mut SceneMapInfo| { &mut m.floor_saved_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lighten_section_list",
             |m: &SceneMapInfo| { &m.lighten_section_list },
             |m: &mut SceneMapInfo| { &mut m.lighten_section_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PJJNMANPNKE",
-            |m: &SceneMapInfo| { &m.PJJNMANPNKE },
-            |m: &mut SceneMapInfo| { &mut m.PJJNMANPNKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "maze_prop_extra_state_list",
-            |m: &SceneMapInfo| { &m.maze_prop_extra_state_list },
-            |m: &mut SceneMapInfo| { &mut m.maze_prop_extra_state_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_map_entry_id",
             |m: &SceneMapInfo| { &m.cur_map_entry_id },
             |m: &mut SceneMapInfo| { &mut m.cur_map_entry_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "chest_monster_list",
+            |m: &SceneMapInfo| { &m.chest_monster_list },
+            |m: &mut SceneMapInfo| { &mut m.chest_monster_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "chest_list",
+            |m: &SceneMapInfo| { &m.chest_list },
+            |m: &mut SceneMapInfo| { &mut m.chest_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &SceneMapInfo| { &m.floor_id },
+            |m: &mut SceneMapInfo| { &mut m.floor_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "floor_saved_data",
+            |m: &SceneMapInfo| { &m.floor_saved_data },
+            |m: &mut SceneMapInfo| { &mut m.floor_saved_data },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dimension_id",
             |m: &SceneMapInfo| { &m.dimension_id },
             |m: &mut SceneMapInfo| { &mut m.dimension_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SceneMapInfo| { &m.retcode },
+            |m: &mut SceneMapInfo| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionStatusBySceneInfo::MissionStatusBySceneInfo>(
+            "client_group_mission_info",
+            |m: &SceneMapInfo| { &m.client_group_mission_info },
+            |m: &mut SceneMapInfo| { &mut m.client_group_mission_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "maze_prop_list",
+            |m: &SceneMapInfo| { &m.maze_prop_list },
+            |m: &mut SceneMapInfo| { &mut m.maze_prop_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_id",
+            |m: &SceneMapInfo| { &m.entry_id },
+            |m: &mut SceneMapInfo| { &mut m.entry_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneMapInfo>(
             "SceneMapInfo",
@@ -156,31 +156,34 @@ impl ::protobuf::Message for SceneMapInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                26 => {
-                    self.maze_group_list.push(is.read_message()?);
-                },
-                66 => {
-                    self.maze_prop_list.push(is.read_message()?);
-                },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                50 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlock_teleport_list)?;
                 },
-                48 => {
+                88 => {
                     self.unlock_teleport_list.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.entry_id = is.read_uint32()?;
+                66 => {
+                    self.maze_group_list.push(is.read_message()?);
                 },
-                34 => {
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
+                },
+                56 => {
+                    self.lighten_section_list.push(is.read_uint32()?);
+                },
+                40 => {
+                    self.cur_map_entry_id = is.read_uint32()?;
+                },
+                26 => {
+                    self.chest_monster_list.push(is.read_message()?);
+                },
+                10 => {
                     self.chest_list.push(is.read_message()?);
                 },
-                90 => {
+                96 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -195,23 +198,20 @@ impl ::protobuf::Message for SceneMapInfo {
                     is.pop_limit(old_limit);
                     self.floor_saved_data.insert(key, value);
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
-                },
                 72 => {
-                    self.lighten_section_list.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.PJJNMANPNKE.push(is.read_message()?);
-                },
-                114 => {
-                    self.maze_prop_extra_state_list.push(is.read_message()?);
-                },
-                96 => {
-                    self.cur_map_entry_id = is.read_uint32()?;
+                    self.dimension_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.dimension_id = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
+                },
+                14778 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.client_group_mission_info)?;
+                },
+                50 => {
+                    self.maze_prop_list.push(is.read_message()?);
+                },
+                32 => {
+                    self.entry_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -225,48 +225,48 @@ impl ::protobuf::Message for SceneMapInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.floor_id);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.unlock_teleport_list);
         for value in &self.maze_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.maze_prop_list {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.lighten_section_list);
+        if self.cur_map_entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.cur_map_entry_id);
+        }
+        for value in &self.chest_monster_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.unlock_teleport_list);
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.entry_id);
-        }
         for value in &self.chest_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.floor_id);
+        }
         for (k, v) in &self.floor_saved_data {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.lighten_section_list);
-        for value in &self.PJJNMANPNKE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.maze_prop_extra_state_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.cur_map_entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_map_entry_id);
-        }
         if self.dimension_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dimension_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.dimension_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if let Some(v) = self.client_group_mission_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.maze_prop_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -274,46 +274,46 @@ impl ::protobuf::Message for SceneMapInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.floor_id != 0 {
-            os.write_uint32(7, self.floor_id)?;
-        }
+        os.write_repeated_packed_uint32(11, &self.unlock_teleport_list)?;
         for v in &self.maze_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.maze_prop_list {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        os.write_repeated_packed_uint32(7, &self.lighten_section_list)?;
+        if self.cur_map_entry_id != 0 {
+            os.write_uint32(5, self.cur_map_entry_id)?;
         }
-        os.write_repeated_packed_uint32(6, &self.unlock_teleport_list)?;
-        if self.entry_id != 0 {
-            os.write_uint32(15, self.entry_id)?;
-        }
-        for v in &self.chest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.chest_monster_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        for v in &self.chest_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        if self.floor_id != 0 {
+            os.write_uint32(12, self.floor_id)?;
+        }
         for (k, v) in &self.floor_saved_data {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(9, &self.lighten_section_list)?;
-        for v in &self.PJJNMANPNKE {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.maze_prop_extra_state_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.cur_map_entry_id != 0 {
-            os.write_uint32(12, self.cur_map_entry_id)?;
-        }
         if self.dimension_id != 0 {
-            os.write_uint32(2, self.dimension_id)?;
+            os.write_uint32(9, self.dimension_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
+        if let Some(v) = self.client_group_mission_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1847, v, os)?;
+        }
+        for v in &self.maze_prop_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.entry_id != 0 {
+            os.write_uint32(4, self.entry_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -332,19 +332,19 @@ impl ::protobuf::Message for SceneMapInfo {
     }
 
     fn clear(&mut self) {
-        self.floor_id = 0;
-        self.maze_group_list.clear();
-        self.maze_prop_list.clear();
-        self.retcode = 0;
         self.unlock_teleport_list.clear();
-        self.entry_id = 0;
-        self.chest_list.clear();
-        self.floor_saved_data.clear();
+        self.maze_group_list.clear();
         self.lighten_section_list.clear();
-        self.PJJNMANPNKE.clear();
-        self.maze_prop_extra_state_list.clear();
         self.cur_map_entry_id = 0;
+        self.chest_monster_list.clear();
+        self.chest_list.clear();
+        self.floor_id = 0;
+        self.floor_saved_data.clear();
         self.dimension_id = 0;
+        self.retcode = 0;
+        self.client_group_mission_info.clear();
+        self.maze_prop_list.clear();
+        self.entry_id = 0;
         self.special_fields.clear();
     }
 
@@ -372,24 +372,25 @@ impl ::protobuf::reflect::ProtobufValue for SceneMapInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12SceneMapInfo.proto\x1a\x0fChestInfo.proto\x1a\x11KEHGNHFFFEO.proto\
-    \x1a\x0fMazeGroup.proto\x1a\x18MazePropExtraState.proto\x1a\x13MazePropS\
-    tate.proto\"\xb4\x05\n\x0cSceneMapInfo\x12\x19\n\x08floor_id\x18\x07\x20\
-    \x01(\rR\x07floorId\x122\n\x0fmaze_group_list\x18\x03\x20\x03(\x0b2\n.Ma\
-    zeGroupR\rmazeGroupList\x124\n\x0emaze_prop_list\x18\x08\x20\x03(\x0b2\
-    \x0e.MazePropStateR\x0cmazePropList\x12\x18\n\x07retcode\x18\r\x20\x01(\
-    \rR\x07retcode\x120\n\x14unlock_teleport_list\x18\x06\x20\x03(\rR\x12unl\
-    ockTeleportList\x12\x19\n\x08entry_id\x18\x0f\x20\x01(\rR\x07entryId\x12\
-    )\n\nchest_list\x18\x04\x20\x03(\x0b2\n.ChestInfoR\tchestList\x12K\n\x10\
-    floor_saved_data\x18\x0b\x20\x03(\x0b2!.SceneMapInfo.FloorSavedDataEntry\
-    R\x0efloorSavedData\x120\n\x14lighten_section_list\x18\t\x20\x03(\rR\x12\
-    lightenSectionList\x12.\n\x0bPJJNMANPNKE\x18\x05\x20\x03(\x0b2\x0c.KEHGN\
-    HFFFEOR\x0bPJJNMANPNKE\x12O\n\x1amaze_prop_extra_state_list\x18\x0e\x20\
-    \x03(\x0b2\x13.MazePropExtraStateR\x16mazePropExtraStateList\x12'\n\x10c\
-    ur_map_entry_id\x18\x0c\x20\x01(\rR\rcurMapEntryId\x12!\n\x0cdimension_i\
-    d\x18\x02\x20\x01(\rR\x0bdimensionId\x1aA\n\x13FloorSavedDataEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\x05R\x05value:\x028\x01b\x06proto3\
+    \n\x12SceneMapInfo.proto\x1a\x0fChestInfo.proto\x1a\x11HAHOPEPNBFO.proto\
+    \x1a\x0fMazeGroup.proto\x1a\x13MazePropState.proto\x1a\x1eMissionStatusB\
+    ySceneInfo.proto\"\xc6\x05\n\x0cSceneMapInfo\x120\n\x14unlock_teleport_l\
+    ist\x18\x0b\x20\x03(\rR\x12unlockTeleportList\x122\n\x0fmaze_group_list\
+    \x18\x08\x20\x03(\x0b2\n.MazeGroupR\rmazeGroupList\x120\n\x14lighten_sec\
+    tion_list\x18\x07\x20\x03(\rR\x12lightenSectionList\x12'\n\x10cur_map_en\
+    try_id\x18\x05\x20\x01(\rR\rcurMapEntryId\x12:\n\x12chest_monster_list\
+    \x18\x03\x20\x03(\x0b2\x0c.HAHOPEPNBFOR\x10chestMonsterList\x12)\n\nches\
+    t_list\x18\x01\x20\x03(\x0b2\n.ChestInfoR\tchestList\x12\x19\n\x08floor_\
+    id\x18\x0c\x20\x01(\rR\x07floorId\x12K\n\x10floor_saved_data\x18\r\x20\
+    \x03(\x0b2!.SceneMapInfo.FloorSavedDataEntryR\x0efloorSavedData\x12!\n\
+    \x0cdimension_id\x18\t\x20\x01(\rR\x0bdimensionId\x12\x18\n\x07retcode\
+    \x18\x02\x20\x01(\rR\x07retcode\x12U\n\x19client_group_mission_info\x18\
+    \xb7\x0e\x20\x01(\x0b2\x19.MissionStatusBySceneInfoR\x16clientGroupMissi\
+    onInfo\x124\n\x0emaze_prop_list\x18\x06\x20\x03(\x0b2\x0e.MazePropStateR\
+    \x0cmazePropList\x12\x19\n\x08entry_id\x18\x04\x20\x01(\rR\x07entryId\
+    \x1aA\n\x13FloorSavedDataEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03k\
+    ey\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -408,10 +409,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::ChestInfo::file_descriptor().clone());
-            deps.push(super::KEHGNHFFFEO::file_descriptor().clone());
+            deps.push(super::HAHOPEPNBFO::file_descriptor().clone());
             deps.push(super::MazeGroup::file_descriptor().clone());
-            deps.push(super::MazePropExtraState::file_descriptor().clone());
             deps.push(super::MazePropState::file_descriptor().clone());
+            deps.push(super::MissionStatusBySceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneMapInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorldUnlockCsReq {
     // message fields
-    // @@protoc_insertion_point(field:WorldUnlockCsReq.JHJPDNINCLJ)
-    pub JHJPDNINCLJ: u32,
+    // @@protoc_insertion_point(field:WorldUnlockCsReq.KNNGJBPJFIB)
+    pub KNNGJBPJFIB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:WorldUnlockCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl WorldUnlockCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHJPDNINCLJ",
-            |m: &WorldUnlockCsReq| { &m.JHJPDNINCLJ },
-            |m: &mut WorldUnlockCsReq| { &mut m.JHJPDNINCLJ },
+            "KNNGJBPJFIB",
+            |m: &WorldUnlockCsReq| { &m.KNNGJBPJFIB },
+            |m: &mut WorldUnlockCsReq| { &mut m.KNNGJBPJFIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorldUnlockCsReq>(
             "WorldUnlockCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for WorldUnlockCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.JHJPDNINCLJ = is.read_uint32()?;
+                    self.KNNGJBPJFIB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for WorldUnlockCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JHJPDNINCLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JHJPDNINCLJ);
+        if self.KNNGJBPJFIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KNNGJBPJFIB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for WorldUnlockCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JHJPDNINCLJ != 0 {
-            os.write_uint32(8, self.JHJPDNINCLJ)?;
+        if self.KNNGJBPJFIB != 0 {
+            os.write_uint32(8, self.KNNGJBPJFIB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for WorldUnlockCsReq {
     }
 
     fn clear(&mut self) {
-        self.JHJPDNINCLJ = 0;
+        self.KNNGJBPJFIB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WorldUnlockCsReq {
         static instance: WorldUnlockCsReq = WorldUnlockCsReq {
-            JHJPDNINCLJ: 0,
+            KNNGJBPJFIB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for WorldUnlockCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16WorldUnlockCsReq.proto\"4\n\x10WorldUnlockCsReq\x12\x20\n\x0bJHJPD\
-    NINCLJ\x18\x08\x20\x01(\rR\x0bJHJPDNINCLJb\x06proto3\
+    \n\x16WorldUnlockCsReq.proto\"4\n\x10WorldUnlockCsReq\x12\x20\n\x0bKNNGJ\
+    BPJFIB\x18\x08\x20\x01(\rR\x0bKNNGJBPJFIBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

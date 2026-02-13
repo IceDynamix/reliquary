@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneNpcMonsterInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.monster_id)
-    pub monster_id: u32,
-    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.AOGJAAHIHOB)
-    pub AOGJAAHIHOB: ::protobuf::MessageField<super::MKPHKPOJBAN::MKPHKPOJBAN>,
-    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.PHLLJLEKALJ)
-    pub PHLLJLEKALJ: bool,
-    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.DOCCPAEAHDJ)
-    pub DOCCPAEAHDJ: bool,
     // @@protoc_insertion_point(field:SceneNpcMonsterInfo.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.FCFFOJHHCCM)
+    pub FCFFOJHHCCM: bool,
     // @@protoc_insertion_point(field:SceneNpcMonsterInfo.extra_info)
     pub extra_info: ::protobuf::MessageField<super::NpcMonsterExtraInfo::NpcMonsterExtraInfo>,
+    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.monster_id)
+    pub monster_id: u32,
+    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.BONKNJKGOLN)
+    pub BONKNJKGOLN: bool,
+    // @@protoc_insertion_point(field:SceneNpcMonsterInfo.MBJLCMDHDHJ)
+    pub MBJLCMDHDHJ: ::protobuf::MessageField<super::IOIABHPACHN::IOIABHPACHN>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneNpcMonsterInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,14 +62,9 @@ impl SceneNpcMonsterInfo {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "monster_id",
-            |m: &SceneNpcMonsterInfo| { &m.monster_id },
-            |m: &mut SceneNpcMonsterInfo| { &mut m.monster_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MKPHKPOJBAN::MKPHKPOJBAN>(
-            "AOGJAAHIHOB",
-            |m: &SceneNpcMonsterInfo| { &m.AOGJAAHIHOB },
-            |m: &mut SceneNpcMonsterInfo| { &mut m.AOGJAAHIHOB },
+            "world_level",
+            |m: &SceneNpcMonsterInfo| { &m.world_level },
+            |m: &mut SceneNpcMonsterInfo| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
@@ -77,24 +72,29 @@ impl SceneNpcMonsterInfo {
             |m: &mut SceneNpcMonsterInfo| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHLLJLEKALJ",
-            |m: &SceneNpcMonsterInfo| { &m.PHLLJLEKALJ },
-            |m: &mut SceneNpcMonsterInfo| { &mut m.PHLLJLEKALJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOCCPAEAHDJ",
-            |m: &SceneNpcMonsterInfo| { &m.DOCCPAEAHDJ },
-            |m: &mut SceneNpcMonsterInfo| { &mut m.DOCCPAEAHDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &SceneNpcMonsterInfo| { &m.world_level },
-            |m: &mut SceneNpcMonsterInfo| { &mut m.world_level },
+            "FCFFOJHHCCM",
+            |m: &SceneNpcMonsterInfo| { &m.FCFFOJHHCCM },
+            |m: &mut SceneNpcMonsterInfo| { &mut m.FCFFOJHHCCM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NpcMonsterExtraInfo::NpcMonsterExtraInfo>(
             "extra_info",
             |m: &SceneNpcMonsterInfo| { &m.extra_info },
             |m: &mut SceneNpcMonsterInfo| { &mut m.extra_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "monster_id",
+            |m: &SceneNpcMonsterInfo| { &m.monster_id },
+            |m: &mut SceneNpcMonsterInfo| { &mut m.monster_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BONKNJKGOLN",
+            |m: &SceneNpcMonsterInfo| { &m.BONKNJKGOLN },
+            |m: &mut SceneNpcMonsterInfo| { &mut m.BONKNJKGOLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IOIABHPACHN::IOIABHPACHN>(
+            "MBJLCMDHDHJ",
+            |m: &SceneNpcMonsterInfo| { &m.MBJLCMDHDHJ },
+            |m: &mut SceneNpcMonsterInfo| { &mut m.MBJLCMDHDHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneNpcMonsterInfo>(
             "SceneNpcMonsterInfo",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for SceneNpcMonsterInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.monster_id = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AOGJAAHIHOB)?;
-                },
-                96 => {
-                    self.event_id = is.read_uint32()?;
-                },
-                104 => {
-                    self.PHLLJLEKALJ = is.read_bool()?;
-                },
-                48 => {
-                    self.DOCCPAEAHDJ = is.read_bool()?;
-                },
-                16 => {
+                8 => {
                     self.world_level = is.read_uint32()?;
                 },
-                90 => {
+                40 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.FCFFOJHHCCM = is.read_bool()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
+                },
+                120 => {
+                    self.monster_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.BONKNJKGOLN = is.read_bool()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MBJLCMDHDHJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for SceneNpcMonsterInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.monster_id);
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
         }
-        if let Some(v) = self.AOGJAAHIHOB.as_ref() {
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.event_id);
+        }
+        if self.FCFFOJHHCCM != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.event_id);
+        if self.monster_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.monster_id);
         }
-        if self.PHLLJLEKALJ != false {
+        if self.BONKNJKGOLN != false {
             my_size += 1 + 1;
         }
-        if self.DOCCPAEAHDJ != false {
-            my_size += 1 + 1;
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
-        }
-        if let Some(v) = self.extra_info.as_ref() {
+        if let Some(v) = self.MBJLCMDHDHJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -176,26 +176,26 @@ impl ::protobuf::Message for SceneNpcMonsterInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.monster_id != 0 {
-            os.write_uint32(7, self.monster_id)?;
-        }
-        if let Some(v) = self.AOGJAAHIHOB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.world_level != 0 {
+            os.write_uint32(1, self.world_level)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(12, self.event_id)?;
+            os.write_uint32(5, self.event_id)?;
         }
-        if self.PHLLJLEKALJ != false {
-            os.write_bool(13, self.PHLLJLEKALJ)?;
-        }
-        if self.DOCCPAEAHDJ != false {
-            os.write_bool(6, self.DOCCPAEAHDJ)?;
-        }
-        if self.world_level != 0 {
-            os.write_uint32(2, self.world_level)?;
+        if self.FCFFOJHHCCM != false {
+            os.write_bool(14, self.FCFFOJHHCCM)?;
         }
         if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.monster_id != 0 {
+            os.write_uint32(15, self.monster_id)?;
+        }
+        if self.BONKNJKGOLN != false {
+            os.write_bool(7, self.BONKNJKGOLN)?;
+        }
+        if let Some(v) = self.MBJLCMDHDHJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for SceneNpcMonsterInfo {
     }
 
     fn clear(&mut self) {
-        self.monster_id = 0;
-        self.AOGJAAHIHOB.clear();
-        self.event_id = 0;
-        self.PHLLJLEKALJ = false;
-        self.DOCCPAEAHDJ = false;
         self.world_level = 0;
+        self.event_id = 0;
+        self.FCFFOJHHCCM = false;
         self.extra_info.clear();
+        self.monster_id = 0;
+        self.BONKNJKGOLN = false;
+        self.MBJLCMDHDHJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneNpcMonsterInfo {
         static instance: SceneNpcMonsterInfo = SceneNpcMonsterInfo {
-            monster_id: 0,
-            AOGJAAHIHOB: ::protobuf::MessageField::none(),
-            event_id: 0,
-            PHLLJLEKALJ: false,
-            DOCCPAEAHDJ: false,
             world_level: 0,
+            event_id: 0,
+            FCFFOJHHCCM: false,
             extra_info: ::protobuf::MessageField::none(),
+            monster_id: 0,
+            BONKNJKGOLN: false,
+            MBJLCMDHDHJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for SceneNpcMonsterInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SceneNpcMonsterInfo.proto\x1a\x11MKPHKPOJBAN.proto\x1a\x19NpcMonst\
-    erExtraInfo.proto\"\x99\x02\n\x13SceneNpcMonsterInfo\x12\x1d\n\nmonster_\
-    id\x18\x07\x20\x01(\rR\tmonsterId\x12.\n\x0bAOGJAAHIHOB\x18\n\x20\x01(\
-    \x0b2\x0c.MKPHKPOJBANR\x0bAOGJAAHIHOB\x12\x19\n\x08event_id\x18\x0c\x20\
-    \x01(\rR\x07eventId\x12\x20\n\x0bPHLLJLEKALJ\x18\r\x20\x01(\x08R\x0bPHLL\
-    JLEKALJ\x12\x20\n\x0bDOCCPAEAHDJ\x18\x06\x20\x01(\x08R\x0bDOCCPAEAHDJ\
-    \x12\x1f\n\x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x123\n\nextra_\
-    info\x18\x0b\x20\x01(\x0b2\x14.NpcMonsterExtraInfoR\textraInfob\x06proto\
+    \n\x19SceneNpcMonsterInfo.proto\x1a\x11IOIABHPACHN.proto\x1a\x19NpcMonst\
+    erExtraInfo.proto\"\x99\x02\n\x13SceneNpcMonsterInfo\x12\x1f\n\x0bworld_\
+    level\x18\x01\x20\x01(\rR\nworldLevel\x12\x19\n\x08event_id\x18\x05\x20\
+    \x01(\rR\x07eventId\x12\x20\n\x0bFCFFOJHHCCM\x18\x0e\x20\x01(\x08R\x0bFC\
+    FFOJHHCCM\x123\n\nextra_info\x18\n\x20\x01(\x0b2\x14.NpcMonsterExtraInfo\
+    R\textraInfo\x12\x1d\n\nmonster_id\x18\x0f\x20\x01(\rR\tmonsterId\x12\
+    \x20\n\x0bBONKNJKGOLN\x18\x07\x20\x01(\x08R\x0bBONKNJKGOLN\x12.\n\x0bMBJ\
+    LCMDHDHJ\x18\x04\x20\x01(\x0b2\x0c.IOIABHPACHNR\x0bMBJLCMDHDHJb\x06proto\
     3\
 ";
 
@@ -283,7 +283,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MKPHKPOJBAN::file_descriptor().clone());
+            deps.push(super::IOIABHPACHN::file_descriptor().clone());
             deps.push(super::NpcMonsterExtraInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneNpcMonsterInfo::generated_message_descriptor_data());

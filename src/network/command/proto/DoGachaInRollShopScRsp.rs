@@ -30,12 +30,12 @@ pub struct DoGachaInRollShopScRsp {
     // message fields
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.roll_shop_id)
     pub roll_shop_id: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.BOCJNJCCBNE)
+    pub BOCJNJCCBNE: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.BDANBFDOBGI)
-    pub BDANBFDOBGI: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward_display_type)
     pub reward_display_type: u32,
     // special fields
@@ -62,6 +62,11 @@ impl DoGachaInRollShopScRsp {
             |m: &DoGachaInRollShopScRsp| { &m.roll_shop_id },
             |m: &mut DoGachaInRollShopScRsp| { &mut m.roll_shop_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BOCJNJCCBNE",
+            |m: &DoGachaInRollShopScRsp| { &m.BOCJNJCCBNE },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.BOCJNJCCBNE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &DoGachaInRollShopScRsp| { &m.reward },
@@ -71,11 +76,6 @@ impl DoGachaInRollShopScRsp {
             "retcode",
             |m: &DoGachaInRollShopScRsp| { &m.retcode },
             |m: &mut DoGachaInRollShopScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDANBFDOBGI",
-            |m: &DoGachaInRollShopScRsp| { &m.BDANBFDOBGI },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.BDANBFDOBGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reward_display_type",
@@ -103,14 +103,14 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
                 48 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
-                42 => {
+                40 => {
+                    self.BOCJNJCCBNE = is.read_uint32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                24 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
-                },
-                32 => {
-                    self.BDANBFDOBGI = is.read_uint32()?;
                 },
                 96 => {
                     self.reward_display_type = is.read_uint32()?;
@@ -130,15 +130,15 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
         if self.roll_shop_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.roll_shop_id);
         }
+        if self.BOCJNJCCBNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BOCJNJCCBNE);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        if self.BDANBFDOBGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BDANBFDOBGI);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.reward_display_type != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.reward_display_type);
@@ -152,14 +152,14 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
         if self.roll_shop_id != 0 {
             os.write_uint32(6, self.roll_shop_id)?;
         }
+        if self.BOCJNJCCBNE != 0 {
+            os.write_uint32(5, self.BOCJNJCCBNE)?;
+        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if self.BDANBFDOBGI != 0 {
-            os.write_uint32(4, self.BDANBFDOBGI)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if self.reward_display_type != 0 {
             os.write_uint32(12, self.reward_display_type)?;
@@ -182,9 +182,9 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
 
     fn clear(&mut self) {
         self.roll_shop_id = 0;
+        self.BOCJNJCCBNE = 0;
         self.reward.clear();
         self.retcode = 0;
-        self.BDANBFDOBGI = 0;
         self.reward_display_type = 0;
         self.special_fields.clear();
     }
@@ -192,9 +192,9 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     fn default_instance() -> &'static DoGachaInRollShopScRsp {
         static instance: DoGachaInRollShopScRsp = DoGachaInRollShopScRsp {
             roll_shop_id: 0,
+            BOCJNJCCBNE: 0,
             reward: ::protobuf::MessageField::none(),
             retcode: 0,
-            BDANBFDOBGI: 0,
             reward_display_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,10 +222,10 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xc9\x01\n\x16\
     DoGachaInRollShopScRsp\x12\x20\n\x0croll_shop_id\x18\x06\x20\x01(\rR\nro\
-    llShopId\x12!\n\x06reward\x18\x05\x20\x01(\x0b2\t.ItemListR\x06reward\
-    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bBDANBF\
-    DOBGI\x18\x04\x20\x01(\rR\x0bBDANBFDOBGI\x12.\n\x13reward_display_type\
-    \x18\x0c\x20\x01(\rR\x11rewardDisplayTypeb\x06proto3\
+    llShopId\x12\x20\n\x0bBOCJNJCCBNE\x18\x05\x20\x01(\rR\x0bBOCJNJCCBNE\x12\
+    !\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07r\
+    etcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x13reward_display_type\x18\
+    \x0c\x20\x01(\rR\x11rewardDisplayTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -85,7 +85,7 @@ impl ::protobuf::Message for SyncLineupNotify {
                 114 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.reason_list)?
                 },
-                122 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SyncLineupNotify {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_enum_or_unknown(14, &self.reason_list)?;
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncLineupNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16SyncLineupNotify.proto\x1a\x10LineupInfo.proto\x1a\x16SyncLineupRe\
     ason.proto\"k\n\x10SyncLineupNotify\x122\n\x0breason_list\x18\x0e\x20\
-    \x03(\x0e2\x11.SyncLineupReasonR\nreasonList\x12#\n\x06lineup\x18\x0f\
+    \x03(\x0e2\x11.SyncLineupReasonR\nreasonList\x12#\n\x06lineup\x18\x06\
     \x20\x01(\x0b2\x0b.LineupInfoR\x06lineupb\x06proto3\
 ";
 

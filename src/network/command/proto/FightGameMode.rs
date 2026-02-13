@@ -27,20 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightGameMode)
 pub enum FightGameMode {
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_NONE)
-    FIGHT_GAME_MODE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MATCH3)
-    FIGHT_GAME_MODE_MATCH3 = 1,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MARBLE)
-    FIGHT_GAME_MODE_MARBLE = 2,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MATCH3_SOLO)
-    FIGHT_GAME_MODE_MATCH3_SOLO = 3,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MATCH3_ROYALE)
-    FIGHT_GAME_MODE_MATCH3_ROYALE = 4,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_MARBLE_MAINSUB)
-    FIGHT_GAME_MODE_MARBLE_MAINSUB = 5,
-    // @@protoc_insertion_point(enum_value:FightGameMode.FIGHT_GAME_MODE_CAKE_RACE)
-    FIGHT_GAME_MODE_CAKE_RACE = 6,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_GKJBAODJMJG)
+    JILGMANNGNL_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_NEBNPGLHMJN)
+    JILGMANNGNL_NEBNPGLHMJN = 1,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_IHIFFJABNOA)
+    JILGMANNGNL_IHIFFJABNOA = 2,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_JIPLGLLPMKA)
+    JILGMANNGNL_JIPLGLLPMKA = 3,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_PJHAPOKIPPI)
+    JILGMANNGNL_PJHAPOKIPPI = 4,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_LBPKPFDILBC)
+    JILGMANNGNL_LBPKPFDILBC = 5,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_ODLIOPEDKGH)
+    JILGMANNGNL_ODLIOPEDKGH = 6,
+    // @@protoc_insertion_point(enum_value:FightGameMode.JILGMANNGNL_CBAMJJNPNKH)
+    JILGMANNGNL_CBAMJJNPNKH = 7,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -52,38 +54,41 @@ impl ::protobuf::Enum for FightGameMode {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightGameMode> {
         match value {
-            0 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_NONE),
-            1 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3),
-            2 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE),
-            3 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO),
-            4 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE),
-            5 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB),
-            6 => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_CAKE_RACE),
+            0 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_GKJBAODJMJG),
+            1 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_NEBNPGLHMJN),
+            2 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_IHIFFJABNOA),
+            3 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_JIPLGLLPMKA),
+            4 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_PJHAPOKIPPI),
+            5 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_LBPKPFDILBC),
+            6 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_ODLIOPEDKGH),
+            7 => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_CBAMJJNPNKH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightGameMode> {
         match str {
-            "FIGHT_GAME_MODE_NONE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_NONE),
-            "FIGHT_GAME_MODE_MATCH3" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3),
-            "FIGHT_GAME_MODE_MARBLE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE),
-            "FIGHT_GAME_MODE_MATCH3_SOLO" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO),
-            "FIGHT_GAME_MODE_MATCH3_ROYALE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE),
-            "FIGHT_GAME_MODE_MARBLE_MAINSUB" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB),
-            "FIGHT_GAME_MODE_CAKE_RACE" => ::std::option::Option::Some(FightGameMode::FIGHT_GAME_MODE_CAKE_RACE),
+            "JILGMANNGNL_GKJBAODJMJG" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_GKJBAODJMJG),
+            "JILGMANNGNL_NEBNPGLHMJN" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_NEBNPGLHMJN),
+            "JILGMANNGNL_IHIFFJABNOA" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_IHIFFJABNOA),
+            "JILGMANNGNL_JIPLGLLPMKA" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_JIPLGLLPMKA),
+            "JILGMANNGNL_PJHAPOKIPPI" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_PJHAPOKIPPI),
+            "JILGMANNGNL_LBPKPFDILBC" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_LBPKPFDILBC),
+            "JILGMANNGNL_ODLIOPEDKGH" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_ODLIOPEDKGH),
+            "JILGMANNGNL_CBAMJJNPNKH" => ::std::option::Option::Some(FightGameMode::JILGMANNGNL_CBAMJJNPNKH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightGameMode] = &[
-        FightGameMode::FIGHT_GAME_MODE_NONE,
-        FightGameMode::FIGHT_GAME_MODE_MATCH3,
-        FightGameMode::FIGHT_GAME_MODE_MARBLE,
-        FightGameMode::FIGHT_GAME_MODE_MATCH3_SOLO,
-        FightGameMode::FIGHT_GAME_MODE_MATCH3_ROYALE,
-        FightGameMode::FIGHT_GAME_MODE_MARBLE_MAINSUB,
-        FightGameMode::FIGHT_GAME_MODE_CAKE_RACE,
+        FightGameMode::JILGMANNGNL_GKJBAODJMJG,
+        FightGameMode::JILGMANNGNL_NEBNPGLHMJN,
+        FightGameMode::JILGMANNGNL_IHIFFJABNOA,
+        FightGameMode::JILGMANNGNL_JIPLGLLPMKA,
+        FightGameMode::JILGMANNGNL_PJHAPOKIPPI,
+        FightGameMode::JILGMANNGNL_LBPKPFDILBC,
+        FightGameMode::JILGMANNGNL_ODLIOPEDKGH,
+        FightGameMode::JILGMANNGNL_CBAMJJNPNKH,
     ];
 }
 
@@ -101,7 +106,7 @@ impl ::protobuf::EnumFull for FightGameMode {
 
 impl ::std::default::Default for FightGameMode {
     fn default() -> Self {
-        FightGameMode::FIGHT_GAME_MODE_NONE
+        FightGameMode::JILGMANNGNL_GKJBAODJMJG
     }
 }
 
@@ -112,12 +117,12 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*\xe8\x01\n\rFightGameMode\x12\x18\n\x14FIGHT_G\
-    AME_MODE_NONE\x10\0\x12\x1a\n\x16FIGHT_GAME_MODE_MATCH3\x10\x01\x12\x1a\
-    \n\x16FIGHT_GAME_MODE_MARBLE\x10\x02\x12\x1f\n\x1bFIGHT_GAME_MODE_MATCH3\
-    _SOLO\x10\x03\x12!\n\x1dFIGHT_GAME_MODE_MATCH3_ROYALE\x10\x04\x12\"\n\
-    \x1eFIGHT_GAME_MODE_MARBLE_MAINSUB\x10\x05\x12\x1d\n\x19FIGHT_GAME_MODE_\
-    CAKE_RACE\x10\x06b\x06proto3\
+    \n\x13FightGameMode.proto*\xf7\x01\n\rFightGameMode\x12\x1b\n\x17JILGMAN\
+    NGNL_GKJBAODJMJG\x10\0\x12\x1b\n\x17JILGMANNGNL_NEBNPGLHMJN\x10\x01\x12\
+    \x1b\n\x17JILGMANNGNL_IHIFFJABNOA\x10\x02\x12\x1b\n\x17JILGMANNGNL_JIPLG\
+    LLPMKA\x10\x03\x12\x1b\n\x17JILGMANNGNL_PJHAPOKIPPI\x10\x04\x12\x1b\n\
+    \x17JILGMANNGNL_LBPKPFDILBC\x10\x05\x12\x1b\n\x17JILGMANNGNL_ODLIOPEDKGH\
+    \x10\x06\x12\x1b\n\x17JILGMANNGNL_CBAMJJNPNKH\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

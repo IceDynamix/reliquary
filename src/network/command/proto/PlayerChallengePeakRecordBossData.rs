@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerChallengePeakRecordBossData {
     // message fields
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.DCBDFGCJPJD)
-    pub DCBDFGCJPJD: bool,
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.lineup)
-    pub lineup: ::protobuf::MessageField<super::ChallengeLineupList::ChallengeLineupList>,
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.best_cycle_count)
-    pub best_cycle_count: u32,
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.CMPNIBOCLNE)
-    pub CMPNIBOCLNE: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.BGGBJACGAIC)
-    pub BGGBJACGAIC: u32,
     // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.peak_id)
     pub peak_id: u32,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.lineup)
+    pub lineup: ::protobuf::MessageField<super::ChallengeLineupList::ChallengeLineupList>,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.JLJNGOGJFPM)
+    pub JLJNGOGJFPM: bool,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.MBKLCGKEIKA)
+    pub MBKLCGKEIKA: u32,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.CNPBCFNJKMM)
+    pub CNPBCFNJKMM: bool,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.best_cycle_count)
+    pub best_cycle_count: u32,
+    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.KKLGCDOEJNM)
+    pub KKLGCDOEJNM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.buff_id)
     pub buff_id: u32,
-    // @@protoc_insertion_point(field:PlayerChallengePeakRecordBossData.EOJFDBCGCOP)
-    pub EOJFDBCGCOP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerChallengePeakRecordBossData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl PlayerChallengePeakRecordBossData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCBDFGCJPJD",
-            |m: &PlayerChallengePeakRecordBossData| { &m.DCBDFGCJPJD },
-            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.DCBDFGCJPJD },
+            "peak_id",
+            |m: &PlayerChallengePeakRecordBossData| { &m.peak_id },
+            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.peak_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeLineupList::ChallengeLineupList>(
             "lineup",
@@ -74,34 +74,34 @@ impl PlayerChallengePeakRecordBossData {
             |m: &mut PlayerChallengePeakRecordBossData| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLJNGOGJFPM",
+            |m: &PlayerChallengePeakRecordBossData| { &m.JLJNGOGJFPM },
+            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.JLJNGOGJFPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBKLCGKEIKA",
+            |m: &PlayerChallengePeakRecordBossData| { &m.MBKLCGKEIKA },
+            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.MBKLCGKEIKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CNPBCFNJKMM",
+            |m: &PlayerChallengePeakRecordBossData| { &m.CNPBCFNJKMM },
+            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.CNPBCFNJKMM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "best_cycle_count",
             |m: &PlayerChallengePeakRecordBossData| { &m.best_cycle_count },
             |m: &mut PlayerChallengePeakRecordBossData| { &mut m.best_cycle_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CMPNIBOCLNE",
-            |m: &PlayerChallengePeakRecordBossData| { &m.CMPNIBOCLNE },
-            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.CMPNIBOCLNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGGBJACGAIC",
-            |m: &PlayerChallengePeakRecordBossData| { &m.BGGBJACGAIC },
-            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.BGGBJACGAIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_id",
-            |m: &PlayerChallengePeakRecordBossData| { &m.peak_id },
-            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.peak_id },
+            "KKLGCDOEJNM",
+            |m: &PlayerChallengePeakRecordBossData| { &m.KKLGCDOEJNM },
+            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.KKLGCDOEJNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
             |m: &PlayerChallengePeakRecordBossData| { &m.buff_id },
             |m: &mut PlayerChallengePeakRecordBossData| { &mut m.buff_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOJFDBCGCOP",
-            |m: &PlayerChallengePeakRecordBossData| { &m.EOJFDBCGCOP },
-            |m: &mut PlayerChallengePeakRecordBossData| { &mut m.EOJFDBCGCOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerChallengePeakRecordBossData>(
             "PlayerChallengePeakRecordBossData",
@@ -122,31 +122,31 @@ impl ::protobuf::Message for PlayerChallengePeakRecordBossData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.DCBDFGCJPJD = is.read_bool()?;
+                    self.peak_id = is.read_uint32()?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 80 => {
-                    self.best_cycle_count = is.read_uint32()?;
+                    self.JLJNGOGJFPM = is.read_bool()?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CMPNIBOCLNE)?;
+                120 => {
+                    self.MBKLCGKEIKA = is.read_uint32()?;
                 },
-                32 => {
-                    self.CMPNIBOCLNE.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.BGGBJACGAIC = is.read_uint32()?;
-                },
-                40 => {
-                    self.peak_id = is.read_uint32()?;
+                96 => {
+                    self.CNPBCFNJKMM = is.read_bool()?;
                 },
                 8 => {
-                    self.buff_id = is.read_uint32()?;
+                    self.best_cycle_count = is.read_uint32()?;
                 },
-                56 => {
-                    self.EOJFDBCGCOP = is.read_bool()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KKLGCDOEJNM)?;
+                },
+                24 => {
+                    self.KKLGCDOEJNM.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.buff_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,28 +160,28 @@ impl ::protobuf::Message for PlayerChallengePeakRecordBossData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCBDFGCJPJD != false {
-            my_size += 1 + 1;
+        if self.peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.peak_id);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.best_cycle_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.best_cycle_count);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CMPNIBOCLNE);
-        if self.BGGBJACGAIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BGGBJACGAIC);
-        }
-        if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.peak_id);
-        }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.buff_id);
-        }
-        if self.EOJFDBCGCOP != false {
+        if self.JLJNGOGJFPM != false {
             my_size += 1 + 1;
+        }
+        if self.MBKLCGKEIKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MBKLCGKEIKA);
+        }
+        if self.CNPBCFNJKMM != false {
+            my_size += 1 + 1;
+        }
+        if self.best_cycle_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.best_cycle_count);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.KKLGCDOEJNM);
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,27 +189,27 @@ impl ::protobuf::Message for PlayerChallengePeakRecordBossData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCBDFGCJPJD != false {
-            os.write_bool(11, self.DCBDFGCJPJD)?;
+        if self.peak_id != 0 {
+            os.write_uint32(11, self.peak_id)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.JLJNGOGJFPM != false {
+            os.write_bool(10, self.JLJNGOGJFPM)?;
+        }
+        if self.MBKLCGKEIKA != 0 {
+            os.write_uint32(15, self.MBKLCGKEIKA)?;
+        }
+        if self.CNPBCFNJKMM != false {
+            os.write_bool(12, self.CNPBCFNJKMM)?;
         }
         if self.best_cycle_count != 0 {
-            os.write_uint32(10, self.best_cycle_count)?;
+            os.write_uint32(1, self.best_cycle_count)?;
         }
-        os.write_repeated_packed_uint32(4, &self.CMPNIBOCLNE)?;
-        if self.BGGBJACGAIC != 0 {
-            os.write_uint32(3, self.BGGBJACGAIC)?;
-        }
-        if self.peak_id != 0 {
-            os.write_uint32(5, self.peak_id)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.KKLGCDOEJNM)?;
         if self.buff_id != 0 {
-            os.write_uint32(1, self.buff_id)?;
-        }
-        if self.EOJFDBCGCOP != false {
-            os.write_bool(7, self.EOJFDBCGCOP)?;
+            os.write_uint32(8, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for PlayerChallengePeakRecordBossData {
     }
 
     fn clear(&mut self) {
-        self.DCBDFGCJPJD = false;
-        self.lineup.clear();
-        self.best_cycle_count = 0;
-        self.CMPNIBOCLNE.clear();
-        self.BGGBJACGAIC = 0;
         self.peak_id = 0;
+        self.lineup.clear();
+        self.JLJNGOGJFPM = false;
+        self.MBKLCGKEIKA = 0;
+        self.CNPBCFNJKMM = false;
+        self.best_cycle_count = 0;
+        self.KKLGCDOEJNM.clear();
         self.buff_id = 0;
-        self.EOJFDBCGCOP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerChallengePeakRecordBossData {
         static instance: PlayerChallengePeakRecordBossData = PlayerChallengePeakRecordBossData {
-            DCBDFGCJPJD: false,
-            lineup: ::protobuf::MessageField::none(),
-            best_cycle_count: 0,
-            CMPNIBOCLNE: ::std::vec::Vec::new(),
-            BGGBJACGAIC: 0,
             peak_id: 0,
+            lineup: ::protobuf::MessageField::none(),
+            JLJNGOGJFPM: false,
+            MBKLCGKEIKA: 0,
+            CNPBCFNJKMM: false,
+            best_cycle_count: 0,
+            KKLGCDOEJNM: ::std::vec::Vec::new(),
             buff_id: 0,
-            EOJFDBCGCOP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,14 +274,14 @@ impl ::protobuf::reflect::ProtobufValue for PlayerChallengePeakRecordBossData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'PlayerChallengePeakRecordBossData.proto\x1a\x19ChallengeLineupList.pr\
-    oto\"\xb5\x02\n!PlayerChallengePeakRecordBossData\x12\x20\n\x0bDCBDFGCJP\
-    JD\x18\x0b\x20\x01(\x08R\x0bDCBDFGCJPJD\x12,\n\x06lineup\x18\x08\x20\x01\
-    (\x0b2\x14.ChallengeLineupListR\x06lineup\x12(\n\x10best_cycle_count\x18\
-    \n\x20\x01(\rR\x0ebestCycleCount\x12\x20\n\x0bCMPNIBOCLNE\x18\x04\x20\
-    \x03(\rR\x0bCMPNIBOCLNE\x12\x20\n\x0bBGGBJACGAIC\x18\x03\x20\x01(\rR\x0b\
-    BGGBJACGAIC\x12\x17\n\x07peak_id\x18\x05\x20\x01(\rR\x06peakId\x12\x17\n\
-    \x07buff_id\x18\x01\x20\x01(\rR\x06buffId\x12\x20\n\x0bEOJFDBCGCOP\x18\
-    \x07\x20\x01(\x08R\x0bEOJFDBCGCOPb\x06proto3\
+    oto\"\xb5\x02\n!PlayerChallengePeakRecordBossData\x12\x17\n\x07peak_id\
+    \x18\x0b\x20\x01(\rR\x06peakId\x12,\n\x06lineup\x18\t\x20\x01(\x0b2\x14.\
+    ChallengeLineupListR\x06lineup\x12\x20\n\x0bJLJNGOGJFPM\x18\n\x20\x01(\
+    \x08R\x0bJLJNGOGJFPM\x12\x20\n\x0bMBKLCGKEIKA\x18\x0f\x20\x01(\rR\x0bMBK\
+    LCGKEIKA\x12\x20\n\x0bCNPBCFNJKMM\x18\x0c\x20\x01(\x08R\x0bCNPBCFNJKMM\
+    \x12(\n\x10best_cycle_count\x18\x01\x20\x01(\rR\x0ebestCycleCount\x12\
+    \x20\n\x0bKKLGCDOEJNM\x18\x03\x20\x03(\rR\x0bKKLGCDOEJNM\x12\x17\n\x07bu\
+    ff_id\x18\x08\x20\x01(\rR\x06buffIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

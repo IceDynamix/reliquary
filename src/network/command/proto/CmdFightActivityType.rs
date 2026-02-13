@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightActivityType)
 pub enum CmdFightActivityType {
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdFightActivityTypeNone)
-    CmdFightActivityTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardScRsp)
-    CmdTakeFightActivityRewardScRsp = 3617,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageScRsp)
-    CmdEnterFightActivityStageScRsp = 3611,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdFightActivityDataChangeScNotify)
-    CmdFightActivityDataChangeScNotify = 3609,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageCsReq)
-    CmdEnterFightActivityStageCsReq = 3647,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataScRsp)
-    CmdGetFightActivityDataScRsp = 3651,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardCsReq)
-    CmdTakeFightActivityRewardCsReq = 3689,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataCsReq)
-    CmdGetFightActivityDataCsReq = 3638,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_GKJBAODJMJG)
+    PFHGKOJIFJG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_IPELGHBHDHC)
+    PFHGKOJIFJG_IPELGHBHDHC = 3655,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_DMAPBKFOLEP)
+    PFHGKOJIFJG_DMAPBKFOLEP = 3638,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_OBIGFDJLGGL)
+    PFHGKOJIFJG_OBIGFDJLGGL = 3628,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_CPEDIGCLLHO)
+    PFHGKOJIFJG_CPEDIGCLLHO = 3647,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_FBHNCDDPLMM)
+    PFHGKOJIFJG_FBHNCDDPLMM = 3675,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_BFCLDHBGAFF)
+    PFHGKOJIFJG_BFCLDHBGAFF = 3662,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.PFHGKOJIFJG_LMDJMFNBOGC)
+    PFHGKOJIFJG_LMDJMFNBOGC = 3657,
 }
 
 impl ::protobuf::Enum for CmdFightActivityType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdFightActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityTypeNone),
-            3617 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
-            3611 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
-            3609 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
-            3647 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
-            3651 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
-            3689 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
-            3638 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
+            0 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_GKJBAODJMJG),
+            3655 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_IPELGHBHDHC),
+            3638 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_DMAPBKFOLEP),
+            3628 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_OBIGFDJLGGL),
+            3647 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_CPEDIGCLLHO),
+            3675 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_FBHNCDDPLMM),
+            3662 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_BFCLDHBGAFF),
+            3657 => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_LMDJMFNBOGC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightActivityType> {
         match str {
-            "CmdFightActivityTypeNone" => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityTypeNone),
-            "CmdTakeFightActivityRewardScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
-            "CmdEnterFightActivityStageScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
-            "CmdFightActivityDataChangeScNotify" => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
-            "CmdEnterFightActivityStageCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
-            "CmdGetFightActivityDataScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
-            "CmdTakeFightActivityRewardCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
-            "CmdGetFightActivityDataCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
+            "PFHGKOJIFJG_GKJBAODJMJG" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_GKJBAODJMJG),
+            "PFHGKOJIFJG_IPELGHBHDHC" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_IPELGHBHDHC),
+            "PFHGKOJIFJG_DMAPBKFOLEP" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_DMAPBKFOLEP),
+            "PFHGKOJIFJG_OBIGFDJLGGL" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_OBIGFDJLGGL),
+            "PFHGKOJIFJG_CPEDIGCLLHO" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_CPEDIGCLLHO),
+            "PFHGKOJIFJG_FBHNCDDPLMM" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_FBHNCDDPLMM),
+            "PFHGKOJIFJG_BFCLDHBGAFF" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_BFCLDHBGAFF),
+            "PFHGKOJIFJG_LMDJMFNBOGC" => ::std::option::Option::Some(CmdFightActivityType::PFHGKOJIFJG_LMDJMFNBOGC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightActivityType] = &[
-        CmdFightActivityType::CmdFightActivityTypeNone,
-        CmdFightActivityType::CmdTakeFightActivityRewardScRsp,
-        CmdFightActivityType::CmdEnterFightActivityStageScRsp,
-        CmdFightActivityType::CmdFightActivityDataChangeScNotify,
-        CmdFightActivityType::CmdEnterFightActivityStageCsReq,
-        CmdFightActivityType::CmdGetFightActivityDataScRsp,
-        CmdFightActivityType::CmdTakeFightActivityRewardCsReq,
-        CmdFightActivityType::CmdGetFightActivityDataCsReq,
+        CmdFightActivityType::PFHGKOJIFJG_GKJBAODJMJG,
+        CmdFightActivityType::PFHGKOJIFJG_IPELGHBHDHC,
+        CmdFightActivityType::PFHGKOJIFJG_DMAPBKFOLEP,
+        CmdFightActivityType::PFHGKOJIFJG_OBIGFDJLGGL,
+        CmdFightActivityType::PFHGKOJIFJG_CPEDIGCLLHO,
+        CmdFightActivityType::PFHGKOJIFJG_FBHNCDDPLMM,
+        CmdFightActivityType::PFHGKOJIFJG_BFCLDHBGAFF,
+        CmdFightActivityType::PFHGKOJIFJG_LMDJMFNBOGC,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdFightActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFightActivityType::CmdFightActivityTypeNone => 0,
-            CmdFightActivityType::CmdTakeFightActivityRewardScRsp => 1,
-            CmdFightActivityType::CmdEnterFightActivityStageScRsp => 2,
-            CmdFightActivityType::CmdFightActivityDataChangeScNotify => 3,
-            CmdFightActivityType::CmdEnterFightActivityStageCsReq => 4,
-            CmdFightActivityType::CmdGetFightActivityDataScRsp => 5,
-            CmdFightActivityType::CmdTakeFightActivityRewardCsReq => 6,
-            CmdFightActivityType::CmdGetFightActivityDataCsReq => 7,
+            CmdFightActivityType::PFHGKOJIFJG_GKJBAODJMJG => 0,
+            CmdFightActivityType::PFHGKOJIFJG_IPELGHBHDHC => 1,
+            CmdFightActivityType::PFHGKOJIFJG_DMAPBKFOLEP => 2,
+            CmdFightActivityType::PFHGKOJIFJG_OBIGFDJLGGL => 3,
+            CmdFightActivityType::PFHGKOJIFJG_CPEDIGCLLHO => 4,
+            CmdFightActivityType::PFHGKOJIFJG_FBHNCDDPLMM => 5,
+            CmdFightActivityType::PFHGKOJIFJG_BFCLDHBGAFF => 6,
+            CmdFightActivityType::PFHGKOJIFJG_LMDJMFNBOGC => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdFightActivityType {
 
 impl ::std::default::Default for CmdFightActivityType {
     fn default() -> Self {
-        CmdFightActivityType::CmdFightActivityTypeNone
+        CmdFightActivityType::PFHGKOJIFJG_GKJBAODJMJG
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdFightActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdFightActivityType.proto*\xbb\x02\n\x14CmdFightActivityType\x12\
-    \x1c\n\x18CmdFightActivityTypeNone\x10\0\x12$\n\x1fCmdTakeFightActivityR\
-    ewardScRsp\x10\xa1\x1c\x12$\n\x1fCmdEnterFightActivityStageScRsp\x10\x9b\
-    \x1c\x12'\n\"CmdFightActivityDataChangeScNotify\x10\x99\x1c\x12$\n\x1fCm\
-    dEnterFightActivityStageCsReq\x10\xbf\x1c\x12!\n\x1cCmdGetFightActivityD\
-    ataScRsp\x10\xc3\x1c\x12$\n\x1fCmdTakeFightActivityRewardCsReq\x10\xe9\
-    \x1c\x12!\n\x1cCmdGetFightActivityDataCsReq\x10\xb6\x1cb\x06proto3\
+    \n\x1aCmdFightActivityType.proto*\x85\x02\n\x14CmdFightActivityType\x12\
+    \x1b\n\x17PFHGKOJIFJG_GKJBAODJMJG\x10\0\x12\x1c\n\x17PFHGKOJIFJG_IPELGHB\
+    HDHC\x10\xc7\x1c\x12\x1c\n\x17PFHGKOJIFJG_DMAPBKFOLEP\x10\xb6\x1c\x12\
+    \x1c\n\x17PFHGKOJIFJG_OBIGFDJLGGL\x10\xac\x1c\x12\x1c\n\x17PFHGKOJIFJG_C\
+    PEDIGCLLHO\x10\xbf\x1c\x12\x1c\n\x17PFHGKOJIFJG_FBHNCDDPLMM\x10\xdb\x1c\
+    \x12\x1c\n\x17PFHGKOJIFJG_BFCLDHBGAFF\x10\xce\x1c\x12\x1c\n\x17PFHGKOJIF\
+    JG_LMDJMFNBOGC\x10\xc9\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

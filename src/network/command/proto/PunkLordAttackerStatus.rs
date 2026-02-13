@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PunkLordAttackerStatus)
 pub enum PunkLordAttackerStatus {
-    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.PUNK_LORD_ATTACKER_STATUS_NONE)
-    PUNK_LORD_ATTACKER_STATUS_NONE = 0,
-    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.PUNK_LORD_ATTACKER_STATUS_ATTACKED)
-    PUNK_LORD_ATTACKER_STATUS_ATTACKED = 1,
-    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.PUNK_LORD_ATTACKER_STATUS_ATTACKING)
-    PUNK_LORD_ATTACKER_STATUS_ATTACKING = 2,
-    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING)
-    PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING = 3,
+    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.IPODJKLOKCJ_GKJBAODJMJG)
+    IPODJKLOKCJ_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.IPODJKLOKCJ_PNMGBAEHDLP)
+    IPODJKLOKCJ_PNMGBAEHDLP = 1,
+    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.IPODJKLOKCJ_ACBFEOENGCN)
+    IPODJKLOKCJ_ACBFEOENGCN = 2,
+    // @@protoc_insertion_point(enum_value:PunkLordAttackerStatus.IPODJKLOKCJ_HGFKPAHNGNM)
+    IPODJKLOKCJ_HGFKPAHNGNM = 3,
 }
 
 impl ::protobuf::Enum for PunkLordAttackerStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for PunkLordAttackerStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<PunkLordAttackerStatus> {
         match value {
-            0 => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE),
-            1 => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED),
-            2 => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKING),
-            3 => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING),
+            0 => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_GKJBAODJMJG),
+            1 => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_PNMGBAEHDLP),
+            2 => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_ACBFEOENGCN),
+            3 => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_HGFKPAHNGNM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PunkLordAttackerStatus> {
         match str {
-            "PUNK_LORD_ATTACKER_STATUS_NONE" => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE),
-            "PUNK_LORD_ATTACKER_STATUS_ATTACKED" => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED),
-            "PUNK_LORD_ATTACKER_STATUS_ATTACKING" => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKING),
-            "PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING" => ::std::option::Option::Some(PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING),
+            "IPODJKLOKCJ_GKJBAODJMJG" => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_GKJBAODJMJG),
+            "IPODJKLOKCJ_PNMGBAEHDLP" => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_PNMGBAEHDLP),
+            "IPODJKLOKCJ_ACBFEOENGCN" => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_ACBFEOENGCN),
+            "IPODJKLOKCJ_HGFKPAHNGNM" => ::std::option::Option::Some(PunkLordAttackerStatus::IPODJKLOKCJ_HGFKPAHNGNM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PunkLordAttackerStatus] = &[
-        PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE,
-        PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED,
-        PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKING,
-        PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING,
+        PunkLordAttackerStatus::IPODJKLOKCJ_GKJBAODJMJG,
+        PunkLordAttackerStatus::IPODJKLOKCJ_PNMGBAEHDLP,
+        PunkLordAttackerStatus::IPODJKLOKCJ_ACBFEOENGCN,
+        PunkLordAttackerStatus::IPODJKLOKCJ_HGFKPAHNGNM,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for PunkLordAttackerStatus {
 
 impl ::std::default::Default for PunkLordAttackerStatus {
     fn default() -> Self {
-        PunkLordAttackerStatus::PUNK_LORD_ATTACKER_STATUS_NONE
+        PunkLordAttackerStatus::IPODJKLOKCJ_GKJBAODJMJG
     }
 }
 
@@ -97,11 +97,10 @@ impl PunkLordAttackerStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cPunkLordAttackerStatus.proto*\xc3\x01\n\x16PunkLordAttackerStatus\
-    \x12\"\n\x1ePUNK_LORD_ATTACKER_STATUS_NONE\x10\0\x12&\n\"PUNK_LORD_ATTAC\
-    KER_STATUS_ATTACKED\x10\x01\x12'\n#PUNK_LORD_ATTACKER_STATUS_ATTACKING\
-    \x10\x02\x124\n0PUNK_LORD_ATTACKER_STATUS_ATTACKED_AND_ATTACKING\x10\x03\
-    b\x06proto3\
+    \n\x1cPunkLordAttackerStatus.proto*\x8c\x01\n\x16PunkLordAttackerStatus\
+    \x12\x1b\n\x17IPODJKLOKCJ_GKJBAODJMJG\x10\0\x12\x1b\n\x17IPODJKLOKCJ_PNM\
+    GBAEHDLP\x10\x01\x12\x1b\n\x17IPODJKLOKCJ_ACBFEOENGCN\x10\x02\x12\x1b\n\
+    \x17IPODJKLOKCJ_HGFKPAHNGNM\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

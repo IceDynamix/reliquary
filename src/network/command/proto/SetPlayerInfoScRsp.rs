@@ -28,16 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetPlayerInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.CHADHDHLDFJ)
-    pub CHADHDHLDFJ: i64,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.is_modify)
-    pub is_modify: bool,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.cur_avatar_path_info_list)
-    pub cur_avatar_path_info_list: ::std::vec::Vec<super::MultiPathAvatarInfo::MultiPathAvatarInfo>,
     // @@protoc_insertion_point(field:SetPlayerInfoScRsp.cur_avatar_path)
     pub cur_avatar_path: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // @@protoc_insertion_point(field:SetPlayerInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.set_time)
+    pub set_time: i64,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.is_modify)
+    pub is_modify: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetPlayerInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,23 +53,8 @@ impl SetPlayerInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHADHDHLDFJ",
-            |m: &SetPlayerInfoScRsp| { &m.CHADHDHLDFJ },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.CHADHDHLDFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_modify",
-            |m: &SetPlayerInfoScRsp| { &m.is_modify },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.is_modify },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "cur_avatar_path_info_list",
-            |m: &SetPlayerInfoScRsp| { &m.cur_avatar_path_info_list },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.cur_avatar_path_info_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_avatar_path",
             |m: &SetPlayerInfoScRsp| { &m.cur_avatar_path },
@@ -81,6 +64,16 @@ impl SetPlayerInfoScRsp {
             "retcode",
             |m: &SetPlayerInfoScRsp| { &m.retcode },
             |m: &mut SetPlayerInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "set_time",
+            |m: &SetPlayerInfoScRsp| { &m.set_time },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.set_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_modify",
+            |m: &SetPlayerInfoScRsp| { &m.is_modify },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.is_modify },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetPlayerInfoScRsp>(
             "SetPlayerInfoScRsp",
@@ -100,20 +93,17 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.CHADHDHLDFJ = is.read_int64()?;
-                },
-                16 => {
-                    self.is_modify = is.read_bool()?;
-                },
-                74 => {
-                    self.cur_avatar_path_info_list.push(is.read_message()?);
-                },
-                120 => {
+                24 => {
                     self.cur_avatar_path = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.set_time = is.read_int64()?;
+                },
+                80 => {
+                    self.is_modify = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +117,17 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CHADHDHLDFJ != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.CHADHDHLDFJ);
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
+            my_size += ::protobuf::rt::int32_size(3, self.cur_avatar_path.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.set_time != 0 {
+            my_size += ::protobuf::rt::int64_size(13, self.set_time);
         }
         if self.is_modify != false {
             my_size += 1 + 1;
-        }
-        for value in &self.cur_avatar_path_info_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(15, self.cur_avatar_path.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +135,17 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CHADHDHLDFJ != 0 {
-            os.write_int64(4, self.CHADHDHLDFJ)?;
-        }
-        if self.is_modify != false {
-            os.write_bool(2, self.is_modify)?;
-        }
-        for v in &self.cur_avatar_path_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.set_time != 0 {
+            os.write_int64(13, self.set_time)?;
+        }
+        if self.is_modify != false {
+            os.write_bool(10, self.is_modify)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +164,19 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.CHADHDHLDFJ = 0;
-        self.is_modify = false;
-        self.cur_avatar_path_info_list.clear();
         self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.retcode = 0;
+        self.set_time = 0;
+        self.is_modify = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerInfoScRsp {
         static instance: SetPlayerInfoScRsp = SetPlayerInfoScRsp {
-            CHADHDHLDFJ: 0,
-            is_modify: false,
-            cur_avatar_path_info_list: ::std::vec::Vec::new(),
             cur_avatar_path: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
+            set_time: 0,
+            is_modify: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,14 +201,12 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetPlayerInfoScRsp.proto\x1a\x19MultiPathAvatarInfo.proto\x1a\x19M\
-    ultiPathAvatarType.proto\"\xfb\x01\n\x12SetPlayerInfoScRsp\x12\x20\n\x0b\
-    CHADHDHLDFJ\x18\x04\x20\x01(\x03R\x0bCHADHDHLDFJ\x12\x1b\n\tis_modify\
-    \x18\x02\x20\x01(\x08R\x08isModify\x12N\n\x19cur_avatar_path_info_list\
-    \x18\t\x20\x03(\x0b2\x14.MultiPathAvatarInfoR\x15curAvatarPathInfoList\
-    \x12<\n\x0fcur_avatar_path\x18\x0f\x20\x01(\x0e2\x14.MultiPathAvatarType\
-    R\rcurAvatarPath\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x18SetPlayerInfoScRsp.proto\x1a\x19MultiPathAvatarType.proto\"\xa4\
+    \x01\n\x12SetPlayerInfoScRsp\x12<\n\x0fcur_avatar_path\x18\x03\x20\x01(\
+    \x0e2\x14.MultiPathAvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcode\x12\x19\n\x08set_time\x18\r\x20\x01(\x03R\
+    \x07setTime\x12\x1b\n\tis_modify\x18\n\x20\x01(\x08R\x08isModifyb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -244,8 +223,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MultiPathAvatarInfo::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::MultiPathAvatarType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetPlayerInfoScRsp::generated_message_descriptor_data());

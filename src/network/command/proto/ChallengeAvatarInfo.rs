@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeAvatarInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeAvatarInfo.BLEHKKONEHP)
-    pub BLEHKKONEHP: u32,
-    // @@protoc_insertion_point(field:ChallengeAvatarInfo.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ChallengeAvatarInfo.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ChallengeAvatarInfo.avatar_type)
+    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // @@protoc_insertion_point(field:ChallengeAvatarInfo.index)
     pub index: u32,
+    // @@protoc_insertion_point(field:ChallengeAvatarInfo.JNBNNCJKHNG)
+    pub JNBNNCJKHNG: u32,
     // @@protoc_insertion_point(field:ChallengeAvatarInfo.level)
     pub level: u32,
     // special fields
@@ -58,9 +58,9 @@ impl ChallengeAvatarInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLEHKKONEHP",
-            |m: &ChallengeAvatarInfo| { &m.BLEHKKONEHP },
-            |m: &mut ChallengeAvatarInfo| { &mut m.BLEHKKONEHP },
+            "id",
+            |m: &ChallengeAvatarInfo| { &m.id },
+            |m: &mut ChallengeAvatarInfo| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
@@ -68,14 +68,14 @@ impl ChallengeAvatarInfo {
             |m: &mut ChallengeAvatarInfo| { &mut m.avatar_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &ChallengeAvatarInfo| { &m.id },
-            |m: &mut ChallengeAvatarInfo| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &ChallengeAvatarInfo| { &m.index },
             |m: &mut ChallengeAvatarInfo| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNBNNCJKHNG",
+            |m: &ChallengeAvatarInfo| { &m.JNBNNCJKHNG },
+            |m: &mut ChallengeAvatarInfo| { &mut m.JNBNNCJKHNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.BLEHKKONEHP = is.read_uint32()?;
-                },
-                8 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                48 => {
+                72 => {
                     self.id = is.read_uint32()?;
                 },
-                120 => {
-                    self.index = is.read_uint32()?;
+                40 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 112 => {
+                    self.index = is.read_uint32()?;
+                },
+                96 => {
+                    self.JNBNNCJKHNG = is.read_uint32()?;
+                },
+                24 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +127,20 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLEHKKONEHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BLEHKKONEHP);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.id);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::int32_size(5, self.avatar_type.value());
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.index);
+            my_size += ::protobuf::rt::uint32_size(14, self.index);
+        }
+        if self.JNBNNCJKHNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JNBNNCJKHNG);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLEHKKONEHP != 0 {
-            os.write_uint32(4, self.BLEHKKONEHP)?;
+        if self.id != 0 {
+            os.write_uint32(9, self.id)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
-        }
-        if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.index != 0 {
-            os.write_uint32(15, self.index)?;
+            os.write_uint32(14, self.index)?;
+        }
+        if self.JNBNNCJKHNG != 0 {
+            os.write_uint32(12, self.JNBNNCJKHNG)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(3, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
     }
 
     fn clear(&mut self) {
-        self.BLEHKKONEHP = 0;
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.id = 0;
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.index = 0;
+        self.JNBNNCJKHNG = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeAvatarInfo {
         static instance: ChallengeAvatarInfo = ChallengeAvatarInfo {
-            BLEHKKONEHP: 0,
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             id: 0,
+            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             index: 0,
+            JNBNNCJKHNG: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeAvatarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChallengeAvatarInfo.proto\x1a\x10AvatarType.proto\"\xa1\x01\n\x13C\
-    hallengeAvatarInfo\x12\x20\n\x0bBLEHKKONEHP\x18\x04\x20\x01(\rR\x0bBLEHK\
-    KONEHP\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navat\
-    arType\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12\x14\n\x05index\x18\
-    \x0f\x20\x01(\rR\x05index\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05leve\
-    lb\x06proto3\
+    hallengeAvatarInfo\x12\x0e\n\x02id\x18\t\x20\x01(\rR\x02id\x12,\n\x0bava\
+    tar_type\x18\x05\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x14\n\x05\
+    index\x18\x0e\x20\x01(\rR\x05index\x12\x20\n\x0bJNBNNCJKHNG\x18\x0c\x20\
+    \x01(\rR\x0bJNBNNCJKHNG\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05levelb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

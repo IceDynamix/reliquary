@@ -27,80 +27,80 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSwordTrainingType)
 pub enum CmdSwordTrainingType {
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_ALOCMFAKBKP)
-    HLADHLLGCBM_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BFDPOGEKJIB)
-    HLADHLLGCBM_BFDPOGEKJIB = 7474,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IPHOBIAMEGN)
-    HLADHLLGCBM_IPHOBIAMEGN = 7457,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NINFFIOMNKF)
-    HLADHLLGCBM_NINFFIOMNKF = 7477,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GOBKDMAPGCL)
-    HLADHLLGCBM_GOBKDMAPGCL = 7471,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BMGKCCLHCOD)
-    HLADHLLGCBM_BMGKCCLHCOD = 7487,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GALIHAGGFJP)
-    HLADHLLGCBM_GALIHAGGFJP = 7496,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CEHCBLILJPJ)
-    HLADHLLGCBM_CEHCBLILJPJ = 7454,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CLBPNHGPOOB)
-    HLADHLLGCBM_CLBPNHGPOOB = 7490,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GPHMOAMKKLA)
-    HLADHLLGCBM_GPHMOAMKKLA = 7480,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GIAKLCLJCJL)
-    HLADHLLGCBM_GIAKLCLJCJL = 7483,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MONDOCLCPAE)
-    HLADHLLGCBM_MONDOCLCPAE = 7478,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_FDGBJOGPJBP)
-    HLADHLLGCBM_FDGBJOGPJBP = 7473,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MPKINCGHIKF)
-    HLADHLLGCBM_MPKINCGHIKF = 7481,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_EFCFDPJGMON)
-    HLADHLLGCBM_EFCFDPJGMON = 7486,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GGMECECPHMG)
-    HLADHLLGCBM_GGMECECPHMG = 7497,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_FCDKLPMBCHD)
-    HLADHLLGCBM_FCDKLPMBCHD = 7455,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NOALPKMILBG)
-    HLADHLLGCBM_NOALPKMILBG = 7485,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NLIDNIEALBD)
-    HLADHLLGCBM_NLIDNIEALBD = 7453,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NOGDGLGALEF)
-    HLADHLLGCBM_NOGDGLGALEF = 7476,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_PBLCOKMGDPI)
-    HLADHLLGCBM_PBLCOKMGDPI = 7495,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_PCCDPCOKFCJ)
-    HLADHLLGCBM_PCCDPCOKFCJ = 7498,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NBAKFGGKOGC)
-    HLADHLLGCBM_NBAKFGGKOGC = 7470,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IIHABPJDEAJ)
-    HLADHLLGCBM_IIHABPJDEAJ = 7482,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_EALBCMCIOOI)
-    HLADHLLGCBM_EALBCMCIOOI = 7484,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MKAANOIOAPE)
-    HLADHLLGCBM_MKAANOIOAPE = 7458,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_CLKPIDCIHGA)
-    HLADHLLGCBM_CLKPIDCIHGA = 7451,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_GDBHONBFOOE)
-    HLADHLLGCBM_GDBHONBFOOE = 7500,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NFGKEJPDIOJ)
-    HLADHLLGCBM_NFGKEJPDIOJ = 7491,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_BLHMDMEKACK)
-    HLADHLLGCBM_BLHMDMEKACK = 7475,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_NEECHJFLGEH)
-    HLADHLLGCBM_NEECHJFLGEH = 7479,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_MIGEDGMEMCI)
-    HLADHLLGCBM_MIGEDGMEMCI = 7460,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_POAMLPPFHEO)
-    HLADHLLGCBM_POAMLPPFHEO = 7494,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IHBPMPDNJFB)
-    HLADHLLGCBM_IHBPMPDNJFB = 7493,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_IGPHOOKDCGJ)
-    HLADHLLGCBM_IGPHOOKDCGJ = 7452,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_ELLDPGHEEGG)
-    HLADHLLGCBM_ELLDPGHEEGG = 7456,
-    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.HLADHLLGCBM_OBBBKBAAGIE)
-    HLADHLLGCBM_OBBBKBAAGIE = 7469,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_GKJBAODJMJG)
+    MBONCPAOOMA_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_DIIILPPFIME)
+    MBONCPAOOMA_DIIILPPFIME = 7482,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_BPKCNDGDHCI)
+    MBONCPAOOMA_BPKCNDGDHCI = 7466,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_BPBNHPKJPDA)
+    MBONCPAOOMA_BPBNHPKJPDA = 7468,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_GIPMDCAOLML)
+    MBONCPAOOMA_GIPMDCAOLML = 7487,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_JIHGLKNGDJG)
+    MBONCPAOOMA_JIHGLKNGDJG = 7451,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_MLCIDIKOLCC)
+    MBONCPAOOMA_MLCIDIKOLCC = 7480,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_PNGEGAGCCGA)
+    MBONCPAOOMA_PNGEGAGCCGA = 7490,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_PEBKHLLHOAJ)
+    MBONCPAOOMA_PEBKHLLHOAJ = 7474,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_EAHNEDIDADH)
+    MBONCPAOOMA_EAHNEDIDADH = 7499,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_APBFPCNCADP)
+    MBONCPAOOMA_APBFPCNCADP = 7467,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_DJFEMEJKALJ)
+    MBONCPAOOMA_DJFEMEJKALJ = 7469,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_NCPIDHOPBOP)
+    MBONCPAOOMA_NCPIDHOPBOP = 7489,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_CMOFHJADEAG)
+    MBONCPAOOMA_CMOFHJADEAG = 7497,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_AAPAMKKBFLL)
+    MBONCPAOOMA_AAPAMKKBFLL = 7479,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_BJGPILBIFKN)
+    MBONCPAOOMA_BJGPILBIFKN = 7470,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_DGOMEDPOEDC)
+    MBONCPAOOMA_DGOMEDPOEDC = 7485,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_HOAIKJCAEBG)
+    MBONCPAOOMA_HOAIKJCAEBG = 7457,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_FIECNFHOGKN)
+    MBONCPAOOMA_FIECNFHOGKN = 7472,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_CNEDMMDMKEG)
+    MBONCPAOOMA_CNEDMMDMKEG = 7455,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_LOPNEGLFHFB)
+    MBONCPAOOMA_LOPNEGLFHFB = 7461,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_JALLIEDGFCG)
+    MBONCPAOOMA_JALLIEDGFCG = 7476,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_GHMJABMFAEJ)
+    MBONCPAOOMA_GHMJABMFAEJ = 7500,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_FEALHLFOJBE)
+    MBONCPAOOMA_FEALHLFOJBE = 7473,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_ELDPHNOELDB)
+    MBONCPAOOMA_ELDPHNOELDB = 7471,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_LBMCDHNGPBM)
+    MBONCPAOOMA_LBMCDHNGPBM = 7496,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_ABEHJIJOBAH)
+    MBONCPAOOMA_ABEHJIJOBAH = 7477,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_JFPDBNBOJJA)
+    MBONCPAOOMA_JFPDBNBOJJA = 7483,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_EOKIHEAIBOC)
+    MBONCPAOOMA_EOKIHEAIBOC = 7488,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_LCIIOPJIPAE)
+    MBONCPAOOMA_LCIIOPJIPAE = 7463,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_FFJEOFEEFIC)
+    MBONCPAOOMA_FFJEOFEEFIC = 7465,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_FHCELMKANDC)
+    MBONCPAOOMA_FHCELMKANDC = 7458,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_KNKNFIIEIKC)
+    MBONCPAOOMA_KNKNFIIEIKC = 7494,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_NIBEGNMMKPL)
+    MBONCPAOOMA_NIBEGNMMKPL = 7460,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_GGDGFEAGNGP)
+    MBONCPAOOMA_GGDGFEAGNGP = 7484,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_OMACPGIFJAG)
+    MBONCPAOOMA_OMACPGIFJAG = 7492,
+    // @@protoc_insertion_point(enum_value:CmdSwordTrainingType.MBONCPAOOMA_KDMLIKJBIMD)
+    MBONCPAOOMA_KDMLIKJBIMD = 7452,
 }
 
 impl ::protobuf::Enum for CmdSwordTrainingType {
@@ -112,128 +112,128 @@ impl ::protobuf::Enum for CmdSwordTrainingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSwordTrainingType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP),
-            7474 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB),
-            7457 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN),
-            7477 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF),
-            7471 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL),
-            7487 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD),
-            7496 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP),
-            7454 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ),
-            7490 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB),
-            7480 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA),
-            7483 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL),
-            7478 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE),
-            7473 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP),
-            7481 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF),
-            7486 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON),
-            7497 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG),
-            7455 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD),
-            7485 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG),
-            7453 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD),
-            7476 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF),
-            7495 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI),
-            7498 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ),
-            7470 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC),
-            7482 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ),
-            7484 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI),
-            7458 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE),
-            7451 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA),
-            7500 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE),
-            7491 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ),
-            7475 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK),
-            7479 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH),
-            7460 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI),
-            7494 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO),
-            7493 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB),
-            7452 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ),
-            7456 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG),
-            7469 => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE),
+            0 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GKJBAODJMJG),
+            7482 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DIIILPPFIME),
+            7466 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BPKCNDGDHCI),
+            7468 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BPBNHPKJPDA),
+            7487 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GIPMDCAOLML),
+            7451 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JIHGLKNGDJG),
+            7480 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_MLCIDIKOLCC),
+            7490 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_PNGEGAGCCGA),
+            7474 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_PEBKHLLHOAJ),
+            7499 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_EAHNEDIDADH),
+            7467 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_APBFPCNCADP),
+            7469 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DJFEMEJKALJ),
+            7489 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_NCPIDHOPBOP),
+            7497 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_CMOFHJADEAG),
+            7479 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_AAPAMKKBFLL),
+            7470 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BJGPILBIFKN),
+            7485 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DGOMEDPOEDC),
+            7457 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_HOAIKJCAEBG),
+            7472 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FIECNFHOGKN),
+            7455 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_CNEDMMDMKEG),
+            7461 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LOPNEGLFHFB),
+            7476 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JALLIEDGFCG),
+            7500 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GHMJABMFAEJ),
+            7473 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FEALHLFOJBE),
+            7471 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_ELDPHNOELDB),
+            7496 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LBMCDHNGPBM),
+            7477 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_ABEHJIJOBAH),
+            7483 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JFPDBNBOJJA),
+            7488 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_EOKIHEAIBOC),
+            7463 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LCIIOPJIPAE),
+            7465 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FFJEOFEEFIC),
+            7458 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FHCELMKANDC),
+            7494 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_KNKNFIIEIKC),
+            7460 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_NIBEGNMMKPL),
+            7484 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GGDGFEAGNGP),
+            7492 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_OMACPGIFJAG),
+            7452 => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_KDMLIKJBIMD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSwordTrainingType> {
         match str {
-            "HLADHLLGCBM_ALOCMFAKBKP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP),
-            "HLADHLLGCBM_BFDPOGEKJIB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB),
-            "HLADHLLGCBM_IPHOBIAMEGN" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN),
-            "HLADHLLGCBM_NINFFIOMNKF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF),
-            "HLADHLLGCBM_GOBKDMAPGCL" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL),
-            "HLADHLLGCBM_BMGKCCLHCOD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD),
-            "HLADHLLGCBM_GALIHAGGFJP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP),
-            "HLADHLLGCBM_CEHCBLILJPJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ),
-            "HLADHLLGCBM_CLBPNHGPOOB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB),
-            "HLADHLLGCBM_GPHMOAMKKLA" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA),
-            "HLADHLLGCBM_GIAKLCLJCJL" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL),
-            "HLADHLLGCBM_MONDOCLCPAE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE),
-            "HLADHLLGCBM_FDGBJOGPJBP" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP),
-            "HLADHLLGCBM_MPKINCGHIKF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF),
-            "HLADHLLGCBM_EFCFDPJGMON" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON),
-            "HLADHLLGCBM_GGMECECPHMG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG),
-            "HLADHLLGCBM_FCDKLPMBCHD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD),
-            "HLADHLLGCBM_NOALPKMILBG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG),
-            "HLADHLLGCBM_NLIDNIEALBD" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD),
-            "HLADHLLGCBM_NOGDGLGALEF" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF),
-            "HLADHLLGCBM_PBLCOKMGDPI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI),
-            "HLADHLLGCBM_PCCDPCOKFCJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ),
-            "HLADHLLGCBM_NBAKFGGKOGC" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC),
-            "HLADHLLGCBM_IIHABPJDEAJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ),
-            "HLADHLLGCBM_EALBCMCIOOI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI),
-            "HLADHLLGCBM_MKAANOIOAPE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE),
-            "HLADHLLGCBM_CLKPIDCIHGA" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA),
-            "HLADHLLGCBM_GDBHONBFOOE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE),
-            "HLADHLLGCBM_NFGKEJPDIOJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ),
-            "HLADHLLGCBM_BLHMDMEKACK" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK),
-            "HLADHLLGCBM_NEECHJFLGEH" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH),
-            "HLADHLLGCBM_MIGEDGMEMCI" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI),
-            "HLADHLLGCBM_POAMLPPFHEO" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO),
-            "HLADHLLGCBM_IHBPMPDNJFB" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB),
-            "HLADHLLGCBM_IGPHOOKDCGJ" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ),
-            "HLADHLLGCBM_ELLDPGHEEGG" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG),
-            "HLADHLLGCBM_OBBBKBAAGIE" => ::std::option::Option::Some(CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE),
+            "MBONCPAOOMA_GKJBAODJMJG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GKJBAODJMJG),
+            "MBONCPAOOMA_DIIILPPFIME" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DIIILPPFIME),
+            "MBONCPAOOMA_BPKCNDGDHCI" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BPKCNDGDHCI),
+            "MBONCPAOOMA_BPBNHPKJPDA" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BPBNHPKJPDA),
+            "MBONCPAOOMA_GIPMDCAOLML" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GIPMDCAOLML),
+            "MBONCPAOOMA_JIHGLKNGDJG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JIHGLKNGDJG),
+            "MBONCPAOOMA_MLCIDIKOLCC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_MLCIDIKOLCC),
+            "MBONCPAOOMA_PNGEGAGCCGA" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_PNGEGAGCCGA),
+            "MBONCPAOOMA_PEBKHLLHOAJ" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_PEBKHLLHOAJ),
+            "MBONCPAOOMA_EAHNEDIDADH" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_EAHNEDIDADH),
+            "MBONCPAOOMA_APBFPCNCADP" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_APBFPCNCADP),
+            "MBONCPAOOMA_DJFEMEJKALJ" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DJFEMEJKALJ),
+            "MBONCPAOOMA_NCPIDHOPBOP" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_NCPIDHOPBOP),
+            "MBONCPAOOMA_CMOFHJADEAG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_CMOFHJADEAG),
+            "MBONCPAOOMA_AAPAMKKBFLL" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_AAPAMKKBFLL),
+            "MBONCPAOOMA_BJGPILBIFKN" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_BJGPILBIFKN),
+            "MBONCPAOOMA_DGOMEDPOEDC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_DGOMEDPOEDC),
+            "MBONCPAOOMA_HOAIKJCAEBG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_HOAIKJCAEBG),
+            "MBONCPAOOMA_FIECNFHOGKN" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FIECNFHOGKN),
+            "MBONCPAOOMA_CNEDMMDMKEG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_CNEDMMDMKEG),
+            "MBONCPAOOMA_LOPNEGLFHFB" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LOPNEGLFHFB),
+            "MBONCPAOOMA_JALLIEDGFCG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JALLIEDGFCG),
+            "MBONCPAOOMA_GHMJABMFAEJ" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GHMJABMFAEJ),
+            "MBONCPAOOMA_FEALHLFOJBE" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FEALHLFOJBE),
+            "MBONCPAOOMA_ELDPHNOELDB" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_ELDPHNOELDB),
+            "MBONCPAOOMA_LBMCDHNGPBM" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LBMCDHNGPBM),
+            "MBONCPAOOMA_ABEHJIJOBAH" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_ABEHJIJOBAH),
+            "MBONCPAOOMA_JFPDBNBOJJA" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_JFPDBNBOJJA),
+            "MBONCPAOOMA_EOKIHEAIBOC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_EOKIHEAIBOC),
+            "MBONCPAOOMA_LCIIOPJIPAE" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_LCIIOPJIPAE),
+            "MBONCPAOOMA_FFJEOFEEFIC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FFJEOFEEFIC),
+            "MBONCPAOOMA_FHCELMKANDC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_FHCELMKANDC),
+            "MBONCPAOOMA_KNKNFIIEIKC" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_KNKNFIIEIKC),
+            "MBONCPAOOMA_NIBEGNMMKPL" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_NIBEGNMMKPL),
+            "MBONCPAOOMA_GGDGFEAGNGP" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_GGDGFEAGNGP),
+            "MBONCPAOOMA_OMACPGIFJAG" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_OMACPGIFJAG),
+            "MBONCPAOOMA_KDMLIKJBIMD" => ::std::option::Option::Some(CmdSwordTrainingType::MBONCPAOOMA_KDMLIKJBIMD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSwordTrainingType] = &[
-        CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP,
-        CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB,
-        CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN,
-        CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF,
-        CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL,
-        CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD,
-        CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP,
-        CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ,
-        CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB,
-        CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA,
-        CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL,
-        CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE,
-        CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP,
-        CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF,
-        CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON,
-        CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG,
-        CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD,
-        CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG,
-        CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD,
-        CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF,
-        CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI,
-        CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ,
-        CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC,
-        CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ,
-        CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI,
-        CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE,
-        CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA,
-        CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE,
-        CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ,
-        CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK,
-        CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH,
-        CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI,
-        CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO,
-        CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB,
-        CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ,
-        CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG,
-        CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE,
+        CmdSwordTrainingType::MBONCPAOOMA_GKJBAODJMJG,
+        CmdSwordTrainingType::MBONCPAOOMA_DIIILPPFIME,
+        CmdSwordTrainingType::MBONCPAOOMA_BPKCNDGDHCI,
+        CmdSwordTrainingType::MBONCPAOOMA_BPBNHPKJPDA,
+        CmdSwordTrainingType::MBONCPAOOMA_GIPMDCAOLML,
+        CmdSwordTrainingType::MBONCPAOOMA_JIHGLKNGDJG,
+        CmdSwordTrainingType::MBONCPAOOMA_MLCIDIKOLCC,
+        CmdSwordTrainingType::MBONCPAOOMA_PNGEGAGCCGA,
+        CmdSwordTrainingType::MBONCPAOOMA_PEBKHLLHOAJ,
+        CmdSwordTrainingType::MBONCPAOOMA_EAHNEDIDADH,
+        CmdSwordTrainingType::MBONCPAOOMA_APBFPCNCADP,
+        CmdSwordTrainingType::MBONCPAOOMA_DJFEMEJKALJ,
+        CmdSwordTrainingType::MBONCPAOOMA_NCPIDHOPBOP,
+        CmdSwordTrainingType::MBONCPAOOMA_CMOFHJADEAG,
+        CmdSwordTrainingType::MBONCPAOOMA_AAPAMKKBFLL,
+        CmdSwordTrainingType::MBONCPAOOMA_BJGPILBIFKN,
+        CmdSwordTrainingType::MBONCPAOOMA_DGOMEDPOEDC,
+        CmdSwordTrainingType::MBONCPAOOMA_HOAIKJCAEBG,
+        CmdSwordTrainingType::MBONCPAOOMA_FIECNFHOGKN,
+        CmdSwordTrainingType::MBONCPAOOMA_CNEDMMDMKEG,
+        CmdSwordTrainingType::MBONCPAOOMA_LOPNEGLFHFB,
+        CmdSwordTrainingType::MBONCPAOOMA_JALLIEDGFCG,
+        CmdSwordTrainingType::MBONCPAOOMA_GHMJABMFAEJ,
+        CmdSwordTrainingType::MBONCPAOOMA_FEALHLFOJBE,
+        CmdSwordTrainingType::MBONCPAOOMA_ELDPHNOELDB,
+        CmdSwordTrainingType::MBONCPAOOMA_LBMCDHNGPBM,
+        CmdSwordTrainingType::MBONCPAOOMA_ABEHJIJOBAH,
+        CmdSwordTrainingType::MBONCPAOOMA_JFPDBNBOJJA,
+        CmdSwordTrainingType::MBONCPAOOMA_EOKIHEAIBOC,
+        CmdSwordTrainingType::MBONCPAOOMA_LCIIOPJIPAE,
+        CmdSwordTrainingType::MBONCPAOOMA_FFJEOFEEFIC,
+        CmdSwordTrainingType::MBONCPAOOMA_FHCELMKANDC,
+        CmdSwordTrainingType::MBONCPAOOMA_KNKNFIIEIKC,
+        CmdSwordTrainingType::MBONCPAOOMA_NIBEGNMMKPL,
+        CmdSwordTrainingType::MBONCPAOOMA_GGDGFEAGNGP,
+        CmdSwordTrainingType::MBONCPAOOMA_OMACPGIFJAG,
+        CmdSwordTrainingType::MBONCPAOOMA_KDMLIKJBIMD,
     ];
 }
 
@@ -245,43 +245,43 @@ impl ::protobuf::EnumFull for CmdSwordTrainingType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP => 0,
-            CmdSwordTrainingType::HLADHLLGCBM_BFDPOGEKJIB => 1,
-            CmdSwordTrainingType::HLADHLLGCBM_IPHOBIAMEGN => 2,
-            CmdSwordTrainingType::HLADHLLGCBM_NINFFIOMNKF => 3,
-            CmdSwordTrainingType::HLADHLLGCBM_GOBKDMAPGCL => 4,
-            CmdSwordTrainingType::HLADHLLGCBM_BMGKCCLHCOD => 5,
-            CmdSwordTrainingType::HLADHLLGCBM_GALIHAGGFJP => 6,
-            CmdSwordTrainingType::HLADHLLGCBM_CEHCBLILJPJ => 7,
-            CmdSwordTrainingType::HLADHLLGCBM_CLBPNHGPOOB => 8,
-            CmdSwordTrainingType::HLADHLLGCBM_GPHMOAMKKLA => 9,
-            CmdSwordTrainingType::HLADHLLGCBM_GIAKLCLJCJL => 10,
-            CmdSwordTrainingType::HLADHLLGCBM_MONDOCLCPAE => 11,
-            CmdSwordTrainingType::HLADHLLGCBM_FDGBJOGPJBP => 12,
-            CmdSwordTrainingType::HLADHLLGCBM_MPKINCGHIKF => 13,
-            CmdSwordTrainingType::HLADHLLGCBM_EFCFDPJGMON => 14,
-            CmdSwordTrainingType::HLADHLLGCBM_GGMECECPHMG => 15,
-            CmdSwordTrainingType::HLADHLLGCBM_FCDKLPMBCHD => 16,
-            CmdSwordTrainingType::HLADHLLGCBM_NOALPKMILBG => 17,
-            CmdSwordTrainingType::HLADHLLGCBM_NLIDNIEALBD => 18,
-            CmdSwordTrainingType::HLADHLLGCBM_NOGDGLGALEF => 19,
-            CmdSwordTrainingType::HLADHLLGCBM_PBLCOKMGDPI => 20,
-            CmdSwordTrainingType::HLADHLLGCBM_PCCDPCOKFCJ => 21,
-            CmdSwordTrainingType::HLADHLLGCBM_NBAKFGGKOGC => 22,
-            CmdSwordTrainingType::HLADHLLGCBM_IIHABPJDEAJ => 23,
-            CmdSwordTrainingType::HLADHLLGCBM_EALBCMCIOOI => 24,
-            CmdSwordTrainingType::HLADHLLGCBM_MKAANOIOAPE => 25,
-            CmdSwordTrainingType::HLADHLLGCBM_CLKPIDCIHGA => 26,
-            CmdSwordTrainingType::HLADHLLGCBM_GDBHONBFOOE => 27,
-            CmdSwordTrainingType::HLADHLLGCBM_NFGKEJPDIOJ => 28,
-            CmdSwordTrainingType::HLADHLLGCBM_BLHMDMEKACK => 29,
-            CmdSwordTrainingType::HLADHLLGCBM_NEECHJFLGEH => 30,
-            CmdSwordTrainingType::HLADHLLGCBM_MIGEDGMEMCI => 31,
-            CmdSwordTrainingType::HLADHLLGCBM_POAMLPPFHEO => 32,
-            CmdSwordTrainingType::HLADHLLGCBM_IHBPMPDNJFB => 33,
-            CmdSwordTrainingType::HLADHLLGCBM_IGPHOOKDCGJ => 34,
-            CmdSwordTrainingType::HLADHLLGCBM_ELLDPGHEEGG => 35,
-            CmdSwordTrainingType::HLADHLLGCBM_OBBBKBAAGIE => 36,
+            CmdSwordTrainingType::MBONCPAOOMA_GKJBAODJMJG => 0,
+            CmdSwordTrainingType::MBONCPAOOMA_DIIILPPFIME => 1,
+            CmdSwordTrainingType::MBONCPAOOMA_BPKCNDGDHCI => 2,
+            CmdSwordTrainingType::MBONCPAOOMA_BPBNHPKJPDA => 3,
+            CmdSwordTrainingType::MBONCPAOOMA_GIPMDCAOLML => 4,
+            CmdSwordTrainingType::MBONCPAOOMA_JIHGLKNGDJG => 5,
+            CmdSwordTrainingType::MBONCPAOOMA_MLCIDIKOLCC => 6,
+            CmdSwordTrainingType::MBONCPAOOMA_PNGEGAGCCGA => 7,
+            CmdSwordTrainingType::MBONCPAOOMA_PEBKHLLHOAJ => 8,
+            CmdSwordTrainingType::MBONCPAOOMA_EAHNEDIDADH => 9,
+            CmdSwordTrainingType::MBONCPAOOMA_APBFPCNCADP => 10,
+            CmdSwordTrainingType::MBONCPAOOMA_DJFEMEJKALJ => 11,
+            CmdSwordTrainingType::MBONCPAOOMA_NCPIDHOPBOP => 12,
+            CmdSwordTrainingType::MBONCPAOOMA_CMOFHJADEAG => 13,
+            CmdSwordTrainingType::MBONCPAOOMA_AAPAMKKBFLL => 14,
+            CmdSwordTrainingType::MBONCPAOOMA_BJGPILBIFKN => 15,
+            CmdSwordTrainingType::MBONCPAOOMA_DGOMEDPOEDC => 16,
+            CmdSwordTrainingType::MBONCPAOOMA_HOAIKJCAEBG => 17,
+            CmdSwordTrainingType::MBONCPAOOMA_FIECNFHOGKN => 18,
+            CmdSwordTrainingType::MBONCPAOOMA_CNEDMMDMKEG => 19,
+            CmdSwordTrainingType::MBONCPAOOMA_LOPNEGLFHFB => 20,
+            CmdSwordTrainingType::MBONCPAOOMA_JALLIEDGFCG => 21,
+            CmdSwordTrainingType::MBONCPAOOMA_GHMJABMFAEJ => 22,
+            CmdSwordTrainingType::MBONCPAOOMA_FEALHLFOJBE => 23,
+            CmdSwordTrainingType::MBONCPAOOMA_ELDPHNOELDB => 24,
+            CmdSwordTrainingType::MBONCPAOOMA_LBMCDHNGPBM => 25,
+            CmdSwordTrainingType::MBONCPAOOMA_ABEHJIJOBAH => 26,
+            CmdSwordTrainingType::MBONCPAOOMA_JFPDBNBOJJA => 27,
+            CmdSwordTrainingType::MBONCPAOOMA_EOKIHEAIBOC => 28,
+            CmdSwordTrainingType::MBONCPAOOMA_LCIIOPJIPAE => 29,
+            CmdSwordTrainingType::MBONCPAOOMA_FFJEOFEEFIC => 30,
+            CmdSwordTrainingType::MBONCPAOOMA_FHCELMKANDC => 31,
+            CmdSwordTrainingType::MBONCPAOOMA_KNKNFIIEIKC => 32,
+            CmdSwordTrainingType::MBONCPAOOMA_NIBEGNMMKPL => 33,
+            CmdSwordTrainingType::MBONCPAOOMA_GGDGFEAGNGP => 34,
+            CmdSwordTrainingType::MBONCPAOOMA_OMACPGIFJAG => 35,
+            CmdSwordTrainingType::MBONCPAOOMA_KDMLIKJBIMD => 36,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -289,7 +289,7 @@ impl ::protobuf::EnumFull for CmdSwordTrainingType {
 
 impl ::std::default::Default for CmdSwordTrainingType {
     fn default() -> Self {
-        CmdSwordTrainingType::HLADHLLGCBM_ALOCMFAKBKP
+        CmdSwordTrainingType::MBONCPAOOMA_GKJBAODJMJG
     }
 }
 
@@ -301,30 +301,30 @@ impl CmdSwordTrainingType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdSwordTrainingType.proto*\xeb\x08\n\x14CmdSwordTrainingType\x12\
-    \x1b\n\x17HLADHLLGCBM_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HLADHLLGCBM_BFDPOGE\
-    KJIB\x10\xb2:\x12\x1c\n\x17HLADHLLGCBM_IPHOBIAMEGN\x10\xa1:\x12\x1c\n\
-    \x17HLADHLLGCBM_NINFFIOMNKF\x10\xb5:\x12\x1c\n\x17HLADHLLGCBM_GOBKDMAPGC\
-    L\x10\xaf:\x12\x1c\n\x17HLADHLLGCBM_BMGKCCLHCOD\x10\xbf:\x12\x1c\n\x17HL\
-    ADHLLGCBM_GALIHAGGFJP\x10\xc8:\x12\x1c\n\x17HLADHLLGCBM_CEHCBLILJPJ\x10\
-    \x9e:\x12\x1c\n\x17HLADHLLGCBM_CLBPNHGPOOB\x10\xc2:\x12\x1c\n\x17HLADHLL\
-    GCBM_GPHMOAMKKLA\x10\xb8:\x12\x1c\n\x17HLADHLLGCBM_GIAKLCLJCJL\x10\xbb:\
-    \x12\x1c\n\x17HLADHLLGCBM_MONDOCLCPAE\x10\xb6:\x12\x1c\n\x17HLADHLLGCBM_\
-    FDGBJOGPJBP\x10\xb1:\x12\x1c\n\x17HLADHLLGCBM_MPKINCGHIKF\x10\xb9:\x12\
-    \x1c\n\x17HLADHLLGCBM_EFCFDPJGMON\x10\xbe:\x12\x1c\n\x17HLADHLLGCBM_GGME\
-    CECPHMG\x10\xc9:\x12\x1c\n\x17HLADHLLGCBM_FCDKLPMBCHD\x10\x9f:\x12\x1c\n\
-    \x17HLADHLLGCBM_NOALPKMILBG\x10\xbd:\x12\x1c\n\x17HLADHLLGCBM_NLIDNIEALB\
-    D\x10\x9d:\x12\x1c\n\x17HLADHLLGCBM_NOGDGLGALEF\x10\xb4:\x12\x1c\n\x17HL\
-    ADHLLGCBM_PBLCOKMGDPI\x10\xc7:\x12\x1c\n\x17HLADHLLGCBM_PCCDPCOKFCJ\x10\
-    \xca:\x12\x1c\n\x17HLADHLLGCBM_NBAKFGGKOGC\x10\xae:\x12\x1c\n\x17HLADHLL\
-    GCBM_IIHABPJDEAJ\x10\xba:\x12\x1c\n\x17HLADHLLGCBM_EALBCMCIOOI\x10\xbc:\
-    \x12\x1c\n\x17HLADHLLGCBM_MKAANOIOAPE\x10\xa2:\x12\x1c\n\x17HLADHLLGCBM_\
-    CLKPIDCIHGA\x10\x9b:\x12\x1c\n\x17HLADHLLGCBM_GDBHONBFOOE\x10\xcc:\x12\
-    \x1c\n\x17HLADHLLGCBM_NFGKEJPDIOJ\x10\xc3:\x12\x1c\n\x17HLADHLLGCBM_BLHM\
-    DMEKACK\x10\xb3:\x12\x1c\n\x17HLADHLLGCBM_NEECHJFLGEH\x10\xb7:\x12\x1c\n\
-    \x17HLADHLLGCBM_MIGEDGMEMCI\x10\xa4:\x12\x1c\n\x17HLADHLLGCBM_POAMLPPFHE\
-    O\x10\xc6:\x12\x1c\n\x17HLADHLLGCBM_IHBPMPDNJFB\x10\xc5:\x12\x1c\n\x17HL\
-    ADHLLGCBM_IGPHOOKDCGJ\x10\x9c:\x12\x1c\n\x17HLADHLLGCBM_ELLDPGHEEGG\x10\
-    \xa0:\x12\x1c\n\x17HLADHLLGCBM_OBBBKBAAGIE\x10\xad:b\x06proto3\
+    \x1b\n\x17MBONCPAOOMA_GKJBAODJMJG\x10\0\x12\x1c\n\x17MBONCPAOOMA_DIIILPP\
+    FIME\x10\xba:\x12\x1c\n\x17MBONCPAOOMA_BPKCNDGDHCI\x10\xaa:\x12\x1c\n\
+    \x17MBONCPAOOMA_BPBNHPKJPDA\x10\xac:\x12\x1c\n\x17MBONCPAOOMA_GIPMDCAOLM\
+    L\x10\xbf:\x12\x1c\n\x17MBONCPAOOMA_JIHGLKNGDJG\x10\x9b:\x12\x1c\n\x17MB\
+    ONCPAOOMA_MLCIDIKOLCC\x10\xb8:\x12\x1c\n\x17MBONCPAOOMA_PNGEGAGCCGA\x10\
+    \xc2:\x12\x1c\n\x17MBONCPAOOMA_PEBKHLLHOAJ\x10\xb2:\x12\x1c\n\x17MBONCPA\
+    OOMA_EAHNEDIDADH\x10\xcb:\x12\x1c\n\x17MBONCPAOOMA_APBFPCNCADP\x10\xab:\
+    \x12\x1c\n\x17MBONCPAOOMA_DJFEMEJKALJ\x10\xad:\x12\x1c\n\x17MBONCPAOOMA_\
+    NCPIDHOPBOP\x10\xc1:\x12\x1c\n\x17MBONCPAOOMA_CMOFHJADEAG\x10\xc9:\x12\
+    \x1c\n\x17MBONCPAOOMA_AAPAMKKBFLL\x10\xb7:\x12\x1c\n\x17MBONCPAOOMA_BJGP\
+    ILBIFKN\x10\xae:\x12\x1c\n\x17MBONCPAOOMA_DGOMEDPOEDC\x10\xbd:\x12\x1c\n\
+    \x17MBONCPAOOMA_HOAIKJCAEBG\x10\xa1:\x12\x1c\n\x17MBONCPAOOMA_FIECNFHOGK\
+    N\x10\xb0:\x12\x1c\n\x17MBONCPAOOMA_CNEDMMDMKEG\x10\x9f:\x12\x1c\n\x17MB\
+    ONCPAOOMA_LOPNEGLFHFB\x10\xa5:\x12\x1c\n\x17MBONCPAOOMA_JALLIEDGFCG\x10\
+    \xb4:\x12\x1c\n\x17MBONCPAOOMA_GHMJABMFAEJ\x10\xcc:\x12\x1c\n\x17MBONCPA\
+    OOMA_FEALHLFOJBE\x10\xb1:\x12\x1c\n\x17MBONCPAOOMA_ELDPHNOELDB\x10\xaf:\
+    \x12\x1c\n\x17MBONCPAOOMA_LBMCDHNGPBM\x10\xc8:\x12\x1c\n\x17MBONCPAOOMA_\
+    ABEHJIJOBAH\x10\xb5:\x12\x1c\n\x17MBONCPAOOMA_JFPDBNBOJJA\x10\xbb:\x12\
+    \x1c\n\x17MBONCPAOOMA_EOKIHEAIBOC\x10\xc0:\x12\x1c\n\x17MBONCPAOOMA_LCII\
+    OPJIPAE\x10\xa7:\x12\x1c\n\x17MBONCPAOOMA_FFJEOFEEFIC\x10\xa9:\x12\x1c\n\
+    \x17MBONCPAOOMA_FHCELMKANDC\x10\xa2:\x12\x1c\n\x17MBONCPAOOMA_KNKNFIIEIK\
+    C\x10\xc6:\x12\x1c\n\x17MBONCPAOOMA_NIBEGNMMKPL\x10\xa4:\x12\x1c\n\x17MB\
+    ONCPAOOMA_GGDGFEAGNGP\x10\xbc:\x12\x1c\n\x17MBONCPAOOMA_OMACPGIFJAG\x10\
+    \xc4:\x12\x1c\n\x17MBONCPAOOMA_KDMLIKJBIMD\x10\x9c:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

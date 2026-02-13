@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerKickOutScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerKickOutScNotify.black_info)
-    pub black_info: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // @@protoc_insertion_point(field:PlayerKickOutScNotify.kick_type)
     pub kick_type: ::protobuf::EnumOrUnknown<super::KickType::KickType>,
+    // @@protoc_insertion_point(field:PlayerKickOutScNotify.black_info)
+    pub black_info: ::protobuf::MessageField<super::BlackInfo::BlackInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerKickOutScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PlayerKickOutScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BlackInfo::BlackInfo>(
-            "black_info",
-            |m: &PlayerKickOutScNotify| { &m.black_info },
-            |m: &mut PlayerKickOutScNotify| { &mut m.black_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "kick_type",
             |m: &PlayerKickOutScNotify| { &m.kick_type },
             |m: &mut PlayerKickOutScNotify| { &mut m.kick_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BlackInfo::BlackInfo>(
+            "black_info",
+            |m: &PlayerKickOutScNotify| { &m.black_info },
+            |m: &mut PlayerKickOutScNotify| { &mut m.black_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerKickOutScNotify>(
             "PlayerKickOutScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
-                },
-                120 => {
+                104 => {
                     self.kick_type = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
+            my_size += ::protobuf::rt::int32_size(13, self.kick_type.value());
+        }
         if let Some(v) = self.black_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(15, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+        }
+        if let Some(v) = self.black_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PlayerKickOutScNotify {
     }
 
     fn clear(&mut self) {
-        self.black_info.clear();
         self.kick_type = ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED);
+        self.black_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerKickOutScNotify {
         static instance: PlayerKickOutScNotify = PlayerKickOutScNotify {
-            black_info: ::protobuf::MessageField::none(),
             kick_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            black_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerKickOutScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlayerKickOutScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x0eKickType\
-    .proto\"j\n\x15PlayerKickOutScNotify\x12)\n\nblack_info\x18\x0c\x20\x01(\
-    \x0b2\n.BlackInfoR\tblackInfo\x12&\n\tkick_type\x18\x0f\x20\x01(\x0e2\t.\
-    KickTypeR\x08kickTypeb\x06proto3\
+    .proto\"j\n\x15PlayerKickOutScNotify\x12&\n\tkick_type\x18\r\x20\x01(\
+    \x0e2\t.KickTypeR\x08kickType\x12)\n\nblack_info\x18\x0b\x20\x01(\x0b2\n\
+    .BlackInfoR\tblackInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

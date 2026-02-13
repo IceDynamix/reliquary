@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAvatarEnhancedIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetAvatarEnhancedIdScRsp.skilltree_version)
-    pub skilltree_version: u32,
     // @@protoc_insertion_point(field:SetAvatarEnhancedIdScRsp.growth_avatar_id)
     pub growth_avatar_id: u32,
     // @@protoc_insertion_point(field:SetAvatarEnhancedIdScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetAvatarEnhancedIdScRsp.skilltree_version)
+    pub skilltree_version: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetAvatarEnhancedIdScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl SetAvatarEnhancedIdScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "skilltree_version",
-            |m: &SetAvatarEnhancedIdScRsp| { &m.skilltree_version },
-            |m: &mut SetAvatarEnhancedIdScRsp| { &mut m.skilltree_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "growth_avatar_id",
             |m: &SetAvatarEnhancedIdScRsp| { &m.growth_avatar_id },
             |m: &mut SetAvatarEnhancedIdScRsp| { &mut m.growth_avatar_id },
@@ -67,6 +62,11 @@ impl SetAvatarEnhancedIdScRsp {
             "retcode",
             |m: &SetAvatarEnhancedIdScRsp| { &m.retcode },
             |m: &mut SetAvatarEnhancedIdScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "skilltree_version",
+            |m: &SetAvatarEnhancedIdScRsp| { &m.skilltree_version },
+            |m: &mut SetAvatarEnhancedIdScRsp| { &mut m.skilltree_version },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetAvatarEnhancedIdScRsp>(
             "SetAvatarEnhancedIdScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetAvatarEnhancedIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.skilltree_version = is.read_uint32()?;
-                },
-                8 => {
+                112 => {
                     self.growth_avatar_id = is.read_uint32()?;
                 },
-                40 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
+                },
+                8 => {
+                    self.skilltree_version = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetAvatarEnhancedIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.skilltree_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.skilltree_version);
-        }
         if self.growth_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.growth_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.growth_avatar_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        if self.skilltree_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.skilltree_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetAvatarEnhancedIdScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.skilltree_version != 0 {
-            os.write_uint32(13, self.skilltree_version)?;
-        }
         if self.growth_avatar_id != 0 {
-            os.write_uint32(1, self.growth_avatar_id)?;
+            os.write_uint32(14, self.growth_avatar_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
+        }
+        if self.skilltree_version != 0 {
+            os.write_uint32(1, self.skilltree_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetAvatarEnhancedIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.skilltree_version = 0;
         self.growth_avatar_id = 0;
         self.retcode = 0;
+        self.skilltree_version = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAvatarEnhancedIdScRsp {
         static instance: SetAvatarEnhancedIdScRsp = SetAvatarEnhancedIdScRsp {
-            skilltree_version: 0,
             growth_avatar_id: 0,
             retcode: 0,
+            skilltree_version: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetAvatarEnhancedIdScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetAvatarEnhancedIdScRsp.proto\"\x8b\x01\n\x18SetAvatarEnhancedIdS\
-    cRsp\x12+\n\x11skilltree_version\x18\r\x20\x01(\rR\x10skilltreeVersion\
-    \x12(\n\x10growth_avatar_id\x18\x01\x20\x01(\rR\x0egrowthAvatarId\x12\
-    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    cRsp\x12(\n\x10growth_avatar_id\x18\x0e\x20\x01(\rR\x0egrowthAvatarId\
+    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12+\n\x11skilltree\
+    _version\x18\x01\x20\x01(\rR\x10skilltreeVersionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

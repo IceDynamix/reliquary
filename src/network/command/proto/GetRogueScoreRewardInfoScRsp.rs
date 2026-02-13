@@ -30,8 +30,8 @@ pub struct GetRogueScoreRewardInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.DOFLAGFNKBN)
-    pub DOFLAGFNKBN: ::protobuf::MessageField<super::CBFFAIFLDIP::CBFFAIFLDIP>,
+    // @@protoc_insertion_point(field:GetRogueScoreRewardInfoScRsp.BGLBNDKFJEA)
+    pub BGLBNDKFJEA: ::protobuf::MessageField<super::JNPGFOIAHBB::JNPGFOIAHBB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRogueScoreRewardInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl GetRogueScoreRewardInfoScRsp {
             |m: &GetRogueScoreRewardInfoScRsp| { &m.retcode },
             |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CBFFAIFLDIP::CBFFAIFLDIP>(
-            "DOFLAGFNKBN",
-            |m: &GetRogueScoreRewardInfoScRsp| { &m.DOFLAGFNKBN },
-            |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.DOFLAGFNKBN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNPGFOIAHBB::JNPGFOIAHBB>(
+            "BGLBNDKFJEA",
+            |m: &GetRogueScoreRewardInfoScRsp| { &m.BGLBNDKFJEA },
+            |m: &mut GetRogueScoreRewardInfoScRsp| { &mut m.BGLBNDKFJEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRogueScoreRewardInfoScRsp>(
             "GetRogueScoreRewardInfoScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DOFLAGFNKBN)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGLBNDKFJEA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.DOFLAGFNKBN.as_ref() {
+        if let Some(v) = self.BGLBNDKFJEA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -113,8 +113,8 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.DOFLAGFNKBN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.BGLBNDKFJEA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetRogueScoreRewardInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DOFLAGFNKBN.clear();
+        self.BGLBNDKFJEA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueScoreRewardInfoScRsp {
         static instance: GetRogueScoreRewardInfoScRsp = GetRogueScoreRewardInfoScRsp {
             retcode: 0,
-            DOFLAGFNKBN: ::protobuf::MessageField::none(),
+            BGLBNDKFJEA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueScoreRewardInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x11CBFFAIFLDIP.proto\"h\n\x1c\
+    \n\"GetRogueScoreRewardInfoScRsp.proto\x1a\x11JNPGFOIAHBB.proto\"h\n\x1c\
     GetRogueScoreRewardInfoScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bDOFLAGFNKBN\x18\x03\x20\x01(\x0b2\x0c.CBFFAIFLDIPR\
-    \x0bDOFLAGFNKBNb\x06proto3\
+    \x07retcode\x12.\n\x0bBGLBNDKFJEA\x18\x08\x20\x01(\x0b2\x0c.JNPGFOIAHBBR\
+    \x0bBGLBNDKFJEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CBFFAIFLDIP::file_descriptor().clone());
+            deps.push(super::JNPGFOIAHBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRogueScoreRewardInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

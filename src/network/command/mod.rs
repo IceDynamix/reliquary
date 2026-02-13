@@ -32,7 +32,8 @@ pub mod proto {
 #[cfg(all(feature = "proto-rqa"))]
 pub mod proto {
     pub mod Avatar;
-    pub mod AvatarSkillTree;
+    pub mod AvatarPathData;
+    pub mod AvatarPathSkillTree;
     pub mod AvatarSync;
     pub mod BasicModuleSync;
     pub mod BlackInfo;
@@ -61,8 +62,6 @@ pub mod proto {
     pub mod MissionStatus;
     pub mod MissionSync;
     pub mod MissionSyncRecord;
-    pub mod MultiPathAvatarInfo;
-    pub mod MultiPathAvatarType;
     pub mod PileItem;
     pub mod PlayerBasicInfo;
     pub mod PlayerBoardModuleSync;
@@ -81,15 +80,16 @@ pub mod proto {
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod AOEOIAOCLJF;
-    pub mod EEAFFOIMNAC;
-    pub mod ELKCLIGPPMB;
-    pub mod EMGGICLPMAM;
-    pub mod HCDNJAIBBJO;
-    pub mod IMLJEHIIMLF;
-    pub mod IMMBIPNMNOB;
-    pub mod MDNFFONDBOK;
-    pub mod MIFPNAIJHOM;
+    pub mod BFNHDLIEMJB;
+    pub mod EINFBMJPDAH;
+    pub mod FBEANGHKMFG;
+    pub mod FCKLHHKFEJG;
+    pub mod GBNNKMKNLAK;
+    pub mod IMHBLLJLHEF;
+    pub mod JBIFELDOACE;
+    pub mod NCPKCMGAAOM;
+    pub mod OMMDLBPNGEK;
+    pub mod PGKHJCKKEEJ;
 }
 
 /// Game command header.

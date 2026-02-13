@@ -27,178 +27,188 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdGridFightType)
 pub enum CmdGridFightType {
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTypeNone)
-    CmdGridFightTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetFormationCsReq)
-    CmdGridFightGetFormationCsReq = 8465,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateTraitTrackScRsp)
-    CmdGridFightUpdateTraitTrackScRsp = 8577,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbNotify)
-    CmdGridFightUseOrbNotify = 8589,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseForgeScRsp)
-    CmdGridFightUseForgeScRsp = 8529,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbScRsp)
-    CmdGridFightUseOrbScRsp = 8512,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipDressScRsp)
-    CmdGridFightEquipDressScRsp = 8424,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipDressCsReq)
-    CmdGridFightEquipDressCsReq = 8595,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightHandlePendingActionScRsp)
-    CmdGridFightHandlePendingActionScRsp = 8466,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightAddFormationCsReq)
-    CmdGridFightAddFormationCsReq = 8441,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBackToPrepareCsReq)
-    CmdGridFightBackToPrepareCsReq = 8568,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightFinishTutorialScRsp)
-    CmdGridFightFinishTutorialScRsp = 8432,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTakeWeeklyRewardScRsp)
-    CmdGridFightTakeWeeklyRewardScRsp = 8523,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetFormationScRsp)
-    CmdGridFightGetFormationScRsp = 8500,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEndBattleStageNotify)
-    CmdGridFightEndBattleStageNotify = 8404,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTraitUpdateScRsp)
-    CmdGridFightTraitUpdateScRsp = 8563,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEliteBranchSelectScRsp)
-    CmdGridFightUpdateEliteBranchSelectScRsp = 8468,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSettleNotify)
-    CmdGridFightSettleNotify = 8567,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackScRsp)
-    CmdGridFightUpdateEquipTrackScRsp = 8559,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateTraitTrackCsReq)
-    CmdGridFightUpdateTraitTrackCsReq = 8566,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResumeGamePlayCsReq)
-    CmdGridFightResumeGamePlayCsReq = 8453,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncVirtualItemScNotify)
-    CmdGridFightSyncVirtualItemScNotify = 8545,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightFinishTutorialCsReq)
-    CmdGridFightFinishTutorialCsReq = 8506,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyExpCsReq)
-    CmdGridFightBuyExpCsReq = 8527,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncUpdateResultScNotify)
-    CmdGridFightSyncUpdateResultScNotify = 8557,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackProrityScRsp)
-    CmdGridFightUpdateEquipTrackProrityScRsp = 8548,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightStartGamePlayScRsp)
-    CmdGridFightStartGamePlayScRsp = 8528,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateFormationCsReq)
-    CmdGridFightUpdateFormationCsReq = 8487,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetPermanentTalentScRsp)
-    CmdGridFightResetPermanentTalentScRsp = 8446,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightAddFormationScRsp)
-    CmdGridFightAddFormationScRsp = 8555,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEliteBranchSelectCsReq)
-    CmdGridFightUpdateEliteBranchSelectCsReq = 8505,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackProrityCsReq)
-    CmdGridFightUpdateEquipTrackProrityCsReq = 8433,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageCsReq)
-    CmdGridFightEnterBattleStageCsReq = 8431,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataCsReq)
-    CmdGridFightGetDataCsReq = 8401,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetPermanentTalentCsReq)
-    CmdGridFightResetPermanentTalentCsReq = 8597,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipCraftScRsp)
-    CmdGridFightEquipCraftScRsp = 8588,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRefreshShopCsReq)
-    CmdGridFightRefreshShopCsReq = 8496,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyGoodsScRsp)
-    CmdGridFightBuyGoodsScRsp = 8511,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnablePermanentTalentCsReq)
-    CmdGridFightEnablePermanentTalentCsReq = 8438,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTraitUpdateCsReq)
-    CmdGridFightTraitUpdateCsReq = 8586,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackCsReq)
-    CmdGridFightUpdateEquipTrackCsReq = 8416,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitSettleCsReq)
-    CmdGridFightQuitSettleCsReq = 8538,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseOrbCsReq)
-    CmdGridFightUseOrbCsReq = 8578,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseConsumableCsReq)
-    CmdGridFightUseConsumableCsReq = 8576,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightHandlePendingActionCsReq)
-    CmdGridFightHandlePendingActionCsReq = 8406,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipCraftCsReq)
-    CmdGridFightEquipCraftCsReq = 8599,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnableSeasonTalentCsReq)
-    CmdGridFightEnableSeasonTalentCsReq = 8486,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageScRsp)
-    CmdGridFightEnterBattleStageScRsp = 8531,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateGameRefCsReq)
-    CmdGridFightUpdateGameRefCsReq = 8410,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateGameRefScRsp)
-    CmdGridFightUpdateGameRefScRsp = 8474,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDeleteFormationCsReq)
-    CmdGridFightDeleteFormationCsReq = 8472,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetSeasonTalentScRsp)
-    CmdGridFightResetSeasonTalentScRsp = 8485,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnableSeasonTalentScRsp)
-    CmdGridFightEnableSeasonTalentScRsp = 8456,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyExpScRsp)
-    CmdGridFightBuyExpScRsp = 8459,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveCsReq)
-    CmdGridFightGetArchiveCsReq = 8479,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBackToPrepareScRsp)
-    CmdGridFightBackToPrepareScRsp = 8550,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDeleteFormationScRsp)
-    CmdGridFightDeleteFormationScRsp = 8443,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResetSeasonTalentCsReq)
-    CmdGridFightResetSeasonTalentCsReq = 8413,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleScRsp)
-    CmdGridFightRecycleRoleScRsp = 8430,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonHandBookNotify)
-    CmdGridFightSeasonHandBookNotify = 8516,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitLeaveGamePlayScRsp)
-    CmdGridFightQuitLeaveGamePlayScRsp = 8598,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResumeGamePlayScRsp)
-    CmdGridFightResumeGamePlayScRsp = 8440,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnablePermanentTalentScRsp)
-    CmdGridFightEnablePermanentTalentScRsp = 8508,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightStartGamePlayCsReq)
-    CmdGridFightStartGamePlayCsReq = 8415,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosScRsp)
-    CmdGridFightUpdatePosScRsp = 8549,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseForgeCsReq)
-    CmdGridFightUseForgeCsReq = 8427,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRefreshShopScRsp)
-    CmdGridFightRefreshShopScRsp = 8532,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitLeaveGamePlayCsReq)
-    CmdGridFightQuitLeaveGamePlayCsReq = 8518,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleCsReq)
-    CmdGridFightRecycleRoleCsReq = 8507,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetShopRandomRuleCsReq)
-    CmdGridFightGetShopRandomRuleCsReq = 8533,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveScRsp)
-    CmdGridFightGetArchiveScRsp = 8571,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTakeWeeklyRewardCsReq)
-    CmdGridFightTakeWeeklyRewardCsReq = 8445,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightLockShopScRsp)
-    CmdGridFightLockShopScRsp = 8575,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseConsumableScRsp)
-    CmdGridFightUseConsumableScRsp = 8442,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateFormationScRsp)
-    CmdGridFightUpdateFormationScRsp = 8448,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataScRsp)
-    CmdGridFightGetDataScRsp = 8580,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightApplyFormationCsReq)
-    CmdGridFightApplyFormationCsReq = 8435,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightLockShopCsReq)
-    CmdGridFightLockShopCsReq = 8405,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyGoodsCsReq)
-    CmdGridFightBuyGoodsCsReq = 8536,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateWeeklyRewardInfoScNotify)
-    CmdGridFightUpdateWeeklyRewardInfoScNotify = 8541,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitSettleScRsp)
-    CmdGridFightQuitSettleScRsp = 8519,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightApplyFormationScRsp)
-    CmdGridFightApplyFormationScRsp = 8542,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightWeeklyExtraSeasonExpNotify)
-    CmdGridFightWeeklyExtraSeasonExpNotify = 8515,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDataScNotify)
-    CmdGridFightDataScNotify = 8407,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetShopRandomRuleScRsp)
-    CmdGridFightGetShopRandomRuleScRsp = 8480,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosCsReq)
-    CmdGridFightUpdatePosCsReq = 8497,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_GKJBAODJMJG)
+    PAAEFBCAMCH_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_BINNELJCLMJ)
+    PAAEFBCAMCH_BINNELJCLMJ = 8544,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CEKGPGHENHF)
+    PAAEFBCAMCH_CEKGPGHENHF = 8502,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LCONHIMMMAK)
+    PAAEFBCAMCH_LCONHIMMMAK = 8581,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CNFFJPKHGMG)
+    PAAEFBCAMCH_CNFFJPKHGMG = 8443,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_AOLPBMGECAO)
+    PAAEFBCAMCH_AOLPBMGECAO = 8412,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JIJLCKMHAMM)
+    PAAEFBCAMCH_JIJLCKMHAMM = 8595,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_AAAIHNDCNHA)
+    PAAEFBCAMCH_AAAIHNDCNHA = 8572,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_NEDHDBFFBCP)
+    PAAEFBCAMCH_NEDHDBFFBCP = 8472,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OKHPMPMAOOD)
+    PAAEFBCAMCH_OKHPMPMAOOD = 8500,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FHOJKHMDEMI)
+    PAAEFBCAMCH_FHOJKHMDEMI = 8421,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_IGNENJHCAMK)
+    PAAEFBCAMCH_IGNENJHCAMK = 8578,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JHMBFFCKEIA)
+    PAAEFBCAMCH_JHMBFFCKEIA = 8534,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PKJBEDGINCI)
+    PAAEFBCAMCH_PKJBEDGINCI = 8475,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_NLOAIKFCDBL)
+    PAAEFBCAMCH_NLOAIKFCDBL = 8489,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PGCALOEHBIG)
+    PAAEFBCAMCH_PGCALOEHBIG = 8579,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LIFCMFHBAOP)
+    PAAEFBCAMCH_LIFCMFHBAOP = 8577,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MAAFLKILNGM)
+    PAAEFBCAMCH_MAAFLKILNGM = 8406,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EKNGADMGBGF)
+    PAAEFBCAMCH_EKNGADMGBGF = 8525,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LJBLHPMFHNG)
+    PAAEFBCAMCH_LJBLHPMFHNG = 8415,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_ACNIGPJMBAG)
+    PAAEFBCAMCH_ACNIGPJMBAG = 8515,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OLHPIBEJDLA)
+    PAAEFBCAMCH_OLHPIBEJDLA = 8454,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MPIPCILCBLJ)
+    PAAEFBCAMCH_MPIPCILCBLJ = 8542,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PGALKMDNPMI)
+    PAAEFBCAMCH_PGALKMDNPMI = 8503,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_HKMDEHEJPNA)
+    PAAEFBCAMCH_HKMDEHEJPNA = 8509,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_DLKHBPNPBNK)
+    PAAEFBCAMCH_DLKHBPNPBNK = 8558,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LJDOMMAHOBK)
+    PAAEFBCAMCH_LJDOMMAHOBK = 8477,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JDICAJEBHAL)
+    PAAEFBCAMCH_JDICAJEBHAL = 8438,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MMCAPOIOMLM)
+    PAAEFBCAMCH_MMCAPOIOMLM = 8528,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_AAGIHKMGFAP)
+    PAAEFBCAMCH_AAGIHKMGFAP = 8560,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MAOACFHMBEH)
+    PAAEFBCAMCH_MAOACFHMBEH = 8594,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OMNINPNDKFG)
+    PAAEFBCAMCH_OMNINPNDKFG = 8523,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KDGIJIANFDM)
+    PAAEFBCAMCH_KDGIJIANFDM = 8517,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EMGHOLOLJPI)
+    PAAEFBCAMCH_EMGHOLOLJPI = 8445,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_IDNGHCLACOF)
+    PAAEFBCAMCH_IDNGHCLACOF = 8568,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KJGJNOJJEJJ)
+    PAAEFBCAMCH_KJGJNOJJEJJ = 8507,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CDFFJBONLEF)
+    PAAEFBCAMCH_CDFFJBONLEF = 8564,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_IPNOBODCEMA)
+    PAAEFBCAMCH_IPNOBODCEMA = 8425,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_DHNPFLPFPMI)
+    PAAEFBCAMCH_DHNPFLPFPMI = 8493,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EGCNJDNINEA)
+    PAAEFBCAMCH_EGCNJDNINEA = 8419,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EEHIMBGNAON)
+    PAAEFBCAMCH_EEHIMBGNAON = 8505,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KIKDAPHJMAE)
+    PAAEFBCAMCH_KIKDAPHJMAE = 8453,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FOCLIFANJED)
+    PAAEFBCAMCH_FOCLIFANJED = 8471,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EAJBLOCPDCF)
+    PAAEFBCAMCH_EAJBLOCPDCF = 8524,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_HAPJAIEAOBI)
+    PAAEFBCAMCH_HAPJAIEAOBI = 8592,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EKHKGHOAHED)
+    PAAEFBCAMCH_EKHKGHOAHED = 8485,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MGEJAFJMHOH)
+    PAAEFBCAMCH_MGEJAFJMHOH = 8461,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_HIBDOCNFCIC)
+    PAAEFBCAMCH_HIBDOCNFCIC = 8480,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_HDILBAOEGAD)
+    PAAEFBCAMCH_HDILBAOEGAD = 8466,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LCKCMHHDIAB)
+    PAAEFBCAMCH_LCKCMHHDIAB = 8562,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CMLJHBLPEHM)
+    PAAEFBCAMCH_CMLJHBLPEHM = 8413,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FGPPFOOEHPN)
+    PAAEFBCAMCH_FGPPFOOEHPN = 8491,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_HPCCNJLLLJL)
+    PAAEFBCAMCH_HPCCNJLLLJL = 8456,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FDIHPBMECPN)
+    PAAEFBCAMCH_FDIHPBMECPN = 8455,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OEDGJLCOCAP)
+    PAAEFBCAMCH_OEDGJLCOCAP = 8440,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JLHLABFFEBM)
+    PAAEFBCAMCH_JLHLABFFEBM = 8497,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FAMLPEHMDHN)
+    PAAEFBCAMCH_FAMLPEHMDHN = 8458,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JFLDOBCLFGK)
+    PAAEFBCAMCH_JFLDOBCLFGK = 8469,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_DBDLDJIOHJA)
+    PAAEFBCAMCH_DBDLDJIOHJA = 8487,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CIOCPADNBBC)
+    PAAEFBCAMCH_CIOCPADNBBC = 8498,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FHKCAFCCGJJ)
+    PAAEFBCAMCH_FHKCAFCCGJJ = 8521,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_AJFIDHENNIH)
+    PAAEFBCAMCH_AJFIDHENNIH = 8570,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EMAODGKHMHD)
+    PAAEFBCAMCH_EMAODGKHMHD = 8575,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OPDHCGCJKID)
+    PAAEFBCAMCH_OPDHCGCJKID = 8583,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FNPHKGJDDMF)
+    PAAEFBCAMCH_FNPHKGJDDMF = 8596,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_MNOOABKFFMD)
+    PAAEFBCAMCH_MNOOABKFFMD = 8598,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_ANMNDFKIAEP)
+    PAAEFBCAMCH_ANMNDFKIAEP = 8448,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_DADOPJHCABE)
+    PAAEFBCAMCH_DADOPJHCABE = 8582,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KCDEPMPBODF)
+    PAAEFBCAMCH_KCDEPMPBODF = 8593,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_AHOLHHLPNDH)
+    PAAEFBCAMCH_AHOLHHLPNDH = 8588,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_OANBKFKIACO)
+    PAAEFBCAMCH_OANBKFKIACO = 8567,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KHOOCNOAHBD)
+    PAAEFBCAMCH_KHOOCNOAHBD = 8597,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LLOAAHNFOAN)
+    PAAEFBCAMCH_LLOAAHNFOAN = 8449,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EGDNAIEHJJI)
+    PAAEFBCAMCH_EGDNAIEHJJI = 8457,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_BNMIABGFHDI)
+    PAAEFBCAMCH_BNMIABGFHDI = 8550,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_LHFGDLBFBNI)
+    PAAEFBCAMCH_LHFGDLBFBNI = 8424,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PNLIJMOFEOE)
+    PAAEFBCAMCH_PNLIJMOFEOE = 8532,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CPHHNOIBJFE)
+    PAAEFBCAMCH_CPHHNOIBJFE = 8571,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PAKDPNCPPNM)
+    PAAEFBCAMCH_PAKDPNCPPNM = 8417,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EOAGBCFCPFE)
+    PAAEFBCAMCH_EOAGBCFCPFE = 8446,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_NKGMGDFGCJH)
+    PAAEFBCAMCH_NKGMGDFGCJH = 8478,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PDFPJPHPEGM)
+    PAAEFBCAMCH_PDFPJPHPEGM = 8488,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_CIJFNCKLAJH)
+    PAAEFBCAMCH_CIJFNCKLAJH = 8529,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JCNFHNPJHAO)
+    PAAEFBCAMCH_JCNFHNPJHAO = 8561,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_EJCMHHGFCOL)
+    PAAEFBCAMCH_EJCMHHGFCOL = 8408,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_IMKDCIOOPAI)
+    PAAEFBCAMCH_IMKDCIOOPAI = 8566,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_PBGFIKLCCCC)
+    PAAEFBCAMCH_PBGFIKLCCCC = 8522,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_JNNPHMHNEEG)
+    PAAEFBCAMCH_JNNPHMHNEEG = 8460,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_FHGFDAAGGFN)
+    PAAEFBCAMCH_FHGFDAAGGFN = 8433,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_KFBJHGDPCAG)
+    PAAEFBCAMCH_KFBJHGDPCAG = 8552,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.PAAEFBCAMCH_DOACFEINICN)
+    PAAEFBCAMCH_DOACFEINICN = 8557,
 }
 
 impl ::protobuf::Enum for CmdGridFightType {
@@ -210,275 +220,290 @@ impl ::protobuf::Enum for CmdGridFightType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdGridFightType> {
         match value {
-            0 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTypeNone),
-            8465 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationCsReq),
-            8577 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp),
-            8589 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbNotify),
-            8529 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeScRsp),
-            8512 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbScRsp),
-            8424 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressScRsp),
-            8595 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
-            8466 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
-            8441 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationCsReq),
-            8568 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareCsReq),
-            8432 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialScRsp),
-            8523 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp),
-            8500 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationScRsp),
-            8404 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
-            8563 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateScRsp),
-            8468 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp),
-            8567 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
-            8559 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
-            8566 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq),
-            8453 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
-            8545 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemScNotify),
-            8506 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
-            8527 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
-            8557 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
-            8548 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp),
-            8528 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayScRsp),
-            8487 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationCsReq),
-            8446 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentScRsp),
-            8555 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationScRsp),
-            8505 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq),
-            8433 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq),
-            8431 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
-            8401 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
-            8597 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentCsReq),
-            8588 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftScRsp),
-            8496 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
-            8511 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsScRsp),
-            8438 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq),
-            8586 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateCsReq),
-            8416 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
-            8538 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
-            8578 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbCsReq),
-            8576 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
-            8406 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionCsReq),
-            8599 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
-            8486 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq),
-            8531 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
-            8410 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefCsReq),
-            8474 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefScRsp),
-            8472 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationCsReq),
-            8485 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentScRsp),
-            8456 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp),
-            8459 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpScRsp),
-            8479 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
-            8550 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareScRsp),
-            8443 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationScRsp),
-            8413 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentCsReq),
-            8430 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
-            8516 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
-            8598 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp),
-            8440 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayScRsp),
-            8508 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp),
-            8415 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
-            8549 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
-            8427 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
-            8532 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopScRsp),
-            8518 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
-            8507 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
-            8533 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq),
-            8571 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
-            8445 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
-            8575 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopScRsp),
-            8442 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableScRsp),
-            8448 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationScRsp),
-            8580 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
-            8435 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationCsReq),
-            8405 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
-            8536 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
-            8541 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify),
-            8519 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleScRsp),
-            8542 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationScRsp),
-            8515 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify),
-            8407 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDataScNotify),
-            8480 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp),
-            8497 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
+            0 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_GKJBAODJMJG),
+            8544 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_BINNELJCLMJ),
+            8502 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CEKGPGHENHF),
+            8581 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LCONHIMMMAK),
+            8443 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CNFFJPKHGMG),
+            8412 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AOLPBMGECAO),
+            8595 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JIJLCKMHAMM),
+            8572 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AAAIHNDCNHA),
+            8472 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NEDHDBFFBCP),
+            8500 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OKHPMPMAOOD),
+            8421 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHOJKHMDEMI),
+            8578 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IGNENJHCAMK),
+            8534 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JHMBFFCKEIA),
+            8475 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PKJBEDGINCI),
+            8489 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NLOAIKFCDBL),
+            8579 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PGCALOEHBIG),
+            8577 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LIFCMFHBAOP),
+            8406 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MAAFLKILNGM),
+            8525 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EKNGADMGBGF),
+            8415 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LJBLHPMFHNG),
+            8515 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_ACNIGPJMBAG),
+            8454 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OLHPIBEJDLA),
+            8542 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MPIPCILCBLJ),
+            8503 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PGALKMDNPMI),
+            8509 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HKMDEHEJPNA),
+            8558 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DLKHBPNPBNK),
+            8477 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LJDOMMAHOBK),
+            8438 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JDICAJEBHAL),
+            8528 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MMCAPOIOMLM),
+            8560 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AAGIHKMGFAP),
+            8594 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MAOACFHMBEH),
+            8523 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OMNINPNDKFG),
+            8517 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KDGIJIANFDM),
+            8445 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EMGHOLOLJPI),
+            8568 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IDNGHCLACOF),
+            8507 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KJGJNOJJEJJ),
+            8564 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CDFFJBONLEF),
+            8425 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IPNOBODCEMA),
+            8493 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DHNPFLPFPMI),
+            8419 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EGCNJDNINEA),
+            8505 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EEHIMBGNAON),
+            8453 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KIKDAPHJMAE),
+            8471 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FOCLIFANJED),
+            8524 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EAJBLOCPDCF),
+            8592 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HAPJAIEAOBI),
+            8485 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EKHKGHOAHED),
+            8461 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MGEJAFJMHOH),
+            8480 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HIBDOCNFCIC),
+            8466 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HDILBAOEGAD),
+            8562 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LCKCMHHDIAB),
+            8413 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CMLJHBLPEHM),
+            8491 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FGPPFOOEHPN),
+            8456 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HPCCNJLLLJL),
+            8455 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FDIHPBMECPN),
+            8440 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OEDGJLCOCAP),
+            8497 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JLHLABFFEBM),
+            8458 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FAMLPEHMDHN),
+            8469 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JFLDOBCLFGK),
+            8487 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DBDLDJIOHJA),
+            8498 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CIOCPADNBBC),
+            8521 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHKCAFCCGJJ),
+            8570 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AJFIDHENNIH),
+            8575 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EMAODGKHMHD),
+            8583 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OPDHCGCJKID),
+            8596 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FNPHKGJDDMF),
+            8598 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MNOOABKFFMD),
+            8448 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_ANMNDFKIAEP),
+            8582 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DADOPJHCABE),
+            8593 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KCDEPMPBODF),
+            8588 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AHOLHHLPNDH),
+            8567 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OANBKFKIACO),
+            8597 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KHOOCNOAHBD),
+            8449 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LLOAAHNFOAN),
+            8457 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EGDNAIEHJJI),
+            8550 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_BNMIABGFHDI),
+            8424 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LHFGDLBFBNI),
+            8532 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PNLIJMOFEOE),
+            8571 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CPHHNOIBJFE),
+            8417 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PAKDPNCPPNM),
+            8446 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EOAGBCFCPFE),
+            8478 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NKGMGDFGCJH),
+            8488 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PDFPJPHPEGM),
+            8529 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CIJFNCKLAJH),
+            8561 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JCNFHNPJHAO),
+            8408 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EJCMHHGFCOL),
+            8566 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IMKDCIOOPAI),
+            8522 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PBGFIKLCCCC),
+            8460 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JNNPHMHNEEG),
+            8433 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHGFDAAGGFN),
+            8552 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KFBJHGDPCAG),
+            8557 => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DOACFEINICN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdGridFightType> {
         match str {
-            "CmdGridFightTypeNone" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTypeNone),
-            "CmdGridFightGetFormationCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationCsReq),
-            "CmdGridFightUpdateTraitTrackScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp),
-            "CmdGridFightUseOrbNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbNotify),
-            "CmdGridFightUseForgeScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeScRsp),
-            "CmdGridFightUseOrbScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbScRsp),
-            "CmdGridFightEquipDressScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressScRsp),
-            "CmdGridFightEquipDressCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
-            "CmdGridFightHandlePendingActionScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
-            "CmdGridFightAddFormationCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationCsReq),
-            "CmdGridFightBackToPrepareCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareCsReq),
-            "CmdGridFightFinishTutorialScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialScRsp),
-            "CmdGridFightTakeWeeklyRewardScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp),
-            "CmdGridFightGetFormationScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetFormationScRsp),
-            "CmdGridFightEndBattleStageNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
-            "CmdGridFightTraitUpdateScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateScRsp),
-            "CmdGridFightUpdateEliteBranchSelectScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp),
-            "CmdGridFightSettleNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
-            "CmdGridFightUpdateEquipTrackScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
-            "CmdGridFightUpdateTraitTrackCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq),
-            "CmdGridFightResumeGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
-            "CmdGridFightSyncVirtualItemScNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemScNotify),
-            "CmdGridFightFinishTutorialCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
-            "CmdGridFightBuyExpCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
-            "CmdGridFightSyncUpdateResultScNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
-            "CmdGridFightUpdateEquipTrackProrityScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp),
-            "CmdGridFightStartGamePlayScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayScRsp),
-            "CmdGridFightUpdateFormationCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationCsReq),
-            "CmdGridFightResetPermanentTalentScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentScRsp),
-            "CmdGridFightAddFormationScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightAddFormationScRsp),
-            "CmdGridFightUpdateEliteBranchSelectCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq),
-            "CmdGridFightUpdateEquipTrackProrityCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq),
-            "CmdGridFightEnterBattleStageCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
-            "CmdGridFightGetDataCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
-            "CmdGridFightResetPermanentTalentCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetPermanentTalentCsReq),
-            "CmdGridFightEquipCraftScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftScRsp),
-            "CmdGridFightRefreshShopCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
-            "CmdGridFightBuyGoodsScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsScRsp),
-            "CmdGridFightEnablePermanentTalentCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq),
-            "CmdGridFightTraitUpdateCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTraitUpdateCsReq),
-            "CmdGridFightUpdateEquipTrackCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
-            "CmdGridFightQuitSettleCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
-            "CmdGridFightUseOrbCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseOrbCsReq),
-            "CmdGridFightUseConsumableCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
-            "CmdGridFightHandlePendingActionCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionCsReq),
-            "CmdGridFightEquipCraftCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
-            "CmdGridFightEnableSeasonTalentCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq),
-            "CmdGridFightEnterBattleStageScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
-            "CmdGridFightUpdateGameRefCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefCsReq),
-            "CmdGridFightUpdateGameRefScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateGameRefScRsp),
-            "CmdGridFightDeleteFormationCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationCsReq),
-            "CmdGridFightResetSeasonTalentScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentScRsp),
-            "CmdGridFightEnableSeasonTalentScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp),
-            "CmdGridFightBuyExpScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpScRsp),
-            "CmdGridFightGetArchiveCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
-            "CmdGridFightBackToPrepareScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareScRsp),
-            "CmdGridFightDeleteFormationScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDeleteFormationScRsp),
-            "CmdGridFightResetSeasonTalentCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResetSeasonTalentCsReq),
-            "CmdGridFightRecycleRoleScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
-            "CmdGridFightSeasonHandBookNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
-            "CmdGridFightQuitLeaveGamePlayScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp),
-            "CmdGridFightResumeGamePlayScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayScRsp),
-            "CmdGridFightEnablePermanentTalentScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp),
-            "CmdGridFightStartGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
-            "CmdGridFightUpdatePosScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
-            "CmdGridFightUseForgeCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
-            "CmdGridFightRefreshShopScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopScRsp),
-            "CmdGridFightQuitLeaveGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
-            "CmdGridFightRecycleRoleCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
-            "CmdGridFightGetShopRandomRuleCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq),
-            "CmdGridFightGetArchiveScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
-            "CmdGridFightTakeWeeklyRewardCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
-            "CmdGridFightLockShopScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopScRsp),
-            "CmdGridFightUseConsumableScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableScRsp),
-            "CmdGridFightUpdateFormationScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateFormationScRsp),
-            "CmdGridFightGetDataScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
-            "CmdGridFightApplyFormationCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationCsReq),
-            "CmdGridFightLockShopCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
-            "CmdGridFightBuyGoodsCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
-            "CmdGridFightUpdateWeeklyRewardInfoScNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify),
-            "CmdGridFightQuitSettleScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleScRsp),
-            "CmdGridFightApplyFormationScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightApplyFormationScRsp),
-            "CmdGridFightWeeklyExtraSeasonExpNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify),
-            "CmdGridFightDataScNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDataScNotify),
-            "CmdGridFightGetShopRandomRuleScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp),
-            "CmdGridFightUpdatePosCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
+            "PAAEFBCAMCH_GKJBAODJMJG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_GKJBAODJMJG),
+            "PAAEFBCAMCH_BINNELJCLMJ" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_BINNELJCLMJ),
+            "PAAEFBCAMCH_CEKGPGHENHF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CEKGPGHENHF),
+            "PAAEFBCAMCH_LCONHIMMMAK" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LCONHIMMMAK),
+            "PAAEFBCAMCH_CNFFJPKHGMG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CNFFJPKHGMG),
+            "PAAEFBCAMCH_AOLPBMGECAO" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AOLPBMGECAO),
+            "PAAEFBCAMCH_JIJLCKMHAMM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JIJLCKMHAMM),
+            "PAAEFBCAMCH_AAAIHNDCNHA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AAAIHNDCNHA),
+            "PAAEFBCAMCH_NEDHDBFFBCP" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NEDHDBFFBCP),
+            "PAAEFBCAMCH_OKHPMPMAOOD" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OKHPMPMAOOD),
+            "PAAEFBCAMCH_FHOJKHMDEMI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHOJKHMDEMI),
+            "PAAEFBCAMCH_IGNENJHCAMK" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IGNENJHCAMK),
+            "PAAEFBCAMCH_JHMBFFCKEIA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JHMBFFCKEIA),
+            "PAAEFBCAMCH_PKJBEDGINCI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PKJBEDGINCI),
+            "PAAEFBCAMCH_NLOAIKFCDBL" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NLOAIKFCDBL),
+            "PAAEFBCAMCH_PGCALOEHBIG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PGCALOEHBIG),
+            "PAAEFBCAMCH_LIFCMFHBAOP" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LIFCMFHBAOP),
+            "PAAEFBCAMCH_MAAFLKILNGM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MAAFLKILNGM),
+            "PAAEFBCAMCH_EKNGADMGBGF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EKNGADMGBGF),
+            "PAAEFBCAMCH_LJBLHPMFHNG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LJBLHPMFHNG),
+            "PAAEFBCAMCH_ACNIGPJMBAG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_ACNIGPJMBAG),
+            "PAAEFBCAMCH_OLHPIBEJDLA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OLHPIBEJDLA),
+            "PAAEFBCAMCH_MPIPCILCBLJ" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MPIPCILCBLJ),
+            "PAAEFBCAMCH_PGALKMDNPMI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PGALKMDNPMI),
+            "PAAEFBCAMCH_HKMDEHEJPNA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HKMDEHEJPNA),
+            "PAAEFBCAMCH_DLKHBPNPBNK" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DLKHBPNPBNK),
+            "PAAEFBCAMCH_LJDOMMAHOBK" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LJDOMMAHOBK),
+            "PAAEFBCAMCH_JDICAJEBHAL" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JDICAJEBHAL),
+            "PAAEFBCAMCH_MMCAPOIOMLM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MMCAPOIOMLM),
+            "PAAEFBCAMCH_AAGIHKMGFAP" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AAGIHKMGFAP),
+            "PAAEFBCAMCH_MAOACFHMBEH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MAOACFHMBEH),
+            "PAAEFBCAMCH_OMNINPNDKFG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OMNINPNDKFG),
+            "PAAEFBCAMCH_KDGIJIANFDM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KDGIJIANFDM),
+            "PAAEFBCAMCH_EMGHOLOLJPI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EMGHOLOLJPI),
+            "PAAEFBCAMCH_IDNGHCLACOF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IDNGHCLACOF),
+            "PAAEFBCAMCH_KJGJNOJJEJJ" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KJGJNOJJEJJ),
+            "PAAEFBCAMCH_CDFFJBONLEF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CDFFJBONLEF),
+            "PAAEFBCAMCH_IPNOBODCEMA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IPNOBODCEMA),
+            "PAAEFBCAMCH_DHNPFLPFPMI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DHNPFLPFPMI),
+            "PAAEFBCAMCH_EGCNJDNINEA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EGCNJDNINEA),
+            "PAAEFBCAMCH_EEHIMBGNAON" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EEHIMBGNAON),
+            "PAAEFBCAMCH_KIKDAPHJMAE" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KIKDAPHJMAE),
+            "PAAEFBCAMCH_FOCLIFANJED" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FOCLIFANJED),
+            "PAAEFBCAMCH_EAJBLOCPDCF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EAJBLOCPDCF),
+            "PAAEFBCAMCH_HAPJAIEAOBI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HAPJAIEAOBI),
+            "PAAEFBCAMCH_EKHKGHOAHED" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EKHKGHOAHED),
+            "PAAEFBCAMCH_MGEJAFJMHOH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MGEJAFJMHOH),
+            "PAAEFBCAMCH_HIBDOCNFCIC" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HIBDOCNFCIC),
+            "PAAEFBCAMCH_HDILBAOEGAD" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HDILBAOEGAD),
+            "PAAEFBCAMCH_LCKCMHHDIAB" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LCKCMHHDIAB),
+            "PAAEFBCAMCH_CMLJHBLPEHM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CMLJHBLPEHM),
+            "PAAEFBCAMCH_FGPPFOOEHPN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FGPPFOOEHPN),
+            "PAAEFBCAMCH_HPCCNJLLLJL" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_HPCCNJLLLJL),
+            "PAAEFBCAMCH_FDIHPBMECPN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FDIHPBMECPN),
+            "PAAEFBCAMCH_OEDGJLCOCAP" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OEDGJLCOCAP),
+            "PAAEFBCAMCH_JLHLABFFEBM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JLHLABFFEBM),
+            "PAAEFBCAMCH_FAMLPEHMDHN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FAMLPEHMDHN),
+            "PAAEFBCAMCH_JFLDOBCLFGK" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JFLDOBCLFGK),
+            "PAAEFBCAMCH_DBDLDJIOHJA" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DBDLDJIOHJA),
+            "PAAEFBCAMCH_CIOCPADNBBC" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CIOCPADNBBC),
+            "PAAEFBCAMCH_FHKCAFCCGJJ" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHKCAFCCGJJ),
+            "PAAEFBCAMCH_AJFIDHENNIH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AJFIDHENNIH),
+            "PAAEFBCAMCH_EMAODGKHMHD" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EMAODGKHMHD),
+            "PAAEFBCAMCH_OPDHCGCJKID" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OPDHCGCJKID),
+            "PAAEFBCAMCH_FNPHKGJDDMF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FNPHKGJDDMF),
+            "PAAEFBCAMCH_MNOOABKFFMD" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_MNOOABKFFMD),
+            "PAAEFBCAMCH_ANMNDFKIAEP" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_ANMNDFKIAEP),
+            "PAAEFBCAMCH_DADOPJHCABE" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DADOPJHCABE),
+            "PAAEFBCAMCH_KCDEPMPBODF" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KCDEPMPBODF),
+            "PAAEFBCAMCH_AHOLHHLPNDH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_AHOLHHLPNDH),
+            "PAAEFBCAMCH_OANBKFKIACO" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_OANBKFKIACO),
+            "PAAEFBCAMCH_KHOOCNOAHBD" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KHOOCNOAHBD),
+            "PAAEFBCAMCH_LLOAAHNFOAN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LLOAAHNFOAN),
+            "PAAEFBCAMCH_EGDNAIEHJJI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EGDNAIEHJJI),
+            "PAAEFBCAMCH_BNMIABGFHDI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_BNMIABGFHDI),
+            "PAAEFBCAMCH_LHFGDLBFBNI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_LHFGDLBFBNI),
+            "PAAEFBCAMCH_PNLIJMOFEOE" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PNLIJMOFEOE),
+            "PAAEFBCAMCH_CPHHNOIBJFE" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CPHHNOIBJFE),
+            "PAAEFBCAMCH_PAKDPNCPPNM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PAKDPNCPPNM),
+            "PAAEFBCAMCH_EOAGBCFCPFE" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EOAGBCFCPFE),
+            "PAAEFBCAMCH_NKGMGDFGCJH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_NKGMGDFGCJH),
+            "PAAEFBCAMCH_PDFPJPHPEGM" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PDFPJPHPEGM),
+            "PAAEFBCAMCH_CIJFNCKLAJH" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_CIJFNCKLAJH),
+            "PAAEFBCAMCH_JCNFHNPJHAO" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JCNFHNPJHAO),
+            "PAAEFBCAMCH_EJCMHHGFCOL" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_EJCMHHGFCOL),
+            "PAAEFBCAMCH_IMKDCIOOPAI" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_IMKDCIOOPAI),
+            "PAAEFBCAMCH_PBGFIKLCCCC" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_PBGFIKLCCCC),
+            "PAAEFBCAMCH_JNNPHMHNEEG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_JNNPHMHNEEG),
+            "PAAEFBCAMCH_FHGFDAAGGFN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_FHGFDAAGGFN),
+            "PAAEFBCAMCH_KFBJHGDPCAG" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_KFBJHGDPCAG),
+            "PAAEFBCAMCH_DOACFEINICN" => ::std::option::Option::Some(CmdGridFightType::PAAEFBCAMCH_DOACFEINICN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdGridFightType] = &[
-        CmdGridFightType::CmdGridFightTypeNone,
-        CmdGridFightType::CmdGridFightGetFormationCsReq,
-        CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp,
-        CmdGridFightType::CmdGridFightUseOrbNotify,
-        CmdGridFightType::CmdGridFightUseForgeScRsp,
-        CmdGridFightType::CmdGridFightUseOrbScRsp,
-        CmdGridFightType::CmdGridFightEquipDressScRsp,
-        CmdGridFightType::CmdGridFightEquipDressCsReq,
-        CmdGridFightType::CmdGridFightHandlePendingActionScRsp,
-        CmdGridFightType::CmdGridFightAddFormationCsReq,
-        CmdGridFightType::CmdGridFightBackToPrepareCsReq,
-        CmdGridFightType::CmdGridFightFinishTutorialScRsp,
-        CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp,
-        CmdGridFightType::CmdGridFightGetFormationScRsp,
-        CmdGridFightType::CmdGridFightEndBattleStageNotify,
-        CmdGridFightType::CmdGridFightTraitUpdateScRsp,
-        CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp,
-        CmdGridFightType::CmdGridFightSettleNotify,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp,
-        CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq,
-        CmdGridFightType::CmdGridFightResumeGamePlayCsReq,
-        CmdGridFightType::CmdGridFightSyncVirtualItemScNotify,
-        CmdGridFightType::CmdGridFightFinishTutorialCsReq,
-        CmdGridFightType::CmdGridFightBuyExpCsReq,
-        CmdGridFightType::CmdGridFightSyncUpdateResultScNotify,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp,
-        CmdGridFightType::CmdGridFightStartGamePlayScRsp,
-        CmdGridFightType::CmdGridFightUpdateFormationCsReq,
-        CmdGridFightType::CmdGridFightResetPermanentTalentScRsp,
-        CmdGridFightType::CmdGridFightAddFormationScRsp,
-        CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq,
-        CmdGridFightType::CmdGridFightEnterBattleStageCsReq,
-        CmdGridFightType::CmdGridFightGetDataCsReq,
-        CmdGridFightType::CmdGridFightResetPermanentTalentCsReq,
-        CmdGridFightType::CmdGridFightEquipCraftScRsp,
-        CmdGridFightType::CmdGridFightRefreshShopCsReq,
-        CmdGridFightType::CmdGridFightBuyGoodsScRsp,
-        CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq,
-        CmdGridFightType::CmdGridFightTraitUpdateCsReq,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq,
-        CmdGridFightType::CmdGridFightQuitSettleCsReq,
-        CmdGridFightType::CmdGridFightUseOrbCsReq,
-        CmdGridFightType::CmdGridFightUseConsumableCsReq,
-        CmdGridFightType::CmdGridFightHandlePendingActionCsReq,
-        CmdGridFightType::CmdGridFightEquipCraftCsReq,
-        CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq,
-        CmdGridFightType::CmdGridFightEnterBattleStageScRsp,
-        CmdGridFightType::CmdGridFightUpdateGameRefCsReq,
-        CmdGridFightType::CmdGridFightUpdateGameRefScRsp,
-        CmdGridFightType::CmdGridFightDeleteFormationCsReq,
-        CmdGridFightType::CmdGridFightResetSeasonTalentScRsp,
-        CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp,
-        CmdGridFightType::CmdGridFightBuyExpScRsp,
-        CmdGridFightType::CmdGridFightGetArchiveCsReq,
-        CmdGridFightType::CmdGridFightBackToPrepareScRsp,
-        CmdGridFightType::CmdGridFightDeleteFormationScRsp,
-        CmdGridFightType::CmdGridFightResetSeasonTalentCsReq,
-        CmdGridFightType::CmdGridFightRecycleRoleScRsp,
-        CmdGridFightType::CmdGridFightSeasonHandBookNotify,
-        CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp,
-        CmdGridFightType::CmdGridFightResumeGamePlayScRsp,
-        CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp,
-        CmdGridFightType::CmdGridFightStartGamePlayCsReq,
-        CmdGridFightType::CmdGridFightUpdatePosScRsp,
-        CmdGridFightType::CmdGridFightUseForgeCsReq,
-        CmdGridFightType::CmdGridFightRefreshShopScRsp,
-        CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq,
-        CmdGridFightType::CmdGridFightRecycleRoleCsReq,
-        CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq,
-        CmdGridFightType::CmdGridFightGetArchiveScRsp,
-        CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq,
-        CmdGridFightType::CmdGridFightLockShopScRsp,
-        CmdGridFightType::CmdGridFightUseConsumableScRsp,
-        CmdGridFightType::CmdGridFightUpdateFormationScRsp,
-        CmdGridFightType::CmdGridFightGetDataScRsp,
-        CmdGridFightType::CmdGridFightApplyFormationCsReq,
-        CmdGridFightType::CmdGridFightLockShopCsReq,
-        CmdGridFightType::CmdGridFightBuyGoodsCsReq,
-        CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify,
-        CmdGridFightType::CmdGridFightQuitSettleScRsp,
-        CmdGridFightType::CmdGridFightApplyFormationScRsp,
-        CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify,
-        CmdGridFightType::CmdGridFightDataScNotify,
-        CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp,
-        CmdGridFightType::CmdGridFightUpdatePosCsReq,
+        CmdGridFightType::PAAEFBCAMCH_GKJBAODJMJG,
+        CmdGridFightType::PAAEFBCAMCH_BINNELJCLMJ,
+        CmdGridFightType::PAAEFBCAMCH_CEKGPGHENHF,
+        CmdGridFightType::PAAEFBCAMCH_LCONHIMMMAK,
+        CmdGridFightType::PAAEFBCAMCH_CNFFJPKHGMG,
+        CmdGridFightType::PAAEFBCAMCH_AOLPBMGECAO,
+        CmdGridFightType::PAAEFBCAMCH_JIJLCKMHAMM,
+        CmdGridFightType::PAAEFBCAMCH_AAAIHNDCNHA,
+        CmdGridFightType::PAAEFBCAMCH_NEDHDBFFBCP,
+        CmdGridFightType::PAAEFBCAMCH_OKHPMPMAOOD,
+        CmdGridFightType::PAAEFBCAMCH_FHOJKHMDEMI,
+        CmdGridFightType::PAAEFBCAMCH_IGNENJHCAMK,
+        CmdGridFightType::PAAEFBCAMCH_JHMBFFCKEIA,
+        CmdGridFightType::PAAEFBCAMCH_PKJBEDGINCI,
+        CmdGridFightType::PAAEFBCAMCH_NLOAIKFCDBL,
+        CmdGridFightType::PAAEFBCAMCH_PGCALOEHBIG,
+        CmdGridFightType::PAAEFBCAMCH_LIFCMFHBAOP,
+        CmdGridFightType::PAAEFBCAMCH_MAAFLKILNGM,
+        CmdGridFightType::PAAEFBCAMCH_EKNGADMGBGF,
+        CmdGridFightType::PAAEFBCAMCH_LJBLHPMFHNG,
+        CmdGridFightType::PAAEFBCAMCH_ACNIGPJMBAG,
+        CmdGridFightType::PAAEFBCAMCH_OLHPIBEJDLA,
+        CmdGridFightType::PAAEFBCAMCH_MPIPCILCBLJ,
+        CmdGridFightType::PAAEFBCAMCH_PGALKMDNPMI,
+        CmdGridFightType::PAAEFBCAMCH_HKMDEHEJPNA,
+        CmdGridFightType::PAAEFBCAMCH_DLKHBPNPBNK,
+        CmdGridFightType::PAAEFBCAMCH_LJDOMMAHOBK,
+        CmdGridFightType::PAAEFBCAMCH_JDICAJEBHAL,
+        CmdGridFightType::PAAEFBCAMCH_MMCAPOIOMLM,
+        CmdGridFightType::PAAEFBCAMCH_AAGIHKMGFAP,
+        CmdGridFightType::PAAEFBCAMCH_MAOACFHMBEH,
+        CmdGridFightType::PAAEFBCAMCH_OMNINPNDKFG,
+        CmdGridFightType::PAAEFBCAMCH_KDGIJIANFDM,
+        CmdGridFightType::PAAEFBCAMCH_EMGHOLOLJPI,
+        CmdGridFightType::PAAEFBCAMCH_IDNGHCLACOF,
+        CmdGridFightType::PAAEFBCAMCH_KJGJNOJJEJJ,
+        CmdGridFightType::PAAEFBCAMCH_CDFFJBONLEF,
+        CmdGridFightType::PAAEFBCAMCH_IPNOBODCEMA,
+        CmdGridFightType::PAAEFBCAMCH_DHNPFLPFPMI,
+        CmdGridFightType::PAAEFBCAMCH_EGCNJDNINEA,
+        CmdGridFightType::PAAEFBCAMCH_EEHIMBGNAON,
+        CmdGridFightType::PAAEFBCAMCH_KIKDAPHJMAE,
+        CmdGridFightType::PAAEFBCAMCH_FOCLIFANJED,
+        CmdGridFightType::PAAEFBCAMCH_EAJBLOCPDCF,
+        CmdGridFightType::PAAEFBCAMCH_HAPJAIEAOBI,
+        CmdGridFightType::PAAEFBCAMCH_EKHKGHOAHED,
+        CmdGridFightType::PAAEFBCAMCH_MGEJAFJMHOH,
+        CmdGridFightType::PAAEFBCAMCH_HIBDOCNFCIC,
+        CmdGridFightType::PAAEFBCAMCH_HDILBAOEGAD,
+        CmdGridFightType::PAAEFBCAMCH_LCKCMHHDIAB,
+        CmdGridFightType::PAAEFBCAMCH_CMLJHBLPEHM,
+        CmdGridFightType::PAAEFBCAMCH_FGPPFOOEHPN,
+        CmdGridFightType::PAAEFBCAMCH_HPCCNJLLLJL,
+        CmdGridFightType::PAAEFBCAMCH_FDIHPBMECPN,
+        CmdGridFightType::PAAEFBCAMCH_OEDGJLCOCAP,
+        CmdGridFightType::PAAEFBCAMCH_JLHLABFFEBM,
+        CmdGridFightType::PAAEFBCAMCH_FAMLPEHMDHN,
+        CmdGridFightType::PAAEFBCAMCH_JFLDOBCLFGK,
+        CmdGridFightType::PAAEFBCAMCH_DBDLDJIOHJA,
+        CmdGridFightType::PAAEFBCAMCH_CIOCPADNBBC,
+        CmdGridFightType::PAAEFBCAMCH_FHKCAFCCGJJ,
+        CmdGridFightType::PAAEFBCAMCH_AJFIDHENNIH,
+        CmdGridFightType::PAAEFBCAMCH_EMAODGKHMHD,
+        CmdGridFightType::PAAEFBCAMCH_OPDHCGCJKID,
+        CmdGridFightType::PAAEFBCAMCH_FNPHKGJDDMF,
+        CmdGridFightType::PAAEFBCAMCH_MNOOABKFFMD,
+        CmdGridFightType::PAAEFBCAMCH_ANMNDFKIAEP,
+        CmdGridFightType::PAAEFBCAMCH_DADOPJHCABE,
+        CmdGridFightType::PAAEFBCAMCH_KCDEPMPBODF,
+        CmdGridFightType::PAAEFBCAMCH_AHOLHHLPNDH,
+        CmdGridFightType::PAAEFBCAMCH_OANBKFKIACO,
+        CmdGridFightType::PAAEFBCAMCH_KHOOCNOAHBD,
+        CmdGridFightType::PAAEFBCAMCH_LLOAAHNFOAN,
+        CmdGridFightType::PAAEFBCAMCH_EGDNAIEHJJI,
+        CmdGridFightType::PAAEFBCAMCH_BNMIABGFHDI,
+        CmdGridFightType::PAAEFBCAMCH_LHFGDLBFBNI,
+        CmdGridFightType::PAAEFBCAMCH_PNLIJMOFEOE,
+        CmdGridFightType::PAAEFBCAMCH_CPHHNOIBJFE,
+        CmdGridFightType::PAAEFBCAMCH_PAKDPNCPPNM,
+        CmdGridFightType::PAAEFBCAMCH_EOAGBCFCPFE,
+        CmdGridFightType::PAAEFBCAMCH_NKGMGDFGCJH,
+        CmdGridFightType::PAAEFBCAMCH_PDFPJPHPEGM,
+        CmdGridFightType::PAAEFBCAMCH_CIJFNCKLAJH,
+        CmdGridFightType::PAAEFBCAMCH_JCNFHNPJHAO,
+        CmdGridFightType::PAAEFBCAMCH_EJCMHHGFCOL,
+        CmdGridFightType::PAAEFBCAMCH_IMKDCIOOPAI,
+        CmdGridFightType::PAAEFBCAMCH_PBGFIKLCCCC,
+        CmdGridFightType::PAAEFBCAMCH_JNNPHMHNEEG,
+        CmdGridFightType::PAAEFBCAMCH_FHGFDAAGGFN,
+        CmdGridFightType::PAAEFBCAMCH_KFBJHGDPCAG,
+        CmdGridFightType::PAAEFBCAMCH_DOACFEINICN,
     ];
 }
 
@@ -490,92 +515,97 @@ impl ::protobuf::EnumFull for CmdGridFightType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdGridFightType::CmdGridFightTypeNone => 0,
-            CmdGridFightType::CmdGridFightGetFormationCsReq => 1,
-            CmdGridFightType::CmdGridFightUpdateTraitTrackScRsp => 2,
-            CmdGridFightType::CmdGridFightUseOrbNotify => 3,
-            CmdGridFightType::CmdGridFightUseForgeScRsp => 4,
-            CmdGridFightType::CmdGridFightUseOrbScRsp => 5,
-            CmdGridFightType::CmdGridFightEquipDressScRsp => 6,
-            CmdGridFightType::CmdGridFightEquipDressCsReq => 7,
-            CmdGridFightType::CmdGridFightHandlePendingActionScRsp => 8,
-            CmdGridFightType::CmdGridFightAddFormationCsReq => 9,
-            CmdGridFightType::CmdGridFightBackToPrepareCsReq => 10,
-            CmdGridFightType::CmdGridFightFinishTutorialScRsp => 11,
-            CmdGridFightType::CmdGridFightTakeWeeklyRewardScRsp => 12,
-            CmdGridFightType::CmdGridFightGetFormationScRsp => 13,
-            CmdGridFightType::CmdGridFightEndBattleStageNotify => 14,
-            CmdGridFightType::CmdGridFightTraitUpdateScRsp => 15,
-            CmdGridFightType::CmdGridFightUpdateEliteBranchSelectScRsp => 16,
-            CmdGridFightType::CmdGridFightSettleNotify => 17,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp => 18,
-            CmdGridFightType::CmdGridFightUpdateTraitTrackCsReq => 19,
-            CmdGridFightType::CmdGridFightResumeGamePlayCsReq => 20,
-            CmdGridFightType::CmdGridFightSyncVirtualItemScNotify => 21,
-            CmdGridFightType::CmdGridFightFinishTutorialCsReq => 22,
-            CmdGridFightType::CmdGridFightBuyExpCsReq => 23,
-            CmdGridFightType::CmdGridFightSyncUpdateResultScNotify => 24,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackProrityScRsp => 25,
-            CmdGridFightType::CmdGridFightStartGamePlayScRsp => 26,
-            CmdGridFightType::CmdGridFightUpdateFormationCsReq => 27,
-            CmdGridFightType::CmdGridFightResetPermanentTalentScRsp => 28,
-            CmdGridFightType::CmdGridFightAddFormationScRsp => 29,
-            CmdGridFightType::CmdGridFightUpdateEliteBranchSelectCsReq => 30,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackProrityCsReq => 31,
-            CmdGridFightType::CmdGridFightEnterBattleStageCsReq => 32,
-            CmdGridFightType::CmdGridFightGetDataCsReq => 33,
-            CmdGridFightType::CmdGridFightResetPermanentTalentCsReq => 34,
-            CmdGridFightType::CmdGridFightEquipCraftScRsp => 35,
-            CmdGridFightType::CmdGridFightRefreshShopCsReq => 36,
-            CmdGridFightType::CmdGridFightBuyGoodsScRsp => 37,
-            CmdGridFightType::CmdGridFightEnablePermanentTalentCsReq => 38,
-            CmdGridFightType::CmdGridFightTraitUpdateCsReq => 39,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq => 40,
-            CmdGridFightType::CmdGridFightQuitSettleCsReq => 41,
-            CmdGridFightType::CmdGridFightUseOrbCsReq => 42,
-            CmdGridFightType::CmdGridFightUseConsumableCsReq => 43,
-            CmdGridFightType::CmdGridFightHandlePendingActionCsReq => 44,
-            CmdGridFightType::CmdGridFightEquipCraftCsReq => 45,
-            CmdGridFightType::CmdGridFightEnableSeasonTalentCsReq => 46,
-            CmdGridFightType::CmdGridFightEnterBattleStageScRsp => 47,
-            CmdGridFightType::CmdGridFightUpdateGameRefCsReq => 48,
-            CmdGridFightType::CmdGridFightUpdateGameRefScRsp => 49,
-            CmdGridFightType::CmdGridFightDeleteFormationCsReq => 50,
-            CmdGridFightType::CmdGridFightResetSeasonTalentScRsp => 51,
-            CmdGridFightType::CmdGridFightEnableSeasonTalentScRsp => 52,
-            CmdGridFightType::CmdGridFightBuyExpScRsp => 53,
-            CmdGridFightType::CmdGridFightGetArchiveCsReq => 54,
-            CmdGridFightType::CmdGridFightBackToPrepareScRsp => 55,
-            CmdGridFightType::CmdGridFightDeleteFormationScRsp => 56,
-            CmdGridFightType::CmdGridFightResetSeasonTalentCsReq => 57,
-            CmdGridFightType::CmdGridFightRecycleRoleScRsp => 58,
-            CmdGridFightType::CmdGridFightSeasonHandBookNotify => 59,
-            CmdGridFightType::CmdGridFightQuitLeaveGamePlayScRsp => 60,
-            CmdGridFightType::CmdGridFightResumeGamePlayScRsp => 61,
-            CmdGridFightType::CmdGridFightEnablePermanentTalentScRsp => 62,
-            CmdGridFightType::CmdGridFightStartGamePlayCsReq => 63,
-            CmdGridFightType::CmdGridFightUpdatePosScRsp => 64,
-            CmdGridFightType::CmdGridFightUseForgeCsReq => 65,
-            CmdGridFightType::CmdGridFightRefreshShopScRsp => 66,
-            CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq => 67,
-            CmdGridFightType::CmdGridFightRecycleRoleCsReq => 68,
-            CmdGridFightType::CmdGridFightGetShopRandomRuleCsReq => 69,
-            CmdGridFightType::CmdGridFightGetArchiveScRsp => 70,
-            CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq => 71,
-            CmdGridFightType::CmdGridFightLockShopScRsp => 72,
-            CmdGridFightType::CmdGridFightUseConsumableScRsp => 73,
-            CmdGridFightType::CmdGridFightUpdateFormationScRsp => 74,
-            CmdGridFightType::CmdGridFightGetDataScRsp => 75,
-            CmdGridFightType::CmdGridFightApplyFormationCsReq => 76,
-            CmdGridFightType::CmdGridFightLockShopCsReq => 77,
-            CmdGridFightType::CmdGridFightBuyGoodsCsReq => 78,
-            CmdGridFightType::CmdGridFightUpdateWeeklyRewardInfoScNotify => 79,
-            CmdGridFightType::CmdGridFightQuitSettleScRsp => 80,
-            CmdGridFightType::CmdGridFightApplyFormationScRsp => 81,
-            CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpNotify => 82,
-            CmdGridFightType::CmdGridFightDataScNotify => 83,
-            CmdGridFightType::CmdGridFightGetShopRandomRuleScRsp => 84,
-            CmdGridFightType::CmdGridFightUpdatePosCsReq => 85,
+            CmdGridFightType::PAAEFBCAMCH_GKJBAODJMJG => 0,
+            CmdGridFightType::PAAEFBCAMCH_BINNELJCLMJ => 1,
+            CmdGridFightType::PAAEFBCAMCH_CEKGPGHENHF => 2,
+            CmdGridFightType::PAAEFBCAMCH_LCONHIMMMAK => 3,
+            CmdGridFightType::PAAEFBCAMCH_CNFFJPKHGMG => 4,
+            CmdGridFightType::PAAEFBCAMCH_AOLPBMGECAO => 5,
+            CmdGridFightType::PAAEFBCAMCH_JIJLCKMHAMM => 6,
+            CmdGridFightType::PAAEFBCAMCH_AAAIHNDCNHA => 7,
+            CmdGridFightType::PAAEFBCAMCH_NEDHDBFFBCP => 8,
+            CmdGridFightType::PAAEFBCAMCH_OKHPMPMAOOD => 9,
+            CmdGridFightType::PAAEFBCAMCH_FHOJKHMDEMI => 10,
+            CmdGridFightType::PAAEFBCAMCH_IGNENJHCAMK => 11,
+            CmdGridFightType::PAAEFBCAMCH_JHMBFFCKEIA => 12,
+            CmdGridFightType::PAAEFBCAMCH_PKJBEDGINCI => 13,
+            CmdGridFightType::PAAEFBCAMCH_NLOAIKFCDBL => 14,
+            CmdGridFightType::PAAEFBCAMCH_PGCALOEHBIG => 15,
+            CmdGridFightType::PAAEFBCAMCH_LIFCMFHBAOP => 16,
+            CmdGridFightType::PAAEFBCAMCH_MAAFLKILNGM => 17,
+            CmdGridFightType::PAAEFBCAMCH_EKNGADMGBGF => 18,
+            CmdGridFightType::PAAEFBCAMCH_LJBLHPMFHNG => 19,
+            CmdGridFightType::PAAEFBCAMCH_ACNIGPJMBAG => 20,
+            CmdGridFightType::PAAEFBCAMCH_OLHPIBEJDLA => 21,
+            CmdGridFightType::PAAEFBCAMCH_MPIPCILCBLJ => 22,
+            CmdGridFightType::PAAEFBCAMCH_PGALKMDNPMI => 23,
+            CmdGridFightType::PAAEFBCAMCH_HKMDEHEJPNA => 24,
+            CmdGridFightType::PAAEFBCAMCH_DLKHBPNPBNK => 25,
+            CmdGridFightType::PAAEFBCAMCH_LJDOMMAHOBK => 26,
+            CmdGridFightType::PAAEFBCAMCH_JDICAJEBHAL => 27,
+            CmdGridFightType::PAAEFBCAMCH_MMCAPOIOMLM => 28,
+            CmdGridFightType::PAAEFBCAMCH_AAGIHKMGFAP => 29,
+            CmdGridFightType::PAAEFBCAMCH_MAOACFHMBEH => 30,
+            CmdGridFightType::PAAEFBCAMCH_OMNINPNDKFG => 31,
+            CmdGridFightType::PAAEFBCAMCH_KDGIJIANFDM => 32,
+            CmdGridFightType::PAAEFBCAMCH_EMGHOLOLJPI => 33,
+            CmdGridFightType::PAAEFBCAMCH_IDNGHCLACOF => 34,
+            CmdGridFightType::PAAEFBCAMCH_KJGJNOJJEJJ => 35,
+            CmdGridFightType::PAAEFBCAMCH_CDFFJBONLEF => 36,
+            CmdGridFightType::PAAEFBCAMCH_IPNOBODCEMA => 37,
+            CmdGridFightType::PAAEFBCAMCH_DHNPFLPFPMI => 38,
+            CmdGridFightType::PAAEFBCAMCH_EGCNJDNINEA => 39,
+            CmdGridFightType::PAAEFBCAMCH_EEHIMBGNAON => 40,
+            CmdGridFightType::PAAEFBCAMCH_KIKDAPHJMAE => 41,
+            CmdGridFightType::PAAEFBCAMCH_FOCLIFANJED => 42,
+            CmdGridFightType::PAAEFBCAMCH_EAJBLOCPDCF => 43,
+            CmdGridFightType::PAAEFBCAMCH_HAPJAIEAOBI => 44,
+            CmdGridFightType::PAAEFBCAMCH_EKHKGHOAHED => 45,
+            CmdGridFightType::PAAEFBCAMCH_MGEJAFJMHOH => 46,
+            CmdGridFightType::PAAEFBCAMCH_HIBDOCNFCIC => 47,
+            CmdGridFightType::PAAEFBCAMCH_HDILBAOEGAD => 48,
+            CmdGridFightType::PAAEFBCAMCH_LCKCMHHDIAB => 49,
+            CmdGridFightType::PAAEFBCAMCH_CMLJHBLPEHM => 50,
+            CmdGridFightType::PAAEFBCAMCH_FGPPFOOEHPN => 51,
+            CmdGridFightType::PAAEFBCAMCH_HPCCNJLLLJL => 52,
+            CmdGridFightType::PAAEFBCAMCH_FDIHPBMECPN => 53,
+            CmdGridFightType::PAAEFBCAMCH_OEDGJLCOCAP => 54,
+            CmdGridFightType::PAAEFBCAMCH_JLHLABFFEBM => 55,
+            CmdGridFightType::PAAEFBCAMCH_FAMLPEHMDHN => 56,
+            CmdGridFightType::PAAEFBCAMCH_JFLDOBCLFGK => 57,
+            CmdGridFightType::PAAEFBCAMCH_DBDLDJIOHJA => 58,
+            CmdGridFightType::PAAEFBCAMCH_CIOCPADNBBC => 59,
+            CmdGridFightType::PAAEFBCAMCH_FHKCAFCCGJJ => 60,
+            CmdGridFightType::PAAEFBCAMCH_AJFIDHENNIH => 61,
+            CmdGridFightType::PAAEFBCAMCH_EMAODGKHMHD => 62,
+            CmdGridFightType::PAAEFBCAMCH_OPDHCGCJKID => 63,
+            CmdGridFightType::PAAEFBCAMCH_FNPHKGJDDMF => 64,
+            CmdGridFightType::PAAEFBCAMCH_MNOOABKFFMD => 65,
+            CmdGridFightType::PAAEFBCAMCH_ANMNDFKIAEP => 66,
+            CmdGridFightType::PAAEFBCAMCH_DADOPJHCABE => 67,
+            CmdGridFightType::PAAEFBCAMCH_KCDEPMPBODF => 68,
+            CmdGridFightType::PAAEFBCAMCH_AHOLHHLPNDH => 69,
+            CmdGridFightType::PAAEFBCAMCH_OANBKFKIACO => 70,
+            CmdGridFightType::PAAEFBCAMCH_KHOOCNOAHBD => 71,
+            CmdGridFightType::PAAEFBCAMCH_LLOAAHNFOAN => 72,
+            CmdGridFightType::PAAEFBCAMCH_EGDNAIEHJJI => 73,
+            CmdGridFightType::PAAEFBCAMCH_BNMIABGFHDI => 74,
+            CmdGridFightType::PAAEFBCAMCH_LHFGDLBFBNI => 75,
+            CmdGridFightType::PAAEFBCAMCH_PNLIJMOFEOE => 76,
+            CmdGridFightType::PAAEFBCAMCH_CPHHNOIBJFE => 77,
+            CmdGridFightType::PAAEFBCAMCH_PAKDPNCPPNM => 78,
+            CmdGridFightType::PAAEFBCAMCH_EOAGBCFCPFE => 79,
+            CmdGridFightType::PAAEFBCAMCH_NKGMGDFGCJH => 80,
+            CmdGridFightType::PAAEFBCAMCH_PDFPJPHPEGM => 81,
+            CmdGridFightType::PAAEFBCAMCH_CIJFNCKLAJH => 82,
+            CmdGridFightType::PAAEFBCAMCH_JCNFHNPJHAO => 83,
+            CmdGridFightType::PAAEFBCAMCH_EJCMHHGFCOL => 84,
+            CmdGridFightType::PAAEFBCAMCH_IMKDCIOOPAI => 85,
+            CmdGridFightType::PAAEFBCAMCH_PBGFIKLCCCC => 86,
+            CmdGridFightType::PAAEFBCAMCH_JNNPHMHNEEG => 87,
+            CmdGridFightType::PAAEFBCAMCH_FHGFDAAGGFN => 88,
+            CmdGridFightType::PAAEFBCAMCH_KFBJHGDPCAG => 89,
+            CmdGridFightType::PAAEFBCAMCH_DOACFEINICN => 90,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -583,7 +613,7 @@ impl ::protobuf::EnumFull for CmdGridFightType {
 
 impl ::std::default::Default for CmdGridFightType {
     fn default() -> Self {
-        CmdGridFightType::CmdGridFightTypeNone
+        CmdGridFightType::PAAEFBCAMCH_GKJBAODJMJG
     }
 }
 
@@ -594,68 +624,66 @@ impl CmdGridFightType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdGridFightType.proto*\xaa\x19\n\x10CmdGridFightType\x12\x18\n\
-    \x14CmdGridFightTypeNone\x10\0\x12\"\n\x1dCmdGridFightGetFormationCsReq\
-    \x10\x91B\x12&\n!CmdGridFightUpdateTraitTrackScRsp\x10\x81C\x12\x1d\n\
-    \x18CmdGridFightUseOrbNotify\x10\x8dC\x12\x1e\n\x19CmdGridFightUseForgeS\
-    cRsp\x10\xd1B\x12\x1c\n\x17CmdGridFightUseOrbScRsp\x10\xc0B\x12\x20\n\
-    \x1bCmdGridFightEquipDressScRsp\x10\xe8A\x12\x20\n\x1bCmdGridFightEquipD\
-    ressCsReq\x10\x93C\x12)\n$CmdGridFightHandlePendingActionScRsp\x10\x92B\
-    \x12\"\n\x1dCmdGridFightAddFormationCsReq\x10\xf9A\x12#\n\x1eCmdGridFigh\
-    tBackToPrepareCsReq\x10\xf8B\x12$\n\x1fCmdGridFightFinishTutorialScRsp\
-    \x10\xf0A\x12&\n!CmdGridFightTakeWeeklyRewardScRsp\x10\xcbB\x12\"\n\x1dC\
-    mdGridFightGetFormationScRsp\x10\xb4B\x12%\n\x20CmdGridFightEndBattleSta\
-    geNotify\x10\xd4A\x12!\n\x1cCmdGridFightTraitUpdateScRsp\x10\xf3B\x12-\n\
-    (CmdGridFightUpdateEliteBranchSelectScRsp\x10\x94B\x12\x1d\n\x18CmdGridF\
-    ightSettleNotify\x10\xf7B\x12&\n!CmdGridFightUpdateEquipTrackScRsp\x10\
-    \xefB\x12&\n!CmdGridFightUpdateTraitTrackCsReq\x10\xf6B\x12$\n\x1fCmdGri\
-    dFightResumeGamePlayCsReq\x10\x85B\x12(\n#CmdGridFightSyncVirtualItemScN\
-    otify\x10\xe1B\x12$\n\x1fCmdGridFightFinishTutorialCsReq\x10\xbaB\x12\
-    \x1c\n\x17CmdGridFightBuyExpCsReq\x10\xcfB\x12)\n$CmdGridFightSyncUpdate\
-    ResultScNotify\x10\xedB\x12-\n(CmdGridFightUpdateEquipTrackProrityScRsp\
-    \x10\xe4B\x12#\n\x1eCmdGridFightStartGamePlayScRsp\x10\xd0B\x12%\n\x20Cm\
-    dGridFightUpdateFormationCsReq\x10\xa7B\x12*\n%CmdGridFightResetPermanen\
-    tTalentScRsp\x10\xfeA\x12\"\n\x1dCmdGridFightAddFormationScRsp\x10\xebB\
-    \x12-\n(CmdGridFightUpdateEliteBranchSelectCsReq\x10\xb9B\x12-\n(CmdGrid\
-    FightUpdateEquipTrackProrityCsReq\x10\xf1A\x12&\n!CmdGridFightEnterBattl\
-    eStageCsReq\x10\xefA\x12\x1d\n\x18CmdGridFightGetDataCsReq\x10\xd1A\x12*\
-    \n%CmdGridFightResetPermanentTalentCsReq\x10\x95C\x12\x20\n\x1bCmdGridFi\
-    ghtEquipCraftScRsp\x10\x8cC\x12!\n\x1cCmdGridFightRefreshShopCsReq\x10\
-    \xb0B\x12\x1e\n\x19CmdGridFightBuyGoodsScRsp\x10\xbfB\x12+\n&CmdGridFigh\
-    tEnablePermanentTalentCsReq\x10\xf6A\x12!\n\x1cCmdGridFightTraitUpdateCs\
-    Req\x10\x8aC\x12&\n!CmdGridFightUpdateEquipTrackCsReq\x10\xe0A\x12\x20\n\
-    \x1bCmdGridFightQuitSettleCsReq\x10\xdaB\x12\x1c\n\x17CmdGridFightUseOrb\
-    CsReq\x10\x82C\x12#\n\x1eCmdGridFightUseConsumableCsReq\x10\x80C\x12)\n$\
-    CmdGridFightHandlePendingActionCsReq\x10\xd6A\x12\x20\n\x1bCmdGridFightE\
-    quipCraftCsReq\x10\x97C\x12(\n#CmdGridFightEnableSeasonTalentCsReq\x10\
-    \xa6B\x12&\n!CmdGridFightEnterBattleStageScRsp\x10\xd3B\x12#\n\x1eCmdGri\
-    dFightUpdateGameRefCsReq\x10\xdaA\x12#\n\x1eCmdGridFightUpdateGameRefScR\
-    sp\x10\x9aB\x12%\n\x20CmdGridFightDeleteFormationCsReq\x10\x98B\x12'\n\"\
-    CmdGridFightResetSeasonTalentScRsp\x10\xa5B\x12(\n#CmdGridFightEnableSea\
-    sonTalentScRsp\x10\x88B\x12\x1c\n\x17CmdGridFightBuyExpScRsp\x10\x8bB\
-    \x12\x20\n\x1bCmdGridFightGetArchiveCsReq\x10\x9fB\x12#\n\x1eCmdGridFigh\
-    tBackToPrepareScRsp\x10\xe6B\x12%\n\x20CmdGridFightDeleteFormationScRsp\
-    \x10\xfbA\x12'\n\"CmdGridFightResetSeasonTalentCsReq\x10\xddA\x12!\n\x1c\
-    CmdGridFightRecycleRoleScRsp\x10\xeeA\x12%\n\x20CmdGridFightSeasonHandBo\
-    okNotify\x10\xc4B\x12'\n\"CmdGridFightQuitLeaveGamePlayScRsp\x10\x96C\
-    \x12$\n\x1fCmdGridFightResumeGamePlayScRsp\x10\xf8A\x12+\n&CmdGridFightE\
-    nablePermanentTalentScRsp\x10\xbcB\x12#\n\x1eCmdGridFightStartGamePlayCs\
-    Req\x10\xdfA\x12\x1f\n\x1aCmdGridFightUpdatePosScRsp\x10\xe5B\x12\x1e\n\
-    \x19CmdGridFightUseForgeCsReq\x10\xebA\x12!\n\x1cCmdGridFightRefreshShop\
-    ScRsp\x10\xd4B\x12'\n\"CmdGridFightQuitLeaveGamePlayCsReq\x10\xc6B\x12!\
-    \n\x1cCmdGridFightRecycleRoleCsReq\x10\xbbB\x12'\n\"CmdGridFightGetShopR\
-    andomRuleCsReq\x10\xd5B\x12\x20\n\x1bCmdGridFightGetArchiveScRsp\x10\xfb\
-    B\x12&\n!CmdGridFightTakeWeeklyRewardCsReq\x10\xfdA\x12\x1e\n\x19CmdGrid\
-    FightLockShopScRsp\x10\xffB\x12#\n\x1eCmdGridFightUseConsumableScRsp\x10\
-    \xfaA\x12%\n\x20CmdGridFightUpdateFormationScRsp\x10\x80B\x12\x1d\n\x18C\
-    mdGridFightGetDataScRsp\x10\x84C\x12$\n\x1fCmdGridFightApplyFormationCsR\
-    eq\x10\xf3A\x12\x1e\n\x19CmdGridFightLockShopCsReq\x10\xd5A\x12\x1e\n\
-    \x19CmdGridFightBuyGoodsCsReq\x10\xd8B\x12/\n*CmdGridFightUpdateWeeklyRe\
-    wardInfoScNotify\x10\xddB\x12\x20\n\x1bCmdGridFightQuitSettleScRsp\x10\
-    \xc7B\x12$\n\x1fCmdGridFightApplyFormationScRsp\x10\xdeB\x12+\n&CmdGridF\
-    ightWeeklyExtraSeasonExpNotify\x10\xc3B\x12\x1d\n\x18CmdGridFightDataScN\
-    otify\x10\xd7A\x12'\n\"CmdGridFightGetShopRandomRuleScRsp\x10\xa0B\x12\
-    \x1f\n\x1aCmdGridFightUpdatePosCsReq\x10\xb1Bb\x06proto3\
+    \n\x16CmdGridFightType.proto*\xbb\x15\n\x10CmdGridFightType\x12\x1b\n\
+    \x17PAAEFBCAMCH_GKJBAODJMJG\x10\0\x12\x1c\n\x17PAAEFBCAMCH_BINNELJCLMJ\
+    \x10\xe0B\x12\x1c\n\x17PAAEFBCAMCH_CEKGPGHENHF\x10\xb6B\x12\x1c\n\x17PAA\
+    EFBCAMCH_LCONHIMMMAK\x10\x85C\x12\x1c\n\x17PAAEFBCAMCH_CNFFJPKHGMG\x10\
+    \xfbA\x12\x1c\n\x17PAAEFBCAMCH_AOLPBMGECAO\x10\xdcA\x12\x1c\n\x17PAAEFBC\
+    AMCH_JIJLCKMHAMM\x10\x93C\x12\x1c\n\x17PAAEFBCAMCH_AAAIHNDCNHA\x10\xfcB\
+    \x12\x1c\n\x17PAAEFBCAMCH_NEDHDBFFBCP\x10\x98B\x12\x1c\n\x17PAAEFBCAMCH_\
+    OKHPMPMAOOD\x10\xb4B\x12\x1c\n\x17PAAEFBCAMCH_FHOJKHMDEMI\x10\xe5A\x12\
+    \x1c\n\x17PAAEFBCAMCH_IGNENJHCAMK\x10\x82C\x12\x1c\n\x17PAAEFBCAMCH_JHMB\
+    FFCKEIA\x10\xd6B\x12\x1c\n\x17PAAEFBCAMCH_PKJBEDGINCI\x10\x9bB\x12\x1c\n\
+    \x17PAAEFBCAMCH_NLOAIKFCDBL\x10\xa9B\x12\x1c\n\x17PAAEFBCAMCH_PGCALOEHBI\
+    G\x10\x83C\x12\x1c\n\x17PAAEFBCAMCH_LIFCMFHBAOP\x10\x81C\x12\x1c\n\x17PA\
+    AEFBCAMCH_MAAFLKILNGM\x10\xd6A\x12\x1c\n\x17PAAEFBCAMCH_EKNGADMGBGF\x10\
+    \xcdB\x12\x1c\n\x17PAAEFBCAMCH_LJBLHPMFHNG\x10\xdfA\x12\x1c\n\x17PAAEFBC\
+    AMCH_ACNIGPJMBAG\x10\xc3B\x12\x1c\n\x17PAAEFBCAMCH_OLHPIBEJDLA\x10\x86B\
+    \x12\x1c\n\x17PAAEFBCAMCH_MPIPCILCBLJ\x10\xdeB\x12\x1c\n\x17PAAEFBCAMCH_\
+    PGALKMDNPMI\x10\xb7B\x12\x1c\n\x17PAAEFBCAMCH_HKMDEHEJPNA\x10\xbdB\x12\
+    \x1c\n\x17PAAEFBCAMCH_DLKHBPNPBNK\x10\xeeB\x12\x1c\n\x17PAAEFBCAMCH_LJDO\
+    MMAHOBK\x10\x9dB\x12\x1c\n\x17PAAEFBCAMCH_JDICAJEBHAL\x10\xf6A\x12\x1c\n\
+    \x17PAAEFBCAMCH_MMCAPOIOMLM\x10\xd0B\x12\x1c\n\x17PAAEFBCAMCH_AAGIHKMGFA\
+    P\x10\xf0B\x12\x1c\n\x17PAAEFBCAMCH_MAOACFHMBEH\x10\x92C\x12\x1c\n\x17PA\
+    AEFBCAMCH_OMNINPNDKFG\x10\xcbB\x12\x1c\n\x17PAAEFBCAMCH_KDGIJIANFDM\x10\
+    \xc5B\x12\x1c\n\x17PAAEFBCAMCH_EMGHOLOLJPI\x10\xfdA\x12\x1c\n\x17PAAEFBC\
+    AMCH_IDNGHCLACOF\x10\xf8B\x12\x1c\n\x17PAAEFBCAMCH_KJGJNOJJEJJ\x10\xbbB\
+    \x12\x1c\n\x17PAAEFBCAMCH_CDFFJBONLEF\x10\xf4B\x12\x1c\n\x17PAAEFBCAMCH_\
+    IPNOBODCEMA\x10\xe9A\x12\x1c\n\x17PAAEFBCAMCH_DHNPFLPFPMI\x10\xadB\x12\
+    \x1c\n\x17PAAEFBCAMCH_EGCNJDNINEA\x10\xe3A\x12\x1c\n\x17PAAEFBCAMCH_EEHI\
+    MBGNAON\x10\xb9B\x12\x1c\n\x17PAAEFBCAMCH_KIKDAPHJMAE\x10\x85B\x12\x1c\n\
+    \x17PAAEFBCAMCH_FOCLIFANJED\x10\x97B\x12\x1c\n\x17PAAEFBCAMCH_EAJBLOCPDC\
+    F\x10\xccB\x12\x1c\n\x17PAAEFBCAMCH_HAPJAIEAOBI\x10\x90C\x12\x1c\n\x17PA\
+    AEFBCAMCH_EKHKGHOAHED\x10\xa5B\x12\x1c\n\x17PAAEFBCAMCH_MGEJAFJMHOH\x10\
+    \x8dB\x12\x1c\n\x17PAAEFBCAMCH_HIBDOCNFCIC\x10\xa0B\x12\x1c\n\x17PAAEFBC\
+    AMCH_HDILBAOEGAD\x10\x92B\x12\x1c\n\x17PAAEFBCAMCH_LCKCMHHDIAB\x10\xf2B\
+    \x12\x1c\n\x17PAAEFBCAMCH_CMLJHBLPEHM\x10\xddA\x12\x1c\n\x17PAAEFBCAMCH_\
+    FGPPFOOEHPN\x10\xabB\x12\x1c\n\x17PAAEFBCAMCH_HPCCNJLLLJL\x10\x88B\x12\
+    \x1c\n\x17PAAEFBCAMCH_FDIHPBMECPN\x10\x87B\x12\x1c\n\x17PAAEFBCAMCH_OEDG\
+    JLCOCAP\x10\xf8A\x12\x1c\n\x17PAAEFBCAMCH_JLHLABFFEBM\x10\xb1B\x12\x1c\n\
+    \x17PAAEFBCAMCH_FAMLPEHMDHN\x10\x8aB\x12\x1c\n\x17PAAEFBCAMCH_JFLDOBCLFG\
+    K\x10\x95B\x12\x1c\n\x17PAAEFBCAMCH_DBDLDJIOHJA\x10\xa7B\x12\x1c\n\x17PA\
+    AEFBCAMCH_CIOCPADNBBC\x10\xb2B\x12\x1c\n\x17PAAEFBCAMCH_FHKCAFCCGJJ\x10\
+    \xc9B\x12\x1c\n\x17PAAEFBCAMCH_AJFIDHENNIH\x10\xfaB\x12\x1c\n\x17PAAEFBC\
+    AMCH_EMAODGKHMHD\x10\xffB\x12\x1c\n\x17PAAEFBCAMCH_OPDHCGCJKID\x10\x87C\
+    \x12\x1c\n\x17PAAEFBCAMCH_FNPHKGJDDMF\x10\x94C\x12\x1c\n\x17PAAEFBCAMCH_\
+    MNOOABKFFMD\x10\x96C\x12\x1c\n\x17PAAEFBCAMCH_ANMNDFKIAEP\x10\x80B\x12\
+    \x1c\n\x17PAAEFBCAMCH_DADOPJHCABE\x10\x86C\x12\x1c\n\x17PAAEFBCAMCH_KCDE\
+    PMPBODF\x10\x91C\x12\x1c\n\x17PAAEFBCAMCH_AHOLHHLPNDH\x10\x8cC\x12\x1c\n\
+    \x17PAAEFBCAMCH_OANBKFKIACO\x10\xf7B\x12\x1c\n\x17PAAEFBCAMCH_KHOOCNOAHB\
+    D\x10\x95C\x12\x1c\n\x17PAAEFBCAMCH_LLOAAHNFOAN\x10\x81B\x12\x1c\n\x17PA\
+    AEFBCAMCH_EGDNAIEHJJI\x10\x89B\x12\x1c\n\x17PAAEFBCAMCH_BNMIABGFHDI\x10\
+    \xe6B\x12\x1c\n\x17PAAEFBCAMCH_LHFGDLBFBNI\x10\xe8A\x12\x1c\n\x17PAAEFBC\
+    AMCH_PNLIJMOFEOE\x10\xd4B\x12\x1c\n\x17PAAEFBCAMCH_CPHHNOIBJFE\x10\xfbB\
+    \x12\x1c\n\x17PAAEFBCAMCH_PAKDPNCPPNM\x10\xe1A\x12\x1c\n\x17PAAEFBCAMCH_\
+    EOAGBCFCPFE\x10\xfeA\x12\x1c\n\x17PAAEFBCAMCH_NKGMGDFGCJH\x10\x9eB\x12\
+    \x1c\n\x17PAAEFBCAMCH_PDFPJPHPEGM\x10\xa8B\x12\x1c\n\x17PAAEFBCAMCH_CIJF\
+    NCKLAJH\x10\xd1B\x12\x1c\n\x17PAAEFBCAMCH_JCNFHNPJHAO\x10\xf1B\x12\x1c\n\
+    \x17PAAEFBCAMCH_EJCMHHGFCOL\x10\xd8A\x12\x1c\n\x17PAAEFBCAMCH_IMKDCIOOPA\
+    I\x10\xf6B\x12\x1c\n\x17PAAEFBCAMCH_PBGFIKLCCCC\x10\xcaB\x12\x1c\n\x17PA\
+    AEFBCAMCH_JNNPHMHNEEG\x10\x8cB\x12\x1c\n\x17PAAEFBCAMCH_FHGFDAAGGFN\x10\
+    \xf1A\x12\x1c\n\x17PAAEFBCAMCH_KFBJHGDPCAG\x10\xe8B\x12\x1c\n\x17PAAEFBC\
+    AMCH_DOACFEINICN\x10\xedBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

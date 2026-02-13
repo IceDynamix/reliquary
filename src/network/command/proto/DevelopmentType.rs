@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:DevelopmentType)
 pub enum DevelopmentType {
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_NONE)
-    DEVELOPMENT_NONE = 0,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_COSMOS)
-    DEVELOPMENT_ROGUE_COSMOS = 1,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_CHESS)
-    DEVELOPMENT_ROGUE_CHESS = 2,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_CHESS_NOUS)
-    DEVELOPMENT_ROGUE_CHESS_NOUS = 3,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_MEMORY_CHALLENGE)
-    DEVELOPMENT_MEMORY_CHALLENGE = 4,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_STORY_CHALLENGE)
-    DEVELOPMENT_STORY_CHALLENGE = 5,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_UNLOCK_AVATAR)
-    DEVELOPMENT_UNLOCK_AVATAR = 6,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_UNLOCK_EQUIPMENT)
-    DEVELOPMENT_UNLOCK_EQUIPMENT = 7,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ACTIVITY_START)
-    DEVELOPMENT_ACTIVITY_START = 8,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ACTIVITY_END)
-    DEVELOPMENT_ACTIVITY_END = 9,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_BOSS_CHALLENGE)
-    DEVELOPMENT_BOSS_CHALLENGE = 10,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN)
-    DEVELOPMENT_ROGUE_TOURN = 11,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN_WEEK)
-    DEVELOPMENT_ROGUE_TOURN_WEEK = 12,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_MAGIC)
-    DEVELOPMENT_ROGUE_MAGIC = 13,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_CHALLENGE_PEAK)
-    DEVELOPMENT_CHALLENGE_PEAK = 14,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_ROGUE_TOURN_DIVISION)
-    DEVELOPMENT_ROGUE_TOURN_DIVISION = 15,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_DIVISION)
-    DEVELOPMENT_GRID_FIGHT_DIVISION = 16,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_GAMEPLAY)
-    DEVELOPMENT_GRID_FIGHT_GAMEPLAY = 17,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE)
-    DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE = 18,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PMFJFFAPAJO)
+    LHJMKMEIKLK_PMFJFFAPAJO = 0,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OGLNOGIKNCI)
+    LHJMKMEIKLK_OGLNOGIKNCI = 1,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OHLMFHPEAGJ)
+    LHJMKMEIKLK_OHLMFHPEAGJ = 2,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_CKHMLOKAKOH)
+    LHJMKMEIKLK_CKHMLOKAKOH = 3,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_DBFJDBIEFDB)
+    LHJMKMEIKLK_DBFJDBIEFDB = 4,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_MNKOCFKKMBE)
+    LHJMKMEIKLK_MNKOCFKKMBE = 5,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_COOIHBLILBB)
+    LHJMKMEIKLK_COOIHBLILBB = 6,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_DFJCOIOACHE)
+    LHJMKMEIKLK_DFJCOIOACHE = 7,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OANPHKGAGOA)
+    LHJMKMEIKLK_OANPHKGAGOA = 8,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_GHJONNNKDOH)
+    LHJMKMEIKLK_GHJONNNKDOH = 9,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_GMOPDOPMGFN)
+    LHJMKMEIKLK_GMOPDOPMGFN = 10,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PCDCMPFNMJH)
+    LHJMKMEIKLK_PCDCMPFNMJH = 11,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_KBOKEDNFKHH)
+    LHJMKMEIKLK_KBOKEDNFKHH = 12,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_NBBOJIKJNHD)
+    LHJMKMEIKLK_NBBOJIKJNHD = 13,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_AOGDFFKOKMC)
+    LHJMKMEIKLK_AOGDFFKOKMC = 14,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_HBDOLKCAILD)
+    LHJMKMEIKLK_HBDOLKCAILD = 15,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_ELMAOPCKAJB)
+    LHJMKMEIKLK_ELMAOPCKAJB = 16,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_AIJFFNPAMPF)
+    LHJMKMEIKLK_AIJFFNPAMPF = 17,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PKLPABNIPNM)
+    LHJMKMEIKLK_PKLPABNIPNM = 18,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for DevelopmentType {
 
     fn from_i32(value: i32) -> ::std::option::Option<DevelopmentType> {
         match value {
-            0 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_NONE),
-            1 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_COSMOS),
-            2 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_CHESS),
-            3 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_CHESS_NOUS),
-            4 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_MEMORY_CHALLENGE),
-            5 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_STORY_CHALLENGE),
-            6 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_AVATAR),
-            7 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT),
-            8 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_START),
-            9 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_END),
-            10 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE),
-            11 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
-            12 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
-            13 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
-            14 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
-            15 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
-            16 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION),
-            17 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY),
-            18 => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE),
+            0 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO),
+            1 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI),
+            2 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ),
+            3 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH),
+            4 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB),
+            5 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE),
+            6 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_COOIHBLILBB),
+            7 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE),
+            8 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA),
+            9 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH),
+            10 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN),
+            11 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH),
+            12 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH),
+            13 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD),
+            14 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC),
+            15 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD),
+            16 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB),
+            17 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF),
+            18 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<DevelopmentType> {
         match str {
-            "DEVELOPMENT_NONE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_NONE),
-            "DEVELOPMENT_ROGUE_COSMOS" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_COSMOS),
-            "DEVELOPMENT_ROGUE_CHESS" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_CHESS),
-            "DEVELOPMENT_ROGUE_CHESS_NOUS" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_CHESS_NOUS),
-            "DEVELOPMENT_MEMORY_CHALLENGE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_MEMORY_CHALLENGE),
-            "DEVELOPMENT_STORY_CHALLENGE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_STORY_CHALLENGE),
-            "DEVELOPMENT_UNLOCK_AVATAR" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_AVATAR),
-            "DEVELOPMENT_UNLOCK_EQUIPMENT" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT),
-            "DEVELOPMENT_ACTIVITY_START" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_START),
-            "DEVELOPMENT_ACTIVITY_END" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ACTIVITY_END),
-            "DEVELOPMENT_BOSS_CHALLENGE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE),
-            "DEVELOPMENT_ROGUE_TOURN" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN),
-            "DEVELOPMENT_ROGUE_TOURN_WEEK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK),
-            "DEVELOPMENT_ROGUE_MAGIC" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_MAGIC),
-            "DEVELOPMENT_CHALLENGE_PEAK" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK),
-            "DEVELOPMENT_ROGUE_TOURN_DIVISION" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION),
-            "DEVELOPMENT_GRID_FIGHT_DIVISION" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION),
-            "DEVELOPMENT_GRID_FIGHT_GAMEPLAY" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY),
-            "DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE" => ::std::option::Option::Some(DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE),
+            "LHJMKMEIKLK_PMFJFFAPAJO" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO),
+            "LHJMKMEIKLK_OGLNOGIKNCI" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI),
+            "LHJMKMEIKLK_OHLMFHPEAGJ" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ),
+            "LHJMKMEIKLK_CKHMLOKAKOH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH),
+            "LHJMKMEIKLK_DBFJDBIEFDB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB),
+            "LHJMKMEIKLK_MNKOCFKKMBE" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE),
+            "LHJMKMEIKLK_COOIHBLILBB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_COOIHBLILBB),
+            "LHJMKMEIKLK_DFJCOIOACHE" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE),
+            "LHJMKMEIKLK_OANPHKGAGOA" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA),
+            "LHJMKMEIKLK_GHJONNNKDOH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH),
+            "LHJMKMEIKLK_GMOPDOPMGFN" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN),
+            "LHJMKMEIKLK_PCDCMPFNMJH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH),
+            "LHJMKMEIKLK_KBOKEDNFKHH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH),
+            "LHJMKMEIKLK_NBBOJIKJNHD" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD),
+            "LHJMKMEIKLK_AOGDFFKOKMC" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC),
+            "LHJMKMEIKLK_HBDOLKCAILD" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD),
+            "LHJMKMEIKLK_ELMAOPCKAJB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB),
+            "LHJMKMEIKLK_AIJFFNPAMPF" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF),
+            "LHJMKMEIKLK_PKLPABNIPNM" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [DevelopmentType] = &[
-        DevelopmentType::DEVELOPMENT_NONE,
-        DevelopmentType::DEVELOPMENT_ROGUE_COSMOS,
-        DevelopmentType::DEVELOPMENT_ROGUE_CHESS,
-        DevelopmentType::DEVELOPMENT_ROGUE_CHESS_NOUS,
-        DevelopmentType::DEVELOPMENT_MEMORY_CHALLENGE,
-        DevelopmentType::DEVELOPMENT_STORY_CHALLENGE,
-        DevelopmentType::DEVELOPMENT_UNLOCK_AVATAR,
-        DevelopmentType::DEVELOPMENT_UNLOCK_EQUIPMENT,
-        DevelopmentType::DEVELOPMENT_ACTIVITY_START,
-        DevelopmentType::DEVELOPMENT_ACTIVITY_END,
-        DevelopmentType::DEVELOPMENT_BOSS_CHALLENGE,
-        DevelopmentType::DEVELOPMENT_ROGUE_TOURN,
-        DevelopmentType::DEVELOPMENT_ROGUE_TOURN_WEEK,
-        DevelopmentType::DEVELOPMENT_ROGUE_MAGIC,
-        DevelopmentType::DEVELOPMENT_CHALLENGE_PEAK,
-        DevelopmentType::DEVELOPMENT_ROGUE_TOURN_DIVISION,
-        DevelopmentType::DEVELOPMENT_GRID_FIGHT_DIVISION,
-        DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY,
-        DevelopmentType::DEVELOPMENT_GRID_FIGHT_GAMEPLAY_OC_MODE,
+        DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO,
+        DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI,
+        DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ,
+        DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH,
+        DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB,
+        DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE,
+        DevelopmentType::LHJMKMEIKLK_COOIHBLILBB,
+        DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE,
+        DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA,
+        DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH,
+        DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN,
+        DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH,
+        DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH,
+        DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD,
+        DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC,
+        DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD,
+        DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB,
+        DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF,
+        DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM,
     ];
 }
 
@@ -161,7 +161,7 @@ impl ::protobuf::EnumFull for DevelopmentType {
 
 impl ::std::default::Default for DevelopmentType {
     fn default() -> Self {
-        DevelopmentType::DEVELOPMENT_NONE
+        DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO
     }
 }
 
@@ -172,20 +172,19 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\xff\x04\n\x0fDevelopmentType\x12\x14\n\x10D\
-    EVELOPMENT_NONE\x10\0\x12\x1c\n\x18DEVELOPMENT_ROGUE_COSMOS\x10\x01\x12\
-    \x1b\n\x17DEVELOPMENT_ROGUE_CHESS\x10\x02\x12\x20\n\x1cDEVELOPMENT_ROGUE\
-    _CHESS_NOUS\x10\x03\x12\x20\n\x1cDEVELOPMENT_MEMORY_CHALLENGE\x10\x04\
-    \x12\x1f\n\x1bDEVELOPMENT_STORY_CHALLENGE\x10\x05\x12\x1d\n\x19DEVELOPME\
-    NT_UNLOCK_AVATAR\x10\x06\x12\x20\n\x1cDEVELOPMENT_UNLOCK_EQUIPMENT\x10\
-    \x07\x12\x1e\n\x1aDEVELOPMENT_ACTIVITY_START\x10\x08\x12\x1c\n\x18DEVELO\
-    PMENT_ACTIVITY_END\x10\t\x12\x1e\n\x1aDEVELOPMENT_BOSS_CHALLENGE\x10\n\
-    \x12\x1b\n\x17DEVELOPMENT_ROGUE_TOURN\x10\x0b\x12\x20\n\x1cDEVELOPMENT_R\
-    OGUE_TOURN_WEEK\x10\x0c\x12\x1b\n\x17DEVELOPMENT_ROGUE_MAGIC\x10\r\x12\
-    \x1e\n\x1aDEVELOPMENT_CHALLENGE_PEAK\x10\x0e\x12$\n\x20DEVELOPMENT_ROGUE\
-    _TOURN_DIVISION\x10\x0f\x12#\n\x1fDEVELOPMENT_GRID_FIGHT_DIVISION\x10\
-    \x10\x12#\n\x1fDEVELOPMENT_GRID_FIGHT_GAMEPLAY\x10\x11\x12+\n'DEVELOPMEN\
-    T_GRID_FIGHT_GAMEPLAY_OC_MODE\x10\x12b\x06proto3\
+    \n\x15DevelopmentType.proto*\xb8\x04\n\x0fDevelopmentType\x12\x1b\n\x17L\
+    HJMKMEIKLK_PMFJFFAPAJO\x10\0\x12\x1b\n\x17LHJMKMEIKLK_OGLNOGIKNCI\x10\
+    \x01\x12\x1b\n\x17LHJMKMEIKLK_OHLMFHPEAGJ\x10\x02\x12\x1b\n\x17LHJMKMEIK\
+    LK_CKHMLOKAKOH\x10\x03\x12\x1b\n\x17LHJMKMEIKLK_DBFJDBIEFDB\x10\x04\x12\
+    \x1b\n\x17LHJMKMEIKLK_MNKOCFKKMBE\x10\x05\x12\x1b\n\x17LHJMKMEIKLK_COOIH\
+    BLILBB\x10\x06\x12\x1b\n\x17LHJMKMEIKLK_DFJCOIOACHE\x10\x07\x12\x1b\n\
+    \x17LHJMKMEIKLK_OANPHKGAGOA\x10\x08\x12\x1b\n\x17LHJMKMEIKLK_GHJONNNKDOH\
+    \x10\t\x12\x1b\n\x17LHJMKMEIKLK_GMOPDOPMGFN\x10\n\x12\x1b\n\x17LHJMKMEIK\
+    LK_PCDCMPFNMJH\x10\x0b\x12\x1b\n\x17LHJMKMEIKLK_KBOKEDNFKHH\x10\x0c\x12\
+    \x1b\n\x17LHJMKMEIKLK_NBBOJIKJNHD\x10\r\x12\x1b\n\x17LHJMKMEIKLK_AOGDFFK\
+    OKMC\x10\x0e\x12\x1b\n\x17LHJMKMEIKLK_HBDOLKCAILD\x10\x0f\x12\x1b\n\x17L\
+    HJMKMEIKLK_ELMAOPCKAJB\x10\x10\x12\x1b\n\x17LHJMKMEIKLK_AIJFFNPAMPF\x10\
+    \x11\x12\x1b\n\x17LHJMKMEIKLK_PKLPABNIPNM\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

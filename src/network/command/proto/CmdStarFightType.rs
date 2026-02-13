@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdStarFightType)
 pub enum CmdStarFightType {
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_ALOCMFAKBKP)
-    HCJMNJFFLNI_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_NMDDJPLJIEH)
-    HCJMNJFFLNI_NMDDJPLJIEH = 7162,
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_JKNHHKNAAOF)
-    HCJMNJFFLNI_JKNHHKNAAOF = 7163,
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_NKJEJKHAAIP)
-    HCJMNJFFLNI_NKJEJKHAAIP = 7170,
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_MODONDJJACN)
-    HCJMNJFFLNI_MODONDJJACN = 7167,
-    // @@protoc_insertion_point(enum_value:CmdStarFightType.HCJMNJFFLNI_INHGHFLILOF)
-    HCJMNJFFLNI_INHGHFLILOF = 7161,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_GKJBAODJMJG)
+    LLOABNDAMBI_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_IPGBGCMFNLG)
+    LLOABNDAMBI_IPGBGCMFNLG = 7164,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_CLFPKBGBEBD)
+    LLOABNDAMBI_CLFPKBGBEBD = 7169,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_CMGGPEFCECO)
+    LLOABNDAMBI_CMGGPEFCECO = 7165,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_ANAJKILJFHD)
+    LLOABNDAMBI_ANAJKILJFHD = 7170,
+    // @@protoc_insertion_point(enum_value:CmdStarFightType.LLOABNDAMBI_EEFEFGACMID)
+    LLOABNDAMBI_EEFEFGACMID = 7168,
 }
 
 impl ::protobuf::Enum for CmdStarFightType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdStarFightType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdStarFightType> {
         match value {
-            0 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_ALOCMFAKBKP),
-            7162 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_NMDDJPLJIEH),
-            7163 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_JKNHHKNAAOF),
-            7170 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_NKJEJKHAAIP),
-            7167 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_MODONDJJACN),
-            7161 => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_INHGHFLILOF),
+            0 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_GKJBAODJMJG),
+            7164 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_IPGBGCMFNLG),
+            7169 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_CLFPKBGBEBD),
+            7165 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_CMGGPEFCECO),
+            7170 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_ANAJKILJFHD),
+            7168 => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_EEFEFGACMID),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdStarFightType> {
         match str {
-            "HCJMNJFFLNI_ALOCMFAKBKP" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_ALOCMFAKBKP),
-            "HCJMNJFFLNI_NMDDJPLJIEH" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_NMDDJPLJIEH),
-            "HCJMNJFFLNI_JKNHHKNAAOF" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_JKNHHKNAAOF),
-            "HCJMNJFFLNI_NKJEJKHAAIP" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_NKJEJKHAAIP),
-            "HCJMNJFFLNI_MODONDJJACN" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_MODONDJJACN),
-            "HCJMNJFFLNI_INHGHFLILOF" => ::std::option::Option::Some(CmdStarFightType::HCJMNJFFLNI_INHGHFLILOF),
+            "LLOABNDAMBI_GKJBAODJMJG" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_GKJBAODJMJG),
+            "LLOABNDAMBI_IPGBGCMFNLG" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_IPGBGCMFNLG),
+            "LLOABNDAMBI_CLFPKBGBEBD" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_CLFPKBGBEBD),
+            "LLOABNDAMBI_CMGGPEFCECO" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_CMGGPEFCECO),
+            "LLOABNDAMBI_ANAJKILJFHD" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_ANAJKILJFHD),
+            "LLOABNDAMBI_EEFEFGACMID" => ::std::option::Option::Some(CmdStarFightType::LLOABNDAMBI_EEFEFGACMID),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdStarFightType] = &[
-        CmdStarFightType::HCJMNJFFLNI_ALOCMFAKBKP,
-        CmdStarFightType::HCJMNJFFLNI_NMDDJPLJIEH,
-        CmdStarFightType::HCJMNJFFLNI_JKNHHKNAAOF,
-        CmdStarFightType::HCJMNJFFLNI_NKJEJKHAAIP,
-        CmdStarFightType::HCJMNJFFLNI_MODONDJJACN,
-        CmdStarFightType::HCJMNJFFLNI_INHGHFLILOF,
+        CmdStarFightType::LLOABNDAMBI_GKJBAODJMJG,
+        CmdStarFightType::LLOABNDAMBI_IPGBGCMFNLG,
+        CmdStarFightType::LLOABNDAMBI_CLFPKBGBEBD,
+        CmdStarFightType::LLOABNDAMBI_CMGGPEFCECO,
+        CmdStarFightType::LLOABNDAMBI_ANAJKILJFHD,
+        CmdStarFightType::LLOABNDAMBI_EEFEFGACMID,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdStarFightType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdStarFightType::HCJMNJFFLNI_ALOCMFAKBKP => 0,
-            CmdStarFightType::HCJMNJFFLNI_NMDDJPLJIEH => 1,
-            CmdStarFightType::HCJMNJFFLNI_JKNHHKNAAOF => 2,
-            CmdStarFightType::HCJMNJFFLNI_NKJEJKHAAIP => 3,
-            CmdStarFightType::HCJMNJFFLNI_MODONDJJACN => 4,
-            CmdStarFightType::HCJMNJFFLNI_INHGHFLILOF => 5,
+            CmdStarFightType::LLOABNDAMBI_GKJBAODJMJG => 0,
+            CmdStarFightType::LLOABNDAMBI_IPGBGCMFNLG => 1,
+            CmdStarFightType::LLOABNDAMBI_CLFPKBGBEBD => 2,
+            CmdStarFightType::LLOABNDAMBI_CMGGPEFCECO => 3,
+            CmdStarFightType::LLOABNDAMBI_ANAJKILJFHD => 4,
+            CmdStarFightType::LLOABNDAMBI_EEFEFGACMID => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdStarFightType {
 
 impl ::std::default::Default for CmdStarFightType {
     fn default() -> Self {
-        CmdStarFightType::HCJMNJFFLNI_ALOCMFAKBKP
+        CmdStarFightType::LLOABNDAMBI_GKJBAODJMJG
     }
 }
 
@@ -115,10 +115,10 @@ impl CmdStarFightType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdStarFightType.proto*\xc5\x01\n\x10CmdStarFightType\x12\x1b\n\
-    \x17HCJMNJFFLNI_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HCJMNJFFLNI_NMDDJPLJIEH\
-    \x10\xfa7\x12\x1c\n\x17HCJMNJFFLNI_JKNHHKNAAOF\x10\xfb7\x12\x1c\n\x17HCJ\
-    MNJFFLNI_NKJEJKHAAIP\x10\x828\x12\x1c\n\x17HCJMNJFFLNI_MODONDJJACN\x10\
-    \xff7\x12\x1c\n\x17HCJMNJFFLNI_INHGHFLILOF\x10\xf97b\x06proto3\
+    \x17LLOABNDAMBI_GKJBAODJMJG\x10\0\x12\x1c\n\x17LLOABNDAMBI_IPGBGCMFNLG\
+    \x10\xfc7\x12\x1c\n\x17LLOABNDAMBI_CLFPKBGBEBD\x10\x818\x12\x1c\n\x17LLO\
+    ABNDAMBI_CMGGPEFCECO\x10\xfd7\x12\x1c\n\x17LLOABNDAMBI_ANAJKILJFHD\x10\
+    \x828\x12\x1c\n\x17LLOABNDAMBI_EEFEFGACMID\x10\x808b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

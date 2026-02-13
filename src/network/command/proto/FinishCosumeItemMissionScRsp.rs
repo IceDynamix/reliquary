@@ -82,7 +82,7 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
                 96 => {
                     self.sub_mission_id = is.read_uint32()?;
                 },
-                48 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
             my_size += ::protobuf::rt::uint32_size(12, self.sub_mission_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for FinishCosumeItemMissionScRsp {
             os.write_uint32(12, self.sub_mission_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishCosumeItemMissionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishCosumeItemMissionScRsp.proto\"^\n\x1cFinishCosumeItemMissionSc\
     Rsp\x12$\n\x0esub_mission_id\x18\x0c\x20\x01(\rR\x0csubMissionId\x12\x18\
-    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

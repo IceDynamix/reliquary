@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetHeartDialInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.unlock_status)
-    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockStatus::HeartDialUnlockStatus>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.JONOFHIOHCK)
-    pub JONOFHIOHCK: ::std::vec::Vec<super::OBHECAOLBNN::OBHECAOLBNN>,
-    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.dialogue_info_list)
-    pub dialogue_info_list: ::std::vec::Vec<super::HeartDialDialogueInfo::HeartDialDialogueInfo>,
     // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.script_info_list)
     pub script_info_list: ::std::vec::Vec<super::HeartDialScriptInfo::HeartDialScriptInfo>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.dialogue_info_list)
+    pub dialogue_info_list: ::std::vec::Vec<super::HeartDialDialogueInfo::HeartDialDialogueInfo>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.unlock_status)
+    pub unlock_status: ::protobuf::EnumOrUnknown<super::HeartDialUnlockStatus::HeartDialUnlockStatus>,
+    // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.CKFALFEPAAP)
+    pub CKFALFEPAAP: ::std::vec::Vec<super::NPDBEKKKPBB::NPDBEKKKPBB>,
     // @@protoc_insertion_point(field:GetHeartDialInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -57,25 +57,25 @@ impl GetHeartDialInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_status",
-            |m: &GetHeartDialInfoScRsp| { &m.unlock_status },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.unlock_status },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JONOFHIOHCK",
-            |m: &GetHeartDialInfoScRsp| { &m.JONOFHIOHCK },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.JONOFHIOHCK },
+            "script_info_list",
+            |m: &GetHeartDialInfoScRsp| { &m.script_info_list },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.script_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "dialogue_info_list",
             |m: &GetHeartDialInfoScRsp| { &m.dialogue_info_list },
             |m: &mut GetHeartDialInfoScRsp| { &mut m.dialogue_info_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlock_status",
+            |m: &GetHeartDialInfoScRsp| { &m.unlock_status },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.unlock_status },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "script_info_list",
-            |m: &GetHeartDialInfoScRsp| { &m.script_info_list },
-            |m: &mut GetHeartDialInfoScRsp| { &mut m.script_info_list },
+            "CKFALFEPAAP",
+            |m: &GetHeartDialInfoScRsp| { &m.CKFALFEPAAP },
+            |m: &mut GetHeartDialInfoScRsp| { &mut m.CKFALFEPAAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.unlock_status = is.read_enum_or_unknown()?;
-                },
-                58 => {
-                    self.JONOFHIOHCK.push(is.read_message()?);
+                114 => {
+                    self.script_info_list.push(is.read_message()?);
                 },
                 42 => {
                     self.dialogue_info_list.push(is.read_message()?);
                 },
-                122 => {
-                    self.script_info_list.push(is.read_message()?);
+                120 => {
+                    self.unlock_status = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                26 => {
+                    self.CKFALFEPAAP.push(is.read_message()?);
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,10 +127,7 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            my_size += ::protobuf::rt::int32_size(6, self.unlock_status.value());
-        }
-        for value in &self.JONOFHIOHCK {
+        for value in &self.script_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -138,12 +135,15 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.script_info_list {
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            my_size += ::protobuf::rt::int32_size(15, self.unlock_status.value());
+        }
+        for value in &self.CKFALFEPAAP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
-        }
-        for v in &self.JONOFHIOHCK {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.script_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for v in &self.dialogue_info_list {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        for v in &self.script_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.unlock_status != ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.unlock_status))?;
+        }
+        for v in &self.CKFALFEPAAP {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,20 +183,20 @@ impl ::protobuf::Message for GetHeartDialInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
-        self.JONOFHIOHCK.clear();
-        self.dialogue_info_list.clear();
         self.script_info_list.clear();
+        self.dialogue_info_list.clear();
+        self.unlock_status = ::protobuf::EnumOrUnknown::new(super::HeartDialUnlockStatus::HeartDialUnlockStatus::HEART_DIAL_UNLOCK_STATUS_LOCK);
+        self.CKFALFEPAAP.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetHeartDialInfoScRsp {
         static instance: GetHeartDialInfoScRsp = GetHeartDialInfoScRsp {
-            unlock_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            JONOFHIOHCK: ::std::vec::Vec::new(),
-            dialogue_info_list: ::std::vec::Vec::new(),
             script_info_list: ::std::vec::Vec::new(),
+            dialogue_info_list: ::std::vec::Vec::new(),
+            unlock_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            CKFALFEPAAP: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -224,13 +224,13 @@ impl ::protobuf::reflect::ProtobufValue for GetHeartDialInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetHeartDialInfoScRsp.proto\x1a\x1bHeartDialDialogueInfo.proto\x1a\
     \x19HeartDialScriptInfo.proto\x1a\x1bHeartDialUnlockStatus.proto\x1a\x11\
-    OBHECAOLBNN.proto\"\xa4\x02\n\x15GetHeartDialInfoScRsp\x12;\n\runlock_st\
-    atus\x18\x06\x20\x01(\x0e2\x16.HeartDialUnlockStatusR\x0cunlockStatus\
-    \x12.\n\x0bJONOFHIOHCK\x18\x07\x20\x03(\x0b2\x0c.OBHECAOLBNNR\x0bJONOFHI\
-    OHCK\x12D\n\x12dialogue_info_list\x18\x05\x20\x03(\x0b2\x16.HeartDialDia\
-    logueInfoR\x10dialogueInfoList\x12>\n\x10script_info_list\x18\x0f\x20\
-    \x03(\x0b2\x14.HeartDialScriptInfoR\x0escriptInfoList\x12\x18\n\x07retco\
-    de\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    NPDBEKKKPBB.proto\"\xa4\x02\n\x15GetHeartDialInfoScRsp\x12>\n\x10script_\
+    info_list\x18\x0e\x20\x03(\x0b2\x14.HeartDialScriptInfoR\x0escriptInfoLi\
+    st\x12D\n\x12dialogue_info_list\x18\x05\x20\x03(\x0b2\x16.HeartDialDialo\
+    gueInfoR\x10dialogueInfoList\x12;\n\runlock_status\x18\x0f\x20\x01(\x0e2\
+    \x16.HeartDialUnlockStatusR\x0cunlockStatus\x12.\n\x0bCKFALFEPAAP\x18\
+    \x03\x20\x03(\x0b2\x0c.NPDBEKKKPBBR\x0bCKFALFEPAAP\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -251,7 +251,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::HeartDialDialogueInfo::file_descriptor().clone());
             deps.push(super::HeartDialScriptInfo::file_descriptor().clone());
             deps.push(super::HeartDialUnlockStatus::file_descriptor().clone());
-            deps.push(super::OBHECAOLBNN::file_descriptor().clone());
+            deps.push(super::NPDBEKKKPBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetHeartDialInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

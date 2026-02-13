@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeatureSwitchClosedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FeatureSwitchClosedScNotify.EJMHLFLFDIP)
-    pub EJMHLFLFDIP: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
+    // @@protoc_insertion_point(field:FeatureSwitchClosedScNotify.MDCKJJKKOPI)
+    pub MDCKJJKKOPI: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
     // special fields
     // @@protoc_insertion_point(special_field:FeatureSwitchClosedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FeatureSwitchClosedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJMHLFLFDIP",
-            |m: &FeatureSwitchClosedScNotify| { &m.EJMHLFLFDIP },
-            |m: &mut FeatureSwitchClosedScNotify| { &mut m.EJMHLFLFDIP },
+            "MDCKJJKKOPI",
+            |m: &FeatureSwitchClosedScNotify| { &m.MDCKJJKKOPI },
+            |m: &mut FeatureSwitchClosedScNotify| { &mut m.MDCKJJKKOPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FeatureSwitchClosedScNotify>(
             "FeatureSwitchClosedScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.EJMHLFLFDIP = is.read_enum_or_unknown()?;
+                56 => {
+                    self.MDCKJJKKOPI = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EJMHLFLFDIP != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.EJMHLFLFDIP.value());
+        if self.MDCKJJKKOPI != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC) {
+            my_size += ::protobuf::rt::int32_size(7, self.MDCKJJKKOPI.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EJMHLFLFDIP != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.EJMHLFLFDIP))?;
+        if self.MDCKJJKKOPI != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.MDCKJJKKOPI))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn clear(&mut self) {
-        self.EJMHLFLFDIP = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::FEATURE_SWITCH_NONE);
+        self.MDCKJJKKOPI = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeatureSwitchClosedScNotify {
         static instance: FeatureSwitchClosedScNotify = FeatureSwitchClosedScNotify {
-            EJMHLFLFDIP: ::protobuf::EnumOrUnknown::from_i32(0),
+            MDCKJJKKOPI: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for FeatureSwitchClosedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FeatureSwitchClosedScNotify.proto\x1a\x17FeatureSwitchType.proto\"S\n\
-    \x1bFeatureSwitchClosedScNotify\x124\n\x0bEJMHLFLFDIP\x18\x0e\x20\x01(\
-    \x0e2\x12.FeatureSwitchTypeR\x0bEJMHLFLFDIPb\x06proto3\
+    \x1bFeatureSwitchClosedScNotify\x124\n\x0bMDCKJJKKOPI\x18\x07\x20\x01(\
+    \x0e2\x12.FeatureSwitchTypeR\x0bMDCKJJKKOPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

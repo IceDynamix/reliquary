@@ -28,34 +28,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMuseumInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.OOPGDGKCECA)
-    pub OOPGDGKCECA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.EDHKFJKJJGP)
-    pub EDHKFJKJJGP: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.MKAOJHGPKGD)
-    pub MKAOJHGPKGD: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetMuseumInfoScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.FBENKHOLHDA)
-    pub FBENKHOLHDA: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.BEJJDADHHPI)
-    pub BEJJDADHHPI: ::protobuf::MessageField<super::PHJGLGALDJA::PHJGLGALDJA>,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.HCCPBENNFKM)
-    pub HCCPBENNFKM: ::protobuf::MessageField<super::GCKLJCLMODA::GCKLJCLMODA>,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.KHBKEOKBGDG)
-    pub KHBKEOKBGDG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.FGBHBBHAMNG)
-    pub FGBHBBHAMNG: u32,
-    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.GIMOIBGAIHN)
-    pub GIMOIBGAIHN: ::std::vec::Vec<super::AGFFOMEBKOC::AGFFOMEBKOC>,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.FDBLHIFLLEE)
+    pub FDBLHIFLLEE: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.AOCICHLHMIK)
+    pub AOCICHLHMIK: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.NMLFMPNOIOM)
+    pub NMLFMPNOIOM: ::protobuf::MessageField<super::NELKIBMLDCJ::NELKIBMLDCJ>,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.NMHOGPCDHIN)
+    pub NMHOGPCDHIN: ::protobuf::MessageField<super::EKGHOAFGHMK::EKGHOAFGHMK>,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetMuseumInfoScRsp.cur_fund)
     pub cur_fund: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.PCGIACLGJMC)
+    pub PCGIACLGJMC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.HGOPNHMIMHA)
+    pub HGOPNHMIMHA: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.PFAGCMNNLLN)
+    pub PFAGCMNNLLN: u32,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.BCMIAPEKDIO)
+    pub BCMIAPEKDIO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMuseumInfoScRsp.MFNEFMKPJJO)
+    pub MFNEFMKPJJO: ::std::vec::Vec<super::HBKKDFPOPGA::HBKKDFPOPGA>,
     // @@protoc_insertion_point(field:GetMuseumInfoScRsp.area_list)
-    pub area_list: ::std::vec::Vec<super::IHGKGJEIIFC::IHGKGJEIIFC>,
+    pub area_list: ::std::vec::Vec<super::FLDOGAHDANJ::FLDOGAHDANJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMuseumInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,25 +75,30 @@ impl GetMuseumInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OOPGDGKCECA",
-            |m: &GetMuseumInfoScRsp| { &m.OOPGDGKCECA },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.OOPGDGKCECA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &GetMuseumInfoScRsp| { &m.level },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EDHKFJKJJGP",
-            |m: &GetMuseumInfoScRsp| { &m.EDHKFJKJJGP },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.EDHKFJKJJGP },
+            "FDBLHIFLLEE",
+            |m: &GetMuseumInfoScRsp| { &m.FDBLHIFLLEE },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.FDBLHIFLLEE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKAOJHGPKGD",
-            |m: &GetMuseumInfoScRsp| { &m.MKAOJHGPKGD },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.MKAOJHGPKGD },
+            "AOCICHLHMIK",
+            |m: &GetMuseumInfoScRsp| { &m.AOCICHLHMIK },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.AOCICHLHMIK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &GetMuseumInfoScRsp| { &m.exp },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.exp },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NELKIBMLDCJ::NELKIBMLDCJ>(
+            "NMLFMPNOIOM",
+            |m: &GetMuseumInfoScRsp| { &m.NMLFMPNOIOM },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.NMLFMPNOIOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EKGHOAFGHMK::EKGHOAFGHMK>(
+            "NMHOGPCDHIN",
+            |m: &GetMuseumInfoScRsp| { &m.NMHOGPCDHIN },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.NMHOGPCDHIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -101,44 +106,39 @@ impl GetMuseumInfoScRsp {
             |m: &mut GetMuseumInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &GetMuseumInfoScRsp| { &m.level },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBENKHOLHDA",
-            |m: &GetMuseumInfoScRsp| { &m.FBENKHOLHDA },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.FBENKHOLHDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHJGLGALDJA::PHJGLGALDJA>(
-            "BEJJDADHHPI",
-            |m: &GetMuseumInfoScRsp| { &m.BEJJDADHHPI },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.BEJJDADHHPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCKLJCLMODA::GCKLJCLMODA>(
-            "HCCPBENNFKM",
-            |m: &GetMuseumInfoScRsp| { &m.HCCPBENNFKM },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.HCCPBENNFKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KHBKEOKBGDG",
-            |m: &GetMuseumInfoScRsp| { &m.KHBKEOKBGDG },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.KHBKEOKBGDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGBHBBHAMNG",
-            |m: &GetMuseumInfoScRsp| { &m.FGBHBBHAMNG },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.FGBHBBHAMNG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GIMOIBGAIHN",
-            |m: &GetMuseumInfoScRsp| { &m.GIMOIBGAIHN },
-            |m: &mut GetMuseumInfoScRsp| { &mut m.GIMOIBGAIHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_fund",
             |m: &GetMuseumInfoScRsp| { &m.cur_fund },
             |m: &mut GetMuseumInfoScRsp| { &mut m.cur_fund },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &GetMuseumInfoScRsp| { &m.exp },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PCGIACLGJMC",
+            |m: &GetMuseumInfoScRsp| { &m.PCGIACLGJMC },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.PCGIACLGJMC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGOPNHMIMHA",
+            |m: &GetMuseumInfoScRsp| { &m.HGOPNHMIMHA },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.HGOPNHMIMHA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PFAGCMNNLLN",
+            |m: &GetMuseumInfoScRsp| { &m.PFAGCMNNLLN },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.PFAGCMNNLLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BCMIAPEKDIO",
+            |m: &GetMuseumInfoScRsp| { &m.BCMIAPEKDIO },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.BCMIAPEKDIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MFNEFMKPJJO",
+            |m: &GetMuseumInfoScRsp| { &m.MFNEFMKPJJO },
+            |m: &mut GetMuseumInfoScRsp| { &mut m.MFNEFMKPJJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "area_list",
@@ -163,52 +163,52 @@ impl ::protobuf::Message for GetMuseumInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OOPGDGKCECA)?;
-                },
-                56 => {
-                    self.OOPGDGKCECA.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.EDHKFJKJJGP = is.read_uint32()?;
-                },
-                32 => {
-                    self.MKAOJHGPKGD = is.read_uint32()?;
-                },
-                16 => {
-                    self.exp = is.read_uint32()?;
-                },
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
-                104 => {
-                    self.FBENKHOLHDA = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BEJJDADHHPI)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HCCPBENNFKM)?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KHBKEOKBGDG)?;
+                64 => {
+                    self.FDBLHIFLLEE = is.read_uint32()?;
                 },
                 80 => {
-                    self.KHBKEOKBGDG.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.FGBHBBHAMNG = is.read_uint32()?;
+                    self.AOCICHLHMIK = is.read_uint32()?;
                 },
                 42 => {
-                    self.GIMOIBGAIHN.push(is.read_message()?);
-                },
-                64 => {
-                    self.cur_fund = is.read_uint32()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMLFMPNOIOM)?;
                 },
                 98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMHOGPCDHIN)?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                8 => {
+                    self.cur_fund = is.read_uint32()?;
+                },
+                72 => {
+                    self.exp = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PCGIACLGJMC)?;
+                },
+                24 => {
+                    self.PCGIACLGJMC.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.HGOPNHMIMHA = is.read_uint32()?;
+                },
+                56 => {
+                    self.PFAGCMNNLLN = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BCMIAPEKDIO)?;
+                },
+                120 => {
+                    self.BCMIAPEKDIO.push(is.read_uint32()?);
+                },
+                18 => {
+                    self.MFNEFMKPJJO.push(is.read_message()?);
+                },
+                106 => {
                     self.area_list.push(is.read_message()?);
                 },
                 tag => {
@@ -223,44 +223,44 @@ impl ::protobuf::Message for GetMuseumInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.OOPGDGKCECA);
-        if self.EDHKFJKJJGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EDHKFJKJJGP);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
-        if self.MKAOJHGPKGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MKAOJHGPKGD);
+        if self.FDBLHIFLLEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FDBLHIFLLEE);
         }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.exp);
+        if self.AOCICHLHMIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AOCICHLHMIK);
+        }
+        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.NMHOGPCDHIN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        if self.cur_fund != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.cur_fund);
         }
-        if self.FBENKHOLHDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FBENKHOLHDA);
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.exp);
         }
-        if let Some(v) = self.BEJJDADHHPI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PCGIACLGJMC);
+        if self.HGOPNHMIMHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HGOPNHMIMHA);
         }
-        if let Some(v) = self.HCCPBENNFKM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.PFAGCMNNLLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PFAGCMNNLLN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KHBKEOKBGDG);
-        if self.FGBHBBHAMNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FGBHBBHAMNG);
-        }
-        for value in &self.GIMOIBGAIHN {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.BCMIAPEKDIO);
+        for value in &self.MFNEFMKPJJO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.cur_fund != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_fund);
-        }
         for value in &self.area_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -271,43 +271,43 @@ impl ::protobuf::Message for GetMuseumInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.OOPGDGKCECA)?;
-        if self.EDHKFJKJJGP != 0 {
-            os.write_uint32(1, self.EDHKFJKJJGP)?;
+        if self.level != 0 {
+            os.write_uint32(11, self.level)?;
         }
-        if self.MKAOJHGPKGD != 0 {
-            os.write_uint32(4, self.MKAOJHGPKGD)?;
+        if self.FDBLHIFLLEE != 0 {
+            os.write_uint32(8, self.FDBLHIFLLEE)?;
         }
-        if self.exp != 0 {
-            os.write_uint32(2, self.exp)?;
+        if self.AOCICHLHMIK != 0 {
+            os.write_uint32(10, self.AOCICHLHMIK)?;
+        }
+        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.NMHOGPCDHIN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.level != 0 {
-            os.write_uint32(14, self.level)?;
-        }
-        if self.FBENKHOLHDA != 0 {
-            os.write_uint32(13, self.FBENKHOLHDA)?;
-        }
-        if let Some(v) = self.BEJJDADHHPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.HCCPBENNFKM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.KHBKEOKBGDG)?;
-        if self.FGBHBBHAMNG != 0 {
-            os.write_uint32(9, self.FGBHBBHAMNG)?;
-        }
-        for v in &self.GIMOIBGAIHN {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.cur_fund != 0 {
-            os.write_uint32(8, self.cur_fund)?;
+            os.write_uint32(1, self.cur_fund)?;
         }
+        if self.exp != 0 {
+            os.write_uint32(9, self.exp)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.PCGIACLGJMC)?;
+        if self.HGOPNHMIMHA != 0 {
+            os.write_uint32(6, self.HGOPNHMIMHA)?;
+        }
+        if self.PFAGCMNNLLN != 0 {
+            os.write_uint32(7, self.PFAGCMNNLLN)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.BCMIAPEKDIO)?;
+        for v in &self.MFNEFMKPJJO {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         for v in &self.area_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -326,38 +326,38 @@ impl ::protobuf::Message for GetMuseumInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.OOPGDGKCECA.clear();
-        self.EDHKFJKJJGP = 0;
-        self.MKAOJHGPKGD = 0;
-        self.exp = 0;
-        self.retcode = 0;
         self.level = 0;
-        self.FBENKHOLHDA = 0;
-        self.BEJJDADHHPI.clear();
-        self.HCCPBENNFKM.clear();
-        self.KHBKEOKBGDG.clear();
-        self.FGBHBBHAMNG = 0;
-        self.GIMOIBGAIHN.clear();
+        self.FDBLHIFLLEE = 0;
+        self.AOCICHLHMIK = 0;
+        self.NMLFMPNOIOM.clear();
+        self.NMHOGPCDHIN.clear();
+        self.retcode = 0;
         self.cur_fund = 0;
+        self.exp = 0;
+        self.PCGIACLGJMC.clear();
+        self.HGOPNHMIMHA = 0;
+        self.PFAGCMNNLLN = 0;
+        self.BCMIAPEKDIO.clear();
+        self.MFNEFMKPJJO.clear();
         self.area_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMuseumInfoScRsp {
         static instance: GetMuseumInfoScRsp = GetMuseumInfoScRsp {
-            OOPGDGKCECA: ::std::vec::Vec::new(),
-            EDHKFJKJJGP: 0,
-            MKAOJHGPKGD: 0,
-            exp: 0,
-            retcode: 0,
             level: 0,
-            FBENKHOLHDA: 0,
-            BEJJDADHHPI: ::protobuf::MessageField::none(),
-            HCCPBENNFKM: ::protobuf::MessageField::none(),
-            KHBKEOKBGDG: ::std::vec::Vec::new(),
-            FGBHBBHAMNG: 0,
-            GIMOIBGAIHN: ::std::vec::Vec::new(),
+            FDBLHIFLLEE: 0,
+            AOCICHLHMIK: 0,
+            NMLFMPNOIOM: ::protobuf::MessageField::none(),
+            NMHOGPCDHIN: ::protobuf::MessageField::none(),
+            retcode: 0,
             cur_fund: 0,
+            exp: 0,
+            PCGIACLGJMC: ::std::vec::Vec::new(),
+            HGOPNHMIMHA: 0,
+            PFAGCMNNLLN: 0,
+            BCMIAPEKDIO: ::std::vec::Vec::new(),
+            MFNEFMKPJJO: ::std::vec::Vec::new(),
             area_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -383,21 +383,21 @@ impl ::protobuf::reflect::ProtobufValue for GetMuseumInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetMuseumInfoScRsp.proto\x1a\x11AGFFOMEBKOC.proto\x1a\x11GCKLJCLMO\
-    DA.proto\x1a\x11IHGKGJEIIFC.proto\x1a\x11PHJGLGALDJA.proto\"\xf8\x03\n\
-    \x12GetMuseumInfoScRsp\x12\x20\n\x0bOOPGDGKCECA\x18\x07\x20\x03(\rR\x0bO\
-    OPGDGKCECA\x12\x20\n\x0bEDHKFJKJJGP\x18\x01\x20\x01(\rR\x0bEDHKFJKJJGP\
-    \x12\x20\n\x0bMKAOJHGPKGD\x18\x04\x20\x01(\rR\x0bMKAOJHGPKGD\x12\x10\n\
-    \x03exp\x18\x02\x20\x01(\rR\x03exp\x12\x18\n\x07retcode\x18\x03\x20\x01(\
-    \rR\x07retcode\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12\x20\n\
-    \x0bFBENKHOLHDA\x18\r\x20\x01(\rR\x0bFBENKHOLHDA\x12.\n\x0bBEJJDADHHPI\
-    \x18\x06\x20\x01(\x0b2\x0c.PHJGLGALDJAR\x0bBEJJDADHHPI\x12.\n\x0bHCCPBEN\
-    NFKM\x18\x0b\x20\x01(\x0b2\x0c.GCKLJCLMODAR\x0bHCCPBENNFKM\x12\x20\n\x0b\
-    KHBKEOKBGDG\x18\n\x20\x03(\rR\x0bKHBKEOKBGDG\x12\x20\n\x0bFGBHBBHAMNG\
-    \x18\t\x20\x01(\rR\x0bFGBHBBHAMNG\x12.\n\x0bGIMOIBGAIHN\x18\x05\x20\x03(\
-    \x0b2\x0c.AGFFOMEBKOCR\x0bGIMOIBGAIHN\x12\x19\n\x08cur_fund\x18\x08\x20\
-    \x01(\rR\x07curFund\x12)\n\tarea_list\x18\x0c\x20\x03(\x0b2\x0c.IHGKGJEI\
-    IFCR\x08areaListb\x06proto3\
+    \n\x18GetMuseumInfoScRsp.proto\x1a\x11EKGHOAFGHMK.proto\x1a\x11FLDOGAHDA\
+    NJ.proto\x1a\x11HBKKDFPOPGA.proto\x1a\x11NELKIBMLDCJ.proto\"\xf8\x03\n\
+    \x12GetMuseumInfoScRsp\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\
+    \x12\x20\n\x0bFDBLHIFLLEE\x18\x08\x20\x01(\rR\x0bFDBLHIFLLEE\x12\x20\n\
+    \x0bAOCICHLHMIK\x18\n\x20\x01(\rR\x0bAOCICHLHMIK\x12.\n\x0bNMLFMPNOIOM\
+    \x18\x05\x20\x01(\x0b2\x0c.NELKIBMLDCJR\x0bNMLFMPNOIOM\x12.\n\x0bNMHOGPC\
+    DHIN\x18\x0c\x20\x01(\x0b2\x0c.EKGHOAFGHMKR\x0bNMHOGPCDHIN\x12\x18\n\x07\
+    retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x19\n\x08cur_fund\x18\x01\x20\
+    \x01(\rR\x07curFund\x12\x10\n\x03exp\x18\t\x20\x01(\rR\x03exp\x12\x20\n\
+    \x0bPCGIACLGJMC\x18\x03\x20\x03(\rR\x0bPCGIACLGJMC\x12\x20\n\x0bHGOPNHMI\
+    MHA\x18\x06\x20\x01(\rR\x0bHGOPNHMIMHA\x12\x20\n\x0bPFAGCMNNLLN\x18\x07\
+    \x20\x01(\rR\x0bPFAGCMNNLLN\x12\x20\n\x0bBCMIAPEKDIO\x18\x0f\x20\x03(\rR\
+    \x0bBCMIAPEKDIO\x12.\n\x0bMFNEFMKPJJO\x18\x02\x20\x03(\x0b2\x0c.HBKKDFPO\
+    PGAR\x0bMFNEFMKPJJO\x12)\n\tarea_list\x18\r\x20\x03(\x0b2\x0c.FLDOGAHDAN\
+    JR\x08areaListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -415,10 +415,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::AGFFOMEBKOC::file_descriptor().clone());
-            deps.push(super::GCKLJCLMODA::file_descriptor().clone());
-            deps.push(super::IHGKGJEIIFC::file_descriptor().clone());
-            deps.push(super::PHJGLGALDJA::file_descriptor().clone());
+            deps.push(super::EKGHOAFGHMK::file_descriptor().clone());
+            deps.push(super::FLDOGAHDANJ::file_descriptor().clone());
+            deps.push(super::HBKKDFPOPGA::file_descriptor().clone());
+            deps.push(super::NELKIBMLDCJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMuseumInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

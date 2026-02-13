@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitTreasureDungeonCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuitTreasureDungeonCsReq.LMEEAPIECCH)
-    pub LMEEAPIECCH: bool,
-    // @@protoc_insertion_point(field:QuitTreasureDungeonCsReq.JEAHAOPFFAE)
-    pub JEAHAOPFFAE: u32,
+    // @@protoc_insertion_point(field:QuitTreasureDungeonCsReq.MGPIBDCCJFM)
+    pub MGPIBDCCJFM: u32,
+    // @@protoc_insertion_point(field:QuitTreasureDungeonCsReq.MJBLANFCMPG)
+    pub MJBLANFCMPG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:QuitTreasureDungeonCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl QuitTreasureDungeonCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMEEAPIECCH",
-            |m: &QuitTreasureDungeonCsReq| { &m.LMEEAPIECCH },
-            |m: &mut QuitTreasureDungeonCsReq| { &mut m.LMEEAPIECCH },
+            "MGPIBDCCJFM",
+            |m: &QuitTreasureDungeonCsReq| { &m.MGPIBDCCJFM },
+            |m: &mut QuitTreasureDungeonCsReq| { &mut m.MGPIBDCCJFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEAHAOPFFAE",
-            |m: &QuitTreasureDungeonCsReq| { &m.JEAHAOPFFAE },
-            |m: &mut QuitTreasureDungeonCsReq| { &mut m.JEAHAOPFFAE },
+            "MJBLANFCMPG",
+            |m: &QuitTreasureDungeonCsReq| { &m.MJBLANFCMPG },
+            |m: &mut QuitTreasureDungeonCsReq| { &mut m.MJBLANFCMPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitTreasureDungeonCsReq>(
             "QuitTreasureDungeonCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LMEEAPIECCH = is.read_bool()?;
+                32 => {
+                    self.MGPIBDCCJFM = is.read_uint32()?;
                 },
-                112 => {
-                    self.JEAHAOPFFAE = is.read_uint32()?;
+                88 => {
+                    self.MJBLANFCMPG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMEEAPIECCH != false {
-            my_size += 1 + 1;
+        if self.MGPIBDCCJFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MGPIBDCCJFM);
         }
-        if self.JEAHAOPFFAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JEAHAOPFFAE);
+        if self.MJBLANFCMPG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMEEAPIECCH != false {
-            os.write_bool(6, self.LMEEAPIECCH)?;
+        if self.MGPIBDCCJFM != 0 {
+            os.write_uint32(4, self.MGPIBDCCJFM)?;
         }
-        if self.JEAHAOPFFAE != 0 {
-            os.write_uint32(14, self.JEAHAOPFFAE)?;
+        if self.MJBLANFCMPG != false {
+            os.write_bool(11, self.MJBLANFCMPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for QuitTreasureDungeonCsReq {
     }
 
     fn clear(&mut self) {
-        self.LMEEAPIECCH = false;
-        self.JEAHAOPFFAE = 0;
+        self.MGPIBDCCJFM = 0;
+        self.MJBLANFCMPG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitTreasureDungeonCsReq {
         static instance: QuitTreasureDungeonCsReq = QuitTreasureDungeonCsReq {
-            LMEEAPIECCH: false,
-            JEAHAOPFFAE: 0,
+            MGPIBDCCJFM: 0,
+            MJBLANFCMPG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for QuitTreasureDungeonCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eQuitTreasureDungeonCsReq.proto\"^\n\x18QuitTreasureDungeonCsReq\
-    \x12\x20\n\x0bLMEEAPIECCH\x18\x06\x20\x01(\x08R\x0bLMEEAPIECCH\x12\x20\n\
-    \x0bJEAHAOPFFAE\x18\x0e\x20\x01(\rR\x0bJEAHAOPFFAEb\x06proto3\
+    \x12\x20\n\x0bMGPIBDCCJFM\x18\x04\x20\x01(\rR\x0bMGPIBDCCJFM\x12\x20\n\
+    \x0bMJBLANFCMPG\x18\x0b\x20\x01(\x08R\x0bMJBLANFCMPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

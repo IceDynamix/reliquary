@@ -34,10 +34,10 @@ pub struct BattleMonsterParam {
     pub level: u32,
     // @@protoc_insertion_point(field:BattleMonsterParam.elite_group)
     pub elite_group: u32,
-    // @@protoc_insertion_point(field:BattleMonsterParam.FHEKHIEINAA)
-    pub FHEKHIEINAA: u32,
-    // @@protoc_insertion_point(field:BattleMonsterParam.JDGDABPELLJ)
-    pub JDGDABPELLJ: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.POHHHACHHGH)
+    pub POHHHACHHGH: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.OAMHAGNBJGI)
+    pub OAMHAGNBJGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleMonsterParam.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl BattleMonsterParam {
             |m: &mut BattleMonsterParam| { &mut m.elite_group },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHEKHIEINAA",
-            |m: &BattleMonsterParam| { &m.FHEKHIEINAA },
-            |m: &mut BattleMonsterParam| { &mut m.FHEKHIEINAA },
+            "POHHHACHHGH",
+            |m: &BattleMonsterParam| { &m.POHHHACHHGH },
+            |m: &mut BattleMonsterParam| { &mut m.POHHHACHHGH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDGDABPELLJ",
-            |m: &BattleMonsterParam| { &m.JDGDABPELLJ },
-            |m: &mut BattleMonsterParam| { &mut m.JDGDABPELLJ },
+            "OAMHAGNBJGI",
+            |m: &BattleMonsterParam| { &m.OAMHAGNBJGI },
+            |m: &mut BattleMonsterParam| { &mut m.OAMHAGNBJGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleMonsterParam>(
             "BattleMonsterParam",
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BattleMonsterParam {
                     self.elite_group = is.read_uint32()?;
                 },
                 32 => {
-                    self.FHEKHIEINAA = is.read_uint32()?;
+                    self.POHHHACHHGH = is.read_uint32()?;
                 },
                 40 => {
-                    self.JDGDABPELLJ = is.read_uint32()?;
+                    self.OAMHAGNBJGI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -136,11 +136,11 @@ impl ::protobuf::Message for BattleMonsterParam {
         if self.elite_group != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.elite_group);
         }
-        if self.FHEKHIEINAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FHEKHIEINAA);
+        if self.POHHHACHHGH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.POHHHACHHGH);
         }
-        if self.JDGDABPELLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JDGDABPELLJ);
+        if self.OAMHAGNBJGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.OAMHAGNBJGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -157,11 +157,11 @@ impl ::protobuf::Message for BattleMonsterParam {
         if self.elite_group != 0 {
             os.write_uint32(3, self.elite_group)?;
         }
-        if self.FHEKHIEINAA != 0 {
-            os.write_uint32(4, self.FHEKHIEINAA)?;
+        if self.POHHHACHHGH != 0 {
+            os.write_uint32(4, self.POHHHACHHGH)?;
         }
-        if self.JDGDABPELLJ != 0 {
-            os.write_uint32(5, self.JDGDABPELLJ)?;
+        if self.OAMHAGNBJGI != 0 {
+            os.write_uint32(5, self.OAMHAGNBJGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::Message for BattleMonsterParam {
         self.hard_level_group = 0;
         self.level = 0;
         self.elite_group = 0;
-        self.FHEKHIEINAA = 0;
-        self.JDGDABPELLJ = 0;
+        self.POHHHACHHGH = 0;
+        self.OAMHAGNBJGI = 0;
         self.special_fields.clear();
     }
 
@@ -193,8 +193,8 @@ impl ::protobuf::Message for BattleMonsterParam {
             hard_level_group: 0,
             level: 0,
             elite_group: 0,
-            FHEKHIEINAA: 0,
-            JDGDABPELLJ: 0,
+            POHHHACHHGH: 0,
+            OAMHAGNBJGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,8 +222,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18BattleMonsterParam.proto\"\xb9\x01\n\x12BattleMonsterParam\x12(\n\
     \x10hard_level_group\x18\x01\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05\
     level\x18\x02\x20\x01(\rR\x05level\x12\x1f\n\x0belite_group\x18\x03\x20\
-    \x01(\rR\neliteGroup\x12\x20\n\x0bFHEKHIEINAA\x18\x04\x20\x01(\rR\x0bFHE\
-    KHIEINAA\x12\x20\n\x0bJDGDABPELLJ\x18\x05\x20\x01(\rR\x0bJDGDABPELLJb\
+    \x01(\rR\neliteGroup\x12\x20\n\x0bPOHHHACHHGH\x18\x04\x20\x01(\rR\x0bPOH\
+    HHACHHGH\x12\x20\n\x0bOAMHAGNBJGI\x18\x05\x20\x01(\rR\x0bOAMHAGNBJGIb\
     \x06proto3\
 ";
 

@@ -32,8 +32,6 @@ pub struct SetGenderScRsp {
     pub cur_avatar_path: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
     // @@protoc_insertion_point(field:SetGenderScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetGenderScRsp.cur_avatar_path_info_list)
-    pub cur_avatar_path_info_list: ::std::vec::Vec<super::MultiPathAvatarInfo::MultiPathAvatarInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SetGenderScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +49,7 @@ impl SetGenderScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_avatar_path",
@@ -62,11 +60,6 @@ impl SetGenderScRsp {
             "retcode",
             |m: &SetGenderScRsp| { &m.retcode },
             |m: &mut SetGenderScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "cur_avatar_path_info_list",
-            |m: &SetGenderScRsp| { &m.cur_avatar_path_info_list },
-            |m: &mut SetGenderScRsp| { &mut m.cur_avatar_path_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGenderScRsp>(
             "SetGenderScRsp",
@@ -86,14 +79,11 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                24 => {
                     self.cur_avatar_path = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
-                },
-                10 => {
-                    self.cur_avatar_path_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +98,11 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(5, self.cur_avatar_path.value());
+            my_size += ::protobuf::rt::int32_size(3, self.cur_avatar_path.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        for value in &self.cur_avatar_path_info_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +110,11 @@ impl ::protobuf::Message for SetGenderScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        for v in &self.cur_avatar_path_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,7 +134,6 @@ impl ::protobuf::Message for SetGenderScRsp {
     fn clear(&mut self) {
         self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone);
         self.retcode = 0;
-        self.cur_avatar_path_info_list.clear();
         self.special_fields.clear();
     }
 
@@ -159,7 +141,6 @@ impl ::protobuf::Message for SetGenderScRsp {
         static instance: SetGenderScRsp = SetGenderScRsp {
             cur_avatar_path: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
-            cur_avatar_path_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,12 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for SetGenderScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14SetGenderScRsp.proto\x1a\x19MultiPathAvatarInfo.proto\x1a\x19Multi\
-    PathAvatarType.proto\"\xb8\x01\n\x0eSetGenderScRsp\x12<\n\x0fcur_avatar_\
-    path\x18\x05\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\rcurAvatarPath\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12N\n\x19cur_avatar_pa\
-    th_info_list\x18\x01\x20\x03(\x0b2\x14.MultiPathAvatarInfoR\x15curAvatar\
-    PathInfoListb\x06proto3\
+    \n\x14SetGenderScRsp.proto\x1a\x19MultiPathAvatarType.proto\"h\n\x0eSetG\
+    enderScRsp\x12<\n\x0fcur_avatar_path\x18\x03\x20\x01(\x0e2\x14.MultiPath\
+    AvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07r\
+    etcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +185,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MultiPathAvatarInfo::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::MultiPathAvatarType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetGenderScRsp::generated_message_descriptor_data());

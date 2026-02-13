@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightMarbleType)
 pub enum CmdFightMarbleType {
-    // @@protoc_insertion_point(enum_value:CmdFightMarbleType.CmdFightMarbleTypeNone)
-    CmdFightMarbleTypeNone = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightMarbleType.ADOPBLEAIOJ_GKJBAODJMJG)
+    ADOPBLEAIOJ_GKJBAODJMJG = 0,
 }
 
 impl ::protobuf::Enum for CmdFightMarbleType {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for CmdFightMarbleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightMarbleType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightMarbleType::CmdFightMarbleTypeNone),
+            0 => ::std::option::Option::Some(CmdFightMarbleType::ADOPBLEAIOJ_GKJBAODJMJG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightMarbleType> {
         match str {
-            "CmdFightMarbleTypeNone" => ::std::option::Option::Some(CmdFightMarbleType::CmdFightMarbleTypeNone),
+            "ADOPBLEAIOJ_GKJBAODJMJG" => ::std::option::Option::Some(CmdFightMarbleType::ADOPBLEAIOJ_GKJBAODJMJG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightMarbleType] = &[
-        CmdFightMarbleType::CmdFightMarbleTypeNone,
+        CmdFightMarbleType::ADOPBLEAIOJ_GKJBAODJMJG,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for CmdFightMarbleType {
 
 impl ::std::default::Default for CmdFightMarbleType {
     fn default() -> Self {
-        CmdFightMarbleType::CmdFightMarbleTypeNone
+        CmdFightMarbleType::ADOPBLEAIOJ_GKJBAODJMJG
     }
 }
 
@@ -82,8 +82,8 @@ impl CmdFightMarbleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdFightMarbleType.proto*0\n\x12CmdFightMarbleType\x12\x1a\n\x16Cm\
-    dFightMarbleTypeNone\x10\0b\x06proto3\
+    \n\x18CmdFightMarbleType.proto*1\n\x12CmdFightMarbleType\x12\x1b\n\x17AD\
+    OPBLEAIOJ_GKJBAODJMJG\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

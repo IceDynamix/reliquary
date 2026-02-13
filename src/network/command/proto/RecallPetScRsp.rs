@@ -86,13 +86,13 @@ impl ::protobuf::Message for RecallPetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                88 => {
                     self.cur_pet_id = is.read_uint32()?;
                 },
                 40 => {
                     self.select_pet_id = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RecallPetScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_pet_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_pet_id);
         }
         if self.select_pet_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.select_pet_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RecallPetScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_pet_id != 0 {
-            os.write_uint32(12, self.cur_pet_id)?;
+            os.write_uint32(11, self.cur_pet_id)?;
         }
         if self.select_pet_id != 0 {
             os.write_uint32(5, self.select_pet_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for RecallPetScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RecallPetScRsp.proto\"l\n\x0eRecallPetScRsp\x12\x1c\n\ncur_pet_id\
-    \x18\x0c\x20\x01(\rR\x08curPetId\x12\"\n\rselect_pet_id\x18\x05\x20\x01(\
-    \rR\x0bselectPetId\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
+    \x18\x0b\x20\x01(\rR\x08curPetId\x12\"\n\rselect_pet_id\x18\x05\x20\x01(\
+    \rR\x0bselectPetId\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

@@ -27,40 +27,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTarotBookType)
 pub enum CmdTarotBookType {
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_ALOCMFAKBKP)
-    HDONJMDNHFG_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_CDEAIFOEACL)
-    HDONJMDNHFG_CDEAIFOEACL = 8147,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_FGPKBFOAGIP)
-    HDONJMDNHFG_FGPKBFOAGIP = 8145,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_OFEEFOFFKPL)
-    HDONJMDNHFG_OFEEFOFFKPL = 8154,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_MGOADLFEHDC)
-    HDONJMDNHFG_MGOADLFEHDC = 8159,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_IBLEEAJJCOH)
-    HDONJMDNHFG_IBLEEAJJCOH = 8141,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_MLCFJGOHEPG)
-    HDONJMDNHFG_MLCFJGOHEPG = 8153,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_EEGCJPBEODE)
-    HDONJMDNHFG_EEGCJPBEODE = 8160,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_MOHPPNNPFDE)
-    HDONJMDNHFG_MOHPPNNPFDE = 8144,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_GLMMACEKKMP)
-    HDONJMDNHFG_GLMMACEKKMP = 8152,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_JCOGABELGCI)
-    HDONJMDNHFG_JCOGABELGCI = 8143,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_FPIMPIBPIIE)
-    HDONJMDNHFG_FPIMPIBPIIE = 8146,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_BOJJFOOFKID)
-    HDONJMDNHFG_BOJJFOOFKID = 8155,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_MLPAPHJLPOF)
-    HDONJMDNHFG_MLPAPHJLPOF = 8150,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_KBBMIAKFHBF)
-    HDONJMDNHFG_KBBMIAKFHBF = 8149,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_PKIFLBDDENE)
-    HDONJMDNHFG_PKIFLBDDENE = 8142,
-    // @@protoc_insertion_point(enum_value:CmdTarotBookType.HDONJMDNHFG_GFCCPAEGHHN)
-    HDONJMDNHFG_GFCCPAEGHHN = 8157,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_GKJBAODJMJG)
+    EECIIPGIMAH_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_MJCHNCOBLBK)
+    EECIIPGIMAH_MJCHNCOBLBK = 8149,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_NHELMDOLMBO)
+    EECIIPGIMAH_NHELMDOLMBO = 8156,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_HKAFDMJFGPC)
+    EECIIPGIMAH_HKAFDMJFGPC = 8144,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_LKHFCPNFGGN)
+    EECIIPGIMAH_LKHFCPNFGGN = 8151,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_HFHKOOEGGHJ)
+    EECIIPGIMAH_HFHKOOEGGHJ = 8146,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_BLNPGAPAFDF)
+    EECIIPGIMAH_BLNPGAPAFDF = 8153,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_JHFMCOKINCM)
+    EECIIPGIMAH_JHFMCOKINCM = 8141,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_EDKJCNODHGN)
+    EECIIPGIMAH_EDKJCNODHGN = 8157,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_CPJAPFPALPI)
+    EECIIPGIMAH_CPJAPFPALPI = 8158,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_HCNGOGLIPGC)
+    EECIIPGIMAH_HCNGOGLIPGC = 8160,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_NHNNPMONEND)
+    EECIIPGIMAH_NHNNPMONEND = 8143,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_DGPIOCJFHGK)
+    EECIIPGIMAH_DGPIOCJFHGK = 8147,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_DLHCLLHENMD)
+    EECIIPGIMAH_DLHCLLHENMD = 8159,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_PAEGMKPCEKM)
+    EECIIPGIMAH_PAEGMKPCEKM = 8155,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_DMKCCPFBLAL)
+    EECIIPGIMAH_DMKCCPFBLAL = 8152,
+    // @@protoc_insertion_point(enum_value:CmdTarotBookType.EECIIPGIMAH_GOJINJLGMHF)
+    EECIIPGIMAH_GOJINJLGMHF = 8150,
 }
 
 impl ::protobuf::Enum for CmdTarotBookType {
@@ -72,68 +72,68 @@ impl ::protobuf::Enum for CmdTarotBookType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTarotBookType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_ALOCMFAKBKP),
-            8147 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_CDEAIFOEACL),
-            8145 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_FGPKBFOAGIP),
-            8154 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_OFEEFOFFKPL),
-            8159 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MGOADLFEHDC),
-            8141 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_IBLEEAJJCOH),
-            8153 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MLCFJGOHEPG),
-            8160 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_EEGCJPBEODE),
-            8144 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MOHPPNNPFDE),
-            8152 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_GLMMACEKKMP),
-            8143 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_JCOGABELGCI),
-            8146 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_FPIMPIBPIIE),
-            8155 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_BOJJFOOFKID),
-            8150 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MLPAPHJLPOF),
-            8149 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_KBBMIAKFHBF),
-            8142 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_PKIFLBDDENE),
-            8157 => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_GFCCPAEGHHN),
+            0 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_GKJBAODJMJG),
+            8149 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_MJCHNCOBLBK),
+            8156 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_NHELMDOLMBO),
+            8144 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HKAFDMJFGPC),
+            8151 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_LKHFCPNFGGN),
+            8146 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HFHKOOEGGHJ),
+            8153 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_BLNPGAPAFDF),
+            8141 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_JHFMCOKINCM),
+            8157 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_EDKJCNODHGN),
+            8158 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_CPJAPFPALPI),
+            8160 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HCNGOGLIPGC),
+            8143 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_NHNNPMONEND),
+            8147 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DGPIOCJFHGK),
+            8159 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DLHCLLHENMD),
+            8155 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_PAEGMKPCEKM),
+            8152 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DMKCCPFBLAL),
+            8150 => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_GOJINJLGMHF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTarotBookType> {
         match str {
-            "HDONJMDNHFG_ALOCMFAKBKP" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_ALOCMFAKBKP),
-            "HDONJMDNHFG_CDEAIFOEACL" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_CDEAIFOEACL),
-            "HDONJMDNHFG_FGPKBFOAGIP" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_FGPKBFOAGIP),
-            "HDONJMDNHFG_OFEEFOFFKPL" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_OFEEFOFFKPL),
-            "HDONJMDNHFG_MGOADLFEHDC" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MGOADLFEHDC),
-            "HDONJMDNHFG_IBLEEAJJCOH" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_IBLEEAJJCOH),
-            "HDONJMDNHFG_MLCFJGOHEPG" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MLCFJGOHEPG),
-            "HDONJMDNHFG_EEGCJPBEODE" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_EEGCJPBEODE),
-            "HDONJMDNHFG_MOHPPNNPFDE" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MOHPPNNPFDE),
-            "HDONJMDNHFG_GLMMACEKKMP" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_GLMMACEKKMP),
-            "HDONJMDNHFG_JCOGABELGCI" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_JCOGABELGCI),
-            "HDONJMDNHFG_FPIMPIBPIIE" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_FPIMPIBPIIE),
-            "HDONJMDNHFG_BOJJFOOFKID" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_BOJJFOOFKID),
-            "HDONJMDNHFG_MLPAPHJLPOF" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_MLPAPHJLPOF),
-            "HDONJMDNHFG_KBBMIAKFHBF" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_KBBMIAKFHBF),
-            "HDONJMDNHFG_PKIFLBDDENE" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_PKIFLBDDENE),
-            "HDONJMDNHFG_GFCCPAEGHHN" => ::std::option::Option::Some(CmdTarotBookType::HDONJMDNHFG_GFCCPAEGHHN),
+            "EECIIPGIMAH_GKJBAODJMJG" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_GKJBAODJMJG),
+            "EECIIPGIMAH_MJCHNCOBLBK" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_MJCHNCOBLBK),
+            "EECIIPGIMAH_NHELMDOLMBO" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_NHELMDOLMBO),
+            "EECIIPGIMAH_HKAFDMJFGPC" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HKAFDMJFGPC),
+            "EECIIPGIMAH_LKHFCPNFGGN" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_LKHFCPNFGGN),
+            "EECIIPGIMAH_HFHKOOEGGHJ" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HFHKOOEGGHJ),
+            "EECIIPGIMAH_BLNPGAPAFDF" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_BLNPGAPAFDF),
+            "EECIIPGIMAH_JHFMCOKINCM" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_JHFMCOKINCM),
+            "EECIIPGIMAH_EDKJCNODHGN" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_EDKJCNODHGN),
+            "EECIIPGIMAH_CPJAPFPALPI" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_CPJAPFPALPI),
+            "EECIIPGIMAH_HCNGOGLIPGC" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_HCNGOGLIPGC),
+            "EECIIPGIMAH_NHNNPMONEND" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_NHNNPMONEND),
+            "EECIIPGIMAH_DGPIOCJFHGK" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DGPIOCJFHGK),
+            "EECIIPGIMAH_DLHCLLHENMD" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DLHCLLHENMD),
+            "EECIIPGIMAH_PAEGMKPCEKM" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_PAEGMKPCEKM),
+            "EECIIPGIMAH_DMKCCPFBLAL" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_DMKCCPFBLAL),
+            "EECIIPGIMAH_GOJINJLGMHF" => ::std::option::Option::Some(CmdTarotBookType::EECIIPGIMAH_GOJINJLGMHF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTarotBookType] = &[
-        CmdTarotBookType::HDONJMDNHFG_ALOCMFAKBKP,
-        CmdTarotBookType::HDONJMDNHFG_CDEAIFOEACL,
-        CmdTarotBookType::HDONJMDNHFG_FGPKBFOAGIP,
-        CmdTarotBookType::HDONJMDNHFG_OFEEFOFFKPL,
-        CmdTarotBookType::HDONJMDNHFG_MGOADLFEHDC,
-        CmdTarotBookType::HDONJMDNHFG_IBLEEAJJCOH,
-        CmdTarotBookType::HDONJMDNHFG_MLCFJGOHEPG,
-        CmdTarotBookType::HDONJMDNHFG_EEGCJPBEODE,
-        CmdTarotBookType::HDONJMDNHFG_MOHPPNNPFDE,
-        CmdTarotBookType::HDONJMDNHFG_GLMMACEKKMP,
-        CmdTarotBookType::HDONJMDNHFG_JCOGABELGCI,
-        CmdTarotBookType::HDONJMDNHFG_FPIMPIBPIIE,
-        CmdTarotBookType::HDONJMDNHFG_BOJJFOOFKID,
-        CmdTarotBookType::HDONJMDNHFG_MLPAPHJLPOF,
-        CmdTarotBookType::HDONJMDNHFG_KBBMIAKFHBF,
-        CmdTarotBookType::HDONJMDNHFG_PKIFLBDDENE,
-        CmdTarotBookType::HDONJMDNHFG_GFCCPAEGHHN,
+        CmdTarotBookType::EECIIPGIMAH_GKJBAODJMJG,
+        CmdTarotBookType::EECIIPGIMAH_MJCHNCOBLBK,
+        CmdTarotBookType::EECIIPGIMAH_NHELMDOLMBO,
+        CmdTarotBookType::EECIIPGIMAH_HKAFDMJFGPC,
+        CmdTarotBookType::EECIIPGIMAH_LKHFCPNFGGN,
+        CmdTarotBookType::EECIIPGIMAH_HFHKOOEGGHJ,
+        CmdTarotBookType::EECIIPGIMAH_BLNPGAPAFDF,
+        CmdTarotBookType::EECIIPGIMAH_JHFMCOKINCM,
+        CmdTarotBookType::EECIIPGIMAH_EDKJCNODHGN,
+        CmdTarotBookType::EECIIPGIMAH_CPJAPFPALPI,
+        CmdTarotBookType::EECIIPGIMAH_HCNGOGLIPGC,
+        CmdTarotBookType::EECIIPGIMAH_NHNNPMONEND,
+        CmdTarotBookType::EECIIPGIMAH_DGPIOCJFHGK,
+        CmdTarotBookType::EECIIPGIMAH_DLHCLLHENMD,
+        CmdTarotBookType::EECIIPGIMAH_PAEGMKPCEKM,
+        CmdTarotBookType::EECIIPGIMAH_DMKCCPFBLAL,
+        CmdTarotBookType::EECIIPGIMAH_GOJINJLGMHF,
     ];
 }
 
@@ -145,23 +145,23 @@ impl ::protobuf::EnumFull for CmdTarotBookType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTarotBookType::HDONJMDNHFG_ALOCMFAKBKP => 0,
-            CmdTarotBookType::HDONJMDNHFG_CDEAIFOEACL => 1,
-            CmdTarotBookType::HDONJMDNHFG_FGPKBFOAGIP => 2,
-            CmdTarotBookType::HDONJMDNHFG_OFEEFOFFKPL => 3,
-            CmdTarotBookType::HDONJMDNHFG_MGOADLFEHDC => 4,
-            CmdTarotBookType::HDONJMDNHFG_IBLEEAJJCOH => 5,
-            CmdTarotBookType::HDONJMDNHFG_MLCFJGOHEPG => 6,
-            CmdTarotBookType::HDONJMDNHFG_EEGCJPBEODE => 7,
-            CmdTarotBookType::HDONJMDNHFG_MOHPPNNPFDE => 8,
-            CmdTarotBookType::HDONJMDNHFG_GLMMACEKKMP => 9,
-            CmdTarotBookType::HDONJMDNHFG_JCOGABELGCI => 10,
-            CmdTarotBookType::HDONJMDNHFG_FPIMPIBPIIE => 11,
-            CmdTarotBookType::HDONJMDNHFG_BOJJFOOFKID => 12,
-            CmdTarotBookType::HDONJMDNHFG_MLPAPHJLPOF => 13,
-            CmdTarotBookType::HDONJMDNHFG_KBBMIAKFHBF => 14,
-            CmdTarotBookType::HDONJMDNHFG_PKIFLBDDENE => 15,
-            CmdTarotBookType::HDONJMDNHFG_GFCCPAEGHHN => 16,
+            CmdTarotBookType::EECIIPGIMAH_GKJBAODJMJG => 0,
+            CmdTarotBookType::EECIIPGIMAH_MJCHNCOBLBK => 1,
+            CmdTarotBookType::EECIIPGIMAH_NHELMDOLMBO => 2,
+            CmdTarotBookType::EECIIPGIMAH_HKAFDMJFGPC => 3,
+            CmdTarotBookType::EECIIPGIMAH_LKHFCPNFGGN => 4,
+            CmdTarotBookType::EECIIPGIMAH_HFHKOOEGGHJ => 5,
+            CmdTarotBookType::EECIIPGIMAH_BLNPGAPAFDF => 6,
+            CmdTarotBookType::EECIIPGIMAH_JHFMCOKINCM => 7,
+            CmdTarotBookType::EECIIPGIMAH_EDKJCNODHGN => 8,
+            CmdTarotBookType::EECIIPGIMAH_CPJAPFPALPI => 9,
+            CmdTarotBookType::EECIIPGIMAH_HCNGOGLIPGC => 10,
+            CmdTarotBookType::EECIIPGIMAH_NHNNPMONEND => 11,
+            CmdTarotBookType::EECIIPGIMAH_DGPIOCJFHGK => 12,
+            CmdTarotBookType::EECIIPGIMAH_DLHCLLHENMD => 13,
+            CmdTarotBookType::EECIIPGIMAH_PAEGMKPCEKM => 14,
+            CmdTarotBookType::EECIIPGIMAH_DMKCCPFBLAL => 15,
+            CmdTarotBookType::EECIIPGIMAH_GOJINJLGMHF => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -169,7 +169,7 @@ impl ::protobuf::EnumFull for CmdTarotBookType {
 
 impl ::std::default::Default for CmdTarotBookType {
     fn default() -> Self {
-        CmdTarotBookType::HDONJMDNHFG_ALOCMFAKBKP
+        CmdTarotBookType::EECIIPGIMAH_GKJBAODJMJG
     }
 }
 
@@ -181,17 +181,17 @@ impl CmdTarotBookType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdTarotBookType.proto*\x8f\x04\n\x10CmdTarotBookType\x12\x1b\n\
-    \x17HDONJMDNHFG_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HDONJMDNHFG_CDEAIFOEACL\
-    \x10\xd3?\x12\x1c\n\x17HDONJMDNHFG_FGPKBFOAGIP\x10\xd1?\x12\x1c\n\x17HDO\
-    NJMDNHFG_OFEEFOFFKPL\x10\xda?\x12\x1c\n\x17HDONJMDNHFG_MGOADLFEHDC\x10\
-    \xdf?\x12\x1c\n\x17HDONJMDNHFG_IBLEEAJJCOH\x10\xcd?\x12\x1c\n\x17HDONJMD\
-    NHFG_MLCFJGOHEPG\x10\xd9?\x12\x1c\n\x17HDONJMDNHFG_EEGCJPBEODE\x10\xe0?\
-    \x12\x1c\n\x17HDONJMDNHFG_MOHPPNNPFDE\x10\xd0?\x12\x1c\n\x17HDONJMDNHFG_\
-    GLMMACEKKMP\x10\xd8?\x12\x1c\n\x17HDONJMDNHFG_JCOGABELGCI\x10\xcf?\x12\
-    \x1c\n\x17HDONJMDNHFG_FPIMPIBPIIE\x10\xd2?\x12\x1c\n\x17HDONJMDNHFG_BOJJ\
-    FOOFKID\x10\xdb?\x12\x1c\n\x17HDONJMDNHFG_MLPAPHJLPOF\x10\xd6?\x12\x1c\n\
-    \x17HDONJMDNHFG_KBBMIAKFHBF\x10\xd5?\x12\x1c\n\x17HDONJMDNHFG_PKIFLBDDEN\
-    E\x10\xce?\x12\x1c\n\x17HDONJMDNHFG_GFCCPAEGHHN\x10\xdd?b\x06proto3\
+    \x17EECIIPGIMAH_GKJBAODJMJG\x10\0\x12\x1c\n\x17EECIIPGIMAH_MJCHNCOBLBK\
+    \x10\xd5?\x12\x1c\n\x17EECIIPGIMAH_NHELMDOLMBO\x10\xdc?\x12\x1c\n\x17EEC\
+    IIPGIMAH_HKAFDMJFGPC\x10\xd0?\x12\x1c\n\x17EECIIPGIMAH_LKHFCPNFGGN\x10\
+    \xd7?\x12\x1c\n\x17EECIIPGIMAH_HFHKOOEGGHJ\x10\xd2?\x12\x1c\n\x17EECIIPG\
+    IMAH_BLNPGAPAFDF\x10\xd9?\x12\x1c\n\x17EECIIPGIMAH_JHFMCOKINCM\x10\xcd?\
+    \x12\x1c\n\x17EECIIPGIMAH_EDKJCNODHGN\x10\xdd?\x12\x1c\n\x17EECIIPGIMAH_\
+    CPJAPFPALPI\x10\xde?\x12\x1c\n\x17EECIIPGIMAH_HCNGOGLIPGC\x10\xe0?\x12\
+    \x1c\n\x17EECIIPGIMAH_NHNNPMONEND\x10\xcf?\x12\x1c\n\x17EECIIPGIMAH_DGPI\
+    OCJFHGK\x10\xd3?\x12\x1c\n\x17EECIIPGIMAH_DLHCLLHENMD\x10\xdf?\x12\x1c\n\
+    \x17EECIIPGIMAH_PAEGMKPCEKM\x10\xdb?\x12\x1c\n\x17EECIIPGIMAH_DMKCCPFBLA\
+    L\x10\xd8?\x12\x1c\n\x17EECIIPGIMAH_GOJINJLGMHF\x10\xd6?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

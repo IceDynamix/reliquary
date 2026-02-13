@@ -27,60 +27,60 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdLineupType)
 pub enum CmdLineupType {
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdLineupTypeNone)
-    CmdLineupTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupDestroyNotify)
-    CmdVirtualLineupDestroyNotify = 792,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupScRsp)
-    CmdSwapLineupScRsp = 791,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataScRsp)
-    CmdGetCurLineupDataScRsp = 745,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwitchLineupIndexCsReq)
-    CmdSwitchLineupIndexCsReq = 714,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdReplaceLineupScRsp)
-    CmdReplaceLineupScRsp = 793,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderCsReq)
-    CmdChangeLineupLeaderCsReq = 781,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdVirtualLineupTrialAvatarChangeScNotify)
-    CmdVirtualLineupTrialAvatarChangeScNotify = 767,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSyncLineupNotify)
-    CmdSyncLineupNotify = 750,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupCsReq)
-    CmdGetStageLineupCsReq = 751,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwapLineupCsReq)
-    CmdSwapLineupCsReq = 776,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetLineupAvatarDataScRsp)
-    CmdGetLineupAvatarDataScRsp = 746,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataCsReq)
-    CmdGetAllLineupDataCsReq = 789,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdJoinLineupScRsp)
-    CmdJoinLineupScRsp = 761,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupCsReq)
-    CmdQuitLineupCsReq = 735,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdJoinLineupCsReq)
-    CmdJoinLineupCsReq = 798,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetLineupAvatarDataCsReq)
-    CmdGetLineupAvatarDataCsReq = 795,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdReplaceLineupCsReq)
-    CmdReplaceLineupCsReq = 737,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdChangeLineupLeaderScRsp)
-    CmdChangeLineupLeaderScRsp = 709,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdExtraLineupDestroyNotify)
-    CmdExtraLineupDestroyNotify = 711,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameCsReq)
-    CmdSetLineupNameCsReq = 752,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSetLineupNameScRsp)
-    CmdSetLineupNameScRsp = 710,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetCurLineupDataCsReq)
-    CmdGetCurLineupDataCsReq = 717,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdQuitLineupScRsp)
-    CmdQuitLineupScRsp = 762,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetAllLineupDataScRsp)
-    CmdGetAllLineupDataScRsp = 720,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdGetStageLineupScRsp)
-    CmdGetStageLineupScRsp = 747,
-    // @@protoc_insertion_point(enum_value:CmdLineupType.CmdSwitchLineupIndexScRsp)
-    CmdSwitchLineupIndexScRsp = 738,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_GKJBAODJMJG)
+    EOGBAEHLGFI_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_DAJIKOHGCNM)
+    EOGBAEHLGFI_DAJIKOHGCNM = 714,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_CNAMFHLCHAE)
+    EOGBAEHLGFI_CNAMFHLCHAE = 795,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_GODKMIBPPDJ)
+    EOGBAEHLGFI_GODKMIBPPDJ = 728,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_OHDOBHOABPK)
+    EOGBAEHLGFI_OHDOBHOABPK = 720,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_DABGCPPHKJM)
+    EOGBAEHLGFI_DABGCPPHKJM = 780,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_HILILOAHKBP)
+    EOGBAEHLGFI_HILILOAHKBP = 783,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_AJGLCHJJCHE)
+    EOGBAEHLGFI_AJGLCHJJCHE = 769,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_DNLKFFKFOOB)
+    EOGBAEHLGFI_DNLKFFKFOOB = 737,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_OPOKMBBEDEP)
+    EOGBAEHLGFI_OPOKMBBEDEP = 747,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_DPNDNNGLNDN)
+    EOGBAEHLGFI_DPNDNNGLNDN = 745,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_DLGFJLJCAIL)
+    EOGBAEHLGFI_DLGFJLJCAIL = 734,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_MDFEDALPGKL)
+    EOGBAEHLGFI_MDFEDALPGKL = 705,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_BLIJOFKIKPE)
+    EOGBAEHLGFI_BLIJOFKIKPE = 789,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_MKHALPBOENA)
+    EOGBAEHLGFI_MKHALPBOENA = 777,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_IGFCAOEFPNI)
+    EOGBAEHLGFI_IGFCAOEFPNI = 793,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_NFCNDBPKHDH)
+    EOGBAEHLGFI_NFCNDBPKHDH = 762,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_KPCCLBHNJLF)
+    EOGBAEHLGFI_KPCCLBHNJLF = 796,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_LHIEGIDBCJG)
+    EOGBAEHLGFI_LHIEGIDBCJG = 757,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_KBMJKBBMGDK)
+    EOGBAEHLGFI_KBMJKBBMGDK = 779,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_PBLHMAJAAIK)
+    EOGBAEHLGFI_PBLHMAJAAIK = 766,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_LPFFJNKENJL)
+    EOGBAEHLGFI_LPFFJNKENJL = 738,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_OIIFKNDNCJJ)
+    EOGBAEHLGFI_OIIFKNDNCJJ = 775,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_IKFIHLBNKIM)
+    EOGBAEHLGFI_IKFIHLBNKIM = 712,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_MLNPEECPNKO)
+    EOGBAEHLGFI_MLNPEECPNKO = 726,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_HFMBODMLBPI)
+    EOGBAEHLGFI_HFMBODMLBPI = 755,
+    // @@protoc_insertion_point(enum_value:CmdLineupType.EOGBAEHLGFI_ECICJHKPFFL)
+    EOGBAEHLGFI_ECICJHKPFFL = 776,
 }
 
 impl ::protobuf::Enum for CmdLineupType {
@@ -92,98 +92,98 @@ impl ::protobuf::Enum for CmdLineupType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdLineupType> {
         match value {
-            0 => ::std::option::Option::Some(CmdLineupType::CmdLineupTypeNone),
-            792 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupDestroyNotify),
-            791 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
-            745 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
-            714 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexCsReq),
-            793 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
-            781 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderCsReq),
-            767 => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify),
-            750 => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
-            751 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
-            776 => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
-            746 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
-            789 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
-            761 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupScRsp),
-            735 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
-            798 => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupCsReq),
-            795 => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
-            737 => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupCsReq),
-            709 => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
-            711 => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
-            752 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
-            710 => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
-            717 => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataCsReq),
-            762 => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
-            720 => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
-            747 => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
-            738 => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
+            0 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_GKJBAODJMJG),
+            714 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DAJIKOHGCNM),
+            795 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_CNAMFHLCHAE),
+            728 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_GODKMIBPPDJ),
+            720 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OHDOBHOABPK),
+            780 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DABGCPPHKJM),
+            783 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_HILILOAHKBP),
+            769 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_AJGLCHJJCHE),
+            737 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DNLKFFKFOOB),
+            747 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OPOKMBBEDEP),
+            745 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DPNDNNGLNDN),
+            734 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DLGFJLJCAIL),
+            705 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MDFEDALPGKL),
+            789 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_BLIJOFKIKPE),
+            777 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MKHALPBOENA),
+            793 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_IGFCAOEFPNI),
+            762 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_NFCNDBPKHDH),
+            796 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_KPCCLBHNJLF),
+            757 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_LHIEGIDBCJG),
+            779 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_KBMJKBBMGDK),
+            766 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_PBLHMAJAAIK),
+            738 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_LPFFJNKENJL),
+            775 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OIIFKNDNCJJ),
+            712 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_IKFIHLBNKIM),
+            726 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MLNPEECPNKO),
+            755 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_HFMBODMLBPI),
+            776 => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_ECICJHKPFFL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdLineupType> {
         match str {
-            "CmdLineupTypeNone" => ::std::option::Option::Some(CmdLineupType::CmdLineupTypeNone),
-            "CmdVirtualLineupDestroyNotify" => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupDestroyNotify),
-            "CmdSwapLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupScRsp),
-            "CmdGetCurLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataScRsp),
-            "CmdSwitchLineupIndexCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexCsReq),
-            "CmdReplaceLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupScRsp),
-            "CmdChangeLineupLeaderCsReq" => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderCsReq),
-            "CmdVirtualLineupTrialAvatarChangeScNotify" => ::std::option::Option::Some(CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify),
-            "CmdSyncLineupNotify" => ::std::option::Option::Some(CmdLineupType::CmdSyncLineupNotify),
-            "CmdGetStageLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupCsReq),
-            "CmdSwapLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSwapLineupCsReq),
-            "CmdGetLineupAvatarDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataScRsp),
-            "CmdGetAllLineupDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataCsReq),
-            "CmdJoinLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupScRsp),
-            "CmdQuitLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupCsReq),
-            "CmdJoinLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdJoinLineupCsReq),
-            "CmdGetLineupAvatarDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetLineupAvatarDataCsReq),
-            "CmdReplaceLineupCsReq" => ::std::option::Option::Some(CmdLineupType::CmdReplaceLineupCsReq),
-            "CmdChangeLineupLeaderScRsp" => ::std::option::Option::Some(CmdLineupType::CmdChangeLineupLeaderScRsp),
-            "CmdExtraLineupDestroyNotify" => ::std::option::Option::Some(CmdLineupType::CmdExtraLineupDestroyNotify),
-            "CmdSetLineupNameCsReq" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameCsReq),
-            "CmdSetLineupNameScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSetLineupNameScRsp),
-            "CmdGetCurLineupDataCsReq" => ::std::option::Option::Some(CmdLineupType::CmdGetCurLineupDataCsReq),
-            "CmdQuitLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdQuitLineupScRsp),
-            "CmdGetAllLineupDataScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetAllLineupDataScRsp),
-            "CmdGetStageLineupScRsp" => ::std::option::Option::Some(CmdLineupType::CmdGetStageLineupScRsp),
-            "CmdSwitchLineupIndexScRsp" => ::std::option::Option::Some(CmdLineupType::CmdSwitchLineupIndexScRsp),
+            "EOGBAEHLGFI_GKJBAODJMJG" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_GKJBAODJMJG),
+            "EOGBAEHLGFI_DAJIKOHGCNM" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DAJIKOHGCNM),
+            "EOGBAEHLGFI_CNAMFHLCHAE" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_CNAMFHLCHAE),
+            "EOGBAEHLGFI_GODKMIBPPDJ" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_GODKMIBPPDJ),
+            "EOGBAEHLGFI_OHDOBHOABPK" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OHDOBHOABPK),
+            "EOGBAEHLGFI_DABGCPPHKJM" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DABGCPPHKJM),
+            "EOGBAEHLGFI_HILILOAHKBP" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_HILILOAHKBP),
+            "EOGBAEHLGFI_AJGLCHJJCHE" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_AJGLCHJJCHE),
+            "EOGBAEHLGFI_DNLKFFKFOOB" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DNLKFFKFOOB),
+            "EOGBAEHLGFI_OPOKMBBEDEP" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OPOKMBBEDEP),
+            "EOGBAEHLGFI_DPNDNNGLNDN" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DPNDNNGLNDN),
+            "EOGBAEHLGFI_DLGFJLJCAIL" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_DLGFJLJCAIL),
+            "EOGBAEHLGFI_MDFEDALPGKL" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MDFEDALPGKL),
+            "EOGBAEHLGFI_BLIJOFKIKPE" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_BLIJOFKIKPE),
+            "EOGBAEHLGFI_MKHALPBOENA" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MKHALPBOENA),
+            "EOGBAEHLGFI_IGFCAOEFPNI" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_IGFCAOEFPNI),
+            "EOGBAEHLGFI_NFCNDBPKHDH" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_NFCNDBPKHDH),
+            "EOGBAEHLGFI_KPCCLBHNJLF" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_KPCCLBHNJLF),
+            "EOGBAEHLGFI_LHIEGIDBCJG" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_LHIEGIDBCJG),
+            "EOGBAEHLGFI_KBMJKBBMGDK" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_KBMJKBBMGDK),
+            "EOGBAEHLGFI_PBLHMAJAAIK" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_PBLHMAJAAIK),
+            "EOGBAEHLGFI_LPFFJNKENJL" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_LPFFJNKENJL),
+            "EOGBAEHLGFI_OIIFKNDNCJJ" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_OIIFKNDNCJJ),
+            "EOGBAEHLGFI_IKFIHLBNKIM" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_IKFIHLBNKIM),
+            "EOGBAEHLGFI_MLNPEECPNKO" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_MLNPEECPNKO),
+            "EOGBAEHLGFI_HFMBODMLBPI" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_HFMBODMLBPI),
+            "EOGBAEHLGFI_ECICJHKPFFL" => ::std::option::Option::Some(CmdLineupType::EOGBAEHLGFI_ECICJHKPFFL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLineupType] = &[
-        CmdLineupType::CmdLineupTypeNone,
-        CmdLineupType::CmdVirtualLineupDestroyNotify,
-        CmdLineupType::CmdSwapLineupScRsp,
-        CmdLineupType::CmdGetCurLineupDataScRsp,
-        CmdLineupType::CmdSwitchLineupIndexCsReq,
-        CmdLineupType::CmdReplaceLineupScRsp,
-        CmdLineupType::CmdChangeLineupLeaderCsReq,
-        CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify,
-        CmdLineupType::CmdSyncLineupNotify,
-        CmdLineupType::CmdGetStageLineupCsReq,
-        CmdLineupType::CmdSwapLineupCsReq,
-        CmdLineupType::CmdGetLineupAvatarDataScRsp,
-        CmdLineupType::CmdGetAllLineupDataCsReq,
-        CmdLineupType::CmdJoinLineupScRsp,
-        CmdLineupType::CmdQuitLineupCsReq,
-        CmdLineupType::CmdJoinLineupCsReq,
-        CmdLineupType::CmdGetLineupAvatarDataCsReq,
-        CmdLineupType::CmdReplaceLineupCsReq,
-        CmdLineupType::CmdChangeLineupLeaderScRsp,
-        CmdLineupType::CmdExtraLineupDestroyNotify,
-        CmdLineupType::CmdSetLineupNameCsReq,
-        CmdLineupType::CmdSetLineupNameScRsp,
-        CmdLineupType::CmdGetCurLineupDataCsReq,
-        CmdLineupType::CmdQuitLineupScRsp,
-        CmdLineupType::CmdGetAllLineupDataScRsp,
-        CmdLineupType::CmdGetStageLineupScRsp,
-        CmdLineupType::CmdSwitchLineupIndexScRsp,
+        CmdLineupType::EOGBAEHLGFI_GKJBAODJMJG,
+        CmdLineupType::EOGBAEHLGFI_DAJIKOHGCNM,
+        CmdLineupType::EOGBAEHLGFI_CNAMFHLCHAE,
+        CmdLineupType::EOGBAEHLGFI_GODKMIBPPDJ,
+        CmdLineupType::EOGBAEHLGFI_OHDOBHOABPK,
+        CmdLineupType::EOGBAEHLGFI_DABGCPPHKJM,
+        CmdLineupType::EOGBAEHLGFI_HILILOAHKBP,
+        CmdLineupType::EOGBAEHLGFI_AJGLCHJJCHE,
+        CmdLineupType::EOGBAEHLGFI_DNLKFFKFOOB,
+        CmdLineupType::EOGBAEHLGFI_OPOKMBBEDEP,
+        CmdLineupType::EOGBAEHLGFI_DPNDNNGLNDN,
+        CmdLineupType::EOGBAEHLGFI_DLGFJLJCAIL,
+        CmdLineupType::EOGBAEHLGFI_MDFEDALPGKL,
+        CmdLineupType::EOGBAEHLGFI_BLIJOFKIKPE,
+        CmdLineupType::EOGBAEHLGFI_MKHALPBOENA,
+        CmdLineupType::EOGBAEHLGFI_IGFCAOEFPNI,
+        CmdLineupType::EOGBAEHLGFI_NFCNDBPKHDH,
+        CmdLineupType::EOGBAEHLGFI_KPCCLBHNJLF,
+        CmdLineupType::EOGBAEHLGFI_LHIEGIDBCJG,
+        CmdLineupType::EOGBAEHLGFI_KBMJKBBMGDK,
+        CmdLineupType::EOGBAEHLGFI_PBLHMAJAAIK,
+        CmdLineupType::EOGBAEHLGFI_LPFFJNKENJL,
+        CmdLineupType::EOGBAEHLGFI_OIIFKNDNCJJ,
+        CmdLineupType::EOGBAEHLGFI_IKFIHLBNKIM,
+        CmdLineupType::EOGBAEHLGFI_MLNPEECPNKO,
+        CmdLineupType::EOGBAEHLGFI_HFMBODMLBPI,
+        CmdLineupType::EOGBAEHLGFI_ECICJHKPFFL,
     ];
 }
 
@@ -195,33 +195,33 @@ impl ::protobuf::EnumFull for CmdLineupType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdLineupType::CmdLineupTypeNone => 0,
-            CmdLineupType::CmdVirtualLineupDestroyNotify => 1,
-            CmdLineupType::CmdSwapLineupScRsp => 2,
-            CmdLineupType::CmdGetCurLineupDataScRsp => 3,
-            CmdLineupType::CmdSwitchLineupIndexCsReq => 4,
-            CmdLineupType::CmdReplaceLineupScRsp => 5,
-            CmdLineupType::CmdChangeLineupLeaderCsReq => 6,
-            CmdLineupType::CmdVirtualLineupTrialAvatarChangeScNotify => 7,
-            CmdLineupType::CmdSyncLineupNotify => 8,
-            CmdLineupType::CmdGetStageLineupCsReq => 9,
-            CmdLineupType::CmdSwapLineupCsReq => 10,
-            CmdLineupType::CmdGetLineupAvatarDataScRsp => 11,
-            CmdLineupType::CmdGetAllLineupDataCsReq => 12,
-            CmdLineupType::CmdJoinLineupScRsp => 13,
-            CmdLineupType::CmdQuitLineupCsReq => 14,
-            CmdLineupType::CmdJoinLineupCsReq => 15,
-            CmdLineupType::CmdGetLineupAvatarDataCsReq => 16,
-            CmdLineupType::CmdReplaceLineupCsReq => 17,
-            CmdLineupType::CmdChangeLineupLeaderScRsp => 18,
-            CmdLineupType::CmdExtraLineupDestroyNotify => 19,
-            CmdLineupType::CmdSetLineupNameCsReq => 20,
-            CmdLineupType::CmdSetLineupNameScRsp => 21,
-            CmdLineupType::CmdGetCurLineupDataCsReq => 22,
-            CmdLineupType::CmdQuitLineupScRsp => 23,
-            CmdLineupType::CmdGetAllLineupDataScRsp => 24,
-            CmdLineupType::CmdGetStageLineupScRsp => 25,
-            CmdLineupType::CmdSwitchLineupIndexScRsp => 26,
+            CmdLineupType::EOGBAEHLGFI_GKJBAODJMJG => 0,
+            CmdLineupType::EOGBAEHLGFI_DAJIKOHGCNM => 1,
+            CmdLineupType::EOGBAEHLGFI_CNAMFHLCHAE => 2,
+            CmdLineupType::EOGBAEHLGFI_GODKMIBPPDJ => 3,
+            CmdLineupType::EOGBAEHLGFI_OHDOBHOABPK => 4,
+            CmdLineupType::EOGBAEHLGFI_DABGCPPHKJM => 5,
+            CmdLineupType::EOGBAEHLGFI_HILILOAHKBP => 6,
+            CmdLineupType::EOGBAEHLGFI_AJGLCHJJCHE => 7,
+            CmdLineupType::EOGBAEHLGFI_DNLKFFKFOOB => 8,
+            CmdLineupType::EOGBAEHLGFI_OPOKMBBEDEP => 9,
+            CmdLineupType::EOGBAEHLGFI_DPNDNNGLNDN => 10,
+            CmdLineupType::EOGBAEHLGFI_DLGFJLJCAIL => 11,
+            CmdLineupType::EOGBAEHLGFI_MDFEDALPGKL => 12,
+            CmdLineupType::EOGBAEHLGFI_BLIJOFKIKPE => 13,
+            CmdLineupType::EOGBAEHLGFI_MKHALPBOENA => 14,
+            CmdLineupType::EOGBAEHLGFI_IGFCAOEFPNI => 15,
+            CmdLineupType::EOGBAEHLGFI_NFCNDBPKHDH => 16,
+            CmdLineupType::EOGBAEHLGFI_KPCCLBHNJLF => 17,
+            CmdLineupType::EOGBAEHLGFI_LHIEGIDBCJG => 18,
+            CmdLineupType::EOGBAEHLGFI_KBMJKBBMGDK => 19,
+            CmdLineupType::EOGBAEHLGFI_PBLHMAJAAIK => 20,
+            CmdLineupType::EOGBAEHLGFI_LPFFJNKENJL => 21,
+            CmdLineupType::EOGBAEHLGFI_OIIFKNDNCJJ => 22,
+            CmdLineupType::EOGBAEHLGFI_IKFIHLBNKIM => 23,
+            CmdLineupType::EOGBAEHLGFI_MLNPEECPNKO => 24,
+            CmdLineupType::EOGBAEHLGFI_HFMBODMLBPI => 25,
+            CmdLineupType::EOGBAEHLGFI_ECICJHKPFFL => 26,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -229,7 +229,7 @@ impl ::protobuf::EnumFull for CmdLineupType {
 
 impl ::std::default::Default for CmdLineupType {
     fn default() -> Self {
-        CmdLineupType::CmdLineupTypeNone
+        CmdLineupType::EOGBAEHLGFI_GKJBAODJMJG
     }
 }
 
@@ -240,26 +240,26 @@ impl CmdLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdLineupType.proto*\xb8\x06\n\rCmdLineupType\x12\x15\n\x11CmdLine\
-    upTypeNone\x10\0\x12\"\n\x1dCmdVirtualLineupDestroyNotify\x10\x98\x06\
-    \x12\x17\n\x12CmdSwapLineupScRsp\x10\x97\x06\x12\x1d\n\x18CmdGetCurLineu\
-    pDataScRsp\x10\xe9\x05\x12\x1e\n\x19CmdSwitchLineupIndexCsReq\x10\xca\
-    \x05\x12\x1a\n\x15CmdReplaceLineupScRsp\x10\x99\x06\x12\x1f\n\x1aCmdChan\
-    geLineupLeaderCsReq\x10\x8d\x06\x12.\n)CmdVirtualLineupTrialAvatarChange\
-    ScNotify\x10\xff\x05\x12\x18\n\x13CmdSyncLineupNotify\x10\xee\x05\x12\
-    \x1b\n\x16CmdGetStageLineupCsReq\x10\xef\x05\x12\x17\n\x12CmdSwapLineupC\
-    sReq\x10\x88\x06\x12\x20\n\x1bCmdGetLineupAvatarDataScRsp\x10\xea\x05\
-    \x12\x1d\n\x18CmdGetAllLineupDataCsReq\x10\x95\x06\x12\x17\n\x12CmdJoinL\
-    ineupScRsp\x10\xf9\x05\x12\x17\n\x12CmdQuitLineupCsReq\x10\xdf\x05\x12\
-    \x17\n\x12CmdJoinLineupCsReq\x10\x9e\x06\x12\x20\n\x1bCmdGetLineupAvatar\
-    DataCsReq\x10\x9b\x06\x12\x1a\n\x15CmdReplaceLineupCsReq\x10\xe1\x05\x12\
-    \x1f\n\x1aCmdChangeLineupLeaderScRsp\x10\xc5\x05\x12\x20\n\x1bCmdExtraLi\
-    neupDestroyNotify\x10\xc7\x05\x12\x1a\n\x15CmdSetLineupNameCsReq\x10\xf0\
-    \x05\x12\x1a\n\x15CmdSetLineupNameScRsp\x10\xc6\x05\x12\x1d\n\x18CmdGetC\
-    urLineupDataCsReq\x10\xcd\x05\x12\x17\n\x12CmdQuitLineupScRsp\x10\xfa\
-    \x05\x12\x1d\n\x18CmdGetAllLineupDataScRsp\x10\xd0\x05\x12\x1b\n\x16CmdG\
-    etStageLineupScRsp\x10\xeb\x05\x12\x1e\n\x19CmdSwitchLineupIndexScRsp\
-    \x10\xe2\x05b\x06proto3\
+    \n\x13CmdLineupType.proto*\xb8\x06\n\rCmdLineupType\x12\x1b\n\x17EOGBAEH\
+    LGFI_GKJBAODJMJG\x10\0\x12\x1c\n\x17EOGBAEHLGFI_DAJIKOHGCNM\x10\xca\x05\
+    \x12\x1c\n\x17EOGBAEHLGFI_CNAMFHLCHAE\x10\x9b\x06\x12\x1c\n\x17EOGBAEHLG\
+    FI_GODKMIBPPDJ\x10\xd8\x05\x12\x1c\n\x17EOGBAEHLGFI_OHDOBHOABPK\x10\xd0\
+    \x05\x12\x1c\n\x17EOGBAEHLGFI_DABGCPPHKJM\x10\x8c\x06\x12\x1c\n\x17EOGBA\
+    EHLGFI_HILILOAHKBP\x10\x8f\x06\x12\x1c\n\x17EOGBAEHLGFI_AJGLCHJJCHE\x10\
+    \x81\x06\x12\x1c\n\x17EOGBAEHLGFI_DNLKFFKFOOB\x10\xe1\x05\x12\x1c\n\x17E\
+    OGBAEHLGFI_OPOKMBBEDEP\x10\xeb\x05\x12\x1c\n\x17EOGBAEHLGFI_DPNDNNGLNDN\
+    \x10\xe9\x05\x12\x1c\n\x17EOGBAEHLGFI_DLGFJLJCAIL\x10\xde\x05\x12\x1c\n\
+    \x17EOGBAEHLGFI_MDFEDALPGKL\x10\xc1\x05\x12\x1c\n\x17EOGBAEHLGFI_BLIJOFK\
+    IKPE\x10\x95\x06\x12\x1c\n\x17EOGBAEHLGFI_MKHALPBOENA\x10\x89\x06\x12\
+    \x1c\n\x17EOGBAEHLGFI_IGFCAOEFPNI\x10\x99\x06\x12\x1c\n\x17EOGBAEHLGFI_N\
+    FCNDBPKHDH\x10\xfa\x05\x12\x1c\n\x17EOGBAEHLGFI_KPCCLBHNJLF\x10\x9c\x06\
+    \x12\x1c\n\x17EOGBAEHLGFI_LHIEGIDBCJG\x10\xf5\x05\x12\x1c\n\x17EOGBAEHLG\
+    FI_KBMJKBBMGDK\x10\x8b\x06\x12\x1c\n\x17EOGBAEHLGFI_PBLHMAJAAIK\x10\xfe\
+    \x05\x12\x1c\n\x17EOGBAEHLGFI_LPFFJNKENJL\x10\xe2\x05\x12\x1c\n\x17EOGBA\
+    EHLGFI_OIIFKNDNCJJ\x10\x87\x06\x12\x1c\n\x17EOGBAEHLGFI_IKFIHLBNKIM\x10\
+    \xc8\x05\x12\x1c\n\x17EOGBAEHLGFI_MLNPEECPNKO\x10\xd6\x05\x12\x1c\n\x17E\
+    OGBAEHLGFI_HFMBODMLBPI\x10\xf3\x05\x12\x1c\n\x17EOGBAEHLGFI_ECICJHKPFFL\
+    \x10\x88\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

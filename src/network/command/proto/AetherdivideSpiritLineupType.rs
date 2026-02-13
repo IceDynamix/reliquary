@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AetherdivideSpiritLineupType)
 pub enum AetherdivideSpiritLineupType {
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AETHERDIVIDE_SPIRIT_LINEUP_NONE)
-    AETHERDIVIDE_SPIRIT_LINEUP_NONE = 0,
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AETHERDIVIDE_SPIRIT_LINEUP_NORMAL)
-    AETHERDIVIDE_SPIRIT_LINEUP_NORMAL = 1,
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AETHERDIVIDE_SPIRIT_LINEUP_TRIAL)
-    AETHERDIVIDE_SPIRIT_LINEUP_TRIAL = 2,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_LCAKAGMOCPM)
+    AetherdivideSpiritLineupType_LCAKAGMOCPM = 0,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_MOJIKILBEPM)
+    AetherdivideSpiritLineupType_MOJIKILBEPM = 1,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_HNNEKACACHN)
+    AetherdivideSpiritLineupType_HNNEKACACHN = 2,
 }
 
 impl ::protobuf::Enum for AetherdivideSpiritLineupType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for AetherdivideSpiritLineupType {
 
     fn from_i32(value: i32) -> ::std::option::Option<AetherdivideSpiritLineupType> {
         match value {
-            0 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE),
-            1 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NORMAL),
-            2 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_TRIAL),
+            0 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM),
+            1 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM),
+            2 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AetherdivideSpiritLineupType> {
         match str {
-            "AETHERDIVIDE_SPIRIT_LINEUP_NONE" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE),
-            "AETHERDIVIDE_SPIRIT_LINEUP_NORMAL" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NORMAL),
-            "AETHERDIVIDE_SPIRIT_LINEUP_TRIAL" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_TRIAL),
+            "AetherdivideSpiritLineupType_LCAKAGMOCPM" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM),
+            "AetherdivideSpiritLineupType_MOJIKILBEPM" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM),
+            "AetherdivideSpiritLineupType_HNNEKACACHN" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AetherdivideSpiritLineupType] = &[
-        AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE,
-        AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NORMAL,
-        AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_TRIAL,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for AetherdivideSpiritLineupType {
 
 impl ::std::default::Default for AetherdivideSpiritLineupType {
     fn default() -> Self {
-        AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM
     }
 }
 
@@ -92,10 +92,10 @@ impl AetherdivideSpiritLineupType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"AetherdivideSpiritLineupType.proto*\x90\x01\n\x1cAetherdivideSpiritL\
-    ineupType\x12#\n\x1fAETHERDIVIDE_SPIRIT_LINEUP_NONE\x10\0\x12%\n!AETHERD\
-    IVIDE_SPIRIT_LINEUP_NORMAL\x10\x01\x12$\n\x20AETHERDIVIDE_SPIRIT_LINEUP_\
-    TRIAL\x10\x02b\x06proto3\
+    \n\"AetherdivideSpiritLineupType.proto*\xa8\x01\n\x1cAetherdivideSpiritL\
+    ineupType\x12,\n(AetherdivideSpiritLineupType_LCAKAGMOCPM\x10\0\x12,\n(A\
+    etherdivideSpiritLineupType_MOJIKILBEPM\x10\x01\x12,\n(AetherdivideSpiri\
+    tLineupType_HNNEKACACHN\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

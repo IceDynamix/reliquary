@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityRefreshInfo {
     // message oneof groups
-    pub PBBHAEHGGIO: ::std::option::Option<scene_entity_refresh_info::PBBHAEHGGIO>,
+    pub BOEDFMAFHOM: ::std::option::Option<scene_entity_refresh_info::BOEDFMAFHOM>,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityRefreshInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl SceneEntityRefreshInfo {
         ::std::default::Default::default()
     }
 
-    // .SceneEntityInfo add_entity = 8;
+    // .SceneEntityInfo add_entity = 14;
 
     pub fn add_entity(&self) -> &super::SceneEntityInfo::SceneEntityInfo {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(ref v)) => v,
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(ref v)) => v,
             _ => <super::SceneEntityInfo::SceneEntityInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_add_entity(&mut self) {
-        self.PBBHAEHGGIO = ::std::option::Option::None;
+        self.BOEDFMAFHOM = ::std::option::Option::None;
     }
 
     pub fn has_add_entity(&self) -> bool {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(..)) => true,
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_add_entity(&mut self, v: super::SceneEntityInfo::SceneEntityInfo) {
-        self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(v))
+        self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_add_entity(&mut self) -> &mut super::SceneEntityInfo::SceneEntityInfo {
-        if let ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(_)) = self.PBBHAEHGGIO {
+        if let ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(_)) = self.BOEDFMAFHOM {
         } else {
-            self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(super::SceneEntityInfo::SceneEntityInfo::new()));
+            self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(super::SceneEntityInfo::SceneEntityInfo::new()));
         }
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(ref mut v)) => v,
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl SceneEntityRefreshInfo {
     // Take field
     pub fn take_add_entity(&mut self) -> super::SceneEntityInfo::SceneEntityInfo {
         if self.has_add_entity() {
-            match self.PBBHAEHGGIO.take() {
-                ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(v)) => v,
+            match self.BOEDFMAFHOM.take() {
+                ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,54 +94,54 @@ impl SceneEntityRefreshInfo {
         }
     }
 
-    // uint32 delete_entity = 15;
+    // uint32 MCLJHBMBLON = 13;
+
+    pub fn MCLJHBMBLON(&self) -> u32 {
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_MCLJHBMBLON(&mut self) {
+        self.BOEDFMAFHOM = ::std::option::Option::None;
+    }
+
+    pub fn has_MCLJHBMBLON(&self) -> bool {
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MCLJHBMBLON(&mut self, v: u32) {
+        self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(v))
+    }
+
+    // uint32 delete_entity = 7;
 
     pub fn delete_entity(&self) -> u32 {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(v)) => v,
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_delete_entity(&mut self) {
-        self.PBBHAEHGGIO = ::std::option::Option::None;
+        self.BOEDFMAFHOM = ::std::option::Option::None;
     }
 
     pub fn has_delete_entity(&self) -> bool {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(..)) => true,
+        match self.BOEDFMAFHOM {
+            ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_delete_entity(&mut self, v: u32) {
-        self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(v))
-    }
-
-    // uint32 MJGEDIPOFBJ = 14;
-
-    pub fn MJGEDIPOFBJ(&self) -> u32 {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_MJGEDIPOFBJ(&mut self) {
-        self.PBBHAEHGGIO = ::std::option::Option::None;
-    }
-
-    pub fn has_MJGEDIPOFBJ(&self) -> bool {
-        match self.PBBHAEHGGIO {
-            ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MJGEDIPOFBJ(&mut self, v: u32) {
-        self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(v))
+        self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
@@ -155,18 +155,18 @@ impl SceneEntityRefreshInfo {
             SceneEntityRefreshInfo::set_add_entity,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "MCLJHBMBLON",
+            SceneEntityRefreshInfo::has_MCLJHBMBLON,
+            SceneEntityRefreshInfo::MCLJHBMBLON,
+            SceneEntityRefreshInfo::set_MCLJHBMBLON,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "delete_entity",
             SceneEntityRefreshInfo::has_delete_entity,
             SceneEntityRefreshInfo::delete_entity,
             SceneEntityRefreshInfo::set_delete_entity,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MJGEDIPOFBJ",
-            SceneEntityRefreshInfo::has_MJGEDIPOFBJ,
-            SceneEntityRefreshInfo::MJGEDIPOFBJ,
-            SceneEntityRefreshInfo::set_MJGEDIPOFBJ,
-        ));
-        oneofs.push(scene_entity_refresh_info::PBBHAEHGGIO::generated_oneof_descriptor_data());
+        oneofs.push(scene_entity_refresh_info::BOEDFMAFHOM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityRefreshInfo>(
             "SceneEntityRefreshInfo",
             fields,
@@ -185,14 +185,14 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(is.read_message()?));
+                114 => {
+                    self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(is.read_message()?));
                 },
-                120 => {
-                    self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(is.read_uint32()?));
+                104 => {
+                    self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(is.read_uint32()?));
                 },
-                112 => {
-                    self.PBBHAEHGGIO = ::std::option::Option::Some(scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(is.read_uint32()?));
+                56 => {
+                    self.BOEDFMAFHOM = ::std::option::Option::Some(scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -206,17 +206,17 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.PBBHAEHGGIO {
+        if let ::std::option::Option::Some(ref v) = self.BOEDFMAFHOM {
             match v {
-                &scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(ref v) => {
+                &scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(v) => {
-                    my_size += ::protobuf::rt::uint32_size(15, v);
+                &scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(v) => {
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
-                &scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(14, v);
+                &scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(v) => {
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
             };
         }
@@ -226,16 +226,16 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.PBBHAEHGGIO {
+        if let ::std::option::Option::Some(ref v) = self.BOEDFMAFHOM {
             match v {
-                &scene_entity_refresh_info::PBBHAEHGGIO::AddEntity(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                &scene_entity_refresh_info::BOEDFMAFHOM::AddEntity(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &scene_entity_refresh_info::PBBHAEHGGIO::DeleteEntity(v) => {
-                    os.write_uint32(15, v)?;
+                &scene_entity_refresh_info::BOEDFMAFHOM::MCLJHBMBLON(v) => {
+                    os.write_uint32(13, v)?;
                 },
-                &scene_entity_refresh_info::PBBHAEHGGIO::MJGEDIPOFBJ(v) => {
-                    os.write_uint32(14, v)?;
+                &scene_entity_refresh_info::BOEDFMAFHOM::DeleteEntity(v) => {
+                    os.write_uint32(7, v)?;
                 },
             };
         }
@@ -256,15 +256,15 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     }
 
     fn clear(&mut self) {
-        self.PBBHAEHGGIO = ::std::option::Option::None;
-        self.PBBHAEHGGIO = ::std::option::Option::None;
-        self.PBBHAEHGGIO = ::std::option::Option::None;
+        self.BOEDFMAFHOM = ::std::option::Option::None;
+        self.BOEDFMAFHOM = ::std::option::Option::None;
+        self.BOEDFMAFHOM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityRefreshInfo {
         static instance: SceneEntityRefreshInfo = SceneEntityRefreshInfo {
-            PBBHAEHGGIO: ::std::option::Option::None,
+            BOEDFMAFHOM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,39 +293,39 @@ pub mod scene_entity_refresh_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:SceneEntityRefreshInfo.PBBHAEHGGIO)
-    pub enum PBBHAEHGGIO {
+    // @@protoc_insertion_point(oneof:SceneEntityRefreshInfo.BOEDFMAFHOM)
+    pub enum BOEDFMAFHOM {
         // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.add_entity)
         AddEntity(super::super::SceneEntityInfo::SceneEntityInfo),
+        // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.MCLJHBMBLON)
+        MCLJHBMBLON(u32),
         // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.delete_entity)
         DeleteEntity(u32),
-        // @@protoc_insertion_point(oneof_field:SceneEntityRefreshInfo.MJGEDIPOFBJ)
-        MJGEDIPOFBJ(u32),
     }
 
-    impl ::protobuf::Oneof for PBBHAEHGGIO {
+    impl ::protobuf::Oneof for BOEDFMAFHOM {
     }
 
-    impl ::protobuf::OneofFull for PBBHAEHGGIO {
+    impl ::protobuf::OneofFull for BOEDFMAFHOM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::SceneEntityRefreshInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("PBBHAEHGGIO").unwrap()).clone()
+            descriptor.get(|| <super::SceneEntityRefreshInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("BOEDFMAFHOM").unwrap()).clone()
         }
     }
 
-    impl PBBHAEHGGIO {
+    impl BOEDFMAFHOM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<PBBHAEHGGIO>("PBBHAEHGGIO")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BOEDFMAFHOM>("BOEDFMAFHOM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"\xa5\
-    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x08\x20\x01(\x0b\
-    2\x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x0f\x20\
-    \x01(\rH\0R\x0cdeleteEntity\x12\"\n\x0bMJGEDIPOFBJ\x18\x0e\x20\x01(\rH\0\
-    R\x0bMJGEDIPOFBJB\r\n\x0bPBBHAEHGGIOb\x06proto3\
+    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x0e\x20\x01(\x0b\
+    2\x10.SceneEntityInfoH\0R\taddEntity\x12\"\n\x0bMCLJHBMBLON\x18\r\x20\
+    \x01(\rH\0R\x0bMCLJHBMBLON\x12%\n\rdelete_entity\x18\x07\x20\x01(\rH\0R\
+    \x0cdeleteEntityB\r\n\x0bBOEDFMAFHOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

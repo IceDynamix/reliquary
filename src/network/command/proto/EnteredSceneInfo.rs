@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnteredSceneInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.plane_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EnteredSceneInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.floor_id);
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.plane_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EnteredSceneInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.floor_id != 0 {
-            os.write_uint32(5, self.floor_id)?;
+            os.write_uint32(13, self.floor_id)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(11, self.plane_id)?;
+            os.write_uint32(9, self.plane_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnteredSceneInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16EnteredSceneInfo.proto\"H\n\x10EnteredSceneInfo\x12\x19\n\x08floor\
-    _id\x18\x05\x20\x01(\rR\x07floorId\x12\x19\n\x08plane_id\x18\x0b\x20\x01\
-    (\rR\x07planeIdb\x06proto3\
+    _id\x18\r\x20\x01(\rR\x07floorId\x12\x19\n\x08plane_id\x18\t\x20\x01(\rR\
+    \x07planeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

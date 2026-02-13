@@ -82,7 +82,7 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
                 64 => {
                     self.take_days = is.read_uint32()?;
                 },
-                112 => {
+                120 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
             my_size += ::protobuf::rt::uint32_size(8, self.take_days);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(15, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TakeLoginActivityRewardCsReq {
             os.write_uint32(8, self.take_days)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(15, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeLoginActivityRewardCsReq.proto\"K\n\x1cTakeLoginActivityRewardCs\
     Req\x12\x1b\n\ttake_days\x18\x08\x20\x01(\rR\x08takeDays\x12\x0e\n\x02id\
-    \x18\x0e\x20\x01(\rR\x02idb\x06proto3\
+    \x18\x0f\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

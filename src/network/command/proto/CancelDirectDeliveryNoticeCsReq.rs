@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CancelDirectDeliveryNoticeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CancelDirectDeliveryNoticeCsReq.PKBFBJFOAFA)
-    pub PKBFBJFOAFA: u32,
+    // @@protoc_insertion_point(field:CancelDirectDeliveryNoticeCsReq.IAJFIDIJDAF)
+    pub IAJFIDIJDAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CancelDirectDeliveryNoticeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CancelDirectDeliveryNoticeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKBFBJFOAFA",
-            |m: &CancelDirectDeliveryNoticeCsReq| { &m.PKBFBJFOAFA },
-            |m: &mut CancelDirectDeliveryNoticeCsReq| { &mut m.PKBFBJFOAFA },
+            "IAJFIDIJDAF",
+            |m: &CancelDirectDeliveryNoticeCsReq| { &m.IAJFIDIJDAF },
+            |m: &mut CancelDirectDeliveryNoticeCsReq| { &mut m.IAJFIDIJDAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CancelDirectDeliveryNoticeCsReq>(
             "CancelDirectDeliveryNoticeCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CancelDirectDeliveryNoticeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.PKBFBJFOAFA = is.read_uint32()?;
+                32 => {
+                    self.IAJFIDIJDAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for CancelDirectDeliveryNoticeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKBFBJFOAFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PKBFBJFOAFA);
+        if self.IAJFIDIJDAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IAJFIDIJDAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for CancelDirectDeliveryNoticeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKBFBJFOAFA != 0 {
-            os.write_uint32(13, self.PKBFBJFOAFA)?;
+        if self.IAJFIDIJDAF != 0 {
+            os.write_uint32(4, self.IAJFIDIJDAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for CancelDirectDeliveryNoticeCsReq {
     }
 
     fn clear(&mut self) {
-        self.PKBFBJFOAFA = 0;
+        self.IAJFIDIJDAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CancelDirectDeliveryNoticeCsReq {
         static instance: CancelDirectDeliveryNoticeCsReq = CancelDirectDeliveryNoticeCsReq {
-            PKBFBJFOAFA: 0,
+            IAJFIDIJDAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for CancelDirectDeliveryNoticeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%CancelDirectDeliveryNoticeCsReq.proto\"C\n\x1fCancelDirectDeliveryNot\
-    iceCsReq\x12\x20\n\x0bPKBFBJFOAFA\x18\r\x20\x01(\rR\x0bPKBFBJFOAFAb\x06p\
-    roto3\
+    iceCsReq\x12\x20\n\x0bIAJFIDIJDAF\x18\x04\x20\x01(\rR\x0bIAJFIDIJDAFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

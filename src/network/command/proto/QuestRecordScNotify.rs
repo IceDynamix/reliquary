@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuestRecordScNotify {
     // message fields
-    // @@protoc_insertion_point(field:QuestRecordScNotify.ICFBMLJKGEH)
-    pub ICFBMLJKGEH: ::protobuf::MessageField<super::OHLMDIDHMFC::OHLMDIDHMFC>,
+    // @@protoc_insertion_point(field:QuestRecordScNotify.DFOHMBHPKNF)
+    pub DFOHMBHPKNF: ::protobuf::MessageField<super::HAJEIFILMCD::HAJEIFILMCD>,
     // special fields
     // @@protoc_insertion_point(special_field:QuestRecordScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl QuestRecordScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OHLMDIDHMFC::OHLMDIDHMFC>(
-            "ICFBMLJKGEH",
-            |m: &QuestRecordScNotify| { &m.ICFBMLJKGEH },
-            |m: &mut QuestRecordScNotify| { &mut m.ICFBMLJKGEH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HAJEIFILMCD::HAJEIFILMCD>(
+            "DFOHMBHPKNF",
+            |m: &QuestRecordScNotify| { &m.DFOHMBHPKNF },
+            |m: &mut QuestRecordScNotify| { &mut m.DFOHMBHPKNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuestRecordScNotify>(
             "QuestRecordScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for QuestRecordScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICFBMLJKGEH)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DFOHMBHPKNF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for QuestRecordScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ICFBMLJKGEH.as_ref() {
+        if let Some(v) = self.DFOHMBHPKNF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for QuestRecordScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ICFBMLJKGEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.DFOHMBHPKNF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for QuestRecordScNotify {
     }
 
     fn clear(&mut self) {
-        self.ICFBMLJKGEH.clear();
+        self.DFOHMBHPKNF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuestRecordScNotify {
         static instance: QuestRecordScNotify = QuestRecordScNotify {
-            ICFBMLJKGEH: ::protobuf::MessageField::none(),
+            DFOHMBHPKNF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for QuestRecordScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19QuestRecordScNotify.proto\x1a\x11OHLMDIDHMFC.proto\"E\n\x13QuestRe\
-    cordScNotify\x12.\n\x0bICFBMLJKGEH\x18\x08\x20\x01(\x0b2\x0c.OHLMDIDHMFC\
-    R\x0bICFBMLJKGEHb\x06proto3\
+    \n\x19QuestRecordScNotify.proto\x1a\x11HAJEIFILMCD.proto\"E\n\x13QuestRe\
+    cordScNotify\x12.\n\x0bDFOHMBHPKNF\x18\x0c\x20\x01(\x0b2\x0c.HAJEIFILMCD\
+    R\x0bDFOHMBHPKNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OHLMDIDHMFC::file_descriptor().clone());
+            deps.push(super::HAJEIFILMCD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(QuestRecordScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

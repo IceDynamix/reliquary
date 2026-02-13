@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSummonActivityType)
 pub enum CmdSummonActivityType {
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_ALOCMFAKBKP)
-    HPJEINEJAJO_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_FBKHNNBHCOJ)
-    HPJEINEJAJO_FBKHNNBHCOJ = 7561,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_DCEFLIBABFI)
-    HPJEINEJAJO_DCEFLIBABFI = 7567,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_OIDDFPEIILB)
-    HPJEINEJAJO_OIDDFPEIILB = 7562,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_MHKMBMBIGLN)
-    HPJEINEJAJO_MHKMBMBIGLN = 7570,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.HPJEINEJAJO_HJPKMLGCCDF)
-    HPJEINEJAJO_HJPKMLGCCDF = 7563,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_GKJBAODJMJG)
+    DFOLKOIOFCC_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_CCNMNMFMGBE)
+    DFOLKOIOFCC_CCNMNMFMGBE = 7565,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_AGIINLJLAFH)
+    DFOLKOIOFCC_AGIINLJLAFH = 7568,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_CBMNBKGOOBC)
+    DFOLKOIOFCC_CBMNBKGOOBC = 7569,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_LDMNBBJHDNC)
+    DFOLKOIOFCC_LDMNBBJHDNC = 7564,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_MDGEEKJMNGH)
+    DFOLKOIOFCC_MDGEEKJMNGH = 7570,
 }
 
 impl ::protobuf::Enum for CmdSummonActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdSummonActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSummonActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP),
-            7561 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ),
-            7567 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI),
-            7562 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB),
-            7570 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN),
-            7563 => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF),
+            0 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG),
+            7565 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE),
+            7568 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH),
+            7569 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC),
+            7564 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC),
+            7570 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSummonActivityType> {
         match str {
-            "HPJEINEJAJO_ALOCMFAKBKP" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP),
-            "HPJEINEJAJO_FBKHNNBHCOJ" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ),
-            "HPJEINEJAJO_DCEFLIBABFI" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI),
-            "HPJEINEJAJO_OIDDFPEIILB" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB),
-            "HPJEINEJAJO_MHKMBMBIGLN" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN),
-            "HPJEINEJAJO_HJPKMLGCCDF" => ::std::option::Option::Some(CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF),
+            "DFOLKOIOFCC_GKJBAODJMJG" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG),
+            "DFOLKOIOFCC_CCNMNMFMGBE" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE),
+            "DFOLKOIOFCC_AGIINLJLAFH" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH),
+            "DFOLKOIOFCC_CBMNBKGOOBC" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC),
+            "DFOLKOIOFCC_LDMNBBJHDNC" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC),
+            "DFOLKOIOFCC_MDGEEKJMNGH" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSummonActivityType] = &[
-        CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP,
-        CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ,
-        CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI,
-        CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB,
-        CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN,
-        CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF,
+        CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG,
+        CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE,
+        CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH,
+        CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC,
+        CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC,
+        CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP => 0,
-            CmdSummonActivityType::HPJEINEJAJO_FBKHNNBHCOJ => 1,
-            CmdSummonActivityType::HPJEINEJAJO_DCEFLIBABFI => 2,
-            CmdSummonActivityType::HPJEINEJAJO_OIDDFPEIILB => 3,
-            CmdSummonActivityType::HPJEINEJAJO_MHKMBMBIGLN => 4,
-            CmdSummonActivityType::HPJEINEJAJO_HJPKMLGCCDF => 5,
+            CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG => 0,
+            CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE => 1,
+            CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH => 2,
+            CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC => 3,
+            CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC => 4,
+            CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
 impl ::std::default::Default for CmdSummonActivityType {
     fn default() -> Self {
-        CmdSummonActivityType::HPJEINEJAJO_ALOCMFAKBKP
+        CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG
     }
 }
 
@@ -115,10 +115,10 @@ impl CmdSummonActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdSummonActivityType.proto*\xca\x01\n\x15CmdSummonActivityType\
-    \x12\x1b\n\x17HPJEINEJAJO_ALOCMFAKBKP\x10\0\x12\x1c\n\x17HPJEINEJAJO_FBK\
-    HNNBHCOJ\x10\x89;\x12\x1c\n\x17HPJEINEJAJO_DCEFLIBABFI\x10\x8f;\x12\x1c\
-    \n\x17HPJEINEJAJO_OIDDFPEIILB\x10\x8a;\x12\x1c\n\x17HPJEINEJAJO_MHKMBMBI\
-    GLN\x10\x92;\x12\x1c\n\x17HPJEINEJAJO_HJPKMLGCCDF\x10\x8b;b\x06proto3\
+    \x12\x1b\n\x17DFOLKOIOFCC_GKJBAODJMJG\x10\0\x12\x1c\n\x17DFOLKOIOFCC_CCN\
+    MNMFMGBE\x10\x8d;\x12\x1c\n\x17DFOLKOIOFCC_AGIINLJLAFH\x10\x90;\x12\x1c\
+    \n\x17DFOLKOIOFCC_CBMNBKGOOBC\x10\x91;\x12\x1c\n\x17DFOLKOIOFCC_LDMNBBJH\
+    DNC\x10\x8c;\x12\x1c\n\x17DFOLKOIOFCC_MDGEEKJMNGH\x10\x92;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdStrongChallengeActivityType)
 pub enum CmdStrongChallengeActivityType {
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_ALOCMFAKBKP)
-    DJDELOKEJFK_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_DJNPDHENMKI)
-    DJDELOKEJFK_DJNPDHENMKI = 6638,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_DEFGHJAAJBC)
-    DJDELOKEJFK_DEFGHJAAJBC = 6651,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_FPKLDGHIKNE)
-    DJDELOKEJFK_FPKLDGHIKNE = 6609,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_EPPPPMJHION)
-    DJDELOKEJFK_EPPPPMJHION = 6647,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.DJDELOKEJFK_GNFJFNOJAHF)
-    DJDELOKEJFK_GNFJFNOJAHF = 6617,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_GKJBAODJMJG)
+    KFNBMCECCDO_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_FJKBJAAHKLL)
+    KFNBMCECCDO_FJKBJAAHKLL = 6657,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_KLIFOIFPJOG)
+    KFNBMCECCDO_KLIFOIFPJOG = 6675,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_CPKGKDIPNCF)
+    KFNBMCECCDO_CPKGKDIPNCF = 6638,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_IFHABFIEMND)
+    KFNBMCECCDO_IFHABFIEMND = 6628,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.KFNBMCECCDO_LMLPIGPGGFJ)
+    KFNBMCECCDO_LMLPIGPGGFJ = 6655,
 }
 
 impl ::protobuf::Enum for CmdStrongChallengeActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP),
-            6638 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI),
-            6651 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC),
-            6609 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE),
-            6647 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION),
-            6617 => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF),
+            0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_GKJBAODJMJG),
+            6657 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_FJKBJAAHKLL),
+            6675 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_KLIFOIFPJOG),
+            6638 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_CPKGKDIPNCF),
+            6628 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_IFHABFIEMND),
+            6655 => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_LMLPIGPGGFJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match str {
-            "DJDELOKEJFK_ALOCMFAKBKP" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP),
-            "DJDELOKEJFK_DJNPDHENMKI" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI),
-            "DJDELOKEJFK_DEFGHJAAJBC" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC),
-            "DJDELOKEJFK_FPKLDGHIKNE" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE),
-            "DJDELOKEJFK_EPPPPMJHION" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION),
-            "DJDELOKEJFK_GNFJFNOJAHF" => ::std::option::Option::Some(CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF),
+            "KFNBMCECCDO_GKJBAODJMJG" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_GKJBAODJMJG),
+            "KFNBMCECCDO_FJKBJAAHKLL" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_FJKBJAAHKLL),
+            "KFNBMCECCDO_KLIFOIFPJOG" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_KLIFOIFPJOG),
+            "KFNBMCECCDO_CPKGKDIPNCF" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_CPKGKDIPNCF),
+            "KFNBMCECCDO_IFHABFIEMND" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_IFHABFIEMND),
+            "KFNBMCECCDO_LMLPIGPGGFJ" => ::std::option::Option::Some(CmdStrongChallengeActivityType::KFNBMCECCDO_LMLPIGPGGFJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdStrongChallengeActivityType] = &[
-        CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP,
-        CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI,
-        CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC,
-        CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE,
-        CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION,
-        CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_GKJBAODJMJG,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_FJKBJAAHKLL,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_KLIFOIFPJOG,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_CPKGKDIPNCF,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_IFHABFIEMND,
+        CmdStrongChallengeActivityType::KFNBMCECCDO_LMLPIGPGGFJ,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP => 0,
-            CmdStrongChallengeActivityType::DJDELOKEJFK_DJNPDHENMKI => 1,
-            CmdStrongChallengeActivityType::DJDELOKEJFK_DEFGHJAAJBC => 2,
-            CmdStrongChallengeActivityType::DJDELOKEJFK_FPKLDGHIKNE => 3,
-            CmdStrongChallengeActivityType::DJDELOKEJFK_EPPPPMJHION => 4,
-            CmdStrongChallengeActivityType::DJDELOKEJFK_GNFJFNOJAHF => 5,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_GKJBAODJMJG => 0,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_FJKBJAAHKLL => 1,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_KLIFOIFPJOG => 2,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_CPKGKDIPNCF => 3,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_IFHABFIEMND => 4,
+            CmdStrongChallengeActivityType::KFNBMCECCDO_LMLPIGPGGFJ => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
 
 impl ::std::default::Default for CmdStrongChallengeActivityType {
     fn default() -> Self {
-        CmdStrongChallengeActivityType::DJDELOKEJFK_ALOCMFAKBKP
+        CmdStrongChallengeActivityType::KFNBMCECCDO_GKJBAODJMJG
     }
 }
 
@@ -115,10 +115,10 @@ impl CmdStrongChallengeActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$CmdStrongChallengeActivityType.proto*\xd3\x01\n\x1eCmdStrongChallenge\
-    ActivityType\x12\x1b\n\x17DJDELOKEJFK_ALOCMFAKBKP\x10\0\x12\x1c\n\x17DJD\
-    ELOKEJFK_DJNPDHENMKI\x10\xee3\x12\x1c\n\x17DJDELOKEJFK_DEFGHJAAJBC\x10\
-    \xfb3\x12\x1c\n\x17DJDELOKEJFK_FPKLDGHIKNE\x10\xd13\x12\x1c\n\x17DJDELOK\
-    EJFK_EPPPPMJHION\x10\xf73\x12\x1c\n\x17DJDELOKEJFK_GNFJFNOJAHF\x10\xd93b\
+    ActivityType\x12\x1b\n\x17KFNBMCECCDO_GKJBAODJMJG\x10\0\x12\x1c\n\x17KFN\
+    BMCECCDO_FJKBJAAHKLL\x10\x814\x12\x1c\n\x17KFNBMCECCDO_KLIFOIFPJOG\x10\
+    \x934\x12\x1c\n\x17KFNBMCECCDO_CPKGKDIPNCF\x10\xee3\x12\x1c\n\x17KFNBMCE\
+    CCDO_IFHABFIEMND\x10\xe43\x12\x1c\n\x17KFNBMCECCDO_LMLPIGPGGFJ\x10\xff3b\
     \x06proto3\
 ";
 

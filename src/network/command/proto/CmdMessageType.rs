@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMessageType)
 pub enum CmdMessageType {
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdMessageTypeNone)
-    CmdMessageTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdScRsp)
-    CmdFinishItemIdScRsp = 2747,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupScRsp)
-    CmdGetNpcMessageGroupScRsp = 2745,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcMessageGroupCsReq)
-    CmdGetNpcMessageGroupCsReq = 2761,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusCsReq)
-    CmdGetNpcStatusCsReq = 2720,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdCsReq)
-    CmdFinishSectionIdCsReq = 2709,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoCsReq)
-    CmdGetMissionMessageInfoCsReq = 2791,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishItemIdCsReq)
-    CmdFinishItemIdCsReq = 2711,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishSectionIdScRsp)
-    CmdFinishSectionIdScRsp = 2795,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetNpcStatusScRsp)
-    CmdGetNpcStatusScRsp = 2738,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdGetMissionMessageInfoScRsp)
-    CmdGetMissionMessageInfoScRsp = 2717,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishPerformSectionIdCsReq)
-    CmdFinishPerformSectionIdCsReq = 2751,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.CmdFinishPerformSectionIdScRsp)
-    CmdFinishPerformSectionIdScRsp = 2789,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_GKJBAODJMJG)
+    OEOEJHBDDJN_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_LLGPKGDNIEJ)
+    OEOEJHBDDJN_LLGPKGDNIEJ = 2762,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_ADMENKIPKLL)
+    OEOEJHBDDJN_ADMENKIPKLL = 2728,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_HFNDLJEMFBH)
+    OEOEJHBDDJN_HFNDLJEMFBH = 2747,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_PKOGJJBMNFF)
+    OEOEJHBDDJN_PKOGJJBMNFF = 2775,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_IFPCGPIKLFD)
+    OEOEJHBDDJN_IFPCGPIKLFD = 2737,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_LJDFCKOCNFK)
+    OEOEJHBDDJN_LJDFCKOCNFK = 2720,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_MDDIENEBBGG)
+    OEOEJHBDDJN_MDDIENEBBGG = 2769,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_FNBOIFFOKEK)
+    OEOEJHBDDJN_FNBOIFFOKEK = 2757,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_PPLJKNFPPFB)
+    OEOEJHBDDJN_PPLJKNFPPFB = 2705,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_GMAABLHPFOA)
+    OEOEJHBDDJN_GMAABLHPFOA = 2755,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_FDGCCIFNHGI)
+    OEOEJHBDDJN_FDGCCIFNHGI = 2726,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.OEOEJHBDDJN_FLIDOEOLPCF)
+    OEOEJHBDDJN_FLIDOEOLPCF = 2738,
 }
 
 impl ::protobuf::Enum for CmdMessageType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdMessageType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMessageType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMessageType::CmdMessageTypeNone),
-            2747 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
-            2745 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
-            2761 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
-            2720 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusCsReq),
-            2709 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
-            2791 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
-            2711 => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
-            2795 => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
-            2738 => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusScRsp),
-            2717 => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
-            2751 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
-            2789 => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdScRsp),
+            0 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_GKJBAODJMJG),
+            2762 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_LLGPKGDNIEJ),
+            2728 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_ADMENKIPKLL),
+            2747 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_HFNDLJEMFBH),
+            2775 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_PKOGJJBMNFF),
+            2737 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_IFPCGPIKLFD),
+            2720 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_LJDFCKOCNFK),
+            2769 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_MDDIENEBBGG),
+            2757 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FNBOIFFOKEK),
+            2705 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_PPLJKNFPPFB),
+            2755 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_GMAABLHPFOA),
+            2726 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FDGCCIFNHGI),
+            2738 => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FLIDOEOLPCF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMessageType> {
         match str {
-            "CmdMessageTypeNone" => ::std::option::Option::Some(CmdMessageType::CmdMessageTypeNone),
-            "CmdFinishItemIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdScRsp),
-            "CmdGetNpcMessageGroupScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupScRsp),
-            "CmdGetNpcMessageGroupCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcMessageGroupCsReq),
-            "CmdGetNpcStatusCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusCsReq),
-            "CmdFinishSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdCsReq),
-            "CmdGetMissionMessageInfoCsReq" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoCsReq),
-            "CmdFinishItemIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishItemIdCsReq),
-            "CmdFinishSectionIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishSectionIdScRsp),
-            "CmdGetNpcStatusScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetNpcStatusScRsp),
-            "CmdGetMissionMessageInfoScRsp" => ::std::option::Option::Some(CmdMessageType::CmdGetMissionMessageInfoScRsp),
-            "CmdFinishPerformSectionIdCsReq" => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdCsReq),
-            "CmdFinishPerformSectionIdScRsp" => ::std::option::Option::Some(CmdMessageType::CmdFinishPerformSectionIdScRsp),
+            "OEOEJHBDDJN_GKJBAODJMJG" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_GKJBAODJMJG),
+            "OEOEJHBDDJN_LLGPKGDNIEJ" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_LLGPKGDNIEJ),
+            "OEOEJHBDDJN_ADMENKIPKLL" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_ADMENKIPKLL),
+            "OEOEJHBDDJN_HFNDLJEMFBH" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_HFNDLJEMFBH),
+            "OEOEJHBDDJN_PKOGJJBMNFF" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_PKOGJJBMNFF),
+            "OEOEJHBDDJN_IFPCGPIKLFD" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_IFPCGPIKLFD),
+            "OEOEJHBDDJN_LJDFCKOCNFK" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_LJDFCKOCNFK),
+            "OEOEJHBDDJN_MDDIENEBBGG" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_MDDIENEBBGG),
+            "OEOEJHBDDJN_FNBOIFFOKEK" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FNBOIFFOKEK),
+            "OEOEJHBDDJN_PPLJKNFPPFB" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_PPLJKNFPPFB),
+            "OEOEJHBDDJN_GMAABLHPFOA" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_GMAABLHPFOA),
+            "OEOEJHBDDJN_FDGCCIFNHGI" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FDGCCIFNHGI),
+            "OEOEJHBDDJN_FLIDOEOLPCF" => ::std::option::Option::Some(CmdMessageType::OEOEJHBDDJN_FLIDOEOLPCF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMessageType] = &[
-        CmdMessageType::CmdMessageTypeNone,
-        CmdMessageType::CmdFinishItemIdScRsp,
-        CmdMessageType::CmdGetNpcMessageGroupScRsp,
-        CmdMessageType::CmdGetNpcMessageGroupCsReq,
-        CmdMessageType::CmdGetNpcStatusCsReq,
-        CmdMessageType::CmdFinishSectionIdCsReq,
-        CmdMessageType::CmdGetMissionMessageInfoCsReq,
-        CmdMessageType::CmdFinishItemIdCsReq,
-        CmdMessageType::CmdFinishSectionIdScRsp,
-        CmdMessageType::CmdGetNpcStatusScRsp,
-        CmdMessageType::CmdGetMissionMessageInfoScRsp,
-        CmdMessageType::CmdFinishPerformSectionIdCsReq,
-        CmdMessageType::CmdFinishPerformSectionIdScRsp,
+        CmdMessageType::OEOEJHBDDJN_GKJBAODJMJG,
+        CmdMessageType::OEOEJHBDDJN_LLGPKGDNIEJ,
+        CmdMessageType::OEOEJHBDDJN_ADMENKIPKLL,
+        CmdMessageType::OEOEJHBDDJN_HFNDLJEMFBH,
+        CmdMessageType::OEOEJHBDDJN_PKOGJJBMNFF,
+        CmdMessageType::OEOEJHBDDJN_IFPCGPIKLFD,
+        CmdMessageType::OEOEJHBDDJN_LJDFCKOCNFK,
+        CmdMessageType::OEOEJHBDDJN_MDDIENEBBGG,
+        CmdMessageType::OEOEJHBDDJN_FNBOIFFOKEK,
+        CmdMessageType::OEOEJHBDDJN_PPLJKNFPPFB,
+        CmdMessageType::OEOEJHBDDJN_GMAABLHPFOA,
+        CmdMessageType::OEOEJHBDDJN_FDGCCIFNHGI,
+        CmdMessageType::OEOEJHBDDJN_FLIDOEOLPCF,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdMessageType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMessageType::CmdMessageTypeNone => 0,
-            CmdMessageType::CmdFinishItemIdScRsp => 1,
-            CmdMessageType::CmdGetNpcMessageGroupScRsp => 2,
-            CmdMessageType::CmdGetNpcMessageGroupCsReq => 3,
-            CmdMessageType::CmdGetNpcStatusCsReq => 4,
-            CmdMessageType::CmdFinishSectionIdCsReq => 5,
-            CmdMessageType::CmdGetMissionMessageInfoCsReq => 6,
-            CmdMessageType::CmdFinishItemIdCsReq => 7,
-            CmdMessageType::CmdFinishSectionIdScRsp => 8,
-            CmdMessageType::CmdGetNpcStatusScRsp => 9,
-            CmdMessageType::CmdGetMissionMessageInfoScRsp => 10,
-            CmdMessageType::CmdFinishPerformSectionIdCsReq => 11,
-            CmdMessageType::CmdFinishPerformSectionIdScRsp => 12,
+            CmdMessageType::OEOEJHBDDJN_GKJBAODJMJG => 0,
+            CmdMessageType::OEOEJHBDDJN_LLGPKGDNIEJ => 1,
+            CmdMessageType::OEOEJHBDDJN_ADMENKIPKLL => 2,
+            CmdMessageType::OEOEJHBDDJN_HFNDLJEMFBH => 3,
+            CmdMessageType::OEOEJHBDDJN_PKOGJJBMNFF => 4,
+            CmdMessageType::OEOEJHBDDJN_IFPCGPIKLFD => 5,
+            CmdMessageType::OEOEJHBDDJN_LJDFCKOCNFK => 6,
+            CmdMessageType::OEOEJHBDDJN_MDDIENEBBGG => 7,
+            CmdMessageType::OEOEJHBDDJN_FNBOIFFOKEK => 8,
+            CmdMessageType::OEOEJHBDDJN_PPLJKNFPPFB => 9,
+            CmdMessageType::OEOEJHBDDJN_GMAABLHPFOA => 10,
+            CmdMessageType::OEOEJHBDDJN_FDGCCIFNHGI => 11,
+            CmdMessageType::OEOEJHBDDJN_FLIDOEOLPCF => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdMessageType {
 
 impl ::std::default::Default for CmdMessageType {
     fn default() -> Self {
-        CmdMessageType::CmdMessageTypeNone
+        CmdMessageType::OEOEJHBDDJN_GKJBAODJMJG
     }
 }
 
@@ -156,16 +156,16 @@ impl CmdMessageType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdMessageType.proto*\xa4\x03\n\x0eCmdMessageType\x12\x16\n\x12Cmd\
-    MessageTypeNone\x10\0\x12\x19\n\x14CmdFinishItemIdScRsp\x10\xbb\x15\x12\
-    \x1f\n\x1aCmdGetNpcMessageGroupScRsp\x10\xb9\x15\x12\x1f\n\x1aCmdGetNpcM\
-    essageGroupCsReq\x10\xc9\x15\x12\x19\n\x14CmdGetNpcStatusCsReq\x10\xa0\
-    \x15\x12\x1c\n\x17CmdFinishSectionIdCsReq\x10\x95\x15\x12\"\n\x1dCmdGetM\
-    issionMessageInfoCsReq\x10\xe7\x15\x12\x19\n\x14CmdFinishItemIdCsReq\x10\
-    \x97\x15\x12\x1c\n\x17CmdFinishSectionIdScRsp\x10\xeb\x15\x12\x19\n\x14C\
-    mdGetNpcStatusScRsp\x10\xb2\x15\x12\"\n\x1dCmdGetMissionMessageInfoScRsp\
-    \x10\x9d\x15\x12#\n\x1eCmdFinishPerformSectionIdCsReq\x10\xbf\x15\x12#\n\
-    \x1eCmdFinishPerformSectionIdScRsp\x10\xe5\x15b\x06proto3\
+    \n\x14CmdMessageType.proto*\x95\x03\n\x0eCmdMessageType\x12\x1b\n\x17OEO\
+    EJHBDDJN_GKJBAODJMJG\x10\0\x12\x1c\n\x17OEOEJHBDDJN_LLGPKGDNIEJ\x10\xca\
+    \x15\x12\x1c\n\x17OEOEJHBDDJN_ADMENKIPKLL\x10\xa8\x15\x12\x1c\n\x17OEOEJ\
+    HBDDJN_HFNDLJEMFBH\x10\xbb\x15\x12\x1c\n\x17OEOEJHBDDJN_PKOGJJBMNFF\x10\
+    \xd7\x15\x12\x1c\n\x17OEOEJHBDDJN_IFPCGPIKLFD\x10\xb1\x15\x12\x1c\n\x17O\
+    EOEJHBDDJN_LJDFCKOCNFK\x10\xa0\x15\x12\x1c\n\x17OEOEJHBDDJN_MDDIENEBBGG\
+    \x10\xd1\x15\x12\x1c\n\x17OEOEJHBDDJN_FNBOIFFOKEK\x10\xc5\x15\x12\x1c\n\
+    \x17OEOEJHBDDJN_PPLJKNFPPFB\x10\x91\x15\x12\x1c\n\x17OEOEJHBDDJN_GMAABLH\
+    PFOA\x10\xc3\x15\x12\x1c\n\x17OEOEJHBDDJN_FDGCCIFNHGI\x10\xa6\x15\x12\
+    \x1c\n\x17OEOEJHBDDJN_FLIDOEOLPCF\x10\xb2\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

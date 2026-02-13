@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdWorldUnlockType)
 pub enum CmdWorldUnlockType {
-    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockTypeNone)
-    CmdWorldUnlockTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockScRsp)
-    CmdWorldUnlockScRsp = 7627,
-    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.CmdWorldUnlockCsReq)
-    CmdWorldUnlockCsReq = 7626,
+    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.JCKMEAILKMM_GKJBAODJMJG)
+    JCKMEAILKMM_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.JCKMEAILKMM_OHEIDMKJJIF)
+    JCKMEAILKMM_OHEIDMKJJIF = 7627,
+    // @@protoc_insertion_point(enum_value:CmdWorldUnlockType.JCKMEAILKMM_LNBDGMBNEEH)
+    JCKMEAILKMM_LNBDGMBNEEH = 7626,
 }
 
 impl ::protobuf::Enum for CmdWorldUnlockType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for CmdWorldUnlockType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdWorldUnlockType> {
         match value {
-            0 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockTypeNone),
-            7627 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockScRsp),
-            7626 => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
+            0 => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_GKJBAODJMJG),
+            7627 => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_OHEIDMKJJIF),
+            7626 => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_LNBDGMBNEEH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdWorldUnlockType> {
         match str {
-            "CmdWorldUnlockTypeNone" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockTypeNone),
-            "CmdWorldUnlockScRsp" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockScRsp),
-            "CmdWorldUnlockCsReq" => ::std::option::Option::Some(CmdWorldUnlockType::CmdWorldUnlockCsReq),
+            "JCKMEAILKMM_GKJBAODJMJG" => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_GKJBAODJMJG),
+            "JCKMEAILKMM_OHEIDMKJJIF" => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_OHEIDMKJJIF),
+            "JCKMEAILKMM_LNBDGMBNEEH" => ::std::option::Option::Some(CmdWorldUnlockType::JCKMEAILKMM_LNBDGMBNEEH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWorldUnlockType] = &[
-        CmdWorldUnlockType::CmdWorldUnlockTypeNone,
-        CmdWorldUnlockType::CmdWorldUnlockScRsp,
-        CmdWorldUnlockType::CmdWorldUnlockCsReq,
+        CmdWorldUnlockType::JCKMEAILKMM_GKJBAODJMJG,
+        CmdWorldUnlockType::JCKMEAILKMM_OHEIDMKJJIF,
+        CmdWorldUnlockType::JCKMEAILKMM_LNBDGMBNEEH,
     ];
 }
 
@@ -75,9 +75,9 @@ impl ::protobuf::EnumFull for CmdWorldUnlockType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdWorldUnlockType::CmdWorldUnlockTypeNone => 0,
-            CmdWorldUnlockType::CmdWorldUnlockScRsp => 1,
-            CmdWorldUnlockType::CmdWorldUnlockCsReq => 2,
+            CmdWorldUnlockType::JCKMEAILKMM_GKJBAODJMJG => 0,
+            CmdWorldUnlockType::JCKMEAILKMM_OHEIDMKJJIF => 1,
+            CmdWorldUnlockType::JCKMEAILKMM_LNBDGMBNEEH => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -85,7 +85,7 @@ impl ::protobuf::EnumFull for CmdWorldUnlockType {
 
 impl ::std::default::Default for CmdWorldUnlockType {
     fn default() -> Self {
-        CmdWorldUnlockType::CmdWorldUnlockTypeNone
+        CmdWorldUnlockType::JCKMEAILKMM_GKJBAODJMJG
     }
 }
 
@@ -96,9 +96,9 @@ impl CmdWorldUnlockType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdWorldUnlockType.proto*d\n\x12CmdWorldUnlockType\x12\x1a\n\x16Cm\
-    dWorldUnlockTypeNone\x10\0\x12\x18\n\x13CmdWorldUnlockScRsp\x10\xcb;\x12\
-    \x18\n\x13CmdWorldUnlockCsReq\x10\xca;b\x06proto3\
+    \n\x18CmdWorldUnlockType.proto*m\n\x12CmdWorldUnlockType\x12\x1b\n\x17JC\
+    KMEAILKMM_GKJBAODJMJG\x10\0\x12\x1c\n\x17JCKMEAILKMM_OHEIDMKJJIF\x10\xcb\
+    ;\x12\x1c\n\x17JCKMEAILKMM_LNBDGMBNEEH\x10\xca;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

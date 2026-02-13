@@ -27,62 +27,62 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFateType)
 pub enum CmdFateType {
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTypeNone)
-    CmdFateTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateQueryCsReq)
-    CmdFateQueryCsReq = 5977,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLeaveScRsp)
-    CmdFateShopLeaveScRsp = 5998,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopBuyGoodsCsReq)
-    CmdFateShopBuyGoodsCsReq = 5967,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLeaveCsReq)
-    CmdFateShopLeaveCsReq = 5975,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateQueryScRsp)
-    CmdFateQueryScRsp = 5985,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopSellBuffScRsp)
-    CmdFateShopSellBuffScRsp = 5981,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLockGoodsCsReq)
-    CmdFateShopLockGoodsCsReq = 5984,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleScNotify)
-    CmdFateSettleScNotify = 5986,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateBattleStartCsReq)
-    CmdFateBattleStartCsReq = 5957,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleCsReq)
-    CmdFateSettleCsReq = 5969,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopLockGoodsScRsp)
-    CmdFateShopLockGoodsScRsp = 5960,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopBuyGoodsScRsp)
-    CmdFateShopBuyGoodsScRsp = 5955,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateHandlePendingActionCsReq)
-    CmdFateHandlePendingActionCsReq = 6000,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateBattleStartScRsp)
-    CmdFateBattleStartScRsp = 5952,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateChangeLineupScRsp)
-    CmdFateChangeLineupScRsp = 5983,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopRefreshGoodsScRsp)
-    CmdFateShopRefreshGoodsScRsp = 5996,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSyncPendingActionScNotify)
-    CmdFateSyncPendingActionScNotify = 5993,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTakeExpRewardScRsp)
-    CmdFateTakeExpRewardScRsp = 5974,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateStartScRsp)
-    CmdFateStartScRsp = 5962,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateChangeLineupCsReq)
-    CmdFateChangeLineupCsReq = 5963,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSyncActionResultScNotify)
-    CmdFateSyncActionResultScNotify = 5966,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateStartCsReq)
-    CmdFateStartCsReq = 5964,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopSellBuffCsReq)
-    CmdFateShopSellBuffCsReq = 5970,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateTakeExpRewardCsReq)
-    CmdFateTakeExpRewardCsReq = 5990,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateSettleScRsp)
-    CmdFateSettleScRsp = 5976,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateHandlePendingActionScRsp)
-    CmdFateHandlePendingActionScRsp = 5959,
-    // @@protoc_insertion_point(enum_value:CmdFateType.CmdFateShopRefreshGoodsCsReq)
-    CmdFateShopRefreshGoodsCsReq = 5973,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_GKJBAODJMJG)
+    DKHPGDIBPNG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_KBJLALFABFK)
+    DKHPGDIBPNG_KBJLALFABFK = 5996,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_OMBFCPLOLAF)
+    DKHPGDIBPNG_OMBFCPLOLAF = 5985,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_FFKDLEABGGO)
+    DKHPGDIBPNG_FFKDLEABGGO = 5995,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_CHBBBOPHNBK)
+    DKHPGDIBPNG_CHBBBOPHNBK = 5958,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_GMFOMNAEGEI)
+    DKHPGDIBPNG_GMFOMNAEGEI = 5971,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_EHNIDNJLGHF)
+    DKHPGDIBPNG_EHNIDNJLGHF = 5957,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_EINFKDIBHMM)
+    DKHPGDIBPNG_EINFKDIBHMM = 5979,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_GLIJAHCMFFF)
+    DKHPGDIBPNG_GLIJAHCMFFF = 5989,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_JMNIPDMJFGE)
+    DKHPGDIBPNG_JMNIPDMJFGE = 5974,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_AJINAMAELHJ)
+    DKHPGDIBPNG_AJINAMAELHJ = 6000,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_JKDMMNPMAMP)
+    DKHPGDIBPNG_JKDMMNPMAMP = 5990,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_FLOLBPBEMNO)
+    DKHPGDIBPNG_FLOLBPBEMNO = 5969,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_AFBFFAFAHPL)
+    DKHPGDIBPNG_AFBFFAFAHPL = 5961,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_EKCCGDFHJHN)
+    DKHPGDIBPNG_EKCCGDFHJHN = 5981,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_GCAJNFNPADP)
+    DKHPGDIBPNG_GCAJNFNPADP = 5956,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_HFFLHDPAHID)
+    DKHPGDIBPNG_HFFLHDPAHID = 5972,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_EGEPFIHFONJ)
+    DKHPGDIBPNG_EGEPFIHFONJ = 5978,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_OLNAEEEOIIB)
+    DKHPGDIBPNG_OLNAEEEOIIB = 5952,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_LBKMCGDJDCO)
+    DKHPGDIBPNG_LBKMCGDJDCO = 5999,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_IHIJEPNPIDH)
+    DKHPGDIBPNG_IHIJEPNPIDH = 5993,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_MFPCHEPHPGN)
+    DKHPGDIBPNG_MFPCHEPHPGN = 5953,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_EMPEGKLENFB)
+    DKHPGDIBPNG_EMPEGKLENFB = 5951,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_GDIIHMHJCEO)
+    DKHPGDIBPNG_GDIIHMHJCEO = 5997,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_KBPPNPFJBEO)
+    DKHPGDIBPNG_KBPPNPFJBEO = 5987,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_MBAMIIPNLDJ)
+    DKHPGDIBPNG_MBAMIIPNLDJ = 5983,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_APILMFKJPAK)
+    DKHPGDIBPNG_APILMFKJPAK = 5988,
+    // @@protoc_insertion_point(enum_value:CmdFateType.DKHPGDIBPNG_LJCNMICNONH)
+    DKHPGDIBPNG_LJCNMICNONH = 5970,
 }
 
 impl ::protobuf::Enum for CmdFateType {
@@ -94,101 +94,101 @@ impl ::protobuf::Enum for CmdFateType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFateType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFateType::CmdFateTypeNone),
-            5977 => ::std::option::Option::Some(CmdFateType::CmdFateQueryCsReq),
-            5998 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveScRsp),
-            5967 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsCsReq),
-            5975 => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveCsReq),
-            5985 => ::std::option::Option::Some(CmdFateType::CmdFateQueryScRsp),
-            5981 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffScRsp),
-            5984 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsCsReq),
-            5986 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScNotify),
-            5957 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartCsReq),
-            5969 => ::std::option::Option::Some(CmdFateType::CmdFateSettleCsReq),
-            5960 => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsScRsp),
-            5955 => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsScRsp),
-            6000 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionCsReq),
-            5952 => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartScRsp),
-            5983 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupScRsp),
-            5996 => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsScRsp),
-            5993 => ::std::option::Option::Some(CmdFateType::CmdFateSyncPendingActionScNotify),
-            5974 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardScRsp),
-            5962 => ::std::option::Option::Some(CmdFateType::CmdFateStartScRsp),
-            5963 => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupCsReq),
-            5966 => ::std::option::Option::Some(CmdFateType::CmdFateSyncActionResultScNotify),
-            5964 => ::std::option::Option::Some(CmdFateType::CmdFateStartCsReq),
-            5970 => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffCsReq),
-            5990 => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardCsReq),
-            5976 => ::std::option::Option::Some(CmdFateType::CmdFateSettleScRsp),
-            5959 => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionScRsp),
-            5973 => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsCsReq),
+            0 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GKJBAODJMJG),
+            5996 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_KBJLALFABFK),
+            5985 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_OMBFCPLOLAF),
+            5995 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_FFKDLEABGGO),
+            5958 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_CHBBBOPHNBK),
+            5971 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GMFOMNAEGEI),
+            5957 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EHNIDNJLGHF),
+            5979 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EINFKDIBHMM),
+            5989 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GLIJAHCMFFF),
+            5974 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_JMNIPDMJFGE),
+            6000 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_AJINAMAELHJ),
+            5990 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_JKDMMNPMAMP),
+            5969 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_FLOLBPBEMNO),
+            5961 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_AFBFFAFAHPL),
+            5981 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EKCCGDFHJHN),
+            5956 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GCAJNFNPADP),
+            5972 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_HFFLHDPAHID),
+            5978 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EGEPFIHFONJ),
+            5952 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_OLNAEEEOIIB),
+            5999 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_LBKMCGDJDCO),
+            5993 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_IHIJEPNPIDH),
+            5953 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_MFPCHEPHPGN),
+            5951 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EMPEGKLENFB),
+            5997 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GDIIHMHJCEO),
+            5987 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_KBPPNPFJBEO),
+            5983 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_MBAMIIPNLDJ),
+            5988 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_APILMFKJPAK),
+            5970 => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_LJCNMICNONH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFateType> {
         match str {
-            "CmdFateTypeNone" => ::std::option::Option::Some(CmdFateType::CmdFateTypeNone),
-            "CmdFateQueryCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateQueryCsReq),
-            "CmdFateShopLeaveScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveScRsp),
-            "CmdFateShopBuyGoodsCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsCsReq),
-            "CmdFateShopLeaveCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateShopLeaveCsReq),
-            "CmdFateQueryScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateQueryScRsp),
-            "CmdFateShopSellBuffScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffScRsp),
-            "CmdFateShopLockGoodsCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsCsReq),
-            "CmdFateSettleScNotify" => ::std::option::Option::Some(CmdFateType::CmdFateSettleScNotify),
-            "CmdFateBattleStartCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartCsReq),
-            "CmdFateSettleCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateSettleCsReq),
-            "CmdFateShopLockGoodsScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateShopLockGoodsScRsp),
-            "CmdFateShopBuyGoodsScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateShopBuyGoodsScRsp),
-            "CmdFateHandlePendingActionCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionCsReq),
-            "CmdFateBattleStartScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateBattleStartScRsp),
-            "CmdFateChangeLineupScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupScRsp),
-            "CmdFateShopRefreshGoodsScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsScRsp),
-            "CmdFateSyncPendingActionScNotify" => ::std::option::Option::Some(CmdFateType::CmdFateSyncPendingActionScNotify),
-            "CmdFateTakeExpRewardScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardScRsp),
-            "CmdFateStartScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateStartScRsp),
-            "CmdFateChangeLineupCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateChangeLineupCsReq),
-            "CmdFateSyncActionResultScNotify" => ::std::option::Option::Some(CmdFateType::CmdFateSyncActionResultScNotify),
-            "CmdFateStartCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateStartCsReq),
-            "CmdFateShopSellBuffCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateShopSellBuffCsReq),
-            "CmdFateTakeExpRewardCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateTakeExpRewardCsReq),
-            "CmdFateSettleScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateSettleScRsp),
-            "CmdFateHandlePendingActionScRsp" => ::std::option::Option::Some(CmdFateType::CmdFateHandlePendingActionScRsp),
-            "CmdFateShopRefreshGoodsCsReq" => ::std::option::Option::Some(CmdFateType::CmdFateShopRefreshGoodsCsReq),
+            "DKHPGDIBPNG_GKJBAODJMJG" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GKJBAODJMJG),
+            "DKHPGDIBPNG_KBJLALFABFK" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_KBJLALFABFK),
+            "DKHPGDIBPNG_OMBFCPLOLAF" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_OMBFCPLOLAF),
+            "DKHPGDIBPNG_FFKDLEABGGO" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_FFKDLEABGGO),
+            "DKHPGDIBPNG_CHBBBOPHNBK" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_CHBBBOPHNBK),
+            "DKHPGDIBPNG_GMFOMNAEGEI" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GMFOMNAEGEI),
+            "DKHPGDIBPNG_EHNIDNJLGHF" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EHNIDNJLGHF),
+            "DKHPGDIBPNG_EINFKDIBHMM" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EINFKDIBHMM),
+            "DKHPGDIBPNG_GLIJAHCMFFF" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GLIJAHCMFFF),
+            "DKHPGDIBPNG_JMNIPDMJFGE" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_JMNIPDMJFGE),
+            "DKHPGDIBPNG_AJINAMAELHJ" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_AJINAMAELHJ),
+            "DKHPGDIBPNG_JKDMMNPMAMP" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_JKDMMNPMAMP),
+            "DKHPGDIBPNG_FLOLBPBEMNO" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_FLOLBPBEMNO),
+            "DKHPGDIBPNG_AFBFFAFAHPL" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_AFBFFAFAHPL),
+            "DKHPGDIBPNG_EKCCGDFHJHN" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EKCCGDFHJHN),
+            "DKHPGDIBPNG_GCAJNFNPADP" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GCAJNFNPADP),
+            "DKHPGDIBPNG_HFFLHDPAHID" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_HFFLHDPAHID),
+            "DKHPGDIBPNG_EGEPFIHFONJ" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EGEPFIHFONJ),
+            "DKHPGDIBPNG_OLNAEEEOIIB" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_OLNAEEEOIIB),
+            "DKHPGDIBPNG_LBKMCGDJDCO" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_LBKMCGDJDCO),
+            "DKHPGDIBPNG_IHIJEPNPIDH" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_IHIJEPNPIDH),
+            "DKHPGDIBPNG_MFPCHEPHPGN" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_MFPCHEPHPGN),
+            "DKHPGDIBPNG_EMPEGKLENFB" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_EMPEGKLENFB),
+            "DKHPGDIBPNG_GDIIHMHJCEO" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_GDIIHMHJCEO),
+            "DKHPGDIBPNG_KBPPNPFJBEO" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_KBPPNPFJBEO),
+            "DKHPGDIBPNG_MBAMIIPNLDJ" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_MBAMIIPNLDJ),
+            "DKHPGDIBPNG_APILMFKJPAK" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_APILMFKJPAK),
+            "DKHPGDIBPNG_LJCNMICNONH" => ::std::option::Option::Some(CmdFateType::DKHPGDIBPNG_LJCNMICNONH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFateType] = &[
-        CmdFateType::CmdFateTypeNone,
-        CmdFateType::CmdFateQueryCsReq,
-        CmdFateType::CmdFateShopLeaveScRsp,
-        CmdFateType::CmdFateShopBuyGoodsCsReq,
-        CmdFateType::CmdFateShopLeaveCsReq,
-        CmdFateType::CmdFateQueryScRsp,
-        CmdFateType::CmdFateShopSellBuffScRsp,
-        CmdFateType::CmdFateShopLockGoodsCsReq,
-        CmdFateType::CmdFateSettleScNotify,
-        CmdFateType::CmdFateBattleStartCsReq,
-        CmdFateType::CmdFateSettleCsReq,
-        CmdFateType::CmdFateShopLockGoodsScRsp,
-        CmdFateType::CmdFateShopBuyGoodsScRsp,
-        CmdFateType::CmdFateHandlePendingActionCsReq,
-        CmdFateType::CmdFateBattleStartScRsp,
-        CmdFateType::CmdFateChangeLineupScRsp,
-        CmdFateType::CmdFateShopRefreshGoodsScRsp,
-        CmdFateType::CmdFateSyncPendingActionScNotify,
-        CmdFateType::CmdFateTakeExpRewardScRsp,
-        CmdFateType::CmdFateStartScRsp,
-        CmdFateType::CmdFateChangeLineupCsReq,
-        CmdFateType::CmdFateSyncActionResultScNotify,
-        CmdFateType::CmdFateStartCsReq,
-        CmdFateType::CmdFateShopSellBuffCsReq,
-        CmdFateType::CmdFateTakeExpRewardCsReq,
-        CmdFateType::CmdFateSettleScRsp,
-        CmdFateType::CmdFateHandlePendingActionScRsp,
-        CmdFateType::CmdFateShopRefreshGoodsCsReq,
+        CmdFateType::DKHPGDIBPNG_GKJBAODJMJG,
+        CmdFateType::DKHPGDIBPNG_KBJLALFABFK,
+        CmdFateType::DKHPGDIBPNG_OMBFCPLOLAF,
+        CmdFateType::DKHPGDIBPNG_FFKDLEABGGO,
+        CmdFateType::DKHPGDIBPNG_CHBBBOPHNBK,
+        CmdFateType::DKHPGDIBPNG_GMFOMNAEGEI,
+        CmdFateType::DKHPGDIBPNG_EHNIDNJLGHF,
+        CmdFateType::DKHPGDIBPNG_EINFKDIBHMM,
+        CmdFateType::DKHPGDIBPNG_GLIJAHCMFFF,
+        CmdFateType::DKHPGDIBPNG_JMNIPDMJFGE,
+        CmdFateType::DKHPGDIBPNG_AJINAMAELHJ,
+        CmdFateType::DKHPGDIBPNG_JKDMMNPMAMP,
+        CmdFateType::DKHPGDIBPNG_FLOLBPBEMNO,
+        CmdFateType::DKHPGDIBPNG_AFBFFAFAHPL,
+        CmdFateType::DKHPGDIBPNG_EKCCGDFHJHN,
+        CmdFateType::DKHPGDIBPNG_GCAJNFNPADP,
+        CmdFateType::DKHPGDIBPNG_HFFLHDPAHID,
+        CmdFateType::DKHPGDIBPNG_EGEPFIHFONJ,
+        CmdFateType::DKHPGDIBPNG_OLNAEEEOIIB,
+        CmdFateType::DKHPGDIBPNG_LBKMCGDJDCO,
+        CmdFateType::DKHPGDIBPNG_IHIJEPNPIDH,
+        CmdFateType::DKHPGDIBPNG_MFPCHEPHPGN,
+        CmdFateType::DKHPGDIBPNG_EMPEGKLENFB,
+        CmdFateType::DKHPGDIBPNG_GDIIHMHJCEO,
+        CmdFateType::DKHPGDIBPNG_KBPPNPFJBEO,
+        CmdFateType::DKHPGDIBPNG_MBAMIIPNLDJ,
+        CmdFateType::DKHPGDIBPNG_APILMFKJPAK,
+        CmdFateType::DKHPGDIBPNG_LJCNMICNONH,
     ];
 }
 
@@ -200,34 +200,34 @@ impl ::protobuf::EnumFull for CmdFateType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFateType::CmdFateTypeNone => 0,
-            CmdFateType::CmdFateQueryCsReq => 1,
-            CmdFateType::CmdFateShopLeaveScRsp => 2,
-            CmdFateType::CmdFateShopBuyGoodsCsReq => 3,
-            CmdFateType::CmdFateShopLeaveCsReq => 4,
-            CmdFateType::CmdFateQueryScRsp => 5,
-            CmdFateType::CmdFateShopSellBuffScRsp => 6,
-            CmdFateType::CmdFateShopLockGoodsCsReq => 7,
-            CmdFateType::CmdFateSettleScNotify => 8,
-            CmdFateType::CmdFateBattleStartCsReq => 9,
-            CmdFateType::CmdFateSettleCsReq => 10,
-            CmdFateType::CmdFateShopLockGoodsScRsp => 11,
-            CmdFateType::CmdFateShopBuyGoodsScRsp => 12,
-            CmdFateType::CmdFateHandlePendingActionCsReq => 13,
-            CmdFateType::CmdFateBattleStartScRsp => 14,
-            CmdFateType::CmdFateChangeLineupScRsp => 15,
-            CmdFateType::CmdFateShopRefreshGoodsScRsp => 16,
-            CmdFateType::CmdFateSyncPendingActionScNotify => 17,
-            CmdFateType::CmdFateTakeExpRewardScRsp => 18,
-            CmdFateType::CmdFateStartScRsp => 19,
-            CmdFateType::CmdFateChangeLineupCsReq => 20,
-            CmdFateType::CmdFateSyncActionResultScNotify => 21,
-            CmdFateType::CmdFateStartCsReq => 22,
-            CmdFateType::CmdFateShopSellBuffCsReq => 23,
-            CmdFateType::CmdFateTakeExpRewardCsReq => 24,
-            CmdFateType::CmdFateSettleScRsp => 25,
-            CmdFateType::CmdFateHandlePendingActionScRsp => 26,
-            CmdFateType::CmdFateShopRefreshGoodsCsReq => 27,
+            CmdFateType::DKHPGDIBPNG_GKJBAODJMJG => 0,
+            CmdFateType::DKHPGDIBPNG_KBJLALFABFK => 1,
+            CmdFateType::DKHPGDIBPNG_OMBFCPLOLAF => 2,
+            CmdFateType::DKHPGDIBPNG_FFKDLEABGGO => 3,
+            CmdFateType::DKHPGDIBPNG_CHBBBOPHNBK => 4,
+            CmdFateType::DKHPGDIBPNG_GMFOMNAEGEI => 5,
+            CmdFateType::DKHPGDIBPNG_EHNIDNJLGHF => 6,
+            CmdFateType::DKHPGDIBPNG_EINFKDIBHMM => 7,
+            CmdFateType::DKHPGDIBPNG_GLIJAHCMFFF => 8,
+            CmdFateType::DKHPGDIBPNG_JMNIPDMJFGE => 9,
+            CmdFateType::DKHPGDIBPNG_AJINAMAELHJ => 10,
+            CmdFateType::DKHPGDIBPNG_JKDMMNPMAMP => 11,
+            CmdFateType::DKHPGDIBPNG_FLOLBPBEMNO => 12,
+            CmdFateType::DKHPGDIBPNG_AFBFFAFAHPL => 13,
+            CmdFateType::DKHPGDIBPNG_EKCCGDFHJHN => 14,
+            CmdFateType::DKHPGDIBPNG_GCAJNFNPADP => 15,
+            CmdFateType::DKHPGDIBPNG_HFFLHDPAHID => 16,
+            CmdFateType::DKHPGDIBPNG_EGEPFIHFONJ => 17,
+            CmdFateType::DKHPGDIBPNG_OLNAEEEOIIB => 18,
+            CmdFateType::DKHPGDIBPNG_LBKMCGDJDCO => 19,
+            CmdFateType::DKHPGDIBPNG_IHIJEPNPIDH => 20,
+            CmdFateType::DKHPGDIBPNG_MFPCHEPHPGN => 21,
+            CmdFateType::DKHPGDIBPNG_EMPEGKLENFB => 22,
+            CmdFateType::DKHPGDIBPNG_GDIIHMHJCEO => 23,
+            CmdFateType::DKHPGDIBPNG_KBPPNPFJBEO => 24,
+            CmdFateType::DKHPGDIBPNG_MBAMIIPNLDJ => 25,
+            CmdFateType::DKHPGDIBPNG_APILMFKJPAK => 26,
+            CmdFateType::DKHPGDIBPNG_LJCNMICNONH => 27,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -235,7 +235,7 @@ impl ::protobuf::EnumFull for CmdFateType {
 
 impl ::std::default::Default for CmdFateType {
     fn default() -> Self {
-        CmdFateType::CmdFateTypeNone
+        CmdFateType::DKHPGDIBPNG_GKJBAODJMJG
     }
 }
 
@@ -246,25 +246,25 @@ impl CmdFateType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdFateType.proto*\xdd\x06\n\x0bCmdFateType\x12\x13\n\x0fCmdFateTy\
-    peNone\x10\0\x12\x16\n\x11CmdFateQueryCsReq\x10\xd9.\x12\x1a\n\x15CmdFat\
-    eShopLeaveScRsp\x10\xee.\x12\x1d\n\x18CmdFateShopBuyGoodsCsReq\x10\xcf.\
-    \x12\x1a\n\x15CmdFateShopLeaveCsReq\x10\xd7.\x12\x16\n\x11CmdFateQuerySc\
-    Rsp\x10\xe1.\x12\x1d\n\x18CmdFateShopSellBuffScRsp\x10\xdd.\x12\x1e\n\
-    \x19CmdFateShopLockGoodsCsReq\x10\xe0.\x12\x1a\n\x15CmdFateSettleScNotif\
-    y\x10\xe2.\x12\x1c\n\x17CmdFateBattleStartCsReq\x10\xc5.\x12\x17\n\x12Cm\
-    dFateSettleCsReq\x10\xd1.\x12\x1e\n\x19CmdFateShopLockGoodsScRsp\x10\xc8\
-    .\x12\x1d\n\x18CmdFateShopBuyGoodsScRsp\x10\xc3.\x12$\n\x1fCmdFateHandle\
-    PendingActionCsReq\x10\xf0.\x12\x1c\n\x17CmdFateBattleStartScRsp\x10\xc0\
-    .\x12\x1d\n\x18CmdFateChangeLineupScRsp\x10\xdf.\x12!\n\x1cCmdFateShopRe\
-    freshGoodsScRsp\x10\xec.\x12%\n\x20CmdFateSyncPendingActionScNotify\x10\
-    \xe9.\x12\x1e\n\x19CmdFateTakeExpRewardScRsp\x10\xd6.\x12\x16\n\x11CmdFa\
-    teStartScRsp\x10\xca.\x12\x1d\n\x18CmdFateChangeLineupCsReq\x10\xcb.\x12\
-    $\n\x1fCmdFateSyncActionResultScNotify\x10\xce.\x12\x16\n\x11CmdFateStar\
-    tCsReq\x10\xcc.\x12\x1d\n\x18CmdFateShopSellBuffCsReq\x10\xd2.\x12\x1e\n\
-    \x19CmdFateTakeExpRewardCsReq\x10\xe6.\x12\x17\n\x12CmdFateSettleScRsp\
-    \x10\xd8.\x12$\n\x1fCmdFateHandlePendingActionScRsp\x10\xc7.\x12!\n\x1cC\
-    mdFateShopRefreshGoodsCsReq\x10\xd5.b\x06proto3\
+    \n\x11CmdFateType.proto*\xd4\x06\n\x0bCmdFateType\x12\x1b\n\x17DKHPGDIBP\
+    NG_GKJBAODJMJG\x10\0\x12\x1c\n\x17DKHPGDIBPNG_KBJLALFABFK\x10\xec.\x12\
+    \x1c\n\x17DKHPGDIBPNG_OMBFCPLOLAF\x10\xe1.\x12\x1c\n\x17DKHPGDIBPNG_FFKD\
+    LEABGGO\x10\xeb.\x12\x1c\n\x17DKHPGDIBPNG_CHBBBOPHNBK\x10\xc6.\x12\x1c\n\
+    \x17DKHPGDIBPNG_GMFOMNAEGEI\x10\xd3.\x12\x1c\n\x17DKHPGDIBPNG_EHNIDNJLGH\
+    F\x10\xc5.\x12\x1c\n\x17DKHPGDIBPNG_EINFKDIBHMM\x10\xdb.\x12\x1c\n\x17DK\
+    HPGDIBPNG_GLIJAHCMFFF\x10\xe5.\x12\x1c\n\x17DKHPGDIBPNG_JMNIPDMJFGE\x10\
+    \xd6.\x12\x1c\n\x17DKHPGDIBPNG_AJINAMAELHJ\x10\xf0.\x12\x1c\n\x17DKHPGDI\
+    BPNG_JKDMMNPMAMP\x10\xe6.\x12\x1c\n\x17DKHPGDIBPNG_FLOLBPBEMNO\x10\xd1.\
+    \x12\x1c\n\x17DKHPGDIBPNG_AFBFFAFAHPL\x10\xc9.\x12\x1c\n\x17DKHPGDIBPNG_\
+    EKCCGDFHJHN\x10\xdd.\x12\x1c\n\x17DKHPGDIBPNG_GCAJNFNPADP\x10\xc4.\x12\
+    \x1c\n\x17DKHPGDIBPNG_HFFLHDPAHID\x10\xd4.\x12\x1c\n\x17DKHPGDIBPNG_EGEP\
+    FIHFONJ\x10\xda.\x12\x1c\n\x17DKHPGDIBPNG_OLNAEEEOIIB\x10\xc0.\x12\x1c\n\
+    \x17DKHPGDIBPNG_LBKMCGDJDCO\x10\xef.\x12\x1c\n\x17DKHPGDIBPNG_IHIJEPNPID\
+    H\x10\xe9.\x12\x1c\n\x17DKHPGDIBPNG_MFPCHEPHPGN\x10\xc1.\x12\x1c\n\x17DK\
+    HPGDIBPNG_EMPEGKLENFB\x10\xbf.\x12\x1c\n\x17DKHPGDIBPNG_GDIIHMHJCEO\x10\
+    \xed.\x12\x1c\n\x17DKHPGDIBPNG_KBPPNPFJBEO\x10\xe3.\x12\x1c\n\x17DKHPGDI\
+    BPNG_MBAMIIPNLDJ\x10\xdf.\x12\x1c\n\x17DKHPGDIBPNG_APILMFKJPAK\x10\xe4.\
+    \x12\x1c\n\x17DKHPGDIBPNG_LJCNMICNONH\x10\xd2.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleModuleType)
 pub enum BattleModuleType {
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_MAZE)
-    BATTLE_MODULE_MAZE = 0,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_CHALLENGE)
-    BATTLE_MODULE_CHALLENGE = 1,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_COCOON)
-    BATTLE_MODULE_COCOON = 2,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_ROGUE)
-    BATTLE_MODULE_ROGUE = 3,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_CHALLENGE_ACTIVITY)
-    BATTLE_MODULE_CHALLENGE_ACTIVITY = 4,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_TRIAL_LEVEL)
-    BATTLE_MODULE_TRIAL_LEVEL = 5,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.BATTLE_MODULE_AETHER_DIVIDE)
-    BATTLE_MODULE_AETHER_DIVIDE = 6,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_IOAJJLIHOED)
+    KIKBMLPHKGC_IOAJJLIHOED = 0,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_NINGNCFOGCB)
+    KIKBMLPHKGC_NINGNCFOGCB = 1,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_HIBECGHLGKA)
+    KIKBMLPHKGC_HIBECGHLGKA = 2,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_NIFGMAMMGGK)
+    KIKBMLPHKGC_NIFGMAMMGGK = 3,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_FOPHGELKIBH)
+    KIKBMLPHKGC_FOPHGELKIBH = 4,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_GALHGMOKBJG)
+    KIKBMLPHKGC_GALHGMOKBJG = 5,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_FIDLFDMFOKF)
+    KIKBMLPHKGC_FIDLFDMFOKF = 6,
 }
 
 impl ::protobuf::Enum for BattleModuleType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for BattleModuleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleModuleType> {
         match value {
-            0 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_MAZE),
-            1 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_CHALLENGE),
-            2 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_COCOON),
-            3 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_ROGUE),
-            4 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_CHALLENGE_ACTIVITY),
-            5 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_TRIAL_LEVEL),
-            6 => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_AETHER_DIVIDE),
+            0 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED),
+            1 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB),
+            2 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA),
+            3 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK),
+            4 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH),
+            5 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG),
+            6 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleModuleType> {
         match str {
-            "BATTLE_MODULE_MAZE" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_MAZE),
-            "BATTLE_MODULE_CHALLENGE" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_CHALLENGE),
-            "BATTLE_MODULE_COCOON" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_COCOON),
-            "BATTLE_MODULE_ROGUE" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_ROGUE),
-            "BATTLE_MODULE_CHALLENGE_ACTIVITY" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_CHALLENGE_ACTIVITY),
-            "BATTLE_MODULE_TRIAL_LEVEL" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_TRIAL_LEVEL),
-            "BATTLE_MODULE_AETHER_DIVIDE" => ::std::option::Option::Some(BattleModuleType::BATTLE_MODULE_AETHER_DIVIDE),
+            "KIKBMLPHKGC_IOAJJLIHOED" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED),
+            "KIKBMLPHKGC_NINGNCFOGCB" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB),
+            "KIKBMLPHKGC_HIBECGHLGKA" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA),
+            "KIKBMLPHKGC_NIFGMAMMGGK" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK),
+            "KIKBMLPHKGC_FOPHGELKIBH" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH),
+            "KIKBMLPHKGC_GALHGMOKBJG" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG),
+            "KIKBMLPHKGC_FIDLFDMFOKF" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleModuleType] = &[
-        BattleModuleType::BATTLE_MODULE_MAZE,
-        BattleModuleType::BATTLE_MODULE_CHALLENGE,
-        BattleModuleType::BATTLE_MODULE_COCOON,
-        BattleModuleType::BATTLE_MODULE_ROGUE,
-        BattleModuleType::BATTLE_MODULE_CHALLENGE_ACTIVITY,
-        BattleModuleType::BATTLE_MODULE_TRIAL_LEVEL,
-        BattleModuleType::BATTLE_MODULE_AETHER_DIVIDE,
+        BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED,
+        BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB,
+        BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA,
+        BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK,
+        BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH,
+        BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG,
+        BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for BattleModuleType {
 
 impl ::std::default::Default for BattleModuleType {
     fn default() -> Self {
-        BattleModuleType::BATTLE_MODULE_MAZE
+        BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED
     }
 }
 
@@ -112,12 +112,12 @@ impl BattleModuleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BattleModuleType.proto*\xe0\x01\n\x10BattleModuleType\x12\x16\n\
-    \x12BATTLE_MODULE_MAZE\x10\0\x12\x1b\n\x17BATTLE_MODULE_CHALLENGE\x10\
-    \x01\x12\x18\n\x14BATTLE_MODULE_COCOON\x10\x02\x12\x17\n\x13BATTLE_MODUL\
-    E_ROGUE\x10\x03\x12$\n\x20BATTLE_MODULE_CHALLENGE_ACTIVITY\x10\x04\x12\
-    \x1d\n\x19BATTLE_MODULE_TRIAL_LEVEL\x10\x05\x12\x1f\n\x1bBATTLE_MODULE_A\
-    ETHER_DIVIDE\x10\x06b\x06proto3\
+    \n\x16BattleModuleType.proto*\xdd\x01\n\x10BattleModuleType\x12\x1b\n\
+    \x17KIKBMLPHKGC_IOAJJLIHOED\x10\0\x12\x1b\n\x17KIKBMLPHKGC_NINGNCFOGCB\
+    \x10\x01\x12\x1b\n\x17KIKBMLPHKGC_HIBECGHLGKA\x10\x02\x12\x1b\n\x17KIKBM\
+    LPHKGC_NIFGMAMMGGK\x10\x03\x12\x1b\n\x17KIKBMLPHKGC_FOPHGELKIBH\x10\x04\
+    \x12\x1b\n\x17KIKBMLPHKGC_GALHGMOKBJG\x10\x05\x12\x1b\n\x17KIKBMLPHKGC_F\
+    IDLFDMFOKF\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

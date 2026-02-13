@@ -47,8 +47,8 @@ pub enum PlayingState {
     PLAYING_ROGUE_MAGIC = 8,
     // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_PEAK)
     PLAYING_CHALLENGE_PEAK = 9,
-    // @@protoc_insertion_point(enum_value:PlayingState.BOGNCHJDNKA_OEMDNIFKFII)
-    BOGNCHJDNKA_OEMDNIFKFII = 10,
+    // @@protoc_insertion_point(enum_value:PlayingState.DNPJOCHLKPC_GLPLACKKCAM)
+    DNPJOCHLKPC_GLPLACKKCAM = 10,
 }
 
 impl ::protobuf::Enum for PlayingState {
@@ -70,7 +70,7 @@ impl ::protobuf::Enum for PlayingState {
             7 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
             8 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
             9 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            10 => ::std::option::Option::Some(PlayingState::BOGNCHJDNKA_OEMDNIFKFII),
+            10 => ::std::option::Option::Some(PlayingState::DNPJOCHLKPC_GLPLACKKCAM),
             _ => ::std::option::Option::None
         }
     }
@@ -87,7 +87,7 @@ impl ::protobuf::Enum for PlayingState {
             "PLAYING_ROGUE_TOURN" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
             "PLAYING_ROGUE_MAGIC" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
             "PLAYING_CHALLENGE_PEAK" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            "BOGNCHJDNKA_OEMDNIFKFII" => ::std::option::Option::Some(PlayingState::BOGNCHJDNKA_OEMDNIFKFII),
+            "DNPJOCHLKPC_GLPLACKKCAM" => ::std::option::Option::Some(PlayingState::DNPJOCHLKPC_GLPLACKKCAM),
             _ => ::std::option::Option::None
         }
     }
@@ -103,7 +103,7 @@ impl ::protobuf::Enum for PlayingState {
         PlayingState::PLAYING_ROGUE_TOURN,
         PlayingState::PLAYING_ROGUE_MAGIC,
         PlayingState::PLAYING_CHALLENGE_PEAK,
-        PlayingState::BOGNCHJDNKA_OEMDNIFKFII,
+        PlayingState::DNPJOCHLKPC_GLPLACKKCAM,
     ];
 }
 
@@ -138,8 +138,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x10\x03\x12\x1c\n\x18PLAYING_CHALLENGE_MEMORY\x10\x04\x12\x1b\n\x17PLAY\
     ING_CHALLENGE_STORY\x10\x05\x12\x1a\n\x16PLAYING_CHALLENGE_BOSS\x10\x06\
     \x12\x17\n\x13PLAYING_ROGUE_TOURN\x10\x07\x12\x17\n\x13PLAYING_ROGUE_MAG\
-    IC\x10\x08\x12\x1a\n\x16PLAYING_CHALLENGE_PEAK\x10\t\x12\x1b\n\x17BOGNCH\
-    JDNKA_OEMDNIFKFII\x10\nb\x06proto3\
+    IC\x10\x08\x12\x1a\n\x16PLAYING_CHALLENGE_PEAK\x10\t\x12\x1b\n\x17DNPJOC\
+    HLKPC_GLPLACKKCAM\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                66 => {
                     self.secret_info.push(is.read_message()?);
                 },
-                106 => {
+                50 => {
                     self.secret_rsp = is.read_string()?;
                 },
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if !self.secret_rsp.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.secret_rsp);
+            my_size += ::protobuf::rt::string_size(6, &self.secret_rsp);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.secret_info {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if !self.secret_rsp.is_empty() {
-            os.write_string(13, &self.secret_rsp)?;
+            os.write_string(6, &self.secret_rsp)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSecretKeyInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetSecretKeyInfoScRsp.proto\x1a\x13SecretKeyInfo.proto\"\x81\x01\n\
-    \x15GetSecretKeyInfoScRsp\x12/\n\x0bsecret_info\x18\x0c\x20\x03(\x0b2\
-    \x0e.SecretKeyInfoR\nsecretInfo\x12\x1d\n\nsecret_rsp\x18\r\x20\x01(\tR\
-    \tsecretRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06prot\
-    o3\
+    \x15GetSecretKeyInfoScRsp\x12/\n\x0bsecret_info\x18\x08\x20\x03(\x0b2\
+    \x0e.SecretKeyInfoR\nsecretInfo\x12\x1d\n\nsecret_rsp\x18\x06\x20\x01(\t\
+    R\tsecretRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

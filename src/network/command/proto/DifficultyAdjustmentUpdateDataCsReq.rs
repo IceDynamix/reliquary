@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct DifficultyAdjustmentUpdateDataCsReq {
     // message fields
     // @@protoc_insertion_point(field:DifficultyAdjustmentUpdateDataCsReq.data)
-    pub data: ::protobuf::MessageField<super::PLDFDLMCGCF::PLDFDLMCGCF>,
+    pub data: ::protobuf::MessageField<super::FHPADKDKLOH::FHPADKDKLOH>,
     // special fields
     // @@protoc_insertion_point(special_field:DifficultyAdjustmentUpdateDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl DifficultyAdjustmentUpdateDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PLDFDLMCGCF::PLDFDLMCGCF>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHPADKDKLOH::FHPADKDKLOH>(
             "data",
             |m: &DifficultyAdjustmentUpdateDataCsReq| { &m.data },
             |m: &mut DifficultyAdjustmentUpdateDataCsReq| { &mut m.data },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DifficultyAdjustmentUpdateDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for DifficultyAdjustmentUpdateDataCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x11PLDFDLMCGCF.proto\"G\
-    \n#DifficultyAdjustmentUpdateDataCsReq\x12\x20\n\x04data\x18\n\x20\x01(\
-    \x0b2\x0c.PLDFDLMCGCFR\x04datab\x06proto3\
+    \n)DifficultyAdjustmentUpdateDataCsReq.proto\x1a\x11FHPADKDKLOH.proto\"G\
+    \n#DifficultyAdjustmentUpdateDataCsReq\x12\x20\n\x04data\x18\x05\x20\x01\
+    (\x0b2\x0c.FHPADKDKLOHR\x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PLDFDLMCGCF::file_descriptor().clone());
+            deps.push(super::FHPADKDKLOH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DifficultyAdjustmentUpdateDataCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -150,7 +150,7 @@ impl ::protobuf::Message for AetherAvatarInfo {
             my_size += ::protobuf::rt::uint32_size(3, self.promotion);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.passive_skill);
-        if self.spirit_lineup_type != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
+        if self.spirit_lineup_type != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM) {
             my_size += ::protobuf::rt::int32_size(5, self.spirit_lineup_type.value());
         }
         if let Some(v) = self.sp_bar.as_ref() {
@@ -173,7 +173,7 @@ impl ::protobuf::Message for AetherAvatarInfo {
             os.write_uint32(3, self.promotion)?;
         }
         os.write_repeated_packed_uint32(4, &self.passive_skill)?;
-        if self.spirit_lineup_type != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE) {
+        if self.spirit_lineup_type != ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM) {
             os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.spirit_lineup_type))?;
         }
         if let Some(v) = self.sp_bar.as_ref() {
@@ -200,7 +200,7 @@ impl ::protobuf::Message for AetherAvatarInfo {
         self.index = 0;
         self.promotion = 0;
         self.passive_skill.clear();
-        self.spirit_lineup_type = ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AETHERDIVIDE_SPIRIT_LINEUP_NONE);
+        self.spirit_lineup_type = ::protobuf::EnumOrUnknown::new(super::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM);
         self.sp_bar.clear();
         self.special_fields.clear();
     }

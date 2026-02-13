@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeRaidInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.taken_reward_id_list)
-    pub taken_reward_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.HHGKCHNPGKN)
-    pub HHGKCHNPGKN: ::std::vec::Vec<super::CGIHHBALGDC::CGIHHBALGDC>,
+    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.taken_reward_id_list)
+    pub taken_reward_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetChallengeRaidInfoScRsp.KBANOCJPNNJ)
+    pub KBANOCJPNNJ: ::std::vec::Vec<super::ODABPLMPICE::ODABPLMPICE>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeRaidInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetChallengeRaidInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "taken_reward_id_list",
-            |m: &GetChallengeRaidInfoScRsp| { &m.taken_reward_id_list },
-            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.taken_reward_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChallengeRaidInfoScRsp| { &m.retcode },
             |m: &mut GetChallengeRaidInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HHGKCHNPGKN",
-            |m: &GetChallengeRaidInfoScRsp| { &m.HHGKCHNPGKN },
-            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.HHGKCHNPGKN },
+            "taken_reward_id_list",
+            |m: &GetChallengeRaidInfoScRsp| { &m.taken_reward_id_list },
+            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.taken_reward_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KBANOCJPNNJ",
+            |m: &GetChallengeRaidInfoScRsp| { &m.KBANOCJPNNJ },
+            |m: &mut GetChallengeRaidInfoScRsp| { &mut m.KBANOCJPNNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeRaidInfoScRsp>(
             "GetChallengeRaidInfoScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.taken_reward_id_list)?;
-                },
                 120 => {
-                    self.taken_reward_id_list.push(is.read_uint32()?);
-                },
-                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    self.HHGKCHNPGKN.push(is.read_message()?);
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.taken_reward_id_list)?;
+                },
+                48 => {
+                    self.taken_reward_id_list.push(is.read_uint32()?);
+                },
+                106 => {
+                    self.KBANOCJPNNJ.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.taken_reward_id_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        for value in &self.HHGKCHNPGKN {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.taken_reward_id_list);
+        for value in &self.KBANOCJPNNJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,12 +124,12 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.taken_reward_id_list)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        for v in &self.HHGKCHNPGKN {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        os.write_repeated_packed_uint32(6, &self.taken_reward_id_list)?;
+        for v in &self.KBANOCJPNNJ {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GetChallengeRaidInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.taken_reward_id_list.clear();
         self.retcode = 0;
-        self.HHGKCHNPGKN.clear();
+        self.taken_reward_id_list.clear();
+        self.KBANOCJPNNJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeRaidInfoScRsp {
         static instance: GetChallengeRaidInfoScRsp = GetChallengeRaidInfoScRsp {
-            taken_reward_id_list: ::std::vec::Vec::new(),
             retcode: 0,
-            HHGKCHNPGKN: ::std::vec::Vec::new(),
+            taken_reward_id_list: ::std::vec::Vec::new(),
+            KBANOCJPNNJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeRaidInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetChallengeRaidInfoScRsp.proto\x1a\x11CGIHHBALGDC.proto\"\x96\x01\
-    \n\x19GetChallengeRaidInfoScRsp\x12/\n\x14taken_reward_id_list\x18\x0f\
-    \x20\x03(\rR\x11takenRewardIdList\x12\x18\n\x07retcode\x18\x0b\x20\x01(\
-    \rR\x07retcode\x12.\n\x0bHHGKCHNPGKN\x18\x01\x20\x03(\x0b2\x0c.CGIHHBALG\
-    DCR\x0bHHGKCHNPGKNb\x06proto3\
+    \n\x1fGetChallengeRaidInfoScRsp.proto\x1a\x11ODABPLMPICE.proto\"\x96\x01\
+    \n\x19GetChallengeRaidInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\
+    \x07retcode\x12/\n\x14taken_reward_id_list\x18\x06\x20\x03(\rR\x11takenR\
+    ewardIdList\x12.\n\x0bKBANOCJPNNJ\x18\r\x20\x03(\x0b2\x0c.ODABPLMPICER\
+    \x0bKBANOCJPNNJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CGIHHBALGDC::file_descriptor().clone());
+            deps.push(super::ODABPLMPICE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetChallengeRaidInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

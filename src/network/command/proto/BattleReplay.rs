@@ -62,10 +62,10 @@ pub struct BattleReplay {
     pub client_version: u32,
     // @@protoc_insertion_point(field:BattleReplay.monster_wave_length)
     pub monster_wave_length: u32,
-    // @@protoc_insertion_point(field:BattleReplay.AFLLBFBIMBM)
-    pub AFLLBFBIMBM: ::protobuf::MessageField<super::KDNGFGLPCLJ::KDNGFGLPCLJ>,
-    // @@protoc_insertion_point(field:BattleReplay.FNAIOFKGMGA)
-    pub FNAIOFKGMGA: ::protobuf::MessageField<super::FAJOBPIMHGO::FAJOBPIMHGO>,
+    // @@protoc_insertion_point(field:BattleReplay.LCNKKDGCIBH)
+    pub LCNKKDGCIBH: ::protobuf::MessageField<super::JBCFJAPEKDA::JBCFJAPEKDA>,
+    // @@protoc_insertion_point(field:BattleReplay.IHLHEEKIOCP)
+    pub IHLHEEKIOCP: ::protobuf::MessageField<super::GBDJFHGEEIH::GBDJFHGEEIH>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleReplay.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -170,15 +170,15 @@ impl BattleReplay {
             |m: &BattleReplay| { &m.monster_wave_length },
             |m: &mut BattleReplay| { &mut m.monster_wave_length },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KDNGFGLPCLJ::KDNGFGLPCLJ>(
-            "AFLLBFBIMBM",
-            |m: &BattleReplay| { &m.AFLLBFBIMBM },
-            |m: &mut BattleReplay| { &mut m.AFLLBFBIMBM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBCFJAPEKDA::JBCFJAPEKDA>(
+            "LCNKKDGCIBH",
+            |m: &BattleReplay| { &m.LCNKKDGCIBH },
+            |m: &mut BattleReplay| { &mut m.LCNKKDGCIBH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAJOBPIMHGO::FAJOBPIMHGO>(
-            "FNAIOFKGMGA",
-            |m: &BattleReplay| { &m.FNAIOFKGMGA },
-            |m: &mut BattleReplay| { &mut m.FNAIOFKGMGA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GBDJFHGEEIH::GBDJFHGEEIH>(
+            "IHLHEEKIOCP",
+            |m: &BattleReplay| { &m.IHLHEEKIOCP },
+            |m: &mut BattleReplay| { &mut m.IHLHEEKIOCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleReplay>(
             "BattleReplay",
@@ -253,10 +253,10 @@ impl ::protobuf::Message for BattleReplay {
                     self.monster_wave_length = is.read_uint32()?;
                 },
                 154 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AFLLBFBIMBM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCNKKDGCIBH)?;
                 },
                 802 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FNAIOFKGMGA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHLHEEKIOCP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -297,10 +297,10 @@ impl ::protobuf::Message for BattleReplay {
         if self.is_ai_consider_ultra_skill != false {
             my_size += 1 + 1;
         }
-        if self.check_strategy != ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BATTLE_CHECK_STRATEGY_IDENTICAL) {
+        if self.check_strategy != ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO) {
             my_size += ::protobuf::rt::int32_size(10, self.check_strategy.value());
         }
-        if self.battle_module_type != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE) {
+        if self.battle_module_type != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED) {
             my_size += ::protobuf::rt::int32_size(11, self.battle_module_type.value());
         }
         for value in &self.battle_event {
@@ -323,11 +323,11 @@ impl ::protobuf::Message for BattleReplay {
         if self.monster_wave_length != 0 {
             my_size += ::protobuf::rt::uint32_size(18, self.monster_wave_length);
         }
-        if let Some(v) = self.AFLLBFBIMBM.as_ref() {
+        if let Some(v) = self.LCNKKDGCIBH.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.FNAIOFKGMGA.as_ref() {
+        if let Some(v) = self.IHLHEEKIOCP.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -362,10 +362,10 @@ impl ::protobuf::Message for BattleReplay {
         if self.is_ai_consider_ultra_skill != false {
             os.write_bool(9, self.is_ai_consider_ultra_skill)?;
         }
-        if self.check_strategy != ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BATTLE_CHECK_STRATEGY_IDENTICAL) {
+        if self.check_strategy != ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO) {
             os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.check_strategy))?;
         }
-        if self.battle_module_type != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE) {
+        if self.battle_module_type != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.battle_module_type))?;
         }
         for v in &self.battle_event {
@@ -386,10 +386,10 @@ impl ::protobuf::Message for BattleReplay {
         if self.monster_wave_length != 0 {
             os.write_uint32(18, self.monster_wave_length)?;
         }
-        if let Some(v) = self.AFLLBFBIMBM.as_ref() {
+        if let Some(v) = self.LCNKKDGCIBH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
         }
-        if let Some(v) = self.FNAIOFKGMGA.as_ref() {
+        if let Some(v) = self.IHLHEEKIOCP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(100, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -418,16 +418,16 @@ impl ::protobuf::Message for BattleReplay {
         self.maze_plane_id = 0;
         self.extra_ability_list.clear();
         self.is_ai_consider_ultra_skill = false;
-        self.check_strategy = ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BATTLE_CHECK_STRATEGY_IDENTICAL);
-        self.battle_module_type = ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::BATTLE_MODULE_MAZE);
+        self.check_strategy = ::protobuf::EnumOrUnknown::new(super::BattleCheckStrategyType::BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO);
+        self.battle_module_type = ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED);
         self.battle_event.clear();
         self.rounds_limit = 0;
         self.config.clear();
         self.game_core_log_encode.clear();
         self.client_version = 0;
         self.monster_wave_length = 0;
-        self.AFLLBFBIMBM.clear();
-        self.FNAIOFKGMGA.clear();
+        self.LCNKKDGCIBH.clear();
+        self.IHLHEEKIOCP.clear();
         self.special_fields.clear();
     }
 
@@ -450,8 +450,8 @@ impl ::protobuf::Message for BattleReplay {
             game_core_log_encode: ::std::string::String::new(),
             client_version: 0,
             monster_wave_length: 0,
-            AFLLBFBIMBM: ::protobuf::MessageField::none(),
-            FNAIOFKGMGA: ::protobuf::MessageField::none(),
+            LCNKKDGCIBH: ::protobuf::MessageField::none(),
+            IHLHEEKIOCP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -478,8 +478,8 @@ impl ::protobuf::reflect::ProtobufValue for BattleReplay {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12BattleReplay.proto\x1a\x1dBattleCheckStrategyType.proto\x1a\x1bBat\
     tleEventBattleInfo.proto\x1a\x12BattleLineup.proto\x1a\x16BattleModuleTy\
-    pe.proto\x1a\x0eBattleOp.proto\x1a\x11FAJOBPIMHGO.proto\x1a\x14GamecoreC\
-    onfig.proto\x1a\x11KDNGFGLPCLJ.proto\"\xe7\x06\n\x0cBattleReplay\x12\x18\
+    pe.proto\x1a\x0eBattleOp.proto\x1a\x11GBDJFHGEEIH.proto\x1a\x14GamecoreC\
+    onfig.proto\x1a\x11JBCFJAPEKDA.proto\"\xe7\x06\n\x0cBattleReplay\x12\x18\
     \n\x07version\x18\x01\x20\x01(\rR\x07version\x12*\n\x11logic_random_seed\
     \x18\x02\x20\x01(\rR\x0flogicRandomSeed\x12\x19\n\x08stage_id\x18\x03\
     \x20\x01(\rR\x07stageId\x12%\n\x06lineup\x18\x04\x20\x01(\x0b2\r.BattleL\
@@ -496,9 +496,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x20\x01(\x0b2\x0f.GamecoreConfigR\x06config\x12/\n\x14game_core_log_enc\
     ode\x18\x10\x20\x01(\tR\x11gameCoreLogEncode\x12%\n\x0eclient_version\
     \x18\x11\x20\x01(\rR\rclientVersion\x12.\n\x13monster_wave_length\x18\
-    \x12\x20\x01(\rR\x11monsterWaveLength\x12.\n\x0bAFLLBFBIMBM\x18\x13\x20\
-    \x01(\x0b2\x0c.KDNGFGLPCLJR\x0bAFLLBFBIMBM\x12.\n\x0bFNAIOFKGMGA\x18d\
-    \x20\x01(\x0b2\x0c.FAJOBPIMHGOR\x0bFNAIOFKGMGAb\x06proto3\
+    \x12\x20\x01(\rR\x11monsterWaveLength\x12.\n\x0bLCNKKDGCIBH\x18\x13\x20\
+    \x01(\x0b2\x0c.JBCFJAPEKDAR\x0bLCNKKDGCIBH\x12.\n\x0bIHLHEEKIOCP\x18d\
+    \x20\x01(\x0b2\x0c.GBDJFHGEEIHR\x0bIHLHEEKIOCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -521,9 +521,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleLineup::file_descriptor().clone());
             deps.push(super::BattleModuleType::file_descriptor().clone());
             deps.push(super::BattleOp::file_descriptor().clone());
-            deps.push(super::FAJOBPIMHGO::file_descriptor().clone());
+            deps.push(super::GBDJFHGEEIH::file_descriptor().clone());
             deps.push(super::GamecoreConfig::file_descriptor().clone());
-            deps.push(super::KDNGFGLPCLJ::file_descriptor().clone());
+            deps.push(super::JBCFJAPEKDA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleReplay::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

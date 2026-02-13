@@ -72,7 +72,7 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.client_time_ms);
+            my_size += ::protobuf::rt::uint64_size(10, self.client_time_ms);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FightHeartBeatCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_time_ms != 0 {
-            os.write_uint64(6, self.client_time_ms)?;
+            os.write_uint64(10, self.client_time_ms)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FightHeartBeatCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FightHeartBeatCsReq.proto\";\n\x13FightHeartBeatCsReq\x12$\n\x0ecl\
-    ient_time_ms\x18\x06\x20\x01(\x04R\x0cclientTimeMsb\x06proto3\
+    ient_time_ms\x18\n\x20\x01(\x04R\x0cclientTimeMsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

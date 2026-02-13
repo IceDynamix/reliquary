@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjUploadCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.modifier_content_type)
-    pub modifier_content_type: ::protobuf::EnumOrUnknown<super::EJLBONKELAO::EJLBONKELAO>,
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.MGMBOGMDNJI)
-    pub MGMBOGMDNJI: u32,
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.NMBBCCGINJN)
-    pub NMBBCCGINJN: ::std::string::String,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.INKBBAIJAHN)
+    pub INKBBAIJAHN: ::protobuf::EnumOrUnknown<super::HCNFBBLAIKP::HCNFBBLAIKP>,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.AOGNACOPGNA)
+    pub AOGNACOPGNA: u32,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.sc_data)
+    pub sc_data: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjUploadCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ClientObjUploadCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "modifier_content_type",
-            |m: &ClientObjUploadCsReq| { &m.modifier_content_type },
-            |m: &mut ClientObjUploadCsReq| { &mut m.modifier_content_type },
+            "INKBBAIJAHN",
+            |m: &ClientObjUploadCsReq| { &m.INKBBAIJAHN },
+            |m: &mut ClientObjUploadCsReq| { &mut m.INKBBAIJAHN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGMBOGMDNJI",
-            |m: &ClientObjUploadCsReq| { &m.MGMBOGMDNJI },
-            |m: &mut ClientObjUploadCsReq| { &mut m.MGMBOGMDNJI },
+            "AOGNACOPGNA",
+            |m: &ClientObjUploadCsReq| { &m.AOGNACOPGNA },
+            |m: &mut ClientObjUploadCsReq| { &mut m.AOGNACOPGNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMBBCCGINJN",
-            |m: &ClientObjUploadCsReq| { &m.NMBBCCGINJN },
-            |m: &mut ClientObjUploadCsReq| { &mut m.NMBBCCGINJN },
+            "sc_data",
+            |m: &ClientObjUploadCsReq| { &m.sc_data },
+            |m: &mut ClientObjUploadCsReq| { &mut m.sc_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjUploadCsReq>(
             "ClientObjUploadCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.modifier_content_type = is.read_enum_or_unknown()?;
+                80 => {
+                    self.INKBBAIJAHN = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.MGMBOGMDNJI = is.read_uint32()?;
+                96 => {
+                    self.AOGNACOPGNA = is.read_uint32()?;
                 },
-                66 => {
-                    self.NMBBCCGINJN = is.read_string()?;
+                34 => {
+                    self.sc_data = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::EJLBONKELAO::EJLBONKELAO::OBJ_CONTENT_JSON) {
-            my_size += ::protobuf::rt::int32_size(3, self.modifier_content_type.value());
+        if self.INKBBAIJAHN != ::protobuf::EnumOrUnknown::new(super::HCNFBBLAIKP::HCNFBBLAIKP::HCNFBBLAIKP_HPBAIFFLAJM) {
+            my_size += ::protobuf::rt::int32_size(10, self.INKBBAIJAHN.value());
         }
-        if self.MGMBOGMDNJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MGMBOGMDNJI);
+        if self.AOGNACOPGNA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.AOGNACOPGNA);
         }
-        if !self.NMBBCCGINJN.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.NMBBCCGINJN);
+        if !self.sc_data.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.sc_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.modifier_content_type != ::protobuf::EnumOrUnknown::new(super::EJLBONKELAO::EJLBONKELAO::OBJ_CONTENT_JSON) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.modifier_content_type))?;
+        if self.INKBBAIJAHN != ::protobuf::EnumOrUnknown::new(super::HCNFBBLAIKP::HCNFBBLAIKP::HCNFBBLAIKP_HPBAIFFLAJM) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.INKBBAIJAHN))?;
         }
-        if self.MGMBOGMDNJI != 0 {
-            os.write_uint32(13, self.MGMBOGMDNJI)?;
+        if self.AOGNACOPGNA != 0 {
+            os.write_uint32(12, self.AOGNACOPGNA)?;
         }
-        if !self.NMBBCCGINJN.is_empty() {
-            os.write_string(8, &self.NMBBCCGINJN)?;
+        if !self.sc_data.is_empty() {
+            os.write_string(4, &self.sc_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn clear(&mut self) {
-        self.modifier_content_type = ::protobuf::EnumOrUnknown::new(super::EJLBONKELAO::EJLBONKELAO::OBJ_CONTENT_JSON);
-        self.MGMBOGMDNJI = 0;
-        self.NMBBCCGINJN.clear();
+        self.INKBBAIJAHN = ::protobuf::EnumOrUnknown::new(super::HCNFBBLAIKP::HCNFBBLAIKP::HCNFBBLAIKP_HPBAIFFLAJM);
+        self.AOGNACOPGNA = 0;
+        self.sc_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjUploadCsReq {
         static instance: ClientObjUploadCsReq = ClientObjUploadCsReq {
-            modifier_content_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            MGMBOGMDNJI: 0,
-            NMBBCCGINJN: ::std::string::String::new(),
+            INKBBAIJAHN: ::protobuf::EnumOrUnknown::from_i32(0),
+            AOGNACOPGNA: 0,
+            sc_data: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aClientObjUploadCsReq.proto\x1a\x11EJLBONKELAO.proto\"\x9c\x01\n\
-    \x14ClientObjUploadCsReq\x12@\n\x15modifier_content_type\x18\x03\x20\x01\
-    (\x0e2\x0c.EJLBONKELAOR\x13modifierContentType\x12\x20\n\x0bMGMBOGMDNJI\
-    \x18\r\x20\x01(\rR\x0bMGMBOGMDNJI\x12\x20\n\x0bNMBBCCGINJN\x18\x08\x20\
-    \x01(\tR\x0bNMBBCCGINJNb\x06proto3\
+    \n\x1aClientObjUploadCsReq.proto\x1a\x11HCNFBBLAIKP.proto\"\x81\x01\n\
+    \x14ClientObjUploadCsReq\x12.\n\x0bINKBBAIJAHN\x18\n\x20\x01(\x0e2\x0c.H\
+    CNFBBLAIKPR\x0bINKBBAIJAHN\x12\x20\n\x0bAOGNACOPGNA\x18\x0c\x20\x01(\rR\
+    \x0bAOGNACOPGNA\x12\x17\n\x07sc_data\x18\x04\x20\x01(\tR\x06scDatab\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EJLBONKELAO::file_descriptor().clone());
+            deps.push(super::HCNFBBLAIKP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClientObjUploadCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

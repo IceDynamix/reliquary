@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.archive_data)?;
                 },
                 16 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GetArchiveDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.archive_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(2, self.retcode)?;
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetArchiveDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetArchiveDataScRsp.proto\x1a\x11ArchiveData.proto\"`\n\x13GetArch\
-    iveDataScRsp\x12/\n\x0carchive_data\x18\t\x20\x01(\x0b2\x0c.ArchiveDataR\
-    \x0barchiveData\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    iveDataScRsp\x12/\n\x0carchive_data\x18\x0f\x20\x01(\x0b2\x0c.ArchiveDat\
+    aR\x0barchiveData\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

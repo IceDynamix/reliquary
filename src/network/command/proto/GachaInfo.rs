@@ -28,30 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GachaInfo {
     // message fields
-    // @@protoc_insertion_point(field:GachaInfo.gacha_id)
-    pub gacha_id: u32,
-    // @@protoc_insertion_point(field:GachaInfo.EOHEEGMKMOE)
-    pub EOHEEGMKMOE: u32,
-    // @@protoc_insertion_point(field:GachaInfo.DKHDCPOOHKA)
-    pub DKHDCPOOHKA: u32,
-    // @@protoc_insertion_point(field:GachaInfo.begin_time)
-    pub begin_time: i64,
-    // @@protoc_insertion_point(field:GachaInfo.detail_webview)
-    pub detail_webview: ::std::string::String,
-    // @@protoc_insertion_point(field:GachaInfo.end_time)
-    pub end_time: i64,
+    // @@protoc_insertion_point(field:GachaInfo.FHGIGAEPGCD)
+    pub FHGIGAEPGCD: u32,
+    // @@protoc_insertion_point(field:GachaInfo.AODIEBMKEKE)
+    pub AODIEBMKEKE: u32,
     // @@protoc_insertion_point(field:GachaInfo.gacha_ceiling)
     pub gacha_ceiling: ::protobuf::MessageField<super::GachaCeiling::GachaCeiling>,
-    // @@protoc_insertion_point(field:GachaInfo.drop_history_webview)
-    pub drop_history_webview: ::std::string::String,
-    // @@protoc_insertion_point(field:GachaInfo.CHMMPLOFCPN)
-    pub CHMMPLOFCPN: u32,
+    // @@protoc_insertion_point(field:GachaInfo.gacha_id)
+    pub gacha_id: u32,
+    // @@protoc_insertion_point(field:GachaInfo.begin_time)
+    pub begin_time: i64,
     // @@protoc_insertion_point(field:GachaInfo.item_detail_list)
     pub item_detail_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GachaInfo.prize_item_list)
     pub prize_item_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GachaInfo.IPGJNFPOJNH)
-    pub IPGJNFPOJNH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GachaInfo.FBNFKKEDDAD)
+    pub FBNFKKEDDAD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GachaInfo.KIFIEAKAJCK)
+    pub KIFIEAKAJCK: u32,
+    // @@protoc_insertion_point(field:GachaInfo.end_time)
+    pub end_time: i64,
+    // @@protoc_insertion_point(field:GachaInfo.detail_webview)
+    pub detail_webview: ::std::string::String,
+    // @@protoc_insertion_point(field:GachaInfo.drop_history_webview)
+    pub drop_history_webview: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:GachaInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,34 +72,14 @@ impl GachaInfo {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gacha_id",
-            |m: &GachaInfo| { &m.gacha_id },
-            |m: &mut GachaInfo| { &mut m.gacha_id },
+            "FHGIGAEPGCD",
+            |m: &GachaInfo| { &m.FHGIGAEPGCD },
+            |m: &mut GachaInfo| { &mut m.FHGIGAEPGCD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOHEEGMKMOE",
-            |m: &GachaInfo| { &m.EOHEEGMKMOE },
-            |m: &mut GachaInfo| { &mut m.EOHEEGMKMOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKHDCPOOHKA",
-            |m: &GachaInfo| { &m.DKHDCPOOHKA },
-            |m: &mut GachaInfo| { &mut m.DKHDCPOOHKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &GachaInfo| { &m.begin_time },
-            |m: &mut GachaInfo| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "detail_webview",
-            |m: &GachaInfo| { &m.detail_webview },
-            |m: &mut GachaInfo| { &mut m.detail_webview },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &GachaInfo| { &m.end_time },
-            |m: &mut GachaInfo| { &mut m.end_time },
+            "AODIEBMKEKE",
+            |m: &GachaInfo| { &m.AODIEBMKEKE },
+            |m: &mut GachaInfo| { &mut m.AODIEBMKEKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GachaCeiling::GachaCeiling>(
             "gacha_ceiling",
@@ -107,14 +87,14 @@ impl GachaInfo {
             |m: &mut GachaInfo| { &mut m.gacha_ceiling },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "drop_history_webview",
-            |m: &GachaInfo| { &m.drop_history_webview },
-            |m: &mut GachaInfo| { &mut m.drop_history_webview },
+            "gacha_id",
+            |m: &GachaInfo| { &m.gacha_id },
+            |m: &mut GachaInfo| { &mut m.gacha_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHMMPLOFCPN",
-            |m: &GachaInfo| { &m.CHMMPLOFCPN },
-            |m: &mut GachaInfo| { &mut m.CHMMPLOFCPN },
+            "begin_time",
+            |m: &GachaInfo| { &m.begin_time },
+            |m: &mut GachaInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "item_detail_list",
@@ -127,9 +107,29 @@ impl GachaInfo {
             |m: &mut GachaInfo| { &mut m.prize_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IPGJNFPOJNH",
-            |m: &GachaInfo| { &m.IPGJNFPOJNH },
-            |m: &mut GachaInfo| { &mut m.IPGJNFPOJNH },
+            "FBNFKKEDDAD",
+            |m: &GachaInfo| { &m.FBNFKKEDDAD },
+            |m: &mut GachaInfo| { &mut m.FBNFKKEDDAD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIFIEAKAJCK",
+            |m: &GachaInfo| { &m.KIFIEAKAJCK },
+            |m: &mut GachaInfo| { &mut m.KIFIEAKAJCK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &GachaInfo| { &m.end_time },
+            |m: &mut GachaInfo| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "detail_webview",
+            |m: &GachaInfo| { &m.detail_webview },
+            |m: &mut GachaInfo| { &mut m.detail_webview },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "drop_history_webview",
+            |m: &GachaInfo| { &m.drop_history_webview },
+            |m: &mut GachaInfo| { &mut m.drop_history_webview },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GachaInfo>(
             "GachaInfo",
@@ -149,50 +149,50 @@ impl ::protobuf::Message for GachaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                96 => {
+                    self.FHGIGAEPGCD = is.read_uint32()?;
+                },
+                8 => {
+                    self.AODIEBMKEKE = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_ceiling)?;
+                },
+                72 => {
                     self.gacha_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.EOHEEGMKMOE = is.read_uint32()?;
-                },
-                48 => {
-                    self.DKHDCPOOHKA = is.read_uint32()?;
-                },
-                96 => {
+                80 => {
                     self.begin_time = is.read_int64()?;
                 },
-                58 => {
-                    self.detail_webview = is.read_string()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.item_detail_list)?;
+                },
+                120 => {
+                    self.item_detail_list.push(is.read_uint32()?);
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.prize_item_list)?;
+                },
+                24 => {
+                    self.prize_item_list.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FBNFKKEDDAD)?;
+                },
+                48 => {
+                    self.FBNFKKEDDAD.push(is.read_uint32()?);
+                },
+                16 => {
+                    self.KIFIEAKAJCK = is.read_uint32()?;
                 },
                 32 => {
                     self.end_time = is.read_int64()?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gacha_ceiling)?;
-                },
                 42 => {
+                    self.detail_webview = is.read_string()?;
+                },
+                58 => {
                     self.drop_history_webview = is.read_string()?;
-                },
-                104 => {
-                    self.CHMMPLOFCPN = is.read_uint32()?;
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.item_detail_list)?;
-                },
-                64 => {
-                    self.item_detail_list.push(is.read_uint32()?);
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.prize_item_list)?;
-                },
-                8 => {
-                    self.prize_item_list.push(is.read_uint32()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IPGJNFPOJNH)?;
-                },
-                24 => {
-                    self.IPGJNFPOJNH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -206,73 +206,73 @@ impl ::protobuf::Message for GachaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.gacha_id);
+        if self.FHGIGAEPGCD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.FHGIGAEPGCD);
         }
-        if self.EOHEEGMKMOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EOHEEGMKMOE);
-        }
-        if self.DKHDCPOOHKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DKHDCPOOHKA);
-        }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.begin_time);
-        }
-        if !self.detail_webview.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.detail_webview);
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.end_time);
+        if self.AODIEBMKEKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AODIEBMKEKE);
         }
         if let Some(v) = self.gacha_ceiling.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.gacha_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.gacha_id);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(10, self.begin_time);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.item_detail_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.prize_item_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FBNFKKEDDAD);
+        if self.KIFIEAKAJCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KIFIEAKAJCK);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(4, self.end_time);
+        }
+        if !self.detail_webview.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.detail_webview);
+        }
         if !self.drop_history_webview.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.drop_history_webview);
+            my_size += ::protobuf::rt::string_size(7, &self.drop_history_webview);
         }
-        if self.CHMMPLOFCPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CHMMPLOFCPN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.item_detail_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.prize_item_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.IPGJNFPOJNH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FHGIGAEPGCD != 0 {
+            os.write_uint32(12, self.FHGIGAEPGCD)?;
+        }
+        if self.AODIEBMKEKE != 0 {
+            os.write_uint32(1, self.AODIEBMKEKE)?;
+        }
+        if let Some(v) = self.gacha_ceiling.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         if self.gacha_id != 0 {
-            os.write_uint32(10, self.gacha_id)?;
-        }
-        if self.EOHEEGMKMOE != 0 {
-            os.write_uint32(11, self.EOHEEGMKMOE)?;
-        }
-        if self.DKHDCPOOHKA != 0 {
-            os.write_uint32(6, self.DKHDCPOOHKA)?;
+            os.write_uint32(9, self.gacha_id)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(12, self.begin_time)?;
+            os.write_int64(10, self.begin_time)?;
         }
-        if !self.detail_webview.is_empty() {
-            os.write_string(7, &self.detail_webview)?;
+        os.write_repeated_packed_uint32(15, &self.item_detail_list)?;
+        os.write_repeated_packed_uint32(3, &self.prize_item_list)?;
+        os.write_repeated_packed_uint32(6, &self.FBNFKKEDDAD)?;
+        if self.KIFIEAKAJCK != 0 {
+            os.write_uint32(2, self.KIFIEAKAJCK)?;
         }
         if self.end_time != 0 {
             os.write_int64(4, self.end_time)?;
         }
-        if let Some(v) = self.gacha_ceiling.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if !self.detail_webview.is_empty() {
+            os.write_string(5, &self.detail_webview)?;
         }
         if !self.drop_history_webview.is_empty() {
-            os.write_string(5, &self.drop_history_webview)?;
+            os.write_string(7, &self.drop_history_webview)?;
         }
-        if self.CHMMPLOFCPN != 0 {
-            os.write_uint32(13, self.CHMMPLOFCPN)?;
-        }
-        os.write_repeated_packed_uint32(8, &self.item_detail_list)?;
-        os.write_repeated_packed_uint32(1, &self.prize_item_list)?;
-        os.write_repeated_packed_uint32(3, &self.IPGJNFPOJNH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -290,35 +290,35 @@ impl ::protobuf::Message for GachaInfo {
     }
 
     fn clear(&mut self) {
-        self.gacha_id = 0;
-        self.EOHEEGMKMOE = 0;
-        self.DKHDCPOOHKA = 0;
-        self.begin_time = 0;
-        self.detail_webview.clear();
-        self.end_time = 0;
+        self.FHGIGAEPGCD = 0;
+        self.AODIEBMKEKE = 0;
         self.gacha_ceiling.clear();
-        self.drop_history_webview.clear();
-        self.CHMMPLOFCPN = 0;
+        self.gacha_id = 0;
+        self.begin_time = 0;
         self.item_detail_list.clear();
         self.prize_item_list.clear();
-        self.IPGJNFPOJNH.clear();
+        self.FBNFKKEDDAD.clear();
+        self.KIFIEAKAJCK = 0;
+        self.end_time = 0;
+        self.detail_webview.clear();
+        self.drop_history_webview.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GachaInfo {
         static instance: GachaInfo = GachaInfo {
-            gacha_id: 0,
-            EOHEEGMKMOE: 0,
-            DKHDCPOOHKA: 0,
-            begin_time: 0,
-            detail_webview: ::std::string::String::new(),
-            end_time: 0,
+            FHGIGAEPGCD: 0,
+            AODIEBMKEKE: 0,
             gacha_ceiling: ::protobuf::MessageField::none(),
-            drop_history_webview: ::std::string::String::new(),
-            CHMMPLOFCPN: 0,
+            gacha_id: 0,
+            begin_time: 0,
             item_detail_list: ::std::vec::Vec::new(),
             prize_item_list: ::std::vec::Vec::new(),
-            IPGJNFPOJNH: ::std::vec::Vec::new(),
+            FBNFKKEDDAD: ::std::vec::Vec::new(),
+            KIFIEAKAJCK: 0,
+            end_time: 0,
+            detail_webview: ::std::string::String::new(),
+            drop_history_webview: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -344,17 +344,17 @@ impl ::protobuf::reflect::ProtobufValue for GachaInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fGachaInfo.proto\x1a\x12GachaCeiling.proto\"\xc7\x03\n\tGachaInfo\
-    \x12\x19\n\x08gacha_id\x18\n\x20\x01(\rR\x07gachaId\x12\x20\n\x0bEOHEEGM\
-    KMOE\x18\x0b\x20\x01(\rR\x0bEOHEEGMKMOE\x12\x20\n\x0bDKHDCPOOHKA\x18\x06\
-    \x20\x01(\rR\x0bDKHDCPOOHKA\x12\x1d\n\nbegin_time\x18\x0c\x20\x01(\x03R\
-    \tbeginTime\x12%\n\x0edetail_webview\x18\x07\x20\x01(\tR\rdetailWebview\
-    \x12\x19\n\x08end_time\x18\x04\x20\x01(\x03R\x07endTime\x122\n\rgacha_ce\
-    iling\x18\x0f\x20\x01(\x0b2\r.GachaCeilingR\x0cgachaCeiling\x120\n\x14dr\
-    op_history_webview\x18\x05\x20\x01(\tR\x12dropHistoryWebview\x12\x20\n\
-    \x0bCHMMPLOFCPN\x18\r\x20\x01(\rR\x0bCHMMPLOFCPN\x12(\n\x10item_detail_l\
-    ist\x18\x08\x20\x03(\rR\x0eitemDetailList\x12&\n\x0fprize_item_list\x18\
-    \x01\x20\x03(\rR\rprizeItemList\x12\x20\n\x0bIPGJNFPOJNH\x18\x03\x20\x03\
-    (\rR\x0bIPGJNFPOJNHb\x06proto3\
+    \x12\x20\n\x0bFHGIGAEPGCD\x18\x0c\x20\x01(\rR\x0bFHGIGAEPGCD\x12\x20\n\
+    \x0bAODIEBMKEKE\x18\x01\x20\x01(\rR\x0bAODIEBMKEKE\x122\n\rgacha_ceiling\
+    \x18\x0b\x20\x01(\x0b2\r.GachaCeilingR\x0cgachaCeiling\x12\x19\n\x08gach\
+    a_id\x18\t\x20\x01(\rR\x07gachaId\x12\x1d\n\nbegin_time\x18\n\x20\x01(\
+    \x03R\tbeginTime\x12(\n\x10item_detail_list\x18\x0f\x20\x03(\rR\x0eitemD\
+    etailList\x12&\n\x0fprize_item_list\x18\x03\x20\x03(\rR\rprizeItemList\
+    \x12\x20\n\x0bFBNFKKEDDAD\x18\x06\x20\x03(\rR\x0bFBNFKKEDDAD\x12\x20\n\
+    \x0bKIFIEAKAJCK\x18\x02\x20\x01(\rR\x0bKIFIEAKAJCK\x12\x19\n\x08end_time\
+    \x18\x04\x20\x01(\x03R\x07endTime\x12%\n\x0edetail_webview\x18\x05\x20\
+    \x01(\tR\rdetailWebview\x120\n\x14drop_history_webview\x18\x07\x20\x01(\
+    \tR\x12dropHistoryWebviewb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

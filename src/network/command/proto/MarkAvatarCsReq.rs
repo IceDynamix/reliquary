@@ -82,7 +82,7 @@ impl ::protobuf::Message for MarkAvatarCsReq {
                 80 => {
                     self.is_marked = is.read_bool()?;
                 },
-                40 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MarkAvatarCsReq {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for MarkAvatarCsReq {
             os.write_bool(10, self.is_marked)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(5, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MarkAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MarkAvatarCsReq.proto\"K\n\x0fMarkAvatarCsReq\x12\x1b\n\tis_marked\
-    \x18\n\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x05\x20\x01(\r\
+    \x18\n\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x04\x20\x01(\r\
     R\x08avatarIdb\x06proto3\
 ";
 

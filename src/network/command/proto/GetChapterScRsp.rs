@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChapterScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChapterScRsp.DCMNEBAIMDK)
-    pub DCMNEBAIMDK: u32,
+    // @@protoc_insertion_point(field:GetChapterScRsp.KBMICLEGCFA)
+    pub KBMICLEGCFA: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
     // @@protoc_insertion_point(field:GetChapterScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetChapterScRsp.LKAPJNHEKLK)
-    pub LKAPJNHEKLK: ::std::vec::Vec<super::ChapterBrief::ChapterBrief>,
+    // @@protoc_insertion_point(field:GetChapterScRsp.CACPHHKDKLN)
+    pub CACPHHKDKLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChapterScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetChapterScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCMNEBAIMDK",
-            |m: &GetChapterScRsp| { &m.DCMNEBAIMDK },
-            |m: &mut GetChapterScRsp| { &mut m.DCMNEBAIMDK },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KBMICLEGCFA",
+            |m: &GetChapterScRsp| { &m.KBMICLEGCFA },
+            |m: &mut GetChapterScRsp| { &mut m.KBMICLEGCFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetChapterScRsp| { &m.retcode },
             |m: &mut GetChapterScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LKAPJNHEKLK",
-            |m: &GetChapterScRsp| { &m.LKAPJNHEKLK },
-            |m: &mut GetChapterScRsp| { &mut m.LKAPJNHEKLK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CACPHHKDKLN",
+            |m: &GetChapterScRsp| { &m.CACPHHKDKLN },
+            |m: &mut GetChapterScRsp| { &mut m.CACPHHKDKLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChapterScRsp>(
             "GetChapterScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetChapterScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.DCMNEBAIMDK = is.read_uint32()?;
+                114 => {
+                    self.KBMICLEGCFA.push(is.read_message()?);
                 },
-                40 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
-                    self.LKAPJNHEKLK.push(is.read_message()?);
+                104 => {
+                    self.CACPHHKDKLN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GetChapterScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DCMNEBAIMDK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCMNEBAIMDK);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        for value in &self.LKAPJNHEKLK {
+        for value in &self.KBMICLEGCFA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.CACPHHKDKLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CACPHHKDKLN);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DCMNEBAIMDK != 0 {
-            os.write_uint32(10, self.DCMNEBAIMDK)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        for v in &self.LKAPJNHEKLK {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.KBMICLEGCFA {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.CACPHHKDKLN != 0 {
+            os.write_uint32(13, self.CACPHHKDKLN)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetChapterScRsp {
     }
 
     fn clear(&mut self) {
-        self.DCMNEBAIMDK = 0;
+        self.KBMICLEGCFA.clear();
         self.retcode = 0;
-        self.LKAPJNHEKLK.clear();
+        self.CACPHHKDKLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChapterScRsp {
         static instance: GetChapterScRsp = GetChapterScRsp {
-            DCMNEBAIMDK: 0,
+            KBMICLEGCFA: ::std::vec::Vec::new(),
             retcode: 0,
-            LKAPJNHEKLK: ::std::vec::Vec::new(),
+            CACPHHKDKLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetChapterScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15GetChapterScRsp.proto\x1a\x12ChapterBrief.proto\"~\n\x0fGetChapter\
-    ScRsp\x12\x20\n\x0bDCMNEBAIMDK\x18\n\x20\x01(\rR\x0bDCMNEBAIMDK\x12\x18\
-    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12/\n\x0bLKAPJNHEKLK\x18\
-    \x0f\x20\x03(\x0b2\r.ChapterBriefR\x0bLKAPJNHEKLKb\x06proto3\
+    ScRsp\x12/\n\x0bKBMICLEGCFA\x18\x0e\x20\x03(\x0b2\r.ChapterBriefR\x0bKBM\
+    ICLEGCFA\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bCACPHHKDKLN\x18\r\x20\x01(\rR\x0bCACPHHKDKLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

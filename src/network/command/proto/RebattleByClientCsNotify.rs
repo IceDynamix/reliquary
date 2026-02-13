@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RebattleByClientCsNotify {
     // message fields
-    // @@protoc_insertion_point(field:RebattleByClientCsNotify.stt)
-    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
     // @@protoc_insertion_point(field:RebattleByClientCsNotify.rebattle_type)
     pub rebattle_type: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
+    // @@protoc_insertion_point(field:RebattleByClientCsNotify.stt)
+    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
     // special fields
     // @@protoc_insertion_point(special_field:RebattleByClientCsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RebattleByClientCsNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
-            "stt",
-            |m: &RebattleByClientCsNotify| { &m.stt },
-            |m: &mut RebattleByClientCsNotify| { &mut m.stt },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rebattle_type",
             |m: &RebattleByClientCsNotify| { &m.rebattle_type },
             |m: &mut RebattleByClientCsNotify| { &mut m.rebattle_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
+            "stt",
+            |m: &RebattleByClientCsNotify| { &m.stt },
+            |m: &mut RebattleByClientCsNotify| { &mut m.stt },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RebattleByClientCsNotify>(
             "RebattleByClientCsNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
-                },
-                112 => {
+                56 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.rebattle_type.value());
+        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     }
 
     fn clear(&mut self) {
-        self.stt.clear();
         self.rebattle_type = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE);
+        self.stt.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RebattleByClientCsNotify {
         static instance: RebattleByClientCsNotify = RebattleByClientCsNotify {
-            stt: ::protobuf::MessageField::none(),
             rebattle_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            stt: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRebattleByClientCsNotify.proto\x1a\x16BattleStatistics.proto\x1a\
-    \x12RebattleType.proto\"s\n\x18RebattleByClientCsNotify\x12#\n\x03stt\
-    \x18\x01\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x122\n\rrebattle_typ\
-    e\x18\x0e\x20\x01(\x0e2\r.RebattleTypeR\x0crebattleTypeb\x06proto3\
+    \x12RebattleType.proto\"s\n\x18RebattleByClientCsNotify\x122\n\rrebattle\
+    _type\x18\x07\x20\x01(\x0e2\r.RebattleTypeR\x0crebattleType\x12#\n\x03st\
+    t\x18\x06\x20\x01(\x0b2\x11.BattleStatisticsR\x03sttb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

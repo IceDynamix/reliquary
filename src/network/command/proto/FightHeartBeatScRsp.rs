@@ -30,10 +30,10 @@ pub struct FightHeartBeatScRsp {
     // message fields
     // @@protoc_insertion_point(field:FightHeartBeatScRsp.client_time_ms)
     pub client_time_ms: u64,
-    // @@protoc_insertion_point(field:FightHeartBeatScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FightHeartBeatScRsp.server_time_ms)
     pub server_time_ms: u64,
+    // @@protoc_insertion_point(field:FightHeartBeatScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightHeartBeatScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl FightHeartBeatScRsp {
             |m: &mut FightHeartBeatScRsp| { &mut m.client_time_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FightHeartBeatScRsp| { &m.retcode },
-            |m: &mut FightHeartBeatScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "server_time_ms",
             |m: &FightHeartBeatScRsp| { &m.server_time_ms },
             |m: &mut FightHeartBeatScRsp| { &mut m.server_time_ms },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FightHeartBeatScRsp| { &m.retcode },
+            |m: &mut FightHeartBeatScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightHeartBeatScRsp>(
             "FightHeartBeatScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.client_time_ms = is.read_uint64()?;
                 },
-                120 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                48 => {
+                24 => {
                     self.server_time_ms = is.read_uint64()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.client_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.client_time_ms);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint64_size(9, self.client_time_ms);
         }
         if self.server_time_ms != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.server_time_ms);
+            my_size += ::protobuf::rt::uint64_size(3, self.server_time_ms);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.client_time_ms != 0 {
-            os.write_uint64(8, self.client_time_ms)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint64(9, self.client_time_ms)?;
         }
         if self.server_time_ms != 0 {
-            os.write_uint64(6, self.server_time_ms)?;
+            os.write_uint64(3, self.server_time_ms)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for FightHeartBeatScRsp {
 
     fn clear(&mut self) {
         self.client_time_ms = 0;
-        self.retcode = 0;
         self.server_time_ms = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightHeartBeatScRsp {
         static instance: FightHeartBeatScRsp = FightHeartBeatScRsp {
             client_time_ms: 0,
-            retcode: 0,
             server_time_ms: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FightHeartBeatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FightHeartBeatScRsp.proto\"{\n\x13FightHeartBeatScRsp\x12$\n\x0ecl\
-    ient_time_ms\x18\x08\x20\x01(\x04R\x0cclientTimeMs\x12\x18\n\x07retcode\
-    \x18\x0f\x20\x01(\rR\x07retcode\x12$\n\x0eserver_time_ms\x18\x06\x20\x01\
-    (\x04R\x0cserverTimeMsb\x06proto3\
+    ient_time_ms\x18\t\x20\x01(\x04R\x0cclientTimeMs\x12$\n\x0eserver_time_m\
+    s\x18\x03\x20\x01(\x04R\x0cserverTimeMs\x12\x18\n\x07retcode\x18\x07\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlanetFesExtType)
 pub enum CmdPlanetFesExtType {
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtTypeNone)
-    CmdPlanetFesExtTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesApplyCardPieceScRsp)
-    CmdPlanetFesApplyCardPieceScRsp = 8324,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetFriendCardPieceCsReq)
-    CmdPlanetFesGetFriendCardPieceCsReq = 8323,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesHandleCardPieceApplyScRsp)
-    CmdPlanetFesHandleCardPieceApplyScRsp = 8333,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesApplyCardPieceCsReq)
-    CmdPlanetFesApplyCardPieceCsReq = 8309,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesHandleCardPieceApplyCsReq)
-    CmdPlanetFesHandleCardPieceApplyCsReq = 8317,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetExtraCardPieceInfoCsReq)
-    CmdPlanetFesGetExtraCardPieceInfoCsReq = 8325,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesLargeBonusInteractScRsp)
-    CmdPlanetFesLargeBonusInteractScRsp = 8338,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGiveCardPieceCsReq)
-    CmdPlanetFesGiveCardPieceCsReq = 8315,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetExtraCardPieceInfoScRsp)
-    CmdPlanetFesGetExtraCardPieceInfoScRsp = 8295,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesEnterNextBusinessDayCsReq)
-    CmdPlanetFesEnterNextBusinessDayCsReq = 8310,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesChangeCardPieceApplyPermissionCsReq)
-    CmdPlanetFesChangeCardPieceApplyPermissionCsReq = 8307,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesChangeCardPieceApplyPermissionScRsp)
-    CmdPlanetFesChangeCardPieceApplyPermissionScRsp = 8297,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGiveCardPieceScRsp)
-    CmdPlanetFesGiveCardPieceScRsp = 8302,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesEnterNextBusinessDayScRsp)
-    CmdPlanetFesEnterNextBusinessDayScRsp = 8303,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetOfferedCardPieceScRsp)
-    CmdPlanetFesGetOfferedCardPieceScRsp = 8336,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetOfferedCardPieceCsReq)
-    CmdPlanetFesGetOfferedCardPieceCsReq = 8321,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesGetFriendCardPieceScRsp)
-    CmdPlanetFesGetFriendCardPieceScRsp = 8299,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesLargeBonusInteractCsReq)
-    CmdPlanetFesLargeBonusInteractCsReq = 8292,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_GKJBAODJMJG)
+    HANCMJNBBPG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_IHFKFGOIHFP)
+    HANCMJNBBPG_IHFKFGOIHFP = 8340,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_MEJMKHFKJAI)
+    HANCMJNBBPG_MEJMKHFKJAI = 8333,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_EONEBCGPNHG)
+    HANCMJNBBPG_EONEBCGPNHG = 8291,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_JDOHCJKEDJG)
+    HANCMJNBBPG_JDOHCJKEDJG = 8323,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_MIAGFBHIMMF)
+    HANCMJNBBPG_MIAGFBHIMMF = 8310,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_PJPMJDCJDHG)
+    HANCMJNBBPG_PJPMJDCJDHG = 8312,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NAIHPBNNBME)
+    HANCMJNBBPG_NAIHPBNNBME = 8293,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_FFKELEMBADL)
+    HANCMJNBBPG_FFKELEMBADL = 8329,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NJJDIIKNJGF)
+    HANCMJNBBPG_NJJDIIKNJGF = 8298,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_KOCJMFIDGJC)
+    HANCMJNBBPG_KOCJMFIDGJC = 8297,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NOFNLKDCJOF)
+    HANCMJNBBPG_NOFNLKDCJOF = 8296,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_LIPOKDKOMHN)
+    HANCMJNBBPG_LIPOKDKOMHN = 8325,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_IFMAGIDLJKI)
+    HANCMJNBBPG_IFMAGIDLJKI = 8337,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_GGGONJIFBOM)
+    HANCMJNBBPG_GGGONJIFBOM = 8321,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_KONIAKPKELN)
+    HANCMJNBBPG_KONIAKPKELN = 8309,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_APIMFIGEOEE)
+    HANCMJNBBPG_APIMFIGEOEE = 8339,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_DNNMKPFEGLI)
+    HANCMJNBBPG_DNNMKPFEGLI = 8319,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_HBKADBBJNHE)
+    HANCMJNBBPG_HBKADBBJNHE = 8314,
 }
 
 impl ::protobuf::Enum for CmdPlanetFesExtType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for CmdPlanetFesExtType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlanetFesExtType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtTypeNone),
-            8324 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp),
-            8323 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq),
-            8333 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp),
-            8309 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq),
-            8317 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq),
-            8325 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq),
-            8338 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp),
-            8315 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq),
-            8295 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp),
-            8310 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq),
-            8307 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq),
-            8297 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp),
-            8302 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp),
-            8303 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp),
-            8336 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp),
-            8321 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq),
-            8299 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp),
-            8292 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq),
+            0 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG),
+            8340 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP),
+            8333 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI),
+            8291 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG),
+            8323 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG),
+            8310 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF),
+            8312 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG),
+            8293 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME),
+            8329 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL),
+            8298 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF),
+            8297 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC),
+            8296 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF),
+            8325 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN),
+            8337 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI),
+            8321 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM),
+            8309 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN),
+            8339 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE),
+            8319 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI),
+            8314 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlanetFesExtType> {
         match str {
-            "CmdPlanetFesExtTypeNone" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtTypeNone),
-            "CmdPlanetFesApplyCardPieceScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp),
-            "CmdPlanetFesGetFriendCardPieceCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq),
-            "CmdPlanetFesHandleCardPieceApplyScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp),
-            "CmdPlanetFesApplyCardPieceCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq),
-            "CmdPlanetFesHandleCardPieceApplyCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq),
-            "CmdPlanetFesGetExtraCardPieceInfoCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq),
-            "CmdPlanetFesLargeBonusInteractScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp),
-            "CmdPlanetFesGiveCardPieceCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq),
-            "CmdPlanetFesGetExtraCardPieceInfoScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp),
-            "CmdPlanetFesEnterNextBusinessDayCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq),
-            "CmdPlanetFesChangeCardPieceApplyPermissionCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq),
-            "CmdPlanetFesChangeCardPieceApplyPermissionScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp),
-            "CmdPlanetFesGiveCardPieceScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp),
-            "CmdPlanetFesEnterNextBusinessDayScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp),
-            "CmdPlanetFesGetOfferedCardPieceScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp),
-            "CmdPlanetFesGetOfferedCardPieceCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq),
-            "CmdPlanetFesGetFriendCardPieceScRsp" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp),
-            "CmdPlanetFesLargeBonusInteractCsReq" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq),
+            "HANCMJNBBPG_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG),
+            "HANCMJNBBPG_IHFKFGOIHFP" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP),
+            "HANCMJNBBPG_MEJMKHFKJAI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI),
+            "HANCMJNBBPG_EONEBCGPNHG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG),
+            "HANCMJNBBPG_JDOHCJKEDJG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG),
+            "HANCMJNBBPG_MIAGFBHIMMF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF),
+            "HANCMJNBBPG_PJPMJDCJDHG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG),
+            "HANCMJNBBPG_NAIHPBNNBME" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME),
+            "HANCMJNBBPG_FFKELEMBADL" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL),
+            "HANCMJNBBPG_NJJDIIKNJGF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF),
+            "HANCMJNBBPG_KOCJMFIDGJC" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC),
+            "HANCMJNBBPG_NOFNLKDCJOF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF),
+            "HANCMJNBBPG_LIPOKDKOMHN" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN),
+            "HANCMJNBBPG_IFMAGIDLJKI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI),
+            "HANCMJNBBPG_GGGONJIFBOM" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM),
+            "HANCMJNBBPG_KONIAKPKELN" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN),
+            "HANCMJNBBPG_APIMFIGEOEE" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE),
+            "HANCMJNBBPG_DNNMKPFEGLI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI),
+            "HANCMJNBBPG_HBKADBBJNHE" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlanetFesExtType] = &[
-        CmdPlanetFesExtType::CmdPlanetFesExtTypeNone,
-        CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq,
-        CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp,
-        CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq,
+        CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG,
+        CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP,
+        CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI,
+        CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG,
+        CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG,
+        CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF,
+        CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG,
+        CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME,
+        CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL,
+        CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF,
+        CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC,
+        CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF,
+        CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN,
+        CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI,
+        CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM,
+        CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN,
+        CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE,
+        CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI,
+        CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE,
     ];
 }
 
@@ -155,25 +155,25 @@ impl ::protobuf::EnumFull for CmdPlanetFesExtType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlanetFesExtType::CmdPlanetFesExtTypeNone => 0,
-            CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceScRsp => 1,
-            CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceCsReq => 2,
-            CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyScRsp => 3,
-            CmdPlanetFesExtType::CmdPlanetFesApplyCardPieceCsReq => 4,
-            CmdPlanetFesExtType::CmdPlanetFesHandleCardPieceApplyCsReq => 5,
-            CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoCsReq => 6,
-            CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractScRsp => 7,
-            CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceCsReq => 8,
-            CmdPlanetFesExtType::CmdPlanetFesGetExtraCardPieceInfoScRsp => 9,
-            CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayCsReq => 10,
-            CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionCsReq => 11,
-            CmdPlanetFesExtType::CmdPlanetFesChangeCardPieceApplyPermissionScRsp => 12,
-            CmdPlanetFesExtType::CmdPlanetFesGiveCardPieceScRsp => 13,
-            CmdPlanetFesExtType::CmdPlanetFesEnterNextBusinessDayScRsp => 14,
-            CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceScRsp => 15,
-            CmdPlanetFesExtType::CmdPlanetFesGetOfferedCardPieceCsReq => 16,
-            CmdPlanetFesExtType::CmdPlanetFesGetFriendCardPieceScRsp => 17,
-            CmdPlanetFesExtType::CmdPlanetFesLargeBonusInteractCsReq => 18,
+            CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG => 0,
+            CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP => 1,
+            CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI => 2,
+            CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG => 3,
+            CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG => 4,
+            CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF => 5,
+            CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG => 6,
+            CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME => 7,
+            CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL => 8,
+            CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF => 9,
+            CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC => 10,
+            CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF => 11,
+            CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN => 12,
+            CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI => 13,
+            CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM => 14,
+            CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN => 15,
+            CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE => 16,
+            CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI => 17,
+            CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,7 +181,7 @@ impl ::protobuf::EnumFull for CmdPlanetFesExtType {
 
 impl ::std::default::Default for CmdPlanetFesExtType {
     fn default() -> Self {
-        CmdPlanetFesExtType::CmdPlanetFesExtTypeNone
+        CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG
     }
 }
 
@@ -192,22 +192,20 @@ impl CmdPlanetFesExtType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdPlanetFesExtType.proto*\xbc\x06\n\x13CmdPlanetFesExtType\x12\
-    \x1b\n\x17CmdPlanetFesExtTypeNone\x10\0\x12$\n\x1fCmdPlanetFesApplyCardP\
-    ieceScRsp\x10\x84A\x12(\n#CmdPlanetFesGetFriendCardPieceCsReq\x10\x83A\
-    \x12*\n%CmdPlanetFesHandleCardPieceApplyScRsp\x10\x8dA\x12$\n\x1fCmdPlan\
-    etFesApplyCardPieceCsReq\x10\xf5@\x12*\n%CmdPlanetFesHandleCardPieceAppl\
-    yCsReq\x10\xfd@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoCsReq\x10\x85A\
-    \x12(\n#CmdPlanetFesLargeBonusInteractScRsp\x10\x92A\x12#\n\x1eCmdPlanet\
-    FesGiveCardPieceCsReq\x10\xfb@\x12+\n&CmdPlanetFesGetExtraCardPieceInfoS\
-    cRsp\x10\xe7@\x12*\n%CmdPlanetFesEnterNextBusinessDayCsReq\x10\xf6@\x124\
-    \n/CmdPlanetFesChangeCardPieceApplyPermissionCsReq\x10\xf3@\x124\n/CmdPl\
-    anetFesChangeCardPieceApplyPermissionScRsp\x10\xe9@\x12#\n\x1eCmdPlanetF\
-    esGiveCardPieceScRsp\x10\xee@\x12*\n%CmdPlanetFesEnterNextBusinessDayScR\
-    sp\x10\xef@\x12)\n$CmdPlanetFesGetOfferedCardPieceScRsp\x10\x90A\x12)\n$\
-    CmdPlanetFesGetOfferedCardPieceCsReq\x10\x81A\x12(\n#CmdPlanetFesGetFrie\
-    ndCardPieceScRsp\x10\xeb@\x12(\n#CmdPlanetFesLargeBonusInteractCsReq\x10\
-    \xe4@b\x06proto3\
+    \n\x19CmdPlanetFesExtType.proto*\xce\x04\n\x13CmdPlanetFesExtType\x12\
+    \x1b\n\x17HANCMJNBBPG_GKJBAODJMJG\x10\0\x12\x1c\n\x17HANCMJNBBPG_IHFKFGO\
+    IHFP\x10\x94A\x12\x1c\n\x17HANCMJNBBPG_MEJMKHFKJAI\x10\x8dA\x12\x1c\n\
+    \x17HANCMJNBBPG_EONEBCGPNHG\x10\xe3@\x12\x1c\n\x17HANCMJNBBPG_JDOHCJKEDJ\
+    G\x10\x83A\x12\x1c\n\x17HANCMJNBBPG_MIAGFBHIMMF\x10\xf6@\x12\x1c\n\x17HA\
+    NCMJNBBPG_PJPMJDCJDHG\x10\xf8@\x12\x1c\n\x17HANCMJNBBPG_NAIHPBNNBME\x10\
+    \xe5@\x12\x1c\n\x17HANCMJNBBPG_FFKELEMBADL\x10\x89A\x12\x1c\n\x17HANCMJN\
+    BBPG_NJJDIIKNJGF\x10\xea@\x12\x1c\n\x17HANCMJNBBPG_KOCJMFIDGJC\x10\xe9@\
+    \x12\x1c\n\x17HANCMJNBBPG_NOFNLKDCJOF\x10\xe8@\x12\x1c\n\x17HANCMJNBBPG_\
+    LIPOKDKOMHN\x10\x85A\x12\x1c\n\x17HANCMJNBBPG_IFMAGIDLJKI\x10\x91A\x12\
+    \x1c\n\x17HANCMJNBBPG_GGGONJIFBOM\x10\x81A\x12\x1c\n\x17HANCMJNBBPG_KONI\
+    AKPKELN\x10\xf5@\x12\x1c\n\x17HANCMJNBBPG_APIMFIGEOEE\x10\x93A\x12\x1c\n\
+    \x17HANCMJNBBPG_DNNMKPFEGLI\x10\xff@\x12\x1c\n\x17HANCMJNBBPG_HBKADBBJNH\
+    E\x10\xfa@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

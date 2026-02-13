@@ -72,7 +72,7 @@ impl ::protobuf::Message for MissionCustomValueList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
                     self.custom_value_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MissionCustomValueList {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.custom_value_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValueList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMissionCustomValueList.proto\x1a\x18MissionCustomValue.proto\"Y\n\
-    \x16MissionCustomValueList\x12?\n\x11custom_value_list\x18\x03\x20\x03(\
+    \x16MissionCustomValueList\x12?\n\x11custom_value_list\x18\n\x20\x03(\
     \x0b2\x13.MissionCustomValueR\x0fcustomValueListb\x06proto3\
 ";
 

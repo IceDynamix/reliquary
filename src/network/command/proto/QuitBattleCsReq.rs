@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:QuitBattleCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
     // @@protoc_insertion_point(field:QuitBattleCsReq.rebattle_type)
     pub rebattle_type: ::protobuf::EnumOrUnknown<super::RebattleType::RebattleType>,
+    // @@protoc_insertion_point(field:QuitBattleCsReq.stt)
+    pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
     // special fields
     // @@protoc_insertion_point(special_field:QuitBattleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl QuitBattleCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
-            "stt",
-            |m: &QuitBattleCsReq| { &m.stt },
-            |m: &mut QuitBattleCsReq| { &mut m.stt },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rebattle_type",
             |m: &QuitBattleCsReq| { &m.rebattle_type },
             |m: &mut QuitBattleCsReq| { &mut m.rebattle_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
+            "stt",
+            |m: &QuitBattleCsReq| { &m.stt },
+            |m: &mut QuitBattleCsReq| { &mut m.stt },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitBattleCsReq>(
             "QuitBattleCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
-                },
-                112 => {
+                8 => {
                     self.rebattle_type = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for QuitBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.rebattle_type.value());
+        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(14, self.rebattle_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.rebattle_type != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.rebattle_type))?;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for QuitBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.stt.clear();
         self.rebattle_type = ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE);
+        self.stt.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitBattleCsReq {
         static instance: QuitBattleCsReq = QuitBattleCsReq {
-            stt: ::protobuf::MessageField::none(),
             rebattle_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            stt: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for QuitBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15QuitBattleCsReq.proto\x1a\x16BattleStatistics.proto\x1a\x12Rebattl\
-    eType.proto\"j\n\x0fQuitBattleCsReq\x12#\n\x03stt\x18\x0f\x20\x01(\x0b2\
-    \x11.BattleStatisticsR\x03stt\x122\n\rrebattle_type\x18\x0e\x20\x01(\x0e\
-    2\r.RebattleTypeR\x0crebattleTypeb\x06proto3\
+    eType.proto\"j\n\x0fQuitBattleCsReq\x122\n\rrebattle_type\x18\x01\x20\
+    \x01(\x0e2\r.RebattleTypeR\x0crebattleType\x12#\n\x03stt\x18\x0b\x20\x01\
+    (\x0b2\x11.BattleStatisticsR\x03sttb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

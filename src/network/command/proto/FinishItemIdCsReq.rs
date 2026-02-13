@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                112 => {
                     self.item_id = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
                     self.text_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FinishItemIdCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
         }
         if self.text_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.text_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.text_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FinishItemIdCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(7, self.item_id)?;
+            os.write_uint32(14, self.item_id)?;
         }
         if self.text_id != 0 {
-            os.write_uint32(8, self.text_id)?;
+            os.write_uint32(4, self.text_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishItemIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17FinishItemIdCsReq.proto\"E\n\x11FinishItemIdCsReq\x12\x17\n\x07ite\
-    m_id\x18\x07\x20\x01(\rR\x06itemId\x12\x17\n\x07text_id\x18\x08\x20\x01(\
+    m_id\x18\x0e\x20\x01(\rR\x06itemId\x12\x17\n\x07text_id\x18\x04\x20\x01(\
     \rR\x06textIdb\x06proto3\
 ";
 

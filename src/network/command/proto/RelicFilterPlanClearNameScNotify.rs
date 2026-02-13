@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicFilterPlanClearNameScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RelicFilterPlanClearNameScNotify.max_times)
-    pub max_times: u32,
+    // @@protoc_insertion_point(field:RelicFilterPlanClearNameScNotify.FIGIGJNNGDI)
+    pub FIGIGJNNGDI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicFilterPlanClearNameScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RelicFilterPlanClearNameScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_times",
-            |m: &RelicFilterPlanClearNameScNotify| { &m.max_times },
-            |m: &mut RelicFilterPlanClearNameScNotify| { &mut m.max_times },
+            "FIGIGJNNGDI",
+            |m: &RelicFilterPlanClearNameScNotify| { &m.FIGIGJNNGDI },
+            |m: &mut RelicFilterPlanClearNameScNotify| { &mut m.FIGIGJNNGDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicFilterPlanClearNameScNotify>(
             "RelicFilterPlanClearNameScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RelicFilterPlanClearNameScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.max_times = is.read_uint32()?;
+                80 => {
+                    self.FIGIGJNNGDI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RelicFilterPlanClearNameScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.max_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.max_times);
+        if self.FIGIGJNNGDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FIGIGJNNGDI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RelicFilterPlanClearNameScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.max_times != 0 {
-            os.write_uint32(8, self.max_times)?;
+        if self.FIGIGJNNGDI != 0 {
+            os.write_uint32(10, self.FIGIGJNNGDI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RelicFilterPlanClearNameScNotify {
     }
 
     fn clear(&mut self) {
-        self.max_times = 0;
+        self.FIGIGJNNGDI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicFilterPlanClearNameScNotify {
         static instance: RelicFilterPlanClearNameScNotify = RelicFilterPlanClearNameScNotify {
-            max_times: 0,
+            FIGIGJNNGDI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for RelicFilterPlanClearNameScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&RelicFilterPlanClearNameScNotify.proto\"?\n\x20RelicFilterPlanClearNa\
-    meScNotify\x12\x1b\n\tmax_times\x18\x08\x20\x01(\rR\x08maxTimesb\x06prot\
-    o3\
+    \n&RelicFilterPlanClearNameScNotify.proto\"D\n\x20RelicFilterPlanClearNa\
+    meScNotify\x12\x20\n\x0bFIGIGJNNGDI\x18\n\x20\x01(\rR\x0bFIGIGJNNGDIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.reason)
-    pub reason: u32,
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.IINLAPPNAGB)
-    pub IINLAPPNAGB: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.ACMECHLPHIL)
+    pub ACMECHLPHIL: bool,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.reason)
+    pub reason: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetFriendMarkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl SetFriendMarkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &SetFriendMarkCsReq| { &m.reason },
-            |m: &mut SetFriendMarkCsReq| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IINLAPPNAGB",
-            |m: &SetFriendMarkCsReq| { &m.IINLAPPNAGB },
-            |m: &mut SetFriendMarkCsReq| { &mut m.IINLAPPNAGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &SetFriendMarkCsReq| { &m.uid },
             |m: &mut SetFriendMarkCsReq| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ACMECHLPHIL",
+            |m: &SetFriendMarkCsReq| { &m.ACMECHLPHIL },
+            |m: &mut SetFriendMarkCsReq| { &mut m.ACMECHLPHIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &SetFriendMarkCsReq| { &m.reason },
+            |m: &mut SetFriendMarkCsReq| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetFriendMarkCsReq>(
             "SetFriendMarkCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.reason = is.read_uint32()?;
-                },
-                112 => {
-                    self.IINLAPPNAGB = is.read_bool()?;
-                },
-                56 => {
+                104 => {
                     self.uid = is.read_uint32()?;
+                },
+                64 => {
+                    self.ACMECHLPHIL = is.read_bool()?;
+                },
+                120 => {
+                    self.reason = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.reason);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
         }
-        if self.IINLAPPNAGB != false {
+        if self.ACMECHLPHIL != false {
             my_size += 1 + 1;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.uid);
+        if self.reason != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.reason != 0 {
-            os.write_uint32(8, self.reason)?;
-        }
-        if self.IINLAPPNAGB != false {
-            os.write_bool(14, self.IINLAPPNAGB)?;
-        }
         if self.uid != 0 {
-            os.write_uint32(7, self.uid)?;
+            os.write_uint32(13, self.uid)?;
+        }
+        if self.ACMECHLPHIL != false {
+            os.write_bool(8, self.ACMECHLPHIL)?;
+        }
+        if self.reason != 0 {
+            os.write_uint32(15, self.reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn clear(&mut self) {
-        self.reason = 0;
-        self.IINLAPPNAGB = false;
         self.uid = 0;
+        self.ACMECHLPHIL = false;
+        self.reason = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
-            reason: 0,
-            IINLAPPNAGB: false,
             uid: 0,
+            ACMECHLPHIL: false,
+            reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x16\n\x06r\
-    eason\x18\x08\x20\x01(\rR\x06reason\x12\x20\n\x0bIINLAPPNAGB\x18\x0e\x20\
-    \x01(\x08R\x0bIINLAPPNAGB\x12\x10\n\x03uid\x18\x07\x20\x01(\rR\x03uidb\
+    \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x10\n\x03u\
+    id\x18\r\x20\x01(\rR\x03uid\x12\x20\n\x0bACMECHLPHIL\x18\x08\x20\x01(\
+    \x08R\x0bACMECHLPHIL\x12\x16\n\x06reason\x18\x0f\x20\x01(\rR\x06reasonb\
     \x06proto3\
 ";
 

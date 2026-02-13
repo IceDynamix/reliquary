@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdDrinkMakerType)
 pub enum CmdDrinkMakerType {
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerTypeNone)
-    CmdDrinkMakerTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersGetDataScRsp)
-    CmdDrinkMakerCheersGetDataScRsp = 6986,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdGetDrinkMakerDataCsReq)
-    CmdGetDrinkMakerDataCsReq = 6994,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersMakeDrinkScRsp)
-    CmdDrinkMakerCheersMakeDrinkScRsp = 6983,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerUpdateTipsNotify)
-    CmdDrinkMakerUpdateTipsNotify = 6981,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersEnterNextGroupCsReq)
-    CmdDrinkMakerCheersEnterNextGroupCsReq = 6987,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerChallengeScRsp)
-    CmdDrinkMakerChallengeScRsp = 6989,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerChallengeCsReq)
-    CmdDrinkMakerChallengeCsReq = 6990,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkCsReq)
-    CmdMakeMissionDrinkCsReq = 6995,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceScRsp)
-    CmdEndDrinkMakerSequenceScRsp = 6984,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdGetDrinkMakerDataScRsp)
-    CmdGetDrinkMakerDataScRsp = 7000,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersMakeDrinkCsReq)
-    CmdDrinkMakerCheersMakeDrinkCsReq = 6991,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeDrinkCsReq)
-    CmdMakeDrinkCsReq = 6997,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeMissionDrinkScRsp)
-    CmdMakeMissionDrinkScRsp = 6993,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerDayEndScNotify)
-    CmdDrinkMakerDayEndScNotify = 6999,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersGetDataCsReq)
-    CmdDrinkMakerCheersGetDataCsReq = 6985,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdEndDrinkMakerSequenceCsReq)
-    CmdEndDrinkMakerSequenceCsReq = 6992,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdDrinkMakerCheersEnterNextGroupScRsp)
-    CmdDrinkMakerCheersEnterNextGroupScRsp = 6982,
-    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.CmdMakeDrinkScRsp)
-    CmdMakeDrinkScRsp = 6998,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_GKJBAODJMJG)
+    LJHFHMBDLOF_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_KOKDNAHKIFO)
+    LJHFHMBDLOF_KOKDNAHKIFO = 6986,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_CJMDBCIIOIO)
+    LJHFHMBDLOF_CJMDBCIIOIO = 6998,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_DJKCPKMEBFG)
+    LJHFHMBDLOF_DJKCPKMEBFG = 6987,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_KDOENJFLCCF)
+    LJHFHMBDLOF_KDOENJFLCCF = 6992,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_DIKFOJDKDPP)
+    LJHFHMBDLOF_DIKFOJDKDPP = 6990,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_JNBMPPNDKNN)
+    LJHFHMBDLOF_JNBMPPNDKNN = 6999,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_HNKEPJLJBMO)
+    LJHFHMBDLOF_HNKEPJLJBMO = 6984,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_ONFNDMGIGNB)
+    LJHFHMBDLOF_ONFNDMGIGNB = 6988,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_HGIDKKGHHLJ)
+    LJHFHMBDLOF_HGIDKKGHHLJ = 7000,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_FAIHHBFPAJL)
+    LJHFHMBDLOF_FAIHHBFPAJL = 6981,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_LHLINGHKDDB)
+    LJHFHMBDLOF_LHLINGHKDDB = 6993,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_EIIIDJAJPOA)
+    LJHFHMBDLOF_EIIIDJAJPOA = 6989,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_JFCLJNLBMCO)
+    LJHFHMBDLOF_JFCLJNLBMCO = 6995,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_MBGBBKNHGMA)
+    LJHFHMBDLOF_MBGBBKNHGMA = 6991,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_NPKCJLOMPJF)
+    LJHFHMBDLOF_NPKCJLOMPJF = 6996,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_HDAAAHOPMHL)
+    LJHFHMBDLOF_HDAAAHOPMHL = 6983,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_POAICGBNPOI)
+    LJHFHMBDLOF_POAICGBNPOI = 6997,
+    // @@protoc_insertion_point(enum_value:CmdDrinkMakerType.LJHFHMBDLOF_JGPIIPNONCF)
+    LJHFHMBDLOF_JGPIIPNONCF = 6985,
 }
 
 impl ::protobuf::Enum for CmdDrinkMakerType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for CmdDrinkMakerType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdDrinkMakerType> {
         match value {
-            0 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerTypeNone),
-            6986 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersGetDataScRsp),
-            6994 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq),
-            6983 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkScRsp),
-            6981 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
-            6987 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupCsReq),
-            6989 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp),
-            6990 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
-            6995 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
-            6984 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
-            7000 => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
-            6991 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkCsReq),
-            6997 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
-            6993 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
-            6999 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
-            6985 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersGetDataCsReq),
-            6992 => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
-            6982 => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupScRsp),
-            6998 => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkScRsp),
+            0 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_GKJBAODJMJG),
+            6986 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_KOKDNAHKIFO),
+            6998 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_CJMDBCIIOIO),
+            6987 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_DJKCPKMEBFG),
+            6992 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_KDOENJFLCCF),
+            6990 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_DIKFOJDKDPP),
+            6999 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JNBMPPNDKNN),
+            6984 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HNKEPJLJBMO),
+            6988 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_ONFNDMGIGNB),
+            7000 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HGIDKKGHHLJ),
+            6981 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_FAIHHBFPAJL),
+            6993 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_LHLINGHKDDB),
+            6989 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_EIIIDJAJPOA),
+            6995 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JFCLJNLBMCO),
+            6991 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_MBGBBKNHGMA),
+            6996 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_NPKCJLOMPJF),
+            6983 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HDAAAHOPMHL),
+            6997 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_POAICGBNPOI),
+            6985 => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JGPIIPNONCF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdDrinkMakerType> {
         match str {
-            "CmdDrinkMakerTypeNone" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerTypeNone),
-            "CmdDrinkMakerCheersGetDataScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersGetDataScRsp),
-            "CmdGetDrinkMakerDataCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq),
-            "CmdDrinkMakerCheersMakeDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkScRsp),
-            "CmdDrinkMakerUpdateTipsNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify),
-            "CmdDrinkMakerCheersEnterNextGroupCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupCsReq),
-            "CmdDrinkMakerChallengeScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp),
-            "CmdDrinkMakerChallengeCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq),
-            "CmdMakeMissionDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkCsReq),
-            "CmdEndDrinkMakerSequenceScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp),
-            "CmdGetDrinkMakerDataScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp),
-            "CmdDrinkMakerCheersMakeDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkCsReq),
-            "CmdMakeDrinkCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkCsReq),
-            "CmdMakeMissionDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeMissionDrinkScRsp),
-            "CmdDrinkMakerDayEndScNotify" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify),
-            "CmdDrinkMakerCheersGetDataCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersGetDataCsReq),
-            "CmdEndDrinkMakerSequenceCsReq" => ::std::option::Option::Some(CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq),
-            "CmdDrinkMakerCheersEnterNextGroupScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupScRsp),
-            "CmdMakeDrinkScRsp" => ::std::option::Option::Some(CmdDrinkMakerType::CmdMakeDrinkScRsp),
+            "LJHFHMBDLOF_GKJBAODJMJG" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_GKJBAODJMJG),
+            "LJHFHMBDLOF_KOKDNAHKIFO" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_KOKDNAHKIFO),
+            "LJHFHMBDLOF_CJMDBCIIOIO" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_CJMDBCIIOIO),
+            "LJHFHMBDLOF_DJKCPKMEBFG" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_DJKCPKMEBFG),
+            "LJHFHMBDLOF_KDOENJFLCCF" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_KDOENJFLCCF),
+            "LJHFHMBDLOF_DIKFOJDKDPP" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_DIKFOJDKDPP),
+            "LJHFHMBDLOF_JNBMPPNDKNN" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JNBMPPNDKNN),
+            "LJHFHMBDLOF_HNKEPJLJBMO" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HNKEPJLJBMO),
+            "LJHFHMBDLOF_ONFNDMGIGNB" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_ONFNDMGIGNB),
+            "LJHFHMBDLOF_HGIDKKGHHLJ" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HGIDKKGHHLJ),
+            "LJHFHMBDLOF_FAIHHBFPAJL" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_FAIHHBFPAJL),
+            "LJHFHMBDLOF_LHLINGHKDDB" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_LHLINGHKDDB),
+            "LJHFHMBDLOF_EIIIDJAJPOA" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_EIIIDJAJPOA),
+            "LJHFHMBDLOF_JFCLJNLBMCO" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JFCLJNLBMCO),
+            "LJHFHMBDLOF_MBGBBKNHGMA" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_MBGBBKNHGMA),
+            "LJHFHMBDLOF_NPKCJLOMPJF" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_NPKCJLOMPJF),
+            "LJHFHMBDLOF_HDAAAHOPMHL" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_HDAAAHOPMHL),
+            "LJHFHMBDLOF_POAICGBNPOI" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_POAICGBNPOI),
+            "LJHFHMBDLOF_JGPIIPNONCF" => ::std::option::Option::Some(CmdDrinkMakerType::LJHFHMBDLOF_JGPIIPNONCF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDrinkMakerType] = &[
-        CmdDrinkMakerType::CmdDrinkMakerTypeNone,
-        CmdDrinkMakerType::CmdDrinkMakerCheersGetDataScRsp,
-        CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq,
-        CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkScRsp,
-        CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify,
-        CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupCsReq,
-        CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp,
-        CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq,
-        CmdDrinkMakerType::CmdMakeMissionDrinkCsReq,
-        CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp,
-        CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp,
-        CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkCsReq,
-        CmdDrinkMakerType::CmdMakeDrinkCsReq,
-        CmdDrinkMakerType::CmdMakeMissionDrinkScRsp,
-        CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify,
-        CmdDrinkMakerType::CmdDrinkMakerCheersGetDataCsReq,
-        CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq,
-        CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupScRsp,
-        CmdDrinkMakerType::CmdMakeDrinkScRsp,
+        CmdDrinkMakerType::LJHFHMBDLOF_GKJBAODJMJG,
+        CmdDrinkMakerType::LJHFHMBDLOF_KOKDNAHKIFO,
+        CmdDrinkMakerType::LJHFHMBDLOF_CJMDBCIIOIO,
+        CmdDrinkMakerType::LJHFHMBDLOF_DJKCPKMEBFG,
+        CmdDrinkMakerType::LJHFHMBDLOF_KDOENJFLCCF,
+        CmdDrinkMakerType::LJHFHMBDLOF_DIKFOJDKDPP,
+        CmdDrinkMakerType::LJHFHMBDLOF_JNBMPPNDKNN,
+        CmdDrinkMakerType::LJHFHMBDLOF_HNKEPJLJBMO,
+        CmdDrinkMakerType::LJHFHMBDLOF_ONFNDMGIGNB,
+        CmdDrinkMakerType::LJHFHMBDLOF_HGIDKKGHHLJ,
+        CmdDrinkMakerType::LJHFHMBDLOF_FAIHHBFPAJL,
+        CmdDrinkMakerType::LJHFHMBDLOF_LHLINGHKDDB,
+        CmdDrinkMakerType::LJHFHMBDLOF_EIIIDJAJPOA,
+        CmdDrinkMakerType::LJHFHMBDLOF_JFCLJNLBMCO,
+        CmdDrinkMakerType::LJHFHMBDLOF_MBGBBKNHGMA,
+        CmdDrinkMakerType::LJHFHMBDLOF_NPKCJLOMPJF,
+        CmdDrinkMakerType::LJHFHMBDLOF_HDAAAHOPMHL,
+        CmdDrinkMakerType::LJHFHMBDLOF_POAICGBNPOI,
+        CmdDrinkMakerType::LJHFHMBDLOF_JGPIIPNONCF,
     ];
 }
 
@@ -155,25 +155,25 @@ impl ::protobuf::EnumFull for CmdDrinkMakerType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdDrinkMakerType::CmdDrinkMakerTypeNone => 0,
-            CmdDrinkMakerType::CmdDrinkMakerCheersGetDataScRsp => 1,
-            CmdDrinkMakerType::CmdGetDrinkMakerDataCsReq => 2,
-            CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkScRsp => 3,
-            CmdDrinkMakerType::CmdDrinkMakerUpdateTipsNotify => 4,
-            CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupCsReq => 5,
-            CmdDrinkMakerType::CmdDrinkMakerChallengeScRsp => 6,
-            CmdDrinkMakerType::CmdDrinkMakerChallengeCsReq => 7,
-            CmdDrinkMakerType::CmdMakeMissionDrinkCsReq => 8,
-            CmdDrinkMakerType::CmdEndDrinkMakerSequenceScRsp => 9,
-            CmdDrinkMakerType::CmdGetDrinkMakerDataScRsp => 10,
-            CmdDrinkMakerType::CmdDrinkMakerCheersMakeDrinkCsReq => 11,
-            CmdDrinkMakerType::CmdMakeDrinkCsReq => 12,
-            CmdDrinkMakerType::CmdMakeMissionDrinkScRsp => 13,
-            CmdDrinkMakerType::CmdDrinkMakerDayEndScNotify => 14,
-            CmdDrinkMakerType::CmdDrinkMakerCheersGetDataCsReq => 15,
-            CmdDrinkMakerType::CmdEndDrinkMakerSequenceCsReq => 16,
-            CmdDrinkMakerType::CmdDrinkMakerCheersEnterNextGroupScRsp => 17,
-            CmdDrinkMakerType::CmdMakeDrinkScRsp => 18,
+            CmdDrinkMakerType::LJHFHMBDLOF_GKJBAODJMJG => 0,
+            CmdDrinkMakerType::LJHFHMBDLOF_KOKDNAHKIFO => 1,
+            CmdDrinkMakerType::LJHFHMBDLOF_CJMDBCIIOIO => 2,
+            CmdDrinkMakerType::LJHFHMBDLOF_DJKCPKMEBFG => 3,
+            CmdDrinkMakerType::LJHFHMBDLOF_KDOENJFLCCF => 4,
+            CmdDrinkMakerType::LJHFHMBDLOF_DIKFOJDKDPP => 5,
+            CmdDrinkMakerType::LJHFHMBDLOF_JNBMPPNDKNN => 6,
+            CmdDrinkMakerType::LJHFHMBDLOF_HNKEPJLJBMO => 7,
+            CmdDrinkMakerType::LJHFHMBDLOF_ONFNDMGIGNB => 8,
+            CmdDrinkMakerType::LJHFHMBDLOF_HGIDKKGHHLJ => 9,
+            CmdDrinkMakerType::LJHFHMBDLOF_FAIHHBFPAJL => 10,
+            CmdDrinkMakerType::LJHFHMBDLOF_LHLINGHKDDB => 11,
+            CmdDrinkMakerType::LJHFHMBDLOF_EIIIDJAJPOA => 12,
+            CmdDrinkMakerType::LJHFHMBDLOF_JFCLJNLBMCO => 13,
+            CmdDrinkMakerType::LJHFHMBDLOF_MBGBBKNHGMA => 14,
+            CmdDrinkMakerType::LJHFHMBDLOF_NPKCJLOMPJF => 15,
+            CmdDrinkMakerType::LJHFHMBDLOF_HDAAAHOPMHL => 16,
+            CmdDrinkMakerType::LJHFHMBDLOF_POAICGBNPOI => 17,
+            CmdDrinkMakerType::LJHFHMBDLOF_JGPIIPNONCF => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,7 +181,7 @@ impl ::protobuf::EnumFull for CmdDrinkMakerType {
 
 impl ::std::default::Default for CmdDrinkMakerType {
     fn default() -> Self {
-        CmdDrinkMakerType::CmdDrinkMakerTypeNone
+        CmdDrinkMakerType::LJHFHMBDLOF_GKJBAODJMJG
     }
 }
 
@@ -192,20 +192,20 @@ impl CmdDrinkMakerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdDrinkMakerType.proto*\xa4\x05\n\x11CmdDrinkMakerType\x12\x19\n\
-    \x15CmdDrinkMakerTypeNone\x10\0\x12$\n\x1fCmdDrinkMakerCheersGetDataScRs\
-    p\x10\xca6\x12\x1e\n\x19CmdGetDrinkMakerDataCsReq\x10\xd26\x12&\n!CmdDri\
-    nkMakerCheersMakeDrinkScRsp\x10\xc76\x12\"\n\x1dCmdDrinkMakerUpdateTipsN\
-    otify\x10\xc56\x12+\n&CmdDrinkMakerCheersEnterNextGroupCsReq\x10\xcb6\
-    \x12\x20\n\x1bCmdDrinkMakerChallengeScRsp\x10\xcd6\x12\x20\n\x1bCmdDrink\
-    MakerChallengeCsReq\x10\xce6\x12\x1d\n\x18CmdMakeMissionDrinkCsReq\x10\
-    \xd36\x12\"\n\x1dCmdEndDrinkMakerSequenceScRsp\x10\xc86\x12\x1e\n\x19Cmd\
-    GetDrinkMakerDataScRsp\x10\xd86\x12&\n!CmdDrinkMakerCheersMakeDrinkCsReq\
-    \x10\xcf6\x12\x16\n\x11CmdMakeDrinkCsReq\x10\xd56\x12\x1d\n\x18CmdMakeMi\
-    ssionDrinkScRsp\x10\xd16\x12\x20\n\x1bCmdDrinkMakerDayEndScNotify\x10\
-    \xd76\x12$\n\x1fCmdDrinkMakerCheersGetDataCsReq\x10\xc96\x12\"\n\x1dCmdE\
-    ndDrinkMakerSequenceCsReq\x10\xd06\x12+\n&CmdDrinkMakerCheersEnterNextGr\
-    oupScRsp\x10\xc66\x12\x16\n\x11CmdMakeDrinkScRsp\x10\xd66b\x06proto3\
+    \n\x17CmdDrinkMakerType.proto*\xcc\x04\n\x11CmdDrinkMakerType\x12\x1b\n\
+    \x17LJHFHMBDLOF_GKJBAODJMJG\x10\0\x12\x1c\n\x17LJHFHMBDLOF_KOKDNAHKIFO\
+    \x10\xca6\x12\x1c\n\x17LJHFHMBDLOF_CJMDBCIIOIO\x10\xd66\x12\x1c\n\x17LJH\
+    FHMBDLOF_DJKCPKMEBFG\x10\xcb6\x12\x1c\n\x17LJHFHMBDLOF_KDOENJFLCCF\x10\
+    \xd06\x12\x1c\n\x17LJHFHMBDLOF_DIKFOJDKDPP\x10\xce6\x12\x1c\n\x17LJHFHMB\
+    DLOF_JNBMPPNDKNN\x10\xd76\x12\x1c\n\x17LJHFHMBDLOF_HNKEPJLJBMO\x10\xc86\
+    \x12\x1c\n\x17LJHFHMBDLOF_ONFNDMGIGNB\x10\xcc6\x12\x1c\n\x17LJHFHMBDLOF_\
+    HGIDKKGHHLJ\x10\xd86\x12\x1c\n\x17LJHFHMBDLOF_FAIHHBFPAJL\x10\xc56\x12\
+    \x1c\n\x17LJHFHMBDLOF_LHLINGHKDDB\x10\xd16\x12\x1c\n\x17LJHFHMBDLOF_EIII\
+    DJAJPOA\x10\xcd6\x12\x1c\n\x17LJHFHMBDLOF_JFCLJNLBMCO\x10\xd36\x12\x1c\n\
+    \x17LJHFHMBDLOF_MBGBBKNHGMA\x10\xcf6\x12\x1c\n\x17LJHFHMBDLOF_NPKCJLOMPJ\
+    F\x10\xd46\x12\x1c\n\x17LJHFHMBDLOF_HDAAAHOPMHL\x10\xc76\x12\x1c\n\x17LJ\
+    HFHMBDLOF_POAICGBNPOI\x10\xd56\x12\x1c\n\x17LJHFHMBDLOF_JGPIIPNONCF\x10\
+    \xc96b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,16 +86,16 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                34 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                32 => {
+                112 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -111,12 +111,12 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for SetAssistAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+            os.write_uint32(4, self.avatar_id)?;
         }
-        os.write_repeated_packed_uint32(4, &self.avatar_id_list)?;
+        os.write_repeated_packed_uint32(14, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for SetAssistAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSetAssistAvatarScRsp.proto\"s\n\x14SetAssistAvatarScRsp\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\r\
-    \x20\x01(\rR\x08avatarId\x12$\n\x0eavatar_id_list\x18\x04\x20\x03(\rR\
+    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\x04\
+    \x20\x01(\rR\x08avatarId\x12$\n\x0eavatar_id_list\x18\x0e\x20\x03(\rR\
     \x0cavatarIdListb\x06proto3\
 ";
 

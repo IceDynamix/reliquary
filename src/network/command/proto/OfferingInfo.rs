@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OfferingInfo {
     // message fields
-    // @@protoc_insertion_point(field:OfferingInfo.has_taken_reward_id_list)
-    pub has_taken_reward_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OfferingInfo.offering_level)
     pub offering_level: u32,
+    // @@protoc_insertion_point(field:OfferingInfo.has_taken_reward_id_list)
+    pub has_taken_reward_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OfferingInfo.offering_state)
     pub offering_state: ::protobuf::EnumOrUnknown<super::OfferingState::OfferingState>,
     // @@protoc_insertion_point(field:OfferingInfo.total_exp)
@@ -59,15 +59,15 @@ impl OfferingInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "has_taken_reward_id_list",
-            |m: &OfferingInfo| { &m.has_taken_reward_id_list },
-            |m: &mut OfferingInfo| { &mut m.has_taken_reward_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "offering_level",
             |m: &OfferingInfo| { &m.offering_level },
             |m: &mut OfferingInfo| { &mut m.offering_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "has_taken_reward_id_list",
+            |m: &OfferingInfo| { &m.has_taken_reward_id_list },
+            |m: &mut OfferingInfo| { &mut m.has_taken_reward_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "offering_state",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for OfferingInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                120 => {
+                    self.offering_level = is.read_uint32()?;
+                },
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.has_taken_reward_id_list)?;
                 },
-                64 => {
-                    self.has_taken_reward_id_list.push(is.read_uint32()?);
-                },
                 72 => {
-                    self.offering_level = is.read_uint32()?;
+                    self.has_taken_reward_id_list.push(is.read_uint32()?);
                 },
                 48 => {
                     self.offering_state = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                96 => {
                     self.total_exp = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.offering_id = is.read_uint32()?;
                 },
-                24 => {
+                64 => {
                     self.level_exp = is.read_uint32()?;
                 },
                 tag => {
@@ -140,21 +140,21 @@ impl ::protobuf::Message for OfferingInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.has_taken_reward_id_list);
         if self.offering_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.offering_level);
+            my_size += ::protobuf::rt::uint32_size(15, self.offering_level);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.has_taken_reward_id_list);
         if self.offering_state != ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE) {
             my_size += ::protobuf::rt::int32_size(6, self.offering_state.value());
         }
         if self.total_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.total_exp);
+            my_size += ::protobuf::rt::uint32_size(12, self.total_exp);
         }
         if self.offering_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.offering_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.offering_id);
         }
         if self.level_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level_exp);
+            my_size += ::protobuf::rt::uint32_size(8, self.level_exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for OfferingInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.has_taken_reward_id_list)?;
         if self.offering_level != 0 {
-            os.write_uint32(9, self.offering_level)?;
+            os.write_uint32(15, self.offering_level)?;
         }
+        os.write_repeated_packed_uint32(9, &self.has_taken_reward_id_list)?;
         if self.offering_state != ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.offering_state))?;
         }
         if self.total_exp != 0 {
-            os.write_uint32(5, self.total_exp)?;
+            os.write_uint32(12, self.total_exp)?;
         }
         if self.offering_id != 0 {
-            os.write_uint32(10, self.offering_id)?;
+            os.write_uint32(13, self.offering_id)?;
         }
         if self.level_exp != 0 {
-            os.write_uint32(3, self.level_exp)?;
+            os.write_uint32(8, self.level_exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,8 +195,8 @@ impl ::protobuf::Message for OfferingInfo {
     }
 
     fn clear(&mut self) {
-        self.has_taken_reward_id_list.clear();
         self.offering_level = 0;
+        self.has_taken_reward_id_list.clear();
         self.offering_state = ::protobuf::EnumOrUnknown::new(super::OfferingState::OfferingState::OFFERING_STATE_NONE);
         self.total_exp = 0;
         self.offering_id = 0;
@@ -206,8 +206,8 @@ impl ::protobuf::Message for OfferingInfo {
 
     fn default_instance() -> &'static OfferingInfo {
         static instance: OfferingInfo = OfferingInfo {
-            has_taken_reward_id_list: ::std::vec::Vec::new(),
             offering_level: 0,
+            has_taken_reward_id_list: ::std::vec::Vec::new(),
             offering_state: ::protobuf::EnumOrUnknown::from_i32(0),
             total_exp: 0,
             offering_id: 0,
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for OfferingInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12OfferingInfo.proto\x1a\x13OfferingState.proto\"\xff\x01\n\x0cOffer\
-    ingInfo\x126\n\x18has_taken_reward_id_list\x18\x08\x20\x03(\rR\x14hasTak\
-    enRewardIdList\x12%\n\x0eoffering_level\x18\t\x20\x01(\rR\rofferingLevel\
+    ingInfo\x12%\n\x0eoffering_level\x18\x0f\x20\x01(\rR\rofferingLevel\x126\
+    \n\x18has_taken_reward_id_list\x18\t\x20\x03(\rR\x14hasTakenRewardIdList\
     \x125\n\x0eoffering_state\x18\x06\x20\x01(\x0e2\x0e.OfferingStateR\roffe\
-    ringState\x12\x1b\n\ttotal_exp\x18\x05\x20\x01(\rR\x08totalExp\x12\x1f\n\
-    \x0boffering_id\x18\n\x20\x01(\rR\nofferingId\x12\x1b\n\tlevel_exp\x18\
-    \x03\x20\x01(\rR\x08levelExpb\x06proto3\
+    ringState\x12\x1b\n\ttotal_exp\x18\x0c\x20\x01(\rR\x08totalExp\x12\x1f\n\
+    \x0boffering_id\x18\r\x20\x01(\rR\nofferingId\x12\x1b\n\tlevel_exp\x18\
+    \x08\x20\x01(\rR\x08levelExpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

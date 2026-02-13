@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightType)
 pub enum CmdFightType {
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightTypeNone)
-    CmdFightTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightSessionStopScNotify)
-    CmdFightSessionStopScNotify = 30017,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralCsReq)
-    CmdFightGeneralCsReq = 30038,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralScRsp)
-    CmdFightGeneralScRsp = 30020,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatCsReq)
-    CmdFightHeartBeatCsReq = 30047,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightEnterCsReq)
-    CmdFightEnterCsReq = 30091,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightHeartBeatScRsp)
-    CmdFightHeartBeatScRsp = 30011,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightKickOutScNotify)
-    CmdFightKickOutScNotify = 30095,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightGeneralScNotify)
-    CmdFightGeneralScNotify = 30051,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightLeaveScNotify)
-    CmdFightLeaveScNotify = 30089,
-    // @@protoc_insertion_point(enum_value:CmdFightType.CmdFightEnterScRsp)
-    CmdFightEnterScRsp = 30009,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_GKJBAODJMJG)
+    LCLKCKNIMJM_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_CHNCPDCCNKF)
+    LCLKCKNIMJM_CHNCPDCCNKF = 30028,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_KOIPFBPJGID)
+    LCLKCKNIMJM_KOIPFBPJGID = 30026,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_HHGADBIOHEE)
+    LCLKCKNIMJM_HHGADBIOHEE = 30062,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_JBKMCCPHJDN)
+    LCLKCKNIMJM_JBKMCCPHJDN = 30075,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_PCAOHAEDHOP)
+    LCLKCKNIMJM_PCAOHAEDHOP = 30038,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_JNAHAINGPBD)
+    LCLKCKNIMJM_JNAHAINGPBD = 30057,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_KPCGLAOKOBM)
+    LCLKCKNIMJM_KPCGLAOKOBM = 30055,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_IMGFCNCFKKM)
+    LCLKCKNIMJM_IMGFCNCFKKM = 30005,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_BNKDNNFFDCI)
+    LCLKCKNIMJM_BNKDNNFFDCI = 30047,
+    // @@protoc_insertion_point(enum_value:CmdFightType.LCLKCKNIMJM_PFCDAPGLABB)
+    LCLKCKNIMJM_PFCDAPGLABB = 30020,
 }
 
 impl ::protobuf::Enum for CmdFightType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for CmdFightType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightType::CmdFightTypeNone),
-            30017 => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
-            30038 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralCsReq),
-            30020 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScRsp),
-            30047 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
-            30091 => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
-            30011 => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
-            30095 => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
-            30051 => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScNotify),
-            30089 => ::std::option::Option::Some(CmdFightType::CmdFightLeaveScNotify),
-            30009 => ::std::option::Option::Some(CmdFightType::CmdFightEnterScRsp),
+            0 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_GKJBAODJMJG),
+            30028 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_CHNCPDCCNKF),
+            30026 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_KOIPFBPJGID),
+            30062 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_HHGADBIOHEE),
+            30075 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_JBKMCCPHJDN),
+            30038 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_PCAOHAEDHOP),
+            30057 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_JNAHAINGPBD),
+            30055 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_KPCGLAOKOBM),
+            30005 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_IMGFCNCFKKM),
+            30047 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_BNKDNNFFDCI),
+            30020 => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_PFCDAPGLABB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightType> {
         match str {
-            "CmdFightTypeNone" => ::std::option::Option::Some(CmdFightType::CmdFightTypeNone),
-            "CmdFightSessionStopScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightSessionStopScNotify),
-            "CmdFightGeneralCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralCsReq),
-            "CmdFightGeneralScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScRsp),
-            "CmdFightHeartBeatCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatCsReq),
-            "CmdFightEnterCsReq" => ::std::option::Option::Some(CmdFightType::CmdFightEnterCsReq),
-            "CmdFightHeartBeatScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightHeartBeatScRsp),
-            "CmdFightKickOutScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightKickOutScNotify),
-            "CmdFightGeneralScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightGeneralScNotify),
-            "CmdFightLeaveScNotify" => ::std::option::Option::Some(CmdFightType::CmdFightLeaveScNotify),
-            "CmdFightEnterScRsp" => ::std::option::Option::Some(CmdFightType::CmdFightEnterScRsp),
+            "LCLKCKNIMJM_GKJBAODJMJG" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_GKJBAODJMJG),
+            "LCLKCKNIMJM_CHNCPDCCNKF" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_CHNCPDCCNKF),
+            "LCLKCKNIMJM_KOIPFBPJGID" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_KOIPFBPJGID),
+            "LCLKCKNIMJM_HHGADBIOHEE" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_HHGADBIOHEE),
+            "LCLKCKNIMJM_JBKMCCPHJDN" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_JBKMCCPHJDN),
+            "LCLKCKNIMJM_PCAOHAEDHOP" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_PCAOHAEDHOP),
+            "LCLKCKNIMJM_JNAHAINGPBD" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_JNAHAINGPBD),
+            "LCLKCKNIMJM_KPCGLAOKOBM" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_KPCGLAOKOBM),
+            "LCLKCKNIMJM_IMGFCNCFKKM" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_IMGFCNCFKKM),
+            "LCLKCKNIMJM_BNKDNNFFDCI" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_BNKDNNFFDCI),
+            "LCLKCKNIMJM_PFCDAPGLABB" => ::std::option::Option::Some(CmdFightType::LCLKCKNIMJM_PFCDAPGLABB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightType] = &[
-        CmdFightType::CmdFightTypeNone,
-        CmdFightType::CmdFightSessionStopScNotify,
-        CmdFightType::CmdFightGeneralCsReq,
-        CmdFightType::CmdFightGeneralScRsp,
-        CmdFightType::CmdFightHeartBeatCsReq,
-        CmdFightType::CmdFightEnterCsReq,
-        CmdFightType::CmdFightHeartBeatScRsp,
-        CmdFightType::CmdFightKickOutScNotify,
-        CmdFightType::CmdFightGeneralScNotify,
-        CmdFightType::CmdFightLeaveScNotify,
-        CmdFightType::CmdFightEnterScRsp,
+        CmdFightType::LCLKCKNIMJM_GKJBAODJMJG,
+        CmdFightType::LCLKCKNIMJM_CHNCPDCCNKF,
+        CmdFightType::LCLKCKNIMJM_KOIPFBPJGID,
+        CmdFightType::LCLKCKNIMJM_HHGADBIOHEE,
+        CmdFightType::LCLKCKNIMJM_JBKMCCPHJDN,
+        CmdFightType::LCLKCKNIMJM_PCAOHAEDHOP,
+        CmdFightType::LCLKCKNIMJM_JNAHAINGPBD,
+        CmdFightType::LCLKCKNIMJM_KPCGLAOKOBM,
+        CmdFightType::LCLKCKNIMJM_IMGFCNCFKKM,
+        CmdFightType::LCLKCKNIMJM_BNKDNNFFDCI,
+        CmdFightType::LCLKCKNIMJM_PFCDAPGLABB,
     ];
 }
 
@@ -115,17 +115,17 @@ impl ::protobuf::EnumFull for CmdFightType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFightType::CmdFightTypeNone => 0,
-            CmdFightType::CmdFightSessionStopScNotify => 1,
-            CmdFightType::CmdFightGeneralCsReq => 2,
-            CmdFightType::CmdFightGeneralScRsp => 3,
-            CmdFightType::CmdFightHeartBeatCsReq => 4,
-            CmdFightType::CmdFightEnterCsReq => 5,
-            CmdFightType::CmdFightHeartBeatScRsp => 6,
-            CmdFightType::CmdFightKickOutScNotify => 7,
-            CmdFightType::CmdFightGeneralScNotify => 8,
-            CmdFightType::CmdFightLeaveScNotify => 9,
-            CmdFightType::CmdFightEnterScRsp => 10,
+            CmdFightType::LCLKCKNIMJM_GKJBAODJMJG => 0,
+            CmdFightType::LCLKCKNIMJM_CHNCPDCCNKF => 1,
+            CmdFightType::LCLKCKNIMJM_KOIPFBPJGID => 2,
+            CmdFightType::LCLKCKNIMJM_HHGADBIOHEE => 3,
+            CmdFightType::LCLKCKNIMJM_JBKMCCPHJDN => 4,
+            CmdFightType::LCLKCKNIMJM_PCAOHAEDHOP => 5,
+            CmdFightType::LCLKCKNIMJM_JNAHAINGPBD => 6,
+            CmdFightType::LCLKCKNIMJM_KPCGLAOKOBM => 7,
+            CmdFightType::LCLKCKNIMJM_IMGFCNCFKKM => 8,
+            CmdFightType::LCLKCKNIMJM_BNKDNNFFDCI => 9,
+            CmdFightType::LCLKCKNIMJM_PFCDAPGLABB => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,7 +133,7 @@ impl ::protobuf::EnumFull for CmdFightType {
 
 impl ::std::default::Default for CmdFightType {
     fn default() -> Self {
-        CmdFightType::CmdFightTypeNone
+        CmdFightType::LCLKCKNIMJM_GKJBAODJMJG
     }
 }
 
@@ -144,15 +144,15 @@ impl CmdFightType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdFightType.proto*\xca\x02\n\x0cCmdFightType\x12\x14\n\x10CmdFigh\
-    tTypeNone\x10\0\x12!\n\x1bCmdFightSessionStopScNotify\x10\xc1\xea\x01\
-    \x12\x1a\n\x14CmdFightGeneralCsReq\x10\xd6\xea\x01\x12\x1a\n\x14CmdFight\
-    GeneralScRsp\x10\xc4\xea\x01\x12\x1c\n\x16CmdFightHeartBeatCsReq\x10\xdf\
-    \xea\x01\x12\x18\n\x12CmdFightEnterCsReq\x10\x8b\xeb\x01\x12\x1c\n\x16Cm\
-    dFightHeartBeatScRsp\x10\xbb\xea\x01\x12\x1d\n\x17CmdFightKickOutScNotif\
-    y\x10\x8f\xeb\x01\x12\x1d\n\x17CmdFightGeneralScNotify\x10\xe3\xea\x01\
-    \x12\x1b\n\x15CmdFightLeaveScNotify\x10\x89\xeb\x01\x12\x18\n\x12CmdFigh\
-    tEnterScRsp\x10\xb9\xea\x01b\x06proto3\
+    \n\x12CmdFightType.proto*\xe1\x02\n\x0cCmdFightType\x12\x1b\n\x17LCLKCKN\
+    IMJM_GKJBAODJMJG\x10\0\x12\x1d\n\x17LCLKCKNIMJM_CHNCPDCCNKF\x10\xcc\xea\
+    \x01\x12\x1d\n\x17LCLKCKNIMJM_KOIPFBPJGID\x10\xca\xea\x01\x12\x1d\n\x17L\
+    CLKCKNIMJM_HHGADBIOHEE\x10\xee\xea\x01\x12\x1d\n\x17LCLKCKNIMJM_JBKMCCPH\
+    JDN\x10\xfb\xea\x01\x12\x1d\n\x17LCLKCKNIMJM_PCAOHAEDHOP\x10\xd6\xea\x01\
+    \x12\x1d\n\x17LCLKCKNIMJM_JNAHAINGPBD\x10\xe9\xea\x01\x12\x1d\n\x17LCLKC\
+    KNIMJM_KPCGLAOKOBM\x10\xe7\xea\x01\x12\x1d\n\x17LCLKCKNIMJM_IMGFCNCFKKM\
+    \x10\xb5\xea\x01\x12\x1d\n\x17LCLKCKNIMJM_BNKDNNFFDCI\x10\xdf\xea\x01\
+    \x12\x1d\n\x17LCLKCKNIMJM_PFCDAPGLABB\x10\xc4\xea\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

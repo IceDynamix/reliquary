@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ReplayType)
 pub enum ReplayType {
-    // @@protoc_insertion_point(enum_value:ReplayType.REPLAY_TYPE_NONE)
-    REPLAY_TYPE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:ReplayType.REPLAY_TYPE_PUNK_LORD)
-    REPLAY_TYPE_PUNK_LORD = 1,
+    // @@protoc_insertion_point(enum_value:ReplayType.ReplayType_GKJBAODJMJG)
+    ReplayType_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:ReplayType.ReplayType_GPKHDEFOOPB)
+    ReplayType_GPKHDEFOOPB = 1,
 }
 
 impl ::protobuf::Enum for ReplayType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for ReplayType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ReplayType> {
         match value {
-            0 => ::std::option::Option::Some(ReplayType::REPLAY_TYPE_NONE),
-            1 => ::std::option::Option::Some(ReplayType::REPLAY_TYPE_PUNK_LORD),
+            0 => ::std::option::Option::Some(ReplayType::ReplayType_GKJBAODJMJG),
+            1 => ::std::option::Option::Some(ReplayType::ReplayType_GPKHDEFOOPB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ReplayType> {
         match str {
-            "REPLAY_TYPE_NONE" => ::std::option::Option::Some(ReplayType::REPLAY_TYPE_NONE),
-            "REPLAY_TYPE_PUNK_LORD" => ::std::option::Option::Some(ReplayType::REPLAY_TYPE_PUNK_LORD),
+            "ReplayType_GKJBAODJMJG" => ::std::option::Option::Some(ReplayType::ReplayType_GKJBAODJMJG),
+            "ReplayType_GPKHDEFOOPB" => ::std::option::Option::Some(ReplayType::ReplayType_GPKHDEFOOPB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ReplayType] = &[
-        ReplayType::REPLAY_TYPE_NONE,
-        ReplayType::REPLAY_TYPE_PUNK_LORD,
+        ReplayType::ReplayType_GKJBAODJMJG,
+        ReplayType::ReplayType_GPKHDEFOOPB,
     ];
 }
 
@@ -76,7 +76,7 @@ impl ::protobuf::EnumFull for ReplayType {
 
 impl ::std::default::Default for ReplayType {
     fn default() -> Self {
-        ReplayType::REPLAY_TYPE_NONE
+        ReplayType::ReplayType_GKJBAODJMJG
     }
 }
 
@@ -87,8 +87,8 @@ impl ReplayType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10ReplayType.proto*=\n\nReplayType\x12\x14\n\x10REPLAY_TYPE_NONE\x10\
-    \0\x12\x19\n\x15REPLAY_TYPE_PUNK_LORD\x10\x01b\x06proto3\
+    \n\x10ReplayType.proto*D\n\nReplayType\x12\x1a\n\x16ReplayType_GKJBAODJM\
+    JG\x10\0\x12\x1a\n\x16ReplayType_GPKHDEFOOPB\x10\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

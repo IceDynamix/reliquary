@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WorkbenchFuncIdInfo {
     // message fields
-    // @@protoc_insertion_point(field:WorkbenchFuncIdInfo.is_valid)
-    pub is_valid: bool,
     // @@protoc_insertion_point(field:WorkbenchFuncIdInfo.func_id)
     pub func_id: u32,
+    // @@protoc_insertion_point(field:WorkbenchFuncIdInfo.IBFLJLJLFDO)
+    pub IBFLJLJLFDO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:WorkbenchFuncIdInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl WorkbenchFuncIdInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_valid",
-            |m: &WorkbenchFuncIdInfo| { &m.is_valid },
-            |m: &mut WorkbenchFuncIdInfo| { &mut m.is_valid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "func_id",
             |m: &WorkbenchFuncIdInfo| { &m.func_id },
             |m: &mut WorkbenchFuncIdInfo| { &mut m.func_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBFLJLJLFDO",
+            |m: &WorkbenchFuncIdInfo| { &m.IBFLJLJLFDO },
+            |m: &mut WorkbenchFuncIdInfo| { &mut m.IBFLJLJLFDO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<WorkbenchFuncIdInfo>(
             "WorkbenchFuncIdInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.is_valid = is.read_bool()?;
-                },
-                64 => {
+                88 => {
                     self.func_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.IBFLJLJLFDO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_valid != false {
-            my_size += 1 + 1;
-        }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.func_id);
+        }
+        if self.IBFLJLJLFDO != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_valid != false {
-            os.write_bool(6, self.is_valid)?;
-        }
         if self.func_id != 0 {
-            os.write_uint32(8, self.func_id)?;
+            os.write_uint32(11, self.func_id)?;
+        }
+        if self.IBFLJLJLFDO != false {
+            os.write_bool(3, self.IBFLJLJLFDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for WorkbenchFuncIdInfo {
     }
 
     fn clear(&mut self) {
-        self.is_valid = false;
         self.func_id = 0;
+        self.IBFLJLJLFDO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static WorkbenchFuncIdInfo {
         static instance: WorkbenchFuncIdInfo = WorkbenchFuncIdInfo {
-            is_valid: false,
             func_id: 0,
+            IBFLJLJLFDO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for WorkbenchFuncIdInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19WorkbenchFuncIdInfo.proto\"I\n\x13WorkbenchFuncIdInfo\x12\x19\n\
-    \x08is_valid\x18\x06\x20\x01(\x08R\x07isValid\x12\x17\n\x07func_id\x18\
-    \x08\x20\x01(\rR\x06funcIdb\x06proto3\
+    \n\x19WorkbenchFuncIdInfo.proto\"P\n\x13WorkbenchFuncIdInfo\x12\x17\n\
+    \x07func_id\x18\x0b\x20\x01(\rR\x06funcId\x12\x20\n\x0bIBFLJLJLFDO\x18\
+    \x03\x20\x01(\x08R\x0bIBFLJLJLFDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetTrackPhotoActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetTrackPhotoActivityDataScRsp.GNFNLHPDIPH)
-    pub GNFNLHPDIPH: ::std::vec::Vec<super::OPFBNICIDHD::OPFBNICIDHD>,
+    // @@protoc_insertion_point(field:GetTrackPhotoActivityDataScRsp.PNOMHPLMMHA)
+    pub PNOMHPLMMHA: ::std::vec::Vec<super::NMGMPIOLJIL::NMGMPIOLJIL>,
     // @@protoc_insertion_point(field:GetTrackPhotoActivityDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetTrackPhotoActivityDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GNFNLHPDIPH",
-            |m: &GetTrackPhotoActivityDataScRsp| { &m.GNFNLHPDIPH },
-            |m: &mut GetTrackPhotoActivityDataScRsp| { &mut m.GNFNLHPDIPH },
+            "PNOMHPLMMHA",
+            |m: &GetTrackPhotoActivityDataScRsp| { &m.PNOMHPLMMHA },
+            |m: &mut GetTrackPhotoActivityDataScRsp| { &mut m.PNOMHPLMMHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.GNFNLHPDIPH.push(is.read_message()?);
+                66 => {
+                    self.PNOMHPLMMHA.push(is.read_message()?);
                 },
-                56 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GNFNLHPDIPH {
+        for value in &self.PNOMHPLMMHA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GNFNLHPDIPH {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.PNOMHPLMMHA {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetTrackPhotoActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.GNFNLHPDIPH.clear();
+        self.PNOMHPLMMHA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetTrackPhotoActivityDataScRsp {
         static instance: GetTrackPhotoActivityDataScRsp = GetTrackPhotoActivityDataScRsp {
-            GNFNLHPDIPH: ::std::vec::Vec::new(),
+            PNOMHPLMMHA: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetTrackPhotoActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetTrackPhotoActivityDataScRsp.proto\x1a\x11OPFBNICIDHD.proto\"j\n\
-    \x1eGetTrackPhotoActivityDataScRsp\x12.\n\x0bGNFNLHPDIPH\x18\x0f\x20\x03\
-    (\x0b2\x0c.OPFBNICIDHDR\x0bGNFNLHPDIPH\x12\x18\n\x07retcode\x18\x07\x20\
+    \n$GetTrackPhotoActivityDataScRsp.proto\x1a\x11NMGMPIOLJIL.proto\"j\n\
+    \x1eGetTrackPhotoActivityDataScRsp\x12.\n\x0bPNOMHPLMMHA\x18\x08\x20\x03\
+    (\x0b2\x0c.NMGMPIOLJILR\x0bPNOMHPLMMHA\x12\x18\n\x07retcode\x18\x03\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OPFBNICIDHD::file_descriptor().clone());
+            deps.push(super::NMGMPIOLJIL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetTrackPhotoActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

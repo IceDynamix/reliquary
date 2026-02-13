@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAvatarDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAvatarDataCsReq.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAvatarDataCsReq.is_get_all)
     pub is_get_all: bool,
+    // @@protoc_insertion_point(field:GetAvatarDataCsReq.base_avatar_id_list)
+    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAvatarDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetAvatarDataCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &GetAvatarDataCsReq| { &m.base_avatar_id_list },
-            |m: &mut GetAvatarDataCsReq| { &mut m.base_avatar_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_get_all",
             |m: &GetAvatarDataCsReq| { &m.is_get_all },
             |m: &mut GetAvatarDataCsReq| { &mut m.is_get_all },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "base_avatar_id_list",
+            |m: &GetAvatarDataCsReq| { &m.base_avatar_id_list },
+            |m: &mut GetAvatarDataCsReq| { &mut m.base_avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAvatarDataCsReq>(
             "GetAvatarDataCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                16 => {
+                    self.is_get_all = is.read_bool()?;
+                },
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                24 => {
+                40 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.is_get_all = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.base_avatar_id_list);
         if self.is_get_all != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.base_avatar_id_list)?;
         if self.is_get_all != false {
-            os.write_bool(1, self.is_get_all)?;
+            os.write_bool(2, self.is_get_all)?;
         }
+        os.write_repeated_packed_uint32(5, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id_list.clear();
         self.is_get_all = false;
+        self.base_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAvatarDataCsReq {
         static instance: GetAvatarDataCsReq = GetAvatarDataCsReq {
-            base_avatar_id_list: ::std::vec::Vec::new(),
             is_get_all: false,
+            base_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GetAvatarDataCsReq.proto\"a\n\x12GetAvatarDataCsReq\x12-\n\x13base\
-    _avatar_id_list\x18\x03\x20\x03(\rR\x10baseAvatarIdList\x12\x1c\n\nis_ge\
-    t_all\x18\x01\x20\x01(\x08R\x08isGetAllb\x06proto3\
+    \n\x18GetAvatarDataCsReq.proto\"a\n\x12GetAvatarDataCsReq\x12\x1c\n\nis_\
+    get_all\x18\x02\x20\x01(\x08R\x08isGetAll\x12-\n\x13base_avatar_id_list\
+    \x18\x05\x20\x03(\rR\x10baseAvatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

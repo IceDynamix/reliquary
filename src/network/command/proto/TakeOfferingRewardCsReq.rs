@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOfferingRewardCsReq {
     // message fields
+    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.offering_id)
+    pub offering_id: u32,
     // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
     // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.take_reward_level_list)
     pub take_reward_level_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TakeOfferingRewardCsReq.offering_id)
-    pub offering_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeOfferingRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl TakeOfferingRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "offering_id",
+            |m: &TakeOfferingRewardCsReq| { &m.offering_id },
+            |m: &mut TakeOfferingRewardCsReq| { &mut m.offering_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interacted_prop_entity_id",
             |m: &TakeOfferingRewardCsReq| { &m.interacted_prop_entity_id },
             |m: &mut TakeOfferingRewardCsReq| { &mut m.interacted_prop_entity_id },
@@ -62,11 +67,6 @@ impl TakeOfferingRewardCsReq {
             "take_reward_level_list",
             |m: &TakeOfferingRewardCsReq| { &m.take_reward_level_list },
             |m: &mut TakeOfferingRewardCsReq| { &mut m.take_reward_level_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "offering_id",
-            |m: &TakeOfferingRewardCsReq| { &m.offering_id },
-            |m: &mut TakeOfferingRewardCsReq| { &mut m.offering_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeOfferingRewardCsReq>(
             "TakeOfferingRewardCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.offering_id = is.read_uint32()?;
+                },
                 24 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                114 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.take_reward_level_list)?;
                 },
-                112 => {
+                96 => {
                     self.take_reward_level_list.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.offering_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.offering_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.offering_id);
+        }
         if self.interacted_prop_entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.interacted_prop_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.take_reward_level_list);
-        if self.offering_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.offering_id);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.take_reward_level_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.offering_id != 0 {
+            os.write_uint32(6, self.offering_id)?;
+        }
         if self.interacted_prop_entity_id != 0 {
             os.write_uint32(3, self.interacted_prop_entity_id)?;
         }
-        os.write_repeated_packed_uint32(14, &self.take_reward_level_list)?;
-        if self.offering_id != 0 {
-            os.write_uint32(13, self.offering_id)?;
-        }
+        os.write_repeated_packed_uint32(12, &self.take_reward_level_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     }
 
     fn clear(&mut self) {
+        self.offering_id = 0;
         self.interacted_prop_entity_id = 0;
         self.take_reward_level_list.clear();
-        self.offering_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOfferingRewardCsReq {
         static instance: TakeOfferingRewardCsReq = TakeOfferingRewardCsReq {
+            offering_id: 0,
             interacted_prop_entity_id: 0,
             take_reward_level_list: ::std::vec::Vec::new(),
-            offering_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeOfferingRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeOfferingRewardCsReq.proto\"\xaa\x01\n\x17TakeOfferingRewardCsR\
-    eq\x129\n\x19interacted_prop_entity_id\x18\x03\x20\x01(\rR\x16interacted\
-    PropEntityId\x123\n\x16take_reward_level_list\x18\x0e\x20\x03(\rR\x13tak\
-    eRewardLevelList\x12\x1f\n\x0boffering_id\x18\r\x20\x01(\rR\nofferingIdb\
-    \x06proto3\
+    eq\x12\x1f\n\x0boffering_id\x18\x06\x20\x01(\rR\nofferingId\x129\n\x19in\
+    teracted_prop_entity_id\x18\x03\x20\x01(\rR\x16interactedPropEntityId\
+    \x123\n\x16take_reward_level_list\x18\x0c\x20\x03(\rR\x13takeRewardLevel\
+    Listb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

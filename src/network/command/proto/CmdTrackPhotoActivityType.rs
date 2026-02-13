@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTrackPhotoActivityType)
 pub enum CmdTrackPhotoActivityType {
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_ALOCMFAKBKP)
-    OCCAODGPBDA_ALOCMFAKBKP = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_FAPKKKIIMLG)
-    OCCAODGPBDA_FAPKKKIIMLG = 7555,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_NDMINMICOJI)
-    OCCAODGPBDA_NDMINMICOJI = 7552,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_AEMJFEDGLIE)
-    OCCAODGPBDA_AEMJFEDGLIE = 7551,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_PBJFKHKILOP)
-    OCCAODGPBDA_PBJFKHKILOP = 7553,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_HNJMPMIDGOP)
-    OCCAODGPBDA_HNJMPMIDGOP = 7559,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_ENIAEHAFPLP)
-    OCCAODGPBDA_ENIAEHAFPLP = 7556,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_EGPDJGFMOPO)
-    OCCAODGPBDA_EGPDJGFMOPO = 7560,
-    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.OCCAODGPBDA_MJPKJJHJPHP)
-    OCCAODGPBDA_MJPKJJHJPHP = 7557,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_GKJBAODJMJG)
+    NBOLMLJIGMN_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_BIGKNAGHACC)
+    NBOLMLJIGMN_BIGKNAGHACC = 7559,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_GCNINILLCKO)
+    NBOLMLJIGMN_GCNINILLCKO = 7554,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_MHFGGLKLKHO)
+    NBOLMLJIGMN_MHFGGLKLKHO = 7555,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_EOKPFOAIJGJ)
+    NBOLMLJIGMN_EOKPFOAIJGJ = 7558,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_KKJBDKCDGEN)
+    NBOLMLJIGMN_KKJBDKCDGEN = 7552,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_OJBNLODADEK)
+    NBOLMLJIGMN_OJBNLODADEK = 7560,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_AMGOBDKFMFE)
+    NBOLMLJIGMN_AMGOBDKFMFE = 7553,
+    // @@protoc_insertion_point(enum_value:CmdTrackPhotoActivityType.NBOLMLJIGMN_MJIAFNJLJFK)
+    NBOLMLJIGMN_MJIAFNJLJFK = 7556,
 }
 
 impl ::protobuf::Enum for CmdTrackPhotoActivityType {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for CmdTrackPhotoActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrackPhotoActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_ALOCMFAKBKP),
-            7555 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_FAPKKKIIMLG),
-            7552 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_NDMINMICOJI),
-            7551 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_AEMJFEDGLIE),
-            7553 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_PBJFKHKILOP),
-            7559 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_HNJMPMIDGOP),
-            7556 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_ENIAEHAFPLP),
-            7560 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_EGPDJGFMOPO),
-            7557 => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_MJPKJJHJPHP),
+            0 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_GKJBAODJMJG),
+            7559 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_BIGKNAGHACC),
+            7554 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_GCNINILLCKO),
+            7555 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_MHFGGLKLKHO),
+            7558 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_EOKPFOAIJGJ),
+            7552 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_KKJBDKCDGEN),
+            7560 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_OJBNLODADEK),
+            7553 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_AMGOBDKFMFE),
+            7556 => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_MJIAFNJLJFK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTrackPhotoActivityType> {
         match str {
-            "OCCAODGPBDA_ALOCMFAKBKP" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_ALOCMFAKBKP),
-            "OCCAODGPBDA_FAPKKKIIMLG" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_FAPKKKIIMLG),
-            "OCCAODGPBDA_NDMINMICOJI" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_NDMINMICOJI),
-            "OCCAODGPBDA_AEMJFEDGLIE" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_AEMJFEDGLIE),
-            "OCCAODGPBDA_PBJFKHKILOP" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_PBJFKHKILOP),
-            "OCCAODGPBDA_HNJMPMIDGOP" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_HNJMPMIDGOP),
-            "OCCAODGPBDA_ENIAEHAFPLP" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_ENIAEHAFPLP),
-            "OCCAODGPBDA_EGPDJGFMOPO" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_EGPDJGFMOPO),
-            "OCCAODGPBDA_MJPKJJHJPHP" => ::std::option::Option::Some(CmdTrackPhotoActivityType::OCCAODGPBDA_MJPKJJHJPHP),
+            "NBOLMLJIGMN_GKJBAODJMJG" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_GKJBAODJMJG),
+            "NBOLMLJIGMN_BIGKNAGHACC" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_BIGKNAGHACC),
+            "NBOLMLJIGMN_GCNINILLCKO" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_GCNINILLCKO),
+            "NBOLMLJIGMN_MHFGGLKLKHO" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_MHFGGLKLKHO),
+            "NBOLMLJIGMN_EOKPFOAIJGJ" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_EOKPFOAIJGJ),
+            "NBOLMLJIGMN_KKJBDKCDGEN" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_KKJBDKCDGEN),
+            "NBOLMLJIGMN_OJBNLODADEK" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_OJBNLODADEK),
+            "NBOLMLJIGMN_AMGOBDKFMFE" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_AMGOBDKFMFE),
+            "NBOLMLJIGMN_MJIAFNJLJFK" => ::std::option::Option::Some(CmdTrackPhotoActivityType::NBOLMLJIGMN_MJIAFNJLJFK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrackPhotoActivityType] = &[
-        CmdTrackPhotoActivityType::OCCAODGPBDA_ALOCMFAKBKP,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_FAPKKKIIMLG,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_NDMINMICOJI,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_AEMJFEDGLIE,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_PBJFKHKILOP,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_HNJMPMIDGOP,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_ENIAEHAFPLP,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_EGPDJGFMOPO,
-        CmdTrackPhotoActivityType::OCCAODGPBDA_MJPKJJHJPHP,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_GKJBAODJMJG,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_BIGKNAGHACC,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_GCNINILLCKO,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_MHFGGLKLKHO,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_EOKPFOAIJGJ,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_KKJBDKCDGEN,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_OJBNLODADEK,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_AMGOBDKFMFE,
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_MJIAFNJLJFK,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for CmdTrackPhotoActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTrackPhotoActivityType::OCCAODGPBDA_ALOCMFAKBKP => 0,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_FAPKKKIIMLG => 1,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_NDMINMICOJI => 2,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_AEMJFEDGLIE => 3,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_PBJFKHKILOP => 4,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_HNJMPMIDGOP => 5,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_ENIAEHAFPLP => 6,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_EGPDJGFMOPO => 7,
-            CmdTrackPhotoActivityType::OCCAODGPBDA_MJPKJJHJPHP => 8,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_GKJBAODJMJG => 0,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_BIGKNAGHACC => 1,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_GCNINILLCKO => 2,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_MHFGGLKLKHO => 3,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_EOKPFOAIJGJ => 4,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_KKJBDKCDGEN => 5,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_OJBNLODADEK => 6,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_AMGOBDKFMFE => 7,
+            CmdTrackPhotoActivityType::NBOLMLJIGMN_MJIAFNJLJFK => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for CmdTrackPhotoActivityType {
 
 impl ::std::default::Default for CmdTrackPhotoActivityType {
     fn default() -> Self {
-        CmdTrackPhotoActivityType::OCCAODGPBDA_ALOCMFAKBKP
+        CmdTrackPhotoActivityType::NBOLMLJIGMN_GKJBAODJMJG
     }
 }
 
@@ -133,12 +133,12 @@ impl CmdTrackPhotoActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCmdTrackPhotoActivityType.proto*\xa8\x02\n\x19CmdTrackPhotoActivit\
-    yType\x12\x1b\n\x17OCCAODGPBDA_ALOCMFAKBKP\x10\0\x12\x1c\n\x17OCCAODGPBD\
-    A_FAPKKKIIMLG\x10\x83;\x12\x1c\n\x17OCCAODGPBDA_NDMINMICOJI\x10\x80;\x12\
-    \x1c\n\x17OCCAODGPBDA_AEMJFEDGLIE\x10\xff:\x12\x1c\n\x17OCCAODGPBDA_PBJF\
-    KHKILOP\x10\x81;\x12\x1c\n\x17OCCAODGPBDA_HNJMPMIDGOP\x10\x87;\x12\x1c\n\
-    \x17OCCAODGPBDA_ENIAEHAFPLP\x10\x84;\x12\x1c\n\x17OCCAODGPBDA_EGPDJGFMOP\
-    O\x10\x88;\x12\x1c\n\x17OCCAODGPBDA_MJPKJJHJPHP\x10\x85;b\x06proto3\
+    yType\x12\x1b\n\x17NBOLMLJIGMN_GKJBAODJMJG\x10\0\x12\x1c\n\x17NBOLMLJIGM\
+    N_BIGKNAGHACC\x10\x87;\x12\x1c\n\x17NBOLMLJIGMN_GCNINILLCKO\x10\x82;\x12\
+    \x1c\n\x17NBOLMLJIGMN_MHFGGLKLKHO\x10\x83;\x12\x1c\n\x17NBOLMLJIGMN_EOKP\
+    FOAIJGJ\x10\x86;\x12\x1c\n\x17NBOLMLJIGMN_KKJBDKCDGEN\x10\x80;\x12\x1c\n\
+    \x17NBOLMLJIGMN_OJBNLODADEK\x10\x88;\x12\x1c\n\x17NBOLMLJIGMN_AMGOBDKFMF\
+    E\x10\x81;\x12\x1c\n\x17NBOLMLJIGMN_MJIAFNJLJFK\x10\x84;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectRogueCommonDialogueOptionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.dialogue_data)
-    pub dialogue_data: ::protobuf::MessageField<super::RogueCommonDialogueDataInfo::RogueCommonDialogueDataInfo>,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.option_id)
-    pub option_id: u32,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.effect_event_id_list)
-    pub effect_event_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.event_unique_id)
-    pub event_unique_id: u32,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.ILIFLINILKL)
+    pub ILIFLINILKL: ::protobuf::MessageField<super::OPNOFJFJECJ::OPNOFJFJECJ>,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.AKCFOGNELLE)
+    pub AKCFOGNELLE: u32,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.CKCOCLPCHMI)
+    pub CKCOCLPCHMI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.CAEJHHHGMLM)
+    pub CAEJHHHGMLM: bool,
     // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.event_has_effect)
-    pub event_has_effect: bool,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionScRsp.IOKAJOBJPAN)
+    pub IOKAJOBJPAN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectRogueCommonDialogueOptionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,25 @@ impl SelectRogueCommonDialogueOptionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RogueCommonDialogueDataInfo::RogueCommonDialogueDataInfo>(
-            "dialogue_data",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.dialogue_data },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.dialogue_data },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPNOFJFJECJ::OPNOFJFJECJ>(
+            "ILIFLINILKL",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.ILIFLINILKL },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.ILIFLINILKL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "option_id",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.option_id },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.option_id },
+            "AKCFOGNELLE",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.AKCFOGNELLE },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.AKCFOGNELLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "effect_event_id_list",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.effect_event_id_list },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.effect_event_id_list },
+            "CKCOCLPCHMI",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.CKCOCLPCHMI },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.CKCOCLPCHMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_unique_id",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.event_unique_id },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.event_unique_id },
+            "CAEJHHHGMLM",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.CAEJHHHGMLM },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.CAEJHHHGMLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -85,9 +85,9 @@ impl SelectRogueCommonDialogueOptionScRsp {
             |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_has_effect",
-            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.event_has_effect },
-            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.event_has_effect },
+            "IOKAJOBJPAN",
+            |m: &SelectRogueCommonDialogueOptionScRsp| { &m.IOKAJOBJPAN },
+            |m: &mut SelectRogueCommonDialogueOptionScRsp| { &mut m.IOKAJOBJPAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectRogueCommonDialogueOptionScRsp>(
             "SelectRogueCommonDialogueOptionScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.dialogue_data)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILIFLINILKL)?;
                 },
-                72 => {
-                    self.option_id = is.read_uint32()?;
+                80 => {
+                    self.AKCFOGNELLE = is.read_uint32()?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.effect_event_id_list)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CKCOCLPCHMI)?;
                 },
-                16 => {
-                    self.effect_event_id_list.push(is.read_uint32()?);
+                88 => {
+                    self.CKCOCLPCHMI.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.event_unique_id = is.read_uint32()?;
+                104 => {
+                    self.CAEJHHHGMLM = is.read_bool()?;
                 },
-                120 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.event_has_effect = is.read_bool()?;
+                40 => {
+                    self.IOKAJOBJPAN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,22 +140,22 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.dialogue_data.as_ref() {
+        if let Some(v) = self.ILIFLINILKL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.option_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.option_id);
+        if self.AKCFOGNELLE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AKCFOGNELLE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.effect_event_id_list);
-        if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.event_unique_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CKCOCLPCHMI);
+        if self.CAEJHHHGMLM != false {
+            my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.event_has_effect != false {
-            my_size += 1 + 1;
+        if self.IOKAJOBJPAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IOKAJOBJPAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,21 +163,21 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.dialogue_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.ILIFLINILKL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.option_id != 0 {
-            os.write_uint32(9, self.option_id)?;
+        if self.AKCFOGNELLE != 0 {
+            os.write_uint32(10, self.AKCFOGNELLE)?;
         }
-        os.write_repeated_packed_uint32(2, &self.effect_event_id_list)?;
-        if self.event_unique_id != 0 {
-            os.write_uint32(3, self.event_unique_id)?;
+        os.write_repeated_packed_uint32(11, &self.CKCOCLPCHMI)?;
+        if self.CAEJHHHGMLM != false {
+            os.write_bool(13, self.CAEJHHHGMLM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.event_has_effect != false {
-            os.write_bool(4, self.event_has_effect)?;
+        if self.IOKAJOBJPAN != 0 {
+            os.write_uint32(5, self.IOKAJOBJPAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionScRsp {
     }
 
     fn clear(&mut self) {
-        self.dialogue_data.clear();
-        self.option_id = 0;
-        self.effect_event_id_list.clear();
-        self.event_unique_id = 0;
+        self.ILIFLINILKL.clear();
+        self.AKCFOGNELLE = 0;
+        self.CKCOCLPCHMI.clear();
+        self.CAEJHHHGMLM = false;
         self.retcode = 0;
-        self.event_has_effect = false;
+        self.IOKAJOBJPAN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectRogueCommonDialogueOptionScRsp {
         static instance: SelectRogueCommonDialogueOptionScRsp = SelectRogueCommonDialogueOptionScRsp {
-            dialogue_data: ::protobuf::MessageField::none(),
-            option_id: 0,
-            effect_event_id_list: ::std::vec::Vec::new(),
-            event_unique_id: 0,
+            ILIFLINILKL: ::protobuf::MessageField::none(),
+            AKCFOGNELLE: 0,
+            CKCOCLPCHMI: ::std::vec::Vec::new(),
+            CAEJHHHGMLM: false,
             retcode: 0,
-            event_has_effect: false,
+            IOKAJOBJPAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,14 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for SelectRogueCommonDialogueOptionScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*SelectRogueCommonDialogueOptionScRsp.proto\x1a!RogueCommonDialogueDat\
-    aInfo.proto\"\xa3\x02\n$SelectRogueCommonDialogueOptionScRsp\x12A\n\rdia\
-    logue_data\x18\r\x20\x01(\x0b2\x1c.RogueCommonDialogueDataInfoR\x0cdialo\
-    gueData\x12\x1b\n\toption_id\x18\t\x20\x01(\rR\x08optionId\x12/\n\x14eff\
-    ect_event_id_list\x18\x02\x20\x03(\rR\x11effectEventIdList\x12&\n\x0feve\
-    nt_unique_id\x18\x03\x20\x01(\rR\reventUniqueId\x12\x18\n\x07retcode\x18\
-    \x0f\x20\x01(\rR\x07retcode\x12(\n\x10event_has_effect\x18\x04\x20\x01(\
-    \x08R\x0eeventHasEffectb\x06proto3\
+    \n*SelectRogueCommonDialogueOptionScRsp.proto\x1a\x11OPNOFJFJECJ.proto\"\
+    \xf8\x01\n$SelectRogueCommonDialogueOptionScRsp\x12.\n\x0bILIFLINILKL\
+    \x18\x07\x20\x01(\x0b2\x0c.OPNOFJFJECJR\x0bILIFLINILKL\x12\x20\n\x0bAKCF\
+    OGNELLE\x18\n\x20\x01(\rR\x0bAKCFOGNELLE\x12\x20\n\x0bCKCOCLPCHMI\x18\
+    \x0b\x20\x03(\rR\x0bCKCOCLPCHMI\x12\x20\n\x0bCAEJHHHGMLM\x18\r\x20\x01(\
+    \x08R\x0bCAEJHHHGMLM\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bIOKAJOBJPAN\x18\x05\x20\x01(\rR\x0bIOKAJOBJPANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,7 +261,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::RogueCommonDialogueDataInfo::file_descriptor().clone());
+            deps.push(super::OPNOFJFJECJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SelectRogueCommonDialogueOptionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

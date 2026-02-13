@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeCurBuffInfo {
     // message oneof groups
-    pub MLNEDDHOJGC: ::std::option::Option<challenge_cur_buff_info::MLNEDDHOJGC>,
+    pub MGKEHFMCBBP: ::std::option::Option<challenge_cur_buff_info::MGKEHFMCBBP>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeCurBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl ChallengeCurBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffList cur_story_buffs = 2;
+    // .ChallengeStoryBuffList cur_story_buffs = 14;
 
     pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffList::ChallengeStoryBuffList {
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(ref v)) => v,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(ref v)) => v,
             _ => <super::ChallengeStoryBuffList::ChallengeStoryBuffList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_cur_story_buffs(&mut self) {
-        self.MLNEDDHOJGC = ::std::option::Option::None;
+        self.MGKEHFMCBBP = ::std::option::Option::None;
     }
 
     pub fn has_cur_story_buffs(&self) -> bool {
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(..)) => true,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_cur_story_buffs(&mut self, v: super::ChallengeStoryBuffList::ChallengeStoryBuffList) {
-        self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(v))
+        self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_cur_story_buffs(&mut self) -> &mut super::ChallengeStoryBuffList::ChallengeStoryBuffList {
-        if let ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(_)) = self.MLNEDDHOJGC {
+        if let ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(_)) = self.MGKEHFMCBBP {
         } else {
-            self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(super::ChallengeStoryBuffList::ChallengeStoryBuffList::new()));
+            self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(super::ChallengeStoryBuffList::ChallengeStoryBuffList::new()));
         }
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(ref mut v)) => v,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl ChallengeCurBuffInfo {
     // Take field
     pub fn take_cur_story_buffs(&mut self) -> super::ChallengeStoryBuffList::ChallengeStoryBuffList {
         if self.has_cur_story_buffs() {
-            match self.MLNEDDHOJGC.take() {
-                ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(v)) => v,
+            match self.MGKEHFMCBBP.take() {
+                ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl ChallengeCurBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffList cur_boss_buffs = 10;
+    // .ChallengeBossBuffList cur_boss_buffs = 6;
 
     pub fn cur_boss_buffs(&self) -> &super::ChallengeBossBuffList::ChallengeBossBuffList {
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(ref v)) => v,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(ref v)) => v,
             _ => <super::ChallengeBossBuffList::ChallengeBossBuffList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_cur_boss_buffs(&mut self) {
-        self.MLNEDDHOJGC = ::std::option::Option::None;
+        self.MGKEHFMCBBP = ::std::option::Option::None;
     }
 
     pub fn has_cur_boss_buffs(&self) -> bool {
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(..)) => true,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_cur_boss_buffs(&mut self, v: super::ChallengeBossBuffList::ChallengeBossBuffList) {
-        self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(v))
+        self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_cur_boss_buffs(&mut self) -> &mut super::ChallengeBossBuffList::ChallengeBossBuffList {
-        if let ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(_)) = self.MLNEDDHOJGC {
+        if let ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(_)) = self.MGKEHFMCBBP {
         } else {
-            self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(super::ChallengeBossBuffList::ChallengeBossBuffList::new()));
+            self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(super::ChallengeBossBuffList::ChallengeBossBuffList::new()));
         }
-        match self.MLNEDDHOJGC {
-            ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(ref mut v)) => v,
+        match self.MGKEHFMCBBP {
+            ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl ChallengeCurBuffInfo {
     // Take field
     pub fn take_cur_boss_buffs(&mut self) -> super::ChallengeBossBuffList::ChallengeBossBuffList {
         if self.has_cur_boss_buffs() {
-            match self.MLNEDDHOJGC.take() {
-                ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(v)) => v,
+            match self.MGKEHFMCBBP.take() {
+                ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl ChallengeCurBuffInfo {
             ChallengeCurBuffInfo::mut_cur_boss_buffs,
             ChallengeCurBuffInfo::set_cur_boss_buffs,
         ));
-        oneofs.push(challenge_cur_buff_info::MLNEDDHOJGC::generated_oneof_descriptor_data());
+        oneofs.push(challenge_cur_buff_info::MGKEHFMCBBP::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeCurBuffInfo>(
             "ChallengeCurBuffInfo",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(is.read_message()?));
+                114 => {
+                    self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(is.read_message()?));
                 },
-                82 => {
-                    self.MLNEDDHOJGC = ::std::option::Option::Some(challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(is.read_message()?));
+                50 => {
+                    self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.MLNEDDHOJGC {
+        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
             match v {
-                &challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(ref v) => {
+                &challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(ref v) => {
+                &challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.MLNEDDHOJGC {
+        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
             match v {
-                &challenge_cur_buff_info::MLNEDDHOJGC::CurStoryBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &challenge_cur_buff_info::MGKEHFMCBBP::CurStoryBuffs(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &challenge_cur_buff_info::MLNEDDHOJGC::CurBossBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                &challenge_cur_buff_info::MGKEHFMCBBP::CurBossBuffs(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.MLNEDDHOJGC = ::std::option::Option::None;
-        self.MLNEDDHOJGC = ::std::option::Option::None;
+        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.MGKEHFMCBBP = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeCurBuffInfo {
         static instance: ChallengeCurBuffInfo = ChallengeCurBuffInfo {
-            MLNEDDHOJGC: ::std::option::Option::None,
+            MGKEHFMCBBP: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod challenge_cur_buff_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChallengeCurBuffInfo.MLNEDDHOJGC)
-    pub enum MLNEDDHOJGC {
+    // @@protoc_insertion_point(oneof:ChallengeCurBuffInfo.MGKEHFMCBBP)
+    pub enum MGKEHFMCBBP {
         // @@protoc_insertion_point(oneof_field:ChallengeCurBuffInfo.cur_story_buffs)
         CurStoryBuffs(super::super::ChallengeStoryBuffList::ChallengeStoryBuffList),
         // @@protoc_insertion_point(oneof_field:ChallengeCurBuffInfo.cur_boss_buffs)
         CurBossBuffs(super::super::ChallengeBossBuffList::ChallengeBossBuffList),
     }
 
-    impl ::protobuf::Oneof for MLNEDDHOJGC {
+    impl ::protobuf::Oneof for MGKEHFMCBBP {
     }
 
-    impl ::protobuf::OneofFull for MLNEDDHOJGC {
+    impl ::protobuf::OneofFull for MGKEHFMCBBP {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChallengeCurBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("MLNEDDHOJGC").unwrap()).clone()
+            descriptor.get(|| <super::ChallengeCurBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("MGKEHFMCBBP").unwrap()).clone()
         }
     }
 
-    impl MLNEDDHOJGC {
+    impl MGKEHFMCBBP {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MLNEDDHOJGC>("MLNEDDHOJGC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MGKEHFMCBBP>("MGKEHFMCBBP")
         }
     }
 }
@@ -306,9 +306,9 @@ pub mod challenge_cur_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChallengeCurBuffInfo.proto\x1a\x1bChallengeBossBuffList.proto\x1a\
     \x1cChallengeStoryBuffList.proto\"\xa8\x01\n\x14ChallengeCurBuffInfo\x12\
-    A\n\x0fcur_story_buffs\x18\x02\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\
-    \0R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\n\x20\x01(\x0b2\x16.Chal\
-    lengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bMLNEDDHOJGCb\x06proto3\
+    A\n\x0fcur_story_buffs\x18\x0e\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\
+    \0R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\x06\x20\x01(\x0b2\x16.Ch\
+    allengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bMGKEHFMCBBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

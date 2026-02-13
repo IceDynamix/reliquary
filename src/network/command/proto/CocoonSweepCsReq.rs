@@ -79,10 +79,10 @@ impl ::protobuf::Message for CocoonSweepCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                32 => {
                     self.world_level = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.cocoon_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CocoonSweepCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
         }
         if self.cocoon_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cocoon_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.cocoon_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CocoonSweepCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.world_level != 0 {
-            os.write_uint32(13, self.world_level)?;
+            os.write_uint32(4, self.world_level)?;
         }
         if self.cocoon_id != 0 {
-            os.write_uint32(11, self.cocoon_id)?;
+            os.write_uint32(8, self.cocoon_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CocoonSweepCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CocoonSweepCsReq.proto\"P\n\x10CocoonSweepCsReq\x12\x1f\n\x0bworld\
-    _level\x18\r\x20\x01(\rR\nworldLevel\x12\x1b\n\tcocoon_id\x18\x0b\x20\
+    _level\x18\x04\x20\x01(\rR\nworldLevel\x12\x1b\n\tcocoon_id\x18\x08\x20\
     \x01(\rR\x08cocoonIdb\x06proto3\
 ";
 

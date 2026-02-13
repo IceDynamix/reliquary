@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeCityShopRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.shop_id)
-    pub shop_id: u32,
     // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:TakeCityShopRewardCsReq.shop_id)
+    pub shop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeCityShopRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TakeCityShopRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &TakeCityShopRewardCsReq| { &m.shop_id },
-            |m: &mut TakeCityShopRewardCsReq| { &mut m.shop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &TakeCityShopRewardCsReq| { &m.level },
             |m: &mut TakeCityShopRewardCsReq| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "shop_id",
+            |m: &TakeCityShopRewardCsReq| { &m.shop_id },
+            |m: &mut TakeCityShopRewardCsReq| { &mut m.shop_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeCityShopRewardCsReq>(
             "TakeCityShopRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.shop_id = is.read_uint32()?;
-                },
-                96 => {
+                8 => {
                     self.level = is.read_uint32()?;
+                },
+                88 => {
+                    self.shop_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.shop_id);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
+        }
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.shop_id != 0 {
-            os.write_uint32(5, self.shop_id)?;
-        }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
+            os.write_uint32(1, self.level)?;
+        }
+        if self.shop_id != 0 {
+            os.write_uint32(11, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TakeCityShopRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.shop_id = 0;
         self.level = 0;
+        self.shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeCityShopRewardCsReq {
         static instance: TakeCityShopRewardCsReq = TakeCityShopRewardCsReq {
-            shop_id: 0,
             level: 0,
+            shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeCityShopRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeCityShopRewardCsReq.proto\"H\n\x17TakeCityShopRewardCsReq\x12\
-    \x17\n\x07shop_id\x18\x05\x20\x01(\rR\x06shopId\x12\x14\n\x05level\x18\
-    \x0c\x20\x01(\rR\x05levelb\x06proto3\
+    \x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\x17\n\x07shop_id\x18\
+    \x0b\x20\x01(\rR\x06shopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChargerInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChargerInfo.KCEKMJLHFGE)
-    pub KCEKMJLHFGE: u32,
+    // @@protoc_insertion_point(field:ChargerInfo.EHLEOMOEPGD)
+    pub EHLEOMOEPGD: u32,
     // @@protoc_insertion_point(field:ChargerInfo.group_id)
     pub group_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ChargerInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCEKMJLHFGE",
-            |m: &ChargerInfo| { &m.KCEKMJLHFGE },
-            |m: &mut ChargerInfo| { &mut m.KCEKMJLHFGE },
+            "EHLEOMOEPGD",
+            |m: &ChargerInfo| { &m.EHLEOMOEPGD },
+            |m: &mut ChargerInfo| { &mut m.EHLEOMOEPGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChargerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.KCEKMJLHFGE = is.read_uint32()?;
+                16 => {
+                    self.EHLEOMOEPGD = is.read_uint32()?;
                 },
-                120 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChargerInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KCEKMJLHFGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KCEKMJLHFGE);
+        if self.EHLEOMOEPGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EHLEOMOEPGD);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChargerInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KCEKMJLHFGE != 0 {
-            os.write_uint32(12, self.KCEKMJLHFGE)?;
+        if self.EHLEOMOEPGD != 0 {
+            os.write_uint32(2, self.EHLEOMOEPGD)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(15, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChargerInfo {
     }
 
     fn clear(&mut self) {
-        self.KCEKMJLHFGE = 0;
+        self.EHLEOMOEPGD = 0;
         self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChargerInfo {
         static instance: ChargerInfo = ChargerInfo {
-            KCEKMJLHFGE: 0,
+            EHLEOMOEPGD: 0,
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ChargerInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ChargerInfo.proto\"J\n\x0bChargerInfo\x12\x20\n\x0bKCEKMJLHFGE\x18\
-    \x0c\x20\x01(\rR\x0bKCEKMJLHFGE\x12\x19\n\x08group_id\x18\x0f\x20\x01(\r\
+    \n\x11ChargerInfo.proto\"J\n\x0bChargerInfo\x12\x20\n\x0bEHLEOMOEPGD\x18\
+    \x02\x20\x01(\rR\x0bEHLEOMOEPGD\x12\x19\n\x08group_id\x18\x04\x20\x01(\r\
     R\x07groupIdb\x06proto3\
 ";
 

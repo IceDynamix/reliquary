@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpringRecoverConfig {
     // message fields
-    // @@protoc_insertion_point(field:SpringRecoverConfig.PPJBPMAGMOE)
-    pub PPJBPMAGMOE: ::std::vec::Vec<super::AvatarPresetHp::AvatarPresetHp>,
-    // @@protoc_insertion_point(field:SpringRecoverConfig.OICDEAMKNMF)
-    pub OICDEAMKNMF: bool,
-    // @@protoc_insertion_point(field:SpringRecoverConfig.OFAPNDBOJCB)
-    pub OFAPNDBOJCB: u32,
+    // @@protoc_insertion_point(field:SpringRecoverConfig.FHIHDCOEFJJ)
+    pub FHIHDCOEFJJ: u32,
+    // @@protoc_insertion_point(field:SpringRecoverConfig.NCKFHLAFDME)
+    pub NCKFHLAFDME: bool,
+    // @@protoc_insertion_point(field:SpringRecoverConfig.GELIJOPKBHD)
+    pub GELIJOPKBHD: ::std::vec::Vec<super::AvatarPresetHp::AvatarPresetHp>,
     // special fields
     // @@protoc_insertion_point(special_field:SpringRecoverConfig.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SpringRecoverConfig {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FHIHDCOEFJJ",
+            |m: &SpringRecoverConfig| { &m.FHIHDCOEFJJ },
+            |m: &mut SpringRecoverConfig| { &mut m.FHIHDCOEFJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NCKFHLAFDME",
+            |m: &SpringRecoverConfig| { &m.NCKFHLAFDME },
+            |m: &mut SpringRecoverConfig| { &mut m.NCKFHLAFDME },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPJBPMAGMOE",
-            |m: &SpringRecoverConfig| { &m.PPJBPMAGMOE },
-            |m: &mut SpringRecoverConfig| { &mut m.PPJBPMAGMOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OICDEAMKNMF",
-            |m: &SpringRecoverConfig| { &m.OICDEAMKNMF },
-            |m: &mut SpringRecoverConfig| { &mut m.OICDEAMKNMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFAPNDBOJCB",
-            |m: &SpringRecoverConfig| { &m.OFAPNDBOJCB },
-            |m: &mut SpringRecoverConfig| { &mut m.OFAPNDBOJCB },
+            "GELIJOPKBHD",
+            |m: &SpringRecoverConfig| { &m.GELIJOPKBHD },
+            |m: &mut SpringRecoverConfig| { &mut m.GELIJOPKBHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpringRecoverConfig>(
             "SpringRecoverConfig",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpringRecoverConfig {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.PPJBPMAGMOE.push(is.read_message()?);
+                16 => {
+                    self.FHIHDCOEFJJ = is.read_uint32()?;
                 },
                 104 => {
-                    self.OICDEAMKNMF = is.read_bool()?;
+                    self.NCKFHLAFDME = is.read_bool()?;
                 },
-                56 => {
-                    self.OFAPNDBOJCB = is.read_uint32()?;
+                42 => {
+                    self.GELIJOPKBHD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for SpringRecoverConfig {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PPJBPMAGMOE {
+        if self.FHIHDCOEFJJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FHIHDCOEFJJ);
+        }
+        if self.NCKFHLAFDME != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.GELIJOPKBHD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OICDEAMKNMF != false {
-            my_size += 1 + 1;
-        }
-        if self.OFAPNDBOJCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OFAPNDBOJCB);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PPJBPMAGMOE {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.FHIHDCOEFJJ != 0 {
+            os.write_uint32(2, self.FHIHDCOEFJJ)?;
+        }
+        if self.NCKFHLAFDME != false {
+            os.write_bool(13, self.NCKFHLAFDME)?;
+        }
+        for v in &self.GELIJOPKBHD {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.OICDEAMKNMF != false {
-            os.write_bool(13, self.OICDEAMKNMF)?;
-        }
-        if self.OFAPNDBOJCB != 0 {
-            os.write_uint32(7, self.OFAPNDBOJCB)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SpringRecoverConfig {
     }
 
     fn clear(&mut self) {
-        self.PPJBPMAGMOE.clear();
-        self.OICDEAMKNMF = false;
-        self.OFAPNDBOJCB = 0;
+        self.FHIHDCOEFJJ = 0;
+        self.NCKFHLAFDME = false;
+        self.GELIJOPKBHD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpringRecoverConfig {
         static instance: SpringRecoverConfig = SpringRecoverConfig {
-            PPJBPMAGMOE: ::std::vec::Vec::new(),
-            OICDEAMKNMF: false,
-            OFAPNDBOJCB: 0,
+            FHIHDCOEFJJ: 0,
+            NCKFHLAFDME: false,
+            GELIJOPKBHD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SpringRecoverConfig {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SpringRecoverConfig.proto\x1a\x14AvatarPresetHp.proto\"\x8c\x01\n\
-    \x13SpringRecoverConfig\x121\n\x0bPPJBPMAGMOE\x18\x03\x20\x03(\x0b2\x0f.\
-    AvatarPresetHpR\x0bPPJBPMAGMOE\x12\x20\n\x0bOICDEAMKNMF\x18\r\x20\x01(\
-    \x08R\x0bOICDEAMKNMF\x12\x20\n\x0bOFAPNDBOJCB\x18\x07\x20\x01(\rR\x0bOFA\
-    PNDBOJCBb\x06proto3\
+    \x13SpringRecoverConfig\x12\x20\n\x0bFHIHDCOEFJJ\x18\x02\x20\x01(\rR\x0b\
+    FHIHDCOEFJJ\x12\x20\n\x0bNCKFHLAFDME\x18\r\x20\x01(\x08R\x0bNCKFHLAFDME\
+    \x121\n\x0bGELIJOPKBHD\x18\x05\x20\x03(\x0b2\x0f.AvatarPresetHpR\x0bGELI\
+    JOPKBHDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

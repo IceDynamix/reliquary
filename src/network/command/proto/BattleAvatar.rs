@@ -52,14 +52,14 @@ pub struct BattleAvatar {
     pub world_level: u32,
     // @@protoc_insertion_point(field:BattleAvatar.assist_uid)
     pub assist_uid: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.FIHFPGOGBJE)
-    pub FIHFPGOGBJE: ::protobuf::MessageField<super::CBFNACMKCPI::CBFNACMKCPI>,
+    // @@protoc_insertion_point(field:BattleAvatar.NCGDNLIEHEJ)
+    pub NCGDNLIEHEJ: ::protobuf::MessageField<super::IGGOBECDELM::IGGOBECDELM>,
     // @@protoc_insertion_point(field:BattleAvatar.sp_bar)
     pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
-    // @@protoc_insertion_point(field:BattleAvatar.LHNOJAAOJEE)
-    pub LHNOJAAOJEE: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.KJEHECLGBHC)
-    pub KJEHECLGBHC: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
+    // @@protoc_insertion_point(field:BattleAvatar.HADKOMLNOOB)
+    pub HADKOMLNOOB: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.JBPHNEKNMAO)
+    pub JBPHNEKNMAO: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
     // @@protoc_insertion_point(field:BattleAvatar.enhanced_id)
     pub enhanced_id: u32,
     // special fields
@@ -141,10 +141,10 @@ impl BattleAvatar {
             |m: &BattleAvatar| { &m.assist_uid },
             |m: &mut BattleAvatar| { &mut m.assist_uid },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CBFNACMKCPI::CBFNACMKCPI>(
-            "FIHFPGOGBJE",
-            |m: &BattleAvatar| { &m.FIHFPGOGBJE },
-            |m: &mut BattleAvatar| { &mut m.FIHFPGOGBJE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IGGOBECDELM::IGGOBECDELM>(
+            "NCGDNLIEHEJ",
+            |m: &BattleAvatar| { &m.NCGDNLIEHEJ },
+            |m: &mut BattleAvatar| { &mut m.NCGDNLIEHEJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
             "sp_bar",
@@ -152,14 +152,14 @@ impl BattleAvatar {
             |m: &mut BattleAvatar| { &mut m.sp_bar },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHNOJAAOJEE",
-            |m: &BattleAvatar| { &m.LHNOJAAOJEE },
-            |m: &mut BattleAvatar| { &mut m.LHNOJAAOJEE },
+            "HADKOMLNOOB",
+            |m: &BattleAvatar| { &m.HADKOMLNOOB },
+            |m: &mut BattleAvatar| { &mut m.HADKOMLNOOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KJEHECLGBHC",
-            |m: &BattleAvatar| { &m.KJEHECLGBHC },
-            |m: &mut BattleAvatar| { &mut m.KJEHECLGBHC },
+            "JBPHNEKNMAO",
+            |m: &BattleAvatar| { &m.JBPHNEKNMAO },
+            |m: &mut BattleAvatar| { &mut m.JBPHNEKNMAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "enhanced_id",
@@ -221,16 +221,16 @@ impl ::protobuf::Message for BattleAvatar {
                     self.assist_uid = is.read_uint32()?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIHFPGOGBJE)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCGDNLIEHEJ)?;
                 },
                 130 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
                 136 => {
-                    self.LHNOJAAOJEE = is.read_uint32()?;
+                    self.HADKOMLNOOB = is.read_uint32()?;
                 },
                 146 => {
-                    self.KJEHECLGBHC.push(is.read_message()?);
+                    self.JBPHNEKNMAO.push(is.read_message()?);
                 },
                 152 => {
                     self.enhanced_id = is.read_uint32()?;
@@ -286,7 +286,7 @@ impl ::protobuf::Message for BattleAvatar {
         if self.assist_uid != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.assist_uid);
         }
-        if let Some(v) = self.FIHFPGOGBJE.as_ref() {
+        if let Some(v) = self.NCGDNLIEHEJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -294,10 +294,10 @@ impl ::protobuf::Message for BattleAvatar {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.LHNOJAAOJEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.LHNOJAAOJEE);
+        if self.HADKOMLNOOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.HADKOMLNOOB);
         }
-        for value in &self.KJEHECLGBHC {
+        for value in &self.JBPHNEKNMAO {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -346,16 +346,16 @@ impl ::protobuf::Message for BattleAvatar {
         if self.assist_uid != 0 {
             os.write_uint32(13, self.assist_uid)?;
         }
-        if let Some(v) = self.FIHFPGOGBJE.as_ref() {
+        if let Some(v) = self.NCGDNLIEHEJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.sp_bar.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
         }
-        if self.LHNOJAAOJEE != 0 {
-            os.write_uint32(17, self.LHNOJAAOJEE)?;
+        if self.HADKOMLNOOB != 0 {
+            os.write_uint32(17, self.HADKOMLNOOB)?;
         }
-        for v in &self.KJEHECLGBHC {
+        for v in &self.JBPHNEKNMAO {
             ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
         };
         if self.enhanced_id != 0 {
@@ -390,10 +390,10 @@ impl ::protobuf::Message for BattleAvatar {
         self.relic_list.clear();
         self.world_level = 0;
         self.assist_uid = 0;
-        self.FIHFPGOGBJE.clear();
+        self.NCGDNLIEHEJ.clear();
         self.sp_bar.clear();
-        self.LHNOJAAOJEE = 0;
-        self.KJEHECLGBHC.clear();
+        self.HADKOMLNOOB = 0;
+        self.JBPHNEKNMAO.clear();
         self.enhanced_id = 0;
         self.special_fields.clear();
     }
@@ -412,10 +412,10 @@ impl ::protobuf::Message for BattleAvatar {
             relic_list: ::std::vec::Vec::new(),
             world_level: 0,
             assist_uid: 0,
-            FIHFPGOGBJE: ::protobuf::MessageField::none(),
+            NCGDNLIEHEJ: ::protobuf::MessageField::none(),
             sp_bar: ::protobuf::MessageField::none(),
-            LHNOJAAOJEE: 0,
-            KJEHECLGBHC: ::std::vec::Vec::new(),
+            HADKOMLNOOB: 0,
+            JBPHNEKNMAO: ::std::vec::Vec::new(),
             enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -442,8 +442,8 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatar {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12BattleAvatar.proto\x1a\x15AvatarSkillTree.proto\x1a\x10AvatarType.\
-    proto\x1a\x15BattleEquipment.proto\x1a\x11BattleRelic.proto\x1a\x11CBFNA\
-    CMKCPI.proto\x1a\x0fSpBarInfo.proto\"\xf0\x04\n\x0cBattleAvatar\x12,\n\
+    proto\x1a\x15BattleEquipment.proto\x1a\x11BattleRelic.proto\x1a\x11IGGOB\
+    ECDELM.proto\x1a\x0fSpBarInfo.proto\"\xf0\x04\n\x0cBattleAvatar\x12,\n\
     \x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
     \x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\x20\
     \x01(\rR\x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x14\
@@ -454,10 +454,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x18\n\x20\x01(\rR\tpromotion\x12+\n\nrelic_list\x18\x0b\x20\x03(\x0b2\
     \x0c.BattleRelicR\trelicList\x12\x1f\n\x0bworld_level\x18\x0c\x20\x01(\r\
     R\nworldLevel\x12\x1d\n\nassist_uid\x18\r\x20\x01(\rR\tassistUid\x12.\n\
-    \x0bFIHFPGOGBJE\x18\x0f\x20\x01(\x0b2\x0c.CBFNACMKCPIR\x0bFIHFPGOGBJE\
+    \x0bNCGDNLIEHEJ\x18\x0f\x20\x01(\x0b2\x0c.IGGOBECDELMR\x0bNCGDNLIEHEJ\
     \x12!\n\x06sp_bar\x18\x10\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\
-    \x0bLHNOJAAOJEE\x18\x11\x20\x01(\rR\x0bLHNOJAAOJEE\x122\n\x0bKJEHECLGBHC\
-    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bKJEHECLGBHC\x12\x1f\n\x0b\
+    \x0bHADKOMLNOOB\x18\x11\x20\x01(\rR\x0bHADKOMLNOOB\x122\n\x0bJBPHNEKNMAO\
+    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bJBPHNEKNMAO\x12\x1f\n\x0b\
     enhanced_id\x18\x13\x20\x01(\rR\nenhancedIdb\x06proto3\
 ";
 
@@ -480,7 +480,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::AvatarType::file_descriptor().clone());
             deps.push(super::BattleEquipment::file_descriptor().clone());
             deps.push(super::BattleRelic::file_descriptor().clone());
-            deps.push(super::CBFNACMKCPI::file_descriptor().clone());
+            deps.push(super::IGGOBECDELM::file_descriptor().clone());
             deps.push(super::SpBarInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleAvatar::generated_message_descriptor_data());

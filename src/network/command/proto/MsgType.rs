@@ -37,6 +37,8 @@ pub enum MsgType {
     MSG_TYPE_INVITE = 3,
     // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_PLANET_FES)
     MSG_TYPE_PLANET_FES = 4,
+    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_ACIELMOLELB)
+    MSG_TYPE_ACIELMOLELB = 5,
 }
 
 impl ::protobuf::Enum for MsgType {
@@ -53,6 +55,7 @@ impl ::protobuf::Enum for MsgType {
             2 => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
             3 => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
             4 => ::std::option::Option::Some(MsgType::MSG_TYPE_PLANET_FES),
+            5 => ::std::option::Option::Some(MsgType::MSG_TYPE_ACIELMOLELB),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +67,7 @@ impl ::protobuf::Enum for MsgType {
             "MSG_TYPE_EMOJI" => ::std::option::Option::Some(MsgType::MSG_TYPE_EMOJI),
             "MSG_TYPE_INVITE" => ::std::option::Option::Some(MsgType::MSG_TYPE_INVITE),
             "MSG_TYPE_PLANET_FES" => ::std::option::Option::Some(MsgType::MSG_TYPE_PLANET_FES),
+            "MSG_TYPE_ACIELMOLELB" => ::std::option::Option::Some(MsgType::MSG_TYPE_ACIELMOLELB),
             _ => ::std::option::Option::None
         }
     }
@@ -74,6 +78,7 @@ impl ::protobuf::Enum for MsgType {
         MsgType::MSG_TYPE_EMOJI,
         MsgType::MSG_TYPE_INVITE,
         MsgType::MSG_TYPE_PLANET_FES,
+        MsgType::MSG_TYPE_ACIELMOLELB,
     ];
 }
 
@@ -102,10 +107,10 @@ impl MsgType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rMsgType.proto*x\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\x12\x18\
-    \n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\x10\x02\
-    \x12\x13\n\x0fMSG_TYPE_INVITE\x10\x03\x12\x17\n\x13MSG_TYPE_PLANET_FES\
-    \x10\x04b\x06proto3\
+    \n\rMsgType.proto*\x92\x01\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\
+    \x12\x18\n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\
+    \x10\x02\x12\x13\n\x0fMSG_TYPE_INVITE\x10\x03\x12\x17\n\x13MSG_TYPE_PLAN\
+    ET_FES\x10\x04\x12\x18\n\x14MSG_TYPE_ACIELMOLELB\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

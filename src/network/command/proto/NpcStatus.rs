@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcStatus {
     // message fields
-    // @@protoc_insertion_point(field:NpcStatus.npc_id)
-    pub npc_id: u32,
     // @@protoc_insertion_point(field:NpcStatus.is_finish)
     pub is_finish: bool,
+    // @@protoc_insertion_point(field:NpcStatus.npc_id)
+    pub npc_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NpcStatus.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NpcStatus {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "npc_id",
-            |m: &NpcStatus| { &m.npc_id },
-            |m: &mut NpcStatus| { &mut m.npc_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_finish",
             |m: &NpcStatus| { &m.is_finish },
             |m: &mut NpcStatus| { &mut m.is_finish },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "npc_id",
+            |m: &NpcStatus| { &m.npc_id },
+            |m: &mut NpcStatus| { &mut m.npc_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcStatus>(
             "NpcStatus",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NpcStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.npc_id = is.read_uint32()?;
-                },
-                104 => {
+                56 => {
                     self.is_finish = is.read_bool()?;
+                },
+                64 => {
+                    self.npc_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NpcStatus {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.npc_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.npc_id);
-        }
         if self.is_finish != false {
             my_size += 1 + 1;
+        }
+        if self.npc_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.npc_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NpcStatus {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.npc_id != 0 {
-            os.write_uint32(12, self.npc_id)?;
-        }
         if self.is_finish != false {
-            os.write_bool(13, self.is_finish)?;
+            os.write_bool(7, self.is_finish)?;
+        }
+        if self.npc_id != 0 {
+            os.write_uint32(8, self.npc_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NpcStatus {
     }
 
     fn clear(&mut self) {
-        self.npc_id = 0;
         self.is_finish = false;
+        self.npc_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcStatus {
         static instance: NpcStatus = NpcStatus {
-            npc_id: 0,
             is_finish: false,
+            npc_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for NpcStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fNpcStatus.proto\"?\n\tNpcStatus\x12\x15\n\x06npc_id\x18\x0c\x20\
-    \x01(\rR\x05npcId\x12\x1b\n\tis_finish\x18\r\x20\x01(\x08R\x08isFinishb\
+    \n\x0fNpcStatus.proto\"?\n\tNpcStatus\x12\x1b\n\tis_finish\x18\x07\x20\
+    \x01(\x08R\x08isFinish\x12\x15\n\x06npc_id\x18\x08\x20\x01(\rR\x05npcIdb\
     \x06proto3\
 ";
 

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.CJDINAOMDLK)
-    pub CJDINAOMDLK: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.FELKHHOPCOD)
+    pub FELKHHOPCOD: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.progress)
     pub progress: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SetClientRaidTargetCountCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJDINAOMDLK",
-            |m: &SetClientRaidTargetCountCsReq| { &m.CJDINAOMDLK },
-            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.CJDINAOMDLK },
+            "FELKHHOPCOD",
+            |m: &SetClientRaidTargetCountCsReq| { &m.FELKHHOPCOD },
+            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.FELKHHOPCOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CJDINAOMDLK = is.read_uint32()?;
+                64 => {
+                    self.FELKHHOPCOD = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CJDINAOMDLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CJDINAOMDLK);
+        if self.FELKHHOPCOD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FELKHHOPCOD);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.progress);
+            my_size += ::protobuf::rt::uint32_size(13, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CJDINAOMDLK != 0 {
-            os.write_uint32(5, self.CJDINAOMDLK)?;
+        if self.FELKHHOPCOD != 0 {
+            os.write_uint32(8, self.FELKHHOPCOD)?;
         }
         if self.progress != 0 {
-            os.write_uint32(14, self.progress)?;
+            os.write_uint32(13, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn clear(&mut self) {
-        self.CJDINAOMDLK = 0;
+        self.FELKHHOPCOD = 0;
         self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountCsReq {
         static instance: SetClientRaidTargetCountCsReq = SetClientRaidTargetCountCsReq {
-            CJDINAOMDLK: 0,
+            FELKHHOPCOD: 0,
             progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountCsReq.proto\"]\n\x1dSetClientRaidTargetCountC\
-    sReq\x12\x20\n\x0bCJDINAOMDLK\x18\x05\x20\x01(\rR\x0bCJDINAOMDLK\x12\x1a\
-    \n\x08progress\x18\x0e\x20\x01(\rR\x08progressb\x06proto3\
+    sReq\x12\x20\n\x0bFELKHHOPCOD\x18\x08\x20\x01(\rR\x0bFELKHHOPCOD\x12\x1a\
+    \n\x08progress\x18\r\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

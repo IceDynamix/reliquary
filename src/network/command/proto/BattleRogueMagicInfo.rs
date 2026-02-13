@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleRogueMagicInfo {
     // message fields
-    // @@protoc_insertion_point(field:BattleRogueMagicInfo.modifier_content)
-    pub modifier_content: ::protobuf::MessageField<super::BattleRogueMagicModifierInfo::BattleRogueMagicModifierInfo>,
+    // @@protoc_insertion_point(field:BattleRogueMagicInfo.AKBCKBPKHAP)
+    pub AKBCKBPKHAP: ::protobuf::MessageField<super::GGHAHPEOLKO::GGHAHPEOLKO>,
     // @@protoc_insertion_point(field:BattleRogueMagicInfo.detail_info)
-    pub detail_info: ::protobuf::MessageField<super::BattleRogueMagicDetailInfo::BattleRogueMagicDetailInfo>,
+    pub detail_info: ::protobuf::MessageField<super::OPJCCFKFKAK::OPJCCFKFKAK>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleRogueMagicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,12 +51,12 @@ impl BattleRogueMagicInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleRogueMagicModifierInfo::BattleRogueMagicModifierInfo>(
-            "modifier_content",
-            |m: &BattleRogueMagicInfo| { &m.modifier_content },
-            |m: &mut BattleRogueMagicInfo| { &mut m.modifier_content },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGHAHPEOLKO::GGHAHPEOLKO>(
+            "AKBCKBPKHAP",
+            |m: &BattleRogueMagicInfo| { &m.AKBCKBPKHAP },
+            |m: &mut BattleRogueMagicInfo| { &mut m.AKBCKBPKHAP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleRogueMagicDetailInfo::BattleRogueMagicDetailInfo>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPJCCFKFKAK::OPJCCFKFKAK>(
             "detail_info",
             |m: &BattleRogueMagicInfo| { &m.detail_info },
             |m: &mut BattleRogueMagicInfo| { &mut m.detail_info },
@@ -80,7 +80,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier_content)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKBCKBPKHAP)?;
                 },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail_info)?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.modifier_content.as_ref() {
+        if let Some(v) = self.AKBCKBPKHAP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,7 +111,7 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.modifier_content.as_ref() {
+        if let Some(v) = self.AKBCKBPKHAP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.detail_info.as_ref() {
@@ -134,14 +134,14 @@ impl ::protobuf::Message for BattleRogueMagicInfo {
     }
 
     fn clear(&mut self) {
-        self.modifier_content.clear();
+        self.AKBCKBPKHAP.clear();
         self.detail_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleRogueMagicInfo {
         static instance: BattleRogueMagicInfo = BattleRogueMagicInfo {
-            modifier_content: ::protobuf::MessageField::none(),
+            AKBCKBPKHAP: ::protobuf::MessageField::none(),
             detail_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,11 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleRogueMagicInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aBattleRogueMagicInfo.proto\x1a\x20BattleRogueMagicDetailInfo.proto\
-    \x1a\"BattleRogueMagicModifierInfo.proto\"\x9e\x01\n\x14BattleRogueMagic\
-    Info\x12H\n\x10modifier_content\x18\x01\x20\x01(\x0b2\x1d.BattleRogueMag\
-    icModifierInfoR\x0fmodifierContent\x12<\n\x0bdetail_info\x18\x02\x20\x01\
-    (\x0b2\x1b.BattleRogueMagicDetailInfoR\ndetailInfob\x06proto3\
+    \n\x1aBattleRogueMagicInfo.proto\x1a\x11GGHAHPEOLKO.proto\x1a\x11OPJCCFK\
+    FKAK.proto\"u\n\x14BattleRogueMagicInfo\x12.\n\x0bAKBCKBPKHAP\x18\x01\
+    \x20\x01(\x0b2\x0c.GGHAHPEOLKOR\x0bAKBCKBPKHAP\x12-\n\x0bdetail_info\x18\
+    \x02\x20\x01(\x0b2\x0c.OPJCCFKFKAKR\ndetailInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BattleRogueMagicDetailInfo::file_descriptor().clone());
-            deps.push(super::BattleRogueMagicModifierInfo::file_descriptor().clone());
+            deps.push(super::GGHAHPEOLKO::file_descriptor().clone());
+            deps.push(super::OPJCCFKFKAK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleRogueMagicInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

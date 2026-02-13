@@ -32,8 +32,8 @@ pub struct RotateMapCsReq {
     pub group_id: u32,
     // @@protoc_insertion_point(field:RotateMapCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:RotateMapCsReq.KCEKMJLHFGE)
-    pub KCEKMJLHFGE: u32,
+    // @@protoc_insertion_point(field:RotateMapCsReq.EHLEOMOEPGD)
+    pub EHLEOMOEPGD: u32,
     // @@protoc_insertion_point(field:RotateMapCsReq.rogue_map)
     pub rogue_map: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
     // special fields
@@ -66,9 +66,9 @@ impl RotateMapCsReq {
             |m: &mut RotateMapCsReq| { &mut m.motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCEKMJLHFGE",
-            |m: &RotateMapCsReq| { &m.KCEKMJLHFGE },
-            |m: &mut RotateMapCsReq| { &mut m.KCEKMJLHFGE },
+            "EHLEOMOEPGD",
+            |m: &RotateMapCsReq| { &m.EHLEOMOEPGD },
+            |m: &mut RotateMapCsReq| { &mut m.EHLEOMOEPGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
             "rogue_map",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.group_id = is.read_uint32()?;
                 },
-                82 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                32 => {
-                    self.KCEKMJLHFGE = is.read_uint32()?;
+                56 => {
+                    self.EHLEOMOEPGD = is.read_uint32()?;
                 },
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
                 tag => {
@@ -118,14 +118,14 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
         }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KCEKMJLHFGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KCEKMJLHFGE);
+        if self.EHLEOMOEPGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EHLEOMOEPGD);
         }
         if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for RotateMapCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(14, self.group_id)?;
+            os.write_uint32(1, self.group_id)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.KCEKMJLHFGE != 0 {
-            os.write_uint32(4, self.KCEKMJLHFGE)?;
+        if self.EHLEOMOEPGD != 0 {
+            os.write_uint32(7, self.EHLEOMOEPGD)?;
         }
         if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::Message for RotateMapCsReq {
     fn clear(&mut self) {
         self.group_id = 0;
         self.motion.clear();
-        self.KCEKMJLHFGE = 0;
+        self.EHLEOMOEPGD = 0;
         self.rogue_map.clear();
         self.special_fields.clear();
     }
@@ -177,7 +177,7 @@ impl ::protobuf::Message for RotateMapCsReq {
         static instance: RotateMapCsReq = RotateMapCsReq {
             group_id: 0,
             motion: ::protobuf::MessageField::none(),
-            KCEKMJLHFGE: 0,
+            EHLEOMOEPGD: 0,
             rogue_map: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for RotateMapCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RotateMapCsReq.proto\x1a\x10MotionInfo.proto\x1a\x13RotateMapInfo.\
-    proto\"\x9f\x01\n\x0eRotateMapCsReq\x12\x19\n\x08group_id\x18\x0e\x20\
-    \x01(\rR\x07groupId\x12#\n\x06motion\x18\n\x20\x01(\x0b2\x0b.MotionInfoR\
-    \x06motion\x12\x20\n\x0bKCEKMJLHFGE\x18\x04\x20\x01(\rR\x0bKCEKMJLHFGE\
-    \x12+\n\trogue_map\x18\x06\x20\x01(\x0b2\x0e.RotateMapInfoR\x08rogueMapb\
+    proto\"\x9f\x01\n\x0eRotateMapCsReq\x12\x19\n\x08group_id\x18\x01\x20\
+    \x01(\rR\x07groupId\x12#\n\x06motion\x18\x0e\x20\x01(\x0b2\x0b.MotionInf\
+    oR\x06motion\x12\x20\n\x0bEHLEOMOEPGD\x18\x07\x20\x01(\rR\x0bEHLEOMOEPGD\
+    \x12+\n\trogue_map\x18\t\x20\x01(\x0b2\x0e.RotateMapInfoR\x08rogueMapb\
     \x06proto3\
 ";
 

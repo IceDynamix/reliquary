@@ -30,10 +30,10 @@ pub struct MusicRhythmFinishLevelCsReq {
     // message fields
     // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.role_star)
+    pub role_star: u32,
     // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.full_combo)
     pub full_combo: bool,
-    // @@protoc_insertion_point(field:MusicRhythmFinishLevelCsReq.OJHFFMMAFGG)
-    pub OJHFFMMAFGG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmFinishLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MusicRhythmFinishLevelCsReq {
             |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role_star",
+            |m: &MusicRhythmFinishLevelCsReq| { &m.role_star },
+            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.role_star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "full_combo",
             |m: &MusicRhythmFinishLevelCsReq| { &m.full_combo },
             |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.full_combo },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJHFFMMAFGG",
-            |m: &MusicRhythmFinishLevelCsReq| { &m.OJHFFMMAFGG },
-            |m: &mut MusicRhythmFinishLevelCsReq| { &mut m.OJHFFMMAFGG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmFinishLevelCsReq>(
             "MusicRhythmFinishLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.score_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.full_combo = is.read_bool()?;
+                56 => {
+                    self.role_star = is.read_uint32()?;
                 },
-                32 => {
-                    self.OJHFFMMAFGG = is.read_uint32()?;
+                40 => {
+                    self.full_combo = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+        }
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.role_star);
         }
         if self.full_combo != false {
             my_size += 1 + 1;
-        }
-        if self.OJHFFMMAFGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OJHFFMMAFGG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.score_id != 0 {
-            os.write_uint32(6, self.score_id)?;
+            os.write_uint32(10, self.score_id)?;
+        }
+        if self.role_star != 0 {
+            os.write_uint32(7, self.role_star)?;
         }
         if self.full_combo != false {
-            os.write_bool(1, self.full_combo)?;
-        }
-        if self.OJHFFMMAFGG != 0 {
-            os.write_uint32(4, self.OJHFFMMAFGG)?;
+            os.write_bool(5, self.full_combo)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
 
     fn clear(&mut self) {
         self.score_id = 0;
+        self.role_star = 0;
         self.full_combo = false;
-        self.OJHFFMMAFGG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmFinishLevelCsReq {
         static instance: MusicRhythmFinishLevelCsReq = MusicRhythmFinishLevelCsReq {
             score_id: 0,
+            role_star: 0,
             full_combo: false,
-            OJHFFMMAFGG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmFinishLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!MusicRhythmFinishLevelCsReq.proto\"y\n\x1bMusicRhythmFinishLevelCsReq\
-    \x12\x19\n\x08score_id\x18\x06\x20\x01(\rR\x07scoreId\x12\x1d\n\nfull_co\
-    mbo\x18\x01\x20\x01(\x08R\tfullCombo\x12\x20\n\x0bOJHFFMMAFGG\x18\x04\
-    \x20\x01(\rR\x0bOJHFFMMAFGGb\x06proto3\
+    \n!MusicRhythmFinishLevelCsReq.proto\"t\n\x1bMusicRhythmFinishLevelCsReq\
+    \x12\x19\n\x08score_id\x18\n\x20\x01(\rR\x07scoreId\x12\x1b\n\trole_star\
+    \x18\x07\x20\x01(\rR\x08roleStar\x12\x1d\n\nfull_combo\x18\x05\x20\x01(\
+    \x08R\tfullCombob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncAcceptedPamMissionNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncAcceptedPamMissionNotify.MLBKJBIIFNN)
-    pub MLBKJBIIFNN: u64,
+    // @@protoc_insertion_point(field:SyncAcceptedPamMissionNotify.BMHBKNKJMGH)
+    pub BMHBKNKJMGH: u64,
     // @@protoc_insertion_point(field:SyncAcceptedPamMissionNotify.main_mission_id)
     pub main_mission_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SyncAcceptedPamMissionNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLBKJBIIFNN",
-            |m: &SyncAcceptedPamMissionNotify| { &m.MLBKJBIIFNN },
-            |m: &mut SyncAcceptedPamMissionNotify| { &mut m.MLBKJBIIFNN },
+            "BMHBKNKJMGH",
+            |m: &SyncAcceptedPamMissionNotify| { &m.BMHBKNKJMGH },
+            |m: &mut SyncAcceptedPamMissionNotify| { &mut m.BMHBKNKJMGH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_mission_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MLBKJBIIFNN = is.read_uint64()?;
+                56 => {
+                    self.BMHBKNKJMGH = is.read_uint64()?;
                 },
-                24 => {
+                40 => {
                     self.main_mission_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MLBKJBIIFNN != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.MLBKJBIIFNN);
+        if self.BMHBKNKJMGH != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.BMHBKNKJMGH);
         }
         if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.main_mission_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.main_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MLBKJBIIFNN != 0 {
-            os.write_uint64(1, self.MLBKJBIIFNN)?;
+        if self.BMHBKNKJMGH != 0 {
+            os.write_uint64(7, self.BMHBKNKJMGH)?;
         }
         if self.main_mission_id != 0 {
-            os.write_uint32(3, self.main_mission_id)?;
+            os.write_uint32(5, self.main_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SyncAcceptedPamMissionNotify {
     }
 
     fn clear(&mut self) {
-        self.MLBKJBIIFNN = 0;
+        self.BMHBKNKJMGH = 0;
         self.main_mission_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncAcceptedPamMissionNotify {
         static instance: SyncAcceptedPamMissionNotify = SyncAcceptedPamMissionNotify {
-            MLBKJBIIFNN: 0,
+            BMHBKNKJMGH: 0,
             main_mission_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncAcceptedPamMissionNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SyncAcceptedPamMissionNotify.proto\"h\n\x1cSyncAcceptedPamMissionNot\
-    ify\x12\x20\n\x0bMLBKJBIIFNN\x18\x01\x20\x01(\x04R\x0bMLBKJBIIFNN\x12&\n\
-    \x0fmain_mission_id\x18\x03\x20\x01(\rR\rmainMissionIdb\x06proto3\
+    ify\x12\x20\n\x0bBMHBKNKJMGH\x18\x07\x20\x01(\x04R\x0bBMHBKNKJMGH\x12&\n\
+    \x0fmain_mission_id\x18\x05\x20\x01(\rR\rmainMissionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

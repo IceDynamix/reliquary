@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPamSkinType)
 pub enum CmdPamSkinType {
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdPamSkinTypeNone)
-    CmdPamSkinTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinCsReq)
-    CmdSelectPamSkinCsReq = 8134,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdSelectPamSkinScRsp)
-    CmdSelectPamSkinScRsp = 8129,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdUnlockPamSkinScNotify)
-    CmdUnlockPamSkinScNotify = 8133,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdGetPamSkinDataScRsp)
-    CmdGetPamSkinDataScRsp = 8125,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.CmdGetPamSkinDataCsReq)
-    CmdGetPamSkinDataCsReq = 8126,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_GKJBAODJMJG)
+    DMLDDNGOHLB_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_IPJONCIBPOM)
+    DMLDDNGOHLB_IPJONCIBPOM = 8132,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_IHFKAGOFDDJ)
+    DMLDDNGOHLB_IHFKAGOFDDJ = 8121,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_KJCCJNNFAGK)
+    DMLDDNGOHLB_KJCCJNNFAGK = 8124,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_MKMBDJKDOGN)
+    DMLDDNGOHLB_MKMBDJKDOGN = 8126,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.DMLDDNGOHLB_GLILEOMLNNG)
+    DMLDDNGOHLB_GLILEOMLNNG = 8130,
 }
 
 impl ::protobuf::Enum for CmdPamSkinType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdPamSkinType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPamSkinType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPamSkinType::CmdPamSkinTypeNone),
-            8134 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinCsReq),
-            8129 => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinScRsp),
-            8133 => ::std::option::Option::Some(CmdPamSkinType::CmdUnlockPamSkinScNotify),
-            8125 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
-            8126 => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
+            0 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_GKJBAODJMJG),
+            8132 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_IPJONCIBPOM),
+            8121 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_IHFKAGOFDDJ),
+            8124 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_KJCCJNNFAGK),
+            8126 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_MKMBDJKDOGN),
+            8130 => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_GLILEOMLNNG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPamSkinType> {
         match str {
-            "CmdPamSkinTypeNone" => ::std::option::Option::Some(CmdPamSkinType::CmdPamSkinTypeNone),
-            "CmdSelectPamSkinCsReq" => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinCsReq),
-            "CmdSelectPamSkinScRsp" => ::std::option::Option::Some(CmdPamSkinType::CmdSelectPamSkinScRsp),
-            "CmdUnlockPamSkinScNotify" => ::std::option::Option::Some(CmdPamSkinType::CmdUnlockPamSkinScNotify),
-            "CmdGetPamSkinDataScRsp" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataScRsp),
-            "CmdGetPamSkinDataCsReq" => ::std::option::Option::Some(CmdPamSkinType::CmdGetPamSkinDataCsReq),
+            "DMLDDNGOHLB_GKJBAODJMJG" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_GKJBAODJMJG),
+            "DMLDDNGOHLB_IPJONCIBPOM" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_IPJONCIBPOM),
+            "DMLDDNGOHLB_IHFKAGOFDDJ" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_IHFKAGOFDDJ),
+            "DMLDDNGOHLB_KJCCJNNFAGK" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_KJCCJNNFAGK),
+            "DMLDDNGOHLB_MKMBDJKDOGN" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_MKMBDJKDOGN),
+            "DMLDDNGOHLB_GLILEOMLNNG" => ::std::option::Option::Some(CmdPamSkinType::DMLDDNGOHLB_GLILEOMLNNG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPamSkinType] = &[
-        CmdPamSkinType::CmdPamSkinTypeNone,
-        CmdPamSkinType::CmdSelectPamSkinCsReq,
-        CmdPamSkinType::CmdSelectPamSkinScRsp,
-        CmdPamSkinType::CmdUnlockPamSkinScNotify,
-        CmdPamSkinType::CmdGetPamSkinDataScRsp,
-        CmdPamSkinType::CmdGetPamSkinDataCsReq,
+        CmdPamSkinType::DMLDDNGOHLB_GKJBAODJMJG,
+        CmdPamSkinType::DMLDDNGOHLB_IPJONCIBPOM,
+        CmdPamSkinType::DMLDDNGOHLB_IHFKAGOFDDJ,
+        CmdPamSkinType::DMLDDNGOHLB_KJCCJNNFAGK,
+        CmdPamSkinType::DMLDDNGOHLB_MKMBDJKDOGN,
+        CmdPamSkinType::DMLDDNGOHLB_GLILEOMLNNG,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdPamSkinType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPamSkinType::CmdPamSkinTypeNone => 0,
-            CmdPamSkinType::CmdSelectPamSkinCsReq => 1,
-            CmdPamSkinType::CmdSelectPamSkinScRsp => 2,
-            CmdPamSkinType::CmdUnlockPamSkinScNotify => 3,
-            CmdPamSkinType::CmdGetPamSkinDataScRsp => 4,
-            CmdPamSkinType::CmdGetPamSkinDataCsReq => 5,
+            CmdPamSkinType::DMLDDNGOHLB_GKJBAODJMJG => 0,
+            CmdPamSkinType::DMLDDNGOHLB_IPJONCIBPOM => 1,
+            CmdPamSkinType::DMLDDNGOHLB_IHFKAGOFDDJ => 2,
+            CmdPamSkinType::DMLDDNGOHLB_KJCCJNNFAGK => 3,
+            CmdPamSkinType::DMLDDNGOHLB_MKMBDJKDOGN => 4,
+            CmdPamSkinType::DMLDDNGOHLB_GLILEOMLNNG => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdPamSkinType {
 
 impl ::std::default::Default for CmdPamSkinType {
     fn default() -> Self {
-        CmdPamSkinType::CmdPamSkinTypeNone
+        CmdPamSkinType::DMLDDNGOHLB_GKJBAODJMJG
     }
 }
 
@@ -114,11 +114,11 @@ impl CmdPamSkinType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdPamSkinType.proto*\xb9\x01\n\x0eCmdPamSkinType\x12\x16\n\x12Cmd\
-    PamSkinTypeNone\x10\0\x12\x1a\n\x15CmdSelectPamSkinCsReq\x10\xc6?\x12\
-    \x1a\n\x15CmdSelectPamSkinScRsp\x10\xc1?\x12\x1d\n\x18CmdUnlockPamSkinSc\
-    Notify\x10\xc5?\x12\x1b\n\x16CmdGetPamSkinDataScRsp\x10\xbd?\x12\x1b\n\
-    \x16CmdGetPamSkinDataCsReq\x10\xbe?b\x06proto3\
+    \n\x14CmdPamSkinType.proto*\xc3\x01\n\x0eCmdPamSkinType\x12\x1b\n\x17DML\
+    DDNGOHLB_GKJBAODJMJG\x10\0\x12\x1c\n\x17DMLDDNGOHLB_IPJONCIBPOM\x10\xc4?\
+    \x12\x1c\n\x17DMLDDNGOHLB_IHFKAGOFDDJ\x10\xb9?\x12\x1c\n\x17DMLDDNGOHLB_\
+    KJCCJNNFAGK\x10\xbc?\x12\x1c\n\x17DMLDDNGOHLB_MKMBDJKDOGN\x10\xbe?\x12\
+    \x1c\n\x17DMLDDNGOHLB_GLILEOMLNNG\x10\xc2?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

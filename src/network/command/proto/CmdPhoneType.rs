@@ -27,30 +27,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPhoneType)
 pub enum CmdPhoneType {
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdPhoneTypeNone)
-    CmdPhoneTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneCaseScRsp)
-    CmdSelectPhoneCaseScRsp = 5191,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneThemeCsReq)
-    CmdSelectPhoneThemeCsReq = 5189,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleCsReq)
-    CmdSelectChatBubbleCsReq = 5120,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdUnlockPhoneThemeScNotify)
-    CmdUnlockPhoneThemeScNotify = 5138,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectChatBubbleScRsp)
-    CmdSelectChatBubbleScRsp = 5109,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdUnlockChatBubbleScNotify)
-    CmdUnlockChatBubbleScNotify = 5111,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataScRsp)
-    CmdGetPhoneDataScRsp = 5117,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdGetPhoneDataCsReq)
-    CmdGetPhoneDataCsReq = 5147,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneCaseCsReq)
-    CmdSelectPhoneCaseCsReq = 5195,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdUnlockPhoneCaseScNotify)
-    CmdUnlockPhoneCaseScNotify = 5161,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.CmdSelectPhoneThemeScRsp)
-    CmdSelectPhoneThemeScRsp = 5151,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_GKJBAODJMJG)
+    GLDIOHCEBHG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_KFJNANPKBGJ)
+    GLDIOHCEBHG_KFJNANPKBGJ = 5128,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_NCEIABANFNB)
+    GLDIOHCEBHG_NCEIABANFNB = 5175,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_DKIDKPBPAED)
+    GLDIOHCEBHG_DKIDKPBPAED = 5126,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_APGGJMKGCGP)
+    GLDIOHCEBHG_APGGJMKGCGP = 5155,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_OEOGFGOFCEA)
+    GLDIOHCEBHG_OEOGFGOFCEA = 5105,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_BAKBMICIJBJ)
+    GLDIOHCEBHG_BAKBMICIJBJ = 5157,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_OOKNNIOPHEM)
+    GLDIOHCEBHG_OOKNNIOPHEM = 5162,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_KEAPCIOIADD)
+    GLDIOHCEBHG_KEAPCIOIADD = 5137,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_ONJDAALHGIE)
+    GLDIOHCEBHG_ONJDAALHGIE = 5120,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_KOJJCIHFCBJ)
+    GLDIOHCEBHG_KOJJCIHFCBJ = 5138,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.GLDIOHCEBHG_KMIECOOOEOP)
+    GLDIOHCEBHG_KMIECOOOEOP = 5147,
 }
 
 impl ::protobuf::Enum for CmdPhoneType {
@@ -62,53 +62,53 @@ impl ::protobuf::Enum for CmdPhoneType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPhoneType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPhoneType::CmdPhoneTypeNone),
-            5191 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneCaseScRsp),
-            5189 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeCsReq),
-            5120 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
-            5138 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
-            5109 => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleScRsp),
-            5111 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockChatBubbleScNotify),
-            5117 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
-            5147 => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
-            5195 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneCaseCsReq),
-            5161 => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneCaseScNotify),
-            5151 => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeScRsp),
+            0 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_GKJBAODJMJG),
+            5128 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KFJNANPKBGJ),
+            5175 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_NCEIABANFNB),
+            5126 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_DKIDKPBPAED),
+            5155 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_APGGJMKGCGP),
+            5105 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_OEOGFGOFCEA),
+            5157 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_BAKBMICIJBJ),
+            5162 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_OOKNNIOPHEM),
+            5137 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KEAPCIOIADD),
+            5120 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_ONJDAALHGIE),
+            5138 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KOJJCIHFCBJ),
+            5147 => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KMIECOOOEOP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPhoneType> {
         match str {
-            "CmdPhoneTypeNone" => ::std::option::Option::Some(CmdPhoneType::CmdPhoneTypeNone),
-            "CmdSelectPhoneCaseScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneCaseScRsp),
-            "CmdSelectPhoneThemeCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeCsReq),
-            "CmdSelectChatBubbleCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleCsReq),
-            "CmdUnlockPhoneThemeScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneThemeScNotify),
-            "CmdSelectChatBubbleScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdSelectChatBubbleScRsp),
-            "CmdUnlockChatBubbleScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockChatBubbleScNotify),
-            "CmdGetPhoneDataScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataScRsp),
-            "CmdGetPhoneDataCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdGetPhoneDataCsReq),
-            "CmdSelectPhoneCaseCsReq" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneCaseCsReq),
-            "CmdUnlockPhoneCaseScNotify" => ::std::option::Option::Some(CmdPhoneType::CmdUnlockPhoneCaseScNotify),
-            "CmdSelectPhoneThemeScRsp" => ::std::option::Option::Some(CmdPhoneType::CmdSelectPhoneThemeScRsp),
+            "GLDIOHCEBHG_GKJBAODJMJG" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_GKJBAODJMJG),
+            "GLDIOHCEBHG_KFJNANPKBGJ" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KFJNANPKBGJ),
+            "GLDIOHCEBHG_NCEIABANFNB" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_NCEIABANFNB),
+            "GLDIOHCEBHG_DKIDKPBPAED" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_DKIDKPBPAED),
+            "GLDIOHCEBHG_APGGJMKGCGP" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_APGGJMKGCGP),
+            "GLDIOHCEBHG_OEOGFGOFCEA" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_OEOGFGOFCEA),
+            "GLDIOHCEBHG_BAKBMICIJBJ" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_BAKBMICIJBJ),
+            "GLDIOHCEBHG_OOKNNIOPHEM" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_OOKNNIOPHEM),
+            "GLDIOHCEBHG_KEAPCIOIADD" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KEAPCIOIADD),
+            "GLDIOHCEBHG_ONJDAALHGIE" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_ONJDAALHGIE),
+            "GLDIOHCEBHG_KOJJCIHFCBJ" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KOJJCIHFCBJ),
+            "GLDIOHCEBHG_KMIECOOOEOP" => ::std::option::Option::Some(CmdPhoneType::GLDIOHCEBHG_KMIECOOOEOP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPhoneType] = &[
-        CmdPhoneType::CmdPhoneTypeNone,
-        CmdPhoneType::CmdSelectPhoneCaseScRsp,
-        CmdPhoneType::CmdSelectPhoneThemeCsReq,
-        CmdPhoneType::CmdSelectChatBubbleCsReq,
-        CmdPhoneType::CmdUnlockPhoneThemeScNotify,
-        CmdPhoneType::CmdSelectChatBubbleScRsp,
-        CmdPhoneType::CmdUnlockChatBubbleScNotify,
-        CmdPhoneType::CmdGetPhoneDataScRsp,
-        CmdPhoneType::CmdGetPhoneDataCsReq,
-        CmdPhoneType::CmdSelectPhoneCaseCsReq,
-        CmdPhoneType::CmdUnlockPhoneCaseScNotify,
-        CmdPhoneType::CmdSelectPhoneThemeScRsp,
+        CmdPhoneType::GLDIOHCEBHG_GKJBAODJMJG,
+        CmdPhoneType::GLDIOHCEBHG_KFJNANPKBGJ,
+        CmdPhoneType::GLDIOHCEBHG_NCEIABANFNB,
+        CmdPhoneType::GLDIOHCEBHG_DKIDKPBPAED,
+        CmdPhoneType::GLDIOHCEBHG_APGGJMKGCGP,
+        CmdPhoneType::GLDIOHCEBHG_OEOGFGOFCEA,
+        CmdPhoneType::GLDIOHCEBHG_BAKBMICIJBJ,
+        CmdPhoneType::GLDIOHCEBHG_OOKNNIOPHEM,
+        CmdPhoneType::GLDIOHCEBHG_KEAPCIOIADD,
+        CmdPhoneType::GLDIOHCEBHG_ONJDAALHGIE,
+        CmdPhoneType::GLDIOHCEBHG_KOJJCIHFCBJ,
+        CmdPhoneType::GLDIOHCEBHG_KMIECOOOEOP,
     ];
 }
 
@@ -120,18 +120,18 @@ impl ::protobuf::EnumFull for CmdPhoneType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPhoneType::CmdPhoneTypeNone => 0,
-            CmdPhoneType::CmdSelectPhoneCaseScRsp => 1,
-            CmdPhoneType::CmdSelectPhoneThemeCsReq => 2,
-            CmdPhoneType::CmdSelectChatBubbleCsReq => 3,
-            CmdPhoneType::CmdUnlockPhoneThemeScNotify => 4,
-            CmdPhoneType::CmdSelectChatBubbleScRsp => 5,
-            CmdPhoneType::CmdUnlockChatBubbleScNotify => 6,
-            CmdPhoneType::CmdGetPhoneDataScRsp => 7,
-            CmdPhoneType::CmdGetPhoneDataCsReq => 8,
-            CmdPhoneType::CmdSelectPhoneCaseCsReq => 9,
-            CmdPhoneType::CmdUnlockPhoneCaseScNotify => 10,
-            CmdPhoneType::CmdSelectPhoneThemeScRsp => 11,
+            CmdPhoneType::GLDIOHCEBHG_GKJBAODJMJG => 0,
+            CmdPhoneType::GLDIOHCEBHG_KFJNANPKBGJ => 1,
+            CmdPhoneType::GLDIOHCEBHG_NCEIABANFNB => 2,
+            CmdPhoneType::GLDIOHCEBHG_DKIDKPBPAED => 3,
+            CmdPhoneType::GLDIOHCEBHG_APGGJMKGCGP => 4,
+            CmdPhoneType::GLDIOHCEBHG_OEOGFGOFCEA => 5,
+            CmdPhoneType::GLDIOHCEBHG_BAKBMICIJBJ => 6,
+            CmdPhoneType::GLDIOHCEBHG_OOKNNIOPHEM => 7,
+            CmdPhoneType::GLDIOHCEBHG_KEAPCIOIADD => 8,
+            CmdPhoneType::GLDIOHCEBHG_ONJDAALHGIE => 9,
+            CmdPhoneType::GLDIOHCEBHG_KOJJCIHFCBJ => 10,
+            CmdPhoneType::GLDIOHCEBHG_KMIECOOOEOP => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,7 +139,7 @@ impl ::protobuf::EnumFull for CmdPhoneType {
 
 impl ::std::default::Default for CmdPhoneType {
     fn default() -> Self {
-        CmdPhoneType::CmdPhoneTypeNone
+        CmdPhoneType::GLDIOHCEBHG_GKJBAODJMJG
     }
 }
 
@@ -150,15 +150,15 @@ impl CmdPhoneType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdPhoneType.proto*\xf7\x02\n\x0cCmdPhoneType\x12\x14\n\x10CmdPhon\
-    eTypeNone\x10\0\x12\x1c\n\x17CmdSelectPhoneCaseScRsp\x10\xc7(\x12\x1d\n\
-    \x18CmdSelectPhoneThemeCsReq\x10\xc5(\x12\x1d\n\x18CmdSelectChatBubbleCs\
-    Req\x10\x80(\x12\x20\n\x1bCmdUnlockPhoneThemeScNotify\x10\x92(\x12\x1d\n\
-    \x18CmdSelectChatBubbleScRsp\x10\xf5'\x12\x20\n\x1bCmdUnlockChatBubbleSc\
-    Notify\x10\xf7'\x12\x19\n\x14CmdGetPhoneDataScRsp\x10\xfd'\x12\x19\n\x14\
-    CmdGetPhoneDataCsReq\x10\x9b(\x12\x1c\n\x17CmdSelectPhoneCaseCsReq\x10\
-    \xcb(\x12\x1f\n\x1aCmdUnlockPhoneCaseScNotify\x10\xa9(\x12\x1d\n\x18CmdS\
-    electPhoneThemeScRsp\x10\x9f(b\x06proto3\
+    \n\x12CmdPhoneType.proto*\xf5\x02\n\x0cCmdPhoneType\x12\x1b\n\x17GLDIOHC\
+    EBHG_GKJBAODJMJG\x10\0\x12\x1c\n\x17GLDIOHCEBHG_KFJNANPKBGJ\x10\x88(\x12\
+    \x1c\n\x17GLDIOHCEBHG_NCEIABANFNB\x10\xb7(\x12\x1c\n\x17GLDIOHCEBHG_DKID\
+    KPBPAED\x10\x86(\x12\x1c\n\x17GLDIOHCEBHG_APGGJMKGCGP\x10\xa3(\x12\x1c\n\
+    \x17GLDIOHCEBHG_OEOGFGOFCEA\x10\xf1'\x12\x1c\n\x17GLDIOHCEBHG_BAKBMICIJB\
+    J\x10\xa5(\x12\x1c\n\x17GLDIOHCEBHG_OOKNNIOPHEM\x10\xaa(\x12\x1c\n\x17GL\
+    DIOHCEBHG_KEAPCIOIADD\x10\x91(\x12\x1c\n\x17GLDIOHCEBHG_ONJDAALHGIE\x10\
+    \x80(\x12\x1c\n\x17GLDIOHCEBHG_KOJJCIHFCBJ\x10\x92(\x12\x1c\n\x17GLDIOHC\
+    EBHG_KMIECOOOEOP\x10\x9b(b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

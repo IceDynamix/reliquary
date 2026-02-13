@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DeleteFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DeleteFriendCsReq.PJGPJEFAIMM)
-    pub PJGPJEFAIMM: u32,
+    // @@protoc_insertion_point(field:DeleteFriendCsReq.FFBLOAJHLGM)
+    pub FFBLOAJHLGM: u32,
     // @@protoc_insertion_point(field:DeleteFriendCsReq.uid)
     pub uid: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DeleteFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJGPJEFAIMM",
-            |m: &DeleteFriendCsReq| { &m.PJGPJEFAIMM },
-            |m: &mut DeleteFriendCsReq| { &mut m.PJGPJEFAIMM },
+            "FFBLOAJHLGM",
+            |m: &DeleteFriendCsReq| { &m.FFBLOAJHLGM },
+            |m: &mut DeleteFriendCsReq| { &mut m.FFBLOAJHLGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.PJGPJEFAIMM = is.read_uint32()?;
+                24 => {
+                    self.FFBLOAJHLGM = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJGPJEFAIMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PJGPJEFAIMM);
+        if self.FFBLOAJHLGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FFBLOAJHLGM);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.uid);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJGPJEFAIMM != 0 {
-            os.write_uint32(7, self.PJGPJEFAIMM)?;
+        if self.FFBLOAJHLGM != 0 {
+            os.write_uint32(3, self.FFBLOAJHLGM)?;
         }
         if self.uid != 0 {
-            os.write_uint32(9, self.uid)?;
+            os.write_uint32(10, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.PJGPJEFAIMM = 0;
+        self.FFBLOAJHLGM = 0;
         self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteFriendCsReq {
         static instance: DeleteFriendCsReq = DeleteFriendCsReq {
-            PJGPJEFAIMM: 0,
+            FFBLOAJHLGM: 0,
             uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteFriendCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17DeleteFriendCsReq.proto\"G\n\x11DeleteFriendCsReq\x12\x20\n\x0bPJG\
-    PJEFAIMM\x18\x07\x20\x01(\rR\x0bPJGPJEFAIMM\x12\x10\n\x03uid\x18\t\x20\
+    \n\x17DeleteFriendCsReq.proto\"G\n\x11DeleteFriendCsReq\x12\x20\n\x0bFFB\
+    LOAJHLGM\x18\x03\x20\x01(\rR\x0bFFBLOAJHLGM\x12\x10\n\x03uid\x18\n\x20\
     \x01(\rR\x03uidb\x06proto3\
 ";
 

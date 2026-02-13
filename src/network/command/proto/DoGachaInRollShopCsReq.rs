@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaInRollShopCsReq {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.gacha_random)
-    pub gacha_random: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.roll_shop_id)
     pub roll_shop_id: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.gacha_random)
+    pub gacha_random: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopCsReq.gacha_count)
     pub gacha_count: u32,
     // special fields
@@ -54,14 +54,14 @@ impl DoGachaInRollShopCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gacha_random",
-            |m: &DoGachaInRollShopCsReq| { &m.gacha_random },
-            |m: &mut DoGachaInRollShopCsReq| { &mut m.gacha_random },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "roll_shop_id",
             |m: &DoGachaInRollShopCsReq| { &m.roll_shop_id },
             |m: &mut DoGachaInRollShopCsReq| { &mut m.roll_shop_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gacha_random",
+            |m: &DoGachaInRollShopCsReq| { &m.gacha_random },
+            |m: &mut DoGachaInRollShopCsReq| { &mut m.gacha_random },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_count",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.gacha_random = is.read_uint32()?;
-                },
-                40 => {
+                96 => {
                     self.roll_shop_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.gacha_random = is.read_uint32()?;
                 },
                 88 => {
                     self.gacha_count = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.gacha_random);
-        }
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.roll_shop_id);
+        }
+        if self.gacha_random != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.gacha_random);
         }
         if self.gacha_count != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.gacha_count);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.gacha_random != 0 {
-            os.write_uint32(7, self.gacha_random)?;
-        }
         if self.roll_shop_id != 0 {
-            os.write_uint32(5, self.roll_shop_id)?;
+            os.write_uint32(12, self.roll_shop_id)?;
+        }
+        if self.gacha_random != 0 {
+            os.write_uint32(10, self.gacha_random)?;
         }
         if self.gacha_count != 0 {
             os.write_uint32(11, self.gacha_count)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     }
 
     fn clear(&mut self) {
-        self.gacha_random = 0;
         self.roll_shop_id = 0;
+        self.gacha_random = 0;
         self.gacha_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaInRollShopCsReq {
         static instance: DoGachaInRollShopCsReq = DoGachaInRollShopCsReq {
-            gacha_random: 0,
             roll_shop_id: 0,
+            gacha_random: 0,
             gacha_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12!\n\
-    \x0cgacha_random\x18\x07\x20\x01(\rR\x0bgachaRandom\x12\x20\n\x0croll_sh\
-    op_id\x18\x05\x20\x01(\rR\nrollShopId\x12\x1f\n\x0bgacha_count\x18\x0b\
+    \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12\
+    \x20\n\x0croll_shop_id\x18\x0c\x20\x01(\rR\nrollShopId\x12!\n\x0cgacha_r\
+    andom\x18\n\x20\x01(\rR\x0bgachaRandom\x12\x1f\n\x0bgacha_count\x18\x0b\
     \x20\x01(\rR\ngachaCountb\x06proto3\
 ";
 

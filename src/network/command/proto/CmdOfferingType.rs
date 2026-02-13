@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdOfferingType)
 pub enum CmdOfferingType {
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingTypeNone)
-    CmdOfferingTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoCsReq)
-    CmdGetOfferingInfoCsReq = 6933,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdGetOfferingInfoScRsp)
-    CmdGetOfferingInfoScRsp = 6926,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardScRsp)
-    CmdTakeOfferingRewardScRsp = 6934,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingInfoScNotify)
-    CmdOfferingInfoScNotify = 6923,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemCsReq)
-    CmdSubmitOfferingItemCsReq = 6929,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdSubmitOfferingItemScRsp)
-    CmdSubmitOfferingItemScRsp = 6925,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdTakeOfferingRewardCsReq)
-    CmdTakeOfferingRewardCsReq = 6924,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_GKJBAODJMJG)
+    NDIEHAMIKOL_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_DLCGLKGKNDG)
+    NDIEHAMIKOL_DLCGLKGKNDG = 6926,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_DNCDNBNPOHC)
+    NDIEHAMIKOL_DNCDNBNPOHC = 6932,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_JCPDFLBEHON)
+    NDIEHAMIKOL_JCPDFLBEHON = 6930,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_MEOEIPFLFFP)
+    NDIEHAMIKOL_MEOEIPFLFFP = 6931,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_NNHBMBIFCHA)
+    NDIEHAMIKOL_NNHBMBIFCHA = 6924,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_JHPAHINKPGO)
+    NDIEHAMIKOL_JHPAHINKPGO = 6940,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_IFPLJIMHDMB)
+    NDIEHAMIKOL_IFPLJIMHDMB = 6921,
 }
 
 impl ::protobuf::Enum for CmdOfferingType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdOfferingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdOfferingType> {
         match value {
-            0 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            6933 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
-            6926 => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
-            6934 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            6923 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            6929 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
-            6925 => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            6924 => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
+            0 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG),
+            6926 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG),
+            6932 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC),
+            6930 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON),
+            6931 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP),
+            6924 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA),
+            6940 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO),
+            6921 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdOfferingType> {
         match str {
-            "CmdOfferingTypeNone" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingTypeNone),
-            "CmdGetOfferingInfoCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoCsReq),
-            "CmdGetOfferingInfoScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdGetOfferingInfoScRsp),
-            "CmdTakeOfferingRewardScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardScRsp),
-            "CmdOfferingInfoScNotify" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingInfoScNotify),
-            "CmdSubmitOfferingItemCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemCsReq),
-            "CmdSubmitOfferingItemScRsp" => ::std::option::Option::Some(CmdOfferingType::CmdSubmitOfferingItemScRsp),
-            "CmdTakeOfferingRewardCsReq" => ::std::option::Option::Some(CmdOfferingType::CmdTakeOfferingRewardCsReq),
+            "NDIEHAMIKOL_GKJBAODJMJG" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG),
+            "NDIEHAMIKOL_DLCGLKGKNDG" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG),
+            "NDIEHAMIKOL_DNCDNBNPOHC" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC),
+            "NDIEHAMIKOL_JCPDFLBEHON" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON),
+            "NDIEHAMIKOL_MEOEIPFLFFP" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP),
+            "NDIEHAMIKOL_NNHBMBIFCHA" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA),
+            "NDIEHAMIKOL_JHPAHINKPGO" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO),
+            "NDIEHAMIKOL_IFPLJIMHDMB" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdOfferingType] = &[
-        CmdOfferingType::CmdOfferingTypeNone,
-        CmdOfferingType::CmdGetOfferingInfoCsReq,
-        CmdOfferingType::CmdGetOfferingInfoScRsp,
-        CmdOfferingType::CmdTakeOfferingRewardScRsp,
-        CmdOfferingType::CmdOfferingInfoScNotify,
-        CmdOfferingType::CmdSubmitOfferingItemCsReq,
-        CmdOfferingType::CmdSubmitOfferingItemScRsp,
-        CmdOfferingType::CmdTakeOfferingRewardCsReq,
+        CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG,
+        CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG,
+        CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC,
+        CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON,
+        CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP,
+        CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA,
+        CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO,
+        CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdOfferingType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdOfferingType::CmdOfferingTypeNone => 0,
-            CmdOfferingType::CmdGetOfferingInfoCsReq => 1,
-            CmdOfferingType::CmdGetOfferingInfoScRsp => 2,
-            CmdOfferingType::CmdTakeOfferingRewardScRsp => 3,
-            CmdOfferingType::CmdOfferingInfoScNotify => 4,
-            CmdOfferingType::CmdSubmitOfferingItemCsReq => 5,
-            CmdOfferingType::CmdSubmitOfferingItemScRsp => 6,
-            CmdOfferingType::CmdTakeOfferingRewardCsReq => 7,
+            CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG => 0,
+            CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG => 1,
+            CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC => 2,
+            CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON => 3,
+            CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP => 4,
+            CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA => 5,
+            CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO => 6,
+            CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdOfferingType {
 
 impl ::std::default::Default for CmdOfferingType {
     fn default() -> Self {
-        CmdOfferingType::CmdOfferingTypeNone
+        CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdOfferingType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdOfferingType.proto*\x88\x02\n\x0fCmdOfferingType\x12\x17\n\x13C\
-    mdOfferingTypeNone\x10\0\x12\x1c\n\x17CmdGetOfferingInfoCsReq\x10\x956\
-    \x12\x1c\n\x17CmdGetOfferingInfoScRsp\x10\x8e6\x12\x1f\n\x1aCmdTakeOffer\
-    ingRewardScRsp\x10\x966\x12\x1c\n\x17CmdOfferingInfoScNotify\x10\x8b6\
-    \x12\x1f\n\x1aCmdSubmitOfferingItemCsReq\x10\x916\x12\x1f\n\x1aCmdSubmit\
-    OfferingItemScRsp\x10\x8d6\x12\x1f\n\x1aCmdTakeOfferingRewardCsReq\x10\
-    \x8c6b\x06proto3\
+    \n\x15CmdOfferingType.proto*\x80\x02\n\x0fCmdOfferingType\x12\x1b\n\x17N\
+    DIEHAMIKOL_GKJBAODJMJG\x10\0\x12\x1c\n\x17NDIEHAMIKOL_DLCGLKGKNDG\x10\
+    \x8e6\x12\x1c\n\x17NDIEHAMIKOL_DNCDNBNPOHC\x10\x946\x12\x1c\n\x17NDIEHAM\
+    IKOL_JCPDFLBEHON\x10\x926\x12\x1c\n\x17NDIEHAMIKOL_MEOEIPFLFFP\x10\x936\
+    \x12\x1c\n\x17NDIEHAMIKOL_NNHBMBIFCHA\x10\x8c6\x12\x1c\n\x17NDIEHAMIKOL_\
+    JHPAHINKPGO\x10\x9c6\x12\x1c\n\x17NDIEHAMIKOL_IFPLJIMHDMB\x10\x896b\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

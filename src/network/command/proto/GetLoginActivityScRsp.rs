@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLoginActivityScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetLoginActivityScRsp.login_activity_list)
-    pub login_activity_list: ::std::vec::Vec<super::LoginActivityData::LoginActivityData>,
     // @@protoc_insertion_point(field:GetLoginActivityScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetLoginActivityScRsp.login_activity_list)
+    pub login_activity_list: ::std::vec::Vec<super::LoginActivityData::LoginActivityData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetLoginActivityScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetLoginActivityScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "login_activity_list",
-            |m: &GetLoginActivityScRsp| { &m.login_activity_list },
-            |m: &mut GetLoginActivityScRsp| { &mut m.login_activity_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetLoginActivityScRsp| { &m.retcode },
             |m: &mut GetLoginActivityScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "login_activity_list",
+            |m: &GetLoginActivityScRsp| { &m.login_activity_list },
+            |m: &mut GetLoginActivityScRsp| { &mut m.login_activity_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLoginActivityScRsp>(
             "GetLoginActivityScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.login_activity_list.push(is.read_message()?);
-                },
-                8 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    self.login_activity_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         for value in &self.login_activity_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.login_activity_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        for v in &self.login_activity_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetLoginActivityScRsp {
     }
 
     fn clear(&mut self) {
-        self.login_activity_list.clear();
         self.retcode = 0;
+        self.login_activity_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLoginActivityScRsp {
         static instance: GetLoginActivityScRsp = GetLoginActivityScRsp {
-            login_activity_list: ::std::vec::Vec::new(),
             retcode: 0,
+            login_activity_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLoginActivityScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetLoginActivityScRsp.proto\x1a\x17LoginActivityData.proto\"u\n\
-    \x15GetLoginActivityScRsp\x12B\n\x13login_activity_list\x18\x0c\x20\x03(\
-    \x0b2\x12.LoginActivityDataR\x11loginActivityList\x12\x18\n\x07retcode\
-    \x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x15GetLoginActivityScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retc\
+    ode\x12B\n\x13login_activity_list\x18\t\x20\x03(\x0b2\x12.LoginActivityD\
+    ataR\x11loginActivityListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

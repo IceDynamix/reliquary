@@ -27,36 +27,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdBattleType)
 pub enum CmdBattleType {
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleTypeNone)
-    CmdBattleTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportScRsp)
-    CmdBattleLogReportScRsp = 161,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleScRsp)
-    CmdQuitBattleScRsp = 191,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdBattleLogReportCsReq)
-    CmdBattleLogReportCsReq = 117,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoScRsp)
-    CmdGetCurBattleInfoScRsp = 138,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdSyncClientResVersionScRsp)
-    CmdSyncClientResVersionScRsp = 176,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdPVEBattleResultScRsp)
-    CmdPVEBattleResultScRsp = 111,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdGetCurBattleInfoCsReq)
-    CmdGetCurBattleInfoCsReq = 120,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdPVEBattleResultCsReq)
-    CmdPVEBattleResultCsReq = 151,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdRebattleByClientCsNotify)
-    CmdRebattleByClientCsNotify = 145,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleScNotify)
-    CmdQuitBattleScNotify = 147,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdServerSimulateBattleFinishScNotify)
-    CmdServerSimulateBattleFinishScNotify = 152,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdQuitBattleCsReq)
-    CmdQuitBattleCsReq = 109,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdReBattleAfterBattleLoseCsNotify)
-    CmdReBattleAfterBattleLoseCsNotify = 189,
-    // @@protoc_insertion_point(enum_value:CmdBattleType.CmdSyncClientResVersionCsReq)
-    CmdSyncClientResVersionCsReq = 195,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_GKJBAODJMJG)
+    BPNGDECMIOG_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_LOBGMFLMBEH)
+    BPNGDECMIOG_LOBGMFLMBEH = 162,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_LKBJHAIKMNN)
+    BPNGDECMIOG_LKBJHAIKMNN = 179,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_ADIIMKPOPEC)
+    BPNGDECMIOG_ADIIMKPOPEC = 147,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_FCJMKLLHHFK)
+    BPNGDECMIOG_FCJMKLLHHFK = 175,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_EJLJKKGDHMJ)
+    BPNGDECMIOG_EJLJKKGDHMJ = 169,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_ALEDEPDMNOK)
+    BPNGDECMIOG_ALEDEPDMNOK = 157,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_OBPDFBILDKC)
+    BPNGDECMIOG_OBPDFBILDKC = 166,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_OOGICNAPLME)
+    BPNGDECMIOG_OOGICNAPLME = 120,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_POPGICJFFOC)
+    BPNGDECMIOG_POPGICJFFOC = 126,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_CFBFFEFPBCH)
+    BPNGDECMIOG_CFBFFEFPBCH = 137,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_JALMEEBBEHB)
+    BPNGDECMIOG_JALMEEBBEHB = 138,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_KDFGMLFPIAP)
+    BPNGDECMIOG_KDFGMLFPIAP = 155,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_KFHDENNACEN)
+    BPNGDECMIOG_KFHDENNACEN = 128,
+    // @@protoc_insertion_point(enum_value:CmdBattleType.BPNGDECMIOG_GABBPOIEJMB)
+    BPNGDECMIOG_GABBPOIEJMB = 105,
 }
 
 impl ::protobuf::Enum for CmdBattleType {
@@ -68,62 +68,62 @@ impl ::protobuf::Enum for CmdBattleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleType> {
         match value {
-            0 => ::std::option::Option::Some(CmdBattleType::CmdBattleTypeNone),
-            161 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
-            191 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
-            117 => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
-            138 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
-            176 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
-            111 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultScRsp),
-            120 => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
-            151 => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
-            145 => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
-            147 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScNotify),
-            152 => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
-            109 => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
-            189 => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
-            195 => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionCsReq),
+            0 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_GKJBAODJMJG),
+            162 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_LOBGMFLMBEH),
+            179 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_LKBJHAIKMNN),
+            147 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_ADIIMKPOPEC),
+            175 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_FCJMKLLHHFK),
+            169 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_EJLJKKGDHMJ),
+            157 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_ALEDEPDMNOK),
+            166 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_OBPDFBILDKC),
+            120 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_OOGICNAPLME),
+            126 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_POPGICJFFOC),
+            137 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_CFBFFEFPBCH),
+            138 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_JALMEEBBEHB),
+            155 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_KDFGMLFPIAP),
+            128 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_KFHDENNACEN),
+            105 => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_GABBPOIEJMB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleType> {
         match str {
-            "CmdBattleTypeNone" => ::std::option::Option::Some(CmdBattleType::CmdBattleTypeNone),
-            "CmdBattleLogReportScRsp" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportScRsp),
-            "CmdQuitBattleScRsp" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScRsp),
-            "CmdBattleLogReportCsReq" => ::std::option::Option::Some(CmdBattleType::CmdBattleLogReportCsReq),
-            "CmdGetCurBattleInfoScRsp" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoScRsp),
-            "CmdSyncClientResVersionScRsp" => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionScRsp),
-            "CmdPVEBattleResultScRsp" => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultScRsp),
-            "CmdGetCurBattleInfoCsReq" => ::std::option::Option::Some(CmdBattleType::CmdGetCurBattleInfoCsReq),
-            "CmdPVEBattleResultCsReq" => ::std::option::Option::Some(CmdBattleType::CmdPVEBattleResultCsReq),
-            "CmdRebattleByClientCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdRebattleByClientCsNotify),
-            "CmdQuitBattleScNotify" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleScNotify),
-            "CmdServerSimulateBattleFinishScNotify" => ::std::option::Option::Some(CmdBattleType::CmdServerSimulateBattleFinishScNotify),
-            "CmdQuitBattleCsReq" => ::std::option::Option::Some(CmdBattleType::CmdQuitBattleCsReq),
-            "CmdReBattleAfterBattleLoseCsNotify" => ::std::option::Option::Some(CmdBattleType::CmdReBattleAfterBattleLoseCsNotify),
-            "CmdSyncClientResVersionCsReq" => ::std::option::Option::Some(CmdBattleType::CmdSyncClientResVersionCsReq),
+            "BPNGDECMIOG_GKJBAODJMJG" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_GKJBAODJMJG),
+            "BPNGDECMIOG_LOBGMFLMBEH" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_LOBGMFLMBEH),
+            "BPNGDECMIOG_LKBJHAIKMNN" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_LKBJHAIKMNN),
+            "BPNGDECMIOG_ADIIMKPOPEC" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_ADIIMKPOPEC),
+            "BPNGDECMIOG_FCJMKLLHHFK" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_FCJMKLLHHFK),
+            "BPNGDECMIOG_EJLJKKGDHMJ" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_EJLJKKGDHMJ),
+            "BPNGDECMIOG_ALEDEPDMNOK" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_ALEDEPDMNOK),
+            "BPNGDECMIOG_OBPDFBILDKC" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_OBPDFBILDKC),
+            "BPNGDECMIOG_OOGICNAPLME" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_OOGICNAPLME),
+            "BPNGDECMIOG_POPGICJFFOC" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_POPGICJFFOC),
+            "BPNGDECMIOG_CFBFFEFPBCH" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_CFBFFEFPBCH),
+            "BPNGDECMIOG_JALMEEBBEHB" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_JALMEEBBEHB),
+            "BPNGDECMIOG_KDFGMLFPIAP" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_KDFGMLFPIAP),
+            "BPNGDECMIOG_KFHDENNACEN" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_KFHDENNACEN),
+            "BPNGDECMIOG_GABBPOIEJMB" => ::std::option::Option::Some(CmdBattleType::BPNGDECMIOG_GABBPOIEJMB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleType] = &[
-        CmdBattleType::CmdBattleTypeNone,
-        CmdBattleType::CmdBattleLogReportScRsp,
-        CmdBattleType::CmdQuitBattleScRsp,
-        CmdBattleType::CmdBattleLogReportCsReq,
-        CmdBattleType::CmdGetCurBattleInfoScRsp,
-        CmdBattleType::CmdSyncClientResVersionScRsp,
-        CmdBattleType::CmdPVEBattleResultScRsp,
-        CmdBattleType::CmdGetCurBattleInfoCsReq,
-        CmdBattleType::CmdPVEBattleResultCsReq,
-        CmdBattleType::CmdRebattleByClientCsNotify,
-        CmdBattleType::CmdQuitBattleScNotify,
-        CmdBattleType::CmdServerSimulateBattleFinishScNotify,
-        CmdBattleType::CmdQuitBattleCsReq,
-        CmdBattleType::CmdReBattleAfterBattleLoseCsNotify,
-        CmdBattleType::CmdSyncClientResVersionCsReq,
+        CmdBattleType::BPNGDECMIOG_GKJBAODJMJG,
+        CmdBattleType::BPNGDECMIOG_LOBGMFLMBEH,
+        CmdBattleType::BPNGDECMIOG_LKBJHAIKMNN,
+        CmdBattleType::BPNGDECMIOG_ADIIMKPOPEC,
+        CmdBattleType::BPNGDECMIOG_FCJMKLLHHFK,
+        CmdBattleType::BPNGDECMIOG_EJLJKKGDHMJ,
+        CmdBattleType::BPNGDECMIOG_ALEDEPDMNOK,
+        CmdBattleType::BPNGDECMIOG_OBPDFBILDKC,
+        CmdBattleType::BPNGDECMIOG_OOGICNAPLME,
+        CmdBattleType::BPNGDECMIOG_POPGICJFFOC,
+        CmdBattleType::BPNGDECMIOG_CFBFFEFPBCH,
+        CmdBattleType::BPNGDECMIOG_JALMEEBBEHB,
+        CmdBattleType::BPNGDECMIOG_KDFGMLFPIAP,
+        CmdBattleType::BPNGDECMIOG_KFHDENNACEN,
+        CmdBattleType::BPNGDECMIOG_GABBPOIEJMB,
     ];
 }
 
@@ -135,21 +135,21 @@ impl ::protobuf::EnumFull for CmdBattleType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdBattleType::CmdBattleTypeNone => 0,
-            CmdBattleType::CmdBattleLogReportScRsp => 1,
-            CmdBattleType::CmdQuitBattleScRsp => 2,
-            CmdBattleType::CmdBattleLogReportCsReq => 3,
-            CmdBattleType::CmdGetCurBattleInfoScRsp => 4,
-            CmdBattleType::CmdSyncClientResVersionScRsp => 5,
-            CmdBattleType::CmdPVEBattleResultScRsp => 6,
-            CmdBattleType::CmdGetCurBattleInfoCsReq => 7,
-            CmdBattleType::CmdPVEBattleResultCsReq => 8,
-            CmdBattleType::CmdRebattleByClientCsNotify => 9,
-            CmdBattleType::CmdQuitBattleScNotify => 10,
-            CmdBattleType::CmdServerSimulateBattleFinishScNotify => 11,
-            CmdBattleType::CmdQuitBattleCsReq => 12,
-            CmdBattleType::CmdReBattleAfterBattleLoseCsNotify => 13,
-            CmdBattleType::CmdSyncClientResVersionCsReq => 14,
+            CmdBattleType::BPNGDECMIOG_GKJBAODJMJG => 0,
+            CmdBattleType::BPNGDECMIOG_LOBGMFLMBEH => 1,
+            CmdBattleType::BPNGDECMIOG_LKBJHAIKMNN => 2,
+            CmdBattleType::BPNGDECMIOG_ADIIMKPOPEC => 3,
+            CmdBattleType::BPNGDECMIOG_FCJMKLLHHFK => 4,
+            CmdBattleType::BPNGDECMIOG_EJLJKKGDHMJ => 5,
+            CmdBattleType::BPNGDECMIOG_ALEDEPDMNOK => 6,
+            CmdBattleType::BPNGDECMIOG_OBPDFBILDKC => 7,
+            CmdBattleType::BPNGDECMIOG_OOGICNAPLME => 8,
+            CmdBattleType::BPNGDECMIOG_POPGICJFFOC => 9,
+            CmdBattleType::BPNGDECMIOG_CFBFFEFPBCH => 10,
+            CmdBattleType::BPNGDECMIOG_JALMEEBBEHB => 11,
+            CmdBattleType::BPNGDECMIOG_KDFGMLFPIAP => 12,
+            CmdBattleType::BPNGDECMIOG_KFHDENNACEN => 13,
+            CmdBattleType::BPNGDECMIOG_GABBPOIEJMB => 14,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,7 +157,7 @@ impl ::protobuf::EnumFull for CmdBattleType {
 
 impl ::std::default::Default for CmdBattleType {
     fn default() -> Self {
-        CmdBattleType::CmdBattleTypeNone
+        CmdBattleType::BPNGDECMIOG_GKJBAODJMJG
     }
 }
 
@@ -168,17 +168,17 @@ impl CmdBattleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdBattleType.proto*\xe3\x03\n\rCmdBattleType\x12\x15\n\x11CmdBatt\
-    leTypeNone\x10\0\x12\x1c\n\x17CmdBattleLogReportScRsp\x10\xa1\x01\x12\
-    \x17\n\x12CmdQuitBattleScRsp\x10\xbf\x01\x12\x1b\n\x17CmdBattleLogReport\
-    CsReq\x10u\x12\x1d\n\x18CmdGetCurBattleInfoScRsp\x10\x8a\x01\x12!\n\x1cC\
-    mdSyncClientResVersionScRsp\x10\xb0\x01\x12\x1b\n\x17CmdPVEBattleResultS\
-    cRsp\x10o\x12\x1c\n\x18CmdGetCurBattleInfoCsReq\x10x\x12\x1c\n\x17CmdPVE\
-    BattleResultCsReq\x10\x97\x01\x12\x20\n\x1bCmdRebattleByClientCsNotify\
-    \x10\x91\x01\x12\x1a\n\x15CmdQuitBattleScNotify\x10\x93\x01\x12*\n%CmdSe\
-    rverSimulateBattleFinishScNotify\x10\x98\x01\x12\x16\n\x12CmdQuitBattleC\
-    sReq\x10m\x12'\n\"CmdReBattleAfterBattleLoseCsNotify\x10\xbd\x01\x12!\n\
-    \x1cCmdSyncClientResVersionCsReq\x10\xc3\x01b\x06proto3\
+    \n\x13CmdBattleType.proto*\xcd\x03\n\rCmdBattleType\x12\x1b\n\x17BPNGDEC\
+    MIOG_GKJBAODJMJG\x10\0\x12\x1c\n\x17BPNGDECMIOG_LOBGMFLMBEH\x10\xa2\x01\
+    \x12\x1c\n\x17BPNGDECMIOG_LKBJHAIKMNN\x10\xb3\x01\x12\x1c\n\x17BPNGDECMI\
+    OG_ADIIMKPOPEC\x10\x93\x01\x12\x1c\n\x17BPNGDECMIOG_FCJMKLLHHFK\x10\xaf\
+    \x01\x12\x1c\n\x17BPNGDECMIOG_EJLJKKGDHMJ\x10\xa9\x01\x12\x1c\n\x17BPNGD\
+    ECMIOG_ALEDEPDMNOK\x10\x9d\x01\x12\x1c\n\x17BPNGDECMIOG_OBPDFBILDKC\x10\
+    \xa6\x01\x12\x1b\n\x17BPNGDECMIOG_OOGICNAPLME\x10x\x12\x1b\n\x17BPNGDECM\
+    IOG_POPGICJFFOC\x10~\x12\x1c\n\x17BPNGDECMIOG_CFBFFEFPBCH\x10\x89\x01\
+    \x12\x1c\n\x17BPNGDECMIOG_JALMEEBBEHB\x10\x8a\x01\x12\x1c\n\x17BPNGDECMI\
+    OG_KDFGMLFPIAP\x10\x9b\x01\x12\x1c\n\x17BPNGDECMIOG_KFHDENNACEN\x10\x80\
+    \x01\x12\x1b\n\x17BPNGDECMIOG_GABBPOIEJMB\x10ib\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct MissionCustomValue {
     // message fields
     // @@protoc_insertion_point(field:MissionCustomValue.custom_value)
     pub custom_value: u32,
-    // @@protoc_insertion_point(field:MissionCustomValue.NJCEOHLHJDP)
-    pub NJCEOHLHJDP: ::std::string::String,
     // @@protoc_insertion_point(field:MissionCustomValue.index)
     pub index: u32,
+    // @@protoc_insertion_point(field:MissionCustomValue.HAMBCJHIOFK)
+    pub HAMBCJHIOFK: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MissionCustomValue.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MissionCustomValue {
             |m: &mut MissionCustomValue| { &mut m.custom_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJCEOHLHJDP",
-            |m: &MissionCustomValue| { &m.NJCEOHLHJDP },
-            |m: &mut MissionCustomValue| { &mut m.NJCEOHLHJDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &MissionCustomValue| { &m.index },
             |m: &mut MissionCustomValue| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HAMBCJHIOFK",
+            |m: &MissionCustomValue| { &m.HAMBCJHIOFK },
+            |m: &mut MissionCustomValue| { &mut m.HAMBCJHIOFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionCustomValue>(
             "MissionCustomValue",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MissionCustomValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                120 => {
                     self.custom_value = is.read_uint32()?;
                 },
-                122 => {
-                    self.NJCEOHLHJDP = is.read_string()?;
-                },
-                8 => {
+                64 => {
                     self.index = is.read_uint32()?;
+                },
+                74 => {
+                    self.HAMBCJHIOFK = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MissionCustomValue {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.custom_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.custom_value);
-        }
-        if !self.NJCEOHLHJDP.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.NJCEOHLHJDP);
+            my_size += ::protobuf::rt::uint32_size(15, self.custom_value);
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.index);
+            my_size += ::protobuf::rt::uint32_size(8, self.index);
+        }
+        if !self.HAMBCJHIOFK.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.HAMBCJHIOFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MissionCustomValue {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.custom_value != 0 {
-            os.write_uint32(4, self.custom_value)?;
-        }
-        if !self.NJCEOHLHJDP.is_empty() {
-            os.write_string(15, &self.NJCEOHLHJDP)?;
+            os.write_uint32(15, self.custom_value)?;
         }
         if self.index != 0 {
-            os.write_uint32(1, self.index)?;
+            os.write_uint32(8, self.index)?;
+        }
+        if !self.HAMBCJHIOFK.is_empty() {
+            os.write_string(9, &self.HAMBCJHIOFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MissionCustomValue {
 
     fn clear(&mut self) {
         self.custom_value = 0;
-        self.NJCEOHLHJDP.clear();
         self.index = 0;
+        self.HAMBCJHIOFK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionCustomValue {
         static instance: MissionCustomValue = MissionCustomValue {
             custom_value: 0,
-            NJCEOHLHJDP: ::std::string::String::new(),
             index: 0,
+            HAMBCJHIOFK: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValue {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18MissionCustomValue.proto\"o\n\x12MissionCustomValue\x12!\n\x0ccust\
-    om_value\x18\x04\x20\x01(\rR\x0bcustomValue\x12\x20\n\x0bNJCEOHLHJDP\x18\
-    \x0f\x20\x01(\tR\x0bNJCEOHLHJDP\x12\x14\n\x05index\x18\x01\x20\x01(\rR\
-    \x05indexb\x06proto3\
+    om_value\x18\x0f\x20\x01(\rR\x0bcustomValue\x12\x14\n\x05index\x18\x08\
+    \x20\x01(\rR\x05index\x12\x20\n\x0bHAMBCJHIOFK\x18\t\x20\x01(\tR\x0bHAMB\
+    CJHIOFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

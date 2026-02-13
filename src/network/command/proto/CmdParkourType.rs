@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdParkourType)
 pub enum CmdParkourType {
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourTypeNone)
-    CmdParkourTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelScRsp)
-    CmdParkourStartLevelScRsp = 8386,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelCsReq)
-    CmdParkourEndLevelCsReq = 8383,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourStartLevelCsReq)
-    CmdParkourStartLevelCsReq = 8394,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetDataScRsp)
-    CmdParkourGetDataScRsp = 8397,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourEndLevelScRsp)
-    CmdParkourEndLevelScRsp = 8389,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetDataCsReq)
-    CmdParkourGetDataCsReq = 8384,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoCsReq)
-    CmdParkourGetRankingInfoCsReq = 8393,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.CmdParkourGetRankingInfoScRsp)
-    CmdParkourGetRankingInfoScRsp = 8385,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_GKJBAODJMJG)
+    HENDHDGALPH_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_DDAEMFBNFDI)
+    HENDHDGALPH_DDAEMFBNFDI = 8381,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_GEOBOJMAEDB)
+    HENDHDGALPH_GEOBOJMAEDB = 8384,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_BMOPDIFNJEK)
+    HENDHDGALPH_BMOPDIFNJEK = 8390,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_EFAGPBIPPED)
+    HENDHDGALPH_EFAGPBIPPED = 8395,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_HDBKAIMCOFP)
+    HENDHDGALPH_HDBKAIMCOFP = 8391,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_DEFHLOGIAOB)
+    HENDHDGALPH_DEFHLOGIAOB = 8400,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_DMKFBMNIEPA)
+    HENDHDGALPH_DMKFBMNIEPA = 8392,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.HENDHDGALPH_GHGFGLJKPMK)
+    HENDHDGALPH_GHGFGLJKPMK = 8386,
 }
 
 impl ::protobuf::Enum for CmdParkourType {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for CmdParkourType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdParkourType> {
         match value {
-            0 => ::std::option::Option::Some(CmdParkourType::CmdParkourTypeNone),
-            8386 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelScRsp),
-            8383 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
-            8394 => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
-            8397 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
-            8389 => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelScRsp),
-            8384 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
-            8393 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
-            8385 => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoScRsp),
+            0 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GKJBAODJMJG),
+            8381 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DDAEMFBNFDI),
+            8384 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GEOBOJMAEDB),
+            8390 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_BMOPDIFNJEK),
+            8395 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_EFAGPBIPPED),
+            8391 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_HDBKAIMCOFP),
+            8400 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DEFHLOGIAOB),
+            8392 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DMKFBMNIEPA),
+            8386 => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GHGFGLJKPMK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdParkourType> {
         match str {
-            "CmdParkourTypeNone" => ::std::option::Option::Some(CmdParkourType::CmdParkourTypeNone),
-            "CmdParkourStartLevelScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelScRsp),
-            "CmdParkourEndLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelCsReq),
-            "CmdParkourStartLevelCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourStartLevelCsReq),
-            "CmdParkourGetDataScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataScRsp),
-            "CmdParkourEndLevelScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourEndLevelScRsp),
-            "CmdParkourGetDataCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetDataCsReq),
-            "CmdParkourGetRankingInfoCsReq" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoCsReq),
-            "CmdParkourGetRankingInfoScRsp" => ::std::option::Option::Some(CmdParkourType::CmdParkourGetRankingInfoScRsp),
+            "HENDHDGALPH_GKJBAODJMJG" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GKJBAODJMJG),
+            "HENDHDGALPH_DDAEMFBNFDI" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DDAEMFBNFDI),
+            "HENDHDGALPH_GEOBOJMAEDB" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GEOBOJMAEDB),
+            "HENDHDGALPH_BMOPDIFNJEK" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_BMOPDIFNJEK),
+            "HENDHDGALPH_EFAGPBIPPED" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_EFAGPBIPPED),
+            "HENDHDGALPH_HDBKAIMCOFP" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_HDBKAIMCOFP),
+            "HENDHDGALPH_DEFHLOGIAOB" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DEFHLOGIAOB),
+            "HENDHDGALPH_DMKFBMNIEPA" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_DMKFBMNIEPA),
+            "HENDHDGALPH_GHGFGLJKPMK" => ::std::option::Option::Some(CmdParkourType::HENDHDGALPH_GHGFGLJKPMK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdParkourType] = &[
-        CmdParkourType::CmdParkourTypeNone,
-        CmdParkourType::CmdParkourStartLevelScRsp,
-        CmdParkourType::CmdParkourEndLevelCsReq,
-        CmdParkourType::CmdParkourStartLevelCsReq,
-        CmdParkourType::CmdParkourGetDataScRsp,
-        CmdParkourType::CmdParkourEndLevelScRsp,
-        CmdParkourType::CmdParkourGetDataCsReq,
-        CmdParkourType::CmdParkourGetRankingInfoCsReq,
-        CmdParkourType::CmdParkourGetRankingInfoScRsp,
+        CmdParkourType::HENDHDGALPH_GKJBAODJMJG,
+        CmdParkourType::HENDHDGALPH_DDAEMFBNFDI,
+        CmdParkourType::HENDHDGALPH_GEOBOJMAEDB,
+        CmdParkourType::HENDHDGALPH_BMOPDIFNJEK,
+        CmdParkourType::HENDHDGALPH_EFAGPBIPPED,
+        CmdParkourType::HENDHDGALPH_HDBKAIMCOFP,
+        CmdParkourType::HENDHDGALPH_DEFHLOGIAOB,
+        CmdParkourType::HENDHDGALPH_DMKFBMNIEPA,
+        CmdParkourType::HENDHDGALPH_GHGFGLJKPMK,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for CmdParkourType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdParkourType::CmdParkourTypeNone => 0,
-            CmdParkourType::CmdParkourStartLevelScRsp => 1,
-            CmdParkourType::CmdParkourEndLevelCsReq => 2,
-            CmdParkourType::CmdParkourStartLevelCsReq => 3,
-            CmdParkourType::CmdParkourGetDataScRsp => 4,
-            CmdParkourType::CmdParkourEndLevelScRsp => 5,
-            CmdParkourType::CmdParkourGetDataCsReq => 6,
-            CmdParkourType::CmdParkourGetRankingInfoCsReq => 7,
-            CmdParkourType::CmdParkourGetRankingInfoScRsp => 8,
+            CmdParkourType::HENDHDGALPH_GKJBAODJMJG => 0,
+            CmdParkourType::HENDHDGALPH_DDAEMFBNFDI => 1,
+            CmdParkourType::HENDHDGALPH_GEOBOJMAEDB => 2,
+            CmdParkourType::HENDHDGALPH_BMOPDIFNJEK => 3,
+            CmdParkourType::HENDHDGALPH_EFAGPBIPPED => 4,
+            CmdParkourType::HENDHDGALPH_HDBKAIMCOFP => 5,
+            CmdParkourType::HENDHDGALPH_DEFHLOGIAOB => 6,
+            CmdParkourType::HENDHDGALPH_DMKFBMNIEPA => 7,
+            CmdParkourType::HENDHDGALPH_GHGFGLJKPMK => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for CmdParkourType {
 
 impl ::std::default::Default for CmdParkourType {
     fn default() -> Self {
-        CmdParkourType::CmdParkourTypeNone
+        CmdParkourType::HENDHDGALPH_GKJBAODJMJG
     }
 }
 
@@ -132,13 +132,13 @@ impl CmdParkourType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdParkourType.proto*\xa6\x02\n\x0eCmdParkourType\x12\x16\n\x12Cmd\
-    ParkourTypeNone\x10\0\x12\x1e\n\x19CmdParkourStartLevelScRsp\x10\xc2A\
-    \x12\x1c\n\x17CmdParkourEndLevelCsReq\x10\xbfA\x12\x1e\n\x19CmdParkourSt\
-    artLevelCsReq\x10\xcaA\x12\x1b\n\x16CmdParkourGetDataScRsp\x10\xcdA\x12\
-    \x1c\n\x17CmdParkourEndLevelScRsp\x10\xc5A\x12\x1b\n\x16CmdParkourGetDat\
-    aCsReq\x10\xc0A\x12\"\n\x1dCmdParkourGetRankingInfoCsReq\x10\xc9A\x12\"\
-    \n\x1dCmdParkourGetRankingInfoScRsp\x10\xc1Ab\x06proto3\
+    \n\x14CmdParkourType.proto*\x9d\x02\n\x0eCmdParkourType\x12\x1b\n\x17HEN\
+    DHDGALPH_GKJBAODJMJG\x10\0\x12\x1c\n\x17HENDHDGALPH_DDAEMFBNFDI\x10\xbdA\
+    \x12\x1c\n\x17HENDHDGALPH_GEOBOJMAEDB\x10\xc0A\x12\x1c\n\x17HENDHDGALPH_\
+    BMOPDIFNJEK\x10\xc6A\x12\x1c\n\x17HENDHDGALPH_EFAGPBIPPED\x10\xcbA\x12\
+    \x1c\n\x17HENDHDGALPH_HDBKAIMCOFP\x10\xc7A\x12\x1c\n\x17HENDHDGALPH_DEFH\
+    LOGIAOB\x10\xd0A\x12\x1c\n\x17HENDHDGALPH_DMKFBMNIEPA\x10\xc8A\x12\x1c\n\
+    \x17HENDHDGALPH_GHGFGLJKPMK\x10\xc2Ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

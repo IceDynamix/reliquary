@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishSectionIdScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishSectionIdScRsp.section_id)
-    pub section_id: u32,
     // @@protoc_insertion_point(field:FinishSectionIdScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishSectionIdScRsp.section_id)
+    pub section_id: u32,
     // @@protoc_insertion_point(field:FinishSectionIdScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -54,14 +54,14 @@ impl FinishSectionIdScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &FinishSectionIdScRsp| { &m.section_id },
-            |m: &mut FinishSectionIdScRsp| { &mut m.section_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FinishSectionIdScRsp| { &m.retcode },
             |m: &mut FinishSectionIdScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "section_id",
+            |m: &FinishSectionIdScRsp| { &m.section_id },
+            |m: &mut FinishSectionIdScRsp| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FinishSectionIdScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.section_id = is.read_uint32()?;
-                },
-                80 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                88 => {
+                    self.section_id = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for FinishSectionIdScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.section_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.section_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FinishSectionIdScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.section_id != 0 {
-            os.write_uint32(2, self.section_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
+        }
+        if self.section_id != 0 {
+            os.write_uint32(11, self.section_id)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for FinishSectionIdScRsp {
     }
 
     fn clear(&mut self) {
-        self.section_id = 0;
         self.retcode = 0;
+        self.section_id = 0;
         self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishSectionIdScRsp {
         static instance: FinishSectionIdScRsp = FinishSectionIdScRsp {
-            section_id: 0,
             retcode: 0,
+            section_id: 0,
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishSectionIdScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aFinishSectionIdScRsp.proto\x1a\x0eItemList.proto\"r\n\x14FinishSec\
-    tionIdScRsp\x12\x1d\n\nsection_id\x18\x02\x20\x01(\rR\tsectionId\x12\x18\
-    \n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x0b\x20\
+    tionIdScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x1d\
+    \n\nsection_id\x18\x0b\x20\x01(\rR\tsectionId\x12!\n\x06reward\x18\r\x20\
     \x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 

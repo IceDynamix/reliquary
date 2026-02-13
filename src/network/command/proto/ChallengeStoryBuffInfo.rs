@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStoryBuffInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeStoryBuffInfo.buff_two)
-    pub buff_two: u32,
     // @@protoc_insertion_point(field:ChallengeStoryBuffInfo.buff_one)
     pub buff_one: u32,
+    // @@protoc_insertion_point(field:ChallengeStoryBuffInfo.buff_two)
+    pub buff_two: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeStoryBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChallengeStoryBuffInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_two",
-            |m: &ChallengeStoryBuffInfo| { &m.buff_two },
-            |m: &mut ChallengeStoryBuffInfo| { &mut m.buff_two },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_one",
             |m: &ChallengeStoryBuffInfo| { &m.buff_one },
             |m: &mut ChallengeStoryBuffInfo| { &mut m.buff_one },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_two",
+            |m: &ChallengeStoryBuffInfo| { &m.buff_two },
+            |m: &mut ChallengeStoryBuffInfo| { &mut m.buff_two },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeStoryBuffInfo>(
             "ChallengeStoryBuffInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.buff_two = is.read_uint32()?;
-                },
                 120 => {
                     self.buff_one = is.read_uint32()?;
+                },
+                32 => {
+                    self.buff_two = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.buff_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.buff_two);
-        }
         if self.buff_one != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.buff_one);
+        }
+        if self.buff_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.buff_two);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.buff_two != 0 {
-            os.write_uint32(4, self.buff_two)?;
-        }
         if self.buff_one != 0 {
             os.write_uint32(15, self.buff_one)?;
+        }
+        if self.buff_two != 0 {
+            os.write_uint32(4, self.buff_two)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.buff_two = 0;
         self.buff_one = 0;
+        self.buff_two = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeStoryBuffInfo {
         static instance: ChallengeStoryBuffInfo = ChallengeStoryBuffInfo {
-            buff_two: 0,
             buff_one: 0,
+            buff_two: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryBuffInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cChallengeStoryBuffInfo.proto\"N\n\x16ChallengeStoryBuffInfo\x12\
-    \x19\n\x08buff_two\x18\x04\x20\x01(\rR\x07buffTwo\x12\x19\n\x08buff_one\
-    \x18\x0f\x20\x01(\rR\x07buffOneb\x06proto3\
+    \x19\n\x08buff_one\x18\x0f\x20\x01(\rR\x07buffOne\x12\x19\n\x08buff_two\
+    \x18\x04\x20\x01(\rR\x07buffTwob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

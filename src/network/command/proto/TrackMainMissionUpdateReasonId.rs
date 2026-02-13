@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TrackMainMissionUpdateReasonId)
 pub enum TrackMainMissionUpdateReasonId {
-    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.TRACK_MAIN_MISSION_UPDATE_NONE)
-    TRACK_MAIN_MISSION_UPDATE_NONE = 0,
-    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.TRACK_MAIN_MISSION_UPDATE_AUTO)
-    TRACK_MAIN_MISSION_UPDATE_AUTO = 1,
-    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.TRACK_MAIN_MISSION_UPDATE_MANUAL)
-    TRACK_MAIN_MISSION_UPDATE_MANUAL = 2,
-    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT)
-    TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT = 3,
+    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.NCFOCLHAFBL_EHNANCENOLA)
+    NCFOCLHAFBL_EHNANCENOLA = 0,
+    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.NCFOCLHAFBL_LIHALLOPNCF)
+    NCFOCLHAFBL_LIHALLOPNCF = 1,
+    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.NCFOCLHAFBL_JBLJNMJAJEL)
+    NCFOCLHAFBL_JBLJNMJAJEL = 2,
+    // @@protoc_insertion_point(enum_value:TrackMainMissionUpdateReasonId.NCFOCLHAFBL_PDIDGBFBEHH)
+    NCFOCLHAFBL_PDIDGBFBEHH = 3,
 }
 
 impl ::protobuf::Enum for TrackMainMissionUpdateReasonId {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for TrackMainMissionUpdateReasonId {
 
     fn from_i32(value: i32) -> ::std::option::Option<TrackMainMissionUpdateReasonId> {
         match value {
-            0 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE),
-            1 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_AUTO),
-            2 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_MANUAL),
-            3 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT),
+            0 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_EHNANCENOLA),
+            1 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_LIHALLOPNCF),
+            2 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_JBLJNMJAJEL),
+            3 => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_PDIDGBFBEHH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TrackMainMissionUpdateReasonId> {
         match str {
-            "TRACK_MAIN_MISSION_UPDATE_NONE" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE),
-            "TRACK_MAIN_MISSION_UPDATE_AUTO" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_AUTO),
-            "TRACK_MAIN_MISSION_UPDATE_MANUAL" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_MANUAL),
-            "TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT),
+            "NCFOCLHAFBL_EHNANCENOLA" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_EHNANCENOLA),
+            "NCFOCLHAFBL_LIHALLOPNCF" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_LIHALLOPNCF),
+            "NCFOCLHAFBL_JBLJNMJAJEL" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_JBLJNMJAJEL),
+            "NCFOCLHAFBL_PDIDGBFBEHH" => ::std::option::Option::Some(TrackMainMissionUpdateReasonId::NCFOCLHAFBL_PDIDGBFBEHH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TrackMainMissionUpdateReasonId] = &[
-        TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE,
-        TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_AUTO,
-        TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_MANUAL,
-        TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT,
+        TrackMainMissionUpdateReasonId::NCFOCLHAFBL_EHNANCENOLA,
+        TrackMainMissionUpdateReasonId::NCFOCLHAFBL_LIHALLOPNCF,
+        TrackMainMissionUpdateReasonId::NCFOCLHAFBL_JBLJNMJAJEL,
+        TrackMainMissionUpdateReasonId::NCFOCLHAFBL_PDIDGBFBEHH,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for TrackMainMissionUpdateReasonId {
 
 impl ::std::default::Default for TrackMainMissionUpdateReasonId {
     fn default() -> Self {
-        TrackMainMissionUpdateReasonId::TRACK_MAIN_MISSION_UPDATE_NONE
+        TrackMainMissionUpdateReasonId::NCFOCLHAFBL_EHNANCENOLA
     }
 }
 
@@ -97,11 +97,10 @@ impl TrackMainMissionUpdateReasonId {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$TrackMainMissionUpdateReasonId.proto*\xba\x01\n\x1eTrackMainMissionUp\
-    dateReasonId\x12\"\n\x1eTRACK_MAIN_MISSION_UPDATE_NONE\x10\0\x12\"\n\x1e\
-    TRACK_MAIN_MISSION_UPDATE_AUTO\x10\x01\x12$\n\x20TRACK_MAIN_MISSION_UPDA\
-    TE_MANUAL\x10\x02\x12*\n&TRACK_MAIN_MISSION_UPDATE_LOGIN_REPORT\x10\x03b\
-    \x06proto3\
+    \n$TrackMainMissionUpdateReasonId.proto*\x94\x01\n\x1eTrackMainMissionUp\
+    dateReasonId\x12\x1b\n\x17NCFOCLHAFBL_EHNANCENOLA\x10\0\x12\x1b\n\x17NCF\
+    OCLHAFBL_LIHALLOPNCF\x10\x01\x12\x1b\n\x17NCFOCLHAFBL_JBLJNMJAJEL\x10\
+    \x02\x12\x1b\n\x17NCFOCLHAFBL_PDIDGBFBEHH\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

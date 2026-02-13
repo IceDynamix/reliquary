@@ -27,84 +27,84 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMiscModuleType)
 pub enum CmdMiscModuleType {
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMiscModuleTypeNone)
-    CmdMiscModuleTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSecurityReportCsReq)
-    CmdSecurityReportCsReq = 4106,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTakePictureScRsp)
-    CmdTakePictureScRsp = 4170,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMazeKillDirectScRsp)
-    CmdMazeKillDirectScRsp = 4150,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentUpdateDataCsReq)
-    CmdDifficultyAdjustmentUpdateDataCsReq = 4181,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetMovieRacingDataScRsp)
-    CmdGetMovieRacingDataScRsp = 4113,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetSwitchMascotDataScRsp)
-    CmdGetSwitchMascotDataScRsp = 4147,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdShareScRsp)
-    CmdShareScRsp = 4138,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateMovieRacingDataCsReq)
-    CmdUpdateMovieRacingDataCsReq = 4191,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSubmitOrigamiItemScRsp)
-    CmdSubmitOrigamiItemScRsp = 4119,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetMovieRacingDataCsReq)
-    CmdGetMovieRacingDataCsReq = 4109,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetGunPlayDataCsReq)
-    CmdGetGunPlayDataCsReq = 4151,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentGetDataScRsp)
-    CmdDifficultyAdjustmentGetDataScRsp = 4135,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelDirectDeliveryNoticeScRsp)
-    CmdCancelDirectDeliveryNoticeScRsp = 4162,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetOrigamiPropInfoCsReq)
-    CmdGetOrigamiPropInfoCsReq = 4103,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdMazeKillDirectCsReq)
-    CmdMazeKillDirectCsReq = 4126,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateGunPlayDataScRsp)
-    CmdUpdateGunPlayDataScRsp = 4152,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDirectDeliveryScNotify)
-    CmdDirectDeliveryScNotify = 4155,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSubmitOrigamiItemCsReq)
-    CmdSubmitOrigamiItemCsReq = 4161,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateGunPlayDataCsReq)
-    CmdUpdateGunPlayDataCsReq = 4192,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentGetDataCsReq)
-    CmdDifficultyAdjustmentGetDataCsReq = 4114,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdShareCsReq)
-    CmdShareCsReq = 4130,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTakePictureCsReq)
-    CmdTakePictureCsReq = 4111,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetShareDataScRsp)
-    CmdGetShareDataScRsp = 4177,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelCacheNotifyCsReq)
-    CmdCancelCacheNotifyCsReq = 4188,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdDifficultyAdjustmentUpdateDataScRsp)
-    CmdDifficultyAdjustmentUpdateDataScRsp = 4146,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelCacheNotifyScRsp)
-    CmdCancelCacheNotifyScRsp = 4195,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetGunPlayDataScRsp)
-    CmdGetGunPlayDataScRsp = 4169,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetUnreleasedBlockInfoScRsp)
-    CmdGetUnreleasedBlockInfoScRsp = 4101,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTriggerVoiceScRsp)
-    CmdTriggerVoiceScRsp = 4149,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdTriggerVoiceCsReq)
-    CmdTriggerVoiceCsReq = 4176,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdUpdateMovieRacingDataScRsp)
-    CmdUpdateMovieRacingDataScRsp = 4145,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdCancelDirectDeliveryNoticeCsReq)
-    CmdCancelDirectDeliveryNoticeCsReq = 4117,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetSwitchMascotDataCsReq)
-    CmdGetSwitchMascotDataCsReq = 4115,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetOrigamiPropInfoScRsp)
-    CmdGetOrigamiPropInfoScRsp = 4173,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSecurityReportScRsp)
-    CmdSecurityReportScRsp = 4137,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetShareDataCsReq)
-    CmdGetShareDataCsReq = 4193,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdGetUnreleasedBlockInfoCsReq)
-    CmdGetUnreleasedBlockInfoCsReq = 4198,
-    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.CmdSwitchMascotUpdateScNotify)
-    CmdSwitchMascotUpdateScNotify = 4157,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_GKJBAODJMJG)
+    OOKEKNFFDEC_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_GKIBEDCFEGC)
+    OOKEKNFFDEC_GKIBEDCFEGC = 4195,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_ELJALHIIMBI)
+    OOKEKNFFDEC_ELJALHIIMBI = 4179,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_GANFIDOCIKP)
+    OOKEKNFFDEC_GANFIDOCIKP = 4196,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EBGNOCOCIPF)
+    OOKEKNFFDEC_EBGNOCOCIPF = 4105,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_FFCCONFAAJL)
+    OOKEKNFFDEC_FFCCONFAAJL = 4108,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_IIKNPALELOO)
+    OOKEKNFFDEC_IIKNPALELOO = 4152,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_HNKHKEDHHCH)
+    OOKEKNFFDEC_HNKHKEDHHCH = 4155,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_OGPAGPCPFHC)
+    OOKEKNFFDEC_OGPAGPCPFHC = 4156,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EGHJIJAGFGG)
+    OOKEKNFFDEC_EGHJIJAGFGG = 4112,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_FMBLMGCFJFM)
+    OOKEKNFFDEC_FMBLMGCFJFM = 4176,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_GFCBGODJBKC)
+    OOKEKNFFDEC_GFCBGODJBKC = 4116,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EBABEENNECM)
+    OOKEKNFFDEC_EBABEENNECM = 4180,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_CNIGIJJBAPN)
+    OOKEKNFFDEC_CNIGIJJBAPN = 4169,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_AAILFOGHAID)
+    OOKEKNFFDEC_AAILFOGHAID = 4142,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_CIBEAPBJLMF)
+    OOKEKNFFDEC_CIBEAPBJLMF = 4157,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_JCKINGPFBMO)
+    OOKEKNFFDEC_JCKINGPFBMO = 4109,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_BPPFDOMHCPP)
+    OOKEKNFFDEC_BPPFDOMHCPP = 4151,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_FANHLJDKGKI)
+    OOKEKNFFDEC_FANHLJDKGKI = 4150,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_DENOHMCOCIM)
+    OOKEKNFFDEC_DENOHMCOCIM = 4166,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_NDOJDNFHKFN)
+    OOKEKNFFDEC_NDOJDNFHKFN = 4114,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EOHOGHFHDPO)
+    OOKEKNFFDEC_EOHOGHFHDPO = 4137,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_JGFHGFIPCIB)
+    OOKEKNFFDEC_JGFHGFIPCIB = 4113,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_KBEIDFBGMOK)
+    OOKEKNFFDEC_KBEIDFBGMOK = 4126,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_JEGODGAOFPA)
+    OOKEKNFFDEC_JEGODGAOFPA = 4186,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EJDJBGCBFPP)
+    OOKEKNFFDEC_EJDJBGCBFPP = 4162,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_NCIMCIFPMKB)
+    OOKEKNFFDEC_NCIMCIFPMKB = 4185,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_BKLNPJBABNL)
+    OOKEKNFFDEC_BKLNPJBABNL = 4188,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_ACKLOMCJDEM)
+    OOKEKNFFDEC_ACKLOMCJDEM = 4175,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_OCNCJFHLPOC)
+    OOKEKNFFDEC_OCNCJFHLPOC = 4111,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_OLFGABIADPL)
+    OOKEKNFFDEC_OLFGABIADPL = 4134,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_MINCMLOFKAJ)
+    OOKEKNFFDEC_MINCMLOFKAJ = 4178,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_DIABBNNECFM)
+    OOKEKNFFDEC_DIABBNNECFM = 4128,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_KBPDFOIPEAB)
+    OOKEKNFFDEC_KBPDFOIPEAB = 4177,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_HNMKLDBIIHG)
+    OOKEKNFFDEC_HNMKLDBIIHG = 4183,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_HIMKDBNENJF)
+    OOKEKNFFDEC_HIMKDBNENJF = 4182,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_EOKHIIFHAFN)
+    OOKEKNFFDEC_EOKHIIFHAFN = 4199,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_BJONLIDEIHN)
+    OOKEKNFFDEC_BJONLIDEIHN = 4138,
+    // @@protoc_insertion_point(enum_value:CmdMiscModuleType.OOKEKNFFDEC_BLPJAACCEOD)
+    OOKEKNFFDEC_BLPJAACCEOD = 4145,
 }
 
 impl ::protobuf::Enum for CmdMiscModuleType {
@@ -116,134 +116,134 @@ impl ::protobuf::Enum for CmdMiscModuleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMiscModuleType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMiscModuleType::CmdMiscModuleTypeNone),
-            4106 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportCsReq),
-            4170 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureScRsp),
-            4150 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectScRsp),
-            4181 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq),
-            4113 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataScRsp),
-            4147 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataScRsp),
-            4138 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareScRsp),
-            4191 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq),
-            4119 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemScRsp),
-            4109 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataCsReq),
-            4151 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataCsReq),
-            4135 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp),
-            4162 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp),
-            4103 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq),
-            4126 => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectCsReq),
-            4152 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataScRsp),
-            4155 => ::std::option::Option::Some(CmdMiscModuleType::CmdDirectDeliveryScNotify),
-            4161 => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemCsReq),
-            4192 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataCsReq),
-            4114 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq),
-            4130 => ::std::option::Option::Some(CmdMiscModuleType::CmdShareCsReq),
-            4111 => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureCsReq),
-            4177 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataScRsp),
-            4188 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyCsReq),
-            4146 => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp),
-            4195 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyScRsp),
-            4169 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataScRsp),
-            4101 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp),
-            4149 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceScRsp),
-            4176 => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceCsReq),
-            4145 => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp),
-            4117 => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq),
-            4115 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataCsReq),
-            4173 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp),
-            4137 => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportScRsp),
-            4193 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataCsReq),
-            4198 => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq),
-            4157 => ::std::option::Option::Some(CmdMiscModuleType::CmdSwitchMascotUpdateScNotify),
+            0 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GKJBAODJMJG),
+            4195 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GKIBEDCFEGC),
+            4179 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_ELJALHIIMBI),
+            4196 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GANFIDOCIKP),
+            4105 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EBGNOCOCIPF),
+            4108 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FFCCONFAAJL),
+            4152 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_IIKNPALELOO),
+            4155 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HNKHKEDHHCH),
+            4156 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OGPAGPCPFHC),
+            4112 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EGHJIJAGFGG),
+            4176 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FMBLMGCFJFM),
+            4116 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GFCBGODJBKC),
+            4180 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EBABEENNECM),
+            4169 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_CNIGIJJBAPN),
+            4142 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_AAILFOGHAID),
+            4157 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_CIBEAPBJLMF),
+            4109 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JCKINGPFBMO),
+            4151 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BPPFDOMHCPP),
+            4150 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FANHLJDKGKI),
+            4166 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_DENOHMCOCIM),
+            4114 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_NDOJDNFHKFN),
+            4137 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EOHOGHFHDPO),
+            4113 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JGFHGFIPCIB),
+            4126 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_KBEIDFBGMOK),
+            4186 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JEGODGAOFPA),
+            4162 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EJDJBGCBFPP),
+            4185 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_NCIMCIFPMKB),
+            4188 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BKLNPJBABNL),
+            4175 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_ACKLOMCJDEM),
+            4111 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OCNCJFHLPOC),
+            4134 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OLFGABIADPL),
+            4178 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_MINCMLOFKAJ),
+            4128 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_DIABBNNECFM),
+            4177 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_KBPDFOIPEAB),
+            4183 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HNMKLDBIIHG),
+            4182 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HIMKDBNENJF),
+            4199 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EOKHIIFHAFN),
+            4138 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BJONLIDEIHN),
+            4145 => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BLPJAACCEOD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMiscModuleType> {
         match str {
-            "CmdMiscModuleTypeNone" => ::std::option::Option::Some(CmdMiscModuleType::CmdMiscModuleTypeNone),
-            "CmdSecurityReportCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportCsReq),
-            "CmdTakePictureScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureScRsp),
-            "CmdMazeKillDirectScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectScRsp),
-            "CmdDifficultyAdjustmentUpdateDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq),
-            "CmdGetMovieRacingDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataScRsp),
-            "CmdGetSwitchMascotDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataScRsp),
-            "CmdShareScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdShareScRsp),
-            "CmdUpdateMovieRacingDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq),
-            "CmdSubmitOrigamiItemScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemScRsp),
-            "CmdGetMovieRacingDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetMovieRacingDataCsReq),
-            "CmdGetGunPlayDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataCsReq),
-            "CmdDifficultyAdjustmentGetDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp),
-            "CmdCancelDirectDeliveryNoticeScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp),
-            "CmdGetOrigamiPropInfoCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq),
-            "CmdMazeKillDirectCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdMazeKillDirectCsReq),
-            "CmdUpdateGunPlayDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataScRsp),
-            "CmdDirectDeliveryScNotify" => ::std::option::Option::Some(CmdMiscModuleType::CmdDirectDeliveryScNotify),
-            "CmdSubmitOrigamiItemCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdSubmitOrigamiItemCsReq),
-            "CmdUpdateGunPlayDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateGunPlayDataCsReq),
-            "CmdDifficultyAdjustmentGetDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq),
-            "CmdShareCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdShareCsReq),
-            "CmdTakePictureCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdTakePictureCsReq),
-            "CmdGetShareDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataScRsp),
-            "CmdCancelCacheNotifyCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyCsReq),
-            "CmdDifficultyAdjustmentUpdateDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp),
-            "CmdCancelCacheNotifyScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelCacheNotifyScRsp),
-            "CmdGetGunPlayDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetGunPlayDataScRsp),
-            "CmdGetUnreleasedBlockInfoScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp),
-            "CmdTriggerVoiceScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceScRsp),
-            "CmdTriggerVoiceCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdTriggerVoiceCsReq),
-            "CmdUpdateMovieRacingDataScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp),
-            "CmdCancelDirectDeliveryNoticeCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq),
-            "CmdGetSwitchMascotDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetSwitchMascotDataCsReq),
-            "CmdGetOrigamiPropInfoScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp),
-            "CmdSecurityReportScRsp" => ::std::option::Option::Some(CmdMiscModuleType::CmdSecurityReportScRsp),
-            "CmdGetShareDataCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetShareDataCsReq),
-            "CmdGetUnreleasedBlockInfoCsReq" => ::std::option::Option::Some(CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq),
-            "CmdSwitchMascotUpdateScNotify" => ::std::option::Option::Some(CmdMiscModuleType::CmdSwitchMascotUpdateScNotify),
+            "OOKEKNFFDEC_GKJBAODJMJG" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GKJBAODJMJG),
+            "OOKEKNFFDEC_GKIBEDCFEGC" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GKIBEDCFEGC),
+            "OOKEKNFFDEC_ELJALHIIMBI" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_ELJALHIIMBI),
+            "OOKEKNFFDEC_GANFIDOCIKP" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GANFIDOCIKP),
+            "OOKEKNFFDEC_EBGNOCOCIPF" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EBGNOCOCIPF),
+            "OOKEKNFFDEC_FFCCONFAAJL" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FFCCONFAAJL),
+            "OOKEKNFFDEC_IIKNPALELOO" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_IIKNPALELOO),
+            "OOKEKNFFDEC_HNKHKEDHHCH" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HNKHKEDHHCH),
+            "OOKEKNFFDEC_OGPAGPCPFHC" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OGPAGPCPFHC),
+            "OOKEKNFFDEC_EGHJIJAGFGG" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EGHJIJAGFGG),
+            "OOKEKNFFDEC_FMBLMGCFJFM" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FMBLMGCFJFM),
+            "OOKEKNFFDEC_GFCBGODJBKC" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_GFCBGODJBKC),
+            "OOKEKNFFDEC_EBABEENNECM" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EBABEENNECM),
+            "OOKEKNFFDEC_CNIGIJJBAPN" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_CNIGIJJBAPN),
+            "OOKEKNFFDEC_AAILFOGHAID" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_AAILFOGHAID),
+            "OOKEKNFFDEC_CIBEAPBJLMF" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_CIBEAPBJLMF),
+            "OOKEKNFFDEC_JCKINGPFBMO" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JCKINGPFBMO),
+            "OOKEKNFFDEC_BPPFDOMHCPP" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BPPFDOMHCPP),
+            "OOKEKNFFDEC_FANHLJDKGKI" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_FANHLJDKGKI),
+            "OOKEKNFFDEC_DENOHMCOCIM" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_DENOHMCOCIM),
+            "OOKEKNFFDEC_NDOJDNFHKFN" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_NDOJDNFHKFN),
+            "OOKEKNFFDEC_EOHOGHFHDPO" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EOHOGHFHDPO),
+            "OOKEKNFFDEC_JGFHGFIPCIB" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JGFHGFIPCIB),
+            "OOKEKNFFDEC_KBEIDFBGMOK" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_KBEIDFBGMOK),
+            "OOKEKNFFDEC_JEGODGAOFPA" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_JEGODGAOFPA),
+            "OOKEKNFFDEC_EJDJBGCBFPP" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EJDJBGCBFPP),
+            "OOKEKNFFDEC_NCIMCIFPMKB" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_NCIMCIFPMKB),
+            "OOKEKNFFDEC_BKLNPJBABNL" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BKLNPJBABNL),
+            "OOKEKNFFDEC_ACKLOMCJDEM" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_ACKLOMCJDEM),
+            "OOKEKNFFDEC_OCNCJFHLPOC" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OCNCJFHLPOC),
+            "OOKEKNFFDEC_OLFGABIADPL" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_OLFGABIADPL),
+            "OOKEKNFFDEC_MINCMLOFKAJ" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_MINCMLOFKAJ),
+            "OOKEKNFFDEC_DIABBNNECFM" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_DIABBNNECFM),
+            "OOKEKNFFDEC_KBPDFOIPEAB" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_KBPDFOIPEAB),
+            "OOKEKNFFDEC_HNMKLDBIIHG" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HNMKLDBIIHG),
+            "OOKEKNFFDEC_HIMKDBNENJF" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_HIMKDBNENJF),
+            "OOKEKNFFDEC_EOKHIIFHAFN" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_EOKHIIFHAFN),
+            "OOKEKNFFDEC_BJONLIDEIHN" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BJONLIDEIHN),
+            "OOKEKNFFDEC_BLPJAACCEOD" => ::std::option::Option::Some(CmdMiscModuleType::OOKEKNFFDEC_BLPJAACCEOD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMiscModuleType] = &[
-        CmdMiscModuleType::CmdMiscModuleTypeNone,
-        CmdMiscModuleType::CmdSecurityReportCsReq,
-        CmdMiscModuleType::CmdTakePictureScRsp,
-        CmdMiscModuleType::CmdMazeKillDirectScRsp,
-        CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq,
-        CmdMiscModuleType::CmdGetMovieRacingDataScRsp,
-        CmdMiscModuleType::CmdGetSwitchMascotDataScRsp,
-        CmdMiscModuleType::CmdShareScRsp,
-        CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq,
-        CmdMiscModuleType::CmdSubmitOrigamiItemScRsp,
-        CmdMiscModuleType::CmdGetMovieRacingDataCsReq,
-        CmdMiscModuleType::CmdGetGunPlayDataCsReq,
-        CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp,
-        CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp,
-        CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq,
-        CmdMiscModuleType::CmdMazeKillDirectCsReq,
-        CmdMiscModuleType::CmdUpdateGunPlayDataScRsp,
-        CmdMiscModuleType::CmdDirectDeliveryScNotify,
-        CmdMiscModuleType::CmdSubmitOrigamiItemCsReq,
-        CmdMiscModuleType::CmdUpdateGunPlayDataCsReq,
-        CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq,
-        CmdMiscModuleType::CmdShareCsReq,
-        CmdMiscModuleType::CmdTakePictureCsReq,
-        CmdMiscModuleType::CmdGetShareDataScRsp,
-        CmdMiscModuleType::CmdCancelCacheNotifyCsReq,
-        CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp,
-        CmdMiscModuleType::CmdCancelCacheNotifyScRsp,
-        CmdMiscModuleType::CmdGetGunPlayDataScRsp,
-        CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp,
-        CmdMiscModuleType::CmdTriggerVoiceScRsp,
-        CmdMiscModuleType::CmdTriggerVoiceCsReq,
-        CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp,
-        CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq,
-        CmdMiscModuleType::CmdGetSwitchMascotDataCsReq,
-        CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp,
-        CmdMiscModuleType::CmdSecurityReportScRsp,
-        CmdMiscModuleType::CmdGetShareDataCsReq,
-        CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq,
-        CmdMiscModuleType::CmdSwitchMascotUpdateScNotify,
+        CmdMiscModuleType::OOKEKNFFDEC_GKJBAODJMJG,
+        CmdMiscModuleType::OOKEKNFFDEC_GKIBEDCFEGC,
+        CmdMiscModuleType::OOKEKNFFDEC_ELJALHIIMBI,
+        CmdMiscModuleType::OOKEKNFFDEC_GANFIDOCIKP,
+        CmdMiscModuleType::OOKEKNFFDEC_EBGNOCOCIPF,
+        CmdMiscModuleType::OOKEKNFFDEC_FFCCONFAAJL,
+        CmdMiscModuleType::OOKEKNFFDEC_IIKNPALELOO,
+        CmdMiscModuleType::OOKEKNFFDEC_HNKHKEDHHCH,
+        CmdMiscModuleType::OOKEKNFFDEC_OGPAGPCPFHC,
+        CmdMiscModuleType::OOKEKNFFDEC_EGHJIJAGFGG,
+        CmdMiscModuleType::OOKEKNFFDEC_FMBLMGCFJFM,
+        CmdMiscModuleType::OOKEKNFFDEC_GFCBGODJBKC,
+        CmdMiscModuleType::OOKEKNFFDEC_EBABEENNECM,
+        CmdMiscModuleType::OOKEKNFFDEC_CNIGIJJBAPN,
+        CmdMiscModuleType::OOKEKNFFDEC_AAILFOGHAID,
+        CmdMiscModuleType::OOKEKNFFDEC_CIBEAPBJLMF,
+        CmdMiscModuleType::OOKEKNFFDEC_JCKINGPFBMO,
+        CmdMiscModuleType::OOKEKNFFDEC_BPPFDOMHCPP,
+        CmdMiscModuleType::OOKEKNFFDEC_FANHLJDKGKI,
+        CmdMiscModuleType::OOKEKNFFDEC_DENOHMCOCIM,
+        CmdMiscModuleType::OOKEKNFFDEC_NDOJDNFHKFN,
+        CmdMiscModuleType::OOKEKNFFDEC_EOHOGHFHDPO,
+        CmdMiscModuleType::OOKEKNFFDEC_JGFHGFIPCIB,
+        CmdMiscModuleType::OOKEKNFFDEC_KBEIDFBGMOK,
+        CmdMiscModuleType::OOKEKNFFDEC_JEGODGAOFPA,
+        CmdMiscModuleType::OOKEKNFFDEC_EJDJBGCBFPP,
+        CmdMiscModuleType::OOKEKNFFDEC_NCIMCIFPMKB,
+        CmdMiscModuleType::OOKEKNFFDEC_BKLNPJBABNL,
+        CmdMiscModuleType::OOKEKNFFDEC_ACKLOMCJDEM,
+        CmdMiscModuleType::OOKEKNFFDEC_OCNCJFHLPOC,
+        CmdMiscModuleType::OOKEKNFFDEC_OLFGABIADPL,
+        CmdMiscModuleType::OOKEKNFFDEC_MINCMLOFKAJ,
+        CmdMiscModuleType::OOKEKNFFDEC_DIABBNNECFM,
+        CmdMiscModuleType::OOKEKNFFDEC_KBPDFOIPEAB,
+        CmdMiscModuleType::OOKEKNFFDEC_HNMKLDBIIHG,
+        CmdMiscModuleType::OOKEKNFFDEC_HIMKDBNENJF,
+        CmdMiscModuleType::OOKEKNFFDEC_EOKHIIFHAFN,
+        CmdMiscModuleType::OOKEKNFFDEC_BJONLIDEIHN,
+        CmdMiscModuleType::OOKEKNFFDEC_BLPJAACCEOD,
     ];
 }
 
@@ -255,45 +255,45 @@ impl ::protobuf::EnumFull for CmdMiscModuleType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMiscModuleType::CmdMiscModuleTypeNone => 0,
-            CmdMiscModuleType::CmdSecurityReportCsReq => 1,
-            CmdMiscModuleType::CmdTakePictureScRsp => 2,
-            CmdMiscModuleType::CmdMazeKillDirectScRsp => 3,
-            CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataCsReq => 4,
-            CmdMiscModuleType::CmdGetMovieRacingDataScRsp => 5,
-            CmdMiscModuleType::CmdGetSwitchMascotDataScRsp => 6,
-            CmdMiscModuleType::CmdShareScRsp => 7,
-            CmdMiscModuleType::CmdUpdateMovieRacingDataCsReq => 8,
-            CmdMiscModuleType::CmdSubmitOrigamiItemScRsp => 9,
-            CmdMiscModuleType::CmdGetMovieRacingDataCsReq => 10,
-            CmdMiscModuleType::CmdGetGunPlayDataCsReq => 11,
-            CmdMiscModuleType::CmdDifficultyAdjustmentGetDataScRsp => 12,
-            CmdMiscModuleType::CmdCancelDirectDeliveryNoticeScRsp => 13,
-            CmdMiscModuleType::CmdGetOrigamiPropInfoCsReq => 14,
-            CmdMiscModuleType::CmdMazeKillDirectCsReq => 15,
-            CmdMiscModuleType::CmdUpdateGunPlayDataScRsp => 16,
-            CmdMiscModuleType::CmdDirectDeliveryScNotify => 17,
-            CmdMiscModuleType::CmdSubmitOrigamiItemCsReq => 18,
-            CmdMiscModuleType::CmdUpdateGunPlayDataCsReq => 19,
-            CmdMiscModuleType::CmdDifficultyAdjustmentGetDataCsReq => 20,
-            CmdMiscModuleType::CmdShareCsReq => 21,
-            CmdMiscModuleType::CmdTakePictureCsReq => 22,
-            CmdMiscModuleType::CmdGetShareDataScRsp => 23,
-            CmdMiscModuleType::CmdCancelCacheNotifyCsReq => 24,
-            CmdMiscModuleType::CmdDifficultyAdjustmentUpdateDataScRsp => 25,
-            CmdMiscModuleType::CmdCancelCacheNotifyScRsp => 26,
-            CmdMiscModuleType::CmdGetGunPlayDataScRsp => 27,
-            CmdMiscModuleType::CmdGetUnreleasedBlockInfoScRsp => 28,
-            CmdMiscModuleType::CmdTriggerVoiceScRsp => 29,
-            CmdMiscModuleType::CmdTriggerVoiceCsReq => 30,
-            CmdMiscModuleType::CmdUpdateMovieRacingDataScRsp => 31,
-            CmdMiscModuleType::CmdCancelDirectDeliveryNoticeCsReq => 32,
-            CmdMiscModuleType::CmdGetSwitchMascotDataCsReq => 33,
-            CmdMiscModuleType::CmdGetOrigamiPropInfoScRsp => 34,
-            CmdMiscModuleType::CmdSecurityReportScRsp => 35,
-            CmdMiscModuleType::CmdGetShareDataCsReq => 36,
-            CmdMiscModuleType::CmdGetUnreleasedBlockInfoCsReq => 37,
-            CmdMiscModuleType::CmdSwitchMascotUpdateScNotify => 38,
+            CmdMiscModuleType::OOKEKNFFDEC_GKJBAODJMJG => 0,
+            CmdMiscModuleType::OOKEKNFFDEC_GKIBEDCFEGC => 1,
+            CmdMiscModuleType::OOKEKNFFDEC_ELJALHIIMBI => 2,
+            CmdMiscModuleType::OOKEKNFFDEC_GANFIDOCIKP => 3,
+            CmdMiscModuleType::OOKEKNFFDEC_EBGNOCOCIPF => 4,
+            CmdMiscModuleType::OOKEKNFFDEC_FFCCONFAAJL => 5,
+            CmdMiscModuleType::OOKEKNFFDEC_IIKNPALELOO => 6,
+            CmdMiscModuleType::OOKEKNFFDEC_HNKHKEDHHCH => 7,
+            CmdMiscModuleType::OOKEKNFFDEC_OGPAGPCPFHC => 8,
+            CmdMiscModuleType::OOKEKNFFDEC_EGHJIJAGFGG => 9,
+            CmdMiscModuleType::OOKEKNFFDEC_FMBLMGCFJFM => 10,
+            CmdMiscModuleType::OOKEKNFFDEC_GFCBGODJBKC => 11,
+            CmdMiscModuleType::OOKEKNFFDEC_EBABEENNECM => 12,
+            CmdMiscModuleType::OOKEKNFFDEC_CNIGIJJBAPN => 13,
+            CmdMiscModuleType::OOKEKNFFDEC_AAILFOGHAID => 14,
+            CmdMiscModuleType::OOKEKNFFDEC_CIBEAPBJLMF => 15,
+            CmdMiscModuleType::OOKEKNFFDEC_JCKINGPFBMO => 16,
+            CmdMiscModuleType::OOKEKNFFDEC_BPPFDOMHCPP => 17,
+            CmdMiscModuleType::OOKEKNFFDEC_FANHLJDKGKI => 18,
+            CmdMiscModuleType::OOKEKNFFDEC_DENOHMCOCIM => 19,
+            CmdMiscModuleType::OOKEKNFFDEC_NDOJDNFHKFN => 20,
+            CmdMiscModuleType::OOKEKNFFDEC_EOHOGHFHDPO => 21,
+            CmdMiscModuleType::OOKEKNFFDEC_JGFHGFIPCIB => 22,
+            CmdMiscModuleType::OOKEKNFFDEC_KBEIDFBGMOK => 23,
+            CmdMiscModuleType::OOKEKNFFDEC_JEGODGAOFPA => 24,
+            CmdMiscModuleType::OOKEKNFFDEC_EJDJBGCBFPP => 25,
+            CmdMiscModuleType::OOKEKNFFDEC_NCIMCIFPMKB => 26,
+            CmdMiscModuleType::OOKEKNFFDEC_BKLNPJBABNL => 27,
+            CmdMiscModuleType::OOKEKNFFDEC_ACKLOMCJDEM => 28,
+            CmdMiscModuleType::OOKEKNFFDEC_OCNCJFHLPOC => 29,
+            CmdMiscModuleType::OOKEKNFFDEC_OLFGABIADPL => 30,
+            CmdMiscModuleType::OOKEKNFFDEC_MINCMLOFKAJ => 31,
+            CmdMiscModuleType::OOKEKNFFDEC_DIABBNNECFM => 32,
+            CmdMiscModuleType::OOKEKNFFDEC_KBPDFOIPEAB => 33,
+            CmdMiscModuleType::OOKEKNFFDEC_HNMKLDBIIHG => 34,
+            CmdMiscModuleType::OOKEKNFFDEC_HIMKDBNENJF => 35,
+            CmdMiscModuleType::OOKEKNFFDEC_EOKHIIFHAFN => 36,
+            CmdMiscModuleType::OOKEKNFFDEC_BJONLIDEIHN => 37,
+            CmdMiscModuleType::OOKEKNFFDEC_BLPJAACCEOD => 38,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -301,7 +301,7 @@ impl ::protobuf::EnumFull for CmdMiscModuleType {
 
 impl ::std::default::Default for CmdMiscModuleType {
     fn default() -> Self {
-        CmdMiscModuleType::CmdMiscModuleTypeNone
+        CmdMiscModuleType::OOKEKNFFDEC_GKJBAODJMJG
     }
 }
 
@@ -312,35 +312,34 @@ impl CmdMiscModuleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdMiscModuleType.proto*\x82\n\n\x11CmdMiscModuleType\x12\x19\n\
-    \x15CmdMiscModuleTypeNone\x10\0\x12\x1b\n\x16CmdSecurityReportCsReq\x10\
-    \x8a\x20\x12\x18\n\x13CmdTakePictureScRsp\x10\xca\x20\x12\x1b\n\x16CmdMa\
-    zeKillDirectScRsp\x10\xb6\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataCs\
-    Req\x10\xd5\x20\x12\x1f\n\x1aCmdGetMovieRacingDataScRsp\x10\x91\x20\x12\
-    \x20\n\x1bCmdGetSwitchMascotDataScRsp\x10\xb3\x20\x12\x12\n\rCmdShareScR\
-    sp\x10\xaa\x20\x12\"\n\x1dCmdUpdateMovieRacingDataCsReq\x10\xdf\x20\x12\
-    \x1e\n\x19CmdSubmitOrigamiItemScRsp\x10\x97\x20\x12\x1f\n\x1aCmdGetMovie\
-    RacingDataCsReq\x10\x8d\x20\x12\x1b\n\x16CmdGetGunPlayDataCsReq\x10\xb7\
-    \x20\x12(\n#CmdDifficultyAdjustmentGetDataScRsp\x10\xa7\x20\x12'\n\"CmdC\
-    ancelDirectDeliveryNoticeScRsp\x10\xc2\x20\x12\x1f\n\x1aCmdGetOrigamiPro\
-    pInfoCsReq\x10\x87\x20\x12\x1b\n\x16CmdMazeKillDirectCsReq\x10\x9e\x20\
-    \x12\x1e\n\x19CmdUpdateGunPlayDataScRsp\x10\xb8\x20\x12\x1e\n\x19CmdDire\
-    ctDeliveryScNotify\x10\xbb\x20\x12\x1e\n\x19CmdSubmitOrigamiItemCsReq\
-    \x10\xc1\x20\x12\x1e\n\x19CmdUpdateGunPlayDataCsReq\x10\xe0\x20\x12(\n#C\
-    mdDifficultyAdjustmentGetDataCsReq\x10\x92\x20\x12\x12\n\rCmdShareCsReq\
-    \x10\xa2\x20\x12\x18\n\x13CmdTakePictureCsReq\x10\x8f\x20\x12\x19\n\x14C\
-    mdGetShareDataScRsp\x10\xd1\x20\x12\x1e\n\x19CmdCancelCacheNotifyCsReq\
-    \x10\xdc\x20\x12+\n&CmdDifficultyAdjustmentUpdateDataScRsp\x10\xb2\x20\
-    \x12\x1e\n\x19CmdCancelCacheNotifyScRsp\x10\xe3\x20\x12\x1b\n\x16CmdGetG\
-    unPlayDataScRsp\x10\xc9\x20\x12#\n\x1eCmdGetUnreleasedBlockInfoScRsp\x10\
-    \x85\x20\x12\x19\n\x14CmdTriggerVoiceScRsp\x10\xb5\x20\x12\x19\n\x14CmdT\
-    riggerVoiceCsReq\x10\xd0\x20\x12\"\n\x1dCmdUpdateMovieRacingDataScRsp\
-    \x10\xb1\x20\x12'\n\"CmdCancelDirectDeliveryNoticeCsReq\x10\x95\x20\x12\
-    \x20\n\x1bCmdGetSwitchMascotDataCsReq\x10\x93\x20\x12\x1f\n\x1aCmdGetOri\
-    gamiPropInfoScRsp\x10\xcd\x20\x12\x1b\n\x16CmdSecurityReportScRsp\x10\
-    \xa9\x20\x12\x19\n\x14CmdGetShareDataCsReq\x10\xe1\x20\x12#\n\x1eCmdGetU\
-    nreleasedBlockInfoCsReq\x10\xe6\x20\x12\"\n\x1dCmdSwitchMascotUpdateScNo\
-    tify\x10\xbd\x20b\x06proto3\
+    \n\x17CmdMiscModuleType.proto*\xa4\t\n\x11CmdMiscModuleType\x12\x1b\n\
+    \x17OOKEKNFFDEC_GKJBAODJMJG\x10\0\x12\x1c\n\x17OOKEKNFFDEC_GKIBEDCFEGC\
+    \x10\xe3\x20\x12\x1c\n\x17OOKEKNFFDEC_ELJALHIIMBI\x10\xd3\x20\x12\x1c\n\
+    \x17OOKEKNFFDEC_GANFIDOCIKP\x10\xe4\x20\x12\x1c\n\x17OOKEKNFFDEC_EBGNOCO\
+    CIPF\x10\x89\x20\x12\x1c\n\x17OOKEKNFFDEC_FFCCONFAAJL\x10\x8c\x20\x12\
+    \x1c\n\x17OOKEKNFFDEC_IIKNPALELOO\x10\xb8\x20\x12\x1c\n\x17OOKEKNFFDEC_H\
+    NKHKEDHHCH\x10\xbb\x20\x12\x1c\n\x17OOKEKNFFDEC_OGPAGPCPFHC\x10\xbc\x20\
+    \x12\x1c\n\x17OOKEKNFFDEC_EGHJIJAGFGG\x10\x90\x20\x12\x1c\n\x17OOKEKNFFD\
+    EC_FMBLMGCFJFM\x10\xd0\x20\x12\x1c\n\x17OOKEKNFFDEC_GFCBGODJBKC\x10\x94\
+    \x20\x12\x1c\n\x17OOKEKNFFDEC_EBABEENNECM\x10\xd4\x20\x12\x1c\n\x17OOKEK\
+    NFFDEC_CNIGIJJBAPN\x10\xc9\x20\x12\x1c\n\x17OOKEKNFFDEC_AAILFOGHAID\x10\
+    \xae\x20\x12\x1c\n\x17OOKEKNFFDEC_CIBEAPBJLMF\x10\xbd\x20\x12\x1c\n\x17O\
+    OKEKNFFDEC_JCKINGPFBMO\x10\x8d\x20\x12\x1c\n\x17OOKEKNFFDEC_BPPFDOMHCPP\
+    \x10\xb7\x20\x12\x1c\n\x17OOKEKNFFDEC_FANHLJDKGKI\x10\xb6\x20\x12\x1c\n\
+    \x17OOKEKNFFDEC_DENOHMCOCIM\x10\xc6\x20\x12\x1c\n\x17OOKEKNFFDEC_NDOJDNF\
+    HKFN\x10\x92\x20\x12\x1c\n\x17OOKEKNFFDEC_EOHOGHFHDPO\x10\xa9\x20\x12\
+    \x1c\n\x17OOKEKNFFDEC_JGFHGFIPCIB\x10\x91\x20\x12\x1c\n\x17OOKEKNFFDEC_K\
+    BEIDFBGMOK\x10\x9e\x20\x12\x1c\n\x17OOKEKNFFDEC_JEGODGAOFPA\x10\xda\x20\
+    \x12\x1c\n\x17OOKEKNFFDEC_EJDJBGCBFPP\x10\xc2\x20\x12\x1c\n\x17OOKEKNFFD\
+    EC_NCIMCIFPMKB\x10\xd9\x20\x12\x1c\n\x17OOKEKNFFDEC_BKLNPJBABNL\x10\xdc\
+    \x20\x12\x1c\n\x17OOKEKNFFDEC_ACKLOMCJDEM\x10\xcf\x20\x12\x1c\n\x17OOKEK\
+    NFFDEC_OCNCJFHLPOC\x10\x8f\x20\x12\x1c\n\x17OOKEKNFFDEC_OLFGABIADPL\x10\
+    \xa6\x20\x12\x1c\n\x17OOKEKNFFDEC_MINCMLOFKAJ\x10\xd2\x20\x12\x1c\n\x17O\
+    OKEKNFFDEC_DIABBNNECFM\x10\xa0\x20\x12\x1c\n\x17OOKEKNFFDEC_KBPDFOIPEAB\
+    \x10\xd1\x20\x12\x1c\n\x17OOKEKNFFDEC_HNMKLDBIIHG\x10\xd7\x20\x12\x1c\n\
+    \x17OOKEKNFFDEC_HIMKDBNENJF\x10\xd6\x20\x12\x1c\n\x17OOKEKNFFDEC_EOKHIIF\
+    HAFN\x10\xe7\x20\x12\x1c\n\x17OOKEKNFFDEC_BJONLIDEIHN\x10\xaa\x20\x12\
+    \x1c\n\x17OOKEKNFFDEC_BLPJAACCEOD\x10\xb1\x20b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

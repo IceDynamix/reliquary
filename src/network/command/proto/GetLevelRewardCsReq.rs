@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                24 => {
+                48 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.interacted_prop_entity_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(6, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetLevelRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(10, self.interacted_prop_entity_id)?;
+            os.write_uint32(8, self.interacted_prop_entity_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(6, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GetLevelRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetLevelRewardCsReq.proto\"f\n\x13GetLevelRewardCsReq\x129\n\x19in\
-    teracted_prop_entity_id\x18\n\x20\x01(\rR\x16interactedPropEntityId\x12\
-    \x14\n\x05level\x18\x03\x20\x01(\rR\x05levelb\x06proto3\
+    teracted_prop_entity_id\x18\x08\x20\x01(\rR\x16interactedPropEntityId\
+    \x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeartDialTraceScriptScRsp {
     // message fields
+    // @@protoc_insertion_point(field:HeartDialTraceScriptScRsp.GGEFKNKMMJC)
+    pub GGEFKNKMMJC: ::protobuf::MessageField<super::NPDBEKKKPBB::NPDBEKKKPBB>,
     // @@protoc_insertion_point(field:HeartDialTraceScriptScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:HeartDialTraceScriptScRsp.CIMPKACMHBB)
-    pub CIMPKACMHBB: ::protobuf::MessageField<super::OBHECAOLBNN::OBHECAOLBNN>,
     // special fields
     // @@protoc_insertion_point(special_field:HeartDialTraceScriptScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HeartDialTraceScriptScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NPDBEKKKPBB::NPDBEKKKPBB>(
+            "GGEFKNKMMJC",
+            |m: &HeartDialTraceScriptScRsp| { &m.GGEFKNKMMJC },
+            |m: &mut HeartDialTraceScriptScRsp| { &mut m.GGEFKNKMMJC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &HeartDialTraceScriptScRsp| { &m.retcode },
             |m: &mut HeartDialTraceScriptScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBHECAOLBNN::OBHECAOLBNN>(
-            "CIMPKACMHBB",
-            |m: &HeartDialTraceScriptScRsp| { &m.CIMPKACMHBB },
-            |m: &mut HeartDialTraceScriptScRsp| { &mut m.CIMPKACMHBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeartDialTraceScriptScRsp>(
             "HeartDialTraceScriptScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HeartDialTraceScriptScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.retcode = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGEFKNKMMJC)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CIMPKACMHBB)?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for HeartDialTraceScriptScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if let Some(v) = self.CIMPKACMHBB.as_ref() {
+        if let Some(v) = self.GGEFKNKMMJC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HeartDialTraceScriptScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+        if let Some(v) = self.GGEFKNKMMJC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.CIMPKACMHBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HeartDialTraceScriptScRsp {
     }
 
     fn clear(&mut self) {
+        self.GGEFKNKMMJC.clear();
         self.retcode = 0;
-        self.CIMPKACMHBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeartDialTraceScriptScRsp {
         static instance: HeartDialTraceScriptScRsp = HeartDialTraceScriptScRsp {
+            GGEFKNKMMJC: ::protobuf::MessageField::none(),
             retcode: 0,
-            CIMPKACMHBB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialTraceScriptScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fHeartDialTraceScriptScRsp.proto\x1a\x11OBHECAOLBNN.proto\"e\n\x19H\
-    eartDialTraceScriptScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bCIMPKACMHBB\x18\x01\x20\x01(\x0b2\x0c.OBHECAOLBNNR\x0bCIM\
-    PKACMHBBb\x06proto3\
+    \n\x1fHeartDialTraceScriptScRsp.proto\x1a\x11NPDBEKKKPBB.proto\"e\n\x19H\
+    eartDialTraceScriptScRsp\x12.\n\x0bGGEFKNKMMJC\x18\x04\x20\x01(\x0b2\x0c\
+    .NPDBEKKKPBBR\x0bGGEFKNKMMJC\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OBHECAOLBNN::file_descriptor().clone());
+            deps.push(super::NPDBEKKKPBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeartDialTraceScriptScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

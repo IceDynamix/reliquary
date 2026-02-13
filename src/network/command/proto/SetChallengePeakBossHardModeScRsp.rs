@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetChallengePeakBossHardModeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetChallengePeakBossHardModeScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetChallengePeakBossHardModeScRsp.peak_group_id)
     pub peak_group_id: u32,
     // @@protoc_insertion_point(field:SetChallengePeakBossHardModeScRsp.is_hard_mode)
     pub is_hard_mode: bool,
+    // @@protoc_insertion_point(field:SetChallengePeakBossHardModeScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetChallengePeakBossHardModeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl SetChallengePeakBossHardModeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetChallengePeakBossHardModeScRsp| { &m.retcode },
-            |m: &mut SetChallengePeakBossHardModeScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "peak_group_id",
             |m: &SetChallengePeakBossHardModeScRsp| { &m.peak_group_id },
             |m: &mut SetChallengePeakBossHardModeScRsp| { &mut m.peak_group_id },
@@ -67,6 +62,11 @@ impl SetChallengePeakBossHardModeScRsp {
             "is_hard_mode",
             |m: &SetChallengePeakBossHardModeScRsp| { &m.is_hard_mode },
             |m: &mut SetChallengePeakBossHardModeScRsp| { &mut m.is_hard_mode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetChallengePeakBossHardModeScRsp| { &m.retcode },
+            |m: &mut SetChallengePeakBossHardModeScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetChallengePeakBossHardModeScRsp>(
             "SetChallengePeakBossHardModeScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetChallengePeakBossHardModeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
+                40 => {
                     self.peak_group_id = is.read_uint32()?;
                 },
-                112 => {
+                56 => {
                     self.is_hard_mode = is.read_bool()?;
+                },
+                24 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetChallengePeakBossHardModeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         if self.peak_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.peak_group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.peak_group_id);
         }
         if self.is_hard_mode != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetChallengePeakBossHardModeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
         if self.peak_group_id != 0 {
-            os.write_uint32(13, self.peak_group_id)?;
+            os.write_uint32(5, self.peak_group_id)?;
         }
         if self.is_hard_mode != false {
-            os.write_bool(14, self.is_hard_mode)?;
+            os.write_bool(7, self.is_hard_mode)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetChallengePeakBossHardModeScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.peak_group_id = 0;
         self.is_hard_mode = false;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetChallengePeakBossHardModeScRsp {
         static instance: SetChallengePeakBossHardModeScRsp = SetChallengePeakBossHardModeScRsp {
-            retcode: 0,
             peak_group_id: 0,
             is_hard_mode: false,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetChallengePeakBossHardModeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'SetChallengePeakBossHardModeScRsp.proto\"\x83\x01\n!SetChallengePeakB\
-    ossHardModeScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
-    \"\n\rpeak_group_id\x18\r\x20\x01(\rR\x0bpeakGroupId\x12\x20\n\x0cis_har\
-    d_mode\x18\x0e\x20\x01(\x08R\nisHardModeb\x06proto3\
+    ossHardModeScRsp\x12\"\n\rpeak_group_id\x18\x05\x20\x01(\rR\x0bpeakGroup\
+    Id\x12\x20\n\x0cis_hard_mode\x18\x07\x20\x01(\x08R\nisHardMode\x12\x18\n\
+    \x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

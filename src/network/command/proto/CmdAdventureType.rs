@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdAdventureType)
 pub enum CmdAdventureType {
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureTypeNone)
-    CmdAdventureTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartCocoonStageCsReq)
-    CmdQuickStartCocoonStageCsReq = 1317,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoCsReq)
-    CmdGetFarmStageGachaInfoCsReq = 1347,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartFarmElementCsReq)
-    CmdQuickStartFarmElementCsReq = 1351,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdGetFarmStageGachaInfoScRsp)
-    CmdGetFarmStageGachaInfoScRsp = 1309,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdCocoonSweepScRsp)
-    CmdCocoonSweepScRsp = 1395,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureScRsp)
-    CmdEnterAdventureScRsp = 1338,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdFarmElementSweepScRsp)
-    CmdFarmElementSweepScRsp = 1391,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdCocoonSweepCsReq)
-    CmdCocoonSweepCsReq = 1311,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdEnterAdventureCsReq)
-    CmdEnterAdventureCsReq = 1320,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartCocoonStageScRsp)
-    CmdQuickStartCocoonStageScRsp = 1389,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdFarmElementSweepCsReq)
-    CmdFarmElementSweepCsReq = 1361,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdQuickStartFarmElementScRsp)
-    CmdQuickStartFarmElementScRsp = 1345,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_GKJBAODJMJG)
+    AKCLJAAKCBD_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_OGAJNIILCLA)
+    AKCLJAAKCBD_OGAJNIILCLA = 1357,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_NPOIGBCLGIH)
+    AKCLJAAKCBD_NPOIGBCLGIH = 1305,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_MLEIFMHMEBD)
+    AKCLJAAKCBD_MLEIFMHMEBD = 1320,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_IFIHHDDJPPI)
+    AKCLJAAKCBD_IFIHHDDJPPI = 1326,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_NJJNFOILODA)
+    AKCLJAAKCBD_NJJNFOILODA = 1369,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_APGAIJMEGIG)
+    AKCLJAAKCBD_APGAIJMEGIG = 1338,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_JNNKBFHOBBP)
+    AKCLJAAKCBD_JNNKBFHOBBP = 1328,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_FGBPICFJKGH)
+    AKCLJAAKCBD_FGBPICFJKGH = 1337,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_COGAKHCHMPC)
+    AKCLJAAKCBD_COGAKHCHMPC = 1355,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_BPAGNKJEOGN)
+    AKCLJAAKCBD_BPAGNKJEOGN = 1362,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_CDAPFMMKDFK)
+    AKCLJAAKCBD_CDAPFMMKDFK = 1375,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_GCDEMKKEDNH)
+    AKCLJAAKCBD_GCDEMKKEDNH = 1347,
 }
 
 impl ::protobuf::Enum for CmdAdventureType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdAdventureType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdAdventureType> {
         match value {
-            0 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureTypeNone),
-            1317 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageCsReq),
-            1347 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
-            1351 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementCsReq),
-            1309 => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
-            1395 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepScRsp),
-            1338 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
-            1391 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepScRsp),
-            1311 => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepCsReq),
-            1320 => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
-            1389 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageScRsp),
-            1361 => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepCsReq),
-            1345 => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementScRsp),
+            0 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG),
+            1357 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA),
+            1305 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH),
+            1320 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD),
+            1326 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI),
+            1369 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA),
+            1338 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG),
+            1328 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP),
+            1337 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH),
+            1355 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC),
+            1362 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN),
+            1375 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK),
+            1347 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdAdventureType> {
         match str {
-            "CmdAdventureTypeNone" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureTypeNone),
-            "CmdQuickStartCocoonStageCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageCsReq),
-            "CmdGetFarmStageGachaInfoCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoCsReq),
-            "CmdQuickStartFarmElementCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementCsReq),
-            "CmdGetFarmStageGachaInfoScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdGetFarmStageGachaInfoScRsp),
-            "CmdCocoonSweepScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepScRsp),
-            "CmdEnterAdventureScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureScRsp),
-            "CmdFarmElementSweepScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepScRsp),
-            "CmdCocoonSweepCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdCocoonSweepCsReq),
-            "CmdEnterAdventureCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdEnterAdventureCsReq),
-            "CmdQuickStartCocoonStageScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartCocoonStageScRsp),
-            "CmdFarmElementSweepCsReq" => ::std::option::Option::Some(CmdAdventureType::CmdFarmElementSweepCsReq),
-            "CmdQuickStartFarmElementScRsp" => ::std::option::Option::Some(CmdAdventureType::CmdQuickStartFarmElementScRsp),
+            "AKCLJAAKCBD_GKJBAODJMJG" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG),
+            "AKCLJAAKCBD_OGAJNIILCLA" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA),
+            "AKCLJAAKCBD_NPOIGBCLGIH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH),
+            "AKCLJAAKCBD_MLEIFMHMEBD" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD),
+            "AKCLJAAKCBD_IFIHHDDJPPI" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI),
+            "AKCLJAAKCBD_NJJNFOILODA" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA),
+            "AKCLJAAKCBD_APGAIJMEGIG" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG),
+            "AKCLJAAKCBD_JNNKBFHOBBP" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP),
+            "AKCLJAAKCBD_FGBPICFJKGH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH),
+            "AKCLJAAKCBD_COGAKHCHMPC" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC),
+            "AKCLJAAKCBD_BPAGNKJEOGN" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN),
+            "AKCLJAAKCBD_CDAPFMMKDFK" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK),
+            "AKCLJAAKCBD_GCDEMKKEDNH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAdventureType] = &[
-        CmdAdventureType::CmdAdventureTypeNone,
-        CmdAdventureType::CmdQuickStartCocoonStageCsReq,
-        CmdAdventureType::CmdGetFarmStageGachaInfoCsReq,
-        CmdAdventureType::CmdQuickStartFarmElementCsReq,
-        CmdAdventureType::CmdGetFarmStageGachaInfoScRsp,
-        CmdAdventureType::CmdCocoonSweepScRsp,
-        CmdAdventureType::CmdEnterAdventureScRsp,
-        CmdAdventureType::CmdFarmElementSweepScRsp,
-        CmdAdventureType::CmdCocoonSweepCsReq,
-        CmdAdventureType::CmdEnterAdventureCsReq,
-        CmdAdventureType::CmdQuickStartCocoonStageScRsp,
-        CmdAdventureType::CmdFarmElementSweepCsReq,
-        CmdAdventureType::CmdQuickStartFarmElementScRsp,
+        CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG,
+        CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA,
+        CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH,
+        CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD,
+        CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI,
+        CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA,
+        CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG,
+        CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP,
+        CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH,
+        CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC,
+        CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN,
+        CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK,
+        CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdAdventureType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdAdventureType::CmdAdventureTypeNone => 0,
-            CmdAdventureType::CmdQuickStartCocoonStageCsReq => 1,
-            CmdAdventureType::CmdGetFarmStageGachaInfoCsReq => 2,
-            CmdAdventureType::CmdQuickStartFarmElementCsReq => 3,
-            CmdAdventureType::CmdGetFarmStageGachaInfoScRsp => 4,
-            CmdAdventureType::CmdCocoonSweepScRsp => 5,
-            CmdAdventureType::CmdEnterAdventureScRsp => 6,
-            CmdAdventureType::CmdFarmElementSweepScRsp => 7,
-            CmdAdventureType::CmdCocoonSweepCsReq => 8,
-            CmdAdventureType::CmdEnterAdventureCsReq => 9,
-            CmdAdventureType::CmdQuickStartCocoonStageScRsp => 10,
-            CmdAdventureType::CmdFarmElementSweepCsReq => 11,
-            CmdAdventureType::CmdQuickStartFarmElementScRsp => 12,
+            CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG => 0,
+            CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA => 1,
+            CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH => 2,
+            CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD => 3,
+            CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI => 4,
+            CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA => 5,
+            CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG => 6,
+            CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP => 7,
+            CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH => 8,
+            CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC => 9,
+            CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN => 10,
+            CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK => 11,
+            CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdAdventureType {
 
 impl ::std::default::Default for CmdAdventureType {
     fn default() -> Self {
-        CmdAdventureType::CmdAdventureTypeNone
+        CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG
     }
 }
 
@@ -156,16 +156,16 @@ impl CmdAdventureType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdAdventureType.proto*\xb0\x03\n\x10CmdAdventureType\x12\x18\n\
-    \x14CmdAdventureTypeNone\x10\0\x12\"\n\x1dCmdQuickStartCocoonStageCsReq\
-    \x10\xa5\n\x12\"\n\x1dCmdGetFarmStageGachaInfoCsReq\x10\xc3\n\x12\"\n\
-    \x1dCmdQuickStartFarmElementCsReq\x10\xc7\n\x12\"\n\x1dCmdGetFarmStageGa\
-    chaInfoScRsp\x10\x9d\n\x12\x18\n\x13CmdCocoonSweepScRsp\x10\xf3\n\x12\
-    \x1b\n\x16CmdEnterAdventureScRsp\x10\xba\n\x12\x1d\n\x18CmdFarmElementSw\
-    eepScRsp\x10\xef\n\x12\x18\n\x13CmdCocoonSweepCsReq\x10\x9f\n\x12\x1b\n\
-    \x16CmdEnterAdventureCsReq\x10\xa8\n\x12\"\n\x1dCmdQuickStartCocoonStage\
-    ScRsp\x10\xed\n\x12\x1d\n\x18CmdFarmElementSweepCsReq\x10\xd1\n\x12\"\n\
-    \x1dCmdQuickStartFarmElementScRsp\x10\xc1\nb\x06proto3\
+    \n\x16CmdAdventureType.proto*\x97\x03\n\x10CmdAdventureType\x12\x1b\n\
+    \x17AKCLJAAKCBD_GKJBAODJMJG\x10\0\x12\x1c\n\x17AKCLJAAKCBD_OGAJNIILCLA\
+    \x10\xcd\n\x12\x1c\n\x17AKCLJAAKCBD_NPOIGBCLGIH\x10\x99\n\x12\x1c\n\x17A\
+    KCLJAAKCBD_MLEIFMHMEBD\x10\xa8\n\x12\x1c\n\x17AKCLJAAKCBD_IFIHHDDJPPI\
+    \x10\xae\n\x12\x1c\n\x17AKCLJAAKCBD_NJJNFOILODA\x10\xd9\n\x12\x1c\n\x17A\
+    KCLJAAKCBD_APGAIJMEGIG\x10\xba\n\x12\x1c\n\x17AKCLJAAKCBD_JNNKBFHOBBP\
+    \x10\xb0\n\x12\x1c\n\x17AKCLJAAKCBD_FGBPICFJKGH\x10\xb9\n\x12\x1c\n\x17A\
+    KCLJAAKCBD_COGAKHCHMPC\x10\xcb\n\x12\x1c\n\x17AKCLJAAKCBD_BPAGNKJEOGN\
+    \x10\xd2\n\x12\x1c\n\x17AKCLJAAKCBD_CDAPFMMKDFK\x10\xdf\n\x12\x1c\n\x17A\
+    KCLJAAKCBD_GCDEMKKEDNH\x10\xc3\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

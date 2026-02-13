@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MissionSyncRecord)
 pub enum MissionSyncRecord {
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_NONE)
-    MISSION_SYNC_RECORD_NONE = 0,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT)
-    MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT = 1,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MAIN_MISSION_START)
-    MISSION_SYNC_RECORD_MAIN_MISSION_START = 2,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MAIN_MISSION_FINISH)
-    MISSION_SYNC_RECORD_MAIN_MISSION_FINISH = 3,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MAIN_MISSION_DELETE)
-    MISSION_SYNC_RECORD_MAIN_MISSION_DELETE = 4,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MISSION_ACCEPT)
-    MISSION_SYNC_RECORD_MISSION_ACCEPT = 11,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MISSION_START)
-    MISSION_SYNC_RECORD_MISSION_START = 12,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MISSION_FINISH)
-    MISSION_SYNC_RECORD_MISSION_FINISH = 13,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MISSION_DELETE)
-    MISSION_SYNC_RECORD_MISSION_DELETE = 14,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MISSION_SYNC_RECORD_MISSION_PROGRESS)
-    MISSION_SYNC_RECORD_MISSION_PROGRESS = 15,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_LNDEGMEPGAL)
+    MissionSyncRecord_LNDEGMEPGAL = 0,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_BIDFLFBCLDF)
+    MissionSyncRecord_BIDFLFBCLDF = 1,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_JFLJKDLFDLF)
+    MissionSyncRecord_JFLJKDLFDLF = 2,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_ENGKPMDLDGC)
+    MissionSyncRecord_ENGKPMDLDGC = 3,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_PBMKAFKIOHF)
+    MissionSyncRecord_PBMKAFKIOHF = 4,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_DMPDJFFOFFL)
+    MissionSyncRecord_DMPDJFFOFFL = 11,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_LKNHIEHLILC)
+    MissionSyncRecord_LKNHIEHLILC = 12,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_LLEONLIHLPA)
+    MissionSyncRecord_LLEONLIHLPA = 13,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_FKBEDJNOALG)
+    MissionSyncRecord_FKBEDJNOALG = 14,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_AIDOOHEIPOI)
+    MissionSyncRecord_AIDOOHEIPOI = 15,
 }
 
 impl ::protobuf::Enum for MissionSyncRecord {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for MissionSyncRecord {
 
     fn from_i32(value: i32) -> ::std::option::Option<MissionSyncRecord> {
         match value {
-            0 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_NONE),
-            1 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT),
-            2 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_START),
-            3 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_FINISH),
-            4 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_DELETE),
-            11 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_ACCEPT),
-            12 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_START),
-            13 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_FINISH),
-            14 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_DELETE),
-            15 => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_PROGRESS),
+            0 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LNDEGMEPGAL),
+            1 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BIDFLFBCLDF),
+            2 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JFLJKDLFDLF),
+            3 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_ENGKPMDLDGC),
+            4 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_PBMKAFKIOHF),
+            11 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_DMPDJFFOFFL),
+            12 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LKNHIEHLILC),
+            13 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LLEONLIHLPA),
+            14 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_FKBEDJNOALG),
+            15 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_AIDOOHEIPOI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MissionSyncRecord> {
         match str {
-            "MISSION_SYNC_RECORD_NONE" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_NONE),
-            "MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT),
-            "MISSION_SYNC_RECORD_MAIN_MISSION_START" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_START),
-            "MISSION_SYNC_RECORD_MAIN_MISSION_FINISH" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_FINISH),
-            "MISSION_SYNC_RECORD_MAIN_MISSION_DELETE" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_DELETE),
-            "MISSION_SYNC_RECORD_MISSION_ACCEPT" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_ACCEPT),
-            "MISSION_SYNC_RECORD_MISSION_START" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_START),
-            "MISSION_SYNC_RECORD_MISSION_FINISH" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_FINISH),
-            "MISSION_SYNC_RECORD_MISSION_DELETE" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_DELETE),
-            "MISSION_SYNC_RECORD_MISSION_PROGRESS" => ::std::option::Option::Some(MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_PROGRESS),
+            "MissionSyncRecord_LNDEGMEPGAL" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LNDEGMEPGAL),
+            "MissionSyncRecord_BIDFLFBCLDF" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BIDFLFBCLDF),
+            "MissionSyncRecord_JFLJKDLFDLF" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JFLJKDLFDLF),
+            "MissionSyncRecord_ENGKPMDLDGC" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_ENGKPMDLDGC),
+            "MissionSyncRecord_PBMKAFKIOHF" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_PBMKAFKIOHF),
+            "MissionSyncRecord_DMPDJFFOFFL" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_DMPDJFFOFFL),
+            "MissionSyncRecord_LKNHIEHLILC" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LKNHIEHLILC),
+            "MissionSyncRecord_LLEONLIHLPA" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LLEONLIHLPA),
+            "MissionSyncRecord_FKBEDJNOALG" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_FKBEDJNOALG),
+            "MissionSyncRecord_AIDOOHEIPOI" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_AIDOOHEIPOI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MissionSyncRecord] = &[
-        MissionSyncRecord::MISSION_SYNC_RECORD_NONE,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_START,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_FINISH,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_DELETE,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_ACCEPT,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_START,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_FINISH,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_DELETE,
-        MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_PROGRESS,
+        MissionSyncRecord::MissionSyncRecord_LNDEGMEPGAL,
+        MissionSyncRecord::MissionSyncRecord_BIDFLFBCLDF,
+        MissionSyncRecord::MissionSyncRecord_JFLJKDLFDLF,
+        MissionSyncRecord::MissionSyncRecord_ENGKPMDLDGC,
+        MissionSyncRecord::MissionSyncRecord_PBMKAFKIOHF,
+        MissionSyncRecord::MissionSyncRecord_DMPDJFFOFFL,
+        MissionSyncRecord::MissionSyncRecord_LKNHIEHLILC,
+        MissionSyncRecord::MissionSyncRecord_LLEONLIHLPA,
+        MissionSyncRecord::MissionSyncRecord_FKBEDJNOALG,
+        MissionSyncRecord::MissionSyncRecord_AIDOOHEIPOI,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for MissionSyncRecord {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            MissionSyncRecord::MISSION_SYNC_RECORD_NONE => 0,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_ACCEPT => 1,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_START => 2,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_FINISH => 3,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MAIN_MISSION_DELETE => 4,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_ACCEPT => 5,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_START => 6,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_FINISH => 7,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_DELETE => 8,
-            MissionSyncRecord::MISSION_SYNC_RECORD_MISSION_PROGRESS => 9,
+            MissionSyncRecord::MissionSyncRecord_LNDEGMEPGAL => 0,
+            MissionSyncRecord::MissionSyncRecord_BIDFLFBCLDF => 1,
+            MissionSyncRecord::MissionSyncRecord_JFLJKDLFDLF => 2,
+            MissionSyncRecord::MissionSyncRecord_ENGKPMDLDGC => 3,
+            MissionSyncRecord::MissionSyncRecord_PBMKAFKIOHF => 4,
+            MissionSyncRecord::MissionSyncRecord_DMPDJFFOFFL => 5,
+            MissionSyncRecord::MissionSyncRecord_LKNHIEHLILC => 6,
+            MissionSyncRecord::MissionSyncRecord_LLEONLIHLPA => 7,
+            MissionSyncRecord::MissionSyncRecord_FKBEDJNOALG => 8,
+            MissionSyncRecord::MissionSyncRecord_AIDOOHEIPOI => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for MissionSyncRecord {
 
 impl ::std::default::Default for MissionSyncRecord {
     fn default() -> Self {
-        MissionSyncRecord::MISSION_SYNC_RECORD_NONE
+        MissionSyncRecord::MissionSyncRecord_LNDEGMEPGAL
     }
 }
 
@@ -138,15 +138,14 @@ impl MissionSyncRecord {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MissionSyncRecord.proto*\xad\x03\n\x11MissionSyncRecord\x12\x1c\n\
-    \x18MISSION_SYNC_RECORD_NONE\x10\0\x12+\n'MISSION_SYNC_RECORD_MAIN_MISSI\
-    ON_ACCEPT\x10\x01\x12*\n&MISSION_SYNC_RECORD_MAIN_MISSION_START\x10\x02\
-    \x12+\n'MISSION_SYNC_RECORD_MAIN_MISSION_FINISH\x10\x03\x12+\n'MISSION_S\
-    YNC_RECORD_MAIN_MISSION_DELETE\x10\x04\x12&\n\"MISSION_SYNC_RECORD_MISSI\
-    ON_ACCEPT\x10\x0b\x12%\n!MISSION_SYNC_RECORD_MISSION_START\x10\x0c\x12&\
-    \n\"MISSION_SYNC_RECORD_MISSION_FINISH\x10\r\x12&\n\"MISSION_SYNC_RECORD\
-    _MISSION_DELETE\x10\x0e\x12(\n$MISSION_SYNC_RECORD_MISSION_PROGRESS\x10\
-    \x0fb\x06proto3\
+    \n\x17MissionSyncRecord.proto*\xf1\x02\n\x11MissionSyncRecord\x12!\n\x1d\
+    MissionSyncRecord_LNDEGMEPGAL\x10\0\x12!\n\x1dMissionSyncRecord_BIDFLFBC\
+    LDF\x10\x01\x12!\n\x1dMissionSyncRecord_JFLJKDLFDLF\x10\x02\x12!\n\x1dMi\
+    ssionSyncRecord_ENGKPMDLDGC\x10\x03\x12!\n\x1dMissionSyncRecord_PBMKAFKI\
+    OHF\x10\x04\x12!\n\x1dMissionSyncRecord_DMPDJFFOFFL\x10\x0b\x12!\n\x1dMi\
+    ssionSyncRecord_LKNHIEHLILC\x10\x0c\x12!\n\x1dMissionSyncRecord_LLEONLIH\
+    LPA\x10\r\x12!\n\x1dMissionSyncRecord_FKBEDJNOALG\x10\x0e\x12!\n\x1dMiss\
+    ionSyncRecord_AIDOOHEIPOI\x10\x0fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

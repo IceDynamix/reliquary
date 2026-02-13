@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmSaveSongConfigDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.NGHMABJMINB)
-    pub NGHMABJMINB: u32,
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.LMPJKKODHMI)
+    pub LMPJKKODHMI: u32,
     // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataScRsp.cur_song_id)
     pub cur_song_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MusicRhythmSaveSongConfigDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGHMABJMINB",
-            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.NGHMABJMINB },
-            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.NGHMABJMINB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.retcode },
             |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMPJKKODHMI",
+            |m: &MusicRhythmSaveSongConfigDataScRsp| { &m.LMPJKKODHMI },
+            |m: &mut MusicRhythmSaveSongConfigDataScRsp| { &mut m.LMPJKKODHMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_song_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.NGHMABJMINB = is.read_uint32()?;
-                },
-                56 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
+                    self.LMPJKKODHMI = is.read_uint32()?;
+                },
+                56 => {
                     self.cur_song_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NGHMABJMINB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NGHMABJMINB);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+        }
+        if self.LMPJKKODHMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LMPJKKODHMI);
         }
         if self.cur_song_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_song_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.cur_song_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NGHMABJMINB != 0 {
-            os.write_uint32(3, self.NGHMABJMINB)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
+        }
+        if self.LMPJKKODHMI != 0 {
+            os.write_uint32(15, self.LMPJKKODHMI)?;
         }
         if self.cur_song_id != 0 {
-            os.write_uint32(10, self.cur_song_id)?;
+            os.write_uint32(7, self.cur_song_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.NGHMABJMINB = 0;
         self.retcode = 0;
+        self.LMPJKKODHMI = 0;
         self.cur_song_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmSaveSongConfigDataScRsp {
         static instance: MusicRhythmSaveSongConfigDataScRsp = MusicRhythmSaveSongConfigDataScRsp {
-            NGHMABJMINB: 0,
             retcode: 0,
+            LMPJKKODHMI: 0,
             cur_song_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MusicRhythmSaveSongConfigDataScRsp.proto\"\x80\x01\n\"MusicRhythmSave\
-    SongConfigDataScRsp\x12\x20\n\x0bNGHMABJMINB\x18\x03\x20\x01(\rR\x0bNGHM\
-    ABJMINB\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x1e\n\
-    \x0bcur_song_id\x18\n\x20\x01(\rR\tcurSongIdb\x06proto3\
+    SongConfigDataScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bLMPJKKODHMI\x18\x0f\x20\x01(\rR\x0bLMPJKKODHMI\x12\x1e\n\
+    \x0bcur_song_id\x18\x07\x20\x01(\rR\tcurSongIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

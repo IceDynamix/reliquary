@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdReplayType)
 pub enum CmdReplayType {
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayTypeNone)
-    CmdReplayTypeNone = 0,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenScRsp)
-    CmdGetReplayTokenScRsp = 3538,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoScRsp)
-    CmdGetPlayerReplayInfoScRsp = 3547,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetPlayerReplayInfoCsReq)
-    CmdGetPlayerReplayInfoCsReq = 3509,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
-    CmdGetReplayTokenCsReq = 3517,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_GKJBAODJMJG)
+    NLEILPMBMIK_GKJBAODJMJG = 0,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_CFAEOEEPJMA)
+    NLEILPMBMIK_CFAEOEEPJMA = 3555,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_OHMBGOJBBJJ)
+    NLEILPMBMIK_OHMBGOJBBJJ = 3528,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_MJBHPIOPMFF)
+    NLEILPMBMIK_MJBHPIOPMFF = 3575,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_CHFELPCNAJD)
+    NLEILPMBMIK_CHFELPCNAJD = 3557,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdReplayType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
-            0 => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
-            3538 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            3547 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
-            3509 => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
-            3517 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            0 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_GKJBAODJMJG),
+            3555 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA),
+            3528 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ),
+            3575 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF),
+            3557 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CHFELPCNAJD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdReplayType> {
         match str {
-            "CmdReplayTypeNone" => ::std::option::Option::Some(CmdReplayType::CmdReplayTypeNone),
-            "CmdGetReplayTokenScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenScRsp),
-            "CmdGetPlayerReplayInfoScRsp" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoScRsp),
-            "CmdGetPlayerReplayInfoCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetPlayerReplayInfoCsReq),
-            "CmdGetReplayTokenCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
+            "NLEILPMBMIK_GKJBAODJMJG" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_GKJBAODJMJG),
+            "NLEILPMBMIK_CFAEOEEPJMA" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA),
+            "NLEILPMBMIK_OHMBGOJBBJJ" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ),
+            "NLEILPMBMIK_MJBHPIOPMFF" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF),
+            "NLEILPMBMIK_CHFELPCNAJD" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CHFELPCNAJD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdReplayType] = &[
-        CmdReplayType::CmdReplayTypeNone,
-        CmdReplayType::CmdGetReplayTokenScRsp,
-        CmdReplayType::CmdGetPlayerReplayInfoScRsp,
-        CmdReplayType::CmdGetPlayerReplayInfoCsReq,
-        CmdReplayType::CmdGetReplayTokenCsReq,
+        CmdReplayType::NLEILPMBMIK_GKJBAODJMJG,
+        CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA,
+        CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ,
+        CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF,
+        CmdReplayType::NLEILPMBMIK_CHFELPCNAJD,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdReplayType::CmdReplayTypeNone => 0,
-            CmdReplayType::CmdGetReplayTokenScRsp => 1,
-            CmdReplayType::CmdGetPlayerReplayInfoScRsp => 2,
-            CmdReplayType::CmdGetPlayerReplayInfoCsReq => 3,
-            CmdReplayType::CmdGetReplayTokenCsReq => 4,
+            CmdReplayType::NLEILPMBMIK_GKJBAODJMJG => 0,
+            CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA => 1,
+            CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ => 2,
+            CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF => 3,
+            CmdReplayType::NLEILPMBMIK_CHFELPCNAJD => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
 impl ::std::default::Default for CmdReplayType {
     fn default() -> Self {
-        CmdReplayType::CmdReplayTypeNone
+        CmdReplayType::NLEILPMBMIK_GKJBAODJMJG
     }
 }
 
@@ -108,10 +108,10 @@ impl CmdReplayType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x15\n\x11CmdRepl\
-    ayTypeNone\x10\0\x12\x1b\n\x16CmdGetReplayTokenScRsp\x10\xd2\x1b\x12\x20\
-    \n\x1bCmdGetPlayerReplayInfoScRsp\x10\xdb\x1b\x12\x20\n\x1bCmdGetPlayerR\
-    eplayInfoCsReq\x10\xb5\x1b\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\xbd\
+    \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x1b\n\x17NLEILPM\
+    BMIK_GKJBAODJMJG\x10\0\x12\x1c\n\x17NLEILPMBMIK_CFAEOEEPJMA\x10\xe3\x1b\
+    \x12\x1c\n\x17NLEILPMBMIK_OHMBGOJBBJJ\x10\xc8\x1b\x12\x1c\n\x17NLEILPMBM\
+    IK_MJBHPIOPMFF\x10\xf7\x1b\x12\x1c\n\x17NLEILPMBMIK_CHFELPCNAJD\x10\xe5\
     \x1bb\x06proto3\
 ";
 

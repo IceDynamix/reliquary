@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcRogueGameInfo {
     // message fields
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.JIMOHMKPKPH)
-    pub JIMOHMKPKPH: bool,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.aeon_talk_id)
-    pub aeon_talk_id: u32,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.event_unique_id)
-    pub event_unique_id: u32,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.KGEBNECNFOK)
-    pub KGEBNECNFOK: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.talk_dialogue_id)
-    pub talk_dialogue_id: u32,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.GHDLAGDDAMJ)
-    pub GHDLAGDDAMJ: bool,
-    // @@protoc_insertion_point(field:NpcRogueGameInfo.finish_dialogue)
-    pub finish_dialogue: bool,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.DCMFIOGMEKI)
+    pub DCMFIOGMEKI: bool,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.AHGDALKKMPF)
+    pub AHGDALKKMPF: bool,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.MCEOINLNHNO)
+    pub MCEOINLNHNO: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.JMFFBHCCEOH)
+    pub JMFFBHCCEOH: bool,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.MJAIKLONMHL)
+    pub MJAIKLONMHL: u32,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.PPNBCKGAJGB)
+    pub PPNBCKGAJGB: u32,
+    // @@protoc_insertion_point(field:NpcRogueGameInfo.AKCFOGNELLE)
+    pub AKCFOGNELLE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NpcRogueGameInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,39 +62,39 @@ impl NpcRogueGameInfo {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIMOHMKPKPH",
-            |m: &NpcRogueGameInfo| { &m.JIMOHMKPKPH },
-            |m: &mut NpcRogueGameInfo| { &mut m.JIMOHMKPKPH },
+            "DCMFIOGMEKI",
+            |m: &NpcRogueGameInfo| { &m.DCMFIOGMEKI },
+            |m: &mut NpcRogueGameInfo| { &mut m.DCMFIOGMEKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "aeon_talk_id",
-            |m: &NpcRogueGameInfo| { &m.aeon_talk_id },
-            |m: &mut NpcRogueGameInfo| { &mut m.aeon_talk_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_unique_id",
-            |m: &NpcRogueGameInfo| { &m.event_unique_id },
-            |m: &mut NpcRogueGameInfo| { &mut m.event_unique_id },
+            "AHGDALKKMPF",
+            |m: &NpcRogueGameInfo| { &m.AHGDALKKMPF },
+            |m: &mut NpcRogueGameInfo| { &mut m.AHGDALKKMPF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "KGEBNECNFOK",
-            |m: &NpcRogueGameInfo| { &m.KGEBNECNFOK },
-            |m: &mut NpcRogueGameInfo| { &mut m.KGEBNECNFOK },
+            "MCEOINLNHNO",
+            |m: &NpcRogueGameInfo| { &m.MCEOINLNHNO },
+            |m: &mut NpcRogueGameInfo| { &mut m.MCEOINLNHNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "talk_dialogue_id",
-            |m: &NpcRogueGameInfo| { &m.talk_dialogue_id },
-            |m: &mut NpcRogueGameInfo| { &mut m.talk_dialogue_id },
+            "JMFFBHCCEOH",
+            |m: &NpcRogueGameInfo| { &m.JMFFBHCCEOH },
+            |m: &mut NpcRogueGameInfo| { &mut m.JMFFBHCCEOH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHDLAGDDAMJ",
-            |m: &NpcRogueGameInfo| { &m.GHDLAGDDAMJ },
-            |m: &mut NpcRogueGameInfo| { &mut m.GHDLAGDDAMJ },
+            "MJAIKLONMHL",
+            |m: &NpcRogueGameInfo| { &m.MJAIKLONMHL },
+            |m: &mut NpcRogueGameInfo| { &mut m.MJAIKLONMHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "finish_dialogue",
-            |m: &NpcRogueGameInfo| { &m.finish_dialogue },
-            |m: &mut NpcRogueGameInfo| { &mut m.finish_dialogue },
+            "PPNBCKGAJGB",
+            |m: &NpcRogueGameInfo| { &m.PPNBCKGAJGB },
+            |m: &mut NpcRogueGameInfo| { &mut m.PPNBCKGAJGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKCFOGNELLE",
+            |m: &NpcRogueGameInfo| { &m.AKCFOGNELLE },
+            |m: &mut NpcRogueGameInfo| { &mut m.AKCFOGNELLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcRogueGameInfo>(
             "NpcRogueGameInfo",
@@ -114,16 +114,13 @@ impl ::protobuf::Message for NpcRogueGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.JIMOHMKPKPH = is.read_bool()?;
-                },
-                112 => {
-                    self.aeon_talk_id = is.read_uint32()?;
+                96 => {
+                    self.DCMFIOGMEKI = is.read_bool()?;
                 },
                 56 => {
-                    self.event_unique_id = is.read_uint32()?;
+                    self.AHGDALKKMPF = is.read_bool()?;
                 },
-                90 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -136,16 +133,19 @@ impl ::protobuf::Message for NpcRogueGameInfo {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.KGEBNECNFOK.insert(key, value);
+                    self.MCEOINLNHNO.insert(key, value);
                 },
-                80 => {
-                    self.talk_dialogue_id = is.read_uint32()?;
+                120 => {
+                    self.JMFFBHCCEOH = is.read_bool()?;
+                },
+                24 => {
+                    self.MJAIKLONMHL = is.read_uint32()?;
                 },
                 8 => {
-                    self.GHDLAGDDAMJ = is.read_bool()?;
+                    self.PPNBCKGAJGB = is.read_uint32()?;
                 },
-                48 => {
-                    self.finish_dialogue = is.read_bool()?;
+                72 => {
+                    self.AKCFOGNELLE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,29 +159,29 @@ impl ::protobuf::Message for NpcRogueGameInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JIMOHMKPKPH != false {
+        if self.DCMFIOGMEKI != false {
             my_size += 1 + 1;
         }
-        if self.aeon_talk_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.aeon_talk_id);
+        if self.AHGDALKKMPF != false {
+            my_size += 1 + 1;
         }
-        if self.event_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.event_unique_id);
-        }
-        for (k, v) in &self.KGEBNECNFOK {
+        for (k, v) in &self.MCEOINLNHNO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.talk_dialogue_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.talk_dialogue_id);
-        }
-        if self.GHDLAGDDAMJ != false {
+        if self.JMFFBHCCEOH != false {
             my_size += 1 + 1;
         }
-        if self.finish_dialogue != false {
-            my_size += 1 + 1;
+        if self.MJAIKLONMHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MJAIKLONMHL);
+        }
+        if self.PPNBCKGAJGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PPNBCKGAJGB);
+        }
+        if self.AKCFOGNELLE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.AKCFOGNELLE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,32 +189,32 @@ impl ::protobuf::Message for NpcRogueGameInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JIMOHMKPKPH != false {
-            os.write_bool(8, self.JIMOHMKPKPH)?;
+        if self.DCMFIOGMEKI != false {
+            os.write_bool(12, self.DCMFIOGMEKI)?;
         }
-        if self.aeon_talk_id != 0 {
-            os.write_uint32(14, self.aeon_talk_id)?;
+        if self.AHGDALKKMPF != false {
+            os.write_bool(7, self.AHGDALKKMPF)?;
         }
-        if self.event_unique_id != 0 {
-            os.write_uint32(7, self.event_unique_id)?;
-        }
-        for (k, v) in &self.KGEBNECNFOK {
+        for (k, v) in &self.MCEOINLNHNO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.talk_dialogue_id != 0 {
-            os.write_uint32(10, self.talk_dialogue_id)?;
+        if self.JMFFBHCCEOH != false {
+            os.write_bool(15, self.JMFFBHCCEOH)?;
         }
-        if self.GHDLAGDDAMJ != false {
-            os.write_bool(1, self.GHDLAGDDAMJ)?;
+        if self.MJAIKLONMHL != 0 {
+            os.write_uint32(3, self.MJAIKLONMHL)?;
         }
-        if self.finish_dialogue != false {
-            os.write_bool(6, self.finish_dialogue)?;
+        if self.PPNBCKGAJGB != 0 {
+            os.write_uint32(1, self.PPNBCKGAJGB)?;
+        }
+        if self.AKCFOGNELLE != 0 {
+            os.write_uint32(9, self.AKCFOGNELLE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -233,13 +233,13 @@ impl ::protobuf::Message for NpcRogueGameInfo {
     }
 
     fn clear(&mut self) {
-        self.JIMOHMKPKPH = false;
-        self.aeon_talk_id = 0;
-        self.event_unique_id = 0;
-        self.KGEBNECNFOK.clear();
-        self.talk_dialogue_id = 0;
-        self.GHDLAGDDAMJ = false;
-        self.finish_dialogue = false;
+        self.DCMFIOGMEKI = false;
+        self.AHGDALKKMPF = false;
+        self.MCEOINLNHNO.clear();
+        self.JMFFBHCCEOH = false;
+        self.MJAIKLONMHL = 0;
+        self.PPNBCKGAJGB = 0;
+        self.AKCFOGNELLE = 0;
         self.special_fields.clear();
     }
 
@@ -267,16 +267,16 @@ impl ::protobuf::reflect::ProtobufValue for NpcRogueGameInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16NpcRogueGameInfo.proto\"\xf9\x02\n\x10NpcRogueGameInfo\x12\x20\n\
-    \x0bJIMOHMKPKPH\x18\x08\x20\x01(\x08R\x0bJIMOHMKPKPH\x12\x20\n\x0caeon_t\
-    alk_id\x18\x0e\x20\x01(\rR\naeonTalkId\x12&\n\x0fevent_unique_id\x18\x07\
-    \x20\x01(\rR\reventUniqueId\x12D\n\x0bKGEBNECNFOK\x18\x0b\x20\x03(\x0b2\
-    \".NpcRogueGameInfo.KGEBNECNFOKEntryR\x0bKGEBNECNFOK\x12(\n\x10talk_dial\
-    ogue_id\x18\n\x20\x01(\rR\x0etalkDialogueId\x12\x20\n\x0bGHDLAGDDAMJ\x18\
-    \x01\x20\x01(\x08R\x0bGHDLAGDDAMJ\x12'\n\x0ffinish_dialogue\x18\x06\x20\
-    \x01(\x08R\x0efinishDialogue\x1a>\n\x10KGEBNECNFOKEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
-    lue:\x028\x01b\x06proto3\
+    \n\x16NpcRogueGameInfo.proto\"\xe4\x02\n\x10NpcRogueGameInfo\x12\x20\n\
+    \x0bDCMFIOGMEKI\x18\x0c\x20\x01(\x08R\x0bDCMFIOGMEKI\x12\x20\n\x0bAHGDAL\
+    KKMPF\x18\x07\x20\x01(\x08R\x0bAHGDALKKMPF\x12D\n\x0bMCEOINLNHNO\x18\x06\
+    \x20\x03(\x0b2\".NpcRogueGameInfo.MCEOINLNHNOEntryR\x0bMCEOINLNHNO\x12\
+    \x20\n\x0bJMFFBHCCEOH\x18\x0f\x20\x01(\x08R\x0bJMFFBHCCEOH\x12\x20\n\x0b\
+    MJAIKLONMHL\x18\x03\x20\x01(\rR\x0bMJAIKLONMHL\x12\x20\n\x0bPPNBCKGAJGB\
+    \x18\x01\x20\x01(\rR\x0bPPNBCKGAJGB\x12\x20\n\x0bAKCFOGNELLE\x18\t\x20\
+    \x01(\rR\x0bAKCFOGNELLE\x1a>\n\x10MCEOINLNHNOEntry\x12\x10\n\x03key\x18\
+    \x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\
+    \x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

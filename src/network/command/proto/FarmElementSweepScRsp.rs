@@ -30,8 +30,8 @@ pub struct FarmElementSweepScRsp {
     // message fields
     // @@protoc_insertion_point(field:FarmElementSweepScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FarmElementSweepScRsp.LOFAFGIPDFP)
-    pub LOFAFGIPDFP: u32,
+    // @@protoc_insertion_point(field:FarmElementSweepScRsp.COBCONOPIAP)
+    pub COBCONOPIAP: u32,
     // @@protoc_insertion_point(field:FarmElementSweepScRsp.multiple_drop_data)
     pub multiple_drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -59,9 +59,9 @@ impl FarmElementSweepScRsp {
             |m: &mut FarmElementSweepScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFAFGIPDFP",
-            |m: &FarmElementSweepScRsp| { &m.LOFAFGIPDFP },
-            |m: &mut FarmElementSweepScRsp| { &mut m.LOFAFGIPDFP },
+            "COBCONOPIAP",
+            |m: &FarmElementSweepScRsp| { &m.COBCONOPIAP },
+            |m: &mut FarmElementSweepScRsp| { &mut m.COBCONOPIAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "multiple_drop_data",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.LOFAFGIPDFP = is.read_uint32()?;
+                48 => {
+                    self.COBCONOPIAP = is.read_uint32()?;
                 },
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.multiple_drop_data)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.LOFAFGIPDFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOFAFGIPDFP);
+        if self.COBCONOPIAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.COBCONOPIAP);
         }
         if let Some(v) = self.multiple_drop_data.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.LOFAFGIPDFP != 0 {
-            os.write_uint32(11, self.LOFAFGIPDFP)?;
+        if self.COBCONOPIAP != 0 {
+            os.write_uint32(6, self.COBCONOPIAP)?;
         }
         if let Some(v) = self.multiple_drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.LOFAFGIPDFP = 0;
+        self.COBCONOPIAP = 0;
         self.multiple_drop_data.clear();
         self.special_fields.clear();
     }
@@ -158,7 +158,7 @@ impl ::protobuf::Message for FarmElementSweepScRsp {
     fn default_instance() -> &'static FarmElementSweepScRsp {
         static instance: FarmElementSweepScRsp = FarmElementSweepScRsp {
             retcode: 0,
-            LOFAFGIPDFP: 0,
+            COBCONOPIAP: 0,
             multiple_drop_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for FarmElementSweepScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFarmElementSweepScRsp.proto\x1a\x0eItemList.proto\"\x8c\x01\n\x15F\
-    armElementSweepScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bLOFAFGIPDFP\x18\x0b\x20\x01(\rR\x0bLOFAFGIPDFP\x127\n\x12m\
-    ultiple_drop_data\x18\x06\x20\x01(\x0b2\t.ItemListR\x10multipleDropDatab\
+    armElementSweepScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bCOBCONOPIAP\x18\x06\x20\x01(\rR\x0bCOBCONOPIAP\x127\n\x12m\
+    ultiple_drop_data\x18\x01\x20\x01(\x0b2\t.ItemListR\x10multipleDropDatab\
     \x06proto3\
 ";
 

@@ -86,7 +86,7 @@ impl ::protobuf::Message for HeliobusChallengeLineup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 10 => {
@@ -95,7 +95,7 @@ impl ::protobuf::Message for HeliobusChallengeLineup {
                 8 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
-                96 => {
+                56 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for HeliobusChallengeLineup {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.skill_id);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.avatar_id_list);
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for HeliobusChallengeLineup {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.skill_id != 0 {
-            os.write_uint32(3, self.skill_id)?;
+            os.write_uint32(11, self.skill_id)?;
         }
         os.write_repeated_packed_uint32(1, &self.avatar_id_list)?;
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(7, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusChallengeLineup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dHeliobusChallengeLineup.proto\"u\n\x17HeliobusChallengeLineup\x12\
-    \x19\n\x08skill_id\x18\x03\x20\x01(\rR\x07skillId\x12$\n\x0eavatar_id_li\
-    st\x18\x01\x20\x03(\rR\x0cavatarIdList\x12\x19\n\x08group_id\x18\x0c\x20\
+    \x19\n\x08skill_id\x18\x0b\x20\x01(\rR\x07skillId\x12$\n\x0eavatar_id_li\
+    st\x18\x01\x20\x03(\rR\x0cavatarIdList\x12\x19\n\x08group_id\x18\x07\x20\
     \x01(\rR\x07groupIdb\x06proto3\
 ";
 

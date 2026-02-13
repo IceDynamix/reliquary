@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateMarkChestScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.trigger_param_id)
-    pub trigger_param_id: u32,
     // @@protoc_insertion_point(field:UpdateMarkChestScRsp.func_id)
     pub func_id: u32,
     // @@protoc_insertion_point(field:UpdateMarkChestScRsp.mark_chest_func_info)
     pub mark_chest_func_info: ::std::vec::Vec<super::MarkChestFuncInfo::MarkChestFuncInfo>,
+    // @@protoc_insertion_point(field:UpdateMarkChestScRsp.trigger_param_id)
+    pub trigger_param_id: u32,
     // @@protoc_insertion_point(field:UpdateMarkChestScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -56,11 +56,6 @@ impl UpdateMarkChestScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_param_id",
-            |m: &UpdateMarkChestScRsp| { &m.trigger_param_id },
-            |m: &mut UpdateMarkChestScRsp| { &mut m.trigger_param_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "func_id",
             |m: &UpdateMarkChestScRsp| { &m.func_id },
             |m: &mut UpdateMarkChestScRsp| { &mut m.func_id },
@@ -69,6 +64,11 @@ impl UpdateMarkChestScRsp {
             "mark_chest_func_info",
             |m: &UpdateMarkChestScRsp| { &m.mark_chest_func_info },
             |m: &mut UpdateMarkChestScRsp| { &mut m.mark_chest_func_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trigger_param_id",
+            |m: &UpdateMarkChestScRsp| { &m.trigger_param_id },
+            |m: &mut UpdateMarkChestScRsp| { &mut m.trigger_param_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.trigger_param_id = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.func_id = is.read_uint32()?;
                 },
-                74 => {
+                26 => {
                     self.mark_chest_func_info.push(is.read_message()?);
                 },
-                8 => {
+                72 => {
+                    self.trigger_param_id = is.read_uint32()?;
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.trigger_param_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.trigger_param_id);
-        }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.func_id);
         }
         for value in &self.mark_chest_func_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.trigger_param_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.trigger_param_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.trigger_param_id != 0 {
-            os.write_uint32(10, self.trigger_param_id)?;
-        }
         if self.func_id != 0 {
-            os.write_uint32(7, self.func_id)?;
+            os.write_uint32(4, self.func_id)?;
         }
         for v in &self.mark_chest_func_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.trigger_param_id != 0 {
+            os.write_uint32(9, self.trigger_param_id)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for UpdateMarkChestScRsp {
     }
 
     fn clear(&mut self) {
-        self.trigger_param_id = 0;
         self.func_id = 0;
         self.mark_chest_func_info.clear();
+        self.trigger_param_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateMarkChestScRsp {
         static instance: UpdateMarkChestScRsp = UpdateMarkChestScRsp {
-            trigger_param_id: 0,
             func_id: 0,
             mark_chest_func_info: ::std::vec::Vec::new(),
+            trigger_param_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMarkChestScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUpdateMarkChestScRsp.proto\x1a\x17MarkChestFuncInfo.proto\"\xb8\
-    \x01\n\x14UpdateMarkChestScRsp\x12(\n\x10trigger_param_id\x18\n\x20\x01(\
-    \rR\x0etriggerParamId\x12\x17\n\x07func_id\x18\x07\x20\x01(\rR\x06funcId\
-    \x12C\n\x14mark_chest_func_info\x18\t\x20\x03(\x0b2\x12.MarkChestFuncInf\
-    oR\x11markChestFuncInfo\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \x01\n\x14UpdateMarkChestScRsp\x12\x17\n\x07func_id\x18\x04\x20\x01(\rR\
+    \x06funcId\x12C\n\x14mark_chest_func_info\x18\x03\x20\x03(\x0b2\x12.Mark\
+    ChestFuncInfoR\x11markChestFuncInfo\x12(\n\x10trigger_param_id\x18\t\x20\
+    \x01(\rR\x0etriggerParamId\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07r\
+    etcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

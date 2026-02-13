@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NewAssistHistoryNotify {
     // message fields
-    // @@protoc_insertion_point(field:NewAssistHistoryNotify.IOIIJFGCPEG)
-    pub IOIIJFGCPEG: u32,
+    // @@protoc_insertion_point(field:NewAssistHistoryNotify.NLPLMCNKLFL)
+    pub NLPLMCNKLFL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NewAssistHistoryNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NewAssistHistoryNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOIIJFGCPEG",
-            |m: &NewAssistHistoryNotify| { &m.IOIIJFGCPEG },
-            |m: &mut NewAssistHistoryNotify| { &mut m.IOIIJFGCPEG },
+            "NLPLMCNKLFL",
+            |m: &NewAssistHistoryNotify| { &m.NLPLMCNKLFL },
+            |m: &mut NewAssistHistoryNotify| { &mut m.NLPLMCNKLFL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NewAssistHistoryNotify>(
             "NewAssistHistoryNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for NewAssistHistoryNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.IOIIJFGCPEG = is.read_uint32()?;
+                8 => {
+                    self.NLPLMCNKLFL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for NewAssistHistoryNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IOIIJFGCPEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IOIIJFGCPEG);
+        if self.NLPLMCNKLFL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NLPLMCNKLFL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for NewAssistHistoryNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IOIIJFGCPEG != 0 {
-            os.write_uint32(10, self.IOIIJFGCPEG)?;
+        if self.NLPLMCNKLFL != 0 {
+            os.write_uint32(1, self.NLPLMCNKLFL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for NewAssistHistoryNotify {
     }
 
     fn clear(&mut self) {
-        self.IOIIJFGCPEG = 0;
+        self.NLPLMCNKLFL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NewAssistHistoryNotify {
         static instance: NewAssistHistoryNotify = NewAssistHistoryNotify {
-            IOIIJFGCPEG: 0,
+            NLPLMCNKLFL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for NewAssistHistoryNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cNewAssistHistoryNotify.proto\":\n\x16NewAssistHistoryNotify\x12\
-    \x20\n\x0bIOIIJFGCPEG\x18\n\x20\x01(\rR\x0bIOIIJFGCPEGb\x06proto3\
+    \x20\n\x0bNLPLMCNKLFL\x18\x01\x20\x01(\rR\x0bNLPLMCNKLFLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

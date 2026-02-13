@@ -38,8 +38,8 @@ pub struct RegionInfo {
     pub env_type: ::std::string::String,
     // @@protoc_insertion_point(field:RegionInfo.display_name)
     pub display_name: ::std::string::String,
-    // @@protoc_insertion_point(field:RegionInfo.msg)
-    pub msg: ::std::string::String,
+    // @@protoc_insertion_point(field:RegionInfo.source_uid)
+    pub source_uid: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RegionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,9 +85,9 @@ impl RegionInfo {
             |m: &mut RegionInfo| { &mut m.display_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg",
-            |m: &RegionInfo| { &m.msg },
-            |m: &mut RegionInfo| { &mut m.msg },
+            "source_uid",
+            |m: &RegionInfo| { &m.source_uid },
+            |m: &mut RegionInfo| { &mut m.source_uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RegionInfo>(
             "RegionInfo",
@@ -123,7 +123,7 @@ impl ::protobuf::Message for RegionInfo {
                     self.display_name = is.read_string()?;
                 },
                 50 => {
-                    self.msg = is.read_string()?;
+                    self.source_uid = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -152,8 +152,8 @@ impl ::protobuf::Message for RegionInfo {
         if !self.display_name.is_empty() {
             my_size += ::protobuf::rt::string_size(5, &self.display_name);
         }
-        if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.msg);
+        if !self.source_uid.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.source_uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,8 +176,8 @@ impl ::protobuf::Message for RegionInfo {
         if !self.display_name.is_empty() {
             os.write_string(5, &self.display_name)?;
         }
-        if !self.msg.is_empty() {
-            os.write_string(6, &self.msg)?;
+        if !self.source_uid.is_empty() {
+            os.write_string(6, &self.source_uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,7 +201,7 @@ impl ::protobuf::Message for RegionInfo {
         self.dispatch_url.clear();
         self.env_type.clear();
         self.display_name.clear();
-        self.msg.clear();
+        self.source_uid.clear();
         self.special_fields.clear();
     }
 
@@ -212,7 +212,7 @@ impl ::protobuf::Message for RegionInfo {
             dispatch_url: ::std::string::String::new(),
             env_type: ::std::string::String::new(),
             display_name: ::std::string::String::new(),
-            msg: ::std::string::String::new(),
+            source_uid: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for RegionInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10RegionInfo.proto\"\xa9\x01\n\nRegionInfo\x12\x12\n\x04name\x18\x01\
+    \n\x10RegionInfo.proto\"\xb6\x01\n\nRegionInfo\x12\x12\n\x04name\x18\x01\
     \x20\x01(\tR\x04name\x12\x14\n\x05title\x18\x02\x20\x01(\tR\x05title\x12\
     !\n\x0cdispatch_url\x18\x03\x20\x01(\tR\x0bdispatchUrl\x12\x19\n\x08env_\
     type\x18\x04\x20\x01(\tR\x07envType\x12!\n\x0cdisplay_name\x18\x05\x20\
-    \x01(\tR\x0bdisplayName\x12\x10\n\x03msg\x18\x06\x20\x01(\tR\x03msgb\x06\
-    proto3\
+    \x01(\tR\x0bdisplayName\x12\x1d\n\nsource_uid\x18\x06\x20\x01(\tR\tsourc\
+    eUidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

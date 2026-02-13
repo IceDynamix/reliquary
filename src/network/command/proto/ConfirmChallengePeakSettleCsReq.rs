@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ConfirmChallengePeakSettleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.OJGBBNMJHOM)
-    pub OJGBBNMJHOM: bool,
+    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.FKIELEGBOHL)
+    pub FKIELEGBOHL: bool,
     // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.peak_id)
     pub peak_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ConfirmChallengePeakSettleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJGBBNMJHOM",
-            |m: &ConfirmChallengePeakSettleCsReq| { &m.OJGBBNMJHOM },
-            |m: &mut ConfirmChallengePeakSettleCsReq| { &mut m.OJGBBNMJHOM },
+            "FKIELEGBOHL",
+            |m: &ConfirmChallengePeakSettleCsReq| { &m.FKIELEGBOHL },
+            |m: &mut ConfirmChallengePeakSettleCsReq| { &mut m.FKIELEGBOHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "peak_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.OJGBBNMJHOM = is.read_bool()?;
+                96 => {
+                    self.FKIELEGBOHL = is.read_bool()?;
                 },
-                16 => {
+                104 => {
                     self.peak_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OJGBBNMJHOM != false {
+        if self.FKIELEGBOHL != false {
             my_size += 1 + 1;
         }
         if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.peak_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.peak_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OJGBBNMJHOM != false {
-            os.write_bool(13, self.OJGBBNMJHOM)?;
+        if self.FKIELEGBOHL != false {
+            os.write_bool(12, self.FKIELEGBOHL)?;
         }
         if self.peak_id != 0 {
-            os.write_uint32(2, self.peak_id)?;
+            os.write_uint32(13, self.peak_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     }
 
     fn clear(&mut self) {
-        self.OJGBBNMJHOM = false;
+        self.FKIELEGBOHL = false;
         self.peak_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ConfirmChallengePeakSettleCsReq {
         static instance: ConfirmChallengePeakSettleCsReq = ConfirmChallengePeakSettleCsReq {
-            OJGBBNMJHOM: false,
+            FKIELEGBOHL: false,
             peak_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmChallengePeakSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ConfirmChallengePeakSettleCsReq.proto\"\\\n\x1fConfirmChallengePeakSe\
-    ttleCsReq\x12\x20\n\x0bOJGBBNMJHOM\x18\r\x20\x01(\x08R\x0bOJGBBNMJHOM\
-    \x12\x17\n\x07peak_id\x18\x02\x20\x01(\rR\x06peakIdb\x06proto3\
+    ttleCsReq\x12\x20\n\x0bFKIELEGBOHL\x18\x0c\x20\x01(\x08R\x0bFKIELEGBOHL\
+    \x12\x17\n\x07peak_id\x18\r\x20\x01(\rR\x06peakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
