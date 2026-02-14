@@ -237,10 +237,10 @@ impl ::protobuf::Message for PlayerSyncScNotify {
                 506 => {
                     self.FDMAAFIFGOK.push(is.read_message()?);
                 },
-                18 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.del_equipment_list)?;
                 },
-                16 => {
+                72 => {
                     self.del_equipment_list.push(is.read_uint32()?);
                 },
                 15210 => {
@@ -255,10 +255,10 @@ impl ::protobuf::Message for PlayerSyncScNotify {
                 5970 => {
                     self.AIIFDKEDGIL.push(is.read_message()?);
                 },
-                74 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.del_relic_list)?;
                 },
-                72 => {
+                16 => {
                     self.del_relic_list.push(is.read_uint32()?);
                 },
                 13458 => {
@@ -330,7 +330,7 @@ impl ::protobuf::Message for PlayerSyncScNotify {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.del_equipment_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.del_equipment_list);
         my_size += ::protobuf::rt::vec_packed_uint32_size(1901, &self.new_item_hint_list);
         for value in &self.material_list {
             let len = value.compute_size();
@@ -340,7 +340,7 @@ impl ::protobuf::Message for PlayerSyncScNotify {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.del_relic_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.del_relic_list);
         for value in &self.NDINAEMJMJB {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -408,7 +408,7 @@ impl ::protobuf::Message for PlayerSyncScNotify {
         for v in &self.FDMAAFIFGOK {
             ::protobuf::rt::write_message_field_with_cached_size(63, v, os)?;
         };
-        os.write_repeated_packed_uint32(2, &self.del_equipment_list)?;
+        os.write_repeated_packed_uint32(9, &self.del_equipment_list)?;
         os.write_repeated_packed_uint32(1901, &self.new_item_hint_list)?;
         for v in &self.material_list {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
@@ -416,7 +416,7 @@ impl ::protobuf::Message for PlayerSyncScNotify {
         for v in &self.AIIFDKEDGIL {
             ::protobuf::rt::write_message_field_with_cached_size(746, v, os)?;
         };
-        os.write_repeated_packed_uint32(9, &self.del_relic_list)?;
+        os.write_repeated_packed_uint32(2, &self.del_relic_list)?;
         for v in &self.NDINAEMJMJB {
             ::protobuf::rt::write_message_field_with_cached_size(1682, v, os)?;
         };
@@ -553,11 +553,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x13waitDelResourceList\x12%\n\nquest_list\x18\x0c\x20\x03(\x0b2\x06.Que\
     stR\tquestList\x121\n\x0eequipment_list\x18\x06\x20\x03(\x0b2\n.Equipmen\
     tR\requipmentList\x12+\n\x0bFDMAAFIFGOK\x18?\x20\x03(\x0b2\t.MaterialR\
-    \x0bFDMAAFIFGOK\x12,\n\x12del_equipment_list\x18\x02\x20\x03(\rR\x10delE\
-    quipmentList\x12,\n\x12new_item_hint_list\x18\xed\x0e\x20\x03(\rR\x0fnew\
-    ItemHintList\x12.\n\rmaterial_list\x18\x04\x20\x03(\x0b2\t.MaterialR\x0c\
-    materialList\x12/\n\x0bAIIFDKEDGIL\x18\xea\x05\x20\x03(\x0b2\x0c.FBEANGH\
-    KMFGR\x0bAIIFDKEDGIL\x12$\n\x0edel_relic_list\x18\t\x20\x03(\rR\x0cdelRe\
+    \x0bFDMAAFIFGOK\x12,\n\x12del_equipment_list\x18\t\x20\x03(\rR\x10delEqu\
+    ipmentList\x12,\n\x12new_item_hint_list\x18\xed\x0e\x20\x03(\rR\x0fnewIt\
+    emHintList\x12.\n\rmaterial_list\x18\x04\x20\x03(\x0b2\t.MaterialR\x0cma\
+    terialList\x12/\n\x0bAIIFDKEDGIL\x18\xea\x05\x20\x03(\x0b2\x0c.FBEANGHKM\
+    FGR\x0bAIIFDKEDGIL\x12$\n\x0edel_relic_list\x18\x02\x20\x03(\rR\x0cdelRe\
     licList\x12/\n\x0bNDINAEMJMJB\x18\x92\r\x20\x03(\x0b2\x0c.FCKLHHKFEJGR\
     \x0bNDINAEMJMJB\x12,\n\x0bavatar_sync\x18\x0f\x20\x01(\x0b2\x0b.AvatarSy\
     ncR\navatarSync\x12O\n\x17playerboard_module_sync\x18\xae\x03\x20\x01(\
